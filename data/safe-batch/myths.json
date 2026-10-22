@@ -1,5 +1,287 @@
 [
  {
+  "id": "lemon-juice-fades-dark-spots",
+  "title": "Lemon or lime juice fades dark spots",
+  "topics": [
+   "dark-spots"
+  ],
+  "claims": [
+   {
+    "claim": "Lemon juice lightens dark spots",
+    "verdict": "false",
+    "truth": "No good evidence it fades spots. Citrus juice is acidic enough to sting and irritate, and irritation leaves more dark marks on deeper skin tones.",
+    "grade": "D"
+   },
+   {
+    "claim": "It's natural, so it's safe in the sun",
+    "verdict": "false",
+    "truth": "Citrus contains furocoumarins that react with sunlight (phytophotodermatitis): burns, blisters and dark patches that can last months.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Phytophotodermatitis: the other \"lime\" disease (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10195477/"
+   },
+   {
+    "title": "New insights on phytophotodermatitis from phototoxic plants (2024 review)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11355232/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "niacinamide-fades-dark-spots",
+  "title": "Niacinamide fades dark spots",
+  "topics": [
+   "dark-spots"
+  ],
+  "claims": [
+   {
+    "claim": "Niacinamide evens skin tone",
+    "verdict": "true",
+    "truth": "At about 2 to 5% in a leave-on product, it reduced hyperpigmentation in controlled trials by blocking pigment transfer to skin cells. Results take 4 to 8 weeks, and it's gentle.",
+    "grade": "A"
+   },
+   {
+    "claim": "Higher is better (10 to 20%)",
+    "verdict": "unproven",
+    "truth": "The trials used about 5%. Higher strengths aren't proven to work better and can cause redness or flushing in some people.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hakozaki et al. 2002, British Journal of Dermatology",
+    "url": "https://academic.oup.com/bjd/article/147/1/20/6628642"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "fast-whitening-creams-mercury",
+  "title": "Fast \"whitening\" creams from unlisted sellers are safe",
+  "topics": [
+   "dark-spots",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Strong, fast-acting lightening creams are just herbs",
+    "verdict": "false",
+    "truth": "Testing worldwide keeps finding mercury in skin-lightening creams, often unlisted. Mercury damages the kidneys and nervous system and can harm others in the home; other unlisted creams contain hydroquinone or strong steroids that thin skin.",
+    "grade": "A"
+   },
+   {
+    "claim": "If it works fast, it's good",
+    "verdict": "false",
+    "truth": "Very fast lightening is a warning sign. Safe brighteners (niacinamide, azelaic acid, tranexamic acid, sunscreen) work over weeks to months.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "WHO: Mercury in skin lightening products",
+    "url": "https://www.who.int/publications/i/item/mercury-in-skin-lightening-products"
+   },
+   {
+    "title": "UNEP fact sheet: mercury in skin lightening creams",
+    "url": "https://www.unep.org/globalmercurypartnership/resources/factsheet/fact-sheet-mercury-skin-lightening-creams"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "tranexamic-acid-melasma",
+  "title": "Tranexamic acid helps melasma",
+  "topics": [
+   "dark-spots"
+  ],
+  "claims": [
+   {
+    "claim": "Tranexamic acid fades melasma",
+    "verdict": "partly",
+    "truth": "A meta-analysis found it improves melasma, but most strong results are for tablets or injections prescribed by a doctor. Topical serums have smaller, less consistent evidence.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Efficacy and safety of tranexamic acid in melasma: meta-analysis (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28374042/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "azelaic-acid-dark-spots",
+  "title": "Azelaic acid works on dark patches",
+  "topics": [
+   "dark-spots",
+   "acne"
+  ],
+  "claims": [
+   {
+    "claim": "Azelaic acid fades melasma",
+    "verdict": "true",
+    "truth": "In a 24-week controlled trial, 20% azelaic acid worked about as well as 4% hydroquinone for melasma, with fewer side effects. It also treats acne and rosacea.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Balina & Graupe 1991: 20% azelaic acid vs 4% hydroquinone (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1816137/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "benzoyl-peroxide-adapalene-acne",
+  "title": "Drugstore benzoyl peroxide and adapalene actually treat acne",
+  "topics": [
+   "acne"
+  ],
+  "claims": [
+   {
+    "claim": "Benzoyl peroxide and adapalene are proven acne treatments",
+    "verdict": "true",
+    "truth": "The American Academy of Dermatology's 2024 guidelines strongly recommend benzoyl peroxide and topical retinoids (adapalene is sold over the counter as Differin). Give them 8 to 12 weeks.",
+    "grade": "A"
+   },
+   {
+    "claim": "Natural remedies work as well",
+    "verdict": "false",
+    "truth": "None of the popular home remedies (lemon, toothpaste, garlic, cinnamon) have evidence close to these, and several irritate.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Reynolds et al. 2024, Guidelines of care for the management of acne vulgaris (JAAD)",
+    "url": "https://www.ovid.com/journals/jaade/fulltext/10.1016/j.jaad.2023.12.017"
+   },
+   {
+    "title": "Dermatology Times: AAD updated acne guidelines",
+    "url": "https://dermatologytimes.com/view/aad-releases-updated-guidelines-for-the-management-of-acne-vulgaris"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "toothpaste-dries-pimples",
+  "title": "Toothpaste dries out pimples",
+  "topics": [
+   "acne"
+  ],
+  "claims": [
+   {
+    "claim": "Toothpaste on a pimple helps it heal",
+    "verdict": "false",
+    "truth": "Toothpaste contains menthol, baking soda, detergents and flavours that irritate and can burn, leaving a red or dark mark. A pimple patch or a dab of benzoyl peroxide is the better overnight fix.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hackensack Meridian Health: does toothpaste help with acne?",
+    "url": "https://hackensackmeridianhealth.org/en/HealthU/2022/08/30/Does-Toothpaste-Help-with-Acne"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "diet-causes-acne",
+  "title": "What you eat causes acne",
+  "topics": [
+   "acne",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Sugar and high-glycemic foods worsen acne",
+    "verdict": "partly",
+    "truth": "Studies link high-glycemic diets to more acne in some people, and a few trials found improvement on low-glycemic diets. It's a contributing factor, not the main cause.",
+    "grade": "B"
+   },
+   {
+    "claim": "Dairy causes acne",
+    "verdict": "partly",
+    "truth": "Skim milk shows the most consistent link in observational studies; cheese and yogurt less so. Cutting dairy helps some people, not all.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Diet and acne: a systematic review (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35373155/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "tea-tree-oil-acne",
+  "title": "Tea tree oil treats acne",
+  "topics": [
+   "acne",
+   "essential-oils"
+  ],
+  "claims": [
+   {
+    "claim": "Tea tree oil helps mild acne",
+    "verdict": "partly",
+    "truth": "In a trial of 124 people, 5% tea tree gel reduced spots, more slowly than 5% benzoyl peroxide but with less dryness. It's a reasonable gentle option for mild acne.",
+    "grade": "B"
+   },
+   {
+    "claim": "Neat tea tree oil works better",
+    "verdict": "false",
+    "truth": "Undiluted tea tree oil can burn and cause allergic rashes, especially when old and oxidised. Use about 5%.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Bassett et al. 1990, tea tree oil vs benzoyl peroxide (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2145499/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "minoxidil-female-hair-loss",
+  "title": "Minoxidil works for women's thinning hair",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Minoxidil regrows hair in female pattern hair loss",
+    "verdict": "true",
+    "truth": "A Cochrane review found topical minoxidil clearly better than placebo for women's pattern hair loss. It takes 4 to 6 months, shedding can increase at first, and results stop if you stop using it.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "van Zuuren et al. 2016, Cochrane review: interventions for female pattern hair loss",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6457957/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "rosemary-oil-grows-hair",
   "title": "Rosemary oil works as well as minoxidil",
   "topics": [
