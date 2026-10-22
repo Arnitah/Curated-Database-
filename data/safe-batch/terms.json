@@ -243,7 +243,7 @@
   "t": "Everything shower (the order)",
   "what": "A long shower where you do every body step at once. The order matters more than the products.",
   "skin": "Done in this order, each step helps the next: clean skin exfoliates evenly, exfoliated skin shaves closer, and damp skin holds moisturizer best.",
-  "how": "1. Wash hair first (shampoo and conditioner rinse down your body). 2. Cleanse body once with a gentle wash; a second cleanse is only needed after heavy sunscreen, oil or sweat. 3. Scrub or exfoliate, 2 to 3 times a week, never on broken skin. 4. Shave last, on soft, scrubbed skin, with shave gel, going with the hair. 5. Unscented wash for intimate areas: outside only, never inside. 6. Out of the shower: pat almost dry and put on lotion, body butter or oil within 3 minutes. 7. Deodorant on fully dry skin. 8. Scent last, on moisturized skin, where it lasts longest.",
+  "how": "1. Wash hair first, then wash your body after: oils in conditioner can clog pores where they sit. 2. Cleanse body once with a gentle wash; a second cleanse is only needed after heavy sunscreen, oil or sweat. 3. Scrub or exfoliate, 2 to 3 times a week, never on broken skin. 4. Shave last, on soft, scrubbed skin. Never dry shave: use shave gel, body wash or conditioner, shave with the grain, rinse the razor after each stroke, swap it after 5 to 7 shaves and store it dry outside the shower. 5. Unscented wash for intimate areas: outside only, never inside. 6. Out of the shower: pat almost dry and put on lotion or body butter within about 5 minutes. A body oil goes on top, after the lotion, to seal it. 7. Deodorant on fully dry skin. 8. Scent last, on moisturized skin, where it lasts longest. Skip mesh loofahs: they stay damp and grow bacteria. Use your hands, a silicone scrubber or a washcloth you wash after each use.",
   "when": "Once a week or before an event. Daily, keep it to wash, moisturize and deodorant.",
   "season": "Winter: lukewarm water, richer butter, skip the second cleanse. Summer: lighter lotion, and sunscreen on skin you scrubbed or used acids on."
  },
@@ -254,5 +254,13 @@
   "how": "Steam first, black soap 5 minutes, kessa glove, rinse. Then sidr paste, rinse. Tbrima rubbed on damp skin, rinse. Mask last, 10 minutes, rinse before it cracks. Moisturize straight after.",
   "when": "Weekly at most; the glove plus powders is a lot of exfoliation.",
   "season": "Lots of exfoliation, so use sunscreen afterwards, especially in summer. Skip aker fassi and nila on the face if you don't know what they're cut with."
+ },
+ {
+  "t": "In-shower moisturizer and shower oil",
+  "what": "An in-shower moisturizer is a rich lotion or salve you smooth on wet skin at the end of the shower and lightly rinse. A shower oil is an oil with a gentle cleanser in it that turns milky in water.",
+  "skin": "Both leave a thin layer of oil behind, so dry skin feels soft without a separate lotion step.",
+  "how": "In-shower moisturizer: after washing, turn off the water, smooth it on, rinse lightly, pat dry. Shower oil: use it instead of body wash on dry or itchy skin.",
+  "when": "Daily if your skin is dry. In very dry weather, still add a lotion afterwards.",
+  "season": "Winter: shower oil plus body butter. Summer: either one alone is usually enough. Both make the tub slippery, so rinse the floor."
  }
 ]

@@ -42360,5 +42360,49 @@
    "creator": "Safer version of linnacheung7's scrub",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "in-shower-body-salve-hanni-style",
+  "name": "In-shower body salve (hanni Splash Salve-style)",
+  "claim": "Soft, moisturized skin straight out of the shower",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Melt the shea and wax gently, stir in the oils and emulsifier, cool and whip. Polysorbate 80 lets it rinse off milky so only a thin layer stays. At the end of your shower, turn off the water, smooth a scoop over wet skin, rinse lightly, pat dry. No water inside, so it keeps for months; keep water out of the jar.",
+  "rows": [
+   [
+    "shea",
+    40,
+    "g"
+   ],
+   [
+    "sunflower",
+    35,
+    "g"
+   ],
+   [
+    "jojoba",
+    15,
+    "g"
+   ],
+   [
+    "polysorbate80",
+    8,
+    "g"
+   ],
+   [
+    "vite",
+    1,
+    "g"
+   ],
+   [
+    "fragrance",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of hanni Splash Salve",
+   "platform": "Store product"
+  }
  }
 ]

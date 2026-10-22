@@ -1,5 +1,63 @@
 [
  {
+  "id": "shower-routine-dermatologist-tips",
+  "title": "Shower tips: no loofahs, conditioner causes back acne, max 3 blades, oil after lotion, \"in this order for best results\"",
+  "topics": [
+   "body",
+   "acne",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Loofahs are full of bacteria and mould",
+    "verdict": "true",
+    "truth": "Mesh puffs stay damp and collect dead skin, so bacteria grow. Hands, a silicone scrubber or a washcloth washed after each use are cleaner. If you keep a loofah, dry it outside the shower and replace it every few weeks.",
+    "grade": "B"
+   },
+   {
+    "claim": "Conditioner left on your back makes back acne worse",
+    "verdict": "partly",
+    "truth": "Dermatologists confirm the oils in shampoos, conditioners and styling products can clog pores along the hairline, forehead and back of the neck. The back is the same idea but less studied. Rinsing hair first and washing your body after is an easy habit either way.",
+    "grade": "C"
+   },
+   {
+    "claim": "Don't dry shave; no more than 3 blades",
+    "verdict": "partly",
+    "truth": "Dermatologists advise wetting skin and hair first, using shaving gel or cream, shaving with the grain, rinsing the razor after each stroke, replacing it after 5 to 7 shaves and storing it dry outside the shower. The \"3 blades max\" rule isn't in their advice.",
+    "grade": "B"
+   },
+   {
+    "claim": "Body oil goes after lotion",
+    "verdict": "true",
+    "truth": "Lotion adds water and humectants; oil on top seals them in. Oil alone on damp skin also works.",
+    "grade": "B"
+   },
+   {
+    "claim": "Using 7 body washes in a set order gives the best results",
+    "verdict": "false",
+    "truth": "Each wash rinses off the last. One gentle wash (plus an unscented one for intimate areas) does the job; the rest is scent layering.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: hair removal, how to shave",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-basics/hair/how-to-shave"
+   },
+   {
+    "title": "American Academy of Dermatology: are your hair care products causing breakouts?",
+    "url": "https://www.aad.org/hair-care-products"
+   },
+   {
+    "title": "American Academy of Dermatology: top tips for relieving dry skin",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin"
+   }
+  ],
+  "seen_in": "Dr Adel, Jay Alexis, Laila East, Sapphiredelight, The Skincare Institution on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "everything-shower-steps-claims",
   "title": "Everything-shower claims: double cleanse the body, witch hazel to finish, crystal deodorant is natural",
   "topics": [
