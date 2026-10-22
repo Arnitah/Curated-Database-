@@ -1096,8 +1096,24 @@ function pdbSearch(q){
   const d=PDB.names; if(!d) return [];
   q=q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim(); if(q.length<2) return [];
   if(/^\d{6,}$/.test(q)) return d.rows.map((r,i)=>r[2].startsWith(q)?i:-1).filter(i=>i>=0).slice(0,8);
-  const toks=q.split(/\s+/), pref={face:3,sun_care:3,hair:3,body:2,deodorant:2,makeup:1,baby:1,fragrance:1,other:0}, out=[];
-  for(let i=0;i<PDB.hay.length;i++){ const h=PDB.hay[i]; if(!toks.every(t=>h.includes(t))) continue;
+  const exact=pdbRank(q,q.split(/\s+/),(h,t)=>h.includes(t));
+  if(exact.length) return exact;
+  // nothing exact: allow one typo per word of 4+ letters (corsx → cosrx, niacinimide → niacinamide)
+  return pdbRank(q,q.split(/\s+/),(h,t,w)=>h.includes(t)||(t.length>=4&&w.some(x=>pdbNear(x,t))));
+}
+function pdbNear(a,b){
+  if(Math.abs(a.length-b.length)>1) return false;
+  const m=a.length,n=b.length,d=[];
+  for(let i=0;i<=m;i++){ d[i]=[i]; }
+  for(let j=1;j<=n;j++) d[0][j]=j;
+  for(let i=1;i<=m;i++) for(let j=1;j<=n;j++){ const c=a[i-1]===b[j-1]?0:1; d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c); if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1]) d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1); }
+  return d[m][n]<=1;
+}
+function pdbRank(q,toks,ok){
+  const d=PDB.names;
+  if(!PDB.words) PDB.words=PDB.hay.map(h=>h.split(/[^a-z0-9]+/).filter(Boolean));
+  const pref={face:3,sun_care:3,hair:3,body:2,deodorant:2,makeup:1,baby:1,fragrance:1,other:0}, out=[];
+  for(let i=0;i<PDB.hay.length;i++){ const h=PDB.hay[i]; if(!toks.every(t=>ok(h,t,PDB.words[i]))) continue;
     const r=d.rows[i], sc=(r[5]?4:0)+(pref[d.cats[r[3]]]||0)+(h.startsWith(toks[0])?2:0)+(r[0].toLowerCase().includes(q)?2:0)-r[0].length/80;
     out.push([sc,i]); }
   return out.sort((a,b)=>b[0]-a[0]).slice(0,8).map(x=>x[1]);
@@ -1114,7 +1130,7 @@ function pdbHits(k){
   if(q.trim().length<2){ box.innerHTML=''; return; }
   if(!PDB.names){ box.innerHTML=`<p class="hint">${PDB.err?"Couldn't reach the product database. Paste the list instead.":"Loading 14,000 products…"}</p>`; return; }
   const hits=pdbSearch(q), d=PDB.names;
-  box.innerHTML=hits.length?hits.map(i=>{ const r=d.rows[i], c=PDB_CATL[d.cats[r[3]]]; return `<button type="button" class="cp-hit" role="listitem" data-act="cppick" data-v="${k}:${i}"><b>${esc(r[0])}</b><span class="muted">${esc([r[1],c].filter(Boolean).join(' · '))}${r[5]?' · checked':''}</span></button>`; }).join('')
+  box.innerHTML=hits.length?`<p class="hint" style="margin:0">${hits.length===8?'Top 8':hits.length} of ${d.rows.length.toLocaleString()} products. Tap one:</p>`+hits.map(i=>{ const r=d.rows[i], c=PDB_CATL[d.cats[r[3]]]; return `<button type="button" class="cp-hit" role="listitem" data-act="cppick" data-v="${k}:${i}"><b>${esc(r[0])}</b><span class="muted">${esc([r[1],c].filter(Boolean).join(' · '))}${r[5]?' · checked':''}</span></button>`; }).join('')
     :`<p class="hint">No match. Try fewer words or the brand alone, or paste the list below.</p>`;
 }
 function pdbNote(h,canAdd){
@@ -1784,6 +1800,7 @@ function render(){
   $('#palPop').innerHTML = `<b style="padding:4px 10px">Pick a theme</b><p class="small muted" style="padding:0 10px 6px">Each theme has a morning and a tonight version. The Morning / Tonight switch changes between them.</p>` + PALETTES.map(p=>`<button class="pal" type="button" aria-pressed="${p.id===cp.id}" data-act="palette" data-v="${p.id}"><span><b>${p.name}</b><br><span class="small muted">${p.from}</span></span><span class="sws"><small>${ic('sun',12)}${bar(TIME_SW[p.id][0])}</small><small>${ic('moon',12)}${bar(TIME_SW[p.id][1])}</small></span></button>`).join('');
   const {main, rail} = RENDER[S.page]();
   $('#main').innerHTML = `<div class="page"><div class="col">${main}</div><aside class="rail" aria-label="More">${rail}</aside></div>`;
+  if (S.page==='check'&&S.cp){ ['a','b'].forEach(k=>{ if(S.cp['q'+k]){ if(PDB.names) pdbHits(k); else pdbLoad().then(()=>pdbHits(k)); } }); }
   if (false){ const g=$('#yGrid'); if(g){ const t=new Date(), f=(t-new Date(t.getFullYear(),0,1))/864e5/365; g.scrollLeft=Math.max(0,g.scrollWidth*f-g.clientWidth*.7); } }
   save();
 }
@@ -1852,7 +1869,10 @@ document.addEventListener('click', async (e)=>{
   if (a==='amtone'){ AM_TONE=+v; try{ localStorage.setItem('clay-am-tone',v); }catch(e){} try{ claySyncPush('clay-prefs'); }catch(e){} }
   if (a==='mpa') S.mpa=v;
   if (a==='cpmode'){ S.cpMode=v; S.cpShow=false; }
-  if (a==='cpgo'){ S.cpShow=true; }
+  if (a==='cpgo'){
+    for(const k of (S.cpMode==='two'?['a','b']:['a'])){ if(!(S.cp['l'+k]||'').trim()&&(S.cp['q'+k]||'').trim().length>1){ await pdbLoad(); const top=pdbSearch(S.cp['q'+k])[0];
+      if(top!=null){ try{ const h=await pdbRow(top); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; toast('Checked the closest match: '+S.cp['n'+k]); }catch(err){} } } }
+    S.cpShow=true; }
   if (a==='cppick'){ const [k,i]=v.split(':'); try{ const h=await pdbRow(+i); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; S.cpShow=S.cpMode!=='two'||!!(S.cp.la&&S.cp.lb); }catch(err){ toast("Couldn't load that product"); return; } }
   if (a==='cpadd'){ const h=S.cp['h'+v]; if(h){ const area=PDB_AREA[h.cat]||'body', nm=[h.brand,h.name].filter(Boolean).join(' '); const id=Math.max(0,...MP.map(x=>x.id))+1; MP.push({id,a:area,st:pdbStep(area,h.name),n:nm,s:'have',inci:S.cp['l'+v],hub:h.id}); mpSave(); S.cp[v]=String(id); toast('Added to My Shelf as "Have"'); } }
   if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); mpSave(); toast('List saved to '+pr.n); } }
