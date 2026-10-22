@@ -1010,6 +1010,11 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 
 .moved-card{margin-bottom:14px;border-left:4px solid var(--accent)}.clay-exp-box{width:100%;font-size:11px;margin-top:6px}
 .hubf{font-size:12.5px;line-height:1.45;margin-top:6px;padding-top:6px;border-top:1px dashed var(--line,#ddd)}.hubf a{text-decoration:underline}
+.bl-item{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;display:flex;flex-direction:column;gap:8px;background:var(--bg)}
+.bl-head{display:flex;justify-content:space-between;align-items:center}.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:13px}
+.bl-hits{display:flex;flex-direction:column;gap:4px}.bl-hits:empty{display:none}
+.bl-hit{text-align:left;font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer}.bl-hit:hover{border-color:var(--ink)}
+#blend .blabel{margin-top:6px}
 </style>
 
 <div class="wrap">
@@ -1658,6 +1663,18 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
     <div class="mix-chips" id="mixChips" role="group" aria-label="Actives you use"></div>
     <label class="mixrx"><input type="checkbox" id="mixRx"> A doctor or dermatologist prescribed or set up some of this</label>
     <div id="mixOut" aria-live="polite"></div>
+    <section class="panel stack" id="blend" style="margin-top:22px">
+      <h2 class="section-head" style="margin-top:0">Blending products into one jar or bar</h2>
+      <p class="lede">Mixed creams, cut-and-melted beauty soaps, a lotion "cocktail": check every product before you combine them. Search a product or paste its ingredient list.</p>
+      <div id="blendItems"></div>
+      <div class="actions"><button class="btn" id="blendMore">+ Add another product</button></div>
+      <div class="blabel">Will you add anything else?</div>
+      <div class="chips" id="blendAddChips" role="group" aria-label="Additions"></div>
+      <div class="blabel">Where will you use it?</div>
+      <div class="chips" id="blendArea" role="group" aria-label="Where"></div>
+      <div class="actions"><button class="btn primary" id="blendGo">Check the blend</button><button class="btn" id="blendClear">Start over</button></div>
+      <div id="blendOut" aria-live="polite"></div>
+    </section>
   </div>
   <div class="subpanel" id="sp-traditions" hidden>
     <h2 class="section-head" style="margin-top:0">Tradition library</h2>
@@ -2747,9 +2764,9 @@ function analyze(s){
   if(brineSafe) add("info","Too salty to spoil","At this strength the salt solution is hostile to microbes, so it keeps for months without a preservative.");
   if(hasWater && eoG>0 && !emul && !oily) add("info","Shake before each use","Essential oils don't dissolve in water. They float on top, so shake the bottle every time.");
   const mpFat=rows.filter(r=>["oil","butter"].includes(r.ing.ph)).reduce((t,r)=>t+(r.pct||0),0);
-  if(rows.some(r=>["soapbase","shampoobase"].includes(r.id)) && mpFat>8) add("care","Too much oil for melt-and-pour",`Added oils and butters are ${fmt(mpFat)}% of this batch. Above about 5%, melt-and-pour bars turn soft, greasy, and lather poorly. Keep it to about 1 tablespoon per 500 g of base.`);
-  const mpBase=rows.some(r=>["soapbase","shampoobase"].includes(r.id)), mpSafe=mpBase && !fresh.length && water.reduce((t,r)=>t+(r.pct||0),0)<=15;
-  if(store && hasWater && mpSafe) add("info","The soap base protects small additions","Melt-and-pour base is alkaline and mostly soap, so a small splash of water, tea, or rice water sets into the bar instead of spoiling. Larger amounts make soft, sweaty bars.");
+  if(rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)) && mpFat>8) add("care","Too much oil for melt-and-pour",`Added oils and butters are ${fmt(mpFat)}% of this batch. Above about 5%, melt-and-pour bars turn soft, greasy, and lather poorly. Keep it to about 1 tablespoon per 500 g of base.`);
+  const mpBase=rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)), mpSafe=mpBase && !fresh.length && water.reduce((t,r)=>t+(r.pct||0),0)<=15;
+  if(store && hasWater && mpSafe) add("info","The soap protects small additions","Soap (melt-and-pour base or grated bars) is alkaline and mostly soap, so a small splash of water, tea, or rice water sets into the bar instead of spoiling. Larger amounts make soft, sweaty bars.");
   const alcSafe=rows.filter(r=>r.id==="perfumeralc").reduce((t,r)=>t+(r.pct||0),0)>=60 && !fresh.length;
   if(store && hasWater && alcSafe) add("info","The alcohol preserves it","At 60% alcohol or more, a little water can't grow microbes, so no preservative is needed.");
   if(store && hasWater && !pres && !fresh.length && !brineSafe && !mpSafe && !alcSafe) add("stop","This will grow bacteria and mold","Anything with water, aloe, hydrosol, or tea becomes a breeding ground within days, often before you can see or smell anything. Make a single-use amount instead, or add a broad-spectrum preservative such as Geogard ECT."+(falsePres.length?" Vitamin E and grapefruit seed extract don't count: neither stops microbes.":""));
@@ -2765,7 +2782,7 @@ function analyze(s){
       if(store) add("info","Home batches can't be lab-tested","Make small batches, label them with the date, and throw them out after 3 months or at any change in smell, color, or texture.");
     }
   }
-  if(rows.some(r=>["soapbase","shampoobase"].includes(r.id)) && rows.some(r=>["water","fresh","humectant"].includes(r.ing.ph))) add("info","Keep liquid additions small in melt-and-pour","More than about 1 tablespoon of liquid per 500 g base makes bars soft and \"sweaty\". The base itself doesn't need an extra preservative.");
+  if(rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)) && rows.some(r=>["water","fresh","humectant"].includes(r.ing.ph))) add("info","Keep liquid additions small in melt-and-pour","More than about 1 tablespoon of liquid per 500 g base makes bars soft and \"sweaty\". The base itself doesn't need an extra preservative.");
   if(rows.some(r=>r.id==="showergel") && rows.some(r=>["acv","lemonjuice","limejuice","citricacid"].includes(r.id))) add("care","Acid and castile soap cancel out","Vinegar or citrus turns real soap back into greasy fatty acids, so the mix goes cloudy and leaves a waxy film on hair. Wash with the soap, then use the vinegar as a separate, diluted rinse.");
   if(hasWater && rows.some(r=>r.id==="beeswax") && !emul && (store||fridge)) add("info","Beeswax isn't an emulsifier","Beeswax stiffens oils but can't hold water in, so the water seeps out over days. An emulsifying wax makes a stable cream.");
   if(hasWater && oily && !emul){
@@ -6083,6 +6100,151 @@ $("#mixChips").addEventListener("click",e=>{const b=e.target.closest("[data-mix]
 try{ document.getElementById("mixRx").checked=localStorage.getItem("safebatch-mixrx")==="1"; }catch(e){}
 document.getElementById("mixRx").addEventListener("change",e=>{ try{localStorage.setItem("safebatch-mixrx",e.target.checked?"1":"0")}catch(_){} renderMix(); });
 renderMix();
+/* ---------- Blending store products into one jar or bar (mixed creams, cut-and-melted soaps) ---------- */
+const BL_GH="https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
+async function blFetch(f){ const bases=window.SB_DATA_BASE?[window.SB_DATA_BASE]:["",BL_GH]; for(const b of bases){ try{ const r=await fetch(b+f,{cache:"no-cache"}); if(r.ok) return await r.json(); }catch(e){} } throw new Error(f); }
+const BPDB={names:null,hay:null,words:null,loading:null,shards:{},err:false};
+function bpLoad(){ if(BPDB.names) return Promise.resolve(BPDB.names); if(!BPDB.loading) BPDB.loading=blFetch("index/clay/products/names.json").then(d=>{ BPDB.names=d; BPDB.hay=d.rows.map(r=>(r[1]+" "+r[0]).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")); BPDB.words=BPDB.hay.map(h=>h.split(/[^a-z0-9]+/).filter(Boolean)); return d; }).catch(()=>{ BPDB.err=true; BPDB.loading=null; return null; }); return BPDB.loading; }
+function bpNear(a,b){ if(Math.abs(a.length-b.length)>1) return false; const m=a.length,n=b.length,d=[]; for(let i=0;i<=m;i++) d[i]=[i]; for(let j=1;j<=n;j++) d[0][j]=j; for(let i=1;i<=m;i++) for(let j=1;j<=n;j++){ d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1)); if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1]) d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1); } return d[m][n]<=1; }
+function bpSearch(q){
+  const d=BPDB.names; if(!d) return []; q=q.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").trim(); if(q.length<2) return [];
+  if(/^\d{6,}$/.test(q)) return d.rows.map((r,i)=>r[2].startsWith(q)?i:-1).filter(i=>i>=0).slice(0,6);
+  const toks=q.split(/\s+/), run=ok=>{ const out=[]; for(let i=0;i<BPDB.hay.length;i++){ const h=BPDB.hay[i]; if(toks.every(t=>ok(h,t,BPDB.words[i]))) out.push([(h.startsWith(toks[0])?2:0)+(d.rows[i][0].toLowerCase().includes(q)?2:0)-d.rows[i][0].length/80,i]); } return out.sort((a,b)=>b[0]-a[0]).slice(0,6).map(x=>x[1]); };
+  const ex=run((h,t)=>h.includes(t)); return ex.length?ex:run((h,t,w)=>h.includes(t)||(t.length>=4&&w.some(x=>bpNear(x,t))));
+}
+async function bpRow(i){ const d=BPDB.names, key=String(Math.floor(i/d.shard)).padStart(3,"0"); if(!BPDB.shards[key]) BPDB.shards[key]=await blFetch("index/clay/products/"+key+".json"); const r=d.rows[i], x=BPDB.shards[key][i%d.shard]; return {name:[r[1],r[0]].filter(Boolean).join(" "),list:x[1],src:d.srcs[r[4]]}; }
+
+const BL_KIND=[["auto","Work it out from the list"],["soap","Bar soap"],["cream","Cream or lotion"],["oil","Oil or butter"],["serum","Serum or toner"],["other","Something else"]];
+const BL_ADD=[["water","Water, rose water or a hydrosol"],["fresh","Fresh food: milk, yogurt, honey, fruit, aloe from the plant"],["lemon","Lemon or lime juice"],["oil","Extra oil"],["eo","Essential oil or perfume"],["heat","Heat (melting soaps together)"]];
+const BL_RE={
+  mercury:/mercur|calomel|hydrargyr/,
+  steroid:/clobetasol|betamethasone|dexamethasone|hydrocortisone|fluocinolone|fluocinonide|mometasone|triamcinolone|halobetasol|desonide|beclomethasone|fluticasone|prednisolone/,
+  hq:/hydroquinone/,
+  rxret:/tretinoin|retinoic acid|adapalene|tazarotene/,
+  retinol:/retinol\b|retinal\b|retinaldehyde|retinyl|hydroxypinacolone retinoate/,
+  bpo:/benzoyl peroxide/,
+  aha:/glycolic acid|lactic acid|mandelic acid|malic acid|tartaric acid|gluconolactone|lactobionic/,
+  bha:/salicylic acid|betaine salicylate|willow bark/,
+  vitc:/ascorbic acid|ascorbyl|ascorbate/,
+  lighten:/kojic|arbutin|tranexamic|glutathione|glycyrrhiza|licorice|liquorice|niacinamide|azelaic|4-butylresorcinol|thiamidol|carica papaya|papain|bearberry|uva ursi|morus alba|mulberry|alpha-arbutin|hexylresorcinol|ascorbyl glucoside|magnesium ascorbyl/,
+  depil:/thioglycol|barium sulfide|calcium sulfide|strontium sulfide/,
+  soap:/sodium (tallowate|palmate|cocoate|palm kernelate|olivate|castorate|shea ?butterate|babassuate|sunflowerate|rapeseedate|stearate|laurate|myristate|oleate)|potassium (cocoate|oleate|palmate|olivate)|saponified|sodium hydroxide.*(oil|fat|tallow)/,
+  emuls:/cetearyl alcohol|cetyl alcohol|glyceryl stearate|polysorbate|ceteareth|steareth|emulsifying wax|peg-\d+ stearate|sorbitan|polyglyceryl|carbomer|acrylates|stearic acid/,
+  pres:/phenoxyethanol|paraben|sodium benzoate|potassium sorbate|benzyl alcohol|dmdm|chlorphenesin|caprylyl glycol|ethylhexylglycerin|dehydroacetic|isothiazolinone|imidazolidinyl|diazolidinyl|sorbic acid|benzoic acid|1,2-hexanediol|pentylene glycol|leuconostoc|levulinic|anisic/,
+  frag:/^(parfum|fragrance|perfume|aroma)\b|essential oil|\boil of (lavender|lemon|orange|rose)/
+};
+let BL=[{q:"",name:"",list:"",kind:"auto"},{q:"",name:"",list:"",kind:"auto"}], BLADD=new Set(), BLAREA="body";
+try{ const s=JSON.parse(localStorage.getItem("safebatch-blend")||"null"); if(s&&Array.isArray(s.items)&&s.items.length){ BL=s.items.map(x=>({q:"",name:x.name||"",list:x.list||"",kind:x.kind||"auto"})); BLADD=new Set(s.add||[]); BLAREA=s.area||"body"; } }catch(e){}
+function blSave(){ try{ localStorage.setItem("safebatch-blend",JSON.stringify({items:BL.map(({name,list,kind})=>({name,list,kind})),add:[...BLADD],area:BLAREA})); }catch(e){} }
+function blItems(list){ return list.split(/,(?!\d)|\n|•|·|;/).map(x=>x.replace(/[*†‡]+/g,"").trim().toLowerCase()).filter(Boolean); }
+const BL_SINGLE=/^(raw |pure |unrefined |refined |organic |virgin |cold[- ]pressed )*((shea|cocoa|mango|kokum) butter|[a-z ]+ oil|glycerin|glycerine|petroleum jelly|vaseline|aloe vera gel|rose ?water|orange flower water|honey|lanolin|beeswax)$/;
+function blRead(p){
+  let items=blItems(p.list||""); const single=items.length<3&&BL_SINGLE.test((p.name||"").trim().toLowerCase()); if(single&&!items.length) items=[(p.name||"").trim().toLowerCase()];
+  const txt=items.join(", "), nm=(p.name||"").toLowerCase(), has=k=>BL_RE[k].test(txt);
+  const f={}; Object.keys(BL_RE).forEach(k=>{ if(k!=="frag") f[k]=has(k); });
+  f.frag=items.some(x=>BL_RE.frag.test(x));
+  if(/koji/.test(nm)) f.lighten=true;
+  const waterFirst=items.slice(0,2).some(x=>/^(aqua|water|eau)\b/.test(x));
+  const oily=!waterFirst&&items.slice(0,4).filter(x=>/oil|butter|wax|squalane|triglyceride|petrolatum|lanolin|tallow/.test(x)).length>=2;
+  let kind=p.kind!=="auto"?p.kind:f.soap?"soap":(waterFirst&&f.emuls)?"cream":oily?"oil":waterFirst?"serum":"other";
+  if(p.kind==="auto"&&!items.length) kind=/soap|bar\b|savon/.test(nm)?"soap":/oil|butter/.test(nm)?"oil":/cream|lotion|creme|crème/.test(nm)?"cream":"other";
+  f.citricHigh=items.slice(0,6).some(x=>/^citric acid/.test(x));
+  if(single) kind=/water|gel/.test(items[0])?"serum":"oil";
+  return {...f,kind,items,n:single?99:items.length,single,label:p.name||"This product"};
+}
+function blAnalyze(){
+  const P=BL.filter(p=>(p.name||"").trim()||(p.list||"").trim()).map(blRead); if(P.length<1) return null;
+  const out=[], who=f=>P.filter(f).map(p=>p.label), list=a=>a.join(", ");
+  const add=(sev,t,b)=>out.push([sev,t,b]);
+  const merc=who(p=>p.mercury); if(merc.length) add("stop","Mercury: never use, never mix",`${list(merc)} lists mercury (mercurous chloride, calomel, "mercurio"). It damages kidneys and nerves, passes into breast milk, and can reach family members through towels. Seal it in a bag and stop using it.`);
+  const st=who(p=>p.steroid); if(st.length) add("stop","Prescription steroid: don't mix it in",`${list(st)} contains a corticosteroid. These are the hidden drug in many "mixed creams". Spread over the body every day they thin the skin, cause stretch marks, acne and infections, and can upset the body's own hormones. Use a steroid only as a doctor prescribes it, on the spot it's for, never blended into body cream.`);
+  const hq=who(p=>p.hq); if(hq.length) add(BLAREA==="face"&&P.length<=2&&!P.some(p=>p!==P.find(q=>q.hq)&&(p.lighten||p.steroid))?"care":"stop","Hydroquinone: not for blending",`${list(hq)} contains hydroquinone, which is prescription-only or banned in cosmetics in many countries. Used body-wide or for months it can cause ochronosis, a blue-black darkening that's very hard to treat. Never stretch it into a body cream.`);
+  const dep=who(p=>p.depil); if(dep.length) add("stop","Hair-removal product in the mix",`${list(dep)} is a depilatory (thioglycolate or sulfide). It dissolves hair and can burn skin if left on or mixed with anything else. Use it alone, timed, on a patch-tested area.`);
+  const noList=P.filter(p=>p.n<3).map(p=>p.label); if(noList.length) add("care","No ingredient list to check",`${list(noList)}: paste the full list from the label. Lightening creams and "beauty soaps" sold without a full list are the ones most likely to hide mercury or steroids. If the label has no list at all, don't use it.`);
+  const lt=P.filter(p=>p.lighten||p.hq||p.steroid||p.mercury); if(lt.length>=2) add("care","Several lighteners stacked",`${list(lt.map(p=>p.label))} all aim to lighten. Stacking them raises irritation, and irritated skin darkens more on deeper skin tones. Pick one for dark spots and give it 8 to 12 weeks.`);
+  if(BLAREA==="whole"&&lt.length) add("care","Whole body, every day",`Anything spread over the whole body daily is absorbed over a huge area. Keep lightening products to the spots that need them.`);
+  const soaps=P.filter(p=>p.kind==="soap"), leave=P.filter(p=>p.kind!=="soap");
+  const actives=leave.filter(p=>p.aha||p.bha||p.retinol||p.rxret||p.vitc||p.citricHigh);
+  if(soaps.length&&actives.length) add("care","Soap cancels out acids and vitamin C",`Bar soap is alkaline (about pH 9 to 10). Mixed with ${list(actives.map(p=>p.label))}, the acids get neutralized and stop working, and the mix ends up harsher. Use the soap to wash and the active product on its own afterwards.`);
+  if(soaps.length&&leave.length&&!actives.length) add("care","Cream doesn't belong inside a soap",`Lotion or oil stirred into soap makes a soft, sticky bar that goes rancid sooner. If you want both, wash with the soap and moisturize after.`);
+  const ret=P.filter(p=>p.retinol||p.rxret), acid=P.filter(p=>p.aha||p.bha);
+  if(ret.length&&acid.length) add("care","Retinoid plus acids in one jar",`${list(ret.map(p=>p.label))} with ${list(acid.map(p=>p.label))}: together every day is a common cause of peeling and stinging. Keep them in separate products on different nights.`);
+  if(P.some(p=>p.rxret)&&P.some(p=>p.bpo)) add("care","Benzoyl peroxide breaks down tretinoin","Mixed together, benzoyl peroxide oxidizes tretinoin so it stops working. Adapalene is the exception. Use them at different times of day.");
+  const ah=P.filter(p=>p.aha), bh=P.filter(p=>p.bha); if(ah.length+bh.length>=2) add("care","More than one exfoliating acid","Two acid products mixed together over-exfoliate, especially on the body after shaving. One is enough.");
+  if(P.filter(p=>p.aha).length&&BLAREA!=="face") add("info","AHAs raise sunburn risk","Glycolic, lactic and mandelic acid make skin more sensitive to the sun for up to a week after use. Cover up or use sunscreen on those areas.");
+  const creams=P.filter(p=>p.kind==="cream"||p.kind==="serum");
+  if(creams.length>=2) add("care","Two or more creams in one jar",`Mixing in your palm right before use is fine. A whole jar is different: each brand tested its preservative at full strength in its own formula, so a blend can separate and spoil sooner. Make a small batch in a clean jar, use it within about 4 weeks, and throw it out if the smell, colour or texture changes.`);
+  if(BLADD.has("water")&&(creams.length||P.some(p=>p.kind==="oil"))) add("care","Adding water dilutes the preservative","Water, rose water or a hydrosol thins the preservative, and mould or bacteria can grow within days, often before you can see it. Mix single-use amounts, or keep it in the fridge and use it within a week.");
+  if(BLADD.has("fresh")) add("care","Fresh food spoils fast","Milk, yogurt, honey, fruit and fresh aloe carry microbes, and nothing in a store cream is meant to preserve them. Mix only what you'll use today.");
+  if(BLADD.has("lemon")) add("stop","Lemon or lime plus sun can burn","Citrus juice on skin that then sees sunlight can cause blistering burns and dark patches that last months (phytophotodermatitis). It also makes the mix more acidic, so the cream separates. Leave it out.");
+  if(BLADD.has("oil")) add("info","Extra oil: a little is fine","A few drops to a teaspoon per 100 g blends in well. Much more and a cream separates; bar soap turns soft.");
+  if(BLADD.has("eo")||P.filter(p=>p.frag&&p.kind!=="soap").length>=2) add("care","Fragrance adds up","Each product already has its own scent. Adding essential oil or perfume on top pushes the total past what's gentle on skin. Keep added essential oil to 1% on the body (about 20 drops per 100 g), 0.5% on the face, and skip citrus oils on skin that sees sun.");
+  if(BLADD.has("heat")&&creams.length) add("care","Don't heat creams","Heat can break the emulsion and the preservative. Mix creams cold.");
+  const onlySoaps=soaps.length>=2&&soaps.length===P.length&&!P.some(p=>p.mercury||p.steroid||p.hq);
+  if(onlySoaps) add("ok","Melting soaps together works","Finished soaps are already made (saponified), so grating them and melting them together is safe chemistry. The method is below.");
+  if(soaps.some(p=>p.lighten)) add("info","Kojic and other actives mostly rinse off","In a soap, kojic acid, turmeric or papaya touch your skin for under a minute. A blended bar cleans and smells nice; it won't fade spots faster.");
+  if(P.length===1&&!out.length) add("info","Add the products you want to blend","Add a second product to check them together.");
+  const order={stop:0,care:1,info:2,ok:3}; out.sort((a,b)=>order[a[0]]-order[b[0]]);
+  return {P,out,onlySoaps,creams,soaps};
+}
+function blMethod(r){
+  if(r.out.some(o=>o[0]==="stop")) return `<p>Remove the products marked <b>Stop</b> first, then check again. Nothing makes them safe to blend.</p>`;
+  if(r.onlySoaps) return `<ol class="steps"><li>Grate each bar finely. Unscented bars blend most predictably.</li><li>Put the shavings in a heatproof bowl with 1 to 2 tablespoons of water per 100 g of soap. A little milk or aloe works too, but the bar spoils sooner.</li><li>Melt over a pan of simmering water (never in direct heat), stirring, until it's like mashed potatoes. This takes 20 to 40 minutes.</li><li>Press it firmly into a mould and leave it 1 to 2 days before unmoulding.</li><li>Let it dry on a rack for 1 to 2 weeks so it hardens and lasts.</li><li>Patch test on your inner arm for 2 days before using it all over.</li></ol>`;
+  if(r.creams.length) return `<ol class="steps"><li>Best option: keep products separate and mix a pea-sized amount of each in your palm when you apply.</li><li>For a jar, wash it in hot soapy water, rinse and dry it fully. Use a clean spoon, never fingers.</li><li>Mix small batches (enough for 2 to 4 weeks). Don't add water, juice or fresh ingredients.</li><li>Label the jar with what's in it and the date.</li><li>Patch test on your inner arm for 2 days.</li><li>Throw it out if it separates, smells off, changes colour or grows spots.</li></ol>`;
+  return `<ol class="steps"><li>Mix small amounts only, in a clean container, with a clean spoon.</li><li>Patch test on your inner arm for 2 days before using it widely.</li><li>Throw it out if it smells off or changes.</li></ol>`;
+}
+function renderBlend(){
+  const box=$("#blendItems"); if(!box) return;
+  box.innerHTML=BL.map((p,i)=>`<div class="bl-item" data-bl="${i}">
+    <div class="bl-head"><b>Product ${i+1}</b>${BL.length>1?`<button class="linkbtn" data-blrm="${i}" aria-label="Remove product ${i+1}">Remove</button>`:""}</div>
+    <label class="field">Find it<input type="search" data-blq="${i}" value="${esc(p.q||"")}" placeholder="Search store products by name or brand" autocomplete="off"></label>
+    <div class="bl-hits" id="blHits${i}"></div>
+    <label class="field">Name<input type="text" data-bln="${i}" value="${esc(p.name)}" placeholder="e.g. Kojie San soap, Dove Beauty Bar, my body lotion"></label>
+    <label class="field">Ingredients<textarea rows="3" data-bll="${i}" placeholder="Paste the full list from the label">${esc(p.list)}</textarea></label>
+    <label class="field">What is it<select data-blk="${i}">${BL_KIND.map(([k,l])=>`<option value="${k}"${p.kind===k?" selected":""}>${l}</option>`).join("")}</select></label>
+  </div>`).join("");
+  $("#blendAddChips").innerHTML=BL_ADD.map(([k,l])=>`<button class="chip" data-bladd="${k}" aria-pressed="${BLADD.has(k)}">${esc(l)}</button>`).join("");
+  $("#blendArea").innerHTML=[["face","Face"],["body","Body or parts of it"],["whole","Whole body, every day"]].map(([k,l])=>`<button class="chip" data-blarea="${k}" aria-pressed="${BLAREA===k}">${l}</button>`).join("");
+}
+function blShow(){
+  const r=blAnalyze(), o=$("#blendOut");
+  if(!r){ o.innerHTML=`<p class="hint">Add at least one product with its name or ingredient list.</p>`; return; }
+  const worst=r.out.length?r.out[0][0]:"ok";
+  const head={stop:["!","Don't blend this","At least one product here shouldn't be mixed or used at all."],care:["~","Possible, with changes","Nothing here is dangerous on its own, but follow the notes below."],info:["✓","Fine to blend","Just a few tips."],ok:["✓","Fine to blend","No clashes found."]}[worst];
+  const vclass={stop:"v-stop",care:"v-care",info:"v-ok",ok:"v-ok"}[worst];
+  o.innerHTML=`<div class="verdict ${vclass}" style="margin-top:14px"><div class="mark" aria-hidden="true">${head[0]}</div><div><h2>${head[1]}</h2><p>${head[2]}</p></div></div>
+    <p class="hint" style="margin-top:8px">Read as: ${r.P.map(p=>`${esc(p.label)} (${{soap:"bar soap",cream:"cream or lotion",oil:"oil or butter",serum:"water-based serum",other:"unclear"}[p.kind]})`).join(" · ")}</p>
+    ${r.out.length?`<ul class="issues">${r.out.map(([sev,t,b])=>`<li class="issue ${sev==="ok"?"info":sev}"><span class="pill p-${sev}">${{stop:"Stop",care:"Care",info:"Note",ok:"Fine"}[sev]}</span><h3>${esc(t)}</h3><p>${esc(b)}</p></li>`).join("")}</ul>`:""}
+    <div class="panel" style="margin-top:14px"><h3>How to do it right</h3>${blMethod(r)}</div>`;
+}
+let blT=null;
+function blHits(i){
+  const box=document.getElementById("blHits"+i); if(!box) return; const q=(BL[i]&&BL[i].q)||"";
+  if(q.trim().length<2){ box.innerHTML=""; return; }
+  if(!BPDB.names){ box.innerHTML=`<p class="hint">${BPDB.err?"Couldn't load the product list. Paste the ingredients instead.":"Loading products…"}</p>`; return; }
+  const hits=bpSearch(q), d=BPDB.names;
+  box.innerHTML=hits.length?hits.map(k=>`<button class="bl-hit" data-blpick="${i}:${k}"><b>${esc(d.rows[k][0])}</b> <span class="hint">${esc(d.rows[k][1]||"")}</span></button>`).join(""):`<p class="hint">Not in the list yet. Type the name and paste the ingredients below.</p>`;
+}
+(function blWire(){
+  const root=$("#blend"); if(!root) return;
+  root.addEventListener("input",e=>{ const t=e.target, d=t.dataset;
+    if(d.blq!==undefined){ const i=+d.blq; BL[i].q=t.value; clearTimeout(blT); blHits(i); if(!BPDB.names) bpLoad().then(()=>blHits(i)); else blT=setTimeout(()=>blHits(i),120); return; }
+    if(d.bln!==undefined){ BL[+d.bln].name=t.value; blSave(); }
+    if(d.bll!==undefined){ BL[+d.bll].list=t.value; blSave(); } });
+  root.addEventListener("change",e=>{ const d=e.target.dataset; if(d.blk!==undefined){ BL[+d.blk].kind=e.target.value; blSave(); } });
+  root.addEventListener("focusin",e=>{ if(e.target.dataset&&e.target.dataset.blq!==undefined) bpLoad(); });
+  root.addEventListener("click",async e=>{
+    const pk=e.target.closest("[data-blpick]"); if(pk){ const [i,k]=pk.dataset.blpick.split(":").map(Number); try{ const row=await bpRow(k); BL[i]={...BL[i],q:"",name:row.name,list:row.list}; blSave(); renderBlend(); }catch(_){ } return; }
+    const rm=e.target.closest("[data-blrm]"); if(rm){ BL.splice(+rm.dataset.blrm,1); blSave(); renderBlend(); return; }
+    const ad=e.target.closest("[data-bladd]"); if(ad){ const k=ad.dataset.bladd; BLADD.has(k)?BLADD.delete(k):BLADD.add(k); blSave(); ad.setAttribute("aria-pressed",BLADD.has(k)); return; }
+    const ar=e.target.closest("[data-blarea]"); if(ar){ BLAREA=ar.dataset.blarea; blSave(); renderBlend(); return; }
+    if(e.target.closest("#blendMore")){ if(BL.length<6){ BL.push({q:"",name:"",list:"",kind:"auto"}); blSave(); renderBlend(); } return; }
+    if(e.target.closest("#blendGo")){ blShow(); return; }
+    if(e.target.closest("#blendClear")){ BL=[{q:"",name:"",list:"",kind:"auto"},{q:"",name:"",list:"",kind:"auto"}]; BLADD=new Set(); BLAREA="body"; blSave(); renderBlend(); $("#blendOut").innerHTML=""; return; }
+  });
+  renderBlend();
+})();
+
 
 // ---------- My batches: shelf tracker with use-by dates and patch-test reminders ----------
 let batchList=[], batchMode="local", batchCol=null;
@@ -7436,7 +7598,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 208 · 22 Oct 2026";
+const SB_VERSION="Version 209 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }

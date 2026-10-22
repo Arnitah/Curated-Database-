@@ -41385,5 +41385,92 @@
     "drops"
    ]
   ]
+ },
+ {
+  "id": "blended-beauty-bar-rebatched-soaps",
+  "name": "Blended beauty bar (melting soaps together, the right way)",
+  "claim": "Combine the bars you love into one",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Grate finished bars, melt with a little water over simmering water until like mashed potatoes, press into a mould, unmould after 1 to 2 days and dry 1 to 2 weeks. Check every bar's label first in Can I mix these? → Blending products.",
+  "rows": [
+   [
+    "barsoap",
+    200,
+    "g"
+   ],
+   [
+    "water",
+    30,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Family tradition (cutting and mixing beauty soaps)",
+   "platform": "Nigeria, Niger, Gulf, Asia"
+  }
+ },
+ {
+  "id": "enriched-body-cream-safe-mix",
+  "name": "Enriched body cream (mixing creams the safe way)",
+  "claim": "A richer version of the lotion you already use",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Soften the shea, stir it into the lotion with the oil using a clean spoon, in a clean jar. No water, juice or fresh ingredients. Use within 4 weeks and throw out if it separates or smells off.",
+  "rows": [
+   [
+    "storelotion",
+    100,
+    "g"
+   ],
+   [
+    "shea",
+    10,
+    "g"
+   ],
+   [
+    "almond",
+    5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Mixed creams, made safer",
+   "platform": "West Africa"
+  }
+ },
+ {
+  "id": "sidr-gum-arabic-calming-mask-like-inayamorocco",
+  "name": "Sidr and gum arabic calming mask (like InayaMorocco)",
+  "claim": "Antioxidants for tired-looking skin and a soothing film",
+  "type": "face_rinse",
+  "use": "now",
+  "note": "Keep it off the eyelids and lash line: sidr foams and can sting eyes. Leave 10 minutes, rinse, then 2 drops of argan oil.",
+  "rows": [
+   [
+    "sidr",
+    1,
+    "tsp"
+   ],
+   [
+    "gumarabic",
+    0.5,
+    "tsp"
+   ],
+   [
+    "hydrosol",
+    2,
+    "tsp"
+   ],
+   [
+    "argan",
+    2,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "InayaMorocco",
+   "platform": "TikTok"
+  }
  }
 ]

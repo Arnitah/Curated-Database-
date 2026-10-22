@@ -4509,5 +4509,35 @@
   "never": true,
   "lvl": "stop",
   "care": "Peel-off glue masks rip away skin cells and fine hairs, and can leave skin raw and inflamed. They don't pull out blackheads."
+ },
+ {
+  "id": "barsoap",
+  "grp": "Store-bought products",
+  "name": "Store bar soap (grated)",
+  "ph": "surf",
+  "tsp": 4,
+  "lvl": "ok",
+  "good": "Finished bar soap can be grated and melted with a little water into a new bar (rebatching). It's already made, so there's no lye to handle.",
+  "care": "Check the label first: skip \"beauty soaps\" that list mercury (mercurous chloride, calomel) or have no ingredient list. Actives like kojic acid mostly rinse off."
+ },
+ {
+  "id": "storelotion",
+  "grp": "Store-bought products",
+  "name": "Store-bought lotion or cream",
+  "ph": "emul",
+  "d": 1,
+  "lvl": "care",
+  "good": "A finished, preserved cream you can mix a little oil or butter into for a richer feel.",
+  "care": "Its preservative was tested at full strength. Don't add water, juice or fresh ingredients, and mix small batches. Never blend in steroid, hydroquinone or unlabelled lightening creams."
+ },
+ {
+  "id": "gumarabic",
+  "grp": "Preserving and mixing",
+  "name": "Gum arabic (acacia gum)",
+  "ph": "powder",
+  "tsp": 3,
+  "lvl": "ok",
+  "good": "A natural gum that dissolves in water and dries to a light, smooth film; it also thickens masks and gels.",
+  "care": "It thickens but doesn't preserve. Mix fresh. Rarely, people react to acacia."
  }
 ]

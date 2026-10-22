@@ -1,5 +1,254 @@
 [
  {
+  "id": "mixing-creams-and-soaps-is-fine",
+  "title": "Mixing creams or melting soaps together is fine if each one is fine",
+  "topics": [
+   "store-products",
+   "dark-spots",
+   "body"
+  ],
+  "claims": [
+   {
+    "claim": "Grating and melting soaps into one bar is safe",
+    "verdict": "true",
+    "truth": "Finished soaps are already made (saponified), so melting them together with a little water is safe chemistry. Actives like kojic acid mostly rinse off, so the new bar cleans and smells nice rather than fading spots.",
+    "grade": "B"
+   },
+   {
+    "claim": "A mixed cream is just a stronger cream",
+    "verdict": "false",
+    "truth": "Lightening \"mixed creams\" often contain hydroquinone, prescription steroids or mercury. A Lagos dermatology review linked long-term use to ochronosis (blue-black patches), poor wound healing, infections, kidney damage and steroid dependence.",
+    "grade": "A"
+   },
+   {
+    "claim": "If the seller mixed it, it doesn't need a label",
+    "verdict": "false",
+    "truth": "The FDA warns not to use skin products without an ingredient list. Mercury hides behind names like mercurous chloride, calomel or mercurio, and it can reach family members through shared towels.",
+    "grade": "A"
+   },
+   {
+    "claim": "Any two creams can share a jar",
+    "verdict": "partly",
+    "truth": "Mixing in your palm right before use is fine. A whole jar can separate and spoil sooner because each preservative was tested in its own formula. Adding water, juice or fresh food makes mould far more likely.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "FDA: mercury poisoning linked to skin products",
+    "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+   },
+   {
+    "title": "Olumide et al. 2008, Complications of chronic use of skin lightening cosmetics (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18377596/"
+   },
+   {
+    "title": "UNEP Global Mercury Partnership: mercury in skin lightening creams",
+    "url": "https://www.unep.org/globalmercurypartnership/resources/factsheet/fact-sheet-mercury-skin-lightening-creams"
+   },
+   {
+    "title": "Cosmetic misuse of topical corticosteroids among Sudanese women, 2026 (Population Medicine)",
+    "url": "https://www.populationmedicine.eu/Beyond-the-prescription-unveiling-cosmetic-misuse-of-topical-corticosteroids-among,234697,0,2.html"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "Family traditions in Nigeria and Niger; mixing videos from the Gulf and Asia"
+ },
+ {
+  "id": "magic-shaving-powder-for-barbie-smooth-legs",
+  "title": "Shave your legs with Magic shaving powder for Barbie-smooth skin",
+  "topics": [
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "It gives smoother skin than a razor",
+    "verdict": "partly",
+    "truth": "It's a chemical depilatory: thioglycolate dissolves hair at the surface, so there's no razor stubble for a day or two. Regrowth is the same.",
+    "grade": "B"
+   },
+   {
+    "claim": "It's made for legs",
+    "verdict": "false",
+    "truth": "The label says it's only for removing facial hair (made for men's beards and razor bumps). On legs it's off-label.",
+    "grade": "B"
+   },
+   {
+    "claim": "It's gentle",
+    "verdict": "false",
+    "truth": "Thioglycolate can burn. The maker says to do a sensitivity test, wait 36 hours after shaving, avoid broken or inflamed skin, and not follow with alcohol aftershave. Time it exactly and rinse it off fully.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Magic Shaving Powder product page (label directions and warnings)",
+    "url": "https://www.walmart.com/ip/seort/10849168"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "TikTok shelf haul"
+ },
+ {
+  "id": "bha-scrub-deep-cleans-pores",
+  "title": "A BHA scrub gets into your pores to deep clean and dissolve buildup",
+  "topics": [
+   "acne",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Salicylic acid unclogs pores",
+    "verdict": "true",
+    "truth": "Salicylic acid dissolves in oil, and studies show it can unclog pores.",
+    "grade": "A"
+   },
+   {
+    "claim": "A 1% BHA scrub does it in one wash",
+    "verdict": "partly",
+    "truth": "A rinse-off scrub touches skin for under a minute, so it does much less than a leave-on BHA. Daily cleansing does help keep pores clear.",
+    "grade": "B"
+   },
+   {
+    "claim": "Scrubbing harder cleans pores better",
+    "verdict": "false",
+    "truth": "Scrubbing can irritate skin and make pores look larger. Rub gently, or use a non-gritty salicylic cleanser.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: what can treat large facial pores?",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "TikTok shelf haul (St. Ives)"
+ },
+ {
+  "id": "you-need-a-special-foot-shampoo",
+  "title": "You need a special foot shampoo and brush",
+  "topics": [
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Foot shampoo is a separate kind of product",
+    "verdict": "false",
+    "truth": "It's a body wash in a spray bottle. Any gentle body wash or soap cleans feet just as well.",
+    "grade": "B"
+   },
+   {
+    "claim": "Washing feet every day matters",
+    "verdict": "true",
+    "truth": "Dermatologists advise washing feet daily with soap and drying them completely, especially between the toes, to prevent athlete's foot.",
+    "grade": "A"
+   },
+   {
+    "claim": "The brush and spray are worth it",
+    "verdict": "partly",
+    "truth": "A brush and spray make it easier if bending is hard. Just let the brush dry between uses and don't share it.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to prevent athlete's foot",
+    "url": "https://www.aad.org/public/diseases/a-z/athletes-foot-prevent"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "Korean shower routine on TikTok"
+ },
+ {
+  "id": "acid-roll-on-retinol-lotion-and-bha-wash-together",
+  "title": "An AHA underarm roll-on, retinol body lotion and salicylic body wash all work together",
+  "topics": [
+   "body",
+   "underarms",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Each product works",
+    "verdict": "true",
+    "truth": "AHAs, retinol and salicylic acid all have evidence for smoother skin, bumps and dark patches on the body.",
+    "grade": "B"
+   },
+   {
+    "claim": "Use them all at once, every day",
+    "verdict": "false",
+    "truth": "Stacking three exfoliating actives, especially on freshly shaved underarms, is a common cause of stinging and irritation, and irritation leaves dark marks on deeper skin. Use one per area, or alternate days.",
+    "grade": "C"
+   },
+   {
+    "claim": "Acids are fine in the sun",
+    "verdict": "false",
+    "truth": "The FDA says AHAs raise sunburn sensitivity, and the effect lasts up to a week after you stop. Cover up or use sunscreen on those areas.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "FDA: alpha hydroxy acids in cosmetics",
+    "url": "https://www.fda.gov/cosmetics/ingredients/alpha-hydroxy-acids"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "TikTok body care haul"
+ },
+ {
+  "id": "moroccan-weekly-reset-mask-claims",
+  "title": "Nila brightens, sidr de-stresses tired eyes, ghassoul draws out gunk, gum arabic soothes",
+  "topics": [
+   "traditions",
+   "dark-spots",
+   "general"
+  ],
+  "claims": [
+   {
+    "claim": "Nila's indigo compounds brighten skin",
+    "verdict": "unproven",
+    "truth": "Indigo's skin research is for psoriasis (indigo naturalis), not for brightening. Any \"glow\" right after the mask is temporary staining and rinsing.",
+    "grade": "C"
+   },
+   {
+    "claim": "Ghassoul (rhassoul clay) draws out oil",
+    "verdict": "partly",
+    "truth": "Clay soaks up surface oil, so skin feels clean and matte. It doesn't pull out \"toxins\" or clear pores deep down.",
+    "grade": "C"
+   },
+   {
+    "claim": "Sidr de-stresses tired eyes",
+    "verdict": "unproven",
+    "truth": "There's no evidence. Sidr leaves contain saponins, so they foam and can sting, so keep it off the eyelids and lash line.",
+    "grade": "D"
+   },
+   {
+    "claim": "Gum arabic leaves a soothing film",
+    "verdict": "partly",
+    "truth": "Acacia gum dries to a smooth film that feels tightening and soft. It's a nice texture, not a treatment.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Indigo naturalis: systematic review of constituents, effects and clinical uses",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7734464/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2",
+  "seen_in": "InayaMorocco on TikTok"
+ },
+ {
   "id": "lemon-juice-fades-dark-spots",
   "title": "Lemon or lime juice fades dark spots",
   "topics": [

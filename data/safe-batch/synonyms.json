@@ -1,5 +1,17 @@
 [
  [
+  "grated (bar )?soap|bar soap|beauty soap|soap bars?|dove beauty bar|kojie ?san",
+  "barsoap"
+ ],
+ [
+  "(store[- ]bought |body )?(lotion|cream) (from the store|you already have)|store[- ]bought (lotion|cream)|your (body )?lotion",
+  "storelotion"
+ ],
+ [
+  "gum arabic|acacia (gum|senegal)",
+  "gumarabic"
+ ],
+ [
   "tea ?tree",
   "teatree",
   1
