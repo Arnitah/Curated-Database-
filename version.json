@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "updated_at": "2026-10-22T20:04:43.860Z",
+  "version": 8,
+  "updated_at": "2026-10-22T20:19:35.867Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -190,9 +190,9 @@
     },
     "safe-batch/myths": {
       "count": 345,
-      "bytes": 205891,
-      "hash": "7221626f3ff9",
-      "updated_at": "2026-10-22T19:42:55.834Z"
+      "bytes": 211956,
+      "hash": "50509fdae0ec",
+      "updated_at": "2026-10-22T20:19:35.866Z"
     },
     "safe-batch/product_actives": {
       "count": 61,

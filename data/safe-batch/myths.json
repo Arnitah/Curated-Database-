@@ -519,6 +519,392 @@
   "format": "v2"
  },
  {
+  "id": "rosemary-butter-stimulates-hair-growth",
+  "title": "Rosemary butter or infused oil grows hair",
+  "topics": [
+   "hair",
+   "bath",
+   "essential-oils"
+  ],
+  "claims": [
+   {
+    "claim": "Rosemary butter stimulates growth",
+    "verdict": "unproven",
+    "truth": "The only human study used rosemary essential oil on the scalp for 6 months in 100 men, compared with low-strength minoxidil, without a placebo group. A butter or oil with rosemary steeped in it is much weaker and has never been tested.",
+    "grade": "C"
+   },
+   {
+    "claim": "Oiling before washing helps hair",
+    "verdict": "true",
+    "truth": "Coconut oil soaks into the hair fibre and cuts protein loss during washing, so lengths break less. That's a real benefit, but it means keeping length, not new growth.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Panahi et al. 2015, SkinMed (trial record)",
+    "url": "https://eprints.bmsu.ac.ir/738"
+   },
+   {
+    "title": "Rele & Mohile 2003, J Cosmet Sci (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12715094/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "onion-oil-grows-baby-hairs-in-90-days-redensyl-is-clinically",
+  "title": "Onion oil grows baby hairs, and Redensyl is clinically proven",
+  "topics": [
+   "hair",
+   "bath",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Onion grows hair",
+    "verdict": "partly",
+    "truth": "One small 2002 study used raw onion juice on people with alopecia areata (patchy, autoimmune hair loss). It hasn't been tested on everyday thinning or pattern loss, and nobody has tested onion cooked into oil.",
+    "grade": "C"
+   },
+   {
+    "claim": "Redensyl is clinically proven",
+    "verdict": "unproven",
+    "truth": "Its studies are small and run or paid for by the company that sells it. Independent trials are missing.",
+    "grade": "D"
+   },
+   {
+    "claim": "Less shedding after a few weeks means regrowth",
+    "verdict": "false",
+    "truth": "Hair grows about 1 cm a month. Less hair in the drain after weeks of oiling usually means less breakage. Minoxidil is the over-the-counter option with solid proof.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Dr. Jeff Donovan (dermatologist): onion extracts for alopecia areata",
+    "url": "https://donovanmedical.com/hair-blog/aa-onions"
+   },
+   {
+    "title": "American Academy of Dermatology: hair loss diagnosis and treatment",
+    "url": "https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "biotin-in-shampoo-strengthens-hair",
+  "title": "Biotin in shampoo strengthens hair",
+  "topics": [
+   "hair",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Biotin makes hair stronger",
+    "verdict": "partly",
+    "truth": "Biotin helped hair only in people who were actually deficient, which is rare. In a shampoo it rinses away within a minute anyway.",
+    "grade": "B"
+   },
+   {
+    "claim": "Extra biotin is harmless",
+    "verdict": "false",
+    "truth": "High-dose biotin supplements can skew blood tests, including thyroid and troponin (heart attack) tests. Tell your doctor if you take them.",
+    "grade": "A"
+   },
+   {
+    "claim": "Something in the shampoo can strengthen hair",
+    "verdict": "true",
+    "truth": "Hydrolyzed proteins (keratin, rice, wheat) coat hair and make it feel stronger while they're on it.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Patel et al. 2017, Skin Appendage Disorders (review)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5582478/"
+   },
+   {
+    "title": "FDA: biotin interference with lab tests",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "korean-scalp-serums-with-pdrn-and-exosomes-regrow-hair",
+  "title": "Korean scalp serums with PDRN and exosomes regrow hair",
+  "topics": [
+   "hair",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "PDRN regrows hair",
+    "verdict": "unproven",
+    "truth": "The human study on PDRN for hair loss injected it into the scalp together with platelet-rich plasma. There's no good evidence that a serum you brush on gets the same effect.",
+    "grade": "C"
+   },
+   {
+    "claim": "Exosomes regrow hair",
+    "verdict": "unproven",
+    "truth": "The US FDA has approved no exosome product for any use and has warned consumers about unapproved ones. Plant exosomes in cosmetics have almost no human data.",
+    "grade": "B"
+   },
+   {
+    "claim": "Nothing over the counter works",
+    "verdict": "false",
+    "truth": "Minoxidil has solid proof for pattern thinning. What people love about these serums is the brush tip, which makes daily use easy. Viral serums are often faked, so buy from the brand or a major retailer.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Platelet-rich plasma and PDRN injections for female pattern hair loss, 2015 (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25524027/"
+   },
+   {
+    "title": "FDA consumer alert: stem cell and exosome products",
+    "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes"
+   },
+   {
+    "title": "van Zuuren et al. 2016, Cochrane review: interventions for female pattern hair loss",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6457957/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "amla-bhringraj-and-brahmi-make-hair-grow-fast",
+  "title": "Amla, bhringraj and brahmi make hair grow fast",
+  "topics": [
+   "hair",
+   "traditions"
+  ],
+  "claims": [
+   {
+    "claim": "Bhringraj grows hair",
+    "verdict": "unproven",
+    "truth": "The growth evidence comes from studies in rats and mice, not people.",
+    "grade": "D"
+   },
+   {
+    "claim": "Amla and brahmi grow hair",
+    "verdict": "unproven",
+    "truth": "There are no good human studies.",
+    "grade": "D"
+   },
+   {
+    "claim": "They're still worth using",
+    "verdict": "partly",
+    "truth": "As oils and masks they condition hair and may cut breakage, which helps you keep length. Healthy growth still comes from a clean scalp, low tension and gentle handling.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Hair growth promoting activity of Eclipta alba in male albino rats, 2008 (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18478241/"
+   },
+   {
+    "title": "Comparative hair restorer efficacy of medicinal herbs on nude mice, 2014",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4247959/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "black-sesame-and-honey-reverse-grey-hair",
+  "title": "Black sesame and honey reverse grey hair",
+  "topics": [
+   "hair",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "A seed paste reverses greys",
+    "verdict": "false",
+    "truth": "Grey hair comes mostly from genes and age. A 2024 review says greying usually advances gradually and is permanent, with only occasional reports of colour coming back on its own.",
+    "grade": "B"
+   },
+   {
+    "claim": "Diet has nothing to do with it",
+    "verdict": "partly",
+    "truth": "Early greying has been linked in small studies to low vitamin B12, iron, copper, vitamin D or an underactive thyroid. A doctor can test for these. Sesame is a fine snack unless you're allergic.",
+    "grade": "C"
+   },
+   {
+    "claim": "Natural options can cover grey",
+    "verdict": "true",
+    "truth": "Henna and indigo stain grey hair. They cover it; they don't reverse it.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Poonia & Bhalla 2024, Premature graying of hair: a comprehensive review",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11444426/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "thickening-shampoos-and-scalp-serums-grow-thicker-hair",
+  "title": "Thickening shampoos and scalp serums grow thicker hair",
+  "topics": [
+   "hair",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Thickening shampoos grow new hair",
+    "verdict": "false",
+    "truth": "They coat and swell existing strands for a fuller feel until your next wash. They don't create new hairs.",
+    "grade": "B"
+   },
+   {
+    "claim": "Peptide and caffeine serums regrow hair",
+    "verdict": "unproven",
+    "truth": "The evidence is modest and mostly paid for by the brands.",
+    "grade": "C"
+   },
+   {
+    "claim": "Thinning can be treated",
+    "verdict": "true",
+    "truth": "Minoxidil is the proven over-the-counter option for pattern thinning. Sudden shedding after stress, illness, surgery or a new baby usually settles within months. A doctor can check iron and thyroid.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: hair loss diagnosis and treatment",
+    "url": "https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat"
+   },
+   {
+    "title": "American Academy of Dermatology: female pattern hair loss",
+    "url": "https://www.aad.org/public/diseases/hair-loss/types/female-pattern"
+   },
+   {
+    "title": "van Zuuren et al. 2016, Cochrane review: interventions for female pattern hair loss",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6457957/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "hair-growth-multivitamins-grew-my-hair-long",
+  "title": "Hair growth multivitamins grew my hair long",
+  "topics": [
+   "hair",
+   "acne",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Hair vitamins grow hair",
+    "verdict": "partly",
+    "truth": "A 2019 review found that vitamins and minerals help hair only when you're short on one. A blood test can show iron, vitamin D or zinc levels. Taking more than you need doesn't add growth, and too much vitamin A or selenium can cause hair loss.",
+    "grade": "B"
+   },
+   {
+    "claim": "Biotin gummies are harmless",
+    "verdict": "false",
+    "truth": "High-dose biotin can trigger breakouts in some people, and it skews thyroid and heart blood tests. Tell your doctor before any blood work.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Almohanna et al. 2019, The role of vitamins and minerals in hair loss (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30547302/"
+   },
+   {
+    "title": "FDA: biotin interference with lab tests",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "ayurvedic-herbs-stop-postpartum-hair-loss",
+  "title": "Ayurvedic herbs stop postpartum hair loss",
+  "topics": [
+   "hair",
+   "pregnancy",
+   "traditions",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Herbs stop postpartum shedding",
+    "verdict": "false",
+    "truth": "Shedding a few months after birth is normal. Hairs that pregnancy hormones held in the growing phase fall at the same time. It peaks about 4 months after birth and most women are back to their usual thickness by the baby's first birthday. Masks and rinses add shine but can't stop it.",
+    "grade": "B"
+   },
+   {
+    "claim": "You should just wait",
+    "verdict": "partly",
+    "truth": "Gentle handling and loose styles help. If shedding goes past a year or comes out in patches, ask a doctor to check iron and thyroid.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: hair loss in new moms",
+    "url": "https://www.aad.org/public/diseases/hair-loss/insider/new-moms"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "bur-bur-is-a-dht-blocker-that-stops-shedding-and-grows-new-h",
+  "title": "BUR BUR is a DHT blocker that stops shedding and grows new hair in 3 weeks",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Nettle in it blocks DHT",
+    "verdict": "unproven",
+    "truth": "Nettle's DHT evidence is for nettle root taken by mouth, in prostate studies. This product uses nettle leaf on the scalp.",
+    "grade": "D"
+   },
+   {
+    "claim": "Burdock grows hair",
+    "verdict": "unproven",
+    "truth": "Burdock may soothe a dry, itchy scalp, but there's no evidence it grows hair. Bakuchiol and vitamin C are face ingredients with no hair-growth data.",
+    "grade": "D"
+   },
+   {
+    "claim": "New hair in 3 weeks",
+    "verdict": "false",
+    "truth": "Hair grows about 1 cm a month, so real regrowth takes months to see. Less hair in the drain after 3 weeks usually means less breakage or a calmer scalp. For thinning that worries you, minoxidil has the evidence. A homemade version is in Recipes.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: hair loss diagnosis and treatment",
+    "url": "https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat"
+   },
+   {
+    "title": "van Zuuren et al. 2016, Cochrane review: interventions for female pattern hair loss",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6457957/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "saudi-brightening-stores-checked-super-girl-skincare-bakry-w",
   "title": "Saudi \"brightening\" stores, checked (Super Girl, Skincare Bakry, Whitura, Bahati, Freshes)",
   "topics": [
@@ -1301,42 +1687,6 @@
   "format": "legacy"
  },
  {
-  "id": "onion-oil-grows-baby-hairs-in-90-days-redensyl-is-clinically",
-  "title": "\"Onion oil grows baby hairs in 90 days\" / \"Redensyl is clinically proven\"",
-  "topics": [
-   "hair",
-   "bath",
-   "store-products"
-  ],
-  "body": "The onion evidence is one small 2002 study using raw onion juice on people with alopecia areata (patchy, autoimmune hair loss), not everyday thinning or pattern loss, and no study has tested onion cooked into oil. Redensyl's studies are run or paid for by the company that sells it, with small groups. Coconut oil does soak into hair and cuts breakage; sesame mostly coats it. Rosemary oil's evidence is one small study, not proof. Less shedding after a few weeks usually means less breakage from oiling, not new growth. Odourless store-bought onion oils mostly contain a little onion extract in a plain oil blend.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "bur-bur-is-a-dht-blocker-that-stops-shedding-and-grows-new-h",
-  "title": "\"BUR BUR is a DHT blocker that stops shedding and grows new hair in 3 weeks.\"",
-  "topics": [
-   "hair"
-  ],
-  "intro": "Mostly no. Nettle's DHT evidence is for nettle",
-  "claims": [
-   {
-    "claim": "root",
-    "truth": "taken by mouth, in prostate studies; this uses nettle",
-    "verdict": null
-   },
-   {
-    "claim": "leaf",
-    "truth": "on the scalp. Burdock soothes a dry, itchy scalp, but there's no evidence it grows hair, and bakuchiol and vitamin C are face ingredients with no hair-growth data. Hair grows about 1 cm a month, so real regrowth takes 3 to 6 months to see. Less hair in the shower drain after 3 weeks usually means less breakage (oiled hair snaps less) or a calmer scalp, which is a real benefit, just not growth. Oils don't \"sink into skin cells\" either. For thinning that worries you, minoxidil has the evidence; see a doctor or dermatologist. A homemade version is in Recipes, at a fraction of the price.",
-    "verdict": null
-   }
-  ],
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
   "id": "body-toner-makes-perfume-last-twice-as-long-suppin-is-100-sa",
   "title": "\"Body toner makes perfume last twice as long\" / \"Suppin is 100% safe overnight because it's skincare, not makeup\"",
   "topics": [
@@ -1358,19 +1708,6 @@
    "store-products"
   ],
   "body": "A dry oil is 100% oil; it just absorbs fast, thanks to light oils and esters. \"Natural origin\" counts ingredients made from plants, including processed esters, so it says little about safety or quality. Nuxe's Néroli scent is relaxing to smell, but \"therapeutic aromatherapy\" is a marketing claim, and plum oil is gentle rather than proven to soothe. Homemade versions of all six are in Recipes.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "rosemary-butter-stimulates-hair-growth",
-  "title": "\"Rosemary butter stimulates hair growth.\"",
-  "topics": [
-   "hair",
-   "bath",
-   "essential-oils"
-  ],
-  "body": "Half true. Coconut oil as a pre-shampoo is well supported: it soaks into the hair fibre and cuts protein loss during washing. The growth claim comes from a small study of rosemary essential oil on the scalp; a herb infused in coconut oil is much weaker and untested. Enjoy it for softer, stronger lengths, not new growth. Also, check temperature with a thermometer, not your finger.",
   "sources": [],
   "checked": null,
   "format": "legacy"
@@ -1528,20 +1865,6 @@
    "oral"
   ],
   "body": "Olive oil is a healthy food fat, but a shot doesn't do more for skin than using it in meals. Castor oil packs feel warm and relaxing, but there's no evidence they detox anything; skip them over the belly in pregnancy and on broken skin. Oil pulling reduced plaque about as well as mouthwash in small studies, but it doesn't replace brushing and flossing. Spit the oil into the trash, not the sink.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "ayurvedic-herbs-stop-postpartum-hair-loss",
-  "title": "\"Ayurvedic herbs stop postpartum hair loss.\"",
-  "topics": [
-   "hair",
-   "pregnancy",
-   "traditions",
-   "diet"
-  ],
-  "body": "Shedding 2 to 4 months after birth is normal: hairs held in the growing phase by pregnancy hormones all fall at once, peak around month 4 and usually settle by the first birthday. Herb masks and rinses condition and add shine; they can't stop it. Gentle handling, loose styles and good food help. If shedding goes past a year or comes in patches, ask a doctor to check iron and thyroid.",
   "sources": [],
   "checked": null,
   "format": "legacy"
@@ -1956,18 +2279,6 @@
   "format": "legacy"
  },
  {
-  "id": "korean-scalp-serums-with-pdrn-and-exosomes-regrow-hair",
-  "title": "\"Korean scalp serums with PDRN and exosomes regrow hair.\"",
-  "topics": [
-   "hair",
-   "store-products"
-  ],
-  "body": "PDRN (salmon DNA) and plant exosomes have very little human evidence on the scalp. Caffeine and copper peptides have small studies for shedding. What people love is the format: a brush tip that makes daily use easy and cooling. Minoxidil is still the over-the-counter option with solid proof. Viral serums are often counterfeited, so buy from the brand or a major retailer.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
   "id": "biotin-and-peptide-lash-serums-grow-lashes-like-the-prostagl",
   "title": "\"Biotin and peptide lash serums grow lashes like the prostaglandin ones.\"",
   "topics": [
@@ -1986,19 +2297,6 @@
    "store-products"
   ],
   "body": "Sometimes it really is close: Trader Joe's original hand cream shares the shea-and-coconut base of L'Occitane's, for a fraction of the price. Compare ingredient lists, not packaging. Watch the scented editions, which add fragrance allergens (coumarin, cinnamal, eugenol), and remember a 0.3% retinol is a gentle starter, not a stronger product.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "hair-growth-multivitamins-grew-my-hair-long",
-  "title": "\"Hair growth multivitamins grew my hair long.\"",
-  "topics": [
-   "hair",
-   "acne",
-   "diet"
-  ],
-  "body": "Supplements like Mary Ruth's help only if you're short on something (iron, vitamin D, zinc or biotin), which a blood test can show. High-dose biotin can trigger breakouts in some people and skews thyroid and heart lab tests, so tell your doctor. Postpartum shedding usually settles on its own in 6 to 12 months. For thinning, minoxidil is the proven option; good hair also comes from low tension and gentle handling.",
   "sources": [],
   "checked": null,
   "format": "legacy"
@@ -2157,18 +2455,6 @@
   "format": "legacy"
  },
  {
-  "id": "black-sesame-and-honey-reverse-grey-hair",
-  "title": "\"Black sesame and honey reverse grey hair.\"",
-  "topics": [
-   "hair",
-   "diet"
-  ],
-  "body": "This is a food, not a hair treatment, and the before and after photo isn't real. Grey hair comes mostly from genes and age; once a follicle stops making pigment, no seed paste restarts it. A spoonful of sesame is a fine snack (skip it with a sesame allergy). Early greying can sometimes be linked to low B12, iron, copper or thyroid problems, which a doctor can check. To cover grey naturally, henna and indigo stain hair; they don't reverse it.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
   "id": "homemade-scent-balls-in-the-toilet-tank-keep-the-house-fresh",
   "title": "\"Homemade scent balls in the toilet tank keep the house fresh.\"",
   "topics": [
@@ -2186,18 +2472,6 @@
    "essential-oils"
   ],
   "body": "Castor oil conditions lashes so they look glossier, but no herb oil has good evidence for growing lashes. Keep essential oils well away from the eyes. Prescription bimatoprost (Latisse) is the only proven lash grower and has side effects worth asking a doctor about.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "biotin-in-shampoo-strengthens-hair",
-  "title": "\"Biotin in shampoo strengthens hair.\"",
-  "topics": [
-   "hair",
-   "diet"
-  ],
-  "body": "Biotin only helps hair if you're actually deficient, which is rare, and in a shampoo it rinses away. Proteins like hydrolyzed keratin or rice protein do coat hair and add strength while they're on it. Biotin supplements can also skew thyroid and heart blood tests, so tell your doctor if you take them.",
   "sources": [],
   "checked": null,
   "format": "legacy"
@@ -2401,36 +2675,12 @@
   "format": "legacy"
  },
  {
-  "id": "amla-bhringraj-and-brahmi-make-hair-grow-fast",
-  "title": "\"Amla, bhringraj and brahmi make hair grow fast.\"",
-  "topics": [
-   "hair",
-   "traditions"
-  ],
-  "body": "These Ayurvedic herbs condition hair and may cut breakage, which helps you keep length. The growth evidence for bhringraj comes from animal studies, and there's little for amla or brahmi. Ambunu from Chad is a slippery detangler, not a growth herb. Shea butter softens and seals ends. All of them are nice, cheap options, but healthy growth still comes from a clean scalp, low tension and gentle handling.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
   "id": "korean-hair-products-don-t-work-on-black-hair",
   "title": "\"Korean hair products don't work on Black hair.\"",
   "topics": [
    "hair"
   ],
   "body": "Hair care works by what your scalp and strands need, not where a product is made. Choose by scalp first (oily, dry, flaky or sensitive decides how often you wash), then by hair condition and porosity. Low porosity: lighter, water-based leave-ins and mists, with gentle heat under a cap so a mask spreads. High porosity or damaged: richer masks and a leave-in, sealed with oil on the ends. Creators like seonnej use brands such as Aromatica, Dr.FORHAIR, Mise en Scène, Unove and MoAC this way.",
-  "sources": [],
-  "checked": null,
-  "format": "legacy"
- },
- {
-  "id": "thickening-shampoos-and-scalp-serums-grow-thicker-hair",
-  "title": "\"Thickening shampoos and scalp serums grow thicker hair.\"",
-  "topics": [
-   "hair",
-   "store-products"
-  ],
-  "body": "\"Thickening\" shampoos and conditioners (like Dr.FORHAIR Folligen) add volume and a fuller feel for a day; they don't create new hairs. Scalp serums with peptides or caffeine have modest, mostly brand-funded evidence. Sudden shedding after stress, surgery, illness or a new baby (telogen effluvium) usually settles in 3 to 6 months; a doctor can check iron, thyroid and vitamin D. For ongoing thinning, minoxidil is the proven option.",
   "sources": [],
   "checked": null,
   "format": "legacy"
