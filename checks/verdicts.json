@@ -6175,5 +6175,21 @@
  "in-shower-body-salve-hanni-style": {
   "verdict": "ok",
   "flags": []
+ },
+ "taif-rose-sugar-scrub-miss-white-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "moroccan-nila-sugar-scrub-miss-white-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated"
+  ]
+ },
+ "oat-milk-body-lotion-hatomugi-style": {
+  "verdict": "ok",
+  "flags": []
  }
 }

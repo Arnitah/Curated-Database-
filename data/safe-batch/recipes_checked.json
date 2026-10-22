@@ -42404,5 +42404,157 @@
    "creator": "Dupe of hanni Splash Salve",
    "platform": "Store product"
   }
+ },
+ {
+  "id": "taif-rose-sugar-scrub-miss-white-style",
+  "name": "Taif rose sugar scrub (Miss White-style)",
+  "claim": "A rose-scented polish for soft, glowing skin",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix the dry ingredients, stir in the oils, scoop with a dry spoon. Beetroot powder gives the red colour (the original is likely dyed). It polishes and leaves skin soft and fragrant; it won't lighten skin. 2 to 3 times a week, not on freshly shaved skin.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "rosepowder",
+    3,
+    "g"
+   ],
+   [
+    "beetrootpow",
+    1,
+    "g"
+   ],
+   [
+    "sunflower",
+    25,
+    "g"
+   ],
+   [
+    "jojoba",
+    10,
+    "g"
+   ],
+   [
+    "polysorbate80",
+    3,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ],
+   [
+    "roseeo",
+    4,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Miss White Taif Rose Scrub",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "moroccan-nila-sugar-scrub-miss-white-style",
+  "name": "Moroccan nila sugar scrub (Miss White-style)",
+  "claim": "A blue hammam polish",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix dry, then add the oils; scoop with a dry spoon. Pure nila is used in a pinch for colour: much of what's sold is cut with synthetic blue dye, so buy from a seller who lists it as pure indigo and patch test. Nila doesn't lighten skin; any glow is from exfoliating. It can tint grout and towels.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "nila",
+    0.5,
+    "g"
+   ],
+   [
+    "sunflower",
+    25,
+    "g"
+   ],
+   [
+    "argan",
+    10,
+    "g"
+   ],
+   [
+    "polysorbate80",
+    3,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Miss White Moroccan Nila Scrub",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "oat-milk-body-lotion-hatomugi-style",
+  "name": "Light body milk (Hatomugi-style)",
+  "claim": "A watery, fast-absorbing body milk for daily moisture",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Hatomugi's coix seed (Job's tears) extract is a mild soothing extract; colloidal oats do a similar, better-studied job. Heat water, glycerin, panthenol and xanthan, and Olivem with sunflower, to 70°C, blend, cool below 40°C, stir in the finely ground colloidal oats and preservative. Very light, like the original.",
+  "rows": [
+   [
+    "water",
+    82,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "olivem",
+    3,
+    "g"
+   ],
+   [
+    "sunflower",
+    6,
+    "g"
+   ],
+   [
+    "oats",
+    1,
+    "g"
+   ],
+   [
+    "panthenol",
+    1,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.2,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Hatomugi Body Milk",
+   "platform": "Store product"
+  }
  }
 ]

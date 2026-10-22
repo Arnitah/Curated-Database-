@@ -1,5 +1,69 @@
 [
  {
+  "id": "deep-exfoliation-shower-and-lightening-scrubs",
+  "title": "Deep exfoliation shower (wash + glove, scrub + glove, AHA toner all over, glycolic lotion), and scrubs \"you need for lightening\"",
+  "topics": [
+   "body",
+   "dark-spots",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Glove, scrub, a 7 to 15% AHA spray and a glycolic lotion in one routine",
+    "verdict": "false",
+    "truth": "Each step exfoliates. Stacked together they over-exfoliate, causing stinging, redness and, on deeper skin, darker patches. Pick one: a scrub or glove 2 to 3 times a week, or one acid product. The post itself notes to skip the toner if you use the glycolic lotion.",
+    "grade": "B"
+   },
+   {
+    "claim": "Exfoliating makes products absorb 2x better",
+    "verdict": "unproven",
+    "truth": "Removing dead skin helps lotion spread and feel better, but there's no measurement behind \"2x\".",
+    "grade": "D"
+   },
+   {
+    "claim": "An AHA toner sprayed all over brightens skin",
+    "verdict": "partly",
+    "truth": "AHAs smooth rough skin and can fade marks over weeks. They raise sunburn risk for up to a week, so use sunscreen on those areas.",
+    "grade": "A"
+   },
+   {
+    "claim": "Taif rose and nila scrubs lighten skin",
+    "verdict": "false",
+    "truth": "A sugar scrub removes dead skin so skin looks brighter for a day; it doesn't change your skin colour. Dermatologists say dark spots take months and leave-on treatments plus sunscreen.",
+    "grade": "B"
+   },
+   {
+    "claim": "Antiperspirant works best at night",
+    "verdict": "true",
+    "truth": "Applied to dry skin at night, when you sweat less, the active ingredient plugs sweat ducts more effectively and still works the next day after a shower.",
+    "grade": "B"
+   },
+   {
+    "claim": "Mix body butter and oil in your hands instead of layering",
+    "verdict": "true",
+    "truth": "A sensible hack: one layer on damp skin seals moisture in with less greasiness and transfer.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "FDA: alpha hydroxy acids in cosmetics",
+    "url": "https://www.fda.gov/cosmetics/ingredients/alpha-hydroxy-acids"
+   },
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   },
+   {
+    "title": "American Academy of Dermatology: hyperhidrosis treatment (antiperspirant at night)",
+    "url": "https://www.aad.org/public/diseases/a-z/hyperhidrosis-treatment"
+   }
+  ],
+  "seen_in": "The Skincare Institution, Bousso, Muskaan, Tina Khoza, Miss Liz, Miss White on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "shower-routine-dermatologist-tips",
   "title": "Shower tips: no loofahs, conditioner causes back acne, max 3 blades, oil after lotion, \"in this order for best results\"",
   "topics": [
