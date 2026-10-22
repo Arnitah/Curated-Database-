@@ -1,5 +1,21 @@
 [
  [
+  "corn ?starch|cornflour|نشا",
+  "cornstarch"
+ ],
+ [
+  "white henna|الحناء البيضاء|حنه بيضا",
+  "whitehenna"
+ ],
+ [
+  "glysolid|glycerin cream",
+  "storelotion"
+ ],
+ [
+  "herbolene|aloe (vera )?(petroleum )?jelly",
+  "petrolatum"
+ ],
+ [
   "grated (bar )?soap|bar soap|beauty soap|soap bars?|dove beauty bar|kojie ?san",
   "barsoap"
  ],

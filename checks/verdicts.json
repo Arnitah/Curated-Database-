@@ -6054,5 +6054,56 @@
  "sidr-gum-arabic-calming-mask-like-inayamorocco": {
   "verdict": "ok",
   "flags": []
+ },
+ "gulf-brightening-soap-paste-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "gulf-soap-paste-safer-small-batch": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "gulf-soap-paste-full-haul-inher66-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: \"White henna\" isn't henna: check the label",
+   "care: Check what's in your aker fassi",
+   "care: Nila powder stains and is often adulterated",
+   "care: Stretching a store cream",
+   "care: Too much oil for melt-and-pour",
+   "care: Turmeric stains and can cause allergy",
+   "care: Use sweet almond, not bitter almond",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "lemon-scrub-balls-as-posted-shima": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Fresh zest can sun-sensitize and spoil",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "lemon-scrub-balls-long-lasting": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sidr-and-coconut-milk-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glysolid-aloe-jelly-shea-whip-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Stretching a store cream"
+  ]
+ },
+ "shea-and-jelly-body-butter-no-water": {
+  "verdict": "ok",
+  "flags": []
  }
 }

@@ -4539,5 +4539,25 @@
   "lvl": "ok",
   "good": "A natural gum that dissolves in water and dries to a light, smooth film; it also thickens masks and gels.",
   "care": "It thickens but doesn't preserve. Mix fresh. Rarely, people react to acacia."
+ },
+ {
+  "id": "cornstarch",
+  "grp": "Powders and exfoliants",
+  "name": "Corn starch",
+  "ph": "powder",
+  "tsp": 2.6,
+  "lvl": "ok",
+  "good": "Thickens soap pastes and scrub balls and absorbs sweat in body powders.",
+  "care": "It's food for microbes once wet, so anything with starch and water spoils faster. Skip on skin prone to yeast rashes."
+ },
+ {
+  "id": "whitehenna",
+  "grp": "Store-bought products",
+  "name": "\"White henna\" (الحناء البيضاء)",
+  "ph": "powder",
+  "tsp": 2,
+  "lvl": "care",
+  "flag": "\"White henna\" isn't henna: check the label",
+  "care": "Real henna only stains orange-red, so \"white henna\" is a blend whose contents vary by seller. Use only one with a full ingredient list, and patch test for 2 days."
  }
 ]

@@ -1,5 +1,140 @@
 [
  {
+  "id": "soap-paste-sabounia-lightens-and-removes-pigmentation",
+  "title": "A soap paste (صابونية تفتيح) made from lightening soaps removes pigmentation and lightens the body",
+  "topics": [
+   "dark-spots",
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Kojic, licorice and turmeric soaps lighten skin",
+    "verdict": "false",
+    "truth": "Kojic acid can fade spots, but only in a product that stays on the skin. In a soap or paste it's rinsed off within minutes, so blended soaps clean and soften rather than lighten.",
+    "grade": "B"
+   },
+   {
+    "claim": "Fading dark spots is quick",
+    "verdict": "false",
+    "truth": "Dermatologists say a spot a few shades darker usually takes 6 to 12 months to fade once the cause stops; leave-on treatments and daily sunscreen speed it up.",
+    "grade": "A"
+   },
+   {
+    "claim": "Melting soaps in rose water is safe",
+    "verdict": "partly",
+    "truth": "Grated soaps are safe to combine. A whole bottle of rose water plus starch in a big jar can grow mould, so make a small batch, keep it in the fridge and use it within 2 weeks.",
+    "grade": "C"
+   },
+   {
+    "claim": "Ready-made jars from sellers are the same thing",
+    "verdict": "unproven",
+    "truth": "A homemade-style jar sold online needs a preservative and a full ingredient list. Dermatologists warn that some imported lightening products hide steroids or mercury.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   },
+   {
+    "title": "FDA: mercury poisoning linked to skin products",
+    "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+   }
+  ],
+  "seen_in": "Gulf TikTok (عناية وتجارب, inher66); Ghaim Care store",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "glysolid-aloe-jelly-shea-whip-is-the-best-moisturiser",
+  "title": "Whipping Glysolid, aloe petroleum jelly, shea and almond oil makes the ultimate moisturiser",
+  "topics": [
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "It moisturises very dry skin well",
+    "verdict": "true",
+    "truth": "Petroleum jelly and shea seal water in and glycerin pulls it in. Dermatologists say ointments work better and irritate less than lotions, especially applied on damp skin.",
+    "grade": "A"
+   },
+   {
+    "claim": "Herbolene is an aloe treatment",
+    "verdict": "partly",
+    "truth": "Its ingredients are mineral oil, paraffin and wax with a little aloe extract, vitamin E and perfume. The petroleum jelly does the work.",
+    "grade": "B"
+   },
+   {
+    "claim": "You can whip a big tub that lasts",
+    "verdict": "partly",
+    "truth": "Glysolid is a water-based cream. Stretched into butters its preservative is diluted, so make small tubs or leave the cream out. Both creams are perfumed, so patch test if scent irritates you.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: 5 ways to use petroleum jelly",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/petroleum-jelly"
+   },
+   {
+    "title": "Dabur Herbolene Aloe Petroleum Jelly ingredient list",
+    "url": "https://skinsort.com/products/dabur/herbolene-aloe-petroleum-jelly"
+   },
+   {
+    "title": "Glysolid Glycerin Cream ingredient list",
+    "url": "https://www.smallflower.com/products/glysolid-glycerin-cream-tin-400-ml"
+   }
+  ],
+  "seen_in": "Vlogger lama on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "thai-shower-haul-aha-scrub-niacinamide-soap-herbal-shampoo",
+  "title": "Tomato berry AHA scrub, a niacinamide \"brightening\" facial soap and a 7-herb anti-hair-loss shampoo",
+  "topics": [
+   "body",
+   "hair",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "An AHA body scrub smooths skin",
+    "verdict": "true",
+    "truth": "Acids loosen dead skin, so bumpy, rough skin gets smoother. AHAs raise sunburn risk for up to a week, so cover up those areas.",
+    "grade": "A"
+   },
+   {
+    "claim": "A niacinamide facial soap brightens",
+    "verdict": "unproven",
+    "truth": "Niacinamide works in leave-on products. In a soap it's rinsed off in under a minute, so expect clean skin, not brighter skin.",
+    "grade": "C"
+   },
+   {
+    "claim": "A herbal shampoo regrows hair",
+    "verdict": "false",
+    "truth": "Rosemary, ginseng, ginger, black sesame and butterfly pea in a shampoo touch the scalp for a minute and have no proof of regrowth. For thinning, minoxidil is the proven option.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "FDA: alpha hydroxy acids in cosmetics",
+    "url": "https://www.fda.gov/cosmetics/ingredients/alpha-hydroxy-acids"
+   },
+   {
+    "title": "American Academy of Dermatology: hair loss diagnosis and treatment",
+    "url": "https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat"
+   }
+  ],
+  "seen_in": "Thai TikTok shower haul (Alina, Sinkrose, Fuwari)",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "mixing-creams-and-soaps-is-fine",
   "title": "Mixing creams or melting soaps together is fine if each one is fine",
   "topics": [

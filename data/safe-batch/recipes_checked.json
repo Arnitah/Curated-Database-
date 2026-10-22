@@ -41472,5 +41472,322 @@
    "creator": "InayaMorocco",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "gulf-brightening-soap-paste-as-posted",
+  "name": "Gulf \"brightening\" soap paste (صابونية تفتيح), as posted",
+  "claim": "Exfoliates and lightens the body",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: grate licorice soap, Dove, Pyary turmeric and Kojie San, cover with a whole bottle of rose water, leave 12 hours, then stir in 3 spoons of corn starch (optionally Kream Kap scrub cream) and keep it in a jar. With this much rose water and starch the jar can grow mould within a week or two. The soaps' kojic acid, licorice and turmeric touch skin for a minute, so it cleans and softens but won't lighten. See the safer version.",
+  "rows": [
+   [
+    "barsoap",
+    400,
+    "g"
+   ],
+   [
+    "hydrosol",
+    250,
+    "ml"
+   ],
+   [
+    "cornstarch",
+    3,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "عناية وتجارب",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "gulf-soap-paste-safer-small-batch",
+  "name": "Gulf soap paste (صابونية), safer small batch",
+  "claim": "A soft soap scrub for 3 to 4 showers",
+  "type": "body_rinse",
+  "use": "fridge",
+  "note": "Grate the bars you like (check each one in Can I mix these? → Blending products first), soak in just enough rose water to soften, about 1 part rose water to 3 parts soap, overnight in the fridge. Stir in the starch, keep it in the fridge and use within 2 weeks; toss it if it smells sour or grows spots. Massage on damp skin for 2 to 3 minutes, rinse, moisturise. It cleans and polishes; for dark spots use a leave-on product.",
+  "rows": [
+   [
+    "barsoap",
+    120,
+    "g"
+   ],
+   [
+    "hydrosol",
+    40,
+    "ml"
+   ],
+   [
+    "cornstarch",
+    1,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of the viral صابونية",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "gulf-soap-paste-full-haul-inher66-as-posted",
+  "name": "Gulf soap paste, full haul version (inher66), as posted",
+  "claim": "Lightening, glowing soap paste",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted (amounts are our estimate): grated Dove, Kojie San, papaya, Tawoos and laurel soap and Pyary turmeric soap, with turmeric body powder, rose water, sweet and bitter almond oil, glycerin, rose oil, blue nila, \"white henna\", Herbolene aloe jelly, Glysolid and aker fassi for colour. Problems: bitter almond oil (use sweet), nila and aker fassi are often adulterated with dyes, \"white henna\" contents vary, and rose water plus cream in a big jar can spoil. Use the safer small batch instead.",
+  "rows": [
+   [
+    "barsoap",
+    300,
+    "g"
+   ],
+   [
+    "hydrosol",
+    150,
+    "ml"
+   ],
+   [
+    "turmeric",
+    1,
+    "tbsp"
+   ],
+   [
+    "almond",
+    2,
+    "tbsp"
+   ],
+   [
+    "bitteralmond",
+    1,
+    "tsp"
+   ],
+   [
+    "glycerin",
+    1,
+    "tbsp"
+   ],
+   [
+    "nila",
+    1,
+    "tsp"
+   ],
+   [
+    "whitehenna",
+    1,
+    "tbsp"
+   ],
+   [
+    "petrolatum",
+    1,
+    "tbsp"
+   ],
+   [
+    "storelotion",
+    1,
+    "tbsp"
+   ],
+   [
+    "akerfassi",
+    0.5,
+    "tsp"
+   ]
+  ],
+  "source": {
+   "creator": "inher66",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "lemon-scrub-balls-as-posted-shima",
+  "name": "Lemon scrub balls (Shima), as posted",
+  "claim": "Smooth, polished skin",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: mix everything except the starch, add starch until moldable, shape balls, dry 30 minutes, store airtight. Fresh zest and body wash bring water into a stored scrub, and cold-pressed lemon oil and zest can sun-sensitize. See the long-lasting version.",
+  "rows": [
+   [
+    "sugar",
+    0.5,
+    "cup"
+   ],
+   [
+    "coconut",
+    1,
+    "tbsp"
+   ],
+   [
+    "showergel",
+    1,
+    "tbsp"
+   ],
+   [
+    "almond",
+    1,
+    "tsp"
+   ],
+   [
+    "vite",
+    0.5,
+    "tsp"
+   ],
+   [
+    "lemoneo",
+    4,
+    "drops"
+   ],
+   [
+    "lemonzest",
+    1,
+    "tsp"
+   ],
+   [
+    "cornstarch",
+    4,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Shima | Dubai Content Creator",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "lemon-scrub-balls-long-lasting",
+  "name": "Lemon scrub balls that keep (no fresh zest)",
+  "claim": "Same feel, lasts for months",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Melt the coconut oil, stir in almond oil, vitamin E and lemon oil, then the sugar and starch until it holds when pressed. Shape, let firm 30 minutes, store dry with a dry spoon. Steam-distilled lemon oil isn't sun-sensitizing. Add a squirt of body wash to each ball in the shower instead of mixing it in.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "coconut",
+    15,
+    "g"
+   ],
+   [
+    "almond",
+    5,
+    "g"
+   ],
+   [
+    "vite",
+    1,
+    "g"
+   ],
+   [
+    "lemondistilled",
+    6,
+    "drops"
+   ],
+   [
+    "cornstarch",
+    20,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of Shima's recipe",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "sidr-and-coconut-milk-hair-mask",
+  "name": "Sidr and coconut milk hair mask",
+  "claim": "Soft, moisturised hair",
+  "type": "hair_rinse",
+  "use": "now",
+  "note": "Mix into a smooth paste, apply to damp hair from roots to ends, leave 20 to 30 minutes, rinse well and condition. Sidr cleanses gently; coconut milk softens. Make it fresh each time.",
+  "rows": [
+   [
+    "sidr",
+    3,
+    "tbsp"
+   ],
+   [
+    "coconutmilk",
+    100,
+    "ml"
+   ]
+  ],
+  "source": {
+   "creator": "حناء رغد",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "glysolid-aloe-jelly-shea-whip-as-posted",
+  "name": "Glysolid, aloe jelly and shea whip (Vlogger lama), as posted",
+  "claim": "Deep moisture for very dry skin",
+  "type": "body_leave",
+  "use": "store",
+  "note": "As posted: whip Glysolid glycerin cream, Herbolene aloe petroleum jelly, organic shea, raw Ghana shea and sweet almond oil. It works: shea and petroleum jelly seal moisture in, glycerin draws it in. But Glysolid is a water-based cream, so stretched into a big tub its preservative is diluted. Make small tubs and use within a month, or make it without the cream.",
+  "rows": [
+   [
+    "storelotion",
+    50,
+    "g"
+   ],
+   [
+    "petrolatum",
+    50,
+    "g"
+   ],
+   [
+    "shea",
+    80,
+    "g"
+   ],
+   [
+    "almond",
+    20,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Vlogger lama",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "shea-and-jelly-body-butter-no-water",
+  "name": "Shea and petroleum jelly body butter (keeps for months)",
+  "claim": "The Glysolid whip, made to last",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Melt the shea gently, stir in petroleum jelly and almond oil, cool until it starts to set, then whip until fluffy. No water means no mould. Apply on damp skin after a shower so it seals the water in. Use glycerin cream separately if you like it.",
+  "rows": [
+   [
+    "shea",
+    100,
+    "g"
+   ],
+   [
+    "petrolatum",
+    60,
+    "g"
+   ],
+   [
+    "almond",
+    30,
+    "g"
+   ],
+   [
+    "vite",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of Vlogger lama's whip",
+   "platform": "TikTok"
+  }
  }
 ]
