@@ -1080,14 +1080,21 @@ function cpCompare(la,lb,nA,nB){
   return `<div class="mp-chk mp-info"><b class="small">${esc(nA)} vs ${esc(nB)}</b><p class="small" style="margin:4px 0 0">${esc(sum)}</p></div>${pgCompare(A,B,nA,nB)}<div class="c2-res">${col('In both',aK,both)}${col('Only in '+nA,aK,onlyA)}${col('Only in '+nB,bK,onlyB)}</div>`;
 }
 /* ---------- Store-product search: the Skincare Data Hub, slimmed down by the Curated Database bridge ---------- */
-const CLAY_BASE=()=>window.CLAY_DATA_BASE||"https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
+const CLAY_GH="https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
+const CLAY_BASE=()=>window.CLAY_DATA_BASE||"";
+/* Data files are published next to the page (artifacts can't reach GitHub); GitHub is the fallback elsewhere */
+async function clayFetch(f){
+  const bases=window.CLAY_DATA_BASE?[window.CLAY_DATA_BASE]:["",CLAY_GH];
+  for(const b of bases){ try{ const r=await fetch(b+f,{cache:"no-cache"}); if(r.ok) return await r.json(); }catch(e){} }
+  throw new Error(f);
+}
 const PDB={names:null,hay:null,loading:null,shards:{},err:false};
 const PDB_SRC={open_beauty_facts:'Open Beauty Facts, a crowd-sourced database',cosrx:"COSRX's own website",round_lab:"Round Lab's own website"};
 const PDB_AREA={face:'face',sun_care:'face',makeup:'face',hair:'hair',deodorant:'under',body:'body',baby:'body',fragrance:'body',other:'body'};
 const PDB_CATL={face:'Face',sun_care:'Sun care',makeup:'Makeup',hair:'Hair',deodorant:'Deodorant',body:'Body',baby:'Baby',fragrance:'Fragrance',other:''};
 function pdbLoad(){
   if(PDB.names) return Promise.resolve(PDB.names);
-  if(!PDB.loading) PDB.loading=fetch(CLAY_BASE()+'index/clay/products/names.json').then(r=>{ if(!r.ok) throw 0; return r.json(); })
+  if(!PDB.loading) PDB.loading=clayFetch('index/clay/products/names.json')
     .then(d=>{ PDB.names=d; PDB.hay=d.rows.map(r=>(r[1]+' '+r[0]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')); return d; })
     .catch(()=>{ PDB.err=true; PDB.loading=null; return null; });
   return PDB.loading;
@@ -1120,7 +1127,7 @@ function pdbRank(q,toks,ok){
 }
 async function pdbRow(i){
   const d=PDB.names, f=Math.floor(i/d.shard), key=String(f).padStart(3,'0');
-  if(!PDB.shards[key]) PDB.shards[key]=await fetch(CLAY_BASE()+'index/clay/products/'+key+'.json').then(r=>{ if(!r.ok) throw 0; return r.json(); });
+  if(!PDB.shards[key]) PDB.shards[key]=await clayFetch('index/clay/products/'+key+'.json');
   const r=d.rows[i], x=PDB.shards[key][i%d.shard];
   return {id:x[0],list:x[1],size:x[2],countries:x[3],url:x[4],name:r[0],brand:r[1],barcode:r[2],cat:d.cats[r[3]],src:d.srcs[r[4]],verified:!!r[5]};
 }
@@ -1929,8 +1936,7 @@ document.addEventListener('pointerleave',()=>document.querySelectorAll('.am-stag
 document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.target.classList.contains('mp-past')) S.mpPastOpen=e.target.open; },true);
 /* ---------- Live data from the Curated Database repo (GitHub); built-in data is the fallback ---------- */
 (async function clayRemoteData(){
-  const BASE=window.CLAY_DATA_BASE||"https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
-  const get=async f=>{ const r=await fetch(BASE+f,{cache:"no-cache"}); if(!r.ok) throw new Error(f); return r.json(); };
+  const get=f=>clayFetch(f);
   let ver; try{ ver=await get("version.json"); }catch(e){ return; }
   const pick=async n=>{ try{ return ver.datasets["clay/"+n]?await get("data/clay/"+n+".json"):null; }catch(e){ return null; } };
   const [tips,steps,areas,feel]=await Promise.all(["hair_tips","hair_wash_steps","product_steps","feel_words"].map(pick));

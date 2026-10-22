@@ -33,7 +33,7 @@ const write = (p, data, pretty = false) => {
   fs.mkdirSync(path.dirname(full), { recursive: true });
   fs.writeFileSync(full, (pretty ? JSON.stringify(data, null, 1) : JSON.stringify(data)) + '\n');
 };
-const clean = (s) => String(s ?? '').replace(/\s+/g, ' ').trim();
+const clean = (s) => String(s ?? '').replace(/\uFFFD/g, '').replace(/\s+/g, ' ').trim();
 const median = (a) => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : +((s[m - 1] + s[m]) / 2).toFixed(2); };
 
 const [products, raws, status] = await Promise.all([hub('data/products.json'), hub('data/raw_materials.json'), hub('data/status.json').catch(() => ({}))]);
@@ -43,7 +43,7 @@ const hubRun = status.generated_at || status.last_run || status.updated_at || nu
 const seen = new Set();
 const keep = products
   .filter((p) => p.listing_status !== 'removed' && p.record_status !== 'rejected' && !SKIP_CATS.has(p.category_group))
-  .map((p) => ({ ...p, list: clean(p.ingredients_text) || (p.ingredients || []).join(', '), name: clean(p.name), brand: clean(p.brand) }))
+  .map((p) => ({ ...p, list: clean(p.ingredients_text) || clean((p.ingredients || []).join(', ')), name: clean(p.name), brand: clean(p.brand) }))
   .filter((p) => p.name && (p.ingredients || []).length >= 3 && p.list.length < 6000)
   .filter((p) => { const k = p.barcode ? 'b' + p.barcode : 'n' + (p.brand + '|' + p.name).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; })
   .sort((a, b) => (a.brand || '~').localeCompare(b.brand || '~') || a.name.localeCompare(b.name));

@@ -7436,7 +7436,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 207 · 22 Oct 2026";
+const SB_VERSION="Version 208 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
@@ -7922,8 +7922,9 @@ function swRender(){ const w=swWeather();
    Built-in data shows instantly; then new or changed items from the repo are merged in.
    If GitHub can't be reached, the app keeps working with what's built in. */
 (async function sbRemoteData(){
-  const BASE=window.SB_DATA_BASE||"https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
-  const get=async f=>{ const r=await fetch(BASE+f,{cache:"no-cache"}); if(!r.ok) throw new Error(f+" "+r.status); return r.json(); };
+  // data files are published next to the page (artifacts can't reach GitHub); GitHub is the fallback elsewhere
+  const bases=window.SB_DATA_BASE?[window.SB_DATA_BASE]:["","https://raw.githubusercontent.com/Arnitah/curated-database-/main/"];
+  const get=async f=>{ for(const b of bases){ try{ const r=await fetch(b+f,{cache:"no-cache"}); if(r.ok) return await r.json(); }catch(e){} } throw new Error(f); };
   let ver=null; try{ ver=await get("version.json"); }catch(e){ try{ const ll=document.getElementById("lotLine"); if(ll) ll.insertAdjacentHTML("beforeend"," · built-in data"); }catch(_){} return; }
   let seen={}; try{ seen=JSON.parse(localStorage.getItem("safebatch-datahash")||"{}"); }catch(e){}
   const want=["ingredients","synonyms","recipes_checked","myths","terms","traditions","layering_presets","ingredient_facts"];

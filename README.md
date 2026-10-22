@@ -67,6 +67,9 @@ Screenshots and links still go through review by hand. Those are viral claims, r
 | `clay/my_products_seed` | `[area, step, name, status: cur/have/past]` |
 
 ## How the apps read it
+
+**Inside Claude, artifacts can't reach GitHub.** So each app is published with its data files alongside it, and loads them from the same place as the page. GitHub is the fallback when the apps run anywhere else. That means a data change reaches the live apps only when they're republished with the latest files.
+
 Safe Batch and Clay fetch `version.json` and the datasets from
 `https://raw.githubusercontent.com/Arnitah/curated-database-/main/` on each load (GitHub caches files for about 5 minutes).
 They show their built-in data first, then merge in anything new or changed from here. If GitHub can't be reached, they keep working offline.
