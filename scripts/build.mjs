@@ -41,9 +41,44 @@ if (ing) {
     if (!ids.has(id)) errors.push(`synonyms: "${pat}" points to unknown ingredient "${id}"`);
     try { new RegExp(pat); } catch { errors.push(`synonyms: bad regex "${pat}"`); }
   }
+  for (const name of ['recipes_checked', 'recipes_starter']) {
+    const seen = new Set();
+    for (const r of sets[`safe-batch/${name}`]?.data || []) {
+      if (!r.id || !/^[a-z0-9-]+$/.test(r.id)) errors.push(`${name} "${r.name}": needs an id (lowercase-with-dashes)`);
+      else if (seen.has(r.id)) errors.push(`${name}: duplicate id ${r.id}`);
+      seen.add(r.id);
+      if (r.source && (typeof r.source !== 'object' || (r.source.url && !/^https?:\/\//.test(r.source.url)))) errors.push(`${name} ${r.id}: source.url must be a link`);
+    }
+  }
   const names = (sets['safe-batch/recipes_checked']?.data || []).map((r) => r.name);
   const dup = names.filter((n, i) => names.indexOf(n) !== i);
   if (dup.length) warnings.push(`${dup.length} duplicate recipe names (allowed): ${[...new Set(dup)].slice(0, 5).join('; ')}`);
+}
+
+// Myths: structured records
+const VERDICTS = new Set(['true', 'false', 'partly', 'unproven', null]);
+const myths = sets['safe-batch/myths']?.data;
+if (myths) {
+  const seen = new Set();
+  for (const m of myths) {
+    const w = `myth ${m?.id || JSON.stringify(m).slice(0, 40)}`;
+    if (typeof m !== 'object' || !m) { errors.push(`${w}: must be an object (see schemas/myth.md)`); continue; }
+    if (!m.id || !/^[a-z0-9-]+$/.test(m.id)) errors.push(`${w}: needs an id`);
+    else if (seen.has(m.id)) errors.push(`${w}: duplicate id`);
+    seen.add(m.id);
+    if (!m.title) errors.push(`${w}: needs a title`);
+    if (!Array.isArray(m.topics) || !m.topics.length) errors.push(`${w}: needs at least one topic`);
+    if (!m.claims && !m.body) errors.push(`${w}: needs claims or body`);
+    for (const c of m.claims || []) if (!c.claim || !c.truth || !VERDICTS.has(c.verdict ?? null)) errors.push(`${w}: each claim needs claim, truth and a valid verdict`);
+    for (const s of m.sources || []) if (!s.url || !/^https?:\/\//.test(s.url)) errors.push(`${w}: source needs a url`);
+    if (m.format === 'v2') {
+      if (!m.claims?.length || m.claims.some((c) => !c.verdict)) errors.push(`${w}: v2 records need claims with verdicts`);
+      if (!m.sources?.length) errors.push(`${w}: v2 records need at least one source`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(m.checked || '')) errors.push(`${w}: v2 records need a checked date (YYYY-MM-DD)`);
+    }
+  }
+  const legacy = myths.filter((m) => m.format === 'legacy').length;
+  if (legacy) warnings.push(`${legacy} legacy myths still need verdicts and sources (upgrade to format v2 over time)`);
 }
 
 // Never allow personal data in this repo

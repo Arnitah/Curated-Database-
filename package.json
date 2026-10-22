@@ -1,0 +1,14 @@
+{
+  "name": "curated-database",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/build.mjs --check",
+    "build": "node scripts/build.mjs",
+    "verdicts": "node scripts/check-verdicts.mjs",
+    "verdicts:update": "node scripts/check-verdicts.mjs --update"
+  },
+  "devDependencies": {
+    "playwright": "1.49.1"
+  }
+}

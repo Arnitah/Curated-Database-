@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated_at": "2026-10-22T14:18:12.988Z",
+  "version": 2,
+  "updated_at": "2026-10-22T18:17:01.939Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -184,9 +184,9 @@
     },
     "safe-batch/myths": {
       "count": 327,
-      "bytes": 128378,
-      "hash": "26690af32fbd",
-      "updated_at": "2026-10-22T14:18:12.987Z"
+      "bytes": 189815,
+      "hash": "a7750a682ce7",
+      "updated_at": "2026-10-22T18:17:01.930Z"
     },
     "safe-batch/product_actives": {
       "count": 61,
@@ -232,15 +232,15 @@
     },
     "safe-batch/recipes_checked": {
       "count": 1190,
-      "bytes": 645597,
-      "hash": "0d0658d2d2ce",
-      "updated_at": "2026-10-22T14:18:12.987Z"
+      "bytes": 697790,
+      "hash": "d830e40d1ebf",
+      "updated_at": "2026-10-22T18:17:01.939Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
-      "bytes": 4857,
-      "hash": "6671fc48dc66",
-      "updated_at": "2026-10-22T14:18:12.987Z"
+      "bytes": 5123,
+      "hash": "e3d164699673",
+      "updated_at": "2026-10-22T18:17:01.939Z"
     },
     "safe-batch/scent_families": {
       "count": 10,

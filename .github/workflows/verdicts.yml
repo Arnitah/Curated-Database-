@@ -1,0 +1,48 @@
+name: Re-check recipe verdicts
+
+# Runs every recipe through the real Safe Batch checker (apps/safe-batch.html) using this branch's data.
+# Pull requests fail if any existing recipe's verdict or flags change.
+# On main, newly added recipes are recorded automatically; changes to existing ones fail the run so you see them.
+on:
+  pull_request:
+    paths: ['data/safe-batch/**', 'apps/safe-batch.html', 'scripts/check-verdicts.mjs']
+  push:
+    branches: [main]
+    paths: ['data/safe-batch/**', 'apps/safe-batch.html', 'scripts/check-verdicts.mjs']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verdicts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verdicts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - name: Check verdicts (pull request)
+        if: github.event_name == 'pull_request'
+        run: node scripts/check-verdicts.mjs
+      - name: Check verdicts and record new recipes (main)
+        if: github.event_name != 'pull_request'
+        run: node scripts/check-verdicts.mjs --accept-new
+      - name: Commit snapshot if it changed
+        if: github.event_name != 'pull_request'
+        run: |
+          if ! git diff --quiet checks/verdicts.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add checks/verdicts.json
+            git commit -m "Record verdicts for new recipes [skip ci]"
+            git pull --rebase && git push
+          fi

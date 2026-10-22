@@ -1,5 +1,6 @@
 [
  {
+  "id": "oat-and-honey-calming-mask",
   "name": "Oat and honey calming mask",
   "type": "face_rinse",
   "use": "now",
@@ -29,6 +30,7 @@
   "keeps": "Single use. Discard leftovers."
  },
  {
+  "id": "barrier-face-oil",
   "name": "Barrier face oil",
   "type": "face_leave",
   "use": "store",
@@ -68,6 +70,7 @@
   "keeps": "About 3 months in the fridge, because of the rosehip."
  },
  {
+  "id": "whipped-shea-body-butter",
   "name": "Whipped shea body butter",
   "type": "body_leave",
   "use": "store",
@@ -108,6 +111,7 @@
   "keeps": "6 to 12 months if kept dry. Use a clean spoon, not wet hands."
  },
  {
+  "id": "beeswax-lip-balm",
   "name": "Beeswax lip balm",
   "type": "lip",
   "use": "store",
@@ -142,6 +146,7 @@
   "keeps": "About 12 months."
  },
  {
+  "id": "brown-sugar-body-scrub",
   "name": "Brown sugar body scrub",
   "type": "body_rinse",
   "use": "store",
@@ -171,6 +176,7 @@
   "keeps": "About 6 months. Keep shower water out of the jar and scoop with a dry spoon."
  },
  {
+  "id": "kaolin-clay-mask-powder",
   "name": "Kaolin clay mask powder",
   "type": "face_rinse",
   "use": "store",
@@ -195,6 +201,7 @@
   "keeps": "Many months while dry."
  },
  {
+  "id": "rhassoul-hammam-mask",
   "name": "Rhassoul hammam mask",
   "type": "face_rinse",
   "use": "now",
@@ -219,6 +226,7 @@
   "keeps": "Single use. Keep the dry clay in a sealed jar."
  },
  {
+  "id": "classic-sugaring-paste",
   "name": "Classic sugaring paste",
   "type": "sugar_wax",
   "use": "store",

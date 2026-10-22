@@ -1,0 +1,6046 @@
+{
+ "lemon-sugar-face-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "baking-soda-acne-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove baking soda"
+  ]
+ },
+ "toothpaste-spot-treatment": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove toothpaste"
+  ]
+ },
+ "tea-tree-oil-on-blemishes": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Essential oils are nearly undiluted"
+  ]
+ },
+ "apple-cider-vinegar-toner": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold",
+   "stop: Vinegar shouldn't stay on skin"
+  ]
+ },
+ "rice-water-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: Rice water spoils fast",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "charcoal-glue-peel-off-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove school glue (peel-off masks)"
+  ]
+ },
+ "turmeric-yogurt-glow-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "peppermint-lip-plumper": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Too much essential oil"
+  ]
+ },
+ "coffee-coconut-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-flower-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "clove-botox-face-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Keep clove infusions off face and lips"
+  ]
+ },
+ "nila-powder-brightening-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated"
+  ]
+ },
+ "fuller-s-earth-sunburn-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Don't put clay on sunburn",
+   "stop: Wait until your skin has healed"
+  ]
+ },
+ "tomato-coconut-milk-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Tomato is acidic"
+  ]
+ },
+ "aloe-tea-tree-acne-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "yogurt-lemon-glow-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "vinegar-bentonite-deep-clean-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Too much vinegar"
+  ]
+ },
+ "vinegar-baking-soda-blackhead-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove baking soda",
+   "stop: Too much vinegar"
+  ]
+ },
+ "blue-clay-mask-for-oily-skin": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice",
+   "stop: Remove rubbing alcohol"
+  ]
+ },
+ "rice-water-hair-spray": {
+  "verdict": "stop",
+  "flags": [
+   "care: Rice water spoils fast",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "breast-tightening-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "clove-rice-water-face-spray": {
+  "verdict": "stop",
+  "flags": [
+   "care: Rice water spoils fast",
+   "stop: Keep clove infusions off face and lips",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "fenugreek-water-scalp-spray": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "onion-water-hair-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: Onion juice can irritate the scalp"
+  ]
+ },
+ "citrus-salt-body-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-honey-heel-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "coffee-mocha-body-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "deep-repair-heel-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosewater-cooling-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "green-tea-anti-inflammatory-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "rose-petal-facial-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "carrot-brightening-shower-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Swap fresh juice for a commercial extract"
+  ]
+ },
+ "under-eye-night-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "coffee-aloe-eye-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Coffee grounds (used or fresh) is too harsh for the face"
+  ]
+ },
+ "japanese-rice-glow-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-almond-and-castor-face-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Coconut oil can clog pores"
+  ]
+ },
+ "aloe-vitamin-e-glow-cream": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "egyptian-body-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-glow-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-niacinamide-serum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "curry-leaf-hibiscus-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fry fresh leaves until crisp"
+  ]
+ },
+ "clove-collagen-gel": {
+  "verdict": "stop",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "stop: Keep clove infusions off face and lips"
+  ]
+ },
+ "okra-collagen-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Use fresh food within a day"
+  ]
+ },
+ "flaxseed-botox-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "7-in-1-brightening-face-wash-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "epsom-salt-foot-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-tree-eucalyptus-foot-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "baking-soda-vinegar-foot-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mustard-cayenne-foot-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Cayenne or chili pepper can burn",
+   "care: Mustard seed or powder can burn"
+  ]
+ },
+ "cherry-lip-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-lotion-dots": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "blue-tansy-anti-aging-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "lavender-magnesium-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "collagen-boost-butter-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Cocoa butter can clog pores",
+   "care: Coconut oil can clog pores",
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "flaxseed-aloe-botox-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "golden-turmeric-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "blue-aparajita-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "beetroot-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "onion-aloe-hair-growth-elixir": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Onion juice can irritate the scalp",
+   "stop: Fresh aloe in oil will mold",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "7-day-dark-knee-plan-day-2": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "glass-skin-rice-clove-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: Rice water spoils fast",
+   "care: The fridge slows spoilage but doesn't stop it",
+   "stop: Keep clove infusions off face and lips"
+  ]
+ },
+ "chia-collagen-toner": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "aloe-castor-stretch-mark-remedy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-wild-turmeric-dark-circle-remedy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "age-defying-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-body-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Lemon essential oil above its sun-safe limit",
+   "stop: Too much essential oil"
+  ]
+ },
+ "avocado-and-olive-glow-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "better-than-botox-chia-night-cream": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "hibiscus-shea-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-hibiscus-firming-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herb-infused-hair-growth-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon infusions can burn",
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "fresh-rosemary-mint-amla-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Dry or fry fresh herbs before infusing"
+  ]
+ },
+ "aloe-tea-tree-sugar-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face",
+   "stop: Too much essential oil"
+  ]
+ },
+ "coconut-lemon-tan-removal-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "turkish-hammam-coffee-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "onion-and-garlic-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Garlic oil can burn"
+  ]
+ },
+ "whipped-hair-butter-for-growth": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "african-coffee-shea-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "12-herb-hair-growth-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "fenugreek-seed-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "batana-hair-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: Too much essential oil",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rose-and-calendula-yoni-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Oils can break latex condoms"
+  ]
+ },
+ "herbal-tooth-paste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Salt is abrasive",
+   "care: Turmeric stains"
+  ]
+ },
+ "herbal-mouthwash": {
+  "verdict": "care",
+  "flags": [
+   "care: Use it within a day"
+  ]
+ },
+ "elbow-and-knee-rescue-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosehip-stretch-mark-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-carrot-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ayurvedic-low-porosity-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "rosemary-cinnamon-hair-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon infusions can burn",
+   "care: Clove infusion can irritate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "hibiscus-leave-in-rinse": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "flaxseed-edge-control-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "quick-aloe-edge-control": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "neem-leaf-sitz-bath": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-hair-growth-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "hibiscus-face-toner": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "hibiscus-lip-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-yogurt-glow-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-epsom-bath-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-vinegar-hair-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "4c-herbal-hair-rinse": {
+  "verdict": "stop",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "coffee-coconut-foot-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-lemon-foot-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "baking-soda-vinegar-foot-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove baking soda",
+   "stop: Too much vinegar"
+  ]
+ },
+ "besan-rice-flour-foot-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "lemon-coconut-elbow-rub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "moringa-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "besan-turmeric-foot-pack": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "cinnamon-honey-face-mask": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Keep cinnamon powder off face and lips",
+   "stop: Too much cinnamon for skin"
+  ]
+ },
+ "onion-clove-and-garlic-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Garlic oil can burn",
+   "care: Onion can irritate the scalp"
+  ]
+ },
+ "brightening-inner-thigh-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "repair-and-glow-foot-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "papaya-seed-infused-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-feet-softening-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pink-velvet-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "golden-hour-hair-perfume": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "velvet-bloom-hair-perfume": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "midnight-moon-hair-perfume": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "summer-sweetness-perfume-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "citrus-delight-perfume-oil": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "stop: Cinnamon bark essential oil is too strong"
+  ]
+ },
+ "flirty-florals-perfume-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Bergamot essential oil above its sun-safe limit"
+  ]
+ },
+ "enchanted-perfume-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Jasmine absolute is too strong"
+  ]
+ },
+ "honey-avocado-mask-dry-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "multani-mitti-rose-water-pack-oily-skin": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "oats-honey-yogurt-scrub-combination-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-cucumber-gel-sensitive-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hyaluronic-hydrating-serum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rosehip-argan-anti-aging-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-aloe-turmeric-glow-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "rose-petal-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-lemon-lip-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "cucumber-eye-pads": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "korean-green-tea-essence": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "brown-sugar-coconut-face-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face"
+  ]
+ },
+ "green-tea-and-cucumber-ice-cubes": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-citrus-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "firming-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-vanilla-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "stretch-mark-support-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shimmering-glow-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soothing-aloe-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-vera-oil-fresh-leaf": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Oil and water will separate",
+   "stop: Fresh aloe in oil will mold",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "carrot-oil-fresh-carrots": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "christmas-sugar-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "baking-soda-whitening-paste": {
+  "verdict": "care",
+  "flags": [
+   "care: Hydrogen peroxide rinse"
+  ]
+ },
+ "baking-soda-and-lemon-whitening": {
+  "verdict": "stop",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "stop: Keep lemon juice away from teeth"
+  ]
+ },
+ "milk-and-honey-bath-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "muscle-relief-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first",
+   "care: Peppermint and eucalyptus can sting in a bath",
+   "care: Too many drops for one bath"
+  ]
+ },
+ "detox-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "rose-milk-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time"
+  ]
+ },
+ "relaxed-bath-salts": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eucalyptus-and-tea-tree-bath-salt": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first",
+   "care: Peppermint and eucalyptus can sting in a bath",
+   "care: Too many drops for one bath"
+  ]
+ },
+ "winter-herbal-bath-tea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-bath-tea-for-kids": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "thai-bath-tea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-shower-steamers": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eucalyptus-shower-steamers": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-bath-tea": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "bath-salt-base-formula": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sleep-support-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "growth-and-shine-cuticle-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "epsom-salt-almond-oil-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brown-sugar-coconut-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-and-olive-oil-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-lemon-zest-and-olive-oil-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh zest can sun-sensitize and spoil",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "luxury-cream-deodorant": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "women-s-natural-deodorant": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash",
+   "care: Too much essential oil"
+  ]
+ },
+ "baby-powder-body-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "overnight-face-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "anti-aging-facial-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange",
+   "care: Too much sea buckthorn oil"
+  ]
+ },
+ "alum-soap-with-glycerin": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "charcoal-melt-and-pour-soap": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "turmeric-melt-and-pour-soap": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "coffee-scrub-melt-and-pour-soap": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "rose-petal-lip-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "diy-sheet-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-powder-honey-face-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eid-glow-face-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "facial-hair-removal-dough": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "homemade-rice-moisturizer": {
+  "verdict": "care",
+  "flags": [
+   "care: Rice water spoils fast",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "homemade-face-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "honey-oat-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-rose-night-gel": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "dark-underarm-hack": {
+  "verdict": "stop",
+  "flags": [
+   "care: Turmeric stains and can cause allergy",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "relax-lavender-sugar-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "rose-milk-glow-body-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "chocolate-caramel-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Caramel is sticky and spoils"
+  ]
+ },
+ "orange-honey-lip-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh orange spoils in a jar",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "beetroot-sugar-honey-lip-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "beetroot-lip-tint": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Oil and water will separate",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "honey-glow-lip-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-lip-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-lip-balm": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh fruit spoils in balms",
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "apple-pie-lip-balm": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored",
+   "stop: Keep cinnamon powder off face and lips"
+  ]
+ },
+ "rice-milk-and-honey-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-milk-sugar-body-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-butter-overnight-hand-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sea-salt-spa-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "strawberry-milk-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-day-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "hyaluronic-inspired-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: Use fresh food within a day"
+  ]
+ },
+ "diy-collagen-serum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "korean-rice-serum": {
+  "verdict": "stop",
+  "flags": [
+   "care: Rice water spoils fast",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "oat-and-rose-glow-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "flax-seed-glow-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "alum-deodorant-for-dark-underarms": {
+  "verdict": "stop",
+  "flags": [
+   "care: Alum can sting and dry",
+   "care: Homemade vitamin C rarely works",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "eyebrow-conditioning-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lash-and-brow-serum-with-argan": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eyelash-growth-serum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Keep rosemary essential oil away from the eyes"
+  ]
+ },
+ "brow-growth-serum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Keep peppermint essential oil away from the eyes"
+  ]
+ },
+ "homemade-mascara": {
+  "verdict": "care",
+  "flags": [
+   "care: Activated charcoal near the eyes"
+  ]
+ },
+ "homemade-kajal": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lamp soot (homemade kajal)"
+  ]
+ },
+ "collagen-blush-shimmer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "banho-de-lua-chamomile-lemon-hair-lightener": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "banho-de-lua-coffee-brown-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "banho-de-lua-botanical-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "under-eye-care-serum": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-shea-whipped-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oatmeal-lavender-melt-and-pour-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cleopatra-milk-bath": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "traditional-arab-skin-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turkish-kese-scrub-paste": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much oil for melt-and-pour",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "korean-glass-skin-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "carrot-honey-face-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-facial-moisturizer": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "diy-pearl-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-oil-makeup-remover": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "gentle-brightening-care": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-and-milk-glow-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-butter-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "coffee-scrub-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "rice-powder-and-licorice-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-tree-dandruff-shampoo-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-and-nettle-shampoo-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-milk-moisture-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "oatmeal-honey-smoothie-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "hibiscus-hydration-heaven-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "zesty-hibiscus-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "hibiscus-and-honey-glow-elixir": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "hibiscus-and-coconut-lip-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oat-and-hibiscus-cleansing-powder": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-and-mint-shower-melts": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-coconut-lip-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Citrus oil and sunlight"
+  ]
+ },
+ "malai-lip-night-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: Turmeric stains and can cause allergy",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "clove-and-cinnamon-mouthwash": {
+  "verdict": "care",
+  "flags": [
+   "care: Use it within a day"
+  ]
+ },
+ "eucalyptus-and-mint-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "solid-perfume-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-soapnut-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "neem-soapnut-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "reetha-soapnut-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rosemary-and-fenugreek-hair-toner": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "rosemary-and-clove-hair-tonic": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "rice-water-and-curry-leaf-tonic": {
+  "verdict": "care",
+  "flags": [
+   "care: Fry fresh leaves until crisp",
+   "care: Rice water spoils fast",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "hibiscus-fenugreek-and-amla-tonic": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "flaxseed-aloe-and-coconut-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep"
+  ]
+ },
+ "whipped-shea-and-mango-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "avocado-and-shea-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-vera-leave-in-detangler": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "cocoa-and-coconut-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shikakai-herbal-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "muscle-relief-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first",
+   "care: Peppermint and eucalyptus can sting in a bath",
+   "care: Too many drops for one bath"
+  ]
+ },
+ "cool-mint-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "shine-boost-hair-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Vinegar needs care"
+  ]
+ },
+ "apple-cider-vinegar-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "care: Acid and castile soap cancel out",
+   "care: Add soap to each scoop, not the jar",
+   "care: Vinegar needs care",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "curl-refresh-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate"
+  ]
+ },
+ "hair-perfume-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-vera-sugar-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "stop: Fresh aloe in oil will mold",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "anti-fairy-knot-leave-in-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "rice-water-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Rice water spoils fast"
+  ]
+ },
+ "yogurt-and-coconut-milk-soap-melt-and-pour": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "turmeric-glow-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "Egyptian body cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-and-honey-glow-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "coffee-and-vanilla-scrub-soap": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "goat-milk-and-soya-bean-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-baby-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sandalwood-and-hibiscus-glow-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baking-soda-deodorant-paste": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash"
+  ]
+ },
+ "zinc-deodorant-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "brightening-hand-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Citrus peel and sunlight",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "deep-moisture-hand-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "all-natural-sunscreen": {
+  "verdict": "stop",
+  "flags": [
+   "care: Don't rely on this as sunscreen",
+   "care: You can't make reliable sunscreen at home",
+   "stop: Don't use this as sunscreen"
+  ]
+ },
+ "aloe-and-rose-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "3-peroxide-body-hair-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: 3% peroxide for body hair only"
+  ]
+ },
+ "honey-and-cinnamon-lightening-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "honey-lemon-and-cinnamon-high-potency-lightener": {
+  "verdict": "stop",
+  "flags": [
+   "care: Cinnamon powder can burn",
+   "stop: Remove lemon juice",
+   "stop: Too much cinnamon for skin"
+  ]
+ },
+ "bridal-glow-ubtan": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
+ },
+ "fast-absorbing-daily-cuticle-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nourishing-cuticle-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-nail-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "carrot-moisturizer": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "vitamin-c-face-cream-mask": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Use fresh food within a day",
+   "stop: Fresh aloe in oil will mold"
+  ]
+ },
+ "beeswax-skin-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-glow-face-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "silky-lotion-dots": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-glow-tallow-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-glow-face-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face",
+   "care: Turmeric stains and can cause allergy",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "easy-turmeric-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "pumpkin-spice-sugar-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "turmeric-body-lotion": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: Turmeric stains and can cause allergy",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "peppermint-cocoa-lip-treatment": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "body-firming-oil-blend": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "orange-peel-brightening-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "charcoal-detox-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-detox-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "body-odor-control-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "wrinkle-repair-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Homemade vitamin C rarely works",
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "turmeric-massage-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "carrot-whitening-soap-melt-and-pour": {
+  "verdict": "stop",
+  "flags": [
+   "care: Homemade vitamin C rarely works",
+   "care: Turmeric stains and can cause allergy",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "sugar-scrub-bar": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "skin-repair-soap-melt-and-pour": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much oil for melt-and-pour",
+   "care: Turmeric stains and can cause allergy",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "exfoliating-spa-bar-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baby-mango-and-shea-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mango-butter-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-peel-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "grape-rejuvenating-soap-melt-and-pour": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh fruit spoils in balms",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "lemon-and-poppy-seed-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mint-and-orange-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "haldi-chandan-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "silk-protein-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "alum-soap-with-glycerin-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: That's a lot of alum for a soap"
+  ]
+ },
+ "cucumber-and-niacinamide-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much fragrance oil"
+  ]
+ },
+ "mint-leaf-and-lemongrass-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Dry or fry fresh herbs before infusing"
+  ]
+ },
+ "gingerbread-bath-bombs": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon and clove oils are harsh in a bath"
+  ]
+ },
+ "homemade-pumpable-lotion": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "triple-rice-brightening-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-and-pineapple-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-fruit-soap-for-fair-skin": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh fruit spoils in balms",
+   "stop: Fresh food can't be stored",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "moroccan-argan-oil-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "champagne-vanilla-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mulled-wine-velvet-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frosted-fir-tree-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eggnog-nutmeg-cream-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "candy-cane-swirl-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "golden-star-anise-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "velvet-poinsettia-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "reindeer-cocoa-marshmallow-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "winter-berry-wreath-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ocean-breeze-sea-salt-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baby-oil-for-rashes": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-herbal-shampoo": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-and-cinnamon-scrub-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "natural-hand-cream-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "elderberry-vapor-rub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cinnamon-and-honey-exfoliating-soap-melt-and-pour": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "shea-butter-body-moisturizer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mulethi-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tan-removal-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "dilka-sudanese-bridal-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "karkar-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate"
+  ]
+ },
+ "sidr-hair-and-face-paste": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "khomra-style-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-clay-face-mask-powder": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-methi-and-kalonji-hair-oil-dried-herbs": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "rosemary-and-kalonji-hair-growth-toner": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies",
+   "care: Fry fresh leaves until crisp",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "multi-herb-hair-growth-oil-dried-one-infusion": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "dry-herbal-shampoo-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "olden-days-bath-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "desi-hair-oil-blend": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "golden-neem-botanical-bath-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "turkish-hammam-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "moroccan-pink-glow-face-and-body-pack": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated",
+   "care: Saffron is often faked"
+  ]
+ },
+ "ancient-chinese-secret-ginger-salt-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-hair-growth-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "korean-glow-soap-melt-and-pour-version": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "batana-hair-shampoo": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "hibiscus-hair-growth-shampoo-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cranberry-peppermint-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-and-pink-clay-body-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fig-and-honey-sugar-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh fruit spoils in balms"
+  ]
+ },
+ "honey-and-yogurt-hydrating-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-and-milk-brightening-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "neem-and-clay-acne-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "charcoal-and-aloe-pore-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oatmeal-and-milk-soothing-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "beetroot-and-yogurt-glow-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "homemade-coffee-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "detan-face-mask": {
+  "verdict": "stop",
+  "flags": [
+   "care: Turmeric stains and can cause allergy",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "castor-oil-tallow-face-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: Beef tallow can clog pores"
+  ]
+ },
+ "flaxseed-gel-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "oat-soak-hair-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-scalp-oil-like-mont-mizui-scalp-treatment": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-mids-and-ends-oil-like-mont-mizui-mids-and-ends-tre": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brown-sugar-and-vitamin-e-lip-glow-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-vanilla-sugar-lip-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "coconut-rose-lip-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "sinus-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Camphor is poisonous if swallowed"
+  ]
+ },
+ "blue-tansy-youth-renewal-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "aloe-and-vitamin-c-sunscreen": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Homemade vitamin C rarely works",
+   "stop: This isn't sunscreen",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rice-tea-and-clove-hair-serum": {
+  "verdict": "stop",
+  "flags": [
+   "care: Cinnamon infusions can burn",
+   "care: Clove infusion can irritate",
+   "care: Rice water spoils fast",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "christmas-bath-salts": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eucalyptus-mint-aromatic-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-espresso-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "magnesium-muscle-rub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "garlic-and-herb-hair-growth-oil": {
+  "verdict": "stop",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies",
+   "stop: Fresh garlic in oil can grow botulism",
+   "stop: Remove raw garlic"
+  ]
+ },
+ "botanical-skin-rescue-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "natural-headache-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "herbal-clove-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "day-to-day-breast-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-and-conditioner-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nourishing-makeup-remover-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sandalwood-and-rose-water-face-pack": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sandalwood-and-curd-oil-control-pack": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "protective-cocoa-shea-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "banana-egg-and-fenugreek-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Raw egg carries salmonella risk"
+  ]
+ },
+ "clove-and-rosemary-recovery-balm": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Clove bud essential oil is too strong"
+  ]
+ },
+ "homemade-calamine-lotion": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "magnesium-rub-spray-for-leg-cramps": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate"
+  ]
+ },
+ "eucalyptus-comfort-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "egyptian-body-cream-with-snow-white-powder": {
+  "verdict": "stop",
+  "flags": [
+   "care: Swap fresh juice for a commercial extract",
+   "stop: Keep citric acid out of leave-on products",
+   "stop: Leave out the whitening powder"
+  ]
+ },
+ "arabian-beauty-elixir-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh fruit spoils in balms"
+  ]
+ },
+ "indian-attar-oil-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Essential oils are nearly undiluted"
+  ]
+ },
+ "biblical-anointing-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Cinnamon bark essential oil is too strong"
+  ]
+ },
+ "black-seed-and-goat-milk-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-vitamin-c-facial-oil-like-kerala-rituals-ayurvedic-": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-strength-hair-oil-like-donna-s-recipe-strength-hair": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-baby-soap-with-oatmeal-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "neem-and-aloe-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-coconut-cream-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-toothache-paste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Turmeric stains"
+  ]
+ },
+ "korean-glass-skin-potato-soap": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh fruit spoils in balms",
+   "stop: Fresh food can't be stored",
+   "stop: This isn't soap, and it will spoil"
+  ]
+ },
+ "rosemary-and-cinnamon-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "stop: Keep cinnamon out of face products"
+  ]
+ },
+ "turmeric-lemon-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "citrus-rose-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh orange spoils in a jar"
+  ]
+ },
+ "glowing-lavender-bath": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "minty-eucalyptus-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Dry or fry fresh herbs before infusing"
+  ]
+ },
+ "overnight-garlic-nail-oil": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh garlic in oil can grow botulism",
+   "stop: Remove raw garlic"
+  ]
+ },
+ "overnight-fenugreek-and-aloe-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Fresh aloe needs careful prep"
+  ]
+ },
+ "overnight-brow-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-rosehip-and-shea-glow-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-aloe-and-tea-tree-spot-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-ghee-and-turmeric-lip-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "men-s-aloe-night-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "chocolate-rose-face-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-rice-and-honey-mask-like-beauty-of-joseon-ground-ri": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "avocado-seed-face-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Avocado seed powder is too harsh for the face"
+  ]
+ },
+ "avocado-seed-acne-spot-pack": {
+  "verdict": "care",
+  "flags": [
+   "care: Avocado seed powder is too harsh for the face"
+  ]
+ },
+ "extra-hot-menthol-free-pain-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Cayenne or chili pepper can burn"
+  ]
+ },
+ "simple-lip-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "solid-perfume-balm-creative-mahi": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much fragrance oil"
+  ]
+ },
+ "rose-infused-whipped-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calendula-chamomile-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "simple-healing-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calendula-healing-salve": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-facial-steam": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "citrus-burst-body-spray": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "cooling-mint-body-spray": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "exfoliating-coffee-scrub-sustainable-jungle": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "egg-and-honey-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Raw egg carries salmonella risk"
+  ]
+ },
+ "shea-body-lotion-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "simple-facial-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bentonite-clay-face-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "witch-hazel-rose-toner": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold",
+   "stop: Vinegar shouldn't stay on skin"
+  ]
+ },
+ "arrowroot-dry-shampoo": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rejuvenating-face-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange",
+   "care: Too much sea buckthorn oil"
+  ]
+ },
+ "bulk-lip-balm-1-kg-batch": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "anti-aging-body-lotion": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-vanilla-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "basic-herbal-salve": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "growth-beard-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "woodsy-beard-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "fresh-beard-oil": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "stop: Bergamot essential oil above its sun-safe limit"
+  ]
+ },
+ "herbal-bruise-salve": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "dry-touch-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "classic-shea-lotion-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-shea-luxury-lotion-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soft-and-silky-shea-lotion-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "inhaler-steamer-bags": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aromatic-pain-relief-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Dry or fry fresh herbs before infusing"
+  ]
+ },
+ "lavender-relaxing-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-vanilla-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-glow-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-butter-repair-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calendula-baby-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mango-butter-softening-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "orange-spice-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-and-green-tea-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-oat-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-and-cocoa-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "moisturising-massage-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-bath-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-and-calendula-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "face-lotion-bar-2-oz-tin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mountainmama-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calendula-lotion-bars-overthrowmartha": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lush-style-lotion-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lotion-bars-with-frankincense": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "the-best-lotion-beeswax-and-water": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "lavender-and-chamomile-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "exfoliating-lotion-bar-with-ground-almonds": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-ultrabland-cleansing-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "night-repair-lavender-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "3-ingredient-lotion-bar-little-pine": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-lotion-bars-with-lavender-and-lemon": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "winter-body-glowing-butter-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "equal-parts-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lotion-dots-firm-1-2-cup-beeswax": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lotion-dots-soft-1-4-cup-beeswax": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "balm-for-dry-skin-candelilla": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "litsea-moisturizing-lotion-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "breathe-easy-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "collagen-boosting-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "scar-reducer-body-butter-aromahead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "natural-scar-butter-aromahead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-immune-support-butter-aromahead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "palmarosa-super-soaker-dry-skin-salve": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "snickerdoodle-lip-balm": {
+  "verdict": "stop",
+  "flags": [
+   "care: Baking extracts don't mix with oil",
+   "care: Too much essential oil",
+   "stop: Keep cassia essential oil off face and lips",
+   "stop: Keep cinnamon bark essential oil off face and lips"
+  ]
+ },
+ "uplifting-solid-perfume-aromahead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "helichrysum-healing-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "skin-regeneration-roller-helichrysum": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Too much essential oil"
+  ]
+ },
+ "herbal-heel-and-hand-rescue-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "young-living-lotion-bars": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "triple-heat-muscle-oil-aromahead": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "spiced-chai-lip-balm": {
+  "verdict": "stop",
+  "flags": [
+   "care: Baking extracts don't mix with oil",
+   "care: Too much essential oil",
+   "stop: Keep cinnamon bark essential oil off face and lips",
+   "stop: Keep clove bud essential oil off face and lips"
+  ]
+ },
+ "gingerbread-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "earth-magic-body-butter-aromahead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "itchy-skin-belly-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mulled-cider-lip-scrub": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Keep cinnamon bark essential oil off face and lips",
+   "stop: Keep clove bud essential oil off face and lips"
+  ]
+ },
+ "collagen-boost-butter-cream-2": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "diy-eczema-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eczema-friendly-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "non-greasy-whipped-body-butter-no-shea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-coconut-vanilla-body-butter": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "whipped-vanilla-dream-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-spa-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-poppy-seed-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "melt-my-heart-whipped-body-butter": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "slimming-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "luxurious-non-greasy-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calming-magnesium-body-butter": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "lavender-sleep-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "magnesium-lotion-emulsified-with-preservative": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "white-chocolate-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "regular-whipped-body-butter-prairie-homestead": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "citrus-bloom-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sweet-dreams-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rich-hand-cream-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "orange-zest-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "anti-aging-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "non-greasy-shea-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "murumuru-hair-and-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "kokum-butter-face-and-body-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "softening-hand-and-foot-repair-balm-nivea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-garden-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bulk-body-butter-10-kg-batch": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-healing-lotion-bar-lilyflower": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-lotion-bars-equal-cups": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baby-body-butter-mango-and-shea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glow-boosting-turmeric-body-butter": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "light-face-oil-with-cacay-and-prickly-pear": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-scrub-bar-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-cream-cleanser-commercial-style-formula": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "emulsified-body-scrub-commercial-style-formula": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hydrating-aloe-honey-gel-mask-preserved": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "niacinamide-gentle-glow-face-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "younger-looking-skin-face-serum-normal-skin": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "younger-looking-skin-face-serum-oily-skin": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "marshmallow-root-and-aloe-hair-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "medicated-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rose-castile-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "lemon-fresh-castile-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "care: Acid and castile soap cancel out",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "milk-and-honey-castile-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "lavender-castile-body-wash-no-water": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "essential-oil-body-wash-honey-and-water": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "glycerin-and-fco-body-wash-no-water": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-lush-style-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "moisturizing-shower-cream": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "honey-coconut-body-wash-the-oil-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "summer-body-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash"
+  ]
+ },
+ "diy-natural-body-lotion-whipped": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diy-natural-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-castile-body-wash-no-water": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "silk-healing-skin-salve": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "calendula-rosehip-face-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "best-body-butter-for-glowing-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "peppermint-foot-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first",
+   "care: Peppermint and eucalyptus can sting in a bath"
+  ]
+ },
+ "peppermint-foot-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "peppermint-whipped-foot-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baby-mild-honey-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oil-cleanser-10-ml": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "foaming-honey-face-cleanser": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "creamy-clay-cleanser": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "glowing-body-oil-100-ml": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "invigorating-salt-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "barrier-repair-sensitive-lotion": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rice-water-and-aloe-facial-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: Rice water spoils fast",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "oat-and-aloe-deodorizing-body-wash": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "coconut-and-shea-deodorant-stick": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash"
+  ]
+ },
+ "7-day-diy-body-wash-oats-and-water": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "boujee-shower-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-shower-oil-8-oz": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glowing-skin-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "relaxing-bedtime-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "easy-shower-steamers": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "all-natural-bath-tea-bags": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tallow-face-cream": {
+  "verdict": "care",
+  "flags": [
+   "care: Beef tallow can clog pores"
+  ]
+ },
+ "divination-bath-salts": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "cold-care-massage-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "inspiration-bath-oil-undiluted": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first",
+   "care: Too many drops for one bath"
+  ]
+ },
+ "women-s-bath-oil-blend": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shimmering-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-mouthwash-mint-clove-green-tea": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Use it within a day"
+  ]
+ },
+ "body-wash-with-a-cup-of-water": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "herbal-roll-on-deodorant": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil",
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "dry-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hydrating-winter-body-wash-aloe": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "beard-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Cocoa butter can clog pores",
+   "care: Too much essential oil"
+  ]
+ },
+ "homemade-vaseline-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-bath-soak-bag": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "rose-shower-gel": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "magnesium-oil-spray": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frankincense-and-myrrh-whipped-lotion": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "liquid-morphine-roller-blend": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Essential oils are nearly undiluted",
+   "stop: Lemongrass essential oil is too strong"
+  ]
+ },
+ "botanical-body-oil-calendula-and-rose": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-creamy-body-oil-like-in-your-face-hydrating-creamy-": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "crunchy-but-boujee-luxe-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-hair-and-body-oil-like-the-earthling-co-hair-body-o": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "skin-so-soft-bath-and-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "golden-veil-shimmering-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "citrus-glow-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-citrus-body-oil-phototoxicity-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "Firming body oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "Cocoa vanilla body oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "Stretch mark support oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shimmer-body-oil-ylang-ylang": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "Soothing aloe body oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-glow-firming-body-butter-200-g": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "roll-on-perfume-oil-10-ml": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-enzyme-body-scrub-like-riche-mango-ananas-enzyme-sc": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-hot-honey-body-jelly-like-riche-hot-honey-body-jell": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "collagen-boost-face-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much essential oil"
+  ]
+ },
+ "sandalwood-body-mist": {
+  "verdict": "stop",
+  "flags": [
+   "care: Witch hazel may contain alcohol",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "Blue aparajita gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "winter-spice-body-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "coconut-and-vanilla-deodorant-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "summer-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glass-gloss-hair-tonic": {
+  "verdict": "stop",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "ultra-hydrating-body-oil-100-g": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "crack-cream-for-feet": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glass-skin-rice-water-remedy": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Rice water spoils fast",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "sugar-lemon-honey-wax": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cream-for-dark-bikini-lines": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "glowing-skin-face-scrub-lemon": {
+  "verdict": "stop",
+  "flags": [
+   "care: Sugar (white or brown) is too harsh for the face",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "cooling-mint-melt-and-pour-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-moringa-neem-hair-mask-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Vinegar needs care"
+  ]
+ },
+ "herbal-clay-tooth-paste-amounts-filled-in": {
+  "verdict": "care",
+  "flags": [
+   "care: Honey is still sugar on your teeth",
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "vanilla-almond-cocoa-whipped-body-butter-emulsified-amounts-": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-sugar-scrub-cookies-cream-look": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-tree-sugar-scrub-for-shave-days": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "recreate-gold-shimmer-dry-oil-face-body-hair": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tallow-kiss-lip-balm-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "magnesium-and-vinegar-leg-wrap-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "honey-and-mustard-body-wrap-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Mustard seed or powder can burn",
+   "stop: Never leave it on until it burns"
+  ]
+ },
+ "all-natural-swap-cinnamon-clove-shampoo-amounts-filled-in": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Cinnamon bark essential oil is too strong",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "all-natural-swap-coconut-conditioner-amounts-filled-in": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Cinnamon bark essential oil is too strong",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "all-natural-swap-leave-in-spray-amounts-filled-in": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "all-natural-swap-cinnamon-clove-bath-oil-amounts-filled-in": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon and clove oils are harsh in a bath"
+  ]
+ },
+ "all-natural-swap-sandalwood-body-wash-amounts-filled-in": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "all-natural-swap-honey-lavender-sugar-scrub-amounts-filled-i": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "recreate-chebe-shampoo-walmart-style-amounts-filled-in": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "recreate-smoothing-shampoo-bar-ethique-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "recreate-smoothing-conditioner-bar-ethique-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-emulsified-milky-body-scrub-as-posted-amounts-fi": {
+  "verdict": "care",
+  "flags": [
+   "care: Check what's in the lightening milk"
+  ]
+ },
+ "korean-mugwort-bath-soak-ganghwa-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "frankincense-resin-infused-jojoba-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "german-chamomile-eczema-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "dead-sea-salt-basin-soak-study-strength": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-tamarind-and-papaya-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "length-retention-herbal-hair-butter": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "hydrogen-peroxide-and-vinegar-skin-treatment": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove hydrogen peroxide",
+   "stop: Too much vinegar",
+   "stop: undefined"
+  ]
+ },
+ "herbal-modeling-rubber-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-salt-foot-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sun-dried-salt-body-scrub-sauna-salt-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bamboo-salt-gargle-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "gentle-salt-water-gargle": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "calendula-body-butter-whipped": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "kefir-face-and-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-tea-compress": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-water-facial-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "brightening-whipped-body-butter-licorice": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-milk-tea-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time"
+  ]
+ },
+ "rose-ginger-and-mugwort-tea-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time",
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "osmanthus-and-jasmine-tea-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time"
+  ]
+ },
+ "ginger-cinnamon-and-citrus-winter-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time"
+  ]
+ },
+ "amla-and-flax-pre-poo": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-essence-toner-stenders-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "milk-bath-powder-stenders-bathing-milk-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-shower-souffle-with-sugar-stenders-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-rice-and-honey-face-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pomegranate-and-shea-body-polish-dove-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sauna-honey-body-mask-stenders-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jasmine-infused-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cinnamon-baobab-and-vanilla-body-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon infusions can burn"
+  ]
+ },
+ "rosemary-peppermint-scalp-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-bergamot-massage-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-calm-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ethereal-garden-pregnancy-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Add liquids at bath time"
+  ]
+ },
+ "beetroot-cream-blush-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Coconut oil can clog pores"
+  ]
+ },
+ "beetroot-cream-blush-shea-swap": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "hibiscus-jasmine-and-rose-body-scrub-cami-zawina": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "rose-water-coconut-and-lavender-hair-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "sea-salt-scalp-scrub-scaler-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-tree-water-scalp-scaler-steambase-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cooling-mint-scalp-scrub-daleaf-apple-mint-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-scalp-scrub-aromatica-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-sugar-scalp-scaler-plu-modamoda-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "guava-leaf-vinegar-shampoo-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Some amounts are missing",
+   "stop: Too much vinegar",
+   "stop: undefined"
+  ]
+ },
+ "guava-leaf-vinegar-rinse-diluted": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "guava-leaf-tea-hair-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "fresh-guava-leaf-deodorant-paste": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pistachio-body-wash-thepretty-skinparlor": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pistachio-vanilla-body-butter-thepretty-skinparlor": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pistachio-salted-caramel-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pistachio-and-brown-sugar-body-oil-porter-rose-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "golden-hour-hair-perfume-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Too much essential oil"
+  ]
+ },
+ "golden-hour-hair-perfume-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "velvet-bloom-hair-perfume-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "midnight-moon-hair-perfume-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "rose-garden-perfume-roll-on": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sunshine-glow-perfume-roll-on": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "spicy-rose-perfume-roll-on-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Too much essential oil",
+   "stop: Cinnamon bark essential oil is too strong"
+  ]
+ },
+ "sacred-ground-perfume-roll-on": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-shampoo-powder-asbat-al-jamal-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "japanese-style-mineral-body-smoother": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vietnamese-style-coffee-body-scrub-dak-lak-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "spicy-rose-perfume-roll-on-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mango-leaf-vinegar-shampoo-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Some amounts are missing",
+   "stop: Too much vinegar",
+   "stop: undefined"
+  ]
+ },
+ "mango-leaf-vinegar-rinse-diluted": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "saffron-glow-face-oil-pretty-farm-girl": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked",
+   "care: Sea buckthorn stains orange"
+  ]
+ },
+ "lavender-hinoki-mist-sabbatical-style": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "vanilla-almond-cocoa-body-butter-dreaminfinite-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sticky-rice-and-honey-face-mask-brendita": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glycerin-hand-lotion-corn-huskers-style": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "lick-safe-dog-paw-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "safou-and-kpangnan-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ximenia-and-marula-face-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mongongo-hair-shine-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "atile-resin-skin-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "red-onion-and-rosemary-scalp-spray-from-the-comments": {
+  "verdict": "care",
+  "flags": [
+   "care: Onion juice can irritate the scalp",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "postpartum-herbal-sitz-bath": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "okra-detangling-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Use fresh food within a day"
+  ]
+ },
+ "pumpkin-seed-scalp-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oil-free-scalp-tonic-aromatica-tea-tree-style": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "light-hair-milk-mist-leave-in-alternative": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "ambunu-detangling-wash-chadian": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "amla-strengthening-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bhringraj-and-brahmi-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-shea-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-scalp-tonic-tea-not-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "light-hair-essence-non-greasy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-besan-and-yogurt-mask-face-and-body": {
+  "verdict": "care",
+  "flags": [
+   "care: Coffee grounds (used or fresh) is too harsh for the face",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "vanilla-bean-tincture-sabahan-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eucalyptus-leaf-tincture": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-and-herb-hair-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "horsetail-moisture-spray-between-wash-days": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "flyaway-finishing-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "perfumed-body-wash-madame-fin-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "argan-and-coconut-pre-wash-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "besan-yogurt-and-honey-face-mask-safer-coffee-mask-swap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-body-mask-body-version": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glass-skin-body-wash-haps-style-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "niacinamide-face-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-body-lotion-haps-style-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "licorice-glycerin-soap-tana-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ceramide-barrier-cream-haps-anti-aging-cream-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mineral-toothpaste-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Too much essential oil"
+  ]
+ },
+ "mineral-toothpaste-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "teeth-whitening-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "eucalyptus-mint-decongesting-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vegan-hand-cream-with-bakuchiol": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "goat-milk-body-gel-lotion-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "goat-milk-body-lotion-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bride-to-be-glow-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fresh-aloe-and-almond-moisturizer-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: Oil and water will separate",
+   "stop: Fresh aloe in oil will mold",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "fresh-aloe-and-almond-moisturizer-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep"
+  ]
+ },
+ "breast-milk-soap-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Breast milk spoils like any milk",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "breast-milk-bath-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Breast milk spoils like any milk"
+  ]
+ },
+ "breast-milk-lotion-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Breast milk spoils like any milk",
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "breast-milk-bum-cream-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Breast milk spoils like any milk",
+   "care: Oil and water will separate",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "milk-free-baby-bum-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Don't rely on this as sunscreen",
+   "care: You can't make reliable sunscreen at home"
+  ]
+ },
+ "oat-milk-and-shea-bath-bomb": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "raw-honey-and-milk-facial-cleanser": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turkish-rose-scrub-gu-l-peelingi": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ocean-body-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "orange-glow-face-mask-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh orange spoils in a jar",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "orange-glow-face-mask-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-jojoba-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-perfumed-body-powder-talc-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-rice-milk-shower-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brown-sugar-scrub-brooklyn-botany-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-vera-leave-in-detangler-preserved": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate"
+  ]
+ },
+ "shea-hair-butter-crystal-diy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hand-oil-sold-as-anti-aging": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-glow-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-sugar-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "simple-coffee-body-scrub-with-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-vanilla-body-scrub-sold-for-cellulite": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "glow-boost-turmeric-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "epsom-salt-and-sweet-almond-oil-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-turmeric-night-cream-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "aloe-and-rose-water-night-gel-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "butterfly-pea-collagen-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brightening-deodorant-cream-bamglamdiy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-relaxing-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-castile-shampoo-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "rosemary-castile-shampoo-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "d-tan-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "charcoal-and-tea-tree-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-scrub-5-recipe-card": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-and-honey-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-and-sea-salt-scrub-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Remove lemon juice"
+  ]
+ },
+ "sea-salt-and-olive-scrub-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-and-yogurt-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "cloud-soft-body-butter-for-kids": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "deep-muscle-relief-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "revive-leg-and-foot-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chest-calm-sleep-blend": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "healing-heel-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-powder-and-honey-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gram-flour-and-turmeric-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "coffee-and-coconut-oil-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rice-flour-and-milk-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "brown-sugar-and-olive-oil-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-scrub-with-baby-oil-and-lotion": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "rose-glow-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oatmeal-soothing-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lemon-detox-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Citrus peel and sunlight"
+  ]
+ },
+ "chamomile-and-jasmine-foaming-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "rice-and-saffron-glow-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
+ },
+ "fennel-powdered-cleanser-for-oily-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-and-oat-cleansing-powder": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-scrub-for-oily-skin-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Coffee grounds (used or fresh) is too harsh for the face"
+  ]
+ },
+ "yogurt-honey-mask-for-oily-skin-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "orange-sugar-foot-scrub-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh orange spoils in a jar",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "orange-sugar-foot-scrub-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gram-flour-and-orange-peel-glow-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "rice-besan-and-turmeric-scrub-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "pomegranate-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oat-and-honey-castile-shampoo-one-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oatmeal-castile-shampoo-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "coconut-milk-castile-shampoo-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "neem-soapnut-wash-fresh": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "neem-and-guava-leaf-scalp-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "curry-leaf-coconut-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Fry fresh leaves until crisp"
+  ]
+ },
+ "hibiscus-reetha-shikakai-shampoo-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "hibiscus-reetha-wash-one-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-mint-shampoo-bar-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "beetroot-scrub-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Sugar (white or brown) is too harsh for the face",
+   "care: Use fresh food within a day"
+  ]
+ },
+ "beetroot-sugar-body-scrub-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "gold-glow-gel-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh aloe needs careful prep",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "gold-shimmer-aloe-gel-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "hair-primer-spray-crystal-diy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-water-hair-spray-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "sage-leaf-scalp-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-scalp-oil-infused": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "citrus-milk-bath": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-pink-milk-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "mineral-bath-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "calendula-and-lavender-bath-tea": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "powdered-milk-bath-creative-homemaking": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-relaxing-foot-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "stimulating-herbal-bath-tea-lisabee-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Mix essential oils into a carrier first"
+  ]
+ },
+ "undereye-care-cream-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "caffeine-eye-gel-safer-undereye": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-eye-butter": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange"
+  ]
+ },
+ "creamy-cleansing-balm-tessa-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shimmer-eyeshadow-tessa-s": {
+  "verdict": "care",
+  "flags": [
+   "care: Arrowroot or cornstarch near the eyes",
+   "care: Zinc oxide near the eyes"
+  ]
+ },
+ "lip-oil-gloss-bamglamdiy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "balanced-lip-oil-non-sticky": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-powdered-cleanser-dry-mix": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frankincense-and-myrrh-bath-bomb": {
+  "verdict": "care",
+  "flags": [
+   "care: Too many drops for one bath"
+  ]
+ },
+ "green-tea-soak-detox-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "citrus-energy-shower-melts": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-cleanser-for-dry-or-mature-skin-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "chamomile-milky-cleanser-small-batch": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "floral-rose-perfume-100-ml-spray-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold",
+   "stop: Too much essential oil",
+   "stop: Ylang ylang essential oil is too strong"
+  ]
+ },
+ "floral-rose-perfume-oil-roll-on-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "scalp-detox-scrub-with-jojoba-and-tea-tree": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "acne-calming-serum-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Homemade vitamin C rarely works",
+   "care: Oil and water will separate",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "brightening-vitamin-c-serum-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Homemade vitamin C rarely works",
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "fresh-vitamin-c-mix-one-use": {
+  "verdict": "care",
+  "flags": [
+   "care: Homemade vitamin C rarely works"
+  ]
+ },
+ "hydrating-glow-serum-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "glycerin-aloe-hydrating-serum-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "basil-and-cucumber-face-toner-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "cucumber-cooling-compress-fresh": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glow-up-skin-serum-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Too much essential oil"
+  ]
+ },
+ "glow-up-face-oil-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nightly-glow-serum-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Too much essential oil"
+  ]
+ },
+ "nightly-glow-serum-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "homemade-zinc-sunscreen-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Don't rely on this as sunscreen",
+   "care: You can't make reliable sunscreen at home"
+  ]
+ },
+ "scars-vanishing-night-mask-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Homemade vitamin C rarely works",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "licorice-and-aloe-calming-mask-fresh": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-face-barrier-repair-balm-bamglamdiy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-clay-poultice-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-clay-shoulder-compress": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sidr-milk-and-honey-softening-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "matcha-glow-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "kaolin-and-green-tea-pore-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentle-kaolin-mask-for-dry-sensitive-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-honey-lip-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking extracts don't mix with oil"
+  ]
+ },
+ "strawberry-shea-lip-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "rose-shea-lip-balm-crystal-diy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "under-eye-night-cream-aloe-and-almond": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "honey-rose-and-oat-face-cleanser": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pomegranate-scrub-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh fruit spoils in balms",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "pomegranate-scrub-fresh-one-use": {
+  "verdict": "care",
+  "flags": [
+   "care: Fresh fruit spoils in balms"
+  ]
+ },
+ "evening-rose-and-chamomile-tonic": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "coconut-and-vanilla-body-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-castile-facial-cleanser-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "dandelion-and-thyme-vinegar-toner": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold",
+   "stop: Vinegar shouldn't stay on skin"
+  ]
+ },
+ "oat-water-skin-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-and-oat-cream-cleanser": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-powder-mask-for-dry-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-powder-mask-for-oily-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-and-milk-face-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "glowy-hydrating-body-mist-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "glowy-shimmer-body-mist-preserved": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "natural-shaving-cream-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "whipped-shave-butter-no-water": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gold-luxury-spa-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mint-and-lavender-body-polish": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cucumber-gel-for-summer-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Use fresh food within a day"
+  ]
+ },
+ "lip-serum-with-honey-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-rose-lavender-lip-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-lip-butter-with-dragon-fruit": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soft-pink-lip-balm-honey": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "plumping-lip-gloss-tessa-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "simple-lip-oil-bamglamdiy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bridal-glow-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lip-sleeping-mask-bamglam-spa": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "khumra-inspired-perfume-oil-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frankincense-rose-and-olive-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frankincense-and-rose-infused-olive-oil-whole-plant": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "foaming-apricot-saffron-and-glycolic-scrub-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Apricot shell is a sharp exfoliant",
+   "care: Glycolic acid needs care",
+   "care: Saffron is often faked"
+  ]
+ },
+ "foaming-sugar-and-saffron-scrub-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
+ },
+ "ewedu-jute-leaf-slippery-hair-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "japanese-rice-milk-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sensitive-skin-bar-fragrance-free-chamomile": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "clear-bar-turmeric-and-kaolin": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "balance-bar-green-clay-and-tea-tree": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "plant-jelly-balm-vaseline-alternative": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-honey-and-milk-powder-face-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "spiced-shampoo-booster-rosemary-clove-cinnamon-ginger": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "rosemary-and-ginger-scalp-rinse-safer-spice-swap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tamarind-coffee-body-scrub-skin-editor-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "guava-hand-cream-trader-joe-s-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fig-black-tea-and-musk-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ultra-moisturizing-hand-cream-trader-joe-s-original-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pumpkin-spice-hand-cream-gentler-tj-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-deodorant-stick-trader-joe-s-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "leave-in-conditioner-spray-trader-joe-s-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shine-hair-serum-trader-joe-s-dupe-water-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-body-butter-trader-joe-s-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-lemongrass-body-oil-tj-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-ginger-oatmeal-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "guava-honey-lip-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-salt-scrub-kuu-spa-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "sandalwood-chip-tincture": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "seed-infused-growth-oil-milagro-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Pepper can sting and redden the scalp",
+   "care: Sesame is a common food allergen"
+  ]
+ },
+ "seed-infused-hair-oil-gentler": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Sesame is a common food allergen"
+  ]
+ },
+ "flaxseed-curl-gel-3-cups-water": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "caffeine-scalp-tonic-reedle-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mellow-leave-in-hair-cream-anaze-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "beef-marrow-pre-shampoo-hair-butter-tutano": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "plant-butter-pre-shampoo-tutano-alternative": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "neem-clove-and-peroxide-mouthwash-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Hydrogen peroxide rinse",
+   "care: Use it within a day"
+  ]
+ },
+ "neem-and-clove-herbal-mouthwash-gentler": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Use it within a day"
+  ]
+ },
+ "xylitol-and-hydroxyapatite-rinse-non-toxic-mouthwash": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste",
+   "care: Use it within a day"
+  ]
+ },
+ "immortelle-face-oil-l-occitane-divine-inspired": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shade-matched-setting-powder-suppin-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "immortelle-divine-face-oil-dupe": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange"
+  ]
+ },
+ "verbena-cooling-body-gel-l-occitane-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-skin-powder-unscented-suppin-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-supple-skin-oil-l-occitane-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange"
+  ]
+ },
+ "almond-shower-oil-l-occitane-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chalk-tooth-paste-1910-club-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "hibiscus-scrub-balls-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "hibiscus-scrub-balls-keeps-for-months": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-vanilla-dusting-powder-lush-coconut-drench-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-talc-free-body-powder-anti-chafe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-butter-dusting-powder-lush-silky-underwear-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-bedtime-dusting-powder-lush-sleepy-dust-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "corn-free-sandalwood-vanilla-body-powder-merry-bath-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-leg-massage-mustard-free-wrap-alternative": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "talc-free-english-rose-body-powder-yardley-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "talc-free-english-lavender-body-powder-yardley-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gentleman-s-deodorizing-body-powder-yardley-gold-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "anti-chafe-zinc-body-powder-anti-monkey-butt-style-no-baking": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-men-s-comfort-powder-happy-nuts-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "talc-free-lily-of-the-valley-body-powder-yardley-style-lilia": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "charcoal-underarm-bar-kaia-takesumi-style-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-shave-soap-kitsch-shave-butter-style-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lace-satin-solid-perfume-rose-jasmine-sandalwood": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tart-cherry-solid-body-wash-kitsch-style-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-glow-bar-kitsch-kojic-bar-alternative": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "cucumber-eucalyptus-spa-bar-kitsch-glycolic-bar-alternative": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-apricot-exfoliating-bar-kitsch-shea-butter-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Apricot shell is a sharp exfoliant"
+  ]
+ },
+ "tea-tree-and-mint-shampoo-bar-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "castor-oil-shampoo-bar-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-oil-shampoo-bar-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rice-protein-shampoo-bar-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-and-charcoal-shampoo-bar-kitsch-rosemary-biotin-sty": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ultra-gentle-unscented-shampoo-and-body-bar-kitsch-ultra-sen": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "moisture-conditioner-bar-coconut-and-castor-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "protein-conditioner-bar-rice-kitsch-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-conditioner-and-shave-bar-kitsch-ultra-sensitive-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-oatmeal-body-powder-talc-free-corn-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gourmand-dusting-powder-base-bathtreatbakery-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "layering-body-oil-gourmand-jojoba-and-avocado": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-and-shea-soap-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jamaican-style-hair-growth-mask-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Raw egg carries salmonella risk"
+  ]
+ },
+ "avocado-and-banana-softening-mask-no-egg-easy-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "panthenol-hair-booster-bepantol-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-witch-hazel-face-mist-dollar-tree-dermasil-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "aloe-calendula-face-and-body-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bentonite-and-turmeric-face-mask-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "gentle-clay-and-turmeric-mask-dry-or-sensitive-skin": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "neem-sulfur-and-tea-tree-soap-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Sulfur can dry skin and smells strong"
+  ]
+ },
+ "coconut-honey-brown-sugar-scrub-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "rose-and-calendula-body-oil-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-clay-and-beetroot-soap-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "lemon-turmeric-glow-oil-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Fresh zest can sun-sensitize and spoil",
+   "care: Oil and water will separate",
+   "care: Turmeric stains and can cause allergy",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "turmeric-glow-oil-sun-safe": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "grapeseed-oil-soap-with-green-color-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Food dye bleeds and stains"
+  ]
+ },
+ "green-clay-and-grapeseed-soap": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-and-lemon-sugar-scrub-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Acid and castile soap cancel out",
+   "care: Add soap to each scoop, not the jar",
+   "care: Turmeric stains and can cause allergy",
+   "stop: Remove lemon juice"
+  ]
+ },
+ "turmeric-sugar-scrub-no-lemon": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "honey-herbal-face-mask-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "chamomile-rose-toner-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "chamomile-rose-toner-preserved": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bentonite-vinegar-and-glycolic-dandruff-mask-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Glycolic acid needs care",
+   "stop: Too much vinegar"
+  ]
+ },
+ "gentle-clay-scalp-mask-for-flakes": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sugar-wax-with-glycerin-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Vegetable glycerin doesn't belong in sugar wax"
+  ]
+ },
+ "moringa-sugar-scrub-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "hibiscus-and-lavender-body-scrub-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "turmeric-lip-balm-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "ayurvedic-herbal-hair-rinse-sage-rosemary-brahmi-ginger": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ayurvedic-herb-hair-mask-amla-bhringraj-brahmi-hibiscus": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "royal-saffron-milk-bath": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
+ },
+ "avocado-deep-conditioner-as-posted-stored-in-a-jar": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "avocado-deep-conditioner-make-fresh": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "horsetail-rosemary-and-peppermint-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-soapnut-shampoo-with-cosgard": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-and-honey-scalp-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "golden-flaxseed-and-amla-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "minty-sea-breeze-body-bar-diy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "minty-crystal-salt-scrub-like-lush-magic-crystals": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cooling-body-conditioner-bar-like-lush-tingle": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calming-oat-cleansing-balm-like-lush-sleepy-face": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-and-kaolin-powder-cleanser-like-lush-angels-on-bare-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "linseed-and-aloe-multi-use-cream-like-lush-s-linseed-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-coconut-hair-butter-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "minty-herbal-shower-gel-like-lush-dirty-springwash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-oat-shaving-butter-like-lush-dirty-shaving-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "seven-oil-dry-body-oil-like-nuxe-huile-prodigieuse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fresh-floral-dry-oil-like-nuxe-huile-prodigieuse-florale": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rich-dry-oil-for-very-dry-skin-like-nuxe-huile-prodigieuse-r": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gold-or-rose-gold-shimmer-dry-oil-like-nuxe-huile-prodigieus": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "plum-and-sesame-night-oil-like-nuxe-huile-prodigieuse-ne-rol": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "milky-body-toner-like-knock-melt-in-body-toner": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "colour-correcting-setting-powder-green-or-pink-suppin-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "burdock-and-nettle-pre-wash-scalp-oil-like-bur-bur-growing-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-jelly-soap-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "wobbly-rose-jelly-soap-fridge": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "fried-onion-paste-hair-oil-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Onion juice can irritate the scalp",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "dried-onion-sesame-hair-oil-no-fresh-onion": {
+  "verdict": "care",
+  "flags": [
+   "care: Onion can irritate the scalp"
+  ]
+ },
+ "agarwood-oud-chip-tincture": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baobab-shine-oil-like-loma-nourishing-oil-silicone-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calendula-rosehip-face-oil-like-stokli": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "13-herb-rice-wine-hair-tonic-loom-beauty-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Arborvitae leaf can irritate",
+   "care: Dong quai can make skin sun-sensitive",
+   "care: Fo-ti has safety concerns",
+   "care: Ku shen is strong"
+  ]
+ },
+ "ginseng-and-arborvitae-scalp-tonic-diluted": {
+  "verdict": "care",
+  "flags": [
+   "care: Arborvitae leaf can irritate"
+  ]
+ },
+ "hibiscus-curry-leaf-and-methi-infused-hair-oil-loom-beauty-s": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies",
+   "care: Fry fresh leaves until crisp"
+  ]
+ },
+ "fenugreek-amla-and-bhringraj-hair-butter-like-herbal-lineage": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "pomarrosa-rose-apple-spray-perfume": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "berry-musk-body-mist-like-candie-s-berry-musk": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mango-lychee-body-mist-like-candie-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pink-currant-body-mist-like-candie-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "six-oil-hair-blend-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "overnight-honey-and-vaseline-lip-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "1-1-1-twist-up-lip-balm-beeswax-shea-jojoba": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-coffee-lip-buffer-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-cacao-and-herb-body-butter-like-indigo-elixirs-whipp": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "herbal-all-purpose-salve-like-indigo-elixirs-solve-all-salve": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "sea-buckthorn-vanilla-body-balm-like-indigo-elixirs-seven-se": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange"
+  ]
+ },
+ "enchanted-rose-roller-like-indigo-elixirs-safer-swaps": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon infusions can burn"
+  ]
+ },
+ "jungle-jasmine-roller-like-indigo-elixirs": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-scalp-serum-like-indigo-elixirs-luscious-locks": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-citrus-hair-oil-like-indigo-elixirs-sun-safe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tulsi-lime-deodorant-balm-like-indigo-elixirs-mild": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-black-soap-wash-like-indigo-elixirs-black-olena": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "five-oil-hair-growth-blend-olive-rosemary-flax-coconut-casto": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-latte-massage-bar-like-lush": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "coconut-drench-massage-bar-like-lush": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cardamom-orange-massage-bar-like-lush-hayl": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-jasmine-shimmer-massage-bar-like-lush-true-romance-ro-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-chamomile-sleep-bar-like-lush-deep-sleep-no-magnesi": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "each-peach-citrus-massage-bar-like-lush-sun-safe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cooling-after-workout-massage-bar-like-lush-after": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "neroli-lavender-massage-bar-like-lush-therapy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "unscented-bump-balm-bar-like-lush-the-bump-pregnancy-friendl": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "almond-shower-oil-as-posted-castile": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "milky-shower-oil-true-shower-oil-polysorbate-80": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "body-oil-like-l-occitane-almond-supple-skin-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "champagne-rose-bath-oil-dispersing": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cold-cream-cleanser-like-queen-helene-gentler": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "charcoal-mascara-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Activated charcoal near the eyes"
+  ]
+ },
+ "iron-oxide-mascara-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-winter-hand-butter-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-winter-hand-butter-sun-safe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "softer-african-black-soap-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "heavy-cream-hair-butter-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-pre-wash-hair-butter-keeps-no-dairy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-water-and-aloe-curl-slime": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fragrance-free-lightweight-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "thick-body-oil-for-very-dry-skin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "perfumed-body-oil-scent-base": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "east-african-herbal-hair-butter-kibe-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herb-infused-shea-hair-butter-kibe-style-keeps": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "diluted-vinegar-hair-rinse-after-shampoo": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "homemade-vaseline-alternative-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "caffeine-scalp-tonic-like-the-inkey-list-or-kundal": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "niacinamide-brightening-body-gel-leave-on": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "protein-hair-mask-for-damaged-hair-like-elizavecca-cer-100": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "korean-herbal-scalp-shampoo-bar-like-saebom": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "saebom-scalp-bar-full-herb-list-closest-match": {
+  "verdict": "care",
+  "flags": [
+   "care: Arborvitae leaf can irritate",
+   "care: Fo-ti has safety concerns",
+   "care: Ku shen is strong",
+   "care: Sesame is a common food allergen"
+  ]
+ },
+ "easy-herbal-shampoo-bar-melt-and-pour-saebom-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cashmere-mist-style-perfume-oil-donna-karan-dupe": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-cashmere-perfume-oil-like-victoria-s-secret-bare-van": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "berry-meringue-cashmere-perfume-oil-like-victoria-s-secret-p": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "spun-sugar-petals-cashmere-perfume-oil-like-victoria-s-secre": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nectarine-marshmallow-cashmere-perfume-oil-like-victoria-s-s": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cashmere-style-body-mist-any-scent-in-the-collection": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vs-style-body-mist-alcohol-base-clear-store-like": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cashmere-style-eau-de-parfum-15-longer-lasting": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much fragrance oil"
+  ]
+ },
+ "coat-pocket-tallow-balm-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vegan-winter-pocket-balm-no-tallow": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-almond-cocoa-body-butter-real-vanilla-bean": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strong-hold-curl-defining-gel-flaxseed-for-4c": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "spicy-rose-perfume-oil-like-mallee-rose-burn": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hyaluronic-hydrating-face-mist-like-rellet": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "korean-rice-cream-hair-mask-as-posted-blended-rice": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "conditioner-bar-pairs-with-a-shampoo-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bergamot-sandalwood-perfume-oil-like-the-7-virtues": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jasmine-white-tea-scented-shampoo-like-kono": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sleep-well-bath-soak-like-sahajan": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "japanese-hot-spring-bath-powder-like-matsukiyo-bathclin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "japanese-herbal-bath-sachet-yakuto-like-matsukiyo-lab": {
+  "verdict": "care",
+  "flags": [
+   "care: Dong quai can make skin sun-sensitive",
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "herbal-tea-bath-bags-like-inoki": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "kneipp-style-aroma-bath-oil-dispersing": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "kneipp-style-bath-crystals": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "classic-eau-de-cologne-like-4711": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "zinc-barrier-cream-for-chafing-like-penaten-adult-use": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sweet-winter-bath-crystals-like-kneipp-su-e-winterzeit": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tamarind-coffee-glow-scrub-like-pangju-formula-01": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chocolate-glaze-oil-scrub-like-pangju-formula-02": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-skin-night-glycolic-urea-the-safe-way": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-salve-as-posted-evergreen-apothecary": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "glycerin-and-baby-oil-body-oil-lotion-student-budget": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate"
+  ]
+ },
+ "lavender-honey-soap-like-earth-to-body-melt-and-pour": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "clean-white-musk-body-mist-like-ard-al-zaafaran-pure-musk": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hair-perfume-mist-alcohol-light": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mild-clarifying-shampoo-hard-water-and-build-up": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vietnamese-herbal-body-powder-mask-like-xume-bo-t-tha-o-mo-c": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "honey-hair-mask-for-dry-brittle-ends": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-blemish-spot-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bridal-ubtan-body-polish-as-posted-18-powders": {
+  "verdict": "care",
+  "flags": [
+   "care: Camphor is poisonous if swallowed",
+   "care: Mustard seed or powder can burn",
+   "care: Saffron is often faked"
+  ]
+ },
+ "bridal-ubtan-body-polish-gentler-wedding-safe": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
+ },
+ "after-shave-and-ingrown-oil-light-non-greasy": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eczema-cooling-mist-fragrance-free": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-licorice-sugar-scrub-arabic-pangju-style-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-brown-sugar-body-scrub-the-skincare-queen-measured": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "foaming-vanilla-poppy-seed-scrub-mariadelcarmencreates": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "curl-combo-leave-in-flaxseed-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oat-rice-and-chia-slip-hair-mask-with-egg-yolk-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Raw egg carries salmonella risk"
+  ]
+ },
+ "rose-petal-mandelic-body-polish-like-olawunmi-allen": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jamaican-hot-oil-treatment-castor-aloe-honey": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "yogurt-coffee-tahini-mask-for-knees-and-elbows-mear-ahmad": {
+  "verdict": "care",
+  "flags": [
+   "care: Sesame is a common allergen"
+  ]
+ },
+ "gulf-herbal-soap-paste-mear-ahmad-eid-routine": {
+  "verdict": "care",
+  "flags": [
+   "care: Wars stains yellow-orange"
+  ]
+ },
+ "coconut-snow-scrub-mear-ahmad": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sidr-calming-scrub-mear-ahmad": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "easy-chocolate-coffee-tamarind-scrub-mear-ahmad": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "blue-nila-mask-like-inayamorocco": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated"
+  ]
+ },
+ "three-ingredient-sugar-wax": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-sugar-wax": {
+  "verdict": "care",
+  "flags": [
+   "care: Leave essential oils out"
+  ]
+ }
+}
