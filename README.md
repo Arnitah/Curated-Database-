@@ -32,7 +32,7 @@ Run the check yourself: `node scripts/build.mjs --check` (Node 20+, no installs 
 | Dataset | Shape |
 |---|---|
 | `safe-batch/ingredients` | `{ id, name, grp, ph, lvl: ok/care/stop, good, care, flag?, d?, tsp?, max?, nut?, noFace?, never? }` |
-| `safe-batch/synonyms` | `[regexSource, ingredientId, priority?]` (match against lowercased text) |
+| `safe-batch/synonyms` | `[regexSource, ingredientId, oilOnly?]`: matched in order against lowercased text; `oilOnly` = 1 means only match when the line reads like an oil (drops, essential) |
 | `safe-batch/recipes_checked` | `{ name, claim, type, use: now/store/fridge, note?, rows: [[ingredientId, amount, unit]] }` |
 | `safe-batch/proof_grades` | `{ active: { goal: [grade A-D, reason] } }` |
 | `safe-batch/myths` | HTML strings |
@@ -40,8 +40,13 @@ Run the check yourself: `node scripts/build.mjs --check` (Node 20+, no installs 
 | `safe-batch/traditions` | `{ id, name, region, place, how, ev, does, watch, modern }` |
 | `clay/my_products_seed` | `[area, step, name, status: cur/have/past]` |
 
-## Reading the data from an app
-This repo is **private**, so browsers can't read it directly. Pick one:
-- **Make the repo public.** It holds only reference data. Files are then at
-  `https://raw.githubusercontent.com/Arnitah/curated-database-/main/data/safe-batch/ingredients.json` (updates show within about 5 minutes).
-- **Keep it private** and publish just the data with GitHub Pages (needs GitHub Pro for private repos) or by syncing to the backend (`skincare-api`), which can import from here.
+## How the apps read it
+Safe Batch and Clay fetch `version.json` and the datasets from
+`https://raw.githubusercontent.com/Arnitah/curated-database-/main/` on each load (GitHub caches files for about 5 minutes).
+They show their built-in data first, then merge in anything new or changed from here. If GitHub can't be reached, they keep working offline.
+
+What the apps merge today:
+- **Safe Batch:** ingredients (new and edited), synonyms (new), recipes_checked (new and edited), myths, terms, traditions, layering_presets (new)
+- **Clay:** hair_tips, hair_wash_steps, product_steps, feel_words
+
+Deleting an item here doesn't remove it from the apps' built-in copy until the app files are next republished.
