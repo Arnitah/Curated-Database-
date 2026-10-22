@@ -3297,14 +3297,15 @@ function mythHTML(m){
 }
 function renderMyths(){
   const q=$("#mythSearch").value.trim().toLowerCase();
-  const list=MYTHS.filter(m=>(!q||mythText(m).toLowerCase().includes(q))&&(!mythTopic||(typeof m==="object"&&(m.topics||[]).includes(mythTopic))));
+  const list=MYTHS.filter(m=>(!q||mythText(m).toLowerCase().includes(q))&&(!mythTopic||(typeof m==="object"&&(mythTopic==="__v2"?m.format==="v2":(m.topics||[]).includes(mythTopic)))));
   $("#mythCount").textContent=MYTHS.length;
   $("#mythShown").textContent=`${list.length} shown`;
   let bar=document.getElementById("mythTopics");
   const tc={}; MYTHS.forEach(m=>{ if(typeof m==="object") (m.topics||[]).forEach(t=>tc[t]=(tc[t]||0)+1); });
   if(Object.keys(tc).length){
     if(!bar){ bar=document.createElement("div"); bar.id="mythTopics"; bar.className="chips mtopics"; $("#mythSearch").closest(".toolbar").after(bar); }
-    bar.innerHTML=`<button type="button" class="chip" data-mtopic="" aria-pressed="${!mythTopic}">All</button>`+Object.entries(tc).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`<button type="button" class="chip" data-mtopic="${esc(t)}" aria-pressed="${mythTopic===t}">${esc(MYTH_TOPIC_LABEL[t]||t)} ${n}</button>`).join("");
+    const nv2=MYTHS.filter(m=>typeof m==="object"&&m.format==="v2").length;
+    bar.innerHTML=`<button type="button" class="chip" data-mtopic="" aria-pressed="${!mythTopic}">All</button>`+(nv2?`<button type="button" class="chip" data-mtopic="__v2" aria-pressed="${mythTopic==="__v2"}">With sources ${nv2}</button>`:"")+Object.entries(tc).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`<button type="button" class="chip" data-mtopic="${esc(t)}" aria-pressed="${mythTopic===t}">${esc(MYTH_TOPIC_LABEL[t]||t)} ${n}</button>`).join("");
   }
   $("#mythCards").innerHTML=list.map(mythHTML).join("")||`<p class="hint">No matches.</p>`;
 }
