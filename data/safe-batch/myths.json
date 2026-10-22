@@ -1,5 +1,242 @@
 [
  {
+  "id": "rosemary-oil-grows-hair",
+  "title": "Rosemary oil works as well as minoxidil",
+  "topics": [
+   "hair",
+   "essential-oils"
+  ],
+  "claims": [
+   {
+    "claim": "Rosemary oil regrows hair like minoxidil",
+    "verdict": "unproven",
+    "truth": "One small 6-month trial (100 men) found diluted rosemary oil and 2% minoxidil gave similar small gains, with less scalp itch on rosemary. It hasn't been repeated, used the weaker 2% minoxidil and had no placebo group, so it's a hint, not proof.",
+    "grade": "C"
+   },
+   {
+    "claim": "It's safe to use straight",
+    "verdict": "false",
+    "truth": "Essential oils need diluting (about 1 to 2% in a carrier oil or shampoo) or they can irritate the scalp.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Panahi et al. 2015, SkinMed (trial record)",
+    "url": "https://eprints.bmsu.ac.ir/738"
+   },
+   {
+    "title": "Lab Muffin: what the rosemary study actually shows",
+    "url": "https://labmuffin.com/does-rosemary-oil-work-for-hair-growth-the-science/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "coconut-oil-prevents-protein-loss",
+  "title": "Coconut oil before washing protects hair",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Coconut oil reduces damage from washing",
+    "verdict": "true",
+    "truth": "In a lab study, coconut oil used before and after washing reduced protein loss from both damaged and undamaged hair; sunflower and mineral oil didn't. Coconut oil's small fatty acid (lauric acid) can get inside the hair shaft.",
+    "grade": "B"
+   },
+   {
+    "claim": "Any oil does the same",
+    "verdict": "false",
+    "truth": "In the same study only coconut oil reduced protein loss. Other oils still help as a coating against tangles and friction.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Rele & Mohile 2003, J Cosmet Sci (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12715094/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "scalp-massage-thickens-hair",
+  "title": "Scalp massage makes hair thicker",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Daily scalp massage thickens hair",
+    "verdict": "partly",
+    "truth": "A tiny study (9 men, 4 minutes a day for 24 weeks, with a massage device) found slightly thicker hairs but no change in hair count. Promising and free, but very little evidence.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Koyama et al. 2016, Eplasty (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26904154/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "castor-oil-grows-hair",
+  "title": "Castor oil (including Jamaican black castor oil) grows hair",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Castor oil makes hair grow",
+    "verdict": "unproven",
+    "truth": "There are no good human studies showing castor oil grows hair. It is a thick, sealing oil that can make hair feel softer and reduce breakage, which helps you keep length.",
+    "grade": "D"
+   },
+   {
+    "claim": "Castor oil is harmless on hair",
+    "verdict": "partly",
+    "truth": "Usually, but heavy castor oil use has been linked to rare, sudden matting (felting) of long hair. Use a little and wash it out well.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Dermatology Times: can castor oil really grow hair?",
+    "url": "https://www.dermatologytimes.com/view/social-media-mythbusters-can-castor-oil-really-grow-hair-"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "biotin-grows-hair",
+  "title": "Biotin supplements grow hair",
+  "topics": [
+   "hair",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Biotin makes healthy hair grow faster",
+    "verdict": "false",
+    "truth": "Biotin only helped in people who were actually deficient or had specific conditions, which is rare. There's no evidence it helps people with normal levels.",
+    "grade": "B"
+   },
+   {
+    "claim": "Taking biotin is harmless",
+    "verdict": "partly",
+    "truth": "It's not toxic, but high doses can throw off blood tests, including thyroid and heart (troponin) tests. Tell your doctor if you take it.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Patel et al. 2017, Skin Appendage Disorders (review)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5582478/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "low-iron-causes-shedding",
+  "title": "Low iron causes hair shedding",
+  "topics": [
+   "hair",
+   "diet"
+  ],
+  "claims": [
+   {
+    "claim": "Low iron is linked to hair loss in women",
+    "verdict": "partly",
+    "truth": "Studies link low iron stores (ferritin) to non-scarring hair loss in women, though not every study agrees. If you're shedding a lot, a ferritin blood test is worth asking for.",
+    "grade": "B"
+   },
+   {
+    "claim": "Everyone shedding should take iron",
+    "verdict": "false",
+    "truth": "Only if a test shows you're low. Too much iron is harmful, and supplements can upset the stomach.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Iron deficiency and nonscarring alopecia in women: systematic review and meta-analysis (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35415182/"
+   },
+   {
+    "title": "Trost et al. 2006, JAAD (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16635664/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "tight-styles-thin-edges",
+  "title": "Tight braids, ponytails and glued wigs thin your edges",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Tension hairstyles can cause hair loss",
+    "verdict": "true",
+    "truth": "Traction alopecia comes from repeated pulling: tight braids, locs, weaves, ponytails and glued units, especially at the hairline. Early on it's reversible if the tension stops.",
+    "grade": "A"
+   },
+   {
+    "claim": "Edges always grow back",
+    "verdict": "false",
+    "truth": "Long-standing traction can scar the follicles and become permanent. Loosen styles at the first sign of bumps, soreness or thinning, and see a dermatologist if edges don't recover.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Billero & Miteva 2018, Traction alopecia: the root of the problem",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5896661/"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "rice-water-grows-hair",
+  "title": "Rice water makes hair grow faster",
+  "topics": [
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Rice water grows hair",
+    "verdict": "unproven",
+    "truth": "No human studies show rice water speeds growth. The evidence is a lab study showing it can make hair smoother (less surface friction), which may mean fewer tangles and less breakage.",
+    "grade": "D"
+   },
+   {
+    "claim": "It's good for every hair type",
+    "verdict": "partly",
+    "truth": "Its starch and small protein can leave low-porosity or protein-sensitive hair stiff and brittle. Rinse it out well and stop if hair feels hard or snaps.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Inamasu et al. 2010, J Cosmet Sci (rice water and hair)",
+    "url": "https://library.scconline.org/v061n02/81"
+   }
+  ],
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "saudi-brightening-stores-checked-super-girl-skincare-bakry-w",
   "title": "Saudi \"brightening\" stores, checked (Super Girl, Skincare Bakry, Whitura, Bahati, Freshes)",
   "topics": [

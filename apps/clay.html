@@ -531,6 +531,32 @@ const MP_SEED=[
  ['hair','Shampoo','Aussie shampoo and conditioner','past'],
  ['under','Exfoliant','The Ordinary Glycolic Acid 7% Toning Solution','cur'],['under','Deodorant','Tone citrus roll-on','cur'],['under','Deodorant','Dove green tea and cucumber roll-on','cur'],['under','Antiperspirant','Secret lavender roll-on (new)','cur'],
  ['under','Deodorant','Arm & Hammer roll-on','past'],['under','Deodorant','Dove green tea and cucumber body spray','past']];
+/* ---------- Save to your Claude account (private to you, follows you across devices) ----------
+   Each key is one private document at data/users/<you>/<key>. The browser copy stays as the offline cache.
+   Newest wins, by timestamp. */
+const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{}};
+try{ CSYNC.ts=JSON.parse(localStorage.getItem('clay-sync-ts')||'{}')||{}; }catch(e){}
+const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}) };
+const CS_SET={
+  'clay-products':d=>{ if(Array.isArray(d)){ MP.splice(0,MP.length,...d); try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} } },
+  'clay-hair':d=>{ if(d&&typeof d==='object'){ Object.keys(HR).forEach(k=>delete HR[k]); Object.assign(HR,d); try{ localStorage.setItem('clay-hair',JSON.stringify(HR)); }catch(e){} } },
+  'clay-log':d=>{ if(d&&typeof d==='object'){ Object.keys(YLOG).forEach(k=>delete YLOG[k]); Object.assign(YLOG,d); try{ localStorage.setItem('clay-log',JSON.stringify(YLOG)); }catch(e){} } },
+  'clay-prefs':d=>{ if(d&&d.tone>=0&&d.tone<4){ AM_TONE=d.tone; try{ localStorage.setItem('clay-am-tone',String(d.tone)); }catch(e){} } },
+};
+const csStamp=(k,t)=>{ CSYNC.ts[k]=t; try{ localStorage.setItem('clay-sync-ts',JSON.stringify(CSYNC.ts)); }catch(e){} };
+const csRef=k=>CSYNC.db.collection('data/users/'+CSYNC.uid).doc(k);
+function claySyncPush(k){
+  csStamp(k,Date.now());
+  if(!CSYNC.db||!CSYNC.uid) return;
+  clearTimeout(CSYNC.timers[k]);
+  CSYNC.timers[k]=setTimeout(async()=>{
+    if(CSYNC.writing[k]){ claySyncPush(k); return; }   // one write at a time per document
+    CSYNC.writing[k]=true;
+    try{ await csRef(k).set({data:JSON.parse(JSON.stringify(CS_GET[k]())),at:CSYNC.ts[k]}); CSYNC.status='synced'; }
+    catch(e){ CSYNC.status='error'; }
+    finally{ CSYNC.writing[k]=false; }
+  },1200);
+}
 let MP=null; try{ MP=JSON.parse(localStorage.getItem('clay-products')); }catch(e){}
 if(!Array.isArray(MP)) MP=MP_SEED.map(([a,st,n,s],i)=>({id:i+1,a,st,n,s}));
 const MP_REN={"Neutrogena Oil-Free Acne Wash (grapefruit)": "Neutrogena Oil-Free Acne Wash Pink Grapefruit (2% salicylic acid)", "Envy face scrub": "Envy Hyaluronic Acid & Salicylic Acid face scrub", "Clean & Clear 2-in-1 day and night pack": "Clean & Clear Morning Burst + Night Relaxing cleanser pack", "Vanicream moisturizer with vitamin E (loved the results)": "Vanicream Moisturizing Cream (loved the results)", "Noxzema anti-blemish pads": "Noxzema Ultimate Clear anti-blemish pads (salicylic acid)", "Vaseline Intensive Care body cream": "Vaseline Intensive Care Calm Healing lotion (lavender)", "Vatika deep conditioner": "Vatika Honey & Egg deep conditioning mask", "Dr Teal's vitamin C body wash": "Dr Teal's Glow & Radiance vitamin C body wash (Epsom salt)", "Dr Teal's vitamin C lotion": "Dr Teal's Glow & Radiance citrus body lotion"};
@@ -546,7 +572,7 @@ MP.forEach(p=>{ const n=(p.n||'').toLowerCase();
   if(!['cur','have','past','next'].includes(p.s)) p.s='cur';
 });
 try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){}
-const mpSave=()=>{ try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} };
+const mpSave=()=>{ try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} try{ claySyncPush('clay-products'); }catch(e){} };
 function mpChecks(){
   const cur=a=>MP.filter(p=>p.a===a&&p.s==='cur'), has=(arr,re)=>arr.some(p=>re.test(p.n.toLowerCase())), F=cur('face'), B=cur('body'), H=cur('hair'), U=cur('under'), out=[];
   const acid=has(F,/glycolic|lactic|salicylic|aha|bha|peel/), fade=has(F,/spot|kojic|dark|correct|brighten|vitamin c/);
@@ -658,7 +684,7 @@ function mpSection(){
    ${(()=>{ const r=list.filter(p=>p.r||p.b); if(!r.length) return ''; const yes=r.filter(p=>p.b==='yes').sort((x,y)=>(y.r||0)-(x.r||0)), no=r.filter(p=>p.b==='no');
      return `<div class="mp-sum"><b class="small">Your verdicts</b>${yes.length?`<p class="small" style="margin:4px 0 0"><span style="color:var(--ok);font-weight:700">Buy again:</span> ${yes.map(p=>esc(p.n)+(p.r?` (${p.r}★)`:'')).join(', ')}</p>`:''}${no.length?`<p class="small" style="margin:4px 0 0"><span style="color:var(--stop);font-weight:700">Won't rebuy:</span> ${no.map(p=>esc(p.n)).join(', ')}</p>`:''}</div>`; })()}
    <div class="mp-add"><input id="mpName" placeholder="Add ${/^[aeiou]/i.test(MP_AREAS.find(x=>x[0]===a)[1])?"an":"a"} ${MP_AREAS.find(x=>x[0]===a)[1].toLowerCase()} product" aria-label="Product name"><select id="mpStep" aria-label="Step">${steps.map(st=>`<option>${esc(st)}</option>`).join('')}</select><select id="mpStat" aria-label="Status"><option value="cur">Using</option><option value="have">Have</option><option value="next">Try next</option><option value="past">Used before</option></select><button class="btn primary" type="button" data-act="mpadd">${ic('plus',16)}Add</button></div>
-   <p class="small muted">Saved on this device only.</p></section>`;
+   <p class="small muted">${CSYNC.status==='synced'?'Saved to your Claude account, private to you, and kept on this device for offline use.':CSYNC.status==='error'?'Couldn’t reach your Claude account; saved on this device for now.':'Saved on this device only. Open Clay in Claude to save to your account.'}</p></section>`;
 }
 
 /* ---------- Introduction cadence + Try next queue ---------- */
@@ -704,7 +730,7 @@ const HSTY=['Natural','Protective styles','Wigs or weaves','Relaxed','Transition
 const HSTR=['Dryness','Breakage','Split ends','Tangles and knots','Thin edges','Shrinkage','Dandruff or itchy scalp','Frizz'];
 const HHOLD=['Lack of consistency',"Don't know what works",'Tried too many products','No structured routine','Budget'];
 let HR={}; try{ HR=JSON.parse(localStorage.getItem('clay-hair'))||{}; }catch(e){}
-const hrSave=()=>{ try{ localStorage.setItem('clay-hair',JSON.stringify(HR)); }catch(e){} };
+const hrSave=()=>{ try{ localStorage.setItem('clay-hair',JSON.stringify(HR)); }catch(e){} try{ claySyncPush('clay-hair'); }catch(e){} };
 const hIn=k=>(HL.find(x=>x[0]===k)||[])[2];
 const hDays=k=>(HW.find(x=>x[0]===k)||HW[1])[2];
 function hairSetupCard(){
@@ -1232,7 +1258,7 @@ function zonePanel(m){
 const Y_ACTS=[['am','Morning routine'],['pm','Tonight routine'],['spf','Sunscreen'],['exf','Exfoliant'],['ret','Retinal night'],['mask','Mask'],['scan','Skin scan'],['newp','New product']];
 const Y_LBL=Object.fromEntries(Y_ACTS), Y_DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], Y_MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 let YLOG={}; try{ YLOG=JSON.parse(localStorage.getItem('clay-log')||'{}')||{}; }catch(e){}
-const ySave=()=>{ try{ localStorage.setItem('clay-log', JSON.stringify(YLOG)); }catch(e){} };
+const ySave=()=>{ try{ localStorage.setItem('clay-log', JSON.stringify(YLOG)); }catch(e){} try{ claySyncPush('clay-log'); }catch(e){} };
 const yKey=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 const yFmt=d=>d.toLocaleDateString([], {weekday:'short',month:'short',day:'numeric'});
 const YU={src:null,act:'all',view:'day',bar:'total',sel:null};
@@ -1418,7 +1444,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='mpfeel'){ const t=$('#mpNoteTx'); if(t){ const cur=t.value.trim(); t.value=cur?(/[.,!]$/.test(cur)?cur+' ':cur+', ')+v.toLowerCase():v; t.focus(); } return; }
   if (a==='mpnotesave'){ const p=MP.find(x=>x.id===+v); if(p){ p.note=($('#mpNoteTx').value||'').trim(); mpSave(); toast(p.note?'Note saved':'Note removed'); } S.mpNote=null; }
   if (a==='amsel') S.amSel=+v;
-  if (a==='amtone'){ AM_TONE=+v; try{ localStorage.setItem('clay-am-tone',v); }catch(e){} }
+  if (a==='amtone'){ AM_TONE=+v; try{ localStorage.setItem('clay-am-tone',v); }catch(e){} try{ claySyncPush('clay-prefs'); }catch(e){} }
   if (a==='mpa') S.mpa=v;
   if (a==='mpopen'){ S.mpOpen=S.mpOpen===+v?null:+v; S.mpEdit=null; S.mpNote=null; }
   if (a==='hschip'){ const [k,x]=v.split('|'); const L=S.hs[k]; const i=L.indexOf(x); if(i>=0) L.splice(i,1); else L.push(x); }
@@ -1474,6 +1500,28 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
   if(Array.isArray(feel)){ feel.forEach(w=>{ if(!MP_FEEL.includes(w)){ MP_FEEL.push(w); n++; } }); }
   window.CLAY_DATA={version:ver.version,changed:n};
   if(n) try{ render(); }catch(e){}
+})();
+
+(async()=>{
+  try{
+    const db=window.claude&&window.claude.use?await window.claude.use('db'):null;
+    const user=window.claude&&window.claude.use?await window.claude.use('user'):null;
+    const uid=user?await user.id():null;
+    if(!db||!uid){ CSYNC.status='local'; return; }
+    CSYNC.db=db; CSYNC.uid=uid; CSYNC.status='synced';
+    let changed=false;
+    for(const k of Object.keys(CS_GET)){
+      try{
+        const snap=await csRef(k).get();
+        const remote=snap.exists?snap.data():null, lt=CSYNC.ts[k]||0;
+        if(remote&&(remote.at||0)>lt){ CS_SET[k](remote.data); csStamp(k,remote.at); changed=true; }
+        else if(lt||(!remote&&k!=='clay-prefs')) claySyncPush(k);   // first sign-in: upload what this device has
+        csRef(k).onSnapshot(sn=>{ const r=sn.exists?sn.data():null; if(r&&(r.at||0)>(CSYNC.ts[k]||0)){ CS_SET[k](r.data); csStamp(k,r.at); try{ render(); }catch(e){} } },()=>{});
+      }catch(e){ CSYNC.status='error'; }
+    }
+    if(changed) try{ render(); }catch(e){}
+    else try{ render(); }catch(e){}
+  }catch(e){ CSYNC.status='local'; }
 })();
 
 </script>
