@@ -1,0 +1,5408 @@
+{
+ "acv": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-apple-cider-vinegar-extract-g"
+   }
+  ]
+ },
+ "alcohol": {
+  "listings": 6,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   7.5
+  ],
+  "use_n": 6,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/montanov-s"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-behenyl-alcohol"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/behenyl-alcohol"
+   }
+  ]
+ },
+ "allantoin": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   2
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/allantoin-powder"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-allantoin-powder"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/allantoin"
+   }
+  ]
+ },
+ "almond": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sweet-almond-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sweet-almond-oil-virgin-unrefined"
+   }
+  ]
+ },
+ "aloe": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5.25
+  ],
+  "use_n": 8,
+  "ph": [
+   3.5,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/aloe-vera-concentrate-organic"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-aloe-gel"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/aloe-vera-100x-powder"
+   }
+  ]
+ },
+ "aloefresh": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 24,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/aloe-vera-juice"
+   }
+  ]
+ },
+ "aloeoil": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 4,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-aloe-extract-g"
+   }
+  ]
+ },
+ "alum": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/deocrystal-stone-powder"
+   }
+  ]
+ },
+ "amla": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3.5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-indian-gooseberry-extract-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/amla-berry-cellular-extract"
+   }
+  ]
+ },
+ "annatto": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/annatto-seed-powder"
+   }
+  ]
+ },
+ "apricot": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   55
+  ],
+  "use_n": 2,
+  "ph": [
+   4,
+   5.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/apricot-kernel-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-apricot-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/apricot-cellular-extract"
+   }
+  ]
+ },
+ "apricotshell": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/apricot-kernel-powder"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/apricot-shells-exfoliant"
+   }
+  ]
+ },
+ "arbutin": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.2,
+   2
+  ],
+  "use_n": 1,
+  "ph": [
+   3.5,
+   6.6
+  ],
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/alpha-arbutin"
+   }
+  ]
+ },
+ "argan": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/argan-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/argan-oil-virgin"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/argan-oil-virgin"
+   }
+  ]
+ },
+ "arnicaoil": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-arnica-and-algae-extract-pet"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/arnica-infused-sunflower-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/arnica-cellular-extract"
+   }
+  ]
+ },
+ "arrowroot": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.75,
+   27.5
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-arrowroot-powder"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/maizefix"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/corn-starch"
+   }
+  ]
+ },
+ "ashwagandha": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-ashwagandha-root-extract-sno"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/ashwaganda-cellular-extract-1"
+   }
+  ]
+ },
+ "avocado": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3.5,
+   5.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-avocado-extract-eco"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/avocado-fruit-cellular-extract"
+   }
+  ]
+ },
+ "avocadooil": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   50
+  ],
+  "use_n": 2,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/avocado-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-avocado-oil-butter"
+   }
+  ]
+ },
+ "babassu": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.75,
+   52.5
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-babassu-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/babassu-oil-virgin-refined"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/babassu-oil"
+   }
+  ]
+ },
+ "babchi": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/bakuchi"
+   }
+  ]
+ },
+ "bakingextract": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   4,
+   6
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-peppermint-extract-pf"
+   }
+  ]
+ },
+ "bakingsoda": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/sodium-bicarbonate"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/sodium-bicarbonate-baking-soda"
+   }
+  ]
+ },
+ "bakuchiol": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   1
+  ],
+  "use_n": 3,
+  "shelf_months": 36,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/bakuchiol"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/bakuchiol-99"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/bakuchiol-liquid-extract"
+   }
+  ]
+ },
+ "banana": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-banana-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/banana-cellular-extract"
+   }
+  ]
+ },
+ "baobab": {
+  "listings": 6,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1.5,
+   7.5
+  ],
+  "use_n": 4,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/baobab-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-baobab-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/hydrolyzed-baobab-protein"
+   }
+  ]
+ },
+ "basil": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-tropical-basil-essential-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/basil-cellular-extract"
+   }
+  ]
+ },
+ "beeswax": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   11.5
+  ],
+  "use_n": 6,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/beeswax"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/cera-bellina"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/beeswax-white-nf"
+   }
+  ]
+ },
+ "beetroot": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.75,
+   12
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/beet-root-powder"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/beetroot-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/beet-root-powder"
+   }
+  ]
+ },
+ "bentonite": {
+  "listings": 6,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   80
+  ],
+  "use_n": 4,
+  "ph": [
+   8.5,
+   10.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-bentonite-clay"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/illite-clay-cedar-red"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/bentonite-clay"
+   }
+  ]
+ },
+ "bergamot": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/bergamot-essential-oil"
+   }
+  ]
+ },
+ "blackpepper": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-black-pepper-essential-oil"
+   }
+  ]
+ },
+ "blackseedoil": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-black-seed-oil"
+   }
+  ]
+ },
+ "borage": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   90
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-borage-oil"
+   }
+  ]
+ },
+ "btms": {
+  "listings": 2,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/btms-25"
+   }
+  ]
+ },
+ "burdock": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/burdock-cellular-extract"
+   }
+  ]
+ },
+ "butterflypea": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/blue-butterfly-pea-cellular-extract"
+   }
+  ]
+ },
+ "caffeine": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   5
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/caffeine-liquid-extract"
+   }
+  ]
+ },
+ "calendula": {
+  "listings": 9,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 6,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/calendula-co2-extract-organic"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/calendula-extract-sno"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/calendula-hydrosol"
+   }
+  ]
+ },
+ "camellia": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   2,
+   5
+  ],
+  "use_n": 3,
+  "ph": [
+   3.5,
+   7.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-camellia-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-camellia-japonica-extract-eco"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/camellia-flower-cellular-extract"
+   }
+  ]
+ },
+ "camphor": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/camphor-essential-oil"
+   }
+  ]
+ },
+ "candelilla": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   30
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/candelilla-wax"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/candelilla-wax"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/candelilla-wax"
+   }
+  ]
+ },
+ "capb": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   10,
+   30
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/beta-t"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-cocamidopropyl-betaine"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/surfpro-capb"
+   }
+  ]
+ },
+ "caprylic": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   2.5
+  ],
+  "use_n": 7,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/eco-marine-algae-extract"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/caprylic-acid"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/cct-60-40-mb"
+   }
+  ]
+ },
+ "carbomer": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.15,
+   0.5
+  ],
+  "use_n": 2,
+  "ph": [
+   6,
+   7.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-carbomer"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sodium-carbomer-preneutralized"
+   }
+  ]
+ },
+ "cardamom": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-cardamom-essential-oil"
+   }
+  ]
+ },
+ "carnauba": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-carnauba-wax"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/carnauba-wax"
+   }
+  ]
+ },
+ "carrotinf": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-carrot-oil"
+   }
+  ]
+ },
+ "carrotjuice": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.75,
+   7.5
+  ],
+  "use_n": 2,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-carrot-extract-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/carrot-cellular-extract"
+   }
+  ]
+ },
+ "carrotseed": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "use_pct": [
+   3,
+   7.5
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/carrot-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-carrot-seed-oil"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/carrot-seed-liquid-extract"
+   }
+  ]
+ },
+ "castor": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/castor-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/castor-oil"
+   }
+  ]
+ },
+ "cayenne": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-cayenne-pepper-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/cayenne-pepper-cellular-extract"
+   }
+  ]
+ },
+ "cedarwood": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/cedarwood-essential-oil"
+   }
+  ]
+ },
+ "centella": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.75,
+   6
+  ],
+  "use_n": 2,
+  "ph": [
+   2,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-gotu-kola-extract-os-eco"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/centellys-ca"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/gotu-kola-leaf-cellular-extract"
+   }
+  ]
+ },
+ "ceramide": {
+  "listings": 5,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 4,
+  "ph": [
+   3,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-ceramide-2"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/terracera™-renew-np"
+   }
+  ]
+ },
+ "cetearyl": {
+  "listings": 13,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 10,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/cetearyl-alcohol"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/cetearyl-alcohol-50-50"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/cetearyl-alcohol-nf"
+   }
+  ]
+ },
+ "chamomile": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-german-blue-chamomile-essential-oil"
+   }
+  ]
+ },
+ "chamomileflower": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/chamomile-flowers-organic"
+   }
+  ]
+ },
+ "charcoal": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3,
+   10
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/activated-charcoal"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-bamboo-charcoal-powder"
+   }
+  ]
+ },
+ "chiagel": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   0.5,
+   5
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   8.6
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-biopolymer-chia-pf"
+   }
+  ]
+ },
+ "chiaseed": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   0,
+   100
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-chia-seed-oil"
+   }
+  ]
+ },
+ "cinnamonbark": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-cinnamon-leaf-essential-oil"
+   }
+  ]
+ },
+ "cinnamonpow": {
+  "listings": 2,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/cinnamon-cellular-extract"
+   }
+  ]
+ },
+ "citricacid": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.1,
+   25.15
+  ],
+  "use_n": 2,
+  "ph": [
+   1.4,
+   6.2
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/citric-acid-anhydrous"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/citric-acid"
+   }
+  ]
+ },
+ "clarysage": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/clary-sage-essential-oil"
+   }
+  ]
+ },
+ "clovewhole": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/clove-cellular-extract-copy"
+   }
+  ]
+ },
+ "cocoa": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 3,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/cocoa-butter"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/cocoa-butter-wafers-deodorized"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/cocoa-butter-deodorized"
+   }
+  ]
+ },
+ "cocoapowder": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   20
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-cocoa-powder"
+   }
+  ]
+ },
+ "coconut": {
+  "listings": 13,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 5,
+  "ph": [
+   5,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/coconut-butter"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/amticide-coconut"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/amticide-coconut"
+   }
+  ]
+ },
+ "coconutmilk": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-coconut-milk-pf"
+   }
+  ]
+ },
+ "coconutwater": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-coconut-water-pf"
+   }
+  ]
+ },
+ "coffee": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-green-coffee-bean-powder"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/coffee-fruit-cellular-extract"
+   }
+  ]
+ },
+ "collagenpow": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   7.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-marine-collagen-powder"
+   }
+  ]
+ },
+ "comfrey": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/comfrey-leaf-cellular-extract"
+   }
+  ]
+ },
+ "coq10": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.2,
+   3
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/coenzyme-q10-pure-powder"
+   }
+  ]
+ },
+ "coriander": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/coriander-cellular-extract"
+   }
+  ]
+ },
+ "crambe": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.75,
+   51
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-abyssinian-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/abyssinian-oil"
+   }
+  ]
+ },
+ "cucumber": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   55
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/cucumber-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-cucumber-seed-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/cucumber-seed-oil-virgin"
+   }
+  ]
+ },
+ "cumin": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.1,
+   1
+  ],
+  "use_n": 1,
+  "ph": [
+   5,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/tetrahydrocurcuminoids"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/quandong-cellular-extract"
+   }
+  ]
+ },
+ "cyperus": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/tigernut-oil-organic"
+   }
+  ]
+ },
+ "cypress": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-cypress-essential-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/blue-cypress-leaf-cellular-extract"
+   }
+  ]
+ },
+ "dandelion": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/dandelion-cellular-extract"
+   }
+  ]
+ },
+ "enzymes": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-papain-powder"
+   }
+  ]
+ },
+ "epsom": {
+  "listings": 2,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/copy-of-epsom-salt"
+   }
+  ]
+ },
+ "eucalyptus": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/eucalyptus-radiata-essential-oil"
+   }
+  ]
+ },
+ "ewax": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/emulsifying-wax-btms-25"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-emulsifying-wax-c20-1"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/emulsifying-wax-nf"
+   }
+  ]
+ },
+ "fennel": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sweet-fennel-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-fennel-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/fennel-seed-cellular-extract"
+   }
+  ]
+ },
+ "fenugreek": {
+  "listings": 13,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   95
+  ],
+  "use_n": 13,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-silderm-acrylate"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/dm350-dimethicone"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/cyclomethicone"
+   }
+  ]
+ },
+ "flaxwhole": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-flax-seed-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/flaxseed-cellular-extract"
+   }
+  ]
+ },
+ "fragrance": {
+  "listings": 23,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.5,
+   2
+  ],
+  "use_n": 20,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/driftwood-beach-fragrance"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/aromafix"
+   }
+  ]
+ },
+ "frankincense": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/frankincense-serrata-essential-oil"
+   }
+  ]
+ },
+ "fruitmash": {
+  "listings": 5,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-strawberry-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/strawberry-cellular-extract"
+   }
+  ]
+ },
+ "fruitpowder": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   0.5,
+   3.5
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-grapefruit-powder"
+   }
+  ]
+ },
+ "geogard": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   1
+  ],
+  "use_n": 4,
+  "ph": [
+   3,
+   12
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/preservative-12"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/euxyl-k-900"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/ehb-900-preservative"
+   }
+  ]
+ },
+ "geranium": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/geranium-essential-oil"
+   }
+  ]
+ },
+ "ginger": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-ginger-extract-pf-1"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/ginger-cellular-extract"
+   }
+  ]
+ },
+ "gingereo": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/ginger-essential-oil"
+   }
+  ]
+ },
+ "ginseng": {
+  "listings": 6,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 4,
+  "ph": [
+   4,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-ginseng-extract-pf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/ginseng-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/ginseng-root-cellular-extract"
+   }
+  ]
+ },
+ "glycerin": {
+  "listings": 28,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 26,
+  "ph": [
+   4,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/glycerine-glycerol"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-apple-extract-g"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/biovolume-128™"
+   }
+  ]
+ },
+ "goji": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.75,
+   6
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-goji-berry-fragrance"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/goji-berry-cellular-extract"
+   }
+  ]
+ },
+ "grapefruit": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/grapefruit-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-grapefruit-extract-oil-soluble"
+   }
+  ]
+ },
+ "grapeseed": {
+  "listings": 6,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/grape-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-grape-seed-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/grape-seed-cellular-extract"
+   }
+  ]
+ },
+ "greenclay": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "use_pct": [
+   0,
+   60
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/green-clay-fine"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-olive-green-clay"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/french-green-clay"
+   }
+  ]
+ },
+ "greentea": {
+  "listings": 12,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 8,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-cucumber-tea-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/green-tea-cellular-extract"
+   }
+  ]
+ },
+ "greenteapowder": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-matcha-tea-extract-pf"
+   }
+  ]
+ },
+ "gse": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/grapefruit-seed-cellular-extract"
+   }
+  ]
+ },
+ "hazelnut": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-hazelnut-oil"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/unsweetened-flavour-oil-hazelnut-latte"
+   }
+  ]
+ },
+ "helichrysum": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-helichrysum-essential-oil"
+   }
+  ]
+ },
+ "hemp": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   5.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/hydrolyzed-hemp-protein"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/hemp-seed-oil"
+   }
+  ]
+ },
+ "henna": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/henna-cellular-extract"
+   }
+  ]
+ },
+ "hibiscus": {
+  "listings": 6,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   4,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-hibiscus-extract-bg-butylene-glycol"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/rosella-flower-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/hibiscus-flowers"
+   }
+  ]
+ },
+ "honey": {
+  "listings": 5,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 4,
+  "ph": [
+   6.5,
+   8.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-honey-matte"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/honeyquat-pf"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/honeyquat-pf"
+   }
+  ]
+ },
+ "honeypowder": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/honey-powder"
+   }
+  ]
+ },
+ "horsetail": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/horsetail-herb-organic"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-horsetail-extract-aq"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/horsetail-herb-cellular-extract"
+   }
+  ]
+ },
+ "hyaluronic": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.01,
+   1.5
+  ],
+  "use_n": 8,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/hyaluronic-acid-eco-100-powder"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-hya-solution-1-pbf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/hyaluronic-acid-elmw-80-110-kda"
+   }
+  ]
+ },
+ "hydrosol": {
+  "listings": 14,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   3,
+   100
+  ],
+  "use_n": 13,
+  "ph": [
+   2.5,
+   5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-douglas-fir-hydrosol"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/blood-orange-hydrosol"
+   }
+  ]
+ },
+ "indigo": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/indigo-powder"
+   }
+  ]
+ },
+ "ironoxide": {
+  "listings": 5,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/black-iron-oxide"
+   }
+  ]
+ },
+ "jasmine": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   5.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-jasmine-extract-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/jasmine-cellular-extract"
+   }
+  ]
+ },
+ "jasmineeo": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "shelf_months": 24,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/diluted-jasmine-absolute"
+   }
+  ]
+ },
+ "jojoba": {
+  "listings": 10,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 10,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-jojoba-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-biomimetic-jojoba-oil-clear"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/jojoba-esters-15"
+   }
+  ]
+ },
+ "juniper": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/juniper-berry-essential-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/juniper-berry-cellular-extract"
+   }
+  ]
+ },
+ "kaolin": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/kaolin"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-white-kaolin-clay"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/white-kaolin-clay-bulk"
+   }
+  ]
+ },
+ "kelp": {
+  "listings": 10,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 7,
+  "ph": [
+   3,
+   7.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-bull-kelp-bioferment-lv"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sea-kelp-bioferment"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/atlantic-kelp-knotted-wrack-cellular-extract"
+   }
+  ]
+ },
+ "kohl": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/coleus-cellular-extract"
+   }
+  ]
+ },
+ "kojic": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "ph": [
+   3,
+   10
+  ],
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/kojic-acid-dipalmitate"
+   }
+  ]
+ },
+ "kokum": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "use_pct": [
+   5,
+   20
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/kokum-butter"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-kokum-butter"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/kokum-butter-1"
+   }
+  ]
+ },
+ "lanolin": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   3.5,
+   55
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/lanolin-ep"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/lanolin-butter"
+   }
+  ]
+ },
+ "lavender": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/lavender-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-tasmanian-lavender-oil"
+   }
+  ]
+ },
+ "lavenderbud": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "shelf_months": 24,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/lavender-flowers-organic"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/lavender-buds-premium"
+   }
+  ]
+ },
+ "lemoneo": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-lemon-essential-oil"
+   }
+  ]
+ },
+ "lemongrass": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-lemongrass-essential-oil"
+   }
+  ]
+ },
+ "lemonjuice": {
+  "listings": 7,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/lemon-ester"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-lemon-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/lemon-aspen-cellular-extract"
+   }
+  ]
+ },
+ "lemonpeel": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.75,
+   6
+  ],
+  "use_n": 2,
+  "ph": [
+   5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-lemon-peel-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/lime-peel-cellular-extract"
+   }
+  ]
+ },
+ "leucidal": {
+  "listings": 10,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   2,
+   4
+  ],
+  "use_n": 9,
+  "ph": [
+   4,
+   11
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-daikon-seed-extract"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/daikon-seed-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/radish-cellular-extract"
+   }
+  ]
+ },
+ "licorice": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-licorice-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/licorice-root-cellular-extract"
+   }
+  ]
+ },
+ "limeeo": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/lime-essential-oil"
+   }
+  ]
+ },
+ "limejuice": {
+  "listings": 6,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/australian-lime-caviar-cellular-extract"
+   }
+  ]
+ },
+ "lipflavor": {
+  "listings": 2,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   0,
+   3
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/unsweetened-flavour-oil-brown-sugar"
+   }
+  ]
+ },
+ "litsea": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/may-chang-essential-oil"
+   }
+  ]
+ },
+ "lye": {
+  "listings": 2,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/sodium-hydroxide"
+   }
+  ]
+ },
+ "macadamia": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   55
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/macadamia-nut-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-macadamia-butter"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/macadamia-nut-oil"
+   }
+  ]
+ },
+ "maghydroxide": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   30
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/magnesium-hydroxide"
+   }
+  ]
+ },
+ "magstearate": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   3,
+   10
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/magnesium-stearate"
+   }
+  ]
+ },
+ "mandelic": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3,
+   4
+  ],
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/mandelic-acid"
+   }
+  ]
+ },
+ "mango": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/mango-butter"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-mango-butter"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/mango-butter"
+   }
+  ]
+ },
+ "manjistha": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/madder-root-powder"
+   }
+  ]
+ },
+ "manuka": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-manuka-honey-extract-os"
+   }
+  ]
+ },
+ "marjoram": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/marjoram-essential-oil"
+   }
+  ]
+ },
+ "marshmallow": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/marshmallow-cellular-extract"
+   }
+  ]
+ },
+ "marshmallowroot": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "use_pct": [
+   5,
+   5
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/marshmallow-root-powder"
+   }
+  ]
+ },
+ "marula": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   55
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/marula-oil-unrefined"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/marula-seed-oil"
+   }
+  ]
+ },
+ "menthol": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/menthol-crystals-organic"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/menthol-crystals"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/menthol-crystals"
+   }
+  ]
+ },
+ "mica": {
+  "listings": 8,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 5,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/mica-arctic-white-sparkle"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/bronze-mica"
+   }
+  ]
+ },
+ "milk": {
+  "listings": 7,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   7.5
+  ],
+  "use_n": 6,
+  "ph": [
+   3.5,
+   10
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-biomilk-rice-pf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/hydrolyzed-milk-protein"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/milk-thistle-cellular-extract"
+   }
+  ]
+ },
+ "milkpowder": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-buttermilk-powder"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/goat-milk-powder"
+   }
+  ]
+ },
+ "moringa": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/moringa-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-moringa-pterygosperma-seed-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/moringa-cellular-extract"
+   }
+  ]
+ },
+ "mugwort": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/mugwort-cellular-extract"
+   }
+  ]
+ },
+ "mushroombath": {
+  "listings": 2,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/reishi-mushroom-cellular-extract"
+   }
+  ]
+ },
+ "myrrh": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/myrrh-essential-oil"
+   }
+  ]
+ },
+ "neem": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-neem-oil"
+   }
+  ]
+ },
+ "neemleaf": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/neem-leaf-cellular-extract"
+   }
+  ]
+ },
+ "neroli": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/diluted-neroli-essential-oil"
+   }
+  ]
+ },
+ "nettle": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 18,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/nettle-leaves-organic"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/nettle-cellular-extract"
+   }
+  ]
+ },
+ "niacinamide": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   6
+  ],
+  "use_n": 3,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/vitamin-b3"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/vitamin-b3-niacinamide"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/niacinamide-vitamin-b3"
+   }
+  ]
+ },
+ "oats": {
+  "listings": 14,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 12,
+  "ph": [
+   3,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/oat-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-colloidal-oat-pf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/colloidal-oats"
+   }
+  ]
+ },
+ "okra": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-okra-extract-g-pf"
+   }
+  ]
+ },
+ "olive": {
+  "listings": 19,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   6.25
+  ],
+  "use_n": 14,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/omega-fat-restoring-agent"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-olive-leaf-extract-pf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/illite-clay-olive-green"
+   }
+  ]
+ },
+ "olivem": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 7,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/emulsifier-l"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-sildermr-emulsifying-bg"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/polymulse-polymeric-emulsifier"
+   }
+  ]
+ },
+ "orange": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-blood-orange-essential-oil"
+   }
+  ]
+ },
+ "orangepeel": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/orange-peel-cellular-extract"
+   }
+  ]
+ },
+ "oregano": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/oregano-leaf-cellular-extract"
+   }
+  ]
+ },
+ "osmanthus": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   0.53,
+   5.15
+  ],
+  "use_n": 2,
+  "ph": [
+   3.5,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/honeysuckle-absolute"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-japanese-honeysuckle-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/honeysuckle-cellular-extract"
+   }
+  ]
+ },
+ "palmarosa": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-palmarosa-essential-oil"
+   }
+  ]
+ },
+ "palmkernel": {
+  "listings": 1,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/palm-kernel-oil-flakes"
+   }
+  ]
+ },
+ "panthenol": {
+  "listings": 3,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 3,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/dl-panthenol"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/dl-panthenol-pro-vitamin-b5"
+   }
+  ]
+ },
+ "papaya": {
+  "listings": 7,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 6,
+  "ph": [
+   4,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-modified-pap-ango-enzyme-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/papaya-fruit-cellular-extract"
+   }
+  ]
+ },
+ "papayaseed": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/papaya-seed-oil"
+   }
+  ]
+ },
+ "patchouli": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-patchouli-essential-oil"
+   }
+  ]
+ },
+ "peppermint": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-peppermint-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-peppermint-oil"
+   }
+  ]
+ },
+ "perfumersalcohol": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.5,
+   1
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/optiphen"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/lotioncrafter-pe-9010"
+   }
+  ]
+ },
+ "peroxide": {
+  "listings": 1,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0,
+   0.25
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/lcpeptide™-sod"
+   }
+  ]
+ },
+ "pineapple": {
+  "listings": 4,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   3,
+   4.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-pineapple-enzyme-extract-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/pineapple-cellular-extract"
+   }
+  ]
+ },
+ "pinebark": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-pine-bark-extract-g-pet"
+   }
+  ]
+ },
+ "pinkclay": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "shelf_months": 60,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/pink-clay-fine"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/pastel-pink-clay"
+   }
+  ]
+ },
+ "plantainleaf": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/plantain-cellular-extract"
+   }
+  ]
+ },
+ "polysorbate": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   20
+  ],
+  "use_n": 3,
+  "ph": [
+   5.5,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/polysorbate-20"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-polysorbate-20"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/polysorbate-20"
+   }
+  ]
+ },
+ "polysorbate80": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   20
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/polysorbate-80"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/polysorbate-80"
+   }
+  ]
+ },
+ "pomegranate": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 5,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/pomegranate-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-modified-pomegranate-enzyme-pf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/pomegranate-seed-oil"
+   }
+  ]
+ },
+ "poppy": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/white-poppy-seed-oil"
+   }
+  ]
+ },
+ "pricklypear": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-prickly-pear-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-prickly-pear-extract-os"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/prickly-pear-cellular-extract"
+   }
+  ]
+ },
+ "primrose": {
+  "listings": 3,
+  "suppliers": [
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/evening-primrose-oil-10-gla"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/evening-primrose-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/evening-primrose-oil-refined"
+   }
+  ]
+ },
+ "pumpkinoil": {
+  "listings": 6,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 5,
+  "ph": [
+   4.5,
+   7.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-pumpkin-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-phyto-biotics-pumpkin-seed"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/pumpkin-seed-extract"
+   }
+  ]
+ },
+ "raspberryseed": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/raspberry-seed-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/raspberry-cellular-extract"
+   }
+  ]
+ },
+ "ricebran": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   4,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-rice-bran-oil-co2-extract"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-rice-bran-extract-g"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/rice-bran-oil"
+   }
+  ]
+ },
+ "riceprotein": {
+  "listings": 7,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 7,
+  "ph": [
+   2,
+   10
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-dermapeptide-revitalizing"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/hydrolyzed-rice-protein"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/hydrolyzed-rice-protein"
+   }
+  ]
+ },
+ "ricewater": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-rice-water-sf"
+   }
+  ]
+ },
+ "roe": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-rosemary-extract-g"
+   }
+  ]
+ },
+ "rosebuds": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "native_extracts",
+   "windy_point"
+  ],
+  "shelf_months": 18,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/rose-petals"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/rose-petal-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/rose-petals-red-buds-leaves"
+   }
+  ]
+ },
+ "rosehip": {
+  "listings": 7,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   55
+  ],
+  "use_n": 4,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-rosehip-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-rose-hip-extract-hso"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/rosehip-oil-refined"
+   }
+  ]
+ },
+ "rosemary": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-rosemary-camphor-essential-oil"
+   }
+  ]
+ },
+ "sachainchi": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sacha-inchi-seed-oil"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/naturepep-sacha-inchi"
+   }
+  ]
+ },
+ "safflower": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 3,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-mango-flower-extract-os"
+   }
+  ]
+ },
+ "safflowerpetal": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-thistle-oil"
+   }
+  ]
+ },
+ "saffron": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   3.5,
+   5.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-phyto-biotics-saffron"
+   }
+  ]
+ },
+ "sage": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "shelf_months": 18,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/sage-leaves-organic"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/sage-cellular-extract"
+   }
+  ]
+ },
+ "salt": {
+  "listings": 10,
+  "suppliers": [
+   "aromantic",
+   "native_extracts",
+   "windy_point"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/himalayan-salt"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/salt-bush-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/dead-sea-mineral-salt-coarse"
+   }
+  ]
+ },
+ "sandalwood": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sandalwood-albany-essential-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/native-sandalwood-australian-seed-oil"
+   }
+  ]
+ },
+ "sangredrago": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-dragon-s-blood-extract-g"
+   }
+  ]
+ },
+ "sawpalmetto": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/saw-palmetto-cellular-extract"
+   }
+  ]
+ },
+ "sci": {
+  "listings": 7,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1.25,
+   55
+  ],
+  "use_n": 5,
+  "ph": [
+   5,
+   6
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/sci-solid-surfactant"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-sodium-cocoyl-isethionate-sci"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/surfpro-sci"
+   }
+  ]
+ },
+ "seabuckthorn": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   6.25
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sea-buckthorn-berry-oil"
+   }
+  ]
+ },
+ "sesame": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sesame-oil"
+   }
+  ]
+ },
+ "shea": {
+  "listings": 10,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 6,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-shea-butter-filtered-and-deodorised"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-shea-extract-pbf"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/shea-butter-natural-unrefined-shea"
+   }
+  ]
+ },
+ "silkpowder": {
+  "listings": 7,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 7,
+  "ph": [
+   4,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-foaming-silk"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/foaming-silk-pf"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/foaming-silk"
+   }
+  ]
+ },
+ "slipperyelm": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-slippery-elm-bark-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/slippery-elm-cellular-extract"
+   }
+  ]
+ },
+ "slsa": {
+  "listings": 3,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   50
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/surfpro-slsa"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/slsa-lathanal-lal-surfactant-powder"
+   }
+  ]
+ },
+ "sodiumlactate": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 2,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sodium-lactate-powder"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/sodium-lactate-60"
+   }
+  ]
+ },
+ "sodiumpca": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   0.11,
+   6.25
+  ],
+  "use_n": 2,
+  "ph": [
+   3,
+   8
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-sodium-pca"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sodium-pca-50"
+   }
+  ]
+ },
+ "spearmint": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-spearmint-essential-oil"
+   }
+  ]
+ },
+ "spirulina": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-algae-extract-sno"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/spirulina-powder"
+   }
+  ]
+ },
+ "squalane": {
+  "listings": 10,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   60
+  ],
+  "use_n": 10,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/squalane"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-amaranthus-squalane"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/linoret-af"
+   }
+  ]
+ },
+ "sugar": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   3.5,
+   6
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/sugar-detergent"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-botanical-sugar-complex"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/sugar-cane-cellular-extract"
+   }
+  ]
+ },
+ "sunflower": {
+  "listings": 20,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 17,
+  "ph": [
+   3,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-sunflower-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-amazonian-lily-extract-os"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/sunflower-oil-high-oleic"
+   }
+  ]
+ },
+ "sweetpotato": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4.5,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-sweet-potato-extract-pbf"
+   }
+  ]
+ },
+ "tamanu": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   40
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-tamanu-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-tamanu-oil"
+   }
+  ]
+ },
+ "tamarind": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   9
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-tamarind-seed-extract-g"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/barthix"
+   }
+  ]
+ },
+ "tapioca": {
+  "listings": 2,
+  "suppliers": [
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/natrasorb-bath"
+   }
+  ]
+ },
+ "teatree": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-tea-tree-essential-oil"
+   }
+  ]
+ },
+ "thyme": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/thyme-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-thyme-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/thyme-cellular-extract"
+   }
+  ]
+ },
+ "tomato": {
+  "listings": 5,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/tomato-seed-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-tomato-bioferment-pf"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/bush-tomato-cellular-extract"
+   }
+  ]
+ },
+ "tulsi": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/tulsi-cellular-extract"
+   }
+  ]
+ },
+ "turmeric": {
+  "listings": 3,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   4,
+   6.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-turmeric-extract-g"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/turmeric-cellular-extract"
+   }
+  ]
+ },
+ "urea": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   2,
+   15
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/urea-crystals"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/urea"
+   }
+  ]
+ },
+ "vanillabean": {
+  "listings": 2,
+  "suppliers": [
+   "lotioncrafter",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   80
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/vanilla-bean-specks"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/vanilla-cellular-extract"
+   }
+  ]
+ },
+ "vetiver": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/vetivert-essential-oil"
+   }
+  ]
+ },
+ "vitc": {
+  "listings": 4,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   4
+  ],
+  "use_n": 3,
+  "ph": [
+   6.5,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/vitamin-c-cosmetic-grade"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-bio-chelate-vc"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/l-ascorbic-acid-ultrafine"
+   }
+  ]
+ },
+ "vite": {
+  "listings": 6,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.27,
+   2.75
+  ],
+  "use_n": 4,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/cupuacu-butter"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/vitamin-e-acetate"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/vitamin-e-mt-50"
+   }
+  ]
+ },
+ "water": {
+  "listings": 41,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 34,
+  "ph": [
+   3,
+   11.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/non-water-based-colours"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-alg-moist-eau"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/apple-fruit-essence"
+   }
+  ]
+ },
+ "wheatgerm": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/wheatgerm-cellular-extract"
+   }
+  ]
+ },
+ "willow": {
+  "listings": 9,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "native_extracts",
+   "windy_point"
+  ],
+  "use_pct": [
+   1,
+   7.5
+  ],
+  "use_n": 8,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-white-willow-bark-extract"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/willow-bark-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/willow-bark-cellular-extract"
+   }
+  ]
+ },
+ "witchhazel": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "native_extracts",
+   "windy_point"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/witch-hazel-hydrolat"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/witchhazel-cellular-extract"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/witch-hazel-distillate"
+   }
+  ]
+ },
+ "xanthan": {
+  "listings": 8,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.1,
+   0.75
+  ],
+  "use_n": 4,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 24,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/solagum-ax"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/xanthan-gum-clear"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/xanthan-gum-clear"
+   }
+  ]
+ },
+ "yarrow": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/yarrow-cellular-extract"
+   }
+  ]
+ },
+ "ylang": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-ylang-ylang-essential-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-ylang-ylang-oil-ex"
+   }
+  ]
+ },
+ "yogurt": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 2,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-yogurt-extract-ef"
+   }
+  ]
+ },
+ "zincoxide": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   2
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/zinc-oxide"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/zinc-oxide"
+   }
+  ]
+ }
+}

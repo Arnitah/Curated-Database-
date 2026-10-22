@@ -292,6 +292,9 @@ p{margin:0}
 .pg-tab{width:100%;border-collapse:collapse;font-size:14px}.pg-tab th,.pg-tab td{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}.pg-tab td{text-align:center}.pg-tab td.hint{text-align:left}.pg-sel{background:var(--s2)}.pg-win{box-shadow:inset 0 -3px 0 var(--ok)}
 .pg-why,.pg-flags{list-style:none;padding:0;margin:4px 0 8px;display:flex;flex-direction:column;gap:6px;font-size:14px}.pgf-stop{color:var(--stop)}.pg-how{margin-top:10px;font-size:13px}.pg-how summary{cursor:pointer;color:var(--muted)}
 .cp .chips{display:flex;flex-wrap:wrap;gap:6px}.cp .chip{font-size:13px}
+.cp-hits{display:flex;flex-direction:column;gap:4px}.cp-hits:empty{display:none}
+.cp-hit{display:flex;flex-direction:column;align-items:flex-start;gap:1px;text-align:left;font:inherit;font-size:13.5px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface,var(--bg));color:var(--ink);cursor:pointer}
+.cp-hit:hover,.cp-hit:focus-visible{border-color:var(--ink)}.cp-hit .muted{font-size:12px}.cp-src{margin:0}
 </style>
 <div class="app" id="app">
   <aside class="side" aria-label="Clay">
@@ -1076,17 +1079,69 @@ function cpCompare(la,lb,nA,nB){
   const col=(t,m,ks)=>`<div class="c2-col"><div class="blabel" style="margin-top:0">${esc(t)}</div>${ks.length?`<ul class="goal-list">${ks.map(k=>`<li><b>${esc(m.get(k).a.n)}</b> <span class="small muted">${esc(m.get(k).a.does)}</span></li>`).join('')}</ul>`:'<p class="small muted">Nothing here.</p>'}</div>`;
   return `<div class="mp-chk mp-info"><b class="small">${esc(nA)} vs ${esc(nB)}</b><p class="small" style="margin:4px 0 0">${esc(sum)}</p></div>${pgCompare(A,B,nA,nB)}<div class="c2-res">${col('In both',aK,both)}${col('Only in '+nA,aK,onlyA)}${col('Only in '+nB,bK,onlyB)}</div>`;
 }
+/* ---------- Store-product search: the Skincare Data Hub, slimmed down by the Curated Database bridge ---------- */
+const CLAY_BASE=()=>window.CLAY_DATA_BASE||"https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
+const PDB={names:null,hay:null,loading:null,shards:{},err:false};
+const PDB_SRC={open_beauty_facts:'Open Beauty Facts, a crowd-sourced database',cosrx:"COSRX's own website",round_lab:"Round Lab's own website"};
+const PDB_AREA={face:'face',sun_care:'face',makeup:'face',hair:'hair',deodorant:'under',body:'body',baby:'body',fragrance:'body',other:'body'};
+const PDB_CATL={face:'Face',sun_care:'Sun care',makeup:'Makeup',hair:'Hair',deodorant:'Deodorant',body:'Body',baby:'Baby',fragrance:'Fragrance',other:''};
+function pdbLoad(){
+  if(PDB.names) return Promise.resolve(PDB.names);
+  if(!PDB.loading) PDB.loading=fetch(CLAY_BASE()+'index/clay/products/names.json').then(r=>{ if(!r.ok) throw 0; return r.json(); })
+    .then(d=>{ PDB.names=d; PDB.hay=d.rows.map(r=>(r[1]+' '+r[0]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')); return d; })
+    .catch(()=>{ PDB.err=true; PDB.loading=null; return null; });
+  return PDB.loading;
+}
+function pdbSearch(q){
+  const d=PDB.names; if(!d) return [];
+  q=q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim(); if(q.length<2) return [];
+  if(/^\d{6,}$/.test(q)) return d.rows.map((r,i)=>r[2].startsWith(q)?i:-1).filter(i=>i>=0).slice(0,8);
+  const toks=q.split(/\s+/), pref={face:3,sun_care:3,hair:3,body:2,deodorant:2,makeup:1,baby:1,fragrance:1,other:0}, out=[];
+  for(let i=0;i<PDB.hay.length;i++){ const h=PDB.hay[i]; if(!toks.every(t=>h.includes(t))) continue;
+    const r=d.rows[i], sc=(r[5]?4:0)+(pref[d.cats[r[3]]]||0)+(h.startsWith(toks[0])?2:0)+(r[0].toLowerCase().includes(q)?2:0)-r[0].length/80;
+    out.push([sc,i]); }
+  return out.sort((a,b)=>b[0]-a[0]).slice(0,8).map(x=>x[1]);
+}
+async function pdbRow(i){
+  const d=PDB.names, f=Math.floor(i/d.shard), key=String(f).padStart(3,'0');
+  if(!PDB.shards[key]) PDB.shards[key]=await fetch(CLAY_BASE()+'index/clay/products/'+key+'.json').then(r=>{ if(!r.ok) throw 0; return r.json(); });
+  const r=d.rows[i], x=PDB.shards[key][i%d.shard];
+  return {id:x[0],list:x[1],size:x[2],countries:x[3],url:x[4],name:r[0],brand:r[1],barcode:r[2],cat:d.cats[r[3]],src:d.srcs[r[4]],verified:!!r[5]};
+}
+function pdbHits(k){
+  const box=document.getElementById('cpHits'+k); if(!box) return;
+  const q=(S.cp&&S.cp['q'+k])||'';
+  if(q.trim().length<2){ box.innerHTML=''; return; }
+  if(!PDB.names){ box.innerHTML=`<p class="hint">${PDB.err?"Couldn't reach the product database. Paste the list instead.":"Loading 14,000 products…"}</p>`; return; }
+  const hits=pdbSearch(q), d=PDB.names;
+  box.innerHTML=hits.length?hits.map(i=>{ const r=d.rows[i], c=PDB_CATL[d.cats[r[3]]]; return `<button type="button" class="cp-hit" role="listitem" data-act="cppick" data-v="${k}:${i}"><b>${esc(r[0])}</b><span class="muted">${esc([r[1],c].filter(Boolean).join(' · '))}${r[5]?' · checked':''}</span></button>`; }).join('')
+    :`<p class="hint">No match. Try fewer words or the brand alone, or paste the list below.</p>`;
+}
+function pdbNote(h,canAdd){
+  const shelf=MP.some(p=>p.hub===h.id);
+  return `<p class="hint cp-src">List from ${esc(PDB_SRC[h.src]||h.src)}${h.verified?', checked against a real label':'. Make sure it matches your bottle: brands change formulas'}.${h.url?` <a href="${esc(h.url)}" target="_blank" rel="noopener">Source</a>`:''}</p>
+    ${canAdd&&!shelf?`<button class="chip" type="button" data-act="cpadd" data-v="${h._k}">${ic('plus',14)}Add to My Shelf</button>`:''}`;
+}
+function pdbStep(area,name){
+  const n=name.toLowerCase(), m=(re,st)=>re.test(n)&&MP_STEPS[area].includes(st)?st:null;
+  return m(/spf|sunscreen|sun ?(cream|screen|stick)/,'Sunscreen')||m(/cleans|face wash|foam|micellar/,'Cleanser')||m(/toner|tonic/,'Toner')||m(/serum|essence|ampoule/,'Serum')||m(/eye/,'Eye')||m(/cream|moistur|lotion|gel/,'Moisturizer')
+    ||m(/shampoo/,'Shampoo')||m(/conditioner/,'Conditioner')||m(/mask|masque/,'Deep conditioner')||m(/leave[- ]in/,'Leave-in')||m(/oil/,'Oil')
+    ||m(/wash|soap|shower/,'Wash or soap')||m(/scrub/,'Scrub')||m(/lotion|cream|butter/,'Lotion or cream')||m(/antiperspirant/,'Antiperspirant')||m(/deodorant/,'Deodorant')||'Other';
+}
 function pageCheck(){
   const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci?' ✓':''}</option>`).join('')}`;
   const P=id=>MP.find(x=>x.id===+id);
   const cur=S.cp||(S.cp={a:'',b:'',na:'',nb:'',la:'',lb:''});
   ['a','b'].forEach(k=>{ const pr=P(cur[k]); if(pr&&cur['l'+k]===''&&pr.inci) cur['l'+k]=pr.inci; if(pr&&!cur['n'+k]) cur['n'+k]=pr.n; });
-  const side=k=>`<div class="cp-side"><label class="small"><b>${mode==='one'?'Product':k==='a'?'Product A':'Product B'}</b><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
+  const side=k=>`<div class="cp-side"><label class="small"><b>${mode==='one'?'Find a product':k==='a'?'Product A':'Product B'}</b><input class="cp-in" type="search" data-cpf="${k}" value="${esc(cur['q'+k]||'')}" placeholder="Search store products: name, brand or barcode" aria-label="Search store products" autocomplete="off"></label>
+    <div class="cp-hits" id="cpHits${k}" role="list"></div>
+    <label class="small"><span class="muted">Or pick from My Shelf</span><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
     ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
     <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
-    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}</div>`;
+    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}
+    ${cur['h'+k]?pdbNote(cur['h'+k],!P(cur[k])):''}</div>`;
   const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||(k==='a'?'Product A':'Product B'));
-  const main=`<div class="head"><span class="eyebrow">Store products</span><h1>Check a product</h1><p class="muted">Paste an ingredient list to see what actually does the work, how well it's proven for each goal, what's marketing, and cheaper matches.</p></div>
+  const main=`<div class="head"><span class="eyebrow">Store products</span><h1>Check a product</h1><p class="muted">Search 14,000 store products or paste an ingredient list to see what actually does the work, how well it's proven for each goal, what's marketing, and cheaper matches.</p></div>
     <div class="seg" role="group" aria-label="Mode"><button type="button" aria-pressed="${mode==='one'}" data-act="cpmode" data-v="one">Check one</button><button type="button" aria-pressed="${mode==='two'}" data-act="cpmode" data-v="two">Compare two</button></div>
     ${card('', `<div class="cp-grid${mode==='two'?' two':''}">${side('a')}${mode==='two'?side('b'):''}</div><div class="row" style="margin-top:8px"><button class="btn primary" type="button" data-act="cpgo">${mode==='one'?'Check it':'Compare'}</button></div>`)}
     ${S.cpShow?card(mode==='one'?'Result':'Comparison', `<div class="cp">${mode==='one'?cpResult(cur.la,nm('a')):cpCompare(cur.la,cur.lb,nm('a'),nm('b'))}</div>`, {h:'h3', icon:'check'}):''}`;
@@ -1798,6 +1853,8 @@ document.addEventListener('click', async (e)=>{
   if (a==='mpa') S.mpa=v;
   if (a==='cpmode'){ S.cpMode=v; S.cpShow=false; }
   if (a==='cpgo'){ S.cpShow=true; }
+  if (a==='cppick'){ const [k,i]=v.split(':'); try{ const h=await pdbRow(+i); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; S.cpShow=S.cpMode!=='two'||!!(S.cp.la&&S.cp.lb); }catch(err){ toast("Couldn't load that product"); return; } }
+  if (a==='cpadd'){ const h=S.cp['h'+v]; if(h){ const area=PDB_AREA[h.cat]||'body', nm=[h.brand,h.name].filter(Boolean).join(' '); const id=Math.max(0,...MP.map(x=>x.id))+1; MP.push({id,a:area,st:pdbStep(area,h.name),n:nm,s:'have',inci:S.cp['l'+v],hub:h.id}); mpSave(); S.cp[v]=String(id); toast('Added to My Shelf as "Have"'); } }
   if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); mpSave(); toast('List saved to '+pr.n); } }
   if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
   if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
@@ -1830,7 +1887,7 @@ $('#palBtn').addEventListener('click', ()=>{ const p=$('#palPop'); p.hidden=!p.h
 $('#fbBtn').addEventListener('click', ()=>{ S.feedback=!S.feedback; render(); if (S.feedback) toast('Comment buttons are on. Tap one on any card.'); });
 document.addEventListener('keydown', e=>{ if (e.target&&e.target.id==='mpRen'){ if(e.key==='Enter'){ e.preventDefault(); document.querySelector('[data-act=mpsave]').click(); } if(e.key==='Escape'){ S.mpEdit=null; render(); } return; } if (e.key==='Escape'){ $('#palPop').hidden=true; $('#palBtn').setAttribute('aria-expanded','false'); } });
 document.addEventListener('change', (e)=>{
-  if (e.target.dataset && e.target.dataset.cpk){ const k=e.target.dataset.cpk; S.cp[k]=e.target.value; const pr=MP.find(x=>x.id===+e.target.value); S.cp['l'+k]=pr&&pr.inci||''; S.cp['n'+k]=''; S.cpShow=false; render(); return; }
+  if (e.target.dataset && e.target.dataset.cpk){ const k=e.target.dataset.cpk; S.cp[k]=e.target.value; const pr=MP.find(x=>x.id===+e.target.value); S.cp['l'+k]=pr&&pr.inci||''; S.cp['n'+k]=''; S.cp['h'+k]=null; S.cpShow=false; render(); return; }
   if (e.target.classList && e.target.classList.contains('hs-in') && S.hs){ S.hs[{hsNow:'now',hsGoal:'goal',hsWash:'wash',hsStyle:'style'}[e.target.id]]=e.target.value; return; }
   if (e.target.dataset && e.target.dataset.hw!==undefined){ const i=+e.target.dataset.hw; HR.wd=HR.wd||[]; if(e.target.checked){ if(!HR.wd.includes(i)) HR.wd.push(i); } else HR.wd=HR.wd.filter(x=>x!==i); hrSave(); render(); return; }
   if (e.target.dataset && e.target.dataset.mpar){ const p=MP.find(x=>x.id===+e.target.dataset.mpar); if(p){ p.a=e.target.value; if(!MP_STEPS[p.a].includes(p.st)) p.st='Other'; mpSave(); toast('Moved to '+MP_AREAS.find(x=>x[0]===p.a)[1]); render(); } return; }
@@ -1842,7 +1899,10 @@ render();
 window.claude?.use?.('comments').then(api=>{ commentsApi = api; }).catch(()=>{});
 
 document.addEventListener('click',e=>{ const b=e.target.closest&&e.target.closest('[data-pgg]'); if(!b) return; c2Goal=b.dataset.pgg; render(); });
-document.addEventListener('input',e=>{ const t=e.target; if(!t.dataset) return; if(t.dataset.cpl) S.cp['l'+t.dataset.cpl]=t.value; if(t.dataset.cpn) S.cp['n'+t.dataset.cpn]=t.value; });
+let pdbT=null;
+document.addEventListener('input',e=>{ const t=e.target; if(!t.dataset) return; if(t.dataset.cpl){ S.cp['l'+t.dataset.cpl]=t.value; if(S.cp['h'+t.dataset.cpl]) S.cp['h'+t.dataset.cpl].edited=true; } if(t.dataset.cpn) S.cp['n'+t.dataset.cpn]=t.value;
+  if(t.dataset.cpf){ const k=t.dataset.cpf; S.cp['q'+k]=t.value; clearTimeout(pdbT); pdbHits(k); if(!PDB.names) pdbLoad().then(()=>pdbHits(k)); else pdbT=setTimeout(()=>pdbHits(k),120); } });
+document.addEventListener('focusin',e=>{ if(e.target.dataset&&e.target.dataset.cpf) pdbLoad(); });
 document.addEventListener('pointermove',e=>{ const st=e.target.closest&&e.target.closest('.am-stage'); document.querySelectorAll('.am-stage').forEach(el=>{ if(el!==st){ el.style.setProperty('--ry','0deg'); el.style.setProperty('--rx','0deg'); } }); if(!st) return; const r=st.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; st.style.setProperty('--ry',(x*36).toFixed(1)+'deg'); st.style.setProperty('--rx',(-y*18).toFixed(1)+'deg'); });
 document.addEventListener('pointerleave',()=>document.querySelectorAll('.am-stage').forEach(el=>{el.style.setProperty('--ry','0deg');el.style.setProperty('--rx','0deg');}));
 

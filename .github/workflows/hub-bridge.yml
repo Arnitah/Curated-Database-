@@ -1,0 +1,36 @@
+name: Pull from the Skincare Data Hub
+
+# Runs after the hub's daily refresh (09:17 UTC) and turns it into small files the apps can load:
+# Clay's product search, Safe Batch's supplier facts, and a coverage to-do list.
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refs/heads/main
+  cancel-in-progress: false
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build app files from the hub
+        run: node scripts/bridge-hub.mjs
+      - name: Validate and bump version
+        run: node scripts/build.mjs
+      - name: Commit if anything changed
+        run: |
+          git add index data checks version.json
+          if git diff --cached --quiet; then echo "No changes from the hub today"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Daily pull from the Skincare Data Hub [skip ci]"
+          git push

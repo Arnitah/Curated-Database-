@@ -1009,6 +1009,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 .mv-ok{color:var(--ok,#2e7d32)}.mv-stop{color:var(--stop,#c62828)}.mv-care{color:var(--care,#b26a00)}
 
 .moved-card{margin-bottom:14px;border-left:4px solid var(--accent)}.clay-exp-box{width:100%;font-size:11px;margin-top:6px}
+.hubf{font-size:12.5px;line-height:1.45;margin-top:6px;padding-top:6px;border-top:1px dashed var(--line,#ddd)}.hubf a{text-decoration:underline}
 </style>
 
 <div class="wrap">
@@ -4710,7 +4711,21 @@ $("#ingSafe").innerHTML=[["all","Any rating"],["ok","Gentle"],["care","Use with 
 function ingBody(i){return `${i.good?`<p>${esc(i.good)}</p>`:""}
       ${benOf(i).length?benChips(benOf(i)):""}
       <p class="c">${esc(i.care)}</p>
-      ${ingFlags(i).map(([sv,t])=>`<p class="pflag ${sv}">For your profile: ${esc(t)}</p>`).join("")}`;}
+      ${ingFlags(i).map(([sv,t])=>`<p class="pflag ${sv}">For your profile: ${esc(t)}</p>`).join("")}
+      ${hubFacts(i)}`;}
+/* Supplier facts from the Skincare Data Hub (loaded with the live data; empty until then) */
+let ING_FACTS={};
+const HUB_SRC={aromantic:"Aromantic (UK)",formulator_sample_shop:"Formulator Sample Shop (US)",lotioncrafter:"Lotioncrafter (US)",windy_point:"Windy Point (CA)",native_extracts:"Native Extracts (AU)"};
+function hubFacts(i){
+  const f=ING_FACTS[i.id]; if(!f) return "";
+  const bits=[`Sold by ${f.suppliers.length} supplier${f.suppliers.length>1?"s":""} we track`];
+  const strong=i.ph==="eo"||i.ph==="frag"||i.never||i.lvl==="stop";
+  if(f.use_pct&&!strong){ const [lo,hi]=f.use_pct; bits.push(`suppliers suggest ${lo&&lo!==hi?lo+"–":"up to "}${hi}%`+(i.max&&hi>i.max?` (Safe Batch keeps it to ${i.max}%)`:"")); }
+  if(f.ph) bits.push(`works at pH ${f.ph[0]===f.ph[1]?f.ph[0]:f.ph[0]+"–"+f.ph[1]}`);
+  if(f.shelf_months) bits.push(`keeps about ${f.shelf_months} months unopened`);
+  const links=(f.links||[]).map(l=>`<a href="${esc(l.u)}" target="_blank" rel="noopener">${esc(HUB_SRC[l.s]||l.s)}</a>`).join(" · ");
+  return `<p class="hubf">${esc(bits.join(" · "))}.${strong&&f.use_pct?" For essential oils and fragrance, follow the dilution guide here, not supplier figures, which often mean a whole blend.":""}${links?`<br><span class="muted">Listings: ${links}</span>`:""}</p>`;
+}
 function renderNeeds(){
   $("#needShelf").innerHTML=NEEDS.map(([k,l,svg,fn])=>`<button class="needtile${k==="stop"?" stopt":""}" data-need="${k}" aria-pressed="${needSel===k}"><span class="nic"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span><span class="nl">${esc(l)}</span><span class="nn">${ING.filter(fn).length}</span></button>`).join("");
 }
@@ -7421,7 +7436,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 205 · 22 Oct 2026";
+const SB_VERSION="Version 207 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
@@ -7911,7 +7926,7 @@ function swRender(){ const w=swWeather();
   const get=async f=>{ const r=await fetch(BASE+f,{cache:"no-cache"}); if(!r.ok) throw new Error(f+" "+r.status); return r.json(); };
   let ver=null; try{ ver=await get("version.json"); }catch(e){ try{ const ll=document.getElementById("lotLine"); if(ll) ll.insertAdjacentHTML("beforeend"," · built-in data"); }catch(_){} return; }
   let seen={}; try{ seen=JSON.parse(localStorage.getItem("safebatch-datahash")||"{}"); }catch(e){}
-  const want=["ingredients","synonyms","recipes_checked","myths","terms","traditions","layering_presets"];
+  const want=["ingredients","synonyms","recipes_checked","myths","terms","traditions","layering_presets","ingredient_facts"];
   const data={};
   await Promise.all(want.map(async n=>{ const d=ver.datasets&&ver.datasets["safe-batch/"+n]; if(!d) return; try{ data[n]=await get("data/safe-batch/"+n+".json"); }catch(e){} }));
   let added=0, changed=0;
@@ -7936,6 +7951,7 @@ function swRender(){ const w=swWeather();
   addBy(TERMS,data.terms,x=>x&&x.t);
   addBy(TRADS,data.traditions,x=>x&&x.id);
   addBy(LY_PRE,data.layering_presets,x=>x&&x[0]);
+  if(data.ingredient_facts&&typeof data.ingredient_facts==="object"){ ING_FACTS=data.ingredient_facts; changed++; }
   try{ localStorage.setItem("safebatch-datahash",JSON.stringify({v:ver.version,at:Date.now()})); }catch(e){}
   window.SB_DATA={version:ver.version,updated_at:ver.updated_at,added,changed};
   if(added||changed){

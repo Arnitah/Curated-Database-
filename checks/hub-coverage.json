@@ -1,0 +1,607 @@
+{
+ "built_at": "2026-10-22T20:04:43.745Z",
+ "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
+ "explained_in_safe_batch": 247,
+ "queue": [
+  {
+   "ingredient": "tocopheryl acetate",
+   "products": 1726
+  },
+  {
+   "ingredient": "caprylyl glycol",
+   "products": 1451
+  },
+  {
+   "ingredient": "butyrospermum parkii butter",
+   "products": 1237
+  },
+  {
+   "ingredient": "citral",
+   "products": 1201
+  },
+  {
+   "ingredient": "helianthus annuus seed oil",
+   "products": 1143
+  },
+  {
+   "ingredient": "alpha-isomethyl ionone",
+   "products": 1031
+  },
+  {
+   "ingredient": "glycol distearate",
+   "products": 974
+  },
+  {
+   "ingredient": "bht",
+   "products": 925
+  },
+  {
+   "ingredient": "coco-glucoside",
+   "products": 846
+  },
+  {
+   "ingredient": "guar hydroxypropyltrimonium chloride",
+   "products": 757
+  },
+  {
+   "ingredient": "cocos nucifera oil",
+   "products": 750
+  },
+  {
+   "ingredient": "glyceryl oleate",
+   "products": 678
+  },
+  {
+   "ingredient": "methylisothiazolinone",
+   "products": 646
+  },
+  {
+   "ingredient": "benzoic acid",
+   "products": 632
+  },
+  {
+   "ingredient": "paraffinum liquidum",
+   "products": 622
+  },
+  {
+   "ingredient": "polyquaternium-7",
+   "products": 621
+  },
+  {
+   "ingredient": "prunus amygdalus dulcis oil",
+   "products": 609
+  },
+  {
+   "ingredient": "polyquaternium-10",
+   "products": 565
+  },
+  {
+   "ingredient": "isobutane",
+   "products": 564
+  },
+  {
+   "ingredient": "benzyl benzoate",
+   "products": 557
+  },
+  {
+   "ingredient": "cocamide mea",
+   "products": 536
+  },
+  {
+   "ingredient": "decyl glucoside",
+   "products": 531
+  },
+  {
+   "ingredient": "propane",
+   "products": 531
+  },
+  {
+   "ingredient": "butane",
+   "products": 528
+  },
+  {
+   "ingredient": "palmitic acid",
+   "products": 527
+  },
+  {
+   "ingredient": "c12-15 alkyl benzoate",
+   "products": 520
+  },
+  {
+   "ingredient": "methylchloroisothiazolinone",
+   "products": 517
+  },
+  {
+   "ingredient": "hydroxycitronellal",
+   "products": 515
+  },
+  {
+   "ingredient": "octyldodecanol",
+   "products": 502
+  },
+  {
+   "ingredient": "acrylates/c10-30 alkyl acrylate crosspolymer",
+   "products": 480
+  },
+  {
+   "ingredient": "butyl methoxydibenzoylmethane",
+   "products": 475
+  },
+  {
+   "ingredient": "cyclopentasiloxane",
+   "products": 474
+  },
+  {
+   "ingredient": "simmondsia chinensis seed oil",
+   "products": 443
+  },
+  {
+   "ingredient": "olea europaea fruit oil",
+   "products": 440
+  },
+  {
+   "ingredient": "glycine soja oil",
+   "products": 419
+  },
+  {
+   "ingredient": "tetrasodium glutamate diacetate",
+   "products": 418
+  },
+  {
+   "ingredient": "ethylhexyl salicylate",
+   "products": 417
+  },
+  {
+   "ingredient": "cetrimonium chloride",
+   "products": 413
+  },
+  {
+   "ingredient": "styrene/acrylates copolymer",
+   "products": 407
+  },
+  {
+   "ingredient": "lecithin",
+   "products": 392
+  },
+  {
+   "ingredient": "coco-betaine",
+   "products": 390
+  },
+  {
+   "ingredient": "acrylates copolymer",
+   "products": 389
+  },
+  {
+   "ingredient": "hydroxyethylcellulose",
+   "products": 387
+  },
+  {
+   "ingredient": "persea gratissima oil",
+   "products": 385
+  },
+  {
+   "ingredient": "dehydroacetic acid",
+   "products": 377
+  },
+  {
+   "ingredient": "lauryl glucoside",
+   "products": 371
+  },
+  {
+   "ingredient": "cera alba",
+   "products": 340
+  },
+  {
+   "ingredient": "hexylene glycol",
+   "products": 339
+  },
+  {
+   "ingredient": "ascorbyl palmitate",
+   "products": 334
+  },
+  {
+   "ingredient": "dipropylene glycol",
+   "products": 326
+  },
+  {
+   "ingredient": "cellulose gum",
+   "products": 326
+  },
+  {
+   "ingredient": "maltodextrin",
+   "products": 325
+  },
+  {
+   "ingredient": "glyceryl stearate citrate",
+   "products": 324
+  },
+  {
+   "ingredient": "ceteareth-20",
+   "products": 323
+  },
+  {
+   "ingredient": "aroma",
+   "products": 322
+  },
+  {
+   "ingredient": "laureth-4",
+   "products": 319
+  },
+  {
+   "ingredient": "disteardimonium hectorite",
+   "products": 314
+  },
+  {
+   "ingredient": "glyceryl caprylate",
+   "products": 304
+  },
+  {
+   "ingredient": "dicaprylyl carbonate",
+   "products": 302
+  },
+  {
+   "ingredient": "glyceryl stearate se",
+   "products": 300
+  },
+  {
+   "ingredient": "potassium hydroxide",
+   "products": 293
+  },
+  {
+   "ingredient": "triethyl citrate",
+   "products": 293
+  },
+  {
+   "ingredient": "chamomilla recutita flower extract",
+   "products": 292
+  },
+  {
+   "ingredient": "betaine",
+   "products": 290
+  },
+  {
+   "ingredient": "sodium levulinate",
+   "products": 290
+  },
+  {
+   "ingredient": "ricinus communis seed oil",
+   "products": 279
+  },
+  {
+   "ingredient": "ethylhexyl methoxycinnamate",
+   "products": 278
+  },
+  {
+   "ingredient": "disodium cocoamphodiacetate",
+   "products": 274
+  },
+  {
+   "ingredient": "chlorphenesin",
+   "products": 269
+  },
+  {
+   "ingredient": "ethylhexyl triazone",
+   "products": 269
+  },
+  {
+   "ingredient": "hydrogenated palm glycerides citrate",
+   "products": 267
+  },
+  {
+   "ingredient": "arginine",
+   "products": 266
+  },
+  {
+   "ingredient": "magnesium nitrate",
+   "products": 264
+  },
+  {
+   "ingredient": "propylene carbonate",
+   "products": 263
+  },
+  {
+   "ingredient": "bis-ethylhexyloxyphenol methoxyphenyl triazine",
+   "products": 259
+  },
+  {
+   "ingredient": "hydrated silica",
+   "products": 257
+  },
+  {
+   "ingredient": "sorbic acid",
+   "products": 257
+  },
+  {
+   "ingredient": "potassium cetyl phosphate",
+   "products": 251
+  },
+  {
+   "ingredient": "hydroxyacetophenone",
+   "products": 249
+  },
+  {
+   "ingredient": "lauric acid",
+   "products": 248
+  },
+  {
+   "ingredient": "octocrylene",
+   "products": 247
+  },
+  {
+   "ingredient": "sodium palmate",
+   "products": 239
+  },
+  {
+   "ingredient": "dicaprylyl ether",
+   "products": 237
+  },
+  {
+   "ingredient": "sodium saccharin",
+   "products": 235
+  },
+  {
+   "ingredient": "pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate",
+   "products": 234
+  },
+  {
+   "ingredient": "theobroma cacao seed butter",
+   "products": 227
+  },
+  {
+   "ingredient": "dmdm hydantoin",
+   "products": 226
+  },
+  {
+   "ingredient": "sodium stearoyl glutamate",
+   "products": 223
+  },
+  {
+   "ingredient": "amyl cinnamal",
+   "products": 221
+  },
+  {
+   "ingredient": "sodium salicylate",
+   "products": 220
+  },
+  {
+   "ingredient": "ethylhexyl palmitate",
+   "products": 217
+  },
+  {
+   "ingredient": "sodium cocoate",
+   "products": 215
+  },
+  {
+   "ingredient": "magnesium sulfate",
+   "products": 214
+  },
+  {
+   "ingredient": "ppg-5-ceteth-20",
+   "products": 213
+  },
+  {
+   "ingredient": "sodium cocoyl glutamate",
+   "products": 206
+  },
+  {
+   "ingredient": "rosmarinus officinalis leaf extract",
+   "products": 206
+  },
+  {
+   "ingredient": "paraffin",
+   "products": 206
+  },
+  {
+   "ingredient": "cera microcristallina",
+   "products": 202
+  },
+  {
+   "ingredient": "steareth-2",
+   "products": 201
+  },
+  {
+   "ingredient": "sodium phytate",
+   "products": 200
+  },
+  {
+   "ingredient": "tetrasodium etidronate",
+   "products": 196
+  },
+  {
+   "ingredient": "trisodium edta",
+   "products": 195
+  },
+  {
+   "ingredient": "ammonium lauryl sulfate",
+   "products": 189
+  },
+  {
+   "ingredient": "cetyl palmitate",
+   "products": 189
+  },
+  {
+   "ingredient": "isohexadecane",
+   "products": 187
+  },
+  {
+   "ingredient": "phenylbenzimidazole sulfonic acid",
+   "products": 185
+  },
+  {
+   "ingredient": "sodium xylenesulfonate",
+   "products": 179
+  },
+  {
+   "ingredient": "sodium fluoride",
+   "products": 176
+  },
+  {
+   "ingredient": "stearamidopropyl dimethylamine",
+   "products": 175
+  },
+  {
+   "ingredient": "diethylamino hydroxybenzoyl hexyl benzoate",
+   "products": 175
+  },
+  {
+   "ingredient": "vitis vinifera seed oil",
+   "products": 174
+  },
+  {
+   "ingredient": "levulinic acid",
+   "products": 174
+  },
+  {
+   "ingredient": "myristic acid",
+   "products": 173
+  },
+  {
+   "ingredient": "alumina",
+   "products": 173
+  },
+  {
+   "ingredient": "glycine",
+   "products": 171
+  },
+  {
+   "ingredient": "aluminum hydroxide",
+   "products": 170
+  },
+  {
+   "ingredient": "caprylyl/capryl glucoside",
+   "products": 170
+  },
+  {
+   "ingredient": "ethylhexyl stearate",
+   "products": 169
+  },
+  {
+   "ingredient": "benzophenone-4",
+   "products": 167
+  },
+  {
+   "ingredient": "sodium gluconate",
+   "products": 166
+  },
+  {
+   "ingredient": "sodium polyacrylate",
+   "products": 166
+  },
+  {
+   "ingredient": "ethylparaben",
+   "products": 165
+  },
+  {
+   "ingredient": "ppg-14 butyl ether",
+   "products": 164
+  },
+  {
+   "ingredient": "cocamide mipa",
+   "products": 163
+  },
+  {
+   "ingredient": "piroctone olamine",
+   "products": 163
+  },
+  {
+   "ingredient": "zea mays starch",
+   "products": 161
+  },
+  {
+   "ingredient": "cetyl esters",
+   "products": 160
+  },
+  {
+   "ingredient": "coco-caprylate/caprate",
+   "products": 160
+  },
+  {
+   "ingredient": "sodium coco-sulfate",
+   "products": 160
+  },
+  {
+   "ingredient": "farnesol",
+   "products": 157
+  },
+  {
+   "ingredient": "cocamide dea",
+   "products": 156
+  },
+  {
+   "ingredient": "methylpropanediol",
+   "products": 155
+  },
+  {
+   "ingredient": "tin oxide",
+   "products": 150
+  },
+  {
+   "ingredient": "isododecane",
+   "products": 150
+  },
+  {
+   "ingredient": "dibutyl adipate",
+   "products": 149
+  },
+  {
+   "ingredient": "prunus armeniaca kernel oil",
+   "products": 149
+  },
+  {
+   "ingredient": "glucose",
+   "products": 148
+  },
+  {
+   "ingredient": "hydroxypropyl guar hydroxypropyltrimonium chloride",
+   "products": 147
+  },
+  {
+   "ingredient": "sodium stearate",
+   "products": 146
+  },
+  {
+   "ingredient": "myristyl myristate",
+   "products": 146
+  },
+  {
+   "ingredient": "steareth-20",
+   "products": 145
+  },
+  {
+   "ingredient": "trideceth-6",
+   "products": 145
+  },
+  {
+   "ingredient": "polyethylene",
+   "products": 144
+  },
+  {
+   "ingredient": "laureth-2",
+   "products": 144
+  },
+  {
+   "ingredient": "maris sal",
+   "products": 141
+  },
+  {
+   "ingredient": "polyglyceryl-3 diisostearate",
+   "products": 140
+  },
+  {
+   "ingredient": "sorbitan isostearate",
+   "products": 138
+  },
+  {
+   "ingredient": "trisodium ethylenediamine disuccinate",
+   "products": 138
+  },
+  {
+   "ingredient": "sodium methyl cocoyl taurate",
+   "products": 136
+  },
+  {
+   "ingredient": "microcrystalline cellulose",
+   "products": 135
+  }
+ ]
+}
