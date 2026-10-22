@@ -276,6 +276,22 @@ p{margin:0}
 .mp-more{flex:none;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:99px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
 .mp-opened .mp-more{background:var(--ink);color:var(--surface)}.mp-panel{display:flex;flex-direction:column;gap:8px;margin:10px 0 4px 44px;padding:10px 12px;border-radius:12px;background:var(--bg)}
 @media (max-width:420px){.mp-panel{margin-left:0}}
+
+.cp-grid{display:grid;gap:12px}.cp-grid.two{grid-template-columns:1fr 1fr}@media (max-width:640px){.cp-grid.two{grid-template-columns:1fr}}
+.cp-side{display:flex;flex-direction:column;gap:6px}.cp-side label{display:flex;flex-direction:column;gap:4px}.cp-side textarea,.cp-side input,.cp-side select{width:100%;font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.cp .hint{font-family:inherit;font-style:normal;font-size:13px;color:var(--muted);opacity:1;margin-top:10px}
+.cp .blabel{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:14px 0 4px}
+.cp .tag{font-size:11px;padding:1px 8px}
+.btag{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px}.t-b{background:var(--ok-soft);color:var(--ok)}.t-s{background:var(--s2);color:var(--ink)}.t-f{background:var(--s2);color:var(--muted)}.t-x{background:var(--stop-soft);color:var(--stop)}
+.cm-list{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:12px}.cm-list>li{display:flex;flex-direction:column;gap:3px;font-size:14px}.cm-list>li>span{color:var(--muted)}
+.cm-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.cm-alts{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:4px}.cm-alts li{font-size:13.5px;padding-left:14px;position:relative}.cm-alts li::before{content:"→";position:absolute;left:0;color:var(--accent)}.cm-alts .tier{font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 7px;margin-left:4px}
+.goal-list,.goal-avoid{margin:4px 0;padding-left:18px;font-size:14px}.goal-list li,.goal-avoid li{margin:4px 0}
+.c2-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media (max-width:640px){.c2-grid{grid-template-columns:1fr}}.c2-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}.c2-col{background:var(--bg);border-radius:12px;padding:10px 12px}
+.pg{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;font-weight:700;font-size:13px;color:#fff}.pg-A{background:#0b7a3e}.pg-B{background:#2a78d6}.pg-C{background:#a86a00}.pg-D{background:#8a8f8c}
+.pg-box{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.pg-verdict{margin:10px 0}
+.pg-tab{width:100%;border-collapse:collapse;font-size:14px}.pg-tab th,.pg-tab td{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}.pg-tab td{text-align:center}.pg-tab td.hint{text-align:left}.pg-sel{background:var(--s2)}.pg-win{box-shadow:inset 0 -3px 0 var(--ok)}
+.pg-why,.pg-flags{list-style:none;padding:0;margin:4px 0 8px;display:flex;flex-direction:column;gap:6px;font-size:14px}.pgf-stop{color:var(--stop)}.pg-how{margin-top:10px;font-size:13px}.pg-how summary{cursor:pointer;color:var(--muted)}
+.cp .chips{display:flex;flex-wrap:wrap;gap:6px}.cp .chip{font-size:13px}
 </style>
 <div class="app" id="app">
   <aside class="side" aria-label="Clay">
@@ -673,6 +689,7 @@ function mpSection(){
       :p.note?`<button type="button" class="mp-note" data-act="mpnote" data-v="${p.id}" title="Tap to edit note">“${esc(p.note)}” <span class="mp-pen" aria-hidden="true">✎</span></button>`
       :`<button type="button" class="linkbtn mp-addnote" data-act="mpnote" data-v="${p.id}">+ Add a note</button>`}
     <div class="mp-meta"><select class="mp-sel" data-mpar="${p.id}" aria-label="Area for ${esc(p.n)}">${MP_AREAS.map(([k,l])=>`<option value="${k}"${k===p.a?' selected':''}>${l}</option>`).join('')}</select><select class="mp-sel" data-mpst="${p.id}" aria-label="Step for ${esc(p.n)}">${steps.map(st=>`<option${st===p.st?' selected':''}>${esc(st)}</option>`).join('')}</select></div>
+    <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${p.inci?'Check ingredients ✓':'Check ingredients'}</button>
     <div class="row" style="gap:6px">${p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:cur">Using it</button>`:''}${p.s!=='past'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:past">Used before</button>`:''}${p.s!=='next'&&p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:next">Try next</button>`:''}<button class="chip" type="button" data-act="mpdel" data-v="${p.id}" style="margin-left:auto;color:var(--stop)">Remove</button></div>
    </div></div>`; };
   const cur=list.filter(p=>p.s==='cur'), have=list.filter(p=>p.s==='have'), past=list.filter(p=>p.s==='past'), nxt=list.filter(p=>p.s==='next');
@@ -807,10 +824,279 @@ function hairPlan(){
   if(!HR.setup||S.hsEdit) return hairSetupCard();
   return hairGoalCard()+hairCalCard()+hairWashCard()+hairTipsCard();
 }
+
+/* ================= Check a product (moved from Safe Batch) =================
+   Same engine as Safe Batch's store-product checker; data refreshed from the Curated Database repo. */
+const CM=[
+ {k:"niacinamide",re:/niacinamide/,n:"Niacinamide",ev:"b",does:"Evens tone, supports the barrier, calms oil.",alt:[["The Ordinary Niacinamide 10% + Zinc 1%","Budget"],["CeraVe PM Facial Moisturizing Lotion","Drugstore, niacinamide plus ceramides"],["Dermasil Niacinamide Toning Body Cream Serum", "Dollar Tree, body; also has glycolic acid"]]},
+ {k:"retinol",re:/\bretinol\b|retinyl palmitate|hydroxypinacolone retinoate/,n:"Retinol or a retinoid ester",ev:"b",does:"Speeds cell turnover; softens fine lines and evens texture over months.",alt:[["Trader Joe's Retinol Night Serum (0.3%, with baobab oil)","Grocery, gentle starter strength"],["The Ordinary Retinol 0.5% in Squalane","Budget"],["CeraVe Resurfacing Retinol Serum","Drugstore"]]},
+ {k:"retinal",re:/retinal\b|retinaldehyde/,n:"Retinal",ev:"b",does:"A faster-acting retinoid.",alt:[["The Ordinary Retinol 0.5% in Squalane","Budget, slower but cheaper"]]},
+ {k:"adapalene",re:/adapalene/,n:"Adapalene",ev:"b",does:"Treats acne by unclogging pores.",alt:[["Differin Gel (adapalene 0.1%)","Drugstore"]]},
+ {k:"vitc",re:/ascorbic acid|ascorbyl glucoside|sodium ascorbyl phosphate|magnesium ascorbyl|tetrahexyldecyl ascorbate|ethyl ascorbic/,n:"Vitamin C",ev:"b",does:"Antioxidant that brightens and supports sunscreen against sun damage.",alt:[["The Ordinary Vitamin C Suspension 23% + HA Spheres 2%","Budget, strong, can sting"],["The Ordinary Ascorbyl Glucoside Solution 12%","Budget, gentler"]]},
+ {k:"azelaic",re:/azelaic/,n:"Azelaic acid",ev:"b",does:"Fades marks and calms redness and breakouts.",alt:[["The Ordinary Azelaic Acid Suspension 10%","Budget"],["Paula's Choice 10% Azelaic Acid Booster","Online"],["ACM Azéane 15% azelaic acid cream","French pharmacy; sold without prescription in some countries, check yours"]]},
+ {k:"salicylic",re:/salicylic acid|betaine salicylate|willow bark/,n:"Salicylic acid (BHA)",ev:"b",does:"Clears pores and blackheads.",alt:[["Stridex Maximum Strength pads (salicylic acid 2%)","Drugstore"],["CeraVe SA Smoothing Cleanser","Drugstore"]]},
+ {k:"glycolic",re:/glycolic acid/,n:"Glycolic acid (AHA)",ev:"b",does:"Exfoliates for smoother, brighter skin.",alt:[["The Ordinary Glycolic Acid 7% Exfoliating Toner","Budget"],["Dermasil Sheer Yuzu Body Cream (AHA, kojic acid)", "Dollar Tree, body; wear SPF on exposed skin"],["Dermasil AHA Glycolic Acid Toning Solution","Dollar Tree; strength not listed"]]},
+ {k:"lactic",re:/lactic acid/,n:"Lactic acid (AHA)",ev:"b",does:"Gentle exfoliation that also hydrates.",alt:[["The Ordinary Lactic Acid 5% + HA","Budget, face"],["AmLactin Daily Moisturizing Lotion (12%)","Drugstore, body"]]},
+ {k:"mandelic",re:/mandelic acid/,n:"Mandelic acid (AHA)",ev:"s",does:"The gentlest AHA, often used for sensitive or deeper skin tones.",alt:[["The Ordinary Mandelic Acid 10% + HA","Budget"]]},
+ {k:"arbutin",re:/arbutin/,n:"Alpha arbutin",ev:"s",does:"Gently fades dark spots in leave-on products.",alt:[["The Ordinary Alpha Arbutin 2% + HA","Budget"]]},
+ {k:"tranexamic",re:/tranexamic/,n:"Tranexamic acid",ev:"s",does:"Helps fade stubborn dark patches like melasma.",alt:[["Naturium Tranexamic Topical Acid 5%","Online"],["Spa Scentials Face Shake toner mist (niacinamide + tranexamic acid)", "Dollar Tree; strength not listed"]]},
+ {k:"ha",lowOk:1,re:/sodium hyaluronate|hyaluronic acid|hydrolyzed hyaluronic/,n:"Hyaluronic acid",ev:"b",does:"Pulls water into the skin; plumps temporarily.",alt:[["The Ordinary Hyaluronic Acid 2% + B5","Budget"],["The Inkey List Hyaluronic Acid Serum","Budget"],["Dermasil Hyaluronic Hydration Body Cream Serum", "Dollar Tree, body"],["Lalio Moist Hya B5 Gel Cream", "Thai drugstore, light gel cream"]]},
+ {k:"ceramide",lowOk:1,re:/ceramide/,n:"Ceramides",ev:"b",does:"Rebuild the skin barrier.",alt:[["CeraVe Moisturizing Cream","Drugstore"],["Dermasil Sweet Almond Body Cream", "Dollar Tree, body; contains almond"]]},
+ {k:"peptide",lowOk:1,re:/palmitoyl|acetyl hexapeptide|argireline|matrixyl|tripeptide|tetrapeptide|pentapeptide|oligopeptide|polypeptide/,n:"Peptides",ev:"s",does:"Signal peptides; modest smoothing in some studies, mostly from brand-funded tests.",alt:[["The Ordinary Multi-Peptide + HA Serum","Budget"],["The Ordinary Matrixyl 10% + HA","Budget"]]},
+ {k:"copper",re:/copper tripeptide|copper peptide|ghk-cu/,n:"Copper peptides",ev:"s",does:"May support repair; evidence is limited.",alt:[["The Ordinary Multi-Peptide + Copper Peptides 1% Serum","Budget"]]},
+ {k:"centella",re:/centella|madecassoside|asiaticoside|cica\b/,n:"Centella (cica)",ev:"s",does:"Calms irritation and redness.",alt:[["SKIN1004 Madagascar Centella Ampoule","K-beauty"],["La Roche-Posay Cicaplast Baume B5","Pharmacy"],["Spa Scentials Face Shake toner mist (centella + ceramide)", "Dollar Tree"]]},
+ {k:"panthenol",re:/panthenol/,n:"Panthenol (B5)",ev:"b",does:"Soothes and hydrates.",alt:[["La Roche-Posay Cicaplast Baume B5","Pharmacy"],["The Ordinary Hyaluronic Acid 2% + B5","Budget"],["Dermasil Bare Vanilla Body Cream (panthenol, tamanu)", "Dollar Tree, body; scented"],["Uriage Bariéderm Cica cream (copper-zinc)","French pharmacy, like Avène Cicalfate"]]},
+ {k:"urea",re:/\burea\b/,n:"Urea",ev:"b",does:"Hydrates and softens rough, dry skin.",alt:[["Eucerin UreaRepair or Roughness Relief Lotion","Drugstore"],["Eucerin UreaRepair 30% cream","Thick skin only: heels, elbows, calluses; not the face"]]},
+ {k:"squalane",re:/squalane/,n:"Squalane",ev:"b",does:"A light, stable moisturizing oil.",alt:[["The Ordinary 100% Plant-Derived Squalane","Budget"]],diy:true},
+ {k:"bpo",re:/benzoyl peroxide/,n:"Benzoyl peroxide",ev:"b",does:"Kills acne bacteria.",alt:[["PanOxyl Acne Foaming Wash","Drugstore"]]},
+ {k:"caffeine",re:/\bcaffeine\b/,n:"Caffeine",ev:"f",does:"Temporarily reduces puffiness.",alt:[["The Ordinary Caffeine Solution 5% + EGCG","Budget"]]},
+ {k:"bakuchiol",re:/bakuchiol/,n:"Bakuchiol",ev:"s",does:"A gentler retinol alternative with a few small studies.",alt:[["The Inkey List Bakuchiol Moisturizer","Budget"]]},
+ {k:"snail",re:/snail secretion|snail mucin/,n:"Snail mucin",ev:"f",does:"A hydrating, soothing filler; little hard evidence beyond moisturizing.",alt:[["COSRX Advanced Snail 96 Mucin Power Essence","K-beauty"]]},
+ {k:"heartleaf",re:/houttuynia|heartleaf/,n:"Heartleaf (houttuynia) extract",ev:"f",does:"A soothing K-beauty plant extract; lab studies show calming and antimicrobial effects, few human trials.",alt:[["Anua Heartleaf 77% Soothing Toner","Budget"]]},
+ {k:"minoxidil",re:/minoxidil/,n:"Minoxidil",ev:"b",does:"The proven over-the-counter treatment for thinning hair. It only keeps working while you use it.",alt:[["Kirkland Signature Minoxidil 5% (Costco)","Generic, same active"],["Store-brand minoxidil 5% foam or solution","Drugstore generic"]]},
+ {k:"bond",re:/bis-aminopropyl diglycol dimaleate|bond (repair|builder)|maleic acid/,n:"Bond repair",ev:"s",does:"Helps strengthen hair damaged by bleach, colour or heat. Brand-funded evidence; little benefit on undamaged hair.",alt:[["Shea Moisture Amla Oil Bond Repair Masque","Drugstore"],["K18 or Olaplex only if hair is bleached","Salon; no cheaper match with the same patented active"],["L'Oréal Elseve Bond Repair conditioner and leave-in","Drugstore; smoothing more than true bond repair"]]},
+ {k:"protein",re:/hydrolyzed (keratin|wheat protein|silk|soy protein)|keratin\b/,n:"Hydrolyzed proteins and keratin",ev:"s",does:"Fill gaps in damaged, porous hair for strength and less breakage. Too much can feel stiff on fine hair.",alt:[["Schwarzkopf Gliss 4-in-1 Regeneration mask","Drugstore"],["Balea Professional Plex Care serum (dm)","Europe drugstore"],["Kundal Honey & Macadamia Protein Treatment","K-beauty"]]},
+ {k:"ectoin",re:/ectoin|bisabolol/,n:"Ectoin and bisabolol (soothing)",ev:"s",does:"Calm a dry, tight or irritated scalp or skin.",alt:[["alverde Kopfhaut Balance scalp serum (dm)","Europe drugstore, fragrance-free"],["La Roche-Posay Cicaplast Baume B5","Pharmacy, skin"]]},
+ {k:"glycerin",re:/^\s*(aqua|water)[^,]*,\s*glycerin/,n:"Glycerin-rich lotion",ev:"b",does:"Glycerin pulls water into dry, cracked skin; one of the best-studied moisturizers.",alt:[["Corn Huskers Lotion","Drugstore or farm store, about 5 dollars"],["Neutrogena Norwegian Formula Hand Cream","Drugstore"]]},
+ {k:"hocl",re:/hypochlorous/,n:"Hypochlorous acid (HOCl)",ev:"s",does:"A gentle antimicrobial your own immune cells make. Used in wound and eyelid care; on skin it can calm redness and help with irritation after workouts, shaving or tattoos. It breaks down over time, so buy small bottles and use them up.",alt:[["Three Ships Take Five Balancing Spray","Canadian, face and body"],["e11ement Face and Skin Spray","Simple formula, acne-prone or irritated skin"],["Honeydew Labs Hypochlorous Acid Spray","Post-workout and tattoo care"]]},
+ {k:"pha",re:/gluconolactone|lactobionic/,n:"PHA (gluconolactone)",ev:"s",does:"The gentlest exfoliating acid; good for sensitive skin and for building up to stronger acids.",alt:[["SVR Sebiaclear Serum (14% gluconolactone, 4% niacinamide)","French pharmacy"],["The Inkey List PHA Toner","Budget"]]},
+ {k:"prostaglandin",re:/cloprostenol|cloprostenate|bimatoprost|latanoprost|travoprost|dihydroxy difluoro ethyl/,n:"Prostaglandin analog (lash growth)",ev:"b",does:"This is what actually lengthens lashes; bimatoprost is a prescription drug for it. Side effects: darker eyelid skin, red or itchy eyes, and rarely a permanent change in iris color. Avoid in pregnancy and with eye conditions; stop if eyes get irritated. Results fade once you stop.",alt:[["Latisse (bimatoprost, prescription)","Same effect, dosed and monitored by a doctor"],["Castor oil on a clean spoolie","Gentle, cheap conditioning; won't lengthen much"]]},
+ {k:"lashpeptide",re:/myristoyl (penta|hexa)peptide|lash peptide/,n:"Lash peptides (myristoyl pentapeptide-17 etc.)",ev:"f",does:"Peptides that condition lashes so they look fuller and break less. Little independent evidence for real growth; prostaglandin-free serums are gentler but weaker.",alt:[["The Ordinary Multi-Peptide Lash and Brow Serum","Budget peptide option"],["Castor oil on a clean spoolie","Cheapest conditioning"]]},
+ {k:"immortelle",re:/helichrysum|immortelle/,n:"Immortelle (helichrysum) extract and oil",ev:"f",does:"An antioxidant flower extract and oil. Its retinol-like claims come from brand-funded tests. The essential oil adds natural fragrance allergens.",alt:[["The Ordinary Granactive Retinoid 2% Emulsion","Budget retinoid with real evidence"],["CeraVe Skin Renewing Retinol Serum","Drugstore retinol"],["DIY: helichrysum at 0.5% in jojoba","For the scent and the oil"]]},
+ {k:"acmella",re:/acmella|spilanthes|spilanthol/,n:"Acmella oleracea (\"plant Botox\")",ev:"f",does:"The buzz-button plant's spilanthol gives a tingly, briefly tightened feel. Claims that it relaxes expression lines like Botox come from small brand tests; no cream reaches the muscles.",alt:[["The Ordinary Argireline Solution 10%","Budget peptide for expression lines"]]},
+ {k:"tansy",re:/tanacetum vulgare|tansy|golden button/,n:"Tansy extract (\"golden button\")",ev:"f",does:"Mainly fragrance. Tansy contains thujone, which is toxic in essential-oil form, so tansy oil isn't used on skin. Small amounts of extract in a cream are allowed, but it's in the daisy family and can trigger ragweed-type allergies. Patch test, and skip in pregnancy.",alt:[["CeraVe Moisturizing Cream","Fragrance-free option"]]},
+ {k:"algae",re:/jania rubens|red alga|algae extract|seaweed extract|chondrus/,n:"Algae extract",ev:"f",does:"Moisturizing and soothing, with lab and brand-funded studies behind firming claims. Usually present in tiny amounts.",alt:[["The Ordinary Natural Moisturizing Factors + HA","Cheap hydration"]]},
+ {k:"powderbase",re:/aluminum starch octenylsuccinate|lauroyl lysine|zinc myristate/,n:"Oil-absorbing powder base",ev:"b",does:"Starch and amino-acid powders absorb oil and give a smooth, soft-matte, less chalky finish. That's the real job of a skincare powder: shine control, not treatment. Starch-based powders also avoid the contamination worries of low-grade talc.",alt:[["Cornstarch- or arrowroot-based loose powder","Cheapest oil control"],["DIY overnight skin powder (in Recipes)","Unscented and shade-matched"]]},
+ {k:"scutellaria",re:/scutellaria|baicalensis|ougon|baikal skullcap/,n:"Scutellaria (Baikal skullcap) root extract",ev:"f",does:"An antioxidant, soothing root extract. Claims that it forms an \"anti-PM2.5 filter\" come from lab tests; in a powder it's a tiny amount. Washing your face at night removes pollution more reliably.",alt:[["Gentle nightly cleanse","The proven way to remove pollution"]]},
+ {k:"hormone",re:/estradiol|estrogen|oestrogen|estriol|progesterone|placenta|phytoestrogen/,n:"Hormones or placenta extract",ev:"f",does:"Real hormones in skincare can be absorbed and affect the body, so in most countries they're only allowed in prescription products. Placenta extracts have little evidence and can be poorly regulated. Plant \"phytoestrogens\" are much weaker. Avoid in pregnancy and if you have a hormone-sensitive condition; ask a doctor about prescription options for menopause skin.",alt:[["The Ordinary Natural Moisturizing Factors + HA","Plain hydration"],["Prescription estrogen cream","Only through a doctor"]]},
+ {k:"talc",re:/^talc$|\btalc\b/,n:"Talc (dusting and body powder base)",ev:"care",does:"Absorbs moisture and reduces friction. Loose talc can irritate lungs when it clouds up, and cosmetic talc has had asbestos contamination problems; many brands have switched to starch. Keep any loose powder away from babies' faces.",alt:[["Starch-based body powder (corn, tapioca or arrowroot)","Same anti-chafe job, no talc"],["DIY unscented talc-free body powder (in Recipes)","For sensitive skin"]]},
+ {k:"bicarb",re:/sodium bicarbonate|baking soda/,n:"Baking soda (sodium bicarbonate) in a leave-on",ev:"care",does:"Absorbs odor, but it's strongly alkaline (pH about 8.5) and can sting or rash underarms, shaved skin and intimate areas, especially on sweaty skin. Fine in bath soaks and bath bombs that dissolve in lots of water.",alt:[["Starch-only body powder","No baking soda"],["Native or Schmidt's Sensitive deodorant","Baking-soda-free"]]},
+ {k:"capsicum",re:/capsicum|capsaicin|chili extract/,n:"Capsicum (chili) extract",ev:"care",does:"Warming and tingling. On leave-on skin it can burn, especially after shaving, on underarms or near eyes and intimate areas. Wash hands after applying.",alt:[["Unscented starch powder","No warming agents"]]},
+ {k:"citrusphoto",re:/citrus (limon|aurantifolia|bergamia|aurantium dulcis)? ?\(?(lemon|lime|bergamot|grapefruit)\)? ?(peel )?oil|lime oil|lemon peel oil|bergamot oil/,n:"Cold-pressed citrus oil (lemon, lime, bergamot)",ev:"care",does:"Expressed lemon, lime and bergamot oils can cause dark marks or burns when skin with them on is exposed to sun (phytophotodermatitis). Fine in rinse-off products; in leave-on, look for steam-distilled or bergapten-free (FCF) versions, or avoid sun on that area for 12 hours.",alt:[["Bergamot FCF or distilled lime oil","Sun-safe versions for DIY"]]},
+ {k:"synmica",re:/fluorphlogopite|synthetic mica/,n:"Synthetic mica (fluorphlogopite)",ev:"info",does:"Lab-made mica for shimmer. Same look as natural mica without the child-labor concerns linked to some mined mica. Not a skincare active; inert and low risk.",alt:[["Cosmetic-grade mica, ethically sourced","For DIY shimmer"]]},
+ {k:"aspen",re:/populus (tremuloides|adenopoda)|aspen bark/,n:"Aspen bark extract (natural preservative)",ev:"f",does:"Contains salicin and salicylates, and is sold as a natural preservative. Evidence it preserves well on its own is thin. Skip if you're allergic to aspirin. A dry powder with no water doesn't need a preservative anyway.",alt:[["Water-free powder, no preservative needed","Keep it dry"]]},
+ {k:"triclosan",re:/triclosan|triclocarban/,n:"Triclosan (antibacterial \"deo factor\")",ev:"care",does:"An antibacterial that the US FDA removed from consumer soaps in 2016 and the EU restricts. Concerns include hormone disruption in animal studies and contributing to antibiotic resistance. It isn't needed for odor control.",alt:[["Starch powder with a little zinc oxide","DIY odor control"],["Zinc ricinoleate deodorant","Triclosan-free odor neutralizer"]]},
+ {k:"calamine",re:/calamine/,n:"Calamine (zinc oxide with iron oxide)",ev:"s",does:"Mild, soothing and drying; the pink is iron oxide. Good in anti-chafe powders. Low risk.",alt:[["Zinc oxide in a starch powder","DIY version"]]},
+ {k:"lilial",re:/butylphenyl methylpropional|lilial/,n:"Butylphenyl methylpropional (lilial)",ev:"stop",does:"A lily-of-the-valley scent ingredient banned in UK and EU cosmetics since March 2022 because it may harm fertility, and a known skin allergen. Still found in older stock and imports. Choose a newer batch or a lilial-free product.",alt:[["Lilial-free lily of the valley fragrance","Check the label"],["DIY talc-free lily of the valley powder (in Recipes)","No banned ingredients"]]},
+ {k:"dep",re:/diethyl phthalate|\bdep\b/,n:"Diethyl phthalate (DEP)",ev:"care",does:"A solvent that makes perfume last. Allowed in cosmetics, but a phthalate many people avoid because of hormone questions from animal and population studies. Many brands now sell phthalate-free versions.",alt:[["Phthalate-free body mist or oil perfume","Check the label"],["DIY solid perfume (Make → Scent pairs)","No solvents or propellants"]]},
+ {k:"biotin",re:/\bbiotin\b/,n:"Biotin (in hair products)",ev:"f",does:"Applied to hair or scalp, biotin has no shown effect. It only helps hair when someone is truly deficient, and then taken by mouth. A marketing ingredient in growth shampoos.",alt:[["Minoxidil 5% foam","The proven over-the-counter option for thinning"],["Hydrolyzed protein shampoo","Makes damaged hair feel thicker"]]},
+ {k:"riceprotein",re:/hydrolyzed rice protein|rice protein/,n:"Hydrolyzed rice protein",ev:"s",does:"Coats damaged, porous hair so it feels thicker and breaks less. Real but temporary; washes out over a few shampoos.",alt:[["DIY rice protein shampoo bar (in Recipes)","Same ingredient"]]},
+ {k:"aluminum",re:/aluminum (chlorohydrate|zirconium|sesquichlorohydrate)|aluminium chlorohydrate|alum\b/,n:"Aluminum salts (antiperspirant)",ev:"b",does:"Temporarily plug sweat ducts so you sweat less; the proven way to stop wetness. Reviews find no reliable link to breast cancer. Can sting freshly shaved skin; apply at night to dry skin for best effect.",alt:[["Certain-Dri or clinical-strength antiperspirant","For heavy sweating"],["Zinc ricinoleate deodorant","Odor only, no sweat control"]]},
+ {k:"sulfur",re:/\bsulfur\b|\bsulphur\b/,n:"Sulfur",ev:"b",does:"Drying, antibacterial and antifungal. Works for acne, fungal acne and dandruff at 3 to 10% in leave-on masks and spot treatments. Smells, can dry skin; avoid with a sulfa allergy.",alt:[["De La Cruz 10% Sulfur Ointment","Budget leave-on spot treatment"],["Mario Badescu Drying Lotion","Sulfur plus salicylic"]]},
+ {k:"babchi",re:/babchi|bakuchi (seed|oil|powder)|psoralea corylifolia|cullen corylifolium/,n:"Babchi (bakuchi seed)",ev:"stop",does:"The whole seed or its oil contains psoralen, which causes sun burns and dark patches. Psoralens are banned in EU cosmetics. Bakuchiol is the safe, purified part.",alt:[["The Inkey List Bakuchiol Moisturizer","Budget, psoralen-free"],["Herbivore Bakuchiol Retinol Alternative Serum","Mid-range"],["The Ordinary Retinol 0.2% in Squalane","Budget, stronger evidence; not in pregnancy"]]},
+ {k:"kojic",re:/kojic/,n:"Kojic acid (or kojic dipalmitate)",ev:"s",does:"Slows melanin production, so dark spots fade slowly. Plain kojic acid can irritate and cause allergies; the dipalmitate form is gentler. In a soap it rinses off fast, so leave-on forms do more.",alt:[["The Ordinary Alpha Arbutin 2% + HA","Leave-on alternative, budget"],["The Ordinary Azelaic Acid Suspension 10%","Leave-on alternative, also calms redness"],["Naturium Tranexamic Topical Acid 5%","Leave-on, for stubborn patches"]]},
+ {k:"licorice",re:/glycyrrhiza|licorice|liquorice|kanzou|glabridin|glycyrrhizate/,n:"Licorice root extract",ev:"s",does:"Calms redness and gently evens tone; glabridin is the active part. Usually a small amount.",alt:[["The Ordinary Alpha Arbutin 2% + HA","Same tone-evening job, leave-on"],["The Ordinary Azelaic Acid Suspension 10%","Stronger evidence, also calms redness"]]},
+ {k:"petrolatum",re:/^petrolatum|petroleum jelly|white petrolatum/,n:"Petrolatum",ev:"b",does:"The most effective occlusive: seals water in and protects a damaged barrier. Non-comedogenic in studies.",alt:[["Vaseline Original Petroleum Jelly","Drugstore, thin layer over moisturizer"],["Aquaphor Healing Ointment","Drugstore"],["CeraVe Healing Ointment","Drugstore, with ceramides"]]},
+ {k:"oat",re:/avena sativa|colloidal oatmeal|oat kernel|oat extract|oatmeal/,n:"Oat (colloidal oatmeal)",ev:"b",does:"Calms itchy, dry skin and supports the barrier.",alt:[["Aveeno Daily Moisturizing Lotion","Drugstore"],["Dermasil Oatmeal Milk Toner","Dollar Tree"]],diy:true},
+ {k:"zinc",re:/zinc oxide/,n:"Zinc oxide (mineral sunscreen)",ev:"b",does:"Broad UV protection, if the product carries an SPF rating.",alt:[["Any mineral SPF 30+ you'll wear daily","Drugstore"]]}
+];
+const CM_HYPE=[
+ [/\begf\b|epidermal growth factor|sh-oligopeptide-1|growth factor/,"Growth factors (EGF)","Lab studies only; little proof it does more in a cream than a good moisturizer."],
+ [/pdrn|sodium dna|salmon dna|polydeoxyribonucleotide/,"PDRN (salmon DNA)","Injected PDRN has real wound-healing evidence. In creams and serums, DNA fragments are too large to reach the fibroblasts it targets, and there are few independent studies."],
+ [/exosome/,"Exosomes","Very early research; no good evidence for skin creams yet."],
+ [/\bgold\b|colloidal gold/,"Gold","Adds shimmer and price, not results."],
+ [/caviar/,"Caviar extract","A moisturizing filler with a luxury story."],
+ [/diamond|pearl powder/,"Diamond or pearl powder","Mostly a light-reflecting texture."],
+ [/stem cell|meristem/,"Plant stem cells","Plant cells can't act as human stem cells; it's an antioxidant extract at best."],
+ [/collagen\b(?! booster)|hydrolyzed collagen|soluble collagen/,"Collagen","Too large to reach the deeper skin; it works as a humectant, not a collagen rebuilder."],
+ [/24k|platinum/,"Precious metals","Marketing, not function."],
+ [/cadpr|cytokine/,"cADPR / cytokine complex","A brand-coined ingredient story; no independent human trials for hair growth."],
+ [/anemarrhena|volufiline|sarsasapogenin/,"Volufiline (anemarrhena root)","Its \"volume\" claims come from the supplier's own lab and small brand tests; no independent trials."],
+ [/citrus limon (fruit|peel) extract|lemon (fruit|peel) extract|lemon extract/,"Lemon extract","A tiny amount of extract isn't a real dose of vitamin C or acid; it's mostly for the story and scent."],
+ [/lilium|lily (bulb|flower) extract/,"Lily extract","A light moisturising plant extract; no evidence for brightening or repair."]
+];
+const CM_SURF=/sodium laureth sulfate|sodium lauryl sulfate|sodium lauroyl sarcosinate|cocamidopropyl betaine|coco-glucoside|decyl glucoside|lauryl glucoside|sodium cocoyl isethionate|sodium lauroyl methyl isethionate|sodium (stearate|laurate|palmate|tallowate|cocoate|palm kernelate|olivate)|potassium (cocoate|oleate)|tea-stearate|olefin sulfonate|cocoyl glutamate/;
+const CM_LINE=/phenoxyethanol|hydroxyacetophenone|1,2-hexanediol|ethylhexylglycerin|parfum|fragrance|xanthan|carbomer|sodium benzoate|potassium sorbate|disodium edta|tetrasodium edta|chlorphenesin|benzyl alcohol|citric acid|sodium hydroxide|tromethamine/;
+const CM_WASH=[["CeraVe Hydrating Cleanser","Drugstore, face and body"],["Cetaphil Gentle Skin Cleanser","Drugstore, sensitive skin"],["Vanicream Gentle Body Wash","Drugstore, fragrance-free"],["Dove Sensitive Skin Beauty Bar","Bar, fragrance-free"],["Neutrogena Transparent Facial Bar","Glycerin bar, closest to clear \"brightening\" soaps"]];
+function cmAnalyze(list){
+  const items=list.split(/,(?!\d)|\n|•|·|;|\s[-–—|]\s/).map(x=>x.replace(/[*†‡]+/g,"").trim().toLowerCase()).filter(Boolean);
+  if(items.length<3) return null;
+  const lineAt=items.findIndex(x=>CM_LINE.test(x));
+  const found=[], hype=[];
+  items.forEach((x,i)=>{
+    CM.forEach(a=>{ if(a.re.test(x)&&!found.some(f=>f.a.k===a.k)) found.push({a,pos:i,low:lineAt>=0&&i>lineAt}); });
+    CM_HYPE.forEach(([re,n,t])=>{ if(re.test(x)&&!hype.some(h=>h.n===n)) hype.push({n,t,pos:i,low:lineAt>=0&&i>lineAt}); });
+  });
+  const oily=items.slice(0,5).filter(x=>/oil|butter|squalane|wax|triglyceride|ester|dimethicone/.test(x)).length>=3&&!items.slice(0,3).some(x=>/^aqua|^water/.test(x));
+  const rinse=items.slice(0,8).some(x=>CM_SURF.test(x));
+  const extracts=items.filter(x=>/extract|ekisu|ferment|filtrate/.test(x)&&!found.some(f=>f.a.re.test(x)));
+  if(extracts.length>=3) hype.push({n:`${extracts.length} plant extracts`,t:"Usually tiny amounts that tell a label story. They rarely drive results.",low:false});
+  const dyes=items.filter(x=>/^ci \d{5}|fd&c|yellow \d|red \d|blue \d|tartrazine/.test(x));
+  if(dyes.length) hype.push({n:`Colorants (${dyes.map(d=>d.toUpperCase()).join(", ")})`,t:"Added only for color. CI 19140 (tartrazine) and CI 15985 can irritate a few people. Unnecessary in a product sold for sensitive skin.",low:false});
+  const FA=items.filter(x=>/^(coumarin|cinnamal|eugenol|isoeugenol|linalool|limonene|citral|geraniol|citronellol|benzyl (salicylate|benzoate|cinnamate|alcohol)|hydroxycitronellal|farnesol|cinnamyl alcohol|amyl cinnamal|hexyl cinnamal|alpha-isomethyl ionone|anise alcohol|evernia)/.test(x));
+  if(FA.length) hype.push({n:`Listed fragrance allergens (${FA.join(", ")})`,t:"Required on labels because some people react to them. Cinnamal, eugenol and coumarin are the more common culprits; skip it if spicy or sweet scents have irritated you before.",low:false});
+  if(items.some(x=>/^(parfum|fragrance)/.test(x))) hype.push({n:"Fragrance",t:"Adds scent, not results, and is the most common cause of irritation. Odd in a product sold for sensitive skin.",low:false});
+  if(items.some(x=>/sodium laur(eth|yl) sulfate/.test(x))) hype.push({n:"Sulfate cleanser (SLS or SLES)",t:"Effective and fine for most people, but drying for some. If the brand advertises \"sulfate-free\", check each product.",low:false});
+  const mist=!rinse&&!oily&&items.slice(0,2).some(x=>/flower water|hydrosol|distillate|leaf water|herb water|fruit water/.test(x));
+  return {items,lineAt,found,hype,oily,rinse,mist};
+}
+const BTAG={b:["Backed by evidence","t-b"],s:["Some evidence","t-s"],f:["Feels good, limited proof","t-f"],x:["Can backfire","t-x"],care:["Use with care","t-x"],stop:["Banned or unsafe","t-x"],info:["Good to know","t-s"]};
+const PG_GOALS=[["spots","Dark spots and uneven tone"],["acne","Acne and breakouts"],["texture","Rough texture and bumps (KP)"],["aging","Fine lines and firmness"],["dry","Dryness"],["redness","Redness and sensitivity"],["barrier","Barrier repair"],["oil","Oil and shine"],["hair","Thinning hair"]];
+const PG_GL=Object.fromEntries(PG_GOALS);
+const gl=g=>PG_GL[g].toLowerCase().replace("(kp)","(KP)");
+const PG_DEF={A:"Strong: several controlled human trials, or an approved drug or monograph ingredient for this use",B:"Moderate: a few controlled human trials, often small",C:"Weak: lab, animal or brand-run tests only",D:"None for this goal"};
+// active -> goal -> [grade, what the proof is]
+const PG={
+ niacinamide:{spots:["A","At 2 to 5% it faded dark spots more than placebo in several controlled trials."],acne:["B","A 4% gel matched 1% clindamycin gel in a randomised trial."],oil:["B","2% lowered sebum in controlled trials."],barrier:["B","Raises the skin's own ceramides and cuts water loss in human studies."],redness:["B","Calmed redness in small trials, including rosacea."],aging:["B","5% softened fine lines in a 12-week controlled trial."]},
+ retinol:{aging:["B","Retinol 0.4% improved fine wrinkles in controlled trials. Prescription tretinoin is the A-grade version."],texture:["B","Smooths texture over months in trials."],spots:["B","Fades sun spots slowly in trials."]},
+ retinal:{aging:["B","Small trials show it works like retinol, slightly faster."],texture:["B","Smooths texture over months in small trials."]},
+ adapalene:{acne:["A","An approved over-the-counter acne drug; many randomised trials."],texture:["B","Smooths texture alongside acne in trials."],spots:["B","Fades acne marks in trials."]},
+ vitc:{spots:["B","Pure L-ascorbic acid (10 to 20%) brightened skin in small controlled trials; derivatives have less proof."],aging:["B","Improved sun-damaged skin in small controlled trials."]},
+ azelaic:{acne:["A","20% is an approved prescription acne treatment; many trials."],redness:["A","15% is an approved rosacea treatment."],spots:["A","Matched 4% hydroquinone for melasma in controlled trials."]},
+ salicylic:{acne:["A","An approved acne active (0.5 to 2%) under the US monograph."],oil:["B","Clears oil from pores in human studies."],texture:["B","Smooths rough, bumpy skin in trials."]},
+ glycolic:{texture:["A","Many controlled trials show smoother texture."],spots:["B","Fades sun spots in trials, best with sunscreen."],aging:["B","Improves fine lines in trials at higher strengths."]},
+ lactic:{texture:["A","Controlled trials for rough skin and KP."],dry:["A","12% lactate lotion is a standard, well-tested treatment for very dry skin."],spots:["C","Little direct proof for spots."]},
+ mandelic:{texture:["C","Few good trials."],acne:["C","Small studies only."]},
+ arbutin:{spots:["B","Small human trials show slow fading."]},
+ tranexamic:{spots:["B","Small topical trials for melasma; the oral form has more proof."]},
+ kojic:{spots:["C","Some trials, mostly mixed with other actives."]},
+ licorice:{spots:["C","Small studies, usually in mixtures."],redness:["C","Calms redness in small studies."]},
+ bpo:{acne:["A","An approved acne drug; one of the most studied acne treatments."]},
+ sulfur:{acne:["B","An approved monograph acne active, with fewer modern trials."]},
+ urea:{dry:["A","Many controlled trials for dry and rough skin."],texture:["A","10% or more smooths rough skin and KP in trials."]},
+ glycerin:{dry:["A","One of the best-studied moisturisers; controlled trials."]},
+ petrolatum:{dry:["A","The most effective occlusive in controlled studies."],barrier:["A","Speeds barrier repair in human studies."]},
+ oat:{redness:["A","Colloidal oatmeal is an approved skin protectant for itch and irritation."],barrier:["B","Supports the barrier in trials."],dry:["B","Improves dry skin in trials."]},
+ ceramide:{barrier:["B","Ceramide-containing creams improve barrier function in trials, often with cholesterol and fatty acids."],dry:["B","Moisturising benefit in trials."]},
+ ha:{dry:["B","Hydrates and plumps temporarily in small human studies."]},
+ panthenol:{barrier:["B","Helped barrier repair in small controlled trials."],dry:["B","Moisturising in small trials."],redness:["C","Soothing claims mostly small studies."]},
+ squalane:{dry:["B","A well-tolerated moisturising oil; mostly small studies."]},
+ centella:{redness:["C","Calming effect mostly from lab and small brand-run studies."],barrier:["C","Small studies only."]},
+ ectoin:{redness:["C","Small studies."]},
+ hocl:{redness:["C","Small studies for irritation."]},
+ peptide:{aging:["C","Mostly small, brand-funded studies."]},
+ copper:{aging:["C","Mostly lab and small studies."]},
+ bakuchiol:{aging:["C","One small 12-week trial against retinol."]},
+ pha:{texture:["C","Few independent trials."]},
+ snail:{dry:["C","Little proof beyond moisturising."]},
+ powderbase:{oil:["B","Absorbs oil; a physical effect you can see."]},
+ minoxidil:{hair:["A","An approved hair-loss drug; many randomised trials."]},
+ caffeine:{hair:["C","Lab studies show caffeine stimulates hair follicles, and one industry-linked trial found a 0.2% caffeine liquid did about as well as 5% minoxidil. That's far from enough to call it proven."]}
+};
+const PG_N={A:4,B:3,C:2,D:1};
+const PG_L=n=>n>=4?"A":n>=3?"B":n>=2?"C":"D";
+function pgScore(r){
+  const out={};
+  PG_GOALS.forEach(([g])=>{
+    const hits=[];
+    r.found.forEach(f=>{ const m=PG[f.a.k]&&PG[f.a.k][g]; if(!m) return;
+      let n=PG_N[m[0]], why=[];
+      if(f.low&&!f.a.lowOk){ n-=1; why.push("likely under 1%"); }
+      if(r.rinse&&!(g==="acne"&&/bpo|salicylic/.test(f.a.k))){ n-=1; why.push("rinses off"); }
+      hits.push({k:f.a.k,n:f.a.n,g:PG_L(Math.max(1,n)),raw:m[0],proof:m[1],why}); });
+    if(!hits.length) return;
+    hits.sort((a,b)=>PG_N[b.g]-PG_N[a.g]);
+    let n=PG_N[hits[0].g]; const strong=hits.filter(h=>PG_N[h.g]>=3).length;
+    out[g]={grade:hits[0].g,score:n+(strong>=2?.5:0),hits};
+  });
+  return out;
+}
+function pgFlags(r){
+  const it=r.items, top=it.slice(0,6), F=[];
+  r.found.filter(f=>f.a.ev==="stop").forEach(f=>F.push(["stop",f.a.n,"Banned in EU or UK cosmetics."]));
+  if(it.some(x=>/^(parfum|fragrance)/.test(x))) F.push(["care","Fragrance","Fragrance is the most common cause of allergic reactions to cosmetics in patch-test studies."]);
+  const FA=it.filter(x=>/^(coumarin|cinnamal|eugenol|isoeugenol|linalool|limonene|citral|geraniol|citronellol|benzyl (salicylate|benzoate|cinnamate|alcohol)|hydroxycitronellal|farnesol|cinnamyl alcohol|amyl cinnamal|hexyl cinnamal|alpha-isomethyl ionone|anise alcohol)$/.test(x));
+  if(FA.length) F.push(["care",`${FA.length} listed fragrance allergen${FA.length>1?"s":""}`,"EU law makes brands list these because enough people react to them."]);
+  const eo=it.filter(x=>/(leaf|peel|flower|seed|bark|herb|root)? ?oil$/.test(x)&&/(lavandula|citrus|mentha|eucalyptus|rosmarinus|melaleuca|cymbopogon|pelargonium|cananga|cinnamomum|eugenia|lavender|peppermint|tea tree|lemongrass|ylang|bergamot|clove|cinnamon)/.test(x));
+  if(eo.length) F.push(["care",`${eo.length} essential oil${eo.length>1?"s":""}`,"Natural fragrance; a known cause of contact allergy, especially when oxidised."]);
+  if(top.some(x=>/^(alcohol denat|sd alcohol|ethanol|alcohol)\b/.test(x))&&!r.rinse) F.push(["care","Drying alcohol near the top","High amounts can dry and irritate skin, especially with daily use."]);
+  if(r.found.some(f=>f.a.k==="citrusphoto")) F.push(["care","Cold-pressed citrus oil","Can cause burns or dark patches in sunlight (phototoxicity)."]);
+  const acids=r.found.filter(f=>/glycolic|lactic|mandelic|salicylic/.test(f.a.k)&&!f.low).length, ret=r.found.some(f=>/retinol|retinal|adapalene/.test(f.a.k)&&!f.low);
+  if(acids&&ret) F.push(["care","Acid and retinoid together","Both exfoliate; together they irritate more. Build up slowly."]);
+  if(r.hype.some(h=>!/fragrance|allergen|Colorants|Sulfate/i.test(h.n))) F.push(["info","Claims without proof",r.hype.filter(h=>!/fragrance|allergen|Colorants|Sulfate/i.test(h.n)).map(h=>h.n).join(", ")+": little or no evidence for what's claimed."]);
+  return F;
+}
+const pgBadge=g=>`<span class="pg pg-${g}" title="${esc(PG_DEF[g])}">${g}</span>`;
+const pgFlagHTML=F=>F.length?`<ul class="pg-flags">${F.map(([k,t,b])=>`<li class="pgf-${k}"><strong>${esc(t)}.</strong> ${esc(b)}</li>`).join("")}</ul>`:`<p class="hint">No flags: no fragrance, essential oils or banned ingredients found.</p>`;
+const PG_HOW_F=()=>`<details class="pg-how"><summary>How the proof grade works</summary><ul>${Object.entries(PG_DEF).map(([g,t])=>`<li>${pgBadge(g)} ${esc(t)}</li>`).join("")}<li>An ingredient likely under 1% (after the preservatives and fragrance on the list) drops one grade, and so does anything in a wash-off product, except acne washes with benzoyl peroxide or salicylic acid.</li><li>Grades are for the ingredient at typical strengths, not for the brand's formula; brands rarely publish their own trials. Flags don't change the grade, they tell you who should be careful.</li></ul></details>`;
+let c2Goal=null;
+function pgCompare(A,B,nA,nB){
+  const sA=pgScore(A), sB=pgScore(B), goals=PG_GOALS.map(g=>g[0]).filter(g=>sA[g]||sB[g]);
+  if(!goals.length) return `<div class="pg-box"><p>Neither product has an ingredient with evidence for a specific skin goal at a meaningful level. ${esc(nA)} and ${esc(nB)} are basic moisturisers or cleansers: pick on price, feel and flags.</p></div>`;
+  if(!c2Goal||!goals.includes(c2Goal)) c2Goal=goals.slice().sort((x,y)=>Math.max(sB[y]?.score||0,sA[y]?.score||0)-Math.max(sB[x]?.score||0,sA[x]?.score||0))[0];
+  const g=c2Goal, a=sA[g], b=sB[g], fA=pgFlags(A), fB=pgFlags(B);
+  const best=x=>x?`${x.hits[0].n}${x.hits[0].why.length?" ("+x.hits[0].why.join(", ")+")":""}`:"nothing with proof for this";
+  const sa=a?a.score:0, sb=b?b.score:0, stopA=fA.some(f=>f[0]==="stop"), stopB=fB.some(f=>f[0]==="stop");
+  let v;
+  if(stopA!==stopB) v=`${stopA?nA:nB} contains a banned ingredient, so ${stopA?nB:nA} wins regardless.`;
+  else if(Math.abs(sa-sb)<.5){ const ca=fA.filter(f=>f[0]!=="info").length, cb=fB.filter(f=>f[0]!=="info").length;
+    v=`Same level of proof for ${gl(g)}: ${best(a)} vs ${best(b)}. ${ca===cb?"Choose on price and feel.":`${ca<cb?nA:nB} has fewer flags, so it's the gentler pick.`}`; }
+  else { const w=sa>sb?nA:nB, wl=sa>sb?nB:nA, wx=sa>sb?a:b, lx=sa>sb?b:a;
+    v=lx&&lx.grade===wx.grade?`Both reach grade ${wx.grade} for ${gl(g)}, but ${w} adds a second proven ingredient (${wx.hits.filter(h=>PG_N[h.g]>=3).slice(1).map(h=>h.n).join(", ")}), so it's slightly better backed.`:`${w} is better backed for ${gl(g)}: ${best(wx)}, grade ${wx.grade}, vs ${lx?best(lx)+", grade "+lx.grade:"nothing with proof in "+wl}.`; }
+  const rows=goals.map(x=>{ const ga=sA[x]?sA[x].grade:"D", gb=sB[x]?sB[x].grade:"D", wa=(sA[x]?.score||0)>(sB[x]?.score||0)+.4, wb=(sB[x]?.score||0)>(sA[x]?.score||0)+.4;
+    return `<tr class="${x===g?"pg-sel":""}"><th scope="row"><button class="linkbtn" data-pgg="${x}">${esc(PG_GL[x])}</button></th><td class="${wa?"pg-win":""}">${pgBadge(ga)}</td><td class="${wb?"pg-win":""}">${pgBadge(gb)}</td></tr>`; }).join("");
+  const why=(x,n)=>x?`<ul class="pg-why">${x.hits.map(h=>`<li>${pgBadge(h.g)} <strong>${esc(h.n)}</strong>${h.why.length?` <span class="tag">${esc(h.why.join(", "))}</span>`:""}<div class="hint">${esc(h.proof)}</div></li>`).join("")}</ul>`:`<p class="hint">Nothing in ${esc(n)} has proof for this goal.</p>`;
+  return `<div class="pg-box"><div class="blabel">What's your goal?</div><div class="chips" id="pgGoals">${goals.map(x=>`<button class="chip" data-pgg="${x}" aria-pressed="${x===g}">${esc(PG_GL[x])}</button>`).join("")}</div>
+   <p class="pg-verdict"><strong>${esc(v)}</strong></p>
+   <table class="pg-tab"><thead><tr><th>Proof grade by goal</th><th>${esc(nA)}</th><th>${esc(nB)}</th></tr></thead><tbody>${rows}</tbody></table>
+   <div class="c2-grid" style="margin-top:10px"><div><div class="blabel">${esc(nA)}: the proof</div>${why(a,nA)}<div class="blabel">Flags</div>${pgFlagHTML(fA)}</div><div><div class="blabel">${esc(nB)}: the proof</div>${why(b,nB)}<div class="blabel">Flags</div>${pgFlagHTML(fB)}</div></div>
+   ${g==="aging"&&Math.max(sa,sb)<4?`<p class="hint">Nothing here reaches grade A for ageing. The two with the strongest proof are daily sunscreen and a retinoid (tretinoin on prescription, or retinol or adapalene).</p>`:""}
+   ${PG_HOW_F()}</div>`;
+}
+function pgSingle(r){
+  const s=pgScore(r), goals=PG_GOALS.map(g=>g[0]).filter(g=>s[g]), F=pgFlags(r);
+  return `<div class="pg-box"><div class="blabel">Proof grade by goal</div>${goals.length?`<table class="pg-tab"><tbody>${goals.map(g=>`<tr><th scope="row">${esc(PG_GL[g])}</th><td>${pgBadge(s[g].grade)}</td><td class="hint">${esc(s[g].hits[0].n)}${s[g].hits[0].why.length?" ("+esc(s[g].hits[0].why.join(", "))+")":""}</td></tr>`).join("")}</tbody></table>`:`<p class="hint">No ingredient here has proof for a specific skin goal at a meaningful level.</p>`}<div class="blabel" style="margin-top:8px">Flags</div>${pgFlagHTML(F)}${PG_HOW_F()}</div>`;
+}
+function cpVerdict(r){
+  const strong=r.found.filter(f=>f.a.ev==="b"&&(!f.low||f.a.lowOk)), weak=r.found.filter(f=>!strong.includes(f)), bad=r.found.filter(f=>f.a.ev==="stop");
+  const lc=x=>x.charAt(0).toLowerCase()+x.slice(1);
+  if(bad.length) return {strong,weak,vc:'stop',v:`Contains ${bad.map(f=>f.a.n.toLowerCase()).join(", ")}, which is banned or unsafe in cosmetics. Skip this one.`};
+  if(r.rinse) return {strong,weak,vc:'warn',v:`This is a cleanser. It sits on your skin for under a minute, so ${r.found.length?r.found.map(f=>f.a.n.split(" (")[0].toLowerCase()).join(", ")+" can't do much here":"the extras barely matter"}. Pay for gentleness, not actives.`};
+  if(r.mist&&!strong.length) return {strong,weak,vc:'warn',v:"Mostly flower water with small extras. It refreshes, but a plain hydrosol does the same for much less."};
+  if(r.oily&&r.found.every(f=>f.a.diy)) return {strong,weak,vc:'ok',v:"Mostly oils and butters. You can buy or make an equivalent for much less."};
+  if(r.oily&&!strong.length) return {strong,weak,vc:'warn',v:`A face or body oil: mostly plant oils${weak.length?`, with ${weak.map(f=>lc(f.a.n)).join(", ")} in small amounts`:''}. The oils do most of the job.`};
+  if(!strong.length&&weak.some(f=>!f.low)) return {strong,weak,vc:'warn',v:`The main active is ${weak.filter(f=>!f.low).map(f=>lc(f.a.n)).join(", ")}, which has some evidence but not strong proof.`};
+  if(!strong.length) return {strong,weak,vc:'warn',v:"No proven active ingredients at a meaningful level. A good basic moisturizer does the same job."};
+  return {strong,weak,vc:'ok',v:`The real work is done by ${strong.map(f=>f.a.n.toLowerCase()).join(", ")}. Cheaper products with the same ingredients are below.`};
+}
+function cpResult(list,name){
+  const r=cmAnalyze(list||'');
+  if(!r) return `<p class="small muted">Paste the full ingredient list (from the back of the bottle or the brand's site), separated by commas.${name?` <a href="https://incidecoder.com/search?query=${encodeURIComponent(name)}" target="_blank" rel="noopener">Find it on INCIDecoder</a>`:''}</p>`;
+  const {strong,weak,vc,v}=cpVerdict(r);
+  const row=f=>`<li><div class="cm-top"><b>${esc(f.a.n)}</b><span class="btag ${BTAG[f.a.ev][1]}">${BTAG[f.a.ev][0]}</span>${f.low?`<span class="tag">${f.a.lowOk?"Low level, normal for this":"Likely under 1%"}</span>`:''}</div><span>${esc(f.a.does)}</span>${(f.a.alt||[]).length?`<ul class="cm-alts">${f.a.alt.map(([pp,t])=>`<li>${esc(pp)} <span class="tier">${esc(t)}</span></li>`).join('')}</ul>`:''}</li>`;
+  return `<div class="mp-chk mp-${vc==='ok'?'info':vc}"><b class="small">${name?esc(name):'This product'}</b><p class="small" style="margin:4px 0 0">${esc(v)}</p></div>
+    ${r.rinse?`<div class="blabel">Cheaper gentle cleansers</div><ul class="cm-alts">${CM_WASH.map(([pp,t])=>`<li>${esc(pp)} <span class="tier">${esc(t)}</span></li>`).join('')}</ul>`:''}
+    ${pgSingle(r)}
+    ${r.found.length?`<div class="blabel">${r.rinse?"Want the actives? Use them leave-on":"Ingredients doing the work, with cheaper matches"}</div><ul class="cm-list">${[...strong,...weak].map(row).join('')}</ul>`:''}
+    ${r.hype.length?`<div class="blabel">Mostly marketing</div><ul class="goal-avoid">${r.hype.map(h=>`<li><b>${esc(h.n)}${h.low?" (likely under 1%)":""}:</b> ${esc(h.t)}</li>`).join('')}</ul>`:''}
+    ${r.oily?`<p class="small" style="margin-top:10px"><a href="https://claude.ai/artifact/ABqnaz16S2bi1YmyspeEEY" target="_blank" rel="noopener">Make a homemade version in Safe Batch</a></p>`:''}
+    <p class="hint">Same key ingredient doesn't always mean the same strength or feel. Check percentages on the label where given, and patch test anything new.</p>`;
+}
+function cpCompare(la,lb,nA,nB){
+  const A=cmAnalyze(la||''), B=cmAnalyze(lb||'');
+  if(!A||!B) return '<p class="small muted">Paste both ingredient lists to compare.</p>';
+  const aK=new Map(A.found.map(f=>[f.a.k,f])), bK=new Map(B.found.map(f=>[f.a.k,f]));
+  const both=[...aK.keys()].filter(k=>bK.has(k)), onlyA=[...aK.keys()].filter(k=>!bK.has(k)), onlyB=[...bK.keys()].filter(k=>!aK.has(k));
+  const proven=(m,ks)=>ks.filter(k=>m.get(k).a.ev==='b'&&!m.get(k).low), pA=proven(aK,onlyA), pB=proven(bK,onlyB);
+  let sum;
+  if(!A.found.length&&!B.found.length) sum="Neither has a proven active at a meaningful level. Pick whichever feels nicer and costs less.";
+  else if(!pA.length&&!pB.length) sum=both.length?`They do the same job: both rely on ${both.map(k=>aK.get(k).a.n.toLowerCase()).join(", ")}. Choose on price and feel.`:"Neither adds a proven active the other lacks.";
+  else sum=[pA.length?`${nA} adds ${pA.map(k=>aK.get(k).a.n.toLowerCase()).join(", ")}.`:"",pB.length?`${nB} adds ${pB.map(k=>bK.get(k).a.n.toLowerCase()).join(", ")}.`:""].filter(Boolean).join(" ")+" Pay more only if you want that extra ingredient.";
+  if(A.rinse&&B.rinse) sum="Both are cleansers, so actives rinse off. "+sum;
+  const col=(t,m,ks)=>`<div class="c2-col"><div class="blabel" style="margin-top:0">${esc(t)}</div>${ks.length?`<ul class="goal-list">${ks.map(k=>`<li><b>${esc(m.get(k).a.n)}</b> <span class="small muted">${esc(m.get(k).a.does)}</span></li>`).join('')}</ul>`:'<p class="small muted">Nothing here.</p>'}</div>`;
+  return `<div class="mp-chk mp-info"><b class="small">${esc(nA)} vs ${esc(nB)}</b><p class="small" style="margin:4px 0 0">${esc(sum)}</p></div>${pgCompare(A,B,nA,nB)}<div class="c2-res">${col('In both',aK,both)}${col('Only in '+nA,aK,onlyA)}${col('Only in '+nB,bK,onlyB)}</div>`;
+}
+function pageCheck(){
+  const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci?' ✓':''}</option>`).join('')}`;
+  const P=id=>MP.find(x=>x.id===+id);
+  const cur=S.cp||(S.cp={a:'',b:'',na:'',nb:'',la:'',lb:''});
+  ['a','b'].forEach(k=>{ const pr=P(cur[k]); if(pr&&cur['l'+k]===''&&pr.inci) cur['l'+k]=pr.inci; if(pr&&!cur['n'+k]) cur['n'+k]=pr.n; });
+  const side=k=>`<div class="cp-side"><label class="small"><b>${mode==='one'?'Product':k==='a'?'Product A':'Product B'}</b><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
+    ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
+    <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
+    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}</div>`;
+  const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||(k==='a'?'Product A':'Product B'));
+  const main=`<div class="head"><span class="eyebrow">Store products</span><h1>Check a product</h1><p class="muted">Paste an ingredient list to see what actually does the work, how well it's proven for each goal, what's marketing, and cheaper matches.</p></div>
+    <div class="seg" role="group" aria-label="Mode"><button type="button" aria-pressed="${mode==='one'}" data-act="cpmode" data-v="one">Check one</button><button type="button" aria-pressed="${mode==='two'}" data-act="cpmode" data-v="two">Compare two</button></div>
+    ${card('', `<div class="cp-grid${mode==='two'?' two':''}">${side('a')}${mode==='two'?side('b'):''}</div><div class="row" style="margin-top:8px"><button class="btn primary" type="button" data-act="cpgo">${mode==='one'?'Check it':'Compare'}</button></div>`)}
+    ${S.cpShow?card(mode==='one'?'Result':'Comparison', `<div class="cp">${mode==='one'?cpResult(cur.la,nm('a')):cpCompare(cur.la,cur.lb,nm('a'),nm('b'))}</div>`, {h:'h3', icon:'check'}):''}`;
+  const rail=card('Tips', `<p class="small">Ingredients are listed from most to least. Anything after the preservatives (phenoxyethanol, ethylhexylglycerin) or fragrance is usually under 1%.</p><p class="small">Save a product's list once and you can re-check or compare it any time from My Shelf.</p>`, {h:'h3', icon:'info'});
+  return {main, rail};
+}
 function pageShelf(){
   const a=S.mpa||'face', nCur=MP.filter(p=>p.s==='cur').length;
   const tabs=`<div class="sh-tabs" role="tablist" aria-label="Area">${MP_AREAS.map(([k,l])=>`<button class="chip" type="button" role="tab" data-act="mpa" data-v="${k}" aria-pressed="${a===k}">${l} <span class="muted">${MP.filter(p=>p.a===k&&p.s==='cur').length}</span></button>`).join('')}</div>`;
-  const main = `<div class="head"><span class="eyebrow">${nCur} products in use</span><h1>My Shelf</h1></div>
+  const main = `<div class="head"><span class="eyebrow">${nCur} products in use</span><h1>My Shelf</h1><div class="row"><button class="btn" type="button" data-act="go" data-v="check">${ic('search',16)}Check a store product</button></div></div>
     ${tabs}
     ${shelfGlance(a)}
     ${mpSection()}
@@ -1427,7 +1713,7 @@ function pageYear(){
    return {main: main+card('From Safe Batch', importBox('log'), {h:'h3', icon:'today'}), rail};
 }
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const RENDER = {today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
+const RENDER = {check:pageCheck, today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
 const $ = (s) => document.querySelector(s);
 function currentPalette(){ return S.palette || 'clay'; }
 function render(){
@@ -1510,6 +1796,10 @@ document.addEventListener('click', async (e)=>{
   if (a==='amsel') S.amSel=+v;
   if (a==='amtone'){ AM_TONE=+v; try{ localStorage.setItem('clay-am-tone',v); }catch(e){} try{ claySyncPush('clay-prefs'); }catch(e){} }
   if (a==='mpa') S.mpa=v;
+  if (a==='cpmode'){ S.cpMode=v; S.cpShow=false; }
+  if (a==='cpgo'){ S.cpShow=true; }
+  if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); mpSave(); toast('List saved to '+pr.n); } }
+  if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
   if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
   if (a==='swdel'){ SW.splice(+v,1); S.lyPick=[]; swSave(); }
   if (a==='lypick'){ const i=+v, L=S.lyPick||[]; S.lyPick=L.includes(i)?L.filter(x=>x!==i):L.concat(i).slice(-2); }
@@ -1540,6 +1830,7 @@ $('#palBtn').addEventListener('click', ()=>{ const p=$('#palPop'); p.hidden=!p.h
 $('#fbBtn').addEventListener('click', ()=>{ S.feedback=!S.feedback; render(); if (S.feedback) toast('Comment buttons are on. Tap one on any card.'); });
 document.addEventListener('keydown', e=>{ if (e.target&&e.target.id==='mpRen'){ if(e.key==='Enter'){ e.preventDefault(); document.querySelector('[data-act=mpsave]').click(); } if(e.key==='Escape'){ S.mpEdit=null; render(); } return; } if (e.key==='Escape'){ $('#palPop').hidden=true; $('#palBtn').setAttribute('aria-expanded','false'); } });
 document.addEventListener('change', (e)=>{
+  if (e.target.dataset && e.target.dataset.cpk){ const k=e.target.dataset.cpk; S.cp[k]=e.target.value; const pr=MP.find(x=>x.id===+e.target.value); S.cp['l'+k]=pr&&pr.inci||''; S.cp['n'+k]=''; S.cpShow=false; render(); return; }
   if (e.target.classList && e.target.classList.contains('hs-in') && S.hs){ S.hs[{hsNow:'now',hsGoal:'goal',hsWash:'wash',hsStyle:'style'}[e.target.id]]=e.target.value; return; }
   if (e.target.dataset && e.target.dataset.hw!==undefined){ const i=+e.target.dataset.hw; HR.wd=HR.wd||[]; if(e.target.checked){ if(!HR.wd.includes(i)) HR.wd.push(i); } else HR.wd=HR.wd.filter(x=>x!==i); hrSave(); render(); return; }
   if (e.target.dataset && e.target.dataset.mpar){ const p=MP.find(x=>x.id===+e.target.dataset.mpar); if(p){ p.a=e.target.value; if(!MP_STEPS[p.a].includes(p.st)) p.st='Other'; mpSave(); toast('Moved to '+MP_AREAS.find(x=>x[0]===p.a)[1]); render(); } return; }
@@ -1550,6 +1841,8 @@ document.addEventListener('keydown', (e)=>{ const g=e.target.closest && e.target
 render();
 window.claude?.use?.('comments').then(api=>{ commentsApi = api; }).catch(()=>{});
 
+document.addEventListener('click',e=>{ const b=e.target.closest&&e.target.closest('[data-pgg]'); if(!b) return; c2Goal=b.dataset.pgg; render(); });
+document.addEventListener('input',e=>{ const t=e.target; if(!t.dataset) return; if(t.dataset.cpl) S.cp['l'+t.dataset.cpl]=t.value; if(t.dataset.cpn) S.cp['n'+t.dataset.cpn]=t.value; });
 document.addEventListener('pointermove',e=>{ const st=e.target.closest&&e.target.closest('.am-stage'); document.querySelectorAll('.am-stage').forEach(el=>{ if(el!==st){ el.style.setProperty('--ry','0deg'); el.style.setProperty('--rx','0deg'); } }); if(!st) return; const r=st.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; st.style.setProperty('--ry',(x*36).toFixed(1)+'deg'); st.style.setProperty('--rx',(-y*18).toFixed(1)+'deg'); });
 document.addEventListener('pointerleave',()=>document.querySelectorAll('.am-stage').forEach(el=>{el.style.setProperty('--ry','0deg');el.style.setProperty('--rx','0deg');}));
 
@@ -1567,6 +1860,11 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
   if(Array.isArray(steps)&&steps.length&&JSON.stringify(steps)!==JSON.stringify(HW_STEPS)){ HW_STEPS.splice(0,HW_STEPS.length,...steps); n++; }
   if(areas&&typeof areas==="object"){ Object.entries(areas).forEach(([a,list])=>{ if(!MP_STEPS[a]||!Array.isArray(list)) return; list.forEach(st=>{ if(!MP_STEPS[a].includes(st)){ const o=MP_STEPS[a].indexOf('Other'); MP_STEPS[a].splice(o<0?MP_STEPS[a].length:o,0,st); n++; } }); }); }
   if(Array.isArray(feel)){ feel.forEach(w=>{ if(!MP_FEEL.includes(w)){ MP_FEEL.push(w); n++; } }); }
+  try{ const [acts,hype,pg]=await Promise.all(['product_actives','product_hype_flags','proof_grades'].map(async nm=>ver.datasets['safe-batch/'+nm]?get('data/safe-batch/'+nm+'.json'):null));
+    if(Array.isArray(acts)&&acts.length){ const have=new Map(CM.map((x,i)=>[x.k,i])); acts.forEach(a=>{ if(!a||!a.k||!a.re) return; try{ const o={...a,re:new RegExp(a.re)}; if(have.has(a.k)) CM[have.get(a.k)]=o; else CM.push(o); n++; }catch(e){} }); }
+    if(Array.isArray(hype)){ const have=new Set(CM_HYPE.map(x=>x[1])); hype.forEach(([src,nm,t])=>{ if(have.has(nm)) return; try{ CM_HYPE.push([new RegExp(src),nm,t]); n++; }catch(e){} }); }
+    if(pg&&typeof pg==='object'){ Object.entries(pg).forEach(([k,v])=>{ if(JSON.stringify(PG[k])!==JSON.stringify(v)){ PG[k]=v; n++; } }); }
+  }catch(e){}
   window.CLAY_DATA={version:ver.version,changed:n};
   if(n) try{ render(); }catch(e){}
 })();

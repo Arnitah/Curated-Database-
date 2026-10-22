@@ -1080,7 +1080,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
       <button class="wtile" data-go="import"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><strong>Check a recipe I found</strong><span>Paste it or upload a screenshot</span></button>
       <button class="wtile" data-go="goals"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg><strong>Reach a skin or hair goal</strong><span>Get a safe plan and starter recipe</span></button>
       <button class="wtile" data-go="formula"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><strong>Write a formula for me</strong><span>Describe your goal, get a checked recipe</span></button>
-      <button class="wtile" data-go="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><strong>Check a store product</strong><span>Compare two, or find a cheaper match</span></button>
+      <button class="wtile" data-go="store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><strong>Check a store product</strong><span>Now in Clay, next to your shelf</span></button>
       <button class="wtile" data-go="recipes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg><strong>Browse checked recipes</strong><span id="wRecCount">Hundreds of online DIYs, already graded</span></button>
     </div>
   </div>
@@ -1209,7 +1209,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
     <div id="goalAiOut"></div>
   </div>
 </div>
-<div class="subpanel checktools" id="sp-store" hidden><div id="checkTools">
+<div class="subpanel checktools" id="sp-store" hidden><div class="card moved-card"><div class="blabel">Moved to Clay</div><p style="margin:4px 0 8px">Checking store products now lives in <strong>Clay</strong>, next to your shelf: paste an ingredient list to see what does the work, proof grades by goal, marketing flags and cheaper matches, or compare two products. Save a product's list once and re-check it any time. Safe Batch is for things you make.</p><div class="actions"><a class="btn primary" href="https://claude.ai/artifact/54Waeahtn8vBRU8LmHJnXL" target="_blank" rel="noopener">Open Clay</a></div></div><div id="checkTools" hidden>
   
   <div class="panel stack compare2" id="compare2">
     <h3>Compare two products</h3>
@@ -7420,7 +7420,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 204 · 22 Oct 2026";
+const SB_VERSION="Version 205 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
