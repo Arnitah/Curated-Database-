@@ -6151,5 +6151,25 @@
  "serum-body-milk-nivea-style": {
   "verdict": "ok",
   "flags": []
+ },
+ "moroccan-tbrima-rubbing-blend-skalli-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nila-ghassoul-mask-skalli": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated"
+  ]
+ },
+ "rice-tea-sa-scrub-as-posted-linnacheung": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "rice-tea-scrub-safer": {
+  "verdict": "ok",
+  "flags": []
  }
 }

@@ -42229,5 +42229,136 @@
    "creator": "Dupe of NIVEA Serum Burst Milk",
    "platform": "Thai TikTok review"
   }
+ },
+ {
+  "id": "moroccan-tbrima-rubbing-blend-skalli-style",
+  "name": "Moroccan tbrima rubbing blend (Skalli Essentials-style)",
+  "claim": "A softening herbal polish for the hammam shower",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix the dry powders and keep in a dry jar (lasts months). For each use, wet a handful with rose water into a paste, rub over damp skin after the black soap, rinse. The original uses aker fassi for colour; it's left out because it's often cut with dyes. Body, or gently on the face once a week.",
+  "rows": [
+   [
+    "riceflour",
+    20,
+    "g"
+   ],
+   [
+    "rosepowder",
+    10,
+    "g"
+   ],
+   [
+    "chamomileflower",
+    5,
+    "g"
+   ],
+   [
+    "rhassoul",
+    15,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Skalli Essentials",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "nila-ghassoul-mask-skalli",
+  "name": "Nila and ghassoul mask (Skalli Essentials)",
+  "claim": "Soft, matte, fresh-looking skin",
+  "type": "face_rinse",
+  "use": "now",
+  "note": "Mix ghassoul and a pinch of pure nila with rose water to a smooth paste, apply, rinse after 10 minutes before it cracks. Nila stains: test on your inner arm first and buy pure nila, not dyed powder.",
+  "rows": [
+   [
+    "rhassoul",
+    2,
+    "tsp"
+   ],
+   [
+    "nila",
+    0.25,
+    "tsp"
+   ],
+   [
+    "hydrosol",
+    1,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Skalli Essentials",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "rice-tea-sa-scrub-as-posted-linnacheung",
+  "name": "Blended rice, tea and SA cleanser scrub (linnacheung7), as posted",
+  "claim": "Baby-soft skin every time",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As revealed in her comments: coarsely blended rice, the contents of 2 fruit tea bags, Cetaphil Gentle Exfoliating SA Cleanser and an oil, mixed into a jar. Two problems: the cleanser is mostly water, so a jar can grow mould in a wet shower; and stacking salicylic acid with a rice scrub daily is a lot of exfoliation (one commenter broke out). Also, rice grains can collect in drains. See the safer version.",
+  "rows": [
+   [
+    "riceflour",
+    60,
+    "g"
+   ],
+   [
+    "greenteapowder",
+    4,
+    "g"
+   ],
+   [
+    "showergel",
+    40,
+    "g"
+   ],
+   [
+    "sunflower",
+    15,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "linnacheung7",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "rice-tea-scrub-safer",
+  "name": "Rice and tea body scrub (keeps, drain-friendly)",
+  "claim": "The same soft skin, without mould",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix the ground rice, tea leaves (from a bag) and oil in a dry jar; it keeps for months because there's no water. In the shower, take a scoop and add a squirt of your SA or gentle wash in your palm. Grind rice to coarse sand, not whole grains, and run hot water after to keep drains clear. 2 to 3 times a week.",
+  "rows": [
+   [
+    "riceflour",
+    60,
+    "g"
+   ],
+   [
+    "greenteapowder",
+    4,
+    "g"
+   ],
+   [
+    "sunflower",
+    30,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of linnacheung7's scrub",
+   "platform": "TikTok"
+  }
  }
 ]
