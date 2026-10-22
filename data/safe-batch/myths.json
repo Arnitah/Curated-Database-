@@ -1,5 +1,124 @@
 [
  {
+  "id": "gluta-drip-juice-and-lightening-line",
+  "title": "A beetroot, tomato and cucumber \"Gluta drip\" juice lightens skin; Miss White's glutathione soap paste and \"lightening powder cream\"",
+  "topics": [
+   "dark-spots",
+   "diet",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "This juice works like a glutathione drip",
+    "verdict": "false",
+    "truth": "The juice contains no glutathione to speak of. It's a healthy vegetable drink, nothing more. Drinking it on an empty stomach doesn't change that.",
+    "grade": "B"
+   },
+   {
+    "claim": "Glutathione (drips, pills, soaps) lightens skin",
+    "verdict": "unproven",
+    "truth": "A dermatology review found oral glutathione gave only modest changes that faded after stopping, and the IV evidence rests on one flawed study. Dermatologists in the Philippines and regulators in Ghana have warned that IV glutathione isn't approved for skin whitening. In a soap it rinses off within a minute.",
+    "grade": "B"
+   },
+   {
+    "claim": "A \"lightening powder cream\" sold in a jar is safe",
+    "verdict": "unproven",
+    "truth": "Without a full ingredient list there's no way to know. Dermatologists warn some imported lightening products hide steroids or mercury. Ask the seller for the complete list before using it.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Sonthalia et al. 2018, Glutathione for skin lightening: a regnant myth or evidence-based verity? (Dermatology Practical & Conceptual)",
+    "url": "https://dpcj.org/index.php/dpc/article/view/dermatol-pract-concept-articleid-dp0801a04"
+   },
+   {
+    "title": "Philippine Dermatological Society: IV glutathione not approved for skin whitening (ABS-CBN, 2025)",
+    "url": "https://abs-cbn.com/news/health-science/2025/1/27/dermatologists-warn-public-iv-glutathione-not-approved-by-fda-0921"
+   },
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   }
+  ],
+  "seen_in": "Dr. Sheee and Miss White (مس وايت) on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "sugar-in-scrubs-darkens-skin",
+  "title": "Sugar in homemade scrubs darkens your skin (هل السكر في المقشرات يسمر الجلد؟)",
+  "topics": [
+   "scrubs",
+   "dark-spots",
+   "diy-safety"
+  ],
+  "claims": [
+   {
+    "claim": "Sugar itself darkens skin",
+    "verdict": "false",
+    "truth": "Nothing in sugar changes skin colour.",
+    "grade": "B"
+   },
+   {
+    "claim": "Scrubbing can leave dark marks",
+    "verdict": "true",
+    "truth": "Rubbing hard with sharp grains irritates skin, and irritation leaves dark marks (post-inflammatory hyperpigmentation), especially on deeper skin tones. Scrub gently, 2 to 3 times a week, never on shaved or broken skin.",
+    "grade": "B"
+   },
+   {
+    "claim": "Powdered sugar works in a scrub",
+    "verdict": "partly",
+    "truth": "It dissolves almost at once, so it barely exfoliates. Granulated sugar, or soft rice or oat flour, gives a gentler, more controlled polish.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   },
+   {
+    "title": "American Academy of Dermatology: what can treat large facial pores? (scrubbing can irritate)",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+   }
+  ],
+  "seen_in": "Gemini answer shared in TikTok comments; tbrima video comments",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "fresh-herbs-in-oil-are-safe",
+  "title": "Fresh herbs steeped in oil make the best, safest hair oil",
+  "topics": [
+   "hair",
+   "diy-safety"
+  ],
+  "claims": [
+   {
+    "claim": "Fresh rosemary makes a stronger oil",
+    "verdict": "partly",
+    "truth": "It gives a greener colour, but fresh herbs bring water into the oil.",
+    "grade": "C"
+   },
+   {
+    "claim": "Gentle heat makes it safe to keep",
+    "verdict": "false",
+    "truth": "Herbs can carry botulism spores, which grow in oil without air at room temperature. 50 to 60°C doesn't kill them. Food-safety experts advise refrigerating fresh-herb oils and using them within 2 to 4 days, and dried-herb oils within about 3 months in the fridge. For a hair oil you keep, use fully dried rosemary.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Penn State Extension: how to safely make infused oils",
+    "url": "https://extension.psu.edu/how-to-safely-make-infused-oils"
+   }
+  ],
+  "seen_in": "bielunele on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "deep-exfoliation-shower-and-lightening-scrubs",
   "title": "Deep exfoliation shower (wash + glove, scrub + glove, AHA toner all over, glycolic lotion), and scrubs \"you need for lightening\"",
   "topics": [

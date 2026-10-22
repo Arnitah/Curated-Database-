@@ -2006,7 +2006,7 @@
   "tsp": 0.5,
   "lvl": "care",
   "flag": "Dry or fry fresh herbs before infusing",
-  "care": "Fresh leaves carry water into oil, where mold and bacteria grow. Dry them fully, or heat them in the oil until crisp, then strain."
+  "care": "Fresh leaves carry water into oil, where mould, bacteria and even botulism spores can grow; gentle heat (50 to 60°C) doesn't kill them. Use fully dried herbs for an oil you keep, or keep a fresh-herb oil in the fridge and use it within 2 to 4 days."
  },
  {
   "id": "bayleaf",

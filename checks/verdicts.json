@@ -6191,5 +6191,30 @@
  "oat-milk-body-lotion-hatomugi-style": {
   "verdict": "ok",
   "flags": []
+ },
+ "moroccan-tbrima-sugar-scrub-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Nila powder stains and is often adulterated",
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "moroccan-tbrima-sugar-scrub-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coffee-cocoa-body-scrub-miss-white-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fresh-rosemary-hair-oil-bielunele-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Dry or fry fresh herbs before infusing"
+  ]
+ },
+ "dried-rosemary-hair-oil-safer": {
+  "verdict": "ok",
+  "flags": []
  }
 }

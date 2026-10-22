@@ -42556,5 +42556,260 @@
    "creator": "Dupe of Hatomugi Body Milk",
    "platform": "Store product"
   }
+ },
+ {
+  "id": "moroccan-tbrima-sugar-scrub-as-posted",
+  "name": "Moroccan tbrima sugar scrub (from TikTok comments), as posted",
+  "claim": "Brightening hammam scrub",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As shared in the comments: powdered sugar, ground coffee, tbrima, nila and indigo powder, mixed with sesame, coconut, almond and olive oils, honey, tamarind water, lupin flour (counted here as chickpea flour), corn starch and powdered milk, kneaded by hand. Tamarind water and honey bring water and sugars into a stored jar with starch and milk powder: it can grow mould. Amounts are estimates. See the safer version.",
+  "rows": [
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    10,
+    "g"
+   ],
+   [
+    "rosepowder",
+    5,
+    "g"
+   ],
+   [
+    "nila",
+    1,
+    "g"
+   ],
+   [
+    "sesame",
+    10,
+    "g"
+   ],
+   [
+    "coconut",
+    10,
+    "g"
+   ],
+   [
+    "almond",
+    10,
+    "g"
+   ],
+   [
+    "olive",
+    10,
+    "g"
+   ],
+   [
+    "honey",
+    10,
+    "g"
+   ],
+   [
+    "tamarind",
+    15,
+    "g"
+   ],
+   [
+    "besan",
+    10,
+    "g"
+   ],
+   [
+    "cornstarch",
+    5,
+    "g"
+   ],
+   [
+    "milkpowder",
+    5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "TikTok comment (rimma) on a tbrima video",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "moroccan-tbrima-sugar-scrub-safer",
+  "name": "Moroccan tbrima sugar scrub, keeps (no tamarind water)",
+  "claim": "The same polish, without mould",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix the dry powders, then stir in the oils; keep in a dry jar with a dry spoon. Use regular granulated sugar if you want more grit: the comments are right that powdered sugar dissolves too fast to scrub. For the honey and tamarind, add a teaspoon of each to your scoop in the shower, not the jar. It polishes; it doesn't lighten skin.",
+  "rows": [
+   [
+    "sugar",
+    80,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    10,
+    "g"
+   ],
+   [
+    "rosepowder",
+    5,
+    "g"
+   ],
+   [
+    "tamarindpowder",
+    3,
+    "g"
+   ],
+   [
+    "besan",
+    8,
+    "g"
+   ],
+   [
+    "sesame",
+    10,
+    "g"
+   ],
+   [
+    "almond",
+    10,
+    "g"
+   ],
+   [
+    "olive",
+    10,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of the tbrima comment recipe",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "coffee-cocoa-body-scrub-miss-white-style",
+  "name": "Coffee and cocoa body scrub (Miss White-style)",
+  "claim": "A rich, chocolatey body polish",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix dry, then stir in the oils and butter (softened). No water, so it keeps for months; scoop with a dry spoon. Coffee stains grout and towels a little; rinse the shower after.",
+  "rows": [
+   [
+    "sugar",
+    80,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    15,
+    "g"
+   ],
+   [
+    "cocoapowder",
+    5,
+    "g"
+   ],
+   [
+    "coconut",
+    20,
+    "g"
+   ],
+   [
+    "sunflower",
+    15,
+    "g"
+   ],
+   [
+    "cocoa",
+    5,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Miss White Coffee and Cocoa Scrub",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "fresh-rosemary-hair-oil-bielunele-as-posted",
+  "name": "Fresh rosemary hair oil (bielunele), as posted",
+  "claim": "Strengthens hair and cuts autumn shedding",
+  "type": "hair_leave",
+  "use": "store",
+  "note": "As posted: chopped fresh rosemary covered in avocado and castor oil, heated in a double boiler at 50 to 60°C for 2 to 3 hours, steeped overnight, strained, vitamin E added, bottled. Fresh herbs carry water and can carry botulism spores, which grow in oil without air at room temperature; extension services advise refrigerating fresh-herb oils and using them within days. Use dried rosemary instead (see the safer version).",
+  "rows": [
+   [
+    "avocadooil",
+    80,
+    "g"
+   ],
+   [
+    "castor",
+    20,
+    "g"
+   ],
+   [
+    "freshherb",
+    20,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "bielunele",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "dried-rosemary-hair-oil-safer",
+  "name": "Rosemary hair oil with dried rosemary (keeps for months)",
+  "claim": "The same oil, made safely",
+  "type": "hair_leave",
+  "use": "store",
+  "note": "Same method as the post (50 to 60°C for 2 to 3 hours, steep overnight, strain well) but with fully dried rosemary, so there's no water for microbes. Bottle in dark glass, label the date, use within 6 months. Massage into the scalp and lengths, leave 1 hour or overnight, wash out, 1 to 2 times a week. It conditions and cuts breakage; the regrowth evidence is for rosemary essential oil, and only one small study.",
+  "rows": [
+   [
+    "avocadooil",
+    80,
+    "g"
+   ],
+   [
+    "castor",
+    20,
+    "g"
+   ],
+   [
+    "rosemaryherb",
+    8,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of bielunele's oil",
+   "platform": "TikTok"
+  }
  }
 ]
