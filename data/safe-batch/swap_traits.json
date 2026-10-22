@@ -1,0 +1,636 @@
+{
+ "sugar": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 1,
+  "face": 0,
+  "drain": 0,
+  "note": "dissolves as you rinse, so it's forgiving"
+ },
+ "salt": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 1,
+  "face": 0,
+  "drain": 0,
+  "note": "firmer grit; stings cuts and fresh shaves"
+ },
+ "pinksalt": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 1,
+  "face": 0,
+  "drain": 0,
+  "note": "same as sea salt, prettier colour"
+ },
+ "deadsea": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 1,
+  "face": 0,
+  "drain": 0,
+  "note": "coarse salt, best on rough areas"
+ },
+ "epsom": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 1,
+  "face": 0,
+  "drain": 0,
+  "note": "softer salt crystals that melt quickly"
+ },
+ "coffee": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "coarse, energising scent; stains a little"
+ },
+ "coffeepowder": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 0,
+  "note": "fine coffee for a light polish"
+ },
+ "poppy": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "tiny round seeds, won't sting"
+ },
+ "strawberryseed": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "tiny round seeds, gentle and even"
+ },
+ "chiaseed": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "round seeds that turn slippery when wet"
+ },
+ "riceflour": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "very soft, fine enough for the face"
+ },
+ "oats": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "softest option, soothing for sensitive skin"
+ },
+ "almondmeal": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "soft and creamy; nut allergy warning"
+ },
+ "besan": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "soft chickpea flour, traditional in ubtan"
+ },
+ "masoor": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "soft lentil flour"
+ },
+ "moong": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "soft green gram flour"
+ },
+ "ricebranpow": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "soft, slightly oily bran"
+ },
+ "bamboopowder": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "fine plant grit that doesn't dissolve"
+ },
+ "jojobabeads": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "round wax beads, the gentlest physical scrub"
+ },
+ "cornstarch": {
+  "role": "exfoliant",
+  "grit": 0,
+  "dissolves": 1,
+  "face": 1,
+  "drain": 0,
+  "note": "no real grit; softens and thickens instead"
+ },
+ "cornmeal": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "rounded medium grit for body and feet"
+ },
+ "coconutflakes": {
+  "role": "exfoliant",
+  "grit": 2,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "soft flakes, adds a coconut scent"
+ },
+ "tamarindpowder": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "fine fruit powder with a mild natural acid"
+ },
+ "mahlab": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 0,
+  "note": "fragrant kernel powder; stone-fruit allergy warning"
+ },
+ "apricotshell": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 0,
+  "note": "jagged shell; go gently, body only"
+ },
+ "walnutshell": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 0,
+  "note": "jagged shell for heels and elbows only"
+ },
+ "avocadoseed": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 0,
+  "note": "uneven home-ground grit; go gently"
+ },
+ "pumice": {
+  "role": "exfoliant",
+  "grit": 3,
+  "dissolves": 0,
+  "face": 0,
+  "drain": 1,
+  "note": "very coarse; feet only"
+ },
+ "kaolin": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "clay, no grit; absorbs oil while it polishes lightly"
+ },
+ "rhassoul": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "clay that cleans gently, no grit"
+ },
+ "enzymes": {
+  "role": "exfoliant",
+  "grit": 0,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "no grit: fruit enzymes loosen dead skin instead"
+ },
+ "fruitpowder": {
+  "role": "exfoliant",
+  "grit": 1,
+  "dissolves": 0,
+  "face": 1,
+  "drain": 0,
+  "note": "fine fruit powder for colour and a light polish"
+ },
+ "jojoba": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 3,
+  "note": "close to skin's own oil, keeps for years"
+ },
+ "squalane": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 3,
+  "note": "weightless and very stable"
+ },
+ "caprylic": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 3,
+  "note": "light, silky and very stable"
+ },
+ "grapeseed": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light and dry-feeling; goes rancid fast"
+ },
+ "sunflower": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light, cheap, barrier-friendly"
+ },
+ "safflower": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light, high in linoleic acid"
+ },
+ "hemp": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "very light; keep it in the fridge"
+ },
+ "rosehip": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light face oil; short shelf life"
+ },
+ "raspberryseed": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light and silky"
+ },
+ "camellia": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 2,
+  "note": "light, traditional Japanese hair and face oil"
+ },
+ "marula": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 2,
+  "note": "light and fairly stable"
+ },
+ "pricklypear": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light luxury face oil"
+ },
+ "argan": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium, all-purpose for skin and hair"
+ },
+ "almond": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium, classic massage oil; nut allergy warning"
+ },
+ "apricot": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium, like almond oil without the nut"
+ },
+ "ricebran": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium and fairly stable"
+ },
+ "macadamia": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium, cushiony; nut allergy warning"
+ },
+ "baobab": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium and stable"
+ },
+ "sesame": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 2,
+  "note": "medium, traditional massage oil; sesame allergy warning"
+ },
+ "pumpkinoil": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 1,
+  "note": "medium, nutty"
+ },
+ "sachainchi": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 1,
+  "note": "light"
+ },
+ "avocadooil": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 1,
+  "shelf": 2,
+  "note": "rich, great for very dry skin and hair"
+ },
+ "olive": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 1,
+  "shelf": 2,
+  "note": "rich; can irritate eczema-prone skin"
+ },
+ "castor": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 1,
+  "shelf": 3,
+  "note": "thick and sticky; best blended at 10 to 30%",
+  "special": 1
+ },
+ "coconut": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 2,
+  "clog": 2,
+  "shelf": 3,
+  "note": "rich, solid when cool; clogs pores for many"
+ },
+ "babassu": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 1,
+  "clog": 1,
+  "shelf": 3,
+  "note": "like coconut oil but lighter"
+ },
+ "wheatgerm": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 2,
+  "shelf": 1,
+  "note": "rich in vitamin E; can clog pores",
+  "special": 1
+ },
+ "tamanu": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 1,
+  "shelf": 2,
+  "note": "rich, strong nutty scent",
+  "special": 1
+ },
+ "blackseedoil": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 1,
+  "shelf": 2,
+  "note": "medium, strong peppery scent",
+  "special": 1
+ },
+ "seabuckthorn": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 1,
+  "note": "stains orange; use a few drops",
+  "special": 1
+ },
+ "mineraloil": {
+  "role": "oil",
+  "weight": 2,
+  "absorb": 2,
+  "clog": 0,
+  "shelf": 3,
+  "note": "seals moisture in, never goes rancid",
+  "special": 1
+ },
+ "petrolatum": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 0,
+  "shelf": 3,
+  "note": "the strongest moisture seal",
+  "special": 1
+ },
+ "batana": {
+  "role": "oil",
+  "weight": 3,
+  "absorb": 3,
+  "clog": 1,
+  "shelf": 2,
+  "note": "thick, smoky-scented hair oil",
+  "special": 1
+ },
+ "hazelnut": {
+  "role": "oil",
+  "weight": 1,
+  "absorb": 1,
+  "clog": 0,
+  "shelf": 2,
+  "note": "light and dry-feeling; nut allergy warning"
+ },
+ "shea": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 1,
+  "note": "soft and rich, the all-rounder"
+ },
+ "mango": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 0,
+  "note": "softer feel than shea, almost no smell"
+ },
+ "cocoa": {
+  "role": "butter",
+  "hard": 3,
+  "melts": 0,
+  "scent": 2,
+  "note": "hard, chocolate scent, great for bars"
+ },
+ "kokum": {
+  "role": "butter",
+  "hard": 3,
+  "melts": 0,
+  "scent": 0,
+  "note": "hard, non-greasy, no smell"
+ },
+ "illipe": {
+  "role": "butter",
+  "hard": 3,
+  "melts": 0,
+  "scent": 0,
+  "note": "hard, cocoa-like without the scent"
+ },
+ "avocadobutter": {
+  "role": "butter",
+  "hard": 1,
+  "melts": 1,
+  "scent": 0,
+  "note": "very soft and rich"
+ },
+ "aloebutter": {
+  "role": "butter",
+  "hard": 1,
+  "melts": 1,
+  "scent": 0,
+  "note": "soft blend, light feel"
+ },
+ "murumuru": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 0,
+  "note": "smooth, great for hair"
+ },
+ "tucuma": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 0,
+  "note": "medium, quick-absorbing"
+ },
+ "kpangnan": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 1,
+  "note": "rich West African butter"
+ },
+ "mafura": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 1,
+  "note": "rich and earthy"
+ },
+ "tallow": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 1,
+  "note": "animal fat, very rich; not vegan"
+ },
+ "ghee": {
+  "role": "butter",
+  "hard": 2,
+  "melts": 1,
+  "scent": 2,
+  "note": "dairy; strong smell, goes rancid"
+ },
+ "lanolin": {
+  "role": "butter",
+  "hard": 1,
+  "melts": 0,
+  "scent": 1,
+  "note": "sticky, extremely sealing; wool allergy warning"
+ }
+}

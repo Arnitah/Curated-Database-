@@ -4559,5 +4559,68 @@
   "lvl": "care",
   "flag": "\"White henna\" isn't henna: check the label",
   "care": "Real henna only stains orange-red, so \"white henna\" is a blend whose contents vary by seller. Use only one with a full ingredient list, and patch test for 2 days."
+ },
+ {
+  "id": "strawberryseed",
+  "grp": "Powders and exfoliants",
+  "name": "Strawberry seeds",
+  "ph": "powder",
+  "tsp": 3,
+  "lvl": "ok",
+  "good": "Tiny, round seeds that give a gentle, even polish in body and lip scrubs.",
+  "care": "Use a teaspoon or so per batch; lots of seeds can collect in drains."
+ },
+ {
+  "id": "cornmeal",
+  "grp": "Powders and exfoliants",
+  "name": "Fine cornmeal",
+  "ph": "powder",
+  "tsp": 3,
+  "lvl": "ok",
+  "good": "A medium, rounded grit for body and foot scrubs. Cheap and doesn't dissolve.",
+  "care": "Body and feet only. Keep it dry; wet cornmeal spoils."
+ },
+ {
+  "id": "pinksalt",
+  "grp": "Powders and exfoliants",
+  "name": "Pink (Himalayan) salt, fine",
+  "ph": "powder",
+  "tsp": 5,
+  "lvl": "ok",
+  "good": "Same job as sea salt; the pink colour is from trace iron. Pick fine grain for scrubs.",
+  "care": "Stings cuts and freshly shaved skin. Body only. The mineral and detox claims aren't backed by research."
+ },
+ {
+  "id": "bamboopowder",
+  "grp": "Powders and exfoliants",
+  "name": "Bamboo stem powder",
+  "ph": "powder",
+  "tsp": 2.5,
+  "lvl": "ok",
+  "good": "A fine, soft, plant-based exfoliant that doesn't dissolve; gentle enough for face scrubs.",
+  "care": "Rub lightly, once or twice a week on the face."
+ },
+ {
+  "id": "walnutshell",
+  "grp": "Powders and exfoliants",
+  "name": "Walnut shell powder",
+  "ph": "powder",
+  "tsp": 3,
+  "lvl": "care",
+  "nut": true,
+  "flag": "Walnut shell can scratch",
+  "good": "Strong grit for rough heels and elbows.",
+  "care": "Crushed shell has jagged edges that can cause tiny tears, so keep it off the face and go gently. It's a tree nut: skip with a nut allergy."
+ },
+ {
+  "id": "pumice",
+  "grp": "Powders and exfoliants",
+  "name": "Pumice powder",
+  "ph": "powder",
+  "tsp": 4,
+  "lvl": "care",
+  "flag": "Pumice is for feet only",
+  "good": "Very coarse volcanic grit for calloused heels.",
+  "care": "Feet and hard skin only, never face or body. Can build up in drains."
  }
 ]

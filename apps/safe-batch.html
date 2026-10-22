@@ -1015,6 +1015,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 .bl-hits{display:flex;flex-direction:column;gap:4px}.bl-hits:empty{display:none}
 .bl-hit{text-align:left;font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer}.bl-hit:hover{border-color:var(--ink)}
 #blend .blabel{margin-top:6px}
+.sw-row{margin-top:10px}.sw-list{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:6px}.sw-list li{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 </style>
 
 <div class="wrap">
@@ -4730,7 +4731,7 @@ function ingBody(i){return `${i.good?`<p>${esc(i.good)}</p>`:""}
       ${benOf(i).length?benChips(benOf(i)):""}
       <p class="c">${esc(i.care)}</p>
       ${ingFlags(i).map(([sv,t])=>`<p class="pflag ${sv}">For your profile: ${esc(t)}</p>`).join("")}
-      ${hubFacts(i)}`;}
+      ${hubFacts(i)}${typeof ingSimilar==="function"?ingSimilar(i):""}`;}
 /* Supplier facts from the Skincare Data Hub (loaded with the live data; empty until then) */
 let ING_FACTS={};
 const HUB_SRC={aromantic:"Aromantic (UK)",formulator_sample_shop:"Formulator Sample Shop (US)",lotioncrafter:"Lotioncrafter (US)",windy_point:"Windy Point (CA)",native_extracts:"Native Extracts (AU)"};
@@ -6101,6 +6102,46 @@ $("#mixChips").addEventListener("click",e=>{const b=e.target.closest("[data-mix]
 try{ document.getElementById("mixRx").checked=localStorage.getItem("safebatch-mixrx")==="1"; }catch(e){}
 document.getElementById("mixRx").addEventListener("change",e=>{ try{localStorage.setItem("safebatch-mixrx",e.target.checked?"1":"0")}catch(_){} renderMix(); });
 renderMix();
+
+/* ---------- Swap ideas: similar exfoliants, oils and butters (traits live in data/safe-batch/swap_traits.json) ---------- */
+var SWAP_T={"sugar":{"role":"exfoliant","grit":2,"dissolves":1,"face":0,"drain":0,"note":"dissolves as you rinse, so it's forgiving"},"salt":{"role":"exfoliant","grit":3,"dissolves":1,"face":0,"drain":0,"note":"firmer grit; stings cuts and fresh shaves"},"pinksalt":{"role":"exfoliant","grit":3,"dissolves":1,"face":0,"drain":0,"note":"same as sea salt, prettier colour"},"deadsea":{"role":"exfoliant","grit":3,"dissolves":1,"face":0,"drain":0,"note":"coarse salt, best on rough areas"},"epsom":{"role":"exfoliant","grit":2,"dissolves":1,"face":0,"drain":0,"note":"softer salt crystals that melt quickly"},"coffee":{"role":"exfoliant","grit":3,"dissolves":0,"face":0,"drain":1,"note":"coarse, energising scent; stains a little"},"coffeepowder":{"role":"exfoliant","grit":1,"dissolves":0,"face":0,"drain":0,"note":"fine coffee for a light polish"},"poppy":{"role":"exfoliant","grit":2,"dissolves":0,"face":0,"drain":1,"note":"tiny round seeds, won't sting"},"strawberryseed":{"role":"exfoliant","grit":2,"dissolves":0,"face":0,"drain":1,"note":"tiny round seeds, gentle and even"},"chiaseed":{"role":"exfoliant","grit":2,"dissolves":0,"face":0,"drain":1,"note":"round seeds that turn slippery when wet"},"riceflour":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"very soft, fine enough for the face"},"oats":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"softest option, soothing for sensitive skin"},"almondmeal":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"soft and creamy; nut allergy warning"},"besan":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"soft chickpea flour, traditional in ubtan"},"masoor":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"soft lentil flour"},"moong":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"soft green gram flour"},"ricebranpow":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"soft, slightly oily bran"},"bamboopowder":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"fine plant grit that doesn't dissolve"},"jojobabeads":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"round wax beads, the gentlest physical scrub"},"cornstarch":{"role":"exfoliant","grit":0,"dissolves":1,"face":1,"drain":0,"note":"no real grit; softens and thickens instead"},"cornmeal":{"role":"exfoliant","grit":2,"dissolves":0,"face":0,"drain":1,"note":"rounded medium grit for body and feet"},"coconutflakes":{"role":"exfoliant","grit":2,"dissolves":0,"face":0,"drain":1,"note":"soft flakes, adds a coconut scent"},"tamarindpowder":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"fine fruit powder with a mild natural acid"},"mahlab":{"role":"exfoliant","grit":1,"dissolves":0,"face":0,"drain":0,"note":"fragrant kernel powder; stone-fruit allergy warning"},"apricotshell":{"role":"exfoliant","grit":3,"dissolves":0,"face":0,"drain":0,"note":"jagged shell; go gently, body only"},"walnutshell":{"role":"exfoliant","grit":3,"dissolves":0,"face":0,"drain":0,"note":"jagged shell for heels and elbows only"},"avocadoseed":{"role":"exfoliant","grit":3,"dissolves":0,"face":0,"drain":0,"note":"uneven home-ground grit; go gently"},"pumice":{"role":"exfoliant","grit":3,"dissolves":0,"face":0,"drain":1,"note":"very coarse; feet only"},"kaolin":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"clay, no grit; absorbs oil while it polishes lightly"},"rhassoul":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"clay that cleans gently, no grit"},"enzymes":{"role":"exfoliant","grit":0,"dissolves":0,"face":1,"drain":0,"note":"no grit: fruit enzymes loosen dead skin instead"},"fruitpowder":{"role":"exfoliant","grit":1,"dissolves":0,"face":1,"drain":0,"note":"fine fruit powder for colour and a light polish"},"jojoba":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":3,"note":"close to skin's own oil, keeps for years"},"squalane":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":3,"note":"weightless and very stable"},"caprylic":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":3,"note":"light, silky and very stable"},"grapeseed":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"light and dry-feeling; goes rancid fast"},"sunflower":{"role":"oil","weight":1,"absorb":2,"clog":0,"shelf":1,"note":"light, cheap, barrier-friendly"},"safflower":{"role":"oil","weight":1,"absorb":2,"clog":0,"shelf":1,"note":"light, high in linoleic acid"},"hemp":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"very light; keep it in the fridge"},"rosehip":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"light face oil; short shelf life"},"raspberryseed":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"light and silky"},"camellia":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":2,"note":"light, traditional Japanese hair and face oil"},"marula":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":2,"note":"light and fairly stable"},"pricklypear":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"light luxury face oil"},"argan":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium, all-purpose for skin and hair"},"almond":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium, classic massage oil; nut allergy warning"},"apricot":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium, like almond oil without the nut"},"ricebran":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium and fairly stable"},"macadamia":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium, cushiony; nut allergy warning"},"baobab":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium and stable"},"sesame":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":2,"note":"medium, traditional massage oil; sesame allergy warning"},"pumpkinoil":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":1,"note":"medium, nutty"},"sachainchi":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":1,"note":"light"},"avocadooil":{"role":"oil","weight":3,"absorb":3,"clog":1,"shelf":2,"note":"rich, great for very dry skin and hair"},"olive":{"role":"oil","weight":3,"absorb":3,"clog":1,"shelf":2,"note":"rich; can irritate eczema-prone skin"},"castor":{"role":"oil","weight":3,"absorb":3,"clog":1,"shelf":3,"note":"thick and sticky; best blended at 10 to 30%","special":1},"coconut":{"role":"oil","weight":3,"absorb":2,"clog":2,"shelf":3,"note":"rich, solid when cool; clogs pores for many"},"babassu":{"role":"oil","weight":2,"absorb":1,"clog":1,"shelf":3,"note":"like coconut oil but lighter"},"wheatgerm":{"role":"oil","weight":3,"absorb":3,"clog":2,"shelf":1,"note":"rich in vitamin E; can clog pores","special":1},"tamanu":{"role":"oil","weight":3,"absorb":3,"clog":1,"shelf":2,"note":"rich, strong nutty scent","special":1},"blackseedoil":{"role":"oil","weight":2,"absorb":2,"clog":1,"shelf":2,"note":"medium, strong peppery scent","special":1},"seabuckthorn":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":1,"note":"stains orange; use a few drops","special":1},"mineraloil":{"role":"oil","weight":2,"absorb":2,"clog":0,"shelf":3,"note":"seals moisture in, never goes rancid","special":1},"petrolatum":{"role":"oil","weight":3,"absorb":3,"clog":0,"shelf":3,"note":"the strongest moisture seal","special":1},"batana":{"role":"oil","weight":3,"absorb":3,"clog":1,"shelf":2,"note":"thick, smoky-scented hair oil","special":1},"hazelnut":{"role":"oil","weight":1,"absorb":1,"clog":0,"shelf":2,"note":"light and dry-feeling; nut allergy warning"},"shea":{"role":"butter","hard":2,"melts":1,"scent":1,"note":"soft and rich, the all-rounder"},"mango":{"role":"butter","hard":2,"melts":1,"scent":0,"note":"softer feel than shea, almost no smell"},"cocoa":{"role":"butter","hard":3,"melts":0,"scent":2,"note":"hard, chocolate scent, great for bars"},"kokum":{"role":"butter","hard":3,"melts":0,"scent":0,"note":"hard, non-greasy, no smell"},"illipe":{"role":"butter","hard":3,"melts":0,"scent":0,"note":"hard, cocoa-like without the scent"},"avocadobutter":{"role":"butter","hard":1,"melts":1,"scent":0,"note":"very soft and rich"},"aloebutter":{"role":"butter","hard":1,"melts":1,"scent":0,"note":"soft blend, light feel"},"murumuru":{"role":"butter","hard":2,"melts":1,"scent":0,"note":"smooth, great for hair"},"tucuma":{"role":"butter","hard":2,"melts":1,"scent":0,"note":"medium, quick-absorbing"},"kpangnan":{"role":"butter","hard":2,"melts":1,"scent":1,"note":"rich West African butter"},"mafura":{"role":"butter","hard":2,"melts":1,"scent":1,"note":"rich and earthy"},"tallow":{"role":"butter","hard":2,"melts":1,"scent":1,"note":"animal fat, very rich; not vegan"},"ghee":{"role":"butter","hard":2,"melts":1,"scent":2,"note":"dairy; strong smell, goes rancid"},"lanolin":{"role":"butter","hard":1,"melts":0,"scent":1,"note":"sticky, extremely sealing; wool allergy warning"}};
+function swapFor(id,type){
+  if(!SWAP_T) return []; const t=SWAP_T[id]; if(!t) return [];
+  const face=/^face|^eye|^lip/.test(type||""), out=[];
+  for(const [k,c] of Object.entries(SWAP_T)){
+    if(k===id||c.role!==t.role) continue; const ing=BY[k]; if(!ing||ing.lvl==="stop") continue;
+    try{ if((PROFILE.allergies||[]).some(a=>allergyHit(a,ing))) continue; }catch(e){}
+    if(t.role==="exfoliant"&&face&&!c.face) continue;
+    if(t.role==="exfoliant"&&c.grit===0&&t.grit>0) continue;
+    let d=0, why=[];
+    if(t.role==="exfoliant"){ d=Math.abs(c.grit-t.grit)*2+Math.abs(c.dissolves-t.dissolves)+c.drain*.5;
+      if(c.grit<t.grit) why.push("gentler"); else if(c.grit>t.grit) why.push("more grit");
+      if(c.dissolves&&!t.dissolves) why.push("dissolves as you rinse"); else if(!c.dissolves&&t.dissolves) why.push("won't dissolve or sting"); }
+    else if(t.role==="oil"){ d=Math.abs(c.weight-t.weight)*1.5+Math.abs(c.absorb-t.absorb)+Math.max(0,c.clog-t.clog)*1.5+Math.max(0,t.shelf-c.shelf)*.5;
+      if(c.weight<t.weight) why.push("lighter"); else if(c.weight>t.weight) why.push("richer");
+      if(c.clog<t.clog) why.push("less likely to clog pores"); if(c.shelf>t.shelf) why.push("keeps longer"); }
+    else { d=Math.abs(c.hard-t.hard)*1.5+Math.abs(c.melts-t.melts)+Math.abs(c.scent-t.scent)*.5;
+      if(c.hard<t.hard) why.push("softer"); else if(c.hard>t.hard) why.push("firmer");
+      if(c.scent<t.scent) why.push("less scent"); }
+    if(c.special&&!t.special) d+=3;
+    if(ing.lvl==="care") d+=1;
+    out.push({id:k,d,why:(why.length?why.join(", ")+": ":"similar: ")+c.note});
+  }
+  return out.sort((a,b)=>a.d-b.d).slice(0,4);
+}
+function swapHTML(){
+  const rows=(state.rows||[]).map((r,k)=>({r,k})).filter(x=>SWAP_T[x.r.id]&&BY[x.r.id]);
+  if(!rows.length) return "";
+  const role={exfoliant:"exfoliant",oil:"oil",butter:"butter"};
+  return `<details class="panel swaps" style="margin-top:14px"><summary><h3 style="display:inline">Swap ideas</h3> <span class="hint">Out of something, or want a different feel?</span></summary>
+    ${rows.map(({r,k})=>{ const alts=swapFor(r.id,state.type); if(!alts.length) return ""; return `<div class="sw-row"><div class="blabel">Instead of ${esc(BY[r.id].name.toLowerCase())} (${role[SWAP_T[r.id].role]})</div><ul class="sw-list">${alts.map(a=>`<li><button class="chip" data-swapk="${k}" data-swapto="${a.id}">${esc(BY[a.id].name)}</button> <span class="hint">${esc(a.why)}</span></li>`).join("")}</ul></div>`; }).join("")}
+    <p class="hint">Swaps keep the same amount. Grit, feel and shelf life change, so re-check the result above.</p></details>`;
+}
+const _rrSwap=renderResults;
+renderResults=function(){ _rrSwap(); try{ const el=$("#results"); if(el&&!/v-empty/.test(el.innerHTML)) el.insertAdjacentHTML("beforeend",swapHTML()); }catch(e){} };
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-swapto]"); if(!b) return; const k=+b.dataset.swapk; if(!state.rows[k]) return;
+  state.rows[k].id=b.dataset.swapto; state.example=false; try{ renderRows(); }catch(_){} update(); });
+function ingSimilar(i){ if(!SWAP_T) return ""; const t=SWAP_T[i.id]; if(!t) return ""; const a=swapFor(i.id,""); return a.length?`<p class="hubf">Similar ${t.role}s: ${a.map(x=>esc(BY[x.id].name)).join(", ")}.</p>`:""; }
 /* ---------- Blending store products into one jar or bar (mixed creams, cut-and-melted soaps) ---------- */
 const BL_GH="https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
 async function blFetch(f){ const bases=window.SB_DATA_BASE?[window.SB_DATA_BASE]:["",BL_GH]; for(const b of bases){ try{ const r=await fetch(b+f,{cache:"no-cache"}); if(r.ok) return await r.json(); }catch(e){} } throw new Error(f); }
@@ -7599,7 +7640,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 209 · 22 Oct 2026";
+const SB_VERSION="Version 210 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
@@ -8090,7 +8131,7 @@ function swRender(){ const w=swWeather();
   const get=async f=>{ for(const b of bases){ try{ const r=await fetch(b+f,{cache:"no-cache"}); if(r.ok) return await r.json(); }catch(e){} } throw new Error(f); };
   let ver=null; try{ ver=await get("version.json"); }catch(e){ try{ const ll=document.getElementById("lotLine"); if(ll) ll.insertAdjacentHTML("beforeend"," · built-in data"); }catch(_){} return; }
   let seen={}; try{ seen=JSON.parse(localStorage.getItem("safebatch-datahash")||"{}"); }catch(e){}
-  const want=["ingredients","synonyms","recipes_checked","myths","terms","traditions","layering_presets","ingredient_facts"];
+  const want=["ingredients","synonyms","recipes_checked","myths","terms","traditions","layering_presets","ingredient_facts","swap_traits"];
   const data={};
   await Promise.all(want.map(async n=>{ const d=ver.datasets&&ver.datasets["safe-batch/"+n]; if(!d) return; try{ data[n]=await get("data/safe-batch/"+n+".json"); }catch(e){} }));
   let added=0, changed=0;
@@ -8115,6 +8156,7 @@ function swRender(){ const w=swWeather();
   addBy(TERMS,data.terms,x=>x&&x.t);
   addBy(TRADS,data.traditions,x=>x&&x.id);
   addBy(LY_PRE,data.layering_presets,x=>x&&x[0]);
+  if(data.swap_traits&&typeof data.swap_traits==="object"){ SWAP_T=data.swap_traits; changed++; }
   if(data.ingredient_facts&&typeof data.ingredient_facts==="object"){ ING_FACTS=data.ingredient_facts; changed++; }
   try{ localStorage.setItem("safebatch-datahash",JSON.stringify({v:ver.version,at:Date.now()})); }catch(e){}
   window.SB_DATA={version:ver.version,updated_at:ver.updated_at,added,changed};

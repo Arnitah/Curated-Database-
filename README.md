@@ -64,6 +64,7 @@ Screenshots and links still go through review by hand. Those are viral claims, r
 | `safe-batch/terms` | `{ t, what, skin, how, when, season }` |
 | `safe-batch/traditions` | `{ id, name, region, place, how, ev, does, watch, modern }` |
 | `safe-batch/ingredient_facts` | `{ ingredientId: { listings, suppliers[], use_pct?: [lo, hi], use_n?, ph?: [min, max], shelf_months?, links: [{ s, u }] } }` |
+| `safe-batch/swap_traits` | `{ ingredientId: { role: exfoliant/oil/butter, ...traits, note } }`. Exfoliant: grit 0-3, dissolves, face, drain. Oil: weight, absorb, clog, shelf, special. Butter: hard, melts, scent. Drives Safe Batch's Swap ideas |
 | `clay/my_products_seed` | `[area, step, name, status: cur/have/past]` |
 
 ## How the apps read it

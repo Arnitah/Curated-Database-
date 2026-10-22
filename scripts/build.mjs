@@ -55,6 +55,10 @@ if (ing) {
   if (dup.length) warnings.push(`${dup.length} duplicate recipe names (allowed): ${[...new Set(dup)].slice(0, 5).join('; ')}`);
 }
 
+// Swap traits: every id must be a real ingredient
+const traits = sets['safe-batch/swap_traits']?.data;
+if (traits && ing) { const ids = new Set(ing.map((i) => i.id)); for (const [k, t] of Object.entries(traits)) { if (!ids.has(k)) errors.push(`swap_traits: unknown ingredient "${k}"`); if (!['exfoliant', 'oil', 'butter'].includes(t.role)) errors.push(`swap_traits ${k}: role must be exfoliant, oil or butter`); } }
+
 // Myths: structured records
 const VERDICTS = new Set(['true', 'false', 'partly', 'unproven', null]);
 const myths = sets['safe-batch/myths']?.data;

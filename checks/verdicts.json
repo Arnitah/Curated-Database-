@@ -6216,5 +6216,31 @@
  "dried-rosemary-hair-oil-safer": {
   "verdict": "ok",
   "flags": []
+ },
+ "thai-salt-scrub-at-home-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "thai-salt-scrub-at-home-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sudanese-dilka-balls-cera-by-shosh-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "sudanese-dilka-dry-mix-keeps": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "clean-soap-scent-body-mist-dove-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
  }
 }

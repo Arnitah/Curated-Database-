@@ -1,5 +1,43 @@
 [
  {
+  "id": "dilka-and-gluta-salt-scrubs-lighten",
+  "title": "Sudanese dilka whitens and lightens skin; Yoko \"gluta\" salt scrubs brighten",
+  "topics": [
+   "traditions",
+   "dark-spots",
+   "scrubs"
+  ],
+  "claims": [
+   {
+    "claim": "Dilka whitens and evens skin tone",
+    "verdict": "false",
+    "truth": "Dilka is a polishing dough: rubbed over oiled skin it lifts dead skin, so skin looks brighter and feels silky for a day or two. It doesn't change skin colour. Dark spots fade over months with leave-on treatments and sunscreen.",
+    "grade": "B"
+   },
+   {
+    "claim": "Gluta, collagen and AHA in a salt scrub work",
+    "verdict": "false",
+    "truth": "In a rinse-off salt scrub these extras touch skin for a minute and are mostly label story. The salt and sugar do the polishing.",
+    "grade": "C"
+   },
+   {
+    "claim": "Keep homemade dilka balls in the fridge",
+    "verdict": "partly",
+    "truth": "The fridge slows spoilage but a dough of flour, milk, sugar and water still moulds. Keep the dry mix and make balls fresh.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   }
+  ],
+  "seen_in": "Cera by Shosh and جيجي وأختها on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "gluta-drip-juice-and-lightening-line",
   "title": "A beetroot, tomato and cucumber \"Gluta drip\" juice lightens skin; Miss White's glutathione soap paste and \"lightening powder cream\"",
   "topics": [

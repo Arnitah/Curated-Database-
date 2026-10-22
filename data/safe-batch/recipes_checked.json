@@ -42811,5 +42811,250 @@
    "creator": "Safer version of bielunele's oil",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "thai-salt-scrub-at-home-as-posted",
+  "name": "Thai salt scrub at home (جيجي وأختها), as posted",
+  "claim": "Glowing, lighter skin",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted (amounts are our estimate): coffee, milk powder and sugar, two Yoko salt scrubs (tamarind and tomato \"gluta\"), orange peel powder, carrot and coconut oils, honey and shower gel, mixed into a jar. Honey and shower gel bring water into a stored jar with milk powder, so it can grow mould; the Yoko packs' \"gluta\" and AHA claims are mostly marketing in a rinse-off salt scrub. See the safer version.",
+  "rows": [
+   [
+    "coffeepowder",
+    15,
+    "g"
+   ],
+   [
+    "milkpowder",
+    15,
+    "g"
+   ],
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "salt",
+    60,
+    "g"
+   ],
+   [
+    "orangepeel",
+    5,
+    "g"
+   ],
+   [
+    "carrotinf",
+    15,
+    "g"
+   ],
+   [
+    "coconut",
+    15,
+    "g"
+   ],
+   [
+    "honey",
+    15,
+    "g"
+   ],
+   [
+    "showergel",
+    20,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "جيجي وأختها",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "thai-salt-scrub-at-home-safer",
+  "name": "Thai-style salt and sugar scrub (keeps)",
+  "claim": "The same polish, without mould",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix the dry ingredients, stir in the oils; store in a dry jar with a dry spoon. Add a little honey or shower gel to your palm with each scoop instead of the jar. Salt stings fresh shaves and cuts; use it 2 to 3 times a week on the body only. It polishes and softens; it won't lighten skin.",
+  "rows": [
+   [
+    "salt",
+    50,
+    "g"
+   ],
+   [
+    "sugar",
+    50,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    10,
+    "g"
+   ],
+   [
+    "orangepeel",
+    3,
+    "g"
+   ],
+   [
+    "carrotinf",
+    15,
+    "g"
+   ],
+   [
+    "sunflower",
+    15,
+    "g"
+   ],
+   [
+    "coconut",
+    10,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of the Thai salt scrub video",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "sudanese-dilka-balls-cera-by-shosh-as-posted",
+  "name": "Sudanese dilka balls (Cera by Shosh), as posted",
+  "claim": "Whitens, lightens and evens the skin",
+  "type": "body_rinse",
+  "use": "fridge",
+  "note": "As posted: toast 1 cup milk powder and 1 cup flour on low heat until golden, add 1 cup sugar, ½ cup Turkish coffee and 2 large spoons of starch, then stir in water bit by bit over low heat into a dough; chill 2 to 6 hours, roll into balls and keep in an airtight jar in the fridge. A cooked dough of flour, milk, sugar and water is food: even in the fridge it can mould within a week or two. Rub a ball over oiled skin until it rolls off. It polishes and leaves skin soft; it doesn't lighten. (Flour counted as rice flour.)",
+  "rows": [
+   [
+    "milkpowder",
+    1,
+    "cup"
+   ],
+   [
+    "riceflour",
+    1,
+    "cup"
+   ],
+   [
+    "sugar",
+    1,
+    "cup"
+   ],
+   [
+    "coffeepowder",
+    0.5,
+    "cup"
+   ],
+   [
+    "cornstarch",
+    2,
+    "tbsp"
+   ],
+   [
+    "water",
+    0.5,
+    "cup"
+   ]
+  ],
+  "source": {
+   "creator": "Cera by Shosh",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "sudanese-dilka-dry-mix-keeps",
+  "name": "Dilka dry mix (keeps for months)",
+  "claim": "Make the balls fresh, one or two at a time",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Toast the flour and milk powder on low heat until golden, cool, then mix in the sugar, coffee and starch and keep the powder in a dry jar. Before a bath, wet a few spoons with a little water and a few drops of sesame oil into a dough, roll it over oiled skin until it crumbles away, then rinse. No stored dough, no mould.",
+  "rows": [
+   [
+    "milkpowder",
+    60,
+    "g"
+   ],
+   [
+    "riceflour",
+    60,
+    "g"
+   ],
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    20,
+    "g"
+   ],
+   [
+    "cornstarch",
+    10,
+    "g"
+   ],
+   [
+    "mahlab",
+    3,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of Cera by Shosh's dilka",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "clean-soap-scent-body-mist-dove-style",
+  "name": "Clean soap scent body mist (Dove bar-style)",
+  "claim": "Smell like a fresh, clean bar of soap",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Pick a skin-safe fragrance oil sold as \"clean cotton\", \"fresh soap\" or \"powdery white musk\" for the Dove-bar feel. Solubilizer first with the fragrance, then the water phase, then preservative. Spray on clothes or skin; avoid the face.",
+  "rows": [
+   [
+    "water",
+    75,
+    "ml"
+   ],
+   [
+    "witchhazel",
+    15,
+    "ml"
+   ],
+   [
+    "glycerin",
+    5,
+    "ml"
+   ],
+   [
+    "polysorbate",
+    3,
+    "ml"
+   ],
+   [
+    "fragrance",
+    2,
+    "ml"
+   ],
+   [
+    "geogard",
+    1,
+    "ml"
+   ]
+  ],
+  "source": {
+   "creator": "Inspired by the Dove Original Fragrance tease",
+   "platform": "TikTok"
+  }
  }
 ]
