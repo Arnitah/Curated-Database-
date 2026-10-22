@@ -1,5 +1,53 @@
 [
  {
+  "id": "thai-review-haul-claims",
+  "title": "Body oil makes rough skin super smooth, serum milk erases line-marked skin, perfumed shower gel lasts all day",
+  "topics": [
+   "body",
+   "store-products",
+   "fragrance"
+  ],
+  "claims": [
+   {
+    "claim": "Body oil turns rough skin smooth",
+    "verdict": "partly",
+    "truth": "Oil on damp skin seals moisture in, so dry, rough skin feels smoother within days. Bumpy skin (keratosis pilaris) also needs a gentle exfoliant.",
+    "grade": "B"
+   },
+   {
+    "claim": "A serum body milk says goodbye to cracked, line-marked skin",
+    "verdict": "partly",
+    "truth": "A good lotion fixes dry and cracked skin. Stretch marks are scars: dermatologists say creams and lotions can't make them disappear. Prescription tretinoin or hyaluronic acid can make early ones less noticeable.",
+    "grade": "A"
+   },
+   {
+    "claim": "A perfumed shower gel scent lasts all day",
+    "verdict": "unproven",
+    "truth": "Most of a body wash rinses away; what lingers is faint. A matching body oil or lotion holds scent much longer.",
+    "grade": "D"
+   },
+   {
+    "claim": "Layering several face masks at once (multi-masking) works better",
+    "verdict": "partly",
+    "truth": "Putting a clay mask on oily areas and a hydrating one on dry areas is sensible. Piling several exfoliating or clay masks on the same skin just dries and irritates it.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: stretch marks, why they appear and how to get rid of them",
+    "url": "https://www.aad.org/public/cosmetic/scars-stretch-marks/stretch-marks-why-appear"
+   },
+   {
+    "title": "American Academy of Dermatology: dermatologists' top tips for relieving dry skin",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin"
+   }
+  ],
+  "seen_in": "Thai TikTok reviews (Janua, NIVEA, Remmel, Madame Aura, Kanchana)",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "soap-paste-sabounia-lightens-and-removes-pigmentation",
   "title": "A soap paste (صابونية تفتيح) made from lightening soaps removes pigmentation and lightens the body",
   "topics": [
@@ -71,6 +119,12 @@
     "claim": "You can whip a big tub that lasts",
     "verdict": "partly",
     "truth": "Glysolid is a water-based cream. Stretched into butters its preservative is diluted, so make small tubs or leave the cream out. Both creams are perfumed, so patch test if scent irritates you.",
+    "grade": "C"
+   },
+   {
+    "claim": "Baby oil locks in 10x more moisture",
+    "verdict": "partly",
+    "truth": "Baby oil is mineral oil with fragrance. Like petroleum jelly it seals water in, so it works best on damp skin. The \"10x\" figure is the brand's own comparison.",
     "grade": "C"
    }
   ],

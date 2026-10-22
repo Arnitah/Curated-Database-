@@ -41728,7 +41728,7 @@
   "claim": "Deep moisture for very dry skin",
   "type": "body_leave",
   "use": "store",
-  "note": "As posted: whip Glysolid glycerin cream, Herbolene aloe petroleum jelly, organic shea, raw Ghana shea and sweet almond oil. It works: shea and petroleum jelly seal moisture in, glycerin draws it in. But Glysolid is a water-based cream, so stretched into a big tub its preservative is diluted. Make small tubs and use within a month, or make it without the cream.",
+  "note": "As posted: whip Glysolid glycerin cream, Herbolene aloe petroleum jelly, organic shea, raw Ghana shea and sweet almond oil, then Johnson's baby oil. It works: shea and petroleum jelly seal moisture in, glycerin draws it in. But Glysolid is a water-based cream, so stretched into a big tub its preservative is diluted. Make small tubs and use within a month, or make it without the cream. Baby oil is mineral oil with fragrance: it seals moisture in, best on damp skin.",
   "rows": [
    [
     "storelotion",
@@ -41747,6 +41747,11 @@
    ],
    [
     "almond",
+    20,
+    "g"
+   ],
+   [
+    "mineraloil",
     20,
     "g"
    ]
@@ -42057,6 +42062,172 @@
   "source": {
    "creator": "Dupe of Fuwari 7 Herbs Shampoo",
    "platform": "Store product"
+  }
+ },
+ {
+  "id": "green-tea-herbal-scrub-mask-madame-aura-style",
+  "name": "Green tea herbal scrub mask (Madame Aura-style)",
+  "claim": "A gentle polish and calm, fresh-looking skin",
+  "type": "face_rinse",
+  "use": "now",
+  "note": "Mix to a soft paste, smooth on, leave 10 minutes, then rub in small circles as you rinse. Rice flour is the gentle scrub; green tea and honey are soothing; turmeric is a pinch for colour (it stains). Once or twice a week. Make it fresh.",
+  "rows": [
+   [
+    "greenteapowder",
+    1,
+    "tsp"
+   ],
+   [
+    "riceflour",
+    1,
+    "tbsp"
+   ],
+   [
+    "honey",
+    1,
+    "tsp"
+   ],
+   [
+    "turmeric",
+    0.1,
+    "tsp"
+   ],
+   [
+    "hydrosol",
+    1,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Madame Aura green tea scrub",
+   "platform": "Thai TikTok review"
+  }
+ },
+ {
+  "id": "thai-herbal-mask-powder-kanchana-style",
+  "name": "Thai herbal mask powder (Kanchana-style)",
+  "claim": "A ready-to-mix herbal clay mask",
+  "type": "face_rinse",
+  "use": "store",
+  "note": "Keep the dry powder in a dry jar (it lasts months). For each mask, mix 2 teaspoons with rose water or plain water, apply, rinse after 10 minutes, before it cracks. The bergamot (makrut) peel some Thai masks use is left out: it can cause burns and dark patches when skin then sees sun.",
+  "rows": [
+   [
+    "riceflour",
+    20,
+    "g"
+   ],
+   [
+    "kaolin",
+    10,
+    "g"
+   ],
+   [
+    "tamarindpowder",
+    5,
+    "g"
+   ],
+   [
+    "licorice",
+    2,
+    "g"
+   ],
+   [
+    "turmeric",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Kanchana herbal mask",
+   "platform": "Thai TikTok review"
+  }
+ },
+ {
+  "id": "perfumed-body-oil-janua-style",
+  "name": "Perfumed body oil (Janua Forget Me Not-style)",
+  "claim": "Soft, glowing skin that smells like your perfume",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Stir the fragrance into the oils and let it sit 2 days so the scent settles. Use a skin-safe fragrance oil at no more than 1 to 2%, or 10 to 15 drops of your favourite perfume per 100 ml. Apply to damp skin after a shower; it smooths rough skin by sealing moisture in.",
+  "rows": [
+   [
+    "jojoba",
+    70,
+    "g"
+   ],
+   [
+    "sunflower",
+    28,
+    "g"
+   ],
+   [
+    "fragrance",
+    1.5,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Janua perfumed body oil",
+   "platform": "Thai TikTok review"
+  }
+ },
+ {
+  "id": "serum-body-milk-nivea-style",
+  "name": "Serum body milk (NIVEA Serum Burst Milk-style)",
+  "claim": "A light, fast-absorbing body lotion for dry skin",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Glycerin, niacinamide and panthenol in a thin lotion. Heat water, glycerin, panthenol and xanthan, and Olivem with sunflower, separately to 70°C, blend, cool below 40°C, then stir in the niacinamide (dissolved in a little water) and the preservative. Helps dry, flaky skin; no lotion removes stretch marks.",
+  "rows": [
+   [
+    "water",
+    78,
+    "g"
+   ],
+   [
+    "glycerin",
+    5,
+    "g"
+   ],
+   [
+    "panthenol",
+    1,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.2,
+    "g"
+   ],
+   [
+    "olivem",
+    3.5,
+    "g"
+   ],
+   [
+    "sunflower",
+    7,
+    "g"
+   ],
+   [
+    "niacinamide",
+    3,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of NIVEA Serum Burst Milk",
+   "platform": "Thai TikTok review"
   }
  }
 ]

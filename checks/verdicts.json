@@ -6131,5 +6131,25 @@
  "seven-herb-shampoo-bar-fuwari-style": {
   "verdict": "ok",
   "flags": []
+ },
+ "green-tea-herbal-scrub-mask-madame-aura-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "thai-herbal-mask-powder-kanchana-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "perfumed-body-oil-janua-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "serum-body-milk-nivea-style": {
+  "verdict": "ok",
+  "flags": []
  }
 }
