@@ -1008,6 +1008,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 .mv{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;border:1px solid currentColor}
 .mv-ok{color:var(--ok,#2e7d32)}.mv-stop{color:var(--stop,#c62828)}.mv-care{color:var(--care,#b26a00)}
 
+.moved-card{margin-bottom:14px;border-left:4px solid var(--accent)}.clay-exp-box{width:100%;font-size:11px;margin-top:6px}
 </style>
 
 <div class="wrap">
@@ -1085,14 +1086,15 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
   </div>
   </div>
   <div class="card" id="hToday" style="margin-bottom:14px"></div>
-  <details class="hsec" id="hsYear">
+<div class="card moved-card"><div class="blabel">Moved to Clay</div><p style="margin:4px 0 8px">Your year in skincare (your daily log) and this season's morning and evening routine now live in <strong>Clay</strong>, your routine and shelf app. Safe Batch is for making and checking.</p><div class="actions"><a class="btn primary" href="https://claude.ai/artifact/54Waeahtn8vBRU8LmHJnXL" target="_blank" rel="noopener">Open Clay</a><button class="btn" data-clayexport>Copy my data for Clay</button></div><p class="hint clay-exp-msg" aria-live="polite"></p><textarea class="clay-exp-box" rows="3" readonly hidden aria-label="Code for Clay"></textarea></div>
+  <details class="hsec" id="hsYear" hidden>
     <summary><span class="hsec-t">Your year in skincare</span><span class="hsec-h">Log today, see streaks and habits</span></summary>
     <div class="hsec-b">
   <p class="lede" style="margin-bottom:10px">Tick what you did today. Over time you will see your rhythm: streaks, breaks, busy days and which days you skip.</p>
   <div class="card qy" id="qyCard"></div>
     </div>
   </details>
-  <details class="hsec" id="hsShelf" open>
+  <details class="hsec" id="hsShelf" hidden>
     <summary><span class="hsec-t" id="hNowT">This season</span><span class="hsec-h">Your morning and evening steps</span></summary>
     <div class="hsec-b">
       <div id="hNow"></div>
@@ -1441,6 +1443,8 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
   <div class="crq"><span class="gnum">2</span><div class="crqb"><div class="blabel">What are you making?</div><div class="chips" id="sbProd" role="group" aria-label="Product"></div></div></div>
   <div class="crq"><span class="gnum">3</span><div class="crqb"><div class="blabel">Batch size (grams of base)</div><input type="number" id="sbG" min="5" max="2000" value="30" style="width:110px"></div></div>
   <div id="sbOut"></div>
+<div class="card moved-card"><div class="blabel">Moved to Clay</div><p style="margin:4px 0 8px">Your scent wardrobe and the layering checker now live in <strong>Clay</strong>, your routine and shelf app. Safe Batch is for making and checking.</p><div class="actions"><a class="btn primary" href="https://claude.ai/artifact/54Waeahtn8vBRU8LmHJnXL" target="_blank" rel="noopener">Open Clay</a><button class="btn" data-clayexport>Copy my data for Clay</button></div><p class="hint clay-exp-msg" aria-live="polite"></p><textarea class="clay-exp-box" rows="3" readonly hidden aria-label="Code for Clay"></textarea></div>
+  <div id="sbMovedScents" hidden>
   <h2 class="section-head">My scent wardrobe</h2>
   <p class="lede">Add the mists and perfumes you own, with their notes from the bottle or shop page. Safe Batch picks what suits today's weather and finds layering pairs within your own collection. Saved on this device.</p>
   <div class="panel stack" id="swPanel">
@@ -1465,6 +1469,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
   </div>
   <div class="actions"><button class="btn primary" id="lyGo">Show me how to layer</button></div>
   <div id="lyOut"></div>
+  </div>
   <h2 class="section-head">Or pick a ready blend</h2>
   <p class="lede">Pick a blend, what you're making and how much. Safe Batch gives you drops of each oil at a skin-safe strength and checks the result.</p>
   <div class="crq"><span class="gnum">1</span><div class="crqb"><div class="blabel">Choose a blend</div><select id="spPair" class="sel"></select></div></div>
@@ -7415,7 +7420,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 203 · 22 Oct 2026";
+const SB_VERSION="Version 204 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
@@ -7475,7 +7480,7 @@ function hTips(){
   if(sk==="sensitive") out.push(["Sensitive skin tip","Weather swings trigger flares. Keep fragrance and essential oils out of leave-on products and introduce one new thing at a time."]);
   const when=hr<11?"This morning":hr<17?"This afternoon":"Tonight";
   const cnt=hShelfSteps(hr>=16||hr<4?"pm":"am",H_SEAS.indexOf(hSeason())).filter(s=>s.imp>0).length;
-  out.push([hr>=16||hr<4?"Evening routine":"Morning routine",`${cnt} steps for ${hSeason().toLowerCase()}. Your shelf below shows each one and the texture to use.`]);
+  out.push([hr>=16||hr<4?"Evening routine":"Morning routine",`${cnt} steps for ${hSeason().toLowerCase()}. Your step-by-step routine is in Clay.`]);
   return {n,when,out};
 }
 function hMakeIdea(n){
@@ -7938,5 +7943,17 @@ function swRender(){ const w=swWeather();
   }
   try{ const ll=document.getElementById("lotLine"); if(ll) ll.innerHTML=`Lot ${String(VIRAL.length).padStart(4,"0")} · ${ING.length} ingredients · data v${ver.version}<span class="xtra"> · ${MYTHS.length} myths checked</span>`; }catch(e){}
 })();
+
+/* ---------- Hand-off to Clay: copy the log and scent wardrobe as a code Clay can import ---------- */
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-clayexport]"); if(!b) return;
+  const card=b.closest(".moved-card"), msg=card.querySelector(".clay-exp-msg"), box=card.querySelector(".clay-exp-box");
+  let log={}, scents=[]; try{ log=(QY&&QY.d)||{}; }catch(_){} try{ scents=SW||[]; }catch(_){}
+  const code="CLAY1:"+btoa(unescape(encodeURIComponent(JSON.stringify({log,scents,at:Date.now()}))));
+  const nD=Object.keys(log).length, nS=scents.length;
+  box.value=code; box.hidden=false; box.select();
+  let copied=false; try{ await navigator.clipboard.writeText(code); copied=true; }catch(_){ try{ copied=document.execCommand("copy"); }catch(__){} }
+  msg.textContent=`${copied?"Copied":"Select and copy the code below"}: ${nS} scent${nS===1?"":"s"} and ${nD} logged day${nD===1?"":"s"}. In Clay, open Your year or My scent wardrobe and paste it into “Bring over from Safe Batch”.`;
+});
 
 </script>

@@ -536,11 +536,12 @@ const MP_SEED=[
    Newest wins, by timestamp. */
 const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{}};
 try{ CSYNC.ts=JSON.parse(localStorage.getItem('clay-sync-ts')||'{}')||{}; }catch(e){}
-const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}) };
+const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}), 'clay-scents':()=>SW };
 const CS_SET={
   'clay-products':d=>{ if(Array.isArray(d)){ MP.splice(0,MP.length,...d); try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} } },
   'clay-hair':d=>{ if(d&&typeof d==='object'){ Object.keys(HR).forEach(k=>delete HR[k]); Object.assign(HR,d); try{ localStorage.setItem('clay-hair',JSON.stringify(HR)); }catch(e){} } },
   'clay-log':d=>{ if(d&&typeof d==='object'){ Object.keys(YLOG).forEach(k=>delete YLOG[k]); Object.assign(YLOG,d); try{ localStorage.setItem('clay-log',JSON.stringify(YLOG)); }catch(e){} } },
+  'clay-scents':d=>{ if(Array.isArray(d)){ SW.splice(0,SW.length,...d); try{ localStorage.setItem('clay-scents',JSON.stringify(SW)); }catch(e){} } },
   'clay-prefs':d=>{ if(d&&d.tone>=0&&d.tone<4){ AM_TONE=d.tone; try{ localStorage.setItem('clay-am-tone',String(d.tone)); }catch(e){} } },
 };
 const csStamp=(k,t)=>{ CSYNC.ts[k]=t; try{ localStorage.setItem('clay-sync-ts',JSON.stringify(CSYNC.ts)); }catch(e){} };
@@ -1032,6 +1033,69 @@ function scentMain(){
     <section class="card warn" data-comment-target><div class="card-head">${ic('alert',20)}<h3>Skin first</h3>${cmt('scent safety')}</div>
       <p class="small">Keep fragrance off your face routine. Skip scented layers on freshly shaved or exfoliated skin. Patch-test perfume oils on your inner arm for 48 hours.${k==='summer'?' Citrus scents can react with sunlight, so mist clothes and hair instead.':''}</p></section>`;
 }
+
+/* ---------- My scents (moved from Safe Batch): wardrobe, best for the season, layering ---------- */
+const LY_FAM=[["fruity",/strawberr|raspberr|berr|currant|cassis|mango|lychee|litchi|peach|apricot|\bpear\b(?! blossom)|apple|cherry|plum|fig|melon|pineapple|coconut|passion ?fruit|guava|dragon ?fruit|a[cç]a[ií]|litchi|mulberr|pineapple/],["citrus",/bergamot|lemon|orange(?! blossom)|grapefruit|mandarin|yuzu|lime|citrus/],["floral",/rose|jasmine|lily|muguet|pansy|lotus|orris|violet(?! lea)|peony|honeysuckle|blossom|orchid|tuberose|gardenia|magnolia|freesia|iris|lavender|ylang|neroli|white flower|petal|floral/],["green",/lea(f|ves)|green|\btea\b|grass|basil|\bmint/],["gourmand",/vanilla|caramel|sugar|cotton candy|honey(?!suckle|dew)|chocolate|praline|tonka|almond|milk|cream|marshmallow|toffee|meringue|butter|cookie/],["woody",/sandalwood|cedar|amberwood|\bwood|vetiver|patchouli|\boud|guaiac|cashmeran|\bmoss/],["amber",/\bamber\b|benzoin|labdanum|resin|incense|myrrh/],["musk",/musk/],["aquatic",/\bsea\b|marine|ocean|aquatic|water|salt|ozonic|rain/],["spicy",/pepper|cinnamon|cardamom|clove|ginger|saffron|nutmeg/]];
+const LY_W={gourmand:3,woody:3,amber:3,musk:2,floral:2,spicy:2,fruity:1,green:1,aquatic:1,citrus:0};
+const LY_FN={fruity:"fruity",citrus:"citrus",floral:"floral",green:"green",gourmand:"sweet (gourmand)",woody:"woody",amber:"amber",musk:"musky",aquatic:"fresh and watery",spicy:"spicy"};
+const LY_GOOD=["fruity+musk","fruity+gourmand","fruity+floral","floral+woody","floral+musk","citrus+woody","citrus+floral","gourmand+woody","gourmand+musk","green+floral","aquatic+citrus","spicy+gourmand","spicy+woody","amber+floral","citrus+musk","aquatic+musk","fruity+woody","gourmand+floral","amber+woody","amber+gourmand","citrus+green"];
+const LY_RISK={"aquatic+gourmand":"watery-fresh against sugary-sweet often smells confused","green+gourmand":"sharp green notes can turn sour next to sugary ones","aquatic+spicy":"fresh marine notes and warm spice pull in opposite directions","amber+aquatic":"heavy amber swallows light, watery notes","aquatic+amber":"heavy amber swallows light, watery notes"};
+function lyParse(t){ const parts=t.toLowerCase().replace(/(top|middle|heart|base|notes?)\s*:/g,",").split(/[,;\n.]|\band\b/).map(x=>x.trim()).filter(x=>x.length>1);
+  const fam={}; const notes=[]; parts.forEach(p=>{ notes.push(p); LY_FAM.forEach(([f,re])=>{ if(re.test(p)) fam[f]=(fam[f]||0)+1; }); });
+  const fs=Object.keys(fam), tot=fs.reduce((a,f)=>a+fam[f],0)||1, weight=fs.reduce((a,f)=>a+LY_W[f]*fam[f],0)/tot;
+  return {fam,fs,notes,weight}; }
+function lySeason(fs,cnt){ const sc={Spring:0,Summer:0,Autumn:0,Winter:0}; fs.forEach(f=>{ const w=cnt&&cnt[f]?cnt[f]:1; ({fruity:["Spring","Summer"],citrus:["Summer","Spring"],floral:["Spring","Summer"],green:["Spring"],aquatic:["Summer"],gourmand:["Autumn","Winter"],woody:["Autumn","Winter"],amber:["Winter","Autumn"],spicy:["Autumn","Winter"],musk:[]}[f]||[]).forEach((s,i)=>sc[s]+=(i?1:2)*w); });
+  const r=Object.entries(sc).sort((a,b)=>b[1]-a[1]); return r[0][1]===0?["All year"]:r.filter(x=>x[1]>=r[0][1]*.5&&x[1]>0).slice(0,2).map(x=>x[0]); }
+const SW_FIT={hothumid:{fruity:2,citrus:2,aquatic:2,green:1,floral:0,musk:0,gourmand:-2,amber:-2,woody:-1,spicy:-2},hotdry:{fruity:2,citrus:2,aquatic:1,green:1,floral:1,musk:0,gourmand:-1,amber:-2,woody:-1,spicy:-1},mild:{floral:2,fruity:1,musk:1,green:1,citrus:1,aquatic:0,gourmand:0,woody:0,amber:-1,spicy:0},cold:{gourmand:2,amber:2,woody:2,spicy:2,musk:1,floral:0,fruity:-1,citrus:-1,green:-1,aquatic:-2}};
+
+let SW=[]; try{ SW=JSON.parse(localStorage.getItem('clay-scents'))||[]; }catch(e){}
+const swSave=()=>{ try{ localStorage.setItem('clay-scents',JSON.stringify(SW)); }catch(e){} try{ claySyncPush('clay-scents'); }catch(e){} };
+const SW_TYPE={mist:'Body mist',perfume:'Perfume',lotion:'Scented lotion or oil'};
+const SW_SEASONKEY={spring:'mild',summer:'hothumid',fall:'mild',winter:'cold'};
+function swScore(x,k){ const P=lyParse(x.notes||''); if(!P.fs.length) return null; const tot=Object.values(P.fam).reduce((a,b)=>a+b,0); return P.fs.reduce((a,f)=>a+((SW_FIT[k]||{})[f]||0)*P.fam[f],0)/tot; }
+function lyMatch(a,b){ const A=lyParse(a||''), B=lyParse(b||''); if(!A.fs.length||!B.fs.length) return null;
+  const sh=A.fs.filter(f=>B.fs.includes(f)); let good=[], risk=[];
+  A.fs.forEach(x=>B.fs.forEach(y=>{ if(x!==y&&(LY_GOOD.includes(x+'+'+y)||LY_GOOD.includes(y+'+'+x))) good.push(LY_FN[x]+' + '+LY_FN[y]); const r=LY_RISK[x+'+'+y]||LY_RISK[y+'+'+x]; if(r) risk.push(r); }));
+  const score=sh.length*2+Math.min(good.length,3)-(risk.length&&sh.length<2?4:0);
+  const first=A.weight>=B.weight?0:1;
+  return {score,shared:sh.map(f=>LY_FN[f]),good:[...new Set(good)].slice(0,3),risk:[...new Set(risk)].slice(0,2),first};
+}
+function scentWardrobeCard(){
+  const k=SW_SEASONKEY[S.scentSeason]||'mild', rated=SW.map((x,i)=>({x,i,s:swScore(x,k)})).filter(r=>r.s!==null).sort((a,b)=>b.s-a.s);
+  let pairs=[]; for(let i=0;i<SW.length;i++) for(let j=i+1;j<SW.length;j++){ const m=lyMatch(SW[i].notes,SW[j].notes); if(m) pairs.push({i,j,m}); }
+  pairs.sort((a,b)=>b.m.score-a.m.score);
+  const top=rated[0], pr=pairs.find(p=>p.m.score>=2);
+  const sel=S.lyPick||[];
+  const ly=sel.length===2?(()=>{ const [a,b]=sel.map(i=>SW[i]); const m=lyMatch(a.notes,b.notes); if(!m) return '<p class="small muted">Add notes to both scents to compare them.</p>';
+    const ok=m.score>=2, bad=m.score<0, base=m.first===0?a:b, over=m.first===0?b:a;
+    return `<div class="mp-chk ${ok?'mp-info':bad?'mp-warn':'mp-info'}" style="margin-top:8px"><b class="small">${ok?'These layer well':bad?'These may clash':'These can work, lightly'}</b><p class="small" style="margin:4px 0 0">${m.shared.length?`They share ${esc(m.shared.join(', '))} notes. `:''}${m.good.length?`Good pairing: ${esc(m.good.join('; '))}. `:''}${m.risk.length?`Watch out: ${esc(m.risk.join('; '))}. `:''}Put <b>${esc(base.n)}</b> on first (it's heavier and lasts longer), then a lighter touch of <b>${esc(over.n)}</b> on top.</p></div>`; })():'';
+  const row=(x,i)=>{ const P=lyParse(x.notes||''), seas=P.fs.length?lySeason(P.fs,P.fam):null, picked=sel.includes(i);
+    return `<div class="mp-row mp-compact"><div class="mp-top"><div style="min-width:0;flex:1"><b class="mp-title">${esc(x.n)}</b><div class="mp-sub"><span class="mp-badge">${esc(SW_TYPE[x.type]||'Scent')}</span>${seas?`<span class="mp-badge">Best: ${esc(seas.join(', '))}</span>`:''}</div>${P.fs.length?`<div class="mp-notepre">${esc(P.fs.map(f=>LY_FN[f]).join(' · '))}</div>`:''}</div>
+      <button type="button" class="chip" data-act="lypick" data-v="${i}" aria-pressed="${picked}">${picked?'Picked':'Layer'}</button><button type="button" class="chip" data-act="swdel" data-v="${i}" aria-label="Remove ${esc(x.n)}">✕</button></div></div>`; };
+  return card('My scent wardrobe', `
+    ${SW.length?(top?`<p class="small" style="margin-top:0"><b>Best for ${esc(S.scentSeason)}:</b> ${esc(top.x.n)}${rated[1]&&rated[1].s>0?` (or ${esc(rated[1].x.n)})`:''}.${pr?` <b>Pair from your collection:</b> ${esc(SW[pr.i].n)} + ${esc(SW[pr.j].n)}.`:''}</p>`:'<p class="small muted" style="margin-top:0">Add notes to your scents so Clay can match them to the season.</p>')
+      :'<p class="small muted" style="margin-top:0">Add the mists and perfumes you own, with their notes, and Clay picks one for the season and finds layering pairs in your own collection.</p>'}
+    <div class="list">${SW.map(row).join('')}</div>
+    ${sel.length===1?'<p class="small muted">Pick one more scent to see how they layer.</p>':''}${ly}
+    <details style="margin-top:8px"><summary class="small" style="cursor:pointer"><b>Add a scent</b></summary>
+      <div class="mp-add" style="flex-wrap:wrap"><input id="swN" placeholder="Name, e.g. Bare Vanilla Cashmere" aria-label="Scent name"><select id="swT" aria-label="Type"><option value="mist">Body mist</option><option value="perfume">Perfume</option><option value="lotion">Scented lotion or oil</option></select>
+      <textarea id="swNotes" rows="2" style="width:100%" placeholder="Notes from the bottle or shop page: Top: vanilla orchid. Heart: patchouli. Base: musk." aria-label="Notes"></textarea><button class="btn primary" type="button" data-act="swadd">${ic('plus',16)}Add</button></div>
+    </details>
+    ${importBox('scents')}`, {h:'h3', icon:'spark'});
+}
+function importBox(where){
+  return `<details style="margin-top:8px"><summary class="small" style="cursor:pointer">Bring over ${where==='scents'?'your scent wardrobe':'your log'} from Safe Batch</summary>
+    <p class="small muted">In Safe Batch, tap “Copy my data for Clay”, then paste it here.</p>
+    <div class="mp-add"><input id="impCode" placeholder="Paste the code (starts with CLAY1:)" aria-label="Code from Safe Batch"><button class="btn" type="button" data-act="impgo">Import</button></div></details>`;
+}
+function clayImport(code){
+  const m=String(code||'').trim().match(/^CLAY1:(.+)$/s); if(!m) return 'That code doesn’t look right. It should start with CLAY1:';
+  let d; try{ d=JSON.parse(decodeURIComponent(escape(atob(m[1])))); }catch(e){ return 'Couldn’t read that code. Copy it again from Safe Batch.'; }
+  let nL=0, nS=0;
+  if(d.log&&typeof d.log==='object'){ Object.entries(d.log).forEach(([day,acts])=>{ if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Array.isArray(acts)) return; const cur=YLOG[day]||[]; const add=acts.filter(a=>Y_LBL[a]&&!cur.includes(a)); if(add.length){ YLOG[day]=cur.concat(add); nL++; } }); if(nL) ySave(); }
+  if(Array.isArray(d.scents)){ d.scents.forEach(x=>{ if(x&&x.n&&!SW.some(y=>y.n===x.n)){ SW.push({n:String(x.n).slice(0,120),notes:String(x.notes||'').slice(0,600),type:SW_TYPE[x.type]?x.type:'mist'}); nS++; } }); if(nS) swSave(); }
+  return `Imported ${nS} scent${nS===1?'':'s'} and ${nL} logged day${nL===1?'':'s'}.`;
+}
 function pagePairs(){
   const s=S.season, d=PAIRS[s], mode=S.pairsMode||'skin';
   const tabs=`<div class="seg" role="group" aria-label="Pairs or scent"><button type="button" aria-pressed="${mode==='skin'}" data-act="pairsMode" data-v="skin">${ic('drop',16)}Skincare pairs</button><button type="button" aria-pressed="${mode==='scent'}" data-act="pairsMode" data-v="scent">${ic('spark',16)}Scent builder</button></div>`;
@@ -1050,7 +1114,7 @@ function pagePairs(){
       <button class="btn" type="button" data-act="pairsMode" data-v="scent">Open the scent builder</button></section>`;
   const railScent = `${card('From Arab perfumery', `<p class="small">Attar is a concentrated, alcohol-free perfume oil. Worn under a spray fragrance, it anchors the scent so it lasts. Oud, rose and amber are classic bases.</p><p class="small muted">Bakhoor (scented wood chips) perfumes hair and clothes with smoke, not on skin.</p>`, {h:'h3', icon:'spark'})}
     ${card('Works with your skincare', `<p class="small">Fragrance-free body lotion under perfume helps it last on dry skin. Your face routine stays unscented while your barrier recovers.</p>`, {h:'h3', cls:'ok'})}`;
-  return {main: head + (mode==='skin'?skinMain:scentMain()), rail: mode==='skin'?railSkin:railScent};
+  return {main: head + (mode==='skin'?skinMain:scentWardrobeCard()+scentMain()), rail: mode==='skin'?railSkin:railScent};
 }
 
 /* ---------- Learn */
@@ -1255,7 +1319,7 @@ function zonePanel(m){
 /* ================= render ================= */
 
 /* ---------- Your year (inspired by Quantify Your Year) */
-const Y_ACTS=[['am','Morning routine'],['pm','Tonight routine'],['spf','Sunscreen'],['exf','Exfoliant'],['ret','Retinal night'],['mask','Mask'],['scan','Skin scan'],['newp','New product']];
+const Y_ACTS=[['am','Morning routine'],['pm','Tonight routine'],['spf','Sunscreen'],['exf','Exfoliant'],['ret','Retinal night'],['mask','Mask'],['scan','Skin scan'],['newp','New product'],['hair','Hair care'],['made','Made a DIY batch'],['patch','Patch test']];
 const Y_LBL=Object.fromEntries(Y_ACTS), Y_DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], Y_MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 let YLOG={}; try{ YLOG=JSON.parse(localStorage.getItem('clay-log')||'{}')||{}; }catch(e){}
 const ySave=()=>{ try{ localStorage.setItem('clay-log', JSON.stringify(YLOG)); }catch(e){} try{ claySyncPush('clay-log'); }catch(e){} };
@@ -1360,7 +1424,7 @@ function pageYear(){
   const sc=st.scans, gapsS=sc.slice(1).map((x,i)=>Math.round((x.date-sc[i].date)/864e5)), avg=gapsS.length?Math.round(gapsS.reduce((a,b)=>a+b,0)/gapsS.length):0;
   const rail=`${card('By day of the week', `<div class="seg" style="margin-bottom:10px">${[['total','Steps'],['days','Days active']].map(([k,l])=>`<button type="button" data-act="ybar" data-v="${k}" aria-pressed="${YU.bar===k}">${l}</button>`).join('')}</div><div class="ybars">${Y_DOW.map((d,i)=>`<span>${d}</span><div class="ybw"><div class="yb" style="width:${bars[i]/bmax*80}%"></div><span>${bars[i]}</span></div>`).join('')}</div>`, {h:'h3'})}
     ${card('Scans this year', sc.length?`<div class="grid2 num"><div><div style="font-family:var(--display);font-size:30px">${sc.length}</div><div class="small muted">scans</div></div><div><div style="font-family:var(--display);font-size:30px">${avg||'–'}</div><div class="small muted">days apart, on average</div></div></div><p class="small muted">Every two weeks, in the same light, gives the fairest comparison.</p>`:`<p class="small muted">No scans logged yet. Scan every two weeks in the same light.</p><a href="#" class="small" data-act="go" data-v="scan">Open Scan</a>`, {h:'h3', icon:'scan'})}`;
-  return {main, rail};
+   return {main: main+card('From Safe Batch', importBox('log'), {h:'h3', icon:'today'}), rail};
 }
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const RENDER = {today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
@@ -1446,6 +1510,10 @@ document.addEventListener('click', async (e)=>{
   if (a==='amsel') S.amSel=+v;
   if (a==='amtone'){ AM_TONE=+v; try{ localStorage.setItem('clay-am-tone',v); }catch(e){} try{ claySyncPush('clay-prefs'); }catch(e){} }
   if (a==='mpa') S.mpa=v;
+  if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
+  if (a==='swdel'){ SW.splice(+v,1); S.lyPick=[]; swSave(); }
+  if (a==='lypick'){ const i=+v, L=S.lyPick||[]; S.lyPick=L.includes(i)?L.filter(x=>x!==i):L.concat(i).slice(-2); }
+  if (a==='impgo'){ toast(clayImport($('#impCode').value)); }
   if (a==='mpopen'){ S.mpOpen=S.mpOpen===+v?null:+v; S.mpEdit=null; S.mpNote=null; }
   if (a==='hschip'){ const [k,x]=v.split('|'); const L=S.hs[k]; const i=L.indexOf(x); if(i>=0) L.splice(i,1); else L.push(x); }
   if (a==='hssave'){ const d=S.hs; d.now=$('#hsNow').value; d.goal=$('#hsGoal').value; d.wash=$('#hsWash').value||'w2'; d.style=$('#hsStyle').value; if(!d.now||!d.goal){ toast('Pick your current and goal length'); return; } HR.setup=JSON.parse(JSON.stringify(d)); S.hsEdit=false; S.hs=null; hrSave(); toast('Hair plan saved'); }
@@ -1493,6 +1561,7 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
   let ver; try{ ver=await get("version.json"); }catch(e){ return; }
   const pick=async n=>{ try{ return ver.datasets["clay/"+n]?await get("data/clay/"+n+".json"):null; }catch(e){ return null; } };
   const [tips,steps,areas,feel]=await Promise.all(["hair_tips","hair_wash_steps","product_steps","feel_words"].map(pick));
+  try{ const fam=ver.datasets['safe-batch/scent_families']?await get('data/safe-batch/scent_families.json'):null; if(Array.isArray(fam)&&fam.length){ const have=new Set(LY_FAM.map(x=>x[0])); fam.forEach(([f,src])=>{ try{ const i=LY_FAM.findIndex(x=>x[0]===f); const re=new RegExp(src); if(i>=0) LY_FAM[i]=[f,re]; else if(LY_W[f]!==undefined){ LY_FAM.push([f,re]); } }catch(e){} }); } }catch(e){}
   let n=0;
   if(tips&&typeof tips==="object"){ Object.entries(tips).forEach(([k,v])=>{ if(HTIPS[k]!==v){ HTIPS[k]=v; n++; } }); }
   if(Array.isArray(steps)&&steps.length&&JSON.stringify(steps)!==JSON.stringify(HW_STEPS)){ HW_STEPS.splice(0,HW_STEPS.length,...steps); n++; }
