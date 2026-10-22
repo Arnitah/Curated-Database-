@@ -41789,5 +41789,274 @@
    "creator": "Safer version of Vlogger lama's whip",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "glycerin-hand-and-body-cream-glysolid-style",
+  "name": "Glycerin hand and body cream (Glysolid-style)",
+  "claim": "Rich, non-greasy glycerin cream for hands, elbows and heels",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Glysolid's work is done by water, glycerin and a simple emulsifier; its long perfume list is left out. Heat the water phase (water, glycerin, allantoin) and oil phase (Olivem, sunflower, shea) separately to 70°C, blend, cool below 40°C, stir in the preservative. Scale in grams; keeps about 6 months with Geogard. Fragrance-free, so it's gentler than the original.",
+  "rows": [
+   [
+    "water",
+    70,
+    "g"
+   ],
+   [
+    "glycerin",
+    10,
+    "g"
+   ],
+   [
+    "allantoin",
+    0.5,
+    "g"
+   ],
+   [
+    "olivem",
+    5,
+    "g"
+   ],
+   [
+    "sunflower",
+    9,
+    "g"
+   ],
+   [
+    "shea",
+    4,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Glysolid Glycerin Cream",
+   "platform": "Store product"
+  }
+ },
+ {
+  "id": "aloe-petroleum-jelly-herbolene-style",
+  "name": "Aloe petroleum jelly (Herbolene-style)",
+  "claim": "Seals in moisture on dry skin, lips and heels",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Herbolene is mineral oil and wax with a little aloe extract and perfume. Warm the petroleum jelly just until soft, stir in aloe oil and vitamin E, pour into a tin. No water, so it keeps for a year. Apply on damp skin.",
+  "rows": [
+   [
+    "petrolatum",
+    100,
+    "g"
+   ],
+   [
+    "aloeoil",
+    5,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Dabur Herbolene Aloe Jelly",
+   "platform": "Store product"
+  }
+ },
+ {
+  "id": "tomato-berry-aha-body-polish-alina-style",
+  "name": "Berry AHA body polish (Alina Tomato Berry scrub-style)",
+  "claim": "Smooths rough, bumpy skin",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "A gentle-acid polish built like the Rosé petal polish: mandelic acid (the mildest AHA) in an oil scrub that rinses milky. Beetroot gives the pink colour; tomato and berry extracts in the original are colour and story. Use 2 to 3 times a week on damp skin, not on freshly shaved skin, and cover up in the sun for a week after. Scoop with a dry spoon.",
+  "rows": [
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "jojobabeads",
+    5,
+    "g"
+   ],
+   [
+    "shea",
+    10,
+    "g"
+   ],
+   [
+    "raspberryseed",
+    14,
+    "g"
+   ],
+   [
+    "polysorbate80",
+    3,
+    "g"
+   ],
+   [
+    "mandelic",
+    4,
+    "g"
+   ],
+   [
+    "beetrootpow",
+    1,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Alina Tomato Berry AHA Scrub",
+   "platform": "Store product"
+  }
+ },
+ {
+  "id": "creamy-scrub-cream-kream-kap-style",
+  "name": "Creamy face and body scrub cream (Kream Kap-style)",
+  "claim": "A soft exfoliating cream that rinses clean",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Jojoba beads polish without scratching and don't dissolve in the cream (sugar and salt would). Make it like a lotion: heat water, glycerin and xanthan, and Olivem with sunflower, separately to 70°C, blend, cool below 40°C, add preservative, then fold in the beads. Gentle enough for the face once a week.",
+  "rows": [
+   [
+    "water",
+    72,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.3,
+    "g"
+   ],
+   [
+    "olivem",
+    5,
+    "g"
+   ],
+   [
+    "sunflower",
+    10,
+    "g"
+   ],
+   [
+    "jojobabeads",
+    8,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Kream Kap scrub cream",
+   "platform": "Store product"
+  }
+ },
+ {
+  "id": "rose-facial-bar-sinkrose-style",
+  "name": "Rose facial cleansing bar (Sinkrose-style)",
+  "claim": "A gentle, rose-scented face bar",
+  "type": "face_rinse",
+  "use": "store",
+  "note": "Melt the base, stir in rose water, rose powder and glycerin, add the rose oil just before pouring. The original's niacinamide is left out: in a soap it rinses away before it can do anything. Use a leave-on niacinamide serum if you want brightening.",
+  "rows": [
+   [
+    "soapbase",
+    100,
+    "g"
+   ],
+   [
+    "hydrosol",
+    5,
+    "g"
+   ],
+   [
+    "rosepowder",
+    0.5,
+    "g"
+   ],
+   [
+    "glycerin",
+    2,
+    "g"
+   ],
+   [
+    "roseeo",
+    2,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of SEÑO Sinkrose Facial Cleansing Soap",
+   "platform": "Store product"
+  }
+ },
+ {
+  "id": "seven-herb-shampoo-bar-fuwari-style",
+  "name": "Seven-herb shampoo bar (Fuwari-style)",
+  "claim": "Cleans the scalp with the same herbs",
+  "type": "hair_rinse",
+  "use": "store",
+  "note": "Uses the Fuwari herbs (rosemary, butterfly pea, ginseng, ginger, horsetail) in a melt-and-pour shampoo base. Grind the herbs finely so they rinse out. It's a pleasant herbal shampoo, but no shampoo regrows hair; for thinning, minoxidil is the proven option.",
+  "rows": [
+   [
+    "shampoobase",
+    100,
+    "g"
+   ],
+   [
+    "rosemaryherb",
+    1,
+    "g"
+   ],
+   [
+    "butterflypea",
+    0.5,
+    "g"
+   ],
+   [
+    "ginseng",
+    0.5,
+    "g"
+   ],
+   [
+    "gingerpowder",
+    0.3,
+    "g"
+   ],
+   [
+    "horsetail",
+    0.5,
+    "g"
+   ],
+   [
+    "rosemary",
+    8,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Dupe of Fuwari 7 Herbs Shampoo",
+   "platform": "Store product"
+  }
  }
 ]

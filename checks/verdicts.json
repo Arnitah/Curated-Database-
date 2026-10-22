@@ -6105,5 +6105,31 @@
  "shea-and-jelly-body-butter-no-water": {
   "verdict": "ok",
   "flags": []
+ },
+ "glycerin-hand-and-body-cream-glysolid-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "aloe-petroleum-jelly-herbolene-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tomato-berry-aha-body-polish-alina-style": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "creamy-scrub-cream-kream-kap-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-facial-bar-sinkrose-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "seven-herb-shampoo-bar-fuwari-style": {
+  "verdict": "ok",
+  "flags": []
  }
 }
