@@ -1,0 +1,287 @@
+[
+ [
+  "carbon impact|climate pledge|carbon[- ]neutral|lower carbon|eco[- ]friendly packaging",
+  "Carbon impact or eco badges",
+  "A third-party audited product footprint (like Amazon's Climate Pledge Friendly carbon badge or an FSC packaging logo) is meaningful. A vague \"eco-friendly\" or \"carbon neutral\" with no named certifier usually isn't. Bars generally beat liquid soap: less water to ship, less plastic, and people use less per wash."
+ ],
+ [
+  "toning (and|&) clarifying|clarifying (bar|soap)|tingl(e|ing) means|you can feel it working",
+  "Toning, clarifying, or \"feel it working\"",
+  "A tingle usually comes from menthol, mint oils, alcohol or fragrance: a cooling sensation, not deeper cleaning. On the face it can mean irritation."
+ ],
+ [
+  "antibacterial (soap|bar|wash)|kills 99",
+  "Antibacterial soap",
+  "For everyday washing, plain soap and water remove germs just as well. Antibacterial bars are handy for odour on underarms and feet."
+ ],
+ [
+  "steroid[- ]free|plants? over (harsh )?steroids|alternative to steroids|no steroids",
+  "Steroid-free",
+  "A good daily balm helps between flares, but it isn't a replacement for prescribed treatment during an active flare. Check it's also fragrance- and essential-oil-free."
+ ],
+ [
+  "look (up to )?\\d+ years younger|years younger in \\d+ days",
+  "Look X years younger",
+  "Usually expert grading of photos in a small, brand-funded test (often 30 to 40 people), with no comparison group using a plain moisturizer. Hydration alone makes skin look better within days."
+ ],
+ [
+  "whole (seed|plant|herb|root)( offers| is| has)? (more|better)|more than the (extract|isolate)|full[- ]spectrum (plant|herb|seed)",
+  "Whole plant beats the extract",
+  "Not automatically. Extracts are often purified to remove the risky parts: bakuchiol leaves out psoralen, which burns skin in sunlight. Whole means more of everything, good and bad."
+ ],
+ [
+  "sun ?(cushion|compact|stick|powder)|spf (cushion|compact|powder|stick)|(cushion|compact|powder) (sunscreen|spf)",
+  "Sunscreen cushion or compact",
+  "Great for top-ups, but a puff carries a fraction of the amount used in SPF testing. Apply a normal sunscreen first; reapply with the compact."
+ ],
+ [
+  "nature'?s collagen|plant collagen|vegan collagen|collagen[- ]boosting (food|drink|broth|gum)|vegan bone broth",
+  "Nature's or plant collagen",
+  "Plants don't contain collagen. Some foods (vitamin C, protein) help your body make its own; peach gum and snow fungus are hydrating plant gums."
+ ],
+ [
+  "lock(s)? in moisture|seals? in moisture",
+  "Locks in moisture",
+  "Powders absorb moisture rather than holding it in. Oils, butters and occlusives like petrolatum are what seal water into skin."
+ ],
+ [
+  "sell by weight|by weight,? not (by )?jar size|room to breathe",
+  "Sold by weight",
+  "Fair: powders are sold by weight, and loose powder fluffs up. Compare price per gram, not jar size."
+ ],
+ [
+  "\\d+ ?washes|equal to \\d+ bottles|saves up to \\d+ (plastic )?bottles|replaces \\d+ bottles",
+  "Lasts X washes",
+  "Solid bars contain no water, so they're concentrated. The count depends on hair length and how dry you keep the bar between uses; a soggy bar lasts half as long."
+ ],
+ [
+  "for hair growth|grows? hair|hair growth",
+  "Hair growth",
+  "Rinse-off products can't grow hair; they're on the scalp for under a minute. Only minoxidil (and prescription treatments) have solid evidence. Less breakage can look like growth."
+ ],
+ [
+  "irritation[- ]free|non[- ]irritating|won'?t irritate",
+  "Irritation-free",
+  "Not a regulated claim. Check for fragrance, citrus oils and camphor, the usual irritants on shaved or sensitive skin."
+ ],
+ [
+  "triple[- ]milled",
+  "Triple-milled",
+  "Soap pressed through rollers three times: harder, longer-lasting and smoother. It's about texture, not gentleness."
+ ],
+ [
+  "bikini (bright|lighten|whiten)|intimate (brighten|lighten)|inner thigh (bright|lighten)|dark spot.*bikini",
+  "Bikini brightening",
+  "Azelaic acid, alpha arbutin and niacinamide can slowly fade friction darkening over 8 to 12 weeks. Use on outer skin only, never inside intimate areas, and reduce friction so it doesn't return."
+ ],
+ [
+  "time[- ]released fragrance|long[- ]lasting fragrance|fragrance technology",
+  "Time-released fragrance",
+  "Encapsulated perfume that bursts as you move and sweat, so you smell it longer. It also means fragrance sits on skin longer, which matters if you react to scents."
+ ],
+ [
+  "glowing face|natural glow|glow naturally",
+  "Glow from powder",
+  "Powder can soften shine and blur, but it doesn't change skin. Perfumed powder on the face is a common irritant."
+ ],
+ [
+  "\\d+ ?% naturally derived|naturally derived ingredients",
+  "Naturally derived %",
+  "Usually counted by weight, so mined talc or chalk can make a product 97% \"naturally derived\". It says nothing about safety or gentleness."
+ ],
+ [
+  "with sun protection|sun protection|uv protect",
+  "Sun protection in a non-sunscreen",
+  "Unless it shows an SPF number and is sold as sunscreen, it hasn't been tested to protect you. Use a real sunscreen."
+ ],
+ [
+  "jock itch|athlete'?s foot|anti[- ]?fungal",
+  "Jock itch or fungal claim",
+  "Keeping skin dry helps prevent fungal rashes, but only antifungal ingredients (clotrimazole, miconazole, terbinafine) treat them."
+ ],
+ [
+  "phthalate[- ]free",
+  "Phthalate-free",
+  "Phthalates (mainly DEP) were used to make fragrance last. Many brands have dropped them, so it's a fair claim, but the fragrance allergens are still there. Unscented is the real low-risk choice."
+ ],
+ [
+  "no (chemical|heavy) fixatives?|free from (heavy )?fixatives|natural fragrance oils?",
+  "Natural fragrance or no fixatives",
+  "\"Natural fragrance oil\" usually still means a blended fragrance, not essential oils. No fixatives just means the scent fades faster; it doesn't make it gentler on skin."
+ ],
+ [
+  "increase(s)? (blood )?circulation|boost(s)? circulation|remove(s)? excess fluid|lymphatic drain",
+  "Circulation or drainage",
+  "Warmth, rubbing and massage bring blood to the surface for a short time and can ease puffiness. It doesn't detox, burn fat or reshape legs. Ongoing or one-sided swelling needs a doctor."
+ ],
+ [
+  "naturally antimicrobial|all[- ]natural preservative|natural preservative",
+  "Natural preservative",
+  "Plant extracts like aspen bark, rosemary or grapefruit seed are weak preservatives on their own. Water-free products (powders, balms, oils) don't need one; water-based ones need a tested preservative."
+ ],
+ [
+  "corn[- ]free",
+  "Corn-free",
+  "Useful if you have a corn allergy: arrowroot, tapioca or rice starch replace cornstarch. It doesn't make the powder gentler for everyone else."
+ ],
+ [
+  "occurs naturally in essential oils|naturally occurring|from essential oils|self[- ]preserving",
+  "Naturally occurring or self-preserving",
+  "Allergens like linalool, citral and coumarin act the same on skin whether they come from a plant or a lab. \"Self-preserving\" is real for water-free products like powders, balms and oils, but it means no water, not that the product is gentler."
+ ],
+ [
+  "since 1[89]\\d\\d|heritage|ancestral|centuries[- ]old|time[- ]tested",
+  "Heritage claim",
+  "A long history shows a brand has lasted, not that today's formula works or is safe. Check the current ingredient list."
+ ],
+ [
+  "24[- ]?hour skincare|wear (it )?while (you )?sleep|sleeping powder|overnight powder|no need to (wash|remove)",
+  "Wear it to bed",
+  "A light, unscented powder on clean skin is fine for most people overnight. Fragrance sitting on skin all night is what's most likely to irritate. Preservatives like parabens and phenoxyethanol are safe at cosmetic levels but can bother very sensitive skin after 24 hours. If you're acne-prone or sensitive, wash it off at night. It doesn't treat skin while you sleep."
+ ],
+ [
+  "formulated without|free (from|of) (parabens|phenoxyethanol|silicones|peg)|paraben[- ]free|phenoxyethanol[- ]free|silicone[- ]free",
+  "Free-from list",
+  "\"Formulated without\" lists the ingredients people fear, not ones that are unsafe. Parabens and phenoxyethanol are among the best-studied preservatives; the product still uses others (often sodium benzoate or chlorphenesin). Silicone-free isn't better for skin either. Check the fragrance allergens instead."
+ ],
+ [
+  "filler[- ]effect|instant lift|lifting effect|redefine (facial )?contours|botox[- ]like",
+  "Instant filler or lift",
+  "Hyaluronic acid and film-formers swell and tighten the surface for a few hours. Nothing in a cream lifts contours or fills lines like an injection."
+ ],
+ [
+  "alternative to retinol|retinol alternative|nature'?s retinol|as effective as retinol|plant[- ]based retinol",
+  "Retinol alternative",
+  "Only bakuchiol has small head-to-head studies against retinol. Other \"natural retinols\" usually rest on brand-funded tests with a few dozen people. If you can use a retinoid, it's still the proven option."
+ ],
+ [
+  "\\d+ ?% (of )?(consumers|users|women|people|participants)|consumer test|self[- ]assess",
+  "Self-reported results",
+  "\"100% of consumers said\" means a small group rated their own skin, often fewer than 50 people. It tells you they liked it, not that it measurably worked."
+ ],
+ [
+  "in[- ]?vitro|more (effective|powerful) than vitamin [ce]\\b",
+  "Lab-only test",
+  "In-vitro means tested in a dish, not on skin. Plenty of ingredients win in a dish and do little in a cream."
+ ],
+ [
+  "pm ?2\\.?5|anti[- ]?pollution|pollution (shield|filter)|blue light",
+  "Anti-pollution",
+  "A film-forming layer and antioxidants may reduce some pollution contact, but evidence on real skin is thin. Cleansing at night removes most of it."
+ ],
+ [
+  "pdrn|salmon dna|polydeoxyribonucleotide|exosome",
+  "PDRN and exosomes",
+  "Trendy Korean actives. PDRN (salmon DNA) has some evidence in injected or clinic treatments; plant exosomes and PDRN in creams or scalp serums have very little human evidence. Judge the product by its proven ingredients."
+ ],
+ [
+  "lash growth|grows? (your )?lashes|longer lashes|prostaglandin[- ]free",
+  "Lash growth",
+  "Only prostaglandin-type ingredients (bimatoprost, isopropyl cloprostenate) clearly lengthen lashes, and they can darken eyelids. Prostaglandin-free serums with peptides and biotin condition lashes and cut breakage, which is gentler but more modest."
+ ],
+ [
+  "protect(s)? (hair )?from heat up to|heat protect|450 ?°?f|230 ?°?c",
+  "Heat protection up to 450°F",
+  "Leave-ins with silicones and polymers reduce some heat damage, but no spray makes hair safe at 450°F. Keep irons at 180 to 200°C (350 to 390°F) and use them on dry hair."
+ ],
+ [
+  "clinical[- ]?strength|clinically proven|clinical actives",
+  "Clinical-strength",
+  "Not a regulated term. Look for the percentage of each active; without it you can't judge strength."
+ ],
+ [
+  "dermatologist[- ]?(trusted|tested|approved|recommended)",
+  "Dermatologist-trusted",
+  "A dermatologist may have tried it on a few people. It isn't a standard or a guarantee."
+ ],
+ [
+  "in (just )?\\d+ (days|weeks)|overnight results|instant(ly)? (brighter|results|glow)",
+  "Fast results",
+  "Skin renews about every 4 to 6 weeks, and dark spots take 8 to 12 weeks with leave-on actives. Quick claims usually mean skin feels smoother, not that spots fade."
+ ],
+ [
+  "join thousands|thousands (of|who)|best[- ]?seller|viral|cult favou?rite",
+  "Social proof",
+  "Popular isn't the same as proven. Look for the ingredients and percentages instead."
+ ],
+ [
+  "24[- ]?h(ou)?r|all[- ]day hydration|72[- ]?h",
+  "24-hour hydration",
+  "Usually a small brand-run test with a moisture meter. Most decent moisturizers can claim this."
+ ],
+ [
+  "\\d+[- ]in[- ]1|all[- ]in[- ]one|one simple step|one step",
+  "All-in-one",
+  "Many claims from one product usually means none is strong. A cleanser can't also treat dark spots or acne."
+ ],
+ [
+  "sulfate[- ]free|no sls|sls[- /]?sles",
+  "Sulfate-free",
+  "Fine, but sulfates aren't harmful for most people. Check every product's list: some brands that say sulfate-free still use SLES elsewhere."
+ ],
+ [
+  "ph[- ]balanced",
+  "pH-balanced",
+  "Good in a liquid cleanser. Traditional soap bars are alkaline (around pH 9 to 10), so a true soap can't be pH-balanced."
+ ],
+ [
+  "brighten|whiten|lighten|glass skin|radian|glow",
+  "Brightening or glass skin",
+  "Vague. Real tone-evening needs leave-on niacinamide, azelaic acid, alpha arbutin or tranexamic acid, plus daily sunscreen. \"Glass skin\" is a look from hydration and lighting."
+ ],
+ [
+  "stretch marks?",
+  "Fades stretch marks",
+  "No cream reliably fades stretch marks. New red marks respond best to tretinoin or laser from a dermatologist; moisturizers only soften the skin."
+ ],
+ [
+  "chemical[- ]free|non[- ]?toxic|toxins?|detox",
+  "Chemical-free or detox",
+  "Everything is made of chemicals, and skin doesn't hold \"toxins\" a product can pull out."
+ ],
+ [
+  "\\bnatural\\b|organic|plant[- ]powered|nature & science|nature and science",
+  "Natural",
+  "Natural isn't automatically safer or better. Poison ivy is natural; many safe preservatives are lab-made."
+ ],
+ [
+  "absorbs?( \\d+x)? better|deep(ly)? penetrat|from within|cellular level",
+  "Deep penetration",
+  "Most skincare works in the top layers of skin. \"From within\" and \"at the cellular level\" are marketing language."
+ ],
+ [
+  "barrier[- ]?(repair|first)|repairs? (the |skin.s |your )?barrier|restores? .{0,20}barrier",
+  "Barrier repair",
+  "Real when a leave-on has ceramides, glycerin, fatty acids or niacinamide. A wash can't repair the barrier; at best it doesn't damage it."
+ ],
+ [
+  "anti[- ]?aging|wrinkles?|fine lines|firming|lifting",
+  "Anti-aging",
+  "Proven: daily sunscreen and retinoids, then vitamin C and peptides. \"Firming\" in a moisturizer is temporary plumping."
+ ],
+ [
+  "sensitive skin|gentle|all skin (types|tones)",
+  "For sensitive skin",
+  "Check for fragrance and essential oils, the most common irritants. \"Gentle\" has no legal definition."
+ ],
+ [
+  "pores?[- ]?(refin|minimi|tighten)|minimi[sz]es? (the appearance of )?pores",
+  "Pore refining",
+  "Pores don't open or close. Salicylic acid and niacinamide can make them look smaller over weeks."
+ ],
+ [
+  "blemish|acne|breakouts?",
+  "Clears blemishes",
+  "Look for salicylic acid, benzoyl peroxide, adapalene or azelaic acid. Without one, it's just cleansing or moisturizing."
+ ],
+ [
+  "scientifically formulated|science[- ]backed|powered by science|science meets",
+  "Science-backed",
+  "Ask which studies, done on this product. Usually none are linked."
+ ],
+ [
+  "luxur|spa ritual|premium",
+  "Luxury",
+  "Packaging and feel. Price doesn't predict results."
+ ]
+]

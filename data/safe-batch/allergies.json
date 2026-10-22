@@ -1,0 +1,74 @@
+{
+ "nuts": {
+  "label": "Tree nuts"
+ },
+ "legume": {
+  "label": "Peanuts and legumes",
+  "ids": [
+   "fenugreek",
+   "besan",
+   "masoor"
+  ]
+ },
+ "dairy": {
+  "label": "Dairy",
+  "ids": [
+   "milk",
+   "yogurt",
+   "sourcream",
+   "milkpowder",
+   "camelmilk"
+  ]
+ },
+ "bee": {
+  "label": "Bee products (honey, beeswax)",
+  "ids": [
+   "honey",
+   "honeypowder",
+   "beeswax"
+  ]
+ },
+ "ragweed": {
+  "label": "Ragweed or daisy family",
+  "ids": [
+   "chamomile",
+   "chamomileflower",
+   "calendula",
+   "burdock",
+   "yarrow",
+   "safflower",
+   "bluetansy"
+  ]
+ },
+ "scent": {
+  "label": "Fragrance or essential oils"
+ },
+ "coconut": {
+  "label": "Coconut",
+  "ids": [
+   "coconut",
+   "coconutmilk",
+   "coconutmilkpow"
+  ]
+ },
+ "sesame": {
+  "label": "Sesame",
+  "ids": [
+   "sesame"
+  ]
+ },
+ "latex": {
+  "label": "Latex (banana, avocado, papaya cross-react)",
+  "ids": [
+   "banana",
+   "avocado",
+   "papaya"
+  ]
+ },
+ "fish": {
+  "label": "Fish or shellfish",
+  "ids": [
+   "collagenpow"
+  ]
+ }
+}

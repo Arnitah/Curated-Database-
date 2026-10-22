@@ -1,0 +1,26 @@
+{
+ "Winter": {
+  "feel": "Cold air and indoor heating pull water out of skin.",
+  "lean": "Creams, balms, glycerin, ceramides, shea, squalane, oils at night.",
+  "ease": "Foaming cleansers, strong acids, alcohol toners.",
+  "make": "Lip balm, body butter, face oil"
+ },
+ "Spring": {
+  "feel": "Pollen and swinging temperatures can make skin reactive.",
+  "lean": "Lotions, calming centella, oat, niacinamide; restart SPF habits.",
+  "ease": "New strong actives all at once during allergy flares.",
+  "make": "Oat mask, chamomile toner (preserved), light face oil"
+ },
+ "Summer": {
+  "feel": "Heat, sweat and UV: more oil, more sun damage.",
+  "lean": "Gels, water-resistant SPF 50, antioxidants, gentle double cleanse.",
+  "ease": "Heavy oils by day, citrus oils on skin, retinoids without strict SPF.",
+  "make": "Aloe mist (fridge), clay mask, light body oil"
+ },
+ "Autumn": {
+  "feel": "Air turns dry; summer sun damage shows.",
+  "lean": "Back to richer layers, retinoids or azelaic for spots, hydrating toners.",
+  "ease": "Over-exfoliating to fix summer texture.",
+  "make": "Rich cream, body oil, honey mask"
+ }
+}

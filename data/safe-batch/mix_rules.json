@@ -1,0 +1,182 @@
+[
+ [
+  [
+   "retinoid",
+   "aha"
+  ],
+  "care",
+  "Retinoid and AHA: not on the same night",
+  "Both make skin turn over faster. Use them on alternate nights, or acid once or twice a week."
+ ],
+ [
+  [
+   "retinoid",
+   "bha"
+  ],
+  "care",
+  "Retinoid and salicylic acid: alternate nights",
+  "Together they often cause peeling and stinging. A salicylic wash in the morning is a gentler way to keep both."
+ ],
+ [
+  [
+   "retinoid",
+   "peel"
+  ],
+  "stop",
+  "Don't peel while using a retinoid",
+  "Skip peels entirely, or pause the retinoid for a week before and after, ideally with a professional's advice."
+ ],
+ [
+  [
+   "retinoid",
+   "scrub"
+  ],
+  "care",
+  "Go easy on scrubs with a retinoid",
+  "Retinoid-treated skin is thinner on top and tears more easily. Swap the scrub for a soft cloth."
+ ],
+ [
+  [
+   "retinoid",
+   "bpo"
+  ],
+  "care",
+  "Benzoyl peroxide in the morning, retinoid at night",
+  "Benzoyl peroxide can break down tretinoin and retinol. Adapalene is stable with it, but splitting them still reduces dryness."
+ ],
+ [
+  [
+   "aha",
+   "bha"
+  ],
+  "care",
+  "One exfoliating acid is usually enough",
+  "Using an AHA and a BHA daily is a common cause of over-exfoliation. Pick one, or alternate days."
+ ],
+ [
+  [
+   "aha",
+   "peel"
+  ],
+  "stop",
+  "Don't add a peel on top of daily acids",
+  "That's two exfoliating acids in one go. Stop the daily acid for a few days around a peel."
+ ],
+ [
+  [
+   "bha",
+   "peel"
+  ],
+  "stop",
+  "Don't add a peel on top of daily acids",
+  "That's two exfoliating acids in one go. Stop the daily acid for a few days around a peel."
+ ],
+ [
+  [
+   "aha",
+   "scrub"
+  ],
+  "care",
+  "Acid or scrub, not both on the same day",
+  "Both remove the top layer of skin."
+ ],
+ [
+  [
+   "bha",
+   "scrub"
+  ],
+  "care",
+  "Acid or scrub, not both on the same day",
+  "Both remove the top layer of skin."
+ ],
+ [
+  [
+   "vitc",
+   "aha"
+  ],
+  "info",
+  "Vitamin C in the morning, acid at night",
+  "Both are acidic and can sting together. Splitting them keeps both working."
+ ],
+ [
+  [
+   "vitc",
+   "bha"
+  ],
+  "info",
+  "Vitamin C in the morning, acid at night",
+  "Both are acidic and can sting together."
+ ],
+ [
+  [
+   "vitc",
+   "bpo"
+  ],
+  "care",
+  "Keep vitamin C and benzoyl peroxide apart",
+  "Benzoyl peroxide breaks down vitamin C. Use one in the morning and the other at night, or BPO only as a rinse-off wash."
+ ],
+ [
+  [
+   "vitc",
+   "niacin"
+  ],
+  "ok",
+  "Vitamin C and niacinamide are fine together",
+  "The idea that they cancel each other out came from old lab tests with pure chemicals at high heat. In today's products they work well together."
+ ],
+ [
+  [
+   "hq",
+   "bpo"
+  ],
+  "care",
+  "Hydroquinone and benzoyl peroxide can stain",
+  "Together they can leave a temporary dark tint on skin. Use them at different times of day."
+ ],
+ [
+  [
+   "hq",
+   "retinoid"
+  ],
+  "info",
+  "Hydroquinone with a retinoid",
+  "A common doctor-prescribed combination, but more irritating. Use it under a doctor's or pharmacist's guidance and limit hydroquinone to a few months."
+ ],
+ [
+  [
+   "teatree",
+   "retinoid"
+  ],
+  "care",
+  "Essential oils add irritation to a retinoid",
+  "Keep tea tree to a single spot treatment, or leave it out while using a retinoid."
+ ],
+ [
+  [
+   "teatree",
+   "aha"
+  ],
+  "info",
+  "Tea tree and acids",
+  "Fine as a spot treatment, but stacking both across the face increases stinging."
+ ],
+ [
+  [
+   "azelaic",
+   "retinoid"
+  ],
+  "ok",
+  "Azelaic acid and a retinoid work well together",
+  "Introduce them one at a time; azelaic acid can tingle for the first week or two."
+ ],
+ [
+  [
+   "azelaic",
+   "niacin"
+  ],
+  "ok",
+  "Azelaic acid and niacinamide pair well",
+  "Both calm redness and even tone."
+ ]
+]

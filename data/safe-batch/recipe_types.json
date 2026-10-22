@@ -1,0 +1,77 @@
+{
+ "face_leave": {
+  "label": "Face, leave on (oil, serum, cream)",
+  "short": "leave-on face products",
+  "eo": 1
+ },
+ "face_rinse": {
+  "label": "Face, rinse off (mask, cleanser)",
+  "short": "rinse-off face products",
+  "eo": 1
+ },
+ "body_leave": {
+  "label": "Body, leave on (butter, oil, lotion)",
+  "short": "leave-on body products",
+  "eo": 2
+ },
+ "body_rinse": {
+  "label": "Body, rinse off (scrub, wash)",
+  "short": "rinse-off body products",
+  "eo": 2
+ },
+ "lip": {
+  "label": "Lips (balm, scrub)",
+  "short": "lip products",
+  "eo": 0.5
+ },
+ "hair_rinse": {
+  "label": "Hair, rinse out (mask, rinse, conditioner)",
+  "short": "rinse-out hair products",
+  "eo": 2
+ },
+ "hair_leave": {
+  "label": "Hair and scalp, leave in (spray, oil, overnight)",
+  "short": "leave-in hair and scalp products",
+  "eo": 1
+ },
+ "soak": {
+  "label": "Bath or foot soak (diluted in water)",
+  "short": "soaks",
+  "eo": 0
+ },
+ "intimate": {
+  "label": "Intimate area, external only (yoni oil)",
+  "short": "intimate products",
+  "eo": 0
+ },
+ "oral": {
+  "label": "Mouth (toothpaste, tooth powder, mouthwash)",
+  "short": "oral products",
+  "eo": 1
+ },
+ "perfume": {
+  "label": "Perfume roll-on (small spots only)",
+  "short": "perfume roll-ons on pulse points",
+  "eo": 5
+ },
+ "deodorant": {
+  "label": "Deodorant (underarms)",
+  "short": "deodorants",
+  "eo": 1
+ },
+ "steamer": {
+  "label": "Shower steamer (not applied to skin)",
+  "short": "shower steamers",
+  "eo": 0
+ },
+ "eye": {
+  "label": "Eye area (lashes, brows, mascara, kajal)",
+  "short": "eye-area products",
+  "eo": 0
+ },
+ "sugar_wax": {
+  "label": "Sugar wax (hair removal)",
+  "short": "sugar wax",
+  "eo": 0
+ }
+}

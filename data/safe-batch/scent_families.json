@@ -1,0 +1,42 @@
+[
+ [
+  "fruity",
+  "strawberr|raspberr|berr|currant|cassis|mango|lychee|litchi|peach|apricot|\\bpear\\b(?! blossom)|apple|cherry|plum|fig|melon|pineapple|coconut|passion ?fruit|guava|dragon ?fruit|a[cç]a[ií]|litchi|mulberr|pineapple"
+ ],
+ [
+  "citrus",
+  "bergamot|lemon|orange(?! blossom)|grapefruit|mandarin|yuzu|lime|citrus"
+ ],
+ [
+  "floral",
+  "rose|jasmine|lily|muguet|pansy|lotus|orris|violet(?! lea)|peony|honeysuckle|blossom|orchid|tuberose|gardenia|magnolia|freesia|iris|lavender|ylang|neroli|white flower|petal|floral"
+ ],
+ [
+  "green",
+  "lea(f|ves)|green|\\btea\\b|grass|basil|\\bmint"
+ ],
+ [
+  "gourmand",
+  "vanilla|caramel|sugar|cotton candy|honey(?!suckle|dew)|chocolate|praline|tonka|almond|milk|cream|marshmallow|toffee|meringue|butter|cookie"
+ ],
+ [
+  "woody",
+  "sandalwood|cedar|amberwood|\\bwood|vetiver|patchouli|\\boud|guaiac|cashmeran|\\bmoss"
+ ],
+ [
+  "amber",
+  "\\bamber\\b|benzoin|labdanum|resin|incense|myrrh"
+ ],
+ [
+  "musk",
+  "musk"
+ ],
+ [
+  "aquatic",
+  "\\bsea\\b|marine|ocean|aquatic|water|salt|ozonic|rain"
+ ],
+ [
+  "spicy",
+  "pepper|cinnamon|cardamom|clove|ginger|saffron|nutmeg"
+ ]
+]

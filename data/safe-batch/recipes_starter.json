@@ -1,0 +1,250 @@
+[
+ {
+  "name": "Oat and honey calming mask",
+  "type": "face_rinse",
+  "use": "now",
+  "blurb": "A soothing mask for dry, tight, or easily upset skin. Mix it fresh for one use.",
+  "rows": [
+   [
+    "oats",
+    2,
+    "tbsp"
+   ],
+   [
+    "honey",
+    1,
+    "tsp"
+   ],
+   [
+    "water",
+    2,
+    "tsp"
+   ]
+  ],
+  "steps": [
+   "Stir the oatmeal and honey together.",
+   "Add water a little at a time until it's a spreadable paste.",
+   "Apply to clean skin, leave 10 minutes, then rinse with lukewarm water."
+  ],
+  "keeps": "Single use. Discard leftovers."
+ },
+ {
+  "name": "Barrier face oil",
+  "type": "face_leave",
+  "use": "store",
+  "blurb": "A light, gentle face oil with a trace of lavender. Leave out the lavender for very sensitive skin.",
+  "rows": [
+   [
+    "jojoba",
+    20,
+    "ml"
+   ],
+   [
+    "sunflower",
+    8,
+    "ml"
+   ],
+   [
+    "rosehip",
+    2,
+    "ml"
+   ],
+   [
+    "vite",
+    5,
+    "drops"
+   ],
+   [
+    "lavender",
+    3,
+    "drops"
+   ]
+  ],
+  "steps": [
+   "Sanitize a 30 ml dark glass dropper bottle.",
+   "Add the oils, vitamin E, and lavender. Cap and roll gently to mix.",
+   "Use 2 to 3 drops on damp skin at night."
+  ],
+  "keeps": "About 3 months in the fridge, because of the rosehip."
+ },
+ {
+  "name": "Whipped shea body butter",
+  "type": "body_leave",
+  "use": "store",
+  "blurb": "A rich, fluffy butter for dry elbows, knees, and legs.",
+  "rows": [
+   [
+    "shea",
+    60,
+    "g"
+   ],
+   [
+    "mango",
+    20,
+    "g"
+   ],
+   [
+    "sunflower",
+    20,
+    "ml"
+   ],
+   [
+    "vite",
+    1,
+    "g"
+   ],
+   [
+    "lavender",
+    15,
+    "drops"
+   ]
+  ],
+  "steps": [
+   "Melt the shea and mango butter gently over a water bath.",
+   "Stir in the sunflower oil and vitamin E, then chill until soft-set (about 30 minutes).",
+   "Add the lavender and whip with a hand mixer for 3 to 5 minutes until fluffy.",
+   "Spoon into a clean jar."
+  ],
+  "keeps": "6 to 12 months if kept dry. Use a clean spoon, not wet hands."
+ },
+ {
+  "name": "Beeswax lip balm",
+  "type": "lip",
+  "use": "store",
+  "blurb": "A simple, unscented balm. Fills about four small tubes.",
+  "rows": [
+   [
+    "beeswax",
+    5,
+    "g"
+   ],
+   [
+    "shea",
+    5,
+    "g"
+   ],
+   [
+    "sunflower",
+    10,
+    "ml"
+   ],
+   [
+    "vite",
+    2,
+    "drops"
+   ]
+  ],
+  "steps": [
+   "Melt the beeswax and shea over a water bath.",
+   "Take off the heat, stir in the oil and vitamin E.",
+   "Pour into tubes or tins and let set at room temperature."
+  ],
+  "keeps": "About 12 months."
+ },
+ {
+  "name": "Brown sugar body scrub",
+  "type": "body_rinse",
+  "use": "store",
+  "blurb": "A softening body scrub. Use in the shower on dry patches, never on the face.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "sunflower",
+    50,
+    "ml"
+   ],
+   [
+    "orange",
+    10,
+    "drops"
+   ]
+  ],
+  "steps": [
+   "Mix the sugar and oil in a clean bowl.",
+   "Stir in the sweet orange oil.",
+   "Pack into a jar with a tight lid."
+  ],
+  "keeps": "About 6 months. Keep shower water out of the jar and scoop with a dry spoon."
+ },
+ {
+  "name": "Kaolin clay mask powder",
+  "type": "face_rinse",
+  "use": "store",
+  "blurb": "A dry mix you keep in a jar and wet one spoonful at a time. Suits normal and combination skin.",
+  "rows": [
+   [
+    "kaolin",
+    4,
+    "tbsp"
+   ],
+   [
+    "oats",
+    2,
+    "tbsp"
+   ]
+  ],
+  "steps": [
+   "Mix the powders and store in a dry, sealed jar.",
+   "For one mask, mix 1 tsp powder with 1 to 2 tsp distilled water or hydrosol.",
+   "Apply, and rinse after 8 to 10 minutes before it cracks."
+  ],
+  "keeps": "Many months while dry."
+ },
+ {
+  "name": "Rhassoul hammam mask",
+  "type": "face_rinse",
+  "use": "now",
+  "blurb": "The clay step from a Moroccan hammam routine. Suits normal to oily skin.",
+  "rows": [
+   [
+    "rhassoul",
+    1,
+    "tbsp"
+   ],
+   [
+    "hydrosol",
+    1.5,
+    "tbsp"
+   ]
+  ],
+  "steps": [
+   "Stir the clay and rose water into a smooth paste.",
+   "Spread over clean skin, avoiding the eyes.",
+   "Rinse with warm water after 5 to 10 minutes, before it cracks, then moisturize."
+  ],
+  "keeps": "Single use. Keep the dry clay in a sealed jar."
+ },
+ {
+  "name": "Classic sugaring paste",
+  "type": "sugar_wax",
+  "use": "store",
+  "blurb": "The traditional three-ingredient hair removal paste. Full method and temperatures are on the Sugaring tab.",
+  "rows": [
+   [
+    "sugar",
+    1,
+    "cup"
+   ],
+   [
+    "lemonjuice",
+    2,
+    "tbsp"
+   ],
+   [
+    "water",
+    2,
+    "tbsp"
+   ]
+  ],
+  "steps": [
+   "Stir everything over medium heat until the sugar dissolves.",
+   "Stop stirring once it boils and cook to 245–250°F (118–121°C), honey to amber in color.",
+   "Pour into a heat-safe jar and cool until warm and pliable. Test on your wrist before use."
+  ],
+  "keeps": "Several months sealed at room temperature."
+ }
+]

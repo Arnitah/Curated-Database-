@@ -1,0 +1,1972 @@
+[
+ [
+  "tea ?tree",
+  "teatree",
+  1
+ ],
+ [
+  "helichrysum",
+  "helichrysum",
+  1
+ ],
+ [
+  "cedarwood",
+  "cedarwood",
+  1
+ ],
+ [
+  "ylang",
+  "ylang",
+  1
+ ],
+ [
+  "jasmine (essential|absolute|oil)|\\d+ drops jasmine",
+  "jasmineeo",
+  1
+ ],
+ [
+  "clary sage",
+  "clarysage",
+  1
+ ],
+ [
+  "patchouli",
+  "patchouli",
+  1
+ ],
+ [
+  "hyssop",
+  "hyssop",
+  1
+ ],
+ [
+  "citronella",
+  "citronella",
+  1
+ ],
+ [
+  "vanilla",
+  "vanilla",
+  1
+ ],
+ [
+  "lemongrass",
+  "lemongrass",
+  1
+ ],
+ [
+  "blue tansy",
+  "bluetansy",
+  1
+ ],
+ [
+  "turmeric",
+  "turmericeo",
+  1
+ ],
+ [
+  "sandalwood",
+  "sandalwood",
+  1
+ ],
+ [
+  "rose (essential|otto|absolute)",
+  "roseeo",
+  1
+ ],
+ [
+  "myrrh",
+  "myrrh",
+  1
+ ],
+ [
+  "lavender",
+  "lavender",
+  1
+ ],
+ [
+  "frankincense",
+  "frankincense",
+  1
+ ],
+ [
+  "chamomile",
+  "chamomile",
+  1
+ ],
+ [
+  "geranium",
+  "geranium",
+  1
+ ],
+ [
+  "orange",
+  "orange",
+  1
+ ],
+ [
+  "rosemary",
+  "rosemary",
+  1
+ ],
+ [
+  "peppermint|\\bmint\\b",
+  "peppermint",
+  1
+ ],
+ [
+  "eucalyptus",
+  "eucalyptus",
+  1
+ ],
+ [
+  "bergamot",
+  "bergamot",
+  1
+ ],
+ [
+  "grapefruit seed|\\bgse\\b",
+  "gse"
+ ],
+ [
+  "grapefruit",
+  "grapefruit",
+  1
+ ],
+ [
+  "lemon",
+  "lemoneo",
+  1
+ ],
+ [
+  "\\blime\\b",
+  "limeeo",
+  1
+ ],
+ [
+  "cinnamon",
+  "cinnamonbark",
+  1
+ ],
+ [
+  "clove",
+  "clove",
+  1
+ ],
+ [
+  "vitamin e|tocopherol",
+  "vite"
+ ],
+ [
+  "amla (hair )?oil",
+  "amlaoil"
+ ],
+ [
+  "soap ?nuts?|reetha|sapindus",
+  "soapnut"
+ ],
+ [
+  "cosgard|geogard 221",
+  "cosgard"
+ ],
+ [
+  "liquid shampoo base|shampoo base \\(liquid\\)",
+  "liquidshampoo"
+ ],
+ [
+  "babchi|bakuchi (seed|oil|powder)|psoralea",
+  "babchi"
+ ],
+ [
+  "glycolic (acid )?toner|sadoer glycolic|7 ?% glycolic",
+  "glycolic"
+ ],
+ [
+  "sulfur|sulphur",
+  "sulfur"
+ ],
+ [
+  "food colou?r(ing)?|colou?ring|food dye",
+  "foodcolor"
+ ],
+ [
+  "sweet potato|batata doce",
+  "sweetpotato"
+ ],
+ [
+  "hydrolyzed rice protein|rice protein",
+  "riceprotein"
+ ],
+ [
+  "\\bbiotin\\b",
+  "biotin"
+ ],
+ [
+  "tapioca|manihot",
+  "tapioca"
+ ],
+ [
+  "polysorbate ?80",
+  "polysorbate80"
+ ],
+ [
+  "magnesium stearate|zinc stearate|zinc myristate",
+  "magstearate"
+ ],
+ [
+  "silk powder|sericite|hydrolyzed silk",
+  "silkpowder"
+ ],
+ [
+  "borage|borago officinalis",
+  "borage"
+ ],
+ [
+  "bone marrow|beef marrow|tutano",
+  "bonemarrow"
+ ],
+ [
+  "pine bark",
+  "pinebark"
+ ],
+ [
+  "hydroxy ?apatite|hydroxyapetite",
+  "hydroxyapatite"
+ ],
+ [
+  "sandalwood (chips?|powder|wood)|santalum album wood",
+  "sandalwoodchip"
+ ],
+ [
+  "black sesame seeds?",
+  "blacksesameseed"
+ ],
+ [
+  "peppercorns?|black pepper seeds?",
+  "peppercorn"
+ ],
+ [
+  "apricot (seed|shell|kernel powder)|walnut shell",
+  "apricotshell"
+ ],
+ [
+  "glycolic",
+  "glycolic"
+ ],
+ [
+  "ewedu|jute leaf|mrenda|molokhia|corchorus",
+  "jute"
+ ],
+ [
+  "myrrh (resin|tear|gum|powder)",
+  "myrrhresin"
+ ],
+ [
+  "white musk|musk oil|\\bmusk\\b|galaxolide|muscone",
+  "musk"
+ ],
+ [
+  "boswellia",
+  "frankincense"
+ ],
+ [
+  "mahlab|mahaleb|cherry kernel",
+  "mahlab"
+ ],
+ [
+  "lanolin|wool wax|wool fat",
+  "lanolin"
+ ],
+ [
+  "dandelion|taraxacum",
+  "dandelion"
+ ],
+ [
+  "nivea|store.?bought cream|cold cream",
+  "storecream"
+ ],
+ [
+  "gold (powder|flake|leaf)|24k gold|colloidal gold",
+  "goldflake"
+ ],
+ [
+  "xylitol",
+  "xylitol"
+ ],
+ [
+  "breast ?milk",
+  "breastmilk"
+ ],
+ [
+  "perfumer.?s alcohol|perfume alcohol|ethanol|sda ?40|everclear",
+  "perfumersalcohol"
+ ],
+ [
+  "ambunu|ceratotheca",
+  "ambunu"
+ ],
+ [
+  "okra",
+  "okra"
+ ],
+ [
+  "ximenia|sour plum oil",
+  "ximenia"
+ ],
+ [
+  "safou|african pear|dacryodes",
+  "safou"
+ ],
+ [
+  "kpangnan|pentadesma",
+  "kpangnan"
+ ],
+ [
+  "kigelia|sausage tree",
+  "kigelia"
+ ],
+ [
+  "myrothamnus|resurrection plant",
+  "resurrection"
+ ],
+ [
+  "atile|canarium",
+  "atileresin"
+ ],
+ [
+  "prekese|aidan fruit|tetrapleura",
+  "prekese"
+ ],
+ [
+  "camwood|\\buhie\\b|\\bosun\\b|baphia",
+  "camwood"
+ ],
+ [
+  "\\bnzu\\b|\\befun\\b|orhue",
+  "nzu"
+ ],
+ [
+  "indigo",
+  "indigo"
+ ],
+ [
+  "\\buli\\b",
+  "uli"
+ ],
+ [
+  "white flower",
+  "whiteflower"
+ ],
+ [
+  "mango lea",
+  "mangoleaf"
+ ],
+ [
+  "vanilla (bean|pod)",
+  "vanillabean"
+ ],
+ [
+  "body wash base|unscented body wash",
+  "bodywashbase"
+ ],
+ [
+  "guava lea",
+  "guavaleaf"
+ ],
+ [
+  "beetroot powder|beet powder",
+  "beetrootpow"
+ ],
+ [
+  "bergamot.{0,20}(fcf|bergapten.free|furocoumarin.free)",
+  "bergamotfcf"
+ ],
+ [
+  "reishi|tremella|snow fungus",
+  "mushroombath"
+ ],
+ [
+  "osmanthus|honeysuckle",
+  "osmanthus"
+ ],
+ [
+  "kefir",
+  "kefir"
+ ],
+ [
+  "chamomile tea",
+  "chamomiletea"
+ ],
+ [
+  "bamboo salt|jukyeom|purple salt",
+  "bamboosalt"
+ ],
+ [
+  "plantain leaf|plantago",
+  "plantainleaf"
+ ],
+ [
+  "tamarind",
+  "tamarind"
+ ],
+ [
+  "alginate|modell?ing mask|rubber mask",
+  "alginate"
+ ],
+ [
+  "mugwort|\\bssuk\\b|ai ye",
+  "mugwort"
+ ],
+ [
+  "frankincense (resin|tears)",
+  "frankresin"
+ ],
+ [
+  "cocoyl isethionate|\\bsci\\b",
+  "sci"
+ ],
+ [
+  "behentrimonium|\\bbtms",
+  "btms"
+ ],
+ [
+  "arbutin",
+  "arbutin"
+ ],
+ [
+  "chebe oil",
+  "chebeoil"
+ ],
+ [
+  "lightening (milk|lotion)",
+  "lighteningmilk"
+ ],
+ [
+  "ude aki|adin dudu|enu aku|mayanga|black soap oil|palm kernel",
+  "palmkernel"
+ ],
+ [
+  "slippery elm",
+  "slipperyelm"
+ ],
+ [
+  "calcium carbonate|chalk powder",
+  "calcarb"
+ ],
+ [
+  "babassu",
+  "babassu"
+ ],
+ [
+  "borneol|bing ?pian",
+  "borneol"
+ ],
+ [
+  "desert date|balanites",
+  "desertdate"
+ ],
+ [
+  "mineral oil|baby oil",
+  "mineraloil"
+ ],
+ [
+  "juniper",
+  "juniper"
+ ],
+ [
+  "cypress",
+  "cypress"
+ ],
+ [
+  "xanth[ae]n",
+  "xanthan"
+ ],
+ [
+  "marshmallow root",
+  "marshmallowroot"
+ ],
+ [
+  "andiroba",
+  "andiroba"
+ ],
+ [
+  "crambe",
+  "crambe"
+ ],
+ [
+  "cacay|kahai",
+  "cacay"
+ ],
+ [
+  "a[cç]a[ií] (berry )?oil",
+  "acaioil"
+ ],
+ [
+  "plum kernel",
+  "plumkernel"
+ ],
+ [
+  "mongongo|manketti",
+  "mongongo"
+ ],
+ [
+  "murumuru",
+  "murumuru"
+ ],
+ [
+  "tucuma",
+  "tucuma"
+ ],
+ [
+  "bacuri",
+  "bacuri"
+ ],
+ [
+  "mafura",
+  "mafura"
+ ],
+ [
+  "vanilla absolute",
+  "vanillaabs"
+ ],
+ [
+  "magnesium oil",
+  "magchloride"
+ ],
+ [
+  "aloe butter",
+  "aloebutter"
+ ],
+ [
+  "ginger (essential )?oil",
+  "gingereo"
+ ],
+ [
+  "cardamom",
+  "cardamom"
+ ],
+ [
+  "nutmeg",
+  "nutmeg"
+ ],
+ [
+  "elemi",
+  "elemi"
+ ],
+ [
+  "palmarosa",
+  "palmarosa"
+ ],
+ [
+  "litsea|may chang",
+  "litsea"
+ ],
+ [
+  "cassia",
+  "cassia"
+ ],
+ [
+  "marula",
+  "marula"
+ ],
+ [
+  "arnica",
+  "arnicaoil"
+ ],
+ [
+  "black pepper (essential )?oil",
+  "blackpepper"
+ ],
+ [
+  "marjoram",
+  "marjoram"
+ ],
+ [
+  "\\bghee\\b",
+  "ghee"
+ ],
+ [
+  "avocado (seed|pit)",
+  "avocadoseed"
+ ],
+ [
+  "camellia|tsubaki",
+  "camellia"
+ ],
+ [
+  "menthol",
+  "menthol"
+ ],
+ [
+  "camphor",
+  "camphor"
+ ],
+ [
+  "neroli oil|neroli essential",
+  "neroli"
+ ],
+ [
+  "vetiver (essential )?oil",
+  "vetivereo"
+ ],
+ [
+  "hinoki",
+  "hinoki"
+ ],
+ [
+  "vetiver|\\bkhus\\b",
+  "vetiver"
+ ],
+ [
+  "avarampoo|avaram",
+  "avarampoo"
+ ],
+ [
+  "wheat ?germ",
+  "wheatgerm"
+ ],
+ [
+  "green gram|moong|bengal gram|chana",
+  "besan"
+ ],
+ [
+  "manjistha|manjishtha|madder",
+  "manjistha"
+ ],
+ [
+  "sidr|jujube",
+  "sidr"
+ ],
+ [
+  "mulethi|yashtimadhu",
+  "licorice"
+ ],
+ [
+  "multani mitti",
+  "fullers"
+ ],
+ [
+  "kasturi haldi",
+  "wildturmeric"
+ ],
+ [
+  "wadak",
+  "tallow"
+ ],
+ [
+  "millet",
+  "riceflour"
+ ],
+ [
+  "kojic",
+  "kojic"
+ ],
+ [
+  "vitamin c serum",
+  "vitc"
+ ],
+ [
+  "tallow",
+  "tallow"
+ ],
+ [
+  "cetyl alcohol",
+  "cetearyl"
+ ],
+ [
+  "pumpkin (pie )?spice",
+  "cinnamonpow"
+ ],
+ [
+  "carrot puree",
+  "carrotjuice"
+ ],
+ [
+  "carbomer|carbopol",
+  "carbomer"
+ ],
+ [
+  "polysorbate ?80",
+  "polysorbate"
+ ],
+ [
+  "avocado butter",
+  "avocadobutter"
+ ],
+ [
+  "malai|milk cream|fresh cream|heavy cream",
+  "malai"
+ ],
+ [
+  "shampoo (bar )?base",
+  "shampoobase"
+ ],
+ [
+  "sodium lactate",
+  "sodiumlactate"
+ ],
+ [
+  "purple (brazilian )?clay|brazilian clay",
+  "purpleclay"
+ ],
+ [
+  "annatto",
+  "annatto"
+ ],
+ [
+  "germall|liquid germall",
+  "geogard"
+ ],
+ [
+  "rose clay",
+  "pinkclay"
+ ],
+ [
+  "hibiscus (powder|tea)",
+  "hibiscus"
+ ],
+ [
+  "caffeine",
+  "caffeine"
+ ],
+ [
+  "emulsifying wax|polawax",
+  "ewax"
+ ],
+ [
+  "pearl powder",
+  "pearl"
+ ],
+ [
+  "chamomile tea|tea bags",
+  "herbtea"
+ ],
+ [
+  "lamp soot|\\bsoot\\b",
+  "soot"
+ ],
+ [
+  "marine collagen|collagen powder",
+  "collagenpow"
+ ],
+ [
+  "(strawberry|fruit|freeze.?dried) powder",
+  "fruitpowder"
+ ],
+ [
+  "black seed oil|nigella oil|kalonji oil",
+  "blackseedoil"
+ ],
+ [
+  "cassava|tapioca",
+  "arrowroot"
+ ],
+ [
+  "orange (zest|juice)",
+  "orangezest"
+ ],
+ [
+  "(mashed|fresh) (strawberr|mango)|mango pulp|strawberr",
+  "fruitmash"
+ ],
+ [
+  "almond (powder|meal|flour)",
+  "almondmeal"
+ ],
+ [
+  "cocoa powder|cacao powder",
+  "cocoapowder"
+ ],
+ [
+  "rose (petal )?powder|powder(ed)? rose",
+  "rosepowder"
+ ],
+ [
+  "caramel",
+  "caramel"
+ ],
+ [
+  "magnesium hydroxide",
+  "maghydroxide"
+ ],
+ [
+  "zinc ricinoleate",
+  "zincric"
+ ],
+ [
+  "polysorbate",
+  "polysorbate"
+ ],
+ [
+  "\\balum\\b|fitkari|phitkari",
+  "alum"
+ ],
+ [
+  "fresh (lemon|lime) zest|(lemon|lime) zest(?!.*dried)",
+  "lemonzest"
+ ],
+ [
+  "melt.?(and|&).?pour",
+  "soapbase"
+ ],
+ [
+  "oil.?soluble aloe|aloe (vera )?extract",
+  "aloeoil"
+ ],
+ [
+  "(phototoxicity.?free|steam.?distilled|fcf).*(lemon|grapefruit)|(lemon|grapefruit).*(phototoxicity.?free|fcf)",
+  "lemondistilled"
+ ],
+ [
+  "cocoa absolute|chocolate fragrance",
+  "cocoaabs"
+ ],
+ [
+  "(vanilla|peppermint|almond) extract",
+  "bakingextract"
+ ],
+ [
+  "attar",
+  "attar"
+ ],
+ [
+  "lavender (buds|flowers)|dried lavender",
+  "lavenderbud"
+ ],
+ [
+  "chamomile (flowers|buds)|dried chamomile|powdered chamomile",
+  "chamomileflower"
+ ],
+ [
+  "lemon balm",
+  "lemonbalm"
+ ],
+ [
+  "spearmint|peppermint leaves|mint leaves|dried mint",
+  "spearmint"
+ ],
+ [
+  "lemon verbena",
+  "lemonverbena"
+ ],
+ [
+  "oatstraw|oat straw",
+  "oatstraw"
+ ],
+ [
+  "eucalyptus (leaves|leaf)|dried eucalyptus",
+  "eucalyptusleaf"
+ ],
+ [
+  "dried lemongrass|lemongrass (stalks|leaves)",
+  "lemongrassherb"
+ ],
+ [
+  "patchouli leaves",
+  "patchoulileaf"
+ ],
+ [
+  "powdered milk|milk powder",
+  "milkpowder"
+ ],
+ [
+  "honey powder",
+  "honeypowder"
+ ],
+ [
+  "spirulina",
+  "spirulina"
+ ],
+ [
+  "kelp|seaweed",
+  "kelp"
+ ],
+ [
+  "(dried|ground) ginger|ginger powder",
+  "gingerpowder"
+ ],
+ [
+  "green tea powder|matcha",
+  "greenteapowder"
+ ],
+ [
+  "sprinkles",
+  "sugar"
+ ],
+ [
+  "kokum",
+  "kokum"
+ ],
+ [
+  "illip",
+  "illipe"
+ ],
+ [
+  "carnauba",
+  "carnauba"
+ ],
+ [
+  "hyaluronic",
+  "hyaluronic"
+ ],
+ [
+  "panthenol|vitamin b5",
+  "panthenol"
+ ],
+ [
+  "sodium pca",
+  "sodiumpca"
+ ],
+ [
+  "vitamin c|ascorbic",
+  "vitc"
+ ],
+ [
+  "coq10|coenzyme",
+  "coq10"
+ ],
+ [
+  "bakuchiol",
+  "bakuchiol"
+ ],
+ [
+  "allantoin",
+  "allantoin"
+ ],
+ [
+  "rosemary (extract|oleoresin)|\\broe\\b",
+  "roe"
+ ],
+ [
+  "leucidal|radish",
+  "leucidal"
+ ],
+ [
+  "cetearyl",
+  "cetearyl"
+ ],
+ [
+  "fruit enzyme|papain|bromelain",
+  "enzymes"
+ ],
+ [
+  "zinc oxide",
+  "zincoxide"
+ ],
+ [
+  "coconut milk powder",
+  "coconutmilkpow"
+ ],
+ [
+  "dead sea salt|dead sea bath salt",
+  "deadsea"
+ ],
+ [
+  "lavender hydrosol|lavender water",
+  "hydrosol"
+ ],
+ [
+  "licorice (root )?oil",
+  "licoriceoil"
+ ],
+ [
+  "vaseline|petroleum jelly|petrolatum",
+  "petrolatum"
+ ],
+ [
+  "oregano",
+  "oregano"
+ ],
+ [
+  "onion flakes|dried onion",
+  "onionflake"
+ ],
+ [
+  "papaya seed",
+  "papayaseed"
+ ],
+ [
+  "\\bcurd\\b",
+  "yogurt"
+ ],
+ [
+  "shampoo",
+  "showergel"
+ ],
+ [
+  "pudina",
+  "herbtea"
+ ],
+ [
+  "fractionated coconut",
+  "caprylic"
+ ],
+ [
+  "apricot",
+  "apricot"
+ ],
+ [
+  "hemp",
+  "hemp"
+ ],
+ [
+  "safflower",
+  "safflower"
+ ],
+ [
+  "rice bran",
+  "ricebran"
+ ],
+ [
+  "sesame",
+  "sesame"
+ ],
+ [
+  "macadamia",
+  "macadamia"
+ ],
+ [
+  "\\bwars\\b|\\bwers\\b|ورس|flemingia",
+  "wars"
+ ],
+ [
+  "laurel soap|bay soap|aleppo soap|صابون الغار",
+  "laurelsoap"
+ ],
+ [
+  "tahini|tahina",
+  "tahini"
+ ],
+ [
+  "bitter almond",
+  "bitteralmond"
+ ],
+ [
+  "mandelic",
+  "mandelic"
+ ],
+ [
+  "jojoba bead",
+  "jojobabeads"
+ ],
+ [
+  "chia seed",
+  "chiaseed"
+ ],
+ [
+  "desiccated coconut|ground coconut|coconut flake",
+  "coconutflakes"
+ ],
+ [
+  "whipped soap base|foaming whipped|\\bfswb\\b",
+  "fswb"
+ ],
+ [
+  "poppy seed",
+  "poppy"
+ ],
+ [
+  "red sandal|rakta chandan|raktachandan",
+  "redsandal"
+ ],
+ [
+  "lodhra|symplocos",
+  "lodhra"
+ ],
+ [
+  "moong|mung|green gram",
+  "moong"
+ ],
+ [
+  "chironji|charoli",
+  "chironji"
+ ],
+ [
+  "manuka",
+  "manuka"
+ ],
+ [
+  "red bean|azuki|adzuki|đậu đỏ",
+  "redbeanpow"
+ ],
+ [
+  "rice bran powder|cám gạo|\\bnuka\\b",
+  "ricebranpow"
+ ],
+ [
+  "tamarind powder|dried tamarind",
+  "tamarindpowder"
+ ],
+ [
+  "\\burea\\b",
+  "urea"
+ ],
+ [
+  "sodium sulfate|glauber",
+  "sodiumsulfate"
+ ],
+ [
+  "trehalose",
+  "trehalose"
+ ],
+ [
+  "sulfoacetate|\\bslsa\\b",
+  "slsa"
+ ],
+ [
+  "sacha inchi|plukenetia",
+  "sachainchi"
+ ],
+ [
+  "calendula[- ]infused",
+  "calendulainf"
+ ],
+ [
+  "perfumer.?s alcohol|sda ?40|alcohol denat|denatured alcohol|190 proof|200 proof",
+  "perfumeralc"
+ ],
+ [
+  "reishi|lingzhi|ganoderma",
+  "reishi"
+ ],
+ [
+  "\\bwoad\\b|isatis",
+  "woad"
+ ],
+ [
+  "\\bgoji\\b|lycium",
+  "goji"
+ ],
+ [
+  "mulberry (leaf|root|bark)|morus alba",
+  "mulberry"
+ ],
+ [
+  "unsalted butter|dairy butter|\\bkibe\\b|niter kibbeh",
+  "dairybutter"
+ ],
+ [
+  "black iron oxide|iron oxide|ci ?77499",
+  "ironoxide"
+ ],
+ [
+  "cocamidopropyl betaine|\\bcapb\\b",
+  "capb"
+ ],
+ [
+  "kojic dipalmitate",
+  "kojicdp"
+ ],
+ [
+  "chamomile[- ]infused",
+  "chamomileinf"
+ ],
+ [
+  "coconut water",
+  "coconutwater"
+ ],
+ [
+  "(heavy )?whipping cream|heavy cream",
+  "heavycream"
+ ],
+ [
+  "sangre de dra|dragon.?s blood|croton lechleri",
+  "sangredrago"
+ ],
+ [
+  "comfrey|symphytum",
+  "comfrey"
+ ],
+ [
+  "agarwood|\\boud\\b|aquilaria|trầm hương",
+  "agarwood"
+ ],
+ [
+  "rice spirit|rice wine|rượu gạo|vodka|high.proof",
+  "ricespirit"
+ ],
+ [
+  "ginseng|nhân sâm|panax",
+  "ginseng"
+ ],
+ [
+  "arborvitae|trắc bách diệp|platycladus|thuja orientalis",
+  "arborvitae"
+ ],
+ [
+  "fo.ti|hà thủ ô|polygonum multiflorum|he shou wu",
+  "foti"
+ ],
+ [
+  "dong quai|đương quy|angelica sinensis",
+  "dongquai"
+ ],
+ [
+  "xuyên khung|chuanxiong|szechuan lovage|ligusticum",
+  "lovage"
+ ],
+ [
+  "khổ sâm|ku shen|sophora",
+  "kushen"
+ ],
+ [
+  "nữ trinh tử|glossy privet|ligustrum",
+  "privet"
+ ],
+ [
+  "đan sâm|dan shen|red sage|salvia miltiorrhiza",
+  "redsage"
+ ],
+ [
+  "cốt toái bổ|drynaria|gu sui bu",
+  "drynaria"
+ ],
+ [
+  "hồng hoa|safflower (petal|flower)|carthamus",
+  "safflowerpetal"
+ ],
+ [
+  "raspberry seed|rubus idaeus",
+  "raspberryseed"
+ ],
+ [
+  "neem lea|lá sầu đâu|lá neem|nem lea",
+  "neemleaf"
+ ],
+ [
+  "hạn liên thảo|nhọ nồi|eclipta",
+  "bhringraj"
+ ],
+ [
+  "linh chi|ganoderma",
+  "mushroombath"
+ ],
+ [
+  "hoa dâm bụt",
+  "hibiscus"
+ ],
+ [
+  "gelatine?",
+  "gelatin"
+ ],
+ [
+  "hazel ?nut|corylus",
+  "hazelnut"
+ ],
+ [
+  "tamanu",
+  "tamanu"
+ ],
+ [
+  "sea buckthorn",
+  "seabuckthorn"
+ ],
+ [
+  "primrose",
+  "primrose"
+ ],
+ [
+  "mustard oil",
+  "mustardoil"
+ ],
+ [
+  "carrot.?infused|carrot oil",
+  "carrotinf"
+ ],
+ [
+  "(dried|grated) carrot",
+  "carrotdry"
+ ],
+ [
+  "chebe",
+  "chebe"
+ ],
+ [
+  "\\bsage\\b",
+  "sage"
+ ],
+ [
+  "yarrow",
+  "yarrow"
+ ],
+ [
+  "fennel",
+  "fennel"
+ ],
+ [
+  "coriander",
+  "coriander"
+ ],
+ [
+  "dried basil|\\bbasil\\b",
+  "basil"
+ ],
+ [
+  "mint (leaves )?powder",
+  "mintpowder"
+ ],
+ [
+  "clove powder|ground clove",
+  "clovepowder"
+ ],
+ [
+  "pink salt|himalayan",
+  "salt"
+ ],
+ [
+  "fresh mint",
+  "freshherb"
+ ],
+ [
+  "batana",
+  "batana"
+ ],
+ [
+  "horsetail",
+  "horsetail"
+ ],
+ [
+  "burdock",
+  "burdock"
+ ],
+ [
+  "camel milk",
+  "camelmilk"
+ ],
+ [
+  "melt.?and.?pour|soap base",
+  "soapbase"
+ ],
+ [
+  "\\blye\\b|sodium hydroxide",
+  "lye"
+ ],
+ [
+  "flax ?seeds?(?! gel)",
+  "flaxwhole"
+ ],
+ [
+  "dried rosemary|rosemary (leaves|herb|sprig)",
+  "rosemaryherb"
+ ],
+ [
+  "hibiscus flowers?",
+  "hibiscus"
+ ],
+ [
+  "pumpkin seeds",
+  "pumpkinoil"
+ ],
+ [
+  "black tea|horsetail tea|nettle tea|rosemary tea",
+  "herbtea"
+ ],
+ [
+  "garlic (infused )?oil|onion (&|and) garlic oil",
+  "garlicoil"
+ ],
+ [
+  "cyperus|souad",
+  "cyperus"
+ ],
+ [
+  "kohl|khol|kajal|surma|tiro",
+  "kohl"
+ ],
+ [
+  "fresh (rosemary|mint|basil|herbs)",
+  "freshherb"
+ ],
+ [
+  "bay lea(f|ves)",
+  "bayleaf"
+ ],
+ [
+  "cumin",
+  "cumin"
+ ],
+ [
+  "cinnamon stick",
+  "cinnamonstick"
+ ],
+ [
+  "saw palmetto",
+  "sawpalmetto"
+ ],
+ [
+  "marshmallow",
+  "marshmallow"
+ ],
+ [
+  "shikakai",
+  "shikakai"
+ ],
+ [
+  "aritha|reetha|soap ?nut",
+  "aritha"
+ ],
+ [
+  "bhringraj",
+  "bhringraj"
+ ],
+ [
+  "brahmi",
+  "brahmi"
+ ],
+ [
+  "tulsi|holy basil",
+  "tulsi"
+ ],
+ [
+  "ashwagandha",
+  "ashwagandha"
+ ],
+ [
+  "coconut sugar",
+  "sugar"
+ ],
+ [
+  "turkish coffee",
+  "coffeepowder"
+ ],
+ [
+  "caprylic|capric|\\bmct\\b",
+  "caprylic"
+ ],
+ [
+  "lip.?safe (cherry )?flavou?r|flavou?r oil|lip flavou?r",
+  "lipflavor"
+ ],
+ [
+  "beet",
+  "beetroot"
+ ],
+ [
+  "chia",
+  "chiagel"
+ ],
+ [
+  "magnesium (chloride|flakes)",
+  "magchloride"
+ ],
+ [
+  "butterfly pea|aparajita",
+  "butterflypea"
+ ],
+ [
+  "instant coffee|coffee powder",
+  "coffeepowder"
+ ],
+ [
+  "curry lea(f|ves)",
+  "currylea"
+ ],
+ [
+  "neem (leaf )?powder",
+  "neempowder"
+ ],
+ [
+  "okra",
+  "okra"
+ ],
+ [
+  "blue lotus",
+  "bluelotus"
+ ],
+ [
+  "calendula|marigold",
+  "calendula"
+ ],
+ [
+  "black seed|nigella|kalonji",
+  "nigella"
+ ],
+ [
+  "\\bamla\\b|indian gooseberry",
+  "amla"
+ ],
+ [
+  "moringa",
+  "moringa"
+ ],
+ [
+  "nettle",
+  "nettle"
+ ],
+ [
+  "star anise",
+  "staranise"
+ ],
+ [
+  "\\bthyme\\b",
+  "thyme"
+ ],
+ [
+  "pumpkin seed",
+  "pumpkinoil"
+ ],
+ [
+  "prickly pear|cactus (seed )?oil|barbary fig",
+  "pricklypear"
+ ],
+ [
+  "black henna",
+  "blackhenna"
+ ],
+ [
+  "henna",
+  "henna"
+ ],
+ [
+  "saffron",
+  "saffron"
+ ],
+ [
+  "aker fassi|akker",
+  "akerfassi"
+ ],
+ [
+  "alata|anago|african black soap|ghana.*soap|dudu.?osun",
+  "ghanasoap"
+ ],
+ [
+  "ayilo|calabash chalk",
+  "ayilo"
+ ],
+ [
+  "palm kernel|adwengo",
+  "palmkernel"
+ ],
+ [
+  "baobab",
+  "baobab"
+ ],
+ [
+  "epsom",
+  "epsom"
+ ],
+ [
+  "mustard",
+  "mustard"
+ ],
+ [
+  "cayenne|chil(i|li) (pepper|powder|flakes)",
+  "cayenne"
+ ],
+ [
+  "ginger",
+  "ginger"
+ ],
+ [
+  "masoor|red lentil|lentil (flour|powder)",
+  "masoor"
+ ],
+ [
+  "sandalwood powder|chandan",
+  "sandalpowder"
+ ],
+ [
+  "orange (blossom|flower) water|neroli water",
+  "hydrosol"
+ ],
+ [
+  "sobolo|bissap|roselle",
+  "hibiscus"
+ ],
+ [
+  "neem (leaves|leaf|water)|curry lea(f|ves) water|mint leaves|moroccan mint",
+  "herbtea"
+ ],
+ [
+  "onion",
+  "onion"
+ ],
+ [
+  "carrot seed",
+  "carrotseed"
+ ],
+ [
+  "carrot",
+  "carrotjuice"
+ ],
+ [
+  "flax",
+  "flaxgel"
+ ],
+ [
+  "fragrance",
+  "fragrance"
+ ],
+ [
+  "\\bmica\\b",
+  "mica"
+ ],
+ [
+  "besan|gram flour|chickpea flour",
+  "besan"
+ ],
+ [
+  "(boiled|cooked) rice",
+  "cookedrice"
+ ],
+ [
+  "shower gel base|soap base",
+  "showergel"
+ ],
+ [
+  "coconut milk",
+  "coconutmilk"
+ ],
+ [
+  "blue clay",
+  "blueclay"
+ ],
+ [
+  "wild turmeric|kasturi",
+  "wildturmeric"
+ ],
+ [
+  "fenugreek|methi",
+  "fenugreek"
+ ],
+ [
+  "\\btalc",
+  "talc"
+ ],
+ [
+  "ceramide",
+  "ceramide"
+ ],
+ [
+  "rubbing alcohol|isopropyl|\\balcohol\\b",
+  "alcohol"
+ ],
+ [
+  "neem",
+  "neem"
+ ],
+ [
+  "pomegranate",
+  "pomegranate"
+ ],
+ [
+  "sour cream",
+  "sourcream"
+ ],
+ [
+  "apple juice",
+  "applejuice"
+ ],
+ [
+  "tomato",
+  "tomato"
+ ],
+ [
+  "decoction|herbal tea|mint tea|chamomile tea",
+  "herbtea"
+ ],
+ [
+  "pink clay",
+  "pinkclay"
+ ],
+ [
+  "red clay",
+  "redclay"
+ ],
+ [
+  "rhassoul|ghassoul|lava clay",
+  "rhassoul"
+ ],
+ [
+  "green clay|french green",
+  "greenclay"
+ ],
+ [
+  "fuller|multani",
+  "fullers"
+ ],
+ [
+  "\\bnila\\b|blue indigo|indigofera",
+  "nila"
+ ],
+ [
+  "gotu kola|centella|\\bcica\\b",
+  "centella"
+ ],
+ [
+  "licorice|liquorice",
+  "licorice"
+ ],
+ [
+  "willow bark",
+  "willow"
+ ],
+ [
+  "(lemon|lime) (peel|zest)",
+  "lemonpeel"
+ ],
+ [
+  "orange (peel|zest)",
+  "orangepeel"
+ ],
+ [
+  "niacinamide|vitamin b3",
+  "niacinamide"
+ ],
+ [
+  "black soap|savon (noir|beldi)|beldi",
+  "blacksoap"
+ ],
+ [
+  "papaya",
+  "papaya"
+ ],
+ [
+  "pineapple",
+  "pineapple"
+ ],
+ [
+  "hibiscus",
+  "hibiscus"
+ ],
+ [
+  "jasmine",
+  "jasmine"
+ ],
+ [
+  "rose ?(petals?|buds?)|dried rose",
+  "rosebuds"
+ ],
+ [
+  "\\bcloves?\\b",
+  "clovewhole"
+ ],
+ [
+  "shower gel|body wash|bodywash|liquid soap|castile",
+  "showergel"
+ ],
+ [
+  "jojoba",
+  "jojoba"
+ ],
+ [
+  "sunflower",
+  "sunflower"
+ ],
+ [
+  "squalane",
+  "squalane"
+ ],
+ [
+  "almond",
+  "almond"
+ ],
+ [
+  "argan",
+  "argan"
+ ],
+ [
+  "rose ?hip",
+  "rosehip"
+ ],
+ [
+  "grape ?seed",
+  "grapeseed"
+ ],
+ [
+  "castor",
+  "castor"
+ ],
+ [
+  "olive",
+  "olive"
+ ],
+ [
+  "avocado oil",
+  "avocadooil"
+ ],
+ [
+  "coconut",
+  "coconut"
+ ],
+ [
+  "shea",
+  "shea"
+ ],
+ [
+  "mango butter",
+  "mango"
+ ],
+ [
+  "coco(a)? butter|cacao butter",
+  "cocoa"
+ ],
+ [
+  "bees ?wax",
+  "beeswax"
+ ],
+ [
+  "candelilla",
+  "candelilla"
+ ],
+ [
+  "tap water",
+  "tapwater"
+ ],
+ [
+  "rose ?water|hydrosol|floral water",
+  "hydrosol"
+ ],
+ [
+  "rice water",
+  "ricewater"
+ ],
+ [
+  "witch ?hazel",
+  "witchhazel"
+ ],
+ [
+  "green tea|matcha|\\btea\\b",
+  "greentea"
+ ],
+ [
+  "aloe (vera )?leaf|fresh aloe",
+  "aloefresh"
+ ],
+ [
+  "aloe",
+  "aloe"
+ ],
+ [
+  "glycerin",
+  "glycerin"
+ ],
+ [
+  "honey",
+  "honey"
+ ],
+ [
+  "yog(h)?urt",
+  "yogurt"
+ ],
+ [
+  "milk",
+  "milk"
+ ],
+ [
+  "avocado",
+  "avocado"
+ ],
+ [
+  "banana",
+  "banana"
+ ],
+ [
+  "cucumber",
+  "cucumber"
+ ],
+ [
+  "\\beggs?\\b",
+  "egg"
+ ],
+ [
+  "rice flour",
+  "riceflour"
+ ],
+ [
+  "\\boat",
+  "oats"
+ ],
+ [
+  "kaolin|white clay",
+  "kaolin"
+ ],
+ [
+  "bentonite|\\bclay\\b",
+  "bentonite"
+ ],
+ [
+  "arrowroot|corn ?starch|corn ?flour",
+  "arrowroot"
+ ],
+ [
+  "turmeric",
+  "turmeric"
+ ],
+ [
+  "charcoal",
+  "charcoal"
+ ],
+ [
+  "baking soda|bicarb",
+  "bakingsoda"
+ ],
+ [
+  "salt",
+  "salt"
+ ],
+ [
+  "coffee",
+  "coffee"
+ ],
+ [
+  "citric acid",
+  "citricacid"
+ ],
+ [
+  "cinnamon",
+  "cinnamonpow"
+ ],
+ [
+  "sugar",
+  "sugar"
+ ],
+ [
+  "geogard|preservative",
+  "geogard"
+ ],
+ [
+  "olivem|emulsif",
+  "olivem"
+ ],
+ [
+  "lemon",
+  "lemonjuice"
+ ],
+ [
+  "\\blimes?\\b",
+  "limejuice"
+ ],
+ [
+  "vinegar",
+  "acv"
+ ],
+ [
+  "garlic",
+  "garlic"
+ ],
+ [
+  "toothpaste",
+  "toothpaste"
+ ],
+ [
+  "peroxide cream|developer|agua oxigenada|água oxigenada|\\b(20|30|40)\\s*vol",
+  "developer"
+ ],
+ [
+  "bleach(ing)? powder|p[oó] descolorante|lightening powder",
+  "bleachpowder"
+ ],
+ [
+  "peroxide",
+  "peroxide"
+ ],
+ [
+  "\\bglue\\b",
+  "glue"
+ ],
+ [
+  "distilled|boiled water|\\bwater\\b",
+  "water"
+ ]
+]

@@ -1,0 +1,27 @@
+{
+ "spray": {
+  "n": "Spray perfume",
+  "pct": 5,
+  "type": "perfume",
+  "how": "Mix the oils in a glass bottle, add the perfumer's alcohol and shake. Let it mature 2 to 4 weeks in a dark cupboard, shaking now and then; it rounds out and smells less of alcohol. If cloudy, chill overnight and filter through a coffee filter. Spray on clothes or pulse points, away from the face. Store-bought eau de parfum runs 15 to 20%, but those use tested aroma materials; with essential oils on skin, about 5% is the safe ceiling, so spray clothes or hair if you want it stronger."
+ },
+ "roll": {
+  "n": "Perfume oil roller",
+  "pct": 4,
+  "type": "perfume",
+  "how": "Add the oils to a roller bottle, top up with jojoba and shake. Rest 2 days before using. Jojoba doesn't go rancid, so it keeps a year or more."
+ },
+ "solid": {
+  "n": "Solid perfume",
+  "pct": 4,
+  "type": "perfume",
+  "how": "Melt beeswax and jojoba in a water bath, cool slightly, stir in the oils and pour into a small tin. For vegan, use candelilla wax at half the beeswax amount. Dab on wrists and neck, not the face."
+ },
+ "mist": {
+  "n": "Body mist",
+  "pct": 1,
+  "type": "body_leave",
+  "base": null,
+  "how": "Stir the oils into the polysorbate 20 first until clear, then add the hydrosol or distilled water and glycerin, and the preservative last. Shake before use. Mist over body and hair, not the face."
+ }
+}

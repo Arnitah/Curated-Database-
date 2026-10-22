@@ -1,0 +1,42 @@
+{
+ "korean": {
+  "name": "Korean skincare",
+  "what": "Many thin, hydrating layers: toner, essence, serum, cream. Clay’s K-beauty mode and “thinnest to thickest” order come from here.",
+  "try": [
+   "Rice or ginseng toner",
+   "Snail mucin essence",
+   "Centella cream"
+  ],
+  "note": "Ten steps aren’t required. Clay offers a balanced 4–6 step version."
+ },
+ "indian": {
+  "name": "Indian hair care",
+  "what": "Weekly scalp oiling with amla, bhringraj, coconut or sesame oil, massaged in before washing.",
+  "try": [
+   "Coconut oil pre-wash",
+   "Amla hair oil",
+   "Bhringraj scalp massage"
+  ],
+  "note": "Coming with hair care, the first extension after the face routine."
+ },
+ "african": {
+  "name": "West African body care",
+  "what": "Raw shea butter to seal in moisture, and black soap made from plantain ash and oils.",
+  "try": [
+   "Raw shea butter after showering",
+   "Black soap on the body",
+   "Turmeric body scrub"
+  ],
+  "note": "Black soap is alkaline and can dry or sting the face. Clay suggests it for the body, and patch-testing first."
+ },
+ "arab": {
+  "name": "Arab perfumery",
+  "what": "Concentrated attar oils, oud, rose and amber, often layered under spray fragrance, and bakhoor smoke for hair and clothes.",
+  "try": [
+   "Rose attar under perfume",
+   "Amber body oil",
+   "Bakhoor for clothes"
+  ],
+  "note": "Lives in the Scent builder, body only."
+ }
+}

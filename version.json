@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-22T14:18:12.988Z",
+  "datasets": {
+    "clay/clays": {
+      "count": 5,
+      "bytes": 865,
+      "hash": "db503ca1ef21",
+      "updated_at": "2026-10-22T14:18:12.976Z"
+    },
+    "clay/feel_words": {
+      "count": 12,
+      "bytes": 165,
+      "hash": "cb6fe9f7f938",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_holdbacks": {
+      "count": 5,
+      "bytes": 117,
+      "hash": "fd3d209c3124",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_lengths": {
+      "count": 6,
+      "bytes": 212,
+      "hash": "2d0578cc47c3",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_struggles": {
+      "count": 8,
+      "bytes": 131,
+      "hash": "ceebff7cbcf4",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_styles": {
+      "count": 6,
+      "bytes": 94,
+      "hash": "8c3259c26dda",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_tips": {
+      "count": 8,
+      "bytes": 1023,
+      "hash": "df50d4a1f7cd",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_wash_freq": {
+      "count": 3,
+      "bytes": 114,
+      "hash": "f02631d7684a",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/hair_wash_steps": {
+      "count": 10,
+      "bytes": 975,
+      "hash": "33393c35eaa7",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/my_products_seed": {
+      "count": 57,
+      "bytes": 4408,
+      "hash": "496ac3632c35",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/product_areas": {
+      "count": 6,
+      "bytes": 177,
+      "hash": "4774dd6d1052",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/product_steps": {
+      "count": 6,
+      "bytes": 682,
+      "hash": "58b67e39d085",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/step_looks": {
+      "count": 32,
+      "bytes": 1387,
+      "hash": "ffa065897765",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/traditions": {
+      "count": 4,
+      "bytes": 1399,
+      "hash": "ac9a6fa07e95",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/trends": {
+      "count": 6,
+      "bytes": 804,
+      "hash": "b8f17f824c6c",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "clay/year_activities": {
+      "count": 8,
+      "bytes": 256,
+      "hash": "abd22e87ec96",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/allergies": {
+      "count": 10,
+      "bytes": 1004,
+      "hash": "38459cd859b7",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/clays": {
+      "count": 7,
+      "bytes": 626,
+      "hash": "174882a4b05f",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/cream_forms": {
+      "count": 10,
+      "bytes": 1983,
+      "hash": "88ebb69da29b",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/decode": {
+      "count": 57,
+      "bytes": 14666,
+      "hash": "416e7fee2531",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/eu_aliases": {
+      "count": 5,
+      "bytes": 159,
+      "hash": "7e7e286105a7",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/eu_banned": {
+      "count": 6,
+      "bytes": 521608,
+      "hash": "decdedd451c8",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/goals": {
+      "count": 11,
+      "bytes": 19391,
+      "hash": "14a78c82a0ab",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/inci_flags": {
+      "count": 5,
+      "bytes": 217,
+      "hash": "421626f9d307",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/ingredients": {
+      "count": 443,
+      "bytes": 139387,
+      "hash": "ab24469f5c1c",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/layering_good": {
+      "count": 21,
+      "bytes": 371,
+      "hash": "cd0a76425717",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/layering_presets": {
+      "count": 27,
+      "bytes": 3428,
+      "hash": "e7940ede0cbe",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/layering_risks": {
+      "count": 5,
+      "bytes": 363,
+      "hash": "b23fdeab7685",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/mix_actives": {
+      "count": 12,
+      "bytes": 658,
+      "hash": "51983687c6fb",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/mix_rules": {
+      "count": 20,
+      "bytes": 3718,
+      "hash": "4397ab767027",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/myths": {
+      "count": 327,
+      "bytes": 128378,
+      "hash": "26690af32fbd",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/product_actives": {
+      "count": 61,
+      "bytes": 25966,
+      "hash": "d0676b7dabc0",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/product_hype_flags": {
+      "count": 13,
+      "bytes": 1900,
+      "hash": "4713e3a5abe5",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/proof_definitions": {
+      "count": 4,
+      "bytes": 250,
+      "hash": "656079afdeb2",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/proof_goals": {
+      "count": 9,
+      "bytes": 374,
+      "hash": "380f2f2dc8cc",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/proof_grades": {
+      "count": 35,
+      "bytes": 5800,
+      "hash": "41fdd52cb7db",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/ready_recipes": {
+      "count": 11,
+      "bytes": 1994,
+      "hash": "75116c86237d",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/recipe_types": {
+      "count": 15,
+      "bytes": 1670,
+      "hash": "b223316cfb9c",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/recipes_checked": {
+      "count": 1190,
+      "bytes": 645597,
+      "hash": "0d0658d2d2ce",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/recipes_starter": {
+      "count": 8,
+      "bytes": 4857,
+      "hash": "6671fc48dc66",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/scent_families": {
+      "count": 10,
+      "bytes": 1126,
+      "hash": "25c83cc0a4c6",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/scent_note_standins": {
+      "count": 59,
+      "bytes": 5751,
+      "hash": "2555cba3fcbc",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/scent_notes": {
+      "count": 49,
+      "bytes": 3284,
+      "hash": "54b04d5a5212",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/scent_presets": {
+      "count": 4,
+      "bytes": 1379,
+      "hash": "13a366ff0770",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/scent_swaps": {
+      "count": 2,
+      "bytes": 127,
+      "hash": "0233711b1288",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/seasons": {
+      "count": 4,
+      "bytes": 1120,
+      "hash": "d8bc28828df8",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/synonyms": {
+      "count": 485,
+      "bytes": 22281,
+      "hash": "df9c2a15e098",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/terms": {
+      "count": 30,
+      "bytes": 20930,
+      "hash": "eddfb5ad2fbb",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    },
+    "safe-batch/traditions": {
+      "count": 51,
+      "bytes": 37118,
+      "hash": "3df909dcb624",
+      "updated_at": "2026-10-22T14:18:12.987Z"
+    }
+  }
+}

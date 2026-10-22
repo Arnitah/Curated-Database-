@@ -1,0 +1,328 @@
+{
+ "niacinamide": {
+  "spots": [
+   "A",
+   "At 2 to 5% it faded dark spots more than placebo in several controlled trials."
+  ],
+  "acne": [
+   "B",
+   "A 4% gel matched 1% clindamycin gel in a randomised trial."
+  ],
+  "oil": [
+   "B",
+   "2% lowered sebum in controlled trials."
+  ],
+  "barrier": [
+   "B",
+   "Raises the skin's own ceramides and cuts water loss in human studies."
+  ],
+  "redness": [
+   "B",
+   "Calmed redness in small trials, including rosacea."
+  ],
+  "aging": [
+   "B",
+   "5% softened fine lines in a 12-week controlled trial."
+  ]
+ },
+ "retinol": {
+  "aging": [
+   "B",
+   "Retinol 0.4% improved fine wrinkles in controlled trials. Prescription tretinoin is the A-grade version."
+  ],
+  "texture": [
+   "B",
+   "Smooths texture over months in trials."
+  ],
+  "spots": [
+   "B",
+   "Fades sun spots slowly in trials."
+  ]
+ },
+ "retinal": {
+  "aging": [
+   "B",
+   "Small trials show it works like retinol, slightly faster."
+  ],
+  "texture": [
+   "B",
+   "Smooths texture over months in small trials."
+  ]
+ },
+ "adapalene": {
+  "acne": [
+   "A",
+   "An approved over-the-counter acne drug; many randomised trials."
+  ],
+  "texture": [
+   "B",
+   "Smooths texture alongside acne in trials."
+  ],
+  "spots": [
+   "B",
+   "Fades acne marks in trials."
+  ]
+ },
+ "vitc": {
+  "spots": [
+   "B",
+   "Pure L-ascorbic acid (10 to 20%) brightened skin in small controlled trials; derivatives have less proof."
+  ],
+  "aging": [
+   "B",
+   "Improved sun-damaged skin in small controlled trials."
+  ]
+ },
+ "azelaic": {
+  "acne": [
+   "A",
+   "20% is an approved prescription acne treatment; many trials."
+  ],
+  "redness": [
+   "A",
+   "15% is an approved rosacea treatment."
+  ],
+  "spots": [
+   "A",
+   "Matched 4% hydroquinone for melasma in controlled trials."
+  ]
+ },
+ "salicylic": {
+  "acne": [
+   "A",
+   "An approved acne active (0.5 to 2%) under the US monograph."
+  ],
+  "oil": [
+   "B",
+   "Clears oil from pores in human studies."
+  ],
+  "texture": [
+   "B",
+   "Smooths rough, bumpy skin in trials."
+  ]
+ },
+ "glycolic": {
+  "texture": [
+   "A",
+   "Many controlled trials show smoother texture."
+  ],
+  "spots": [
+   "B",
+   "Fades sun spots in trials, best with sunscreen."
+  ],
+  "aging": [
+   "B",
+   "Improves fine lines in trials at higher strengths."
+  ]
+ },
+ "lactic": {
+  "texture": [
+   "A",
+   "Controlled trials for rough skin and KP."
+  ],
+  "dry": [
+   "A",
+   "12% lactate lotion is a standard, well-tested treatment for very dry skin."
+  ],
+  "spots": [
+   "C",
+   "Little direct proof for spots."
+  ]
+ },
+ "mandelic": {
+  "texture": [
+   "C",
+   "Few good trials."
+  ],
+  "acne": [
+   "C",
+   "Small studies only."
+  ]
+ },
+ "arbutin": {
+  "spots": [
+   "B",
+   "Small human trials show slow fading."
+  ]
+ },
+ "tranexamic": {
+  "spots": [
+   "B",
+   "Small topical trials for melasma; the oral form has more proof."
+  ]
+ },
+ "kojic": {
+  "spots": [
+   "C",
+   "Some trials, mostly mixed with other actives."
+  ]
+ },
+ "licorice": {
+  "spots": [
+   "C",
+   "Small studies, usually in mixtures."
+  ],
+  "redness": [
+   "C",
+   "Calms redness in small studies."
+  ]
+ },
+ "bpo": {
+  "acne": [
+   "A",
+   "An approved acne drug; one of the most studied acne treatments."
+  ]
+ },
+ "sulfur": {
+  "acne": [
+   "B",
+   "An approved monograph acne active, with fewer modern trials."
+  ]
+ },
+ "urea": {
+  "dry": [
+   "A",
+   "Many controlled trials for dry and rough skin."
+  ],
+  "texture": [
+   "A",
+   "10% or more smooths rough skin and KP in trials."
+  ]
+ },
+ "glycerin": {
+  "dry": [
+   "A",
+   "One of the best-studied moisturisers; controlled trials."
+  ]
+ },
+ "petrolatum": {
+  "dry": [
+   "A",
+   "The most effective occlusive in controlled studies."
+  ],
+  "barrier": [
+   "A",
+   "Speeds barrier repair in human studies."
+  ]
+ },
+ "oat": {
+  "redness": [
+   "A",
+   "Colloidal oatmeal is an approved skin protectant for itch and irritation."
+  ],
+  "barrier": [
+   "B",
+   "Supports the barrier in trials."
+  ],
+  "dry": [
+   "B",
+   "Improves dry skin in trials."
+  ]
+ },
+ "ceramide": {
+  "barrier": [
+   "B",
+   "Ceramide-containing creams improve barrier function in trials, often with cholesterol and fatty acids."
+  ],
+  "dry": [
+   "B",
+   "Moisturising benefit in trials."
+  ]
+ },
+ "ha": {
+  "dry": [
+   "B",
+   "Hydrates and plumps temporarily in small human studies."
+  ]
+ },
+ "panthenol": {
+  "barrier": [
+   "B",
+   "Helped barrier repair in small controlled trials."
+  ],
+  "dry": [
+   "B",
+   "Moisturising in small trials."
+  ],
+  "redness": [
+   "C",
+   "Soothing claims mostly small studies."
+  ]
+ },
+ "squalane": {
+  "dry": [
+   "B",
+   "A well-tolerated moisturising oil; mostly small studies."
+  ]
+ },
+ "centella": {
+  "redness": [
+   "C",
+   "Calming effect mostly from lab and small brand-run studies."
+  ],
+  "barrier": [
+   "C",
+   "Small studies only."
+  ]
+ },
+ "ectoin": {
+  "redness": [
+   "C",
+   "Small studies."
+  ]
+ },
+ "hocl": {
+  "redness": [
+   "C",
+   "Small studies for irritation."
+  ]
+ },
+ "peptide": {
+  "aging": [
+   "C",
+   "Mostly small, brand-funded studies."
+  ]
+ },
+ "copper": {
+  "aging": [
+   "C",
+   "Mostly lab and small studies."
+  ]
+ },
+ "bakuchiol": {
+  "aging": [
+   "C",
+   "One small 12-week trial against retinol."
+  ]
+ },
+ "pha": {
+  "texture": [
+   "C",
+   "Few independent trials."
+  ]
+ },
+ "snail": {
+  "dry": [
+   "C",
+   "Little proof beyond moisturising."
+  ]
+ },
+ "powderbase": {
+  "oil": [
+   "B",
+   "Absorbs oil; a physical effect you can see."
+  ]
+ },
+ "minoxidil": {
+  "hair": [
+   "A",
+   "An approved hair-loss drug; many randomised trials."
+  ]
+ },
+ "caffeine": {
+  "hair": [
+   "C",
+   "Lab studies show caffeine stimulates hair follicles, and one industry-linked trial found a 0.2% caffeine liquid did about as well as 5% minoxidil. That's far from enough to call it proven."
+  ]
+ }
+}

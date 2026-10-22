@@ -1,0 +1,301 @@
+[
+ [
+  "neroli|orange blossom|orange flower",
+  "neroli"
+ ],
+ [
+  "bergamot",
+  "bergamotfcf"
+ ],
+ [
+  "\\borange\\b|mandarin|tangerine|clementine|blood orange",
+  "orange"
+ ],
+ [
+  "grapefruit|pomelo",
+  "grapefruit"
+ ],
+ [
+  "\\blime\\b",
+  "limeeo"
+ ],
+ [
+  "lemon ?grass",
+  "lemongrass"
+ ],
+ [
+  "\\blemon\\b|citron|yuzu|citrus",
+  "lemondistilled"
+ ],
+ [
+  "may chang|litsea",
+  "litsea"
+ ],
+ [
+  "neroli|orange blossom|orange flower",
+  "neroli"
+ ],
+ [
+  "lavender|lavandin",
+  "lavender"
+ ],
+ [
+  "clary",
+  "clarysage"
+ ],
+ [
+  "geranium",
+  "geranium"
+ ],
+ [
+  "palmarosa",
+  "palmarosa"
+ ],
+ [
+  "\\brose\\b|rose absolute|damask|turkish rose|rose otto",
+  "roseeo"
+ ],
+ [
+  "jasmine|sambac",
+  "jasmineeo"
+ ],
+ [
+  "ylang",
+  "ylang"
+ ],
+ [
+  "chamomile",
+  "chamomile"
+ ],
+ [
+  "helichrysum|immortelle",
+  "helichrysum"
+ ],
+ [
+  "frankincense|olibanum|\\bincense\\b",
+  "frankincense"
+ ],
+ [
+  "myrrh",
+  "myrrh"
+ ],
+ [
+  "sandalwood|santal",
+  "sandalwood"
+ ],
+ [
+  "cedar",
+  "cedarwood"
+ ],
+ [
+  "vetiver",
+  "vetivereo"
+ ],
+ [
+  "patchouli",
+  "patchouli"
+ ],
+ [
+  "vanilla",
+  "vanilla"
+ ],
+ [
+  "cocoa|chocolate|cacao",
+  "cocoaabs"
+ ],
+ [
+  "peppermint|\\bmint\\b|spearmint",
+  "peppermint"
+ ],
+ [
+  "eucalyptus",
+  "eucalyptus"
+ ],
+ [
+  "rosemary",
+  "rosemary"
+ ],
+ [
+  "juniper|\\bgin\\b",
+  "juniper"
+ ],
+ [
+  "cypress",
+  "cypress"
+ ],
+ [
+  "hinoki",
+  "hinoki"
+ ],
+ [
+  "pink pepper|black pepper|\\bpepper\\b",
+  "blackpepper"
+ ],
+ [
+  "cardamom",
+  "cardamom"
+ ],
+ [
+  "ginger",
+  "gingereo"
+ ],
+ [
+  "nutmeg",
+  "nutmeg"
+ ],
+ [
+  "clove",
+  "clove"
+ ],
+ [
+  "cinnamon",
+  "cinnamonbark"
+ ],
+ [
+  "elemi",
+  "elemi"
+ ],
+ [
+  "marjoram",
+  "marjoram"
+ ],
+ [
+  "tea tree",
+  "teatree"
+ ],
+ [
+  "rose apple|pomarrosa|manzana rosa|jambos|rose water|rosewater|damask",
+  "roseeo"
+ ],
+ [
+  "lychee|litchi",
+  {
+   "sub": [
+    "roseeo",
+    "lemondistilled"
+   ],
+   "why": "lychee has no essential oil. Rose with a drop of bright grapefruit (steam-distilled) gives the juicy, rosy lychee effect; a lychee fragrance oil gives the real thing."
+  }
+ ],
+ [
+  "almond|marzipan|walnut|hazelnut|nutty|praline nut|\\bnuts?\\b",
+  {
+   "sub": [
+    "vanilla",
+    "sandalwood"
+   ],
+   "why": "bitter almond oil can release cyanide unless it's the FFPA type, so Safe Batch leaves it out. Vanilla with creamy sandalwood gives a soft, nutty warmth in its place."
+  }
+ ],
+ [
+  "cherry|amaretto",
+  {
+   "sub": "orange",
+   "why": "cherry's scent is mostly benzaldehyde, the marzipan-almond note. Bitter almond oil can release cyanide unless it is sold as FFPA, so Safe Batch leaves it out. Sweet orange gives a juicy fruit opening in its place; for true cherry, add a skin-safe cherry fragrance oil."
+  }
+ ],
+ [
+  "white flowers?|white florals?|white petals?",
+  {
+   "sub": [
+    "jasmineeo",
+    "ylang"
+   ],
+   "why": "a creamy white flower like gardenia or tuberose. Jasmine with a touch of ylang is the natural version."
+  }
+ ],
+ [
+  "caramel milk|milk caramel|dulce de leche|milky caramel",
+  {
+   "sub": [
+    "vanilla",
+    "sandalwood"
+   ],
+   "why": "creamy caramel. Extra vanilla gives the sweetness and sandalwood the milky softness; a caramel fragrance oil gives the burnt-sugar edge."
+  }
+ ],
+ [
+  "caramel|toffee|butterscotch|praline|brown sugar|burnt sugar|cotton candy|marshmallow|\\bsugar\\b|candy",
+  {
+   "sub": "vanilla",
+   "why": "burnt-sugar sweetness has no essential oil. More vanilla is the closest; a skin-safe caramel fragrance oil gives the real thing."
+  }
+ ],
+ [
+  "\\bmilk|\\bcream|creamy|lactonic|custard",
+  {
+   "sub": "sandalwood",
+   "why": "a milky, creamy softness. Sandalwood is the classic natural way to get it."
+  }
+ ],
+ [
+  "tonka|coumarin|benzoin|labdanum|\\bamber\\b|ambre|balsam|tolu|peru",
+  {
+   "sub": "vanilla",
+   "why": "warm, sweet resin. Vanilla is the closest natural stand-in; add a drop of frankincense for an amber feel."
+  }
+ ],
+ [
+  "\\boud\\b|agarwood",
+  {
+   "sub": "vetivereo",
+   "why": "real oud is rare and costly. Vetiver with a touch of patchouli gives a smoky, dark wood; for the real thing, make an agarwood chip tincture (see Recipes)."
+  }
+ ],
+ [
+  "guaiac|cashmere ?wood|cashmeran|iso e|\\bwoods?\\b|woody",
+  {
+   "sub": "cedarwood",
+   "why": "a soft dry wood. Cedarwood or sandalwood covers it."
+  }
+ ],
+ [
+  "tuberose|gardenia|frangipani|plumeria|orange ?blossom absolute",
+  {
+   "sub": "jasmineeo",
+   "why": "a heady white flower. Jasmine with a touch of ylang is the natural version."
+  }
+ ],
+ [
+  "\\bsaffron\\b",
+  {
+   "sub": "cardamom",
+   "why": "saffron oil is rarely sold for skin. A drop of cardamom with leather-like vetiver hints at it."
+  }
+ ],
+ [
+  "\\biris\\b|orris|violet",
+  {
+   "sub": "carrotseed",
+   "why": "powdery orris is very costly. Carrot seed gives a similar earthy-powdery note in tiny amounts."
+  }
+ ],
+ [
+  "\\bmusk|white musk|ambrette",
+  {
+   "fo": "musk",
+   "why": "musk has no affordable natural oil. Skip it, or use a skin-safe musk fragrance oil; sandalwood adds a similar soft skin-like base."
+  }
+ ],
+ [
+  "leather|suede",
+  {
+   "fo": "leather",
+   "why": "leather is a fragrance-oil note. Smoky vetiver with birch-free cedar gives a hint."
+  }
+ ],
+ [
+  "coconut|peach|pear|apple|berr|cherry|plum|fig|melon|mango|pineapple|lychee|strawberr|raspberr|blackcurrant|cassis",
+  {
+   "fo": "fruit",
+   "why": "fruit notes come from fragrance oils, not essential oils."
+  }
+ ],
+ [
+  "freesia|lily|lilac|sweet pea|peony|magnolia|honeysuckle|lotus|water lily|cotton|ozonic|aquatic|sea salt|marine|caramel|praline|honey|sugar|marshmallow|coffee|tea\\b|green tea|matcha|fresh air|clean",
+  {
+   "fo": "note",
+   "why": "this note has no natural oil. Use a skin-safe fragrance oil from a soap supplier, or leave it out."
+  }
+ ]
+]

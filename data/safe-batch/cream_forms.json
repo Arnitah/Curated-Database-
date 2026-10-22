@@ -1,0 +1,102 @@
+{
+ "oil": {
+  "label": "Oil",
+  "what": "No water, so it keeps for months",
+  "use": "store",
+  "types": {
+   "face": "face_leave",
+   "body": "body_leave",
+   "hair": "hair_leave",
+   "lips": "lip",
+   "handsfeet": "body_leave"
+  }
+ },
+ "balm": {
+  "label": "Balm or butter",
+  "what": "Rich, water-free, seals in moisture",
+  "use": "store",
+  "types": {
+   "face": "face_leave",
+   "body": "body_leave",
+   "hair": "hair_leave",
+   "lips": "lip",
+   "handsfeet": "body_leave"
+  }
+ },
+ "scrub": {
+  "label": "Scrub",
+  "what": "Polishes off dry, flaky skin",
+  "use": "store",
+  "types": {
+   "face": "face_rinse",
+   "body": "body_rinse",
+   "lips": "lip",
+   "handsfeet": "body_rinse"
+  }
+ },
+ "mask": {
+  "label": "Mask",
+  "what": "Mix fresh, leave on, rinse off",
+  "use": "now",
+  "types": {
+   "face": "face_rinse",
+   "body": "body_rinse",
+   "hair": "hair_rinse"
+  }
+ },
+ "toner": {
+  "label": "Toner or mist",
+  "what": "Light water spray; needs a preservative to keep",
+  "use": "fridge",
+  "types": {
+   "face": "face_leave",
+   "body": "body_leave",
+   "hair": "hair_leave"
+  }
+ },
+ "rinse": {
+  "label": "Hair rinse",
+  "what": "Herbal tea or diluted vinegar, used fresh",
+  "use": "now",
+  "types": {
+   "hair": "hair_rinse"
+  }
+ },
+ "wash": {
+  "label": "Body wash or shampoo",
+  "what": "Built on a ready soap base, no water added",
+  "use": "store",
+  "types": {
+   "body": "body_rinse",
+   "hair": "hair_rinse",
+   "handsfeet": "body_rinse"
+  }
+ },
+ "soap": {
+  "label": "Soap bar (melt and pour)",
+  "what": "No lye to handle; keeps about a year",
+  "use": "store",
+  "types": {
+   "face": "face_rinse",
+   "body": "body_rinse",
+   "handsfeet": "body_rinse"
+  }
+ },
+ "deo": {
+  "label": "Deodorant",
+  "what": "Cream or stick, water-free",
+  "use": "store",
+  "types": {
+   "under": "deodorant"
+  }
+ },
+ "soak": {
+  "label": "Bath soak",
+  "what": "Salts and soothers, kept dry",
+  "use": "store",
+  "types": {
+   "bath": "soak",
+   "handsfeet": "soak"
+  }
+ }
+}

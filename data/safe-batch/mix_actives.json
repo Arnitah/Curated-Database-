@@ -1,0 +1,62 @@
+[
+ [
+  "retinoid",
+  "Retinol, tretinoin or adapalene",
+  "PM"
+ ],
+ [
+  "aha",
+  "Glycolic, lactic or mandelic acid (AHA)",
+  "PM"
+ ],
+ [
+  "bha",
+  "Salicylic acid (BHA)",
+  "PM"
+ ],
+ [
+  "bpo",
+  "Benzoyl peroxide",
+  "AM"
+ ],
+ [
+  "vitc",
+  "Vitamin C serum",
+  "AM"
+ ],
+ [
+  "niacin",
+  "Niacinamide",
+  "ANY"
+ ],
+ [
+  "azelaic",
+  "Azelaic acid",
+  "ANY"
+ ],
+ [
+  "hq",
+  "Hydroquinone",
+  "PM"
+ ],
+ [
+  "peel",
+  "At-home peel or peeling solution",
+  "WEEK"
+ ],
+ [
+  "scrub",
+  "Scrub, brush or kessa glove",
+  "WEEK"
+ ],
+ [
+  "teatree",
+  "Tea tree or other essential oils",
+  "ANY"
+ ],
+ [
+  "diyacid",
+  "Lemon, vinegar or baking soda",
+  "NONE"
+ ]
+]

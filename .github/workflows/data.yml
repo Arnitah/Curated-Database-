@@ -1,0 +1,44 @@
+name: Validate data and bump version
+
+on:
+  pull_request:
+    paths: ['data/**', 'scripts/**']
+  push:
+    branches: [main]
+    paths: ['data/**', 'scripts/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate (pull requests)
+        if: github.event_name == 'pull_request'
+        run: node scripts/build.mjs --check
+
+      - name: Validate and rebuild version.json (main)
+        if: github.event_name != 'pull_request'
+        run: node scripts/build.mjs
+
+      - name: Commit version.json if it changed
+        if: github.event_name != 'pull_request'
+        run: |
+          if ! git diff --quiet version.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add version.json
+            git commit -m "Bump data version [skip ci]"
+            git push
+          fi

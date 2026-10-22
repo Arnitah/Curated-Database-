@@ -1,0 +1,50 @@
+[
+ {
+  "n": "Kaolin",
+  "c": "#E9DCCF",
+  "for": [
+   "dry",
+   "sensitive",
+   "combination"
+  ],
+  "what": "The gentlest clay. Lifts oil without pulling moisture.",
+  "wear": "10 min"
+ },
+ {
+  "n": "Rhassoul",
+  "c": "#8A5A44",
+  "for": [
+   "normal",
+   "combination"
+  ],
+  "what": "Mild and silky. Often used as a cleanser as well as a mask.",
+  "wear": "5–10 min"
+ },
+ {
+  "n": "French green",
+  "c": "#8C9A63",
+  "for": [
+   "oily"
+  ],
+  "what": "Absorbent. Good for an oily, congested T-zone.",
+  "wear": "5–10 min"
+ },
+ {
+  "n": "Bentonite",
+  "c": "#8E8F78",
+  "for": [
+   "oily"
+  ],
+  "what": "Very absorbent and drying. Short wear, never on flaky skin.",
+  "wear": "5 min"
+ },
+ {
+  "n": "Fuller’s earth",
+  "c": "#A8AE95",
+  "for": [
+   "oily"
+  ],
+  "what": "The strongest oil absorber here. Patch-test and rinse early.",
+  "wear": "5 min"
+ }
+]

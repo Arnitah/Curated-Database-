@@ -1,0 +1,1020 @@
+[
+ {
+  "k": "niacinamide",
+  "re": "niacinamide",
+  "n": "Niacinamide",
+  "ev": "b",
+  "does": "Evens tone, supports the barrier, calms oil.",
+  "alt": [
+   [
+    "The Ordinary Niacinamide 10% + Zinc 1%",
+    "Budget"
+   ],
+   [
+    "CeraVe PM Facial Moisturizing Lotion",
+    "Drugstore, niacinamide plus ceramides"
+   ],
+   [
+    "Dermasil Niacinamide Toning Body Cream Serum",
+    "Dollar Tree, body; also has glycolic acid"
+   ]
+  ]
+ },
+ {
+  "k": "retinol",
+  "re": "\\bretinol\\b|retinyl palmitate|hydroxypinacolone retinoate",
+  "n": "Retinol or a retinoid ester",
+  "ev": "b",
+  "does": "Speeds cell turnover; softens fine lines and evens texture over months.",
+  "alt": [
+   [
+    "Trader Joe's Retinol Night Serum (0.3%, with baobab oil)",
+    "Grocery, gentle starter strength"
+   ],
+   [
+    "The Ordinary Retinol 0.5% in Squalane",
+    "Budget"
+   ],
+   [
+    "CeraVe Resurfacing Retinol Serum",
+    "Drugstore"
+   ]
+  ]
+ },
+ {
+  "k": "retinal",
+  "re": "retinal\\b|retinaldehyde",
+  "n": "Retinal",
+  "ev": "b",
+  "does": "A faster-acting retinoid.",
+  "alt": [
+   [
+    "The Ordinary Retinol 0.5% in Squalane",
+    "Budget, slower but cheaper"
+   ]
+  ]
+ },
+ {
+  "k": "adapalene",
+  "re": "adapalene",
+  "n": "Adapalene",
+  "ev": "b",
+  "does": "Treats acne by unclogging pores.",
+  "alt": [
+   [
+    "Differin Gel (adapalene 0.1%)",
+    "Drugstore"
+   ]
+  ]
+ },
+ {
+  "k": "vitc",
+  "re": "ascorbic acid|ascorbyl glucoside|sodium ascorbyl phosphate|magnesium ascorbyl|tetrahexyldecyl ascorbate|ethyl ascorbic",
+  "n": "Vitamin C",
+  "ev": "b",
+  "does": "Antioxidant that brightens and supports sunscreen against sun damage.",
+  "alt": [
+   [
+    "The Ordinary Vitamin C Suspension 23% + HA Spheres 2%",
+    "Budget, strong, can sting"
+   ],
+   [
+    "The Ordinary Ascorbyl Glucoside Solution 12%",
+    "Budget, gentler"
+   ]
+  ]
+ },
+ {
+  "k": "azelaic",
+  "re": "azelaic",
+  "n": "Azelaic acid",
+  "ev": "b",
+  "does": "Fades marks and calms redness and breakouts.",
+  "alt": [
+   [
+    "The Ordinary Azelaic Acid Suspension 10%",
+    "Budget"
+   ],
+   [
+    "Paula's Choice 10% Azelaic Acid Booster",
+    "Online"
+   ],
+   [
+    "ACM Azéane 15% azelaic acid cream",
+    "French pharmacy; sold without prescription in some countries, check yours"
+   ]
+  ]
+ },
+ {
+  "k": "salicylic",
+  "re": "salicylic acid|betaine salicylate|willow bark",
+  "n": "Salicylic acid (BHA)",
+  "ev": "b",
+  "does": "Clears pores and blackheads.",
+  "alt": [
+   [
+    "Stridex Maximum Strength pads (salicylic acid 2%)",
+    "Drugstore"
+   ],
+   [
+    "CeraVe SA Smoothing Cleanser",
+    "Drugstore"
+   ]
+  ]
+ },
+ {
+  "k": "glycolic",
+  "re": "glycolic acid",
+  "n": "Glycolic acid (AHA)",
+  "ev": "b",
+  "does": "Exfoliates for smoother, brighter skin.",
+  "alt": [
+   [
+    "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+    "Budget"
+   ],
+   [
+    "Dermasil Sheer Yuzu Body Cream (AHA, kojic acid)",
+    "Dollar Tree, body; wear SPF on exposed skin"
+   ],
+   [
+    "Dermasil AHA Glycolic Acid Toning Solution",
+    "Dollar Tree; strength not listed"
+   ]
+  ]
+ },
+ {
+  "k": "lactic",
+  "re": "lactic acid",
+  "n": "Lactic acid (AHA)",
+  "ev": "b",
+  "does": "Gentle exfoliation that also hydrates.",
+  "alt": [
+   [
+    "The Ordinary Lactic Acid 5% + HA",
+    "Budget, face"
+   ],
+   [
+    "AmLactin Daily Moisturizing Lotion (12%)",
+    "Drugstore, body"
+   ]
+  ]
+ },
+ {
+  "k": "mandelic",
+  "re": "mandelic acid",
+  "n": "Mandelic acid (AHA)",
+  "ev": "s",
+  "does": "The gentlest AHA, often used for sensitive or deeper skin tones.",
+  "alt": [
+   [
+    "The Ordinary Mandelic Acid 10% + HA",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "arbutin",
+  "re": "arbutin",
+  "n": "Alpha arbutin",
+  "ev": "s",
+  "does": "Gently fades dark spots in leave-on products.",
+  "alt": [
+   [
+    "The Ordinary Alpha Arbutin 2% + HA",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "tranexamic",
+  "re": "tranexamic",
+  "n": "Tranexamic acid",
+  "ev": "s",
+  "does": "Helps fade stubborn dark patches like melasma.",
+  "alt": [
+   [
+    "Naturium Tranexamic Topical Acid 5%",
+    "Online"
+   ],
+   [
+    "Spa Scentials Face Shake toner mist (niacinamide + tranexamic acid)",
+    "Dollar Tree; strength not listed"
+   ]
+  ]
+ },
+ {
+  "k": "ha",
+  "lowOk": 1,
+  "re": "sodium hyaluronate|hyaluronic acid|hydrolyzed hyaluronic",
+  "n": "Hyaluronic acid",
+  "ev": "b",
+  "does": "Pulls water into the skin; plumps temporarily.",
+  "alt": [
+   [
+    "The Ordinary Hyaluronic Acid 2% + B5",
+    "Budget"
+   ],
+   [
+    "The Inkey List Hyaluronic Acid Serum",
+    "Budget"
+   ],
+   [
+    "Dermasil Hyaluronic Hydration Body Cream Serum",
+    "Dollar Tree, body"
+   ],
+   [
+    "Lalio Moist Hya B5 Gel Cream",
+    "Thai drugstore, light gel cream"
+   ]
+  ]
+ },
+ {
+  "k": "ceramide",
+  "lowOk": 1,
+  "re": "ceramide",
+  "n": "Ceramides",
+  "ev": "b",
+  "does": "Rebuild the skin barrier.",
+  "alt": [
+   [
+    "CeraVe Moisturizing Cream",
+    "Drugstore"
+   ],
+   [
+    "Dermasil Sweet Almond Body Cream",
+    "Dollar Tree, body; contains almond"
+   ]
+  ]
+ },
+ {
+  "k": "peptide",
+  "lowOk": 1,
+  "re": "palmitoyl|acetyl hexapeptide|argireline|matrixyl|tripeptide|tetrapeptide|pentapeptide|oligopeptide|polypeptide",
+  "n": "Peptides",
+  "ev": "s",
+  "does": "Signal peptides; modest smoothing in some studies, mostly from brand-funded tests.",
+  "alt": [
+   [
+    "The Ordinary Multi-Peptide + HA Serum",
+    "Budget"
+   ],
+   [
+    "The Ordinary Matrixyl 10% + HA",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "copper",
+  "re": "copper tripeptide|copper peptide|ghk-cu",
+  "n": "Copper peptides",
+  "ev": "s",
+  "does": "May support repair; evidence is limited.",
+  "alt": [
+   [
+    "The Ordinary Multi-Peptide + Copper Peptides 1% Serum",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "centella",
+  "re": "centella|madecassoside|asiaticoside|cica\\b",
+  "n": "Centella (cica)",
+  "ev": "s",
+  "does": "Calms irritation and redness.",
+  "alt": [
+   [
+    "SKIN1004 Madagascar Centella Ampoule",
+    "K-beauty"
+   ],
+   [
+    "La Roche-Posay Cicaplast Baume B5",
+    "Pharmacy"
+   ],
+   [
+    "Spa Scentials Face Shake toner mist (centella + ceramide)",
+    "Dollar Tree"
+   ]
+  ]
+ },
+ {
+  "k": "panthenol",
+  "re": "panthenol",
+  "n": "Panthenol (B5)",
+  "ev": "b",
+  "does": "Soothes and hydrates.",
+  "alt": [
+   [
+    "La Roche-Posay Cicaplast Baume B5",
+    "Pharmacy"
+   ],
+   [
+    "The Ordinary Hyaluronic Acid 2% + B5",
+    "Budget"
+   ],
+   [
+    "Dermasil Bare Vanilla Body Cream (panthenol, tamanu)",
+    "Dollar Tree, body; scented"
+   ],
+   [
+    "Uriage Bariéderm Cica cream (copper-zinc)",
+    "French pharmacy, like Avène Cicalfate"
+   ]
+  ]
+ },
+ {
+  "k": "urea",
+  "re": "\\burea\\b",
+  "n": "Urea",
+  "ev": "b",
+  "does": "Hydrates and softens rough, dry skin.",
+  "alt": [
+   [
+    "Eucerin UreaRepair or Roughness Relief Lotion",
+    "Drugstore"
+   ],
+   [
+    "Eucerin UreaRepair 30% cream",
+    "Thick skin only: heels, elbows, calluses; not the face"
+   ]
+  ]
+ },
+ {
+  "k": "squalane",
+  "re": "squalane",
+  "n": "Squalane",
+  "ev": "b",
+  "does": "A light, stable moisturizing oil.",
+  "alt": [
+   [
+    "The Ordinary 100% Plant-Derived Squalane",
+    "Budget"
+   ]
+  ],
+  "diy": true
+ },
+ {
+  "k": "bpo",
+  "re": "benzoyl peroxide",
+  "n": "Benzoyl peroxide",
+  "ev": "b",
+  "does": "Kills acne bacteria.",
+  "alt": [
+   [
+    "PanOxyl Acne Foaming Wash",
+    "Drugstore"
+   ]
+  ]
+ },
+ {
+  "k": "caffeine",
+  "re": "\\bcaffeine\\b",
+  "n": "Caffeine",
+  "ev": "f",
+  "does": "Temporarily reduces puffiness.",
+  "alt": [
+   [
+    "The Ordinary Caffeine Solution 5% + EGCG",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "bakuchiol",
+  "re": "bakuchiol",
+  "n": "Bakuchiol",
+  "ev": "s",
+  "does": "A gentler retinol alternative with a few small studies.",
+  "alt": [
+   [
+    "The Inkey List Bakuchiol Moisturizer",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "snail",
+  "re": "snail secretion|snail mucin",
+  "n": "Snail mucin",
+  "ev": "f",
+  "does": "A hydrating, soothing filler; little hard evidence beyond moisturizing.",
+  "alt": [
+   [
+    "COSRX Advanced Snail 96 Mucin Power Essence",
+    "K-beauty"
+   ]
+  ]
+ },
+ {
+  "k": "heartleaf",
+  "re": "houttuynia|heartleaf",
+  "n": "Heartleaf (houttuynia) extract",
+  "ev": "f",
+  "does": "A soothing K-beauty plant extract; lab studies show calming and antimicrobial effects, few human trials.",
+  "alt": [
+   [
+    "Anua Heartleaf 77% Soothing Toner",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "minoxidil",
+  "re": "minoxidil",
+  "n": "Minoxidil",
+  "ev": "b",
+  "does": "The proven over-the-counter treatment for thinning hair. It only keeps working while you use it.",
+  "alt": [
+   [
+    "Kirkland Signature Minoxidil 5% (Costco)",
+    "Generic, same active"
+   ],
+   [
+    "Store-brand minoxidil 5% foam or solution",
+    "Drugstore generic"
+   ]
+  ]
+ },
+ {
+  "k": "bond",
+  "re": "bis-aminopropyl diglycol dimaleate|bond (repair|builder)|maleic acid",
+  "n": "Bond repair",
+  "ev": "s",
+  "does": "Helps strengthen hair damaged by bleach, colour or heat. Brand-funded evidence; little benefit on undamaged hair.",
+  "alt": [
+   [
+    "Shea Moisture Amla Oil Bond Repair Masque",
+    "Drugstore"
+   ],
+   [
+    "K18 or Olaplex only if hair is bleached",
+    "Salon; no cheaper match with the same patented active"
+   ],
+   [
+    "L'Oréal Elseve Bond Repair conditioner and leave-in",
+    "Drugstore; smoothing more than true bond repair"
+   ]
+  ]
+ },
+ {
+  "k": "protein",
+  "re": "hydrolyzed (keratin|wheat protein|silk|soy protein)|keratin\\b",
+  "n": "Hydrolyzed proteins and keratin",
+  "ev": "s",
+  "does": "Fill gaps in damaged, porous hair for strength and less breakage. Too much can feel stiff on fine hair.",
+  "alt": [
+   [
+    "Schwarzkopf Gliss 4-in-1 Regeneration mask",
+    "Drugstore"
+   ],
+   [
+    "Balea Professional Plex Care serum (dm)",
+    "Europe drugstore"
+   ],
+   [
+    "Kundal Honey & Macadamia Protein Treatment",
+    "K-beauty"
+   ]
+  ]
+ },
+ {
+  "k": "ectoin",
+  "re": "ectoin|bisabolol",
+  "n": "Ectoin and bisabolol (soothing)",
+  "ev": "s",
+  "does": "Calm a dry, tight or irritated scalp or skin.",
+  "alt": [
+   [
+    "alverde Kopfhaut Balance scalp serum (dm)",
+    "Europe drugstore, fragrance-free"
+   ],
+   [
+    "La Roche-Posay Cicaplast Baume B5",
+    "Pharmacy, skin"
+   ]
+  ]
+ },
+ {
+  "k": "glycerin",
+  "re": "^\\s*(aqua|water)[^,]*,\\s*glycerin",
+  "n": "Glycerin-rich lotion",
+  "ev": "b",
+  "does": "Glycerin pulls water into dry, cracked skin; one of the best-studied moisturizers.",
+  "alt": [
+   [
+    "Corn Huskers Lotion",
+    "Drugstore or farm store, about 5 dollars"
+   ],
+   [
+    "Neutrogena Norwegian Formula Hand Cream",
+    "Drugstore"
+   ]
+  ]
+ },
+ {
+  "k": "hocl",
+  "re": "hypochlorous",
+  "n": "Hypochlorous acid (HOCl)",
+  "ev": "s",
+  "does": "A gentle antimicrobial your own immune cells make. Used in wound and eyelid care; on skin it can calm redness and help with irritation after workouts, shaving or tattoos. It breaks down over time, so buy small bottles and use them up.",
+  "alt": [
+   [
+    "Three Ships Take Five Balancing Spray",
+    "Canadian, face and body"
+   ],
+   [
+    "e11ement Face and Skin Spray",
+    "Simple formula, acne-prone or irritated skin"
+   ],
+   [
+    "Honeydew Labs Hypochlorous Acid Spray",
+    "Post-workout and tattoo care"
+   ]
+  ]
+ },
+ {
+  "k": "pha",
+  "re": "gluconolactone|lactobionic",
+  "n": "PHA (gluconolactone)",
+  "ev": "s",
+  "does": "The gentlest exfoliating acid; good for sensitive skin and for building up to stronger acids.",
+  "alt": [
+   [
+    "SVR Sebiaclear Serum (14% gluconolactone, 4% niacinamide)",
+    "French pharmacy"
+   ],
+   [
+    "The Inkey List PHA Toner",
+    "Budget"
+   ]
+  ]
+ },
+ {
+  "k": "prostaglandin",
+  "re": "cloprostenol|cloprostenate|bimatoprost|latanoprost|travoprost|dihydroxy difluoro ethyl",
+  "n": "Prostaglandin analog (lash growth)",
+  "ev": "b",
+  "does": "This is what actually lengthens lashes; bimatoprost is a prescription drug for it. Side effects: darker eyelid skin, red or itchy eyes, and rarely a permanent change in iris color. Avoid in pregnancy and with eye conditions; stop if eyes get irritated. Results fade once you stop.",
+  "alt": [
+   [
+    "Latisse (bimatoprost, prescription)",
+    "Same effect, dosed and monitored by a doctor"
+   ],
+   [
+    "Castor oil on a clean spoolie",
+    "Gentle, cheap conditioning; won't lengthen much"
+   ]
+  ]
+ },
+ {
+  "k": "lashpeptide",
+  "re": "myristoyl (penta|hexa)peptide|lash peptide",
+  "n": "Lash peptides (myristoyl pentapeptide-17 etc.)",
+  "ev": "f",
+  "does": "Peptides that condition lashes so they look fuller and break less. Little independent evidence for real growth; prostaglandin-free serums are gentler but weaker.",
+  "alt": [
+   [
+    "The Ordinary Multi-Peptide Lash and Brow Serum",
+    "Budget peptide option"
+   ],
+   [
+    "Castor oil on a clean spoolie",
+    "Cheapest conditioning"
+   ]
+  ]
+ },
+ {
+  "k": "immortelle",
+  "re": "helichrysum|immortelle",
+  "n": "Immortelle (helichrysum) extract and oil",
+  "ev": "f",
+  "does": "An antioxidant flower extract and oil. Its retinol-like claims come from brand-funded tests. The essential oil adds natural fragrance allergens.",
+  "alt": [
+   [
+    "The Ordinary Granactive Retinoid 2% Emulsion",
+    "Budget retinoid with real evidence"
+   ],
+   [
+    "CeraVe Skin Renewing Retinol Serum",
+    "Drugstore retinol"
+   ],
+   [
+    "DIY: helichrysum at 0.5% in jojoba",
+    "For the scent and the oil"
+   ]
+  ]
+ },
+ {
+  "k": "acmella",
+  "re": "acmella|spilanthes|spilanthol",
+  "n": "Acmella oleracea (\"plant Botox\")",
+  "ev": "f",
+  "does": "The buzz-button plant's spilanthol gives a tingly, briefly tightened feel. Claims that it relaxes expression lines like Botox come from small brand tests; no cream reaches the muscles.",
+  "alt": [
+   [
+    "The Ordinary Argireline Solution 10%",
+    "Budget peptide for expression lines"
+   ]
+  ]
+ },
+ {
+  "k": "tansy",
+  "re": "tanacetum vulgare|tansy|golden button",
+  "n": "Tansy extract (\"golden button\")",
+  "ev": "f",
+  "does": "Mainly fragrance. Tansy contains thujone, which is toxic in essential-oil form, so tansy oil isn't used on skin. Small amounts of extract in a cream are allowed, but it's in the daisy family and can trigger ragweed-type allergies. Patch test, and skip in pregnancy.",
+  "alt": [
+   [
+    "CeraVe Moisturizing Cream",
+    "Fragrance-free option"
+   ]
+  ]
+ },
+ {
+  "k": "algae",
+  "re": "jania rubens|red alga|algae extract|seaweed extract|chondrus",
+  "n": "Algae extract",
+  "ev": "f",
+  "does": "Moisturizing and soothing, with lab and brand-funded studies behind firming claims. Usually present in tiny amounts.",
+  "alt": [
+   [
+    "The Ordinary Natural Moisturizing Factors + HA",
+    "Cheap hydration"
+   ]
+  ]
+ },
+ {
+  "k": "powderbase",
+  "re": "aluminum starch octenylsuccinate|lauroyl lysine|zinc myristate",
+  "n": "Oil-absorbing powder base",
+  "ev": "b",
+  "does": "Starch and amino-acid powders absorb oil and give a smooth, soft-matte, less chalky finish. That's the real job of a skincare powder: shine control, not treatment. Starch-based powders also avoid the contamination worries of low-grade talc.",
+  "alt": [
+   [
+    "Cornstarch- or arrowroot-based loose powder",
+    "Cheapest oil control"
+   ],
+   [
+    "DIY overnight skin powder (in Recipes)",
+    "Unscented and shade-matched"
+   ]
+  ]
+ },
+ {
+  "k": "scutellaria",
+  "re": "scutellaria|baicalensis|ougon|baikal skullcap",
+  "n": "Scutellaria (Baikal skullcap) root extract",
+  "ev": "f",
+  "does": "An antioxidant, soothing root extract. Claims that it forms an \"anti-PM2.5 filter\" come from lab tests; in a powder it's a tiny amount. Washing your face at night removes pollution more reliably.",
+  "alt": [
+   [
+    "Gentle nightly cleanse",
+    "The proven way to remove pollution"
+   ]
+  ]
+ },
+ {
+  "k": "hormone",
+  "re": "estradiol|estrogen|oestrogen|estriol|progesterone|placenta|phytoestrogen",
+  "n": "Hormones or placenta extract",
+  "ev": "f",
+  "does": "Real hormones in skincare can be absorbed and affect the body, so in most countries they're only allowed in prescription products. Placenta extracts have little evidence and can be poorly regulated. Plant \"phytoestrogens\" are much weaker. Avoid in pregnancy and if you have a hormone-sensitive condition; ask a doctor about prescription options for menopause skin.",
+  "alt": [
+   [
+    "The Ordinary Natural Moisturizing Factors + HA",
+    "Plain hydration"
+   ],
+   [
+    "Prescription estrogen cream",
+    "Only through a doctor"
+   ]
+  ]
+ },
+ {
+  "k": "talc",
+  "re": "^talc$|\\btalc\\b",
+  "n": "Talc (dusting and body powder base)",
+  "ev": "care",
+  "does": "Absorbs moisture and reduces friction. Loose talc can irritate lungs when it clouds up, and cosmetic talc has had asbestos contamination problems; many brands have switched to starch. Keep any loose powder away from babies' faces.",
+  "alt": [
+   [
+    "Starch-based body powder (corn, tapioca or arrowroot)",
+    "Same anti-chafe job, no talc"
+   ],
+   [
+    "DIY unscented talc-free body powder (in Recipes)",
+    "For sensitive skin"
+   ]
+  ]
+ },
+ {
+  "k": "bicarb",
+  "re": "sodium bicarbonate|baking soda",
+  "n": "Baking soda (sodium bicarbonate) in a leave-on",
+  "ev": "care",
+  "does": "Absorbs odor, but it's strongly alkaline (pH about 8.5) and can sting or rash underarms, shaved skin and intimate areas, especially on sweaty skin. Fine in bath soaks and bath bombs that dissolve in lots of water.",
+  "alt": [
+   [
+    "Starch-only body powder",
+    "No baking soda"
+   ],
+   [
+    "Native or Schmidt's Sensitive deodorant",
+    "Baking-soda-free"
+   ]
+  ]
+ },
+ {
+  "k": "capsicum",
+  "re": "capsicum|capsaicin|chili extract",
+  "n": "Capsicum (chili) extract",
+  "ev": "care",
+  "does": "Warming and tingling. On leave-on skin it can burn, especially after shaving, on underarms or near eyes and intimate areas. Wash hands after applying.",
+  "alt": [
+   [
+    "Unscented starch powder",
+    "No warming agents"
+   ]
+  ]
+ },
+ {
+  "k": "citrusphoto",
+  "re": "citrus (limon|aurantifolia|bergamia|aurantium dulcis)? ?\\(?(lemon|lime|bergamot|grapefruit)\\)? ?(peel )?oil|lime oil|lemon peel oil|bergamot oil",
+  "n": "Cold-pressed citrus oil (lemon, lime, bergamot)",
+  "ev": "care",
+  "does": "Expressed lemon, lime and bergamot oils can cause dark marks or burns when skin with them on is exposed to sun (phytophotodermatitis). Fine in rinse-off products; in leave-on, look for steam-distilled or bergapten-free (FCF) versions, or avoid sun on that area for 12 hours.",
+  "alt": [
+   [
+    "Bergamot FCF or distilled lime oil",
+    "Sun-safe versions for DIY"
+   ]
+  ]
+ },
+ {
+  "k": "synmica",
+  "re": "fluorphlogopite|synthetic mica",
+  "n": "Synthetic mica (fluorphlogopite)",
+  "ev": "info",
+  "does": "Lab-made mica for shimmer. Same look as natural mica without the child-labor concerns linked to some mined mica. Not a skincare active; inert and low risk.",
+  "alt": [
+   [
+    "Cosmetic-grade mica, ethically sourced",
+    "For DIY shimmer"
+   ]
+  ]
+ },
+ {
+  "k": "aspen",
+  "re": "populus (tremuloides|adenopoda)|aspen bark",
+  "n": "Aspen bark extract (natural preservative)",
+  "ev": "f",
+  "does": "Contains salicin and salicylates, and is sold as a natural preservative. Evidence it preserves well on its own is thin. Skip if you're allergic to aspirin. A dry powder with no water doesn't need a preservative anyway.",
+  "alt": [
+   [
+    "Water-free powder, no preservative needed",
+    "Keep it dry"
+   ]
+  ]
+ },
+ {
+  "k": "triclosan",
+  "re": "triclosan|triclocarban",
+  "n": "Triclosan (antibacterial \"deo factor\")",
+  "ev": "care",
+  "does": "An antibacterial that the US FDA removed from consumer soaps in 2016 and the EU restricts. Concerns include hormone disruption in animal studies and contributing to antibiotic resistance. It isn't needed for odor control.",
+  "alt": [
+   [
+    "Starch powder with a little zinc oxide",
+    "DIY odor control"
+   ],
+   [
+    "Zinc ricinoleate deodorant",
+    "Triclosan-free odor neutralizer"
+   ]
+  ]
+ },
+ {
+  "k": "calamine",
+  "re": "calamine",
+  "n": "Calamine (zinc oxide with iron oxide)",
+  "ev": "s",
+  "does": "Mild, soothing and drying; the pink is iron oxide. Good in anti-chafe powders. Low risk.",
+  "alt": [
+   [
+    "Zinc oxide in a starch powder",
+    "DIY version"
+   ]
+  ]
+ },
+ {
+  "k": "lilial",
+  "re": "butylphenyl methylpropional|lilial",
+  "n": "Butylphenyl methylpropional (lilial)",
+  "ev": "stop",
+  "does": "A lily-of-the-valley scent ingredient banned in UK and EU cosmetics since March 2022 because it may harm fertility, and a known skin allergen. Still found in older stock and imports. Choose a newer batch or a lilial-free product.",
+  "alt": [
+   [
+    "Lilial-free lily of the valley fragrance",
+    "Check the label"
+   ],
+   [
+    "DIY talc-free lily of the valley powder (in Recipes)",
+    "No banned ingredients"
+   ]
+  ]
+ },
+ {
+  "k": "dep",
+  "re": "diethyl phthalate|\\bdep\\b",
+  "n": "Diethyl phthalate (DEP)",
+  "ev": "care",
+  "does": "A solvent that makes perfume last. Allowed in cosmetics, but a phthalate many people avoid because of hormone questions from animal and population studies. Many brands now sell phthalate-free versions.",
+  "alt": [
+   [
+    "Phthalate-free body mist or oil perfume",
+    "Check the label"
+   ],
+   [
+    "DIY solid perfume (Make → Scent pairs)",
+    "No solvents or propellants"
+   ]
+  ]
+ },
+ {
+  "k": "biotin",
+  "re": "\\bbiotin\\b",
+  "n": "Biotin (in hair products)",
+  "ev": "f",
+  "does": "Applied to hair or scalp, biotin has no shown effect. It only helps hair when someone is truly deficient, and then taken by mouth. A marketing ingredient in growth shampoos.",
+  "alt": [
+   [
+    "Minoxidil 5% foam",
+    "The proven over-the-counter option for thinning"
+   ],
+   [
+    "Hydrolyzed protein shampoo",
+    "Makes damaged hair feel thicker"
+   ]
+  ]
+ },
+ {
+  "k": "riceprotein",
+  "re": "hydrolyzed rice protein|rice protein",
+  "n": "Hydrolyzed rice protein",
+  "ev": "s",
+  "does": "Coats damaged, porous hair so it feels thicker and breaks less. Real but temporary; washes out over a few shampoos.",
+  "alt": [
+   [
+    "DIY rice protein shampoo bar (in Recipes)",
+    "Same ingredient"
+   ]
+  ]
+ },
+ {
+  "k": "aluminum",
+  "re": "aluminum (chlorohydrate|zirconium|sesquichlorohydrate)|aluminium chlorohydrate|alum\\b",
+  "n": "Aluminum salts (antiperspirant)",
+  "ev": "b",
+  "does": "Temporarily plug sweat ducts so you sweat less; the proven way to stop wetness. Reviews find no reliable link to breast cancer. Can sting freshly shaved skin; apply at night to dry skin for best effect.",
+  "alt": [
+   [
+    "Certain-Dri or clinical-strength antiperspirant",
+    "For heavy sweating"
+   ],
+   [
+    "Zinc ricinoleate deodorant",
+    "Odor only, no sweat control"
+   ]
+  ]
+ },
+ {
+  "k": "sulfur",
+  "re": "\\bsulfur\\b|\\bsulphur\\b",
+  "n": "Sulfur",
+  "ev": "b",
+  "does": "Drying, antibacterial and antifungal. Works for acne, fungal acne and dandruff at 3 to 10% in leave-on masks and spot treatments. Smells, can dry skin; avoid with a sulfa allergy.",
+  "alt": [
+   [
+    "De La Cruz 10% Sulfur Ointment",
+    "Budget leave-on spot treatment"
+   ],
+   [
+    "Mario Badescu Drying Lotion",
+    "Sulfur plus salicylic"
+   ]
+  ]
+ },
+ {
+  "k": "babchi",
+  "re": "babchi|bakuchi (seed|oil|powder)|psoralea corylifolia|cullen corylifolium",
+  "n": "Babchi (bakuchi seed)",
+  "ev": "stop",
+  "does": "The whole seed or its oil contains psoralen, which causes sun burns and dark patches. Psoralens are banned in EU cosmetics. Bakuchiol is the safe, purified part.",
+  "alt": [
+   [
+    "The Inkey List Bakuchiol Moisturizer",
+    "Budget, psoralen-free"
+   ],
+   [
+    "Herbivore Bakuchiol Retinol Alternative Serum",
+    "Mid-range"
+   ],
+   [
+    "The Ordinary Retinol 0.2% in Squalane",
+    "Budget, stronger evidence; not in pregnancy"
+   ]
+  ]
+ },
+ {
+  "k": "kojic",
+  "re": "kojic",
+  "n": "Kojic acid (or kojic dipalmitate)",
+  "ev": "s",
+  "does": "Slows melanin production, so dark spots fade slowly. Plain kojic acid can irritate and cause allergies; the dipalmitate form is gentler. In a soap it rinses off fast, so leave-on forms do more.",
+  "alt": [
+   [
+    "The Ordinary Alpha Arbutin 2% + HA",
+    "Leave-on alternative, budget"
+   ],
+   [
+    "The Ordinary Azelaic Acid Suspension 10%",
+    "Leave-on alternative, also calms redness"
+   ],
+   [
+    "Naturium Tranexamic Topical Acid 5%",
+    "Leave-on, for stubborn patches"
+   ]
+  ]
+ },
+ {
+  "k": "licorice",
+  "re": "glycyrrhiza|licorice|liquorice|kanzou|glabridin|glycyrrhizate",
+  "n": "Licorice root extract",
+  "ev": "s",
+  "does": "Calms redness and gently evens tone; glabridin is the active part. Usually a small amount.",
+  "alt": [
+   [
+    "The Ordinary Alpha Arbutin 2% + HA",
+    "Same tone-evening job, leave-on"
+   ],
+   [
+    "The Ordinary Azelaic Acid Suspension 10%",
+    "Stronger evidence, also calms redness"
+   ]
+  ]
+ },
+ {
+  "k": "petrolatum",
+  "re": "^petrolatum|petroleum jelly|white petrolatum",
+  "n": "Petrolatum",
+  "ev": "b",
+  "does": "The most effective occlusive: seals water in and protects a damaged barrier. Non-comedogenic in studies.",
+  "alt": [
+   [
+    "Vaseline Original Petroleum Jelly",
+    "Drugstore, thin layer over moisturizer"
+   ],
+   [
+    "Aquaphor Healing Ointment",
+    "Drugstore"
+   ],
+   [
+    "CeraVe Healing Ointment",
+    "Drugstore, with ceramides"
+   ]
+  ]
+ },
+ {
+  "k": "oat",
+  "re": "avena sativa|colloidal oatmeal|oat kernel|oat extract|oatmeal",
+  "n": "Oat (colloidal oatmeal)",
+  "ev": "b",
+  "does": "Calms itchy, dry skin and supports the barrier.",
+  "alt": [
+   [
+    "Aveeno Daily Moisturizing Lotion",
+    "Drugstore"
+   ],
+   [
+    "Dermasil Oatmeal Milk Toner",
+    "Dollar Tree"
+   ]
+  ],
+  "diy": true
+ },
+ {
+  "k": "zinc",
+  "re": "zinc oxide",
+  "n": "Zinc oxide (mineral sunscreen)",
+  "ev": "b",
+  "does": "Broad UV protection, if the product carries an SPF rating.",
+  "alt": [
+   [
+    "Any mineral SPF 30+ you'll wear daily",
+    "Drugstore"
+   ]
+  ]
+ }
+]

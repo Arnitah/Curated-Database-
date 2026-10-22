@@ -1,0 +1,67 @@
+[
+ [
+  "\\begf\\b|epidermal growth factor|sh-oligopeptide-1|growth factor",
+  "Growth factors (EGF)",
+  "Lab studies only; little proof it does more in a cream than a good moisturizer."
+ ],
+ [
+  "pdrn|sodium dna|salmon dna|polydeoxyribonucleotide",
+  "PDRN (salmon DNA)",
+  "Injected PDRN has real wound-healing evidence. In creams and serums, DNA fragments are too large to reach the fibroblasts it targets, and there are few independent studies."
+ ],
+ [
+  "exosome",
+  "Exosomes",
+  "Very early research; no good evidence for skin creams yet."
+ ],
+ [
+  "\\bgold\\b|colloidal gold",
+  "Gold",
+  "Adds shimmer and price, not results."
+ ],
+ [
+  "caviar",
+  "Caviar extract",
+  "A moisturizing filler with a luxury story."
+ ],
+ [
+  "diamond|pearl powder",
+  "Diamond or pearl powder",
+  "Mostly a light-reflecting texture."
+ ],
+ [
+  "stem cell|meristem",
+  "Plant stem cells",
+  "Plant cells can't act as human stem cells; it's an antioxidant extract at best."
+ ],
+ [
+  "collagen\\b(?! booster)|hydrolyzed collagen|soluble collagen",
+  "Collagen",
+  "Too large to reach the deeper skin; it works as a humectant, not a collagen rebuilder."
+ ],
+ [
+  "24k|platinum",
+  "Precious metals",
+  "Marketing, not function."
+ ],
+ [
+  "cadpr|cytokine",
+  "cADPR / cytokine complex",
+  "A brand-coined ingredient story; no independent human trials for hair growth."
+ ],
+ [
+  "anemarrhena|volufiline|sarsasapogenin",
+  "Volufiline (anemarrhena root)",
+  "Its \"volume\" claims come from the supplier's own lab and small brand tests; no independent trials."
+ ],
+ [
+  "citrus limon (fruit|peel) extract|lemon (fruit|peel) extract|lemon extract",
+  "Lemon extract",
+  "A tiny amount of extract isn't a real dose of vitamin C or acid; it's mostly for the story and scent."
+ ],
+ [
+  "lilium|lily (bulb|flower) extract",
+  "Lily extract",
+  "A light moisturising plant extract; no evidence for brightening or repair."
+ ]
+]

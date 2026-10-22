@@ -1,0 +1,68 @@
+[
+ {
+  "id": "iso",
+  "sev": "stop",
+  "label": "Taking isotretinoin (Accutane), or stopped less than 6 months ago",
+  "note": "Isotretinoin makes skin tear easily. Wait until you've been off it for at least 6 months."
+ },
+ {
+  "id": "retin",
+  "sev": "stop",
+  "label": "Using a retinoid on this area (retinol, tretinoin, adapalene)",
+  "note": "Pause it for at least a week before sugaring that area."
+ },
+ {
+  "id": "broken",
+  "sev": "stop",
+  "label": "Sunburn, rash, cuts, or irritation in the area",
+  "note": "Wait until it has fully healed."
+ },
+ {
+  "id": "peel",
+  "sev": "stop",
+  "label": "Chemical peel, laser, or microdermabrasion there in the last 2 weeks",
+  "note": "Give the skin at least 2 weeks to recover first."
+ },
+ {
+  "id": "spots",
+  "sev": "care",
+  "label": "Moles, warts, skin tags, cold sores, or varicose veins in the area",
+  "note": "Work around them. Never put paste over them."
+ },
+ {
+  "id": "health",
+  "sev": "care",
+  "label": "Diabetes, poor circulation, or taking blood thinners",
+  "note": "Ask your doctor first. Skin may bruise more easily and heal more slowly."
+ },
+ {
+  "id": "short",
+  "sev": "care",
+  "label": "Hair is shorter than a grain of rice (about 6 mm)",
+  "note": "Wait a few more days. The paste can't grip short hair, so it pulls skin instead."
+ },
+ {
+  "id": "long",
+  "sev": "care",
+  "label": "Hair is longer than about 1.5 cm",
+  "note": "Trim it to about 6 mm first so it doesn't tangle and snap."
+ },
+ {
+  "id": "preg",
+  "sev": "info",
+  "label": "Pregnant",
+  "note": "Skin can be more sensitive. Try a small patch first."
+ },
+ {
+  "id": "first",
+  "sev": "info",
+  "label": "First time sugaring, or doing the bikini area",
+  "note": "Start with an easy area like the lower leg. For the bikini area, consider a professional the first time."
+ },
+ {
+  "id": "period",
+  "sev": "info",
+  "label": "Your period is due in the next few days",
+  "note": "Skin is often more sensitive then. Sugaring a week later may hurt less."
+ }
+]

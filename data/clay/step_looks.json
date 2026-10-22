@@ -1,0 +1,130 @@
+{
+ "Cleanser": [
+  "tube",
+  "#DCE0D2"
+ ],
+ "Toner": [
+  "toner",
+  "#CFDDE3"
+ ],
+ "Skin conditioner": [
+  "toner",
+  "#E3E8D6"
+ ],
+ "Serum": [
+  "dropper",
+  "#EBD3A8"
+ ],
+ "Treatment": [
+  "tube",
+  "#E8C98E"
+ ],
+ "Moisturizer": [
+  "jar",
+  "#DEDDC6"
+ ],
+ "Eye": [
+  "jar",
+  "#E3D6EA"
+ ],
+ "Sunscreen": [
+  "tube",
+  "#EDE0C4"
+ ],
+ "Wash or soap": [
+  "pump",
+  "#E6E3DC"
+ ],
+ "Scrub": [
+  "jar",
+  "#F0D3C4"
+ ],
+ "Skin conditioner or mist": [
+  "mist",
+  "#D8E4D0"
+ ],
+ "Lotion or cream": [
+  "pump",
+  "#EADFD0"
+ ],
+ "Oil": [
+  "dropper",
+  "#EBD9A8"
+ ],
+ "Shampoo": [
+  "pump",
+  "#D9E4EA"
+ ],
+ "Conditioner": [
+  "pump",
+  "#E4DCEC"
+ ],
+ "Deep conditioner": [
+  "jar",
+  "#E8D6C0"
+ ],
+ "Leave-in": [
+  "mist",
+  "#DCE8DC"
+ ],
+ "Cream or lotion": [
+  "jar",
+  "#EFE0C8"
+ ],
+ "Tool": [
+  "mist",
+  "#E0E0E0"
+ ],
+ "Exfoliant": [
+  "toner",
+  "#E6C4AE"
+ ],
+ "Deodorant": [
+  "bottle",
+  "#E3E3EA"
+ ],
+ "Antiperspirant": [
+  "bottle",
+  "#DDE3EA"
+ ],
+ "Wash": [
+  "pump",
+  "#EADCE4"
+ ],
+ "Wipes": [
+  "bottle",
+  "#E8E8E8"
+ ],
+ "Pads or liners": [
+  "bottle",
+  "#F0E0E8"
+ ],
+ "Period care": [
+  "bottle",
+  "#F0E0E8"
+ ],
+ "Shaving": [
+  "tube",
+  "#E0E6EA"
+ ],
+ "Toothpaste": [
+  "tube",
+  "#D6E8EA"
+ ],
+ "Toothbrush": [
+  "bottle",
+  "#E0EAF0"
+ ],
+ "Floss": [
+  "bottle",
+  "#E6F0E6"
+ ],
+ "Mouthwash": [
+  "bottle",
+  "#D0E8E0"
+ ],
+ "Tongue scraper": [
+  "bottle",
+  "#E8E8E8"
+ ]
+}

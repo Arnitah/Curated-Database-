@@ -1,0 +1,242 @@
+[
+ {
+  "t": "Cleanser",
+  "what": "Removes oil, sunscreen, makeup and grime. Comes as gel, foam, cream, milk, oil or balm.",
+  "skin": "Clean skin lets everything after it work and keeps pores clear. Harsh cleansers strip the barrier and leave skin tight.",
+  "how": "Massage onto damp skin for 30 to 60 seconds, rinse with lukewarm water, pat dry.",
+  "when": "Evening always; morning a splash of water or gentle cleanser is enough for dry skin.",
+  "season": "Winter: cream or milk cleansers. Summer or oily skin: gel or gentle foam. Oil or balm first when wearing sunscreen or makeup (double cleanse)."
+ },
+ {
+  "t": "Toner",
+  "what": "A watery liquid used after cleansing. Old-style toners were alcohol astringents; modern ones hydrate (glycerin, hyaluronic acid), soothe (hydrosols, centella) or exfoliate (acids).",
+  "skin": "Hydrating toners add a first layer of water so serums and creams spread better. Exfoliating toners (glycolic, lactic, salicylic) smooth texture; they're actives, not basics.",
+  "how": "Pat in with clean hands, or sweep with a cotton pad for exfoliating ones. Apply on slightly damp skin.",
+  "when": "Hydrating: morning and evening. Exfoliating: 2 or 3 evenings a week to start.",
+  "season": "Winter: layer a hydrating toner 2 or 3 times (the 7-skin method). Summer: a light toner can replace a heavy moisturizer on oily skin."
+ },
+ {
+  "t": "Milk toner",
+  "what": "A milky toner: a very light emulsion with a little oil or ceramides, sometimes with rice, oat or soy. No dairy needed.",
+  "skin": "Hydrates like a toner but leaves a soft, cushioned finish, good for dry, tight or sensitive skin and barrier support.",
+  "how": "Pat into skin after cleansing, before serum. Shake first if it separates.",
+  "when": "Morning and evening.",
+  "season": "Best in cold, dry months or air-conditioned rooms. In humid summer weather it can replace a light lotion."
+ },
+ {
+  "t": "Essence",
+  "what": "Between a toner and a serum: watery but richer, often with ferments, niacinamide or hyaluronic acid.",
+  "skin": "Hydrates and plumps. Mostly a texture and layering choice; one good hydrating step is often enough.",
+  "how": "Press into skin with the palms after toner.",
+  "when": "Once or twice a day.",
+  "season": "Useful in winter or on dehydrated oily skin that doesn't like heavy creams."
+ },
+ {
+  "t": "Serum",
+  "what": "A concentrated, light product built around one or two actives: vitamin C, niacinamide, retinol, azelaic acid, peptides.",
+  "skin": "Targets one goal: dark spots, texture, redness, fine lines, oiliness. This is where most results come from.",
+  "how": "A few drops on damp skin after toner, before moisturizer. Thinnest texture first.",
+  "when": "Vitamin C in the morning; retinoids at night; others per the label. Introduce one new active at a time.",
+  "season": "Summer: lighter serums and more antioxidants under sunscreen. Winter: go slower with retinoids and acids if skin gets dry."
+ },
+ {
+  "t": "Skin conditioner",
+  "what": "Not one product but an ingredient role: anything that leaves skin softer and smoother. Humectants (glycerin, honey) draw water in; emollients (squalane, plant oils) smooth; occlusives (shea, petrolatum, beeswax) seal.",
+  "skin": "A good moisturizer uses all three. Labels say 'skin conditioning agent' for many of these.",
+  "how": "Found inside lotions, creams and balms rather than used alone.",
+  "when": "Daily, as part of moisturizer.",
+  "season": "Winter: more occlusives. Summer: more humectants and lighter emollients."
+ },
+ {
+  "t": "Lotion",
+  "what": "A light emulsion of water and oil, thinner than a cream. Needs a preservative because it contains water.",
+  "skin": "Hydrates and softens without heaviness. Suits normal, combination and oily skin, and large areas of body.",
+  "how": "Smooth onto slightly damp skin after serum, or after a shower for body.",
+  "when": "Morning and evening.",
+  "season": "Spring and summer, or humid climates. Switch to a cream when the air turns dry."
+ },
+ {
+  "t": "Cream",
+  "what": "A thicker emulsion with more oil and butters than a lotion.",
+  "skin": "Stronger barrier support and longer-lasting moisture for dry, mature or eczema-prone skin.",
+  "how": "A pea-sized amount for the face, pressed and smoothed in as the last step at night or before sunscreen in the morning.",
+  "when": "Once or twice a day.",
+  "season": "Autumn and winter, cold wind, dry indoor heat."
+ },
+ {
+  "t": "Gel / gel-cream",
+  "what": "A water-based gel, often with aloe or hyaluronic acid, sometimes with a touch of oil (gel-cream).",
+  "skin": "Light hydration that sinks in fast; good for oily, acne-prone skin and hot weather.",
+  "how": "As your moisturizer step, or layered under a cream in winter.",
+  "when": "Daily.",
+  "season": "Summer and humid climates."
+ },
+ {
+  "t": "Face or body oil",
+  "what": "Plant oils (jojoba, squalane, rosehip, argan) with no water, so no preservative is needed.",
+  "skin": "Softens and seals in water; it doesn't hydrate on its own, so use it on damp skin or over a water-based layer.",
+  "how": "2 to 4 drops pressed onto damp skin or over moisturizer. Body: right after the shower before drying fully.",
+  "when": "Evening, or daily on dry skin.",
+  "season": "Winter on face and body. Summer: body only, or a light oil like squalane at night."
+ },
+ {
+  "t": "Balm",
+  "what": "Water-free and solid: butters, waxes and oils.",
+  "skin": "The strongest seal: protects chapped lips, hands, elbows, cuticles and very dry patches.",
+  "how": "Warm a small amount between fingers and press onto the area; for face, use as the very last step at night only on dry spots (slugging).",
+  "when": "As needed.",
+  "season": "Winter, cold wind, skiing, flights."
+ },
+ {
+  "t": "Body conditioner",
+  "what": "A rich cream or bar used in the shower after washing, then rinsed off, like a hair conditioner for skin.",
+  "skin": "Leaves a thin layer of oils behind, so skin feels soft without a separate lotion. Handy for people who skip moisturizer.",
+  "how": "After washing, smooth over wet skin, wait a minute, then rinse lightly and pat dry.",
+  "when": "Each shower, or on dry-skin days.",
+  "season": "Winter and dry climates; in summer a light rinse is enough."
+ },
+ {
+  "t": "Shower gel vs body wash vs soap",
+  "what": "Shower gels and body washes are liquid cleansers made with synthetic detergents (like SLES or betaines); bar soap is made from oils and lye.",
+  "skin": "Washes are closer to skin's pH and easier to make gentle; soap cleans well but sits around pH 9 to 10 and can feel tighter.",
+  "how": "A small amount on a cloth or hands, lather, rinse.",
+  "when": "Daily.",
+  "season": "Winter: creamy washes or syndet bars. Summer: any; fragrance-free if you sweat and itch."
+ },
+ {
+  "t": "Natural vs safe synthetic",
+  "what": "Some brands label each ingredient natural or synthetic (Lush uses a leaf and a flask). \"Occurs naturally in essential oils\" marks fragrance allergens like limonene and linalool that come from the oils.",
+  "skin": "Neither label means safer. Synthetics are often purer and more tested; natural oils can be the bigger allergy risk. What matters is the amount and your skin.",
+  "how": "Read the list, not the icons: check fragrance allergens and preservatives you react to.",
+  "when": "Every new product.",
+  "season": "Any."
+ },
+ {
+  "t": "Self-preserving",
+  "what": "A product made without a separate preservative, usually because it has no water, or so much salt, sugar, alcohol or surfactant that microbes can't grow.",
+  "skin": "Fine when the formula is designed and tested for it. Anything with water and no preservative that is homemade will spoil.",
+  "how": "Keep water out of the jar and use clean, dry hands or a spoon.",
+  "when": "Check the period-after-opening symbol (open jar icon).",
+  "season": "Heat and humidity shorten shelf life."
+ },
+ {
+  "t": "Dry oil",
+  "what": "An oil blend built to feel weightless: light, fast-spreading oils (hazelnut, camellia, sesame) plus an ester such as caprylic/capric triglyceride. It is still 100% oil; \"dry\" describes the feel, not the contents.",
+  "skin": "Softens and seals in water from a shower or toner with no greasy film, so you can get dressed straight away.",
+  "how": "Body: 3 to 4 sprays onto damp skin straight after the shower, then smooth in. Hair: 1 or 2 sprays rubbed between your palms, then over the ends only. Face: 2 drops pressed over moisturizer, at night.",
+  "when": "Daily on the body; on the face at night, if it doesn't clog your pores.",
+  "season": "All year. Winter: a richer blend with more macadamia. Summer: a light one, or a shimmer version for evenings."
+ },
+ {
+  "t": "Body toner / body essence",
+  "what": "A thin, milky or watery body moisturiser, lighter than lotion; the body version of a face essence. Usually humectants (glycerin), a light oil (squalane) and barrier ingredients (ceramides, niacinamide).",
+  "skin": "Hydrates without a greasy film. On damp skin it also gives perfume something to cling to, so scent lasts longer.",
+  "how": "Pour into your palm and smooth over damp skin straight after the shower. Wait 30 seconds, then spray perfume over the same spots.",
+  "when": "Daily after showering.",
+  "season": "Summer: on its own. Winter: follow with a body oil or cream, because a toner alone is too light for very dry skin."
+ },
+ {
+  "t": "Setting powder",
+  "what": "A fine, translucent powder (starches, silk or sericite, a stearate to help it cling) pressed over skincare or makeup to absorb oil and blur pores. Tinted versions colour-correct: green for redness, pink or peach for dullness.",
+  "skin": "Soaks up shine and softens the look of pores. It doesn't treat skin; any \"skincare\" ingredients in it are in tiny amounts.",
+  "how": "Press a thin layer on with a puff, mainly on the T-zone. Over night cream, use very little so you don't dry your skin out.",
+  "when": "Daytime over sunscreen or makeup, or at night on oily skin.",
+  "season": "Summer and humid weather. In winter, use less, or only on the nose and forehead."
+ },
+ {
+  "t": "Tincture",
+  "what": "Herbs or wood soaked in strong alcohol for weeks, then strained. Alcohol pulls out scent and plant compounds that water or oil miss.",
+  "skin": "For perfumes (oud, vanilla, rose) and diluted scalp tonics. On its own, strong alcohol dries skin.",
+  "how": "Steep, shake every few days, strain through a coffee filter. For the scalp, dilute it to about 20 to 30% alcohol with water or hydrosol; for perfume, use it as is.",
+  "when": "Scalp tonics: daily or every other day. Perfume: as needed, on clothes or wrists.",
+  "season": "Winter: use scalp tonics less often, because alcohol dries the scalp more in cold, dry air."
+ },
+ {
+  "t": "Heat protectant",
+  "what": "A spray or serum, usually silicone-based (dimethicone, cyclomethicone), that forms a film over hair before hot tools.",
+  "skin": "Slows moisture loss and spreads heat more evenly, so hair burns less. Plant oils don't do this well; they can smoke or fry on a hot iron.",
+  "how": "Mist evenly over damp or dry hair, comb through, and let it dry before using tools. Keep tools under about 180 C (350 F) for fine or coloured hair.",
+  "when": "Every time you use heat.",
+  "season": "All year. Humid summers: silicones also help fight frizz."
+ },
+ {
+  "t": "Toner pad",
+  "what": "Cotton or gauze pads soaked in a toner. Some just hydrate or calm (centella, panthenol); others contain exfoliating acids (AHA, BHA, PHA).",
+  "skin": "Hydrating pads calm and prep skin. Acid pads smooth texture and loosen dead skin, but using them every day can over-exfoliate.",
+  "how": "Swipe once over clean skin, or leave a soaking pad on red or dry spots for 5 minutes. One pad per use; use the textured side for a light polish.",
+  "when": "Calming pads: daily. Acid pads: 2 to 3 times a week, at night, never on the same night as a retinoid.",
+  "season": "Summer: acid pads help oily, congested skin, but always wear sunscreen the next day. Winter: switch to calming pads."
+ },
+ {
+  "t": "Body oil types",
+  "what": "Six kinds you'll see: lightweight (light oils, quick shine), dry (sinks in almost straight away, no grease), thick (heavy, very moisturising, can transfer), perfumed (scent first, care second), fragrance-free (for sensitive skin, or so only your perfume shows) and shimmer (mica for glow). Active oils add treatment ingredients.",
+  "skin": "All of them work the same way: they seal in water. Put them on damp skin, not dry. Active oils are the only ones that do more: retinol, vitamin C and niacinamide for even tone; urea and mandelic acid for rough skin and KP. Urea and mandelic acid need water, so these products are actually milky emulsions, not pure oils.",
+  "how": "Straight after a shower, on damp skin: 1 to 2 pumps per limb. Thick oils: less, and at night. Shimmer: on top, only where you want glow (collarbones, shoulders, shins).",
+  "when": "Daily. Active oils with retinol or acids: at night, and wear sunscreen the next day.",
+  "season": "Summer: lightweight, dry or shimmer. Winter: thick, or a dry oil over a lotion."
+ },
+ {
+  "t": "Bath soak types",
+  "what": "Seven kinds: salt soaks (Epsom, Dead Sea, sodium sulfate), fizzing soaks (baking soda + citric acid), dispersing bath oils (oil + an emulsifier such as polysorbate 80), cream or milk baths, oat baths (colloidal oatmeal), herbal tea bags (dried herbs in a muslin bag), and CO2 tablets (Japanese bath tablets that release carbon dioxide).",
+  "skin": "Warm water itself relaxes muscles and helps you sleep if the bath ends 1 to 2 hours before bed. Oils and milk soften skin; colloidal oatmeal has real proof for itch and dryness. CO2 baths do widen small skin blood vessels at high concentrations, so skin flushes and feels warm. Minerals don't soak in or \"detox\".",
+  "how": "Salts: 25 to 60 g per full tub. Fizzing soak: half a cup. Bath oil: 1 to 2 capfuls. Oats: 30 to 50 g in a bag. 15 to 20 minutes at 38 to 41 C. Pat dry and moisturise within a few minutes.",
+  "when": "Evenings, 2 to 3 times a week. Skip very hot baths if pregnant or if you have heart or blood pressure problems.",
+  "season": "Winter: oils, oats and warming herbs. Summer: lukewarm with mint or citrus, and keep it short."
+ },
+ {
+  "t": "Menstruum (extraction solvent)",
+  "what": "The liquid you soak a herb in to pull out its compounds. Water pulls out minerals, plant acids, starches and slimy polysaccharides (aloe, marshmallow, oats). Glycerin works only when diluted with water, then extracts tannins, flavonoids and polyphenols. Alcohol pulls out resins, essential oils, phytosterols and alkaloids. Oil pulls out oil-soluble colour and fragrance compounds.",
+  "skin": "Matching the solvent to the herb is why an oil infusion of calendula, a water tea of chamomile and an alcohol tincture of frankincense all behave differently in a recipe.",
+  "how": "Water-plus-alcohol extracts the widest range, but alcohol makes polysaccharides drop out as gunk. A glycerite needs at least about 55 to 60% glycerin to keep itself from spoiling; water infusions spoil in days unless preserved.",
+  "when": "Choose the solvent before you choose the base: oil infusions for balms and oils, water or glycerites for gels and toners, tinctures for perfumes and hair tonics.",
+  "season": "All year."
+ },
+ {
+  "t": "Honey types for skin and hair",
+  "what": "All honey is mostly sugar and water with a little hydrogen peroxide and plant compounds. The flower sets the colour (measured on the Pfund scale from water white to dark amber) and taste. Light, creamy (crystallised) honeys: white clover, acacia, orange blossom. Medium: wildflower. Dark: buckwheat and manuka. Darker honey usually has more antioxidants.",
+  "skin": "Every honey is a humectant (pulls in moisture) and mildly antibacterial. Manuka has extra antibacterial MGO and the only strong evidence, for medical dressings on wounds and burns. For a face mask or hair mask, any raw honey works about the same.",
+  "how": "Face mask: 1 tsp on clean, damp skin for 10 to 20 minutes, rinse with warm water. Creamed honey (clover, acacia) spreads easiest and drips less. Hair: mix with conditioner or aloe so it rinses out. Pairs well with oats, yogurt, aloe, oil, rice flour or turmeric (a pinch; it stains). Don't mix with lemon or baking soda; they irritate.",
+  "when": "1 to 2 times a week. Skip red \"mad honey\" entirely: it's from rhododendron (Nepal, Turkey) and contains grayanotoxin, which causes poisoning when eaten and has no skin benefit. Purple honey (southeastern US) is a rare food curiosity, no special skin effect. Never give honey to babies under 1 to eat.",
+  "season": "Winter: honey plus oil for dry skin and hair. Summer: honey plus aloe or yogurt, lighter and less sticky."
+ },
+ {
+  "t": "Combining products safely",
+  "what": "Most viral routines stack 4 to 10 products. Gentle ones (cleanser, hydrating toner, moisturiser, oil, sunscreen) are safe to stack. The danger is stacking actives: acids (glycolic, lactic, salicylic), retinoids, benzoyl peroxide, vitamin C, peels, scrubs, and \"whitening\" products.",
+  "skin": "Each active slightly irritates on purpose. Two or three at once multiplies that, which is how people get burns, peeling and dark marks that take months to fade, especially on deeper skin tones.",
+  "how": "Rule of one: one active per routine. A scrub OR an acid on any day, never both. Retinoids and acids on different nights. Vitamin C in the morning, acids or retinoids at night. Add one new product at a time and wait 2 to 4 weeks. If a video mixes a peel, a scrub and a toner into one paste, skip it.",
+  "when": "Daily: cleanser, moisturiser, sunscreen. A few times a week: one active. Weekly: one mask or scrub.",
+  "season": "Winter, when skin is drier: fewer active nights. Summer: same actives, more sunscreen."
+ },
+ {
+  "t": "Arabic body-care words (Gulf and Moroccan shops)",
+  "what": "صابونية (sabooniya): a soft soap paste, usually grated soap plus herbs. دلكة (dilka): a Sudanese bridal body paste that's rubbed off. مقشر (muqashir): scrub. خلطة (khalta): a mix or blend. تفتيح (taftih): brightening or lightening. بياض الثلج (bayad al-thalj): \"snow white\", a lightening mix. مفاصل (mafasil): joints (knees, elbows, knuckles). صابون مغربي / بلدي: Moroccan black soap. كيس / ليفة: kessa mitt. سدر (sidr): jujube leaf powder. ورس (wars): yellow Flemingia powder. لوز مر: bitter almond. ماء الورد: rose water. تبريمة (tabrima): a seller's own herbal body paste; contents vary and are often unlisted.",
+  "skin": "Most of these are scrubs and soaps that polish and soften, so skin looks brighter for a day or two. True lightening only comes from leave-on actives over months, and the risky \"fast whitening\" mixes are where hidden mercury, hydroquinone and steroid creams turn up.",
+  "how": "Ask for the full ingredient list (INCI) before buying any تفتيح or بياض الثلج product. If a seller can't give one, skip it. Scrubs and soap pastes: 1 to 2 times a week, on damp skin, then moisturise.",
+  "when": "Weekly for scrubs and dilka; leave-on brighteners (niacinamide, azelaic acid) daily, with sunscreen.",
+  "season": "All year; the Eid and wedding seasons are when sellers push bundles."
+ },
+ {
+  "t": "Mist / hydrosol",
+  "what": "A sprayable water: hydrosols (floral waters from steam distillation) or water with glycerin and botanicals. Needs a preservative.",
+  "skin": "Refreshes and adds a light layer of water. On its own it can evaporate and leave skin drier, so follow with a moisturizer.",
+  "how": "Spray at arm's length with eyes closed, then pat in and seal.",
+  "when": "Any time; after cleansing or over makeup.",
+  "season": "Summer refresh or on flights. Keep it in the fridge for a cooling feel."
+ },
+ {
+  "t": "Mask",
+  "what": "A treatment left on for 10 to 20 minutes: clay (oil-absorbing), cream or gel (hydrating), sheet (soaked fabric) or sleeping mask.",
+  "skin": "Clay deep-cleans pores; hydrating masks plump; overnight masks seal. Results are mostly short-term.",
+  "how": "After cleansing; rinse clay before it cracks dry. Follow with moisturizer.",
+  "when": "Once or twice a week.",
+  "season": "Clay more in summer, hydrating masks more in winter."
+ },
+ {
+  "t": "Sunscreen",
+  "what": "Protects from UV with mineral filters (zinc oxide, titanium dioxide) or chemical filters. It's the one step that can't be made at home.",
+  "skin": "Prevents burning, dark spots, and most visible ageing. It also keeps actives like retinoids and acids from backfiring.",
+  "how": "About a quarter teaspoon for face and neck as the last morning step; reapply every 2 hours outdoors.",
+  "when": "Every morning, all year, even when cloudy.",
+  "season": "Summer: water-resistant and reapply. Winter: still daily, especially on snow, which reflects UV."
+ }
+]

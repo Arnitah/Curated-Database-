@@ -1,0 +1,296 @@
+{
+ "bergamotfcf": [
+  "T",
+  "citrus",
+  "bright, tea-like citrus",
+  1
+ ],
+ "bergamot": [
+  "T",
+  "citrus",
+  "bright citrus (use FCF on skin)",
+  1
+ ],
+ "orange": [
+  "T",
+  "citrus",
+  "sweet, juicy orange",
+  1
+ ],
+ "lemondistilled": [
+  "T",
+  "citrus",
+  "sharp, clean lemon",
+  1
+ ],
+ "lemoneo": [
+  "T",
+  "citrus",
+  "zesty lemon",
+  1
+ ],
+ "limeeo": [
+  "T",
+  "citrus",
+  "tangy lime",
+  1
+ ],
+ "grapefruit": [
+  "T",
+  "citrus",
+  "bitter-sweet grapefruit",
+  1
+ ],
+ "litsea": [
+  "T",
+  "citrus",
+  "lemon sherbet",
+  0.7
+ ],
+ "lemongrass": [
+  "T",
+  "herbal",
+  "grassy lemon",
+  0.6
+ ],
+ "peppermint": [
+  "T",
+  "herbal",
+  "cool mint",
+  0.4
+ ],
+ "eucalyptus": [
+  "T",
+  "herbal",
+  "fresh, camphor-like",
+  0.5
+ ],
+ "rosemary": [
+  "T",
+  "herbal",
+  "green, camphor-herb",
+  0.6
+ ],
+ "teatree": [
+  "T",
+  "herbal",
+  "medicinal and sharp",
+  0.4
+ ],
+ "citronella": [
+  "T",
+  "herbal",
+  "lemony-grassy",
+  0.6
+ ],
+ "juniper": [
+  "T",
+  "woody",
+  "gin-like, fresh",
+  0.8
+ ],
+ "cypress": [
+  "T",
+  "woody",
+  "green forest",
+  0.8
+ ],
+ "blackpepper": [
+  "T",
+  "spicy",
+  "dry, peppery sparkle",
+  0.5
+ ],
+ "cardamom": [
+  "T",
+  "spicy",
+  "sweet, airy spice",
+  0.6
+ ],
+ "gingereo": [
+  "T",
+  "spicy",
+  "warm, zingy",
+  0.6
+ ],
+ "elemi": [
+  "T",
+  "resinous",
+  "lemony incense",
+  0.8
+ ],
+ "neroli": [
+  "M",
+  "floral",
+  "bright orange blossom",
+  0.8
+ ],
+ "lavender": [
+  "M",
+  "floral",
+  "clean herbal floral",
+  1
+ ],
+ "clarysage": [
+  "M",
+  "herbal",
+  "musky, wine-like herb",
+  0.6
+ ],
+ "marjoram": [
+  "M",
+  "herbal",
+  "warm, soft herb",
+  0.7
+ ],
+ "geranium": [
+  "M",
+  "floral",
+  "rosy-green",
+  0.7
+ ],
+ "palmarosa": [
+  "M",
+  "floral",
+  "rosy, grassy",
+  0.8
+ ],
+ "roseeo": [
+  "M",
+  "floral",
+  "deep rose",
+  0.6
+ ],
+ "jasmineeo": [
+  "M",
+  "floral",
+  "rich, heady white flower",
+  0.4
+ ],
+ "ylang": [
+  "M",
+  "floral",
+  "creamy, exotic flower",
+  0.4
+ ],
+ "chamomile": [
+  "M",
+  "herbal",
+  "sweet hay and apple",
+  0.4
+ ],
+ "helichrysum": [
+  "M",
+  "herbal",
+  "honeyed, curry-like",
+  0.4
+ ],
+ "carrotseed": [
+  "M",
+  "earthy",
+  "earthy, woody root",
+  0.5
+ ],
+ "turmericeo": [
+  "M",
+  "spicy",
+  "earthy-warm spice",
+  0.5
+ ],
+ "bluetansy": [
+  "M",
+  "herbal",
+  "sweet, fruity herb",
+  0.4
+ ],
+ "nutmeg": [
+  "M",
+  "spicy",
+  "warm, sweet spice",
+  0.5
+ ],
+ "clove": [
+  "M",
+  "spicy",
+  "hot, sweet clove",
+  0.3
+ ],
+ "cinnamonbark": [
+  "M",
+  "spicy",
+  "hot cinnamon",
+  0.3
+ ],
+ "cassia": [
+  "M",
+  "spicy",
+  "sharp cinnamon",
+  0.3
+ ],
+ "hinoki": [
+  "M",
+  "woody",
+  "clean, lemony wood",
+  0.8
+ ],
+ "frankincense": [
+  "B",
+  "resinous",
+  "smoky, lemony incense",
+  0.8
+ ],
+ "myrrh": [
+  "B",
+  "resinous",
+  "bitter, balsamic resin",
+  0.4
+ ],
+ "sandalwood": [
+  "B",
+  "woody",
+  "creamy, soft wood",
+  1
+ ],
+ "cedarwood": [
+  "B",
+  "woody",
+  "dry pencil-shaving wood",
+  0.8
+ ],
+ "vetivereo": [
+  "B",
+  "earthy",
+  "smoky, rooty earth",
+  0.3
+ ],
+ "patchouli": [
+  "B",
+  "earthy",
+  "dark, earthy, sweet",
+  0.3
+ ],
+ "vanilla": [
+  "B",
+  "gourmand",
+  "warm, sweet vanilla",
+  0.8
+ ],
+ "vanillaabs": [
+  "B",
+  "gourmand",
+  "warm, sweet vanilla",
+  0.8
+ ],
+ "cocoaabs": [
+  "B",
+  "gourmand",
+  "dark chocolate",
+  0.5
+ ],
+ "hyssop": [
+  "M",
+  "herbal",
+  "sharp, sweet herb",
+  0.5
+ ]
+}

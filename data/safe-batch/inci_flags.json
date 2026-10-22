@@ -1,0 +1,22 @@
+{
+ "banned": [
+  "Banned",
+  "p-stop"
+ ],
+ "restricted": [
+  "Restricted",
+  "p-care"
+ ],
+ "allergen": [
+  "Allergen",
+  "p-care"
+ ],
+ "irritant": [
+  "Irritant",
+  "p-care"
+ ],
+ "caution": [
+  "Care",
+  "p-info"
+ ]
+}

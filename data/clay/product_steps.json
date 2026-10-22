@@ -1,0 +1,54 @@
+{
+ "face": [
+  "Cleanser",
+  "Toner",
+  "Skin conditioner",
+  "Serum",
+  "Treatment",
+  "Moisturizer",
+  "Eye",
+  "Sunscreen",
+  "Other"
+ ],
+ "body": [
+  "Wash or soap",
+  "Scrub",
+  "Skin conditioner or mist",
+  "Lotion or cream",
+  "Oil",
+  "Other"
+ ],
+ "hair": [
+  "Shampoo",
+  "Conditioner",
+  "Deep conditioner",
+  "Leave-in",
+  "Cream or lotion",
+  "Oil",
+  "Tool",
+  "Other"
+ ],
+ "under": [
+  "Exfoliant",
+  "Deodorant",
+  "Antiperspirant",
+  "Other"
+ ],
+ "intimate": [
+  "Wash",
+  "Wipes",
+  "Pads or liners",
+  "Period care",
+  "Moisturizer",
+  "Shaving",
+  "Other"
+ ],
+ "oral": [
+  "Toothpaste",
+  "Toothbrush",
+  "Floss",
+  "Mouthwash",
+  "Tongue scraper",
+  "Other"
+ ]
+}

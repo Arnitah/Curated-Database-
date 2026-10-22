@@ -1,0 +1,850 @@
+[
+ {
+  "id": "glow",
+  "labels": [
+   "Niacinamide 4 to 5%",
+   "Squalane or hyaluronic acid (sodium hyaluronate)",
+   "Lactic acid 5 to 10%, used 2 to 3 nights a week"
+  ],
+  "label": "Glow and radiance",
+  "area": "Face or body",
+  "honest": "Glow is mostly light bouncing off smooth, hydrated skin. A light oil and gentle, occasional exfoliation get you most of the way. Nothing makes skin glow from the inside.",
+  "works": [
+   [
+    "Squalane, jojoba, rosehip",
+    "Light oils that leave a soft sheen without clogging"
+   ],
+   [
+    "Glycerin and aloe",
+    "Pull water into the top layer of skin"
+   ],
+   [
+    "Fine sugar or oat scrub, 1 to 2 times a week",
+    "Removes dull flakes so skin reflects light"
+   ]
+  ],
+  "plan": [
+   "Cleanse gently with lukewarm water.",
+   "Press 3 to 4 drops of the face oil into damp skin, morning or night.",
+   "Exfoliate gently once or twice a week, never daily.",
+   "Wear sunscreen every morning; sun damage is what dulls skin over time."
+  ],
+  "timeline": [
+   [
+    "Right away",
+    "Soft sheen from the oil"
+   ],
+   [
+    "2 to 4 weeks",
+    "Smoother texture from regular hydration and gentle exfoliation"
+   ]
+  ],
+  "buy": "For more, look for a niacinamide 4 to 5% serum or a gentle lactic acid lotion.",
+  "avoid": [
+   "Lemon juice and cold-pressed citrus oils on the face",
+   "Daily scrubbing, which irritates and dulls skin"
+  ],
+  "formula": {
+   "name": "Glow face oil (starter)",
+   "type": "face_leave",
+   "use": "store",
+   "note": "Fragrance-free so it suits most skin. Use 3 to 4 drops on damp skin.",
+   "rows": [
+    [
+     "squalane",
+     15,
+     "ml"
+    ],
+    [
+     "rosehip",
+     10,
+     "ml"
+    ],
+    [
+     "jojoba",
+     5,
+     "ml"
+    ],
+    [
+     "vite",
+     3,
+     "drops"
+    ]
+   ]
+  },
+  "match": "glow|radian|luminous|shimmer|dewy"
+ },
+ {
+  "id": "tone",
+  "labels": [
+   "SPF 30 or higher, labeled broad spectrum",
+   "Niacinamide 4 to 5%",
+   "Azelaic acid 10%",
+   "Vitamin C: ascorbic acid 10 to 20%, in an opaque, airtight bottle",
+   "Tranexamic acid 2 to 5%",
+   "Skip anything with no full ingredient list"
+  ],
+  "label": "Even tone and dark spots",
+  "area": "Face, underarms, knees",
+  "honest": "Homemade recipes can't lighten skin or fade dark spots in a meaningful way. What works is daily sunscreen, avoiding irritation and friction, and tested store-bought actives. On darker skin, irritation from harsh DIYs often causes more dark marks, so gentle matters most.",
+  "works": [
+   [
+    "Sunscreen SPF 30+, every day",
+    "The single biggest factor in fading spots and preventing new ones"
+   ],
+   [
+    "Niacinamide 4 to 5%, azelaic acid 10%, vitamin C serum",
+    "Tested store-bought brighteners"
+   ],
+   [
+    "Oat or rice flour polish, once a week",
+    "Gentle exfoliation that won't cause irritation marks"
+   ]
+  ],
+  "plan": [
+   "Apply sunscreen every morning and reapply outdoors.",
+   "Use one store-bought brightener nightly; patch test first.",
+   "Use the gentle polish once a week, rinsed off.",
+   "For underarms and inner thighs, reduce friction and shaving irritation."
+  ],
+  "timeline": [
+   [
+    "4 to 8 weeks",
+    "A recent tan fades on its own"
+   ],
+   [
+    "8 to 12 weeks",
+    "Spots start to fade with daily sunscreen and a brightener"
+   ],
+   [
+    "Longer",
+    "Melasma and old marks may need a dermatologist"
+   ]
+  ],
+  "buy": "A doctor or dermatologist can prescribe stronger treatments if needed.",
+  "avoid": [
+   "Lemon or lime juice, which can burn and darken skin in the sun",
+   "Unlabeled whitening creams, powders, and serums, which have been found with mercury or steroids",
+   "Hard scrubbing on dark knees and underarms"
+  ],
+  "formula": {
+   "name": "Gentle brightening polish (starter)",
+   "type": "face_rinse",
+   "use": "store",
+   "note": "Keep the jar dry. Mix 1 tsp with water, massage softly for 30 seconds, rinse. Once a week.",
+   "rows": [
+    [
+     "oats",
+     3,
+     "tbsp"
+    ],
+    [
+     "riceflour",
+     2,
+     "tbsp"
+    ],
+    [
+     "kaolin",
+     1,
+     "tbsp"
+    ],
+    [
+     "licorice",
+     1,
+     "tsp"
+    ]
+   ]
+  },
+  "match": "bright|tone|dark spot|tan|lighten|whiten|pigment|fair"
+ },
+ {
+  "id": "dry",
+  "labels": [
+   "Urea 5 to 10% for rough skin, 20%+ for heels",
+   "Ceramides, glycerin, or colloidal oatmeal",
+   "Fragrance-free, especially on cracked skin"
+  ],
+  "label": "Dry, rough skin",
+  "area": "Body or hands",
+  "honest": "This is where DIY shines. Butters and oils seal moisture in well, especially on damp skin.",
+  "works": [
+   [
+    "Shea, mango, cocoa butter",
+    "Seal moisture in and soften rough patches"
+   ],
+   [
+    "Jojoba, sunflower, almond oil",
+    "Spread easily and absorb without heaviness"
+   ],
+   [
+    "Applying to damp skin",
+    "Traps the water already on your skin"
+   ]
+  ],
+  "plan": [
+   "Shower with lukewarm, not hot, water.",
+   "Within 3 minutes, pat dry and apply the butter to damp skin.",
+   "Reapply to hands after washing.",
+   "Run a humidifier in dry winter months."
+  ],
+  "timeline": [
+   [
+    "Right away",
+    "Skin feels softer"
+   ],
+   [
+    "1 to 2 weeks",
+    "Less flaking and tightness"
+   ],
+   [
+    "2 to 4 weeks",
+    "Rough patches noticeably smoother"
+   ]
+  ],
+  "buy": "For cracked heels or very rough skin, a urea 10% cream works faster.",
+  "avoid": [
+   "Hot showers and harsh soaps",
+   "Strong scents on cracked skin"
+  ],
+  "formula": {
+   "name": "Whipped body butter for dry skin (starter)",
+   "type": "body_leave",
+   "use": "store",
+   "note": "Whip once it's half set. Arrowroot cuts the greasy feel.",
+   "rows": [
+    [
+     "shea",
+     60,
+     "g"
+    ],
+    [
+     "mango",
+     30,
+     "g"
+    ],
+    [
+     "jojoba",
+     25,
+     "g"
+    ],
+    [
+     "arrowroot",
+     1,
+     "tbsp"
+    ],
+    [
+     "vite",
+     1,
+     "g"
+    ],
+    [
+     "lavender",
+     8,
+     "drops"
+    ]
+   ]
+  },
+  "match": "dry|moistur|hydrat|nourish|soft|cracked|rough"
+ },
+ {
+  "id": "acne",
+  "labels": [
+   "Benzoyl peroxide 2.5 to 5%",
+   "Salicylic acid 0.5 to 2%",
+   "Adapalene 0.1% gel",
+   "Non-comedogenic on moisturizers and sunscreen"
+  ],
+  "label": "Breakouts and oily skin",
+  "area": "Face, back",
+  "honest": "DIY can calm oil temporarily, but it can't treat acne. Store-bought benzoyl peroxide, adapalene, or salicylic acid have real evidence. Heavy oils and butters on the face can make breakouts worse.",
+  "works": [
+   [
+    "Benzoyl peroxide 2.5%, adapalene 0.1%, salicylic acid 2%",
+    "Tested acne treatments available without a prescription"
+   ],
+   [
+    "Kaolin or bentonite clay, once a week",
+    "Soaks up surface oil for a few hours"
+   ],
+   [
+    "Squalane or jojoba",
+    "Light moisture that rarely clogs pores"
+   ]
+  ],
+  "plan": [
+   "Wash twice a day with a gentle cleanser.",
+   "Use one store-bought acne treatment nightly, starting every other night.",
+   "Use the clay mask once a week, rinsed before it fully dries.",
+   "Moisturize lightly; drying skin out makes it oilier."
+  ],
+  "timeline": [
+   [
+    "Same day",
+    "Less shine after a clay mask"
+   ],
+   [
+    "6 to 8 weeks",
+    "Acne treatments show results"
+   ],
+   [
+    "If cysts or scarring",
+    "See a doctor; prescription treatment prevents scars"
+   ]
+  ],
+  "buy": "Pick your country below to see what's sold without a prescription.",
+  "avoid": [
+   "Coconut oil and cocoa butter on the face",
+   "Toothpaste, lemon, or undiluted tea tree on spots",
+   "Scrubbing active breakouts"
+  ],
+  "formula": {
+   "name": "Weekly clay mask (starter)",
+   "type": "face_rinse",
+   "use": "store",
+   "note": "Keep the jar dry. Mix 1 tsp with water just before using; rinse after 5 to 10 minutes.",
+   "rows": [
+    [
+     "kaolin",
+     3,
+     "tbsp"
+    ],
+    [
+     "bentonite",
+     1,
+     "tbsp"
+    ],
+    [
+     "oats",
+     1,
+     "tbsp"
+    ]
+   ]
+  },
+  "match": "acne|oil control|breakout|pimple|blemish|pore|purif"
+ },
+ {
+  "id": "calm",
+  "labels": [
+   "Fragrance-free (not just unscented)",
+   "Colloidal oatmeal",
+   "Ceramides",
+   "Short ingredient lists"
+  ],
+  "label": "Sensitive, easily irritated skin",
+  "area": "Face or body",
+  "honest": "Sensitive skin usually improves by doing less: fewer products, no fragrance, no essential oils. Colloidal oatmeal has good evidence for soothing.",
+  "works": [
+   [
+    "Oats",
+    "Soothing; colloidal oatmeal is used in eczema products"
+   ],
+   [
+    "Squalane, jojoba, shea",
+    "Plain, low-allergy moisturizers"
+   ],
+   [
+    "Fragrance-free routines",
+    "The most common irritants are scents and essential oils"
+   ]
+  ],
+  "plan": [
+   "Strip back to a gentle cleanser, one moisturizer, and sunscreen.",
+   "Patch test anything new on the inner arm for 2 days.",
+   "Use the oat mask once or twice a week."
+  ],
+  "timeline": [
+   [
+    "1 to 2 weeks",
+    "Less stinging once irritants are gone"
+   ],
+   [
+    "2 to 4 weeks",
+    "Skin barrier recovers"
+   ]
+  ],
+  "buy": "Fragrance-free creams with colloidal oatmeal or ceramides are good store-bought options.",
+  "avoid": [
+   "Essential oils, citrus, cinnamon, clove",
+   "Witch hazel with alcohol",
+   "Scrubs"
+  ],
+  "formula": {
+   "name": "Calming oat mask (starter)",
+   "type": "face_rinse",
+   "use": "now",
+   "note": "Mix fresh, leave 10 minutes, rinse with cool water.",
+   "rows": [
+    [
+     "oats",
+     1,
+     "tbsp"
+    ],
+    [
+     "honey",
+     1,
+     "tsp"
+    ],
+    [
+     "water",
+     1,
+     "tbsp"
+    ]
+   ]
+  },
+  "match": "sooth|calm|sensitive|gentle|eczema|itch"
+ },
+ {
+  "id": "stretch",
+  "labels": [
+   "Silicone gel or sheets (dimethicone) for raised scars",
+   "Fragrance-free moisturizer for itchy new marks"
+  ],
+  "label": "Stretch marks and scars",
+  "area": "Body",
+  "honest": "No oil or butter erases stretch marks or scars; studies of cocoa butter and vitamin E found no effect. New red or purple marks fade to silvery lines on their own over 6 to 12 months. Moisturizing eases the itch and keeps skin comfortable.",
+  "works": [
+   [
+    "Rosehip, almond, shea",
+    "Keep stretching skin supple and less itchy"
+   ],
+   [
+    "Silicone gel sheets",
+    "The best-studied home option for raised scars"
+   ],
+   [
+    "Prescription tretinoin or laser",
+    "Can help early stretch marks; not in pregnancy"
+   ]
+  ],
+  "plan": [
+   "Massage the oil into the area daily after showering.",
+   "For healed scars, use silicone gel sheets for 2 to 3 months.",
+   "Keep scars out of the sun so they don't darken."
+  ],
+  "timeline": [
+   [
+    "Right away",
+    "Less itch and tightness"
+   ],
+   [
+    "6 to 12 months",
+    "New marks fade naturally"
+   ],
+   [
+    "Ongoing",
+    "Old marks change little without professional treatment"
+   ]
+  ],
+  "buy": "Silicone scar gel or sheets from a pharmacy.",
+  "avoid": [
+   "Anything on open wounds",
+   "Strong essential oils in pregnancy"
+  ],
+  "formula": {
+   "name": "Stretch mark comfort oil (starter)",
+   "type": "body_leave",
+   "use": "store",
+   "note": "No essential oils, so it's suitable in pregnancy.",
+   "rows": [
+    [
+     "rosehip",
+     30,
+     "ml"
+    ],
+    [
+     "almond",
+     30,
+     "ml"
+    ],
+    [
+     "vite",
+     0.5,
+     "ml"
+    ]
+   ]
+  },
+  "match": "stretch|scar|mark|elastic"
+ },
+ {
+  "id": "hair",
+  "labels": [
+   "Minoxidil 2% or 5% (ask a pharmacist first if pregnant or breastfeeding)",
+   "Sulfate-free shampoo for fragile hair",
+   "Heat protectant before styling"
+  ],
+  "label": "Hair growth and less breakage",
+  "area": "Scalp and hair",
+  "honest": "Oils reduce breakage and make hair look healthier, so you keep more length, but they don't speed up growth. Hair grows about 1 cm a month. Sudden shedding often has a medical cause like low iron, thyroid, or postpartum changes.",
+  "works": [
+   [
+    "Minoxidil 2 to 5%",
+    "The proven over-the-counter treatment for thinning"
+   ],
+   [
+    "Rosemary oil at 1%",
+    "One small study is promising; far from proven"
+   ],
+   [
+    "Gentle styling and scalp massage",
+    "Less breakage and tension"
+   ]
+  ],
+  "plan": [
+   "Massage a few drops into the scalp for 4 minutes, 2 to 3 times a week.",
+   "Leave on 30 minutes or overnight, then shampoo.",
+   "Use the rest on dry ends between washes.",
+   "Avoid tight braids and high heat."
+  ],
+  "timeline": [
+   [
+    "2 to 4 weeks",
+    "Hair feels softer and breaks less"
+   ],
+   [
+    "3 to 6 months",
+    "The earliest point to judge any growth"
+   ],
+   [
+    "If sudden shedding",
+    "See a doctor and ask about iron and thyroid"
+   ]
+  ],
+  "buy": "Minoxidil is sold over the counter.",
+  "avoid": [
+   "Raw garlic or onion left in oil",
+   "Undiluted rosemary or peppermint on the scalp"
+  ],
+  "formula": {
+   "name": "Rosemary scalp oil (starter)",
+   "type": "hair_leave",
+   "use": "store",
+   "note": "About 1% rosemary. Skip the essential oil in pregnancy.",
+   "rows": [
+    [
+     "jojoba",
+     25,
+     "ml"
+    ],
+    [
+     "castor",
+     5,
+     "ml"
+    ],
+    [
+     "rosemary",
+     5,
+     "drops"
+    ]
+   ]
+  },
+  "match": "hair growth|thick|strength|breakage|hair fall|length"
+ },
+ {
+  "id": "dandruff",
+  "labels": [
+   "Ketoconazole 1 to 2%",
+   "Zinc pyrithione 1 to 2%",
+   "Selenium sulfide 1%",
+   "Piroctone olamine"
+  ],
+  "label": "Dandruff and itchy scalp",
+  "area": "Scalp",
+  "honest": "Dandruff is linked to a yeast that feeds on scalp oils, so heavy oils can make it worse. Medicated shampoos work best; tea tree at 5% in shampoo has some evidence.",
+  "works": [
+   [
+    "Ketoconazole, zinc pyrithione, or selenium sulfide shampoo",
+    "Proven dandruff treatments"
+   ],
+   [
+    "Tea tree in a shampoo bar",
+    "Some evidence at around 5% in shampoo; gentler at 2%"
+   ]
+  ],
+  "plan": [
+   "Wash 2 to 3 times a week, leaving the lather on for 3 to 5 minutes.",
+   "Alternate a medicated shampoo with the tea tree bar.",
+   "Skip heavy oils on the scalp."
+  ],
+  "timeline": [
+   [
+    "2 to 4 weeks",
+    "Less flaking with regular use"
+   ],
+   [
+    "If red, crusty, or spreading",
+    "See a doctor; it may be psoriasis or dermatitis"
+   ]
+  ],
+  "buy": "Medicated dandruff shampoos are sold in pharmacies.",
+  "avoid": [
+   "Coconut and olive oil left on the scalp",
+   "Undiluted tea tree"
+  ],
+  "formula": {
+   "name": "Tea tree shampoo bar (starter)",
+   "type": "hair_rinse",
+   "use": "store",
+   "note": "About 2% tea tree in a melt-and-pour shampoo base.",
+   "rows": [
+    [
+     "shampoobase",
+     227,
+     "g"
+    ],
+    [
+     "teatree",
+     1,
+     "tsp"
+    ],
+    [
+     "neempowder",
+     1,
+     "tsp"
+    ],
+    [
+     "castor",
+     1,
+     "tsp"
+    ]
+   ]
+  },
+  "match": "dandruff|scalp|itch"
+ },
+ {
+  "id": "smooth",
+  "labels": [
+   "Lactic acid 10 to 12% or ammonium lactate",
+   "Urea 10%",
+   "Salicylic acid 2% body wash"
+  ],
+  "label": "Bumpy, rough body skin",
+  "area": "Arms, thighs",
+  "honest": "Small rough bumps (keratosis pilaris) improve with gentle exfoliation and moisture, but they come back if you stop. Lactic acid or urea lotions work better than scrubs.",
+  "works": [
+   [
+    "Lactic acid or urea lotion",
+    "Dissolves the built-up skin plugs"
+   ],
+   [
+    "Fine sugar scrub, once or twice a week",
+    "Gentle physical smoothing"
+   ],
+   [
+    "Moisturizing daily",
+    "Keeps bumps softer"
+   ]
+  ],
+  "plan": [
+   "Use the scrub once or twice a week in the shower, gently.",
+   "Moisturize right after, on damp skin.",
+   "On other days, use a lactic acid or urea lotion."
+  ],
+  "timeline": [
+   [
+    "Right away",
+    "Smoother to the touch"
+   ],
+   [
+    "2 to 4 weeks",
+    "Fewer visible bumps with regular care"
+   ]
+  ],
+  "buy": "Lactic acid 10 to 12% or urea 10% body lotion.",
+  "avoid": [
+   "Salt scrubs on freshly shaved skin",
+   "Hard scrubbing, which inflames bumps"
+  ],
+  "formula": {
+   "name": "Gentle sugar body scrub (starter)",
+   "type": "body_rinse",
+   "use": "store",
+   "note": "Scoop with a dry spoon and keep water out of the jar.",
+   "rows": [
+    [
+     "sugar",
+     1,
+     "cup"
+    ],
+    [
+     "jojoba",
+     0.33,
+     "cup"
+    ],
+    [
+     "shea",
+     2,
+     "tbsp"
+    ],
+    [
+     "lavender",
+     8,
+     "drops"
+    ]
+   ]
+  },
+  "match": "smooth|exfoliat|scrub|bumps|polish"
+ },
+ {
+  "id": "lips",
+  "labels": [
+   "Petrolatum, lanolin, or beeswax as a main ingredient",
+   "SPF 15 or higher on lip balm for outdoors",
+   "No menthol, camphor, or cinnamon if lips are cracked"
+  ],
+  "label": "Soft lips",
+  "area": "Lips",
+  "honest": "Lips heal quickly with a simple balm. Tingly plumping and flavor oils often cause the dryness they promise to fix.",
+  "works": [
+   [
+    "Beeswax, shea, cocoa butter",
+    "Seal moisture in"
+   ],
+   [
+    "Gentle sugar scrub, once a week",
+    "Lifts flakes"
+   ]
+  ],
+  "plan": [
+   "Apply balm often, especially before bed and before going outside.",
+   "Scrub gently once a week only if flaky.",
+   "Use a lip balm with SPF in the sun."
+  ],
+  "timeline": [
+   [
+    "1 to 3 days",
+    "Softer lips"
+   ],
+   [
+    "If cracks at the corners last weeks",
+    "See a doctor or pharmacist"
+   ]
+  ],
+  "buy": "A plain petrolatum or lanolin balm is also excellent.",
+  "avoid": [
+   "Cinnamon, clove, peppermint and citrus oils on lips",
+   "Licking your lips"
+  ],
+  "formula": {
+   "name": "Simple lip balm (starter)",
+   "type": "lip",
+   "use": "store",
+   "note": "Unscented; safe for most people.",
+   "rows": [
+    [
+     "beeswax",
+     1,
+     "tbsp"
+    ],
+    [
+     "shea",
+     1,
+     "tbsp"
+    ],
+    [
+     "coconut",
+     1,
+     "tbsp"
+    ],
+    [
+     "vite",
+     2,
+     "drops"
+    ]
+   ]
+  },
+  "match": "lip"
+ },
+ {
+  "id": "odor",
+  "labels": [
+   "Antiperspirant: aluminum chloride or aluminum zirconium (for sweat)",
+   "Deodorant: zinc ricinoleate or magnesium hydroxide (gentler than baking soda)",
+   "Fragrance-free if you get rashes"
+  ],
+  "label": "Body odor",
+  "area": "Underarms, feet",
+  "honest": "Deodorant masks odor; only aluminum antiperspirants reduce sweat. Washing daily matters most. Baking soda is the usual cause of DIY deodorant rash.",
+  "works": [
+   [
+    "Daily washing and clean, dry clothes",
+    "Removes the bacteria that cause odor"
+   ],
+   [
+    "Arrowroot and kaolin",
+    "Absorb moisture"
+   ],
+   [
+    "Zinc ricinoleate",
+    "Traps odor molecules"
+   ]
+  ],
+  "plan": [
+   "Wash underarms daily and dry well.",
+   "Apply a pea-sized amount to clean, dry skin.",
+   "If rash appears, stop and try a store-bought sensitive deodorant."
+  ],
+  "timeline": [
+   [
+    "Same day",
+    "Works as long as it's applied to clean skin"
+   ],
+   [
+    "If odor or sweating changes suddenly",
+    "See a doctor"
+   ]
+  ],
+  "buy": "A clinical-strength antiperspirant for heavy sweating.",
+  "avoid": [
+   "Baking soda on sensitive underarms",
+   "Applying to freshly shaved skin"
+  ],
+  "formula": {
+   "name": "Gentle deodorant cream, no baking soda (starter)",
+   "type": "deodorant",
+   "use": "store",
+   "rows": [
+    [
+     "shea",
+     22,
+     "g"
+    ],
+    [
+     "coconut",
+     18,
+     "g"
+    ],
+    [
+     "beeswax",
+     8,
+     "g"
+    ],
+    [
+     "arrowroot",
+     22,
+     "g"
+    ],
+    [
+     "kaolin",
+     10,
+     "g"
+    ],
+    [
+     "zincric",
+     5,
+     "g"
+    ],
+    [
+     "vite",
+     1,
+     "g"
+    ],
+    [
+     "lavender",
+     15,
+     "drops"
+    ]
+   ]
+  },
+  "match": "odor|odour|deodor|fresh"
+ }
+]
