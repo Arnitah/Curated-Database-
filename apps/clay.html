@@ -780,7 +780,7 @@ function hairGoalCard(){
     chart=`<svg viewBox="0 0 ${W} ${H}" class="hr-chart" role="img" aria-label="Length over time"><line x1="${P}" y1="${y(goal)}" x2="${W-8}" y2="${y(goal)}" class="hr-goal"/><text x="${W-8}" y="${y(goal)-4}" text-anchor="end" class="hr-t">goal ${goal}"</text>
       <line x1="${x(t0)}" y1="${y(start)}" x2="${x(tN)}" y2="${y(start+(tN-t0)/(30.4*D)*0.5)}" class="hr-exp"/>
       <polyline points="${logs.map(l=>x(l.d)+','+y(l.in)).join(' ')}" class="hr-line"/>${logs.map(l=>`<circle cx="${x(l.d)}" cy="${y(l.in)}" r="4" class="hr-dot"><title>${new Date(l.d).toLocaleDateString()}: ${l.in}"</title></circle>`).join('')}</svg>
-      <p class="small muted" style="margin:2px 0 0">Solid: your length checks. Dashed: full retention at ½" a month.</p>`; }
+      <p class="small muted" style="margin:2px 0 0">Solid: the lengths you measured. Dashed: full retention at ½" a month.</p>`; }
   return card('Your length goal', `<div class="row" style="justify-content:space-between;gap:8px"><span class="small"><b>${esc((HL.find(x=>x[0]===st.now)||[])[1]||'')}</b> → <b>${esc((HL.find(x=>x[0]===st.goal)||[])[1]||'')}</b></span><button class="linkbtn small" type="button" data-act="hsedit">Edit setup</button></div>
     <div class="rm-bar" style="height:10px"><span style="width:${pct}%"></span></div>
     <p class="small" style="margin:6px 0 0">${gap>0?`About <b>${Math.round(mo)} months</b> to go at full retention (${when(Date.now()+lo*30.4*D)} to ${when(Date.now()+hi*30.4*D)}, since growth runs 0.3 to 0.6" a month).`:'You’ve reached your goal length. Now it’s about keeping your ends healthy.'}</p>
