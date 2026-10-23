@@ -1,7 +1,7 @@
 {
- "built_at": "2026-10-22T20:23:58.988Z",
+ "built_at": "2026-10-23T15:46:47.756Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
- "explained_in_safe_batch": 247,
+ "explained_in_safe_batch": 252,
  "queue": [
   {
    "ingredient": "tocopheryl acetate",
@@ -9,7 +9,7 @@
   },
   {
    "ingredient": "caprylyl glycol",
-   "products": 1451
+   "products": 1452
   },
   {
    "ingredient": "butyrospermum parkii butter",
@@ -141,7 +141,7 @@
   },
   {
    "ingredient": "glycine soja oil",
-   "products": 419
+   "products": 420
   },
   {
    "ingredient": "tetrasodium glutamate diacetate",
@@ -201,7 +201,7 @@
   },
   {
    "ingredient": "dipropylene glycol",
-   "products": 326
+   "products": 327
   },
   {
    "ingredient": "cellulose gum",
@@ -257,7 +257,7 @@
   },
   {
    "ingredient": "betaine",
-   "products": 290
+   "products": 291
   },
   {
    "ingredient": "sodium levulinate",
@@ -284,12 +284,12 @@
    "products": 269
   },
   {
-   "ingredient": "hydrogenated palm glycerides citrate",
+   "ingredient": "arginine",
    "products": 267
   },
   {
-   "ingredient": "arginine",
-   "products": 266
+   "ingredient": "hydrogenated palm glycerides citrate",
+   "products": 267
   },
   {
    "ingredient": "magnesium nitrate",
@@ -461,7 +461,7 @@
   },
   {
    "ingredient": "glycine",
-   "products": 171
+   "products": 172
   },
   {
    "ingredient": "aluminum hydroxide",

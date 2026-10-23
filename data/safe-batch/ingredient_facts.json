@@ -349,30 +349,20 @@
   ]
  },
  "arrowroot": {
-  "listings": 4,
+  "listings": 1,
   "suppliers": [
-   "formulator_sample_shop",
-   "lotioncrafter",
-   "windy_point"
+   "formulator_sample_shop"
   ],
   "use_pct": [
-   0.75,
-   27.5
+   1,
+   50
   ],
-  "use_n": 2,
+  "use_n": 1,
   "shelf_months": 12,
   "links": [
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-arrowroot-powder"
-   },
-   {
-    "s": "lotioncrafter",
-    "u": "https://lotioncrafter.com/products/maizefix"
-   },
-   {
-    "s": "windy_point",
-    "u": "https://windypointsoap.com/products/corn-starch"
    }
   ]
  },
@@ -566,6 +556,24 @@
    {
     "s": "windy_point",
     "u": "https://windypointsoap.com/products/bakuchiol-liquid-extract"
+   }
+  ]
+ },
+ "bamboopowder": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   5,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-exfo-bamboo-powder"
    }
   ]
  },
@@ -1656,6 +1664,28 @@
    }
   ]
  },
+ "cornstarch": {
+  "listings": 3,
+  "suppliers": [
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   5
+  ],
+  "use_n": 1,
+  "links": [
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/maizefix"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/corn-starch"
+   }
+  ]
+ },
  "crambe": {
   "listings": 2,
   "suppliers": [
@@ -2317,6 +2347,27 @@
    {
     "s": "native_extracts",
     "u": "https://www.nativeextracts.com/products/grapefruit-seed-cellular-extract"
+   }
+  ]
+ },
+ "gumarabic": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "use_pct": [
+   0.6,
+   1
+  ],
+  "use_n": 1,
+  "ph": [
+   3,
+   12
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/solagum-ax"
    }
   ]
  },
@@ -3959,6 +4010,23 @@
    }
   ]
  },
+ "pinksalt": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/himalayan-salt"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/himalayan-pink-salt"
+   }
+  ]
+ },
  "plantainleaf": {
   "listings": 1,
   "suppliers": [
@@ -4125,6 +4193,23 @@
    {
     "s": "windy_point",
     "u": "https://windypointsoap.com/products/evening-primrose-oil-refined"
+   }
+  ]
+ },
+ "pumice": {
+  "listings": 2,
+  "suppliers": [
+   "aromantic",
+   "windy_point"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/pumice-powder"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/pumice-stone-granules-superfine"
    }
   ]
  },
@@ -4462,18 +4547,13 @@
   ]
  },
  "salt": {
-  "listings": 10,
+  "listings": 7,
   "suppliers": [
-   "aromantic",
    "native_extracts",
    "windy_point"
   ],
   "shelf_months": 12,
   "links": [
-   {
-    "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/himalayan-salt"
-   },
    {
     "s": "native_extracts",
     "u": "https://www.nativeextracts.com/products/salt-bush-cellular-extract"
@@ -4847,7 +4927,7 @@
   ]
  },
  "sunflower": {
-  "listings": 20,
+  "listings": 21,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -4857,7 +4937,7 @@
    1,
    10
   ],
-  "use_n": 17,
+  "use_n": 18,
   "ph": [
    3,
    7
@@ -4870,7 +4950,7 @@
    },
    {
     "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/fss-amazonian-lily-extract-os"
+    "u": "https://formulatorsampleshop.com/products/collageneer"
    },
    {
     "s": "lotioncrafter",
@@ -5293,7 +5373,7 @@
   ]
  },
  "xanthan": {
-  "listings": 8,
+  "listings": 7,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -5302,9 +5382,9 @@
   ],
   "use_pct": [
    0.1,
-   0.75
+   0.5
   ],
-  "use_n": 4,
+  "use_n": 3,
   "ph": [
    3,
    12
@@ -5313,7 +5393,7 @@
   "links": [
    {
     "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/solagum-ax"
+    "u": "https://aromantic.co.uk/products/xanthan-gum-clear"
    },
    {
     "s": "formulator_sample_shop",
