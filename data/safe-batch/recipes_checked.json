@@ -45390,5 +45390,647 @@
       "creator": "Store product",
       "platform": "olielb.my.canva.site"
     }
+  },
+  {
+    "id": "whipped-shea-and-baobab-hair-butter",
+    "name": "Whipped shea and baobab hair butter",
+    "claim": "Seals moisture into ends after washing",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Soften the shea over warm water until stirrable but not fully melted, add the oils, then whip with a hand mixer for 5 to 7 minutes until fluffy. No water, so no preservative needed; keeps about 6 months in a cool place. Use a pea-sized amount on damp lengths and ends after a water-based leave-in (the LOB method).",
+    "rows": [
+      [
+        "shea",
+        100,
+        "g"
+      ],
+      [
+        "baobab",
+        26,
+        "g"
+      ],
+      [
+        "jojoba",
+        13,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "lavender",
+        5,
+        "drops"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "chebe-and-butter-length-paste",
+    "name": "Chebe and butter length paste",
+    "claim": "Coats lengths to cut breakage during braids or twists",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Stir the chebe powder into the butter and oil to make a paste. Mist a section of hair, smooth the paste from mid-length to the ends (not on the scalp), then braid or twist. Wash it out within a few days to a week so it doesn't build up. It reduces breakage; it doesn't make hair grow faster.",
+    "rows": [
+      [
+        "chebe",
+        12,
+        "g"
+      ],
+      [
+        "shea",
+        25,
+        "g"
+      ],
+      [
+        "baobab",
+        13,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "ayurvedic-amla-and-brahmi-scalp-oil",
+    "name": "Amla and brahmi scalp oil",
+    "claim": "A warm Ayurvedic-style pre-wash oil",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Set the oils and powders in a jar inside a pot of barely simmering water for 30 to 45 minutes, cool, and strain through a coffee filter. Massage a little into the scalp, leave it on for an hour or overnight, then shampoo. A pleasant, nourishing ritual; growth and anti-grey claims are traditional.",
+    "rows": [
+      [
+        "sesame",
+        50,
+        "g"
+      ],
+      [
+        "jojoba",
+        48,
+        "g"
+      ],
+      [
+        "amla",
+        6,
+        "g"
+      ],
+      [
+        "brahmi",
+        6,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "palm-kernel-and-shea-pre-poo",
+    "name": "Palm kernel and shea pre-poo mask",
+    "claim": "Protects hair before shampooing",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Warm the palm kernel oil and shea until just soft, stir in the castor oil, and apply from root to tip with focus on the ends. Cover with a cap for 30 to 45 minutes, then shampoo. Palm kernel oil is high in lauric acid like coconut oil, which helps hair lose less protein in the wash.",
+    "rows": [
+      [
+        "palmkernel",
+        26,
+        "g"
+      ],
+      [
+        "shea",
+        25,
+        "g"
+      ],
+      [
+        "castor",
+        13,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "west-african-sealing-butter",
+    "name": "West African sealing butter",
+    "claim": "Rich butter for sealing coily ends",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Soften the shea, add the oils, and whip 5 to 7 minutes. Atile or safou oil can be swapped for each other. Use a pea-sized amount on damp ends at night, then tuck the ends into braids under a satin scarf. Miracle berry's anti-shedding claim is unproven; leave it out if you can't find it.",
+    "rows": [
+      [
+        "shea",
+        100,
+        "g"
+      ],
+      [
+        "palmkernel",
+        13,
+        "g"
+      ],
+      [
+        "atileoil",
+        13,
+        "g"
+      ],
+      [
+        "miracleberry",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "lavender",
+        6,
+        "drops"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "turkey-berry-and-neem-scalp-rinse",
+    "name": "Turkey berry and neem scalp rinse",
+    "claim": "An herbal rinse for an itchy scalp",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "note": "Simmer the crushed berries and neem leaves in the water for 15 minutes, cool fully, and strain through a coffee filter. Pour over the scalp after shampooing and rinse out after a few minutes. Make it fresh: a plain herb tea left in the hair or kept in a bottle spoils within a day. Tea tree oil won't mix into water, so it's left out. For real dandruff, a ketoconazole or zinc pyrithione shampoo works better.",
+    "rows": [
+      [
+        "turkeyberry",
+        12,
+        "g"
+      ],
+      [
+        "neemleaf",
+        4,
+        "g"
+      ],
+      [
+        "water",
+        400,
+        "ml"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "tamarind-clarifying-scalp-rinse",
+    "name": "Tamarind clarifying scalp rinse",
+    "claim": "Lifts buildup before shampoo",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "note": "Simmer tamarind (or velvet tamarind) pulp in the water for 15 minutes, cool, and strain well. Pour over the scalp before shampooing, leave 5 minutes, then wash as usual. The mild fruit acids help with hard-water and product buildup. It can sting a scratched scalp. Use the same day.",
+    "rows": [
+      [
+        "tamarind",
+        30,
+        "g"
+      ],
+      [
+        "water",
+        500,
+        "ml"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "hibiscus-rosemary-and-amla-infused-oil",
+    "name": "Hibiscus, rosemary and amla infused oil",
+    "claim": "Herbal scalp oil with no essential oils",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Cover equal parts dried hibiscus, dried rosemary and amla with the oil, warm in a jar inside a pot of hot water for 45 minutes, cool and strain through a coffee filter. Massage a few drops into the scalp 2 to 3 times a week before washing. Rosemary's small study used the essential oil, not the herb, so treat this as a nourishing oil rather than a growth treatment.",
+    "rows": [
+      [
+        "jojoba",
+        60,
+        "g"
+      ],
+      [
+        "almond",
+        39,
+        "g"
+      ],
+      [
+        "hibiscus",
+        4,
+        "g"
+      ],
+      [
+        "rosemaryherb",
+        4,
+        "g"
+      ],
+      [
+        "amla",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "marshmallow-and-slippery-elm-detangling-mist",
+    "name": "Marshmallow and slippery elm detangling mist",
+    "claim": "Slippery leave-in spray for coily hair",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Simmer the marshmallow root and slippery elm in the water for 15 to 20 minutes until slightly thick, cool, strain, then stir in the aloe and preservative. A water-based leave-in needs a preservative to be kept for days; without one, make a small batch, keep it in the fridge, and use it within 3 days.",
+    "rows": [
+      [
+        "water",
+        450,
+        "ml"
+      ],
+      [
+        "marshmallowroot",
+        8,
+        "g"
+      ],
+      [
+        "slipperyelm",
+        4,
+        "g"
+      ],
+      [
+        "aloe",
+        30,
+        "g"
+      ],
+      [
+        "geogard",
+        5,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "green-tea-nettle-and-calendula-rinse",
+    "name": "Green tea, nettle and calendula rinse",
+    "claim": "A calming final rinse",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "note": "Steep a green tea bag, the nettle and the calendula in hot water for 30 minutes, strain and cool. Pour over hair as a final rinse. Make it fresh each time. Green tea's anti-DHT effect is from lab studies, not proof that a rinse stops hair loss.",
+    "rows": [
+      [
+        "greentea",
+        600,
+        "ml"
+      ],
+      [
+        "nettle",
+        2,
+        "g"
+      ],
+      [
+        "calendula",
+        2,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "four-oil-scalp-serum",
+    "name": "Rosemary, peppermint, tea tree and clove scalp serum",
+    "claim": "Scalp serum for itch and flakes",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Mix in a dropper bottle and apply 4 to 6 drops along parts 2 to 3 times a week, then massage. The research notes had about 2% essential oils; this version cuts the total to under 1%, the limit for a leave-on scalp product, with clove kept lowest because it irritates. Patch test first, keep it away from the eyes, and skip it on a sensitive or broken scalp. Not for children or in pregnancy.",
+    "rows": [
+      [
+        "jojoba",
+        90,
+        "ml"
+      ],
+      [
+        "castor",
+        10,
+        "ml"
+      ],
+      [
+        "rosemary",
+        5,
+        "drops"
+      ],
+      [
+        "peppermint",
+        4,
+        "drops"
+      ],
+      [
+        "teatree",
+        5,
+        "drops"
+      ],
+      [
+        "clove",
+        2,
+        "drops"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "tazargade-and-thyme-scalp-rinse",
+    "name": "Tazargade and thyme scalp rinse",
+    "claim": "Herbal rinse for a flaky scalp",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "note": "Simmer the herbs in the water for 15 minutes, strain, and cool. Pour over the scalp after washing, massage, then rinse out. Tazargade is an artemisia, so skip it in pregnancy and with ragweed or chamomile allergy. Make fresh each time.",
+    "rows": [
+      [
+        "tazargade",
+        2,
+        "g"
+      ],
+      [
+        "thyme",
+        2,
+        "g"
+      ],
+      [
+        "water",
+        600,
+        "ml"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "ambunu-and-goron-tula-detangling-gel",
+    "name": "Ambunu and goron tula detangling gel",
+    "claim": "Slippery wash-day gel that detangles and lightly cleanses",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "note": "Steep the ambunu in warm water for 20 to 30 minutes, mash in the goron tula pulp, and strain well. Work it through wet hair to finger-detangle, massage the scalp, then rinse. Make it fresh on the day.",
+    "rows": [
+      [
+        "ambunu",
+        10,
+        "g"
+      ],
+      [
+        "goronTula",
+        30,
+        "g"
+      ],
+      [
+        "water",
+        400,
+        "ml"
+      ]
+    ],
+    "source": {
+      "creator": "Hair botany research notes",
+      "platform": "Personal research"
+    }
+  },
+  {
+    "id": "rosemary-clove-strengthening-hair-oil",
+    "name": "Rosemary and clove strengthening hair oil",
+    "claim": "Pre-wash scalp and hair oil",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Infuse the dried rosemary and whole cloves in the oils on very low heat for 2 to 3 hours, strain through a coffee filter, then add vitamin E and the essential oils. Massage into the scalp, leave 2 hours or overnight, then shampoo, 2 to 3 times a week. Clove oil is strong, so it's kept to 2 drops. Fractionated coconut oil is the same as MCT (caprylic) oil.",
+    "rows": [
+      [
+        "jojoba",
+        25,
+        "g"
+      ],
+      [
+        "argan",
+        15,
+        "g"
+      ],
+      [
+        "grapeseed",
+        20,
+        "g"
+      ],
+      [
+        "castor",
+        10,
+        "g"
+      ],
+      [
+        "caprylic",
+        20,
+        "g"
+      ],
+      [
+        "blackseedoil",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "rosemaryherb",
+        4,
+        "g"
+      ],
+      [
+        "clovewhole",
+        2,
+        "g"
+      ],
+      [
+        "rosemary",
+        10,
+        "drops"
+      ],
+      [
+        "clove",
+        2,
+        "drops"
+      ]
+    ],
+    "inspired": "Lemora Rosemary Clove Strengthening Hair & Scalp Oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "lemoracosmetics.com"
+    }
+  },
+  {
+    "id": "rosemary-ginger-scalp-oil",
+    "name": "Rosemary and ginger scalp oil",
+    "claim": "Warming pre-wash scalp oil",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Infuse the dried rosemary in the oils on very low heat for 2 to 3 hours and strain, then add vitamin E and the essential oils. Leave on at least 2 hours, then shampoo. Ginger oil feels warming, but that warmth isn't proof of better circulation or growth. Almond is a tree nut; swap in more jojoba if needed.",
+    "rows": [
+      [
+        "almond",
+        25,
+        "g"
+      ],
+      [
+        "argan",
+        15,
+        "g"
+      ],
+      [
+        "grapeseed",
+        20,
+        "g"
+      ],
+      [
+        "castor",
+        10,
+        "g"
+      ],
+      [
+        "caprylic",
+        24,
+        "g"
+      ],
+      [
+        "blackseedoil",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "rosemaryherb",
+        4,
+        "g"
+      ],
+      [
+        "gingereo",
+        6,
+        "drops"
+      ],
+      [
+        "rosemary",
+        10,
+        "drops"
+      ]
+    ],
+    "inspired": "Lemora Rosemary Ginger Hair & Scalp Oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "lemoracosmetics.com"
+    }
+  },
+  {
+    "id": "butterfly-pea-skin-and-hair-oil",
+    "name": "Butterfly pea skin and hair oil",
+    "claim": "A blue-flower multi-use oil for skin and hair",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Infuse the dried butterfly pea flowers in the oils on very low heat for 2 to 3 hours and strain; the oil takes only a faint tint, since the blue pigment dissolves in water, not oil. Add vitamin E and the essential oils. Use a few drops on damp skin or hair ends. Claims that it boosts collagen aren't supported for an oil. Almond and apricot can bother people with nut allergies.",
+    "rows": [
+      [
+        "almond",
+        30,
+        "g"
+      ],
+      [
+        "apricot",
+        25,
+        "g"
+      ],
+      [
+        "caprylic",
+        20,
+        "g"
+      ],
+      [
+        "avocadooil",
+        24,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "butterflypea",
+        4,
+        "g"
+      ],
+      [
+        "orange",
+        6,
+        "drops"
+      ],
+      [
+        "gingereo",
+        3,
+        "drops"
+      ],
+      [
+        "cardamom",
+        3,
+        "drops"
+      ]
+    ],
+    "inspired": "Lemora Butterfly Pea Multi-Use Oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "lemoracosmetics.com"
+    }
   }
 ]

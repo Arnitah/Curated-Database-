@@ -6503,5 +6503,75 @@
   "flags": [
    "care: Fenugreek can trigger legume allergies"
   ]
+ },
+ "whipped-shea-and-baobab-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chebe-and-butter-length-paste": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "ayurvedic-amla-and-brahmi-scalp-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "palm-kernel-and-shea-pre-poo": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "west-african-sealing-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turkey-berry-and-neem-scalp-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: Nightshade: green parts are toxic; rinse-off only"
+  ]
+ },
+ "tamarind-clarifying-scalp-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hibiscus-rosemary-and-amla-infused-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "marshmallow-and-slippery-elm-detangling-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-nettle-and-calendula-rinse": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "four-oil-scalp-serum": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tazargade-and-thyme-scalp-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: Artemisia: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "ambunu-and-goron-tula-detangling-gel": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-clove-strengthening-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate"
+  ]
+ },
+ "rosemary-ginger-scalp-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "butterfly-pea-skin-and-hair-oil": {
+  "verdict": "ok",
+  "flags": []
  }
 }

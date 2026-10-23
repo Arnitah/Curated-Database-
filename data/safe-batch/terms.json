@@ -318,5 +318,29 @@
     "how": "Check the base's INCI list for triethanolamine.",
     "when": "When choosing a melt-and-pour base.",
     "season": "Any."
+  },
+  {
+    "t": "LOC and LOB methods (liquid, oil, cream or butter)",
+    "what": "A layering order for moisturising curly and coily hair: water or a water-based leave-in first, then an oil, then a cream or butter to seal.",
+    "skin": "Nothing for skin. On hair, the water hydrates and the oil and butter slow it from evaporating.",
+    "how": "Spritz damp hair, smooth on a few drops of oil, then a small amount of butter on the lengths and ends. Some hair does better with the cream before the oil (LCO); try both.",
+    "when": "After washing and on refresh days.",
+    "season": "Use heavier butters in dry winter and harmattan season, lighter oils in humid summer."
+  },
+  {
+    "t": "Pre-poo",
+    "what": "Short for pre-shampoo: putting oil or conditioner on hair before washing.",
+    "skin": "Nothing for skin.",
+    "how": "Coat lengths with coconut, palm kernel or another oil for 30 minutes to overnight, then shampoo. Coconut oil is the one shown to reduce protein loss during washing.",
+    "when": "Before washing dry, damaged or coloured hair.",
+    "season": "Any."
+  },
+  {
+    "t": "Hygral fatigue",
+    "what": "The theory that hair swelling and shrinking with water over and over weakens it.",
+    "skin": "Nothing for skin.",
+    "how": "Oils that soak in, like coconut, before washing reduce how much water hair takes up. Over-soaking hair for hours isn't helpful.",
+    "when": "Relevant to high-porosity or bleached hair.",
+    "season": "Any."
   }
 ]
