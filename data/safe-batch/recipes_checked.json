@@ -44892,5 +44892,211 @@
    "creator": "Store product",
    "platform": "YesStyle"
   }
+ },
+ {
+  "id": "eight-soap-sabounia-shakiba-as-posted",
+  "name": "Eight-soap paste (shakiba akther), as posted",
+  "claim": "Lightening, even tone, glow and clean skin",
+  "type": "body_rinse",
+  "use": "fridge",
+  "note": "As posted: half of each bar (Larissa carrot \"éclaircissant\" soap, Kojie San, Pyary turmeric, Yoko milk, peacock laurel, glycerin soap and Dove shea-vanilla) grated, soaked 24 hours in a whole bottle of rose water, blended and kept in the fridge for about 3 months, with a little oil (grapeseed, sweet or bitter almond, rose, glycerin, apricot) added when used. Issues: the carrot soap is sold as a lightener, so check its full label for mercury or hydroquinone; bitter almond oil should be sweet; and even in the fridge a big rose-water paste kept 3 months can spoil. Make a 2-week batch instead.",
+  "rows": [
+   [
+    "barsoap",
+    300,
+    "g"
+   ],
+   [
+    "carrotsoap",
+    60,
+    "g"
+   ],
+   [
+    "hydrosol",
+    250,
+    "ml"
+   ],
+   [
+    "grapeseed",
+    5,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "shakiba akther",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "snow-white-sabounia-arwa-as-posted",
+  "name": "\"Snow white\" soap paste (Arwa Cosmetics infographic), as posted",
+  "claim": "Lightening and radiant body",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: grate laurel soap, soak 24 hours in rose water until dissolved, add a tin of glycerin cream, a cup each of olive, bitter almond and glycerin, and 1 to 2 spoons of turmeric; spread on the body and leave 15 to 30 minutes, scrub with a loofah, rinse, moisturise, 2 to 3 times a week. Problems: soap is alkaline, and leaving it on for 15 to 30 minutes can dry and irritate skin; a cup of bitter almond oil should be sweet almond; rose water plus cream in a stored jar can spoil. Rinse soap pastes after 2 to 3 minutes. The post is labelled as AI-generated media.",
+  "rows": [
+   [
+    "laurelsoap",
+    150,
+    "g"
+   ],
+   [
+    "hydrosol",
+    200,
+    "ml"
+   ],
+   [
+    "storelotion",
+    80,
+    "g"
+   ],
+   [
+    "olive",
+    60,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    60,
+    "g"
+   ],
+   [
+    "glycerin",
+    60,
+    "g"
+   ],
+   [
+    "turmeric",
+    5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Dr. Arwa Mohamed (Arwa Cosmetics)",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "licorice-sugar-scrub-arwa",
+  "name": "Licorice sugar scrub (Arwa Cosmetics)",
+  "claim": "A rich, polishing body scrub",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Her recipe: soak licorice powder in the coconut oil, melt shea and beeswax gently, stir in jojoba and vitamin E, cool, then mix in sugar, ground rice and the licorice oil; keep in a dry jar. No water, so it keeps. Use 1 to 2 times a week on damp skin. It polishes and softens; licorice in a rinse-off scrub won't remove dark spots (that needs leave-on products).",
+  "rows": [
+   [
+    "sugar",
+    1,
+    "cup"
+   ],
+   [
+    "riceflour",
+    2,
+    "tbsp"
+   ],
+   [
+    "licorice",
+    3,
+    "tbsp"
+   ],
+   [
+    "coconut",
+    4,
+    "tbsp"
+   ],
+   [
+    "jojoba",
+    4,
+    "tbsp"
+   ],
+   [
+    "vite",
+    1,
+    "tsp"
+   ],
+   [
+    "shea",
+    3,
+    "tbsp"
+   ],
+   [
+    "beeswax",
+    3,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Dr. Arwa Mohamed (Arwa Cosmetics)",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "dry-dalka-mix-reem",
+  "name": "Dry dalka powder for body and face (Reem)",
+  "claim": "A long-lasting dry mix to use as a mask or polish",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Her layers: ground chamomile, Moroccan nila, milk powder, ground chickpea, oats, ground pomegranate peel, ground rice, ground hibiscus, orange and lemon peel. Kept fully dry it lasts months. Take a spoon and mix with yogurt, soap paste or Moroccan soap for the body; for the face she uses yogurt, milk, tahini or rose water. Let it dry, rinse, moisturise. Notes: lemon peel can sensitise skin to sun, so use this at night and skip it on the face; nila stains and is often dyed. It polishes; it won't lighten skin in 2 weeks.",
+  "rows": [
+   [
+    "chamomileflower",
+    5,
+    "g"
+   ],
+   [
+    "nila",
+    1,
+    "g"
+   ],
+   [
+    "milkpowder",
+    10,
+    "g"
+   ],
+   [
+    "besan",
+    15,
+    "g"
+   ],
+   [
+    "oats",
+    15,
+    "g"
+   ],
+   [
+    "pompeel",
+    5,
+    "g"
+   ],
+   [
+    "riceflour",
+    15,
+    "g"
+   ],
+   [
+    "hibiscus",
+    5,
+    "g"
+   ],
+   [
+    "orangepeel",
+    3,
+    "g"
+   ],
+   [
+    "lemonpeel",
+    2,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "بلوقر ريم",
+   "platform": "TikTok"
+  }
  }
 ]

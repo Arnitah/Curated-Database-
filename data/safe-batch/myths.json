@@ -1,5 +1,57 @@
 [
  {
+  "id": "soap-paste-leave-on-and-lightening-courses",
+  "title": "Leave a soap paste on for 15 to 30 minutes; a \"double lightening course\" dalka evens tone in 2 weeks; carrot éclaircissant soap is a must",
+  "topics": [
+   "dark-spots",
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Leave soap paste on the body 15 to 30 minutes",
+    "verdict": "false",
+    "truth": "Soap is alkaline (pH 9 to 10). Leaving it on that long strips the skin's oils and can sting and dry it, which on deeper skin can leave darker patches. Massage for 2 to 3 minutes and rinse.",
+    "grade": "B"
+   },
+   {
+    "claim": "A dry dalka or scrub lightens skin in 2 weeks",
+    "verdict": "false",
+    "truth": "Scrubs and masks remove dead skin, so skin looks brighter for a day or two. Dark spots fade over months with leave-on treatments and sunscreen.",
+    "grade": "B"
+   },
+   {
+    "claim": "Lightening carrot soap is a safe base",
+    "verdict": "unproven",
+    "truth": "Without a full ingredient list there's no way to know. Some lightening products sold without full labels have contained mercury or hydroquinone; carrot itself doesn't lighten.",
+    "grade": "B"
+   },
+   {
+    "claim": "The Arwa hair-care infographics",
+    "verdict": "true",
+    "truth": "Mostly sound: trims every 8 to 12 weeks, gentle heat, scalp massage, anti-dandruff shampoos with ketoconazole or zinc pyrithione, and blood tests (iron/ferritin, vitamin D, B12, zinc, thyroid) for shedding.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   },
+   {
+    "title": "FDA: mercury poisoning linked to skin products",
+    "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+   },
+   {
+    "title": "Almohanna et al. 2019, The role of vitamins and minerals in hair loss (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30547302/"
+   }
+  ],
+  "seen_in": "Arwa Cosmetics, shakiba akther, بلوقر ريم and Safi on TikTok",
+  "checked": "2026-10-23",
+  "format": "v2"
+ },
+ {
   "id": "shower-gel-and-lotion-claims-batch",
   "title": "A \"remodelling\" scrub with guarana and capsicum shapes the body; niacinamide shower gels brighten; a \"beauty from within\" Job's tears lotion makes skin flawless; acid pore pads nightly for dry skin",
   "topics": [

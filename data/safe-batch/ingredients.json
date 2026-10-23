@@ -4684,5 +4684,16 @@
   "flag": "Pomegranate molasses is sticky and acidic",
   "good": "Thick, tart syrup; adds a little fruit acid and stickiness to a fresh scrub.",
   "care": "Acidic and sugary: it can sting freshly shaved skin and spoils once mixed with water. Use in single-use amounts and rinse well."
+ },
+ {
+  "id": "carrotsoap",
+  "grp": "Store-bought products",
+  "name": "\"Carrot\" lightening soap (savon carotte éclaircissant)",
+  "ph": "surf",
+  "tsp": 4,
+  "lvl": "care",
+  "flag": "Check what's in lightening carrot soaps",
+  "good": "A bar soap sold across West Africa and the Gulf; it cleans like any soap.",
+  "care": "\"Éclaircissant\" means lightening. Some lightening soaps and creams sold without a full ingredient list have been found to contain mercury or hydroquinone. Use only a bar with a complete ingredient list that names neither; carrot itself won't lighten skin in a soap."
  }
 ]

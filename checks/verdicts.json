@@ -6434,5 +6434,33 @@
  "pine-centella-gentle-body-wash": {
   "verdict": "ok",
   "flags": []
+ },
+ "eight-soap-sabounia-shakiba-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Check what's in lightening carrot soaps",
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Use sweet almond, not bitter almond"
+  ]
+ },
+ "snow-white-sabounia-arwa-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Stretching a store cream",
+   "care: Turmeric stains and can cause allergy",
+   "care: Use sweet almond, not bitter almond",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "licorice-sugar-scrub-arwa": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "dry-dalka-mix-reem": {
+  "verdict": "care",
+  "flags": [
+   "care: Citrus peel and sunlight",
+   "care: Nila powder stains and is often adulterated"
+  ]
  }
 }
