@@ -48795,5 +48795,645 @@
       "creator": "Store product",
       "platform": "Japan"
     }
+  },
+  {
+    "id": "mandarin-peel-fizz-body-mist",
+    "name": "Mandarin peel fizz body mist",
+    "claim": "Zesty, slightly bitter mandarin peel that softens into grapefruit and passionfruit",
+    "type": "perfume",
+    "use": "store",
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Mandarin gives the green, peely opening; distilled grapefruit and a passionfruit fragrance oil make the softer, fruitier dry-down. Steam-distilled grapefruit avoids the sun sensitivity of the cold-pressed oil. Mists fade within an hour or two, so spray over a lotion to make them last.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "mandarin",
+        15,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        8,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2,
+        "g"
+      ]
+    ],
+    "inspired": "Marc Jacobs Daisy Mandarin Fizz hair and body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "honeyed-lemon-strawberry-body-mist",
+    "name": "Honeyed lemon and strawberry body mist",
+    "claim": "Sweet pink-lemonade mist",
+    "type": "perfume",
+    "use": "store",
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Use steam-distilled lemon (not cold-pressed) so it won't react with sun, and skin-safe strawberry and honey or pink lemonade fragrance oils.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "lemondistilled",
+        15,
+        "drops"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ]
+    ],
+    "inspired": "Marc Jacobs Daisy Lemon Spritz hair and body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "pineapple-jasmine-macadamia-hair-and-body-mist",
+    "name": "Pineapple, jasmine and macadamia hair and body mist",
+    "claim": "Creamy tropical mist that's lighter on hair",
+    "type": "perfume",
+    "use": "store",
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Less alcohol than a body-only mist, so it's kinder to hair; spray ends from a distance, not the scalp. Pick pineapple, jasmine and coconut-macadamia fragrance oils. Very sweet fruit blends can smell medicinal at first; a creamy coconut note smooths that out.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ]
+    ],
+    "inspired": "Marc Jacobs Daisy Tropical Glow hair and body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "lemon-coconut-vanilla-body-mist",
+    "name": "Lemon, coconut and vanilla body mist",
+    "claim": "Caramelised-sweet vanilla mist with a lemon lift",
+    "type": "perfume",
+    "use": "store",
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Vanilla absolute is a heavy base note and helps the mist last longer than fragrance oil alone. For a truer vanilla, lean on the absolute and use less lemon.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        13,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "vanilla",
+        10,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        8,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2,
+        "g"
+      ]
+    ],
+    "inspired": "Marc Jacobs Daisy Vanilla Gourmand hair and body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "black-forest-cherry-cocoa-perfume-oil",
+    "name": "Black forest cherry and cocoa perfume oil",
+    "claim": "Dark chocolate and cherry with a cool mint finish",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller, top up with jojoba and rest 1 to 2 weeks. Cherry comes from a skin-safe fragrance oil. Never use bitter almond oil for that cherry-marzipan note: it isn't safe on skin. One drop of peppermint is enough to echo the minty finish.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "cocoaabs",
+        3,
+        "drops"
+      ],
+      [
+        "vanilla",
+        3,
+        "drops"
+      ],
+      [
+        "peppermint",
+        1,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Marvis Black Forest toothpaste flavour",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "osmanthus-and-mint-body-mist",
+    "name": "Osmanthus and mint body mist",
+    "claim": "Apricot-sweet osmanthus with a fresh mint lift",
+    "type": "perfume",
+    "use": "store",
+    "note": "Steep the dried osmanthus in the alcohol for 2 weeks, shaking daily, then strain well (this tincture is soft, so add an osmanthus fragrance oil for strength). Stir in the peppermint and fragrance, then the water and glycerin, and rest another week. Keep peppermint low on skin and away from the eyes.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "osmanthus",
+        2,
+        "tbsp"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1.5,
+        "g"
+      ]
+    ],
+    "inspired": "Marvis Dreamy Osmanthus toothpaste flavour",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "orange-blossom-and-mint-body-mist",
+    "name": "Orange blossom, lemon blossom and mint body mist",
+    "claim": "Clean white-flower citrus with a cool edge",
+    "type": "perfume",
+    "use": "store",
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Neroli is the orange-blossom note and isn't sun-sensitizing. Distilled lemon adds the lemon-blossom brightness; peppermint stays a whisper.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "neroli",
+        8,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        8,
+        "drops"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Marvis Orange Blossom Bloom toothpaste flavour",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "white-lily-and-peppermint-perfume-oil",
+    "name": "White lily and peppermint perfume oil",
+    "claim": "Creamy white lily with a fresh green-mint top",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 1 to 2 weeks. Lilies don't give an essential oil, so the lily note always comes from a fragrance oil (or a costly absolute). A little neroli rounds it out.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "neroli",
+        2,
+        "drops"
+      ],
+      [
+        "peppermint",
+        1,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Marvis Sinuous Lily toothpaste flavour",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "sugared-date-softening-body-mist",
+    "name": "Sugared date softening body mist",
+    "claim": "Caramel-date scented mist that leaves skin soft",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Stir the vitamin E and fragrance into the polysorbate first so they disperse, then add the water, aloe and glycerin, and the preservative last. Shake before use and spray on damp skin after the shower. About 4% glycerin softens without stickiness; more starts to feel tacky. Use within 3 months.",
+    "rows": [
+      [
+        "water",
+        85,
+        "g"
+      ],
+      [
+        "aloe",
+        5,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "polysorbate",
+        2,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Primark PS Sugared Dates softening body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "silky-balance-hair-oil",
+    "name": "Silky balance hair oil",
+    "claim": "Light, glossy, detangling oil that doesn't weigh hair down",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Mix and bottle. Rub 1 to 2 drops between palms and smooth over mid-lengths and ends, damp or dry. Store hair oils get their weightless slip mostly from silicones; squalane and camellia (tsubaki) are the closest plant-based feel.",
+    "rows": [
+      [
+        "squalane",
+        40,
+        "g"
+      ],
+      [
+        "camellia",
+        30,
+        "g"
+      ],
+      [
+        "argan",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        9,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "hiritu balance repair hair oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "sea-glass-clear-lip-balm",
+    "name": "Sea glass clear lip balm",
+    "claim": "Translucent, glossy balm",
+    "type": "lip",
+    "use": "store",
+    "note": "Candelilla with castor and jojoba sets clearer and glossier than a beeswax balm. Melt, stir in vitamin E and pour into tubes. For a tint, use only lip-safe mica or pigments; 'plant extract' and seaweed claims on store balms add little you'd feel.",
+    "rows": [
+      [
+        "candelilla",
+        8,
+        "g"
+      ],
+      [
+        "castor",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "Herorange plant extract lip balm",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "bergamot-bliss-shower-steamers",
+    "name": "Bergamot shower steamers",
+    "claim": "Bright bergamot and orange shower aroma tabs",
+    "type": "steamer",
+    "use": "store",
+    "note": "Mix the dry ingredients, add the oils, then mist with witch hazel until it holds like damp sand. Press into round molds, dry 24 hours, and stack in an airtight tube. Regular bergamot is fine here because it doesn't stay on skin. Place on the shower floor away from the stream; keep out of reach of children and pets.",
+    "rows": [
+      [
+        "bakingsoda",
+        100,
+        "g"
+      ],
+      [
+        "citricacid",
+        50,
+        "g"
+      ],
+      [
+        "cornstarch",
+        15,
+        "g"
+      ],
+      [
+        "witchhazel",
+        5,
+        "g"
+      ],
+      [
+        "bergamot",
+        40,
+        "drops"
+      ],
+      [
+        "orange",
+        20,
+        "drops"
+      ]
+    ],
+    "inspired": "Mad Sass Bergamot Bliss shower steamers",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "lavender-star-lotion-melts",
+    "name": "Lavender star lotion melts",
+    "claim": "Pocket-size solid lotion that melts on contact",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Less wax than a lotion bar, so it melts with hand warmth. Melt everything but the lavender, cool slightly, stir it in, and pour into small star molds. Freeze 20 minutes to pop out. Rub one between your hands on dry spots. Keep them cool in summer.",
+    "rows": [
+      [
+        "beeswax",
+        15,
+        "g"
+      ],
+      [
+        "cocoa",
+        40,
+        "g"
+      ],
+      [
+        "shea",
+        25,
+        "g"
+      ],
+      [
+        "almond",
+        18,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "lavender",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Jergens Lotion Bursts (lavender)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "cherry-almond-heart-lotion-melts",
+    "name": "Cherry almond heart lotion melts",
+    "claim": "Soft pink solid lotion hearts",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Same method as the star melts, poured into heart molds. The cherry-almond scent comes from a skin-safe fragrance oil; sweet almond oil has almost no smell, and bitter almond oil is never safe on skin. A pinch of cosmetic mica gives the pink.",
+    "rows": [
+      [
+        "beeswax",
+        15,
+        "g"
+      ],
+      [
+        "cocoa",
+        40,
+        "g"
+      ],
+      [
+        "shea",
+        25,
+        "g"
+      ],
+      [
+        "almond",
+        18,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.8,
+        "g"
+      ],
+      [
+        "mica",
+        0.2,
+        "g"
+      ]
+    ],
+    "inspired": "Jergens Lotion Bursts (cherry almond)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "mango-foaming-body-scrub",
+    "name": "Mango foaming body scrub",
+    "claim": "Sugar scrub that lathers and rinses clean",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Whip the soap base, then fold in the sugar, melted mango butter and fragrance. Keep water out of the jar and scoop with a dry spoon. Use 1 to 2 times a week on wet skin, then rinse.",
+    "rows": [
+      [
+        "fswb",
+        0.5,
+        "cup"
+      ],
+      [
+        "sugar",
+        0.5,
+        "cup"
+      ],
+      [
+        "mango",
+        1,
+        "tbsp"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Popup mango foaming body scrub",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

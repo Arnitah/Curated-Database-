@@ -1,5 +1,9 @@
 [
   [
+    "\\bmandarin(?! orange peel powder)|\\btangerine",
+    "mandarin"
+  ],
+  [
     "whipped soap base|foaming bath butter base",
     "whippedbase"
   ],

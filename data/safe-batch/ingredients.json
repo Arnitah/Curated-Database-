@@ -6243,5 +6243,15 @@
     "lvl": "ok",
     "good": "Ready-made fluffy cleanser base; add scent and colour, or fold in sugar or salt for a scrub.",
     "care": "Already preserved; add scent within the supplier's rate (usually up to 3%). Don't add water or fresh ingredients, which can overwhelm its preservative."
+  },
+  {
+    "id": "mandarin",
+    "grp": "Essential oils",
+    "name": "Mandarin or tangerine essential oil",
+    "ph": "eo",
+    "d": 0.85,
+    "lvl": "ok",
+    "good": "Sweet, soft citrus scent; a gentler choice than lemon or lime in leave-on products.",
+    "care": "Not considered sun-sensitizing, unlike cold-pressed lemon, lime and bergamot. Oxidizes once old, so store cool and use within a year."
   }
 ]

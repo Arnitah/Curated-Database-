@@ -6494,5 +6494,66 @@
     "seen_in": "Baby and kids brands on Instagram",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "warming-toothpaste-heat-kills-bacteria",
+    "title": "Warming toothpaste heats your mouth to kill bad bacteria",
+    "topics": [
+      "oral"
+    ],
+    "claims": [
+      {
+        "claim": "The toothpaste gets hot enough to neutralise bacteria",
+        "verdict": "false",
+        "truth": "The warmth is a sensation. Warming agents trigger heat-sensing nerves (or a powder gives off a little heat as it gets wet) without actually heating your mouth enough to harm bacteria.",
+        "grade": "B"
+      },
+      {
+        "claim": "It helps prevent gum disease",
+        "verdict": "partly",
+        "truth": "Medicated gum toothpastes can help, but that comes from their antibacterial and gum-care ingredients and from brushing well, not from the warm feeling.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Warming composition for oral care preparations (US patent 6838106)",
+        "url": "https://patents.google.com/patent/US6838106"
+      }
+    ],
+    "seen_in": "Japan drugstore finds on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
+  },
+  {
+    "id": "nad-booster-cream-restores-skin-energy",
+    "title": "NAD+ booster creams recharge your skin cells' energy",
+    "topics": [
+      "face",
+      "actives"
+    ],
+    "claims": [
+      {
+        "claim": "NAD+ in a cream refuels skin cells",
+        "verdict": "unproven",
+        "truth": "NAD+ is a large molecule that doesn't get into skin easily. Most research is on taking precursors by mouth or lab studies, not on creams.",
+        "grade": "C"
+      },
+      {
+        "claim": "Booster shots with several actives work better",
+        "verdict": "partly",
+        "truth": "Well-studied actives like vitamin C, retinal and tranexamic acid have evidence on their own; packing more into one tube can raise irritation. Introduce one at a time.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cosmoderma: the emerging potential of NAD+ precursors in dermatology",
+        "url": "https://cosmoderma.org/the-emerging-potential-of-nicotinamide-adenine-dinucleotide-nad-precursors-in-dermatological-health-and-anti-aging-elixir-of-life/"
+      }
+    ],
+    "seen_in": "Booster-shot moisturiser tubes on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]
