@@ -6029,5 +6029,107 @@
     "lvl": "care",
     "good": "The red earth the Himba mix with butterfat in otjize; gives warm colour.",
     "care": "Raw earth can contain heavy metals. Use cosmetic-grade red iron oxide instead."
+  },
+  {
+    "id": "alyssum",
+    "grp": "Dried botanicals",
+    "name": "Sweet alyssum flowers",
+    "ph": "botan",
+    "tsp": 0.5,
+    "lvl": "ok",
+    "good": "Honey-scented garden flowers, occasionally in flower waters.",
+    "care": "Little skin research. Low risk."
+  },
+  {
+    "id": "americanpawpaw",
+    "grp": "Fresh foods",
+    "name": "American pawpaw fruit (Asimina)",
+    "ph": "fresh",
+    "d": 1.05,
+    "lvl": "care",
+    "flag": "Can cause rashes; seeds toxic",
+    "good": "Custard-like North American fruit.",
+    "care": "The fruit, leaves and skin can cause rashes, and the seeds are toxic. Like soursop, it contains annonacins. Not worth putting on skin."
+  },
+  {
+    "id": "barley",
+    "grp": "Powders and exfoliants",
+    "name": "Barley flour or roasted barley tea (boricha)",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Gentle flour for masks; roasted barley tea makes a mild rinse.",
+    "care": "Skip with celiac disease or a gluten allergy if it touches broken skin."
+  },
+  {
+    "id": "canola",
+    "grp": "Carrier oils",
+    "name": "Canola (rapeseed) oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "Cheap, light kitchen oil; fine as a base oil.",
+    "care": "Use refined canola. Low risk."
+  },
+  {
+    "id": "englishivy",
+    "grp": "Dried botanicals",
+    "name": "English ivy (Hedera helix) leaf",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "care",
+    "flag": "Ivy sap causes rashes",
+    "good": "Extracts appear in old cellulite creams.",
+    "care": "Fresh leaves and sap cause itchy rashes in many people, and it's toxic if eaten. Anti-cellulite claims are unproven."
+  },
+  {
+    "id": "ginkgo",
+    "grp": "Dried botanicals",
+    "name": "Ginkgo leaf",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "care",
+    "good": "Leaf extracts are used in antioxidant cosmetics.",
+    "care": "Leaves only: the fruit and seed coat contain ginkgolic acids that cause severe, poison-ivy-like rashes. Leaf benefits on skin are small."
+  },
+  {
+    "id": "kuding",
+    "grp": "Dried botanicals",
+    "name": "Kuding (broadleaf holly) tea",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Very bitter Chinese tea, usable as a cooled rinse.",
+    "care": "Little evidence. Low risk."
+  },
+  {
+    "id": "digera",
+    "grp": "Dried botanicals",
+    "name": "Lular (Digera muricata)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "care",
+    "good": "A wild leafy plant eaten in South Asia and East Africa.",
+    "care": "Almost no cosmetic information. Patch test, or choose a better-known herb."
+  },
+  {
+    "id": "lulurpowder",
+    "grp": "Powders and exfoliants",
+    "name": "Lulur scrub powder (Javanese)",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Traditional bridal scrub of rice flour with turmeric or temu giring, sometimes jasmine; rubbed on damp skin and rolled off.",
+    "care": "Turmeric stains towels and pale skin yellow for a day. Body only."
+  },
+  {
+    "id": "chlorella",
+    "grp": "Powders and exfoliants",
+    "name": "Chlorella or microalgae powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Green algae powder used in masks; Dunaliella algae is rich in beta-carotene.",
+    "care": "Stains green. Mostly lab evidence."
   }
 ]

@@ -1,5 +1,89 @@
 [
   [
+    "bakuchiol",
+    "bakuchiol"
+  ],
+  [
+    "camellia sinensis|green tea(?! powder)|white tea|oolong",
+    "greentea"
+  ],
+  [
+    "black tea",
+    "herbtea"
+  ],
+  [
+    "lemon balm|melissa",
+    "lemonbalm"
+  ],
+  [
+    "white fungus|snow fungus",
+    "tremella"
+  ],
+  [
+    "roman chamomile|chamaemelum|anthemis nobilis",
+    "chamomileflower"
+  ],
+  [
+    "silk protein|sericin|fibroin|bombyx",
+    "silkpowder"
+  ],
+  [
+    "brown rice|black rice",
+    "riceflour"
+  ],
+  [
+    "bamboo shoot",
+    "vegpuree"
+  ],
+  [
+    "common bean|bush beans?",
+    "blackbeans"
+  ],
+  [
+    "alyssum|lobularia",
+    "alyssum"
+  ],
+  [
+    "asimina|american pawpaw",
+    "americanpawpaw"
+  ],
+  [
+    "barley|hordeum|boricha",
+    "barley"
+  ],
+  [
+    "canola|\\brapeseed|brassica napus",
+    "canola"
+  ],
+  [
+    "english ivy|common ivy|hedera",
+    "englishivy"
+  ],
+  [
+    "ginkgo",
+    "ginkgo"
+  ],
+  [
+    "kuding|ilex kudingcha",
+    "kuding"
+  ],
+  [
+    "lular|digera",
+    "digera"
+  ],
+  [
+    "lulur",
+    "lulurpowder"
+  ],
+  [
+    "chlorella|microalgae|dunaliella",
+    "chlorella"
+  ],
+  [
+    "daikon|horseradish",
+    "vegpuree"
+  ],
+  [
     "nasturtium|tropaeolum",
     "nasturtium"
   ],
@@ -1579,10 +1663,6 @@
   [
     "coq10|coenzyme",
     "coq10"
-  ],
-  [
-    "bakuchiol",
-    "bakuchiol"
   ],
   [
     "allantoin",
