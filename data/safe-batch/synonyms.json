@@ -1,5 +1,572 @@
 [
   [
+    "nasturtium|tropaeolum",
+    "nasturtium"
+  ],
+  [
+    "parsnip|pastinaca",
+    "parsnip"
+  ],
+  [
+    "patau|seje|oenocarpus",
+    "patauaoil"
+  ],
+  [
+    "peony|paeonia",
+    "peony"
+  ],
+  [
+    "pistachio|pistacia",
+    "pistachiooil"
+  ],
+  [
+    "pracaxi|pentaclethra macroloba",
+    "pracaxi"
+  ],
+  [
+    "purple corn|purple sweet potato",
+    "purplecorn"
+  ],
+  [
+    "rhubarb|rheum",
+    "rhubarbroot"
+  ],
+  [
+    "labdanum|rock rose|cistus",
+    "labdanum",
+    true
+  ],
+  [
+    "samour",
+    "samour"
+  ],
+  [
+    "savory|satureja",
+    "savory"
+  ],
+  [
+    "schisandra|schizandr",
+    "schisandra"
+  ],
+  [
+    "sea moss|irish moss|chondrus",
+    "seamoss"
+  ],
+  [
+    "st\\.? john|kantaron|hypericum",
+    "stjohnswort"
+  ],
+  [
+    "sweet flag|calamus|acorus|vacha",
+    "calamus"
+  ],
+  [
+    "tara (tree )?gum|caesalpinia spinosa",
+    "taragum"
+  ],
+  [
+    "tarragon|artemisia dracunculus",
+    "tarragon"
+  ],
+  [
+    "tepezcohuite|mimosa tenuiflora",
+    "tepezcohuite"
+  ],
+  [
+    "thanak|hesperethusa|limonia acidissima",
+    "thanaka"
+  ],
+  [
+    "tuberose|polianthes",
+    "tuberose",
+    true
+  ],
+  [
+    "valerian",
+    "valerian"
+  ],
+  [
+    "vitex|chaste ?berry",
+    "vitex"
+  ],
+  [
+    "walnut (hull|leaf|leaves)|juglone",
+    "walnuthull"
+  ],
+  [
+    "wattle ?seed",
+    "wattleseed"
+  ],
+  [
+    "pea protein|pisum sativum",
+    "peaprotein"
+  ],
+  [
+    "yerba mate|ilex paraguariensis",
+    "yerbamate"
+  ],
+  [
+    "(?<!aniseed |lemon )myrtle|myrtus|\\bades\\b",
+    "myrtle"
+  ],
+  [
+    "nangai|canarium indicum",
+    "nangai"
+  ],
+  [
+    "sea fennel|crithmum",
+    "seafennel"
+  ],
+  [
+    "ochre|earth pigment",
+    "ochre"
+  ],
+  [
+    "red dates?|hong zao|jujube fruit",
+    "blackdates"
+  ],
+  [
+    "pingyin|rosa rugosa",
+    "rosebuds"
+  ],
+  [
+    "tropical almond|fruit almond",
+    "tropicalalmond"
+  ],
+  [
+    "sugar palm|palm sugar",
+    "sugar"
+  ],
+  [
+    "ackee|blighia",
+    "ackee"
+  ],
+  [
+    "broccoli seed oil|brassica oleracea italica",
+    "broccolioil"
+  ],
+  [
+    "ogbono|bush mango|irvingia",
+    "ogbono"
+  ],
+  [
+    "cherry (kernel|pit) oil|prunus avium",
+    "cherryoil"
+  ],
+  [
+    "cocoplum|gbafilo|chrysobalanus",
+    "cocoplum"
+  ],
+  [
+    "cottonseed|gossypium",
+    "cottonseed"
+  ],
+  [
+    "kapok|ceiba pentandra|silk cotton",
+    "kapok"
+  ],
+  [
+    "karkar",
+    "karkar"
+  ],
+  [
+    "linseed oil|flax ?seed oil|linum usitatissimum (seed )?oil",
+    "linseedoil"
+  ],
+  [
+    "peanut oil|arachis",
+    "peanutoil"
+  ],
+  [
+    "pecan|carya",
+    "pecanoil"
+  ],
+  [
+    "pequi|caryocar",
+    "pequi"
+  ],
+  [
+    "pine nut",
+    "pinenutoil"
+  ],
+  [
+    "red palm|elaeis guineensis (fruit|pulp) oil",
+    "redpalm"
+  ],
+  [
+    "tiger ?nut|chufa|cyperus esculentus",
+    "tigernut"
+  ],
+  [
+    "egusi|white[- ]seed melon",
+    "egusi"
+  ],
+  [
+    "atile (fruit )?oil|african olive|canarium schweinfurthii (fruit|pulp)",
+    "atileoil"
+  ],
+  [
+    "miracle (berry|fruit)|synsepalum",
+    "miracleberry"
+  ],
+  [
+    "apple seed oil|pyrus malus seed",
+    "appleseedoil"
+  ],
+  [
+    "quandong|sandalwood seed|santalum spicatum seed|fusanus",
+    "sandalseedoil"
+  ],
+  [
+    "spikenard|jatamansi|nardostachys",
+    "spikenard",
+    true
+  ],
+  [
+    "copaiba|copaifera",
+    "copaiba",
+    true
+  ],
+  [
+    "acacia (blossom|flower)|black locust|robinia",
+    "acaciaflower"
+  ],
+  [
+    "lady.?s mantle|alchemilla",
+    "ladysmantle"
+  ],
+  [
+    "alligator pepper|grains? of paradise|ataiko|aframomum",
+    "alligatorpepper"
+  ],
+  [
+    "atama|bush apple leaves|beletete|heinsia",
+    "atama"
+  ],
+  [
+    "bearberry|uva.ursi|arctostaphylos",
+    "bearberry"
+  ],
+  [
+    "bitter kola|garcinia kola",
+    "bitterkola"
+  ],
+  [
+    "bitter ?leaf|ewuro|onugbu|vernonia",
+    "bitterleaf"
+  ],
+  [
+    "black dates?|hei zao",
+    "blackdates"
+  ],
+  [
+    "bougainvillea",
+    "bougainvillea"
+  ],
+  [
+    "cedar lea(f|ves)|cedar needles|white cedar|thuja (occidentalis|plicata)|(?<!orientalis )\\bthuja\\b(?! orientalis)",
+    "cedarleaf"
+  ],
+  [
+    "chestnut|castanea",
+    "chestnut"
+  ],
+  [
+    "chrysanthemum",
+    "chrysanthemum"
+  ],
+  [
+    "corn ?silk",
+    "cornsilk"
+  ],
+  [
+    "common daisy|bellis perennis",
+    "daisy"
+  ],
+  [
+    "tulip|dahlia|hydrangea|orchid|madonna lily|white lily|magnolia|sakura|cherry blossom|date palm blossom|pear blossom|canary island bellflower",
+    "gardenflower"
+  ],
+  [
+    "echinacea",
+    "echinacea"
+  ],
+  [
+    "elder(berry|flower)|sambucus",
+    "elder"
+  ],
+  [
+    "grains? of selim|negro pepper|xylopia|\\buda\\b|kimba",
+    "grainsofselim"
+  ],
+  [
+    "hawthorn|crataegus",
+    "hawthorn"
+  ],
+  [
+    "marugbo|clerodendrum",
+    "marugbo"
+  ],
+  [
+    "albizia|persian silk tree",
+    "mimosaflower"
+  ],
+  [
+    "mimosa pudica|sensitive plant",
+    "mimosapudica"
+  ],
+  [
+    "kola nut|monkey kola|cola (acuminata|nitida|parchycarpa|pachycarpa|lepidota)",
+    "kolanut"
+  ],
+  [
+    "omuvumba|commiphora wildii",
+    "omuvumba"
+  ],
+  [
+    "passion ?flower|passiflora",
+    "passionflower"
+  ],
+  [
+    "pawpaw lea|papaya lea",
+    "pawpawleaf"
+  ],
+  [
+    "pine needle",
+    "pineneedle"
+  ],
+  [
+    "pomelo|citrus maxima|citrus grandis",
+    "pomelopeel"
+  ],
+  [
+    "astragal|huang qi|codonopsis|dang shen",
+    "astragalus"
+  ],
+  [
+    "red yeast rice|monascus",
+    "redyeastrice"
+  ],
+  [
+    "rooibos|red bush|aspalathus",
+    "rooibos"
+  ],
+  [
+    "soursop|graviola|annona muricata",
+    "soursopleaf"
+  ],
+  [
+    "tazargade",
+    "tazargade"
+  ],
+  [
+    "turkey berry|solanum torvum",
+    "turkeyberry"
+  ],
+  [
+    "tropical almond|ketapang|terminalia catappa",
+    "tropicalalmond"
+  ],
+  [
+    "prekese|aridan|tetrapleura",
+    "prekese"
+  ],
+  [
+    "pepper fruit|dennettia|mmimi|ata igbere",
+    "pepperfruit"
+  ],
+  [
+    "lotus seed|lotus leaf|nelumbo",
+    "lotus"
+  ],
+  [
+    "milk thistle|silybum",
+    "milkthistle"
+  ],
+  [
+    "cassava lea",
+    "cassavaleaf"
+  ],
+  [
+    "yuzu|citrus junos",
+    "yuzu"
+  ],
+  [
+    "black (soy)?beans?",
+    "blackbeans"
+  ],
+  [
+    "buckwheat|fagopyrum",
+    "buckwheat"
+  ],
+  [
+    "eggshell",
+    "eggshell"
+  ],
+  [
+    "fox ?nut|makhana|gorgon nut|euryale",
+    "foxnut"
+  ],
+  [
+    "gond katira|tragacanth",
+    "gondkatira"
+  ],
+  [
+    "job.?s tears|coix",
+    "jobstears"
+  ],
+  [
+    "\\bmaca\\b|lepidium meyenii",
+    "maca"
+  ],
+  [
+    "peach gum|tao jiao",
+    "peachgum"
+  ],
+  [
+    "psyllium|isabgol|ispaghula",
+    "psyllium"
+  ],
+  [
+    "quillaj|quillaia|soapbark",
+    "quillaja"
+  ],
+  [
+    "quinoa",
+    "quinoa"
+  ],
+  [
+    "\\bteff\\b|millet|sorghum|eragrostis",
+    "teff"
+  ],
+  [
+    "tremella|snow mushroom|silver ear",
+    "tremella"
+  ],
+  [
+    "agbalumo|udara|african star apple|chrysophyllum",
+    "agbalumo"
+  ],
+  [
+    "agave",
+    "agave"
+  ],
+  [
+    "(?<!prickly |african |sour |kakadu |davidson |june |paradise |cocoplum |asian )\\b(pears?|peach(es)?|nectarines?|plums?|prunes?)\\b(?! ?(kernel|seed|gum|blossom))",
+    "stonefruit"
+  ],
+  [
+    "lychee|litchi|longan|june plum|golden apple|kiwano|horned melon|monk fruit|luo han guo|winter melon|rose apple|dragon fruit|honeydew|cantaloupe",
+    "tropfruit"
+  ],
+  [
+    "broccoli(?! seed)|brussels sprouts|\\bkale\\b|cauliflower|butternut|squash|radish(?! root)|leeks?|garden egg|african eggplant|solanum (aethiopicum|macrocarpon)|rutabaga|turnips?",
+    "vegpuree"
+  ],
+  [
+    "breadfruit",
+    "breadfruit"
+  ],
+  [
+    "nopal|cactus (gel|mucilage)",
+    "nopal"
+  ],
+  [
+    "celery|apium",
+    "celery"
+  ],
+  [
+    "parsley|petroselinum",
+    "parsley"
+  ],
+  [
+    "goron tula|snot apple|azanza",
+    "goronTula"
+  ],
+  [
+    "velvet tamarind|dialium|\\bawin\\b",
+    "velvettamarind"
+  ],
+  [
+    "cape gooseberry|physalis|golden berry",
+    "capegooseberry"
+  ],
+  [
+    "davidson plum|emu apple|lill?y pilly|syzygium smithii",
+    "bushfruit"
+  ],
+  [
+    "kakadu|terminalia ferdinandiana",
+    "kakadu"
+  ],
+  [
+    "mountain pepper|tasmannia|aniseed myrtle",
+    "mountainpepper"
+  ],
+  [
+    "shampoo ginger|awapuhi|zingiber zerumbet",
+    "awapuhi"
+  ],
+  [
+    "betel|areca",
+    "betelnut"
+  ],
+  [
+    "cashew (nut )?shell",
+    "cashewshell"
+  ],
+  [
+    "siam weed|akintola|chromolaena|jack.in.the.bush",
+    "siamweed"
+  ],
+  [
+    "oburunbebe",
+    "oburunbebe"
+  ],
+  [
+    "\\b(blackberr|blueberr|strawberr|mulberr)(y|ies)\\b(?! ?(seed|leaf|leaves|root))|(?<!barbary )\\bfigs?\\b",
+    "fruitmash"
+  ],
+  [
+    "shiitake|lentinula",
+    "mushroombath"
+  ],
+  [
+    "conophor|african walnut|tetracarpidium",
+    "walnutoil"
+  ],
+  [
+    "ehuru|calabash nutmeg|monodora",
+    "nutmeg",
+    true
+  ],
+  [
+    "uziza|piper guineense|west african pepper",
+    "blackpepper",
+    true
+  ],
+  [
+    "chickpeas?\\b(?! oil)",
+    "besan"
+  ],
+  [
+    "water lily",
+    "bluelotus"
+  ],
+  [
+    "snowflower",
+    "teatree",
+    true
+  ],
+  [
+    "oolong|white tea",
+    "greentea"
+  ],
+  [
+    "lecithin|phosphatidylcholine",
+    "lecithin"
+  ],
+  [
     "cowrie|الودع|بودرة الودع",
     "cowrie"
   ],
@@ -2060,434 +2627,5 @@
   [
     "walnut (seed )?oil|juglans regia (seed )?oil",
     "walnutoil"
-  ],
-  [
-    "ackee|blighia",
-    "ackee"
-  ],
-  [
-    "broccoli seed oil|brassica oleracea italica",
-    "broccolioil"
-  ],
-  [
-    "ogbono|bush mango|irvingia",
-    "ogbono"
-  ],
-  [
-    "cherry (kernel|pit) oil|prunus avium",
-    "cherryoil"
-  ],
-  [
-    "cocoplum|gbafilo|chrysobalanus",
-    "cocoplum"
-  ],
-  [
-    "cottonseed|gossypium",
-    "cottonseed"
-  ],
-  [
-    "kapok|ceiba pentandra|silk cotton",
-    "kapok"
-  ],
-  [
-    "karkar",
-    "karkar"
-  ],
-  [
-    "linseed oil|flax ?seed oil|linum usitatissimum (seed )?oil",
-    "linseedoil"
-  ],
-  [
-    "peanut oil|arachis",
-    "peanutoil"
-  ],
-  [
-    "pecan|carya",
-    "pecanoil"
-  ],
-  [
-    "pequi|caryocar",
-    "pequi"
-  ],
-  [
-    "pine nut",
-    "pinenutoil"
-  ],
-  [
-    "red palm|elaeis guineensis (fruit|pulp) oil",
-    "redpalm"
-  ],
-  [
-    "tiger ?nut|chufa|cyperus esculentus",
-    "tigernut"
-  ],
-  [
-    "egusi|white[- ]seed melon",
-    "egusi"
-  ],
-  [
-    "atile (fruit )?oil|african olive|canarium schweinfurthii (fruit|pulp)",
-    "atileoil"
-  ],
-  [
-    "miracle (berry|fruit)|synsepalum",
-    "miracleberry"
-  ],
-  [
-    "apple seed oil|pyrus malus seed",
-    "appleseedoil"
-  ],
-  [
-    "quandong|sandalwood seed|santalum spicatum seed|fusanus",
-    "sandalseedoil"
-  ],
-  [
-    "spikenard|jatamansi|nardostachys",
-    "spikenard",
-    true
-  ],
-  [
-    "copaiba|copaifera",
-    "copaiba",
-    true
-  ],
-  [
-    "acacia (blossom|flower)|black locust|robinia",
-    "acaciaflower"
-  ],
-  [
-    "lady.?s mantle|alchemilla",
-    "ladysmantle"
-  ],
-  [
-    "alligator pepper|grains? of paradise|ataiko|aframomum",
-    "alligatorpepper"
-  ],
-  [
-    "atama|bush apple leaves|beletete|heinsia",
-    "atama"
-  ],
-  [
-    "bearberry|uva.ursi|arctostaphylos",
-    "bearberry"
-  ],
-  [
-    "bitter kola|garcinia kola",
-    "bitterkola"
-  ],
-  [
-    "bitter ?leaf|ewuro|onugbu|vernonia",
-    "bitterleaf"
-  ],
-  [
-    "black dates?|hei zao",
-    "blackdates"
-  ],
-  [
-    "bougainvillea",
-    "bougainvillea"
-  ],
-  [
-    "cedar lea(f|ves)|cedar needles|thuja",
-    "cedarleaf"
-  ],
-  [
-    "chestnut|castanea",
-    "chestnut"
-  ],
-  [
-    "chrysanthemum",
-    "chrysanthemum"
-  ],
-  [
-    "corn ?silk",
-    "cornsilk"
-  ],
-  [
-    "common daisy|bellis perennis",
-    "daisy"
-  ],
-  [
-    "tulip|dahlia|hydrangea|orchid|madonna lily|white lily|magnolia|sakura|cherry blossom|date palm blossom|pear blossom|canary island bellflower",
-    "gardenflower"
-  ],
-  [
-    "echinacea",
-    "echinacea"
-  ],
-  [
-    "elder(berry|flower)|sambucus",
-    "elder"
-  ],
-  [
-    "grains? of selim|negro pepper|xylopia|\\buda\\b|kimba",
-    "grainsofselim"
-  ],
-  [
-    "hawthorn|crataegus",
-    "hawthorn"
-  ],
-  [
-    "marugbo|clerodendrum",
-    "marugbo"
-  ],
-  [
-    "albizia|persian silk tree",
-    "mimosaflower"
-  ],
-  [
-    "mimosa pudica|sensitive plant",
-    "mimosapudica"
-  ],
-  [
-    "kola nut|monkey kola|cola (acuminata|nitida|parchycarpa|pachycarpa|lepidota)",
-    "kolanut"
-  ],
-  [
-    "omuvumba|commiphora wildii",
-    "omuvumba"
-  ],
-  [
-    "passion ?flower|passiflora",
-    "passionflower"
-  ],
-  [
-    "pawpaw lea|papaya lea",
-    "pawpawleaf"
-  ],
-  [
-    "pine needle",
-    "pineneedle"
-  ],
-  [
-    "pomelo|citrus maxima|citrus grandis",
-    "pomelopeel"
-  ],
-  [
-    "astragal|huang qi|codonopsis|dang shen",
-    "astragalus"
-  ],
-  [
-    "red yeast rice|monascus",
-    "redyeastrice"
-  ],
-  [
-    "rooibos|red bush|aspalathus",
-    "rooibos"
-  ],
-  [
-    "soursop|graviola|annona muricata",
-    "soursopleaf"
-  ],
-  [
-    "tazargade",
-    "tazargade"
-  ],
-  [
-    "turkey berry|solanum torvum",
-    "turkeyberry"
-  ],
-  [
-    "tropical almond|ketapang|terminalia catappa",
-    "tropicalalmond"
-  ],
-  [
-    "prekese|aridan|tetrapleura",
-    "prekese"
-  ],
-  [
-    "pepper fruit|dennettia|mmimi|ata igbere",
-    "pepperfruit"
-  ],
-  [
-    "lotus seed|lotus leaf|nelumbo",
-    "lotus"
-  ],
-  [
-    "milk thistle|silybum",
-    "milkthistle"
-  ],
-  [
-    "cassava lea",
-    "cassavaleaf"
-  ],
-  [
-    "yuzu|citrus junos",
-    "yuzu"
-  ],
-  [
-    "black (soy)?beans?",
-    "blackbeans"
-  ],
-  [
-    "buckwheat|fagopyrum",
-    "buckwheat"
-  ],
-  [
-    "eggshell",
-    "eggshell"
-  ],
-  [
-    "fox ?nut|makhana|gorgon nut|euryale",
-    "foxnut"
-  ],
-  [
-    "gond katira|tragacanth",
-    "gondkatira"
-  ],
-  [
-    "job.?s tears|coix",
-    "jobstears"
-  ],
-  [
-    "\\bmaca\\b|lepidium meyenii",
-    "maca"
-  ],
-  [
-    "peach gum|tao jiao",
-    "peachgum"
-  ],
-  [
-    "psyllium|isabgol|ispaghula",
-    "psyllium"
-  ],
-  [
-    "quillaj|quillaia|soapbark",
-    "quillaja"
-  ],
-  [
-    "quinoa",
-    "quinoa"
-  ],
-  [
-    "\\bteff\\b|millet|sorghum|eragrostis",
-    "teff"
-  ],
-  [
-    "tremella|snow mushroom|silver ear",
-    "tremella"
-  ],
-  [
-    "agbalumo|udara|african star apple|chrysophyllum",
-    "agbalumo"
-  ],
-  [
-    "agave",
-    "agave"
-  ],
-  [
-    "\\bpears?\\b|peach(es)?\\b|nectarines?|\\bplums?\\b",
-    "stonefruit"
-  ],
-  [
-    "lychee|litchi|longan|june plum|golden apple|kiwano|horned melon|monk fruit|luo han guo|winter melon|rose apple|dragon fruit|honeydew|cantaloupe",
-    "tropfruit"
-  ],
-  [
-    "broccoli|brussels sprouts|\\bkale\\b|cauliflower|butternut|squash|radish|leeks?|spring onion",
-    "vegpuree"
-  ],
-  [
-    "breadfruit",
-    "breadfruit"
-  ],
-  [
-    "nopal|cactus (gel|mucilage)",
-    "nopal"
-  ],
-  [
-    "celery|apium",
-    "celery"
-  ],
-  [
-    "parsley|petroselinum",
-    "parsley"
-  ],
-  [
-    "goron tula|snot apple|azanza",
-    "goronTula"
-  ],
-  [
-    "velvet tamarind|dialium|\\bawin\\b",
-    "velvettamarind"
-  ],
-  [
-    "cape gooseberry|physalis|golden berry",
-    "capegooseberry"
-  ],
-  [
-    "davidson plum|emu apple|lill?y pilly|syzygium smithii",
-    "bushfruit"
-  ],
-  [
-    "kakadu|terminalia ferdinandiana",
-    "kakadu"
-  ],
-  [
-    "mountain pepper|tasmannia|aniseed myrtle",
-    "mountainpepper"
-  ],
-  [
-    "shampoo ginger|awapuhi|zingiber zerumbet",
-    "awapuhi"
-  ],
-  [
-    "betel|areca",
-    "betelnut"
-  ],
-  [
-    "cashew (nut )?shell",
-    "cashewshell"
-  ],
-  [
-    "siam weed|akintola|chromolaena|jack.in.the.bush",
-    "siamweed"
-  ],
-  [
-    "oburunbebe",
-    "oburunbebe"
-  ],
-  [
-    "blackberr|blueberr|mulberr|strawberr|\\bfigs?\\b",
-    "fruitmash"
-  ],
-  [
-    "shiitake|lentinula",
-    "mushroombath"
-  ],
-  [
-    "conophor|african walnut|tetracarpidium",
-    "walnutoil"
-  ],
-  [
-    "ehuru|calabash nutmeg|monodora",
-    "nutmeg",
-    true
-  ],
-  [
-    "uziza|piper guineense|west african pepper",
-    "blackpepper",
-    true
-  ],
-  [
-    "chickpeas?\\b(?! oil)",
-    "besan"
-  ],
-  [
-    "water lily",
-    "bluelotus"
-  ],
-  [
-    "snowflower",
-    "teatree",
-    true
-  ],
-  [
-    "oolong|white tea",
-    "greentea"
-  ],
-  [
-    "lecithin|phosphatidylcholine",
-    "lecithin"
   ]
 ]

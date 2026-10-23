@@ -5034,7 +5034,7 @@
   {
     "id": "blackdates",
     "grp": "Dried botanicals",
-    "name": "Black dates (hei zao)",
+    "name": "Black or red dates (jujube fruit, hei zao, hong zao)",
     "ph": "botan",
     "tsp": 3,
     "lvl": "ok",
@@ -5721,5 +5721,313 @@
     "lvl": "ok",
     "good": "A natural, gentle co-emulsifier that helps oil and water stay mixed and softens skin and hair.",
     "care": "Too weak to hold a lotion on its own; pair it with a full emulsifier. It has an earthy smell. Choose sunflower lecithin with a soy allergy."
+  },
+  {
+    "id": "nasturtium",
+    "grp": "Dried botanicals",
+    "name": "Nasturtium (dried leaves or flowers)",
+    "ph": "botan",
+    "tsp": 0.5,
+    "lvl": "care",
+    "good": "Peppery leaves used in old European hair tonics; edible flowers.",
+    "care": "Its mustard-like compounds can irritate the scalp. Rinse-off only; growth claims are folklore."
+  },
+  {
+    "id": "parsnip",
+    "grp": "Fresh foods",
+    "name": "Parsnip",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "care",
+    "flag": "Can burn skin in the sun",
+    "good": "A root vegetable occasionally added to masks.",
+    "care": "Parsnip contains psoralens that can cause blistering burns and dark patches on skin in sunlight. No proven benefit; leave it to the kitchen.",
+    "photo": true
+  },
+  {
+    "id": "patauaoil",
+    "grp": "Carrier oils",
+    "name": "Patauá (seje) oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "Amazonian palm fruit oil, high in oleic acid, traditionally used on hair; light and glossy.",
+    "care": "Little research; patch test."
+  },
+  {
+    "id": "peony",
+    "grp": "Dried botanicals",
+    "name": "Peony root or flower (white or tree peony)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Classic Chinese medicine root; extracts are used in soothing and brightening cosmetics.",
+    "care": "Homemade teas aren't a measured dose. Low risk as a rinse."
+  },
+  {
+    "id": "pistachiooil",
+    "grp": "Carrier oils",
+    "name": "Pistachio oil",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "ok",
+    "good": "Light, nutty oil that absorbs quickly.",
+    "care": "Tree nut: skip with a nut allergy.",
+    "nut": true
+  },
+  {
+    "id": "pracaxi",
+    "grp": "Carrier oils",
+    "name": "Pracaxi seed oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "Amazon seed oil rich in behenic acid; known for smoothing frizz and adding slip to curls.",
+    "care": "Low risk. Can feel heavy on fine hair."
+  },
+  {
+    "id": "purplecorn",
+    "grp": "Powders and exfoliants",
+    "name": "Purple corn or purple sweet potato extract",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Rich in anthocyanins, the same purple antioxidants as berries.",
+    "care": "Mostly lab evidence. Stains."
+  },
+  {
+    "id": "rhubarbroot",
+    "grp": "Dried botanicals",
+    "name": "Rhubarb root",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "good": "Its anthraquinones give a golden tint, so it's used as a natural hair dye for light hair.",
+    "care": "Stains skin and fabric. It's a strong laxative if swallowed. Patch test; rhubarb leaves are toxic."
+  },
+  {
+    "id": "labdanum",
+    "grp": "Essential oils",
+    "name": "Labdanum (rock rose) absolute or resin",
+    "ph": "eo",
+    "d": 1,
+    "lvl": "care",
+    "good": "Rich amber resin used as a perfume base note.",
+    "care": "Can cause skin allergy. Keep under 1% and patch test."
+  },
+  {
+    "id": "samour",
+    "grp": "Dried botanicals",
+    "name": "Samour resin (Sahelian resin in chebe)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "good": "A fragrant resin ground into some chebe blends.",
+    "care": "Resins can cause skin allergy, especially when old. Keep it on the lengths, not the scalp."
+  },
+  {
+    "id": "savory",
+    "grp": "Dried botanicals",
+    "name": "Savory (summer or winter, dried)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "care",
+    "good": "Thyme-like herb used in clarifying rinses.",
+    "care": "Rich in carvacrol like oregano, so it can irritate. Rinse-off only; never use the essential oil undiluted."
+  },
+  {
+    "id": "schisandra",
+    "grp": "Dried botanicals",
+    "name": "Schisandra berry",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Chinese tonic berry; extracts appear in antioxidant cosmetics.",
+    "care": "Little topical evidence. Low risk as a rinse."
+  },
+  {
+    "id": "seamoss",
+    "grp": "Fresh foods",
+    "name": "Sea moss (Irish moss) gel",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Soaked and blended into a slippery gel used as a curl gel and mask base.",
+    "care": "Spoils within days: fridge, and use within a week. Buy from a seller who tests for heavy metals."
+  },
+  {
+    "id": "stjohnswort",
+    "grp": "Carrier oils",
+    "name": "St. John's wort (red) oil",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "care",
+    "flag": "Can make skin sun-sensitive",
+    "good": "Flowers infused in oil turn it red; a traditional European and Turkish (kantaron) oil for minor burns and dry skin.",
+    "care": "Contains hypericin, which can make skin more sensitive to sun. Use at night, don't sunbathe on it, and don't take it by mouth with medications.",
+    "photo": true
+  },
+  {
+    "id": "calamus",
+    "grp": "Never on skin",
+    "name": "Sweet flag (calamus, vacha)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "stop",
+    "care": "Calamus contains beta-asarone, which caused cancer in animal studies; it's banned in US food and restricted in cosmetics. Leave it out.",
+    "never": true
+  },
+  {
+    "id": "taragum",
+    "grp": "Powders and exfoliants",
+    "name": "Tara gum",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "A natural thickener that turns water into a smooth gel.",
+    "care": "A pinch is plenty. Water gels spoil without a preservative."
+  },
+  {
+    "id": "tarragon",
+    "grp": "Dried botanicals",
+    "name": "Tarragon (dried)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Aromatic kitchen herb, occasionally used in rinses.",
+    "care": "Low risk as a herb; the essential oil is high in estragole, so avoid that on skin."
+  },
+  {
+    "id": "tepezcohuite",
+    "grp": "Dried botanicals",
+    "name": "Tepezcohuite (Mimosa tenuiflora) bark powder",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "good": "Mexican folk remedy for burns and skin repair.",
+    "care": "Small studies only, and quality varies a lot. Don't use on deep burns; see a doctor."
+  },
+  {
+    "id": "thanaka",
+    "grp": "Powders and exfoliants",
+    "name": "Thanaka bark powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Burmese bark ground with water into a cooling yellow paste worn on the face.",
+    "care": "Low risk. Its sun protection is mild; it doesn't replace sunscreen."
+  },
+  {
+    "id": "tuberose",
+    "grp": "Essential oils",
+    "name": "Tuberose absolute",
+    "ph": "eo",
+    "d": 0.95,
+    "lvl": "care",
+    "good": "Heady white-floral perfume material.",
+    "care": "Strong and can cause allergy. Use well under 1%."
+  },
+  {
+    "id": "valerian",
+    "grp": "Dried botanicals",
+    "name": "Valerian root",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A calming bedtime tea, sometimes in bath soaks.",
+    "care": "Smells strongly. Little skin evidence."
+  },
+  {
+    "id": "vitex",
+    "grp": "Dried botanicals",
+    "name": "Vitex (chasteberry) seeds or leaves",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "good": "A herb taken for menstrual symptoms.",
+    "care": "It acts on hormones when taken by mouth; skip it in pregnancy and with hormonal medication. No proven use on skin or hair.",
+    "preg": true
+  },
+  {
+    "id": "walnuthull",
+    "grp": "Dried botanicals",
+    "name": "Walnut hulls or leaves",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "good": "Hulls contain juglone, a natural brown dye used to darken hair and in old herbal rinses.",
+    "care": "Stains skin and nails brown for days, can irritate, and is a tree nut. Wear gloves.",
+    "nut": true
+  },
+  {
+    "id": "wattleseed",
+    "grp": "Powders and exfoliants",
+    "name": "Wattleseed (roasted, ground)",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Australian bush food with a coffee-like smell; usable as a gentle scrub grit.",
+    "care": "Only buy food-grade wattleseed; many acacia seeds aren't edible."
+  },
+  {
+    "id": "peaprotein",
+    "grp": "Powders and exfoliants",
+    "name": "Pea protein",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Plant protein used in strengthening hair masks.",
+    "care": "Rinse well, and follow with conditioner, as protein can leave hair stiff."
+  },
+  {
+    "id": "yerbamate",
+    "grp": "Dried botanicals",
+    "name": "Yerba mate",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Caffeine-rich South American tea, usable as a rinse.",
+    "care": "Caffeine on the scalp has weak proof for hair growth."
+  },
+  {
+    "id": "myrtle",
+    "grp": "Dried botanicals",
+    "name": "Myrtle leaf (ades)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Fragrant Mediterranean and Ethiopian leaf; Ethiopian women add it to kibe hair butter.",
+    "care": "Low risk. Strain well."
+  },
+  {
+    "id": "nangai",
+    "grp": "Carrier oils",
+    "name": "Nangai (Canarium) nut oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "Pacific island nut oil, light and rich in oleic acid.",
+    "care": "Tree nut: skip with a nut allergy.",
+    "nut": true
+  },
+  {
+    "id": "seafennel",
+    "grp": "Dried botanicals",
+    "name": "Sea fennel (Crithmum)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Coastal plant whose extract is used in modern brightening cosmetics.",
+    "care": "Mostly supplier data. Low risk."
+  },
+  {
+    "id": "ochre",
+    "grp": "Powders and exfoliants",
+    "name": "Red ochre (earth pigment)",
+    "ph": "powder",
+    "tsp": 3,
+    "lvl": "care",
+    "good": "The red earth the Himba mix with butterfat in otjize; gives warm colour.",
+    "care": "Raw earth can contain heavy metals. Use cosmetic-grade red iron oxide instead."
   }
 ]
