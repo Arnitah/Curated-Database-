@@ -6124,7 +6124,8 @@ const HOB_Q=[
  ["use","How you'll use it",[["prewash","Pre-wash scalp and hair treatment"],["ends","A few drops to seal ends"]]],
 ];
 const HOB_AVOID=[["coconut","Coconut"],["nuts","Nut oils"],["sesame","Sesame"],["eo","Essential oils"]];
-let HOB={type:"",scalp:"",por:"",concern:"",use:"",avoid:[]};
+const HOB_HERBS={shedding:["rosemaryherb","nettle"],breakage:["amla","hibiscus"],chem:["marshmallow","amla"],dryness:["marshmallow","hibiscus"],frizz:["marshmallow","hibiscus"],dull:["hibiscus","chamomileflower"],splits:["amla","marshmallow"]};
+let HOB={type:"",scalp:"",por:"",concern:"",use:"",avoid:[],herbs:false};
 try{ const s=JSON.parse(localStorage.getItem("safebatch-hairoil")||"null"); if(s) HOB={...HOB,...s}; }catch(e){}
 function hobBuild(){
   const h=HOB, av=new Set(h.avoid), why=[], add={};
@@ -6147,7 +6148,9 @@ function hobBuild(){
   if(!nutOK){ ["argan","almond","macadamia","hazelnut"].forEach(k=>delete add[k]); }
   const total=Object.values(add).reduce((a,b)=>a+b,0)||1, rows=Object.entries(add).map(([k,g])=>[k,Math.round(g/total*99),"g"]);
   rows.push(["vite",1,"g"]); why.push("Vitamin E slows the oils from going rancid; it isn't a preservative, and none is needed because there's no water.");
-  const eoOK=!av.has("eo")&&h.scalp!=="sensitive"&&h.use==="prewash";
+  if(h.herbs){ const hs=(h.scalp==="flaky"?["rosemaryherb","calendula"]:h.scalp==="sensitive"?["calendula","chamomileflower"]:(HOB_HERBS[h.concern]||["rosemaryherb","hibiscus"])).filter(k=>BY[k]);
+    hs.forEach(k=>rows.push([k,4,"g"])); why.push(`Herbal infusion (no essential oils): warm ${hs.map(k=>BY[k].name.toLowerCase()).join(" and ")} in the oils on the lowest heat or in a jar set in warm water for 2 to 3 hours, then strain through a coffee filter. Use fully dried herbs only; fresh ones bring water and can spoil the oil. Herbs give colour and a gentle scent; their growth claims are mostly traditional.`); }
+  const eoOK=!h.herbs&&!av.has("eo")&&h.scalp!=="sensitive"&&h.use==="prewash";
   if(eoOK){
     if(h.concern==="shedding"){ rows.push(["rosemary",12,"drops"],["peppermint",4,"drops"]); why.push("Rosemary oil has one small study for pattern thinning; at about 0.8% total it's gentle. For real thinning, minoxidil has the proof; see a doctor if shedding is sudden or patchy."); }
     else if(h.scalp==="flaky"&&BY.teatree){ rows.push(["teatree",10,"drops"]); why.push("Tea tree at 0.5% has small studies for dandruff."); }
@@ -6160,7 +6163,7 @@ function hobBuild(){
 function renderHob(){
   const el=document.getElementById("hobBox"); if(!el) return;
   el.innerHTML=HOB_Q.map(([k,l,opts])=>`<div class="blabel">${esc(l)}</div><div class="chips">${opts.map(([v,t])=>`<button class="chip" data-hob="${k}:${v}" aria-pressed="${HOB[k]===v}">${esc(t)}</button>`).join("")}</div>`).join("")
-   +`<div class="blabel">Leave out</div><div class="chips">${HOB_AVOID.map(([v,t])=>`<button class="chip" data-hobav="${v}" aria-pressed="${HOB.avoid.includes(v)}">${esc(t)}</button>`).join("")}</div>`;
+   +`<div class="blabel">Style</div><div class="chips"><button class="chip" data-hobherb="1" aria-pressed="${!!HOB.herbs}">100% oils and milled herbs, no essential oils</button></div><div class="blabel">Leave out</div><div class="chips">${HOB_AVOID.map(([v,t])=>`<button class="chip" data-hobav="${v}" aria-pressed="${HOB.avoid.includes(v)}">${esc(t)}</button>`).join("")}</div>`;
   const out=document.getElementById("hobOut"); const ready=HOB.por&&HOB.concern&&HOB.use&&HOB.scalp;
   if(!ready){ out.innerHTML=`<p class="hint">Answer scalp, porosity, concern and use to see your blend.</p>`; return; }
   const {rows,why}=hobBuild();
@@ -6171,6 +6174,7 @@ function renderHob(){
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-hob]"); if(b){ const [k,v]=b.dataset.hob.split(":"); HOB[k]=HOB[k]===v?"":v; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
   const a=e.target.closest("[data-hobav]"); if(a){ const v=a.dataset.hobav; HOB.avoid=HOB.avoid.includes(v)?HOB.avoid.filter(x=>x!==v):[...HOB.avoid,v]; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
+  if(e.target.closest("[data-hobherb]")){ HOB.herbs=!HOB.herbs; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
   if(e.target.closest("#hobCheck")){ const {rows}=hobBuild(); loadRecipe({name:"My custom hair oil",type:HOB.use==="ends"?"hair_leave":"hair_rinse",use:"store",rows}); }
 });
 try{ renderHob(); }catch(e){}
