@@ -49435,5 +49435,265 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "warming-ginger-gum-care-toothpaste",
+    "name": "Warming ginger gum-care toothpaste",
+    "claim": "Gentle warm tingle with mint, for daily brushing",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "hydroxyapatite",
+        2,
+        "tbsp"
+      ],
+      [
+        "calcarb",
+        2,
+        "tbsp"
+      ],
+      [
+        "xylitol",
+        1,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        4,
+        "tbsp"
+      ],
+      [
+        "xanthan",
+        0.25,
+        "tsp"
+      ],
+      [
+        "gingerpowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "peppermint",
+        2,
+        "drops"
+      ]
+    ],
+    "note": "Stir the powders and xanthan together, then work in the glycerin until it's a smooth paste, and add the flavour last. Scoop a pea-size amount with a clean spatula, not your brush. It won't foam much (foam comes from detergent, not from cleaning) and it has no fluoride, so use it alongside a fluoride toothpaste, not instead. Use food-grade or lip-safe flavours only, never candle or skin fragrance oils. Keep xylitol away from dogs. A pinch of ground ginger gives a mild warm feel; it's a sensation, not heat, and it doesn't treat gum disease. Store versions use medicated gum ingredients you can't buy for home use, so see a dentist for bleeding or swollen gums.",
+    "inspired": "Japanese warming gum-care toothpaste (40 °C sensation)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "black-forest-chocolate-cherry-mint-toothpaste",
+    "name": "Chocolate cherry mint toothpaste",
+    "claim": "Dark chocolate and cherry with a fresh mint finish",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "hydroxyapatite",
+        2,
+        "tbsp"
+      ],
+      [
+        "calcarb",
+        2,
+        "tbsp"
+      ],
+      [
+        "xylitol",
+        1,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        4,
+        "tbsp"
+      ],
+      [
+        "xanthan",
+        0.25,
+        "tsp"
+      ],
+      [
+        "cocoapowder",
+        1,
+        "tsp"
+      ],
+      [
+        "lipflavor",
+        0.5,
+        "g"
+      ],
+      [
+        "peppermint",
+        2,
+        "drops"
+      ]
+    ],
+    "note": "Stir the powders and xanthan together, then work in the glycerin until it's a smooth paste, and add the flavour last. Scoop a pea-size amount with a clean spatula, not your brush. It won't foam much (foam comes from detergent, not from cleaning) and it has no fluoride, so use it alongside a fluoride toothpaste, not instead. Use food-grade or lip-safe flavours only, never candle or skin fragrance oils. Keep xylitol away from dogs. Use unsweetened cocoa and a cherry lip or food flavour. Cocoa makes the paste brown but rinses away.",
+    "inspired": "Marvis Black Forest toothpaste",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "white-lily-mint-toothpaste",
+    "name": "White flower mint toothpaste",
+    "claim": "Floral-fresh mint",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "hydroxyapatite",
+        2,
+        "tbsp"
+      ],
+      [
+        "calcarb",
+        2,
+        "tbsp"
+      ],
+      [
+        "xylitol",
+        1,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        4,
+        "tbsp"
+      ],
+      [
+        "xanthan",
+        0.25,
+        "tsp"
+      ],
+      [
+        "lipflavor",
+        0.3,
+        "g"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ]
+    ],
+    "note": "Stir the powders and xanthan together, then work in the glycerin until it's a smooth paste, and add the flavour last. Scoop a pea-size amount with a clean spatula, not your brush. It won't foam much (foam comes from detergent, not from cleaning) and it has no fluoride, so use it alongside a fluoride toothpaste, not instead. Use food-grade or lip-safe flavours only, never candle or skin fragrance oils. Keep xylitol away from dogs. There's no edible lily oil, so pick a food-grade floral flavour (jasmine or white flower) and keep it subtle so mint leads.",
+    "inspired": "Marvis Sinuous Lily toothpaste",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "osmanthus-mint-toothpaste",
+    "name": "Osmanthus mint toothpaste",
+    "claim": "Apricot-sweet osmanthus with fresh mint",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "hydroxyapatite",
+        2,
+        "tbsp"
+      ],
+      [
+        "calcarb",
+        2,
+        "tbsp"
+      ],
+      [
+        "xylitol",
+        1,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        4,
+        "tbsp"
+      ],
+      [
+        "xanthan",
+        0.25,
+        "tsp"
+      ],
+      [
+        "lipflavor",
+        0.4,
+        "g"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ]
+    ],
+    "note": "Stir the powders and xanthan together, then work in the glycerin until it's a smooth paste, and add the flavour last. Scoop a pea-size amount with a clean spatula, not your brush. It won't foam much (foam comes from detergent, not from cleaning) and it has no fluoride, so use it alongside a fluoride toothpaste, not instead. Use food-grade or lip-safe flavours only, never candle or skin fragrance oils. Keep xylitol away from dogs. Osmanthus is an edible tea flower, so osmanthus food flavour is easy to find. Don't add the dried flowers; they make the paste gritty and moist.",
+    "inspired": "Marvis Dreamy Osmanthus toothpaste",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "orange-blossom-mint-toothpaste",
+    "name": "Orange blossom mint toothpaste",
+    "claim": "Fresh mint with soft orange and lemon blossom",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "hydroxyapatite",
+        2,
+        "tbsp"
+      ],
+      [
+        "calcarb",
+        2,
+        "tbsp"
+      ],
+      [
+        "xylitol",
+        1,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        4,
+        "tbsp"
+      ],
+      [
+        "xanthan",
+        0.25,
+        "tsp"
+      ],
+      [
+        "orange",
+        2,
+        "drops"
+      ],
+      [
+        "lipflavor",
+        0.3,
+        "g"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ]
+    ],
+    "note": "Stir the powders and xanthan together, then work in the glycerin until it's a smooth paste, and add the flavour last. Scoop a pea-size amount with a clean spatula, not your brush. It won't foam much (foam comes from detergent, not from cleaning) and it has no fluoride, so use it alongside a fluoride toothpaste, not instead. Use food-grade or lip-safe flavours only, never candle or skin fragrance oils. Keep xylitol away from dogs. Sweet orange oil is fine in tiny amounts; keep all essential oils at or below 1%. Don't use lemon juice for the lemon note, since acid softens enamel.",
+    "inspired": "Marvis Orange Blossom Bloom toothpaste",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

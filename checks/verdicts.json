@@ -6927,5 +6927,35 @@
  "mango-foaming-body-scrub": {
   "verdict": "ok",
   "flags": []
+ },
+ "warming-ginger-gum-care-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "black-forest-chocolate-cherry-mint-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "white-lily-mint-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "osmanthus-mint-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "orange-blossom-mint-toothpaste": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
  }
 }
