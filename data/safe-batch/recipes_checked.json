@@ -42931,7 +42931,7 @@
   "claim": "Whitens, lightens and evens the skin",
   "type": "body_rinse",
   "use": "fridge",
-  "note": "As posted: toast 1 cup milk powder and 1 cup flour on low heat until golden, add 1 cup sugar, ½ cup Turkish coffee and 2 large spoons of starch, then stir in water bit by bit over low heat into a dough; chill 2 to 6 hours, roll into balls and keep in an airtight jar in the fridge. A cooked dough of flour, milk, sugar and water is food: even in the fridge it can mould within a week or two. Rub a ball over oiled skin until it rolls off. It polishes and leaves skin soft; it doesn't lighten. (Flour counted as rice flour.)",
+  "note": "As posted: toast 1 cup milk powder and 1 cup flour on low heat until golden, add 1 cup sugar, ½ cup Turkish coffee and 2 large spoons of starch, then stir in water bit by bit over low heat into a dough; chill 2 to 6 hours, roll into balls and keep in an airtight jar in the fridge. A cooked dough of flour, milk, sugar and water is food: even in the fridge it can mould within a week or two. Rub a ball over oiled skin until it rolls off. It polishes and leaves skin soft; it doesn't lighten. (Flour counted as rice flour.) How she uses it: add rose water to a ball and mix into a thick paste, spread it on the body, leave 10 to 15 minutes until fully dry, then rub it off with a little oil.",
   "rows": [
    [
     "milkpowder",
@@ -42975,7 +42975,7 @@
   "claim": "Make the balls fresh, one or two at a time",
   "type": "body_rinse",
   "use": "store",
-  "note": "Toast the flour and milk powder on low heat until golden, cool, then mix in the sugar, coffee and starch and keep the powder in a dry jar. Before a bath, wet a few spoons with a little water and a few drops of sesame oil into a dough, roll it over oiled skin until it crumbles away, then rinse. No stored dough, no mould.",
+  "note": "Toast the flour and milk powder on low heat until golden, cool, then mix in the sugar, coffee and starch and keep the powder in a dry jar. Before a bath, wet a few spoons with a little water and a few drops of sesame oil into a dough, roll it over oiled skin until it crumbles away, then rinse. No stored dough, no mould. You can also use it her way: mix a few spoons with rose water into a thick paste, spread on, let it dry 10 to 15 minutes, then rub it off with a little oil.",
   "rows": [
    [
     "milkpowder",
@@ -43054,6 +43054,75 @@
   ],
   "source": {
    "creator": "Inspired by the Dove Original Fragrance tease",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "homemade-dalkah-safi-as-posted",
+  "name": "Homemade dalkah (Safi), as posted",
+  "claim": "Smooth, glowing skin with kitchen ingredients",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: toast 1 cup white flour on low heat until beige, add 4 tbsp milk powder, starch, 3 tbsp turmeric, 4 tbsp sugar and 4 tbsp Turkish coffee, then add water gradually over low heat into a dough; cool, then knead in 4 tbsp sesame oil plus sweet almond, rose and coconut oil, and keep the balls in a jar. Her jar already shows condensation: water inside a closed jar of flour, milk and sugar is where mould starts. 3 tablespoons of turmeric is also a lot and stains skin and towels yellow. She rightly notes it isn't traditional Sudanese dilka. Use the dry-mix version and wet it fresh. (Flour counted as rice flour.)",
+  "rows": [
+   [
+    "riceflour",
+    1,
+    "cup"
+   ],
+   [
+    "milkpowder",
+    4,
+    "tbsp"
+   ],
+   [
+    "cornstarch",
+    2,
+    "tbsp"
+   ],
+   [
+    "turmeric",
+    3,
+    "tbsp"
+   ],
+   [
+    "sugar",
+    4,
+    "tbsp"
+   ],
+   [
+    "coffeepowder",
+    4,
+    "tbsp"
+   ],
+   [
+    "water",
+    0.5,
+    "cup"
+   ],
+   [
+    "sesame",
+    4,
+    "tbsp"
+   ],
+   [
+    "almond",
+    2,
+    "tbsp"
+   ],
+   [
+    "coconut",
+    2,
+    "tbsp"
+   ],
+   [
+    "roseeo",
+    3,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Safi",
    "platform": "TikTok"
   }
  }

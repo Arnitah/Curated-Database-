@@ -6242,5 +6242,12 @@
   "flags": [
    "care: Witch hazel may contain alcohol"
   ]
+ },
+ "homemade-dalkah-safi-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Turmeric stains and can cause allergy",
+   "stop: This will grow bacteria and mold"
+  ]
  }
 }
