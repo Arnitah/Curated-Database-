@@ -47150,5 +47150,685 @@
       "creator": "Concept from baby powder scent haul",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "provence-rose-embossed-soap",
+    "name": "Provence rose embossed soap",
+    "claim": "A creamy, rose-scented guest soap",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Geranium carries the rose scent affordably; real rose oil is very costly, so a few drops are plenty. A pinch of kaolin makes the bar creamier and more opaque.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "kaolin",
+        1,
+        "g"
+      ],
+      [
+        "geranium",
+        15,
+        "drops"
+      ],
+      [
+        "roseeo",
+        3,
+        "drops"
+      ]
+    ],
+    "inspired": "Saponificio Artigianale Fiorentino Rosa Centifolia soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "tuscan-lemon-embossed-soap",
+    "name": "Tuscan lemon embossed soap",
+    "claim": "Bright lemon bar with a classic embossed crest",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Distilled lemon oil doesn't cause sun burns the way cold-pressed lemon can; litsea adds a sherbet lemon lift.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "lemondistilled",
+        20,
+        "drops"
+      ],
+      [
+        "litsea",
+        5,
+        "drops"
+      ]
+    ],
+    "inspired": "La Saponeria Limone soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "coconut-pomegranate-embossed-soap",
+    "name": "Coconut and pomegranate embossed soap",
+    "claim": "Creamy tropical-fruit bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Whisk the coconut milk powder into a spoon of melted base first so it doesn't clump. Pomegranate has no essential oil; use a skin-safe fragrance oil.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "coconutmilkpow",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Cocco e Melograno soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "mimosa-cameo-soap",
+    "name": "Mimosa cameo soap",
+    "claim": "Soft yellow powdery-floral bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Mimosa absolute is costly and a known skin allergen, so a skin-safe mimosa fragrance oil is the practical choice. A pinch of yellow mica gives the colour.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "mica",
+        0.1,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Mimosa scented soaps from Tuscany",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "wild-berries-embossed-soap",
+    "name": "Wild berries embossed soap",
+    "claim": "Sweet strawberry and raspberry bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Berry scents only exist as fragrance oils; pick one marked skin-safe for soap.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Frutti di Bosco soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "peony-bouquet-embossed-soap",
+    "name": "Peony bouquet embossed soap",
+    "claim": "Fresh, airy floral bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Peony has no essential oil; a peony fragrance oil with a touch of geranium gives a rosy, fresh floral.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "geranium",
+        5,
+        "drops"
+      ]
+    ],
+    "inspired": "Peonia soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "garden-citrus-embossed-soap",
+    "name": "Garden citrus embossed soap",
+    "claim": "Orange, grapefruit and bergamot bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Citrus oils fade fastest in soap; wrap bars tightly and use within a year. Use bergamot FCF.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "orange",
+        15,
+        "drops"
+      ],
+      [
+        "grapefruit",
+        5,
+        "drops"
+      ],
+      [
+        "bergamotfcf",
+        5,
+        "drops"
+      ]
+    ],
+    "inspired": "La Florentina Agrumi di Boboli and Arancia soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "winter-citrus-spice-embossed-soap",
+    "name": "Winter citrus and spice embossed soap",
+    "claim": "Festive orange, cedar and clove bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Clove is strong, so keep it to a couple of drops per bar. A Christmas gift idea: wrap in paper with a sprig of pine.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "orange",
+        15,
+        "drops"
+      ],
+      [
+        "grapefruit",
+        5,
+        "drops"
+      ],
+      [
+        "cedarwood",
+        5,
+        "drops"
+      ],
+      [
+        "clove",
+        2,
+        "drops"
+      ]
+    ],
+    "inspired": "Agrumi Invernali and Melodie di Natale soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "tuscan-lavender-embossed-soap",
+    "name": "Tuscan lavender embossed soap",
+    "claim": "Classic calming lavender bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Use a lavender spray mold for the full look.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "lavender",
+        25,
+        "drops"
+      ]
+    ],
+    "inspired": "Lavanda Toscana soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "rosewood-osmanthus-embossed-soap",
+    "name": "Rosewood and osmanthus embossed soap",
+    "claim": "Warm woody-apricot floral bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. True rosewood oil comes from an endangered tree; ho wood oil or a rosewood fragrance oil is the responsible swap. Osmanthus smells of apricot and leather; use an osmanthus fragrance oil.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "cedarwood",
+        4,
+        "drops"
+      ]
+    ],
+    "inspired": "Saponificio Artigianale Fiorentino Rosewood and Osmanthus soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "floral-bouquet-cameo-soap",
+    "name": "Floral bouquet cameo soap",
+    "claim": "Romantic mixed-flower guest soap",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Ylang is heady, so keep it the smallest part. Pour into a cameo or rose-bouquet mold.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "geranium",
+        8,
+        "drops"
+      ],
+      [
+        "lavender",
+        8,
+        "drops"
+      ],
+      [
+        "ylang",
+        3,
+        "drops"
+      ]
+    ],
+    "inspired": "Signora dei Fiori and Rose Blossom soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "aldehydic-floral-perfume-soap",
+    "name": "Aldehydic floral perfume soap",
+    "claim": "A powdery, classic-perfume bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. That sparkling, soapy-powdery classic-perfume smell comes from aldehydes, which only exist in fragrance oils; look for an \"aldehydic floral\" or perfume-dupe fragrance oil rated for soap. Real perfume can't be added to soap; its alcohol and sensitivity to heat ruin the bar.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Chanel Savons No. 5",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "orange-rose-patchouli-soap",
+    "name": "Orange, rose and patchouli perfume soap",
+    "claim": "Modern chypre-style perfume bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Orange on top, rosy geranium in the heart and patchouli as the base give a fresh chypre feel.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "orange",
+        12,
+        "drops"
+      ],
+      [
+        "geranium",
+        8,
+        "drops"
+      ],
+      [
+        "patchouli",
+        5,
+        "drops"
+      ]
+    ],
+    "inspired": "Chanel Coco Mademoiselle soap",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "honey-bee-embossed-soap",
+    "name": "Honey bee embossed soap",
+    "claim": "A round bar with a bee stamp",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a white melt-and-pour base gently, stir in the add-ins, cool to about 60°C, add the scent, and pour into a detailed embossed silicone mold (cameo, fleur-de-lis, rose bouquet). Spritz the surface with rubbing alcohol to pop bubbles so the relief stays crisp. Unmold when firm and let it sit a day before wrapping in paper. Keep honey small or the bar sweats. Pour into a round mold with a bee emblem and tie with ribbon for gifting.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "honey",
+        2,
+        "g"
+      ]
+    ],
+    "inspired": "Maison du Savon bee soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (Italian soap haul)"
+    }
+  },
+  {
+    "id": "baby-powder-body-wash",
+    "name": "Baby powder scented body wash",
+    "claim": "Clean, powdery shower gel for adults",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Stir a skin-safe baby powder fragrance oil into an unscented body wash base. Body wash, lotion and mist in matching scents make a full \"scent stack\"; for adults only, not for babies.",
+    "rows": [
+      [
+        "showergel",
+        99,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Eos Cashmere Baby Powder Body Wash",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
+  },
+  {
+    "id": "baby-powder-sugar-scrub",
+    "name": "Baby powder sugar scrub",
+    "claim": "Foaming exfoliating scrub with a powdery scent",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt the shea with the oil, stir in glycerin and SCI powder, then fold in sugar and add fragrance and preservative once cool. Scoop with a dry spoon. Not for freshly shaved skin.",
+    "rows": [
+      [
+        "sugar",
+        60,
+        "g"
+      ],
+      [
+        "sunflower",
+        15,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sci",
+        8,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ],
+      [
+        "mica",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "The Lotion Company Baby Powder Sugar Scrub",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
+  },
+  {
+    "id": "baby-powder-shimmer-lotion",
+    "name": "Baby powder shimmer body lotion",
+    "claim": "Light lotion with a soft sheen",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Heat water and oil phases to 70°C, blend, cool below 40°C, then add the mica, fragrance, vitamin E and preservative. Shake or stir before use if the shimmer settles.",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "ewax",
+        5,
+        "g"
+      ],
+      [
+        "cetearyl",
+        2,
+        "g"
+      ],
+      [
+        "shea",
+        6,
+        "g"
+      ],
+      [
+        "caprylic",
+        10,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "mica",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Hempz Baby Powder Shimmering Body Lotion and Athena Club Baby Powder Lotion",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
+  },
+  {
+    "id": "baby-powder-whipped-body-butter",
+    "name": "Baby powder whipped body butter",
+    "claim": "Fluffy butter with a clean powdery scent",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Melt the butters and oils, chill until just setting, then whip with the arrowroot and fragrance until fluffy. Arrowroot gives that dry, powdery finish.",
+    "rows": [
+      [
+        "shea",
+        40,
+        "g"
+      ],
+      [
+        "mango",
+        20,
+        "g"
+      ],
+      [
+        "coconut",
+        15,
+        "g"
+      ],
+      [
+        "caprylic",
+        15,
+        "g"
+      ],
+      [
+        "arrowroot",
+        8,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Fenty Skin Butta Drop Baby Powder",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
+  },
+  {
+    "id": "baby-powder-perfume-oil",
+    "name": "Baby powder perfume oil",
+    "claim": "Roll-on powdery perfume",
+    "type": "perfume",
+    "use": "store",
+    "note": "Blend a baby powder fragrance oil into jojoba and rest a week. For a natural version use 6 drops vanilla, 2 geranium and 2 sandalwood in 20 g jojoba. Patch test first.",
+    "rows": [
+      [
+        "jojoba",
+        19,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Kayali Baby Powder 42 and Sand & Fog Baby Powder perfume oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
+  },
+  {
+    "id": "baby-powder-goat-milk-soap",
+    "name": "Baby powder goat milk soap",
+    "claim": "Creamy powdery-scented bar",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Use a goat milk melt-and-pour base if you can find one, or whisk milk powder into a white base. Unmold, then wrap to keep the scent.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "milkpowder",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Beauty Soap Goat Milk Baby Powder",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (baby powder scent haul)"
+    }
   }
 ]

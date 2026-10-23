@@ -376,14 +376,6 @@
     "season": "Any."
   },
   {
-    "t": "Scent layering",
-    "what": "Using the same or matching scent across several products, from wash to lotion, oil and mist, so it lasts longer, like the baby powder sets: body wash, then lotion, then shimmer oil, then a mist.",
-    "skin": "Each extra scented product adds fragrance to your skin, and fragrance is a common cause of irritation.",
-    "how": "Make one layer scented and keep the rest unscented, or keep the total low: a lightly scented wash and lotion plus one perfume. Apply perfume to clothes or hair ends if skin reacts.",
-    "when": "When you want a scent to last all day.",
-    "season": "Heavier vanilla and powdery scents in winter, fresher citrus and cotton in summer."
-  },
-  {
     "t": "Whipped soap",
     "what": "A fluffy, frosting-like body wash made by whipping a cleanser (SCI, SLSa, or melt-and-pour base) with glycerin and a thickener like stearic acid.",
     "skin": "Gentle when made with mild cleansers. It's wet, so it always needs a preservative.",
@@ -398,5 +390,13 @@
     "how": "For babies and eczema-prone skin, fragrance-free is the safest choice.",
     "when": "Reading labels on kids' and sensitive-skin products.",
     "season": "Any."
+  },
+  {
+    "t": "Triple-milled (French-milled) soap",
+    "what": "Soap that's been shredded, mixed with scent, and pressed through rollers several times before being stamped. That's how Italian and French luxury bars get their dense, smooth texture and crisp embossed designs.",
+    "skin": "Same as any true soap; milling makes it harder and longer-lasting, not gentler.",
+    "how": "At home you can't roll-mill, but white melt-and-pour in a detailed embossed mold gives the look. For a dense bar, hand-mill: grate an unscented bar, melt it slowly with a splash of water, add scent, and press firmly into a mold.",
+    "when": "Gift soaps and guest bars.",
+    "season": "Wrap bars in paper and store dry; they keep their scent for a year or more."
   }
 ]
