@@ -1,5 +1,53 @@
 [
  {
+  "id": "kojic-soap-studies-and-daily-scrub-bars",
+  "title": "A 5% kojic soap reduced melanin 15% in 28 days; a kojic, glutathione and apricot scrub bar used daily brightens inner thighs and underarms; charcoal soap washes darkness out of pores",
+  "topics": [
+   "dark-spots",
+   "store-products",
+   "underarms"
+  ],
+  "claims": [
+   {
+    "claim": "A brand study shows the kojic soap lowers melanin",
+    "verdict": "unproven",
+    "truth": "It's the brand's own 28-day test, not published, with no comparison soap. Kojic acid works in leave-on products; in a bar you rinse off right away (as its own directions say), contact is only seconds.",
+    "grade": "C"
+   },
+   {
+    "claim": "Daily apricot-shell scrubbing brightens inner thighs and underarms",
+    "verdict": "false",
+    "truth": "Crushed shell is coarse, and scrubbing thin, rubbed areas daily causes irritation, which darkens deeper skin further. Friction darkening fades better with leave-on azelaic acid, niacinamide or alpha arbutin, less rubbing, and patience. Glutathione and kojic dipalmitate in a soap rinse off.",
+    "grade": "B"
+   },
+   {
+    "claim": "Darkness is dirt in the pores that charcoal pulls out",
+    "verdict": "false",
+    "truth": "Dark elbows, knees and underarms come from extra pigment and thickened skin from friction, not dirt. Charcoal soaps clean the surface like any soap.",
+    "grade": "B"
+   },
+   {
+    "claim": "A salicylic body wash helps body acne",
+    "verdict": "partly",
+    "truth": "Salicylic acid can unclog pores, but a wash rinses off quickly; leaving the lather on for a minute or two helps.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: how to fade dark spots in darker skin tones",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+   },
+   {
+    "title": "American Academy of Dermatology: what can treat large facial pores?",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+   }
+  ],
+  "seen_in": "YesStyle product pages (Koji White, kojic glutathione scrub bar, bamboo charcoal soap, medicated body wash)",
+  "checked": "2026-10-23",
+  "format": "v2"
+ },
+ {
   "id": "store-masks-are-just-silicone-and-water",
   "title": "Store hair masks are just silicone and water; our natural whipped mask ends dry hair",
   "topics": [

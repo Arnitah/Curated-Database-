@@ -1,5 +1,13 @@
 [
  [
+  "grape (pomace|marc|skin powder)|wine pomace",
+  "grapepomace"
+ ],
+ [
+  "grape juice|mashed grapes|fresh grapes",
+  "grapejuice"
+ ],
+ [
   "vicks|vapou?r ?rub|فكس",
   "vaporub"
  ],

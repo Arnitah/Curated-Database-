@@ -44432,5 +44432,241 @@
    "creator": "Store product",
    "platform": "knockofficial.com"
   }
+ },
+ {
+  "id": "niagara-grape-pomace-body-polish",
+  "name": "Niagara grape pomace body polish",
+  "claim": "A soft, fruity polish from local wine-press leftovers",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Ask a local winery for pomace after the fall crush (many give it away), spread it thin and dry it fully in a low oven (about 60°C) or dehydrator, then grind and sieve. Mix with sugar and grapeseed oil (often pressed from the same grapes). No water, so it keeps for months; use a dry spoon. 2 to 3 times a week on damp skin. Antioxidant claims for rinse-off scrubs are weak; it's a lovely polish and a local story.",
+  "rows": [
+   [
+    "sugar",
+    80,
+    "g"
+   ],
+   [
+    "grapepomace",
+    15,
+    "g"
+   ],
+   [
+    "grapeseed",
+    30,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Niagara grape region idea",
+   "platform": "Safe Batch"
+  }
+ },
+ {
+  "id": "grapeseed-face-and-body-oil-local",
+  "name": "Light grapeseed face and body oil",
+  "claim": "A fast-absorbing, non-greasy oil",
+  "type": "face_leave",
+  "use": "store",
+  "note": "Grapeseed oil is light and rich in linoleic acid, so it suits oily and combination skin. It goes rancid fast, so add vitamin E, keep it in a dark bottle and use within 3 to 6 months. Jojoba makes it last longer. 2 to 3 drops on damp skin.",
+  "rows": [
+   [
+    "grapeseed",
+    70,
+    "g"
+   ],
+   [
+    "jojoba",
+    29,
+    "g"
+   ],
+   [
+    "vite",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Niagara grape region idea",
+   "platform": "Safe Batch"
+  }
+ },
+ {
+  "id": "grape-yogurt-mask-single-use",
+  "name": "Fresh grape and yogurt mask (single use)",
+  "claim": "A cooling, softening fruit mask in grape season",
+  "type": "face_rinse",
+  "use": "now",
+  "note": "Mash a few grapes (green or Concord) and mix with yogurt and a little oat flour to thicken. Leave 10 minutes, rinse. Fruit acids are mild; stop if it stings. Make and use the same day.",
+  "rows": [
+   [
+    "grapejuice",
+    1,
+    "tbsp"
+   ],
+   [
+    "yogurt",
+    1,
+    "tbsp"
+   ],
+   [
+    "oats",
+    1,
+    "tsp"
+   ]
+  ],
+  "source": {
+   "creator": "Niagara grape region idea",
+   "platform": "Safe Batch"
+  }
+ },
+ {
+  "id": "grape-oil-in-body-milk-local",
+  "name": "Grapeseed oil-in body milk",
+  "claim": "A light body and hair milk with local grapeseed oil",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Like the oil-in body milk but with grapeseed oil as the star. Heat the water phase and oil phase to 70°C, blend, cool below 40°C, add the ceramides and preservative. Works on damp hair ends too.",
+  "rows": [
+   [
+    "water",
+    70,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "olivem",
+    4,
+    "g"
+   ],
+   [
+    "cetearyl",
+    2,
+    "g"
+   ],
+   [
+    "grapeseed",
+    10,
+    "g"
+   ],
+   [
+    "jojoba",
+    5,
+    "g"
+   ],
+   [
+    "squalane",
+    2,
+    "g"
+   ],
+   [
+    "ceramide",
+    1,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.2,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Niagara grape region idea",
+   "platform": "Safe Batch"
+  }
+ },
+ {
+  "id": "floral-gel-body-wash-dream-garden-style",
+  "name": "Jasmine and lavender gel body wash",
+  "claim": "A watery, scented body wash",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "The original is sold as a \"bath oil\", but its ingredient list shows a gentle gel body wash: glycerin, mild surfactants and essential oils (lavandin, cedarwood, geranium, clary sage, jasmine, frankincense). This uses a ready-made unscented gentle wash base with a blend of those oils at about 0.8% total. No body wash keeps scent on skin for 8 hours; follow with a matching body oil for that.",
+  "rows": [
+   [
+    "showergel",
+    100,
+    "g"
+   ],
+   [
+    "glycerin",
+    3,
+    "g"
+   ],
+   [
+    "lavender",
+    6,
+    "drops"
+   ],
+   [
+    "cedarwood",
+    4,
+    "drops"
+   ],
+   [
+    "geranium",
+    3,
+    "drops"
+   ],
+   [
+    "frankincense",
+    3,
+    "drops"
+   ]
+  ],
+  "inspired": "Little Dream Garden Fragrance Bath Oil",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
+ },
+ {
+  "id": "charcoal-bamboo-clay-soap-bar",
+  "name": "Charcoal, clay and bamboo body soap bar",
+  "claim": "A gentle polishing body bar",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Melt the base, stir in clay, charcoal and bamboo powder, pour, set. The clay and charcoal absorb surface oil and the bamboo gives a soft polish. It doesn't pull \"dirt\" out of pores that causes darkening: dark elbows, knees and underarms come from friction and pigment, not dirt.",
+  "rows": [
+   [
+    "soapbase",
+    100,
+    "g"
+   ],
+   [
+    "kaolin",
+    3,
+    "g"
+   ],
+   [
+    "charcoal",
+    0.5,
+    "g"
+   ],
+   [
+    "bamboopowder",
+    2,
+    "g"
+   ]
+  ],
+  "inspired": "Japanese bamboo charcoal body soap",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
  }
 ]

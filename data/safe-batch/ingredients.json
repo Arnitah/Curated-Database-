@@ -4653,5 +4653,25 @@
   "lvl": "ok",
   "good": "Dried, ground rind used in Moroccan tbrima and herbal masks; it's astringent and tints skin slightly.",
   "care": "Can stain light towels. Rinse-off use."
+ },
+ {
+  "id": "grapepomace",
+  "grp": "Powders and exfoliants",
+  "name": "Dried grape pomace powder (wine-press skins and seeds)",
+  "ph": "powder",
+  "tsp": 2.5,
+  "lvl": "ok",
+  "good": "What's left after pressing grapes for wine, dried and ground. Gives a soft purple polish and a fruity scent; the skins carry polyphenol antioxidants.",
+  "care": "Must be fully dried before storing, or it moulds. Ground seeds can be gritty: sieve for the face. Stains light towels pink."
+ },
+ {
+  "id": "grapejuice",
+  "grp": "Fresh foods",
+  "name": "Fresh grape juice or mashed grapes",
+  "ph": "fresh",
+  "d": 1.05,
+  "lvl": "ok",
+  "good": "Mild fruit acids and sugars for a single-use mask.",
+  "care": "Food: use right away, never store. Sticky; rinse well."
  }
 ]
