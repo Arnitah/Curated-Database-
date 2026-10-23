@@ -43661,5 +43661,162 @@
    "creator": "Inspired by Vietnamese ginger-mugwort balms (Thảo học Dưỡng sinh)",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "dr-jaber-soap-paste-as-posted",
+  "name": "Dr. Jaber Al-Qahtani soap paste mix (glowoti), as posted",
+  "claim": "Lightening, glowing body soap paste",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted (amounts are our estimate): grated Dove, laurel (\"vitamin E\") and Kojie San soaps soaked overnight in rose water, then a quarter part each of glycerin cream and aloe petroleum jelly, plus sweet almond oil, glycerin, bitter almond oil and turmeric, whipped and sold in tubs. Problems: rose water plus cream in a big tub can spoil, bitter almond oil should be sweet almond, and the kojic acid rinses off, so it won't lighten. Use the safer small-batch soap paste.",
+  "rows": [
+   [
+    "barsoap",
+    400,
+    "g"
+   ],
+   [
+    "hydrosol",
+    200,
+    "ml"
+   ],
+   [
+    "storelotion",
+    50,
+    "g"
+   ],
+   [
+    "petrolatum",
+    50,
+    "g"
+   ],
+   [
+    "almond",
+    15,
+    "g"
+   ],
+   [
+    "glycerin",
+    10,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    5,
+    "g"
+   ],
+   [
+    "turmeric",
+    3,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "glowoti",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "laurel-kojic-turmeric-soap-paste-subtleaura-as-posted",
+  "name": "Laurel, kojic and turmeric soap paste (subtleaura), as posted",
+  "claim": "Homemade soap paste for the first time",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: grate laurel, Kojie San and turmeric soaps, cover with rose water, wrap and leave 24 hours, then stir into a paste and keep in a jar. Soaps alone are safe to combine, but a lot of rose water in a stored jar can grow mould. Use less rose water, keep it in the fridge and use within 2 weeks (see the safer small batch).",
+  "rows": [
+   [
+    "barsoap",
+    300,
+    "g"
+   ],
+   [
+    "hydrosol",
+    150,
+    "ml"
+   ]
+  ],
+  "source": {
+   "creator": "subtleaura",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "lavender-scrub-balls-shima-as-posted",
+  "name": "Lavender scrub balls (Shima), as posted",
+  "claim": "Lavender-scented scrub balls",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: ¾ cup sugar, 2 tbsp body wash, 1 tbsp coconut oil, 2 tsp body oil, 1 tsp vitamin E, 1 tbsp crushed dried lavender, 5 to 7 drops lavender oil, corn starch until moldable. The body wash brings water into a stored scrub. Leave it out and add a squirt to each ball in the shower; dried lavender is fine.",
+  "rows": [
+   [
+    "sugar",
+    0.75,
+    "cup"
+   ],
+   [
+    "showergel",
+    2,
+    "tbsp"
+   ],
+   [
+    "coconut",
+    1,
+    "tbsp"
+   ],
+   [
+    "sunflower",
+    2,
+    "tsp"
+   ],
+   [
+    "vite",
+    1,
+    "tsp"
+   ],
+   [
+    "lavenderbud",
+    1,
+    "tbsp"
+   ],
+   [
+    "lavender",
+    6,
+    "drops"
+   ],
+   [
+    "cornstarch",
+    4,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "Shima | Dubai Content Creator",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "ginger-mugwort-roller-oil",
+  "name": "Ginger and mugwort massage roller oil",
+  "claim": "A warming roll-on for neck and shoulder tension",
+  "type": "body_leave",
+  "use": "store",
+  "note": "For a 10 ml roller. The mugwort-infused oil is made like the warming balm (dried mugwort warmed in oil, strained). Ginger essential oil at about 2% is plenty for neck and shoulders. Not for the face, eyes or broken skin; skip in pregnancy and with a ragweed allergy.",
+  "rows": [
+   [
+    "sunflower",
+    9.5,
+    "ml"
+   ],
+   [
+    "gingereo",
+    4,
+    "drops"
+   ]
+  ],
+  "inspired": "Vietnamese ginger-mugwort roller oils",
+  "source": {
+   "creator": "Inspired by Thảo học Dưỡng sinh",
+   "platform": "TikTok"
+  }
  }
 ]

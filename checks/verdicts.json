@@ -6294,5 +6294,31 @@
   "flags": [
    "care: Mugwort: skip in pregnancy and with ragweed allergy"
   ]
+ },
+ "dr-jaber-soap-paste-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Stretching a store cream",
+   "care: Too much oil for melt-and-pour",
+   "care: Turmeric stains and can cause allergy",
+   "care: Use sweet almond, not bitter almond",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "laurel-kojic-turmeric-soap-paste-subtleaura-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "lavender-scrub-balls-shima-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "ginger-mugwort-roller-oil": {
+  "verdict": "ok",
+  "flags": []
  }
 }
