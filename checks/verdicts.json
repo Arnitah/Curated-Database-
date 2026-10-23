@@ -6775,5 +6775,59 @@
  "baby-powder-goat-milk-soap": {
   "verdict": "ok",
   "flags": []
+ },
+ "rose-pear-saffron-amber-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "marshmallow-berry-blush-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lychee-rose-peony-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "red-berry-lychee-rose-resin-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lychee-berry-incense-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jasmine-plum-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pancake-maple-butter-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-house-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "gourmand-hand-cream-trio": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-milkshake-whipped-shower-foam": {
+  "verdict": "care",
+  "flags": [
+   "care: Citric acid can sting"
+  ]
+ },
+ "toasted-vanilla-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soap-on-a-rope": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "calm-shower-steamer": {
+  "verdict": "ok",
+  "flags": []
  }
 }

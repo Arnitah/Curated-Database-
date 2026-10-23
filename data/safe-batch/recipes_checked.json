@@ -47830,5 +47830,595 @@
       "creator": "Store product",
       "platform": "Instagram (baby powder scent haul)"
     }
+  },
+  {
+    "id": "rose-pear-saffron-amber-perfume-oil",
+    "name": "Rose, pear and saffron amber perfume oil",
+    "claim": "Warm rosy-fruity amber with incense and vanilla",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Pear, saffron and chestnut have no essential oils, so a pear or saffron fragrance oil covers them; geranium stretches the costly rose. Turn it into a mist with the spray-perfume method.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "roseeo",
+        2,
+        "drops"
+      ],
+      [
+        "geranium",
+        4,
+        "drops"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        4,
+        "drops"
+      ],
+      [
+        "frankincense",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "Mahab by Nusuk (itself inspired by a niche rose-amber)",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "marshmallow-berry-blush-perfume-oil",
+    "name": "Marshmallow berry blush perfume oil",
+    "claim": "Sweet marshmallow, berries and orange blossom",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Marshmallow and strawberry are fragrance-oil notes; neroli gives the orange-blossom lift and distilled lemon the sparkle (it won't burn in sun like cold-pressed).",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "neroli",
+        2,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Marshmallow Blush by Paris Corner",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "lychee-rose-peony-perfume-oil",
+    "name": "Lychee, rose and peony perfume oil",
+    "claim": "Juicy lychee over rose, peony and soft vanilla",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Lychee and peony come from fragrance oils; a single drop of ginger adds the fizzy spice. Use bergamot FCF.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "bergamotfcf",
+        4,
+        "drops"
+      ],
+      [
+        "gingereo",
+        1,
+        "drops"
+      ],
+      [
+        "geranium",
+        4,
+        "drops"
+      ],
+      [
+        "jasmine",
+        1,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.4,
+        "g"
+      ]
+    ],
+    "inspired": "Divine by Rayhaan",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "red-berry-lychee-rose-resin-perfume-oil",
+    "name": "Red berry, lychee and rose resin perfume oil",
+    "claim": "Jammy berries and rose on a warm resin base",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. The pale crystals in the post are a resin like benzoin; frankincense and vanilla give a similar warm base. Berries and lychee are fragrance-oil notes.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "bergamotfcf",
+        3,
+        "drops"
+      ],
+      [
+        "geranium",
+        4,
+        "drops"
+      ],
+      [
+        "roseeo",
+        1,
+        "drops"
+      ],
+      [
+        "jasmine",
+        1,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "frankincense",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.4,
+        "g"
+      ]
+    ],
+    "inspired": "Johra by Nusuk",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "lychee-berry-incense-perfume-oil",
+    "name": "Lychee, berry and incense perfume oil",
+    "claim": "Fruity-floral with a smoky incense base",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Geranium plays the red flower; frankincense the incense. Berry and lychee fragrance oil gives the juicy top.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "geranium",
+        5,
+        "drops"
+      ],
+      [
+        "jasmine",
+        1,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "frankincense",
+        5,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.4,
+        "g"
+      ]
+    ],
+    "inspired": "Hawas Diva by Rasasi",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "jasmine-plum-perfume-oil",
+    "name": "Jasmine and dark plum perfume oil",
+    "claim": "Bold jasmine with a dark fruity edge",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Jasmine and ylang are strong allergen-rich florals, so they stay at a few drops; a plum fragrance oil adds the purple fruit.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "jasmine",
+        2,
+        "drops"
+      ],
+      [
+        "ylang",
+        1,
+        "drops"
+      ],
+      [
+        "patchouli",
+        3,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "Jasmine Vendetta eau de parfum",
+    "source": {
+      "creator": "Store product",
+      "platform": "Marshalls"
+    }
+  },
+  {
+    "id": "pancake-maple-butter-perfume-oil",
+    "name": "Pancake and maple butter perfume oil",
+    "claim": "Warm hot-cakes gourmand",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Pancake, maple and butter are only available as fragrance oils; vanilla essential oil (or absolute) rounds them out. Gourmands last longer on moisturised skin.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        8,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ]
+    ],
+    "inspired": "Snif Hot Cakes",
+    "source": {
+      "creator": "Store product",
+      "platform": "Marshalls"
+    }
+  },
+  {
+    "id": "tea-house-perfume-oil",
+    "name": "Tea house perfume oil",
+    "claim": "Black tea, green tea and passion fruit",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller bottle, top up with jojoba, and rest 1 to 2 weeks so the notes blend. Roll on pulse points; patch test first. Tea notes have no essential oil; pick black tea, green tea or oolong fragrance oils. Bergamot is the classic Earl Grey partner. Makes a lovely light mist too.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "bergamotfcf",
+        5,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        2,
+        "drops"
+      ],
+      [
+        "jasmine",
+        1,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Chagee tea bags (Ceylon black, Longjing green, passion fruit oolong)",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "gourmand-hand-cream-trio",
+    "name": "Gourmand hand cream trio (vanilla, crème brûlée, hazelnut)",
+    "claim": "Three matching scented hand creams",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Make one batch of base: heat water and oil phases to 70°C, blend, cool below 40°C, add vitamin E and preservative. Split into three and scent each with a skin-safe fragrance oil: vanilla cream, crème brûlée (caramel-vanilla), and hazelnut. Tint the hazelnut one with a pinch of cocoa powder if you like. Hand creams need a preservative because fingers dip in.",
+    "rows": [
+      [
+        "water",
+        68,
+        "g"
+      ],
+      [
+        "ewax",
+        5,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "hazelnut",
+        8,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Hand Cream Collection gift set",
+    "source": {
+      "creator": "Store product",
+      "platform": "Marshalls"
+    }
+  },
+  {
+    "id": "strawberry-milkshake-whipped-shower-foam",
+    "name": "Strawberry milkshake whipped shower foam",
+    "claim": "Pink, sweet whipped body wash",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Store versions are aerosols; at home, whip the SCI base until fluffy, then whip in a strawberry-cream fragrance oil and a pinch of pink mica. Scoop with a dry spoon. A comment on the original says the scent fades after the shower; follow with a matching lotion if you want it to last (see scent stacks in Clay).",
+    "rows": [
+      [
+        "water",
+        30,
+        "g"
+      ],
+      [
+        "glycerin",
+        15,
+        "g"
+      ],
+      [
+        "sci",
+        30,
+        "g"
+      ],
+      [
+        "capb",
+        12,
+        "g"
+      ],
+      [
+        "stearic",
+        8,
+        "g"
+      ],
+      [
+        "polysorbate80",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "mica",
+        0.2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ],
+      [
+        "citricacid",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "Biovène Dreamy Strawberry Shake whipped shower foam",
+    "source": {
+      "creator": "Store product",
+      "platform": "dm"
+    }
+  },
+  {
+    "id": "toasted-vanilla-body-wash",
+    "name": "Toasted vanilla body wash",
+    "claim": "Warm vanilla gentle body wash",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Stir the fragrance and glycerin into an unscented body wash base. The original adds collagen, peptides or vitamin C; in a wash they rinse off within seconds, so they add little. Save actives for leave-on products.",
+    "rows": [
+      [
+        "showergel",
+        96,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Toasted Vanilla and Salted Caramel shower gels",
+    "source": {
+      "creator": "Store product",
+      "platform": "Marshalls"
+    }
+  },
+  {
+    "id": "soap-on-a-rope",
+    "name": "Soap on a rope",
+    "claim": "Hanging bar that dries between showers",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Pour half the melted base into a round mold, lay a knotted cotton cord loop on top, then pour the rest to lock it in. Hang it from the shower head so it drains and lasts longer. Scent ideas: patchouli and orange; lavender and mint; eucalyptus and mint. Add a pinch of clay or mica for colour.",
+    "rows": [
+      [
+        "soapbase",
+        170,
+        "g"
+      ],
+      [
+        "patchouli",
+        10,
+        "drops"
+      ],
+      [
+        "orange",
+        20,
+        "drops"
+      ],
+      [
+        "kaolin",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Whipped Bath Co. Soap On A Rope",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "calm-shower-steamer",
+    "name": "Calm shower steamer",
+    "claim": "Patchouli, sweet orange and lavender aroma tabs",
+    "type": "steamer",
+    "use": "store",
+    "note": "Mix baking soda, citric acid and corn starch, add the essential oils, then mist with witch hazel just until it holds like damp sand. Press into small molds and dry 24 hours. Set one on the shower floor away from the direct stream. Not for skin; keep out of the eyes and out of reach of children and pets. Wrap each one airtight so it doesn't fizz in humid air.",
+    "rows": [
+      [
+        "bakingsoda",
+        100,
+        "g"
+      ],
+      [
+        "citricacid",
+        50,
+        "g"
+      ],
+      [
+        "cornstarch",
+        15,
+        "g"
+      ],
+      [
+        "witchhazel",
+        5,
+        "g"
+      ],
+      [
+        "patchouli",
+        30,
+        "drops"
+      ],
+      [
+        "orange",
+        40,
+        "drops"
+      ],
+      [
+        "lavender",
+        40,
+        "drops"
+      ]
+    ],
+    "inspired": "Relax Away Essentials Calm shower steamer",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

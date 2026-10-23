@@ -6233,5 +6233,15 @@
     "lvl": "ok",
     "good": "A plant fatty acid that thickens creams and gives whipped soap its fluffy, stable peaks. 2 to 5%.",
     "care": "Low risk. Too much makes products waxy or chalky."
+  },
+  {
+    "id": "whippedbase",
+    "grp": "Store-bought products",
+    "name": "Whipped soap base (store-bought)",
+    "ph": "surf",
+    "tsp": 5,
+    "lvl": "ok",
+    "good": "Ready-made fluffy cleanser base; add scent and colour, or fold in sugar or salt for a scrub.",
+    "care": "Already preserved; add scent within the supplier's rate (usually up to 3%). Don't add water or fresh ingredients, which can overwhelm its preservative."
   }
 ]
