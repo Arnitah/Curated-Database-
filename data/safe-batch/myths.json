@@ -6457,5 +6457,42 @@
     "seen_in": "Intimate care brand on Instagram",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "baby-powder-scented-and-baby-brand-products-are-made-for-baby-skin",
+    "title": "\"Baby powder\" scented and baby-brand products are gentle enough for babies' skin; \"non-toxic\" and \"paediatrician approved\" prove it",
+    "topics": [
+      "body",
+      "kids"
+    ],
+    "claims": [
+      {
+        "claim": "\"Baby powder\" scented lotions, oils and mists are for babies",
+        "verdict": "false",
+        "truth": "The name describes the scent, not the user. These are fragranced adult products, often with shimmer. Babies' skin is best with fragrance-free products.",
+        "grade": "B"
+      },
+      {
+        "claim": "Non-toxic and naturally derived means gentle",
+        "verdict": "partly",
+        "truth": "\"Non-toxic\" and \"natural\" have no legal definition on cosmetics. Natural fragrances and botanicals can still irritate or cause allergy.",
+        "grade": "B"
+      },
+      {
+        "claim": "Paediatrician approved",
+        "verdict": "unproven",
+        "truth": "Usually means one or more doctors reviewed or endorse it, not a test or certification. Look at the ingredient list instead: short, fragrance-free and preserved is what matters for kids.",
+        "grade": "D"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: how to treat eczema at home (fragrance-free products)",
+        "url": "https://www.aad.org/news/how-to-treat-eczema-at-home"
+      }
+    ],
+    "seen_in": "Baby and kids brands on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

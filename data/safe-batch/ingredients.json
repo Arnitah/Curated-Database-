@@ -6223,5 +6223,15 @@
     "lvl": "care",
     "good": "Madagascan oil from camphor-tree leaves with a fresh, eucalyptus-like scent; used in Malagasy hair and body care.",
     "care": "High in 1,8-cineole: keep it away from the face of young children, keep it under 1%, and don't confuse it with ravensara, a different tree."
+  },
+  {
+    "id": "stearic",
+    "grp": "Preserving and mixing",
+    "name": "Stearic acid",
+    "ph": "emul",
+    "tsp": 2.5,
+    "lvl": "ok",
+    "good": "A plant fatty acid that thickens creams and gives whipped soap its fluffy, stable peaks. 2 to 5%.",
+    "care": "Low risk. Too much makes products waxy or chalky."
   }
 ]

@@ -6659,5 +6659,41 @@
  "rice-silk-protein-hair-mask": {
   "verdict": "ok",
   "flags": []
+ },
+ "turmeric-honey-glycerin-soap": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "silk-keratin-hair-filler-treatment": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-soap-from-scratch-sci": {
+  "verdict": "care",
+  "flags": [
+   "care: Citric acid can sting"
+  ]
+ },
+ "whipped-body-soap-easy-route-drnims-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soap-filled-bath-sponge": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "foaming-hand-soap-refill": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mini-travel-soaps-in-a-tin": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "baby-powder-shimmer-body-oil": {
+  "verdict": "ok",
+  "flags": []
  }
 }

@@ -46828,5 +46828,327 @@
       "creator": "Store product",
       "platform": "Malagasy brand"
     }
+  },
+  {
+    "id": "turmeric-honey-glycerin-soap",
+    "name": "Turmeric and honey clear glycerin soap",
+    "claim": "A jewel-like amber bar with a bubbly texture",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt a clear melt-and-pour base, stir in the honey and a pinch of turmeric (it gives an amber colour; more stains washcloths), cool to about 60°C and pour into a textured mold. Ready once firm. Keep honey small, or the bar sweats and turns sticky. Wrap bars in film so the glycerin doesn't pull in moisture. The deep burgundy in the video is likely a soap colourant, not turmeric.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "honey",
+        2,
+        "g"
+      ],
+      [
+        "turmeric",
+        0.3,
+        "g"
+      ]
+    ],
+    "inspired": "Sabonete de açafrão com mel",
+    "source": {
+      "creator": "biancamassuci",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "silk-keratin-hair-filler-treatment",
+    "name": "Silk, keratin and collagen hair filler treatment",
+    "claim": "A watery protein treatment for damaged, bleached hair",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Warm the water with the BTMS until melted, cool below 40°C, then stir in the proteins, glycerin, panthenol and preservative. After shampooing, comb a small amount through damp hair, leave 5 to 10 minutes, then rinse (or follow with conditioner). Proteins coat and smooth the surface so hair feels fuller and snaps less; they don't permanently \"fill\" hair. Use every 1 to 2 weeks and stop if hair turns stiff. The original is alcohol-based with fragrance and silicone; this version skips the alcohol, which can dry already-damaged hair.",
+    "rows": [
+      [
+        "water",
+        88,
+        "g"
+      ],
+      [
+        "btms",
+        3,
+        "g"
+      ],
+      [
+        "keratin",
+        2,
+        "g"
+      ],
+      [
+        "silkprotein",
+        1,
+        "g"
+      ],
+      [
+        "collagenpow",
+        1,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "La'dor Perfect Hair Fill-Up",
+    "source": {
+      "creator": "Store product",
+      "platform": "thekshop"
+    }
+  },
+  {
+    "id": "whipped-soap-from-scratch-sci",
+    "name": "Whipped soap from scratch (SCI base)",
+    "claim": "Fluffy, frosting-style body wash",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Heat the glycerin, SCI and stearic acid to about 75°C until the SCI melts into a paste, then stir in the hot water and betaine. Cool to room temperature, whip with a hand mixer until it holds peaks, then whip in the polysorbate, fragrance, colour, preservative and citric acid (aim for pH 5.5 to 6.5). Scoop with a dry spoon or use a piping bag. The preservative is essential because wet hands go in the jar.",
+    "rows": [
+      [
+        "water",
+        30,
+        "g"
+      ],
+      [
+        "glycerin",
+        15,
+        "g"
+      ],
+      [
+        "sci",
+        30,
+        "g"
+      ],
+      [
+        "capb",
+        12,
+        "g"
+      ],
+      [
+        "stearic",
+        8,
+        "g"
+      ],
+      [
+        "polysorbate80",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ],
+      [
+        "citricacid",
+        0.3,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "fizzbombbathbombcompany (AI infographic)",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "whipped-body-soap-easy-route-drnims-as-posted",
+    "name": "Whipped body soap, easy route (Dr NIM's), as posted",
+    "claim": "Fluffy whipped soap from a melt-and-pour base",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "As posted: melt 60 g melt-and-pour base with 20 g distilled water and 8 g glycerin, mix in 5 g shea, add 5 g SLSa slowly and whip until fluffy, then add 1 g fragrance and 1 g preservative and pipe into jars. A sound recipe: the preservative is there, which water-added soap needs. SLSa powder is a lung irritant, so add it gently or wear a mask.",
+    "rows": [
+      [
+        "soapbase",
+        60,
+        "g"
+      ],
+      [
+        "water",
+        20,
+        "g"
+      ],
+      [
+        "glycerin",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        5,
+        "g"
+      ],
+      [
+        "slsa",
+        5,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "drnimsnaturalsolutions",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "soap-filled-bath-sponge",
+    "name": "Soap-filled bath sponge",
+    "claim": "2-in-1 sponge with soap built in",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Cut a pocket into a cellulose or foam sponge, pour in melted melt-and-pour soap with the oats, and let it set. Wet and squeeze to lather. Let it dry fully between showers on a rack, because a wet sponge grows mould, and replace it after about 40 uses or a month.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "oats",
+        2,
+        "g"
+      ]
+    ],
+    "inspired": "T.Taio Esponjabón",
+    "source": {
+      "creator": "Store product",
+      "platform": "Walmart"
+    }
+  },
+  {
+    "id": "foaming-hand-soap-refill",
+    "name": "Foaming hand soap refill",
+    "claim": "Refill your foaming pump instead of buying new bottles",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Pour the water into a clean foaming-pump bottle first, then the liquid soap, glycerin and preservative, and tip gently to mix (shaking makes a foam mess). Only foaming pumps work; a regular pump won't foam. Diluted soap grows bacteria without a preservative, so keep it in, wash and dry the bottle between refills, and never top up an old batch.",
+    "rows": [
+      [
+        "water",
+        78,
+        "g"
+      ],
+      [
+        "showergel",
+        20,
+        "g"
+      ],
+      [
+        "glycerin",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Raindrop Cloud Foam refill",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "mini-travel-soaps-in-a-tin",
+    "name": "Mini travel soaps in a tin",
+    "claim": "Pocket-sized one-use soaps for travel and handbags",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt the base, colour it, pour into tiny silicone molds (flowers, clouds, dinosaurs), and pop out once firm. Store in a small tin; let used ones air-dry before closing the lid. Unscented works for both hands and face.",
+    "rows": [
+      [
+        "soapbase",
+        60,
+        "g"
+      ],
+      [
+        "mica",
+        0.1,
+        "g"
+      ]
+    ],
+    "inspired": "SkinSu Travel Soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "baby-powder-shimmer-body-oil",
+    "name": "Baby powder shimmer body oil",
+    "claim": "Light shimmering oil with a soft, clean powdery scent",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Mix the oils, add the mica and fragrance, and shake before each use because mica settles. For a natural version, swap the fragrance oil for 6 drops vanilla, 2 geranium and 2 sandalwood. Despite the name, keep scented products like this off babies. Layer it with an unscented lotion so the scent doesn't get too strong.",
+    "rows": [
+      [
+        "caprylic",
+        50,
+        "g"
+      ],
+      [
+        "jojoba",
+        35,
+        "g"
+      ],
+      [
+        "sunflower",
+        13,
+        "g"
+      ],
+      [
+        "mica",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Concept from baby powder scent haul",
+      "platform": "Instagram"
+    }
   }
 ]
