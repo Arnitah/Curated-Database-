@@ -58,7 +58,7 @@ Screenshots and links still go through review by hand. Those are viral claims, r
 |---|---|
 | `safe-batch/ingredients` | `{ id, name, grp, ph, lvl: ok/care/stop, good, care, flag?, d?, tsp?, max?, nut?, noFace?, never? }` |
 | `safe-batch/synonyms` | `[regexSource, ingredientId, oilOnly?]`: matched in order against lowercased text; `oilOnly` = 1 means only match when the line reads like an oil (drops, essential) |
-| `safe-batch/recipes_checked` | `{ id, name, claim, type, use: now/store/fridge, note?, rows: [[ingredientId, amount, unit]] }` |
+| `safe-batch/recipes_checked` | `{ id, name, claim, type, use: now/store/fridge, note?, inspired?, source?, rows: [[ingredientId, amount, unit]] }`. Titles stay generic: brand or product names go in `inspired` (shown as "Inspired by … · not affiliated"), never in `name` |
 | `safe-batch/proof_grades` | `{ active: { goal: [grade A-D, reason] } }` |
 | `safe-batch/myths` | Structured records: `id`, `title`, `topics`, `claims` (claim, verdict, truth) or `body`, `sources`, `checked`, `format`. See schemas/myth.md |
 | `safe-batch/terms` | `{ t, what, skin, how, when, season }` |

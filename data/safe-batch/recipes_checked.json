@@ -12663,7 +12663,7 @@
  },
  {
   "id": "homemade-scalp-oil-like-mont-mizui-scalp-treatment",
-  "name": "Homemade scalp oil (like Mont Mizui Scalp Treatment)",
+  "name": "Homemade scalp oil",
   "claim": "Nourishing pre-wash scalp treatment",
   "type": "hair_leave",
   "use": "store",
@@ -12729,11 +12729,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Mont Mizui Scalp Treatment"
  },
  {
   "id": "homemade-mids-and-ends-oil-like-mont-mizui-mids-and-ends-tre",
-  "name": "Homemade mids and ends oil (like Mont Mizui Mids and Ends Treatment)",
+  "name": "Homemade mids and ends oil",
   "claim": "Shine and softness for lengths and ends",
   "type": "hair_leave",
   "use": "store",
@@ -12804,7 +12805,8 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Mont Mizui Mids and Ends Treatment"
  },
  {
   "id": "brown-sugar-and-vitamin-e-lip-glow-scrub",
@@ -13903,7 +13905,7 @@
  },
  {
   "id": "homemade-vitamin-c-facial-oil-like-kerala-rituals-ayurvedic-",
-  "name": "Homemade vitamin C facial oil (like Kerala Rituals Ayurvedic Vitamin C Facial Oil)",
+  "name": "Homemade vitamin C facial oil",
   "claim": "Brightens, firms, softens",
   "type": "face_leave",
   "use": "store",
@@ -13939,11 +13941,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kerala Rituals Ayurvedic Vitamin C Facial Oil"
  },
  {
   "id": "homemade-strength-hair-oil-like-donna-s-recipe-strength-hair",
-  "name": "Homemade strength hair oil (like Donna's Recipe Strength Hair Oil)",
+  "name": "Homemade strength hair oil",
   "claim": "Strengthens and nourishes hair",
   "type": "hair_leave",
   "use": "store",
@@ -14024,7 +14027,8 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Donna's Recipe Strength Hair Oil"
  },
  {
   "id": "gentle-baby-soap-with-oatmeal-melt-and-pour",
@@ -14503,7 +14507,7 @@
  },
  {
   "id": "homemade-rice-and-honey-mask-like-beauty-of-joseon-ground-ri",
-  "name": "Homemade rice and honey mask (like Beauty of Joseon Ground Rice and Honey Glow Mask)",
+  "name": "Homemade rice and honey mask",
   "claim": "Glow, gentle exfoliation",
   "type": "face_rinse",
   "use": "now",
@@ -14529,7 +14533,8 @@
     2,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Beauty of Joseon Ground Rice and Honey Glow Mask"
  },
  {
   "id": "avocado-seed-face-scrub",
@@ -16312,7 +16317,7 @@
  },
  {
   "id": "lush-style-lotion-bar",
-  "name": "Lush-style lotion bar",
+  "name": "Solid lotion bar",
   "claim": "Copy of a Lush bar",
   "type": "body_leave",
   "use": "store",
@@ -16348,7 +16353,8 @@
     5,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush lotion bars"
  },
  {
   "id": "lotion-bars-with-frankincense",
@@ -18630,7 +18636,7 @@
  },
  {
   "id": "softening-hand-and-foot-repair-balm-nivea",
-  "name": "Softening hand and foot repair balm (Nivea)",
+  "name": "Softening hand and foot repair balm",
   "claim": "Cracked skin",
   "type": "body_leave",
   "use": "store",
@@ -18651,7 +18657,8 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Nivea"
  },
  {
   "id": "herbal-garden-sugar-scrub",
@@ -19426,7 +19433,7 @@
  },
  {
   "id": "diy-lush-style-body-wash",
-  "name": "DIY Lush-style body wash",
+  "name": "DIY jelly-style body wash",
   "claim": "Romantic evening wash",
   "type": "body_rinse",
   "use": "store",
@@ -19462,7 +19469,8 @@
     35,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "Lush"
  },
  {
   "id": "moisturizing-shower-cream",
@@ -20938,7 +20946,7 @@
  },
  {
   "id": "homemade-vaseline-balm",
-  "name": "Homemade \"Vaseline\" balm",
+  "name": "Homemade jelly-style balm",
   "claim": "Natural petroleum jelly",
   "type": "body_leave",
   "use": "store",
@@ -20953,7 +20961,8 @@
     0.5,
     "cup"
    ]
-  ]
+  ],
+  "inspired": "Vaseline"
  },
  {
   "id": "green-tea-bath-soak-bag",
@@ -21166,7 +21175,7 @@
  },
  {
   "id": "homemade-creamy-body-oil-like-in-your-face-hydrating-creamy-",
-  "name": "Homemade creamy body oil (like In Your Face Hydrating Creamy Body Oil)",
+  "name": "Homemade creamy body oil",
   "claim": "Protects collagen, fades stretch marks",
   "type": "body_leave",
   "use": "store",
@@ -21207,7 +21216,8 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "In Your Face Hydrating Creamy Body Oil"
  },
  {
   "id": "crunchy-but-boujee-luxe-body-oil",
@@ -21251,7 +21261,7 @@
  },
  {
   "id": "homemade-hair-and-body-oil-like-the-earthling-co-hair-body-o",
-  "name": "Homemade hair and body oil (like The Earthling Co. Hair & Body Oil)",
+  "name": "Homemade hair and body oil",
   "claim": "Softens hair and skin",
   "type": "body_leave",
   "use": "store",
@@ -21272,7 +21282,8 @@
     30,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "The Earthling Co. Hair & Body Oil"
  },
  {
   "id": "skin-so-soft-bath-and-body-oil",
@@ -21678,7 +21689,7 @@
  },
  {
   "id": "homemade-enzyme-body-scrub-like-riche-mango-ananas-enzyme-sc",
-  "name": "Homemade enzyme body scrub (like Riche Mango + Ananas Enzyme Scrub)",
+  "name": "Homemade enzyme body scrub",
   "claim": "Smooths with fruit enzymes and sugar",
   "type": "body_rinse",
   "use": "store",
@@ -21729,11 +21740,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Riche Mango + Ananas Enzyme Scrub"
  },
  {
   "id": "homemade-hot-honey-body-jelly-like-riche-hot-honey-body-jell",
-  "name": "Homemade hot honey body jelly (like Riche Hot Honey Body Jelly)",
+  "name": "Homemade hot honey body jelly",
   "claim": "Warming body jelly with niacinamide",
   "type": "body_rinse",
   "use": "store",
@@ -21779,7 +21791,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Riche Hot Honey Body Jelly"
  },
  {
   "id": "collagen-boost-face-oil",
@@ -22812,7 +22825,7 @@
  },
  {
   "id": "recreate-chebe-shampoo-walmart-style-amounts-filled-in",
-  "name": "Recreate: chebe shampoo (Walmart-style, amounts filled in)",
+  "name": "Chebe shampoo (amounts filled in)",
   "claim": "Eliminates dandruff, strengthens follicles and stimulates growth",
   "type": "hair_rinse",
   "use": "store",
@@ -22853,11 +22866,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "a chebe shampoo sold at Walmart"
  },
  {
   "id": "recreate-smoothing-shampoo-bar-ethique-style",
-  "name": "Recreate: smoothing shampoo bar (Ethique-style)",
+  "name": "Smoothing shampoo bar",
   "claim": "A solid shampoo that smooths frizz and adds shine",
   "type": "hair_rinse",
   "use": "store",
@@ -22898,11 +22912,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Ethique"
  },
  {
   "id": "recreate-smoothing-conditioner-bar-ethique-style",
-  "name": "Recreate: smoothing conditioner bar (Ethique-style)",
+  "name": "Smoothing conditioner bar",
   "claim": "Banishes frizz and leaves hair silky",
   "type": "hair_rinse",
   "use": "store",
@@ -22943,7 +22958,8 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Ethique"
  },
  {
   "id": "brightening-emulsified-milky-body-scrub-as-posted-amounts-fi",
@@ -23608,7 +23624,7 @@
  },
  {
   "id": "rose-essence-toner-stenders-style",
-  "name": "Rose essence toner (Stenders-style)",
+  "name": "Rose essence toner",
   "claim": "Hydrating rose toner for the face",
   "type": "face_leave",
   "use": "store",
@@ -23634,11 +23650,12 @@
     1,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "Stenders"
  },
  {
   "id": "milk-bath-powder-stenders-bathing-milk-style",
-  "name": "Milk bath powder (Stenders bathing milk style)",
+  "name": "Milk bath powder",
   "claim": "Soft, milky bath",
   "type": "soak",
   "use": "store",
@@ -23664,11 +23681,12 @@
     1,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "Stenders bathing milk"
  },
  {
   "id": "whipped-shower-souffle-with-sugar-stenders-style",
-  "name": "Whipped shower soufflé with sugar (Stenders-style)",
+  "name": "Whipped shower soufflé with sugar",
   "claim": "Foamy, lightly scrubby body wash",
   "type": "body_rinse",
   "use": "store",
@@ -23694,7 +23712,8 @@
     30,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Stenders"
  },
  {
   "id": "gentle-rice-and-honey-face-polish",
@@ -23723,7 +23742,7 @@
  },
  {
   "id": "pomegranate-and-shea-body-polish-dove-style",
-  "name": "Pomegranate and shea body polish (Dove-style)",
+  "name": "Pomegranate and shea body polish",
   "claim": "Smooth, soft body skin",
   "type": "body_rinse",
   "use": "store",
@@ -23749,11 +23768,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Dove"
  },
  {
   "id": "sauna-honey-body-mask-stenders-style",
-  "name": "Sauna honey body mask (Stenders-style)",
+  "name": "Sauna honey body mask",
   "claim": "Soft skin after a warm shower or sauna",
   "type": "body_rinse",
   "use": "now",
@@ -23779,7 +23799,8 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Stenders"
  },
  {
   "id": "jasmine-infused-body-oil",
@@ -24153,7 +24174,7 @@
  },
  {
   "id": "sea-salt-scalp-scrub-scaler-style",
-  "name": "Sea salt scalp scrub (scaler-style)",
+  "name": "Sea salt scalp scrub",
   "claim": "Lifts buildup after protective styles (like Dr.FORHAIR Folligen, GROWUS and LABO-H sea salt scalers)",
   "type": "hair_rinse",
   "use": "now",
@@ -24173,7 +24194,7 @@
  },
  {
   "id": "tea-tree-water-scalp-scaler-steambase-style",
-  "name": "Tea tree water scalp scaler (STEAMBASE-style)",
+  "name": "Tea tree water scalp scaler",
   "claim": "Clears oil and flakes from the scalp",
   "type": "hair_rinse",
   "use": "now",
@@ -24199,11 +24220,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "STEAMBASE"
  },
  {
   "id": "cooling-mint-scalp-scrub-daleaf-apple-mint-style",
-  "name": "Cooling mint scalp scrub (DALEAF Apple Mint-style)",
+  "name": "Cooling mint scalp scrub",
   "claim": "Fresh, cooling scalp reset",
   "type": "hair_rinse",
   "use": "now",
@@ -24224,11 +24246,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "DALEAF Apple Mint"
  },
  {
   "id": "rosemary-scalp-scrub-aromatica-style",
-  "name": "Rosemary scalp scrub (AROMATICA-style)",
+  "name": "Rosemary scalp scrub",
   "claim": "Lifts buildup with a herbal scent",
   "type": "hair_rinse",
   "use": "now",
@@ -24249,11 +24272,12 @@
     0.5,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "AROMATICA"
  },
  {
   "id": "gentle-sugar-scalp-scaler-plu-modamoda-style",
-  "name": "Gentle sugar scalp scaler (PLU / MODAMODA-style)",
+  "name": "Gentle sugar scalp scaler",
   "claim": "Soft scrub for a sensitive, itchy scalp",
   "type": "hair_rinse",
   "use": "now",
@@ -24279,7 +24303,8 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "PLU / MODAMODA"
  },
  {
   "id": "guava-leaf-vinegar-shampoo-as-posted",
@@ -24449,7 +24474,7 @@
  },
  {
   "id": "pistachio-and-brown-sugar-body-oil-porter-rose-style",
-  "name": "Pistachio and brown sugar body oil (Porter + Rose style)",
+  "name": "Pistachio and brown sugar body oil",
   "claim": "Nutty, toasted-sugar body oil",
   "type": "body_leave",
   "use": "store",
@@ -24475,7 +24500,8 @@
     0.25,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "Porter + Rose"
  },
  {
   "id": "golden-hour-hair-perfume-as-posted",
@@ -24719,7 +24745,7 @@
  },
  {
   "id": "herbal-shampoo-powder-asbat-al-jamal-style",
-  "name": "Herbal shampoo powder (Asbat Al Jamal style)",
+  "name": "Herbal shampoo powder",
   "claim": "Gentle herbal wash for hair that breaks",
   "type": "hair_rinse",
   "use": "store",
@@ -24750,7 +24776,8 @@
     1,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "Asbat Al Jamal"
  },
  {
   "id": "japanese-style-mineral-body-smoother",
@@ -24935,7 +24962,7 @@
  },
  {
   "id": "lavender-hinoki-mist-sabbatical-style",
-  "name": "Lavender hinoki mist (Sabbatical-style)",
+  "name": "Lavender hinoki mist",
   "claim": "Calming aromatherapy room and pillow mist",
   "type": "perfume",
   "use": "fridge",
@@ -24956,11 +24983,12 @@
     8,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Sabbatical"
  },
  {
   "id": "vanilla-almond-cocoa-body-butter-dreaminfinite-style",
-  "name": "Vanilla almond cocoa body butter (DreamInfinite-style)",
+  "name": "Vanilla almond cocoa body butter",
   "claim": "Cozy, gourmand vanilla body butter",
   "type": "body_leave",
   "use": "store",
@@ -24991,7 +25019,8 @@
     0.5,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "DreamInfinite"
  },
  {
   "id": "sticky-rice-and-honey-face-mask-brendita",
@@ -25015,7 +25044,7 @@
  },
  {
   "id": "glycerin-hand-lotion-corn-huskers-style",
-  "name": "Glycerin hand lotion (Corn Huskers-style)",
+  "name": "Glycerin hand lotion",
   "claim": "Fast-absorbing lotion for very dry, cracked hands",
   "type": "body_leave",
   "use": "fridge",
@@ -25036,7 +25065,8 @@
     1,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "Corn Huskers"
  },
  {
   "id": "lick-safe-dog-paw-balm",
@@ -25285,7 +25315,7 @@
  },
  {
   "id": "oil-free-scalp-tonic-aromatica-tea-tree-style",
-  "name": "Oil-free scalp tonic (Aromatica Tea Tree-style)",
+  "name": "Oil-free scalp tonic",
   "claim": "Cooling care for an oily scalp that hates oils",
   "type": "hair_leave",
   "use": "fridge",
@@ -25311,7 +25341,8 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Aromatica Tea Tree"
  },
  {
   "id": "light-hair-milk-mist-leave-in-alternative",
@@ -25530,7 +25561,7 @@
  },
  {
   "id": "vanilla-bean-tincture-sabahan-style",
-  "name": "Vanilla bean tincture (Sabahan-style)",
+  "name": "Vanilla bean tincture",
   "claim": "A natural vanilla base for perfume",
   "type": "perfume",
   "use": "store",
@@ -25546,7 +25577,8 @@
     100,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "Sabahan"
  },
  {
   "id": "eucalyptus-leaf-tincture",
@@ -25655,7 +25687,7 @@
  },
  {
   "id": "perfumed-body-wash-madame-fin-style",
-  "name": "Perfumed body wash (Madame Fin-style)",
+  "name": "Perfumed body wash",
   "claim": "Skin that smells like perfume after the shower",
   "type": "body_rinse",
   "use": "store",
@@ -25681,7 +25713,8 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Madame Fin"
  },
  {
   "id": "argan-and-coconut-pre-wash-hair-mask",
@@ -25755,7 +25788,7 @@
  },
  {
   "id": "glass-skin-body-wash-haps-style-dupe",
-  "name": "Glass skin body wash (Haps-style dupe)",
+  "name": "Glass skin body wash",
   "claim": "Soft, comfortable skin after the shower",
   "type": "body_rinse",
   "use": "store",
@@ -25771,7 +25804,8 @@
     10,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "Haps"
  },
  {
   "id": "niacinamide-face-cream",
@@ -25825,7 +25859,7 @@
  },
  {
   "id": "brightening-body-lotion-haps-style-dupe",
-  "name": "Brightening body lotion (Haps-style dupe)",
+  "name": "Brightening body lotion",
   "claim": "Evens tone on elbows, knees and marks, with daily sunscreen",
   "type": "body_leave",
   "use": "store",
@@ -25876,11 +25910,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Haps"
  },
  {
   "id": "licorice-glycerin-soap-tana-style",
-  "name": "Licorice glycerin soap (Tana-style)",
+  "name": "Licorice glycerin soap",
   "claim": "Gentle clear bar with calming licorice",
   "type": "body_rinse",
   "use": "store",
@@ -25901,11 +25936,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Tana"
  },
  {
   "id": "ceramide-barrier-cream-haps-anti-aging-cream-dupe",
-  "name": "Ceramide barrier cream (Haps anti-aging cream dupe)",
+  "name": "Ceramide barrier cream",
   "claim": "Barrier repair and all-day moisture, fragrance-free",
   "type": "face_leave",
   "use": "store",
@@ -25951,7 +25987,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Haps anti-aging cream"
  },
  {
   "id": "mineral-toothpaste-as-posted",
@@ -26785,7 +26822,7 @@
  },
  {
   "id": "brown-sugar-scrub-brooklyn-botany-dupe",
-  "name": "Brown sugar scrub (Brooklyn Botany dupe)",
+  "name": "Brown sugar scrub",
   "claim": "Soft, smooth skin",
   "type": "body_rinse",
   "use": "store",
@@ -26806,7 +26843,8 @@
     2,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "Brooklyn Botany"
  },
  {
   "id": "aloe-vera-leave-in-detangler-preserved",
@@ -29145,7 +29183,7 @@
  },
  {
   "id": "stimulating-herbal-bath-tea-lisabee-style",
-  "name": "Stimulating herbal bath tea (LisaBee-style)",
+  "name": "Stimulating herbal bath tea",
   "claim": "An uplifting citrus-rosemary soak",
   "type": "soak",
   "use": "store",
@@ -29181,7 +29219,8 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "LisaBee"
  },
  {
   "id": "undereye-care-cream-as-posted",
@@ -29575,7 +29614,7 @@
  },
  {
   "id": "green-tea-soak-detox-style",
-  "name": "Green tea soak (detox-style)",
+  "name": "Green tea soak",
   "claim": "A refreshing, softening bath",
   "type": "soak",
   "use": "store",
@@ -31780,7 +31819,7 @@
  },
  {
   "id": "plant-jelly-balm-vaseline-alternative",
-  "name": "Plant jelly balm (Vaseline alternative)",
+  "name": "Plant jelly balm (petroleum jelly alternative)",
   "claim": "Seals in moisture like petroleum jelly",
   "type": "body_leave",
   "use": "store",
@@ -31900,7 +31939,7 @@
  },
  {
   "id": "tamarind-coffee-body-scrub-skin-editor-dupe",
-  "name": "Tamarind coffee body scrub (Skin Editor dupe)",
+  "name": "Tamarind coffee body scrub",
   "claim": "Smooth, glowing skin",
   "type": "body_rinse",
   "use": "now",
@@ -31926,11 +31965,12 @@
     1,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "Skin Editor"
  },
  {
   "id": "guava-hand-cream-trader-joe-s-dupe",
-  "name": "Guava hand cream (Trader Joe's dupe)",
+  "name": "Guava hand cream",
   "claim": "Rich, fast-absorbing hand cream",
   "type": "body_leave",
   "use": "store",
@@ -31976,7 +32016,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "fig-black-tea-and-musk-perfume-oil",
@@ -32005,7 +32046,7 @@
  },
  {
   "id": "ultra-moisturizing-hand-cream-trader-joe-s-original-dupe",
-  "name": "Ultra moisturizing hand cream (Trader Joe's original dupe)",
+  "name": "Ultra moisturizing hand cream",
   "claim": "Rich, soft hands; 20% shea",
   "type": "body_leave",
   "use": "store",
@@ -32061,11 +32102,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "pumpkin-spice-hand-cream-gentler-tj-style",
-  "name": "Pumpkin spice hand cream (gentler TJ-style)",
+  "name": "Pumpkin spice hand cream (gentler)",
   "claim": "A cosy autumn hand cream",
   "type": "body_leave",
   "use": "store",
@@ -32116,11 +32158,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "unscented-deodorant-stick-trader-joe-s-dupe",
-  "name": "Unscented deodorant stick (Trader Joe's dupe)",
+  "name": "Unscented deodorant stick",
   "claim": "Odor control without baking soda or aluminum",
   "type": "deodorant",
   "use": "store",
@@ -32156,11 +32199,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "leave-in-conditioner-spray-trader-joe-s-dupe",
-  "name": "Leave-in conditioner spray (Trader Joe's dupe)",
+  "name": "Leave-in conditioner spray",
   "claim": "Detangles and softens before styling",
   "type": "hair_leave",
   "use": "store",
@@ -32206,11 +32250,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "shine-hair-serum-trader-joe-s-dupe-water-free",
-  "name": "Shine hair serum (Trader Joe's dupe, water-free)",
+  "name": "Shine hair serum (water-free)",
   "claim": "Tames frizz and adds shine",
   "type": "hair_leave",
   "use": "store",
@@ -32246,11 +32291,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "coconut-body-butter-trader-joe-s-dupe",
-  "name": "Coconut body butter (Trader Joe's dupe)",
+  "name": "Coconut body butter",
   "claim": "Quick-absorbing coconut cream",
   "type": "body_leave",
   "use": "store",
@@ -32296,11 +32342,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "coconut-lemongrass-body-oil-tj-style",
-  "name": "Coconut lemongrass body oil (TJ-style)",
+  "name": "Coconut lemongrass body oil",
   "claim": "Light, fresh body oil",
   "type": "body_leave",
   "use": "store",
@@ -32331,7 +32378,8 @@
     12,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Trader Joe's"
  },
  {
   "id": "almond-ginger-oatmeal-soap-melt-and-pour",
@@ -32400,7 +32448,7 @@
  },
  {
   "id": "turmeric-salt-scrub-kuu-spa-style",
-  "name": "Turmeric salt scrub (Kuu Spa-style)",
+  "name": "Turmeric salt scrub",
   "claim": "Exfoliates and \"whitens\" skin",
   "type": "body_rinse",
   "use": "store",
@@ -32436,7 +32484,8 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kuu Spa"
  },
  {
   "id": "sandalwood-chip-tincture",
@@ -32460,7 +32509,7 @@
  },
  {
   "id": "seed-infused-growth-oil-milagro-style",
-  "name": "Seed-infused growth oil (Milagro-style)",
+  "name": "Seed-infused growth oil",
   "claim": "Length retention and thicker hair",
   "type": "hair_leave",
   "use": "store",
@@ -32496,7 +32545,8 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Milagro"
  },
  {
   "id": "seed-infused-hair-oil-gentler",
@@ -32560,7 +32610,7 @@
  },
  {
   "id": "caffeine-scalp-tonic-reedle-style",
-  "name": "Caffeine scalp tonic (Reedle-style)",
+  "name": "Green tea caffeine scalp tonic",
   "claim": "Cooling scalp serum for thinning hair",
   "type": "hair_leave",
   "use": "store",
@@ -32596,11 +32646,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Reedle"
  },
  {
   "id": "mellow-leave-in-hair-cream-anaze-style",
-  "name": "Mellow leave-in hair cream (Anaze-style)",
+  "name": "Mellow leave-in hair cream",
   "claim": "Smooth, shiny hair without grease",
   "type": "hair_leave",
   "use": "store",
@@ -32641,7 +32692,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Anaze"
  },
  {
   "id": "beef-marrow-pre-shampoo-hair-butter-tutano",
@@ -32835,7 +32887,7 @@
  },
  {
   "id": "immortelle-face-oil-l-occitane-divine-inspired",
-  "name": "Immortelle face oil (L'Occitane Divine-inspired)",
+  "name": "Immortelle face oil (second version)",
   "claim": "Smoother lines and a more even glow",
   "type": "face_leave",
   "use": "store",
@@ -32866,11 +32918,12 @@
     0.2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane Immortelle Divine"
  },
  {
   "id": "shade-matched-setting-powder-suppin-style",
-  "name": "Shade-matched setting powder (Suppin-style)",
+  "name": "Shade-matched setting powder",
   "claim": "Soft-matte, blurred skin with no white cast",
   "type": "face_leave",
   "use": "store",
@@ -32886,11 +32939,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Suppin"
  },
  {
   "id": "immortelle-divine-face-oil-dupe",
-  "name": "Immortelle Divine face oil (dupe)",
+  "name": "Immortelle face oil",
   "claim": "Smoother lines, firmer-looking skin",
   "type": "face_leave",
   "use": "store",
@@ -32951,11 +33005,12 @@
     0.2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane Immortelle Divine"
  },
  {
   "id": "verbena-cooling-body-gel-l-occitane-style",
-  "name": "Verbena cooling body gel (L'Occitane-style)",
+  "name": "Verbena cooling body gel",
   "claim": "Light, citrusy gel that cools hot skin",
   "type": "body_leave",
   "use": "store",
@@ -32996,11 +33051,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane"
  },
  {
   "id": "overnight-skin-powder-unscented-suppin-style",
-  "name": "Overnight skin powder, unscented (Suppin-style)",
+  "name": "Overnight skin powder, unscented",
   "claim": "Soft-matte skin and less shine, even overnight",
   "type": "face_leave",
   "use": "store",
@@ -33026,11 +33082,12 @@
     0.5,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Suppin"
  },
  {
   "id": "almond-supple-skin-oil-l-occitane-style",
-  "name": "Almond supple skin oil (L'Occitane-style)",
+  "name": "Almond supple skin oil",
   "claim": "Firmer-feeling, softer body skin",
   "type": "body_leave",
   "use": "store",
@@ -33076,11 +33133,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane"
  },
  {
   "id": "almond-shower-oil-l-occitane-style",
-  "name": "Almond shower oil (L'Occitane-style)",
+  "name": "Almond shower oil",
   "claim": "Cleanses and leaves skin soft, not tight",
   "type": "body_rinse",
   "use": "store",
@@ -33111,11 +33169,12 @@
     5,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane"
  },
  {
   "id": "chalk-tooth-paste-1910-club-style",
-  "name": "Chalk tooth paste (1910 Club-style)",
+  "name": "Chalk tooth paste",
   "claim": "Polishes off stains, fresh mint taste",
   "type": "oral",
   "use": "store",
@@ -33146,7 +33205,8 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "1910 Club"
  },
  {
   "id": "hibiscus-scrub-balls-as-posted",
@@ -33250,7 +33310,7 @@
  },
  {
   "id": "coconut-vanilla-dusting-powder-lush-coconut-drench-style",
-  "name": "Coconut vanilla dusting powder (Lush Coconut Drench-style)",
+  "name": "Coconut vanilla dusting powder",
   "claim": "Soft, lightly scented skin and less chafing",
   "type": "body_leave",
   "use": "store",
@@ -33286,7 +33346,8 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Coconut Drench"
  },
  {
   "id": "unscented-talc-free-body-powder-anti-chafe",
@@ -33315,7 +33376,7 @@
  },
  {
   "id": "cocoa-butter-dusting-powder-lush-silky-underwear-style",
-  "name": "Cocoa butter dusting powder (Lush Silky Underwear-style)",
+  "name": "Cocoa butter dusting powder",
   "claim": "Silky skin that clothes slide over; less chafing",
   "type": "body_leave",
   "use": "store",
@@ -33346,11 +33407,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Silky Underwear"
  },
  {
   "id": "lavender-bedtime-dusting-powder-lush-sleepy-dust-style",
-  "name": "Lavender bedtime dusting powder (Lush Sleepy Dust-style)",
+  "name": "Lavender bedtime dusting powder",
   "claim": "Soft skin and a calming lavender scent at bedtime",
   "type": "body_leave",
   "use": "store",
@@ -33381,11 +33443,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Sleepy Dust"
  },
  {
   "id": "corn-free-sandalwood-vanilla-body-powder-merry-bath-style",
-  "name": "Corn-free sandalwood vanilla body powder (Merry Bath-style)",
+  "name": "Corn-free sandalwood vanilla body powder",
   "claim": "Dry, soft skin with a light woody-sweet scent",
   "type": "body_leave",
   "use": "store",
@@ -33411,7 +33474,8 @@
     5,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Merry Bath"
  },
  {
   "id": "honey-leg-massage-mustard-free-wrap-alternative",
@@ -33435,7 +33499,7 @@
  },
  {
   "id": "talc-free-english-rose-body-powder-yardley-style",
-  "name": "Talc-free English rose body powder (Yardley-style)",
+  "name": "Talc-free English rose body powder",
   "claim": "Soft, rose-scented skin all day",
   "type": "body_leave",
   "use": "store",
@@ -33476,11 +33540,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Yardley"
  },
  {
   "id": "talc-free-english-lavender-body-powder-yardley-style",
-  "name": "Talc-free English lavender body powder (Yardley-style)",
+  "name": "Talc-free English lavender body powder",
   "claim": "Fresh, calming lavender powder",
   "type": "body_leave",
   "use": "store",
@@ -33521,11 +33586,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Yardley"
  },
  {
   "id": "gentleman-s-deodorizing-body-powder-yardley-gold-style",
-  "name": "Gentleman's deodorizing body powder (Yardley Gold-style)",
+  "name": "Gentleman's deodorizing body powder",
   "claim": "Dry, fresh skin with a warm woody scent",
   "type": "body_leave",
   "use": "store",
@@ -33566,11 +33632,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Yardley Gold"
  },
  {
   "id": "anti-chafe-zinc-body-powder-anti-monkey-butt-style-no-baking",
-  "name": "Anti-chafe zinc body powder (Anti Monkey Butt-style, no baking soda)",
+  "name": "Anti-chafe zinc body powder (no baking soda)",
   "claim": "Stops friction and sweat rash on thighs and folds",
   "type": "body_leave",
   "use": "store",
@@ -33596,11 +33663,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Anti Monkey Butt"
  },
  {
   "id": "unscented-men-s-comfort-powder-happy-nuts-style",
-  "name": "Unscented men's comfort powder (Happy Nuts-style)",
+  "name": "Unscented men's comfort powder",
   "claim": "Keeps the groin dry and chafe-free",
   "type": "body_leave",
   "use": "store",
@@ -33631,11 +33699,12 @@
     0.25,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Happy Nuts"
  },
  {
   "id": "talc-free-lily-of-the-valley-body-powder-yardley-style-lilia",
-  "name": "Talc-free lily of the valley body powder (Yardley-style, lilial-free)",
+  "name": "Talc-free lily of the valley body powder (lilial-free)",
   "claim": "Fresh green-floral powder without banned ingredients",
   "type": "body_leave",
   "use": "store",
@@ -33666,11 +33735,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Yardley"
  },
  {
   "id": "charcoal-underarm-bar-kaia-takesumi-style-melt-and-pour",
-  "name": "Charcoal underarm bar (Kaia Takesumi-style, melt and pour)",
+  "name": "Charcoal underarm bar (melt and pour)",
   "claim": "Cleaner-feeling underarms between deodorant",
   "type": "body_rinse",
   "use": "store",
@@ -33706,11 +33776,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kaia Takesumi"
  },
  {
   "id": "unscented-shave-soap-kitsch-shave-butter-style-melt-and-pour",
-  "name": "Unscented shave soap (Kitsch Shave Butter-style, melt and pour)",
+  "name": "Unscented shave soap (melt and pour)",
   "claim": "Slick lather for a smoother shave",
   "type": "body_rinse",
   "use": "store",
@@ -33731,7 +33802,8 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Kitsch Shave Butter"
  },
  {
   "id": "lace-satin-solid-perfume-rose-jasmine-sandalwood",
@@ -33775,7 +33847,7 @@
  },
  {
   "id": "tart-cherry-solid-body-wash-kitsch-style-melt-and-pour",
-  "name": "Tart cherry solid body wash (Kitsch-style, melt and pour)",
+  "name": "Tart cherry solid body wash (melt and pour)",
   "claim": "Cleansing bar with a warm cherry-vanilla scent",
   "type": "body_rinse",
   "use": "store",
@@ -33816,11 +33888,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "turmeric-glow-bar-kitsch-kojic-bar-alternative",
-  "name": "Turmeric glow bar (Kitsch kojic bar alternative)",
+  "name": "Turmeric glow bar",
   "claim": "Gentle cleansing bar with a natural golden color",
   "type": "body_rinse",
   "use": "store",
@@ -33846,11 +33919,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Kitsch kojic bar"
  },
  {
   "id": "cucumber-eucalyptus-spa-bar-kitsch-glycolic-bar-alternative",
-  "name": "Cucumber eucalyptus spa bar (Kitsch glycolic bar alternative)",
+  "name": "Cucumber eucalyptus spa bar",
   "claim": "Fresh, clean-feeling face-and-body bar",
   "type": "body_rinse",
   "use": "store",
@@ -33881,11 +33955,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch glycolic bar"
  },
  {
   "id": "shea-apricot-exfoliating-bar-kitsch-shea-butter-style",
-  "name": "Shea apricot exfoliating bar (Kitsch Shea Butter-style)",
+  "name": "Shea apricot exfoliating bar",
   "claim": "Soft, smooth body skin",
   "type": "body_rinse",
   "use": "store",
@@ -33916,11 +33991,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch Shea Butter"
  },
  {
   "id": "tea-tree-and-mint-shampoo-bar-kitsch-style",
-  "name": "Tea tree and mint shampoo bar (Kitsch-style)",
+  "name": "Tea tree and mint shampoo bar",
   "claim": "Clarifies oily hair and buildup with a cooling feel",
   "type": "hair_rinse",
   "use": "store",
@@ -33966,11 +34042,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "castor-oil-shampoo-bar-kitsch-style",
-  "name": "Castor oil shampoo bar (Kitsch-style)",
+  "name": "Castor oil shampoo bar",
   "claim": "Gentle, nourishing wash for dry hair",
   "type": "hair_rinse",
   "use": "store",
@@ -34016,11 +34093,12 @@
     10,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "coconut-oil-shampoo-bar-kitsch-style",
-  "name": "Coconut oil shampoo bar (Kitsch-style)",
+  "name": "Coconut oil shampoo bar",
   "claim": "Moisturizing wash for curly, coily and color-treated hair",
   "type": "hair_rinse",
   "use": "store",
@@ -34066,11 +34144,12 @@
     8,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "rice-protein-shampoo-bar-kitsch-style",
-  "name": "Rice protein shampoo bar (Kitsch-style)",
+  "name": "Rice protein shampoo bar",
   "claim": "Fuller-feeling fine, thin or damaged hair",
   "type": "hair_rinse",
   "use": "store",
@@ -34116,11 +34195,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "rosemary-and-charcoal-shampoo-bar-kitsch-rosemary-biotin-sty",
-  "name": "Rosemary and charcoal shampoo bar (Kitsch Rosemary & Biotin-style)",
+  "name": "Rosemary and charcoal shampoo bar",
   "claim": "Fresh, clean scalp and a volumizing wash",
   "type": "hair_rinse",
   "use": "store",
@@ -34171,11 +34251,12 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch Rosemary & Biotin"
  },
  {
   "id": "ultra-gentle-unscented-shampoo-and-body-bar-kitsch-ultra-sen",
-  "name": "Ultra gentle unscented shampoo and body bar (Kitsch Ultra Sensitive-style)",
+  "name": "Ultra gentle unscented shampoo and body bar",
   "claim": "For sensitive skin and scalp, hair and body",
   "type": "hair_rinse",
   "use": "store",
@@ -34216,11 +34297,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Kitsch Ultra Sensitive"
  },
  {
   "id": "moisture-conditioner-bar-coconut-and-castor-kitsch-style",
-  "name": "Moisture conditioner bar (coconut and castor, Kitsch-style)",
+  "name": "Moisture conditioner bar (coconut and castor)",
   "claim": "Soft, detangled curly or dry hair",
   "type": "hair_rinse",
   "use": "store",
@@ -34266,11 +34348,12 @@
     8,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "protein-conditioner-bar-rice-kitsch-style",
-  "name": "Protein conditioner bar (rice, Kitsch-style)",
+  "name": "Protein conditioner bar (rice)",
   "claim": "Strength and body for fine, damaged hair",
   "type": "hair_rinse",
   "use": "store",
@@ -34311,11 +34394,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Kitsch"
  },
  {
   "id": "unscented-conditioner-and-shave-bar-kitsch-ultra-sensitive-s",
-  "name": "Unscented conditioner and shave bar (Kitsch Ultra Sensitive-style)",
+  "name": "Unscented conditioner and shave bar",
   "claim": "Detangles hair and gives razor glide, no fragrance",
   "type": "hair_rinse",
   "use": "store",
@@ -34356,7 +34440,8 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Kitsch Ultra Sensitive"
  },
  {
   "id": "vanilla-oatmeal-body-powder-talc-free-corn-free",
@@ -34395,7 +34480,7 @@
  },
  {
   "id": "gourmand-dusting-powder-base-bathtreatbakery-style",
-  "name": "Gourmand dusting powder base (BathTreatBakery-style)",
+  "name": "Gourmand dusting powder base",
   "claim": "Silky, scented body powder that helps stop thigh chafing",
   "type": "body_leave",
   "use": "store",
@@ -34421,7 +34506,8 @@
     8,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "BathTreatBakery"
  },
  {
   "id": "layering-body-oil-gourmand-jojoba-and-avocado",
@@ -34550,7 +34636,7 @@
  },
  {
   "id": "panthenol-hair-booster-bepantol-style",
-  "name": "Panthenol hair booster (Bepantol-style)",
+  "name": "Panthenol hair booster",
   "claim": "Softer, more elastic curls and less breakage",
   "type": "hair_leave",
   "use": "store",
@@ -34576,11 +34662,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Bepantol"
  },
  {
   "id": "rose-witch-hazel-face-mist-dollar-tree-dermasil-style",
-  "name": "Rose witch hazel face mist (Dollar Tree Dermasil-style)",
+  "name": "Rose witch hazel face mist",
   "claim": "Refreshing mist that balances oily skin",
   "type": "face_leave",
   "use": "store",
@@ -34611,7 +34698,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Dermasil (Dollar Tree)"
  },
  {
   "id": "aloe-calendula-face-and-body-mist",
@@ -35620,7 +35708,7 @@
  },
  {
   "id": "minty-crystal-salt-scrub-like-lush-magic-crystals",
-  "name": "Minty crystal salt scrub (like Lush Magic Crystals)",
+  "name": "Minty crystal salt scrub",
   "claim": "Scrubs and cleanses with a cool mint tingle",
   "type": "body_rinse",
   "use": "store",
@@ -35651,11 +35739,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush Magic Crystals"
  },
  {
   "id": "cooling-body-conditioner-bar-like-lush-tingle",
-  "name": "Cooling body conditioner bar (like Lush Tingle)",
+  "name": "Cooling body conditioner bar",
   "claim": "Soft, minty skin straight out of the shower",
   "type": "body_rinse",
   "use": "store",
@@ -35686,11 +35775,12 @@
     15,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Tingle"
  },
  {
   "id": "calming-oat-cleansing-balm-like-lush-sleepy-face",
-  "name": "Calming oat cleansing balm (like Lush Sleepy Face)",
+  "name": "Calming oat cleansing balm",
   "claim": "Melts off makeup and leaves skin soft at night",
   "type": "face_rinse",
   "use": "store",
@@ -35731,11 +35821,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Sleepy Face"
  },
  {
   "id": "almond-and-kaolin-powder-cleanser-like-lush-angels-on-bare-s",
-  "name": "Almond and kaolin powder cleanser (like Lush Angels on Bare Skin)",
+  "name": "Almond and kaolin powder cleanser",
   "claim": "Gentle polish for sensitive skin",
   "type": "face_rinse",
   "use": "store",
@@ -35771,11 +35862,12 @@
     1,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Lush Angels on Bare Skin"
  },
  {
   "id": "linseed-and-aloe-multi-use-cream-like-lush-s-linseed-cream",
-  "name": "Linseed and aloe multi-use cream (like Lush's linseed cream)",
+  "name": "Linseed and aloe multi-use cream",
   "claim": "Light moisturiser, shaving cream and hair-ends smoother in one",
   "type": "body_leave",
   "use": "store",
@@ -35831,7 +35923,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush's linseed cream"
  },
  {
   "id": "rosemary-coconut-hair-butter-as-posted",
@@ -35855,7 +35948,7 @@
  },
  {
   "id": "minty-herbal-shower-gel-like-lush-dirty-springwash",
-  "name": "Minty herbal shower gel (like Lush Dirty Springwash)",
+  "name": "Minty herbal shower gel",
   "claim": "Fresh, cooling wake-up wash",
   "type": "body_rinse",
   "use": "store",
@@ -35881,11 +35974,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Dirty Springwash"
  },
  {
   "id": "whipped-oat-shaving-butter-like-lush-dirty-shaving-cream",
-  "name": "Whipped oat shaving butter (like Lush Dirty shaving cream)",
+  "name": "Whipped oat shaving butter",
   "claim": "Slick, cushioned shave that leaves skin soft",
   "type": "body_rinse",
   "use": "store",
@@ -35921,11 +36015,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Lush Dirty shaving cream"
  },
  {
   "id": "seven-oil-dry-body-oil-like-nuxe-huile-prodigieuse",
-  "name": "Seven-oil dry body oil (like Nuxe Huile Prodigieuse)",
+  "name": "Seven-oil dry body oil",
   "claim": "Satin, non-greasy glow for body, face and hair ends",
   "type": "body_leave",
   "use": "store",
@@ -35991,11 +36086,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Nuxe Huile Prodigieuse"
  },
  {
   "id": "fresh-floral-dry-oil-like-nuxe-huile-prodigieuse-florale",
-  "name": "Fresh floral dry oil (like Nuxe Huile Prodigieuse Florale)",
+  "name": "Fresh floral dry oil",
   "claim": "Same satin oil, fresher grapefruit-floral scent",
   "type": "body_leave",
   "use": "store",
@@ -36056,11 +36152,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Nuxe Huile Prodigieuse Florale"
  },
  {
   "id": "rich-dry-oil-for-very-dry-skin-like-nuxe-huile-prodigieuse-r",
-  "name": "Rich dry oil for very dry skin (like Nuxe Huile Prodigieuse Riche)",
+  "name": "Rich dry oil for very dry skin",
   "claim": "Comforting winter oil for rough elbows, shins and coarse hair",
   "type": "body_leave",
   "use": "store",
@@ -36121,11 +36218,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Nuxe Huile Prodigieuse Riche"
  },
  {
   "id": "gold-or-rose-gold-shimmer-dry-oil-like-nuxe-huile-prodigieus",
-  "name": "Gold or rose-gold shimmer dry oil (like Nuxe Huile Prodigieuse Or)",
+  "name": "Gold or rose-gold shimmer dry oil",
   "claim": "Sun-kissed shimmer for collarbones, shins and hair tips",
   "type": "body_leave",
   "use": "store",
@@ -36191,11 +36289,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Nuxe Huile Prodigieuse Or"
  },
  {
   "id": "plum-and-sesame-night-oil-like-nuxe-huile-prodigieuse-ne-rol",
-  "name": "Plum and sesame night oil (like Nuxe Huile Prodigieuse Néroli)",
+  "name": "Plum and sesame night oil",
   "claim": "Ultra-light, soothing oil for sensitive skin and bedtime",
   "type": "body_leave",
   "use": "store",
@@ -36231,11 +36330,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Nuxe Huile Prodigieuse Néroli"
  },
  {
   "id": "milky-body-toner-like-knock-melt-in-body-toner",
-  "name": "Milky body toner (like Knock Melt In Body Toner)",
+  "name": "Milky body toner",
   "claim": "Light, fast-absorbing body hydration that holds perfume longer",
   "type": "body_leave",
   "use": "store",
@@ -36286,11 +36386,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Knock Melt In Body Toner"
  },
  {
   "id": "colour-correcting-setting-powder-green-or-pink-suppin-style",
-  "name": "Colour-correcting setting powder, green or pink (Suppin-style)",
+  "name": "Colour-correcting setting powder, green or pink",
   "claim": "Tones down redness (green) or brightens dullness (pink) while absorbing shine",
   "type": "face_leave",
   "use": "store",
@@ -36316,11 +36417,12 @@
     0.5,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "Suppin"
  },
  {
   "id": "burdock-and-nettle-pre-wash-scalp-oil-like-bur-bur-growing-s",
-  "name": "Burdock and nettle pre-wash scalp oil (like BUR BUR Growing Season)",
+  "name": "Burdock and nettle pre-wash scalp oil",
   "claim": "Softer scalp, fewer flakes and less breakage on wash day",
   "type": "hair_rinse",
   "use": "store",
@@ -36376,7 +36478,8 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "BUR BUR Growing Season"
  },
  {
   "id": "rose-jelly-soap-as-posted",
@@ -36535,7 +36638,7 @@
  },
  {
   "id": "baobab-shine-oil-like-loma-nourishing-oil-silicone-free",
-  "name": "Baobab shine oil (like LOMA Nourishing Oil, silicone-free)",
+  "name": "Baobab shine oil (silicone-free)",
   "claim": "Light shine and softness for dry ends",
   "type": "hair_leave",
   "use": "store",
@@ -36576,11 +36679,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "LOMA Nourishing Oil"
  },
  {
   "id": "calendula-rosehip-face-oil-like-stokli",
-  "name": "Calendula rosehip face oil (like Stokli)",
+  "name": "Calendula rosehip face oil",
   "claim": "Calming, softening face, hand and body oil",
   "type": "face_leave",
   "use": "store",
@@ -36611,11 +36715,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Stokli"
  },
  {
   "id": "13-herb-rice-wine-hair-tonic-loom-beauty-as-posted",
-  "name": "13-herb rice wine hair tonic (Loom Beauty, as posted)",
+  "name": "13-herb rice wine hair tonic (as posted)",
   "claim": "Less hair fall, new growth, fewer greys",
   "type": "hair_leave",
   "use": "store",
@@ -36686,7 +36791,8 @@
     5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Loom Beauty"
  },
  {
   "id": "ginseng-and-arborvitae-scalp-tonic-diluted",
@@ -36740,7 +36846,7 @@
  },
  {
   "id": "hibiscus-curry-leaf-and-methi-infused-hair-oil-loom-beauty-s",
-  "name": "Hibiscus, curry leaf and methi infused hair oil (Loom Beauty-style)",
+  "name": "Hibiscus, curry leaf and methi infused hair oil",
   "claim": "Softer, shinier hair and a calmer scalp",
   "type": "hair_rinse",
   "use": "store",
@@ -36801,11 +36907,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Loom Beauty"
  },
  {
   "id": "fenugreek-amla-and-bhringraj-hair-butter-like-herbal-lineage",
-  "name": "Fenugreek, amla and bhringraj hair butter (like Herbal Lineage)",
+  "name": "Fenugreek, amla and bhringraj hair butter",
   "claim": "A whipped sealant for length retention on natural hair",
   "type": "hair_leave",
   "use": "store",
@@ -36851,7 +36958,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Herbal Lineage"
  },
  {
   "id": "pomarrosa-rose-apple-spray-perfume",
@@ -36895,7 +37003,7 @@
  },
  {
   "id": "berry-musk-body-mist-like-candie-s-berry-musk",
-  "name": "Berry musk body mist (like Candie's Berry Musk)",
+  "name": "Berry musk body mist",
   "claim": "Sweet berry, soft floral and vanilla-musk body mist",
   "type": "body_leave",
   "use": "store",
@@ -36946,11 +37054,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Candie's Berry Musk"
  },
  {
   "id": "mango-lychee-body-mist-like-candie-s",
-  "name": "Mango lychee body mist (like Candie's)",
+  "name": "Mango lychee body mist",
   "claim": "Juicy tropical fruit with soft white flowers and clean musk",
   "type": "body_leave",
   "use": "store",
@@ -37006,11 +37115,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Candie's"
  },
  {
   "id": "pink-currant-body-mist-like-candie-s",
-  "name": "Pink currant body mist (like Candie's)",
+  "name": "Pink currant body mist",
   "claim": "Tart berry, jasmine and cotton-candy vanilla body mist",
   "type": "body_leave",
   "use": "store",
@@ -37061,7 +37171,8 @@
     5,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Candie's"
  },
  {
   "id": "six-oil-hair-blend-as-posted",
@@ -37110,7 +37221,7 @@
  },
  {
   "id": "overnight-honey-and-vaseline-lip-mask",
-  "name": "Overnight honey and Vaseline lip mask",
+  "name": "Overnight honey and petroleum jelly lip mask",
   "claim": "Softer, less flaky lips by morning",
   "type": "lip",
   "use": "store",
@@ -37180,7 +37291,7 @@
  },
  {
   "id": "whipped-cacao-and-herb-body-butter-like-indigo-elixirs-whipp",
-  "name": "Whipped cacao and herb body butter (like Indigo Elixirs Whipped Love)",
+  "name": "Whipped cacao and herb body butter",
   "claim": "Rich, frosting-soft butter for dry, chapped or sun-parched skin",
   "type": "body_leave",
   "use": "store",
@@ -37236,11 +37347,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs Whipped Love"
  },
  {
   "id": "herbal-all-purpose-salve-like-indigo-elixirs-solve-all-salve",
-  "name": "Herbal all-purpose salve (like Indigo Elixirs Solve All Salve, comfrey-free)",
+  "name": "Herbal all-purpose salve (comfrey-free)",
   "claim": "Soothing balm for dry, chapped, itchy or rough spots",
   "type": "body_leave",
   "use": "store",
@@ -37296,11 +37408,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs Solve All Salve"
  },
  {
   "id": "sea-buckthorn-vanilla-body-balm-like-indigo-elixirs-seven-se",
-  "name": "Sea buckthorn vanilla body balm (like Indigo Elixirs Seven Seeds)",
+  "name": "Sea buckthorn vanilla body balm",
   "claim": "Golden, glowy balm for very dry or raw skin",
   "type": "body_leave",
   "use": "store",
@@ -37346,11 +37459,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs Seven Seeds"
  },
  {
   "id": "enchanted-rose-roller-like-indigo-elixirs-safer-swaps",
-  "name": "Enchanted rose roller (like Indigo Elixirs, safer swaps)",
+  "name": "Enchanted rose roller (safer swaps)",
   "claim": "Rose, spice and amber perfume oil",
   "type": "perfume",
   "use": "store",
@@ -37401,11 +37515,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs"
  },
  {
   "id": "jungle-jasmine-roller-like-indigo-elixirs",
-  "name": "Jungle jasmine roller (like Indigo Elixirs)",
+  "name": "Jungle jasmine roller",
   "claim": "White-flower, vanilla and spice perfume oil",
   "type": "perfume",
   "use": "store",
@@ -37456,11 +37571,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs"
  },
  {
   "id": "herbal-scalp-serum-like-indigo-elixirs-luscious-locks",
-  "name": "Herbal scalp serum (like Indigo Elixirs Luscious Locks)",
+  "name": "Herbal scalp serum",
   "claim": "Soothing scalp massage oil with rosemary and lavender",
   "type": "hair_leave",
   "use": "store",
@@ -37516,11 +37632,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs Luscious Locks"
  },
  {
   "id": "rose-citrus-hair-oil-like-indigo-elixirs-sun-safe",
-  "name": "Rose citrus hair oil (like Indigo Elixirs, sun-safe)",
+  "name": "Rose citrus hair oil (sun-safe)",
   "claim": "Shine and frizz control for dry, curly or thick hair",
   "type": "hair_leave",
   "use": "store",
@@ -37566,11 +37683,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs"
  },
  {
   "id": "tulsi-lime-deodorant-balm-like-indigo-elixirs-mild",
-  "name": "Tulsi lime deodorant balm (like Indigo Elixirs, mild)",
+  "name": "Tulsi lime deodorant balm (mild)",
   "claim": "A gentle, baking-soda-free underarm balm",
   "type": "deodorant",
   "use": "store",
@@ -37621,11 +37739,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs"
  },
  {
   "id": "turmeric-black-soap-wash-like-indigo-elixirs-black-olena",
-  "name": "Turmeric black soap wash (like Indigo Elixirs Black ʻOlena)",
+  "name": "Turmeric black soap wash",
   "claim": "Gentle-feeling liquid wash for face, body and hair",
   "type": "body_rinse",
   "use": "store",
@@ -37651,7 +37770,8 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Indigo Elixirs Black ʻOlena"
  },
  {
   "id": "five-oil-hair-growth-blend-olive-rosemary-flax-coconut-casto",
@@ -37695,7 +37815,7 @@
  },
  {
   "id": "turmeric-latte-massage-bar-like-lush",
-  "name": "Turmeric latte massage bar (like Lush)",
+  "name": "Turmeric latte massage bar",
   "claim": "Warm, spiced vanilla-caramel body bar",
   "type": "body_leave",
   "use": "store",
@@ -37741,11 +37861,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush"
  },
  {
   "id": "coconut-drench-massage-bar-like-lush",
-  "name": "Coconut drench massage bar (like Lush)",
+  "name": "Coconut drench massage bar",
   "claim": "Rich vanilla-coconut bar for very dry skin",
   "type": "body_leave",
   "use": "store",
@@ -37781,11 +37902,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush"
  },
  {
   "id": "cardamom-orange-massage-bar-like-lush-hayl",
-  "name": "Cardamom orange massage bar (like Lush Hayl)",
+  "name": "Cardamom orange massage bar",
   "claim": "Bright, spiced citrus bar",
   "type": "body_leave",
   "use": "store",
@@ -37826,11 +37948,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush Hayl"
  },
  {
   "id": "rose-jasmine-shimmer-massage-bar-like-lush-true-romance-ro-s",
-  "name": "Rose jasmine shimmer massage bar (like Lush True Romance / Ro's Argan)",
+  "name": "Rose jasmine shimmer massage bar",
   "claim": "Rose-scented bar that doubles as a solid perfume",
   "type": "body_leave",
   "use": "store",
@@ -37876,11 +37999,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush True Romance / Ro's Argan"
  },
  {
   "id": "lavender-chamomile-sleep-bar-like-lush-deep-sleep-no-magnesi",
-  "name": "Lavender chamomile sleep bar (like Lush Deep Sleep, no magnesium)",
+  "name": "Lavender chamomile sleep bar (no magnesium)",
   "claim": "Calming bedtime body bar",
   "type": "body_leave",
   "use": "store",
@@ -37921,11 +38045,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush Deep Sleep"
  },
  {
   "id": "each-peach-citrus-massage-bar-like-lush-sun-safe",
-  "name": "Each Peach citrus massage bar (like Lush, sun-safe)",
+  "name": "Peach citrus massage bar (sun-safe)",
   "claim": "Fruity grapefruit-orange body bar",
   "type": "body_leave",
   "use": "store",
@@ -37966,11 +38091,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush Each Peach"
  },
  {
   "id": "cooling-after-workout-massage-bar-like-lush-after",
-  "name": "Cooling after-workout massage bar (like Lush After)",
+  "name": "Cooling after-workout massage bar",
   "claim": "Minty, cooling bar for sore muscles",
   "type": "body_leave",
   "use": "store",
@@ -38016,11 +38142,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush After"
  },
  {
   "id": "neroli-lavender-massage-bar-like-lush-therapy",
-  "name": "Neroli lavender massage bar (like Lush Therapy)",
+  "name": "Neroli lavender massage bar",
   "claim": "Light floral bar to wind down",
   "type": "body_leave",
   "use": "store",
@@ -38061,11 +38188,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush Therapy"
  },
  {
   "id": "unscented-bump-balm-bar-like-lush-the-bump-pregnancy-friendl",
-  "name": "Unscented bump balm bar (like Lush The Bump, pregnancy-friendly)",
+  "name": "Unscented bump balm bar (pregnancy-friendly)",
   "claim": "Rich, fragrance-free balm for a growing belly",
   "type": "body_leave",
   "use": "store",
@@ -38096,7 +38224,8 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Lush The Bump"
  },
  {
   "id": "almond-shower-oil-as-posted-castile",
@@ -38165,7 +38294,7 @@
  },
  {
   "id": "body-oil-like-l-occitane-almond-supple-skin-oil",
-  "name": "Body oil like L'Occitane Almond Supple Skin Oil",
+  "name": "Almond body oil",
   "claim": "Glowy, softening body oil",
   "type": "body_leave",
   "use": "store",
@@ -38201,7 +38330,8 @@
     6,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "L'Occitane Almond Supple Skin Oil"
  },
  {
   "id": "champagne-rose-bath-oil-dispersing",
@@ -38235,7 +38365,7 @@
  },
  {
   "id": "cold-cream-cleanser-like-queen-helene-gentler",
-  "name": "Cold cream cleanser (like Queen Helene, gentler)",
+  "name": "Cold cream cleanser (gentler)",
   "claim": "Classic melt-off makeup remover",
   "type": "face_rinse",
   "use": "store",
@@ -38266,7 +38396,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Queen Helene"
  },
  {
   "id": "charcoal-mascara-as-posted",
@@ -38725,7 +38856,7 @@
  },
  {
   "id": "homemade-vaseline-alternative-as-posted",
-  "name": "Homemade Vaseline alternative (as posted)",
+  "name": "Homemade petroleum jelly alternative (as posted)",
   "claim": "Petroleum-free healing balm",
   "type": "body_leave",
   "use": "store",
@@ -38745,7 +38876,7 @@
  },
  {
   "id": "caffeine-scalp-tonic-like-the-inkey-list-or-kundal",
-  "name": "Caffeine scalp tonic (like The Inkey List or Kundal)",
+  "name": "Aloe caffeine scalp tonic",
   "claim": "Lightweight scalp serum for thinning hair",
   "type": "hair_leave",
   "use": "store",
@@ -38781,7 +38912,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "The Inkey List or Kundal"
  },
  {
   "id": "niacinamide-brightening-body-gel-leave-on",
@@ -38830,7 +38962,7 @@
  },
  {
   "id": "protein-hair-mask-for-damaged-hair-like-elizavecca-cer-100",
-  "name": "Protein hair mask for damaged hair (like Elizavecca CER-100)",
+  "name": "Protein hair mask for damaged hair",
   "claim": "Fills in damaged, porous hair for strength and shine",
   "type": "hair_rinse",
   "use": "store",
@@ -38871,11 +39003,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Elizavecca CER-100"
  },
  {
   "id": "korean-herbal-scalp-shampoo-bar-like-saebom",
-  "name": "Korean herbal scalp shampoo bar (like Saebom)",
+  "name": "Korean herbal scalp shampoo bar",
   "claim": "Green herbal bar for a clean, balanced scalp",
   "type": "hair_rinse",
   "use": "store",
@@ -38946,11 +39079,12 @@
     20,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Saebom"
  },
  {
   "id": "saebom-scalp-bar-full-herb-list-closest-match",
-  "name": "Saebom scalp bar, full herb list (closest match)",
+  "name": "Korean herbal scalp bar, full herb list (closest match)",
   "claim": "All 12 listed botanicals with olive, coconut, shea and tea tree",
   "type": "hair_rinse",
   "use": "store",
@@ -39056,11 +39190,12 @@
     24,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Saebom"
  },
  {
   "id": "easy-herbal-shampoo-bar-melt-and-pour-saebom-style",
-  "name": "Easy herbal shampoo bar (melt and pour, Saebom-style)",
+  "name": "Easy herbal shampoo bar (melt and pour)",
   "claim": "Same idea, no special cleansers to buy",
   "type": "hair_rinse",
   "use": "store",
@@ -39101,11 +39236,12 @@
     20,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Saebom"
  },
  {
   "id": "cashmere-mist-style-perfume-oil-donna-karan-dupe",
-  "name": "Cashmere Mist-style perfume oil (Donna Karan dupe)",
+  "name": "Soft cashmere musk perfume oil",
   "claim": "Soft, clean skin scent: lily, jasmine, sandalwood and musk",
   "type": "perfume",
   "use": "store",
@@ -39146,11 +39282,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Donna Karan Cashmere Mist"
  },
  {
   "id": "vanilla-cashmere-perfume-oil-like-victoria-s-secret-bare-van",
-  "name": "Vanilla cashmere perfume oil (like Victoria's Secret Bare Vanilla Cashmere)",
+  "name": "Vanilla musk perfume oil",
   "claim": "Creamy vanilla wrapped in soft musk",
   "type": "perfume",
   "use": "store",
@@ -39181,11 +39318,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Victoria's Secret Bare Vanilla Cashmere"
  },
  {
   "id": "berry-meringue-cashmere-perfume-oil-like-victoria-s-secret-p",
-  "name": "Berry meringue cashmere perfume oil (like Victoria's Secret Pure Seduction Cashmere)",
+  "name": "Berry meringue musk perfume oil",
   "claim": "Juicy red berries over whipped, creamy sweetness",
   "type": "perfume",
   "use": "store",
@@ -39216,11 +39354,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Victoria's Secret Pure Seduction Cashmere"
  },
  {
   "id": "spun-sugar-petals-cashmere-perfume-oil-like-victoria-s-secre",
-  "name": "Spun sugar petals cashmere perfume oil (like Victoria's Secret Velvet Petals Cashmere)",
+  "name": "Spun sugar petals musk perfume oil",
   "claim": "Soft petals, toasted spun sugar and blonde woods",
   "type": "perfume",
   "use": "store",
@@ -39261,11 +39400,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Victoria's Secret Velvet Petals Cashmere"
  },
  {
   "id": "nectarine-marshmallow-cashmere-perfume-oil-like-victoria-s-s",
-  "name": "Nectarine marshmallow cashmere perfume oil (like Victoria's Secret Love Spell Cashmere)",
+  "name": "Nectarine marshmallow musk perfume oil",
   "claim": "Ripe nectarine and peach over fluffy marshmallow and amber",
   "type": "perfume",
   "use": "store",
@@ -39296,11 +39436,12 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Victoria's Secret Love Spell Cashmere"
  },
  {
   "id": "cashmere-style-body-mist-any-scent-in-the-collection",
-  "name": "Cashmere-style body mist (any scent in the collection)",
+  "name": "Soft musk body mist (any of the scents above)",
   "claim": "A light, cosy mist like the Victoria's Secret Cashmere mists",
   "type": "body_leave",
   "use": "store",
@@ -39341,11 +39482,12 @@
     1,
     "ml"
    ]
-  ]
+  ],
+  "inspired": "the Victoria's Secret Cashmere collection"
  },
  {
   "id": "vs-style-body-mist-alcohol-base-clear-store-like",
-  "name": "VS-style body mist, alcohol base (clear, store-like)",
+  "name": "Clear body mist, alcohol base (store-like)",
   "claim": "A crisp, clear mist like the Victoria's Secret bottles",
   "type": "perfume",
   "use": "store",
@@ -39361,11 +39503,12 @@
     4,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Victoria's Secret body mists"
  },
  {
   "id": "cashmere-style-eau-de-parfum-15-longer-lasting",
-  "name": "Cashmere-style eau de parfum (15%, longer lasting)",
+  "name": "Soft musk eau de parfum (15%, longer lasting)",
   "claim": "A stronger spray perfume, not a mist",
   "type": "perfume",
   "use": "store",
@@ -39386,7 +39529,8 @@
     5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "the Victoria's Secret Cashmere collection"
  },
  {
   "id": "coat-pocket-tallow-balm-as-posted",
@@ -39545,7 +39689,7 @@
  },
  {
   "id": "spicy-rose-perfume-oil-like-mallee-rose-burn",
-  "name": "Spicy rose perfume oil (like Mallee Rose Burn)",
+  "name": "Spicy rose perfume oil",
   "claim": "A grown-up, spicy, grounded rose",
   "type": "perfume",
   "use": "store",
@@ -39586,11 +39730,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Mallee Rose Burn"
  },
  {
   "id": "hyaluronic-hydrating-face-mist-like-rellet",
-  "name": "Hyaluronic hydrating face mist (like Rellet)",
+  "name": "Hyaluronic hydrating face mist",
   "claim": "Fine mist that hydrates in seconds",
   "type": "face_leave",
   "use": "store",
@@ -39626,7 +39771,8 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Rellet"
  },
  {
   "id": "korean-rice-cream-hair-mask-as-posted-blended-rice",
@@ -39700,7 +39846,7 @@
  },
  {
   "id": "bergamot-sandalwood-perfume-oil-like-the-7-virtues",
-  "name": "Bergamot sandalwood perfume oil (like The 7 Virtues)",
+  "name": "Bergamot sandalwood perfume oil",
   "claim": "Sparkling bergamot on soft sandalwood",
   "type": "perfume",
   "use": "store",
@@ -39731,11 +39877,12 @@
     1,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "The 7 Virtues"
  },
  {
   "id": "jasmine-white-tea-scented-shampoo-like-kono",
-  "name": "Jasmine white tea scented shampoo (like KONO)",
+  "name": "Jasmine white tea scented shampoo",
   "claim": "Shampoo that leaves hair smelling like perfume",
   "type": "hair_rinse",
   "use": "store",
@@ -39751,11 +39898,12 @@
     1,
     "g"
    ]
-  ]
+  ],
+  "inspired": "KONO"
  },
  {
   "id": "sleep-well-bath-soak-like-sahajan",
-  "name": "Sleep well bath soak (like Sahajan)",
+  "name": "Sleep well bath soak",
   "claim": "Softening, calming evening soak",
   "type": "soak",
   "use": "store",
@@ -39836,11 +39984,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Sahajan"
  },
  {
   "id": "japanese-hot-spring-bath-powder-like-matsukiyo-bathclin",
-  "name": "Japanese hot-spring bath powder (like Matsukiyo / Bathclin)",
+  "name": "Japanese hot-spring bath powder",
   "claim": "Onsen-style bath that feels warmer for longer",
   "type": "soak",
   "use": "store",
@@ -39876,7 +40025,8 @@
     3,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Matsukiyo and Bathclin"
  },
  {
   "id": "japanese-herbal-bath-sachet-yakuto-like-matsukiyo-lab",
@@ -39915,7 +40065,7 @@
  },
  {
   "id": "herbal-tea-bath-bags-like-inoki",
-  "name": "Herbal tea bath bags (like Inoki)",
+  "name": "Herbal tea bath bags",
   "claim": "Soothing botanical tea bath",
   "type": "soak",
   "use": "store",
@@ -39946,11 +40096,12 @@
     2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Inoki"
  },
  {
   "id": "kneipp-style-aroma-bath-oil-dispersing",
-  "name": "Kneipp-style aroma bath oil (dispersing)",
+  "name": "Aroma bath oil (dispersing)",
   "claim": "Herbal bath oil that blends into the water",
   "type": "soak",
   "use": "store",
@@ -39986,11 +40137,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Kneipp"
  },
  {
   "id": "kneipp-style-bath-crystals",
-  "name": "Kneipp-style bath crystals",
+  "name": "Herbal bath crystals",
   "claim": "Scented salt crystals for a herbal bath",
   "type": "soak",
   "use": "store",
@@ -40016,11 +40168,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kneipp"
  },
  {
   "id": "classic-eau-de-cologne-like-4711",
-  "name": "Classic eau de cologne (like 4711)",
+  "name": "Classic eau de cologne",
   "claim": "Fresh citrus-herbal splash from 1790s Cologne",
   "type": "perfume",
   "use": "store",
@@ -40066,11 +40219,12 @@
     4,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "4711"
  },
  {
   "id": "zinc-barrier-cream-for-chafing-like-penaten-adult-use",
-  "name": "Zinc barrier cream for chafing (like Penaten, adult use)",
+  "name": "Zinc barrier cream for chafing (adult use)",
   "claim": "Thick protective cream for chafed, irritated skin",
   "type": "body_leave",
   "use": "store",
@@ -40101,11 +40255,12 @@
     10,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Penaten"
  },
  {
   "id": "sweet-winter-bath-crystals-like-kneipp-su-e-winterzeit",
-  "name": "Sweet winter bath crystals (like Kneipp Süße Winterzeit)",
+  "name": "Sweet winter bath crystals",
   "claim": "Cosy vanilla-tonka bath for cold days",
   "type": "soak",
   "use": "store",
@@ -40136,11 +40291,12 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Kneipp Süße Winterzeit"
  },
  {
   "id": "tamarind-coffee-glow-scrub-like-pangju-formula-01",
-  "name": "Tamarind coffee glow scrub (like Pangju Formula 01)",
+  "name": "Tamarind coffee glow scrub",
   "claim": "Thai-style polishing scrub for rough, dull skin",
   "type": "body_rinse",
   "use": "store",
@@ -40176,11 +40332,12 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Pangju Formula 01"
  },
  {
   "id": "chocolate-glaze-oil-scrub-like-pangju-formula-02",
-  "name": "Chocolate glaze oil scrub (like Pangju Formula 02)",
+  "name": "Chocolate glaze oil scrub",
   "claim": "Moisturising cocoa scrub for dry skin",
   "type": "body_rinse",
   "use": "store",
@@ -40216,7 +40373,8 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Pangju Formula 02"
  },
  {
   "id": "strawberry-skin-night-glycolic-urea-the-safe-way",
@@ -40335,7 +40493,7 @@
  },
  {
   "id": "lavender-honey-soap-like-earth-to-body-melt-and-pour",
-  "name": "Lavender honey soap (like Earth to Body, melt and pour)",
+  "name": "Lavender honey soap (melt and pour)",
   "claim": "Honeycomb soap with clay, cacao and shimmer",
   "type": "body_rinse",
   "use": "store",
@@ -40376,11 +40534,12 @@
     0.2,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Earth to Body"
  },
  {
   "id": "clean-white-musk-body-mist-like-ard-al-zaafaran-pure-musk",
-  "name": "Clean white musk body mist (like Ard Al Zaafaran Pure Musk)",
+  "name": "Clean white musk body mist",
   "claim": "Fresh-from-the-shower powdery musk",
   "type": "perfume",
   "use": "store",
@@ -40406,7 +40565,8 @@
     2,
     "drops"
    ]
-  ]
+  ],
+  "inspired": "Ard Al Zaafaran Pure Musk"
  },
  {
   "id": "hair-perfume-mist-alcohol-light",
@@ -40475,7 +40635,7 @@
  },
  {
   "id": "vietnamese-herbal-body-powder-mask-like-xume-bo-t-tha-o-mo-c",
-  "name": "Vietnamese herbal body powder mask (like XUME bột thảo mộc)",
+  "name": "Vietnamese herbal body powder mask (bột thảo mộc)",
   "claim": "Weekly polishing body mask for smooth, glowing skin",
   "type": "body_rinse",
   "use": "store",
@@ -40511,7 +40671,8 @@
     4,
     "g"
    ]
-  ]
+  ],
+  "inspired": "XUME"
  },
  {
   "id": "honey-hair-mask-for-dry-brittle-ends",
@@ -40810,7 +40971,7 @@
  },
  {
   "id": "coffee-licorice-sugar-scrub-arabic-pangju-style-as-posted",
-  "name": "Coffee licorice sugar scrub (Arabic Pangju-style, as posted)",
+  "name": "Coffee licorice sugar scrub (as posted)",
   "claim": "Coffee-chocolate polish with a creamy foam",
   "type": "body_rinse",
   "use": "now",
@@ -40851,7 +41012,8 @@
     1,
     "tbsp"
    ]
-  ]
+  ],
+  "inspired": "an Arabic Pangju-style scrub"
  },
  {
   "id": "vanilla-brown-sugar-body-scrub-the-skincare-queen-measured",
@@ -41025,7 +41187,7 @@
  },
  {
   "id": "rose-petal-mandelic-body-polish-like-olawunmi-allen",
-  "name": "Rosé petal mandelic body polish (like Olawunmi Allen)",
+  "name": "Rosé petal mandelic body polish",
   "claim": "Silky, polished skin with a gentle acid",
   "type": "body_rinse",
   "use": "store",
@@ -41076,7 +41238,8 @@
     0.5,
     "g"
    ]
-  ]
+  ],
+  "inspired": "Olawunmi Allen"
  },
  {
   "id": "jamaican-hot-oil-treatment-castor-aloe-honey",
@@ -41310,7 +41473,7 @@
  },
  {
   "id": "blue-nila-mask-like-inayamorocco",
-  "name": "Blue nila mask (like InayaMorocco)",
+  "name": "Blue nila mask",
   "claim": "Brighter, smoother skin in a weekly mask",
   "type": "face_rinse",
   "use": "now",
@@ -41331,7 +41494,8 @@
     2,
     "tsp"
    ]
-  ]
+  ],
+  "inspired": "InayaMorocco"
  },
  {
   "id": "three-ingredient-sugar-wax",
@@ -41441,7 +41605,7 @@
  },
  {
   "id": "sidr-gum-arabic-calming-mask-like-inayamorocco",
-  "name": "Sidr and gum arabic calming mask (like InayaMorocco)",
+  "name": "Sidr and gum arabic calming mask",
   "claim": "Antioxidants for tired-looking skin and a soothing film",
   "type": "face_rinse",
   "use": "now",
@@ -41471,7 +41635,8 @@
   "source": {
    "creator": "InayaMorocco",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "InayaMorocco"
  },
  {
   "id": "gulf-brightening-soap-paste-as-posted",
@@ -41724,7 +41889,7 @@
  },
  {
   "id": "glysolid-aloe-jelly-shea-whip-as-posted",
-  "name": "Glysolid, aloe jelly and shea whip (Vlogger lama), as posted",
+  "name": "Glycerin cream, aloe jelly and shea whip (Vlogger lama), as posted",
   "claim": "Deep moisture for very dry skin",
   "type": "body_leave",
   "use": "store",
@@ -41759,7 +41924,8 @@
   "source": {
    "creator": "Vlogger lama",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Glysolid and Herbolene"
  },
  {
   "id": "shea-and-jelly-body-butter-no-water",
@@ -41797,7 +41963,7 @@
  },
  {
   "id": "glycerin-hand-and-body-cream-glysolid-style",
-  "name": "Glycerin hand and body cream (Glysolid-style)",
+  "name": "Glycerin hand and body cream",
   "claim": "Rich, non-greasy glycerin cream for hands, elbows and heels",
   "type": "body_leave",
   "use": "store",
@@ -41842,11 +42008,12 @@
   "source": {
    "creator": "Dupe of Glysolid Glycerin Cream",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Glysolid"
  },
  {
   "id": "aloe-petroleum-jelly-herbolene-style",
-  "name": "Aloe petroleum jelly (Herbolene-style)",
+  "name": "Aloe petroleum jelly",
   "claim": "Seals in moisture on dry skin, lips and heels",
   "type": "body_leave",
   "use": "store",
@@ -41871,11 +42038,12 @@
   "source": {
    "creator": "Dupe of Dabur Herbolene Aloe Jelly",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Herbolene"
  },
  {
   "id": "tomato-berry-aha-body-polish-alina-style",
-  "name": "Berry AHA body polish (Alina Tomato Berry scrub-style)",
+  "name": "Berry AHA body polish",
   "claim": "Smooths rough, bumpy skin",
   "type": "body_rinse",
   "use": "store",
@@ -41925,11 +42093,12 @@
   "source": {
    "creator": "Dupe of Alina Tomato Berry AHA Scrub",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Alina Tomato Berry scrub"
  },
  {
   "id": "creamy-scrub-cream-kream-kap-style",
-  "name": "Creamy face and body scrub cream (Kream Kap-style)",
+  "name": "Creamy face and body scrub cream",
   "claim": "A soft exfoliating cream that rinses clean",
   "type": "body_rinse",
   "use": "store",
@@ -41974,11 +42143,12 @@
   "source": {
    "creator": "Dupe of Kream Kap scrub cream",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Kream Kap"
  },
  {
   "id": "rose-facial-bar-sinkrose-style",
-  "name": "Rose facial cleansing bar (Sinkrose-style)",
+  "name": "Rose facial cleansing bar",
   "claim": "A gentle, rose-scented face bar",
   "type": "face_rinse",
   "use": "store",
@@ -42013,11 +42183,12 @@
   "source": {
    "creator": "Dupe of SEÑO Sinkrose Facial Cleansing Soap",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Sinkrose"
  },
  {
   "id": "seven-herb-shampoo-bar-fuwari-style",
-  "name": "Seven-herb shampoo bar (Fuwari-style)",
+  "name": "Seven-herb shampoo bar",
   "claim": "Cleans the scalp with the same herbs",
   "type": "hair_rinse",
   "use": "store",
@@ -42062,11 +42233,12 @@
   "source": {
    "creator": "Dupe of Fuwari 7 Herbs Shampoo",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Fuwari"
  },
  {
   "id": "green-tea-herbal-scrub-mask-madame-aura-style",
-  "name": "Green tea herbal scrub mask (Madame Aura-style)",
+  "name": "Green tea herbal scrub mask",
   "claim": "A gentle polish and calm, fresh-looking skin",
   "type": "face_rinse",
   "use": "now",
@@ -42101,11 +42273,12 @@
   "source": {
    "creator": "Dupe of Madame Aura green tea scrub",
    "platform": "Thai TikTok review"
-  }
+  },
+  "inspired": "Madame Aura"
  },
  {
   "id": "thai-herbal-mask-powder-kanchana-style",
-  "name": "Thai herbal mask powder (Kanchana-style)",
+  "name": "Thai herbal mask powder",
   "claim": "A ready-to-mix herbal clay mask",
   "type": "face_rinse",
   "use": "store",
@@ -42140,11 +42313,12 @@
   "source": {
    "creator": "Dupe of Kanchana herbal mask",
    "platform": "Thai TikTok review"
-  }
+  },
+  "inspired": "Kanchana"
  },
  {
   "id": "perfumed-body-oil-janua-style",
-  "name": "Perfumed body oil (Janua Forget Me Not-style)",
+  "name": "Perfumed body oil",
   "claim": "Soft, glowing skin that smells like your perfume",
   "type": "body_leave",
   "use": "store",
@@ -42174,11 +42348,12 @@
   "source": {
    "creator": "Dupe of Janua perfumed body oil",
    "platform": "Thai TikTok review"
-  }
+  },
+  "inspired": "Janua Forget Me Not"
  },
  {
   "id": "serum-body-milk-nivea-style",
-  "name": "Serum body milk (NIVEA Serum Burst Milk-style)",
+  "name": "Serum body milk",
   "claim": "A light, fast-absorbing body lotion for dry skin",
   "type": "body_leave",
   "use": "store",
@@ -42228,11 +42403,12 @@
   "source": {
    "creator": "Dupe of NIVEA Serum Burst Milk",
    "platform": "Thai TikTok review"
-  }
+  },
+  "inspired": "NIVEA Serum Burst Milk"
  },
  {
   "id": "moroccan-tbrima-rubbing-blend-skalli-style",
-  "name": "Moroccan tbrima rubbing blend (Skalli Essentials-style)",
+  "name": "Moroccan tbrima rubbing blend",
   "claim": "A softening herbal polish for the hammam shower",
   "type": "body_rinse",
   "use": "store",
@@ -42262,7 +42438,8 @@
   "source": {
    "creator": "Skalli Essentials",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Skalli Essentials"
  },
  {
   "id": "nila-ghassoul-mask-skalli",
@@ -42363,7 +42540,7 @@
  },
  {
   "id": "in-shower-body-salve-hanni-style",
-  "name": "In-shower body salve (hanni Splash Salve-style)",
+  "name": "In-shower body salve",
   "claim": "Soft, moisturized skin straight out of the shower",
   "type": "body_leave",
   "use": "store",
@@ -42403,11 +42580,12 @@
   "source": {
    "creator": "Dupe of hanni Splash Salve",
    "platform": "Store product"
-  }
+  },
+  "inspired": "hanni Splash Salve"
  },
  {
   "id": "taif-rose-sugar-scrub-miss-white-style",
-  "name": "Taif rose sugar scrub (Miss White-style)",
+  "name": "Taif rose sugar scrub",
   "claim": "A rose-scented polish for soft, glowing skin",
   "type": "body_rinse",
   "use": "store",
@@ -42457,11 +42635,12 @@
   "source": {
    "creator": "Dupe of Miss White Taif Rose Scrub",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Miss White"
  },
  {
   "id": "moroccan-nila-sugar-scrub-miss-white-style",
-  "name": "Moroccan nila sugar scrub (Miss White-style)",
+  "name": "Moroccan nila sugar scrub",
   "claim": "A blue hammam polish",
   "type": "body_rinse",
   "use": "store",
@@ -42501,11 +42680,12 @@
   "source": {
    "creator": "Dupe of Miss White Moroccan Nila Scrub",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Miss White"
  },
  {
   "id": "oat-milk-body-lotion-hatomugi-style",
-  "name": "Light body milk (Hatomugi-style)",
+  "name": "Light body milk",
   "claim": "A watery, fast-absorbing body milk for daily moisture",
   "type": "body_leave",
   "use": "store",
@@ -42555,7 +42735,8 @@
   "source": {
    "creator": "Dupe of Hatomugi Body Milk",
    "platform": "Store product"
-  }
+  },
+  "inspired": "Hatomugi"
  },
  {
   "id": "moroccan-tbrima-sugar-scrub-as-posted",
@@ -42697,7 +42878,7 @@
  },
  {
   "id": "coffee-cocoa-body-scrub-miss-white-style",
-  "name": "Coffee and cocoa body scrub (Miss White-style)",
+  "name": "Coffee and cocoa body scrub",
   "claim": "A rich, chocolatey body polish",
   "type": "body_rinse",
   "use": "store",
@@ -42742,7 +42923,8 @@
   "source": {
    "creator": "Dupe of Miss White Coffee and Cocoa Scrub",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Miss White"
  },
  {
   "id": "fresh-rosemary-hair-oil-bielunele-as-posted",
@@ -43015,7 +43197,7 @@
  },
  {
   "id": "clean-soap-scent-body-mist-dove-style",
-  "name": "Clean soap scent body mist (Dove bar-style)",
+  "name": "Clean soap scent body mist",
   "claim": "Smell like a fresh, clean bar of soap",
   "type": "body_leave",
   "use": "store",
@@ -43055,7 +43237,8 @@
   "source": {
    "creator": "Inspired by the Dove Original Fragrance tease",
    "platform": "TikTok"
-  }
+  },
+  "inspired": "Dove Original"
  },
  {
   "id": "homemade-dalkah-safi-as-posted",
@@ -43303,7 +43486,7 @@
  },
  {
   "id": "seven-oil-hair-growth-oil-mamba-style",
-  "name": "Seven-oil hair oil (Mamba Hair Oil-style)",
+  "name": "Seven-oil hair oil",
   "claim": "A nourishing pre-wash scalp and hair oil",
   "type": "hair_leave",
   "use": "store",
@@ -43353,7 +43536,8 @@
   "source": {
    "creator": "Inspired by Mamba Oils hair oil (listed oils only)",
    "platform": "mambaoils.com"
-  }
+  },
+  "inspired": "Mamba Hair Oil"
  },
  {
   "id": "golden-turmeric-rice-water-cream-lobelia",
@@ -43436,7 +43620,7 @@
  },
  {
   "id": "ginger-mugwort-warming-balm",
-  "name": "Ginger and mugwort warming balm (Vietnamese cao gừng ngải cứu-style)",
+  "name": "Ginger and mugwort warming balm (Vietnamese cao gừng ngải cứu)",
   "claim": "A warming massage balm for sore muscles and cold days",
   "type": "body_leave",
   "use": "store",
