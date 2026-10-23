@@ -358,5 +358,21 @@
     "how": "Wash in hot soapy water, rinse, and dry completely; for water-based DIYs, also wipe the inside with 70% alcohol and let it evaporate. Never top up an old batch; finish it, clean the jar, then refill. Label each jar with the product and date.",
     "when": "Every refill.",
     "season": "Any."
+  },
+  {
+    "t": "Hydrolyzed vs intact protein",
+    "what": "Hydrolyzed proteins are broken into small fragments so they dissolve and cling to hair or skin; intact proteins (like egg or whey powder) are whole and mostly sit on top.",
+    "skin": "Both form a light film that makes skin feel smoother. Neither rebuilds collagen deep in the skin.",
+    "how": "For DIY hair products, buy cosmetic-grade hydrolyzed protein and use 0.5 to 2% in a conditioner or mask. Food proteins like raw egg or whey powder spoil quickly and don't behave the same way.",
+    "when": "Damaged, bleached or breakage-prone hair.",
+    "season": "Proteins don't have a season; judge by how your hair feels."
+  },
+  {
+    "t": "Protein overload",
+    "what": "Hair that feels stiff, rough or snaps easily after too many protein products.",
+    "skin": "Nothing for skin.",
+    "how": "Try one protein product at a time and watch softness, detangling and breakage over a few washes. If hair turns stiff, pause it and use a moisturising conditioner. There's no fixed rule that high-porosity hair needs weekly protein or that low-porosity hair must avoid it.",
+    "when": "When adding a protein treatment to your routine.",
+    "season": "Any."
   }
 ]

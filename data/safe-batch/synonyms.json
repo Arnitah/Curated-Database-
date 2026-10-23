@@ -1,5 +1,38 @@
 [
   [
+    "hydrolyzed keratin|keratin",
+    "keratin"
+  ],
+  [
+    "wheat protein|wheat gluten",
+    "wheatprotein"
+  ],
+  [
+    "oat protein",
+    "oatprotein"
+  ],
+  [
+    "soy protein|soybean protein|soy peptide",
+    "soyprotein"
+  ],
+  [
+    "hydrolyzed silk|silk amino",
+    "silkprotein"
+  ],
+  [
+    "whey|milk protein|casein|lactalbumin",
+    "milkprotein"
+  ],
+  [
+    "insect protein|black soldier fly|hermetia|mealworm|cricket protein|maggot",
+    "insectprotein"
+  ],
+  [
+    "ravintsara",
+    "ravintsara",
+    true
+  ],
+  [
     "horseradish|armoracia",
     "horseradish"
   ],
@@ -29,7 +62,7 @@
   ],
   [
     "silk protein|sericin|fibroin|bombyx",
-    "silkpowder"
+    "silkprotein"
   ],
   [
     "brown rice|black rice",

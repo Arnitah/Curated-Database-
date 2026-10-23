@@ -6142,5 +6142,86 @@
     "flag": "Horseradish can burn skin",
     "good": "Old remedy rubbed on the scalp or added to \"detox\" masks.",
     "care": "Grating it releases the same burning compound as mustard and wasabi, which can blister skin and sting eyes. No proven benefit for skin or hair."
+  },
+  {
+    "id": "keratin",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed keratin",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Small keratin fragments (usually from wool) that coat damaged hair, so it combs easier and breaks less. 0.5 to 2% in conditioners and masks.",
+    "care": "It sits on the surface; it can't rebuild hair permanently. Not the same as a salon \"keratin treatment\", which is a chemical straightening process. Too much makes hair stiff."
+  },
+  {
+    "id": "wheatprotein",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed wheat protein",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "A common conditioning protein that adds body and smoothness to hair. 0.5 to 2%.",
+    "care": "Skip with a wheat allergy, especially on broken skin. Balance with moisture so hair doesn't feel stiff."
+  },
+  {
+    "id": "oatprotein",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed oat protein",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "A gentle conditioning protein for hair and skin. 0.5 to 2%.",
+    "care": "Not the same as colloidal oatmeal, which soothes skin; oat protein mainly conditions."
+  },
+  {
+    "id": "soyprotein",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed soy protein",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Conditioning protein for hair and skin. 0.5 to 2%.",
+    "care": "Skip with a soy allergy."
+  },
+  {
+    "id": "silkprotein",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed silk protein (sericin, fibroin)",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Silk protein fragments that leave a light, silky film on hair and skin. 0.5 to 2%.",
+    "care": "Animal-derived. Claims about sun protection or repair come from lab studies only. Different from sericite, a shiny mineral powder."
+  },
+  {
+    "id": "milkprotein",
+    "grp": "Preserving and mixing",
+    "name": "Hydrolyzed milk or whey protein",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Cosmetic-grade milk proteins condition hair and skin. 0.5 to 2%.",
+    "care": "Food whey powder isn't the same thing: it's not broken down, clumps, and spoils fast in water. Skip with a milk allergy."
+  },
+  {
+    "id": "insectprotein",
+    "grp": "Preserving and mixing",
+    "name": "Insect protein (black soldier fly, mealworm, cricket)",
+    "ph": "active",
+    "tsp": 3,
+    "lvl": "care",
+    "flag": "Research-stage; not for homemade use",
+    "good": "An emerging research area for sustainable cosmetic proteins.",
+    "care": "Not available as a tested cosmetic ingredient for home use. Raw or ground larvae can carry microbes and allergens, including cross-reactions with shellfish allergy. Don't make it at home."
+  },
+  {
+    "id": "ravintsara",
+    "grp": "Essential oils",
+    "name": "Ravintsara essential oil",
+    "ph": "eo",
+    "d": 0.9,
+    "lvl": "care",
+    "good": "Madagascan oil from camphor-tree leaves with a fresh, eucalyptus-like scent; used in Malagasy hair and body care.",
+    "care": "High in 1,8-cineole: keep it away from the face of young children, keep it under 1%, and don't confuse it with ravensara, a different tree."
   }
 ]

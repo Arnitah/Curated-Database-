@@ -46723,5 +46723,110 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "beeswax-braid-and-knot-pomade",
+    "name": "Beeswax braid and knot pomade",
+    "claim": "Holds braids, knots and edges, inspired by Malagasy wax styling",
+    "type": "hair_leave",
+    "use": "store",
+    "note": "Melt the beeswax with the shea, castor and moringa oil on low heat, stir in vitamin E, and pour into a tin. Warm a little between your fingers and smooth over braids, knots or edges. Plant butter replaces the animal fat in old recipes, so it won't go rancid. Beeswax builds up: wash out with a clarifying shampoo every week or two.",
+    "rows": [
+      [
+        "beeswax",
+        20,
+        "g"
+      ],
+      [
+        "shea",
+        35,
+        "g"
+      ],
+      [
+        "castor",
+        25,
+        "g"
+      ],
+      [
+        "moringa",
+        19,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ]
+  },
+  {
+    "id": "rice-silk-protein-hair-mask",
+    "name": "Rice and silk protein hair mask",
+    "claim": "Rinse-out protein mask for damaged or breakage-prone hair",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Heat the water with the BTMS and oils to 70°C, blend until creamy, cool below 40°C, then add the proteins, glycerin and preservative. Apply to clean, damp hair for 10 to 20 minutes, then rinse. Use every 1 to 2 weeks and watch for stiffness; if hair feels straw-like, follow with a moisturising conditioner and space it out.",
+    "rows": [
+      [
+        "water",
+        73,
+        "g"
+      ],
+      [
+        "btms",
+        6,
+        "g"
+      ],
+      [
+        "baobab",
+        4,
+        "g"
+      ],
+      [
+        "almond",
+        3,
+        "g"
+      ],
+      [
+        "castor",
+        2,
+        "g"
+      ],
+      [
+        "jojoba",
+        3,
+        "g"
+      ],
+      [
+        "riceprotein",
+        2,
+        "g"
+      ],
+      [
+        "silkprotein",
+        1,
+        "g"
+      ],
+      [
+        "keratin",
+        1,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Loharano by Curly Aho Vary @ Anana protein mask",
+    "source": {
+      "creator": "Store product",
+      "platform": "Malagasy brand"
+    }
   }
 ]

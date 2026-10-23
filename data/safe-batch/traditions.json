@@ -658,5 +658,17 @@
     "watch": "Cut peel releases oils that can sting sensitive skin. Keep whole fruit, not cut, if your skin reacts.",
     "modern": "Float whole fruit, or use a few drops of yuzu oil mixed into a spoon of carrier oil or milk first.",
     "q": "yuzu"
+  },
+  {
+    "id": "malagasy",
+    "name": "Malagasy hair oiling and wax styling",
+    "region": "Africa",
+    "place": "Madagascar (historical accounts of Antanosy and Bara hairstyles)",
+    "how": "Old accounts describe women oiling braided hair, and Bara stylists melting beeswax into fat to hold many small rounded knots. Today, Malagasy brands use local baobab, moringa, castor, ravintsara, guava leaf and centella in oils, masks and leave-ins.",
+    "ev": "f",
+    "does": "Oil reduces friction and adds shine; wax and fat hold a style and seal ends. Modern products add proteins and conditioners for damaged hair.",
+    "watch": "Heavy wax builds up and is hard to wash out; animal fat goes rancid. Ravintsara oil is strong, so keep it low and away from children's faces.",
+    "modern": "A beeswax and plant-butter pomade holds braids and knots, and washes out more easily with a clarifying shampoo.",
+    "q": "baobab"
   }
 ]
