@@ -5119,6 +5119,7 @@ let prefsRef=null, prefsReady=false;
 function sbPrefsSave(){ if(!prefsRef) return; try{ prefsRef.set({profile:PROFILE,goals:goalSet,onboard:"done",updated:Date.now()}).catch(()=>{}); }catch(e){} }
 function applyProfile(){
   try{localStorage.setItem("safebatch-profile",JSON.stringify(PROFILE))}catch(e){}
+  try{ if(typeof hRenderHero==="function") hRenderHero(); }catch(e){}
   sbPrefsSave();
   $("#profileSummary").textContent=profileSummary(); $("#pChanges").innerHTML=profileChanges(); try{ if(typeof renderGoals==="function") renderGoals(); }catch(e){}
   renderResults(); computeVRES(); renderViral(); renderStarters(); renderGuide(); renderSaved();
@@ -5978,7 +5979,7 @@ renderStrip();
         if(snap.exists&&snap.data()&&snap.data().profile){ const d=snap.data(), pp=d.profile;
           PROFILE={who:pp.who||"adult",skin:pp.skin||"normal",allergies:pp.allergies||[],fa:!!pp.fa};
           if(Array.isArray(d.goals)&&d.goals.length){ goalSet=d.goals.slice(); goalSel=goalSet[0]; }
-          try{ localStorage.setItem("safebatch-profile",JSON.stringify(PROFILE)); localStorage.setItem("safebatch-onboard","done"); localStorage.setItem("safebatch-goals",JSON.stringify(goalSet)); }catch(e){}
+          try{ localStorage.setItem("safebatch-profile",JSON.stringify(PROFILE)); localStorage.setItem("safebatch-onboard","done"); try{ if(typeof hRenderHero==="function") hRenderHero(); }catch(_){} localStorage.setItem("safebatch-goals",JSON.stringify(goalSet)); }catch(e){}
           got=true; $("#quiz").hidden=true; Q.who=PROFILE.who; Q.skin=PROFILE.skin;
           renderProfile(); applyProfile(); renderGoals();
         } else if(done()) sbPrefsSave();
@@ -7640,7 +7641,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 210 · 22 Oct 2026";
+const SB_VERSION="Version 211 · 22 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }

@@ -1,5 +1,43 @@
 [
  {
+  "id": "ginger-mugwort-balm-warms-the-womb",
+  "title": "Ginger and mugwort balm warms the womb, drives out cold and \"wind\", and ends period pain",
+  "topics": [
+   "traditions",
+   "general",
+   "pregnancy"
+  ],
+  "claims": [
+   {
+    "claim": "Warmth and massage ease period cramps",
+    "verdict": "true",
+    "truth": "Heat on the lower belly, warm baths and gentle circular massage are standard home advice for cramps. A warming balm adds a tingle; the heat and rubbing do most of the work.",
+    "grade": "B"
+   },
+   {
+    "claim": "It expels cold and wind from the womb",
+    "verdict": "unproven",
+    "truth": "\"Cold\" and \"wind\" are traditional concepts that can't be measured. Ginger's warmth on the skin is a nerve sensation, not heat reaching the uterus.",
+    "grade": "D"
+   },
+   {
+    "claim": "It's safe for every woman",
+    "verdict": "false",
+    "truth": "Mugwort is traditionally avoided in pregnancy, and the seller's own leaflet says not to use it while pregnant or on broken skin. Skip it with a ragweed allergy. Period pain that comes with fever, unusual discharge, or doesn't ease with heat and ibuprofen after 3 months needs a doctor.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MedlinePlus: painful menstrual periods",
+    "url": "https://medlineplus.gov/ency/article/003150.htm"
+   }
+  ],
+  "seen_in": "Thảo học Dưỡng sinh on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "egg-white-rice-paper-prevents-botox",
   "title": "An egg white and rice paper mask is like preventative Botox",
   "topics": [

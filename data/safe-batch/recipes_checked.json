@@ -43354,5 +43354,128 @@
    "creator": "Inspired by Mamba Oils hair oil (listed oils only)",
    "platform": "mambaoils.com"
   }
+ },
+ {
+  "id": "golden-turmeric-rice-water-cream-lobelia",
+  "name": "Golden turmeric rice water face and body cream (LoBelia)",
+  "claim": "Soft, nourished skin with a golden glow",
+  "type": "face_leave",
+  "use": "store",
+  "note": "Her full recipe (100 g). Heat the oil phase (olive or avocado oil, shea, mango, Olivem 1000, cetyl alcohol) and the water phase (rice water from 2 tbsp washed rice soaked in about 100 ml distilled water, allantoin, turmeric) to about 70°C, blend, then at cool-down add xanthan, vitamin E, the DHA BA preservative (15 drops, about 0.8 g; counted here as a broad-spectrum preservative) and the essential oils. A well-built, preserved cream. Notes: make the rice water fresh the same day and strain it well; 0.5 g turmeric gives colour but can tint towels; 4 drops of cold-pressed lemon is within safe limits, but steam-distilled lemon avoids any sun sensitivity on the face. Cetyl alcohol is counted as cetearyl alcohol.",
+  "rows": [
+   [
+    "olive",
+    16,
+    "g"
+   ],
+   [
+    "shea",
+    8,
+    "g"
+   ],
+   [
+    "mango",
+    5,
+    "g"
+   ],
+   [
+    "olivem",
+    6,
+    "g"
+   ],
+   [
+    "cetearyl",
+    5,
+    "g"
+   ],
+   [
+    "ricewater",
+    58,
+    "g"
+   ],
+   [
+    "allantoin",
+    0.5,
+    "g"
+   ],
+   [
+    "turmeric",
+    0.5,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.5,
+    "g"
+   ],
+   [
+    "vite",
+    0.1,
+    "g"
+   ],
+   [
+    "geogard",
+    0.8,
+    "g"
+   ],
+   [
+    "lemoneo",
+    4,
+    "drops"
+   ],
+   [
+    "vetivereo",
+    5,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "LoBelia (LoBelia-NaturalCare)",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "ginger-mugwort-warming-balm",
+  "name": "Ginger and mugwort warming balm (Vietnamese cao gừng ngải cứu-style)",
+  "claim": "A warming massage balm for sore muscles and cold days",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Infuse dried ginger and dried mugwort in the oil over very low heat (or a slow cooker) for 2 to 3 hours, strain well, melt in the beeswax, cool slightly, then add the ginger essential oil and pour into tins. Fully dried herbs only, so it keeps for a year. Rub into shoulders, back or lower belly and massage. Don't use on broken or irritated skin, the face, babies, or in pregnancy (mugwort); skip with a ragweed allergy. If you warm it with a hairdryer, as some sellers suggest, keep it moving so you don't burn the skin.",
+  "rows": [
+   [
+    "sunflower",
+    80,
+    "g"
+   ],
+   [
+    "gingerpowder",
+    8,
+    "g"
+   ],
+   [
+    "mugwort",
+    5,
+    "g"
+   ],
+   [
+    "beeswax",
+    15,
+    "g"
+   ],
+   [
+    "gingereo",
+    20,
+    "drops"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Inspired by Vietnamese ginger-mugwort balms (Thảo học Dưỡng sinh)",
+   "platform": "TikTok"
+  }
  }
 ]

@@ -6281,5 +6281,18 @@
  "seven-oil-hair-growth-oil-mamba-style": {
   "verdict": "ok",
   "flags": []
+ },
+ "golden-turmeric-rice-water-cream-lobelia": {
+  "verdict": "care",
+  "flags": [
+   "care: Rice water spoils fast",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "ginger-mugwort-warming-balm": {
+  "verdict": "care",
+  "flags": [
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
  }
 }
