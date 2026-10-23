@@ -6421,5 +6421,41 @@
     "seen_in": "US handmade soap shop",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "intimate-mist-with-fruit-hydrosols-kills-odour-bacteria",
+    "title": "An intimate mist made with natural fruit hydrosols kills the bacteria that cause odour, like a shower in a bottle",
+    "topics": [
+      "intimate"
+    ],
+    "claims": [
+      {
+        "claim": "Fruit hydrosols kill odour-causing bacteria",
+        "verdict": "unproven",
+        "truth": "Hydrosols are mostly scented water. There's no good evidence they kill bacteria on skin, and the vulva has its own healthy balance of bacteria that doesn't need killing.",
+        "grade": "D"
+      },
+      {
+        "claim": "No synthetic fragrance, so it's gentle",
+        "verdict": "partly",
+        "truth": "Natural scents can irritate the vulva too. Health services advise against sprays, deodorants and wipes in that area; washing once a day with plain water is enough.",
+        "grade": "B"
+      },
+      {
+        "claim": "Useful when you can't shower",
+        "verdict": "partly",
+        "truth": "For people who can't get to a shower, a soft cloth with warm water does the job without the scent. A strong or fishy smell, itching or unusual discharge is a reason to see a nurse or doctor, not to mask it.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kent Community Health NHS Trust: vulva care leaflet",
+        "url": "https://www.kentcht.nhs.uk/leaflet/vulva-care/"
+      }
+    ],
+    "seen_in": "Intimate care brand on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

@@ -6131,5 +6131,16 @@
     "lvl": "ok",
     "good": "Green algae powder used in masks; Dunaliella algae is rich in beta-carotene.",
     "care": "Stains green. Mostly lab evidence."
+  },
+  {
+    "id": "horseradish",
+    "grp": "Fresh foods",
+    "name": "Horseradish (fresh or grated)",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "care",
+    "flag": "Horseradish can burn skin",
+    "good": "Old remedy rubbed on the scalp or added to \"detox\" masks.",
+    "care": "Grating it releases the same burning compound as mustard and wasabi, which can blister skin and sting eyes. No proven benefit for skin or hair."
   }
 ]

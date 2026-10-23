@@ -1,6 +1,6 @@
 {
-  "version": 50,
-  "updated_at": "2026-10-23T19:27:03.782Z",
+  "version": 52,
+  "updated_at": "2026-10-23T19:34:43.516Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -153,10 +153,10 @@
       "updated_at": "2026-10-23T15:46:47.862Z"
     },
     "safe-batch/ingredients": {
-      "count": 600,
-      "bytes": 202467,
-      "hash": "e05d0aa35fc4",
-      "updated_at": "2026-10-23T19:26:52.432Z"
+      "count": 601,
+      "bytes": 202899,
+      "hash": "44c33e71966a",
+      "updated_at": "2026-10-23T19:33:20.588Z"
     },
     "safe-batch/layering_good": {
       "count": 21,
@@ -195,10 +195,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/myths": {
-      "count": 374,
-      "bytes": 277562,
-      "hash": "4f94e487b007",
-      "updated_at": "2026-10-23T19:11:30.989Z"
+      "count": 375,
+      "bytes": 279083,
+      "hash": "ec0353c9702a",
+      "updated_at": "2026-10-23T19:33:20.590Z"
     },
     "safe-batch/product_actives": {
       "count": 61,
@@ -243,10 +243,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/recipes_checked": {
-      "count": 1296,
-      "bytes": 944408,
-      "hash": "c392a3a794ce",
-      "updated_at": "2026-10-23T19:11:49.132Z"
+      "count": 1306,
+      "bytes": 954739,
+      "hash": "ad3ac9d66bf9",
+      "updated_at": "2026-10-23T19:34:43.516Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
@@ -297,16 +297,16 @@
       "updated_at": "2026-10-22T23:21:48.789Z"
     },
     "safe-batch/synonyms": {
-      "count": 668,
-      "bytes": 37001,
-      "hash": "6bb0280579cb",
-      "updated_at": "2026-10-23T19:27:03.780Z"
+      "count": 669,
+      "bytes": 37045,
+      "hash": "e257b480bfbf",
+      "updated_at": "2026-10-23T19:33:20.590Z"
     },
     "safe-batch/terms": {
-      "count": 43,
-      "bytes": 31109,
-      "hash": "888a2286a472",
-      "updated_at": "2026-10-23T18:54:29.019Z"
+      "count": 45,
+      "bytes": 32143,
+      "hash": "a1a30f2bd19c",
+      "updated_at": "2026-10-23T19:33:20.590Z"
     },
     "safe-batch/traditions": {
       "count": 56,

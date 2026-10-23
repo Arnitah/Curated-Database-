@@ -46336,5 +46336,392 @@
       "creator": "Store product",
       "platform": "madsasssoap.com"
     }
+  },
+  {
+    "id": "snow-white-mix-alnoor-as-posted",
+    "name": "\"Snow white\" body mix (Al Noor care store), as posted",
+    "claim": "Lightens the body and removes pigmentation, used in the sauna",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "As posted: laurel soap bars, bitter almond oil, castor oil, olive oil, rose water, two tins of glycerin cream, a yellow cream (not named) and a jar of menthol chest rub, mixed and used in the sauna \"for fast results\". Problems: chest rub contains camphor, menthol and eucalyptus, and heat plus wet skin lets more camphor in, which can irritate and isn't safe near children; bitter almond oil should be sweet almond; soap left on in a sauna dries skin. None of these lighten skin; the smoothness is from the oils and steam. Amounts are estimates.",
+    "rows": [
+      [
+        "laurelsoap",
+        200,
+        "g"
+      ],
+      [
+        "bitteralmond",
+        30,
+        "g"
+      ],
+      [
+        "castor",
+        30,
+        "g"
+      ],
+      [
+        "olive",
+        30,
+        "g"
+      ],
+      [
+        "hydrosol",
+        100,
+        "ml"
+      ],
+      [
+        "storelotion",
+        80,
+        "g"
+      ],
+      [
+        "vaporub",
+        20,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "متجر النور للعناية",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "travel-soap-sheets",
+    "name": "Travel soap sheets",
+    "claim": "Paper-thin soap for travel or a pocket case",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt the soap base with the glycerin, keep it warm, and brush a thin coat onto both sides of about 10 thin rice paper sheets (roughly 30 g) (or dip quickly). Lay flat on parchment to dry overnight, then cut into small squares and keep in a dry tin or a silicone soap-leaf case. To use, wet hands, add one square, and lather; the rice paper dissolves. Keep them bone dry or they stick together. A scented base is fine for hands; use unscented for the face.",
+    "rows": [
+      [
+        "soapbase",
+        60,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "ricepaper",
+        30,
+        "g"
+      ]
+    ]
+  },
+  {
+    "id": "lavender-baking-soda-free-deodorant-cream",
+    "name": "Lavender baking-soda-free deodorant cream",
+    "claim": "Creamy, gentle deodorant for sensitive underarms",
+    "type": "deodorant",
+    "use": "store",
+    "note": "Melt the shea and coconut oil, stir in the jojoba, then whisk in the starch and magnesium hydroxide until smooth. Add the lavender as it cools and pour into a jar. Rub a pea-sized amount in with a fingertip. Magnesium hydroxide fights odour without the rash baking soda often causes. No water, so no preservative needed; scoop with dry fingers. It's a deodorant, not an antiperspirant, so you'll still sweat.",
+    "rows": [
+      [
+        "tapioca",
+        25,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        10,
+        "g"
+      ],
+      [
+        "coconut",
+        25,
+        "g"
+      ],
+      [
+        "shea",
+        25,
+        "g"
+      ],
+      [
+        "jojoba",
+        14,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "lavender",
+        10,
+        "drops"
+      ]
+    ],
+    "inspired": "Meow Meow Tweet Lavender Deodorant Cream",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram (refill store)"
+    }
+  },
+  {
+    "id": "fragrance-free-green-clay-deodorant-cream",
+    "name": "Fragrance-free green clay deodorant cream",
+    "claim": "For sensitive underarms that react to scent and baking soda",
+    "type": "deodorant",
+    "use": "store",
+    "note": "Melt the butters and oil, then whisk in the arrowroot, clay and magnesium hydroxide. No essential oils, so it suits skin that reacts to fragrance. The clay gives the pale green colour and absorbs a little moisture. Keep it dry; no preservative needed.",
+    "rows": [
+      [
+        "arrowroot",
+        20,
+        "g"
+      ],
+      [
+        "greenclay",
+        8,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        30,
+        "g"
+      ],
+      [
+        "coconut",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        13,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ]
+  },
+  {
+    "id": "shea-family-body-butter-night-fabselects-as-posted",
+    "name": "Shea family body butter, night version (fabselects), as posted",
+    "claim": "All-natural body butter for a child; magnesium for sleep",
+    "type": "body_leave",
+    "use": "store",
+    "note": "As posted: 2 cups melted shea, 3/4 cup each of almond, olive and coconut oil and vegetable glycerin; the night jar adds 3/4 cup of melted magnesium flakes and 1 drop of lavender. Problems: glycerin and melted magnesium flakes are watery and won't mix into the oils, so they separate, feel sticky, and the water can grow mould in a jar used every day on a child. Magnesium doesn't help sleep through the skin. Almond is a tree nut. A plain shea and oil butter is the safer version, below.",
+    "rows": [
+      [
+        "shea",
+        430,
+        "g"
+      ],
+      [
+        "almond",
+        165,
+        "g"
+      ],
+      [
+        "olive",
+        165,
+        "g"
+      ],
+      [
+        "coconut",
+        165,
+        "g"
+      ],
+      [
+        "glycerin",
+        190,
+        "g"
+      ],
+      [
+        "magchloride",
+        150,
+        "g"
+      ],
+      [
+        "lavender",
+        1,
+        "drops"
+      ]
+    ],
+    "source": {
+      "creator": "fabselects",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "whipped-shea-family-body-butter",
+    "name": "Whipped shea family body butter",
+    "claim": "Simple head-to-toe butter for the whole family",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Melt the shea and coconut oil, stir in the liquid oils, chill until it starts to set, then whip until fluffy. No water and no glycerin, so it keeps for months without a preservative. Leave out essential oils for babies and toddlers; for older kids, 1 drop of lavender per 100 g is plenty. Swap almond for sunflower if anyone has a nut allergy. Apply to damp skin after the bath.",
+    "rows": [
+      [
+        "shea",
+        50,
+        "g"
+      ],
+      [
+        "coconut",
+        15,
+        "g"
+      ],
+      [
+        "olive",
+        15,
+        "g"
+      ],
+      [
+        "almond",
+        19,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "source": {
+      "creator": "Safer version of fabselects",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "rose-chamomile-layered-bath-soak",
+    "name": "Rose and chamomile layered bath soak",
+    "claim": "A pretty, calming jar soak to make or gift",
+    "type": "soak",
+    "use": "store",
+    "note": "Layer the pink salt, rose petals, oats and chamomile in a clean, dry jar. To use, put 3 to 4 big spoons into a muslin bag or tied sock so petals and oats don't clog the drain, and steep it in a warm bath. Oats soften the water; the flowers are mostly for scent and looks. Label the jar with the date; keep it dry and use within 6 months.",
+    "rows": [
+      [
+        "pinksalt",
+        150,
+        "g"
+      ],
+      [
+        "rosebuds",
+        10,
+        "g"
+      ],
+      [
+        "oats",
+        30,
+        "g"
+      ],
+      [
+        "chamomileflower",
+        10,
+        "g"
+      ]
+    ]
+  },
+  {
+    "id": "strawberry-milk-perfume-oil",
+    "name": "Strawberry milk perfume oil",
+    "claim": "Sweet strawberry, milky powder and caramel-wood perfume oil",
+    "type": "perfume",
+    "use": "store",
+    "note": "There's no strawberry or milk essential oil, so gourmand scents like this use cosmetic fragrance oils. Pick skin-safe (IFRA-compliant) strawberry, milk or vanilla-cream, powdery musk, caramel and sandalwood fragrance oils, blend roughly 3 parts fruit, 3 milk/powder, 2 caramel and 2 woods, then dilute in jojoba. Rest a week before using. Roll on pulse points; patch test first.",
+    "rows": [
+      [
+        "jojoba",
+        19,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Melanie Martinez Cry Baby Perfume Milk",
+    "source": {
+      "creator": "Fragrance inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "cocoa-shimmer-body-stick",
+    "name": "Cocoa shimmer body stick",
+    "claim": "A glowy jelly-balm stick for shoulders and legs",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Melt the petrolatum, cocoa butter and beeswax together, stir in the mica and vitamin E, and pour into a twist-up tube or tin. Swipe on shoulders, collarbones and shins for a bronze sheen. Petrolatum seals in moisture well; the shimmer is just mica. Keep it off the face if you break out.",
+    "rows": [
+      [
+        "petrolatum",
+        65,
+        "g"
+      ],
+      [
+        "cocoa",
+        15,
+        "g"
+      ],
+      [
+        "beeswax",
+        15,
+        "g"
+      ],
+      [
+        "mica",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Vaseline Cocoa Shimmer Jelly Stick",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vanilla-dessert-body-mist",
+    "name": "Vanilla dessert body mist",
+    "claim": "Light vanilla, pistachio, coconut and caramel body mist",
+    "type": "perfume",
+    "use": "store",
+    "note": "Mix the fragrance oil into the perfumer's alcohol first, then add the glycerin and water, shake, and rest 1 to 2 weeks. Mist on clothes and body. Alcohol dries hair, so spray hair lightly from a distance. Choose skin-safe vanilla, pistachio, coconut and caramel fragrance oils.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        15,
+        "g"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ]
+    ],
+    "inspired": "Medicube Vanilla Glow Fragrance Mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

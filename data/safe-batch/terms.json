@@ -342,5 +342,21 @@
     "how": "Oils that soak in, like coconut, before washing reduce how much water hair takes up. Over-soaking hair for hours isn't helpful.",
     "when": "Relevant to high-porosity or bleached hair.",
     "season": "Any."
+  },
+  {
+    "t": "Soap sheets (paper soap)",
+    "what": "Paper-thin sheets coated in soap that dissolve when wet; one sheet washes your hands.",
+    "skin": "Same as the soap they're made from.",
+    "how": "Brush melted melt-and-pour soap onto rice paper, dry, and cut into squares. Keep them in a dry tin or silicone case.",
+    "when": "Travel, handbags, public washrooms without soap.",
+    "season": "Store away from humidity, or they stick together."
+  },
+  {
+    "t": "Refilling and reusing containers",
+    "what": "Bringing your own bottle or jar to a refill store, or reusing jars for homemade products.",
+    "skin": "Nothing directly, but dirty containers can contaminate a product, especially water-based ones.",
+    "how": "Wash in hot soapy water, rinse, and dry completely; for water-based DIYs, also wipe the inside with 70% alcohol and let it evaporate. Never top up an old batch; finish it, clean the jar, then refill. Label each jar with the product and date.",
+    "when": "Every refill.",
+    "season": "Any."
   }
 ]

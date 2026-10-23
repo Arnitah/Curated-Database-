@@ -2779,7 +2779,7 @@ function analyze(s){
   if(rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)) && mpFat>8) add("care","Too much oil for melt-and-pour",`Added oils and butters are ${fmt(mpFat)}% of this batch. Above about 5%, melt-and-pour bars turn soft, greasy, and lather poorly. Keep it to about 1 tablespoon per 500 g of base.`);
   const mpBase=rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)), mpSafe=mpBase && !fresh.length && water.reduce((t,r)=>t+(r.pct||0),0)<=15;
   if(store && hasWater && mpSafe) add("info","The soap protects small additions","Soap (melt-and-pour base or grated bars) is alkaline and mostly soap, so a small splash of water, tea, or rice water sets into the bar instead of spoiling. Larger amounts make soft, sweaty bars.");
-  const alcSafe=rows.filter(r=>r.id==="perfumeralc").reduce((t,r)=>t+(r.pct||0),0)>=60 && !fresh.length;
+  const alcSafe=rows.filter(r=>r.id==="perfumeralc"||r.id==="perfumersalcohol").reduce((t,r)=>t+(r.pct||0),0)>=60 && !fresh.length;
   if(store && hasWater && alcSafe) add("info","The alcohol preserves it","At 60% alcohol or more, a little water can't grow microbes, so no preservative is needed.");
   const slr=rows.find(r=>r.id==="storelotion"); if(store && slr && (slr.pct||0)<80) add("care","Stretching a store cream","The cream's preservative was tested at full strength in its own formula. Mixed with this much else it's diluted, so make small tubs and use them within about 4 weeks, or leave the cream out and use it separately.");
   if(store && hasWater && !pres && !fresh.length && !brineSafe && !mpSafe && !alcSafe) add("stop","This will grow bacteria and mold","Anything with water, aloe, hydrosol, or tea becomes a breeding ground within days, often before you can see or smell anything. Make a single-use amount instead, or add a broad-spectrum preservative such as Geogard ECT."+(falsePres.length?" Vitamin E and grapefruit seed extract don't count: neither stops microbes.":""));
@@ -2797,6 +2797,10 @@ function analyze(s){
   }
   if(rows.some(r=>["soapbase","shampoobase","barsoap"].includes(r.id)) && rows.some(r=>["water","fresh","humectant"].includes(r.ing.ph))) add("info","Keep liquid additions small in melt-and-pour","More than about 1 tablespoon of liquid per 500 g base makes bars soft and \"sweaty\". The base itself doesn't need an extra preservative.");
   if(rows.some(r=>r.id==="showergel") && rows.some(r=>["acv","lemonjuice","limejuice","citricacid"].includes(r.id))) add("care","Acid and castile soap cancel out","Vinegar or citrus turns real soap back into greasy fatty acids, so the mix goes cloudy and leaves a waxy film on hair. Wash with the soap, then use the vinegar as a separate, diluted rinse.");
+  { const hum=rows.filter(r=>r.ing.ph==="humectant").reduce((t,r)=>t+(r.pct||0),0), mg=rows.find(r=>r.id==="magchloride");
+    const leaveOn=["body_leave","face_leave","hair_leave"].includes(T), surfy=rows.some(r=>r.ing.ph==="surf"), gritty=rows.some(r=>["sugar","salt","pinksalt","coffee","deadsea","storecream","storelotion"].includes(r.id));
+    if(leaveOn && oily && !hasWater && !emul && !mpBase && !surfy && !gritty && hum>=8) add("care","Glycerin won't mix into oils",`Glycerin and honey are ${fmt(hum)}% of this oil-only batch. They don't dissolve in oils or butters, so they sink, separate, and leave it sticky. Keep them to about 2%, or add an emulsifier.`);
+    if(leaveOn && oily && !emul && mg && !brineSafe) add("care","Magnesium won't mix into a butter","Magnesium flakes melt into a salty liquid that separates from oils and butters and leaves a gritty, sticky film; with no emulsifier it can also let mould grow. Magnesium isn't shown to help sleep through the skin. Use it in a bath instead."); }
   if(hasWater && rows.some(r=>r.id==="beeswax") && !emul && (store||fridge)) add("info","Beeswax isn't an emulsifier","Beeswax stiffens oils but can't hold water in, so the water seeps out over days. An emulsifying wax makes a stable cream.");
   if(hasWater && oily && !emul){
     if(leave && (store||fridge)) add("care","Oil and water will separate","Without an emulsifier the mix splits, so each use gets a different dose of each ingredient. Add an emulsifier such as Olivem 1000, or make an oil-only version.");
@@ -7754,7 +7758,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 215 · 23 Oct 2026";
+const SB_VERSION="Version 216 · 23 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }

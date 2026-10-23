@@ -2200,8 +2200,10 @@
   ]
  },
  "magnesium-muscle-rub": {
-  "verdict": "ok",
-  "flags": []
+  "verdict": "care",
+  "flags": [
+   "care: Magnesium won't mix into a butter"
+  ]
  },
  "garlic-and-herb-hair-growth-oil": {
   "verdict": "stop",
@@ -2818,8 +2820,10 @@
   ]
  },
  "diy-eczema-cream": {
-  "verdict": "ok",
-  "flags": []
+  "verdict": "care",
+  "flags": [
+   "care: Glycerin won't mix into oils"
+  ]
  },
  "eczema-friendly-soap-melt-and-pour": {
   "verdict": "ok",
@@ -2866,6 +2870,7 @@
  "calming-magnesium-body-butter": {
   "verdict": "stop",
   "flags": [
+   "care: Magnesium won't mix into a butter",
    "care: Oil and water will separate",
    "stop: This will grow bacteria and mold"
   ]
@@ -4590,7 +4595,6 @@
  "floral-rose-perfume-100-ml-spray-as-posted": {
   "verdict": "stop",
   "flags": [
-   "stop: This will grow bacteria and mold",
    "stop: Too much essential oil",
    "stop: Ylang ylang essential oil is too strong"
   ]
@@ -6597,6 +6601,54 @@
   ]
  },
  "almond-cocoa-body-lotion": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "snow-white-mix-alnoor-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Stretching a store cream",
+   "care: Use sweet almond, not bitter almond",
+   "care: Vapour rub isn't for body creams",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "travel-soap-sheets": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "lavender-baking-soda-free-deodorant-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "fragrance-free-green-clay-deodorant-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-family-body-butter-night-fabselects-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Glycerin won't mix into oils",
+   "care: Magnesium won't mix into a butter"
+  ]
+ },
+ "whipped-shea-family-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rose-chamomile-layered-bath-soak": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-milk-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-shimmer-body-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-dessert-body-mist": {
   "verdict": "ok",
   "flags": []
  }
