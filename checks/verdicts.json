@@ -6415,5 +6415,24 @@
  "charcoal-bamboo-clay-soap-bar": {
   "verdict": "ok",
   "flags": []
+ },
+ "thai-scrub-umm-fahd-fresh": {
+  "verdict": "care",
+  "flags": [
+   "care: Pomegranate molasses is sticky and acidic",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "white-tea-cream-body-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "tea-scented-hand-and-nail-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pine-centella-gentle-body-wash": {
+  "verdict": "ok",
+  "flags": []
  }
 }

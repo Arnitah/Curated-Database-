@@ -44668,5 +44668,229 @@
    "creator": "Store product",
    "platform": "YesStyle"
   }
+ },
+ {
+  "id": "thai-scrub-umm-fahd-fresh",
+  "name": "Thai scrub with pomegranate molasses (Umm Fahd), made fresh",
+  "claim": "Peels the body clean",
+  "type": "body_rinse",
+  "use": "now",
+  "note": "Her method: sugar, Turkish or black coffee, cocoa powder, tamarind paste, starch, pomegranate molasses and turmeric for the body, mixed with water into a paste; leave on 10 minutes, scrub, rinse and moisturise. Made fresh like this it's fine. Turmeric stains, salt-free sugar is gentler, and skip freshly shaved skin (the molasses and tamarind are acidic). The grey rolls you scrub off are mostly the paste, not \"dirt\".",
+  "rows": [
+   [
+    "sugar",
+    3,
+    "tbsp"
+   ],
+   [
+    "coffeepowder",
+    1,
+    "tbsp"
+   ],
+   [
+    "cocoapowder",
+    1,
+    "tsp"
+   ],
+   [
+    "tamarind",
+    1,
+    "tbsp"
+   ],
+   [
+    "cornstarch",
+    1,
+    "tbsp"
+   ],
+   [
+    "pommolasses",
+    1,
+    "tsp"
+   ],
+   [
+    "turmeric",
+    0.25,
+    "tsp"
+   ],
+   [
+    "water",
+    2,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "ام فهد (Umm Fahd)",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "white-tea-cream-body-scrub",
+  "name": "White tea cream body scrub",
+  "claim": "A silky cream scrub with a fresh tea scent",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "A creamy, self-preserving scrub: build it like a lotion (water phase with glycerin and niacinamide, oil phase with Olivem and oils), cool, add preservative, then fold in jojoba beads and rice flour. Scent it with a white tea fragrance oil (citrus, tea, sage and woody notes). Massage on wet skin for a minute, rinse. Fragrance doesn't last 24 hours on skin, whatever the label says.",
+  "rows": [
+   [
+    "water",
+    60,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "niacinamide",
+    2,
+    "g"
+   ],
+   [
+    "olivem",
+    5,
+    "g"
+   ],
+   [
+    "sunflower",
+    8,
+    "g"
+   ],
+   [
+    "jojoba",
+    4,
+    "g"
+   ],
+   [
+    "jojobabeads",
+    8,
+    "g"
+   ],
+   [
+    "riceflour",
+    6,
+    "g"
+   ],
+   [
+    "fragrance",
+    0.5,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "inspired": "a white tea gommage body scrub cream",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
+ },
+ {
+  "id": "tea-scented-hand-and-nail-cream",
+  "name": "Tea-scented hand and nail cream",
+  "claim": "Velvety hand cream that also softens cuticles",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Built from the original's base: water, glycerin, light oil, a little petrolatum, shea, jojoba and panthenol. Heat phases to 70°C, blend, cool below 40°C, add panthenol, fragrance and preservative. At night, apply thickly and wear cotton or disposable gloves for 30 minutes; covering the cream helps it soak in. Pick any tea-style fragrance oil (jasmine tea, osmanthus, black tea).",
+  "rows": [
+   [
+    "water",
+    62,
+    "g"
+   ],
+   [
+    "glycerin",
+    6,
+    "g"
+   ],
+   [
+    "caprylic",
+    8,
+    "g"
+   ],
+   [
+    "petrolatum",
+    4,
+    "g"
+   ],
+   [
+    "shea",
+    5,
+    "g"
+   ],
+   [
+    "jojoba",
+    4,
+    "g"
+   ],
+   [
+    "olivem",
+    6,
+    "g"
+   ],
+   [
+    "panthenol",
+    1.5,
+    "g"
+   ],
+   [
+    "fragrance",
+    0.5,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "inspired": "Puljim Tea Series Hand & Nail Cream",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
+ },
+ {
+  "id": "pine-centella-gentle-body-wash",
+  "name": "Pine and centella calming body wash",
+  "claim": "A cooling, gentle body wash with a forest scent",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "A plain gentle wash base with panthenol, allantoin and a low dose of pine-forest essential oils. The original lists centella in parts per million, far too little to do anything; the feel comes from the base and the scent. For body acne, a leave-on salicylic product works better than acids in a wash.",
+  "rows": [
+   [
+    "showergel",
+    100,
+    "g"
+   ],
+   [
+    "panthenol",
+    1,
+    "g"
+   ],
+   [
+    "allantoin",
+    0.3,
+    "g"
+   ],
+   [
+    "eucalyptus",
+    4,
+    "drops"
+   ],
+   [
+    "lavender",
+    4,
+    "drops"
+   ]
+  ],
+  "inspired": "a pine and centella AHA/BHA/PHA body wash",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
  }
 ]

@@ -4673,5 +4673,16 @@
   "lvl": "ok",
   "good": "Mild fruit acids and sugars for a single-use mask.",
   "care": "Food: use right away, never store. Sticky; rinse well."
+ },
+ {
+  "id": "pommolasses",
+  "grp": "Fresh foods",
+  "name": "Pomegranate molasses (دبس الرمان)",
+  "ph": "fresh",
+  "d": 1.3,
+  "lvl": "care",
+  "flag": "Pomegranate molasses is sticky and acidic",
+  "good": "Thick, tart syrup; adds a little fruit acid and stickiness to a fresh scrub.",
+  "care": "Acidic and sugary: it can sting freshly shaved skin and spoils once mixed with water. Use in single-use amounts and rinse well."
  }
 ]

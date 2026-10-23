@@ -1,5 +1,53 @@
 [
  {
+  "id": "shower-gel-and-lotion-claims-batch",
+  "title": "A \"remodelling\" scrub with guarana and capsicum shapes the body; niacinamide shower gels brighten; a \"beauty from within\" Job's tears lotion makes skin flawless; acid pore pads nightly for dry skin",
+  "topics": [
+   "body",
+   "store-products",
+   "dark-spots"
+  ],
+  "claims": [
+   {
+    "claim": "Guarana and capsicum scrubs reshape the body",
+    "verdict": "false",
+    "truth": "Caffeine and chili extracts make skin tingle and look briefly tighter. Dermatologists say cellulite creams give only temporary results; no scrub reshapes the body.",
+    "grade": "B"
+   },
+   {
+    "claim": "Niacinamide in a shower gel brightens skin",
+    "verdict": "unproven",
+    "truth": "Niacinamide works in leave-on products. In a gel that's rinsed off in a minute, expect clean skin. Some of these gels list salt first and contain crushed walnut shell, so they also scrub.",
+    "grade": "C"
+   },
+   {
+    "claim": "A Job's tears (coix seed) lotion gives flawless, ageless skin",
+    "verdict": "unproven",
+    "truth": "Coix seed extract is a mild soothing moisturiser; there's little human evidence it brightens. \"Beauty from within\" and \"ageless\" are marketing words.",
+    "grade": "C"
+   },
+   {
+    "claim": "Acid pore pads every night suit dry skin",
+    "verdict": "partly",
+    "truth": "Exfoliating pads can smooth dry, flaky skin, but nightly acid on dry skin often stings and dries further. Two or three nights a week, followed by a rich cream, is usually plenty.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: cellulite treatments, what really works?",
+    "url": "https://www.aad.org/public/cosmetic/fat-removal/cellulite-treatments-what-really-works"
+   },
+   {
+    "title": "American Academy of Dermatology: how to safely exfoliate at home",
+    "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home"
+   }
+  ],
+  "seen_in": "YesStyle and Naruko product pages; Zoi and diana lee on TikTok",
+  "checked": "2026-10-23",
+  "format": "v2"
+ },
+ {
   "id": "kojic-soap-studies-and-daily-scrub-bars",
   "title": "A 5% kojic soap reduced melanin 15% in 28 days; a kojic, glutathione and apricot scrub bar used daily brightens inner thighs and underarms; charcoal soap washes darkness out of pores",
   "topics": [

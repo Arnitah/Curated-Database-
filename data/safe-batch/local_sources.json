@@ -1,0 +1,348 @@
+[
+ {
+  "id": "niagara",
+  "name": "Niagara and Southern Ontario",
+  "match": "niagara|st\\.? catharines|welland|hamilton|toronto|ontario|grimsby|lincoln|fort erie|buffalo",
+  "lat": [
+   42,
+   45
+  ],
+  "lon": [
+   -81,
+   -78
+  ],
+  "items": [
+   [
+    "grapepomace",
+    "Wine-press skins and seeds from the fall crush; many wineries give them away. Dry fully before storing.",
+    "Sep–Nov"
+   ],
+   [
+    "grapeseed",
+    "Pressed from wine grapes; light oil for face and body.",
+    "All year"
+   ],
+   [
+    "honey",
+    "Local wildflower and clover honey from area beekeepers and farmers' markets.",
+    "Summer–fall"
+   ],
+   [
+    "beeswax",
+    "From the same beekeepers; for balms and butter sticks.",
+    "All year"
+   ],
+   [
+    "lavenderbud",
+    "Ontario lavender farms sell dried buds and sometimes hydrosol.",
+    "Jul–Aug harvest"
+   ],
+   [
+    "sunflower",
+    "Ontario-grown sunflower oil; cheap, gentle base oil.",
+    "All year"
+   ],
+   [
+    "oats",
+    "Canadian oats; grind fine for soothing baths and masks.",
+    "All year"
+   ],
+   [
+    "applejuice",
+    "Fresh-pressed cider for a single-use mask or hair rinse (dilute it).",
+    "Sep–Nov"
+   ]
+  ]
+ },
+ {
+  "id": "westafrica",
+  "name": "West Africa (Nigeria, Niger, Ghana)",
+  "match": "nigeria|niger|ghana|lagos|abuja|accra|niamey|kano|ibadan",
+  "items": [
+   [
+    "shea",
+    "Raw shea butter from local women's cooperatives.",
+    "All year"
+   ],
+   [
+    "blacksoap",
+    "African black soap made from plantain and cocoa pod ash.",
+    "All year"
+   ],
+   [
+    "baobab",
+    "Baobab oil and fruit powder.",
+    "All year"
+   ],
+   [
+    "moringa",
+    "Moringa leaf powder and seed oil.",
+    "All year"
+   ],
+   [
+    "hibiscus",
+    "Dried zobo (hibiscus) for rinses and masks.",
+    "All year"
+   ],
+   [
+    "cocoa",
+    "Cocoa butter, especially in Ghana.",
+    "All year"
+   ],
+   [
+    "neem",
+    "Neem leaves and oil; strong smell, use diluted.",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "gulf",
+  "name": "Gulf and Arabian Peninsula",
+  "match": "saudi|riyadh|jeddah|dubai|abu dhabi|uae|qatar|doha|kuwait|bahrain|oman|muscat",
+  "items": [
+   [
+    "sidr",
+    "Sidr leaf powder from herbal shops (attar).",
+    "All year"
+   ],
+   [
+    "desertdate",
+    "Desert date (heglig) oil.",
+    "All year"
+   ],
+   [
+    "sandalpowder",
+    "Sandalwood and bakhoor woods; scent, not skincare actives.",
+    "All year"
+   ],
+   [
+    "camelmilk",
+    "Camel milk for single-use masks; use fresh.",
+    "All year"
+   ],
+   [
+    "sesame",
+    "Sesame oil, a traditional massage oil.",
+    "All year"
+   ],
+   [
+    "roseeo",
+    "Taif rose water and rose oil (Saudi Arabia).",
+    "Spring harvest"
+   ]
+  ]
+ },
+ {
+  "id": "maghreb",
+  "name": "Morocco and North Africa",
+  "match": "morocco|marrakech|casablanca|rabat|fes|algeria|tunisia|egypt|cairo",
+  "items": [
+   [
+    "argan",
+    "Argan oil from cooperatives in the southwest.",
+    "All year"
+   ],
+   [
+    "rhassoul",
+    "Ghassoul clay from the Atlas mountains.",
+    "All year"
+   ],
+   [
+    "blacksoap",
+    "Savon beldi, the olive-oil black soap for the hammam.",
+    "All year"
+   ],
+   [
+    "rosebuds",
+    "Kelaat M'Gouna roses: dried buds, rose water.",
+    "May harvest"
+   ],
+   [
+    "olive",
+    "Local olive oil.",
+    "All year"
+   ],
+   [
+    "nila",
+    "Nila (indigo) powder; buy pure, it's often dyed.",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "eastasia",
+  "name": "Korea and Japan",
+  "match": "korea|seoul|busan|japan|tokyo|osaka|kyoto",
+  "items": [
+   [
+    "ricebran",
+    "Rice bran (nuka) and rice water.",
+    "All year"
+   ],
+   [
+    "greentea",
+    "Green tea from Jeju and Shizuoka.",
+    "Spring harvest"
+   ],
+   [
+    "camellia",
+    "Camellia (tsubaki) oil.",
+    "All year"
+   ],
+   [
+    "mugwort",
+    "Mugwort (ssuk, yomogi) for baths and steams.",
+    "Spring"
+   ],
+   [
+    "ginseng",
+    "Ginseng root.",
+    "Fall harvest"
+   ],
+   [
+    "kelp",
+    "Seaweed and kelp powder.",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "seasia",
+  "name": "Southeast Asia (Thailand, Vietnam, Philippines)",
+  "match": "thailand|bangkok|vietnam|hanoi|ho chi minh|saigon|philippines|manila|malaysia|indonesia",
+  "items": [
+   [
+    "tamarind",
+    "Tamarind pulp for scrubs.",
+    "All year"
+   ],
+   [
+    "coconut",
+    "Virgin coconut oil and coconut milk.",
+    "All year"
+   ],
+   [
+    "turmeric",
+    "Fresh and dried turmeric; it stains.",
+    "All year"
+   ],
+   [
+    "riceflour",
+    "Rice flour and rice water.",
+    "All year"
+   ],
+   [
+    "pineapple",
+    "Fresh pineapple for single-use enzyme masks.",
+    "All year"
+   ],
+   [
+    "coffeepowder",
+    "Robusta coffee for scrubs (Vietnam).",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "southasia",
+  "name": "India and South Asia",
+  "match": "india|delhi|mumbai|bangalore|chennai|pakistan|karachi|lahore|bangladesh|dhaka|sri lanka",
+  "items": [
+   [
+    "besan",
+    "Chickpea flour for ubtan.",
+    "All year"
+   ],
+   [
+    "turmeric",
+    "Turmeric, the classic ubtan colour.",
+    "All year"
+   ],
+   [
+    "amla",
+    "Amla powder and oil for hair.",
+    "Winter harvest"
+   ],
+   [
+    "shikakai",
+    "Shikakai and reetha (soapnut) for hair washing.",
+    "All year"
+   ],
+   [
+    "neempowder",
+    "Neem powder.",
+    "All year"
+   ],
+   [
+    "sandalpowder",
+    "Sandalwood powder (check it's real).",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "caribbean",
+  "name": "Caribbean",
+  "match": "jamaica|kingston|trinidad|barbados|bahamas|haiti|dominican|puerto rico",
+  "items": [
+   [
+    "coconut",
+    "Coconut oil, often home-pressed.",
+    "All year"
+   ],
+   [
+    "castor",
+    "Jamaican black castor oil.",
+    "All year"
+   ],
+   [
+    "aloefresh",
+    "Aloe from the yard; drain the yellow sap first.",
+    "All year"
+   ],
+   [
+    "cocoa",
+    "Cocoa butter.",
+    "All year"
+   ]
+  ]
+ },
+ {
+  "id": "mediterranean",
+  "name": "Mediterranean Europe",
+  "match": "italy|rome|milan|greece|athens|spain|madrid|barcelona|france|provence|portugal|turkey|istanbul",
+  "items": [
+   [
+    "olive",
+    "Olive oil and olive-oil soaps.",
+    "All year"
+   ],
+   [
+    "lavenderbud",
+    "Provence lavender.",
+    "Jul harvest"
+   ],
+   [
+    "rosebuds",
+    "Isparta rose water (Turkey).",
+    "May–Jun"
+   ],
+   [
+    "honey",
+    "Thyme and wildflower honey.",
+    "Summer"
+   ],
+   [
+    "rosemaryherb",
+    "Wild rosemary.",
+    "All year"
+   ],
+   [
+    "calendula",
+    "Calendula for infused oils.",
+    "Summer"
+   ]
+  ]
+ }
+]
