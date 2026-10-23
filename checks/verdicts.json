@@ -6829,5 +6829,43 @@
  "calm-shower-steamer": {
   "verdict": "ok",
   "flags": []
+ },
+ "soursop-lime-coconut-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "plantain-vanilla-nutmeg-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pumpkin-spice-coconut-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "milky-amber-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cypress-bergamot-body-deodorant-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: Witch hazel may contain alcohol"
+  ]
+ },
+ "strawberry-cake-hand-and-foot-balm-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "honey-milk-protein-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "clay-and-rice-bran-scrub-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "roasted-tea-foaming-hand-soap": {
+  "verdict": "ok",
+  "flags": []
  }
 }

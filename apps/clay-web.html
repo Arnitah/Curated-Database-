@@ -613,6 +613,7 @@ function mpChecks(){
 /* ---------- Application map: where each face product goes */
 const AM_COL=['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4','#008300','#7a5af0','#5e7a8c'];
 function amInfo(p){ const n=p.n.toLowerCase();
+  if(/pore|sebum|blackhead|whitehead|butterfly zone|t-zone/.test(n)&&p.st!=='Cleanser') return {z:'noeye',where:'Where the pores and oil are: start with the nose, widen only if needed',how:'Dose by area instead of always doing the full face: about half a pump for the nose, one pump for the butterfly zone (nose and inner cheeks), two for the whole face. With a two-step set (an exfoliant, then a soothing hydrator), use both at the same ratio. Skip broken or irritated skin.',when:'Evenings, 2 to 3 times a week to start'};
   if(/glycolic|lactic|aha|bha|salicylic|peel/.test(n)&&p.st!=='Cleanser') return {z:'noeye',where:'Whole face, avoiding eyes and lip corners',how:'Swipe with a cotton pad or pat a few drops in.',when:'Evenings, 2 to 3 times a week'};
   if(/spot|correct|dark|kojic|blemish/.test(n)||p.st==='Treatment') return {z:'spots',where:'Only on the spots or marks',how:'A thin layer dabbed onto each mark; no need to cover clear skin.',when:'Evening, after serum'};
   return ({Cleanser:{z:'face',where:'Whole face',how:'Grape-sized amount on damp skin, massage 30 to 60 seconds, rinse.',when:'Evening always; morning optional'},
@@ -1390,10 +1391,10 @@ function scentMain(){
     <section class="card" data-comment-target><div class="card-head">${ic('layers',20)}<h3>Layering order</h3>${cmt('layering order')}</div>
       <div class="list">${ORDER.map((o,i)=>`<div style="display:flex;gap:14px;align-items:center;padding:12px 0"><span class="num" style="width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:13px;font-weight:800;flex-shrink:0">${i+1}</span>${pack(o[2],o[3],36,46)}<span><b>${o[0]}</b><br><span class="small muted">${o[1]}</span></span></div>`).join('')}</div></section>
     <section class="card" data-comment-target><div class="card-head">${ic('search',20)}<h3>Smell-alikes, by notes</h3>${cmt('smell-alikes')}</div>
-      <p class="small">Love an expensive scent? Search by its notes instead of its name. Clay shows lower-cost scents that share them, with how many notes match.</p>
-      <div class="row">${['vanilla','rose','praline','tonka','iris'].map((n,i)=>`<button class="chip" type="button" aria-pressed="${i<3}">${n}</button>`).join('')}</div>
-      <div class="list small">${[['Rose and vanilla eau de parfum','3 of 3 notes','$'],['Vanilla powder body mist','2 of 3 notes','$'],['Gourmand rose perfume oil','3 of 3 notes','$$']].map(x=>`<div style="padding:10px 0;display:flex;justify-content:space-between;gap:10px"><b>${x[0]}</b><span class="muted num">${x[1]} · ${x[2]}</span></div>`).join('')}</div>
-      <p class="small muted">Clay never claims a smell-alike is identical. Notes overlap; the dry-down can differ.</p></section>
+      <p class="small">Love an expensive scent? Pick its notes and Clay shows lower-cost scents that share them, with how many notes match.</p>
+      <div class="row">${SA_NOTES.map(n=>`<button class="chip" type="button" data-act="sanote" data-v="${n}" aria-pressed="${(S.saPick||['vanilla','rose']).includes(n)}">${n}</button>`).join('')}</div>
+      <div class="list small">${saMatches().map(x=>`<div style="padding:10px 0"><div style="display:flex;justify-content:space-between;gap:10px"><b>${esc(x.alt)}</b><span class="muted num">${x.hit} of ${x.of} notes · ${x.price}</span></div><span class="muted">Smells like ${esc(x.ref)}${x.kind?' · '+esc(x.kind):''}</span></div>`).join('')||'<p class="muted">No smell-alikes with those notes yet. Try fewer notes.</p>'}</div>
+      <p class="small muted">Clay never claims a smell-alike is identical. Notes overlap; the dry-down can differ. Want to make one yourself? Safe Batch has DIY perfume oils and mists built from the same notes.</p></section>
     <section class="card warn" data-comment-target><div class="card-head">${ic('alert',20)}<h3>Skin first</h3>${cmt('scent safety')}</div>
       <p class="small">Keep fragrance off your face routine. Skip scented layers on freshly shaved or exfoliated skin. Patch-test perfume oils on your inner arm for 48 hours.${k==='summer'?' Citrus scents can react with sunlight, so mist clothes and hair instead.':''}</p></section>`;
 }
@@ -1410,6 +1411,17 @@ function lyParse(t){ const parts=t.toLowerCase().replace(/(top|middle|heart|base
   return {fam,fs,notes,weight}; }
 function lySeason(fs,cnt){ const sc={Spring:0,Summer:0,Autumn:0,Winter:0}; fs.forEach(f=>{ const w=cnt&&cnt[f]?cnt[f]:1; ({powdery:["Autumn","Winter"],fruity:["Spring","Summer"],citrus:["Summer","Spring"],floral:["Spring","Summer"],green:["Spring"],aquatic:["Summer"],gourmand:["Autumn","Winter"],woody:["Autumn","Winter"],amber:["Winter","Autumn"],spicy:["Autumn","Winter"],musk:[]}[f]||[]).forEach((s,i)=>sc[s]+=(i?1:2)*w); });
   const r=Object.entries(sc).sort((a,b)=>b[1]-a[1]); return r[0][1]===0?["All year"]:r.filter(x=>x[1]>=r[0][1]*.5&&x[1]>0).slice(0,2).map(x=>x[0]); }
+const SA=[
+ {alt:'Cypress and Bergamot scented whole body deodorant spray (Trader Joe\'s)',ref:'Jo Malone Cypress & Grapevine body spray',notes:['cypress','bergamot','woody','citrus'],price:'$',kind:'body spray'},
+ {alt:'Mahab (Nusuk)',ref:'Amouage Guidance',notes:['rose','pear','saffron','vanilla','sandalwood','frankincense','chestnut'],price:'$',kind:'eau de parfum'},
+ {alt:'Marshmallow Blush (Paris Corner)',ref:'Kayali Yum Boujee Marshmallow',notes:['vanilla','orange blossom','strawberry','berries','lemon','marshmallow'],price:'$',kind:'eau de parfum'},
+ {alt:'Divine (Rayhaan)',ref:'Louis Vuitton Attrape-Rêves',notes:['lychee','ginger','rose','bergamot','jasmine','vanilla','peony'],price:'$',kind:'eau de parfum'},
+ {alt:'Johra (Nusuk)',ref:'Maison Crivelli Hibiscus Mahajád',notes:['lychee','berries','bergamot','rose','jasmine','vanilla','resin'],price:'$',kind:'eau de parfum'},
+ {alt:'Hawas Diva (Rasasi)',ref:'Valentino Donna Born in Roma Extradose',notes:['lychee','berries','rose','frankincense','jasmine','vanilla'],price:'$$',kind:'eau de parfum'},
+ {alt:'Baby powder fine fragrance mist (drugstore)',ref:'Kayali Baby Powder 42',notes:['powdery','vanilla','musk','iris'],price:'$',kind:'body mist'}];
+const SA_NOTES=['vanilla','rose','lychee','berries','jasmine','bergamot','frankincense','sandalwood','powdery','musk','cypress','marshmallow'];
+function saMatches(){ const P=S.saPick||['vanilla','rose']; if(!P.length) return [];
+  return SA.map(x=>({...x,hit:P.filter(n=>x.notes.includes(n)).length,of:P.length})).filter(x=>x.hit).sort((a,b)=>b.hit-a.hit).slice(0,5); }
 const SW_FIT={hothumid:{powdery:-1,fruity:2,citrus:2,aquatic:2,green:1,floral:0,musk:0,gourmand:-2,amber:-2,woody:-1,spicy:-2},hotdry:{powdery:0,fruity:2,citrus:2,aquatic:1,green:1,floral:1,musk:0,gourmand:-1,amber:-2,woody:-1,spicy:-1},mild:{powdery:2,floral:2,fruity:1,musk:1,green:1,citrus:1,aquatic:0,gourmand:0,woody:0,amber:-1,spicy:0},cold:{powdery:1,gourmand:2,amber:2,woody:2,spicy:2,musk:1,floral:0,fruity:-1,citrus:-1,green:-1,aquatic:-2}};
 
 let SW=[]; try{ SW=JSON.parse(localStorage.getItem('clay-scents'))||[]; }catch(e){}
@@ -1892,6 +1904,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
   if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
   if (a==='swdel'){ SW.splice(+v,1); S.lyPick=[]; swSave(); }
+  if (a==='sanote'){ const L=S.saPick||['vanilla','rose']; S.saPick=L.includes(v)?L.filter(x=>x!==v):L.concat(v); }
   if (a==='lypick'){ const i=+v, L=S.lyPick||[]; S.lyPick=L.includes(i)?L.filter(x=>x!==i):L.concat(i).slice(-2); }
   if (a==='impgo'){ toast(clayImport($('#impCode').value)); }
   if (a==='mpopen'){ S.mpOpen=S.mpOpen===+v?null:+v; S.mpEdit=null; S.mpNote=null; }

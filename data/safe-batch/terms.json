@@ -406,5 +406,13 @@
     "how": "In Canada, cosmetics must be notified to Health Canada and carry a bilingual ingredient list. Order samples, test them, and check claims like \"whitening\" or \"anti-acne\", which can make a product a drug.",
     "when": "Before buying wholesale to resell.",
     "season": "Any."
+  },
+  {
+    "t": "Dual-chamber and mix-before-use packaging",
+    "what": "Bottles that keep an unstable ingredient (like vitamin C powder) apart from the liquid until you press or twist to combine them.",
+    "skin": "Helps actives stay potent; once mixed, the clock starts.",
+    "how": "DIY version: keep powdered vitamin C or an alginate mask dry, mix only what you'll use, and use it within a week (vitamin C) or immediately (alginate).",
+    "when": "Unstable actives.",
+    "season": "Any."
   }
 ]

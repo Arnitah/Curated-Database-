@@ -48420,5 +48420,380 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "soursop-lime-coconut-perfume-oil",
+    "name": "Soursop, lime and coconut cream perfume oil",
+    "claim": "Creamy tropical scent with a zesty edge",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller, top up with jojoba, and rest 1 to 2 weeks. For a mist, use the spray-perfume method instead. Patch test first. These notes work well together: soursop smells like pineapple-banana custard, so lime brightens it and coconut-vanilla makes it creamy. Use distilled lime oil, since cold-pressed lime burns skin in the sun. Soursop and coconut are fragrance oils. Scent only: soursop leaf itself shouldn't go on skin.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "limeeo",
+        2,
+        "drops"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Caribbean soursop punch ice pole",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "plantain-vanilla-nutmeg-perfume-oil",
+    "name": "Plantain, vanilla and nutmeg perfume oil",
+    "claim": "Warm banana-bread style gourmand",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller, top up with jojoba, and rest 1 to 2 weeks. For a mist, use the spray-perfume method instead. Patch test first. A natural match: ripe plantain (banana fragrance oil) with vanilla and a single drop of nutmeg. Nutmeg is potent; keep it to one drop. Cinnamon bark oil is left out because it's a common skin allergen; a cinnamon fragrance oil marked skin-safe can stand in.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "nutmeg",
+        1,
+        "drops"
+      ],
+      [
+        "gingereo",
+        1,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Caribbean plantain punch ice pole",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "pumpkin-spice-coconut-perfume-oil",
+    "name": "Pumpkin spice and coconut perfume oil",
+    "claim": "Cosy autumn gourmand",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller, top up with jojoba, and rest 1 to 2 weeks. For a mist, use the spray-perfume method instead. Patch test first. Pumpkin pairs naturally with warm spice, vanilla and a little orange. Clove and nutmeg are kept to a drop each. Pumpkin and coconut are fragrance oils.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "nutmeg",
+        1,
+        "drops"
+      ],
+      [
+        "clove",
+        1,
+        "drops"
+      ],
+      [
+        "orange",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Caribbean pumpkin punch ice pole",
+    "source": {
+      "creator": "Scent inspiration",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "milky-amber-perfume-oil",
+    "name": "Milky amber perfume oil",
+    "claim": "Soft milk, vanilla and warm amber",
+    "type": "perfume",
+    "use": "store",
+    "note": "Drip the oils into a 20 ml roller, top up with jojoba, and rest 1 to 2 weeks. For a mist, use the spray-perfume method instead. Patch test first. Milk notes come from fragrance oil (often lactones); sandalwood and frankincense build the amber base.",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        4,
+        "drops"
+      ],
+      [
+        "frankincense",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.4,
+        "g"
+      ]
+    ],
+    "inspired": "Mykonos Milk Drops extrait",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "cypress-bergamot-body-deodorant-spray",
+    "name": "Cypress and bergamot whole-body deodorant spray",
+    "claim": "Fresh woody-citrus spray for underarms, feet and body",
+    "type": "deodorant",
+    "use": "store",
+    "note": "Dissolve the zinc ricinoleate and essential oils in the alcohol, then add witch hazel and glycerin and shake. Spray on clean, dry skin. Zinc ricinoleate traps odour; the oils add scent. It's a deodorant, not an antiperspirant. Keep it off freshly shaved skin and intimate areas, and use bergamot FCF.",
+    "rows": [
+      [
+        "perfumersalcohol",
+        60,
+        "g"
+      ],
+      [
+        "witchhazel",
+        33,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "zincric",
+        2,
+        "g"
+      ],
+      [
+        "cypress",
+        10,
+        "drops"
+      ],
+      [
+        "bergamotfcf",
+        10,
+        "drops"
+      ]
+    ],
+    "inspired": "Cypress and Bergamot whole body deodorant spray",
+    "source": {
+      "creator": "Store product",
+      "platform": "Trader Joe's"
+    }
+  },
+  {
+    "id": "strawberry-cake-hand-and-foot-balm-stick",
+    "name": "Strawberry cake hand and foot balm stick",
+    "claim": "Anti-crack balm stick for heels and knuckles",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Melt the beeswax, shea and castor oil, stir in vitamin E and a skin-safe strawberry fragrance, and pour into a twist-up stick. Swipe on dry heels and knuckles at night, then wear socks. For deep heel cracks, a 10% urea cream from the pharmacy works better.",
+    "rows": [
+      [
+        "beeswax",
+        30,
+        "g"
+      ],
+      [
+        "shea",
+        35,
+        "g"
+      ],
+      [
+        "castor",
+        20,
+        "g"
+      ],
+      [
+        "caprylic",
+        13,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "inspired": "Bioaqua Strawberry Cake hand and foot stick",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "honey-milk-protein-hair-mask",
+    "name": "Honey and milk protein hair mask",
+    "claim": "Moisture and repair mask for dry, frizzy hair",
+    "type": "hair_rinse",
+    "use": "store",
+    "note": "Heat the water, BTMS and oils to 70°C, blend, cool below 40°C, then add honey, milk protein, glycerin and preservative. Leave on 5 to 10 minutes, rinse. Honey draws in moisture; milk protein smooths. Melty, deep-moist and milky versions in stores mostly differ in how much oil and protein they use.",
+    "rows": [
+      [
+        "water",
+        76,
+        "g"
+      ],
+      [
+        "btms",
+        6,
+        "g"
+      ],
+      [
+        "argan",
+        4,
+        "g"
+      ],
+      [
+        "shea",
+        3,
+        "g"
+      ],
+      [
+        "honey",
+        3,
+        "g"
+      ],
+      [
+        "milkprotein",
+        1,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "&honey Melty, Deep Moist and Milky hair care",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "clay-and-rice-bran-scrub-bar",
+    "name": "Clay and rice bran body scrub bar",
+    "claim": "Gentle exfoliating bar for rough bum, thighs and elbows",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Stir clay and fine rice bran into melted melt-and-pour base and pour. Use 2 to 3 times a week on rough patches. For bumpy skin on the buttocks or arms, a lotion with lactic acid or urea works better than scrubbing harder.",
+    "rows": [
+      [
+        "soapbase",
+        100,
+        "g"
+      ],
+      [
+        "kaolin",
+        2,
+        "g"
+      ],
+      [
+        "ricebranpow",
+        3,
+        "g"
+      ]
+    ],
+    "inspired": "Japanese hip-care and peat scrub soaps",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "roasted-tea-foaming-hand-soap",
+    "name": "Roasted tea foaming hand soap",
+    "claim": "Cosy houjicha-scented foam",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Pour the water into a foaming-pump bottle first, then the soap, glycerin, preservative and a skin-safe roasted tea fragrance. Tip gently to mix. Diluted soap needs the preservative.",
+    "rows": [
+      [
+        "water",
+        77,
+        "g"
+      ],
+      [
+        "showergel",
+        20,
+        "g"
+      ],
+      [
+        "glycerin",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Bioré The Hand Houjicha foaming hand soap",
+    "source": {
+      "creator": "Store product",
+      "platform": "Japan"
+    }
   }
 ]
