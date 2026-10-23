@@ -6487,5 +6487,21 @@
    "care: The fridge slows spoilage but doesn't stop it",
    "care: Too much oil for melt-and-pour"
   ]
+ },
+ "mugwort-forest-melt-and-pour-face-bar": {
+  "verdict": "care",
+  "flags": [
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "menthol-cooling-two-layer-massage-body-bar": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pick-your-own-seed-and-herb-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
  }
 }

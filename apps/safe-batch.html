@@ -6125,7 +6125,9 @@ const HOB_Q=[
 ];
 const HOB_AVOID=[["coconut","Coconut"],["nuts","Nut oils"],["sesame","Sesame"],["eo","Essential oils"]];
 const HOB_HERBS={shedding:["rosemaryherb","nettle"],breakage:["amla","hibiscus"],chem:["marshmallow","amla"],dryness:["marshmallow","hibiscus"],frizz:["marshmallow","hibiscus"],dull:["hibiscus","chamomileflower"],splits:["amla","marshmallow"]};
-let HOB={type:"",scalp:"",por:"",concern:"",use:"",avoid:[],herbs:false};
+const HOB_PICK=[["nigella","Black seed"],["chiaseed","Chia seeds"],["coffee","Coffee"],["rosemaryherb","Rosemary"],["lavenderbud","Lavender"],["almond","Almond oil"],["fenugreek","Fenugreek"],["walnutoil","Walnut oil"],["pumpkinoil","Pumpkin seed oil"],["coconut","Coconut oil"],["sunflower","Sunflower oil"],["sesame","Sesame oil"],["flaxwhole","Flaxseed"],["chamomileflower","Chamomile"],["moringa","Moringa leaf"],["sidr","Sidr leaf"]];
+const HOB_PICKNOTE={chiaseed:"Chia and flax gel only forms in water, so oil pulls very little out of the seeds. For slip and hold, make the gel in water on wash day (it's in Recipes).",flaxwhole:"Chia and flax gel only forms in water, so oil pulls very little out of the seeds. For slip and hold, make the gel in water on wash day (it's in Recipes).",coffee:"Use fully dry grounds and strain through a coffee filter so no grit is left. Coffee can tint very light hair; any growth claim for coffee on the scalp is unproven.",sidr:"Sidr is a cleansing powder. In oil it mostly adds colour; it does more mixed with water as a wash-day paste.",fenugreek:"Fenugreek is related to peanuts and chickpeas, so skip it with those allergies. Its maple smell lingers in hair.",nigella:"Black seed can cause allergic rashes in some people; patch test on your inner arm first.",walnutoil:"Walnut oil goes rancid quickly: make small batches, keep the bottle cool and dark, and use it within about 3 months.",moringa:"Strain moringa well; fine green powder can leave specks on the scalp."};
+let HOB={type:"",scalp:"",por:"",concern:"",use:"",avoid:[],herbs:false,picks:[]};
 try{ const s=JSON.parse(localStorage.getItem("safebatch-hairoil")||"null"); if(s) HOB={...HOB,...s}; }catch(e){}
 function hobBuild(){
   const h=HOB, av=new Set(h.avoid), why=[], add={};
@@ -6144,13 +6146,21 @@ function hobBuild(){
   if(h.concern==="dull"){ put("camellia",10,"Camellia oil gives a light, glossy finish."); }
   if(h.scalp==="flaky"){ ["olive","coconut"].forEach(k=>{ if(add[k]){ delete add[k]; } }); put("caprylic",15,"Flaky scalp: MCT (caprylic) oil and squalane are unlikely to feed the yeast behind dandruff; olive and coconut oil can. A ketoconazole or zinc pyrithione shampoo works better than any oil."); put("squalane",10); }
   if(h.scalp==="oily") why.push("Oily scalp: put this on the lengths and ends, not the roots.");
+  const picks=(h.picks||[]).filter(k=>BY[k]), pOil=picks.filter(k=>BY[k].ph==="oil"), pHerb=picks.filter(k=>BY[k].ph!=="oil");
+  pOil.forEach((k,i)=>put(k,15,i?"":"Your picked oils are added to the base; the porosity oils keep the blend balanced."));
   if(av.has("sesame")) delete add.sesame;
+  if(!cocoOK) delete add.coconut;
+  if(!nutOK) delete add.walnutoil;
+  const dropped=pOil.filter(k=>!add[k]); if(dropped.length) why.push(`Left out ${dropped.map(k=>BY[k].name.toLowerCase()).join(" and ")} because you asked to avoid ${dropped.length>1?"them":"it"}${h.scalp==="flaky"&&dropped.includes("coconut")?" or because of a flaky scalp":""}.`);
   if(!nutOK){ ["argan","almond","macadamia","hazelnut"].forEach(k=>delete add[k]); }
   const total=Object.values(add).reduce((a,b)=>a+b,0)||1, rows=Object.entries(add).map(([k,g])=>[k,Math.round(g/total*99),"g"]);
   rows.push(["vite",1,"g"]); why.push("Vitamin E slows the oils from going rancid; it isn't a preservative, and none is needed because there's no water.");
-  if(h.herbs){ const hs=(h.scalp==="flaky"?["rosemaryherb","calendula"]:h.scalp==="sensitive"?["calendula","chamomileflower"]:(HOB_HERBS[h.concern]||["rosemaryherb","hibiscus"])).filter(k=>BY[k]);
-    hs.forEach(k=>rows.push([k,4,"g"])); why.push(`Herbal infusion (no essential oils): warm ${hs.map(k=>BY[k].name.toLowerCase()).join(" and ")} in the oils on the lowest heat or in a jar set in warm water for 2 to 3 hours, then strain through a coffee filter. Use fully dried herbs only; fresh ones bring water and can spoil the oil. Herbs give colour and a gentle scent; their growth claims are mostly traditional.`); }
-  const eoOK=!h.herbs&&!av.has("eo")&&h.scalp!=="sensitive"&&h.use==="prewash";
+  const herbMode=h.herbs||pHerb.length>0;
+  if(herbMode){ const hs=pHerb.length?pHerb:(h.scalp==="flaky"?["rosemaryherb","calendula"]:h.scalp==="sensitive"?["calendula","chamomileflower"]:(HOB_HERBS[h.concern]||["rosemaryherb","hibiscus"])).filter(k=>BY[k]);
+    const g=Math.max(2,Math.min(4,Math.floor(16/hs.length))); hs.forEach(k=>rows.push([k,g,"g"]));
+    if(hs.length>4) why.push(`With ${hs.length} botanicals each one is cut to ${g} g so the dry total stays near 16 g; more than that soaks up the oil and is hard to strain.`);
+    [...new Set(hs.map(k=>HOB_PICKNOTE[k]).filter(Boolean))].forEach(n=>why.push(n)); why.push(`Herbal infusion (no essential oils): warm ${(n=>n.length>1?n.slice(0,-1).join(", ")+" and "+n[n.length-1]:n[0])(hs.map(k=>BY[k].name.toLowerCase().replace(/\s*\(.*?\)/g,"")))} in the oils on the lowest heat or in a jar set in warm water for 2 to 3 hours, then strain through a coffee filter. Use fully dried herbs only; fresh ones bring water and can spoil the oil. Herbs give colour and a gentle scent; their growth claims are mostly traditional.`); }
+  const eoOK=!herbMode&&!av.has("eo")&&h.scalp!=="sensitive"&&h.use==="prewash";
   if(eoOK){
     if(h.concern==="shedding"){ rows.push(["rosemary",12,"drops"],["peppermint",4,"drops"]); why.push("Rosemary oil has one small study for pattern thinning; at about 0.8% total it's gentle. For real thinning, minoxidil has the proof; see a doctor if shedding is sudden or patchy."); }
     else if(h.scalp==="flaky"&&BY.teatree){ rows.push(["teatree",10,"drops"]); why.push("Tea tree at 0.5% has small studies for dandruff."); }
@@ -6163,7 +6173,7 @@ function hobBuild(){
 function renderHob(){
   const el=document.getElementById("hobBox"); if(!el) return;
   el.innerHTML=HOB_Q.map(([k,l,opts])=>`<div class="blabel">${esc(l)}</div><div class="chips">${opts.map(([v,t])=>`<button class="chip" data-hob="${k}:${v}" aria-pressed="${HOB[k]===v}">${esc(t)}</button>`).join("")}</div>`).join("")
-   +`<div class="blabel">Style</div><div class="chips"><button class="chip" data-hobherb="1" aria-pressed="${!!HOB.herbs}">100% oils and milled herbs, no essential oils</button></div><div class="blabel">Leave out</div><div class="chips">${HOB_AVOID.map(([v,t])=>`<button class="chip" data-hobav="${v}" aria-pressed="${HOB.avoid.includes(v)}">${esc(t)}</button>`).join("")}</div>`;
+   +`<div class="blabel">Style</div><div class="chips"><button class="chip" data-hobherb="1" aria-pressed="${!!HOB.herbs}">100% oils and milled herbs, no essential oils</button></div><div class="blabel">Pick your own botanicals (optional)</div><div class="chips">${HOB_PICK.filter(([k])=>BY[k]).map(([v,t])=>`<button class="chip" data-hobpick="${v}" aria-pressed="${(HOB.picks||[]).includes(v)}">${esc(t)}</button>`).join("")}</div><div class="blabel">Leave out</div><div class="chips">${HOB_AVOID.map(([v,t])=>`<button class="chip" data-hobav="${v}" aria-pressed="${HOB.avoid.includes(v)}">${esc(t)}</button>`).join("")}</div>`;
   const out=document.getElementById("hobOut"); const ready=HOB.por&&HOB.concern&&HOB.use&&HOB.scalp;
   if(!ready){ out.innerHTML=`<p class="hint">Answer scalp, porosity, concern and use to see your blend.</p>`; return; }
   const {rows,why}=hobBuild();
@@ -6174,6 +6184,7 @@ function renderHob(){
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-hob]"); if(b){ const [k,v]=b.dataset.hob.split(":"); HOB[k]=HOB[k]===v?"":v; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
   const a=e.target.closest("[data-hobav]"); if(a){ const v=a.dataset.hobav; HOB.avoid=HOB.avoid.includes(v)?HOB.avoid.filter(x=>x!==v):[...HOB.avoid,v]; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
+  const pk=e.target.closest("[data-hobpick]"); if(pk){ const v=pk.dataset.hobpick, P=HOB.picks||[]; HOB.picks=P.includes(v)?P.filter(x=>x!==v):[...P,v]; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
   if(e.target.closest("[data-hobherb]")){ HOB.herbs=!HOB.herbs; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
   if(e.target.closest("#hobCheck")){ const {rows}=hobBuild(); loadRecipe({name:"My custom hair oil",type:HOB.use==="ends"?"hair_leave":"hair_rinse",use:"store",rows}); }
 });
@@ -7743,7 +7754,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 214 · 23 Oct 2026";
+const SB_VERSION="Version 215 · 23 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
