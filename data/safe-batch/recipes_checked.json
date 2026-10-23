@@ -43125,5 +43125,234 @@
    "creator": "Safi",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "rice-paper-egg-white-mask-as-posted",
+  "name": "Rice paper and egg white tightening mask (Kirti Tewani), as posted",
+  "claim": "Tightens skin, a \"prevent Botox\" mask",
+  "type": "face_rinse",
+  "use": "now",
+  "note": "As posted: brush egg white on the face, lay soaked grocery-store rice paper on top, let it dry, peel off and rinse. As egg white dries it shrinks and pulls, so skin feels tight for an hour; it doesn't relax muscles like Botox or prevent wrinkles. Raw egg can carry salmonella, so keep it away from cuts, eyes and mouth, wash hands and bowls after, and skip it with an egg allergy. It won't clear pimples in 3 days either.",
+  "rows": [
+   [
+    "egg",
+    1,
+    "tbsp"
+   ],
+   [
+    "ricepaper",
+    1,
+    "sheet"
+   ]
+  ],
+  "source": {
+   "creator": "Kirti Tewani",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "pink-clay-powder-mask-brwnsgr",
+  "name": "Pink clay powder mask (Brwnsgr Skincare)",
+  "claim": "An easy, gentle clay mask kept as a dry powder",
+  "type": "face_rinse",
+  "use": "store",
+  "note": "Her percentages: pastel pink clay 42%, French pink clay 40%, coconut milk powder 9%, rosehip powder 4.5%, papaya powder 4.5%. Both clays are counted as pink clay; the papaya \"extract\" is a dry fruit powder. Because it's all powder, it keeps for months in a dry jar. Mix a teaspoon with water or rose water when you use it, rinse before it fully cracks.",
+  "rows": [
+   [
+    "pinkclay",
+    82,
+    "g"
+   ],
+   [
+    "coconutmilkpow",
+    9,
+    "g"
+   ],
+   [
+    "fruitpowder",
+    9,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Brwnsgr Skincare",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "turmeric-aloe-jelly-mask-crowncare-as-posted",
+  "name": "Turmeric aloe jelly mask (Crowncarenaturals), as posted",
+  "claim": "Brightening glow mask",
+  "type": "face_leave",
+  "use": "store",
+  "note": "As posted (amounts are our estimate): aloe vera gel, turmeric powder, extracts and essential oils, mixed 5 minutes and sold in jars. Aloe gel counts as water, and the video shows no preservative, so a jar can spoil within days (a commenter's rice mask started to smell after 5). Turmeric stains and can cause allergic rashes. See the preserved version.",
+  "rows": [
+   [
+    "aloe",
+    100,
+    "g"
+   ],
+   [
+    "turmeric",
+    5,
+    "g"
+   ],
+   [
+    "lavender",
+    6,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Crowncarenaturals",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "turmeric-aloe-jelly-mask-preserved",
+  "name": "Turmeric aloe jelly mask (preserved, light turmeric)",
+  "claim": "A soothing gel mask with a warm glow",
+  "type": "face_rinse",
+  "use": "store",
+  "note": "Stir the turmeric into the aloe gel until smooth, then add the preservative. Use a thin layer for 10 minutes and rinse; a pinch of turmeric is plenty and still stains towels. Keep it in a clean jar, scoop with a clean spoon, use within 3 months. The glow is soothing aloe and colour, not lightening.",
+  "rows": [
+   [
+    "aloe",
+    100,
+    "g"
+   ],
+   [
+    "glycerin",
+    3,
+    "g"
+   ],
+   [
+    "turmeric",
+    0.5,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of Crowncarenaturals' jelly mask",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "strawberry-rose-clay-mask-houseoforangeco",
+  "name": "Strawberry and rose clay cream mask (houseoforangeco)",
+  "claim": "Soothing, softening cream clay mask",
+  "type": "face_rinse",
+  "use": "store",
+  "note": "Her formula in percent: aloe juice 20, rose hydrosol 30, Olivem 1000 3, sunflower 2, jojoba 2, homemade strawberry extract 3, rose extract 2, calendula and chamomile extract 1, kaolin 25, rose clay 10, xanthan 1, Geogard ECT 1. Heat the waters and oils to about 55°C (130°F), emulsify, add xanthan, cool below 38°C (100°F), add extracts and preservative, then fold in the clays. A properly built, preserved recipe. Her homemade water-based extracts are counted here as hydrosol and rose clay as pink clay. Pass it through the checker if you swap anything.",
+  "rows": [
+   [
+    "aloe",
+    20,
+    "g"
+   ],
+   [
+    "hydrosol",
+    36,
+    "g"
+   ],
+   [
+    "olivem",
+    3,
+    "g"
+   ],
+   [
+    "sunflower",
+    2,
+    "g"
+   ],
+   [
+    "jojoba",
+    2,
+    "g"
+   ],
+   [
+    "kaolin",
+    25,
+    "g"
+   ],
+   [
+    "pinkclay",
+    10,
+    "g"
+   ],
+   [
+    "xanthan",
+    1,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "houseoforangeco",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "seven-oil-hair-growth-oil-mamba-style",
+  "name": "Seven-oil hair oil (Mamba Hair Oil-style)",
+  "claim": "A nourishing pre-wash scalp and hair oil",
+  "type": "hair_leave",
+  "use": "store",
+  "note": "Built from the oils the brand lists: black seed, avocado, peppermint, green tea seed (camellia is the closest), rosemary, sweet almond and mustard. Mustard oil can sting, so it's kept low; peppermint and rosemary essential oils are at about 1% in total. Massage into the scalp, leave 1 to 4 hours, wash out. It conditions and cuts breakage; there's no proof any of these oils regrow hair. Patch test first.",
+  "rows": [
+   [
+    "avocadooil",
+    35,
+    "g"
+   ],
+   [
+    "almond",
+    30,
+    "g"
+   ],
+   [
+    "blackseedoil",
+    15,
+    "g"
+   ],
+   [
+    "camellia",
+    15,
+    "g"
+   ],
+   [
+    "mustardoil",
+    5,
+    "g"
+   ],
+   [
+    "rosemary",
+    12,
+    "drops"
+   ],
+   [
+    "peppermint",
+    8,
+    "drops"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Inspired by Mamba Oils hair oil (listed oils only)",
+   "platform": "mambaoils.com"
+  }
  }
 ]

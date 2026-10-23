@@ -4622,5 +4622,15 @@
   "flag": "Pumice is for feet only",
   "good": "Very coarse volcanic grit for calloused heels.",
   "care": "Feet and hard skin only, never face or body. Can build up in drains."
+ },
+ {
+  "id": "ricepaper",
+  "grp": "Fresh foods",
+  "name": "Rice paper (spring roll wrappers)",
+  "ph": "kitchen",
+  "tsp": 1,
+  "lvl": "ok",
+  "good": "Soaked, it turns into a soft, clingy sheet mask that holds whatever you put under it.",
+  "care": "It's food: use once and throw away. It adds no active ingredients of its own."
  }
 ]

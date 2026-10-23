@@ -6249,5 +6249,37 @@
    "care: Turmeric stains and can cause allergy",
    "stop: This will grow bacteria and mold"
   ]
+ },
+ "rice-paper-egg-white-mask-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Raw egg carries salmonella risk",
+   "care: Some amounts are missing"
+  ]
+ },
+ "pink-clay-powder-mask-brwnsgr": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-aloe-jelly-mask-crowncare-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Turmeric stains and can cause allergy",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "turmeric-aloe-jelly-mask-preserved": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "strawberry-rose-clay-mask-houseoforangeco": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "seven-oil-hair-growth-oil-mamba-style": {
+  "verdict": "ok",
+  "flags": []
  }
 }

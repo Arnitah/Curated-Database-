@@ -1,5 +1,88 @@
 [
  {
+  "id": "egg-white-rice-paper-prevents-botox",
+  "title": "An egg white and rice paper mask is like preventative Botox",
+  "topics": [
+   "general",
+   "diy-safety"
+  ],
+  "claims": [
+   {
+    "claim": "It works like Botox",
+    "verdict": "false",
+    "truth": "Botox relaxes the muscles that crease skin. Egg white just shrinks as it dries, so skin feels tight for an hour or so. Nothing changes in the muscles or wrinkles.",
+    "grade": "B"
+   },
+   {
+    "claim": "Raw egg on skin is risk-free",
+    "verdict": "partly",
+    "truth": "The chance of salmonella in any one egg is low, but it isn't zero. Keep raw egg away from broken skin, eyes and mouth, wash hands and bowls after, and skip it with an egg allergy.",
+    "grade": "C"
+   },
+   {
+    "claim": "It clears pimples before an event",
+    "verdict": "false",
+    "truth": "A tightening mask doesn't treat acne. For a few spots, a benzoyl peroxide or salicylic acid spot treatment or a hydrocolloid patch helps more.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: acne diagnosis and treatment",
+    "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+   }
+  ],
+  "seen_in": "Kirti Tewani on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "mamba-oils-hair-lash-tan-claims",
+  "title": "Mamba Oils: hair oil \"stimulates growth\", lash serum grows lashes, bronzing oil for all-day tanning",
+  "topics": [
+   "hair",
+   "store-products",
+   "sunscreen"
+  ],
+  "claims": [
+   {
+    "claim": "The hair oil stimulates natural hair growth",
+    "verdict": "unproven",
+    "truth": "Its listed oils (black seed, avocado, peppermint, green tea, rosemary, almond, mustard) condition hair and cut breakage. The only growth study is for rosemary essential oil, and it was small. No full ingredient list is published.",
+    "grade": "C"
+   },
+   {
+    "claim": "The lash serum grows longer lashes",
+    "verdict": "unproven",
+    "truth": "No ingredients are listed. The only lash-growth ingredient with strong proof is the prescription drug bimatoprost; some cosmetic serums hide similar compounds that can darken the eyelid or iris. Ask the seller for the full ingredient list before using it near your eyes.",
+    "grade": "B"
+   },
+   {
+    "claim": "A bronzing oil for all-day tanning",
+    "verdict": "false",
+    "truth": "The page mentions no SPF. Oil without sunscreen speeds up burning, and any tan is skin damage. Beta carotene adds colour, not protection.",
+    "grade": "A"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Mamba Oils hair oil product page",
+    "url": "https://mambaoils.com/products/mamba-hair-oil-100-ml-intensive-growth-nourishing-treatment"
+   },
+   {
+    "title": "Panahi et al. 2015, SkinMed (trial record)",
+    "url": "https://eprints.bmsu.ac.ir/738"
+   },
+   {
+    "title": "American Academy of Dermatology: public confusion about the risks of tanning and sunburn",
+    "url": "https://www.aad.org/news/new-survey-reveals-public-confusion-about-risks-of-tanning-and-sunburns"
+   }
+  ],
+  "seen_in": "mambaoils.com",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "dilka-and-gluta-salt-scrubs-lighten",
   "title": "Sudanese dilka whitens and lightens skin; Yoko \"gluta\" salt scrubs brighten",
   "topics": [
