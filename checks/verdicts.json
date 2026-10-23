@@ -6481,11 +6481,11 @@
   ]
  },
  "blue-nila-soap-paste-lifestyle-as-posted": {
-  "verdict": "stop",
+  "verdict": "care",
   "flags": [
    "care: Nila powder stains and is often adulterated",
-   "care: Too much oil for melt-and-pour",
-   "stop: This will grow bacteria and mold"
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Too much oil for melt-and-pour"
   ]
  }
 }

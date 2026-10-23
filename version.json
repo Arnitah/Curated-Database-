@@ -1,6 +1,6 @@
 {
-  "version": 39,
-  "updated_at": "2026-10-23T18:00:08.030Z",
+  "version": 40,
+  "updated_at": "2026-10-23T18:00:23.881Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -244,9 +244,9 @@
     },
     "safe-batch/recipes_checked": {
       "count": 1272,
-      "bytes": 777732,
-      "hash": "9f77d071d43a",
-      "updated_at": "2026-10-23T18:00:08.030Z"
+      "bytes": 777733,
+      "hash": "de4a0a54ac5e",
+      "updated_at": "2026-10-23T18:00:23.881Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
