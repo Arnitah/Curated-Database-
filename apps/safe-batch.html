@@ -479,6 +479,7 @@ button.sseg:hover,button.sseg:focus-visible{filter:brightness(1.12)}
 .fmap .lip{fill:color-mix(in srgb,var(--skin) 70%,#9b3b3b);stroke:none}
 .fmap .lay1,.fmap .zones,.fmap .shade{transition:transform .25s ease-out}
 .zone>*{transition:fill-opacity .15s,stroke-width .15s}
+.fmap2 .zone>*{stroke-width:1}.fmap2 .zone[tabindex]:hover>*,.fmap2 .zone.sel>*{stroke-width:1.8}
 .z-n>*{fill:transparent;stroke:none;pointer-events:none}
 .z-a>*{fill:var(--accent);fill-opacity:.32;stroke:var(--accent);stroke-opacity:.5;stroke-width:1}
 .z-f>*{fill:var(--accent);fill-opacity:.62;stroke:var(--accent);stroke-width:1.4}
@@ -5474,58 +5475,67 @@ let mapView="face", mapZone=null, mapTone=0;
 try{mapTone=+localStorage.getItem("safebatch-tone")||0}catch(e){}
 const TONES=["#E8C4A6","#D3A07B","#B07A52","#87573A","#5E3B27"];
 let MAPID="g";
+const TONES_DK=["#c99a7c","#a8774f","#835530","#5c3620","#3a2216"];
 function faceSVG(){
-  const FACE="M150 64 C201 64 237 98 241 150 C244 186 241 214 233 240 C225 266 207 292 185 308 C173 316 162 321 150 321 C138 321 127 316 115 308 C93 292 75 266 67 240 C59 214 56 186 59 150 C63 98 99 64 150 64 Z";
-  return `<svg viewBox="0 0 300 390" class="fmap" role="img" aria-label="Face map">
+  // Face art adapted from Clay's "Where each one goes" map (shaded skin, contour, highlights); zones keep Safe Batch's states.
+  const lt=TONES[mapTone]||TONES[0], dk=TONES_DK[mapTone]||TONES_DK[0], M=MAPID+"-"+(window._fmapN=(window._fmapN||0)+1), M0=MAPID;
+  const head='M100 30C143 30 166 64 166 108C166 150 151 180 128 199C117 208 109 212 100 212C91 212 83 208 72 199C49 180 34 150 34 108C34 64 57 30 100 30Z';
+  const neck='M70 176C73 202 70 228 60 252L140 252C130 228 127 202 130 176C118 204 82 204 70 176Z';
+  const earL='M37 104C24 98 20 120 26 134C30 144 38 146 41 140Z', earR='M163 104C176 98 180 120 174 134C170 144 162 146 159 140Z';
+  const hair='M34 112C30 54 64 18 102 18C140 18 172 52 166 112C160 84 150 64 126 54C112 62 84 64 66 56C48 66 38 86 34 112Z';
+  MAPID=M;
+  const out=`<svg viewBox="0 0 200 260" class="fmap fmap2" role="img" aria-label="Face map">
   <defs>
-   <clipPath id="fClip-${MAPID}"><path d="${FACE}"/></clipPath>
-   <radialGradient id="fShade-${MAPID}" cx="42%" cy="36%" r="72%"><stop offset="0" stop-color="#fff" stop-opacity=".30"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".20"/></radialGradient>
-   <radialGradient id="fBlush-${MAPID}"><stop offset="0" stop-color="#d9776b" stop-opacity=".22"/><stop offset="1" stop-color="#d9776b" stop-opacity="0"/></radialGradient>
-   <linearGradient id="fHair-${MAPID}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2c25"/><stop offset="1" stop-color="#211915"/></linearGradient>
-   <pattern id="hatch-${MAPID}" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--stop)" fill-opacity=".10"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--stop)" stroke-width="1.6" stroke-opacity=".75"/></pattern>
+   <clipPath id="fClip-${M}"><path d="${head}"/><path d="${neck}"/><path d="${earL}"/><path d="${earR}"/></clipPath>
+   <radialGradient id="fSkin-${M}" cx="44%" cy="38%" r="70%"><stop offset="0" stop-color="${lt}"/><stop offset=".62" stop-color="${lt}"/><stop offset="1" stop-color="${dk}"/></radialGradient>
+   <linearGradient id="fNeck-${M}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${dk}"/><stop offset=".35" stop-color="${lt}"/><stop offset="1" stop-color="${dk}"/></linearGradient>
+   <linearGradient id="fHair-${M}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a3326"/><stop offset="1" stop-color="#1c120c"/></linearGradient>
+   <linearGradient id="fLip-${M}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${dk}"/><stop offset="1" stop-color="#8a4a44"/></linearGradient>
+   <filter id="fBlur-${M}" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+   <pattern id="hatch-${M}" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="4" height="4" fill="var(--stop)" fill-opacity=".10"/><line x1="0" y1="0" x2="0" y2="4" stroke="var(--stop)" stroke-width="1.1" stroke-opacity=".75"/></pattern>
   </defs>
   <g class="lay0">
-   <path class="skin" d="M120 296 C121 326 118 346 110 362 C94 372 66 378 34 390 L266 390 C234 378 206 372 190 362 C182 346 179 326 180 296 Z"/>
-   <path d="M118 300 C130 322 170 322 182 300 L182 318 C168 334 132 334 118 318 Z" fill="#000" fill-opacity=".10"/>
-   <path class="skin" d="M62 182 C46 176 42 196 46 212 C50 228 60 236 70 232 Z"/><path class="skin" d="M238 182 C254 176 258 196 254 212 C250 228 240 236 230 232 Z"/>
-   <path class="skin" d="${FACE}"/>
-   <path d="${FACE}" fill="url(#fShade-${MAPID})" class="shade"/>
-   <ellipse cx="96" cy="222" rx="26" ry="18" fill="url(#fBlush-${MAPID})"/><ellipse cx="204" cy="222" rx="26" ry="18" fill="url(#fBlush-${MAPID})"/>
-   <path d="M54 172 C44 86 100 38 150 38 C200 38 256 86 246 172 C242 136 228 110 200 94 C176 104 124 104 100 94 C72 110 58 136 54 172 Z" fill="url(#fHair-${MAPID})"/>
-   <path d="M150 40 C140 58 128 80 112 98" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="3" stroke-linecap="round"/>
+   <ellipse cx="100" cy="254" rx="70" ry="6" fill="#000" opacity=".08"/>
+   <path d="${neck}" fill="url(#fNeck-${M})"/>
+   <g fill="url(#fSkin-${M})"><path d="${earL}"/><path d="${earR}"/></g>
+   <path d="M30 116C40 132 40 140 38 146" fill="none" stroke="${dk}" stroke-width="1.2" opacity=".6"/>
+   <ellipse cx="100" cy="206" rx="34" ry="12" fill="#000" opacity=".22" filter="url(#fBlur-${M})"/>
+   <path d="${head}" fill="url(#fSkin-${M})"/>
+   <g fill="#fff" opacity=".22" filter="url(#fBlur-${M})"><ellipse cx="68" cy="140" rx="16" ry="10"/><ellipse cx="132" cy="140" rx="14" ry="9"/><ellipse cx="96" cy="70" rx="26" ry="12"/><ellipse cx="100" cy="196" rx="10" ry="5"/></g>
+   <g fill="${dk}" opacity=".35" filter="url(#fBlur-${M})"><ellipse cx="44" cy="150" rx="8" ry="26"/><ellipse cx="156" cy="150" rx="8" ry="26"/></g>
   </g>
-  <g class="lay1">
-   <path d="M93 151 Q113 140 135 148" class="brow"/><path d="M165 148 Q187 140 207 151" class="brow"/>
-   <path d="M96 174 Q114 162 132 174 Q114 184 96 174 Z" class="eye"/><path d="M168 174 Q186 162 204 174 Q186 184 168 174 Z" class="eye"/>
-   <circle cx="114" cy="173.5" r="5.6" class="iris"/><circle cx="186" cy="173.5" r="5.6" class="iris"/>
-   <circle cx="114" cy="173.5" r="2.4" class="pupil"/><circle cx="186" cy="173.5" r="2.4" class="pupil"/>
-   <circle cx="116" cy="171.6" r="1.2" fill="#fff"/><circle cx="188" cy="171.6" r="1.2" fill="#fff"/>
-   <path d="M95 174 Q114 161 133 173" class="lash"/><path d="M167 173 Q186 161 205 174" class="lash"/>
-   <path d="M140 178 C139 198 136 212 133 222" class="feat soft"/>
-   <path d="M131 224 Q137 232 145 229 Q150 233 155 229 Q163 232 169 224" class="feat"/>
-   <path d="M123 258 Q137 249 145 251 Q150 248 155 251 Q163 249 177 258 Q150 262 123 258 Z" class="lip up"/>
-   <path d="M123 258 Q150 277 177 258 Q150 262 123 258 Z" class="lip"/>
-   <path d="M123 258 Q150 263 177 258" class="feat thin"/>
-   <path d="M112 372 Q130 380 146 376" class="feat soft"/><path d="M154 376 Q170 380 188 372" class="feat soft"/>
+  <g class="lay1" fill="none" stroke-linecap="round">
+   <path d="M55 92Q70 82 86 89" stroke="#2a1a12" stroke-width="3.2"/><path d="M114 89Q130 82 145 92" stroke="#2a1a12" stroke-width="3.2"/>
+   <path d="M56 106Q70 96 86 106Q70 114 56 106Z" fill="#fbf7f2" stroke="${dk}" stroke-width="1"/><path d="M114 106Q130 96 144 106Q130 114 114 106Z" fill="#fbf7f2" stroke="${dk}" stroke-width="1"/>
+   <circle cx="71" cy="105.5" r="5" fill="#3b2418"/><circle cx="129" cy="105.5" r="5" fill="#3b2418"/><circle cx="72.6" cy="103.8" r="1.4" fill="#fff"/><circle cx="130.6" cy="103.8" r="1.4" fill="#fff"/>
+   <path d="M56 105Q70 94 86 105M114 105Q130 94 144 105" stroke="#2a1a12" stroke-width="1.8"/>
+   <path d="M94 110Q92 132 88 144" stroke="${dk}" stroke-width="2" opacity=".55"/><path d="M103 112Q104 128 108 138" stroke="#fff" stroke-width="2.2" opacity=".35"/>
+   <path d="M88 146Q93 152 100 150Q107 152 112 146" stroke="${dk}" stroke-width="1.8" opacity=".8"/>
+   <g fill="${dk}" stroke="none" opacity=".7"><ellipse cx="94" cy="147" rx="3" ry="1.6"/><ellipse cx="106" cy="147" rx="3" ry="1.6"/></g>
+   <path d="M82 170Q91 163 100 167Q109 163 118 170Q109 173 100 172Q91 173 82 170Z" fill="url(#fLip-${M})" stroke="none"/>
+   <path d="M82 170Q100 186 118 170Q100 176 82 170Z" fill="url(#fLip-${M})" stroke="none" opacity=".9"/><path d="M92 178Q100 181 108 178" stroke="#fff" stroke-width="1.4" opacity=".3"/>
+   <path d="${hair}" fill="url(#fHair-${M})" stroke="none"/>
+   <path d="M70 34Q100 22 134 36" stroke="#fff" stroke-width="3" opacity=".12"/>
   </g>
   <g class="zones">
-   ${zp("scalp",`<path d="M54 172 C44 86 100 38 150 38 C200 38 256 86 246 172 C242 136 228 110 200 94 C176 104 124 104 100 94 C72 110 58 136 54 172 Z"/>`)}
-   ${zp("hairline",`<path d="M58 160 C62 132 78 108 100 96 C124 104 176 104 200 96 C222 108 238 132 242 160 L232 158 C228 134 216 118 198 108 C174 116 126 116 102 108 C84 118 72 134 68 158 Z"/>`,1)}
-   ${zp("forehead",`<path d="M70 146 C76 128 88 118 102 110 C126 118 174 118 198 110 C212 118 224 128 230 146 C200 134 100 134 70 146 Z"/>`,1)}
-   ${zp("brows",`<path d="M91 154 Q113 138 137 147 L136 154 Q113 147 93 160 Z"/><path d="M163 147 Q187 138 209 154 L207 160 Q187 147 164 154 Z"/>`,1)}
-   ${zp("eyelid",`<ellipse cx="114" cy="171" rx="21" ry="9.5"/><ellipse cx="186" cy="171" rx="21" ry="9.5"/>`,1)}
-   ${zp("undereye",`<path d="M96 182 Q114 190 132 182 Q114 200 96 182 Z"/><path d="M168 182 Q186 190 204 182 Q186 200 168 182 Z"/>`,1)}
-   ${zp("tzone",`<path d="M140 158 L160 158 C162 186 166 206 170 222 Q150 236 130 222 C134 206 138 186 140 158 Z"/>`,1)}
-   ${zp("cheeks",`<path d="M70 210 C80 198 104 198 124 206 C130 224 124 244 108 252 C90 254 74 240 70 222 Z"/><path d="M230 210 C220 198 196 198 176 206 C170 224 176 244 192 252 C210 254 226 240 230 222 Z"/>`,1)}
-   ${zp("nostril",`<circle cx="132" cy="226" r="5"/><circle cx="168" cy="226" r="5"/>`,1)}
-   ${zp("upperlip",`<path d="M128 238 Q150 234 172 238 L175 249 Q150 245 125 249 Z"/>`,1)}
-   ${zp("lips",`<path d="M123 258 Q137 249 145 251 Q150 248 155 251 Q163 249 177 258 Q150 278 123 258 Z"/>`,1)}
-   ${zp("mouth",`<circle cx="121" cy="259" r="5"/><circle cx="179" cy="259" r="5"/>`,1)}
-   ${zp("chin",`<path d="M120 284 Q150 294 180 284 C178 300 168 312 150 316 C132 312 122 300 120 284 Z"/>`,1)}
-   ${zp("jaw",`<path d="M60 222 C66 256 86 286 116 308 L124 294 C100 276 84 252 76 220 Z"/><path d="M240 222 C234 256 214 286 184 308 L176 294 C200 276 216 252 224 220 Z"/>`,1)}
-   ${zp("ears",`<path d="M62 182 C46 176 42 196 46 212 C50 228 60 236 70 232 Z"/><path d="M238 182 C254 176 258 196 254 212 C250 228 240 236 230 232 Z"/>`)}
-   ${zp("neck",`<path d="M120 314 Q150 332 180 314 C181 334 184 350 190 362 Q150 376 110 362 C116 350 119 334 120 314 Z"/>`)}
+   ${zp("scalp",`<path d="${hair}"/>`)}
+   ${zp("hairline",`<path d="M36 104C42 82 52 66 66 56C84 64 112 62 126 54C146 64 158 82 164 104L158 102C152 84 142 70 126 62C110 70 84 72 66 64C54 72 46 86 42 104Z"/>`,1)}
+   ${zp("forehead",`<path d="M50 86C56 76 62 70 68 66C86 74 112 72 126 64C136 70 144 78 150 86C124 78 76 78 50 86Z"/>`,1)}
+   ${zp("brows",`<path d="M54 94Q70 80 88 88L87 93Q70 87 56 98Z"/><path d="M112 88Q130 80 146 94L144 98Q130 87 113 93Z"/>`,1)}
+   ${zp("eyelid",`<ellipse cx="71" cy="104" rx="16" ry="7"/><ellipse cx="129" cy="104" rx="16" ry="7"/>`,1)}
+   ${zp("undereye",`<path d="M57 112Q71 118 85 112Q71 128 57 112Z"/><path d="M115 112Q129 118 143 112Q129 128 115 112Z"/>`,1)}
+   ${zp("tzone",`<path d="M93 102L107 102C108 120 110 134 114 146Q100 156 86 146C90 134 92 120 93 102Z"/>`,1)}
+   ${zp("cheeks",`<path d="M44 132C52 122 70 122 84 128C88 142 84 156 72 162C58 164 46 154 44 142Z"/><path d="M156 132C148 122 130 122 116 128C112 142 116 156 128 162C142 164 154 154 156 142Z"/>`,1)}
+   ${zp("nostril",`<circle cx="91" cy="148" r="3.5"/><circle cx="109" cy="148" r="3.5"/>`,1)}
+   ${zp("upperlip",`<path d="M86 158Q100 155 114 158L116 165Q100 162 84 165Z"/>`,1)}
+   ${zp("lips",`<path d="M82 170Q91 163 100 167Q109 163 118 170Q100 186 82 170Z"/>`,1)}
+   ${zp("mouth",`<circle cx="81" cy="171" r="3.5"/><circle cx="119" cy="171" r="3.5"/>`,1)}
+   ${zp("chin",`<path d="M80 190Q100 197 120 190C119 201 112 209 100 212C88 209 81 201 80 190Z"/>`,1)}
+   ${zp("jaw",`<path d="M38 146C42 168 54 188 74 202L80 192C64 180 54 164 48 144Z"/><path d="M162 146C158 168 146 188 126 202L120 192C136 180 146 164 152 144Z"/>`,1)}
+   ${zp("ears",`<path d="${earL}"/><path d="${earR}"/>`)}
+   ${zp("neck",`<path d="${neck}"/>`)}
   </g></svg>`;
+  MAPID=M0; return out;
 }
 function bodySVG(){
   const P={
@@ -7758,7 +7768,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 216 · 23 Oct 2026";
+const SB_VERSION="Version 217 · 23 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }
