@@ -6573,5 +6573,31 @@
  "butterfly-pea-skin-and-hair-oil": {
   "verdict": "ok",
   "flags": []
+ },
+ "blue-nila-sugar-scrub-lifestyle-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated",
+   "care: Too much oil for melt-and-pour"
+  ]
+ },
+ "creamy-foaming-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frankincense-lavender-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "layered-eucalyptus-bath-salt": {
+  "verdict": "care",
+  "flags": [
+   "care: Peppermint and eucalyptus can sting in a bath",
+   "care: Too many drops for one bath"
+  ]
+ },
+ "almond-cocoa-body-lotion": {
+  "verdict": "ok",
+  "flags": []
  }
 }

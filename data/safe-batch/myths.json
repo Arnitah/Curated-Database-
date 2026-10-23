@@ -6380,5 +6380,46 @@
     "seen_in": "Korean handmade soap shop",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "natural-handmade-soap-for-sensitive-eczema-prone-skin",
+    "title": "Clean, natural handmade products for sensitive, eczema-prone skin; cocoa butter fades stretch marks",
+    "topics": [
+      "body",
+      "soap"
+    ],
+    "claims": [
+      {
+        "claim": "Suited to sensitive, eczema-prone skin",
+        "verdict": "false",
+        "truth": "Every product in the range is scented with fragrance or essential oils. Dermatologists advise fragrance-free products for eczema because fragrance is a common trigger of flares.",
+        "grade": "A"
+      },
+      {
+        "claim": "All natural",
+        "verdict": "partly",
+        "truth": "The soap also contains hydrogenated vegetable oil, titanium dioxide, mica and fragrance, and the scrubs use synthetic cleansers and preservatives. Those are fine and safe, but \"all natural\" isn't accurate. It's a marketing word with no legal definition.",
+        "grade": "B"
+      },
+      {
+        "claim": "Cocoa and shea butter reduce scars and stretch marks",
+        "verdict": "false",
+        "truth": "In a randomised trial, cocoa butter lotion did no better than a plain lotion at preventing stretch marks in pregnancy. Both butters are good moisturisers; that's the real benefit.",
+        "grade": "A"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: how to treat eczema at home",
+        "url": "https://www.aad.org/news/how-to-treat-eczema-at-home"
+      },
+      {
+        "title": "Osman et al. 2008, Cocoa butter lotion for prevention of striae gravidarum (BJOG)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18715434/"
+      }
+    ],
+    "seen_in": "US handmade soap shop",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

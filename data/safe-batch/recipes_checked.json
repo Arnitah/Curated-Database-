@@ -46032,5 +46032,309 @@
       "creator": "Store product",
       "platform": "lemoracosmetics.com"
     }
+  },
+  {
+    "id": "blue-nila-sugar-scrub-lifestyle-as-posted",
+    "name": "Blue nila sugar scrub (LIFE STYLE beauty), as posted",
+    "claim": "Exfoliates and \"lightens\" in the shower",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Part two of the same post as the nila soap paste: a big cup of sugar, 1 spoon of nila (she says 2 was too much), 3 big spoons of coconut oil so it doesn't dry the skin, and 2 spoons of the soap paste (or any shower gel) to hold the sugar together, then moisturise after every shower. The \"lasts 2 months\" claim is the weak point: the soap paste brings rose water into the jar, so keep wet hands and shower water out, or swap the paste for a few grams of polysorbate 80 (an emulsifier that helps the oil rinse off, no water added). Nila doesn't lighten skin; the smoothness is from the sugar. Corn starch in the paste doesn't lighten either.",
+    "rows": [
+      [
+        "sugar",
+        200,
+        "g"
+      ],
+      [
+        "nila",
+        1,
+        "tsp"
+      ],
+      [
+        "coconut",
+        3,
+        "tbsp"
+      ],
+      [
+        "barsoap",
+        2,
+        "tbsp"
+      ]
+    ],
+    "source": {
+      "creator": "LIFE STYLE beauty.ar",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "creamy-foaming-sugar-scrub",
+    "name": "Creamy foaming sugar scrub",
+    "claim": "A scrub that lathers and doubles as shave cream",
+    "type": "body_rinse",
+    "use": "store",
+    "note": "Melt the cocoa butter with the sunflower oil, stir in the glycerin, SCI and aloe, then fold in the sugar and add fragrance and preservative once below 40°C. The original's base is a gentle syndet (SCI and a sulfosuccinate), not soap, which is why it foams without stripping. Because shower water gets in, keep the preservative in. Use 2 to 3 times a week, never on broken or freshly shaved skin.",
+    "rows": [
+      [
+        "sugar",
+        55,
+        "g"
+      ],
+      [
+        "glycerin",
+        12,
+        "g"
+      ],
+      [
+        "sci",
+        10,
+        "g"
+      ],
+      [
+        "aloe",
+        5,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "cocoa",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "mica",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Mad Sass Spa Day Creamy Sugar Scrub",
+    "source": {
+      "creator": "Store product",
+      "platform": "madsasssoap.com"
+    }
+  },
+  {
+    "id": "frankincense-lavender-whipped-body-butter",
+    "name": "Frankincense and lavender whipped body butter",
+    "claim": "Rich butter that melts in without feeling greasy",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Melt the shea, cocoa and mango butters with the coconut oil, add the liquid oils, cool until it starts to set at the edges, then whip with the arrowroot until fluffy and add vitamin E and essential oils. Arrowroot is what takes the greasy edge off. No water, so it doesn't need the preservative the original lists, as long as you scoop with dry hands. Shea and cocoa butter moisturise well; claims that they fade scars or stretch marks aren't supported. Soft in heat: keep it cool.",
+    "rows": [
+      [
+        "shea",
+        30,
+        "g"
+      ],
+      [
+        "cocoa",
+        15,
+        "g"
+      ],
+      [
+        "mango",
+        15,
+        "g"
+      ],
+      [
+        "coconut",
+        12,
+        "g"
+      ],
+      [
+        "jojoba",
+        10,
+        "g"
+      ],
+      [
+        "almond",
+        8,
+        "g"
+      ],
+      [
+        "caprylic",
+        6,
+        "g"
+      ],
+      [
+        "arrowroot",
+        3,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ],
+      [
+        "lavender",
+        12,
+        "drops"
+      ],
+      [
+        "frankincense",
+        8,
+        "drops"
+      ]
+    ],
+    "inspired": "Mad Sass Frankin' Lavender Body Butter",
+    "source": {
+      "creator": "Store product",
+      "platform": "madsasssoap.com"
+    }
+  },
+  {
+    "id": "layered-eucalyptus-bath-salt",
+    "name": "Layered eucalyptus and lavender bath salt",
+    "claim": "Fizzy, lightly bubbly soaking salt",
+    "type": "soak",
+    "use": "store",
+    "note": "Mix the dry ingredients, then drizzle in the apricot oil, polysorbate 80 and essential oils premixed together. Split it in two and stir the green clay into one half, then layer in a jar. Polysorbate keeps the oil from floating in a slick on the water; betaine adds light bubbles. Use 1/3 cup in a warm bath. Stays dry, so no preservative is needed if no water gets in. Soaking relaxes, but Epsom salt isn't proven to ease sore muscles through the skin.",
+    "rows": [
+      [
+        "salt",
+        150,
+        "g"
+      ],
+      [
+        "epsom",
+        100,
+        "g"
+      ],
+      [
+        "bakingsoda",
+        40,
+        "g"
+      ],
+      [
+        "citricacid",
+        20,
+        "g"
+      ],
+      [
+        "tapioca",
+        10,
+        "g"
+      ],
+      [
+        "apricot",
+        6,
+        "g"
+      ],
+      [
+        "polysorbate80",
+        4,
+        "g"
+      ],
+      [
+        "capb",
+        3,
+        "g"
+      ],
+      [
+        "greenclay",
+        1,
+        "g"
+      ],
+      [
+        "kaolin",
+        1,
+        "g"
+      ],
+      [
+        "eucalyptus",
+        10,
+        "drops"
+      ],
+      [
+        "lavender",
+        10,
+        "drops"
+      ],
+      [
+        "lemongrass",
+        4,
+        "drops"
+      ]
+    ],
+    "inspired": "Mad Sass Free Spirit Bath Salt",
+    "source": {
+      "creator": "Store product",
+      "platform": "madsasssoap.com"
+    }
+  },
+  {
+    "id": "almond-cocoa-body-lotion",
+    "name": "Almond and cocoa butter body lotion",
+    "claim": "Medium-weight daily body lotion",
+    "type": "body_leave",
+    "use": "store",
+    "note": "Heat the water phase and oil phase (almond oil, cocoa butter, emulsifying wax, cetearyl alcohol) separately to 70°C, pour oil into water while blending, and blend until cool. Below 40°C add vitamin E, preservative and fragrance. Leave the fragrance out for eczema-prone or sensitive skin. Lotions with water must have a preservative.",
+    "rows": [
+      [
+        "water",
+        74,
+        "g"
+      ],
+      [
+        "almond",
+        12,
+        "g"
+      ],
+      [
+        "cocoa",
+        4,
+        "g"
+      ],
+      [
+        "ewax",
+        5,
+        "g"
+      ],
+      [
+        "cetearyl",
+        2,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "inspired": "Mad Sass Fall Fig Lotion",
+    "source": {
+      "creator": "Store product",
+      "platform": "madsasssoap.com"
+    }
   }
 ]
