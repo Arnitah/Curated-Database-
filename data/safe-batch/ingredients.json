@@ -4632,5 +4632,26 @@
   "lvl": "ok",
   "good": "Soaked, it turns into a soft, clingy sheet mask that holds whatever you put under it.",
   "care": "It's food: use once and throw away. It adds no active ingredients of its own."
+ },
+ {
+  "id": "vaporub",
+  "grp": "Store-bought products",
+  "name": "Vapour rub (Vicks VapoRub-type ointment)",
+  "ph": "oil",
+  "d": 0.9,
+  "lvl": "care",
+  "flag": "Vapour rub isn't for body creams",
+  "good": "A petroleum jelly ointment with camphor, menthol and eucalyptus oil, made for rubbing on the chest for a cold.",
+  "care": "Camphor and menthol are strong: spread over large areas of skin or used daily they can irritate, and camphor can be toxic if too much is absorbed. Never on children under 2, broken skin or the face. Plain petroleum jelly does the moisturising job without them."
+ },
+ {
+  "id": "pompeel",
+  "grp": "Powders and exfoliants",
+  "name": "Pomegranate peel powder",
+  "ph": "powder",
+  "tsp": 2.5,
+  "lvl": "ok",
+  "good": "Dried, ground rind used in Moroccan tbrima and herbal masks; it's astringent and tints skin slightly.",
+  "care": "Can stain light towels. Rinse-off use."
  }
 ]

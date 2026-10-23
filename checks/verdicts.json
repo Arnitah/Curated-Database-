@@ -6320,5 +6320,76 @@
  "ginger-mugwort-roller-oil": {
   "verdict": "ok",
   "flags": []
+ },
+ "subtleaura-soap-paste-full-finish-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Turmeric stains and can cause allergy",
+   "care: Use sweet almond, not bitter almond",
+   "care: Vapour rub isn't for body creams",
+   "stop: This will grow bacteria and mold"
+  ]
+ },
+ "aker-fassi-sugar-scrub-ervaia-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar",
+   "care: Check what's in your aker fassi"
+  ]
+ },
+ "aker-fassi-sugar-scrub-keeps": {
+  "verdict": "care",
+  "flags": [
+   "care: Check what's in your aker fassi"
+  ]
+ },
+ "moroccan-14-herb-polish-powder-miss-sarah": {
+  "verdict": "care",
+  "flags": [
+   "care: Nila powder stains and is often adulterated",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "thai-dalka-ai-recipe-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Fresh food can't be stored"
+  ]
+ },
+ "thai-dalka-dry-mix": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mineral-salt-body-scrub-mihada-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oil-in-body-milk-chardonnay-style": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shaking-two-phase-body-mist": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate"
+  ]
+ },
+ "vanilla-body-butter-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "whipped-milk-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "serum-in-cream-hand-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-blending-perfume-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much fragrance oil"
+  ]
  }
 }

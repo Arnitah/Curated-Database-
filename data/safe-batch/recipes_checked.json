@@ -43818,5 +43818,619 @@
    "creator": "Inspired by Thảo học Dưỡng sinh",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "subtleaura-soap-paste-full-finish-as-posted",
+  "name": "Soap paste with glycerin, vapour rub and bitter almond (subtleaura, finished), as posted",
+  "claim": "Creamy finished soap paste",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Her final step: after the rose-water soak she blended the soaps after only 4 hours, then added glycerin (she says Glysolid cream is better but she didn't have it), \"فكس\" (this reads as Vicks VapoRub), glycerin oil, bitter almond oil and a small spoon of turmeric. Vapour rub has camphor and menthol, which don't belong in a body paste used all over; use plain petroleum jelly. Bitter almond oil should be sweet almond. And the big jar of rose water and soap can still spoil.",
+  "rows": [
+   [
+    "barsoap",
+    300,
+    "g"
+   ],
+   [
+    "hydrosol",
+    150,
+    "ml"
+   ],
+   [
+    "glycerin",
+    15,
+    "g"
+   ],
+   [
+    "vaporub",
+    15,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    10,
+    "g"
+   ],
+   [
+    "turmeric",
+    3,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "subtleaura",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "aker-fassi-sugar-scrub-ervaia-as-posted",
+  "name": "Aker fassi sugar scrub (Ervaia), as posted",
+  "claim": "Brightens, softens, also a lip scrub",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: sugar, shower gel (or honey) and aker fassi powder. Commenters note aker fassi is red poppy powder (traditionally poppy petals and pomegranate peel) and that it tints feet and lips red. Shower gel or honey in a stored jar invites mould; buy aker fassi with a full ingredient list, since some is dyed. Use it as a lip scrub only with pure aker fassi and plain sugar.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "showergel",
+    40,
+    "g"
+   ],
+   [
+    "akerfassi",
+    3,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Ervaia",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "aker-fassi-sugar-scrub-keeps",
+  "name": "Aker fassi sugar scrub (keeps)",
+  "claim": "A rosy tint and a soft polish",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix sugar, aker fassi and the oils; store dry. Add a squirt of shower gel or a spoon of honey to each scoop in the shower. Patch test the aker fassi; it tints skin pink for a few hours.",
+  "rows": [
+   [
+    "sugar",
+    100,
+    "g"
+   ],
+   [
+    "akerfassi",
+    3,
+    "g"
+   ],
+   [
+    "sunflower",
+    25,
+    "g"
+   ],
+   [
+    "argan",
+    5,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of Ervaia's scrub",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "moroccan-14-herb-polish-powder-miss-sarah",
+  "name": "Moroccan 14-herb body polish powder (Miss Sarah)",
+  "claim": "Royal Moroccan body polish",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Her list: seaweed, chamomile, thyme, licorice root, pomegranate peel, hibiscus, star anise, turmeric, lavender, sage, Hamidi rose, crushed spiny oyster shell, Moroccan indigo (nila) and frankincense. All finely ground, kept dry, mixed with water or rose water when used. Two cautions: the oyster shell is left out here because crushed shell has sharp edges (use rice flour for grit), and she says she was suffocating while filming, so grind and mix powders gently and keep the dust out of your nose (a mask helps). Nila and turmeric stain. Frankincense is used as the resin, ground fine.",
+  "rows": [
+   [
+    "kelp",
+    5,
+    "g"
+   ],
+   [
+    "chamomileflower",
+    5,
+    "g"
+   ],
+   [
+    "thyme",
+    3,
+    "g"
+   ],
+   [
+    "licorice",
+    5,
+    "g"
+   ],
+   [
+    "pompeel",
+    5,
+    "g"
+   ],
+   [
+    "hibiscus",
+    5,
+    "g"
+   ],
+   [
+    "staranise",
+    2,
+    "g"
+   ],
+   [
+    "turmeric",
+    2,
+    "g"
+   ],
+   [
+    "lavenderbud",
+    3,
+    "g"
+   ],
+   [
+    "sage",
+    3,
+    "g"
+   ],
+   [
+    "rosepowder",
+    8,
+    "g"
+   ],
+   [
+    "riceflour",
+    20,
+    "g"
+   ],
+   [
+    "nila",
+    1,
+    "g"
+   ],
+   [
+    "frankresin",
+    2,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Miss Sarah",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "thai-dalka-ai-recipe-as-posted",
+  "name": "Thai dalka (TikTok AI recipe), as posted",
+  "claim": "Skin \"like grass\" smooth",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As listed by TikTok's AI: fine sugar, milk (liquid or powder), Turkish coffee, milk salt, honey, Moroccan black soap, oil (argan, almond or shea), optionally a Thai coffee scrub or tamarind. Liquid milk, honey and black soap in a jar of sugar and milk powder spoil quickly. Make it as a dry mix and wet it when you use it.",
+  "rows": [
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "milk",
+    20,
+    "ml"
+   ],
+   [
+    "coffeepowder",
+    15,
+    "g"
+   ],
+   [
+    "salt",
+    15,
+    "g"
+   ],
+   [
+    "honey",
+    15,
+    "g"
+   ],
+   [
+    "blacksoap",
+    20,
+    "g"
+   ],
+   [
+    "almond",
+    15,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "TikTok AI (Tako) answer shared by a commenter",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "thai-dalka-dry-mix",
+  "name": "Thai dalka dry mix (keeps)",
+  "claim": "The same polish, made safely",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Mix sugar, milk powder, coffee, salt and tamarind powder, then stir in the oil; store dry. In the shower, mix a scoop with a little honey and black soap in your palm, rub over damp skin, rinse. Salt stings fresh shaves.",
+  "rows": [
+   [
+    "sugar",
+    60,
+    "g"
+   ],
+   [
+    "milkpowder",
+    15,
+    "g"
+   ],
+   [
+    "coffeepowder",
+    15,
+    "g"
+   ],
+   [
+    "salt",
+    15,
+    "g"
+   ],
+   [
+    "tamarindpowder",
+    3,
+    "g"
+   ],
+   [
+    "almond",
+    15,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "Safer version of the Thai dalka",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "mineral-salt-body-scrub-mihada-style",
+  "name": "Mineral salt body scrub with seaweed",
+  "claim": "Smooth heels, knees and hips",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "The original is mostly coarse salt with tiny amounts of royal jelly, brown algae, lemon and peach leaf extract. This keeps it simple: salt plus a little kelp powder, with oil so it glides. Massage on wet skin, leave 2 minutes, rinse. Keep the spoon out of the jar. Salt doesn't \"tighten the body\" or draw out water; it just exfoliates. Stings cuts and fresh shaves.",
+  "rows": [
+   [
+    "salt",
+    100,
+    "g"
+   ],
+   [
+    "kelp",
+    2,
+    "g"
+   ],
+   [
+    "sunflower",
+    25,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "inspired": "Kurobara Mihada Bijin Body Scrub Salt",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
+ },
+ {
+  "id": "oil-in-body-milk-chardonnay-style",
+  "name": "Oil-in body milk with grape and ceramides",
+  "claim": "A light, fragrant body and hair milk",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Built from the original's main ingredients: water, a light ester-like oil (MCT stands in for dicaprylyl carbonate), jojoba, safflower and sesame oils, glycerin, beeswax and stearyl alcohol for body, ceramides and squalane. Heat the water phase and oil phase to 70°C, blend, cool below 40°C, add ceramides and preservative. A few drops of grapeseed oil nod to the grape theme. Also works on damp hair ends.",
+  "rows": [
+   [
+    "water",
+    68,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "olivem",
+    4,
+    "g"
+   ],
+   [
+    "cetearyl",
+    2,
+    "g"
+   ],
+   [
+    "caprylic",
+    8,
+    "g"
+   ],
+   [
+    "jojoba",
+    4,
+    "g"
+   ],
+   [
+    "safflower",
+    3,
+    "g"
+   ],
+   [
+    "sesame",
+    2,
+    "g"
+   ],
+   [
+    "squalane",
+    2,
+    "g"
+   ],
+   [
+    "ceramide",
+    1,
+    "g"
+   ],
+   [
+    "xanthan",
+    0.2,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "inspired": "Chardonnay Oil in Body Milk",
+  "source": {
+   "creator": "Store product",
+   "platform": "YesStyle"
+  }
+ },
+ {
+  "id": "shaking-two-phase-body-mist",
+  "name": "Shaking two-phase serum mist",
+  "claim": "Shake, spray, glow: hydration plus a light oil veil",
+  "type": "body_leave",
+  "use": "store",
+  "note": "A bi-phase mist: the oil floats on the water layer until you shake it. Mix water, glycerin, niacinamide, panthenol and preservative; add the squalane and caprylic on top; shake hard before each spray. Mica gives the \"Sunny Glow\"-type shimmer (optional). Spray on body and over makeup-free skin; not into eyes.",
+  "rows": [
+   [
+    "water",
+    80,
+    "g"
+   ],
+   [
+    "glycerin",
+    4,
+    "g"
+   ],
+   [
+    "niacinamide",
+    2,
+    "g"
+   ],
+   [
+    "panthenol",
+    1,
+    "g"
+   ],
+   [
+    "squalane",
+    6,
+    "g"
+   ],
+   [
+    "caprylic",
+    6,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "inspired": "Knock (K-body care) Shaking Serum Mist",
+  "source": {
+   "creator": "Store product",
+   "platform": "knockofficial.com"
+  }
+ },
+ {
+  "id": "vanilla-body-butter-stick",
+  "name": "Vanilla body butter stick",
+  "claim": "Mess-free moisture for elbows, knees and legs",
+  "type": "body_leave",
+  "use": "store",
+  "note": "Melt the wax and butters gently, stir in the oil and vanilla, pour into a push-up stick tube, let set. Swipe on and rub in. It moisturises and leaves a smooth sheen; no stick can lift or firm skin, so the \"lifting\" part is marketing.",
+  "rows": [
+   [
+    "candelilla",
+    12,
+    "g"
+   ],
+   [
+    "cocoa",
+    25,
+    "g"
+   ],
+   [
+    "shea",
+    25,
+    "g"
+   ],
+   [
+    "sunflower",
+    35,
+    "g"
+   ],
+   [
+    "vanillaabs",
+    0.5,
+    "g"
+   ],
+   [
+    "vite",
+    0.5,
+    "g"
+   ]
+  ],
+  "inspired": "Knock (K-body care) Lifting Butter Stick",
+  "source": {
+   "creator": "Store product",
+   "platform": "knockofficial.com"
+  }
+ },
+ {
+  "id": "whipped-milk-body-wash",
+  "name": "Whipped milk body wash",
+  "claim": "A soft, creamy-foaming body wash",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "Foaming whipped soap base already contains its preservative. Whip it with the milk powder dissolved in the glycerin and the vanilla until fluffy; scoop with a dry hand.",
+  "rows": [
+   [
+    "fswb",
+    100,
+    "g"
+   ],
+   [
+    "glycerin",
+    3,
+    "g"
+   ],
+   [
+    "milkpowder",
+    2,
+    "g"
+   ],
+   [
+    "vanillaabs",
+    0.3,
+    "g"
+   ]
+  ],
+  "inspired": "Knock (K-body care) Whipping Milk Wash",
+  "source": {
+   "creator": "Store product",
+   "platform": "knockofficial.com"
+  }
+ },
+ {
+  "id": "serum-in-cream-hand-cream",
+  "name": "Serum-in-cream hand cream",
+  "claim": "Silky, fast-absorbing hand cream",
+  "type": "body_leave",
+  "use": "store",
+  "note": "A light cream with a serum-level dose of humectants: glycerin, panthenol and niacinamide. Heat the water phase and Olivem with the oils to 70°C, blend, cool below 40°C, add niacinamide and preservative. Fragrance optional (pistachio or caramel scents are fragrance oils).",
+  "rows": [
+   [
+    "water",
+    70,
+    "g"
+   ],
+   [
+    "glycerin",
+    6,
+    "g"
+   ],
+   [
+    "panthenol",
+    1,
+    "g"
+   ],
+   [
+    "olivem",
+    5,
+    "g"
+   ],
+   [
+    "shea",
+    6,
+    "g"
+   ],
+   [
+    "squalane",
+    6,
+    "g"
+   ],
+   [
+    "niacinamide",
+    2,
+    "g"
+   ],
+   [
+    "geogard",
+    1,
+    "g"
+   ]
+  ],
+  "inspired": "Knock (K-body care) Softy Hand Cream",
+  "source": {
+   "creator": "Store product",
+   "platform": "knockofficial.com"
+  }
+ },
+ {
+  "id": "vanilla-blending-perfume-oil",
+  "name": "Vanilla blending perfume oil",
+  "claim": "A roll-on scent you can layer with lotion",
+  "type": "perfume",
+  "use": "store",
+  "note": "Jojoba carries the scent and won't go rancid. Use a skin-safe fragrance oil at about 5% for a roller (or vanilla absolute). Roll onto pulse points over moisturised skin; layer over a matching lotion to make it last.",
+  "rows": [
+   [
+    "jojoba",
+    9.5,
+    "ml"
+   ],
+   [
+    "fragrance",
+    0.5,
+    "ml"
+   ]
+  ],
+  "inspired": "Knock (K-body care) Signature Blending Oil",
+  "source": {
+   "creator": "Store product",
+   "platform": "knockofficial.com"
+  }
  }
 ]

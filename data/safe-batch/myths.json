@@ -1,5 +1,67 @@
 [
  {
+  "id": "store-masks-are-just-silicone-and-water",
+  "title": "Store hair masks are just silicone and water; our natural whipped mask ends dry hair",
+  "topics": [
+   "hair",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "Store masks are only silicone and water",
+    "verdict": "false",
+    "truth": "Most rinse-off masks are water plus conditioning agents (behentrimonium, cetearyl alcohol), oils, butters and often protein. Silicones are one helpful option: they cut friction and breakage, and many good masks have none.",
+    "grade": "B"
+   },
+   {
+    "claim": "A natural butter mask ends dryness for good",
+    "verdict": "partly",
+    "truth": "Butter and oil masks soften and seal dry hair well, but no mask changes how your hair grows; dryness comes back with washing, heat and weather, so masks are maintenance.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: tips for healthy hair",
+    "url": "https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips"
+   }
+  ],
+  "seen_in": "HADI.HERBS (Veda Rose mask) on TikTok",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
+  "id": "lifting-butter-stick-firms-skin",
+  "title": "A lifting butter stick or firming body butter lifts and sculpts skin",
+  "topics": [
+   "body",
+   "store-products"
+  ],
+  "claims": [
+   {
+    "claim": "It lifts and firms",
+    "verdict": "false",
+    "truth": "Butters and oils soften skin and make it look smoother and more toned for a few hours. Nothing in a balm tightens loose skin; that takes muscle, weight changes or clinic treatments.",
+    "grade": "B"
+   },
+   {
+    "claim": "Caffeine in body creams firms",
+    "verdict": "partly",
+    "truth": "Caffeine can briefly tighten and depuff the surface, which is why it's in cellulite creams. Dermatologists say these effects are temporary.",
+    "grade": "B"
+   }
+  ],
+  "sources": [
+   {
+    "title": "American Academy of Dermatology: cellulite treatments, what really works?",
+    "url": "https://www.aad.org/public/cosmetic/fat-removal/cellulite-treatments-what-really-works"
+   }
+  ],
+  "seen_in": "Knock (K-body care)",
+  "checked": "2026-10-22",
+  "format": "v2"
+ },
+ {
   "id": "ginger-mugwort-balm-warms-the-womb",
   "title": "Ginger and mugwort balm warms the womb, drives out cold and \"wind\", and ends period pain",
   "topics": [
