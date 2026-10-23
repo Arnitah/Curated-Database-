@@ -45098,5 +45098,152 @@
    "creator": "بلوقر ريم",
    "platform": "TikTok"
   }
+ },
+ {
+  "id": "nana-whitening-soap-paste-as-posted",
+  "name": "Lightening and \"whitening\" soap paste (NANA), as posted",
+  "claim": "Lightens and whitens the body at home",
+  "type": "body_rinse",
+  "use": "fridge",
+  "note": "As posted: grated Dove, glutathione soap, laurel soap, carrot \"éclaircissant\" soap, turmeric soap, placenta soap, licorice soap and Kojie San, soaked 24 hours in four bottles of rose water, then grapeseed, wheat germ, bitter almond, glycerin-with-vitamin-C and vitamin E oils, plus cowrie shell powder \"to tighten the body\"; kept in the fridge, left on 10 minutes, scrubbed off with a loofah. Problems: the carrot lightening soap needs a full label check for mercury or hydroquinone; bitter almond oil should be sweet; cowrie shell doesn't tighten anything; 10 minutes of soap on skin is drying; and a big rose-water batch spoils even in the fridge. Amounts are estimates.",
+  "rows": [
+   [
+    "barsoap",
+    500,
+    "g"
+   ],
+   [
+    "lightsoap",
+    100,
+    "g"
+   ],
+   [
+    "carrotsoap",
+    100,
+    "g"
+   ],
+   [
+    "hydrosol",
+    1000,
+    "ml"
+   ],
+   [
+    "grapeseed",
+    20,
+    "g"
+   ],
+   [
+    "wheatgerm",
+    20,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    20,
+    "g"
+   ],
+   [
+    "glycerin",
+    20,
+    "g"
+   ],
+   [
+    "vite",
+    5,
+    "g"
+   ],
+   [
+    "cowrie",
+    10,
+    "g"
+   ]
+  ],
+  "source": {
+   "creator": "NANA",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "three-wonders-soap-paste-mear-ahmad-as-posted",
+  "name": "\"Three wonders\" soap paste (Mear Ahmad), as posted",
+  "claim": "Hides pimples, evens tone, whitens",
+  "type": "body_rinse",
+  "use": "fridge",
+  "note": "As posted: grated turmeric soap, frankincense soap, peacock laurel soap, Dove pink and an aker fassi lightening soap, with sweet and bitter almond oil, rose oil and rose water. Same verdict as other soap pastes: soaps are fine together, but use sweet almond only, a small amount of rose water, the fridge, and use within 2 weeks. Soap pastes don't whiten skin or hide pimples; for spots, a leave-on benzoyl peroxide or salicylic product works.",
+  "rows": [
+   [
+    "barsoap",
+    400,
+    "g"
+   ],
+   [
+    "hydrosol",
+    150,
+    "ml"
+   ],
+   [
+    "almond",
+    15,
+    "g"
+   ],
+   [
+    "bitteralmond",
+    10,
+    "g"
+   ],
+   [
+    "roseeo",
+    3,
+    "drops"
+   ]
+  ],
+  "source": {
+   "creator": "Mear Ahmad",
+   "platform": "TikTok"
+  }
+ },
+ {
+  "id": "blue-nila-soap-paste-lifestyle-as-posted",
+  "name": "Blue nila soap paste (LIFE STYLE beauty), as posted",
+  "claim": "Lightening nila soap paste",
+  "type": "body_rinse",
+  "use": "store",
+  "note": "As posted: finely grate Dove and turmeric soap, add half a cup of rose water, rest 1 minute and mix 2 minutes, then a big spoon of corn starch (\"known for lightening\", which it isn't; it only makes the paste creamy), a small spoon of nila, a big spoon of lavender body oil and 2 to 3 spoons of coconut oil. Small batch and quick to make; keep it in the fridge and use within 2 weeks. Nila stains and is often dyed; it won't lighten skin.",
+  "rows": [
+   [
+    "barsoap",
+    180,
+    "g"
+   ],
+   [
+    "hydrosol",
+    120,
+    "ml"
+   ],
+   [
+    "cornstarch",
+    1,
+    "tbsp"
+   ],
+   [
+    "nila",
+    1,
+    "tsp"
+   ],
+   [
+    "sunflower",
+    1,
+    "tbsp"
+   ],
+   [
+    "coconut",
+    2.5,
+    "tbsp"
+   ]
+  ],
+  "source": {
+   "creator": "LIFE STYLE beauty.ar",
+   "platform": "TikTok"
+  }
  }
 ]

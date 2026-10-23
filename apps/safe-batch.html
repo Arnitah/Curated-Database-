@@ -1213,6 +1213,11 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
   </div>
   </div>
 <div class="subpanel" id="sp-formula" hidden>
+<div class="panel stack" id="hairOilBuilder" style="margin-bottom:16px">
+    <h3>Build a custom hair oil</h3>
+    <p class="hint">Answer a few questions and get a blend matched to your hair and scalp, then check it.</p>
+    <div id="hobBox"></div><div id="hobOut"></div>
+  </div>
 <div class="panel stack goal-ai">
     <h3>Write a formula for me</h3>
     <p class="hint">Say what you want. You get a recipe written for your profile and checked for safety.</p>
@@ -6110,6 +6115,66 @@ $("#mixChips").addEventListener("click",e=>{const b=e.target.closest("[data-mix]
 try{ document.getElementById("mixRx").checked=localStorage.getItem("safebatch-mixrx")==="1"; }catch(e){}
 document.getElementById("mixRx").addEventListener("change",e=>{ try{localStorage.setItem("safebatch-mixrx",e.target.checked?"1":"0")}catch(_){} renderMix(); });
 renderMix();
+/* ---------- Hair oil builder: a few questions -> a checked custom blend ---------- */
+const HOB_Q=[
+ ["type","Hair type",[["straight","Straight"],["wavy","Wavy"],["curly","Curly"],["coily","Coily or kinky"],["locs","Locs or braids"]]],
+ ["scalp","Scalp",[["normal","Normal"],["oily","Oily"],["dry","Dry"],["flaky","Flaky or dandruff"],["sensitive","Sensitive"]]],
+ ["por","Porosity (how fast hair soaks up water)",[["low","Low: water beads up"],["med","Medium"],["high","High: soaks up fast, dries fast"],["unsure","Not sure"]]],
+ ["concern","Main concern",[["breakage","Breakage"],["dryness","Dryness"],["frizz","Frizz"],["shedding","Shedding or thinning"],["dull","Dull"],["splits","Split ends"],["chem","Colour, bleach or relaxer damage"]]],
+ ["use","How you'll use it",[["prewash","Pre-wash scalp and hair treatment"],["ends","A few drops to seal ends"]]],
+];
+const HOB_AVOID=[["coconut","Coconut"],["nuts","Nut oils"],["sesame","Sesame"],["eo","Essential oils"]];
+let HOB={type:"",scalp:"",por:"",concern:"",use:"",avoid:[]};
+try{ const s=JSON.parse(localStorage.getItem("safebatch-hairoil")||"null"); if(s) HOB={...HOB,...s}; }catch(e){}
+function hobBuild(){
+  const h=HOB, av=new Set(h.avoid), why=[], add={};
+  const put=(id,g,w)=>{ if(!BY[id]) return; add[id]=(add[id]||0)+g; if(w) why.push(w); };
+  const nutOK=!av.has("nuts"), cocoOK=!av.has("coconut");
+  const por=h.por==="unsure"?(["coily","curly"].includes(h.type)?"high":"med"):(h.por||"med");
+  if(por==="low"){ put("jojoba",40,"Low porosity: light oils like jojoba and grapeseed sit on top without weighing hair down."); put("grapeseed",30); put("camellia",20); }
+  else if(por==="high"){ put("avocadooil",35,"High porosity: richer oils like avocado and a little castor help seal moisture in."); put("jojoba",25); put("castor",10); nutOK?put("argan",20):put("sunflower",20); }
+  else { nutOK?put("argan",35,"Medium porosity: argan and jojoba suit most hair."):put("safflower",35,"Medium porosity: safflower and jojoba suit most hair."); put("jojoba",35); put("camellia",20); }
+  if(["breakage","chem","splits"].includes(h.concern)){
+    if(cocoOK&&h.scalp!=="flaky"){ put("coconut",15,"Coconut oil soaks into the hair shaft and cuts protein loss when washing, so it helps breakage (use it before washing)."); }
+    else put("babassu",15,"Babassu is a lighter coconut-like oil that also softens and protects lengths.");
+    if(h.concern==="splits") why.push("Oils make split ends look smoother, but only a trim removes them.");
+  }
+  if(["dryness","frizz"].includes(h.concern)){ put("avocadooil",10,"Avocado oil adds slip and softness for dry, frizzy lengths."); }
+  if(h.concern==="dull"){ put("camellia",10,"Camellia oil gives a light, glossy finish."); }
+  if(h.scalp==="flaky"){ ["olive","coconut"].forEach(k=>{ if(add[k]){ delete add[k]; } }); put("caprylic",15,"Flaky scalp: MCT (caprylic) oil and squalane are unlikely to feed the yeast behind dandruff; olive and coconut oil can. A ketoconazole or zinc pyrithione shampoo works better than any oil."); put("squalane",10); }
+  if(h.scalp==="oily") why.push("Oily scalp: put this on the lengths and ends, not the roots.");
+  if(av.has("sesame")) delete add.sesame;
+  if(!nutOK){ ["argan","almond","macadamia","hazelnut"].forEach(k=>delete add[k]); }
+  const total=Object.values(add).reduce((a,b)=>a+b,0)||1, rows=Object.entries(add).map(([k,g])=>[k,Math.round(g/total*99),"g"]);
+  rows.push(["vite",1,"g"]); why.push("Vitamin E slows the oils from going rancid; it isn't a preservative, and none is needed because there's no water.");
+  const eoOK=!av.has("eo")&&h.scalp!=="sensitive"&&h.use==="prewash";
+  if(eoOK){
+    if(h.concern==="shedding"){ rows.push(["rosemary",12,"drops"],["peppermint",4,"drops"]); why.push("Rosemary oil has one small study for pattern thinning; at about 0.8% total it's gentle. For real thinning, minoxidil has the proof; see a doctor if shedding is sudden or patchy."); }
+    else if(h.scalp==="flaky"&&BY.teatree){ rows.push(["teatree",10,"drops"]); why.push("Tea tree at 0.5% has small studies for dandruff."); }
+    else { rows.push(["lavender",8,"drops"]); }
+  } else if(h.scalp==="sensitive") why.push("Sensitive scalp: no essential oils.");
+  why.push(h.use==="ends"?"Use 2 to 4 drops warmed between your palms on damp ends after your leave-in.":"Massage into scalp and lengths, leave 30 minutes to overnight, then shampoo. 1 to 2 times a week.");
+  if(h.type==="locs") why.push("Locs: use a light hand and apply to the scalp with a nozzle bottle so oil doesn't build up inside the locs.");
+  return {rows,why};
+}
+function renderHob(){
+  const el=document.getElementById("hobBox"); if(!el) return;
+  el.innerHTML=HOB_Q.map(([k,l,opts])=>`<div class="blabel">${esc(l)}</div><div class="chips">${opts.map(([v,t])=>`<button class="chip" data-hob="${k}:${v}" aria-pressed="${HOB[k]===v}">${esc(t)}</button>`).join("")}</div>`).join("")
+   +`<div class="blabel">Leave out</div><div class="chips">${HOB_AVOID.map(([v,t])=>`<button class="chip" data-hobav="${v}" aria-pressed="${HOB.avoid.includes(v)}">${esc(t)}</button>`).join("")}</div>`;
+  const out=document.getElementById("hobOut"); const ready=HOB.por&&HOB.concern&&HOB.use&&HOB.scalp;
+  if(!ready){ out.innerHTML=`<p class="hint">Answer scalp, porosity, concern and use to see your blend.</p>`; return; }
+  const {rows,why}=hobBuild();
+  out.innerHTML=`<div class="panel" style="margin-top:10px"><h3>Your hair oil (100 g)</h3><ul class="formula-rows">${rows.map(([id,a,u])=>`<li><span>${esc(BY[id].name)}</span><span class="amt">${a} ${u}</span></li>`).join("")}</ul>
+   <ul class="hint" style="margin:8px 0 0 18px">${why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
+   <div class="actions"><button class="btn primary" id="hobCheck">Open in the checker</button></div></div>`;
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-hob]"); if(b){ const [k,v]=b.dataset.hob.split(":"); HOB[k]=HOB[k]===v?"":v; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
+  const a=e.target.closest("[data-hobav]"); if(a){ const v=a.dataset.hobav; HOB.avoid=HOB.avoid.includes(v)?HOB.avoid.filter(x=>x!==v):[...HOB.avoid,v]; try{localStorage.setItem("safebatch-hairoil",JSON.stringify(HOB))}catch(_){} renderHob(); return; }
+  if(e.target.closest("#hobCheck")){ const {rows}=hobBuild(); loadRecipe({name:"My custom hair oil",type:HOB.use==="ends"?"hair_leave":"hair_rinse",use:"store",rows}); }
+});
+try{ renderHob(); }catch(e){}
+
 
 /* ---------- Grown near you: local ingredients by region (data/safe-batch/local_sources.json) ---------- */
 var LOCAL_SRC=[{"id":"niagara","name":"Niagara and Southern Ontario","match":"niagara|st\\.? catharines|welland|hamilton|toronto|ontario|grimsby|lincoln|fort erie|buffalo","lat":[42,45],"lon":[-81,-78],"items":[["grapepomace","Wine-press skins and seeds from the fall crush; many wineries give them away. Dry fully before storing.","Sep–Nov"],["grapeseed","Pressed from wine grapes; light oil for face and body.","All year"],["honey","Local wildflower and clover honey from area beekeepers and farmers' markets.","Summer–fall"],["beeswax","From the same beekeepers; for balms and butter sticks.","All year"],["lavenderbud","Ontario lavender farms sell dried buds and sometimes hydrosol.","Jul–Aug harvest"],["sunflower","Ontario-grown sunflower oil; cheap, gentle base oil.","All year"],["oats","Canadian oats; grind fine for soothing baths and masks.","All year"],["applejuice","Fresh-pressed cider for a single-use mask or hair rinse (dilute it).","Sep–Nov"]]},{"id":"westafrica","name":"West Africa (Nigeria, Niger, Ghana)","match":"nigeria|niger|ghana|lagos|abuja|accra|niamey|kano|ibadan","items":[["shea","Raw shea butter from local women's cooperatives.","All year"],["blacksoap","African black soap made from plantain and cocoa pod ash.","All year"],["baobab","Baobab oil and fruit powder.","All year"],["moringa","Moringa leaf powder and seed oil.","All year"],["hibiscus","Dried zobo (hibiscus) for rinses and masks.","All year"],["cocoa","Cocoa butter, especially in Ghana.","All year"],["neem","Neem leaves and oil; strong smell, use diluted.","All year"]]},{"id":"gulf","name":"Gulf and Arabian Peninsula","match":"saudi|riyadh|jeddah|dubai|abu dhabi|uae|qatar|doha|kuwait|bahrain|oman|muscat","items":[["sidr","Sidr leaf powder from herbal shops (attar).","All year"],["desertdate","Desert date (heglig) oil.","All year"],["sandalpowder","Sandalwood and bakhoor woods; scent, not skincare actives.","All year"],["camelmilk","Camel milk for single-use masks; use fresh.","All year"],["sesame","Sesame oil, a traditional massage oil.","All year"],["roseeo","Taif rose water and rose oil (Saudi Arabia).","Spring harvest"]]},{"id":"maghreb","name":"Morocco and North Africa","match":"morocco|marrakech|casablanca|rabat|fes|algeria|tunisia|egypt|cairo","items":[["argan","Argan oil from cooperatives in the southwest.","All year"],["rhassoul","Ghassoul clay from the Atlas mountains.","All year"],["blacksoap","Savon beldi, the olive-oil black soap for the hammam.","All year"],["rosebuds","Kelaat M'Gouna roses: dried buds, rose water.","May harvest"],["olive","Local olive oil.","All year"],["nila","Nila (indigo) powder; buy pure, it's often dyed.","All year"]]},{"id":"eastasia","name":"Korea and Japan","match":"korea|seoul|busan|japan|tokyo|osaka|kyoto","items":[["ricebran","Rice bran (nuka) and rice water.","All year"],["greentea","Green tea from Jeju and Shizuoka.","Spring harvest"],["camellia","Camellia (tsubaki) oil.","All year"],["mugwort","Mugwort (ssuk, yomogi) for baths and steams.","Spring"],["ginseng","Ginseng root.","Fall harvest"],["kelp","Seaweed and kelp powder.","All year"]]},{"id":"seasia","name":"Southeast Asia (Thailand, Vietnam, Philippines)","match":"thailand|bangkok|vietnam|hanoi|ho chi minh|saigon|philippines|manila|malaysia|indonesia","items":[["tamarind","Tamarind pulp for scrubs.","All year"],["coconut","Virgin coconut oil and coconut milk.","All year"],["turmeric","Fresh and dried turmeric; it stains.","All year"],["riceflour","Rice flour and rice water.","All year"],["pineapple","Fresh pineapple for single-use enzyme masks.","All year"],["coffeepowder","Robusta coffee for scrubs (Vietnam).","All year"]]},{"id":"southasia","name":"India and South Asia","match":"india|delhi|mumbai|bangalore|chennai|pakistan|karachi|lahore|bangladesh|dhaka|sri lanka","items":[["besan","Chickpea flour for ubtan.","All year"],["turmeric","Turmeric, the classic ubtan colour.","All year"],["amla","Amla powder and oil for hair.","Winter harvest"],["shikakai","Shikakai and reetha (soapnut) for hair washing.","All year"],["neempowder","Neem powder.","All year"],["sandalpowder","Sandalwood powder (check it's real).","All year"]]},{"id":"caribbean","name":"Caribbean","match":"jamaica|kingston|trinidad|barbados|bahamas|haiti|dominican|puerto rico","items":[["coconut","Coconut oil, often home-pressed.","All year"],["castor","Jamaican black castor oil.","All year"],["aloefresh","Aloe from the yard; drain the yellow sap first.","All year"],["cocoa","Cocoa butter.","All year"]]},{"id":"mediterranean","name":"Mediterranean Europe","match":"italy|rome|milan|greece|athens|spain|madrid|barcelona|france|provence|portugal|turkey|istanbul","items":[["olive","Olive oil and olive-oil soaps.","All year"],["lavenderbud","Provence lavender.","Jul harvest"],["rosebuds","Isparta rose water (Turkey).","May–Jun"],["honey","Thyme and wildflower honey.","Summer"],["rosemaryherb","Wild rosemary.","All year"],["calendula","Calendula for infused oils.","Summer"]]}];
@@ -7674,7 +7739,7 @@ function renderTerms(){
 (function(){ if(!$("#termCards")) return; $("#termSearch").addEventListener("input",renderTerms); renderTerms(); })();
 
 // ---------- Home: context, weather, seasonal shelf ----------
-const SB_VERSION="Version 213 · 23 Oct 2026";
+const SB_VERSION="Version 214 · 23 Oct 2026";
 const H_DEF={city:"",climate:"",theme:"time",tex:"balanced",scent:"light",size:"standard",avoid:[],wx:null,manual:"",open:true};
 let H=Object.assign({},H_DEF); try{H=Object.assign({},H_DEF,JSON.parse(localStorage.getItem("safebatch-home")||"{}"));}catch(e){}
 function hSave(){ try{localStorage.setItem("safebatch-home",JSON.stringify(H))}catch(e){} }

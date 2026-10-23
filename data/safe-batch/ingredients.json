@@ -4695,5 +4695,27 @@
   "flag": "Check what's in lightening carrot soaps",
   "good": "A bar soap sold across West Africa and the Gulf; it cleans like any soap.",
   "care": "\"Éclaircissant\" means lightening. Some lightening soaps and creams sold without a full ingredient list have been found to contain mercury or hydroquinone. Use only a bar with a complete ingredient list that names neither; carrot itself won't lighten skin in a soap."
+ },
+ {
+  "id": "cowrie",
+  "grp": "Powders and exfoliants",
+  "name": "Cowrie shell powder (الودع)",
+  "ph": "powder",
+  "tsp": 3,
+  "lvl": "care",
+  "flag": "Cowrie shell powder can scratch",
+  "good": "Ground seashell, mostly calcium carbonate, sold for body masks and soap pastes.",
+  "care": "Crushed shell can have sharp bits, so sieve it fine and rub gently. It doesn't tighten skin or the body; any smoothness is from mild polishing."
+ },
+ {
+  "id": "lightsoap",
+  "grp": "Store-bought products",
+  "name": "Glutathione or placenta \"whitening\" soap",
+  "ph": "surf",
+  "tsp": 4,
+  "lvl": "care",
+  "flag": "Whitening soaps: check the label",
+  "good": "Cleans like any bar soap.",
+  "care": "Glutathione and placenta extract rinse off within a minute, so they don't lighten skin in a soap. Buy only bars with a complete ingredient list; skip any without one."
  }
 ]

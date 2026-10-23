@@ -6462,5 +6462,30 @@
    "care: Citrus peel and sunlight",
    "care: Nila powder stains and is often adulterated"
   ]
+ },
+ "nana-whitening-soap-paste-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Check what's in lightening carrot soaps",
+   "care: Cowrie shell powder can scratch",
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Use sweet almond, not bitter almond",
+   "care: Whitening soaps: check the label"
+  ]
+ },
+ "three-wonders-soap-paste-mear-ahmad-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Use sweet almond, not bitter almond"
+  ]
+ },
+ "blue-nila-soap-paste-lifestyle-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Nila powder stains and is often adulterated",
+   "care: Too much oil for melt-and-pour",
+   "stop: This will grow bacteria and mold"
+  ]
  }
 }

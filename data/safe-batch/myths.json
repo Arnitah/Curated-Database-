@@ -1,5 +1,57 @@
 [
  {
+  "id": "corn-starch-cowrie-and-whitening-soaps",
+  "title": "Corn starch lightens skin; cowrie shell powder tightens the body; glutathione and placenta soaps whiten; custom hair oil quizzes make hair grow faster",
+  "topics": [
+   "dark-spots",
+   "store-products",
+   "hair"
+  ],
+  "claims": [
+   {
+    "claim": "Corn starch is known for lightening",
+    "verdict": "false",
+    "truth": "Starch only thickens a paste and absorbs oil. Nothing in it changes skin colour.",
+    "grade": "B"
+   },
+   {
+    "claim": "Cowrie shell powder tightens the body",
+    "verdict": "false",
+    "truth": "It's ground shell (mostly calcium carbonate), a mild abrasive. It can't tighten skin, and sharp bits can scratch.",
+    "grade": "C"
+   },
+   {
+    "claim": "Glutathione and placenta soaps whiten skin",
+    "verdict": "false",
+    "truth": "In a soap they rinse off within a minute. A dermatology review found even oral glutathione gives only small changes that fade after stopping.",
+    "grade": "B"
+   },
+   {
+    "claim": "A custom-blended hair oil makes hair grow faster",
+    "verdict": "partly",
+    "truth": "Matching oils to porosity and scalp makes hair feel better and breaks less, which keeps length. No oil speeds up growth; only rosemary oil has one small study for thinning.",
+    "grade": "C"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Sonthalia et al. 2018, Glutathione for skin lightening (Dermatology Practical & Conceptual)",
+    "url": "https://dpcj.org/index.php/dpc/article/view/dermatol-pract-concept-articleid-dp0801a04"
+   },
+   {
+    "title": "Rele & Mohile 2003, coconut oil and hair protein loss (PubMed)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12715094/"
+   },
+   {
+    "title": "Panahi et al. 2015, rosemary oil vs minoxidil (trial record)",
+    "url": "https://eprints.bmsu.ac.ir/738"
+   }
+  ],
+  "seen_in": "NANA, Mear Ahmad and LIFE STYLE beauty on TikTok; Punzel custom hair oil quiz",
+  "checked": "2026-10-23",
+  "format": "v2"
+ },
+ {
   "id": "soap-paste-leave-on-and-lightening-courses",
   "title": "Leave a soap paste on for 15 to 30 minutes; a \"double lightening course\" dalka evens tone in 2 weeks; carrot éclaircissant soap is a must",
   "topics": [
