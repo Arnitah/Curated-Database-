@@ -131,6 +131,30 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .tile .ex { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 8px }
 .tile .explore { justify-self: start; font: 600 12.5px var(--body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer }
 .offtab { display: none !important }
+.travel { display: grid; gap: 14px }
+.tv-head { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px }
+.tv-head h2 { font-size: 1.4rem }
+.tv-pick { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.tv-pick select { max-width: 100% }
+.tv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; align-items: start }
+.tv-box { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; gap: 10px; min-width: 0 }
+.tv-box h3 { font-size: 1.1rem }
+.tv-box.wide { grid-column: 1 / -1 }
+.tv-wx { background: var(--accent-soft) }
+.tv-item { display: grid; gap: 3px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 13.5px }
+.tv-item:first-of-type { border-top: 0; padding-top: 0 }
+.tv-item .top { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: baseline }
+.tv-item b { font-weight: 600; font-size: 14.5px }
+.tv-item small, .tv-src { color: var(--muted); font-size: 12.5px }
+.tv-acts { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 2px }
+.tv-acts label { font-size: 12.5px; display: inline-flex; gap: 6px; align-items: center; cursor: pointer }
+.tv-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px }
+.tv-tags span.t { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 2px 9px }
+.tv-list ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 13.5px }
+.tv-tips { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13.5px }
+.tv-btn { font: 600 13px var(--body); background: var(--accent); color: var(--paper); border: 0; border-radius: 8px; padding: 7px 12px; cursor: pointer }
+.tv-src a { color: var(--muted); word-break: break-all }
+
 .more { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; padding: 8px 0 }
 .more .go { font: 600 14px var(--body); background: var(--accent); color: var(--paper); border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer }
 .tabs { display: flex; width: fit-content; max-width: 100%; overflow-x: auto; scrollbar-width: none; gap: 4px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-top: 16px }
@@ -218,7 +242,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <div class="themes" id="themes" aria-label="Colour theme"><span class="eyebrow">Theme</span></div>
   </header>
 
-  <div class="tabs" role="tablist" aria-label="Sections" id="tabs"><button type="button" role="tab" id="tab-browse" data-tab="browse" aria-selected="true">Browse</button><button type="button" role="tab" id="tab-finder" data-tab="finder" aria-selected="false">Finder</button><button type="button" role="tab" id="tab-styles" data-tab="styles" aria-selected="false">Styles</button><button type="button" role="tab" id="tab-traditions" data-tab="traditions" aria-selected="false">Traditions</button><button type="button" role="tab" id="tab-twins" data-tab="twins" aria-selected="false">Twins &amp; trends</button><button type="button" role="tab" id="tab-learn" data-tab="learn" aria-selected="false">Learn</button><button type="button" role="tab" id="tab-shops" data-tab="shops" aria-selected="false">Shops &amp; leads</button><button type="button" role="tab" id="tab-map" data-tab="map" aria-selected="false">World map</button></div>
+  <div class="tabs" role="tablist" aria-label="Sections" id="tabs"><button type="button" role="tab" id="tab-browse" data-tab="browse" aria-selected="true">Browse</button><button type="button" role="tab" id="tab-finder" data-tab="finder" aria-selected="false">Finder</button><button type="button" role="tab" id="tab-travel" data-tab="travel" aria-selected="false">Travel</button><button type="button" role="tab" id="tab-styles" data-tab="styles" aria-selected="false">Styles</button><button type="button" role="tab" id="tab-traditions" data-tab="traditions" aria-selected="false">Traditions</button><button type="button" role="tab" id="tab-twins" data-tab="twins" aria-selected="false">Twins &amp; trends</button><button type="button" role="tab" id="tab-learn" data-tab="learn" aria-selected="false">Learn</button><button type="button" role="tab" id="tab-shops" data-tab="shops" aria-selected="false">Shops &amp; leads</button><button type="button" role="tab" id="tab-map" data-tab="map" aria-selected="false">World map</button></div>
 
   <section id="mapview" class="offtab">
     <p class="why">Tap a country, then a city, a house, its signature scent and any single note. Tapping a note lights up every house in the world that uses it.</p>
@@ -242,6 +266,15 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <aside class="panel" id="m-panel" aria-live="polite"></aside>
   </div>
   <p class="hint">Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
+  </section>
+
+  <section class="travel offtab" id="travelview" aria-live="polite">
+    <div class="tv-head">
+      <div><div class="eyebrow">Scents to look out for</div><h2>Travelling? Smell the place.</h2>
+      <p class="why">Pick where you're going. You'll get local perfume houses to smell, shops and addresses, the smells of the place, what wears well in its weather, and a list you can tick off on the trip.</p></div>
+      <div class="tv-pick"><select id="tvSel" aria-label="Destination"></select><span class="tv-src" id="tvCount"></span></div>
+    </div>
+    <div id="tvBody"></div>
   </section>
 
   <section class="finder" id="finder">
@@ -458,10 +491,10 @@ function render() {
 }
 
 (async () => {
-  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices] = await Promise.all([
+  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel] = await Promise.all([
     load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
     load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []), load("data/scents/stores.json", []), load("data/scents/twins.json", []), load("data/scents/trends.json", []), load("data/scents/traditions.json", []),
-    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} })]);
+    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", [])]);
   D = { houses, regions, rates, leads, links, prices, fam: families };
   const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
   const verified = houses.filter((h) => h.price.status === "verified" || h.price.status === "retailer").length;
@@ -568,7 +601,61 @@ function render() {
   $("themes").onclick = (e) => { const b = e.target.closest("[data-th]"); if (b) applyTheme(b.dataset.th); };
   let saved = "default"; try { saved = localStorage.getItem("scentatlas.theme") || "default"; } catch (e) {}
   applyTheme(saved);
-  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox"], learn: ["#gloss"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
+  // ---------- Travel: scents to look out for ----------
+  let TRIP = {}; try { TRIP = JSON.parse(localStorage.getItem("scentatlas.trip") || "{}") || {}; } catch (e) {}
+  const tripSave = () => { try { localStorage.setItem("scentatlas.trip", JSON.stringify(TRIP)); } catch (e) {} };
+  const R = rates.cad_per || {};
+  const priceTxt = (p) => { if (!p || typeof p.amt !== "number") return ""; const c = p.cur !== "CAD" && R[p.cur] ? ` (≈ ${money(p.amt * R[p.cur], "CAD")})` : ""; return money(p.amt, p.cur) + (p.ml ? ` · ${p.ml} ml` : "") + c; };
+  const byId = Object.fromEntries(houses.map((h) => [h.id, h]));
+  const ccName = {}; houses.forEach((h) => { if (!ccName[h.cc]) ccName[h.cc] = h.country.replace(/ \(.*\)$/, ""); }); regions.forEach((r) => { ccName[r.cc] = r.country; });
+  const DESTS = [...travel.map((t) => ({ key: "g:" + t.id, label: `${t.city}, ${t.country}`, guide: t })), ...Object.entries(ccName).sort((a, b) => a[1].localeCompare(b[1])).map(([cc, n]) => ({ key: "c:" + cc, label: n, cc }))];
+  let tvCur = DESTS[0] && DESTS[0].key; try { const sv = localStorage.getItem("scentatlas.dest"); if (DESTS.some((d) => d.key === sv)) tvCur = sv; } catch (e) {}
+  $("tvSel").innerHTML = `<optgroup label="Full travel guides">${DESTS.filter((d) => d.guide).map((d) => `<option value="${d.key}">${esc(d.label)}</option>`).join("")}</optgroup><optgroup label="Any country in the atlas">${DESTS.filter((d) => d.cc).map((d) => `<option value="${d.key}">${esc(d.label)}</option>`).join("")}</optgroup>`;
+  const tick = (key, label, dest) => `<label><input type="checkbox" data-trip="${esc(key)}" data-label="${esc(label)}" data-dest="${esc(dest)}"${TRIP[key] ? " checked" : ""}> On my list</label>`;
+  const famLabel = (f) => (D.fam[f] && D.fam[f].label || f).replace(/ \(.*\)/, "");
+  const houseItem = (h, why, dest) => `<div class="tv-item"><div class="top"><b>${esc(h.name)}</b><small>${esc(h.city || h.country)}</small></div>${why ? `<span>${esc(why)}</span>` : ""}<small>Try: ${esc(h.sig.name)}${priceTxt(h.price) ? " · " + esc(priceTxt(h.price)) : ""}${h.try && typeof h.try.amt === "number" ? ` · to sample: ${esc(h.try.label || "small size")}, ${esc(money(h.try.amt, h.try.cur))}` : ""}</small><div class="tv-acts"><button class="mini" type="button" data-open="${esc(h.name)}">Open its card</button>${h.site ? `<a class="mini" href="${esc(h.site)}" target="_blank" rel="noopener">Website</a>` : ""}${tick("h:" + h.id, h.name, dest)}</div></div>`;
+  const shopItem = (sh, dest) => { const where = sh.address || sh.city || ""; return `<div class="tv-item"><div class="top"><b>${esc(sh.name)}</b><small>${esc(where)}</small></div><span>${esc(sh.what)}</span><div class="tv-acts"><a class="mini" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sh.name + " " + where)}" target="_blank" rel="noopener">Map</a>${sh.url ? `<a class="mini" href="${esc(sh.url)}" target="_blank" rel="noopener">Website</a>` : ""}${tick("s:" + sh.name, sh.name, dest)}</div></div>`; };
+  const suits = (wx, cc, skip) => houses.filter((h) => !skip.has(h.id)).map((h) => [h, h.families.filter((f) => wx.good.includes(f)).length * 2 - h.families.filter((f) => wx.fades.includes(f)).length * 2 + (h.cc === cc ? 1 : 0)]).filter(([, sc]) => sc >= 4).sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).slice(0, 5).map(([h]) => h);
+  const tvBox = (title, inner, cls = "") => `<section class="tv-box ${cls}"><h3>${title}</h3>${inner}</section>`;
+  const listBox = () => { const items = Object.entries(TRIP); return tvBox(`My trip list (${items.length})`, items.length ? `<div class="tv-list"><ol>${items.map(([k, v]) => `<li>${esc(v.label)} <span class="tv-src">· ${esc(v.dest)}</span> <button class="mini" type="button" data-untrip="${esc(k)}">remove</button></li>`).join("")}</ol></div><div class="tv-acts"><button class="tv-btn" type="button" id="tvCopy">Copy list</button><button class="mini" type="button" id="tvClear">Clear list</button><span class="tv-src" id="tvCopied" aria-live="polite"></span></div>` : `<small>Tick "On my list" on anything you want to smell or buy. The list stays on this device, so you can check it in the shop.</small>`); };
+  function renderTravel() {
+    const d = DESTS.find((x) => x.key === tvCur) || DESTS[0]; if (!d) return; $("tvSel").value = d.key;
+    let html = "";
+    if (d.guide) {
+      const g = d.guide, wx = g.weather, dest = g.city, local = new Set((g.lookfor || []).map((x) => x.house).filter(Boolean));
+      const look = (g.lookfor || []).map((x) => x.house && byId[x.house] ? houseItem(byId[x.house], x.why, dest) : `<div class="tv-item"><div class="top"><b>${esc(x.name)}</b>${x.price ? `<small>${esc(priceTxt(x.price))}</small>` : ""}</div><span>${esc(x.why)}</span><div class="tv-acts">${tick("x:" + x.name, x.name, dest)}</div></div>`).join("");
+      html += `<section class="tv-box wide"><div class="eyebrow">Travel guide · checked ${esc(g.on)}</div><h3 style="font-size:1.35rem">${esc(g.city)}, ${esc(g.country)}</h3><p style="margin:0">${esc(g.intro)}</p></section><div class="tv-grid" style="margin-top:14px">`;
+      if (wx) { const sug = suits(wx, g.cc, local); html += tvBox("What to wear in this weather", `<p style="margin:0"><b>${esc(wx.when)}:</b> ${esc(wx.feel)}</p><p style="margin:0">${esc(wx.wear)}</p><div class="tv-tags">Lasts well: ${wx.good.map((f) => `<span class="t">${esc(famLabel(f))}</span>`).join("")}</div><div class="tv-tags">Fades fast: ${wx.fades.map((f) => `<span class="t">${esc(famLabel(f))}</span>`).join("")}</div>${sug.length ? `<small>Also good for this weather, from the atlas: ${sug.map((h) => `<button class="mini" type="button" data-open="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}</small>` : ""}`, "tv-wx"); }
+      if (look) html += tvBox("Perfumes to smell here", look);
+      if ((g.shops || []).length) html += tvBox("Where to smell them", g.shops.map((x) => shopItem(x, dest)).join(""));
+      if ((g.smells || []).length) html += tvBox("Smells of the place", g.smells.map((x) => `<div class="tv-item"><b>${esc(x.name)}</b><span>${esc(x.what)}</span></div>`).join(""));
+      if ((g.trips || []).length) html += tvBox("Worth a day trip", g.trips.map((x) => `<div class="tv-item"><b>${esc(x.name)}</b><span>${esc(x.what)}</span><div class="tv-acts">${tick("d:" + x.name, x.name, dest)}</div></div>`).join(""));
+      if ((g.tips || []).length) html += tvBox("Good to know", `<ul class="tv-tips">${g.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`);
+      html += listBox() + `</div>`;
+      if ((g.sources || []).length) html += `<p class="tv-src">Sources: ${g.sources.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" · ")}</p>`;
+    } else {
+      const cc = d.cc, dest = d.label, reg = regions.find((r) => r.cc === cc), hs = houses.filter((h) => h.cc === cc), lc = d.label.toLowerCase();
+      const sts = stores.filter((x) => (x.country || "").toLowerCase().includes(lc)), tr = traditions.filter((t) => t.cc === cc);
+      html += `<section class="tv-box wide"><div class="eyebrow">Country overview</div><h3 style="font-size:1.35rem">${esc(d.label)}</h3>${reg ? `<p style="margin:0">${esc(reg.style)}</p><p class="why" style="margin:0">${esc(reg.roots)}</p>` : ""}<small>There's no full travel guide for ${esc(d.label)} yet, so this page is built from the atlas. Full guides add weather tips, shop addresses and day trips.</small></section><div class="tv-grid" style="margin-top:14px">`;
+      if (reg && (reg.materials || []).length) html += tvBox("Smells to look for", `<div class="tv-tags">${reg.materials.map((m) => `<span class="t">${esc(m)}</span>`).join("")}</div>${reg.where ? `<p style="margin:0"><b>Where to shop:</b> ${esc(reg.where)}</p>` : ""}`);
+      if (hs.length) html += tvBox(`Perfume houses from ${esc(d.label)}`, hs.map((h) => houseItem(h, h.why, dest)).join(""));
+      if (sts.length) html += tvBox("Where to smell them", sts.map((x) => shopItem(x, dest)).join(""));
+      if (tr.length) html += tvBox("Scent traditions", tr.map((t) => `<div class="tv-item"><b>${esc(t.name)}</b><small>${esc(t.place || "")}</small><span>${esc(t.smell || "")}</span><div class="tv-acts">${tick("t:" + t.id, t.name, dest)}</div></div>`).join(""));
+      html += listBox() + `</div>`;
+    }
+    $("tvBody").innerHTML = html;
+    $("tvCount").textContent = `${travel.length} full guide${travel.length === 1 ? "" : "s"} · ${DESTS.length - travel.length} countries`;
+  }
+  $("tvSel").onchange = () => { tvCur = $("tvSel").value; try { localStorage.setItem("scentatlas.dest", tvCur); } catch (e) {} renderTravel(); };
+  $("tvBody").addEventListener("change", (e) => { const c = e.target.closest("[data-trip]"); if (!c) return; const k = c.dataset.trip; if (c.checked) TRIP[k] = { label: c.dataset.label, dest: c.dataset.dest }; else delete TRIP[k]; tripSave(); renderTravel(); });
+  $("tvBody").addEventListener("click", async (e) => {
+    const o = e.target.closest("[data-open]"); if (o) { window.atlasOpenCard(o.dataset.open); return; }
+    const u = e.target.closest("[data-untrip]"); if (u) { delete TRIP[u.dataset.untrip]; tripSave(); renderTravel(); return; }
+    if (e.target.id === "tvClear") { TRIP = {}; tripSave(); renderTravel(); return; }
+    if (e.target.id === "tvCopy") { const txt = "Scents to look out for\n" + Object.values(TRIP).map((v) => `- ${v.label} (${v.dest})`).join("\n"); let ok = false; try { await navigator.clipboard.writeText(txt); ok = true; } catch (err) {} $("tvCopied").textContent = ok ? "Copied." : "Couldn't copy here; select the list and copy it."; }
+  });
+  renderTravel();
+  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], travel: ["#travelview"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox"], learn: ["#gloss"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
   let mapReady = false, curTab = "browse";
   async function showView(v) {
     if (!PANELS[v]) v = "browse"; curTab = v;
@@ -581,6 +668,7 @@ function render() {
     try { localStorage.setItem("scentatlas.tab", v); } catch (e) {}
     if (v === "map" && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions }); }
     if (v === "browse") render();
+    if (v === "travel") renderTravel();
   }
   function toBrowse() { if (curTab !== "browse") showView("browse"); $("tabs").scrollIntoView({ behavior: "smooth", block: "start" }); }
   $("tabs").onclick = (e) => { const b = e.target.closest("[data-tab]"); if (b) showView(b.dataset.tab); };

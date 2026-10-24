@@ -7439,5 +7439,320 @@
    "cur": "USD",
    "url": "https://cyklar.com/products/silicone-perfume-oil-keychain"
   }
+ },
+ {
+  "id": "cloon-keen",
+  "name": "Cloon Keen",
+  "country": "Ireland",
+  "cc": "IE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Galway (21a High Street), with a shop in Powerscourt Townhouse, Dublin",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://cloonkeen.com/",
+  "about": "A Galway perfume and candle house started over twenty years ago by Margaret Mangan. Scents are composed and hand-poured in the west of Ireland and draw on Irish myth, music, wool and weather; bottles are refillable.",
+  "why": "The most complete Irish niche house, and you can smell the whole line in Dublin city centre. Its incense-and-rose side suits cold, damp days.",
+  "families": [
+   "floral",
+   "woody",
+   "amber",
+   "spicy"
+  ],
+  "accents": [
+   "incense",
+   "rose",
+   "wool",
+   "gorse"
+  ],
+  "sig": {
+   "name": "Róisín Dubh (Eau de Parfum)",
+   "url": "https://cloonkeen.com/products/roisin-dubh-perfume",
+   "notes": {
+    "t": [
+     "damask rose"
+    ],
+    "h": [
+     "paper accord",
+     "patchouli"
+    ],
+    "b": [
+     "incense",
+     "black pepper",
+     "tobacco"
+    ]
+   },
+   "profile": "A dark, bookish rose: damask petals pressed between old pages and inky patchouli, drying down to smoky church incense, pepper and tobacco. Named after a 16th-century song that Irish writers took up as a symbol of the country."
+  },
+  "price": {
+   "amt": 130,
+   "cur": "EUR",
+   "ml": 75,
+   "status": "verified",
+   "src": "https://cloonkeen.com/products/roisin-dubh-perfume",
+   "on": "2026-10-24",
+   "note": "Refill bottle: €235 for 200 ml."
+  },
+  "try": {
+   "label": "10 ml travel set of three (Lá Bealtaine, Bel Étage, Báinín)",
+   "amt": 80,
+   "cur": "EUR",
+   "ml": 30,
+   "url": "https://cloonkeen.com/products/10-ml-classic-perfume-travel-set"
+  },
+  "also": [
+   {
+    "name": "Báinín (EDP)",
+    "notes": "Named after the creamy wool of Aran jumpers: soft violet, tonka and airy musk with gorse, wet herbs and the smell of rain on warm ground.",
+    "price": "€130 · 75 ml",
+    "url": "https://cloonkeen.com/products/bainin-refillable-eau-de-parfum"
+   },
+   {
+    "name": "Frosted Moon (EDP)",
+    "notes": "Cool, silvery iris over earthy angelica seed, cedar bark and vetiver with a green snap of galbanum.",
+    "price": "€130 · 75 ml",
+    "url": "https://cloonkeen.com/products/frosted-moon-eau-de-parfum"
+   },
+   {
+    "name": "Castaña (EDP)",
+    "notes": "Roasted street chestnuts with a trace of caramel, then vetiver, cardamom and red pepper softened by jasmine.",
+    "price": "€150 · 75 ml",
+    "url": "https://cloonkeen.com/products/castana-perfume"
+   },
+   {
+    "name": "Énbarr (EDP)",
+    "notes": "A mythical horse in perfume: geranium and saffron over polished oud and saddle leather.",
+    "price": "€170 · 75 ml",
+    "url": "https://cloonkeen.com/products/enbarr"
+   }
+  ],
+  "tags": [
+   "ireland",
+   "refillable",
+   "visit in dublin"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "burren-perfumery",
+  "name": "The Burren Perfumery",
+  "country": "Ireland",
+  "cc": "IE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Carron, County Clare (the Burren)",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://burrenperfumery.com/",
+  "about": "A small perfumery in the limestone Burren region of County Clare, run by perfumer Sadie Chowen. Scents are blended and bottled by hand and built around the area's wildflowers, mosses, ferns and woods, alongside organic soaps and lotions.",
+  "why": "The most 'Irish landscape' perfumes you can buy, and a place you can visit. If you can't get there, the nine-scent sample library is an affordable way to smell everything.",
+  "families": [
+   "green",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "moss",
+   "fern",
+   "wildflowers",
+   "herbs"
+  ],
+  "sig": {
+   "name": "Ilaun (Eau de Parfum)",
+   "url": "https://burrenperfumery.com/products/ilaun",
+   "notes": {
+    "t": [
+     "wild fragrant orchid"
+    ],
+    "h": [
+     "summer meadow"
+    ],
+    "b": [
+     "ferns",
+     "lichens",
+     "mosses"
+    ]
+   },
+   "profile": "A light summer's-day scent: a wild orchid that grows in the Burren, settling onto a cool green base of fern, lichen and moss. Fresh and gentle rather than sweet."
+  },
+  "price": {
+   "amt": 72,
+   "cur": "EUR",
+   "status": "verified",
+   "src": "https://burrenperfumery.com/products/ilaun",
+   "on": "2026-10-24",
+   "note": "The shop doesn't list the bottle size."
+  },
+  "try": {
+   "label": "Perfume Experience Library (9 × 2 ml, every scent)",
+   "amt": 45,
+   "cur": "EUR",
+   "ml": 18,
+   "url": "https://burrenperfumery.com/products/gift-pack"
+  },
+  "also": [
+   {
+    "name": "Winter Woods (EDT)",
+    "notes": "Rosemary, bergamot and lemon, then iris and lavender, drying to cedar, pine and vetiver. Quiet and woody.",
+    "price": "€74",
+    "url": "https://burrenperfumery.com/products/winter-woods"
+   },
+   {
+    "name": "Wild Rose (EDP)",
+    "notes": "Dawn in the Burren: pink grapefruit and bergamot, a soft centifolia rose, then honey and sandalwood.",
+    "price": "€130",
+    "url": "https://burrenperfumery.com/products/wild-rose"
+   },
+   {
+    "name": "Autumn Harvest (EDP)",
+    "notes": "Mint over rhubarb and blackcurrant, hazelnut and wood sage, then tonka and vetiver. Early-autumn orchard.",
+    "price": "€72",
+    "url": "https://burrenperfumery.com/products/autumn-harvest-eau-de-parfum"
+   },
+   {
+    "name": "Aran (EDT)",
+    "notes": "A fresh sea cologne for anyone: citrus on top, mossy, lichen-and-bark woods underneath.",
+    "price": "€74",
+    "url": "https://burrenperfumery.com/products/man-of-aran"
+   }
+  ],
+  "tags": [
+   "ireland",
+   "visit",
+   "organic",
+   "day trip"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "stories-parfums",
+  "name": "STORIES Parfums",
+  "country": "United Kingdom (Northern Ireland)",
+  "cc": "GB",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "County Down, Northern Ireland",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://storiesparfums.com/",
+  "founded": 2018,
+  "about": "A Northern Irish perfume brand founded by Tonya Kidd-Beggs in 2018, with a small line of story-led eaux de parfum plus matching body care.",
+  "why": "An easy-to-wear, giftable Irish-made pair of scents, with 15 ml travel bottles that fit in a carry-on.",
+  "families": [
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "fig",
+   "tea"
+  ],
+  "sig": {
+   "name": "STORIES Nº.01 (Eau de Parfum)",
+   "url": "https://storiesparfums.com/products/stories-no1-edp-30ml",
+   "notes": {
+    "t": [
+     "bergamot",
+     "grapefruit",
+     "orange blossom"
+    ],
+    "h": [
+     "cedarwood",
+     "jasmine",
+     "heliotrope",
+     "fig-tea accord"
+    ],
+    "b": [
+     "amber",
+     "sandalwood"
+    ]
+   },
+   "profile": "Bright citrus and orange blossom over a soft, slightly powdery heart of jasmine, heliotrope and fig tea, settling into warm amber and sandalwood. Polished and versatile."
+  },
+  "price": {
+   "amt": 85,
+   "cur": "GBP",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://storiesparfums.com/products/stories-no1-edp-30ml",
+   "on": "2026-10-24",
+   "note": "100 ml is £170."
+  },
+  "try": {
+   "label": "15 ml travel size",
+   "amt": 45,
+   "cur": "GBP",
+   "ml": 15,
+   "url": "https://storiesparfums.com/products/stories-no1-edp-15ml"
+  },
+  "also": [
+   {
+    "name": "STORIES Nº.02 (EDP)",
+    "notes": "Rose, ginger, cardamom and green tea over honeyed tobacco and cedar, with opoponax, tonka and musk.",
+    "price": "£85 · 30 ml",
+    "url": "https://storiesparfums.com/products/stories-no2-edp-30ml"
+   }
+  ],
+  "tags": [
+   "ireland",
+   "travel size"
+  ]
+ },
+ {
+  "id": "inis",
+  "name": "Inis (Fragrances of Ireland)",
+  "country": "Ireland",
+  "cc": "IE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "type": "lifestyle",
+  "scale": "medium",
+  "site": "https://www.fragrancesofireland.com/",
+  "about": "An Irish-made fragrance line sold widely in Irish pharmacies and gift shops, best known for one sea-inspired cologne and matching body care and diffusers.",
+  "why": "The affordable Irish souvenir scent: easy to find, unisex, and under €40 for a big bottle.",
+  "families": [
+   "aquatic",
+   "citrus",
+   "spicy",
+   "woody"
+  ],
+  "accents": [
+   "sea air"
+  ],
+  "sig": {
+   "name": "Inis The Energy of the Sea (Cologne)",
+   "url": "https://www.inishpharmacy.com/products/inis-cologne-spray-100ml",
+   "notes": {
+    "t": [
+     "sparkling citrus"
+    ],
+    "h": [
+     "clove",
+     "nutmeg"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "A breezy, clean cologne meant to smell like a walk on the Atlantic coast: fizzy citrus, a little warm spice and soft sandalwood. Light and unisex."
+  },
+  "price": {
+   "amt": 39.99,
+   "cur": "EUR",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.inishpharmacy.com/products/inis-cologne-spray-100ml",
+   "on": "2026-10-24",
+   "note": "Price at an Irish pharmacy."
+  },
+  "tags": [
+   "ireland",
+   "souvenir",
+   "pharmacy"
+  ]
  }
 ]

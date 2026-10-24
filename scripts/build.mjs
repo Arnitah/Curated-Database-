@@ -115,6 +115,24 @@ if (houses) {
   }
 }
 
+// Scents: travel guides
+const travel = sets['scents/travel']?.data;
+if (travel) {
+  const hid = new Set((houses || []).map((h) => h.id)), seen = new Set();
+  const url = (u) => typeof u === 'string' && /^https?:\/\//.test(u);
+  for (const t of travel) {
+    const w = `scents/travel ${t?.id || '?'}`;
+    if (!t.id || !/^[a-z0-9-]+$/.test(t.id)) errors.push(`${w}: needs an id`); else if (seen.has(t.id)) errors.push(`${w}: duplicate id`);
+    seen.add(t.id);
+    for (const k of ['city', 'country', 'cc', 'intro']) if (!t[k]) errors.push(`${w}: missing ${k}`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(t.on || '')) errors.push(`${w}: needs a checked date (on)`);
+    for (const x of t.lookfor || []) { if (x.house && !hid.has(x.house)) errors.push(`${w}: unknown house "${x.house}"`); if (!x.house && !x.name) errors.push(`${w}: look-for item needs a house or a name`); }
+    for (const sh of t.shops || []) if (!sh.name || !sh.what) errors.push(`${w}: each shop needs name and what`);
+    for (const u of t.sources || []) if (!url(u)) errors.push(`${w}: source must be a link`);
+    if (!(t.sources || []).length) warnings.push(`${w}: no sources listed`);
+  }
+}
+
 // Never allow personal data in this repo
 for (const k of Object.keys(sets)) if (/user|profile|log|saved|personal/i.test(k.split('/')[1]) && !/^safe-batch\/(year_|qy_)/.test(k)) errors.push(`${k}: personal data doesn't belong in this repo`);
 

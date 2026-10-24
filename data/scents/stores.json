@@ -94,5 +94,17 @@
   "city": "Seoul",
   "country": "South Korea",
   "what": "Korea's biggest beauty chain; its flagship has a large perfume wall with try-me testers of Korean and global brands."
+ },
+ {
+  "name": "Parfumarija",
+  "city": "Dublin",
+  "country": "Ireland",
+  "what": "Dublin's niche perfume boutique, run by a Grasse-trained perfumer; rare scents and custom blends at 25 Westbury Mall."
+ },
+ {
+  "name": "Cloon Keen Dublin",
+  "city": "Dublin",
+  "country": "Ireland",
+  "what": "The Galway house's Dublin shop inside Powerscourt Townhouse, off Grafton Street."
  }
 ]

@@ -784,5 +784,29 @@
   "lon": -98.35,
   "place": "United States",
   "precision": "country"
+ },
+ "cloon-keen": {
+  "lat": 53.272,
+  "lon": -9.052,
+  "place": "Galway",
+  "precision": "city"
+ },
+ "burren-perfumery": {
+  "lat": 53.035,
+  "lon": -9.068,
+  "place": "Carron, County Clare",
+  "precision": "city"
+ },
+ "stories-parfums": {
+  "lat": 54.33,
+  "lon": -5.95,
+  "place": "County Down",
+  "precision": "country"
+ },
+ "inis": {
+  "lat": 53.35,
+  "lon": -7.7,
+  "place": "Ireland",
+  "precision": "country"
  }
 }

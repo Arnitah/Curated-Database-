@@ -1,0 +1,136 @@
+[
+ {
+  "id": "dublin",
+  "city": "Dublin",
+  "country": "Ireland",
+  "cc": "IE",
+  "lat": 53.349,
+  "lon": -6.26,
+  "curated": true,
+  "on": "2026-10-24",
+  "intro": "Dublin's perfume scene is small but personal: one serious niche boutique, the Dublin shop of a Galway perfume house, and department stores with the big international niche names. Irish perfumers bottle their wet landscape, so look for moss, fern, gorse, wool, rain, sea air and church incense.",
+  "weather": {
+   "when": "Autumn and winter",
+   "feel": "Around 5 to 13 °C, damp, windy and often drizzly. Days are short from November.",
+   "wear": "Cool, damp air keeps scent close to the skin and burns off fresh citrus quickly. Woody, ambery, incense and soft musky scents last longer and feel cosy. Spray your scarf or coat collar: wool holds scent for days. Go light indoors, since pubs and cafés are small and warm.",
+   "good": [
+    "woody",
+    "amber",
+    "spicy",
+    "musk"
+   ],
+   "fades": [
+    "citrus",
+    "aquatic"
+   ]
+  },
+  "smells": [
+   {
+    "name": "Gorse",
+    "what": "Spiky yellow-flowered shrub on Irish hills and coastal paths (Howth Head is close to the city). On a sunny day the flowers smell of coconut and vanilla, and some bloom almost all year."
+   },
+   {
+    "name": "Turf smoke",
+    "what": "Burning peat (turf) has an earthy, smoky-sweet smell you'll still catch in country pubs and villages. Smoky, peaty notes in perfume and whiskey echo it."
+   },
+   {
+    "name": "Sea air",
+    "what": "Salt, seaweed and wet stone on the coast at Howth, Dún Laoghaire and Sandymount, the inspiration for most 'Irish sea' colognes."
+   },
+   {
+    "name": "Roasting barley",
+    "what": "Around St James's Gate the Guinness brewery can fill the air with a toasty, malty smell, like dark bread and coffee."
+   }
+  ],
+  "lookfor": [
+   {
+    "house": "cloon-keen",
+    "why": "Smell the whole Irish line in one stop, especially Róisín Dubh (incense rose) and Báinín (Aran-wool musk)."
+   },
+   {
+    "house": "burren-perfumery",
+    "why": "Landscape scents from County Clare. Its nine-scent sample library is the best-value Irish souvenir for a perfume lover."
+   },
+   {
+    "house": "inis",
+    "why": "The easy, affordable Irish sea cologne in pharmacies and gift shops; a good gift."
+   },
+   {
+    "house": "stories-parfums",
+    "why": "Northern Irish eaux de parfum with 15 ml travel bottles that fit the carry-on limit."
+   },
+   {
+    "name": "Maison Margiela Replica 'Under the Stars'",
+    "why": "Made by Irish perfumer Méabh McCurtin: labdanum, black pepper, leather and oud. Sold at Brown Thomas and Arnotts.",
+    "price": {
+     "amt": 69,
+     "cur": "EUR",
+     "ml": 30
+    },
+    "src": "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers"
+   }
+  ],
+  "shops": [
+   {
+    "name": "Parfumarija",
+    "address": "25 Westbury Mall, Dublin 2, D02 E524",
+    "what": "Dublin's niche perfume boutique. The owner trained as a perfumer in Grasse; rare independent houses, a guided smelling tour, and custom scents.",
+    "url": "https://www.parfumarija.com/",
+    "src": "https://www.dublintown.ie/business/parfumarija/"
+   },
+   {
+    "name": "Cloon Keen (Powerscourt Townhouse)",
+    "address": "Powerscourt Townhouse, South William Street, Dublin 2",
+    "what": "The Galway house's Dublin shop in a Georgian townhouse full of small boutiques.",
+    "url": "https://cloonkeen.com/",
+    "src": "https://thegloss.ie/visit-the-best-specialist-shops-in-ireland-2024/"
+   },
+   {
+    "name": "Brown Thomas",
+    "address": "Grafton Street, Dublin 2",
+    "what": "Ireland's luxury department store: big perfume hall with international niche brands (Le Labo and others).",
+    "url": "https://www.brownthomas.com/",
+    "src": "https://thegloss.ie/le-labo-stockists-ireland"
+   },
+   {
+    "name": "Arnotts",
+    "address": "Henry Street, Dublin 1",
+    "what": "Large department store north of the river with a wide perfume and beauty floor.",
+    "url": "https://www.arnotts.ie/",
+    "src": "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers"
+   },
+   {
+    "name": "Dublin Airport duty free",
+    "address": "Terminals 1 and 2, after security",
+    "what": "Last chance for big brands (Le Labo is sold here) and bottles over 100 ml, since you buy them after security.",
+    "src": "https://thegloss.ie/le-labo-stockists-ireland"
+   }
+  ],
+  "trips": [
+   {
+    "name": "Galway: Cloon Keen flagship",
+    "what": "21a High Street, in a medieval archway in the old town. About 2.5 hours from Dublin by train or bus, so an easy day trip."
+   },
+   {
+    "name": "The Burren Perfumery, County Clare",
+    "what": "The perfumery in Carron where the scents are blended and bottled by hand, in the middle of the Burren's limestone landscape. Best combined with a Galway or Cliffs of Moher trip."
+   }
+  ],
+  "tips": [
+   "Carry-on rule: liquids in 100 ml bottles or smaller in one clear bag. Buy big bottles after security, or pack them in checked luggage wrapped in clothes.",
+   "Visitors from outside the EU (Canada included) can usually claim back VAT on goods they take home. Ask the shop for a tax-free form and get it stamped at the airport.",
+   "Ask for samples or a paper strip before buying; most niche shops are happy to make you a small decant.",
+   "Prices are in euros. The atlas shows Canadian-dollar estimates on each house card."
+  ],
+  "sources": [
+   "https://thegloss.ie/visit-the-best-specialist-shops-in-ireland-2024/",
+   "https://www.dublintown.ie/business/parfumarija/",
+   "https://cloonkeen.com/",
+   "https://burrenperfumery.com/",
+   "https://storiesparfums.com/",
+   "https://www.inishpharmacy.com/products/inis-cologne-spray-100ml",
+   "https://thegloss.ie/le-labo-stockists-ireland",
+   "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers"
+  ]
+ }
+]
