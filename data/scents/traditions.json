@@ -21,7 +21,32 @@
   "modern": [
    "amouage"
   ],
-  "source": "https://mag.bynez.com/en/?p=51781"
+  "source": "https://mag.bynez.com/en/?p=51781",
+  "access": {
+   "level": 4,
+   "note": "The dried tuber is sold by some Senegalese sellers abroad, but its botanical name and shipping to Canada need checking. No finished gowé perfume is on sale yet."
+  },
+  "botany": "Sources disagree on the plant: one names it Cyperus articulatus, another Cyperus rotundus (both sedges). Treat the botanical name as unconfirmed.",
+  "verify": "Botanical name, local-language names, where it's harvested and how it's prepared.",
+  "buy": [
+   {
+    "name": "Maison Téranga (Canada)",
+    "what": "Dried gowé, 100 g",
+    "price": {
+     "amt": 12,
+     "cur": "CAD"
+    },
+    "status": "reported",
+    "note": "From your research; not checked yet. Confirm the plant and intended use with the seller."
+   }
+  ],
+  "perfumes": [
+   {
+    "name": "Amouage gowé perfume",
+    "house": "amouage",
+    "note": "In development for 2027, using an extract made with women harvesters in northern Senegal."
+   }
+  ]
  },
  {
   "id": "thiouraye",
@@ -44,7 +69,17 @@
    "resin"
   ],
   "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+  "access": {
+   "level": 3,
+   "note": "Sold by Senegalese shops and online sellers, mostly outside mainstream perfume stores. Recipes vary by maker."
+  },
+  "perfumes": [
+   {
+    "name": "No modern perfume found yet",
+    "note": "A gap: a thiouraye-inspired perfume or fabric scent could be made, as long as it credits the tradition."
+   }
+  ]
  },
  {
   "id": "kyphi",
@@ -65,9 +100,21 @@
    "myrrh"
   ],
   "modern": [
-   "curionoir"
+   "curionoir",
+   "meleg-perfumes"
   ],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+  "access": {
+   "level": 2,
+   "note": "Modern recreations exist from incense makers, and some perfumes are inspired by it."
+  },
+  "perfumes": [
+   {
+    "name": "Temple of Horus",
+    "house": "meleg-perfumes",
+    "note": "Canadian incense perfume inspired by a formula on the Temple of Horus walls at Edfu; inspired by it, not a copy of it."
+   }
+  ]
  },
  {
   "id": "frankincense-horn",
@@ -90,7 +137,31 @@
    "amouage",
    "parfum-satori"
   ],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+  "access": {
+   "level": 1,
+   "note": "Frankincense resin and oil are easy to buy, including from Canadian suppliers."
+  },
+  "buy": [
+   {
+    "name": "LVNEA (Montreal)",
+    "what": "Frankincense essential oil, Somali (carterii)",
+    "price": {
+     "amt": 10.95,
+     "cur": "CAD",
+     "ml": 5
+    },
+    "url": "https://www.lvnea.com/products/frankincense-somalia-essential-oil-pure-plant-extract-1",
+    "status": "verified"
+   }
+  ],
+  "perfumes": [
+   {
+    "name": "Temple of Horus",
+    "house": "meleg-perfumes",
+    "note": "Frankincense-led incense perfume made in Canada."
+   }
+  ]
  },
  {
   "id": "uunsi",
@@ -111,7 +182,11 @@
    "musk"
   ],
   "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+  "access": {
+   "level": 3,
+   "note": "Found through Somali shops and online sellers rather than perfume stores."
+  }
  },
  {
   "id": "kunukia",
@@ -132,7 +207,11 @@
    "resin"
   ],
   "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+  "access": {
+   "level": 4,
+   "note": "Mostly made at home or bought locally on the coast; hard to find abroad."
+  }
  },
  {
   "id": "dukhan",
@@ -153,7 +232,11 @@
    "musk"
   ],
   "modern": [],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 3,
+   "note": "Smoke wood and blends are sold by Sudanese shops and online sellers; the full ritual is learned, not bought."
+  }
  },
  {
   "id": "bakhoor",
@@ -179,7 +262,11 @@
    "kayali",
    "swiss-arabian"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Widely sold by Gulf perfume brands and Middle Eastern shops, online and in big Canadian cities."
+  }
  },
  {
   "id": "taif-rose",
@@ -201,7 +288,11 @@
   "modern": [
    "abdul-samad-al-qurashi"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 3,
+   "note": "Genuine Taif rose oil is rare and expensive; check the seller and the origin."
+  }
  },
  {
   "id": "golab",
@@ -221,7 +312,11 @@
    "Damask rose"
   ],
   "modern": [],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 1,
+   "note": "Rose water is sold in most grocery stores; Kashan-origin rose water is harder to find."
+  }
  },
  {
   "id": "attar",
@@ -248,7 +343,17 @@
    "naso-profumi",
    "neesh"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Finished attars are easy to order online; a specific traditional distillation such as true mitti is harder to source."
+  },
+  "perfumes": [
+   {
+    "name": "Mitti-style petrichor",
+    "note": "A gap: rain-on-earth (mitti) is hard to reproduce consistently, so few modern perfumes do it well."
+   }
+  ]
  },
  {
   "id": "gajra",
@@ -273,7 +378,11 @@
    "tadhana",
    "wren-atelier"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Fresh jasmine garlands can sometimes be found at South Asian shops, especially around festivals."
+  }
  },
  {
   "id": "yadom",
@@ -296,7 +405,11 @@
   "modern": [
    "karmakamet"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 1,
+   "note": "Thai herbal inhalers are sold at Asian grocery stores and online."
+  }
  },
  {
   "id": "kodo",
@@ -321,7 +434,11 @@
    "parfum-satori",
    "kitowa"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 3,
+   "note": "Kōdō sets and genuine aloeswood come from specialist Japanese incense houses; real aloeswood needs careful, legal sourcing."
+  }
  },
  {
   "id": "xiangdao",
@@ -346,7 +463,11 @@
    "to-summer",
    "uttori"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Chinese incense is easy to find; high-grade agarwood and sandalwood incense is specialist."
+  }
  },
  {
   "id": "hyangnang",
@@ -369,7 +490,11 @@
    "whipped",
    "tamburins"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Easy to make with dried herbs and resin; ready-made pouches from Korean craft sellers."
+  }
  },
  {
   "id": "tram-huong",
@@ -391,7 +516,11 @@
   "modern": [
    "ensar-oud"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 3,
+   "note": "Genuine agarwood is costly, often faked and trade-restricted, so buy only with clear, legal provenance."
+  }
  },
  {
   "id": "copal",
@@ -413,7 +542,17 @@
   "modern": [
    "xinu"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 2,
+   "note": "Raw copal resin is fairly easy to find; the tree species and origin vary between sellers."
+  },
+  "perfumes": [
+   {
+    "name": "Copal resin notes",
+    "note": "Appears as a resin note in some niche perfumes; check which species a perfumer used."
+   }
+  ]
  },
  {
   "id": "orange-blossom-water",
@@ -436,7 +575,25 @@
    "sana-jardin",
    "coqui-coqui"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 1,
+   "note": "Sold in grocery stores and Middle Eastern shops; neroli oil is a standard perfume material."
+  },
+  "buy": [
+   {
+    "name": "LVNEA (Montreal)",
+    "what": "Rose absolute (for comparison with Moroccan rose)",
+    "price": {
+     "amt": 15.95,
+     "cur": "CAD",
+     "ml": 5
+    },
+    "url": "https://www.lvnea.com/products/rose-absolute",
+    "status": "verified",
+    "note": "Diluted 5 ml; undiluted is C$35.95."
+   }
+  ]
  },
  {
   "id": "hungary-water",
@@ -458,7 +615,11 @@
   "modern": [
    "santa-maria-novella"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 1,
+   "note": "Rosemary oil and hydrosol are easy to buy; perfumers sell modern versions."
+  }
  },
  {
   "id": "eau-de-cologne",
@@ -482,7 +643,11 @@
    "acqua-di-parma",
    "santa-maria-novella"
   ],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 1,
+   "note": "Classic colognes are sold everywhere, including the original Cologne brands."
+  }
  },
  {
   "id": "sweetgrass",
@@ -503,6 +668,138 @@
    "sage"
   ],
   "modern": [],
-  "source": null
+  "source": null,
+  "access": {
+   "level": 4,
+   "note": "Sacred to many First Nations. Buy braids only from Indigenous makers, and leave ceremonial use to the communities it belongs to."
+  }
+ },
+ {
+  "id": "dhofar-frankincense",
+  "name": "Dhofar frankincense",
+  "local": "Luban",
+  "country": "Oman",
+  "cc": "OM",
+  "lat": 17.02,
+  "lon": 54.09,
+  "place": "Dhofar, around Salalah",
+  "what": "Resin tapped from Boswellia sacra trees in southern Oman, traded for thousands of years along the incense routes. Grades are sorted by colour and purity; the pale green-white Hojari is the most prized.",
+  "smell": "Fresh, lemony and piney when warmed, turning deeper, smoky and mineral as it burns.",
+  "how": "Burned on charcoal in clay burners to scent homes, clothes and guests; also chewed and soaked in water.",
+  "meaning": "Hospitality and daily life, and a source of the region's ancient wealth. Wild trees are under pressure, so sustainable harvesting matters.",
+  "materials": [
+   "frankincense",
+   "resin",
+   "lemon",
+   "pine"
+  ],
+  "modern": [
+   "meleg-perfumes",
+   "amouage"
+  ],
+  "access": {
+   "level": 1,
+   "note": "Easy: frankincense oil from the same species is sold by Canadian suppliers; good resin grades are specialist."
+  },
+  "buy": [
+   {
+    "name": "LVNEA (Montreal)",
+    "what": "Frankincense sacra essential oil",
+    "price": {
+     "amt": 19.95,
+     "cur": "CAD",
+     "ml": 5
+    },
+    "url": "https://www.lvnea.com/products/frankincense-sacra-essential-oil",
+    "status": "verified"
+   }
+  ],
+  "perfumes": [
+   {
+    "name": "Temple of Horus",
+    "house": "meleg-perfumes",
+    "note": "Built around Hojari frankincense."
+   }
+  ]
+ },
+ {
+  "id": "ylang-comoros",
+  "name": "Ylang-ylang of the Comoros and Madagascar",
+  "local": "Ylang-ylang",
+  "country": "Comoros and Madagascar",
+  "cc": "KM",
+  "lat": -12.25,
+  "lon": 44.45,
+  "place": "Anjouan (Comoros) and Nosy Be (Madagascar)",
+  "what": "Star-shaped yellow flowers picked at dawn and steam-distilled in small island stills. The oil is split into grades by how long it's distilled. Much of it is grown for export to perfumers.",
+  "smell": "Rich, creamy and sweet, between jasmine and banana custard, with a soft spicy edge.",
+  "how": "Distilled into oil for the global perfume industry; flowers are also used locally in hair and on bedding.",
+  "meaning": "A key island livelihood. Being a big export doesn't mean every community has the same traditional uses, so local practice and export crop are kept apart here.",
+  "materials": [
+   "ylang-ylang",
+   "vanilla",
+   "clove"
+  ],
+  "modern": [],
+  "access": {
+   "level": 1,
+   "note": "Easy: ylang-ylang oil is sold by Canadian suppliers. Specific grades and island origins are harder."
+  },
+  "buy": [
+   {
+    "name": "LVNEA (Montreal)",
+    "what": "Ylang-ylang essential oil",
+    "price": {
+     "amt": 9.95,
+     "cur": "CAD",
+     "ml": 5
+    },
+    "url": "https://www.lvnea.com/products/ylang-ylang-pure-essential-oil",
+    "status": "verified"
+   }
+  ]
+ },
+ {
+  "id": "haiti-vetiver",
+  "name": "Haitian vetiver",
+  "local": "Vétiver",
+  "country": "Haiti",
+  "cc": "HT",
+  "lat": 18.2,
+  "lon": -73.75,
+  "place": "Southern Haiti, around Les Cayes",
+  "what": "Grass roots dug up by farming families, washed, dried and steam-distilled into one of the most used oils in fine perfume. Haiti is one of the world's main sources.",
+  "smell": "Earthy, rooty and woody, with a cool green freshness and a hint of smoke and grapefruit.",
+  "how": "Mostly distilled for export to perfumers; the roots also hold soil on hillsides.",
+  "meaning": "An important income for thousands of small farmers. A local crop that became a global perfume staple.",
+  "materials": [
+   "vetiver",
+   "grapefruit",
+   "smoke"
+  ],
+  "modern": [],
+  "access": {
+   "level": 1,
+   "note": "Easy to moderate: Haitian vetiver oil is sold by Canadian perfume suppliers, and many perfumes feature it."
+  },
+  "buy": [
+   {
+    "name": "LVNEA (Montreal)",
+    "what": "Haitian vetiver essential oil",
+    "price": {
+     "amt": 14.95,
+     "cur": "CAD",
+     "ml": 5
+    },
+    "url": "https://www.lvnea.com/products/vetiver-hydrodiffused-pure-essential-oil",
+    "status": "verified"
+   }
+  ],
+  "perfumes": [
+   {
+    "name": "Le Labo Vetiver 46",
+    "note": "A designer-niche perfume built around Haitian vetiver with pepper, labdanum and incense; sold in Canada."
+   }
+  ]
  }
 ]

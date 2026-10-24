@@ -808,5 +808,23 @@
   "lon": -7.7,
   "place": "Ireland",
   "precision": "country"
+ },
+ "meleg-perfumes": {
+  "lat": 45.5,
+  "lon": -75.5,
+  "place": "Canada",
+  "precision": "country"
+ },
+ "lvnea": {
+  "lat": 45.508,
+  "lon": -73.587,
+  "place": "Montreal",
+  "precision": "city"
+ },
+ "le-falcone": {
+  "lat": 25.2,
+  "lon": 55.27,
+  "place": "Dubai",
+  "precision": "city"
  }
 }

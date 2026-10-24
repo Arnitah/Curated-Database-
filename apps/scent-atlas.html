@@ -227,8 +227,18 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 #mapview .trad { fill: var(--resin); stroke: var(--paper); vector-effect: non-scaling-stroke; cursor: pointer }
 #mapview .trad.off { display: none }
 .tradgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; margin-top: 12px }
-.tradcard { background: var(--bg); border-radius: 10px; padding: 10px 12px; display: grid; gap: 4px; font-size: 13.5px }
+.tradcard { background: var(--bg); border-radius: 10px; padding: 10px 12px; display: grid; align-content: start; gap: 4px; font-size: 13.5px }
 .tradcard b { font-family: var(--display); font-weight: 500; font-size: 1.05rem }
+.acc { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted) }
+.acc i { display: inline-flex; gap: 2px } .acc i span { width: 7px; height: 7px; border-radius: 50%; background: var(--line) } .acc i span.on { background: var(--accent) }
+.tradcard .buy { font-size: 12.5px; color: var(--muted) }
+.relgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; margin-top: 10px }
+.relgrid h3 { font-size: 1rem; margin: 0 0 6px }
+.relgrid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 13.5px }
+.relgrid li small { color: var(--muted) }
+.spot { display: grid; gap: 8px; margin-top: 10px; font-size: 13.5px }
+.spot .pick { display: grid; gap: 1px }
+.spot .pick small { color: var(--muted) }
 footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
 @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s } .card:hover { border-color: var(--accent) } }
 </style>
@@ -321,19 +331,29 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <h3 style="font-size:1.05rem;margin-top:16px">Words you will meet</h3>
       <div class="gl" id="acclist"></div>
     </details>
+    <details id="spotbox" open>
+      <summary>Note spotlight</summary>
+      <div id="spots"></div>
+    </details>
     <details id="tradbox" open style="grid-column: 1 / -1">
       <summary>Scent traditions</summary>
-      <p class="why">Old ways of wearing scent around the world: incense, smoke baths, attars, garlands and flower waters. Tap one to see it on the map.</p>
+      <p class="why">Old ways of wearing scent around the world: incense, smoke baths, attars, garlands and flower waters. Each card says how easy it is to get from Canada, where to buy the raw material and which modern perfumes echo it. Tap one to see it on the map.</p>
+      <div class="tv-tags" id="accesskey"></div>
       <div class="tradgrid" id="trads"></div>
     </details>
     <details id="twinbox" open>
       <summary>Budget twins</summary>
-      <p class="why">Cheaper scents that creators and your research say smell like famous perfumes. These are opinions, so smell before you buy.</p>
+      <p class="why">Cheaper scents that creators and researchers say smell like famous perfumes. These are opinions, so smell before you buy.</p>
       <div class="twins" id="twins"></div>
     </details>
     <details id="trendbox" open>
       <summary>What's trending</summary>
       <div class="gl" id="trends"></div>
+    </details>
+    <details id="relbox" open style="grid-column: 1 / -1">
+      <summary>New releases</summary>
+      <p class="why" id="relnote"></p>
+      <div class="relgrid" id="releases"></div>
     </details>
     <details id="storebox" open>
       <summary>Where to smell them</summary>
@@ -491,10 +511,10 @@ function render() {
 }
 
 (async () => {
-  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel] = await Promise.all([
+  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel, releases, spotlights] = await Promise.all([
     load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
     load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []), load("data/scents/stores.json", []), load("data/scents/twins.json", []), load("data/scents/trends.json", []), load("data/scents/traditions.json", []),
-    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", [])]);
+    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", []), load("data/scents/releases.json", null), load("data/scents/spotlights.json", [])]);
   D = { houses, regions, rates, leads, links, prices, fam: families };
   const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
   const verified = houses.filter((h) => h.price.status === "verified" || h.price.status === "retailer").length;
@@ -516,7 +536,19 @@ function render() {
   $("twins").innerHTML = twins.map((t) => `<div class="twin"><span><b>${esc(t.budget)}</b><small>${esc(t.budgetBrand)}${t.format ? " · " + esc(t.format) : ""}</small></span><span class="arrow">${t.direction === "similar" ? "≈" : "smells like"}</span><span><b>${esc(t.luxury)}</b><small>${esc(t.luxuryBrand || "")}${t.notes && t.notes.length ? (t.luxuryBrand ? " · " : "") + esc(t.notes.join(", ")) : ""}</small></span></div>`).join("");
   $("trends").innerHTML = trends.map((t) => `<div class="trend"><b>${esc(t.title)}</b><span class="why">${esc(t.what)} ${esc(t.note)}</span><span class="sim">See: ${t.examples.filter((x) => byIdA[x]).map((x) => `<button class="mini" type="button" data-q="${esc(byIdA[x].name)}">${esc(byIdA[x].name)}</button>`).join("")}</span></div>`).join("");
   document.querySelector(".two").addEventListener("click", (e) => { const q = e.target.closest("[data-q]"); if (q && q.closest("#trends")) { state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } });
-  $("trads").innerHTML = traditions.map((t) => `<div class="tradcard"><span class="eyebrow">${esc(t.country)}</span><b>${esc(t.name)}</b><span class="why">${esc(t.what)}</span><button class="mini" type="button" data-trad="${t.id}">See it on the map</button></div>`).join("");
+  // Access scale, tradition cards, releases, note spotlight
+  const ACC = { 1: "Easy to find", 2: "Specialist shop", 3: "Import or specialist", 4: "From the source or community", 5: "Research stage" };
+  const accTag = (a) => a ? `<span class="acc" title="${esc(a.note || "")}"><i>${[1, 2, 3, 4, 5].map((n) => `<span class="${n <= a.level ? "on" : ""}"></span>`).join("")}</i>${esc(ACC[a.level] || "")}</span>` : "";
+  $("accesskey").innerHTML = "How easy to get from Canada: " + [1, 2, 3, 4, 5].map((n) => `<span class="t">${n}. ${esc(ACC[n])}</span>`).join("");
+  const priceS = (p) => p && typeof p.amt === "number" ? money(p.amt, p.cur) + (p.ml ? ` / ${p.ml} ml` : "") : "";
+  $("trads").innerHTML = traditions.map((t) => { const b = (t.buy || [])[0], pf = (t.perfumes || []).find((x) => x.house || /^(?!No |A gap)/.test(x.name));
+    return `<div class="tradcard"><span class="eyebrow">${esc(t.country)}</span><b>${esc(t.name)}</b>${accTag(t.access)}<span class="why">${esc(t.what)}</span>${b ? `<span class="buy">Raw material: ${b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(b.name)}, ${esc(b.what)}${priceS(b.price) ? " · " + esc(priceS(b.price)) : ""}${b.status === "reported" ? " (not checked)" : ""}</span>` : ""}${pf ? `<span class="buy">Smell it in: ${pf.house && byIdA[pf.house] ? `<button class="mini" type="button" data-q="${esc(byIdA[pf.house].name)}">${esc(pf.name)}</button>` : esc(pf.name)}</span>` : ""}<button class="mini" type="button" data-trad="${t.id}">See it on the map</button></div>`; }).join("");
+  $("trads").addEventListener("click", (e) => { const q = e.target.closest("[data-q]"); if (q) { e.stopPropagation(); state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } }, true);
+  $("relnote").innerHTML = releases && releases.note ? `${esc(releases.note)} <a href="${esc(releases.src)}" target="_blank" rel="noopener">Source</a>` : "";
+  $("releases").innerHTML = ((releases && releases.months) || []).slice().reverse().map((m) => `<div><h3>${esc(m.label)}</h3><ul>${m.items.map((x) => `<li><b>${esc(x.brand)}</b> · ${esc(x.name)}<br><small>${esc(x.kind || "")}${x.date ? " · out " + esc(new Date(x.date + "T12:00").toLocaleDateString("en-CA", { month: "short", day: "numeric" })) : ""}</small></li>`).join("")}</ul></div>`).join("");
+  $("spots").innerHTML = (spotlights || []).map((sp) => { const keys = [sp.note, ...(sp.alias || [])]; const inAtlas = houses.filter((h) => { const n = h.sig.notes || {}; const all = [...(n.t || []), ...(n.h || []), ...(n.b || []), ...(h.also || []).map((a) => a.notes || "")].join(" ").toLowerCase(); return keys.some((k) => all.includes(k)); });
+    return `<div class="spot"><b style="font-family:var(--display);font-size:1.15rem">${esc(sp.note[0].toUpperCase() + sp.note.slice(1))}</b><span>${esc(sp.what)}</span><span class="why">Best for: ${esc(sp.wear)}</span>${sp.picks.map((x) => `<div class="pick"><span><b>${esc(x.name)}</b> · ${esc(x.brand)}</span><small>${esc(x.notes.join(", "))}</small></div>`).join("")}${inAtlas.length ? `<span>In the atlas: ${inAtlas.map((h) => `<button class="mini" type="button" data-q="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}</span>` : ""}<small class="why">${esc(sp.srcNote || "")} <a href="${esc(sp.src)}" target="_blank" rel="noopener">Source</a></small></div>`; }).join("");
+  $("spots").onclick = (e) => { const q = e.target.closest("[data-q]"); if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } };
   $("trads").onclick = async (e) => { const b = e.target.closest("[data-trad]"); if (!b) return; await showView("map"); window.mapGoTradition && window.mapGoTradition(b.dataset.trad); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); };
   $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
   $("foot").innerHTML = `Prices are as found on the check date: <b>verified</b> means read on the brand's own shop, <b>retailer</b> a reseller, <b>reported</b> from an article. Canadian-dollar figures are estimates from ${esc(rates.source || "seed")} rates on ${esc(rates.on || "")} and exclude shipping and duties. Dots show whether each house's links worked at the last weekly check (green working, amber site blocks automated checks, red broken). Not affiliated with any brand.`;
@@ -655,7 +687,7 @@ function render() {
     if (e.target.id === "tvCopy") { const txt = "Scents to look out for\n" + Object.values(TRIP).map((v) => `- ${v.label} (${v.dest})`).join("\n"); let ok = false; try { await navigator.clipboard.writeText(txt); ok = true; } catch (err) {} $("tvCopied").textContent = ok ? "Copied." : "Couldn't copy here; select the list and copy it."; }
   });
   renderTravel();
-  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], travel: ["#travelview"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox"], learn: ["#gloss"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
+  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], travel: ["#travelview"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox", "#relbox"], learn: ["#gloss", "#spotbox"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
   let mapReady = false, curTab = "browse";
   async function showView(v) {
     if (!PANELS[v]) v = "browse"; curTab = v;
@@ -861,6 +893,10 @@ function goTradition(id) {
   $("m-panel").innerHTML = `<div class="eyebrow">Scent tradition · ${esc(t.place)}, ${esc(t.country)}</div><h2>${esc(t.name)}</h2>${t.local && t.local !== t.name ? `<p class="muted">Local name: ${esc(t.local)}</p>` : ""}
     <p>${esc(t.what)}</p><p><b>What it smells like:</b> ${esc(t.smell)}</p><p><b>How it's used:</b> ${esc(t.how)}</p><p class="muted">${esc(t.meaning)}</p>
     <div><div class="eyebrow">Materials · tap to find them in perfumes worldwide</div><div style="margin-top:6px">${t.materials.map((m) => `<button class="note" type="button" data-note="${esc(m)}">${esc(m)}</button>`).join("")}</div></div>
+    ${t.access ? `<p><b>How easy to get from Canada:</b> level ${t.access.level} of 5. ${esc(t.access.note)}</p>` : ""}
+    ${t.botany ? `<p class="muted"><b>Plant:</b> ${esc(t.botany)}</p>` : ""}${t.verify ? `<p class="muted"><b>Still to confirm:</b> ${esc(t.verify)}</p>` : ""}
+    ${(t.buy || []).length ? `<h3>Where to get the material</h3><ul class="list">${t.buy.map((b) => `<li>${b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(b.name)}: ${esc(b.what)}${b.price && typeof b.price.amt === "number" ? " · " + esc(money(b.price.amt, b.price.cur)) + (b.price.ml ? " / " + b.price.ml + " ml" : "") : ""}${b.status === "reported" ? " (not checked)" : ""}${b.note ? `<br><span class="muted">${esc(b.note)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+    ${(t.perfumes || []).length ? `<h3>Modern perfumes</h3><ul class="list">${t.perfumes.map((x) => `<li><b>${esc(x.name)}</b>${x.note ? ` · <span class="muted">${esc(x.note)}</span>` : ""}</li>`).join("")}</ul>` : ""}
     ${mods.length ? `<h3>Modern houses that echo it</h3><ul class="list">${mods.map((h) => houseBtn(h)).join("")}</ul>` : ""}
     ${t.source ? `<p class="muted"><a href="${esc(t.source)}" target="_blank" rel="noopener">Source</a></p>` : ""}`;
 }

@@ -9,7 +9,7 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
-  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country), budget twins (twins: cheap scent and the luxury perfume it is said to resemble), trends (trends), traditional scent rituals with map points (traditions), city travel guides (travel)
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country), budget twins (twins: cheap scent and the luxury perfume it is said to resemble), trends (trends), traditional scent rituals with map points (traditions), city travel guides (travel), monthly new releases (releases), note spotlights (spotlights)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
 apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents) and scent-map.html (interactive world map)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
@@ -105,6 +105,8 @@ All descriptions are written in our own words. Every Monday the scent check refr
 
 ### Scent World Map
 `apps/scent-map.html` draws the world with country shapes built in (Natural Earth 110m via world-atlas, Equal Earth projection) so it needs no map-tile service. It reads `houses.json` and `geo.json`; when you add a house, add its coordinates to `geo.json` (`precision: "country"` when only the country is known). The validator warns if a house has no coordinates.
+
+**Traditions** carry an `access` level from Canada (1 easy to find, 2 specialist shop, 3 import or specialist, 4 from the source or community, 5 research stage), optional `buy` (where to get the raw material, with status), `perfumes` (modern perfumes that use or echo it), and `botany` / `verify` where the plant identity is unsettled (gowé).
 
 **Travel tab (`travel.json`):** "Scents to look out for" when travelling. Each full guide has an intro, weather and what wears well in it (`good` / `fades` families), local houses to smell (`lookfor`, pointing at house ids or standalone items), shops with addresses, smells of the place, day trips, tips and sources. Any other country gets an automatic overview built from houses, regions, stores and traditions. Visitors can tick items onto a trip list kept on their device. First guide: Dublin.
 

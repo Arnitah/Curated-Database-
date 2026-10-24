@@ -7754,5 +7754,224 @@
    "souvenir",
    "pharmacy"
   ]
+ },
+ {
+  "id": "meleg-perfumes",
+  "name": "Meleg Perfumes",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://melegperfumes.com/",
+  "about": "A Canadian artisan house run by perfumer Matthew Meleg, making small-batch incense perfumes with a high share of natural resins.",
+  "why": "A Canadian-made way to smell the ancient Egyptian temple-incense idea (see kyphi in Traditions). The maker says it's inspired by a formula carved at the Temple of Horus in Edfu, which isn't the same as being that recipe.",
+  "families": [
+   "amber",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "incense",
+   "frankincense",
+   "myrrh",
+   "resin"
+  ],
+  "sig": {
+   "name": "Temple of Horus",
+   "url": "https://melegperfumes.com/products/celebrate-life-bottle-temple-of-horus-50ml",
+   "notes": {
+    "t": [
+     "juniper berry",
+     "cardamom"
+    ],
+    "h": [
+     "Hojari frankincense",
+     "cedarwood"
+    ],
+    "b": [
+     "myrrh",
+     "benzoin"
+    ]
+   },
+   "profile": "Bright, lemony frankincense lifted by juniper and cardamom, sinking into warm, balsamic myrrh and benzoin. Like walking into a stone temple where resin has just been lit."
+  },
+  "price": {
+   "amt": 200,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://melegperfumes.com/products/celebrate-life-bottle-temple-of-horus-50ml",
+   "on": "2026-10-24"
+  },
+  "try": {
+   "label": "10 ml travel size",
+   "amt": 70,
+   "cur": "CAD",
+   "ml": 10,
+   "url": "https://melegperfumes.com/products/10ml-travel-size-temple-of-horus"
+  },
+  "also": [
+   {
+    "name": "Temple of Horus 2 (Myrrh & Floral Suede)",
+    "notes": "Pink lotus and soft florals over myrrh and powdery orris butter, drying to cedar and tonka. The smoother, daytime version.",
+    "price": "C$200 · 10 ml C$70",
+    "url": "https://melegperfumes.com/products/temple-of-horus-2-myrrh-floral-suede"
+   }
+  ],
+  "tags": [
+   "canada",
+   "incense",
+   "made in canada"
+  ]
+ },
+ {
+  "id": "lvnea",
+  "name": "LVNEA",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Montreal",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.lvnea.com/",
+  "about": "A Montreal botanical perfumer and apothecary. Perfumes are made by hand from essential oils, absolutes and other plant materials, and the shop also sells those raw materials to people who make their own.",
+  "why": "Canadian forest in a bottle, and the easiest Canadian shop for perfume raw materials (Haitian vetiver, frankincense, ylang-ylang, rose absolute) if you want to smell the ingredients behind the traditions.",
+  "families": [
+   "green",
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "pine",
+   "moss",
+   "forest",
+   "natural"
+  ],
+  "sig": {
+   "name": "Ghost Pine (Eau de Parfum)",
+   "url": "https://www.lvnea.com/products/ghost-pine-eau-de-parfum",
+   "notes": {
+    "t": [
+     "sticky pine needles",
+     "alpine air"
+    ],
+    "h": [
+     "sap-covered bark",
+     "boreal herbs"
+    ],
+    "b": [
+     "fallen leaves",
+     "roots",
+     "moss",
+     "damp soil"
+    ]
+   },
+   "profile": "An early-morning walk in the northern forest: sweet, resinous pine needles and cold air, then bark, old roots and wet moss. Balsamic and woody rather than air-freshener pine."
+  },
+  "price": {
+   "amt": 103,
+   "cur": "CAD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://www.lvnea.com/products/ghost-pine-eau-de-parfum",
+   "on": "2026-10-24"
+  },
+  "try": {
+   "label": "1.5 ml sample",
+   "amt": 9,
+   "cur": "CAD",
+   "ml": 1.5,
+   "url": "https://www.lvnea.com/products/ghost-pine-eau-de-parfum"
+  },
+  "also": [
+   {
+    "name": "Forêt Dormante (EDP)",
+    "notes": "A waking forest with flowers: bergamot and evergreens, cardamom and lavender, rose and neroli, then frankincense, tree sap and moss.",
+    "price": "C$103 · 30 ml (8 ml C$40)",
+    "url": "https://www.lvnea.com/products/la-foret-dormante-eau-de-parfum"
+   }
+  ],
+  "tags": [
+   "canada",
+   "natural",
+   "raw materials",
+   "made in canada"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "le-falcone",
+  "name": "Le Falcone",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Dubai",
+  "type": "mass",
+  "scale": "medium",
+  "site": "https://www.justmylook.com/products/le-falcone-bonita-pour-femme-eau-de-parfum-100ml",
+  "about": "A Dubai-made affordable perfume brand. Its Bonita line comes in round, handbag-shaped bottles with a braided handle and a hanging tag.",
+  "why": "Full 100 ml bottles for around £22, and the handbag bottle is part of the bag-as-accessory trend.",
+  "families": [
+   "floral",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "tropical"
+  ],
+  "sig": {
+   "name": "Bonita Pour Femme (Eau de Parfum)",
+   "url": "https://www.justmylook.com/products/le-falcone-bonita-pour-femme-eau-de-parfum-100ml",
+   "notes": {
+    "t": [
+     "bergamot",
+     "lavender"
+    ],
+    "h": [
+     "tropical fruits",
+     "lily",
+     "geranium",
+     "lily of the valley"
+    ],
+    "b": [
+     "sandalwood",
+     "vanilla"
+    ]
+   },
+   "profile": "A bright, dewy floral: citrus and lavender, then tropical fruit with lily and lily of the valley, settling into soft vanilla sandalwood. Easy, sweet and everyday."
+  },
+  "price": {
+   "amt": 21.95,
+   "cur": "GBP",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.justmylook.com/products/le-falcone-bonita-pour-femme-eau-de-parfum-100ml",
+   "on": "2026-10-24",
+   "note": "UK retailer price; no brand shop price found."
+  },
+  "also": [
+   {
+    "name": "Bonita Hot Pink (EDP)",
+    "notes": "Sorbet, lily, bergamot and mandarin, then jasmine, bougainvillea and pink pepper over clean musk and an earthy base.",
+    "price": "£22.99 · 100 ml",
+    "url": "https://www.justmylook.com/products/le-falcone-bonita-hot-pink-eau-de-parfum-100ml"
+   },
+   {
+    "name": "Bonita Coco Mango (EDP)",
+    "notes": "The yellow bottle in the set; notes not yet checked.",
+    "price": "price not checked"
+   }
+  ],
+  "tags": [
+   "dubai",
+   "affordable",
+   "bag bottle"
+  ]
  }
 ]

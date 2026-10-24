@@ -1,6 +1,6 @@
 {
-  "version": 87,
-  "updated_at": "2026-10-24T19:15:33.331Z",
+  "version": 88,
+  "updated_at": "2026-10-24T20:25:18.881Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -321,16 +321,16 @@
       "updated_at": "2026-10-24T01:36:02.784Z"
     },
     "scents/geo": {
-      "count": 135,
-      "bytes": 13292,
-      "hash": "d671ce96d0d6",
-      "updated_at": "2026-10-24T19:14:45.442Z"
+      "count": 138,
+      "bytes": 13584,
+      "hash": "045f7c7bf446",
+      "updated_at": "2026-10-24T20:25:18.878Z"
     },
     "scents/houses": {
-      "count": 135,
-      "bytes": 189279,
-      "hash": "d53956118cfe",
-      "updated_at": "2026-10-24T19:14:45.446Z"
+      "count": 138,
+      "bytes": 195463,
+      "hash": "7ab70ed71e83",
+      "updated_at": "2026-10-24T20:25:18.881Z"
     },
     "scents/leads": {
       "count": 36,
@@ -350,6 +350,18 @@
       "hash": "bb7c2f5e2617",
       "updated_at": "2026-10-24T19:14:45.446Z"
     },
+    "scents/releases": {
+      "count": 3,
+      "bytes": 3792,
+      "hash": "182e5fdee388",
+      "updated_at": "2026-10-24T20:25:18.881Z"
+    },
+    "scents/spotlights": {
+      "count": 1,
+      "bytes": 1073,
+      "hash": "d62040c67a87",
+      "updated_at": "2026-10-24T20:25:18.881Z"
+    },
     "scents/stores": {
       "count": 18,
       "bytes": 3178,
@@ -357,10 +369,10 @@
       "updated_at": "2026-10-24T19:14:45.446Z"
     },
     "scents/traditions": {
-      "count": 22,
-      "bytes": 14131,
-      "hash": "400485589413",
-      "updated_at": "2026-10-24T18:38:22.193Z"
+      "count": 25,
+      "bytes": 23824,
+      "hash": "9daea806c80a",
+      "updated_at": "2026-10-24T20:25:18.881Z"
     },
     "scents/travel": {
       "count": 1,
@@ -370,9 +382,9 @@
     },
     "scents/trends": {
       "count": 5,
-      "bytes": 2180,
-      "hash": "2227f879c3d4",
-      "updated_at": "2026-10-24T18:38:22.193Z"
+      "bytes": 2403,
+      "hash": "9d0a153ccf2e",
+      "updated_at": "2026-10-24T20:25:18.881Z"
     },
     "scents/twins": {
       "count": 14,
