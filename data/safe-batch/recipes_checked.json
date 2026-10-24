@@ -51845,5 +51845,90 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "clear-glow-multi-balm",
+    "name": "Clear glow multi balm",
+    "claim": "A dewy, no-makeup glow for cheekbones, lips and brows",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        14,
+        "g"
+      ],
+      [
+        "argan",
+        6,
+        "g"
+      ],
+      [
+        "candelilla",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        0.2,
+        "g"
+      ]
+    ],
+    "note": "Melt the candelilla and shea, stir in the oils and vitamin E, and pour into a small tin. Warm a rice-grain amount on a fingertip and pat onto the high points of the cheeks, cupid's bow and lids. Keep it off the T-zone so it reads as glow, not shine. Add a pinch of pearl or champagne mica for a subtle opal sheen. Not a moisturiser replacement on dry skin; use very little if you're oily or acne-prone.",
+    "inspired": "Jones Road Miracle Balm (Au Naturel)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Jones Road"
+    }
+  },
+  {
+    "id": "tinted-cheek-and-lip-balm-shade-guide",
+    "name": "Tinted cheek and lip balm (pick your shade)",
+    "claim": "Sheer colour and glow in one pot",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        13,
+        "g"
+      ],
+      [
+        "argan",
+        5,
+        "g"
+      ],
+      [
+        "candelilla",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        4,
+        "g"
+      ],
+      [
+        "mica",
+        0.8,
+        "g"
+      ],
+      [
+        "vite",
+        0.2,
+        "g"
+      ]
+    ],
+    "note": "Make the clear balm, then stir in lip-safe mica before it sets. Shade guide: fair or pink undertones, a rosy-pink mica; light to deep with redness, a golden bronze; medium to deep, a brick or brown-red; deep skin, a deep bronze with gold shimmer; any tone, a warm peach-gold. Mix two micas to fine-tune and swatch on your jaw first. Tap onto cheeks before anywhere else, then lips and lids. Use only cosmetic mica sold as lip-safe; a pinch of beetroot or cocoa powder works for colour but can fade or turn gritty.",
+    "inspired": "Jones Road Miracle Balm (tinted shades)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Jones Road"
+    }
   }
 ]
