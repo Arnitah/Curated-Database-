@@ -51630,5 +51630,45 @@
       "creator": "_botany_soap",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "oil-vitamin-c-glow-serum",
+    "name": "Oil-soluble vitamin C glow serum",
+    "claim": "Gentle antioxidant serum for a more even, radiant tone",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        15,
+        "g"
+      ],
+      [
+        "squalane",
+        8,
+        "g"
+      ],
+      [
+        "apricot",
+        3,
+        "g"
+      ],
+      [
+        "thdascorbate",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Stir the oil-soluble vitamin C and vitamin E into the oils and bottle in a dark dropper. Use 3 to 4 drops at night or under sunscreen in the morning. Unlike pure ascorbic acid, this form stays stable in oil, which is why the store version uses it (with acerola juice and apricot kernel oil). Expect slow, gentle results over 8 to 12 weeks.",
+    "inspired": "Balea Vitamin C facial serum",
+    "source": {
+      "creator": "Store product",
+      "platform": "dm"
+    }
   }
 ]

@@ -6588,5 +6588,25 @@
     "lvl": "ok",
     "good": "Finely ground jade used in luxury powders for a silky slip and story.",
     "care": "Mostly decorative; the oil control in setting powders comes from silica, kaolin or starch. Don't inhale loose powders."
+  },
+  {
+    "id": "thdascorbate",
+    "grp": "Preserving and mixing",
+    "name": "Oil-soluble vitamin C (tetrahexyldecyl ascorbate, ascorbyl tetraisopalmitate)",
+    "ph": "active",
+    "d": 0.95,
+    "lvl": "ok",
+    "good": "A vitamin C ester that dissolves in oil and is far more stable than pure ascorbic acid, so it suits simple oil serums at home. Gentle; doesn't sting.",
+    "care": "Milder and slower than ascorbic acid. Use 3 to 10%, store dark and cool, and use within 3 to 6 months."
+  },
+  {
+    "id": "acerola",
+    "grp": "Powders and exfoliants",
+    "name": "Acerola cherry (Malpighia) powder or juice",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Tart cherry that's one of the richest natural sources of vitamin C; used in brightening masks.",
+    "care": "Its vitamin C fades fast once wet and it's acidic, so mix fresh and rinse off."
   }
 ]
