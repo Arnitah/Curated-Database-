@@ -7165,5 +7165,11 @@
  "oil-vitamin-c-glow-serum": {
   "verdict": "ok",
   "flags": []
+ },
+ "magnesium-probiotic-deodorant-stick": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash"
+  ]
  }
 }

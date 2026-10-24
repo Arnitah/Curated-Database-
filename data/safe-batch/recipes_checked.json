@@ -51670,5 +51670,65 @@
       "creator": "Store product",
       "platform": "dm"
     }
+  },
+  {
+    "id": "magnesium-probiotic-deodorant-stick",
+    "name": "Magnesium and coconut deodorant stick (low baking soda)",
+    "claim": "All-day odour control with a fine-fragrance scent",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        30,
+        "g"
+      ],
+      [
+        "tapioca",
+        25,
+        "g"
+      ],
+      [
+        "candelilla",
+        12,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        8,
+        "g"
+      ],
+      [
+        "bakingsoda",
+        3,
+        "g"
+      ],
+      [
+        "coconut",
+        12,
+        "g"
+      ],
+      [
+        "shea",
+        8,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the wax, coconut oil and shea into the caprylic oil, take off the heat, whisk in the tapioca, magnesium hydroxide and baking soda until smooth, add vitamin E and a skin-safe fragrance, and pour into a twist-up tube. The store stick uses the same trio (baking soda, magnesium hydroxide and odour-trapping cyclodextrin) plus a probiotic; baking soda is the strong odour killer but the usual cause of rash, so this keeps it to about 3%. Tapioca soaks up a little sweat, but no aluminum-free stick stops wetness; for that, use an antiperspirant at night. Stop if underarms itch, sting or darken.",
+    "inspired": "TONE aluminum-free deodorant",
+    "source": {
+      "creator": "Store product",
+      "platform": "TONE"
+    }
   }
 ]
