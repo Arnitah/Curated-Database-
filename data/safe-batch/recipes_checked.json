@@ -50260,5 +50260,230 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "herbal-mishat-hair-mask",
+    "name": "Herbal mishat hair mask",
+    "claim": "Softens, adds shine and leaves hair scented",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "mahlab",
+        1,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "basil",
+        1,
+        "tsp"
+      ],
+      [
+        "clovepowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "datepit",
+        1,
+        "tsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tsp"
+      ],
+      [
+        "rosepowder",
+        1,
+        "tbsp"
+      ],
+      [
+        "yogurt",
+        3,
+        "tbsp"
+      ],
+      [
+        "water",
+        2,
+        "tbsp"
+      ],
+      [
+        "argan",
+        4,
+        "drops"
+      ]
+    ],
+    "note": "Grind the dried herbs to a fine powder (or buy a ready mishat mix), stir in the yogurt, a little water and the oil until smooth. Apply to the scalp and lengths, leave 30 to 45 minutes at most, then rinse well, shampoo and condition. Keep cloves to a pinch on a sensitive scalp. Make it fresh each time.",
+    "inspired": "OLAH Herbal Mishat",
+    "source": {
+      "creator": "Store product",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "hyaluronic-b5-hydrating-toner",
+    "name": "Hyaluronic and B5 hydrating toner (dry skin)",
+    "claim": "Plumping, cushiony first layer for dry skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        90,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "panthenol",
+        3,
+        "g"
+      ],
+      [
+        "hyaluronic",
+        0.3,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Sprinkle the hyaluronic acid over the water and let it swell for a few hours, then stir in glycerin, panthenol and the preservative. Shake, then pat onto clean skin with your hands or a cotton pad. Use within 1 to 2 months and keep it out of the eyes. Seal it in with a moisturizer.",
+    "inspired": "Hyaluronic and vitamin B5 toners",
+    "source": {
+      "creator": "Store product",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "green-tea-niacinamide-toner",
+    "name": "Green tea and niacinamide toner (oily skin)",
+    "claim": "Light, oil-balancing toner",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        90,
+        "g"
+      ],
+      [
+        "greenteapowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "niacinamide",
+        4,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Whisk the matcha into the water and let it settle, then pour off the clear top (or strain through a coffee filter). Dissolve the niacinamide, add glycerin and the preservative. Shake, then pat onto clean skin with your hands or a cotton pad. Use within 1 to 2 months and keep it out of the eyes. Start every other day if niacinamide is new to you.",
+    "inspired": "Green tea and niacinamide toners",
+    "source": {
+      "creator": "Store product",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "centella-calming-toner",
+    "name": "Centella calming toner (sensitive skin)",
+    "claim": "Soothing, fragrance-free toner for reactive skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        92,
+        "g"
+      ],
+      [
+        "centella",
+        0.5,
+        "tsp"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Steep the centella in just-boiled water for 10 minutes, strain through a coffee filter and cool. Add glycerin, panthenol and the preservative. No essential oils or fragrance, which is what makes it suit sensitive skin. Shake, then pat onto clean skin with your hands or a cotton pad. Use within 1 to 2 months and keep it out of the eyes.",
+    "inspired": "Centella, cica and heartleaf toners",
+    "source": {
+      "creator": "Store product",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "willow-bark-clarifying-toner",
+    "name": "Willow bark clarifying toner (acne-prone skin)",
+    "claim": "Gentle toner for congested skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        92,
+        "g"
+      ],
+      [
+        "willow",
+        0.5,
+        "tsp"
+      ],
+      [
+        "niacinamide",
+        2,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Steep the willow bark in just-boiled water for 15 minutes, strain well and cool, then add niacinamide, glycerin and the preservative. Shake, then pat onto clean skin with your hands or a cotton pad. Use within 1 to 2 months and keep it out of the eyes. Willow bark holds only a little salicin, so it isn't the same as salicylic acid. For real acne, a store 2% BHA or a pharmacy treatment works better.",
+    "inspired": "BHA and tea tree acne toners",
+    "source": {
+      "creator": "Store product",
+      "platform": "TikTok"
+    }
   }
 ]

@@ -7020,5 +7020,27 @@
  "white-clay-enzyme-powder-cleanser": {
   "verdict": "ok",
   "flags": []
+ },
+ "herbal-mishat-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "hyaluronic-b5-hydrating-toner": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "green-tea-niacinamide-toner": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "centella-calming-toner": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "willow-bark-clarifying-toner": {
+  "verdict": "care",
+  "flags": [
+   "care: Willow bark isn't salicylic acid"
+  ]
  }
 }

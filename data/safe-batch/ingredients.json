@@ -6321,7 +6321,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Dark purple peel rich in anthocyanin antioxidants; extracts appear in Brazilian skin and hair care.",
+    "good": "Dark purple peel rich in anthocyanin antioxidants; extracts appear in Brazilian skin and hair care. Scent idea: sweet, floral white grape with a tannic skin.",
     "care": "Fresh pulp spoils within a day and the peel stains. Little research on hair; use as a fresh mask only."
   },
   {
@@ -6342,7 +6342,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Watery, mildly hydrating pulp; the seeds give a linoleic-rich oil.",
+    "good": "Watery, mildly hydrating pulp; the seeds give a linoleic-rich oil. Scent idea: honeyed and mild; yellow pitahaya is the sweetest kind.",
     "care": "Fresh pulp spoils within a day; the seeds can scratch if rubbed hard."
   },
   {
@@ -6352,7 +6352,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Juicy, melon-like fruit used like cucumber in cooling masks.",
+    "good": "Juicy, melon-like fruit used like cucumber in cooling masks. Scent idea: honeydew melon and cucumber.",
     "care": "Nightshade family; patch test if you react to tomatoes. Spoils fast."
   },
   {
@@ -6362,7 +6362,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Soapberry-family fruit from Papua and Maluku; leaves and bark are used in traditional washes.",
+    "good": "Soapberry-family fruit from Papua and Maluku; leaves and bark are used in traditional washes. Scent idea: longan and rambutan with a hint of durian.",
     "care": "Almost no cosmetic research. Treat as a food scent inspiration, not an active."
   },
   {
@@ -6372,7 +6372,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Jackfruit relative with sweet, custard-like flesh; a gourmand scent inspiration.",
+    "good": "Jackfruit relative with sweet, custard-like flesh; a gourmand scent inspiration. Scent idea: soft vanilla custard.",
     "care": "The rind's sticky latex can irritate skin. No cosmetic research on the flesh."
   },
   {
@@ -6382,7 +6382,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Crisp, watery fruit; a light, fresh scent idea.",
+    "good": "Crisp, watery fruit; a light, fresh scent idea. Scent idea: crisp, watery and lightly floral, close to rosewater.",
     "care": "Little cosmetic research. Spoils fast."
   },
   {
@@ -6392,7 +6392,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Dry, creamy, carotene-rich pulp that mashes into a smooth mask like sweet potato.",
+    "good": "Dry, creamy, carotene-rich pulp that mashes into a smooth mask like sweet potato. Scent idea: pumpkin cheesecake and maple.",
     "care": "Use fresh, the same day. Little research."
   },
   {
@@ -6402,7 +6402,7 @@
     "ph": "fresh",
     "d": 1.02,
     "lvl": "ok",
-    "good": "Fruit high in vitamin C and carotenoids; the aromatic leaves are used in Brazilian teas and rinses.",
+    "good": "Fruit high in vitamin C and carotenoids; the aromatic leaves are used in Brazilian teas and rinses. Scent idea: sweet-sour and resinous.",
     "care": "Tart and acidic, so it can sting. Little research on skin or hair."
   },
   {
@@ -6424,7 +6424,7 @@
     "tsp": 2,
     "lvl": "care",
     "flag": "Raw rowan berries are irritating",
-    "good": "Traditional Northern European berry for jams and tonics once cooked; rich in vitamin C.",
+    "good": "Traditional Northern European berry for jams and tonics once cooked; rich in vitamin C. Traditionally picked after the first frost and boiled into jelly.",
     "care": "Raw berries contain parasorbic acid, which irritates the stomach and skin; cooking or drying breaks it down. Little cosmetic research."
   },
   {
@@ -6456,5 +6456,15 @@
     "lvl": "ok",
     "good": "Ready-made conditioner; diluted, it becomes a leave-in detangling spray.",
     "care": "Diluting it with water also dilutes its preservative, so add one (and use within 1 to 2 months)."
+  },
+  {
+    "id": "datepit",
+    "grp": "Powders and exfoliants",
+    "name": "Date seed (date pit) powder",
+    "ph": "powder",
+    "tsp": 2.5,
+    "lvl": "ok",
+    "good": "Roasted, ground date pits are a classic in Gulf hair blends like mishat; they add body and a warm, coffee-like scent.",
+    "care": "Gritty unless very finely ground, so rinse well. Little research on hair."
   }
 ]

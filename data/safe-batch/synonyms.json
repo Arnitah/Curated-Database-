@@ -1,5 +1,9 @@
 [
   [
+    "date (seed|pit|stone)s?( powder)?|nawat al-tamr|nawat? tamr",
+    "datepit"
+  ],
+  [
     "\\bharitaki|\\bhirda\\b|\\bharad\\b|terminalia chebula|chebulic myrobalan",
     "haritaki"
   ],
