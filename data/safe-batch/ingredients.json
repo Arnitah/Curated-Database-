@@ -6466,5 +6466,26 @@
     "lvl": "ok",
     "good": "Roasted, ground date pits are a classic in Gulf hair blends like mishat; they add body and a warm, coffee-like scent.",
     "care": "Gritty unless very finely ground, so rinse well. Little research on hair."
+  },
+  {
+    "id": "myrtleeo",
+    "grp": "Essential oils",
+    "name": "Myrtle essential oil",
+    "ph": "eo",
+    "d": 0.89,
+    "lvl": "ok",
+    "good": "Fresh, camphor-like herbal oil, traditional in Middle Eastern and Mediterranean scalp care.",
+    "care": "Gentler than eucalyptus but still strong; keep it low and away from young children's faces."
+  },
+  {
+    "id": "zataria",
+    "grp": "Essential oils",
+    "name": "Shirazi thyme (Zataria multiflora, za'atar) essential oil",
+    "ph": "eo",
+    "d": 0.92,
+    "max": 0.5,
+    "lvl": "care",
+    "good": "Persian thyme oil rich in thymol and carvacrol, studied for antifungal effects, which is why it shows up in dandruff and scalp blends.",
+    "care": "Thymol and carvacrol irritate skin. Keep it at or below 0.5% and never use it neat."
   }
 ]

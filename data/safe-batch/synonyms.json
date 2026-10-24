@@ -1,5 +1,13 @@
 [
   [
+    "myrtle (essential )?oil|myrtus communis oil",
+    "myrtleeo"
+  ],
+  [
+    "zataria|shirazi thyme|za.?atar (essential )?oil",
+    "zataria"
+  ],
+  [
     "date (seed|pit|stone)s?( powder)?|nawat al-tamr|nawat? tamr",
     "datepit"
   ],

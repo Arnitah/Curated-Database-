@@ -7042,5 +7042,32 @@
   "flags": [
    "care: Willow bark isn't salicylic acid"
   ]
+ },
+ "argan-almond-pre-wash-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-scalp-drops-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "stop: Essential oils are nearly undiluted",
+   "stop: Shirazi thyme (Zataria multiflora, za'atar) essential oil is too strong"
+  ]
+ },
+ "rosemary-myrtle-scalp-oil-diluted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sidr-scalp-paste": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chamomile-argan-shine-serum": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "caffeine-protein-scalp-tonic": {
+  "verdict": "ok",
+  "flags": []
  }
 }
