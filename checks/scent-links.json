@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 89,
-  "blocked": 17,
+  "pass": 107,
+  "blocked": 13,
   "fail": 0
  },
  "houses": {
@@ -52,7 +52,7 @@
    "price": "pass"
   },
   "to-summer": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -173,18 +173,18 @@
   },
   "fueguia-1833": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "natura": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "zoologist": {
-   "site": "blocked",
-   "sig": "pass",
-   "price": "pass"
+   "site": "pass",
+   "sig": "blocked",
+   "price": "blocked"
   },
   "imaginary-authors": {
    "site": "pass",
@@ -192,9 +192,9 @@
    "price": "pass"
   },
   "goldfield-banks": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
   },
   "hiram-green": {
    "site": "pass",
@@ -262,9 +262,9 @@
    "price": "pass"
   },
   "skybottle": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
   },
   "whipped": {
    "site": "pass",
@@ -272,7 +272,7 @@
    "price": "pass"
   },
   "kst-scent": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -322,7 +322,7 @@
    "price": "pass"
   },
   "the-perfumatory": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -332,7 +332,7 @@
    "price": "pass"
   },
   "sifr-aromatics": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -348,13 +348,13 @@
   },
   "monsillage": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "curionoir": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "the-virtue": {
    "site": "pass",
@@ -382,7 +382,7 @@
    "price": "pass"
   },
   "essential-parfums": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -442,7 +442,7 @@
    "price": "pass"
   },
   "xerjoff": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -532,6 +532,76 @@
    "price": "pass"
   },
   "histoires-de-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "michael-malul": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "kayali": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "sana-jardin": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "floraiku": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ds-and-durga": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "arquiste": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "henry-rose": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "maya-njie": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "27-87": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "rogue-perfumery": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "sultan-pasha": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "libertine": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "liquides-imaginaires": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ellis-brooklyn": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"

@@ -490,5 +490,19 @@
    "rose"
   ],
   "where": "Barcelona"
+ },
+ {
+  "cc": "MA",
+  "country": "Morocco",
+  "style": "Orange blossom, rose and jasmine from the countryside, plus rich musks and spices from the souks.",
+  "roots": "Rose valley near Kelaat M'Gouna, orange blossom water traditions and Berber harvesting.",
+  "materials": [
+   "orange blossom",
+   "Damask rose",
+   "jasmine",
+   "argan",
+   "musk"
+  ],
+  "where": "Marrakech souks, Kelaat M'Gouna"
  }
 ]

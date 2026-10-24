@@ -6011,5 +6011,834 @@
    "note": "Price not yet checked."
   },
   "tags": []
+ },
+ {
+  "id": "michael-malul",
+  "name": "Michael Malul",
+  "country": "North America (shop in USD and CAD)",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Origin not stated on the brand site",
+  "type": "indie",
+  "scale": "mid",
+  "site": "https://michaelmalul.com/",
+  "about": "A fragrance brand started by a founder who came from luxury perfume retail, aiming for 'scents people actually want to wear'. Known for story-led ranges like Citizen Jack, Jet Black and the paired 'Latte+Nectar' style duos, at mid prices.",
+  "why": "Your pick. Good value for 100 ml bottles, 10 ml minis for C$-friendly trying, and a Canadian shop setting.",
+  "families": [
+   "gourmand",
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "coffee",
+   "layering"
+  ],
+  "sig": {
+   "name": "Latte+Nectar",
+   "url": "https://michaelmalul.com/products/latte-nectar",
+   "notes": {
+    "t": [
+     "clementine",
+     "nectarine",
+     "dulce de leche"
+    ],
+    "h": [
+     "orange blossom",
+     "jasmine",
+     "iced macchiato"
+    ],
+    "b": [
+     "whipped cream",
+     "amber",
+     "musk"
+    ]
+   },
+   "profile": "A caramel iced coffee in a sunny café: juicy clementine and nectarine with dulce de leche, a soft orange-blossom and coffee heart, and a creamy whipped-cream amber finish. Also: Citizen Jack (melon, sage, vetiver, tonka) and New Journalist (citrus, lavender, vetiver)."
+  },
+  "price": {
+   "amt": 140,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://michaelmalul.com/products/latte-nectar",
+   "on": "2026-10-24",
+   "note": "Most scents US$130 to US$140 per 100 ml; the shop can switch to Canadian dollars."
+  },
+  "tags": [
+   "value",
+   "layering",
+   "canada shipping"
+  ],
+  "try": {
+   "label": "10 ml mini",
+   "amt": 30,
+   "cur": "USD",
+   "ml": 10,
+   "url": "https://michaelmalul.com/products/latte-nectar"
+  }
+ },
+ {
+  "id": "kayali",
+  "name": "KAYALI",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Dubai",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://kayali.com/",
+  "about": "A Dubai brand by Mona Kattan, built on Middle Eastern layering culture: each perfume is numbered and designed to be stacked with others.",
+  "why": "Gulf layering made playful; huge with gourmand fans.",
+  "families": [
+   "gourmand",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "layering",
+   "vanilla"
+  ],
+  "sig": {
+   "name": "Yum Vanilla Cupcake | 108",
+   "url": "https://kayali.com/products/yum-vanilla-cupcake-108",
+   "notes": {
+    "t": [
+     "lemon sugar",
+     "sprinkles"
+    ],
+    "h": [
+     "white caramel",
+     "toasted coconut",
+     "sweet milk"
+    ],
+    "b": [
+     "vanilla frosting"
+    ]
+   },
+   "profile": "A birthday cupcake: sugary lemon and sprinkles, then caramel, toasted coconut and warm milk on a thick vanilla-frosting base. Pure fun."
+  },
+  "price": {
+   "amt": 420,
+   "cur": "AED",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://kayali.com/products/yum-vanilla-cupcake-108",
+   "on": "2026-10-24",
+   "note": "100 ml AED 559."
+  },
+  "tags": [
+   "layering",
+   "gourmand",
+   "dubai"
+  ],
+  "try": {
+   "label": "10 ml travel spray",
+   "amt": 116,
+   "cur": "AED",
+   "ml": 10,
+   "url": "https://kayali.com/products/yum-vanilla-cupcake-108"
+  }
+ },
+ {
+  "id": "sana-jardin",
+  "name": "Sana Jardin",
+  "country": "Morocco / United Kingdom",
+  "cc": "MA",
+  "region": "North Africa",
+  "continent": "Africa",
+  "city": "London, with flower harvesters in Morocco",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://sanajardin.com/",
+  "about": "A brand that works with women flower harvesters in Morocco, turning leftover flowers into income for them. Vegan, essential-oil-led scents.",
+  "why": "Social-impact perfume with North African roots; low entry prices on some scents.",
+  "families": [
+   "musk",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "essential oils",
+   "social impact"
+  ],
+  "sig": {
+   "name": "Nubian Musk",
+   "url": "https://sanajardin.com/products/nubian-musk",
+   "notes": {
+    "t": [],
+    "h": [
+     "musk",
+     "rose",
+     "jasmine"
+    ],
+    "b": [
+     "vanilla",
+     "vetiver",
+     "sandalwood"
+    ]
+   },
+   "profile": "A warm skin musk wrapped in rose and jasmine, with smoky vetiver and creamy sandalwood underneath. Sensual and close."
+  },
+  "price": {
+   "amt": 47.5,
+   "cur": "GBP",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://sanajardin.com/products/nubian-musk",
+   "on": "2026-10-24",
+   "note": "100 ml £90; other scents £115 per 50 ml."
+  },
+  "tags": [
+   "social impact",
+   "vegan",
+   "morocco"
+  ],
+  "try": {
+   "label": "10 ml",
+   "amt": 11.2,
+   "cur": "GBP",
+   "ml": 10,
+   "url": "https://sanajardin.com/products/nubian-musk"
+  }
+ },
+ {
+  "id": "floraiku",
+  "name": "Floraïku",
+  "country": "France (Japanese-inspired)",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://floraiku.com/",
+  "about": "A Paris house inspired by Japanese haiku, tea ceremony and bento-box presentation; each perfume reads like a short poem.",
+  "why": "Japanese aesthetic from a French house; tea notes galore.",
+  "families": [
+   "fruity",
+   "gourmand",
+   "woody"
+  ],
+  "accents": [
+   "tea",
+   "genmaicha"
+  ],
+  "sig": {
+   "name": "One Umbrella For Two",
+   "url": "https://floraiku.com/products/one-umbrella-for-two-eau-de-parfum-10ml-v2",
+   "notes": {
+    "t": [
+     "blackcurrant"
+    ],
+    "h": [
+     "genmaicha (toasted rice tea)"
+    ],
+    "b": [
+     "cedarwood"
+    ]
+   },
+   "profile": "Sharing an umbrella in the rain: juicy blackcurrant meets nutty, toasted-rice genmaicha tea on soft cedar. Sweet and cozy."
+  },
+  "price": {
+   "amt": 60,
+   "cur": "EUR",
+   "ml": 10,
+   "status": "verified",
+   "src": "https://floraiku.com/products/one-umbrella-for-two-eau-de-parfum-10ml-v2",
+   "on": "2026-10-24",
+   "note": "10 ml €60; 30 ml €180; 50 ml with 10 ml refill €295."
+  },
+  "tags": [
+   "japanese aesthetic",
+   "tea"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "ds-and-durga",
+  "name": "D.S. & Durga",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "New York",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://dsanddurga.com/",
+  "about": "A New York husband-and-wife house known for wildly specific, story-rich scents (from pistachio to corpse flower).",
+  "why": "Playful American indie; Pistachio is a cult gourmand.",
+  "families": [
+   "gourmand",
+   "amber"
+  ],
+  "accents": [
+   "pistachio"
+  ],
+  "sig": {
+   "name": "Pistachio",
+   "url": "https://dsanddurga.com/products/pistachio",
+   "notes": {
+    "t": [
+     "pistachio",
+     "cardamom",
+     "raw sugar"
+    ],
+    "h": [
+     "roasted almond",
+     "patchouli"
+    ],
+    "b": [
+     "musk",
+     "vanilla crème"
+    ]
+   },
+   "profile": "Freshly cracked pistachios with cardamom and raw sugar, deepening into toasted almond and finishing on creamy vanilla musk. Nutty rather than dessert-sweet."
+  },
+  "price": {
+   "amt": 225,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://dsanddurga.com/products/pistachio",
+   "on": "2026-10-24",
+   "note": "100 ml US$300."
+  },
+  "tags": [
+   "gourmand",
+   "new york"
+  ],
+  "try": {
+   "label": "10 ml",
+   "amt": 80,
+   "cur": "USD",
+   "ml": 10,
+   "url": "https://dsanddurga.com/products/pistachio"
+  }
+ },
+ {
+  "id": "arquiste",
+  "name": "Arquiste",
+  "country": "Mexico / United States",
+  "cc": "MX",
+  "region": "Latin America",
+  "continent": "Americas",
+  "city": "New York, founded by Mexican architect Carlos Huber",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://arquiste.com/",
+  "about": "A house that recreates exact historical moments in scent, each with a date and place, founded by a Mexican-born architect.",
+  "why": "History as perfume; strong Mexican and Spanish storytelling.",
+  "families": [
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "almond",
+   "suede"
+  ],
+  "sig": {
+   "name": "Almond Suede",
+   "url": "https://arquiste.com/products/almond-suede",
+   "notes": {
+    "t": [
+     "pink pepper",
+     "bergamot",
+     "honeycomb",
+     "bitter almond"
+    ],
+    "h": [
+     "cistus",
+     "neroli",
+     "saffron",
+     "orange flower"
+    ],
+    "b": [
+     "candied sugar",
+     "vanilla",
+     "pine tar",
+     "suede"
+    ]
+   },
+   "profile": "Medieval Córdoba's almond sweets: marzipan, honey and orange blossom softened by smooth suede and a smoky hint of pine tar. Addictive gourmand."
+  },
+  "price": {
+   "amt": 225,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://arquiste.com/products/almond-suede",
+   "on": "2026-10-24",
+   "note": "30 ml US$105."
+  },
+  "tags": [
+   "history",
+   "mexico"
+  ],
+  "try": {
+   "label": "30 ml",
+   "amt": 105,
+   "cur": "USD",
+   "ml": 30,
+   "url": "https://arquiste.com/products/almond-suede"
+  }
+ },
+ {
+  "id": "henry-rose",
+  "name": "Henry Rose",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Los Angeles",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://henryrose.com/",
+  "about": "Michelle Pfeiffer's brand, known for full ingredient transparency and safety-screened formulas.",
+  "why": "Ingredient transparency fits your Safe Batch and Clay values.",
+  "families": [
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "transparent formulas"
+  ],
+  "sig": {
+   "name": "Flora Carnivora",
+   "url": "https://henryrose.com/products/flora-carnivora-perfume",
+   "notes": {
+    "t": [],
+    "h": [
+     "white flowers"
+    ],
+    "b": [
+     "creamy woods"
+    ]
+   },
+   "profile": "A white floral 'with bite': powerful yet soft, creamy yet a little carnal, made to be genderless."
+  },
+  "price": {
+   "amt": 120,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://henryrose.com/products/flora-carnivora-perfume",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "ingredient transparency"
+  ],
+  "try": {
+   "label": "8 ml travel spray",
+   "amt": 35,
+   "cur": "USD",
+   "ml": 8,
+   "url": "https://henryrose.com/products/flora-carnivora-perfume"
+  }
+ },
+ {
+  "id": "maya-njie",
+  "name": "Maya Njie",
+  "country": "Sweden",
+  "cc": "SE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Stockholm",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://mayanjie.com/",
+  "about": "A Stockholm perfumer of Swedish and Gambian heritage who makes small-batch scents from memories and nature.",
+  "why": "Tiny Scandinavian studio, affordable for niche.",
+  "families": [
+   "gourmand",
+   "woody"
+  ],
+  "accents": [
+   "vanilla"
+  ],
+  "sig": {
+   "name": "Vanilj",
+   "url": "https://mayanjie.com/products/vanilj-50ml",
+   "notes": {
+    "t": [],
+    "h": [
+     "vanilla"
+    ],
+    "b": [
+     "bourbon-like woods"
+    ]
+   },
+   "profile": "A cozy vanilla with a slightly boozy, bourbon-like edge. Warm and simple."
+  },
+  "price": {
+   "amt": 105,
+   "cur": "GBP",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://mayanjie.com/products/vanilj-50ml",
+   "on": "2026-10-24",
+   "note": "Shop shown in GBP from abroad."
+  },
+  "tags": [
+   "stockholm",
+   "small batch"
+  ],
+  "try": {
+   "label": "7.5 ml",
+   "amt": null,
+   "cur": "GBP",
+   "ml": 7.5,
+   "url": "https://mayanjie.com/"
+  },
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "27-87",
+  "name": "27 87 Perfumes",
+  "country": "Spain",
+  "cc": "ES",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Barcelona",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://2787perfumes.com/",
+  "about": "A Barcelona studio making playful, unexpected scents, including yearly archive editions (durian, gin, lavender).",
+  "why": "Mediterranean indie with a sense of humour.",
+  "families": [
+   "fruity",
+   "amber",
+   "floral"
+  ],
+  "accents": [
+   "banana",
+   "honey"
+  ],
+  "sig": {
+   "name": "Hakuna Matata",
+   "url": "https://2787perfumes.com/products/hakuna-matata",
+   "notes": {
+    "t": [
+     "bergamot"
+    ],
+    "h": [
+     "jasmine",
+     "banana"
+    ],
+    "b": [
+     "honey",
+     "amber"
+    ]
+   },
+   "profile": "Carefree and tropical: ripe banana and honey with bright bergamot and a heady southern-Chinese jasmine."
+  },
+  "price": {
+   "amt": 185,
+   "cur": "EUR",
+   "ml": 87,
+   "status": "verified",
+   "src": "https://2787perfumes.com/products/hakuna-matata",
+   "on": "2026-10-24",
+   "note": "27 ml €95."
+  },
+  "tags": [
+   "barcelona",
+   "playful"
+  ],
+  "try": {
+   "label": "27 ml",
+   "amt": 95,
+   "cur": "EUR",
+   "ml": 27,
+   "url": "https://2787perfumes.com/products/hakuna-matata"
+  }
+ },
+ {
+  "id": "rogue-perfumery",
+  "name": "Rogue Perfumery",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "United States",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://rogueperfumery.com/",
+  "about": "A one-man US indie reviving old-school, oakmoss-rich classic perfumery.",
+  "why": "Vintage-style perfume at indie prices; full sample set for US$45.",
+  "families": [
+   "floral",
+   "spicy",
+   "gourmand"
+  ],
+  "accents": [
+   "vintage style"
+  ],
+  "sig": {
+   "name": "Jasmin Antique",
+   "url": "https://rogueperfumery.com/products/jasmin-antique",
+   "notes": {
+    "t": [],
+    "h": [
+     "jasmine",
+     "cloves"
+    ],
+    "b": [
+     "musk",
+     "vanilla"
+    ]
+   },
+   "profile": "A warm summer night full of jasmine, spiced with clove and softened by musk and vanilla. Classic and heady."
+  },
+  "price": {
+   "amt": 85,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://rogueperfumery.com/products/jasmin-antique",
+   "on": "2026-10-24",
+   "note": "75 ml US$156; full sample set US$45."
+  },
+  "tags": [
+   "vintage",
+   "indie"
+  ],
+  "try": {
+   "label": "Sample set",
+   "amt": 45,
+   "cur": "USD",
+   "url": "https://rogueperfumery.com/products/complete-sample-set"
+  }
+ },
+ {
+  "id": "sultan-pasha",
+  "name": "Sultan Pasha Attars",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "United Kingdom",
+  "type": "attar",
+  "scale": "micro",
+  "site": "https://sultanpashaattars.com/",
+  "about": "A cult British artisan making very concentrated attar-style perfume oils with rare natural materials, in tiny batches.",
+  "why": "For serious oil lovers; sold by the millilitre, with a free sample of the same blend.",
+  "families": [
+   "floral",
+   "amber",
+   "woody"
+  ],
+  "accents": [
+   "attar",
+   "perfume oil",
+   "tea"
+  ],
+  "sig": {
+   "name": "Shirin Chai",
+   "url": "https://sultanpashaattars.com/products/shirin-chai",
+   "notes": {
+    "t": [
+     "Persian rose",
+     "saffron",
+     "cardamom",
+     "mint"
+    ],
+    "h": [
+     "amber",
+     "jasmine",
+     "honey"
+    ],
+    "b": [
+     "black tea",
+     "beeswax",
+     "tobacco",
+     "sandalwood"
+    ]
+   },
+   "profile": "Persian spiced rose tea: rose, saffron and cardamom over honeyed jasmine, drying down to black tea, beeswax and tobacco. Rich and luxurious."
+  },
+  "price": {
+   "amt": 250,
+   "cur": "GBP",
+   "ml": 3,
+   "status": "verified",
+   "src": "https://sultanpashaattars.com/products/shirin-chai",
+   "on": "2026-10-24",
+   "note": "1 ml £88; 6 ml £450."
+  },
+  "tags": [
+   "attar",
+   "luxury oil"
+  ],
+  "try": {
+   "label": "1 ml",
+   "amt": 88,
+   "cur": "GBP",
+   "ml": 1,
+   "url": "https://sultanpashaattars.com/products/shirin-chai"
+  }
+ },
+ {
+  "id": "libertine",
+  "name": "Libertine",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Vancouver",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://libertinefragrance.com/",
+  "about": "A Vancouver house making bold, artful perfumes and incense cones, priced in CAD.",
+  "why": "Canadian-made and Canadian-priced, with travel sizes.",
+  "families": [
+   "fruity",
+   "green"
+  ],
+  "accents": [
+   "passionfruit",
+   "incense"
+  ],
+  "sig": {
+   "name": "Fruit Thieves",
+   "url": "https://libertinefragrance.com/products/fruit-thieves-tart-juicy-passionfruit",
+   "notes": {
+    "t": [
+     "sour passionfruit"
+    ],
+    "h": [
+     "green vines"
+    ],
+    "b": [
+     "sweet fruit juice"
+    ]
+   },
+   "profile": "Stolen fruit over a fence: sticky, sour passionfruit and green vines, juicy and a little wild."
+  },
+  "price": {
+   "amt": 197,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://libertinefragrance.com/products/fruit-thieves-tart-juicy-passionfruit",
+   "on": "2026-10-24",
+   "note": "100 ml C$290 (website exclusive)."
+  },
+  "tags": [
+   "canada",
+   "vancouver"
+  ],
+  "try": {
+   "label": "Travel size",
+   "amt": 86,
+   "cur": "CAD",
+   "url": "https://libertinefragrance.com/products/fruit-thieves-travel-sized"
+  }
+ },
+ {
+  "id": "liquides-imaginaires",
+  "name": "Liquides Imaginaires",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://liquidesimaginaires.com/",
+  "about": "A Paris house built on myths and legends, plus an 'upcycled' citrus line.",
+  "why": "Fairy-tale perfume with real craft.",
+  "families": [
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "mythic"
+  ],
+  "sig": {
+   "name": "Blanche Bête",
+   "url": "https://liquidesimaginaires.com/products/blanche-bete",
+   "notes": {
+    "t": [],
+    "h": [
+     "white flowers"
+    ],
+    "b": [
+     "soft musk"
+    ]
+   },
+   "profile": "Inspired by the unicorn: pale, luminous white flowers with a soft, milky glow."
+  },
+  "price": {
+   "amt": 205,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://liquidesimaginaires.com/products/blanche-bete",
+   "on": "2026-10-24",
+   "note": "100 ml US$310."
+  },
+  "tags": [
+   "myth",
+   "paris"
+  ]
+ },
+ {
+  "id": "ellis-brooklyn",
+  "name": "Ellis Brooklyn",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "New York",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://ellisbrooklyn.com/",
+  "about": "A clean-beauty New York brand of easy, cozy scents in eau de parfum, hair and body mist formats.",
+  "why": "Gourmand rice scents that echo the Asian 'rice milk' trend.",
+  "families": [
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "rice",
+   "coconut"
+  ],
+  "sig": {
+   "name": "Vanilla Rice",
+   "url": "https://ellisbrooklyn.com/products/vanilla-rice-eau-de-parfum",
+   "notes": {
+    "t": [],
+    "h": [
+     "sakura",
+     "jasmine nectar"
+    ],
+    "b": [
+     "toasted rice",
+     "vanilla",
+     "coconut milk"
+    ]
+   },
+   "profile": "Warm toasted rice and coconut milk with vanilla, lifted by sweet cherry blossom and jasmine. Soft and comforting."
+  },
+  "price": {
+   "amt": 115,
+   "cur": "USD",
+   "ml": null,
+   "status": "verified",
+   "src": "https://ellisbrooklyn.com/products/vanilla-rice-eau-de-parfum",
+   "on": "2026-10-24",
+   "note": "Size not shown on the page."
+  },
+  "tags": [
+   "clean beauty",
+   "rice"
+  ]
  }
 ]
