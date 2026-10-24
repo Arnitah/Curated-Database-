@@ -343,5 +343,31 @@
    "cocoa"
   ],
   "where": "Department stores, niche shops"
+ },
+ {
+  "cc": "SG",
+  "country": "Singapore",
+  "style": "A trading-port mix: Malay, Arab, Indian and Chinese scent traditions, from attar shops to modern home-scent brands.",
+  "roots": "Kampong Glam's Arab Street has sold attars and oils for generations.",
+  "materials": [
+   "oud",
+   "saffron",
+   "pandan",
+   "jasmine"
+  ],
+  "where": "Arab Street, Kampong Glam"
+ },
+ {
+  "cc": "NZ",
+  "country": "New Zealand",
+  "style": "Small studios inspired by coast, bush and Māori plant knowledge.",
+  "roots": "Rongoā Māori (traditional plant healing) and wild coastlines.",
+  "materials": [
+   "kawakawa",
+   "mānuka",
+   "moss",
+   "sea salt"
+  ],
+  "where": "Auckland (Ponsonby), New Plymouth"
  }
 ]

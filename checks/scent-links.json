@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 52,
-  "blocked": 7,
+  "pass": 65,
+  "blocked": 6,
   "fail": 0
  },
  "houses": {
@@ -227,7 +227,7 @@
    "price": "pass"
   },
   "mith-bangkok": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -297,6 +297,66 @@
    "price": "pass"
   },
   "dries-van-noten": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "kitowa": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "isak": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "naso-profumi": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "neesh": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "the-perfumatory": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "saff-and-co": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "sifr-aromatics": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "afnan": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "universal-flowering": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "monsillage": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "curionoir": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "the-virtue": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"

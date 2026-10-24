@@ -52,5 +52,17 @@
   "city": "Online, ships to Canada",
   "country": "Canada",
   "what": "Canadian shops selling Korean mists and hair perfumes in CAD."
+ },
+ {
+  "name": "Arab Street, Kampong Glam",
+  "city": "Singapore",
+  "country": "Singapore",
+  "what": "Old attar and oil shops next to modern perfumers like Sifr Aromatics."
+ },
+ {
+  "name": "30ml, H Parfums, La Maison Générale",
+  "city": "Montreal",
+  "country": "Canada",
+  "what": "Niche shops carrying Montreal indies like Universal Flowering and Miskeo."
  }
 ]

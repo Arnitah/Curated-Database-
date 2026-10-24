@@ -187,5 +187,68 @@
   "cc": "CN",
   "lead": "Asian niche curator (carries Uttori and Chinese houses).",
   "src": "https://www.baroma.asia/brand/uttori/"
+ },
+ {
+  "name": "Miskeo",
+  "country": "Canada",
+  "cc": "CA",
+  "lead": "Montreal perfumer Marie-Pierre Blanchette.",
+  "src": "https://www.themain.com/articles/montreal-independent-perfume-scene-scent-art"
+ },
+ {
+  "name": "Jamal Kazura Aromatics",
+  "country": "Singapore",
+  "cc": "SG",
+  "lead": "Kampong Glam attar shop.",
+  "src": "https://silverkris.singaporeair.com/7-singapore-perfume-brands-scents/"
+ },
+ {
+  "name": "Code Deco",
+  "country": "Singapore",
+  "cc": "SG",
+  "lead": "Discovery boxes of 11 ml bottles.",
+  "src": "https://silverkris.singaporeair.com/7-singapore-perfume-brands-scents/"
+ },
+ {
+  "name": "Scent by Six",
+  "country": "Singapore",
+  "cc": "SG",
+  "lead": "Home and car scents (Tea Ritual, 27°F Biei).",
+  "src": "https://scentbysix.com/"
+ },
+ {
+  "name": "Mutiz Nueva Granada",
+  "country": "Colombia",
+  "cc": "CO",
+  "lead": "Macondo: banana, banana leaf, cacao.",
+  "src": "https://essencional.com/en/posts/latin-america-frontier-of-fragrance-part-ii/"
+ },
+ {
+  "name": "Ilmin",
+  "country": "Colombia",
+  "cc": "CO",
+  "lead": "Mediterranean style with Colombian heritage (Natalia Velez).",
+  "src": "https://essencional.com/en/posts/latin-america-frontier-of-fragrance-part-ii/"
+ },
+ {
+  "name": "Mezel",
+  "country": "Morocco / France",
+  "cc": "MA",
+  "lead": "Moroccan heritage niche house in Paris.",
+  "src": "https://www.formesdeluxe.com/article/moroccan-heritage-meets-parisian-flair-at-niche-fragrance-brand-mezel.65367"
+ },
+ {
+  "name": "Ambiance by Talata",
+  "country": "Ghana",
+  "cc": "GH",
+  "lead": "Africa-inspired perfume line going global.",
+  "src": "https://thebftonline.com/2025/07/19/ambiance-by-talata-penetrates-global-fragrance-market-with-africa-inspired-perfume-line/"
+ },
+ {
+  "name": "Frater",
+  "country": "New Zealand",
+  "cc": "NZ",
+  "lead": "NZ perfume studio.",
+  "src": "https://www.essencional.com/en/posts/scenting-the-land-of-the-long-white-cloud-perfume-and-artistry-in-new-zealand/"
  }
 ]

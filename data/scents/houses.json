@@ -3252,5 +3252,654 @@
    "designer niche",
    "chestnut"
   ]
+ },
+ {
+  "id": "kitowa",
+  "name": "KITOWA",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Tokyo",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://kitowa.co.jp/",
+  "about": "A Tokyo house built on Japanese woods (hinoki, hiba, sugi cedar, kusunoki camphor) and yuzu, best known for alcohol-free, water-based perfumes.",
+  "why": "Japanese forest bathing in a bottle, and a rare alcohol-free fine fragrance that is gentle on skin. Interesting for Safe Batch too.",
+  "families": [
+   "woody",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "alcohol-free",
+   "japanese woods"
+  ],
+  "sig": {
+   "name": "Eau Éclosion Sandalwood",
+   "url": "https://kitowa.co.jp/products/eau-eclosion-sandalwood",
+   "notes": {
+    "t": [
+     "lemon",
+     "cardamom"
+    ],
+    "h": [
+     "iris"
+    ],
+    "b": [
+     "sandalwood",
+     "musk",
+     "vanilla"
+    ]
+   },
+   "profile": "Creamy sandalwood wrapped in soft, powdery iris, with a lift of lemon and cardamom and a warm musk-vanilla finish. Gentle and cocooning. Their SUGI (Japanese cedar) is the forest-morning version."
+  },
+  "price": {
+   "amt": 27500,
+   "cur": "JPY",
+   "ml": null,
+   "status": "verified",
+   "src": "https://kitowa.co.jp/products/eau-eclosion-sandalwood",
+   "on": "2026-10-24",
+   "note": "Bottle size not shown on the page; SUGI 50 ml sells for £170 at Japan House London."
+  },
+  "tags": [
+   "alcohol-free",
+   "hinoki",
+   "forest"
+  ]
+ },
+ {
+  "id": "isak",
+  "name": "Isak Fragrances",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "India",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://isakfragrances.com/",
+  "about": "An Indian house that sells each scent both as a spray perfume and as an alcohol-free attar oil.",
+  "why": "Lets you compare the same scent as a modern spray and a traditional attar.",
+  "families": [
+   "floral",
+   "woody",
+   "green"
+  ],
+  "accents": [
+   "attar",
+   "oud",
+   "orris"
+  ],
+  "sig": {
+   "name": "A Royal Walk",
+   "url": "https://isakfragrances.com/products/a-royal-walk-perfume",
+   "notes": {
+    "t": [
+     "lemon",
+     "galbanum"
+    ],
+    "h": [
+     "orris",
+     "violet",
+     "jasmine"
+    ],
+    "b": [
+     "oud",
+     "sandalwood",
+     "musk",
+     "oakmoss"
+    ]
+   },
+   "profile": "Green, bitter galbanum and lemon, then cool, powdery orris (iris root) and violet over a polished oud and oakmoss base. Elegant and composed."
+  },
+  "price": {
+   "amt": 3600,
+   "cur": "INR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://isakfragrances.com/products/a-royal-walk-perfume",
+   "on": "2026-10-24",
+   "note": "Attar version 12 ml ₹1,190."
+  },
+  "tags": [
+   "attar",
+   "spray and oil"
+  ]
+ },
+ {
+  "id": "naso-profumi",
+  "name": "Naso Profumi",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "India",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://nasoprofumi.com/",
+  "about": "An Indian luxury house reworking Indian materials such as khus (vetiver), mitti, rose and tamarind in a modern, quiet style.",
+  "why": "Indian ingredients made understated rather than heavy.",
+  "families": [
+   "woody",
+   "green"
+  ],
+  "accents": [
+   "vetiver",
+   "khus"
+  ],
+  "sig": {
+   "name": "Khus Noir",
+   "url": "https://nasoprofumi.com/products/khus-noir",
+   "notes": {
+    "t": [],
+    "h": [
+     "khus (vetiver)"
+    ],
+    "b": []
+   },
+   "profile": "Khus is the vetiver root Indians weave into summer cooling mats. Here its earthy, smoky-green side is softened into a refined, cool woody scent."
+  },
+  "price": {
+   "amt": 5500,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://nasoprofumi.com/products/khus-noir",
+   "on": "2026-10-24",
+   "note": "100 ml ₹6,500."
+  },
+  "tags": [
+   "khus",
+   "quiet luxury"
+  ]
+ },
+ {
+  "id": "neesh",
+  "name": "NEESH Perfumes",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "India",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://neeshperfumes.com/",
+  "about": "An Indian house known for woody orientals and creamy gourmands, including one built on Indian wild vetiver.",
+  "why": "Captures petrichor, the smell of first monsoon rain, in a modern spray.",
+  "families": [
+   "woody",
+   "citrus",
+   "gourmand"
+  ],
+  "accents": [
+   "vetiver",
+   "first rain"
+  ],
+  "sig": {
+   "name": "Haute Vetiver",
+   "url": "https://neeshperfumes.com/products/haute-vetiver",
+   "notes": {
+    "t": [
+     "citrus"
+    ],
+    "h": [
+     "Indian wild vetiver"
+    ],
+    "b": [
+     "raw cacao",
+     "woods"
+    ]
+   },
+   "profile": "First rain on hot earth: bright citrus, then the rougher, earthier Indian wild vetiver with a touch of raw cacao and dry woods. Fresh yet grounded."
+  },
+  "price": {
+   "amt": 6490,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://neeshperfumes.com/products/haute-vetiver",
+   "on": "2026-10-24",
+   "note": "15 ml ₹1,900; 100 ml ₹8,500."
+  },
+  "tags": [
+   "petrichor",
+   "vetiver"
+  ]
+ },
+ {
+  "id": "the-perfumatory",
+  "name": "The Perfumatory",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "Mumbai",
+  "type": "inspired-by",
+  "scale": "small",
+  "site": "https://theperfumatory.com/",
+  "about": "A Mumbai label with simple, mood-named scents (Rose Oud, Citrus Leather, Bold Vanilla) at entry prices.",
+  "why": "Very affordable Indian everyday perfume.",
+  "families": [
+   "gourmand",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "vanilla"
+  ],
+  "sig": {
+   "name": "Bold Vanilla",
+   "url": "https://theperfumatory.com/products/bold-vanilla",
+   "notes": {
+    "t": [
+     "pear",
+     "pink pepper",
+     "orange blossom"
+    ],
+    "h": [
+     "jasmine"
+    ],
+    "b": [
+     "vanilla",
+     "patchouli",
+     "cedar",
+     "cashmere wood"
+    ]
+   },
+   "profile": "A loud, sweet vanilla with pear and orange blossom on a patchouli-wood base. Strong trail; good for evenings."
+  },
+  "price": {
+   "amt": 1100,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://theperfumatory.com/products/bold-vanilla",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "budget",
+   "vanilla"
+  ]
+ },
+ {
+  "id": "saff-and-co",
+  "name": "SAFF & Co.",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Indonesia",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://saffnco.com/",
+  "about": "One of Indonesia's best-known local perfume brands, selling extraits at local prices.",
+  "why": "Strong extraits at Indonesian prices; part of the local-perfume boom.",
+  "families": [
+   "floral",
+   "citrus",
+   "musk"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "MECHLINE (Extrait)",
+   "url": "https://saffnco.com/products/extrait-de-parfum-mechline",
+   "notes": {
+    "t": [
+     "monarda",
+     "grapefruit",
+     "violet leaf"
+    ],
+    "h": [
+     "lotus",
+     "rose de mai",
+     "lily of the valley"
+    ],
+    "b": [
+     "violet",
+     "cedarwood",
+     "musk"
+    ]
+   },
+   "profile": "A rosy, airy floral: herbal monarda and grapefruit, a soft lotus-rose heart and a powdery violet-musk finish. Light and dreamy."
+  },
+  "price": {
+   "amt": 319000,
+   "cur": "IDR",
+   "ml": null,
+   "status": "verified",
+   "src": "https://saffnco.com/products/extrait-de-parfum-mechline",
+   "on": "2026-10-24",
+   "note": "Size not shown on the page."
+  },
+  "tags": [
+   "extrait",
+   "indonesia boom"
+  ]
+ },
+ {
+  "id": "sifr-aromatics",
+  "name": "Sifr Aromatics",
+  "country": "Singapore",
+  "cc": "SG",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Singapore (Arab Street, Kampong Glam)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://sifr.sg/",
+  "about": "A small-batch perfumer on Singapore's Arab Street, making oil perfumes and sprays rooted in Malay and Arab trading history.",
+  "why": "Singapore's old attar quarter, updated. Sells the same scent as oil or spray.",
+  "families": [
+   "amber",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "perfume oil",
+   "saffron"
+  ],
+  "sig": {
+   "name": "Rajawali",
+   "url": "https://sifr.sg/products/rajawali",
+   "notes": {
+    "t": [
+     "bergamot",
+     "chypre accord"
+    ],
+    "h": [
+     "amber",
+     "saffron"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "Named for the Malay word for eagle (the Garuda). Bergamot and saffron over glowing amber and sandalwood: warm, regal and smooth."
+  },
+  "price": {
+   "amt": 55,
+   "cur": "SGD",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://sifr.sg/products/rajawali",
+   "on": "2026-10-24",
+   "note": "15 ml oil SGD 55; 50 ml eau de parfum SGD 95."
+  },
+  "tags": [
+   "oil perfume",
+   "kampong glam"
+  ]
+ },
+ {
+  "id": "afnan",
+  "name": "Afnan",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Dubai",
+  "type": "mass",
+  "scale": "large",
+  "site": "https://afnan.com/",
+  "about": "A Dubai house famous online for affordable Arabian scents, including close alternatives to designer bestsellers.",
+  "why": "Another big name in the Arabian-perfume trend; good for Clay's dupe comparisons.",
+  "families": [
+   "citrus",
+   "fruity",
+   "amber",
+   "musk"
+  ],
+  "accents": [
+   "dupes"
+  ],
+  "sig": {
+   "name": "Turathi Electric",
+   "url": "https://afnan.com/products/turathi-electric",
+   "notes": {
+    "t": [
+     "bergamot",
+     "pink grapefruit",
+     "pear",
+     "mandarin"
+    ],
+    "h": [
+     "apple",
+     "cedarwood",
+     "orange blossom"
+    ],
+    "b": [
+     "vanilla",
+     "amber",
+     "musk",
+     "ambroxan"
+    ]
+   },
+   "profile": "A sunny, juicy citrus-and-pear opening over clean amber, musk and a little vanilla. Bright and easy for summer."
+  },
+  "price": {
+   "amt": 150,
+   "cur": "AED",
+   "ml": 90,
+   "status": "verified",
+   "src": "https://afnan.com/products/turathi-electric",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "trending",
+   "dupes"
+  ]
+ },
+ {
+  "id": "universal-flowering",
+  "name": "Universal Flowering",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Montreal",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://universalflowering.com/",
+  "about": "A Montreal indie house whose perfumes come with written stories, like letters or film scenes.",
+  "why": "A local Canadian indie with a strong art voice.",
+  "families": [
+   "fruity",
+   "woody",
+   "green",
+   "musk"
+  ],
+  "accents": [
+   "boozy"
+  ],
+  "sig": {
+   "name": "Big Night",
+   "url": "https://universalflowering.com/products/big-night",
+   "notes": {
+    "t": [
+     "maraschino cherry",
+     "pineapple"
+    ],
+    "h": [
+     "artemisia",
+     "neroli",
+     "bay laurel"
+    ],
+    "b": [
+     "vetiver",
+     "musk"
+    ]
+   },
+   "profile": "A glamorous night out: cocktail-cherry and pineapple sweetness cut with bitter herbs and bay leaf over vetiver and musk. Playful and moody."
+  },
+  "price": {
+   "amt": 180,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://universalflowering.com/products/big-night",
+   "on": "2026-10-24",
+   "note": "15 ml US$85; sample set available."
+  },
+  "tags": [
+   "canada",
+   "montreal",
+   "stories"
+  ]
+ },
+ {
+  "id": "monsillage",
+  "name": "Monsillage",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Montreal",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://monsillage.com/",
+  "about": "A Montreal perfumery known for playful, natural-feeling scents, including one built around celery.",
+  "why": "Canadian-made and priced in CAD; one of the most original green scents around.",
+  "families": [
+   "green",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "vegetal"
+  ],
+  "sig": {
+   "name": "Eau de Céleri",
+   "url": "https://monsillage.com/products/eau-de-celeri-1",
+   "notes": {
+    "t": [
+     "coriander leaf",
+     "galbanum",
+     "cut grass"
+    ],
+    "h": [
+     "flower buds"
+    ],
+    "b": [
+     "vetiver"
+    ]
+   },
+   "profile": "Fresh-snapped celery and cut grass fizz at first, then soften into an elegant green chypre with delicate buds and vetiver. Crisp and surprising."
+  },
+  "price": {
+   "amt": 115,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://monsillage.com/products/eau-de-celeri-1",
+   "on": "2026-10-24",
+   "note": "7.5 ml travel spray C$35."
+  },
+  "tags": [
+   "canada",
+   "montreal",
+   "green"
+  ]
+ },
+ {
+  "id": "curionoir",
+  "name": "Curionoir",
+  "country": "New Zealand",
+  "cc": "NZ",
+  "region": "Oceania",
+  "continent": "Oceania",
+  "city": "Auckland (Ponsonby)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://curionoir.com/",
+  "about": "An Auckland perfumer, Tiffany Witehira, whose Māori heritage shapes her palette and stories.",
+  "why": "Rare Aotearoa voice in perfume; also makes clay 'relic' solid-perfume pieces.",
+  "families": [
+   "floral",
+   "green",
+   "woody"
+  ],
+  "accents": [
+   "mossy",
+   "wetland"
+  ],
+  "sig": {
+   "name": "Moon Moss (Extrait)",
+   "url": "https://curionoir.com/products/moon-moss-1",
+   "notes": {
+    "t": [
+     "hyacinth",
+     "orchid"
+    ],
+    "h": [
+     "white lily",
+     "algae"
+    ],
+    "b": [
+     "oakmoss",
+     "birch",
+     "cedarwood"
+    ]
+   },
+   "profile": "Moonlight over a wetland: cool hyacinth and lily, a watery algae note, then damp moss, birch and cedar. Calm and mysterious."
+  },
+  "price": {
+   "amt": 265,
+   "cur": "NZD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://curionoir.com/products/moon-moss-1",
+   "on": "2026-10-24",
+   "note": "4 ml pocket parfum NZ$60. Extraits do not ship internationally."
+  },
+  "tags": [
+   "aotearoa",
+   "extrait"
+  ]
+ },
+ {
+  "id": "the-virtue",
+  "name": "The Virtue",
+  "country": "New Zealand",
+  "cc": "NZ",
+  "region": "Oceania",
+  "continent": "Oceania",
+  "city": "New Plymouth, Taranaki",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://thevirtue.co.nz/",
+  "about": "A small New Zealand studio making perfumes and incense inspired by the Taranaki coast.",
+  "why": "Wild west-coast New Zealand as scent.",
+  "families": [
+   "woody",
+   "aquatic"
+  ],
+  "accents": [
+   "smoke",
+   "salt"
+  ],
+  "sig": {
+   "name": "Back Beach",
+   "url": "https://thevirtue.co.nz/products/back-beach-15ml-parfum",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "A smoky, moody scent with a salty edge, inspired by the wild Taranaki surf beach. Also sold as hand-dipped incense."
+  },
+  "price": {
+   "amt": 89,
+   "cur": "NZD",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://thevirtue.co.nz/products/back-beach-15ml-parfum",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "coastal",
+   "incense"
+  ]
  }
 ]
