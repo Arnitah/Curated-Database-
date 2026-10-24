@@ -51930,5 +51930,100 @@
       "creator": "Store product",
       "platform": "Jones Road"
     }
+  },
+  {
+    "id": "dry-scalp-hydrating-urea-serum",
+    "name": "Dry scalp hydrating serum (urea and glycerin)",
+    "claim": "Calms tight, flaky, itchy dry scalp without oil",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        83,
+        "g"
+      ],
+      [
+        "urea",
+        5,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "panthenol",
+        2,
+        "g"
+      ],
+      [
+        "aloe",
+        5,
+        "g"
+      ],
+      [
+        "hyaluronic",
+        0.2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Sprinkle the hyaluronic acid over the water and let it swell, then dissolve the urea, add glycerin, panthenol and aloe, and the preservative last. Part the hair and drip onto the scalp, massage in, leave in. Use 3 to 4 times a week. Urea and glycerin are the same water-binding ingredients your skin makes (its natural moisturising factor), which is why dry-scalp serums lean on them. Greasy, yellow flakes are usually dandruff, not dryness: that needs a ketoconazole or zinc pyrithione shampoo instead. Use within 2 months.",
+    "inspired": "Dry-scalp serums (Eucerin urea, The Ordinary NMF)",
+    "source": {
+      "creator": "theskinstitution",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "oily-scalp-niacinamide-willow-tonic",
+    "name": "Oily scalp niacinamide and willow bark tonic",
+    "claim": "Light leave-in tonic for a greasy, buildup-prone scalp",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        88,
+        "g"
+      ],
+      [
+        "willow",
+        0.5,
+        "tsp"
+      ],
+      [
+        "niacinamide",
+        4,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "glycerin",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Steep the willow bark in just-boiled water 15 minutes, strain through a coffee filter and cool. Dissolve the niacinamide, add panthenol, a little glycerin and the preservative. Spray or drip onto the scalp between washes. Niacinamide helps with oil and redness; willow bark has a little salicin but is much weaker than the salicylic acid in store scalp exfoliants. Use within 2 months.",
+    "inspired": "Oily-scalp serums (niacinamide and salicylic acid scalp treatments)",
+    "source": {
+      "creator": "theskinstitution",
+      "platform": "Instagram"
+    }
   }
 ]
