@@ -50725,5 +50725,175 @@
       "creator": "OLAH Haircare",
       "platform": "Website"
     }
+  },
+  {
+    "id": "rose-dendrobium-care-lip-balm",
+    "name": "Rose and dendrobium care lip balm",
+    "claim": "Soft, cushiony overnight lip balm",
+    "type": "lip",
+    "use": "store",
+    "rows": [
+      [
+        "candelilla",
+        7,
+        "g"
+      ],
+      [
+        "jojoba",
+        14,
+        "g"
+      ],
+      [
+        "castor",
+        10,
+        "g"
+      ],
+      [
+        "shea",
+        5,
+        "g"
+      ],
+      [
+        "licoriceoil",
+        2,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "roseeo",
+        1,
+        "drops"
+      ]
+    ],
+    "note": "Infuse a teaspoon of dried dendrobium or a few rose petals in the jojoba on low heat for an hour first if you like, then strain. Melt the wax and butters with the oils, take off the heat, add vitamin E and one drop of rose, and pour into a pot. Wear a thick layer at night, a thin one under lipstick. The store balm is named for ginseng but its list doesn't include it; its feel comes from wax, jojoba and esters, with menthol for a cool tingle (left out here because it can sting dry lips).",
+    "inspired": "Florasis Ginseng Care Lip Balm",
+    "source": {
+      "creator": "Store product",
+      "platform": "Florasis"
+    }
+  },
+  {
+    "id": "jade-pearl-loose-setting-powder",
+    "name": "Pearl and silk loose setting powder",
+    "claim": "Talc-free soft-matte setting powder",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "arrowroot",
+        3,
+        "tbsp"
+      ],
+      [
+        "kaolin",
+        1,
+        "tbsp"
+      ],
+      [
+        "silkpowder",
+        1,
+        "tsp"
+      ],
+      [
+        "pearl",
+        1,
+        "tsp"
+      ],
+      [
+        "mica",
+        0.25,
+        "tsp"
+      ]
+    ],
+    "note": "Sift everything together twice so it's very fine, and store dry. Press lightly over makeup with a puff. Starch and kaolin absorb oil; silk and pearl add slip and a soft glow. Jade powder, if you have it, is mostly for the story. It has no SPF, and avoid breathing loose powder in.",
+    "inspired": "Florasis Flawless Jade setting powder",
+    "source": {
+      "creator": "Store product",
+      "platform": "Florasis"
+    }
+  },
+  {
+    "id": "peony-rose-cream-blush",
+    "name": "Peony and rose cream blush",
+    "claim": "Buildable cream blush for cheeks and lips",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        4,
+        "g"
+      ],
+      [
+        "candelilla",
+        2,
+        "g"
+      ],
+      [
+        "mica",
+        1.5,
+        "g"
+      ],
+      [
+        "beetrootpow",
+        0.3,
+        "g"
+      ],
+      [
+        "vite",
+        0.1,
+        "g"
+      ]
+    ],
+    "note": "Melt the wax, shea and jojoba, stir in the mica and a pinch of beetroot powder for colour, and pour into a small tin. Tap onto cheeks and blend with fingers. Use only cosmetic-grade, lip-safe mica if you also use it on lips. Beetroot can fade over a few weeks.",
+    "inspired": "Florasis Peony Dream cream blush",
+    "source": {
+      "creator": "Store product",
+      "platform": "Florasis"
+    }
+  },
+  {
+    "id": "calming-lotus-clay-mask",
+    "name": "Calming centella and lotus clay mask",
+    "claim": "Rinse-off mask for redness after sun or wind",
+    "type": "face_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "kaolin",
+        1,
+        "tbsp"
+      ],
+      [
+        "oats",
+        1,
+        "tsp"
+      ],
+      [
+        "centella",
+        0.5,
+        "tsp"
+      ],
+      [
+        "hydrosol",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Mix into a smooth paste with rose or chamomile hydrosol, apply avoiding eyes and lips, and rinse after 10 to 15 minutes, before it dries hard. Centella and oat stand in for snow lotus, which is endangered in the wild. Calming masks help after sun but don't replace sunscreen.",
+    "inspired": "Florasis Yurong Snow Lotus repair mask",
+    "source": {
+      "creator": "Store product",
+      "platform": "Florasis"
+    }
   }
 ]

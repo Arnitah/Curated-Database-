@@ -6585,5 +6585,36 @@
     "seen_in": "Paid body-wash posts on Instagram",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "jade-and-pearl-powder-control-oil",
+    "title": "Jade powder in setting powder gives 24-hour oil control",
+    "topics": [
+      "face",
+      "makeup"
+    ],
+    "claims": [
+      {
+        "claim": "Jade powder controls shine",
+        "verdict": "partly",
+        "truth": "In luxury powders, jade and pearl sit low in the ingredient list. The oil absorbing and blurring come mostly from silica and other mineral or polymer powders near the top.",
+        "grade": "C"
+      },
+      {
+        "claim": "Heritage recipes (imperial or TCM-inspired) make a cosmetic gentler",
+        "verdict": "unproven",
+        "truth": "The story is about inspiration. Gentleness depends on the actual formula, which can include fragrance and many synthetic ingredients like any modern product.",
+        "grade": "D"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Florasis Flawless Jade setting powder: full ingredient list",
+        "url": "https://florasis.com/products/flawless-jade-breathable-setting-powder"
+      }
+    ],
+    "seen_in": "C-beauty brand pages",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

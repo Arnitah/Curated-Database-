@@ -7069,5 +7069,25 @@
  "caffeine-protein-scalp-tonic": {
   "verdict": "ok",
   "flags": []
+ },
+ "rose-dendrobium-care-lip-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "jade-pearl-loose-setting-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Clay is meant to be rinsed off"
+  ]
+ },
+ "peony-rose-cream-blush": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains"
+  ]
+ },
+ "calming-lotus-clay-mask": {
+  "verdict": "ok",
+  "flags": []
  }
 }

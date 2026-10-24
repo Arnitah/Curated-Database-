@@ -1,5 +1,45 @@
 [
   [
+    "snow lotus|saussurea|tianshan",
+    "snowlotus"
+  ],
+  [
+    "dendrobium|shi ?hu",
+    "dendrobium"
+  ],
+  [
+    "solomon.?s seal|polygonatum|yu ?zhu",
+    "yuzhu"
+  ],
+  [
+    "skullcap|scutellaria|huang ?qin|baicalin",
+    "skullcap"
+  ],
+  [
+    "selaginella|spikemoss|juan ?bai",
+    "selaginella"
+  ],
+  [
+    "magnolia (biondii|bud|flower)|xin ?yi",
+    "xinyi"
+  ],
+  [
+    "edelweiss|leontopodium",
+    "edelweiss"
+  ],
+  [
+    "water ?lily|nymphaea alba",
+    "waterlily"
+  ],
+  [
+    "peach (blossom|flower)|tao ?hua|prunus persica (flower|blossom)",
+    "peachblossom"
+  ],
+  [
+    "\\bjade\\b|nephrite",
+    "nephrite"
+  ],
+  [
     "myrtle (essential )?oil|myrtus communis oil",
     "myrtleeo"
   ],

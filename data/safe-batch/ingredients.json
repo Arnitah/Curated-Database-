@@ -6487,5 +6487,106 @@
     "lvl": "care",
     "good": "Persian thyme oil rich in thymol and carvacrol, studied for antifungal effects, which is why it shows up in dandruff and scalp blends.",
     "care": "Thymol and carvacrol irritate skin. Keep it at or below 0.5% and never use it neat."
+  },
+  {
+    "id": "snowlotus",
+    "grp": "Dried botanicals",
+    "name": "Snow lotus (Tianshan, Saussurea involucrata)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Wild snow lotus is endangered",
+    "good": "High-altitude Chinese herb used in calming and anti-redness skincare; brands mostly use lab-cultured extract.",
+    "care": "Wild plants are protected and over-harvested, so don't buy dried wild flowers. Centella, chamomile or oat give a similar calming effect at home."
+  },
+  {
+    "id": "dendrobium",
+    "grp": "Dried botanicals",
+    "name": "Dendrobium orchid stem (shi hu, Dendrobium candidum)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Traditional Chinese tonic herb; its polysaccharides hold water, so extracts appear in hydrating lip and face products.",
+    "care": "Low risk; expensive and often adulterated."
+  },
+  {
+    "id": "yuzhu",
+    "grp": "Dried botanicals",
+    "name": "Solomon's seal root (yu zhu, Polygonatum odoratum)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Moistening TCM root rich in mucilage; used in soothing and hydrating formulas.",
+    "care": "Low risk on skin. The berries are toxic if eaten."
+  },
+  {
+    "id": "skullcap",
+    "grp": "Dried botanicals",
+    "name": "Baikal skullcap root (huang qin, Scutellaria baicalensis)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Contains baicalin, an antioxidant studied for calming redness and UV-related stress in skin.",
+    "care": "Yellow; can tint pale products. Patch test."
+  },
+  {
+    "id": "selaginella",
+    "grp": "Dried botanicals",
+    "name": "Selaginella (juan bai, spikemoss)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A resurrection-type moss that survives drying out; its extract is used in moisturizing lip and face care.",
+    "care": "Little research. Patch test."
+  },
+  {
+    "id": "xinyi",
+    "grp": "Dried botanicals",
+    "name": "Magnolia flower bud (xin yi, Magnolia biondii)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Aromatic TCM flower bud used in brightening and soothing masks.",
+    "care": "Fuzzy buds can irritate; strain infusions well."
+  },
+  {
+    "id": "edelweiss",
+    "grp": "Dried botanicals",
+    "name": "Edelweiss (Leontopodium alpinum)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Alpine flower whose extract is an antioxidant in lip and face products.",
+    "care": "Protected in the wild; buy cultivated extract only."
+  },
+  {
+    "id": "waterlily",
+    "grp": "Dried botanicals",
+    "name": "White water lily (Nymphaea alba)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Soft floral extract used in soothing and oil-balancing face products.",
+    "care": "Low risk. Different from blue lotus."
+  },
+  {
+    "id": "peachblossom",
+    "grp": "Dried botanicals",
+    "name": "Peach blossom (tao hua, Prunus persica flower)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Classic Chinese beauty flower for glow-themed masks and teas; mildly antioxidant.",
+    "care": "Low risk; patch test if you react to stone fruits."
+  },
+  {
+    "id": "nephrite",
+    "grp": "Powders and exfoliants",
+    "name": "Jade (nephrite) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Finely ground jade used in luxury powders for a silky slip and story.",
+    "care": "Mostly decorative; the oil control in setting powders comes from silica, kaolin or starch. Don't inhale loose powders."
   }
 ]
