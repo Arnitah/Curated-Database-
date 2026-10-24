@@ -1,0 +1,27 @@
+{
+ "about": "Store products added by hand because the Skincare Data Hub doesn't have them yet. scripts/bridge-hub.mjs merges these into index/clay/products every day, so Clay and Safe Batch can both search them. Only facts from a brand or retailer page; no personal data.",
+ "products": [
+  {
+   "id": "added-o1-cica-enzyme-ball",
+   "brand": "O1",
+   "name": "Cica Enzyme Cleansing Ball",
+   "category_group": "face",
+   "size": "30 balls / 30 g",
+   "countries_sold": "South Korea; online (Jolse)",
+   "url": "https://oneday1ball.cafe24.com/shop2/product/enzyme-cleansing-ball-3-types-rice-cica-red-bean/16/",
+   "ingredients_text": "Microcrystalline Cellulose, Zea Mays (Corn) Starch, Butylene Glycol, Glycerin, Sodium Lauroyl Glutamate, Lauryl Hydroxysultaine, Decyl Glucoside, 1,2-Hexanediol, Sodium Stearoyl Glutamate, Helianthus Annuus (Sunflower) Seed Oil, Chamomilla Recutita (Matricaria) Flower Oil, Rosmarinus Officinalis (Rosemary) Extract, Lavandula Angustifolia (Lavender) Oil, Camellia Sinensis Leaf Extract, Centella Asiatica Leaf Extract, Cladosiphon Okamuranus Extract, Salix Alba (Willow) Bark Extract, Artemisia Capillaris Extract, Centella Asiatica Extract, Coffea Arabica (Coffee) Seed Extract, Apium Graveolens (Celery) Extract, Brassica Oleracea Italica (Broccoli) Extract, Citrus Aurantium Bergamia (Bergamot) Leaf Extract, Aspergillus Ferment, Triticum Vulgare (Wheat) Extract, Pinus Sylvestris Leaf Extract, Sodium Hyaluronate, Algin, Aluminum/Magnesium Hydroxide Stearate, Water, Dipropylene Glycol, Allantoin, Gluconolactone, Papain, Maltodextrin, Madecassic Acid, Asiatic Acid, Asiaticoside, Madecassoside, Ethylhexylglycerin, Lipase, Protease, Glycine, Arginine, Glutamic Acid, Copper Chlorophyllin",
+   "note": "Translated from the Korean list on the brand's own shop (oneday1ball.cafe24.com), Oct 2026. Sold on Jolse."
+  },
+  {
+   "id": "added-o1-rice-enzyme-ball",
+   "brand": "O1",
+   "name": "Rice Enzyme Cleansing Ball",
+   "category_group": "face",
+   "size": "30 balls / 30 g",
+   "countries_sold": "South Korea; online (Jolse)",
+   "url": "https://oneday1ball.cafe24.com/shop2/product/enzyme-cleansing-ball-3-types-rice-cica-red-bean/16/",
+   "ingredients_text": "Microcrystalline Cellulose, Zea Mays (Corn) Starch, Butylene Glycol, Glycerin, Sodium Lauroyl Glutamate, Lauryl Hydroxysultaine, Decyl Glucoside, 1,2-Hexanediol, Sodium Stearoyl Glutamate, Helianthus Annuus (Sunflower) Seed Oil, Citrus Limon (Lemon) Peel Oil, Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens Flower Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Oryza Sativa (Rice) Extract, Oryza Sativa (Rice) Ferment Filtrate, Bifida Ferment Lysate, Avena Sativa (Oat) Kernel Extract, Honey Extract, Aspergillus Ferment, Triticum Vulgare (Wheat) Extract, Hydrolyzed Rice Protein, Rice Amino Acids, Sodium Hyaluronate, Algin, Aluminum/Magnesium Hydroxide Stearate, Beta-Carotene, Tocopherol, Water, Allantoin, Ascorbic Acid, Glutathione, Niacinamide, Papain, Maltodextrin, Ethylhexylglycerin, Lipase, Protease, Glycine, Arginine, Glutamic Acid, Limonene, Linalool",
+   "note": "Translated from the Korean list on the brand's own shop (oneday1ball.cafe24.com), Oct 2026. Sold on Jolse."
+  }
+ ]
+}
