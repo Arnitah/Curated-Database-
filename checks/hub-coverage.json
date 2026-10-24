@@ -1,7 +1,7 @@
 {
- "built_at": "2026-10-23T15:46:47.756Z",
+ "built_at": "2026-10-24T14:38:23.219Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
- "explained_in_safe_batch": 252,
+ "explained_in_safe_batch": 281,
  "queue": [
   {
    "ingredient": "tocopheryl acetate",
@@ -158,10 +158,6 @@
   {
    "ingredient": "styrene/acrylates copolymer",
    "products": 407
-  },
-  {
-   "ingredient": "lecithin",
-   "products": 392
   },
   {
    "ingredient": "coco-betaine",
@@ -602,6 +598,10 @@
   {
    "ingredient": "microcrystalline cellulose",
    "products": 135
+  },
+  {
+   "ingredient": "aminomethyl propanol",
+   "products": 134
   }
  ]
 }
