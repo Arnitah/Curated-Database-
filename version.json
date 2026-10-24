@@ -1,6 +1,6 @@
 {
-  "version": 75,
-  "updated_at": "2026-10-24T16:15:39.546Z",
+  "version": 76,
+  "updated_at": "2026-10-24T16:20:06.904Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -322,9 +322,9 @@
     },
     "scents/houses": {
       "count": 106,
-      "bytes": 141908,
-      "hash": "c57bb3eb5f01",
-      "updated_at": "2026-10-24T16:15:39.545Z"
+      "bytes": 146069,
+      "hash": "dc2295d7151b",
+      "updated_at": "2026-10-24T16:20:06.903Z"
     },
     "scents/leads": {
       "count": 36,
