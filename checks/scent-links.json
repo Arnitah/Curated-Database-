@@ -1,9 +1,9 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 34,
-  "blocked": 4,
-  "fail": 1
+  "pass": 52,
+  "blocked": 7,
+  "fail": 0
  },
  "houses": {
   "parfum-satori": {
@@ -18,8 +18,8 @@
   },
   "j-scent": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "shoyeido": {
    "site": "pass",
@@ -57,12 +57,12 @@
    "price": "pass"
   },
   "documents": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
   "uttori": {
-   "site": "fail 500",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -197,6 +197,106 @@
    "price": "pass"
   },
   "hiram-green": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "borom": {
+   "site": "blocked",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "reunrom": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "siam-1928": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "panpuri": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "butterfly-thai-perfume": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "mith-bangkok": {
+   "site": "blocked",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "solure": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "postes": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "youssoful": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "royal-water": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "sw19": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "kinfolk-notes": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "skybottle": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "whipped": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "kst-scent": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "cosmic-mansion": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "etlee": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "oct-kw": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "milky-mane": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "dries-van-noten": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"

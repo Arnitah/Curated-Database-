@@ -9,7 +9,7 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
-  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), exchange rates to CAD (rates)
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
 apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
@@ -88,7 +88,7 @@ What the apps merge today:
 Deleting an item here doesn't remove it from the apps' built-in copy until the app files are next republished.
 
 ## Scent Atlas (data/scents)
-A curated guide to perfume houses outside the usual Western names, Asia first. Each house in `houses.json` has its country and city, kind (niche, indie, attar, incense, affordable, inspired-by), scent families that match Clay's (`citrus, fruity, floral, green, gourmand, woody, amber, musk, aquatic, spicy`) plus free-form accents (tea, oud, incense...), one signature scent with top/heart/base notes and a plain-English profile, and a price with its status:
+A curated guide to perfume houses outside the usual Western names, Asia first. Each house in `houses.json` has its country and city, kind (niche, indie, attar, incense, affordable, inspired-by), scent families that match Clay's (`citrus, fruity, floral, green, gourmand, woody, amber, musk, aquatic, spicy`) plus free-form accents (tea, oud, incense...), one signature scent with top/heart/base notes and a plain-English profile, optional extra scents (`also`), and a price with its status:
 
 | status | meaning |
 |---|---|

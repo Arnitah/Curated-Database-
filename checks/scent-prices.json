@@ -19,13 +19,13 @@
    ],
    "changed": false
   },
-  "bombay-perfumery": {
-   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk.json",
-   "product": "CHAI MUSK",
+  "spa-ceylon": {
+   "src": "https://lk.spaceylon.com/products/kandyan-rose-eau-de-perfume-100ml.json",
+   "product": "Kandyan Rose - Eau De Perfume 100ml",
    "variants": [
     {
      "title": "Default Title",
-     "price": 90,
+     "price": 15900,
      "available": null
     }
    ],
@@ -58,13 +58,13 @@
    ],
    "changed": false
   },
-  "spa-ceylon": {
-   "src": "https://lk.spaceylon.com/products/kandyan-rose-eau-de-perfume-100ml.json",
-   "product": "Kandyan Rose - Eau De Perfume 100ml",
+  "bombay-perfumery": {
+   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk.json",
+   "product": "CHAI MUSK",
    "variants": [
     {
      "title": "Default Title",
-     "price": 15900,
+     "price": 90,
      "available": null
     }
    ],
@@ -81,6 +81,10 @@
     }
    ],
    "changed": false
+  },
+  "xinu": {
+   "src": "https://www.luckyscent.com/products/copala-by-xinu.json",
+   "error": 404
   },
   "tadhana": {
    "src": "https://www.tadhana.co/products/rockstar.json",
@@ -99,16 +103,8 @@
    ],
    "changed": false
   },
-  "natura": {
-   "src": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette.json",
-   "error": 404
-  },
   "coqui-coqui": {
    "src": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui.json",
-   "error": 404
-  },
-  "xinu": {
-   "src": "https://www.luckyscent.com/products/copala-by-xinu.json",
    "error": 404
   },
   "imaginary-authors": {
@@ -133,39 +129,9 @@
    ],
    "changed": false
   },
-  "goldfield-banks": {
-   "src": "https://www.goldfieldandbanks.com/products/pacific-rock-moss.json",
-   "product": "Pacific Rock Moss",
-   "variants": [
-    {
-     "title": "100ml",
-     "price": 280,
-     "available": null
-    },
-    {
-     "title": "50ml",
-     "price": 198,
-     "available": null
-    },
-    {
-     "title": "10ml",
-     "price": 54,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "hiram-green": {
-   "src": "https://hiramgreen.com/products/moon-bloom.json",
-   "product": "Moon bloom",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 220,
-     "available": null
-    }
-   ],
-   "changed": false
+  "natura": {
+   "src": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette.json",
+   "error": 404
   },
   "fueguia-1833": {
    "src": "https://shop.fueguia.com/products/agua-magnoliana.json",
@@ -253,6 +219,143 @@
     }
    ],
    "changed": false
+  },
+  "reunrom": {
+   "src": "https://reunrom.com/products/reunrom-perfume-100ml-bangkokian-moon-cap.json",
+   "product": "Reunrom Moon Perfume 100ml Bangkokian",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 1832,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "hiram-green": {
+   "src": "https://hiramgreen.com/products/moon-bloom.json",
+   "product": "Moon bloom",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 220,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "youssoful": {
+   "src": "https://www.dodoskin.com/products/youssoful-je-taime-extrait-de-parfum-50ml.json",
+   "product": "YOUSSOFUL Je T'aime Extrait De Parfum 50ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 75,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "goldfield-banks": {
+   "src": "https://www.goldfieldandbanks.com/products/pacific-rock-moss.json",
+   "product": "Pacific Rock Moss",
+   "variants": [
+    {
+     "title": "100ml",
+     "price": 280,
+     "available": null
+    },
+    {
+     "title": "50ml",
+     "price": 198,
+     "available": null
+    },
+    {
+     "title": "10ml",
+     "price": 54,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "kinfolk-notes": {
+   "src": "https://kinfolknotes.com/products/edp-gds.json",
+   "product": "[오 드 퍼퓸] 가든샤워",
+   "variants": [
+    {
+     "title": "30ml",
+     "price": 110,
+     "available": null
+    },
+    {
+     "title": "50ml",
+     "price": 150,
+     "available": null
+    },
+    {
+     "title": "100ml",
+     "price": 220,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "skybottle": {
+   "src": "https://www.vitacost.com/products/skybottle-perfumed-hair-body-mist-vanilla-sky-100-ml-128537.json",
+   "product": "Skybottle, Perfumed Hair & Body Mist, Vanilla Sky , 100 ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 12.8,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "kst-scent": {
+   "src": "https://stele.nyc/products/kst-scent-banana-milk-coffee-eau-de-parfum.json",
+   "product": "KST Scent Banana Milk Coffee Eau de Parfum",
+   "variants": [
+    {
+     "title": "30mL",
+     "price": 79,
+     "available": null
+    },
+    {
+     "title": "Sample",
+     "price": 9,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "whipped": {
+   "src": "https://sukoshi.com/products/whipped-yujamong-juicy-hair-perfume-keyring-set.json",
+   "product": "WHIPPED Yujamong Juicy Hair Perfume & Keyring Set",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 33.99,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "oct-kw": {
+   "src": "https://octkw.com/products/hot-cakes-%F0%9F%8E%82.json",
+   "product": "Hot cakes 🎂",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 13,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "dries-van-noten": {
+   "src": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten.json",
+   "error": 404
   }
  }
 }

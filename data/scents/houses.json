@@ -280,6 +280,14 @@
    "k-beauty",
    "design",
    "herbal"
+  ],
+  "also": [
+   {
+    "name": "Perfume Balm (6.5 g)",
+    "notes": "Solid balm in their scents (Chamo, Pumkini, Berga Sandal, Blue Hinoki...). Apply under spray perfume to make it last longer.",
+    "price": "Price not read",
+    "url": "https://www.tamburins.com/en/shop/perfume/perfumes/"
+   }
   ]
  },
  {
@@ -1513,6 +1521,14 @@
    "trending",
    "dupes",
    "gourmand"
+  ],
+  "also": [
+   {
+    "name": "Choco Overdose (Give Me Gourmand)",
+    "notes": "dark chocolate fudge · cocoa powder, cupcake accord · vanilla, caramel, benzoin",
+    "price": "£35.99 · 75 ml (UK retailer)",
+    "url": "https://www.superdrug.com/fragrance/unisex-perfume/lattafa-choco-overdose-75ml-edp-give-me-gourmand-collection/p/mp-00430406"
+   }
   ]
  },
  {
@@ -2169,6 +2185,1072 @@
   "tags": [
    "all natural",
    "handmade"
+  ]
+ },
+ {
+  "id": "borom",
+  "name": "BOROM",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok (CentralWorld, Central Ladprao, ICONSIAM)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.instagram.com/borom.official/",
+  "about": "A Bangkok luxury house whose scents are named after fabrics and how they feel: cotton, tweed, velvet, cashmere, lace, satin.",
+  "why": "A fresh Thai concept (perfume as texture) and built to last in tropical heat, which is the main thing its fans praise.",
+  "families": [
+   "gourmand",
+   "fruity",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "textile",
+   "powdery"
+  ],
+  "sig": {
+   "name": "Vanilla At First Sight",
+   "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "notes": {
+    "t": [
+     "mandarin",
+     "peach",
+     "ginger"
+    ],
+    "h": [
+     "vanilla"
+    ],
+    "b": [
+     "powdery finish"
+    ]
+   },
+   "profile": "A soft, powdery vanilla brightened by mandarin and peach with a little ginger warmth. Others in the range: Japanese Cotton (melon and jasmine), Sweet Tweed (rose and peach), Red Velvet (orange, chocolate, hazelnut), Cashmere Unnamed and Naked Satin."
+  },
+  "price": {
+   "amt": null,
+   "cur": "THB",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "on": "2026-10-24",
+   "note": "No public online price list; sold at its Bangkok counters."
+  },
+  "tags": [
+   "textile",
+   "bangkok",
+   "heat-proof"
+  ]
+ },
+ {
+  "id": "reunrom",
+  "name": "Reunrom",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Thailand",
+  "type": "lifestyle",
+  "scale": "small",
+  "site": "https://reunrom.com/",
+  "about": "A Thai scent brand where every perfume, oil and sachet is named after a Thai place: Bangkok districts, floating markets, national parks, provinces.",
+  "why": "A scent map of Thailand in one shop, with low prices and an English online store. Pairs naturally with your regional map project.",
+  "families": [
+   "citrus",
+   "fruity",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "place scents",
+   "perfume oil"
+  ],
+  "sig": {
+   "name": "Moon Perfume Bangkokian",
+   "url": "https://reunrom.com/products/reunrom-perfume-100ml-bangkokian-moon-cap",
+   "notes": {
+    "t": [
+     "lemon",
+     "apple"
+    ],
+    "h": [
+     "jasmine",
+     "rose"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "Bangkok's Pathumwan shopping district as a scent: crisp citrus and apple like the view from a tower, then soft jasmine and rose on clean musk. Easy and bright. Their aromatic oils go further afield, e.g. Doi Pui (roses from a Chiang Mai palace garden) and Sukhothai (lemongrass and herbs)."
+  },
+  "price": {
+   "amt": 1832,
+   "cur": "THB",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://reunrom.com/products/reunrom-perfume-100ml-bangkokian-moon-cap",
+   "on": "2026-10-24",
+   "note": "Aromatic oils 15 ml ฿890; some 100 ml perfumes ฿1,592."
+  },
+  "tags": [
+   "place scents",
+   "budget",
+   "thai"
+  ]
+ },
+ {
+  "id": "siam-1928",
+  "name": "Siam 1928 (Voyager)",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://siam1928.com/",
+  "about": "A Thai house drawing on Thai legends, history and food, with Asian ingredients and ceramic bottles.",
+  "why": "Possibly the only fine perfume with durian and sticky rice in it. Thai dessert culture as perfume.",
+  "families": [
+   "gourmand",
+   "floral",
+   "woody",
+   "fruity"
+  ],
+  "accents": [
+   "pandan",
+   "durian",
+   "coconut"
+  ],
+  "sig": {
+   "name": "Golden Hour (Voyager)",
+   "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "notes": {
+    "t": [
+     "pandan",
+     "durian"
+    ],
+    "h": [
+     "jasmine",
+     "sticky rice"
+    ],
+    "b": [
+     "coconut milk",
+     "sandalwood"
+    ]
+   },
+   "profile": "Mango-sticky-rice dessert at sunset: green, vanilla-like pandan, a whisper of durian, jasmine and steamed rice over coconut milk and sandalwood. Creamy and surprising."
+  },
+  "price": {
+   "amt": 100,
+   "cur": "USD",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "on": "2026-10-24",
+   "note": "Official site lists bottles from about US$100 to US$220."
+  },
+  "tags": [
+   "thai dessert",
+   "durian",
+   "heritage"
+  ]
+ },
+ {
+  "id": "panpuri",
+  "name": "PAÑPURI",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://www.panpuri.com/",
+  "about": "A Thai spa-and-wellness brand known for natural oils and calm, tea-and-wood scents.",
+  "why": "Thai spa culture in a bottle, sold in Asian luxury malls.",
+  "families": [
+   "citrus",
+   "green",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "tea",
+   "spa"
+  ],
+  "sig": {
+   "name": "Andaman Sails (Eau de Parfum Extract perfume oil)",
+   "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "notes": {
+    "t": [
+     "bergamot"
+    ],
+    "h": [
+     "green tea",
+     "nutmeg"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "Sea breeze over the Andaman coast: bergamot and green tea with a hint of nutmeg on soft sandalwood. Relaxed and spa-clean."
+  },
+  "price": {
+   "amt": 3950,
+   "cur": "THB",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "spa",
+   "tea"
+  ]
+ },
+ {
+  "id": "butterfly-thai-perfume",
+  "name": "Butterfly Thai Perfume",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://butterflythaiperfume.com/",
+  "about": "A Bangkok niche label with bold incense, oud and spice compositions.",
+  "why": "Thai take on the oud trend, priced well below Gulf luxury.",
+  "families": [
+   "spicy",
+   "woody",
+   "citrus",
+   "gourmand"
+  ],
+  "accents": [
+   "oud",
+   "incense",
+   "smoke"
+  ],
+  "sig": {
+   "name": "Incense Oud",
+   "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "notes": {
+    "t": [
+     "lime",
+     "bergamot",
+     "gunpowder"
+    ],
+    "h": [
+     "incense",
+     "cinnamon"
+    ],
+    "b": [
+     "oud",
+     "honey"
+    ]
+   },
+   "profile": "Lime and a struck-match gunpowder spark, then temple incense and cinnamon over honeyed oud. Smoky but sweet-edged."
+  },
+  "price": {
+   "amt": 2590,
+   "cur": "THB",
+   "ml": 60,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "oud",
+   "incense"
+  ]
+ },
+ {
+  "id": "mith-bangkok",
+  "name": "MITH Bangkok",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://mithbangkok.com/",
+  "about": "'Made in Thailand', also a Thai word for good friendship. Warm, happy scents from botanicals, woods, musk, oud and gourmand notes.",
+  "why": "Known for a Thai Tea scent; a friendly entry to Thai niche.",
+  "families": [
+   "fruity",
+   "floral",
+   "musk",
+   "woody"
+  ],
+  "accents": [
+   "thai tea"
+  ],
+  "sig": {
+   "name": "Nude",
+   "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "notes": {
+    "t": [
+     "pear",
+     "peach"
+    ],
+    "h": [
+     "peony",
+     "lily of the valley"
+    ],
+    "b": [
+     "musk",
+     "tonka bean",
+     "vetiver"
+    ]
+   },
+   "profile": "Soft pear and peach with peony on a skin-like musk and tonka base. Clean and close. Also look for Thai Tea, inspired by the orange iced milk tea."
+  },
+  "price": {
+   "amt": null,
+   "cur": "THB",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://mega-asia.com/beauty/thai-fragrance-brands-bangkok-niche-perfume/",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "thai tea",
+   "skin scent"
+  ]
+ },
+ {
+  "id": "solure",
+  "name": "Solure",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Thailand",
+  "type": "mass",
+  "scale": "mid",
+  "site": "https://watsons.co.th/en/solure-body-oil-65ml.-anniversary/p/BP_304630",
+  "about": "A Thai drugstore line of scented shimmer body mists, body oils and shower oils named after love moments (First Date, Be Mine, Anniversary).",
+  "why": "The cheap, fun end of Thai scent; good for Clay's body-mist layering.",
+  "families": [
+   "floral",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "shimmer",
+   "body oil"
+  ],
+  "sig": {
+   "name": "Body Oil 'Anniversary'",
+   "url": "https://watsons.co.th/en/solure-body-oil-65ml.-anniversary/p/BP_304630",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Scented body oil and shimmer mists in sweet, romantic styles. Notes not published."
+  },
+  "price": {
+   "amt": 399,
+   "cur": "THB",
+   "ml": 65,
+   "status": "retailer",
+   "src": "https://watsons.co.th/en/solure-body-oil-65ml.-anniversary/p/BP_304630",
+   "on": "2026-10-24",
+   "note": "Watsons Thailand sale price."
+  },
+  "tags": [
+   "budget",
+   "body mist",
+   "shimmer"
+  ]
+ },
+ {
+  "id": "postes",
+  "name": "POSTES",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul (Seongsu, 77 Yeonmujang-gil)",
+  "founded": 2025,
+  "type": "niche",
+  "scale": "small",
+  "site": "https://postes.kr/",
+  "about": "A Seoul brand designed as a little post office: each perfume is a 'letter' from a place, with stamp-style labels.",
+  "why": "One of the most charming new Korean concepts; now popping up in Tokyo too.",
+  "families": [
+   "green",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "tea",
+   "travel"
+  ],
+  "sig": {
+   "name": "From Otaru",
+   "url": "https://haveagood-holiday.com/ko/articles/postes-first-japan-popup-store-shibuya-scramble-square",
+   "notes": {
+    "t": [
+     "green tea"
+    ],
+    "h": [
+     "lily",
+     "rose"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "A postcard from the snowy canal town of Otaru in Japan: green tea and soft lily on clean musk. Other letters: From Istanbul (black tea, fig, patchouli), From Havana (cherry, osmanthus, leather), From Saint-Tropez (mimosa, sesame, musk)."
+  },
+  "price": {
+   "amt": 77000,
+   "cur": "KRW",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://www.fashionsnap.com/article/korea-fragrance/",
+   "on": "2026-10-24",
+   "note": "¥9,900 in Japan."
+  },
+  "tags": [
+   "travel",
+   "post office",
+   "seongsu"
+  ]
+ },
+ {
+  "id": "youssoful",
+  "name": "YOUSSOFUL",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://youssoful.kr/",
+  "about": "A Korean extrait house where each perfume comes with its own illustrated story card and place (Paris, Lourdes, Milan).",
+  "why": "Extrait strength at mid prices; the brand says scents deepen over the first two months.",
+  "families": [
+   "floral",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "storytelling"
+  ],
+  "sig": {
+   "name": "Je T'aime (Extrait)",
+   "url": "https://www.dodoskin.com/products/youssoful-je-taime-extrait-de-parfum-50ml",
+   "notes": {
+    "t": [
+     "mandarin"
+    ],
+    "h": [
+     "rose",
+     "peony",
+     "peach"
+    ],
+    "b": [
+     "white musk"
+    ]
+   },
+   "profile": "A juicy, natural-feeling peony and peach bouquet lifted by mandarin, settling on soft white musk. Romantic and easy."
+  },
+  "price": {
+   "amt": 104,
+   "cur": "USD",
+   "ml": 50,
+   "status": "retailer",
+   "src": "https://www.dodoskin.com/products/youssoful-je-taime-extrait-de-parfum-50ml",
+   "on": "2026-10-24",
+   "note": "US$75 on sale at the time of the check."
+  },
+  "tags": [
+   "extrait",
+   "story cards"
+  ]
+ },
+ {
+  "id": "royal-water",
+  "name": "ROYALWATER",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul (Ikseon, Yeonnam, Hongdae)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.hwahae.com/en/brand/ROYALWATER",
+  "about": "A Seoul perfumery with 70+ scents in small bottles, several named after the single aroma molecule they showcase (Iso E Super, Maltol).",
+  "why": "A fun way to learn what individual perfume molecules smell like, cheaply. Useful background for Safe Batch.",
+  "families": [
+   "woody",
+   "gourmand",
+   "citrus",
+   "floral"
+  ],
+  "accents": [
+   "molecules"
+  ],
+  "sig": {
+   "name": "Iso E Super (Extrait)",
+   "url": "https://www.hwahae.com/en/brand/ROYALWATER",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": [
+     "Iso E Super"
+    ]
+   },
+   "profile": "Built on a famous woody molecule that smells like warm cedar and skin, and seems to come and go. Try Maltol 185 for a candyfloss-caramel sweetness."
+  },
+  "price": {
+   "amt": 24.18,
+   "cur": "USD",
+   "ml": 10,
+   "status": "retailer",
+   "src": "https://www.hwahae.com/en/brand/ROYALWATER",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "molecules",
+   "seoul shops"
+  ]
+ },
+ {
+  "id": "sw19",
+  "name": "SW19",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul (Hannam flagship, 14-3 Itaewon-ro 49-gil)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://sw19official.com/",
+  "about": "A Seoul brand whose scents are named after times of day and moments (it sells '8am' room sprays, for example).",
+  "why": "Mood-by-hour perfume, useful for Clay's routine idea of a morning vs evening scent.",
+  "families": [
+   "citrus",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "time of day"
+  ],
+  "sig": {
+   "name": "Time-of-day collection",
+   "url": "https://sw19official.com/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Scents tied to specific hours (morning, afternoon, night). Notes per scent on their site."
+  },
+  "price": {
+   "amt": 150000,
+   "amt_max": 165000,
+   "cur": "KRW",
+   "ml": null,
+   "status": "verified",
+   "src": "https://sw19official.com/",
+   "on": "2026-10-24",
+   "note": "Full bottles ₩150,000 to ₩165,000 on the official shop; sizes not read."
+  },
+  "tags": [
+   "hannam",
+   "moments"
+  ]
+ },
+ {
+  "id": "kinfolk-notes",
+  "name": "Kinfolk Notes",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul (Seongsu flagship)",
+  "type": "lifestyle",
+  "scale": "small",
+  "site": "https://kinfolknotes.com/",
+  "about": "A fragrance line from the makers of Kinfolk magazine: designed in Denmark, made in Korea, with each scent tied to a book, film or place.",
+  "why": "Scandinavian calm meets Korean craft; their discovery sets make sampling cheap.",
+  "families": [
+   "citrus",
+   "floral",
+   "musk",
+   "amber"
+  ],
+  "accents": [
+   "storytelling"
+  ],
+  "sig": {
+   "name": "Captain's Bar",
+   "url": "https://kinfolknotes.com/products/travel-wash-cpb",
+   "notes": {
+    "t": [
+     "citrus",
+     "cypress"
+    ],
+    "h": [
+     "lily of the valley",
+     "violet"
+    ],
+    "b": [
+     "musk",
+     "amber",
+     "vanilla"
+    ]
+   },
+   "profile": "Inspired by a legendary Hong Kong hotel bar: crisp citrus and cypress, a soft violet heart, and a warm vanilla-amber finish. Polished and grown-up. Garden Shower is the fresh floral alternative."
+  },
+  "price": {
+   "amt": 110000,
+   "amt_max": 220000,
+   "cur": "KRW",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://kinfolknotes.com/products/edp-gds",
+   "on": "2026-10-24",
+   "note": "Eau de parfum 30 ml ₩110,000, 50 ml ₩150,000, 100 ml ₩220,000. Discovery set of 5 ₩25,000."
+  },
+  "tags": [
+   "magazine",
+   "discovery set"
+  ]
+ },
+ {
+  "id": "skybottle",
+  "name": "Skybottle",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "South Korea",
+  "type": "mass",
+  "scale": "mid",
+  "site": "https://www.vitacost.com/products/skybottle-perfumed-hair-body-mist-vanilla-sky-100-ml-128537",
+  "about": "A Korean hair-and-body mist brand sold widely online and in Canada (Well.ca).",
+  "why": "Cheap way to try K-scent styles; easy to buy from Canada.",
+  "families": [
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "hair mist"
+  ],
+  "sig": {
+   "name": "Vanilla Sky (Hair & Body Mist)",
+   "url": "https://www.vitacost.com/products/skybottle-perfumed-hair-body-mist-vanilla-sky-100-ml-128537",
+   "notes": {
+    "t": [
+     "coconut"
+    ],
+    "h": [
+     "orchid"
+    ],
+    "b": [
+     "vanilla",
+     "tonka bean"
+    ]
+   },
+   "profile": "Warm, sweet vanilla with coconut and orchid. Light enough for hair."
+  },
+  "price": {
+   "amt": 12.8,
+   "cur": "USD",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.vitacost.com/products/skybottle-perfumed-hair-body-mist-vanilla-sky-100-ml-128537",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "budget",
+   "hair mist",
+   "canada stockist"
+  ]
+ },
+ {
+  "id": "whipped",
+  "name": "WHIPPED",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "South Korea",
+  "type": "lifestyle",
+  "scale": "small",
+  "site": "https://sukoshi.com/products/whipped-yujamong-juicy-hair-perfume-keyring-set",
+  "about": "A vegan Korean body-care brand known for hair perfumes in tiny bottles that clip onto a bag as a keyring.",
+  "why": "Viral format (bag charm perfume); sold in Canadian dollars by a Canadian K-beauty shop.",
+  "families": [
+   "citrus",
+   "musk",
+   "amber"
+  ],
+  "accents": [
+   "hair perfume",
+   "yuja"
+  ],
+  "sig": {
+   "name": "Yujamong Juicy Hair Perfume",
+   "url": "https://sukoshi.com/products/whipped-yujamong-juicy-hair-perfume-keyring-set",
+   "notes": {
+    "t": [
+     "yuja",
+     "cotton"
+    ],
+    "h": [
+     "grapefruit",
+     "neroli"
+    ],
+    "b": [
+     "amber",
+     "musk"
+    ]
+   },
+   "profile": "Yuja (Korean citron) and grapefruit on clean cotton and musk. Bright and fresh, made for hair."
+  },
+  "price": {
+   "amt": 33.99,
+   "cur": "CAD",
+   "ml": 15,
+   "status": "retailer",
+   "src": "https://sukoshi.com/products/whipped-yujamong-juicy-hair-perfume-keyring-set",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "keyring",
+   "hair perfume",
+   "canada stockist"
+  ]
+ },
+ {
+  "id": "kst-scent",
+  "name": "KST Scent",
+  "country": "South Korea (Korean-born founder, studio in the US)",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "LV1 Studio, USA",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://stele.nyc/collections/kst-scent",
+  "about": "An indie line by Korean-born Kael Jeong with perfumer James Nguyen, turning Korean childhood treats into perfume (banana milk, hotteok).",
+  "why": "Korean food memories as fine fragrance; a cult indie find.",
+  "families": [
+   "gourmand",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "coffee",
+   "banana milk"
+  ],
+  "sig": {
+   "name": "Banana Milk Coffee",
+   "url": "https://stele.nyc/products/kst-scent-banana-milk-coffee-eau-de-parfum",
+   "notes": {
+    "t": [
+     "banana",
+     "soy milk"
+    ],
+    "h": [
+     "marigold",
+     "ylang-ylang",
+     "coffee"
+    ],
+    "b": [
+     "labdanum",
+     "creamy musk",
+     "ebanol"
+    ]
+   },
+   "profile": "Korea's famous banana milk carton poured into iced coffee: ripe, milky banana, then roasted coffee and a warm, creamy base."
+  },
+  "price": {
+   "amt": 79,
+   "cur": "USD",
+   "ml": 30,
+   "status": "retailer",
+   "src": "https://stele.nyc/products/kst-scent-banana-milk-coffee-eau-de-parfum",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "gourmand",
+   "food memory"
+  ]
+ },
+ {
+  "id": "cosmic-mansion",
+  "name": "COSMIC MANSION",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.fashionsnap.com/article/korea-fragrance/",
+  "about": "A Korean brand of natural-feeling, flower-shop florals for any gender.",
+  "why": "Clean jasmine florals at mid prices.",
+  "families": [
+   "floral",
+   "green"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Another Morning",
+   "url": "https://www.fashionsnap.com/article/korea-fragrance/",
+   "notes": {
+    "t": [
+     "freesia"
+    ],
+    "h": [
+     "jasmine",
+     "tulip"
+    ],
+    "b": []
+   },
+   "profile": "Walking into a florist first thing: freesia, jasmine and tulip, fresh and dewy."
+  },
+  "price": {
+   "amt": 78000,
+   "cur": "KRW",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://www.fashionsnap.com/article/korea-fragrance/",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "floral"
+  ]
+ },
+ {
+  "id": "etlee",
+  "name": "etleé",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.fashionsnap.com/article/korea-fragrance/",
+  "about": "A Korean 'everyday scent' brand with a star theme (the name joins French words for star and studio).",
+  "why": "A true skin scent at a low price.",
+  "families": [
+   "musk",
+   "amber",
+   "woody"
+  ],
+  "accents": [
+   "skin scent"
+  ],
+  "sig": {
+   "name": "Skin Scent",
+   "url": "https://www.fashionsnap.com/article/korea-fragrance/",
+   "notes": {
+    "t": [],
+    "h": [
+     "musk"
+    ],
+    "b": [
+     "ambroxan",
+     "amber",
+     "woods"
+    ]
+   },
+   "profile": "Warm, clean skin made a little better: ambroxan, musk and soft woods that melt in."
+  },
+  "price": {
+   "amt": 43000,
+   "cur": "KRW",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://www.fashionsnap.com/article/korea-fragrance/",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "skin scent",
+   "budget"
+  ]
+ },
+ {
+  "id": "oct-kw",
+  "name": "OCT",
+  "country": "Kuwait",
+  "cc": "KW",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Kuwait",
+  "type": "lifestyle",
+  "scale": "micro",
+  "site": "https://octkw.com/",
+  "about": "A Kuwaiti fashion label that also sells sweet 'all over sprays' for body and hair, with cake-themed names.",
+  "why": "Gulf gourmand taste in a light body-spray format, shipping worldwide. Note: their cake ads are labelled as AI-made images.",
+  "families": [
+   "gourmand",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "body spray",
+   "cake"
+  ],
+  "sig": {
+   "name": "Hot Cakes (All Over Spray)",
+   "url": "https://octkw.com/products/hot-cakes-%F0%9F%8E%82",
+   "notes": {
+    "t": [
+     "strawberry"
+    ],
+    "h": [
+     "cream",
+     "marshmallow"
+    ],
+    "b": [
+     "vanilla"
+    ]
+   },
+   "profile": "Strawberry shortcake: whipped cream, strawberry and marshmallow on vanilla. Very sweet and playful. Siblings: Vanilla Crush (marshmallow, caramel, orange blossom) and Creamy Vanilla (vanilla, coconut, white musk)."
+  },
+  "price": {
+   "amt": 13,
+   "cur": "KWD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://octkw.com/products/hot-cakes-%F0%9F%8E%82",
+   "on": "2026-10-24",
+   "note": "Set of 3 sprays 30 KWD."
+  },
+  "tags": [
+   "body spray",
+   "gourmand",
+   "kuwait"
+  ]
+ },
+ {
+  "id": "milky-mane",
+  "name": "Milky Mane",
+  "country": "Europe (sold at Rossmann Poland)",
+  "cc": "PL",
+  "region": "Central Europe",
+  "continent": "Europe",
+  "city": "Poland (Rossmann), Netherlands, Sweden (Lyko)",
+  "type": "mass",
+  "scale": "small",
+  "site": "https://boozyshop.com/collections/milky-mane",
+  "about": "A hair-and-body perfume line in illustrated boxes, with dessert-and-fruit scents and new 20 ml bag-size bottles at Rossmann.",
+  "why": "Shows the European drugstore side of the gourmand trend. Brand origin still to confirm.",
+  "families": [
+   "fruity",
+   "gourmand",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "hair perfume",
+   "cinnamon"
+  ],
+  "sig": {
+   "name": "002 Cherry Crush (Hair Perfume)",
+   "url": "https://lyko.com/de/haar/styling/hairmist/milky-mane-hair-perfume-002-cherry-crush-50ml",
+   "notes": {
+    "t": [
+     "red apple",
+     "raspberry",
+     "cinnamon"
+    ],
+    "h": [
+     "cherry",
+     "rose",
+     "vanilla flower"
+    ],
+    "b": [
+     "ambroxan",
+     "white musk",
+     "patchouli"
+    ]
+   },
+   "profile": "Juicy cherry and red berries warmed with cinnamon, on a clean musky base. Others: a cinnamon-roll milky scent and a cotton-candy 'Sweeten Me'."
+  },
+  "price": {
+   "amt": 32.5,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "retailer",
+   "src": "https://lyko.com/de/haar/styling/hairmist/milky-mane-hair-perfume-002-cherry-crush-50ml",
+   "on": "2026-10-24",
+   "note": "€26 on offer at the check."
+  },
+  "tags": [
+   "hair perfume",
+   "drugstore",
+   "gourmand"
+  ]
+ },
+ {
+  "id": "dries-van-noten",
+  "name": "Dries Van Noten (Soie Malaquais)",
+  "country": "Belgium",
+  "cc": "BE",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Antwerp",
+  "type": "niche",
+  "scale": "large",
+  "site": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten",
+  "about": "The Belgian fashion designer's perfume line, each scent built on an unexpected pairing of two materials.",
+  "why": "A designer house that behaves like niche; Soie Malaquais is a silky gourmand loved in the Gulf.",
+  "families": [
+   "fruity",
+   "floral",
+   "gourmand"
+  ],
+  "accents": [
+   "silk",
+   "chestnut"
+  ],
+  "sig": {
+   "name": "Soie Malaquais",
+   "url": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten",
+   "notes": {
+    "t": [
+     "bergamot",
+     "blackcurrant"
+    ],
+    "h": [
+     "rose",
+     "silk accord"
+    ],
+    "b": [
+     "chestnut",
+     "cocoa",
+     "vanilla"
+    ]
+   },
+   "profile": "Smooth as a silk dress: tart blackcurrant and rose, then roasted chestnut, cocoa and vanilla. Cozy, polished and quietly sweet."
+  },
+  "price": {
+   "amt": 400,
+   "cur": "USD",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "designer niche",
+   "chestnut"
   ]
  }
 ]

@@ -73,6 +73,8 @@ input[type=search] { flex: 1 1 220px; min-width: 0 }
 .st { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; border: 1px solid currentColor }
 .st.verified { color: var(--ok) } .st.retailer { color: var(--accent) } .st.reported { color: var(--warn) } .st.unknown { color: var(--muted) }
 .live { font-size: 12px; color: var(--muted); flex-basis: 100% }
+.also { display: grid; gap: 2px; font-size: 13px; background: var(--accent-soft); border-radius: 8px; padding: 8px 10px }
+.also .nm { font-family: var(--display); font-style: italic; font-size: 1rem }
 .links { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px }
 a { color: var(--accent); text-underline-offset: 3px }
 .empty { color: var(--muted); padding: 24px 0 }
@@ -121,6 +123,11 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <div class="gl" id="famlist"></div>
       <h3 style="font-size:1.05rem;margin-top:16px">Words you will meet</h3>
       <div class="gl" id="acclist"></div>
+    </details>
+    <details id="storebox" open>
+      <summary>Where to smell them</summary>
+      <p class="why">Shops and streets where many of these houses sit side by side.</p>
+      <ul class="leads" id="stores"></ul>
     </details>
     <details id="leadbox">
       <summary>Next to research</summary>
@@ -178,6 +185,7 @@ function card(h) {
     <div class="sig"><div class="nm">${esc(h.sig.name)}</div>
       ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v.join(", "))}</dd>`).join("")}</dl>` : ""}
       <p class="profile">${esc(h.sig.profile)}</p></div>
+    ${(h.also || []).map((a) => `<div class="also"><span class="nm">Also: ${esc(a.name)}</span><span>${esc(a.notes)}</span><span class="cad">${esc(a.price)}</span>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">See it</a>` : ""}</div>`).join("")}
     <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
     <div class="price"><span class="amt">${amt}</span>${cadTxt ? `<span class="cad">${cadTxt}</span>` : ""}${perMl ? `<span class="cad">${perMl}</span>` : ""}<span class="st ${p.status}">${p.status}</span>
       ${p.note ? `<span class="note">${esc(p.note)}</span>` : ""}${liveTxt ? `<span class="live">${liveTxt}</span>` : ""}</div>
@@ -207,9 +215,9 @@ function render() {
 }
 
 (async () => {
-  const [houses, families, regions, rates, leads, links, prices] = await Promise.all([
+  const [houses, families, regions, rates, leads, stores, links, prices] = await Promise.all([
     load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
-    load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []),
+    load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []), load("data/scents/stores.json", []),
     load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} })]);
   D = { houses, regions, rates, leads, links, prices, fam: families };
   const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
@@ -226,7 +234,8 @@ function render() {
   $("pyrnote").textContent = families._pyramid || "";
   $("famlist").innerHTML = famKeys.map((k) => `<div><b>${esc(families[k].label)}</b><span>${esc(families[k].what)} ${esc(families[k].feel)} Best for: ${esc(families[k].wear)}</span></div>`).join("");
   $("acclist").innerHTML = Object.entries(families._accents || {}).map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join("");
-  $("leads").innerHTML = leads.map((l) => `<li><span><b>${esc(l.name)}</b> · ${esc(l.country)}</span><small>${esc(l.lead)} <a href="${esc(l.src)}" target="_blank" rel="noopener">source</a></small></li>`).join("");
+  $("leads").innerHTML = leads.map((l) => `<li><span><b>${esc(l.name)}</b> · ${esc(l.country)}</span><small>${esc(l.lead)}${l.src ? ` <a href="${esc(l.src)}" target="_blank" rel="noopener">source</a>` : ""}</small></li>`).join("");
+  $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
   $("foot").innerHTML = `Prices are as found on the check date: <b>verified</b> means read on the brand's own shop, <b>retailer</b> a reseller, <b>reported</b> from an article. Canadian-dollar figures are estimates from ${esc(rates.source || "seed")} rates on ${esc(rates.on || "")} and exclude shipping and duties. Dots show whether each house's links worked at the last weekly check (green working, amber site blocks automated checks, red broken). Not affiliated with any brand.`;
   render();
 })();
