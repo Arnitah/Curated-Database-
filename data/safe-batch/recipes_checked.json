@@ -50895,5 +50895,345 @@
       "creator": "Store product",
       "platform": "Florasis"
     }
+  },
+  {
+    "id": "green-vanilla-perfume-oil",
+    "name": "Green vanilla perfume oil",
+    "claim": "Smooth vanilla with green stems, soft florals and clean musk",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "vetivereo",
+        2,
+        "drops"
+      ],
+      [
+        "neroli",
+        2,
+        "drops"
+      ],
+      [
+        "bergamotfcf",
+        2,
+        "drops"
+      ],
+      [
+        "musk",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 2 weeks. Vetiver gives the green, rooty edge; neroli and bergamot FCF lift it; white musk is the skin-musk base. Add an osmanthus or ambrette fragrance oil for the velvety heart if you have one. Angelica root oil is left out: it can make skin burn in sunlight.",
+    "inspired": "Bottega Veneta Colpo di Sole",
+    "source": {
+      "creator": "yolanibeauty",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "peony-rose-perfume-hair-milk",
+    "name": "Peony and rose perfume hair milk",
+    "claim": "Light leave-in milk that scents hair for hours",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        80,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "argan",
+        5,
+        "g"
+      ],
+      [
+        "squalane",
+        3,
+        "g"
+      ],
+      [
+        "ewax",
+        3,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.8,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Make like a lotion: heat water and oil phases to 70 °C, blend, cool, then add panthenol, a peony-rose fragrance oil and the preservative below 40 °C. Smooth a pea-size amount through damp or dry lengths, not the scalp. Hair holds scent longer than skin, so a little goes far. Use within 3 months.",
+    "inspired": "ululis Fragrance Hair Milk (Peony & Rose)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vanilla-lemon-solid-shower-bar",
+    "name": "Vanilla and lemon solid shower bar",
+    "claim": "Plastic-free shower gel bar with a creamy lather",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sci",
+        60,
+        "g"
+      ],
+      [
+        "cetearyl",
+        12,
+        "g"
+      ],
+      [
+        "cocoa",
+        10,
+        "g"
+      ],
+      [
+        "glycerin",
+        12,
+        "g"
+      ],
+      [
+        "vanilla",
+        10,
+        "drops"
+      ],
+      [
+        "lemondistilled",
+        15,
+        "drops"
+      ]
+    ],
+    "note": "Gently melt the SCI with the glycerin, cetearyl and cocoa butter in a water bath (wear a mask: SCI powder irritates lungs), stir until it's a thick dough, cool slightly, add the oils and press into a mold. Let it harden 2 days and keep it on a draining dish. Unlike soap, an SCI bar is pH-balanced, which is how solid shower gels differ from soap bars.",
+    "inspired": "Balea solid shower gel, vanilla and lemon",
+    "source": {
+      "creator": "Store product",
+      "platform": "dm"
+    }
+  },
+  {
+    "id": "cherry-cola-vanilla-body-mist",
+    "name": "Cherry cola and vanilla body mist",
+    "claim": "Fizzy cherry cola with a vanilla float",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Spray over lotion so it lasts longer. Cola notes are mostly lime, cinnamon, nutmeg and vanilla; pick a skin-safe cherry cola fragrance oil, or blend cherry and vanilla. Inspired by a viral set of concept products (the post asks which ones people wish were real).",
+    "inspired": "Cherry cola gourmand concept body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "cinnamon-roll-icing-body-mist",
+    "name": "Cinnamon roll icing body mist",
+    "claim": "Warm dough, cinnamon sugar and vanilla icing",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        80,
+        "g"
+      ],
+      [
+        "water",
+        14,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol first, then add the water and glycerin, shake, and rest 1 to 2 weeks. Spray over lotion so it lasts longer. Use a skin-safe cinnamon roll fragrance oil rather than cinnamon bark essential oil, which is a strong skin allergen. Inspired by a viral set of concept products (the post asks which ones people wish were real).",
+    "inspired": "Cinnamon roll icing concept body mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "peach-cobbler-shea-body-lotion",
+    "name": "Peach cobbler shea body lotion",
+    "claim": "Baked peach, brown sugar and vanilla lotion",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat the water phase (water, glycerin) and oil phase (shea, oil, emulsifying wax, cetearyl) separately to about 70 °C, pour the oil into the water while blending, and keep stirring as it cools. Below 40 °C add vitamin E, the fragrance and the preservative. Use skin-safe peach cobbler or peach and vanilla fragrance oils. Keeps about 3 months. Inspired by a viral set of concept products (the post asks which ones people wish were real).",
+    "inspired": "Peach cobbler concept body lotion",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "caramel-apple-shea-body-lotion",
+    "name": "Caramel apple shea body lotion",
+    "claim": "Crisp apple, warm caramel and vanilla butter lotion",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat the water phase (water, glycerin) and oil phase (shea, oil, emulsifying wax, cetearyl) separately to about 70 °C, pour the oil into the water while blending, and keep stirring as it cools. Below 40 °C add vitamin E, the fragrance and the preservative. Use skin-safe caramel apple fragrance oils. Keeps about 3 months. Any of the gourmand scents in the set (pecan pie, iced donut, banana pudding, cookies and cream) works with the same base. Inspired by a viral set of concept products (the post asks which ones people wish were real).",
+    "inspired": "Caramel apple butter concept body lotion",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

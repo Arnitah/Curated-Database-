@@ -1,6 +1,6 @@
 {
-  "version": 63,
-  "updated_at": "2026-10-24T00:15:02.732Z",
+  "version": 65,
+  "updated_at": "2026-10-24T00:44:38.402Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -243,10 +243,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/recipes_checked": {
-      "count": 1406,
-      "bytes": 1059304,
-      "hash": "984e7e684404",
-      "updated_at": "2026-10-24T00:15:02.732Z"
+      "count": 1413,
+      "bytes": 1067525,
+      "hash": "447187c03a50",
+      "updated_at": "2026-10-24T00:44:38.401Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
@@ -303,10 +303,10 @@
       "updated_at": "2026-10-24T00:15:02.732Z"
     },
     "safe-batch/terms": {
-      "count": 53,
-      "bytes": 37065,
-      "hash": "1765762a5a0e",
-      "updated_at": "2026-10-23T23:31:17.242Z"
+      "count": 55,
+      "bytes": 38178,
+      "hash": "46f42e3e0849",
+      "updated_at": "2026-10-24T00:44:30.466Z"
     },
     "safe-batch/traditions": {
       "count": 58,
