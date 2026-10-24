@@ -295,6 +295,26 @@ p{margin:0}
 .cp-hits{display:flex;flex-direction:column;gap:4px}.cp-hits:empty{display:none}
 .cp-hit{display:flex;flex-direction:column;align-items:flex-start;gap:1px;text-align:left;font:inherit;font-size:13.5px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface,var(--bg));color:var(--ink);cursor:pointer}
 .cp-hit:hover,.cp-hit:focus-visible{border-color:var(--ink)}.cp-hit .muted{font-size:12px}.cp-src{margin:0}
+.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.cmp{border-collapse:separate;border-spacing:0;width:100%;min-width:calc(112px + var(--cmpn,2) * 168px);font-size:14px}
+.cmp th,.cmp td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cmp td{min-width:168px;width:calc((100% - 112px) / var(--cmpn,2))}
+.cmp tbody th{position:sticky;left:0;z-index:1;background:var(--surface);width:112px;min-width:112px;max-width:112px;font-size:12.5px;font-weight:700;color:var(--muted);border-right:1px solid var(--line)}
+.cmp thead th{background:var(--s2);vertical-align:bottom}.cmp thead th.cmp-corner{position:sticky;left:0;z-index:2;font-size:12px;color:var(--muted);border-right:1px solid var(--line)}
+.cmp-h{display:flex;flex-direction:column;gap:2px;font-size:14px;line-height:1.3}.cmp-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.cmp-sec th{position:static!important;background:var(--bg)!important;color:var(--accent)!important;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;border-right:0!important;max-width:none!important}
+.cmp-sec th>*{position:sticky;left:12px}
+.cmp td.cmp-win{background:var(--ok-soft);box-shadow:inset 3px 0 0 var(--ok)}
+.cmp-same td{color:var(--muted)}
+.cmp-face{max-width:92px}.cmp-face .am-svg{width:100%;height:auto}
+.cmp-act{margin-bottom:6px;line-height:1.35}.cmp-act .btag,.cmp .suit{display:inline-block;margin-top:2px}
+.cmp-alts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}.cmp-alts li{display:flex;flex-direction:column;align-items:flex-start;gap:2px;line-height:1.35}
+.cmp-add{min-height:30px;font-size:12px;padding:0 10px;margin-top:2px}
+.cmp-price{width:100%;min-height:38px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:var(--bg);color:var(--ink);font:inherit}
+.cmp-inci summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:13px}.cmp-inci p{margin:6px 0 0;line-height:1.45}
+.cmp-sum{margin:6px 0 0;padding-left:18px;font-size:14px;display:flex;flex-direction:column;gap:3px}
+.cp-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:900px){.cp-grid.three{grid-template-columns:1fr}}
+.cp-slot{border:1px solid var(--line);border-radius:14px;padding:12px;position:relative}.cp-slot .cmp-dot{position:absolute;top:14px;right:12px}
 </style>
 <div class="app" id="app">
   <aside class="side" aria-label="Clay">
@@ -1081,6 +1101,116 @@ function cpCompare(la,lb,nA,nB){
   const col=(t,m,ks)=>`<div class="c2-col"><div class="blabel" style="margin-top:0">${esc(t)}</div>${ks.length?`<ul class="goal-list">${ks.map(k=>`<li><b>${esc(m.get(k).a.n)}</b> <span class="small muted">${esc(m.get(k).a.does)}</span></li>`).join('')}</ul>`:'<p class="small muted">Nothing here.</p>'}</div>`;
   return `<div class="mp-chk mp-info"><b class="small">${esc(nA)} vs ${esc(nB)}</b><p class="small" style="margin:4px 0 0">${esc(sum)}</p></div>${pgCompare(A,B,nA,nB)}<div class="c2-res">${col('In both',aK,both)}${col('Only in '+nA,aK,onlyA)}${col('Only in '+nB,bK,onlyB)}</div>`;
 }
+/* ---------- Side-by-side compare (up to 3), laid out like a phone spec sheet ---------- */
+const CMP_K=['a','b','c'];
+const CMP_COL=['#2a78d6','#eb6834','#1baf7a'];
+function cmpSlots(){ const n=S.cpN||2; return CMP_K.slice(0,n); }
+function cmpSizeMl(sz){ if(!sz) return null; const m=String(sz).toLowerCase().replace(',','.').match(/([\d.]+)\s*(ml|g|gr|l|kg|fl\.? ?oz|oz)\b/); if(!m) return null; const v=+m[1], u=m[2].replace(/\W/g,''); return u==='l'||u==='kg'?v*1000:/oz/.test(u)?v*29.57:v; }
+function cmpSuits(r){
+  const k=new Set(r.found.map(f=>f.a.k)), F=pgFlags(r), frag=F.some(f=>/Fragrance|essential oil/i.test(f[1])), good=[], bad=[];
+  if(r.rinse) good.push('Most skin types (rinses off)');
+  if(['salicylic','niacinamide','bpo','azelaic','zinc','sulfur'].some(x=>k.has(x))) good.push('Oily, acne-prone');
+  if(r.oily||['ceramide','squalane','urea','petrolatum','oat'].some(x=>k.has(x))) good.push('Dry');
+  if(['centella','panthenol','ectoin','oat','heartleaf','ceramide'].some(x=>k.has(x))&&!frag) good.push('Sensitive, redness');
+  if(['retinol','retinal','adapalene','peptide','bakuchiol'].some(x=>k.has(x))) good.push('Fine lines, texture');
+  if(['vitc','arbutin','tranexamic','kojic','licorice'].some(x=>k.has(x))) good.push('Dark spots');
+  if(frag) bad.push('Sensitive skin (fragrance)');
+  if(r.oily) bad.push('Very oily skin (heavy)');
+  if(r.items.some(x=>/sodium laur(eth|yl) sulfate/.test(x))) bad.push('Dry skin (sulfate)');
+  if(['glycolic','retinol','retinal','adapalene'].some(x=>k.has(x))&&!r.rinse) bad.push('A damaged barrier');
+  return {good:[...new Set(good)].length?[...new Set(good)]:['Most skin types'],bad};
+}
+function cmpClash(r,others){
+  const strong=x=>x.found.filter(f=>!f.low).map(f=>f.a.k);
+  const isAcid=k=>/glycolic|lactic|mandelic|salicylic|pha/.test(k), isRet=k=>/retinol|retinal|adapalene/.test(k);
+  const me=strong(r), out=[];
+  const shelf=MP.filter(p=>p.a==='face'&&p.s==='cur'), sAcid=shelf.filter(p=>ACID.test(p.n)), sRet=shelf.filter(p=>RETI.test(p.n));
+  if(me.some(isRet)&&sAcid.length) out.push(`Retinoid + your ${sAcid[0].n}: use on different nights`);
+  if(me.some(isAcid)&&sRet.length) out.push(`Acid + your ${sRet[0].n}: use on different nights`);
+  if(me.some(isAcid)&&sAcid.length&&!r.rinse) out.push(`A second exfoliant next to your ${sAcid[0].n}: pick one`);
+  if(me.includes('vitc')&&sAcid.length) out.push('Vitamin C in the morning, your acid at night');
+  if(me.includes('bpo')&&(sRet.length||me.some(isRet))) out.push('Benzoyl peroxide can deactivate some retinoids: mornings for BPO');
+  return out;
+}
+function cmpData(k){
+  const cur=S.cp, P=MP.find(x=>x.id===+cur[k]), h=cur['h'+k], list=(cur['l'+k]||'').trim();
+  const name=P?P.n:(cur['n'+k]||'');
+  if(!list&&!name) return null;
+  const r=list?cmAnalyze(list):null;
+  const step=P?P.st:pdbStep(h?PDB_AREA[h.cat]||'face':'face',name);
+  return {k,name:name||'Unnamed product',brand:h?h.brand:'',cat:h?PDB_CATL[h.cat]:(P?MP_AREAS.find(x=>x[0]===P.a)[1]:''),size:h?h.size:'',src:h?(PDB_SRC[h.src]||h.src)+(h.verified?' (checked)':''):(P&&P.inci?'Your own label':list?'Pasted list':''),url:h?h.url:'',shelf:P||MP.find(x=>h&&x.hub===h.id),list,r,step,price:+cur['p'+k]||0};
+}
+function cmpTable(){
+  const D=cmpSlots().map(cmpData);
+  const live=D.filter(Boolean);
+  if(live.length<2) return '<p class="small muted">Pick at least two products to compare.</p>';
+  const noList=live.filter(d=>!d.r);
+  const R=[], sec=t=>R.push({sec:t});
+  const row=(label,cells,opt={})=>R.push({label,cells,plain:opt.plain||cells.map(c=>String(c).replace(/<[^>]+>/g,'').trim()),best:opt.best,always:opt.always});
+  const cell=(d,f,empty='—')=>d?(f(d)||empty):'';
+  const bestOf=(vals,hi=true)=>{ const v=vals.map(x=>x==null?NaN:x), ok=v.filter(x=>!isNaN(x)); if(ok.length<2) return null; const m=hi?Math.max(...ok):Math.min(...ok); if(ok.every(x=>x===m)) return null; return v.map(x=>x===m); };
+  const sc=D.map(d=>d&&d.r?pgScore(d.r):null), fl=D.map(d=>d&&d.r?pgFlags(d.r):null);
+  // header
+  const head=D.map((d,i)=>d?`<div class="cmp-h"><span class="cmp-dot" style="background:${CMP_COL[i]}"></span><b>${esc(d.name)}</b>${d.brand?`<span class="small muted">${esc(d.brand)}</span>`:''}<button class="linkbtn small" type="button" data-act="cmpclear" data-v="${d.k}">Remove</button></div>`:`<div class="cmp-h muted small">Empty slot</div>`);
+  sec('At a glance');
+  row('Category',D.map(d=>cell(d,x=>esc(x.cat))));
+  row('Step',D.map(d=>cell(d,x=>esc(x.step))));
+  row('Type',D.map(d=>cell(d,x=>x.r?(x.r.rinse?'Rinse-off':x.r.oily?'Oil or balm':x.r.mist?'Mist':'Leave-on'):'')));
+  row('Size',D.map(d=>cell(d,x=>esc(x.size))));
+  row('Ingredients',D.map(d=>cell(d,x=>x.r?String(x.r.items.length):'')));
+  row('On My Shelf',D.map(d=>cell(d,x=>x.shelf?`Yes, ${({cur:'using it',have:'have it',past:'used before',next:'trying next'})[x.shelf.s]||''}`:'No')));
+  row('Data source',D.map(d=>cell(d,x=>esc(x.src)+(x.url?` · <a href="${esc(x.url)}" target="_blank" rel="noopener">link</a>`:''))));
+  sec('Price and value');
+  row('Your price',D.map(d=>d?`<input class="cmp-price cp-in" type="number" min="0" step="0.01" inputmode="decimal" data-cpp="${d.k}" value="${d.price||''}" placeholder="Type a price" aria-label="Price for ${esc(d.name)}">`:''),{plain:D.map(d=>d?String(d.price||''):''),always:true});
+  const per=D.map(d=>{ if(!d||!d.price) return null; const ml=cmpSizeMl(d.size); return ml?d.price/ml*100:null; });
+  row('Per 100 ml or g',D.map((d,i)=>d?(per[i]!=null?per[i].toFixed(2):d.price?(d.size?'Size unreadable':'Size unknown'):'Add a price'):''),{best:bestOf(per,false)});
+  sec('Fit for you');
+  row('Where it goes',D.map((d,i)=>cell(d,x=>{ const inf=amInfo({n:x.name,st:x.step}); return `<div class="cmp-face">${amSvg(inf.z,CMP_COL[i]).replace(/id="am/g,`id="cm${i}`).replace(/#am/g,`#cm${i}`)}</div><span class="small">${esc(inf.where)}</span>`; })),{plain:D.map(d=>d?amInfo({n:d.name,st:d.step}).where:'')});
+  row('When',D.map(d=>cell(d,x=>esc(amInfo({n:x.name,st:x.step}).when))));
+  row('Good for',D.map(d=>cell(d,x=>x.r?cmpSuits(x.r).good.map(g=>`<span class="suit">${esc(g)}</span>`).join(' '):'')));
+  row('Not ideal for',D.map(d=>cell(d,x=>x.r?(cmpSuits(x.r).bad.map(g=>`<span class="btag t-x">${esc(g)}</span>`).join(' ')||'Nothing flagged'):'')));
+  row('With your shelf',D.map(d=>cell(d,x=>x.r?(cmpClash(x.r).map(c=>`<span class="small" style="color:var(--warn)">${esc(c)}</span>`).join('<br>')||'<span class="small" style="color:var(--ok)">No clashes</span>'):'')));
+  sec('What does the work');
+  const proven=D.map(d=>d&&d.r?d.r.found.filter(f=>f.a.ev==='b'&&(!f.low||f.a.lowOk)).length:null);
+  row('Key actives',D.map(d=>cell(d,x=>x.r?(x.r.found.filter(f=>f.a.ev!=='stop').map(f=>`<div class="cmp-act"><b>${esc(f.a.n)}</b> <span class="btag ${BTAG[f.a.ev][1]}">${BTAG[f.a.ev][0]}</span>${f.low?' <span class="tag">under 1%</span>':''}</div>`).join('')||'None at a useful level'):'')));
+  row('Proven actives',D.map((d,i)=>d&&d.r?String(proven[i]):''),{best:bestOf(proven)});
+  PG_GOALS.forEach(([g,l])=>{ if(!sc.some(x=>x&&x[g])) return; const v=sc.map(x=>x?(x[g]?x[g].score:0):null);
+    row(l,D.map((d,i)=>d&&d.r?`${pgBadge(sc[i][g]?sc[i][g].grade:'D')} <span class="small muted">${sc[i][g]?esc(sc[i][g].hits[0].n):'nothing proven'}</span>`:''),{best:bestOf(v),plain:D.map((d,i)=>d&&d.r?(sc[i][g]?sc[i][g].grade:'D'):'')}); });
+  sec('Flags');
+  const fx=(i,re)=>fl[i]?fl[i].filter(f=>re.test(f[1])):null;
+  const yn=(i,re,yes)=>{ const f=fx(i,re); return f==null?'':f.length?`<span style="color:var(--${f[0][0]==='stop'?'stop':'warn'})">${esc(yes?yes(f):f[0][1])}</span>`:'<span style="color:var(--ok)">None</span>'; };
+  const cnt=D.map((d,i)=>fl[i]?fl[i].filter(f=>f[0]!=='info').length:null);
+  row('Banned in EU or UK',D.map((d,i)=>{ if(!d||!fl[i]) return ''; const b=fl[i].filter(f=>f[0]==='stop'); return b.length?`<span style="color:var(--stop)">${b.map(f=>esc(f[1])).join(', ')}</span>`:'<span style="color:var(--ok)">None</span>'; }));
+  row('Fragrance',D.map((d,i)=>d?yn(i,/^Fragrance$/,()=>'Yes'):''));
+  row('Fragrance allergens',D.map((d,i)=>d?yn(i,/allergen/):''));
+  row('Essential oils',D.map((d,i)=>d?yn(i,/essential oil/):''));
+  row('Drying alcohol',D.map((d,i)=>d?yn(i,/Drying alcohol/,()=>'Near the top'):''));
+  row('Marketing extras',D.map(d=>cell(d,x=>x.r?(x.r.hype.filter(h=>!/fragrance|allergen|Colorants|Sulfate/i.test(h.n)).map(h=>esc(h.n)).join(', ')||'None'):'')));
+  row('Total flags',D.map((d,i)=>d&&d.r?String(cnt[i]):''),{best:bestOf(cnt,false)});
+  sec('Cheaper alternatives');
+  row('Same actives for less',D.map(d=>cell(d,x=>{ if(!x.r) return ''; const alts=x.r.rinse?CM_WASH.slice(0,3):x.r.found.filter(f=>f.a.ev==='b'&&!f.low).flatMap(f=>(f.a.alt||[]).slice(0,2).map(a=>[a[0],a[1],f.a.n])).slice(0,4);
+    return alts.length?`<ul class="cmp-alts">${alts.map(([n,t,why])=>`<li><b>${esc(n)}</b> <span class="small muted">${esc(t)}${why?' · '+esc(why):''}</span><button class="chip cmp-add" type="button" data-act="cmpalt" data-v="${esc(n)}">${ic('plus',12)}Compare</button></li>`).join('')}</ul>`:'No cheaper match on file'; })),{always:true});
+  sec('Full ingredient list');
+  row('INCI',D.map(d=>cell(d,x=>x.list?`<details class="cmp-inci"><summary>Show ${x.r?x.r.items.length:''} ingredients</summary><p class="small">${esc(x.list)}</p></details>`:'Not added')),{plain:D.map(d=>d?d.list:'')});
+  // verdict
+  const nm=i=>D[i].name, idx=D.map((d,i)=>d&&d.r?i:-1).filter(i=>i>=0), lines=[];
+  const ban=idx.filter(i=>fl[i].some(f=>f[0]==='stop')); if(ban.length) lines.push(`${ban.map(nm).join(' and ')} ${ban.length>1?'contain':'contains'} a banned ingredient. Skip ${ban.length>1?'them':'it'}.`);
+  const goals=PG_GOALS.filter(([g])=>idx.some(i=>sc[i][g])).map(([g])=>g).sort((x,y)=>Math.max(...idx.map(i=>sc[i][y]?.score||0))-Math.max(...idx.map(i=>sc[i][x]?.score||0)));
+  goals.slice(0,2).forEach(g=>{ const v=idx.map(i=>sc[i][g]?.score||0), m=Math.max(...v); const w=idx.filter((i,j)=>v[j]===m); if(w.length<idx.length) lines.push(`Best backed for ${gl(g)}: ${w.map(nm).join(' and ')}.`); });
+  if(idx.length>1){ const c=idx.map(i=>cnt[i]), m=Math.min(...c); if(c.some(x=>x!==m)) lines.push(`Gentlest (fewest flags): ${idx.filter((i,j)=>c[j]===m).map(nm).join(' and ')}.`); }
+  const pv=per.map((x,i)=>x!=null?i:-1).filter(i=>i>=0); if(pv.length>1){ const b=pv.reduce((a,i)=>per[i]<per[a]?i:a); lines.push(`Best value: ${nm(b)} at ${per[b].toFixed(2)} per 100 ml or g.`); }
+  if(!lines.length) lines.push('They do much the same job. Choose on feel and price.');
+  const diff=!!S.cmpDiff, n=D.length;
+  const body=R.map(x=>{ if(x.sec) return `<tr class="cmp-sec"><th colspan="${n+1}">${esc(x.sec)}</th></tr>`;
+    const vals=x.plain.filter((v,i)=>D[i]), same=vals.length>1&&vals.every(v=>v===vals[0]);
+    if(diff&&same&&!x.always) return '';
+    if(x.cells.every((c,i)=>!D[i]||!String(c).trim()||c==='—')&&!x.always) return '';
+    return `<tr${same?' class="cmp-same"':''}><th scope="row">${esc(x.label)}</th>${x.cells.map((c,i)=>`<td class="${x.best&&x.best[i]?'cmp-win':''}">${c}</td>`).join('')}</tr>`; }).filter((h,i,A)=>h&&!(h.startsWith('<tr class="cmp-sec">')&&(()=>{ const nx=A.slice(i+1).find(Boolean); return !nx||nx.startsWith('<tr class="cmp-sec">'); })())).join('');
+  return `<div class="mp-chk mp-info"><b class="small">The short version</b><ul class="cmp-sum">${lines.map(l=>`<li>${esc(l)}</li>`).join('')}</ul>${noList.length?`<p class="small muted" style="margin:6px 0 0">${noList.map(d=>esc(d.name)).join(', ')}: no ingredient list yet, so most rows are blank. Paste one above.</p>`:''}</div>
+   <div class="row" style="justify-content:space-between;margin:12px 0 8px"><label class="small row" style="gap:8px;cursor:pointer"><input type="checkbox" data-act="cmpdiff" ${diff?'checked':''} style="width:18px;height:18px;accent-color:var(--accent)">Show differences only</label><span class="small muted">Green cell = better on that row</span></div>
+   <div class="cmp-wrap"><table class="cmp"><thead><tr><th scope="col" class="cmp-corner">${n} products</th>${head.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>
+   ${PG_HOW_F()}`;
+}
 /* ---------- Store-product search: the Skincare Data Hub, slimmed down by the Curated Database bridge ---------- */
 const CLAY_GH="https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
 const CLAY_BASE=()=>window.CLAY_DATA_BASE||"";
@@ -1158,19 +1288,19 @@ function pageCheck(){
   const P=id=>MP.find(x=>x.id===+id);
   const cur=S.cp||(S.cp={a:'',b:'',na:'',nb:'',la:'',lb:''});
   ['a','b'].forEach(k=>{ const pr=P(cur[k]); if(pr&&cur['l'+k]===''&&pr.inci) cur['l'+k]=pr.inci; if(pr&&!cur['n'+k]) cur['n'+k]=pr.n; });
-  const side=k=>`<div class="cp-side"><label class="small"><b>${mode==='one'?'Find a product':k==='a'?'Product A':'Product B'}</b><input class="cp-in" type="search" data-cpf="${k}" value="${esc(cur['q'+k]||'')}" placeholder="Search store products: name, brand or barcode" aria-label="Search store products" autocomplete="off"></label>
+  const side=k=>`<div class="cp-side${mode==='two'?' cp-slot':''}">${mode==='two'?`<span class="cmp-dot" style="background:${CMP_COL[CMP_K.indexOf(k)]}"></span>`:''}<label class="small"><b>${mode==='one'?'Find a product':'Product '+k.toUpperCase()}</b><input class="cp-in" type="search" data-cpf="${k}" value="${esc(cur['q'+k]||'')}" placeholder="Search store products: name, brand or barcode" aria-label="Search store products" autocomplete="off"></label>
     <div class="cp-hits" id="cpHits${k}" role="list"></div>
     <label class="small"><span class="muted">Or pick from My Shelf</span><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
     ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
     <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
     ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}
     ${cur['h'+k]?pdbNote(cur['h'+k],!P(cur[k])):''}</div>`;
-  const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||(k==='a'?'Product A':'Product B'));
+  const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||'Product '+k.toUpperCase());
   const main=`<div class="head"><span class="eyebrow">Store products</span><h1>Check a product</h1><p class="muted">Search 14,000 store products or paste an ingredient list to see what actually does the work, how well it's proven for each goal, what's marketing, and cheaper matches.</p></div>
-    <div class="seg" role="group" aria-label="Mode"><button type="button" aria-pressed="${mode==='one'}" data-act="cpmode" data-v="one">Check one</button><button type="button" aria-pressed="${mode==='two'}" data-act="cpmode" data-v="two">Compare two</button></div>
-    ${card('', `<div class="cp-grid${mode==='two'?' two':''}">${side('a')}${mode==='two'?side('b'):''}</div><div class="row" style="margin-top:8px"><button class="btn primary" type="button" data-act="cpgo">${mode==='one'?'Check it':'Compare'}</button></div>`)}
-    ${S.cpShow?card(mode==='one'?'Result':'Comparison', `<div class="cp">${mode==='one'?cpResult(cur.la,nm('a')):cpCompare(cur.la,cur.lb,nm('a'),nm('b'))}</div>`, {h:'h3', icon:'check'}):''}`;
-  const rail=card('Tips', `<p class="small">Ingredients are listed from most to least. Anything after the preservatives (phenoxyethanol, ethylhexylglycerin) or fragrance is usually under 1%.</p><p class="small">Save a product's list once and you can re-check or compare it any time from My Shelf.</p>`, {h:'h3', icon:'info'});
+    <div class="seg" role="group" aria-label="Mode"><button type="button" aria-pressed="${mode==='one'}" data-act="cpmode" data-v="one">Check one</button><button type="button" aria-pressed="${mode==='two'}" data-act="cpmode" data-v="two">Compare side by side</button></div>
+    ${card('', `<div class="cp-grid${mode==='two'?((S.cpN||2)===3?' three':' two'):''}">${mode==='two'?cmpSlots().map(side).join(''):side('a')}</div><div class="row" style="margin-top:8px"><button class="btn primary" type="button" data-act="cpgo">${mode==='one'?'Check it':'Compare'}</button>${mode==='two'&&(S.cpN||2)<3?`<button class="btn" type="button" data-act="cmpmore">${ic('plus',16)}Add a third product</button>`:''}${mode==='one'&&S.cpShow&&(cur.la||'').trim()?`<button class="btn" type="button" data-act="cmpstart">${ic('split',16)}Compare with others</button>`:''}</div>`)}
+    ${S.cpShow?(mode==='one'?card('Result', `<div class="cp">${cpResult(cur.la,nm('a'))}</div>`, {h:'h3', icon:'check'}):`<section class="card" data-comment-target style="--cmpn:${cmpSlots().filter(k=>cmpData(k)).length||2}"><div class="card-head">${ic('split',20)}<h3>Side by side</h3>${cmt('compare')}</div><div class="cp">${cmpTable()}</div></section>`):''}`;
+  const rail=card('Tips', `${mode==='two'?'<p class="small">Compare up to three products. Tap <b>Compare</b> on any cheaper alternative to drop it into the next free slot. Type what you paid to see price per 100 ml.</p>':''}<p class="small">Ingredients are listed from most to least. Anything after the preservatives (phenoxyethanol, ethylhexylglycerin) or fragrance is usually under 1%.</p><p class="small">Save a product's list once and you can re-check or compare it any time from My Shelf.</p>`, {h:'h3', icon:'info'});
   return {main, rail};
 }
 function pageShelf(){
@@ -1607,37 +1737,40 @@ function pageScan(){
       <div class="grid2" style="align-items:start">${applyMap()}
         <div style="display:flex;flex-direction:column;gap:10px;min-width:0"><p class="small muted">Tap a zone. Numbers show how many products go there.</p><div class="row chiprow" role="group" aria-label="Face zones">${Object.entries(ZONES).map(([k,v])=>`<button class="chip" type="button" aria-pressed="${S.zone===k}" data-act="zone" data-v="${k}">${v.name}</button>`).join('')}</div>
           <h3>${z.name}</h3><p class="small muted">${z.why}</p>
-          <div class="list">${z.items.map(it=>it[0]==='shield'?`<div style="padding:10px 0;display:flex;gap:10px;align-items:center;color:var(--stop);font-weight:700">${ic('shield',18,2.2)}<span>${it[2]}<br><span class="small" style="font-weight:600">${it[3]}</span></span></div>`:`<div style="display:flex;gap:12px;align-items:center;padding:10px 0">${pack(it[0],it[1],36,46)}<span><b>${it[2]}</b><br><span class="small muted">${it[3]}</span></span></div>`).join('')}</div></div></div></section>`;
+          ${(()=>{ const mine=sfItems(S.zone); return mine.length?`<div class="blabel" style="margin-top:4px">Your products</div><div class="list">${mine.map(it=>`<div style="display:flex;gap:12px;align-items:center;padding:10px 0">${pack(it.sh,it.ti,36,46)}<span><b>${esc(it.n)}</b><br><span class="small" style="color:${it.warn?'var(--stop)':'var(--muted)'}">${esc(it.how)}</span></span></div>`).join('')}</div>`:`<p class="small muted">None of your current face products go here. <a href="#" data-act="go" data-v="shelf">Add them on My Shelf</a>.</p>`; })()}
+          ${(()=>{ const tips=z.items.filter(it=>it[0]==='shield'||!sfItems(S.zone).some(m=>m.n.toLowerCase().includes(it[2].toLowerCase().split(' ')[0]))); return tips.length?`<div class="blabel">Suggested by your scan</div><div class="list">${tips.map(it=>it[0]==='shield'?`<div style="padding:10px 0;display:flex;gap:10px;align-items:center;color:var(--stop);font-weight:700">${ic('shield',18,2.2)}<span>${it[2]}<br><span class="small" style="font-weight:600">${it[3]}</span></span></div>`:`<div style="display:flex;gap:10px;align-items:center;padding:8px 0">${ic('spark',16)}<span class="small"><b>${it[2]}</b> <span class="muted">${it[3]}</span></span></div>`).join('')}</div>`:''; })()}</div></div></div></section>`;
   }
   const rail = `${card('Where the scanner lives', `<div class="list small">${[['Phone: Scan tab','The camera guides light and angle, then reads six things.'],['Web: Scan, then upload','Use a recent front-facing photo.'],['After setup','The quiz offers an optional first scan.'],['Every 2–4 weeks','Clay reminds you, so progress compares fairly.']].map(x=>`<div style="padding:8px 0"><b>${x[0]}</b><br><span class="muted">${x[1]}</span></div>`).join('')}</div>`, {h:'h3', icon:'scan'})}
     ${card('Your last scans', `<div class="list small num">${[['Oct 13','Redness 64 · Texture 41'],['Sep 29','Redness 61 · Texture 44'],['Sep 15','Redness 58 · Texture 47']].map(x=>`<div style="padding:8px 0;display:flex;justify-content:space-between;gap:10px"><b>${x[0]}</b><span class="muted">${x[1]}</span></div>`).join('')}</div>`, {h:'h3'})}`;
   return {main, rail};
 }
+/* Scan map: the same shaded face as "Where each one goes", tilts with your finger, zones are tappable */
+const SF_Z={
+  tzone:['<path d="M66 64Q100 54 134 64L132 88Q114 86 110 96L112 146Q100 152 88 146L90 96Q86 86 68 88Z"/>',[100,73]],
+  eyes:['<ellipse cx="71" cy="107" rx="19" ry="11"/><ellipse cx="129" cy="107" rx="19" ry="11"/>',[148,96]],
+  cheeks:['<ellipse cx="62" cy="140" rx="17" ry="19"/><ellipse cx="138" cy="140" rx="17" ry="19"/>',[138,140]],
+  chin:['<path d="M80 183Q100 178 120 183Q118 205 100 208Q82 205 80 183Z"/>',[100,195]],
+  neck:['<path d="M74 214Q100 224 126 214L132 248L68 248Z"/>',[100,234]]
+};
+function sfZoneOf(z){ return ({face:['tzone','cheeks','chin'],noeye:['tzone','cheeks','chin'],faceneck:['tzone','cheeks','chin','neck'],sun:['tzone','eyes','cheeks','chin','neck'],eye:['eyes'],spots:['tzone','cheeks','chin']})[z]||['tzone','cheeks','chin']; }
+function sfItems(k){
+  const F=MP.filter(p=>p.a==='face'&&p.s==='cur'), order=MP_STEPS.face; F.sort((a,b)=>order.indexOf(a.st)-order.indexOf(b.st));
+  const gly=S.accept.gly!==false, out=[];
+  F.forEach(p=>{ const i=amInfo(p); if(!sfZoneOf(i.z).includes(k)) return; const [sh,ti]=look(p);
+    let how=i.z==='spots'?'Only on the marks, not the whole zone':i.how;
+    if(k==='cheeks'&&i.z==='noeye'&&gly) return out.push({sh,ti,n:p.n,how:'Skip the cheeks for now: your scan read them red three times',warn:true});
+    if(k==='eyes'&&i.z!=='eye') how='Up to the bone around the eye, not on the lids';
+    if(k==='neck'&&i.z==='faceneck') how='Smooth the rest downward';
+    out.push({sh,ti,n:p.n,how}); });
+  return out;
+}
 function applyMap(){
-  const sel=S.zone;
-  const Z={
-    tzone:['<path d="M118 92 Q180 62 242 92 L238 140 Q205 132 196 150 L200 236 Q180 248 160 236 L164 150 Q155 132 122 140 Z"/>',[180,110]],
-    eyes:['<ellipse cx="134" cy="182" rx="30" ry="15"/><ellipse cx="226" cy="182" rx="30" ry="15"/>',[226,182]],
-    cheeks:['<ellipse cx="112" cy="250" rx="38" ry="36"/><ellipse cx="248" cy="250" rx="38" ry="36"/>',[248,250]],
-    chin:['<path d="M136 318 Q180 300 224 318 Q220 368 180 372 Q140 368 136 318 Z"/>',[180,342]],
-    neck:['<path d="M142 384 L138 424 L222 424 L218 384 Q180 396 142 384 Z"/>',[180,408]]
-  };
-  const shapes=Object.entries(Z).map(([k,[s]])=>{ const on=k===sel; return `<g role="button" tabindex="0" aria-label="${ZONES[k].name}" data-act="zone" data-v="${k}" style="cursor:pointer;fill:${on?'var(--accent)':'var(--muted)'};fill-opacity:${on?0.38:0.12};stroke:${on?'var(--accent)':'var(--muted)'};stroke-opacity:${on?1:.35};stroke-width:2;stroke-dasharray:${on?'0':'4 4'}">${s}</g>`; }).join('');
-  const pins=Object.entries(Z).map(([k,[,p]])=>{ const on=k===sel, n=ZONES[k].items.filter(i=>i[0]!=='shield').length; return `<g pointer-events="none"><circle cx="${p[0]}" cy="${p[1]}" r="13" style="fill:${on?'var(--accent)':'var(--surface)'};stroke:${on?'var(--accent)':'var(--line)'};stroke-width:2"/><text x="${p[0]}" y="${p[1]+5}" text-anchor="middle" font-size="13" font-weight="800" font-family="Nunito Sans, sans-serif" style="fill:${on?'var(--on-accent)':'var(--ink)'}">${n}</text></g>`; }).join('');
-  return `<svg viewBox="0 0 360 430" width="100%" style="max-width:300px" role="img" aria-label="Face zones. Selected: ${ZONES[sel].name}. Numbers show how many products go on each zone.">
-    <g style="fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
-      <path d="M180 34 C266 34 304 104 304 190 C304 298 250 384 180 384 C110 384 56 298 56 190 C56 104 94 34 180 34 Z" style="fill:var(--surface)"/>
-      <path d="M62 150 Q90 60 180 52 Q270 60 298 150" style="stroke-opacity:.5"/>
-      <path d="M140 378 L136 426 M220 378 L224 426"/>
-      <path d="M56 205 q-16 6 -10 30 q5 18 16 20 M304 205 q16 6 10 30 q-5 18 -16 20" style="stroke-opacity:.7"/>
-    </g>
-    ${shapes}
-    <g pointer-events="none" style="fill:none;stroke:var(--ink);stroke-opacity:.55;stroke-width:2;stroke-linecap:round">
-      <path d="M112 164 q22 -10 44 -2"/><path d="M204 162 q22 -8 44 2"/>
-      <path d="M120 184 q14 8 28 0"/><path d="M212 184 q14 8 28 0"/>
-      <path d="M154 296 q26 14 52 0"/></g>
-    ${pins}
-  </svg>`;
+  const sel=S.zone, [lt,dk]=AM_TONES[AM_TONE];
+  const base=amSvg('face','transparent').replace(/id="am/g,'id="sf').replace(/#am/g,'#sf').replace(/<\/svg>\s*$/,'');
+  const zones=Object.entries(SF_Z).map(([k,[sh]])=>{ const on=k===sel; return `<g role="button" tabindex="0" aria-label="${ZONES[k].name}" data-act="zone" data-v="${k}" style="cursor:pointer;fill:${on?'var(--accent)':'#fff'};fill-opacity:${on?.45:.14};stroke:${on?'var(--accent)':'#fff'};stroke-opacity:${on?1:.85};stroke-width:${on?1.6:1.2};stroke-dasharray:${on?'0':'3 3'}">${sh}</g>`; }).join('');
+  const pins=Object.entries(SF_Z).map(([k,[,p]])=>{ const on=k===sel, n=sfItems(k).filter(x=>!x.warn).length; return `<g pointer-events="none"><circle cx="${p[0]}" cy="${p[1]}" r="8" style="fill:${on?'var(--accent)':'var(--surface)'};stroke:${on?'var(--accent)':dk};stroke-width:1.2"/><text x="${p[0]}" y="${p[1]+3.4}" text-anchor="middle" font-size="9.5" font-weight="800" font-family="Nunito Sans, sans-serif" style="fill:${on?'var(--on-accent)':'var(--ink)'}">${n}</text></g>`; }).join('');
+  return `<div class="am-view"><div class="am-stage" title="Move your finger or mouse over the face to turn it">${base.replace('aria-label="Where to apply"',`aria-label="Face zones. Selected: ${ZONES[sel].name}. Numbers show how many of your products go on each zone."`)}${zones}${pins}</svg></div>
+    <div class="am-tones" role="group" aria-label="Skin tone">${AM_TONES.map((t,k)=>`<button type="button" class="am-tone" data-act="amtone" data-v="${k}" aria-pressed="${k===AM_TONE}" aria-label="Skin tone ${k+1}" style="background:${t[0]};box-shadow:inset -4px -4px 0 ${t[1]}"></button>`).join('')}</div></div>`;
 }
 
 const ZONE_ORDER=['forehead','nose','lcheek','rcheek','chin'];
@@ -1829,7 +1962,7 @@ function render(){
   $('#palPop').innerHTML = `<b style="padding:4px 10px">Pick a theme</b><p class="small muted" style="padding:0 10px 6px">Each theme has a morning and a tonight version. The Morning / Tonight switch changes between them.</p>` + PALETTES.map(p=>`<button class="pal" type="button" aria-pressed="${p.id===cp.id}" data-act="palette" data-v="${p.id}"><span><b>${p.name}</b><br><span class="small muted">${p.from}</span></span><span class="sws"><small>${ic('sun',12)}${bar(TIME_SW[p.id][0])}</small><small>${ic('moon',12)}${bar(TIME_SW[p.id][1])}</small></span></button>`).join('');
   const {main, rail} = RENDER[S.page]();
   $('#main').innerHTML = `<div class="page"><div class="col">${main}</div><aside class="rail" aria-label="More">${rail}</aside></div>`;
-  if (S.page==='check'&&S.cp){ ['a','b'].forEach(k=>{ if(S.cp['q'+k]){ if(PDB.names) pdbHits(k); else pdbLoad().then(()=>pdbHits(k)); } }); }
+  if (S.page==='check'&&S.cp){ CMP_K.forEach(k=>{ if(S.cp['q'+k]){ if(PDB.names) pdbHits(k); else pdbLoad().then(()=>pdbHits(k)); } }); }
   if (false){ const g=$('#yGrid'); if(g){ const t=new Date(), f=(t-new Date(t.getFullYear(),0,1))/864e5/365; g.scrollLeft=Math.max(0,g.scrollWidth*f-g.clientWidth*.7); } }
   save();
 }
@@ -1899,10 +2032,20 @@ document.addEventListener('click', async (e)=>{
   if (a==='mpa') S.mpa=v;
   if (a==='cpmode'){ S.cpMode=v; S.cpShow=false; }
   if (a==='cpgo'){
-    for(const k of (S.cpMode==='two'?['a','b']:['a'])){ if(!(S.cp['l'+k]||'').trim()&&(S.cp['q'+k]||'').trim().length>1){ await pdbLoad(); const top=pdbSearch(S.cp['q'+k])[0];
+    for(const k of (S.cpMode==='two'?cmpSlots():['a'])){ if(!(S.cp['l'+k]||'').trim()&&(S.cp['q'+k]||'').trim().length>1){ await pdbLoad(); const top=pdbSearch(S.cp['q'+k])[0];
       if(top!=null){ try{ const h=await pdbRow(top); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; toast('Checked the closest match: '+S.cp['n'+k]); }catch(err){} } } }
     S.cpShow=true; }
-  if (a==='cppick'){ const [k,i]=v.split(':'); try{ const h=await pdbRow(+i); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; S.cpShow=S.cpMode!=='two'||!!(S.cp.la&&S.cp.lb); }catch(err){ toast("Couldn't load that product"); return; } }
+  if (a==='cppick'){ const [k,i]=v.split(':'); try{ const h=await pdbRow(+i); h._k=k; S.cp[k]=''; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; S.cp['q'+k]=''; S.cpShow=S.cpMode!=='two'||cmpSlots().filter(x=>(S.cp['l'+x]||'').trim()).length>=2; }catch(err){ toast("Couldn't load that product"); return; } }
+  if (a==='cmpmore'){ S.cpN=3; }
+  if (a==='cmpdiff'){ S.cmpDiff=!S.cmpDiff; }
+  if (a==='cmpclear'){ ['','n','l','h','q','p'].forEach(f=>S.cp[f+v]=f==='h'?null:''); if((S.cpN||2)===3&&v==='c') S.cpN=2; }
+  if (a==='cmpstart'){ S.cpMode='two'; S.cpN=S.cpN||2; S.cpShow=false; window.scrollTo({top:0}); }
+  if (a==='cmpalt'){ S.cpMode='two'; const sl=cmpSlots(); let k=sl.find(x=>!(S.cp['l'+x]||'').trim()&&!S.cp[x]&&!S.cp['n'+x]); if(!k){ if((S.cpN||2)<3){ S.cpN=3; k='c'; } else k='c'; }
+    ['','n','l','h','q','p'].forEach(f=>S.cp[f+k]=f==='h'?null:'');
+    await pdbLoad(); const hit=PDB.names?pdbSearch(v)[0]:null;
+    if(hit!=null){ try{ const h=await pdbRow(hit); h._k=k; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; toast('Added '+S.cp['n'+k]+' to compare'); }catch(err){ S.cp['n'+k]=v; S.cp['q'+k]=v; } }
+    else { S.cp['n'+k]=v; S.cp['q'+k]=v; toast("Not in the product database yet: paste its list in slot "+k.toUpperCase()); }
+    S.cpShow=cmpSlots().filter(x=>(S.cp['l'+x]||'').trim()).length>=2; }
   if (a==='cpadd'){ const h=S.cp['h'+v]; if(h){ const area=PDB_AREA[h.cat]||'body', nm=[h.brand,h.name].filter(Boolean).join(' '); const id=Math.max(0,...MP.map(x=>x.id))+1; MP.push({id,a:area,st:pdbStep(area,h.name),n:nm,s:'have',inci:S.cp['l'+v],hub:h.id}); mpSave(); S.cp[v]=String(id); toast('Added to My Shelf as "Have"'); } }
   if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); mpSave(); toast('List saved to '+pr.n); } }
   if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
@@ -1950,7 +2093,7 @@ window.claude?.use?.('comments').then(api=>{ commentsApi = api; }).catch(()=>{})
 
 document.addEventListener('click',e=>{ const b=e.target.closest&&e.target.closest('[data-pgg]'); if(!b) return; c2Goal=b.dataset.pgg; render(); });
 let pdbT=null;
-document.addEventListener('input',e=>{ const t=e.target; if(!t.dataset) return; if(t.dataset.cpl){ S.cp['l'+t.dataset.cpl]=t.value; if(S.cp['h'+t.dataset.cpl]) S.cp['h'+t.dataset.cpl].edited=true; } if(t.dataset.cpn) S.cp['n'+t.dataset.cpn]=t.value;
+document.addEventListener('input',e=>{ const t=e.target; if(!t.dataset) return; if(t.dataset.cpl){ S.cp['l'+t.dataset.cpl]=t.value; if(S.cp['h'+t.dataset.cpl]) S.cp['h'+t.dataset.cpl].edited=true; } if(t.dataset.cpn) S.cp['n'+t.dataset.cpn]=t.value; if(t.dataset.cpp){ S.cp['p'+t.dataset.cpp]=t.value; clearTimeout(pdbT); pdbT=setTimeout(()=>{ const f=document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.cpp; render(); if(f){ const el=document.querySelector(`[data-cpp="${f}"]`); if(el){ el.focus(); const L=el.value.length; try{ el.setSelectionRange(L,L);}catch(e){} } } },600); }
   if(t.dataset.cpf){ const k=t.dataset.cpf; S.cp['q'+k]=t.value; clearTimeout(pdbT); pdbHits(k); if(!PDB.names) pdbLoad().then(()=>pdbHits(k)); else pdbT=setTimeout(()=>pdbHits(k),120); } });
 document.addEventListener('focusin',e=>{ if(e.target.dataset&&e.target.dataset.cpf) pdbLoad(); });
 document.addEventListener('pointermove',e=>{ const st=e.target.closest&&e.target.closest('.am-stage'); document.querySelectorAll('.am-stage').forEach(el=>{ if(el!==st){ el.style.setProperty('--ry','0deg'); el.style.setProperty('--rx','0deg'); } }); if(!st) return; const r=st.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; st.style.setProperty('--ry',(x*36).toFixed(1)+'deg'); st.style.setProperty('--rx',(-y*18).toFixed(1)+'deg'); });
