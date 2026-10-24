@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 91,
-  "blocked": 7,
+  "pass": 89,
+  "blocked": 17,
   "fail": 0
  },
  "houses": {
@@ -52,7 +52,7 @@
    "price": "pass"
   },
   "to-summer": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -173,8 +173,8 @@
   },
   "fueguia-1833": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "natura": {
    "site": "pass",
@@ -182,7 +182,7 @@
    "price": "pass"
   },
   "zoologist": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -272,7 +272,7 @@
    "price": "pass"
   },
   "kst-scent": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -322,7 +322,7 @@
    "price": "pass"
   },
   "the-perfumatory": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -332,7 +332,7 @@
    "price": "pass"
   },
   "sifr-aromatics": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -348,13 +348,13 @@
   },
   "monsillage": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "curionoir": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "the-virtue": {
    "site": "pass",
@@ -382,7 +382,7 @@
    "price": "pass"
   },
   "essential-parfums": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
    "price": "pass"
   },
@@ -492,6 +492,46 @@
    "price": "pass"
   },
   "wick-fragrances": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lartisan-parfumeur": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "frederic-malle": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "acqua-di-parma": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "frau-tonis": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ramon-monegal": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "agonist": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "perfumehead": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "histoires-de-parfums": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"

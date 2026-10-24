@@ -467,5 +467,28 @@
    "herbs"
   ],
   "where": "Athens"
+ },
+ {
+  "cc": "DE",
+  "country": "Germany",
+  "style": "Small Berlin perfumeries and city-themed scents.",
+  "roots": "Berlin's linden-lined streets and 1920s perfume history.",
+  "materials": [
+   "linden blossom",
+   "cologne citrus"
+  ],
+  "where": "Berlin (Hackescher Markt)"
+ },
+ {
+  "cc": "ES",
+  "country": "Spain",
+  "style": "Warm, passionate Mediterranean scents and fragrance dynasties.",
+  "roots": "Barcelona's perfume families.",
+  "materials": [
+   "orange blossom",
+   "leather",
+   "rose"
+  ],
+  "where": "Barcelona"
  }
 ]

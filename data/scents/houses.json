@@ -2232,22 +2232,22 @@
    "powdery"
   ],
   "sig": {
-   "name": "Vanilla At First Sight",
+   "name": "LACE VII.XII",
    "url": "https://dailyvanity.sg/news/thai-fragrance-brands/",
    "notes": {
     "t": [
-     "mandarin",
-     "peach",
-     "ginger"
+     "osmanthus tea accord"
     ],
     "h": [
-     "vanilla"
+     "lily",
+     "jasmine",
+     "rose"
     ],
     "b": [
-     "powdery finish"
+     "powdery vanilla"
     ]
    },
-   "profile": "A soft, powdery vanilla brightened by mandarin and peach with a little ginger warmth. Others in the range: Japanese Cotton (melon and jasmine), Sweet Tweed (rose and peach), Red Velvet (orange, chocolate, hazelnut), Cashmere Unnamed and Naked Satin. The bestseller is Lace VII.XII, a clean white floral."
+   "profile": "The bestseller: a smooth, powdery white floral rather than a fruity one. Creamy lily, jasmine and soft rose with a cool osmanthus-tea thread, resting on a gentle powdered vanilla. Polished and calm, like fine porcelain. Others: Vanilla At First Sight, Japanese Cotton, Sweet Tweed, Red Velvet, Cashmere Unnamed, Naked Satin."
   },
   "price": {
    "amt": 3500,
@@ -2263,6 +2263,10 @@
    "textile",
    "bangkok",
    "heat-proof"
+  ],
+  "alt": [
+   "Tiziana Terenzi Borelli",
+   "Maison Francis Kurkdjian 724"
   ]
  },
  {
@@ -5256,14 +5260,30 @@
    "cotton candy"
   ],
   "sig": {
-   "name": "Dreamy Cloud",
-   "url": "https://www.watsons.co.th/en/all-brands/list/161118/janua",
+   "name": "Bonnie Bo",
+   "url": "https://www.watsons.co.th/en/janua-janua-bonnie-bo-perfume-30ml./p/BP_320760",
    "notes": {
-    "t": [],
-    "h": [],
-    "b": []
+    "t": [
+     "grapefruit",
+     "mandarin",
+     "pear",
+     "white peach",
+     "mango",
+     "rhubarb leaf"
+    ],
+    "h": [
+     "jasmine",
+     "lily of the valley",
+     "orchid"
+    ],
+    "b": [
+     "vanilla",
+     "musk",
+     "patchouli",
+     "a touch of oud"
+    ]
    },
-   "profile": "Soft, fluffy, sugary musk. Others: Bonnie Bo, Sweetie Picnic, Kiss Me More, and the BamBam line (Forget Me Not, Morning Satin, La La Rosie)."
+   "profile": "A bright, juicy fruit salad (peach, mango, pear, citrus and tart rhubarb) over soft white flowers, drying down to a clean, powdery vanilla musk. Playful and fresh, and it smells more expensive than it is. Others: Dreamy Cloud, Sweetie Picnic, Kiss Me More, and the BamBam line."
   },
   "price": {
    "amt": 199,
@@ -5278,6 +5298,10 @@
   "tags": [
    "budget",
    "drugstore"
+  ],
+  "alt": [
+   "Burberry Her (EDT)",
+   "Marc Jacobs Daisy Ever So Fresh"
   ]
  },
  {
@@ -5336,6 +5360,10 @@
   "tags": [
    "clean",
    "laundry"
+  ],
+  "alt": [
+   "Clean Reserve Warm Cotton",
+   "Maison Margiela Replica Lazy Sunday Morning"
   ]
  },
  {
@@ -5394,6 +5422,407 @@
   "tags": [
    "cape town",
    "hand-poured"
+  ],
+  "alt": [
+   "Byredo Pulp",
+   "Maison Margiela Replica By the Fireplace"
   ]
+ },
+ {
+  "id": "lartisan-parfumeur",
+  "name": "L'Artisan Parfumeur",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.artisanparfumeur.com/eu/en_GB/c/shop-all-fragrances--26000",
+  "about": "One of the first niche houses (1976), known for airy, natural-feeling scents of fig, green leaves and faraway places.",
+  "why": "A close cousin of Diptyque in spirit; Timbuktu is a cult incense scent.",
+  "families": [
+   "woody",
+   "spicy",
+   "fruity"
+  ],
+  "accents": [
+   "incense",
+   "papyrus"
+  ],
+  "sig": {
+   "name": "Timbuktu",
+   "url": "https://www.artisanparfumeur.com/eu/en_GB/c/shop-all-fragrances--26000",
+   "notes": {
+    "t": [
+     "cardamom",
+     "pink pepper",
+     "green mango"
+    ],
+    "h": [
+     "papyrus",
+     "karo karounde flower"
+    ],
+    "b": [
+     "vetiver",
+     "incense",
+     "patchouli"
+    ]
+   },
+   "profile": "Dry, airy incense from a West African market: a lift of cardamom and green mango, then papyrus and smoky vetiver. Light but haunting. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 170,
+   "cur": "EUR",
+   "ml": 100,
+   "status": "reported",
+   "src": "https://www.artisanparfumeur.com/eu/en_GB/c/shop-all-fragrances--26000",
+   "on": "2026-10-24",
+   "note": "From your research: standard eaux de toilette €170 per 100 ml; premium eaux de parfum €250.",
+   "amt_max": 250
+  },
+  "tags": [],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "frederic-malle",
+  "name": "Editions de Parfums Frédéric Malle",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.fredericmalle.com/",
+  "about": "A Paris 'publisher' that gives star perfumers free rein and credits them by name on the bottle.",
+  "why": "Some of the most respected perfumes in the world; prices vary by how costly the ingredients are.",
+  "families": [
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "tuberose",
+   "rose"
+  ],
+  "sig": {
+   "name": "Carnal Flower",
+   "url": "https://www.fredericmalle.com/",
+   "notes": {
+    "t": [
+     "eucalyptus",
+     "bergamot"
+    ],
+    "h": [
+     "tuberose",
+     "jasmine"
+    ],
+    "b": [
+     "coconut",
+     "musk"
+    ]
+   },
+   "profile": "A huge, lifelike tuberose with a cool green-eucalyptus start and a creamy coconut-musk finish. Lush and grand. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 410,
+   "cur": "CAD",
+   "ml": 100,
+   "status": "reported",
+   "src": "https://www.fredericmalle.com/",
+   "on": "2026-10-24",
+   "note": "From your research: about C$410 to C$440 per 100 ml for scents like Lipstick Rose; C$530 to C$570 for richer ones like Carnal Flower.",
+   "amt_max": 570
+  },
+  "tags": []
+ },
+ {
+  "id": "acqua-di-parma",
+  "name": "Acqua di Parma",
+  "country": "Italy",
+  "cc": "IT",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Parma",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.acquadiparma.com/en/us/",
+  "about": "An Italian house founded on a 1916 citrus cologne, now with sunny Mediterranean lines.",
+  "why": "Classic Italian freshness; Blu Mediterraneo is the easy summer range.",
+  "families": [
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "cologne"
+  ],
+  "sig": {
+   "name": "Colonia",
+   "url": "https://www.acquadiparma.com/en/us/",
+   "notes": {
+    "t": [
+     "lemon",
+     "sweet orange",
+     "bergamot"
+    ],
+    "h": [
+     "lavender",
+     "rosemary",
+     "rose"
+    ],
+    "b": [
+     "vetiver",
+     "sandalwood",
+     "patchouli"
+    ]
+   },
+   "profile": "Sicilian citrus and herbs over soft woods: the clean, sharp-dressed barbershop cologne of old Italy. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 230,
+   "cur": "CAD",
+   "ml": 100,
+   "status": "reported",
+   "src": "https://www.acquadiparma.com/en/us/",
+   "on": "2026-10-24",
+   "note": "From your research: Blu Mediterraneo eaux de toilette about C$230 to C$250 per 100 ml; Signatures of the Sun eaux de parfum about C$378.",
+   "amt_max": 378
+  },
+  "tags": []
+ },
+ {
+  "id": "frau-tonis",
+  "name": "Frau Tonis Parfum",
+  "country": "Germany",
+  "cc": "DE",
+  "region": "Central Europe",
+  "continent": "Europe",
+  "city": "Berlin",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.belladonna-naturkosmetik.de/en/brands/frau-tonis-parfum/",
+  "about": "A Berlin perfumery near Hackescher Markt making vegan perfumes, many tied to Berlin itself.",
+  "why": "Its Linde Berlin captures the linden trees that line Berlin's streets.",
+  "families": [
+   "floral",
+   "green"
+  ],
+  "accents": [
+   "linden"
+  ],
+  "sig": {
+   "name": "No. 10 Linde Berlin",
+   "url": "https://www.visitberlin.de/de/frau-tonis-parfum",
+   "notes": {
+    "t": [],
+    "h": [
+     "linden blossom"
+    ],
+    "b": []
+   },
+   "profile": "A Berlin summer evening under the linden trees: soft, honeyed, slightly green blossom. Gentle and nostalgic."
+  },
+  "price": {
+   "amt": 85,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://www.belladonna-naturkosmetik.de/en/brands/frau-tonis-parfum/",
+   "on": "2026-10-24",
+   "note": "From your research: eaux de parfum €85 per 50 ml; Parfum Intense €120; 100 ml from €115 to €160.",
+   "amt_max": 120
+  },
+  "tags": []
+ },
+ {
+  "id": "ramon-monegal",
+  "name": "Ramón Monegal",
+  "country": "Spain",
+  "cc": "ES",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Barcelona",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://ramonmonegal.com/product/ole/",
+  "about": "A Barcelona perfumer from a family fragrance dynasty, known for inkwell-style bottles and a 'Spanish Style' line.",
+  "why": "Spanish niche with flamenco-inspired scents.",
+  "families": [
+   "floral",
+   "spicy",
+   "amber"
+  ],
+  "accents": [
+   "spanish"
+  ],
+  "sig": {
+   "name": "Olé",
+   "url": "https://ramonmonegal.com/product/ole/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Part of the Spanish Style line (with Flamenco and Bravo), inspired by Spanish passion and colour. Notes per scent on their site."
+  },
+  "price": {
+   "amt": 195,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://ramonmonegal.com/product/ole/",
+   "on": "2026-10-24",
+   "note": "From your research: Spanish Style line €195 per 50 ml; Essential and Ibiza collections €135 to €180; 100 ml up to €275."
+  },
+  "tags": []
+ },
+ {
+  "id": "agonist",
+  "name": "Agonist",
+  "country": "Sweden",
+  "cc": "SE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Stockholm",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.agonistparfums.com/",
+  "about": "A Swedish house known for Nordic minimalism and rare hand-blown Kosta Boda glass editions.",
+  "why": "Scandinavian art-glass perfume; the standard glass line is the accessible one.",
+  "families": [
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "nordic"
+  ],
+  "sig": {
+   "name": "Standard eau de parfum line",
+   "url": "https://www.agonistparfums.com/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Concept-led scents inspired by Swedish nature and culture. Notes per scent on their site."
+  },
+  "price": {
+   "amt": 140,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://www.agonistparfums.com/",
+   "on": "2026-10-24",
+   "note": "From your research: standard eaux de parfum about €140 to €165 per 50 ml depending on the seller.",
+   "amt_max": 165
+  },
+  "tags": []
+ },
+ {
+  "id": "perfumehead",
+  "name": "Perfumehead",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Los Angeles",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://perfumehead.com/",
+  "about": "A Los Angeles luxury house with two strengths: 'Coltraits' (cologne-strength extraits) and full extraits.",
+  "why": "Very high-end indie with names like Cosmic Cowboy and Canadian Tuxedo.",
+  "families": [
+   "floral",
+   "spicy",
+   "woody"
+  ],
+  "accents": [
+   "saffron",
+   "rose"
+  ],
+  "sig": {
+   "name": "Reine des Anges",
+   "url": "https://perfumehead.com/products/reine-des-anges",
+   "notes": {
+    "t": [
+     "saffron"
+    ],
+    "h": [
+     "Turkish rose",
+     "angelica root"
+    ],
+    "b": [
+     "vetiver"
+    ]
+   },
+   "profile": "A queenly rose: Turkish rose warmed with saffron, with a green, earthy angelica root and vetiver base."
+  },
+  "price": {
+   "amt": 395,
+   "cur": "USD",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://perfumehead.com/collections/all",
+   "on": "2026-10-24",
+   "note": "Coltraits US$235 per 50 ml; extraits US$395 per 50 ml (read from their shop; LA origin from your research)."
+  },
+  "tags": []
+ },
+ {
+  "id": "histoires-de-parfums",
+  "name": "Histoires de Parfums",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.jovoyparis.com/en/",
+  "about": "A Paris house whose perfumes are named after a year and the historical figure born in it (1828 is Jules Verne).",
+  "why": "Seen on the Musinsa Beauty shelf in your screenshot; literary and well priced for niche.",
+  "families": [
+   "citrus",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "history"
+  ],
+  "sig": {
+   "name": "1828 (Jules Verne)",
+   "url": "https://www.jovoyparis.com/en/",
+   "notes": {
+    "t": [
+     "Italian citrus",
+     "mandarin",
+     "eucalyptus"
+    ],
+    "h": [
+     "nutmeg",
+     "black pepper"
+    ],
+    "b": [
+     "cedar",
+     "patchouli",
+     "vetiver",
+     "pine"
+    ]
+   },
+   "profile": "An explorer's scent: bright citrus and eucalyptus, peppery spice and a woody, piney base. Fresh and adventurous. (Notes as printed on the bottle in your screenshot.)"
+  },
+  "price": {
+   "amt": null,
+   "cur": "EUR",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.jovoyparis.com/en/",
+   "on": "2026-10-24",
+   "note": "Price not yet checked."
+  },
+  "tags": []
  }
 ]

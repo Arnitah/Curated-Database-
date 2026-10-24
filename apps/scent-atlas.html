@@ -241,6 +241,7 @@ function card(h) {
       <p class="profile">${esc(h.sig.profile)}</p></div>
     ${(h.also || []).map((a) => `<div class="also"><span class="nm">Also: ${esc(a.name)}</span><span>${esc(a.notes)}</span><span class="cad">${esc(a.price)}</span>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">See it</a>` : ""}</div>`).join("")}
     <div class="best"><b>Best for</b><span>${prof.season}</span>·<span>${prof.when}</span>·<span>${prof.intensity}</span><i>estimated from its notes</i></div>
+    ${h.alt ? `<div class="sim"><b style="font-weight:600;color:var(--ink)">Easy to find instead:</b> ${h.alt.map(esc).join(" · ")}</div>` : ""}
     <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
     <div class="price"><span class="amt">${amt}</span>${cadTxt ? `<span class="cad">${cadTxt}</span>` : ""}${perMl ? `<span class="cad">${perMl}</span>` : ""}<span class="st ${p.status}">${p.status}</span>
       ${p.note ? `<span class="note">${esc(p.note)}</span>` : ""}${liveTxt ? `<span class="live">${liveTxt}</span>` : ""}</div>
