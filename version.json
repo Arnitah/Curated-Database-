@@ -1,6 +1,6 @@
 {
-  "version": 77,
-  "updated_at": "2026-10-24T16:29:13.018Z",
+  "version": 79,
+  "updated_at": "2026-10-24T17:58:50.049Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -27,10 +27,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "clay/hair_struggles": {
-      "count": 8,
-      "bytes": 131,
-      "hash": "ceebff7cbcf4",
-      "updated_at": "2026-10-22T14:18:12.987Z"
+      "count": 9,
+      "bytes": 152,
+      "hash": "5e513801ef09",
+      "updated_at": "2026-10-24T17:58:50.048Z"
     },
     "clay/hair_styles": {
       "count": 6,
@@ -39,10 +39,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "clay/hair_tips": {
-      "count": 8,
-      "bytes": 1023,
-      "hash": "df50d4a1f7cd",
-      "updated_at": "2026-10-22T14:18:12.987Z"
+      "count": 9,
+      "bytes": 1297,
+      "hash": "862542a5dc80",
+      "updated_at": "2026-10-24T17:58:50.049Z"
     },
     "clay/hair_wash_freq": {
       "count": 3,
@@ -195,10 +195,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/myths": {
-      "count": 381,
-      "bytes": 286231,
-      "hash": "05b1c6c61fc7",
-      "updated_at": "2026-10-24T00:51:33.181Z"
+      "count": 382,
+      "bytes": 287299,
+      "hash": "cb9025cf0725",
+      "updated_at": "2026-10-24T17:58:33.427Z"
     },
     "safe-batch/product_actives": {
       "count": 61,
@@ -243,10 +243,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/recipes_checked": {
-      "count": 1425,
-      "bytes": 1080989,
-      "hash": "91431c475c13",
-      "updated_at": "2026-10-24T05:23:03.686Z"
+      "count": 1426,
+      "bytes": 1082437,
+      "hash": "1eebbd6333ed",
+      "updated_at": "2026-10-24T17:58:33.427Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
@@ -303,10 +303,10 @@
       "updated_at": "2026-10-24T05:01:45.038Z"
     },
     "safe-batch/terms": {
-      "count": 57,
-      "bytes": 39421,
-      "hash": "d64269950da5",
-      "updated_at": "2026-10-24T00:51:33.188Z"
+      "count": 59,
+      "bytes": 40591,
+      "hash": "88f78c78061f",
+      "updated_at": "2026-10-24T17:58:33.427Z"
     },
     "safe-batch/traditions": {
       "count": 58,

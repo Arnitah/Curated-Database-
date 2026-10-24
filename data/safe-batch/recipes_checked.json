@@ -51730,5 +51730,65 @@
       "creator": "Store product",
       "platform": "TONE"
     }
+  },
+  {
+    "id": "tea-tree-peppermint-scalp-co-wash",
+    "name": "Tea tree and peppermint scalp co-wash",
+    "claim": "Cleansing conditioner that lifts grease and soothes an itchy scalp",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        78,
+        "g"
+      ],
+      [
+        "btms",
+        6,
+        "g"
+      ],
+      [
+        "cetearyl",
+        3,
+        "g"
+      ],
+      [
+        "olive",
+        4,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "teatree",
+        8,
+        "drops"
+      ],
+      [
+        "peppermint",
+        4,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat the water and glycerin, and separately melt the BTMS, cetearyl alcohol and olive oil, to about 70 °C; pour together, blend, and cool. Below 40 °C add panthenol, the essential oils and the preservative. Massage generously into wet scalp and hair for 2 to 3 minutes, then rinse well. It cleans gently because conditioners carry away some oil and dirt, but it won't fully remove petrolatum greases, so clarify with a real shampoo every 1 to 2 weeks if you use one. Keep peppermint away from eyes.",
+    "inspired": "As I Am Dry & Itchy Scalp Care co-wash",
+    "source": {
+      "creator": "Tajiah",
+      "platform": "TikTok"
+    }
   }
 ]

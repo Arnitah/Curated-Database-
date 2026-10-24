@@ -6647,5 +6647,35 @@
     "seen_in": "Body-care carousels on Instagram",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "hair-grease-like-blue-magic-grows-hair",
+    "title": "Hair grease like Blue Magic grows your hair",
+    "topics": [
+      "hair"
+    ],
+    "claims": [
+      {
+        "claim": "Grease makes hair grow",
+        "verdict": "false",
+        "truth": "Hair grows from the follicle at about the same rate whatever you put on it. Grease seals moisture into lengths and ends, which cuts breakage, so you keep more of the length you grow.",
+        "grade": "B"
+      },
+      {
+        "claim": "Grease on the scalp feeds the roots",
+        "verdict": "partly",
+        "truth": "A little on dry, flaky spots can soothe. Heavy, daily grease on the scalp builds up, traps flakes and needs regular clarifying shampoo.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: tips for healthy hair",
+        "url": "https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips"
+      }
+    ],
+    "seen_in": "Natural hair TikTok",
+    "checked": "2026-10-24",
+    "format": "v2"
   }
 ]
