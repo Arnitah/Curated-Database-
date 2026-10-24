@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 120,
-  "blocked": 9,
+  "pass": 121,
+  "blocked": 10,
   "fail": 0
  },
  "houses": {
@@ -650,6 +650,16 @@
    "site": "blocked",
    "sig": "blocked",
    "price": "blocked"
+  },
+  "bath-body-works": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "blocked"
+  },
+  "cyklar": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   }
  }
 }

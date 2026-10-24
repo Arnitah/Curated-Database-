@@ -1,0 +1,65 @@
+[
+ {
+  "id": "bag-charm",
+  "title": "Perfume as a bag charm",
+  "what": "Small bottles designed to hang from a bag, so the scent is carried and seen like an accessory.",
+  "examples": [
+   "cyklar",
+   "whipped",
+   "milky-mane"
+  ],
+  "note": "CYKLAR sells a silicone sleeve for its oil cap; WHIPPED and Milky Mane sell keyring and 20 ml bag sizes.",
+  "forApps": "Clay: show 'carry' sizes; Safe Batch: roller and mini formats for DIY oils."
+ },
+ {
+  "id": "hair-perfume",
+  "title": "Hair perfumes that also care",
+  "what": "Light, low-alcohol mists for hair, often with keratin or oils for shine.",
+  "examples": [
+   "whipped",
+   "tamburins",
+   "milky-mane",
+   "skybottle"
+  ],
+  "note": "WHIPPED Peach Pear adds low-molecule keratin; Tamburins has a hair perfume line.",
+  "forApps": "Clay: a hair-scent step in the routine; layering with body scents."
+ },
+ {
+  "id": "budget-twins",
+  "title": "Budget twins of luxury perfumes",
+  "what": "Creators pair cheap mists or Gulf brands with the luxury perfumes they resemble.",
+  "examples": [
+   "bath-body-works",
+   "lattafa",
+   "afnan",
+   "scentury"
+  ],
+  "note": "See the budget twins list. These are opinions, so smell before buying.",
+  "forApps": "Clay: 'expensive vs just as good' comparisons."
+ },
+ {
+  "id": "sample-cards",
+  "title": "Sample cards and tiny jars",
+  "what": "Small makers send tiny sample jars or vials attached to a printed card that doubles as a business card or gift.",
+  "examples": [
+   "rogue-perfumery",
+   "sultan-pasha",
+   "wick-fragrances"
+  ],
+  "note": "Many indies include a matching sample with each bottle so you can test before opening the full size.",
+  "forApps": "Safe Batch: sample sizes for testing new DIY blends; Clay: a 'samples to try' shelf."
+ },
+ {
+  "id": "layering",
+  "title": "Layering sets",
+  "what": "Brands design scents to be worn on top of each other and sell them in numbered or paired sets.",
+  "examples": [
+   "kayali",
+   "cyklar",
+   "michael-malul",
+   "tamburins"
+  ],
+  "note": "KAYALI numbers each scent; CYKLAR and Michael Malul sell layering sets; Tamburins sells balms to wear under spray.",
+  "forApps": "Clay: the scent stack feature."
+ }
+]

@@ -1,0 +1,508 @@
+[
+ {
+  "id": "gowe",
+  "name": "Gowé",
+  "local": "Gowé",
+  "country": "Senegal and Mali",
+  "cc": "SN",
+  "lat": 16.5,
+  "lon": -15.0,
+  "place": "Senegal River valley",
+  "what": "A wild sedge-like plant whose black tubers are dug up by women, dried in the sun and pounded. It is drunk as a herbal decoction and burned as incense.",
+  "smell": "Woody and earthy, close to vetiver and cypriol, with hay, myrrh and a dried-fruit sweetness (plum, apricot).",
+  "how": "Ground tubers are burned at home as incense; a new extract made with women harvesters in northern Senegal is being used in fine perfume.",
+  "meaning": "Described by its producers as 'the smell of Africa'. Harvesting has become an income source for local women since 2021.",
+  "materials": [
+   "vetiver",
+   "myrrh",
+   "hay",
+   "dried apricot"
+  ],
+  "modern": [
+   "amouage"
+  ],
+  "source": "https://mag.bynez.com/en/?p=51781"
+ },
+ {
+  "id": "thiouraye",
+  "name": "Thiouraye (churai)",
+  "local": "Thiouraye",
+  "country": "Senegal",
+  "cc": "SN",
+  "lat": 14.69,
+  "lon": -17.45,
+  "place": "Dakar",
+  "what": "A home-made incense of wood shavings, fragrant herbs and resins blended with sandalwood, musk, oud or amber, then left to mature for months or years.",
+  "smell": "Warm, smoky and sweet, different in every household.",
+  "how": "Burned on charcoal to scent the home, clothes and the body, especially for guests, celebrations and intimacy.",
+  "meaning": "An unwritten recipe passed from mother to daughter, so each blend carries family memory.",
+  "materials": [
+   "sandalwood",
+   "musk",
+   "oud",
+   "amber",
+   "resin"
+  ],
+  "modern": [],
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+ },
+ {
+  "id": "kyphi",
+  "name": "Kyphi",
+  "local": "Kyphi",
+  "country": "Ancient Egypt",
+  "cc": "EG",
+  "lat": 25.69,
+  "lon": 32.64,
+  "place": "Thebes (Luxor)",
+  "what": "One of the oldest recorded perfume recipes: resins, honey, wine and aromatic plants cooked into a paste and burned.",
+  "smell": "Resinous, honeyed and spicy.",
+  "how": "Burned in temples at dusk, used in medicine and in preparing the dead.",
+  "meaning": "Egyptians linked fragrance to the divine; kyphi was a temple offering.",
+  "materials": [
+   "resin",
+   "honey",
+   "myrrh"
+  ],
+  "modern": [
+   "curionoir"
+  ],
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+ },
+ {
+  "id": "frankincense-horn",
+  "name": "Frankincense harvesting",
+  "local": "Lubaan / foox",
+  "country": "Somalia, Ethiopia and Oman",
+  "cc": "SO",
+  "lat": 10.0,
+  "lon": 47.0,
+  "place": "Horn of Africa",
+  "what": "Resin tapped by hand from Boswellia trees, the same way for thousands of years, and traded across the ancient world.",
+  "smell": "Bright, lemony, smoky and clean.",
+  "how": "Burned as incense, chewed, and distilled into oil.",
+  "meaning": "One of the world's oldest scent trades; Oman's Dhofar coast and the Horn of Africa still supply most of it.",
+  "materials": [
+   "frankincense",
+   "olibanum"
+  ],
+  "modern": [
+   "amouage",
+   "parfum-satori"
+  ],
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+ },
+ {
+  "id": "uunsi",
+  "name": "Uunsi welcome smoke",
+  "local": "Uunsi",
+  "country": "Somalia",
+  "cc": "SO",
+  "lat": 2.05,
+  "lon": 45.32,
+  "place": "Mogadishu",
+  "what": "A Somali incense blend burned in a clay burner (dabqaad).",
+  "smell": "Sweet, resinous and perfumed.",
+  "how": "Guests wave the smoke over themselves on arrival; it also scents clothes and hair.",
+  "meaning": "Hospitality and cleansing in one gesture.",
+  "materials": [
+   "frankincense",
+   "resin",
+   "musk"
+  ],
+  "modern": [],
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+ },
+ {
+  "id": "kunukia",
+  "name": "Scented smoke of the Swahili coast",
+  "local": "Kunukia (to perfume)",
+  "country": "Kenya and Tanzania coast",
+  "cc": "KE",
+  "lat": -4.04,
+  "lon": 39.67,
+  "place": "Mombasa",
+  "what": "Clothes, hair and bedding are perfumed with fragrant smoke before important occasions.",
+  "smell": "Smoky, sweet and woody.",
+  "how": "A burner is placed under clothing or a basket so the smoke soaks in.",
+  "meaning": "Marks weddings and other life moments.",
+  "materials": [
+   "oud",
+   "sandalwood",
+   "resin"
+  ],
+  "modern": [],
+  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance"
+ },
+ {
+  "id": "dukhan",
+  "name": "Dukhan smoke bath and khumra",
+  "local": "Dukhan, khumra",
+  "country": "Sudan",
+  "cc": "SD",
+  "lat": 15.5,
+  "lon": 32.56,
+  "place": "Khartoum",
+  "what": "Women sit wrapped in a blanket over a pit of smouldering fragrant acacia wood (dukhan); khumra is a rich bridal perfume oil blend.",
+  "smell": "Smoky acacia wood, then layered musk, sandalwood and floral oils.",
+  "how": "Part of bridal preparation and married women's beauty routines.",
+  "meaning": "A deeply personal Sudanese ritual of beauty and celebration.",
+  "materials": [
+   "acacia wood",
+   "sandalwood",
+   "musk"
+  ],
+  "modern": [],
+  "source": null
+ },
+ {
+  "id": "bakhoor",
+  "name": "Bakhoor",
+  "local": "Bakhoor",
+  "country": "Arabian Peninsula",
+  "cc": "SA",
+  "lat": 24.71,
+  "lon": 46.68,
+  "place": "Arabian Gulf",
+  "what": "Wood chips soaked in perfume oils, resins and sugar, burned on charcoal in a mabkhara burner.",
+  "smell": "Sweet, smoky, oud-rich and floral.",
+  "how": "Passed around to scent guests, clothes and rooms; also wafted through hair.",
+  "meaning": "A central sign of welcome in Gulf homes.",
+  "materials": [
+   "oud",
+   "rose",
+   "amber",
+   "musk"
+  ],
+  "modern": [
+   "abdul-samad-al-qurashi",
+   "kayali",
+   "swiss-arabian"
+  ],
+  "source": null
+ },
+ {
+  "id": "taif-rose",
+  "name": "Taif rose distillation",
+  "local": "Ward Taifi",
+  "country": "Saudi Arabia",
+  "cc": "SA",
+  "lat": 21.27,
+  "lon": 40.42,
+  "place": "Taif",
+  "what": "Mountain roses picked at dawn each spring and distilled into rose water and precious rose oil.",
+  "smell": "Fresh, deep and spicy rose.",
+  "how": "Rose water is used in cooking and to cleanse; the oil is worn as perfume.",
+  "meaning": "A spring harvest festival and a symbol of the region.",
+  "materials": [
+   "rose",
+   "Taif rose"
+  ],
+  "modern": [
+   "abdul-samad-al-qurashi"
+  ],
+  "source": null
+ },
+ {
+  "id": "golab",
+  "name": "Rose water festival (golabgiri)",
+  "local": "Golābgiri",
+  "country": "Iran",
+  "cc": "IR",
+  "lat": 33.98,
+  "lon": 51.44,
+  "place": "Kashan",
+  "what": "Families distil Damask roses into rose water in copper stills during a spring festival.",
+  "smell": "Soft, green, honeyed rose.",
+  "how": "Rose water flavours sweets and is used in rituals and cleansing.",
+  "meaning": "A centuries-old seasonal celebration.",
+  "materials": [
+   "rose",
+   "Damask rose"
+  ],
+  "modern": [],
+  "source": null
+ },
+ {
+  "id": "attar",
+  "name": "Attar and mitti",
+  "local": "Ittar, mitti attar",
+  "country": "India",
+  "cc": "IN",
+  "lat": 27.05,
+  "lon": 79.92,
+  "place": "Kannauj",
+  "what": "Flowers are distilled in copper pots into sandalwood oil (the deg-bhapka method); mitti attar captures baked clay from the riverbed.",
+  "smell": "Mitti smells like the first monsoon rain on dry earth; floral attars are rich and oily.",
+  "how": "Dabbed on wrists and clothes; alcohol-free.",
+  "meaning": "Kannauj has made attars for centuries; mitti is the smell of hope for rain.",
+  "materials": [
+   "sandalwood",
+   "rose",
+   "vetiver",
+   "mitti"
+  ],
+  "modern": [
+   "gulab-singh-johrimal",
+   "isak",
+   "naso-profumi",
+   "neesh"
+  ],
+  "source": null
+ },
+ {
+  "id": "gajra",
+  "name": "Jasmine garlands",
+  "local": "Gajra, phuang malai, sampaguita",
+  "country": "South and Southeast Asia",
+  "cc": "TH",
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "what": "Fresh jasmine and other white flowers threaded into garlands for hair, shrines and gifts (gajra in India, phuang malai in Thailand, sampaguita in the Philippines).",
+  "smell": "Heady, sweet white flowers.",
+  "how": "Worn in the hair, hung at shrines, given as welcome.",
+  "meaning": "Respect, devotion and welcome.",
+  "materials": [
+   "jasmine",
+   "sampaguita",
+   "tuberose"
+  ],
+  "modern": [
+   "dusita",
+   "tadhana",
+   "wren-atelier"
+  ],
+  "source": null
+ },
+ {
+  "id": "yadom",
+  "name": "Yadom herbal inhalers",
+  "local": "Ya dom",
+  "country": "Thailand",
+  "cc": "TH",
+  "lat": 14.5,
+  "lon": 100.9,
+  "place": "Thailand",
+  "what": "Small sticks and balms of camphor, menthol, borneol and herbs carried everywhere.",
+  "smell": "Cool, sharp and herbal.",
+  "how": "Sniffed for freshness in heat, travel and crowds.",
+  "meaning": "An everyday Thai scent ritual and a favourite souvenir.",
+  "materials": [
+   "camphor",
+   "menthol",
+   "lemongrass"
+  ],
+  "modern": [
+   "karmakamet"
+  ],
+  "source": null
+ },
+ {
+  "id": "kodo",
+  "name": "Kōdō, the way of incense",
+  "local": "香道",
+  "country": "Japan",
+  "cc": "JP",
+  "lat": 35.01,
+  "lon": 135.77,
+  "place": "Kyoto",
+  "what": "A formal art of appreciating rare woods like kyara agarwood, heated gently rather than burned.",
+  "smell": "Subtle, warm, resinous wood.",
+  "how": "Guests 'listen' to incense and play guessing games of matching scents.",
+  "meaning": "One of Japan's three classical arts of refinement.",
+  "materials": [
+   "kyara",
+   "agarwood",
+   "sandalwood"
+  ],
+  "modern": [
+   "shoyeido",
+   "parfum-satori",
+   "kitowa"
+  ],
+  "source": null
+ },
+ {
+  "id": "xiangdao",
+  "name": "Chinese incense culture",
+  "local": "香道 (xiangdao)",
+  "country": "China",
+  "cc": "CN",
+  "lat": 30.27,
+  "lon": 120.15,
+  "place": "Hangzhou",
+  "what": "Scholars burned blended incense while reading, painting and drinking tea, a culture that peaked in the Song dynasty.",
+  "smell": "Agarwood, sandalwood, tea and resins.",
+  "how": "Burned in small censers in studies and tea rooms.",
+  "meaning": "Calm, focus and refinement.",
+  "materials": [
+   "agarwood",
+   "sandalwood",
+   "tea"
+  ],
+  "modern": [
+   "documents",
+   "to-summer",
+   "uttori"
+  ],
+  "source": null
+ },
+ {
+  "id": "hyangnang",
+  "name": "Scent pouches",
+  "local": "향낭 (hyangnang)",
+  "country": "Korea",
+  "cc": "KR",
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "what": "Small embroidered pouches of fragrant herbs and musk worn on clothing in the Joseon era.",
+  "smell": "Herbal, musky and soft.",
+  "how": "Hung from hanbok ties or carried; also used to keep away insects.",
+  "meaning": "Elegance and protection; an ancestor of today's bag-charm perfumes.",
+  "materials": [
+   "musk",
+   "herbs"
+  ],
+  "modern": [
+   "whipped",
+   "tamburins"
+  ],
+  "source": null
+ },
+ {
+  "id": "tram-huong",
+  "name": "Agarwood incense",
+  "local": "Trầm hương",
+  "country": "Vietnam",
+  "cc": "VN",
+  "lat": 12.25,
+  "lon": 109.19,
+  "place": "Khánh Hòa",
+  "what": "Vietnam's central coast is famous for agarwood, burned as incense at family altars and temples.",
+  "smell": "Deep, sweet, resinous wood.",
+  "how": "Burned daily at ancestor altars.",
+  "meaning": "Honouring ancestors.",
+  "materials": [
+   "agarwood",
+   "oud"
+  ],
+  "modern": [
+   "ensar-oud"
+  ],
+  "source": null
+ },
+ {
+  "id": "copal",
+  "name": "Copal smoke",
+  "local": "Copal",
+  "country": "Mexico",
+  "cc": "MX",
+  "lat": 17.06,
+  "lon": -96.73,
+  "place": "Oaxaca",
+  "what": "Tree resin burned since Maya and Aztec times.",
+  "smell": "Lemony, piney, smoky and sweet.",
+  "how": "Burned in ceremonies, healing rituals and on Day of the Dead altars.",
+  "meaning": "A bridge between people and the sacred.",
+  "materials": [
+   "copal",
+   "resin"
+  ],
+  "modern": [
+   "xinu"
+  ],
+  "source": null
+ },
+ {
+  "id": "orange-blossom-water",
+  "name": "Orange blossom water",
+  "local": "Mazhar",
+  "country": "Morocco",
+  "cc": "MA",
+  "lat": 34.03,
+  "lon": -5.0,
+  "place": "Fez",
+  "what": "Bitter-orange blossoms distilled each spring into fragrant water.",
+  "smell": "Fresh, honeyed orange flower.",
+  "how": "Sprinkled on guests' hands, used in pastries and skin care.",
+  "meaning": "Welcome and celebration.",
+  "materials": [
+   "orange blossom",
+   "neroli"
+  ],
+  "modern": [
+   "sana-jardin",
+   "coqui-coqui"
+  ],
+  "source": null
+ },
+ {
+  "id": "hungary-water",
+  "name": "Hungary Water",
+  "local": "Aqua Reginae Hungariae",
+  "country": "Hungary",
+  "cc": "HU",
+  "lat": 47.5,
+  "lon": 19.04,
+  "place": "Budapest",
+  "what": "A 14th-century rosemary-in-alcohol water, often called the first alcohol-based perfume in Europe.",
+  "smell": "Herbal rosemary and citrus.",
+  "how": "Used as a tonic and a fragrance.",
+  "meaning": "A bridge from medicine to perfume.",
+  "materials": [
+   "rosemary",
+   "citrus"
+  ],
+  "modern": [
+   "santa-maria-novella"
+  ],
+  "source": null
+ },
+ {
+  "id": "eau-de-cologne",
+  "name": "Eau de Cologne",
+  "local": "Kölnisch Wasser",
+  "country": "Germany",
+  "cc": "DE",
+  "lat": 50.94,
+  "lon": 6.96,
+  "place": "Cologne",
+  "what": "A light citrus-herbal water created in Cologne in 1709 that gave its name to a whole type of fragrance.",
+  "smell": "Bergamot, lemon, neroli and herbs.",
+  "how": "Splashed on freely for freshness.",
+  "meaning": "The start of modern fresh perfume.",
+  "materials": [
+   "bergamot",
+   "neroli",
+   "lemon"
+  ],
+  "modern": [
+   "acqua-di-parma",
+   "santa-maria-novella"
+  ],
+  "source": null
+ },
+ {
+  "id": "sweetgrass",
+  "name": "Sacred plants of First Nations",
+  "local": "Sweetgrass, sage, cedar, tobacco",
+  "country": "Canada and the US",
+  "cc": "CA",
+  "lat": 46.0,
+  "lon": -80.0,
+  "place": "Turtle Island",
+  "what": "Many Indigenous nations hold sweetgrass, sage, cedar and tobacco as sacred medicines.",
+  "smell": "Sweetgrass smells like vanilla and fresh hay.",
+  "how": "Used in ceremony and prayer by the communities who keep these teachings.",
+  "meaning": "Sacred, not a fragrance trend; shown here with respect, not as something to copy or sell.",
+  "materials": [
+   "sweetgrass",
+   "cedar",
+   "sage"
+  ],
+  "modern": [],
+  "source": null
+ }
+]

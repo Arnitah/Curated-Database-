@@ -3029,6 +3029,14 @@
    "keyring",
    "hair perfume",
    "canada stockist"
+  ],
+  "also": [
+   {
+    "name": "Peach Pear Juicy Hair Perfume",
+    "notes": "A vegan keratin hair perfume that smells of ripe peach and juicy pear, sold in a candy-like heart keyring pack; sold through KakaoTalk Gifting in Korea.",
+    "price": "Price not checked",
+    "url": "https://sukoshi.com/products/whipped-yujamong-juicy-hair-perfume-keyring-set"
+   }
   ]
  },
  {
@@ -7321,5 +7329,115 @@
     "url": "https://phlur.com/en-ca/collections/perfumes"
    }
   ]
+ },
+ {
+  "id": "bath-body-works",
+  "name": "Bath & Body Works",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Columbus, Ohio",
+  "type": "mass",
+  "scale": "large",
+  "site": "https://www.bathandbodyworks.ca/",
+  "about": "The mall staple for body mists, lotions and candles, with themed seasonal and Disney Princess collections.",
+  "why": "The budget side of the 'smells like' trend: creators pair its 236 ml mists with luxury perfumes they resemble. Easy to buy in Canada.",
+  "families": [
+   "fruity",
+   "floral",
+   "gourmand"
+  ],
+  "accents": [
+   "body mist",
+   "budget twins"
+  ],
+  "sig": {
+   "name": "Disney Princess Belle (Fine Fragrance Mist)",
+   "url": "https://www.bathandbodyworks.ca/",
+   "notes": {
+    "t": [],
+    "h": [
+     "rose",
+     "yellow flowers"
+    ],
+    "b": [
+     "whipped cream"
+    ]
+   },
+   "profile": "A soft rose and sunny-flower mist on a creamy, whipped base (notes as pictured in your screenshot). Often compared to Parfums de Marly Delina. See the budget twins list for its other luxury look-alikes."
+  },
+  "price": {
+   "amt": 16.5,
+   "cur": "CAD",
+   "ml": 236,
+   "status": "reported",
+   "src": "https://www.makeupandbeautyforever.com/?p=21237",
+   "on": "2026-10-24",
+   "note": "Canadian regular price reported in 2022; check current price and frequent sales."
+  },
+  "tags": [
+   "body mist",
+   "dupes",
+   "budget"
+  ]
+ },
+ {
+  "id": "cyklar",
+  "name": "CYKLAR",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "United States",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://cyklar.com/",
+  "about": "A US brand of layerable perfume oils in small square bottles, plus a silicone bag charm that slips over the cap so the scent hangs from your bag.",
+  "why": "A clear example of packaging as an accessory: the perfume becomes part of the outfit. Good inspiration for Clay and Safe Batch packaging.",
+  "families": [
+   "musk",
+   "woody",
+   "floral",
+   "gourmand"
+  ],
+  "accents": [
+   "perfume oil",
+   "bag charm",
+   "layering"
+  ],
+  "sig": {
+   "name": "Sex Musk (Perfume Oil)",
+   "url": "https://cyklar.com/products/sex-musk-perfume-oil",
+   "notes": {
+    "t": [],
+    "h": [
+     "musk"
+    ],
+    "b": [
+     "warm skin"
+    ]
+   },
+   "profile": "An intimate, enveloping skin musk that stays close. Others to layer: Vanilla Verve (spicy creamy vanilla), Naked Neroli, Bergamot Bond, Amber Hour, Rose Bud, Core Vetiver, Sacred Santal."
+  },
+  "price": {
+   "amt": 24,
+   "cur": "USD",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://cyklar.com/products/sex-musk-perfume-oil",
+   "on": "2026-10-24",
+   "note": "Silicone bag charm US$15; 4-oil layering set US$115."
+  },
+  "tags": [
+   "bag charm",
+   "oil layering"
+  ],
+  "try": {
+   "label": "Bag charm (fits the oil cap)",
+   "amt": 15,
+   "cur": "USD",
+   "url": "https://cyklar.com/products/silicone-perfume-oil-keychain"
+  }
  }
 ]

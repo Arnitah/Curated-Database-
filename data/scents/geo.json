@@ -772,5 +772,17 @@
   "lon": -98.35,
   "place": "United States",
   "precision": "country"
+ },
+ "bath-body-works": {
+  "lat": 39.96,
+  "lon": -82.99,
+  "place": "Columbus",
+  "precision": "city"
+ },
+ "cyklar": {
+  "lat": 39.5,
+  "lon": -98.35,
+  "place": "United States",
+  "precision": "country"
  }
 }

@@ -9,7 +9,7 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
-  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country)
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country), budget twins (twins: cheap scent and the luxury perfume it is said to resemble), trends (trends), traditional scent rituals with map points (traditions)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
 apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents) and scent-map.html (interactive world map)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
@@ -103,3 +103,5 @@ Planned Clay link: `families` already uses Clay's scent family names, so scent s
 
 ### Scent World Map
 `apps/scent-map.html` draws the world with country shapes built in (Natural Earth 110m via world-atlas, Equal Earth projection) so it needs no map-tile service. It reads `houses.json` and `geo.json`; when you add a house, add its coordinates to `geo.json` (`precision: "country"` when only the country is known). The validator warns if a house has no coordinates.
+
+The atlas page now includes the world map as a **World map** tab (same data, same theme). Traditional scent rituals from `traditions.json` show as gold diamonds on the map. Budget twins are opinions from creators or research, labelled as such.
