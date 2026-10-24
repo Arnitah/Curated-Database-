@@ -23,7 +23,8 @@
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px }
-.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 28px }
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr) }
+.wrap > * { min-width: 0 }
 h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0 }
 h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.02; letter-spacing: -0.01em }
 h1 em { color: var(--accent); font-style: italic }
@@ -112,6 +113,14 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .try { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-size: 13px; border: 1px dashed var(--line); border-radius: 8px; padding: 7px 10px }
 .try b { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--resin); font-weight: 500 }
 .famlink { font: inherit; font-weight: 600; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: 3px }
+.map { display: grid; gap: 12px }
+.map-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 10px }
+.tile { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 6px; align-content: start; min-width: 0 }
+.tile h3 { font-size: 1.15rem }
+.tile .vibe { font-size: 13px; color: var(--muted) }
+.tile .raw { font-family: var(--mono); font-size: 11px; color: var(--muted) }
+.tile .ex { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 8px }
+.tile .explore { justify-self: start; font: 600 12.5px var(--body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer }
 footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
 @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s } .card:hover { border-color: var(--accent) } }
 </style>
@@ -132,6 +141,12 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <button class="go" type="button" id="go">Show my matches</button>
   </section>
 
+  <section class="map" id="mapsec">
+    <div><div class="eyebrow">Scent map</div><h2>Browse by how it wears, not by price</h2>
+    <p class="why">Six styles, each house placed by its families and notes. A house can sit in more than one.</p></div>
+    <div class="map-grid" id="mapgrid"></div>
+  </section>
+
   <div class="rail">
     <div class="row">
       <input type="search" id="q" placeholder="Search a note, house or country (try osmanthus, oud, tea)" aria-label="Search">
@@ -145,6 +160,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     </div>
     <div class="row" id="conts"><span class="lab">Continent</span></div>
     <div class="row"><span class="lab">Your taste</span><button class="chip" type="button" id="likeDip" aria-pressed="false">If you love Diptyque</button><button class="chip" type="button" id="shelfBtn" aria-pressed="false">My shelf</button></div>
+    <div class="row" id="styles"><span class="lab">Style</span></div>
     <div class="row" id="fams"><span class="lab">Smells</span></div>
     <div class="row" id="types"><span class="lab">Kind</span><span class="count" id="count"></span></div>
   </div>
@@ -187,7 +203,7 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const CONT_ORDER = ["Asia", "Europe/Asia", "Africa", "Americas", "Oceania", "Europe"];
 const TYPE_LABEL = { niche: "Niche", indie: "Indie", lifestyle: "Lifestyle", attar: "Attar & oil", incense: "Incense", mass: "Affordable", "inspired-by": "Inspired-by" };
-const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region", like: false, shelf: false, quiz: null };
+const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region", like: false, shelf: false, quiz: null, style: new Set() };
 let D;
 
 function cad(p, rates, which = "amt") {
@@ -214,6 +230,20 @@ function profileOf(h) {
   const season = warm > fresh ? "Fall & winter" : fresh > warm ? "Spring & summer" : "All year";
   const when = intensity === "Bold" ? "Evening & dates" : intensity === "Soft" || f.includes("citrus") || f.includes("green") ? "Daytime & office" : "Day to night";
   return { intensity, season, when };
+}
+const MAP = [
+  ["woods", "Deep woods & ouds", "Ancient, earthy, smoky", "Wild agarwood, aged cedar, frankincense, resin", (h, t) => /oud|agarwood|incense|resin|smoke|asphalt|frankincense|labdanum|kyara/.test(t) || (["woody", "amber"].includes(h.families[0]) && (h.families.includes("amber") || h.families.includes("spicy")))],
+  ["florals", "Rich florals", "Dramatic, romantic, regal", "Jasmine, tuberose, rose, frangipani", (h, t) => h.families.includes("floral") && /jasmine|tuberose|rose|frangipani|gardenia|lily|white flower|osmanthus|orange blossom|sampaguita/.test(t) && profileOf(h).intensity !== "Soft"],
+  ["aromatic", "Herbal aromatics & resins", "Herbal, grounded, spicy", "Black pepper, vetiver, herbs, tea, conifers", (h, t) => (h.families.includes("green") || h.families.includes("spicy")) && /vetiver|pepper|herb|sage|lavender|rosemary|tea|mint|juniper|cypress|pine|apothecary|natural|cardamom/.test(t)],
+  ["clean", "Clean skin scents", "Minimal, airy, everyday", "White musk, linen, soap, sheer florals", (h, t) => h.families.includes("musk") && (profileOf(h).intensity === "Soft" || /clean|laundry|skin|soap|cotton|linen|white musk/.test(t))],
+  ["gourmand", "Gourmand treats", "Cozy, sweet, edible", "Vanilla, caramel, coffee, nuts, milk", (h) => h.families.includes("gourmand")],
+  ["fresh", "Fresh citrus & sea", "Bright, breezy, uplifting", "Citrus, sea salt, green leaves, rain", (h) => h.families.includes("citrus") || h.families.includes("aquatic")]];
+const STRONG = { woods: /oud|agarwood|incense|resin|smoke|frankincense|kyara/g, florals: /jasmine|tuberose|rose|frangipani|gardenia|osmanthus|white flower/g, aromatic: /vetiver|pepper|herb|sage|lavender|rosemary|tea|juniper|cypress|pine/g, clean: /clean|laundry|skin|soap|cotton|linen|white musk/g, gourmand: /vanilla|caramel|coffee|praline|chocolate|pistachio|honey|milk|cream/g, fresh: /citrus|lemon|bergamot|yuzu|grapefruit|sea|salt|aquatic|rain/g };
+function styleScore(h, k) { const n = h.sig.notes || {}; const t = [...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || [])].join(" ").toLowerCase(); return (t.match(STRONG[k]) || []).length; }
+function stylesOf(h) {
+  if (h._st) return h._st; const n = h.sig.notes || {};
+  const t = [...(h.accents || []), ...(h.tags || []), ...(n.t || []), ...(n.h || []), ...(n.b || []), h.sig.profile].join(" ").toLowerCase();
+  return (h._st = MAP.filter((m) => m[4](h, t)).map((m) => m[0]));
 }
 function feats(h) { return new Set([...h.families.map((f) => "f:" + f), ...(h.accents || []).map((a) => "a:" + a.toLowerCase()), ...(h.tags || []).map((t) => "t:" + t.toLowerCase())]); }
 function buildSimilar() {
@@ -251,6 +281,7 @@ function card(h) {
       ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${noteBtns(v)}</dd>`).join("")}</dl>` : ""}
       <p class="profile">${esc(h.sig.profile)}</p></div>
     ${(h.also || []).map((a) => `<div class="also"><span class="nm">Also: ${esc(a.name)}</span><span>${esc(a.notes)}</span><span class="cad">${esc(a.price)}</span>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">See it</a>` : ""}</div>`).join("")}
+    ${stylesOf(h).length ? `<div class="best"><b>Style</b>${stylesOf(h).slice(0, 2).map((x) => `<span>${MAP.find((m) => m[0] === x)[1]}</span>`).join("·")}</div>` : ""}
     <div class="best"><b>Best for</b><span>${prof.season}</span>·<span>${prof.when}</span>·<span>${prof.intensity}</span><i>estimated from its notes</i></div>
     ${h.alt ? `<div class="sim"><b style="font-weight:600;color:var(--ink)">Easy to find instead:</b> ${h.alt.map(esc).join(" · ")}</div>` : ""}
     <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
@@ -275,6 +306,7 @@ function render() {
   $("matchbar").hidden = true;
   let list = D.houses.filter((h) => {
     if (state.shelf && !SHELF.has(h.id)) return false;
+    if (state.style.size && !stylesOf(h).some((x) => state.style.has(x))) return false;
     if (state.cont.size && !state.cont.has(h.continent)) return false;
     if (state.fam.size && !h.families.some((f) => state.fam.has(f))) return false;
     if (state.type.size && !state.type.has(h.type)) return false;
@@ -322,6 +354,14 @@ function render() {
   $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
   $("foot").innerHTML = `Prices are as found on the check date: <b>verified</b> means read on the brand's own shop, <b>retailer</b> a reseller, <b>reported</b> from an article. Canadian-dollar figures are estimates from ${esc(rates.source || "seed")} rates on ${esc(rates.on || "")} and exclude shipping and duties. Dots show whether each house's links worked at the last weekly check (green working, amber site blocks automated checks, red broken). Not affiliated with any brand.`;
   buildSimilar();
+  chips($("styles"), MAP.map((m) => m[0]), state.style, (k) => MAP.find((m) => m[0] === k)[1]);
+  $("mapgrid").innerHTML = MAP.map(([k, name, vibe, raw]) => { const hs = D.houses.filter((h) => stylesOf(h).includes(k));
+    const seen = new Set(); const ex = [...hs].sort((a, b) => styleScore(b, k) - styleScore(a, k)).filter((h) => !seen.has(h.cc) && seen.add(h.cc)).slice(0, 4);
+    return `<div class="tile"><h3>${name}</h3><span class="vibe">${vibe} · ${hs.length} houses</span><span class="raw">${raw}</span><div class="ex">${ex.map((h) => `<button class="mini" type="button" data-q="${esc(h.name)}">${esc(h.name)}</button>`).join("")}</div><button class="explore" type="button" data-style="${k}">Explore this style</button></div>`; }).join("");
+  $("mapgrid").onclick = (e) => {
+    const st = e.target.closest("[data-style]");
+    if (st) { state.quiz = null; state.style.clear(); state.style.add(st.dataset.style); document.querySelectorAll("#styles .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === MAP.find((m) => m[0] === st.dataset.style)[1])); render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const q = e.target.closest("[data-q]"); if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); } };
   const QS = [
     ["pull", "Which smells pull you in?", [["fresh", "Fresh & clean"], ["warm", "Warm & cozy"], ["floral", "Flowers"], ["sweet", "Sweet & edible"], ["woody", "Woody & earthy"]]],
     ["loud", "How noticeable should it be?", [["Soft", "Soft, close to skin"], ["Moderate", "In between"], ["Bold", "Bold, people notice"]]],

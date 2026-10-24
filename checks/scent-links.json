@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 107,
-  "blocked": 13,
+  "pass": 120,
+  "blocked": 9,
   "fail": 0
  },
  "houses": {
@@ -178,13 +178,13 @@
   },
   "natura": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "zoologist": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "imaginary-authors": {
    "site": "pass",
@@ -192,9 +192,9 @@
    "price": "pass"
   },
   "goldfield-banks": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "hiram-green": {
    "site": "pass",
@@ -262,9 +262,9 @@
    "price": "pass"
   },
   "skybottle": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "whipped": {
    "site": "pass",
@@ -442,7 +442,7 @@
    "price": "pass"
   },
   "xerjoff": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -605,6 +605,51 @@
    "site": "pass",
    "sig": "pass",
    "price": "pass"
+  },
+  "dusita": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "zielinski-rozen": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "areej-le-dore": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "bortnikoff": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ensar-oud": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "pekji": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "aftelier": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "strangers-parfumerie": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "phlur": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
   }
  }
 }

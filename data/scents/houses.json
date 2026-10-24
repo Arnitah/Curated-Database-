@@ -6840,5 +6840,486 @@
    "clean beauty",
    "rice"
   ]
+ },
+ {
+  "id": "dusita",
+  "name": "Parfums Dusita",
+  "country": "Thailand / France",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Paris, by Thai perfumer Pissara Umavijani",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://dusita.com/",
+  "about": "Classic French perfumery made by a Thai-born perfumer, inspired by her poet father and Thai culture (Erawan, La Douceur de Siam).",
+  "why": "The bridge between Thai heritage and Paris craft; rich, natural-feeling florals.",
+  "families": [
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "jasmine",
+   "frangipani",
+   "Thai garlands"
+  ],
+  "sig": {
+   "name": "La Douceur de Siam (house style)",
+   "url": "https://dusita.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "jasmine absolute",
+     "frangipani",
+     "honeyed white flowers"
+    ],
+    "b": []
+   },
+   "profile": "Rich, nectar-heavy white florals in the spirit of Thai flower garlands: real jasmine, creamy frangipani and honeyed blossoms, made with old-school French technique. Look also for Erawan and the extraits Le Sillage Blanc and Oudh Infini."
+  },
+  "price": {
+   "amt": 150,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://dusita.com/",
+   "on": "2026-10-24",
+   "note": "From your research: eaux de parfum €150 per 50 ml; extraits €195 to €220.",
+   "amt_max": 220
+  },
+  "tags": [
+   "thai heritage",
+   "white floral"
+  ]
+ },
+ {
+  "id": "zielinski-rozen",
+  "name": "Zielinski & Rozen",
+  "country": "Israel",
+  "cc": "IL",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Jaffa, Tel Aviv",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://zielinskiandrozen.com/",
+  "about": "An old-world apothecary-style house from Jaffa with medicine-bottle packaging; each perfume is named simply after its key notes.",
+  "why": "Bohemian, spice-market scents at one flat price.",
+  "families": [
+   "spicy",
+   "woody",
+   "citrus"
+  ],
+  "accents": [
+   "apothecary",
+   "black pepper"
+  ],
+  "sig": {
+   "name": "Black Pepper & Vetiver",
+   "url": "https://zielinskiandrozen.com/",
+   "notes": {
+    "t": [
+     "black pepper",
+     "neroli"
+    ],
+    "h": [
+     "vetiver"
+    ],
+    "b": [
+     "amber"
+    ]
+   },
+   "profile": "Sharp black pepper and bright neroli over dry vetiver and warm amber: like walking through an old spice market. Minimal and grounded. Rosemary & Lemon is the fresh alternative."
+  },
+  "price": {
+   "amt": 95,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://zielinskiandrozen.com/products/perfume-black-pepper-vetiver-neroli-amber-50-ml",
+   "on": "2026-10-24",
+   "note": "Every 50 ml perfume is €95 (read from their shop)."
+  },
+  "tags": [
+   "apothecary",
+   "tel aviv"
+  ]
+ },
+ {
+  "id": "areej-le-dore",
+  "name": "Areej Le Doré",
+  "country": "Russia (artisan)",
+  "cc": "RU",
+  "region": "Eastern Europe",
+  "continent": "Europe",
+  "city": "Small-batch artisan",
+  "type": "niche",
+  "scale": "micro",
+  "site": "https://areejledore.com/",
+  "about": "A tiny artisan house making natural oud and resin extraits in limited batches that sell out quickly.",
+  "why": "For serious oud lovers; past batches resell for much more.",
+  "families": [
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "oud",
+   "resin",
+   "incense"
+  ],
+  "sig": {
+   "name": "Limited batch extraits (house style)",
+   "url": "https://areejledore.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "wild agarwood",
+     "incense"
+    ],
+    "b": [
+     "aged resins",
+     "damp earth"
+    ]
+   },
+   "profile": "Raw, thick and resinous: ancient forest, burning incense and dark damp earth. Very long-lasting and complex."
+  },
+  "price": {
+   "amt": 220,
+   "cur": "USD",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://www.silloria.com/en/perfumes/areej-le-dore",
+   "on": "2026-10-24",
+   "note": "From your research: about US$220 to US$350 per batch release (30 to 50 ml).",
+   "amt_max": 350
+  },
+  "tags": [
+   "oud",
+   "limited batch"
+  ]
+ },
+ {
+  "id": "bortnikoff",
+  "name": "Bortnikoff",
+  "country": "Russia (artisan)",
+  "cc": "RU",
+  "region": "Eastern Europe",
+  "continent": "Europe",
+  "city": "Dmitry Bortnikov, small batches",
+  "type": "niche",
+  "scale": "micro",
+  "site": "https://bortnikoff.com/",
+  "about": "Natural perfumer Dmitry Bortnikov pairs wild agarwood with classic French florals and gourmand notes.",
+  "why": "The softest way into real oud: wood made wearable with chocolate, coffee and honey.",
+  "families": [
+   "woody",
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "oud",
+   "honey"
+  ],
+  "sig": {
+   "name": "Extraits (house style)",
+   "url": "https://bortnikoff.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "wild agarwood"
+    ],
+    "b": [
+     "hot chocolate",
+     "coffee",
+     "wild honey"
+    ]
+   },
+   "profile": "Dark, wild agarwood smoothed with cocoa, coffee and honey, so the wood feels warm and edible rather than harsh."
+  },
+  "price": {
+   "amt": 240,
+   "cur": "USD",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://bortnikoff.com/",
+   "on": "2026-10-24",
+   "note": "From your research: extraits about US$240 to US$320 per 50 ml.",
+   "amt_max": 320
+  },
+  "tags": [
+   "oud",
+   "gourmand oud"
+  ]
+ },
+ {
+  "id": "ensar-oud",
+  "name": "Ensar Oud",
+  "country": "Indie (oud from Cambodia, Borneo, India)",
+  "cc": "KH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Wild-harvested oud distiller",
+  "type": "attar",
+  "scale": "micro",
+  "site": "https://ensaroud.com/",
+  "about": "A specialist distiller of wild-harvested oud oils from Asia, plus pure oud spray perfumes.",
+  "why": "The top end of real oud; oils from hundreds to thousands of dollars.",
+  "families": [
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "oud",
+   "perfume oil"
+  ],
+  "sig": {
+   "name": "Oud oils and sprays (house style)",
+   "url": "https://ensaroud.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "wild agarwood"
+    ],
+    "b": [
+     "resins",
+     "earth"
+    ]
+   },
+   "profile": "Uncompromising, raw oud: deep forest, resin and smoke, with every batch smelling a little different."
+  },
+  "price": {
+   "amt": 350,
+   "cur": "USD",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://ensaroud.com/",
+   "on": "2026-10-24",
+   "note": "From your research: spray perfumes from about US$350 to US$550 (30 to 50 ml); oils cost much more.",
+   "amt_max": 550
+  },
+  "tags": [
+   "oud",
+   "rare"
+  ]
+ },
+ {
+  "id": "pekji",
+  "name": "Pekji",
+  "country": "Türkiye",
+  "cc": "TR",
+  "region": "Middle East",
+  "continent": "Europe/Asia",
+  "city": "Istanbul (Ömer İpekçi)",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://pekji.com/",
+  "about": "An Istanbul indie making surreal, conceptual extraits (Flesh, Purpl, Blacklight).",
+  "why": "Avant-garde and artistic; very different from classic Turkish scents.",
+  "families": [
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "smoke",
+   "asphalt",
+   "cedar"
+  ],
+  "sig": {
+   "name": "Extraits (house style)",
+   "url": "https://pekji.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "smoky cedar"
+    ],
+    "b": [
+     "asphalt accord",
+     "burnt resins"
+    ]
+   },
+   "profile": "Industrial woods rather than a forest: dry smoky cedar, warm asphalt and burnt resin. Sharp and modern."
+  },
+  "price": {
+   "amt": 165,
+   "cur": "USD",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://pekji.com/",
+   "on": "2026-10-24",
+   "note": "From your research: extraits US$165 per 50 ml."
+  },
+  "tags": [
+   "avant-garde",
+   "istanbul"
+  ]
+ },
+ {
+  "id": "aftelier",
+  "name": "Aftelier Perfumes",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Berkeley, California (Mandy Aftel)",
+  "type": "niche",
+  "scale": "micro",
+  "site": "https://aftelier.com/",
+  "about": "Mandy Aftel's 100% natural botanical perfumery, using no synthetics at all.",
+  "why": "A reference for all-natural perfume; useful inspiration for Safe Batch.",
+  "families": [
+   "floral",
+   "citrus",
+   "woody"
+  ],
+  "accents": [
+   "all natural",
+   "resin"
+  ],
+  "sig": {
+   "name": "Botanical perfumes (house style)",
+   "url": "https://aftelier.com/",
+   "notes": {
+    "t": [
+     "zesty citrus"
+    ],
+    "h": [
+     "rose oil"
+    ],
+    "b": [
+     "jammy conifer resins"
+    ]
+   },
+   "profile": "Close to the skin and alive: bright citrus, real rose and warm, jammy tree resins that change with your body chemistry."
+  },
+  "price": {
+   "amt": 210,
+   "cur": "USD",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://aftelier.com/",
+   "on": "2026-10-24",
+   "note": "From your research: eaux de parfum US$210 per 30 ml; 7 ml pure liquid perfume US$240."
+  },
+  "tags": [
+   "all natural",
+   "botanical"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "strangers-parfumerie",
+  "name": "Strangers Parfumerie",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok (Prin Lomros)",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.sealedessence.com/brand/strangers/",
+  "about": "A Thai 'creative laboratory' by Prin Lomros with cinematic, pop-culture scents that range from playful to experimental.",
+  "why": "An accessible Thai indie with bold ideas.",
+  "families": [
+   "fruity",
+   "spicy",
+   "musk"
+  ],
+  "accents": [
+   "soda",
+   "metallic",
+   "salt"
+  ],
+  "sig": {
+   "name": "Experimental line (house style)",
+   "url": "https://www.sealedessence.com/brand/strangers/",
+   "notes": {
+    "t": [
+     "sparkling soda",
+     "sweet fruit"
+    ],
+    "h": [
+     "hot metallic iron",
+     "tobacco"
+    ],
+    "b": [
+     "salted skin"
+    ]
+   },
+   "profile": "Anything goes: fizzy soda and fruit at one end, hot irons, tobacco and salty skin at the other. Fun to explore."
+  },
+  "price": {
+   "amt": 90,
+   "cur": "USD",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://www.sealedessence.com/brand/strangers/",
+   "on": "2026-10-24",
+   "note": "From your research: about US$90 per 30 ml."
+  },
+  "tags": [
+   "experimental",
+   "thai indie"
+  ]
+ },
+ {
+  "id": "phlur",
+  "name": "Phlur",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "United States",
+  "type": "indie",
+  "scale": "mid",
+  "site": "https://phlur.com/en-ca/collections/perfumes",
+  "about": "A viral modern brand of 'second skin' scents such as Missing Person, Father Figure and Heavy Cream; sold at Sephora Canada.",
+  "why": "Easy to buy in Canada at one flat price.",
+  "families": [
+   "musk",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "skin scent",
+   "clean"
+  ],
+  "sig": {
+   "name": "Missing Person",
+   "url": "https://phlur.com/en-ca/collections/perfumes",
+   "notes": {
+    "t": [],
+    "h": [
+     "transparent jasmine"
+    ],
+    "b": [
+     "clean white musk",
+     "creamy woods"
+    ]
+   },
+   "profile": "Like warm, freshly washed skin: soft white musk and a sheer jasmine over light creamy woods."
+  },
+  "price": {
+   "amt": 134,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "reported",
+   "src": "https://phlur.com/en-ca/collections/perfumes",
+   "on": "2026-10-24",
+   "note": "From your research: every 50 ml eau de parfum C$134."
+  },
+  "tags": [
+   "skin scent",
+   "canada stockist"
+  ],
+  "also": [
+   {
+    "name": "Heavy Cream",
+    "notes": "A milky, creamy skin scent.",
+    "price": "C$134 · 50 ml",
+    "url": "https://phlur.com/en-ca/collections/perfumes"
+   }
+  ]
  }
 ]

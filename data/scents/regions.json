@@ -504,5 +504,40 @@
    "musk"
   ],
   "where": "Marrakech souks, Kelaat M'Gouna"
+ },
+ {
+  "cc": "IL",
+  "country": "Israel",
+  "style": "Bohemian apothecary scents built on spices, herbs and Mediterranean citrus.",
+  "roots": "Jaffa's old port and spice trade.",
+  "materials": [
+   "black pepper",
+   "rosemary",
+   "citrus",
+   "vetiver"
+  ],
+  "where": "Jaffa, Tel Aviv"
+ },
+ {
+  "cc": "RU",
+  "country": "Russia (artisans)",
+  "style": "Tiny natural-perfume ateliers specialising in rare oud and resins.",
+  "roots": "An artisan community focused on natural distillations.",
+  "materials": [
+   "oud",
+   "resins",
+   "honey"
+  ],
+  "where": "Online batch releases"
+ },
+ {
+  "cc": "KH",
+  "country": "Cambodia",
+  "style": "Source of some of the world's most prized wild agarwood (oud).",
+  "roots": "Agarwood forests of Southeast Asia.",
+  "materials": [
+   "agarwood"
+  ],
+  "where": "Specialist oud distillers"
  }
 ]
