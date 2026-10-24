@@ -37,6 +37,10 @@ const clean = (s) => String(s ?? '').replace(/\uFFFD/g, '').replace(/\s+/g, ' ')
 const median = (a) => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : +((s[m - 1] + s[m]) / 2).toFixed(2); };
 
 const [products, raws, status] = await Promise.all([hub('data/products.json'), hub('data/raw_materials.json'), hub('data/status.json').catch(() => ({}))]);
+// Products added by hand (index/added_products.json) until the hub has them; hub records win on a name match
+const added = fs.existsSync(path.join(ROOT, 'index/added_products.json')) ? read('index/added_products.json').products.map((p) => ({ ...p, source_id: 'added', record_status: 'verified', ingredients: p.ingredients_text.split(/,(?![^()]*\))/).map((x) => x.trim()).filter(Boolean) })) : [];
+const hubKeys = new Set(products.map((p) => (clean(p.brand) + '|' + clean(p.name)).toLowerCase()));
+products.push(...added.filter((p) => !hubKeys.has((p.brand + '|' + p.name).toLowerCase())));
 const hubRun = status.generated_at || status.last_run || status.updated_at || null;
 
 // ---------- 1. Clay product search ----------

@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-24T14:38:23.219Z",
+ "built_at": "2026-10-24T16:13:14.333Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
  "explained_in_safe_batch": 281,
  "queue": [
@@ -21,7 +21,7 @@
   },
   {
    "ingredient": "helianthus annuus seed oil",
-   "products": 1143
+   "products": 1145
   },
   {
    "ingredient": "alpha-isomethyl ionone",
@@ -89,7 +89,7 @@
   },
   {
    "ingredient": "decyl glucoside",
-   "products": 531
+   "products": 533
   },
   {
    "ingredient": "propane",
@@ -197,15 +197,15 @@
   },
   {
    "ingredient": "dipropylene glycol",
+   "products": 328
+  },
+  {
+   "ingredient": "maltodextrin",
    "products": 327
   },
   {
    "ingredient": "cellulose gum",
    "products": 326
-  },
-  {
-   "ingredient": "maltodextrin",
-   "products": 325
   },
   {
    "ingredient": "glyceryl stearate citrate",
@@ -272,16 +272,16 @@
    "products": 274
   },
   {
+   "ingredient": "arginine",
+   "products": 269
+  },
+  {
    "ingredient": "chlorphenesin",
    "products": 269
   },
   {
    "ingredient": "ethylhexyl triazone",
    "products": 269
-  },
-  {
-   "ingredient": "arginine",
-   "products": 267
   },
   {
    "ingredient": "hydrogenated palm glycerides citrate",
@@ -349,7 +349,7 @@
   },
   {
    "ingredient": "sodium stearoyl glutamate",
-   "products": 223
+   "products": 225
   },
   {
    "ingredient": "amyl cinnamal",
@@ -448,16 +448,16 @@
    "products": 174
   },
   {
+   "ingredient": "glycine",
+   "products": 174
+  },
+  {
    "ingredient": "myristic acid",
    "products": 173
   },
   {
    "ingredient": "alumina",
    "products": 173
-  },
-  {
-   "ingredient": "glycine",
-   "products": 172
   },
   {
    "ingredient": "aluminum hydroxide",
@@ -496,12 +496,12 @@
    "products": 163
   },
   {
-   "ingredient": "piroctone olamine",
+   "ingredient": "zea mays starch",
    "products": 163
   },
   {
-   "ingredient": "zea mays starch",
-   "products": 161
+   "ingredient": "piroctone olamine",
+   "products": 163
   },
   {
    "ingredient": "cetyl esters",
@@ -592,12 +592,12 @@
    "products": 138
   },
   {
-   "ingredient": "sodium methyl cocoyl taurate",
-   "products": 136
+   "ingredient": "microcrystalline cellulose",
+   "products": 137
   },
   {
-   "ingredient": "microcrystalline cellulose",
-   "products": 135
+   "ingredient": "sodium methyl cocoyl taurate",
+   "products": 136
   },
   {
    "ingredient": "aminomethyl propanol",
