@@ -477,6 +477,62 @@ function realRoutine(t){
   if(t==='am'){ const sp=by('Sunscreen'); if(sp.length) sp.forEach(p=>add(p,'Protect · every morning')); else gap('Protect · missing','Add a sunscreen (SPF 30+)','The step that makes glycolic and spot creams worth using. Last step, every morning.'); }
   return out;
 }
+/* ---------- Pack for a trip: picks from your shelf by climate ---------- */
+let TRIP={c:'coolwet',d:7,fly:true}; try{ Object.assign(TRIP, JSON.parse(localStorage.getItem('clay-trip'))||{}); }catch(e){}
+function tripSave(){ try{ localStorage.setItem('clay-trip', JSON.stringify(TRIP)); }catch(e){} }
+const TRIP_CLIM={
+ coolwet:{n:'Cool and rainy',ex:'Dublin, London or Vancouver in autumn',expect:'Around 6 to 15 °C, damp air, wind and showers most days, low UV. Skin tends to get windburned and tight on cheeks and lips; hair frizzes in the damp and drizzle.'},
+ cold:{n:'Cold and dry',ex:'Winter cities, ski trips',expect:'Below 5 °C outside, dry heated rooms inside. Expect tight, flaky skin, chapped lips and hands, static and brittle ends.'},
+ hothumid:{n:'Hot and humid',ex:'Caribbean, Lagos, Bangkok',expect:'Over 28 °C, sticky air, sweat and strong UV. Skin gets shinier and breakouts flare under heavy creams; hair swells and frizzes; more body odour.'},
+ hotdry:{n:'Hot and dry',ex:'Dubai, Marrakech, desert trips',expect:'Hot days, cooler nights, very dry air and strong sun. Skin dehydrates fast and dark spots darken; lips and ends dry out.'},
+ mild:{n:'Mild and sunny',ex:'Spring or early autumn, Mediterranean',expect:'Comfortable temperatures and moderate sun. Your usual routine mostly works; sunscreen matters more than you think.'}};
+function tripPack(){
+  const C=TRIP.c, cold=C==='cold'||C==='coolwet', hot=C==='hothumid'||C==='hotdry';
+  const own=MP.filter(p=>p.s==='cur'||p.s==='have');
+  const find=(a,re)=>own.find(p=>(!a||p.a===a)&&re.test(p.st+' '+p.n));
+  const out=[], add=(sec,item,why,miss)=>out.push({sec,item,why,miss:!!miss});
+  // face
+  const cl=find('face',/Cleanser/); if(cl) add('Face',cl.n,'Your usual cleanser.'); else add('Face','A gentle cleanser','Nothing current on your shelf.',1);
+  const moi=own.find(p=>p.a==='face'&&(p.st==='Moisturizer'||/moistur|vanicream|cerave|face cream/i.test(p.n))&&!/eye|spot|correct/i.test(p.n));
+  if(moi) add('Face',moi.n,cold?'Use it morning and night; add a second thin layer before going out in wind.':'Keep it light; once a day may be enough.');
+  else add('Face',cold?'A richer face cream (travel size)':'A light gel moisturiser',cold?'You have no face moisturiser on your shelf, and wind and cold will dry your cheeks first.':'You have no face moisturiser on your shelf.',1);
+  const spf=find('',/sunscreen|spf/i);
+  if(spf) add('Face',spf.n,hot?'Every morning, reapply at midday.':'Mornings; UV is low but not zero.'); else add('Face','Sunscreen SPF 30+', hot?'Strong sun and no sunscreen on your shelf: this is the one to buy.':'Low UV here, but your glycolic toner makes skin more sun-sensitive.',1);
+  const gly=find('face',/glycolic/i); if(gly) add('Face',gly.n,cold?'Optional: 1 or 2 nights at most. Wind and cold make acids sting more.':hot?'Nights only, and skip it on beach or high-sun days.':'Keep your usual nights.');
+  const eye=find('face',/Eye/); if(eye&&TRIP.d>3) add('Face',eye.n,'Small and light; worth bringing.');
+  const sv=find('face',/Serum/); if(sv&&TRIP.d>3) add('Face',sv.n,'Optional; one serum is plenty for a week.');
+  if(cold||C==='hotdry') add('Face','Lip balm','Not on your shelf. Wind and dry air chap lips within a day.',!find('',/lip/i));
+  // body
+  const bars=own.filter(p=>p.a==='body'&&/Wash or soap/.test(p.st));
+  const bar=hot?bars.find(p=>/dial|antibacterial/i.test(p.n)):bars.find(p=>/dove|goat|shea/i.test(p.n));
+  if(bar) add('Body',bar.n,(hot?'For sweaty areas; bars also skip the liquids limit. ':'The gentler bar for drying weather; bars skip the liquids limit. ')+'Pack it in a small tin or bag.');
+  const lot=find('body',/Lotion|cream/i); if(lot) add('Body',lot.n,cold?'Daily on damp skin after the shower; decant about 100 ml for a week.':'A small travel bottle is enough.');
+  const oil=find('body',/^Oil|Oil /); if(oil&&cold) add('Body',oil.n,'Optional: a few drops over lotion on very dry spots.');
+  if(TRIP.d>=7&&find('body',/Scrub/)) add('Body','Leave the scrub at home','Once in a week is plenty; a net sponge or cloth does the job and packs flat.');
+  if(cold) add('Body','Hand cream','Hands dry out first in cold, wet weather.',!find('',/hand cream/i));
+  // hair
+  const sh=find('hair',/Shampoo/), co=find('hair',/^Conditioner/); if(sh) add('Hair',sh.n,'Decant into a 100 ml bottle.'); if(co) add('Hair',co.n,'Decant; it doubles as a quick co-wash.');
+  const li=find('hair',/Leave-in/); if(li) add('Hair',li.n,C==='coolwet'||C==='hothumid'?'Your frizz shield in damp air: leave-in, then seal.':'Your mid-week refresh.');
+  const ho=own.find(p=>p.a==='hair'&&/Oil/.test(p.st)&&/amla|growth/i.test(p.n))||find('hair',/Oil/); if(ho) add('Hair',ho.n,'One oil to seal ends; leave the other creams and oils at home.');
+  if(C==='coolwet'||C==='hothumid') add('Hair','Satin bonnet or scarf, and a hood or umbrella','Rain and humidity undo a style fast; a protective style travels best.');
+  if(C==='cold') add('Hair','Deep conditioner sachet','Dry heated rooms make ends brittle.');
+  // underarms
+  const deo=find('under',/Deodorant/); if(deo) add('Underarms',deo.n,'Your all-day odour control.');
+  const ap=find('under',/Antiperspirant/); if(ap&&(hot||TRIP.d>=5)) add('Underarms',ap.n,hot?'At night on dry skin for heavy sweat days.':'Optional, for long or busy days.');
+  add('Period care','Period bag','Check pads, liners or cups for the whole trip, plus a spare change of underwear.');
+  return out;
+}
+function tripCard(){
+  const C=TRIP_CLIM[TRIP.c], L=tripPack(), secs=[...new Set(L.map(x=>x.sec))], miss=L.filter(x=>x.miss);
+  return card('Pack for a trip', `<p class="small" style="margin-top:0">Pick the weather where you’re going; Clay picks from your shelf and flags what’s missing.</p>
+   <div class="row" style="flex-wrap:wrap;gap:6px">${Object.entries(TRIP_CLIM).map(([k,x])=>`<button class="chip" type="button" aria-pressed="${TRIP.c===k}" data-act="tripc" data-v="${k}">${esc(x.n)}</button>`).join('')}</div>
+   <p class="small muted" style="margin:6px 0">${esc(C.ex)}. ${esc(C.expect)}</p>
+   <div class="row" style="gap:6px;flex-wrap:wrap">${[3,5,7,14].map(d=>`<button class="chip" type="button" aria-pressed="${TRIP.d===d}" data-act="tripd" data-v="${d}">${d} days</button>`).join('')}<button class="chip" type="button" aria-pressed="${TRIP.fly}" data-act="tripfly">Carry-on only</button></div>
+   ${miss.length?`<div class="mp-chk mp-info" style="margin-top:8px"><b class="small">Not on your shelf: ${esc(miss.map(x=>x.item).join(', '))}</b></div>`:''}
+   ${secs.map(s=>`<p class="small" style="margin:10px 0 2px"><b>${esc(s)}</b></p><div class="list small">${L.filter(x=>x.sec===s&&!x.miss).map(x=>`<div style="padding:6px 0"><b>${esc(x.item)}</b><br><span class="muted">${esc(x.why)}</span></div>`).join('')}</div>`).join('')}
+   ${TRIP.fly?`<p class="small muted" style="margin-top:8px">Carry-on: liquids, creams and roll-ons in 100 ml or smaller, all in one clear 1 L bag. Bars, solid balms and powders don’t count. Check your airline before you go.</p>`:''}
+   <p class="small muted">Check the real forecast before you leave; this goes by climate, not the day’s weather.</p>`, {h:'h3', icon:'today'});
+}
 function pageToday(){
   const t = S.t, steps = realRoutine(t), ac=acidTonight();
   const real=steps.filter(s=>!s[5]).length, done = steps.filter((s,i)=>!s[5]&&S.done[t+i]).length;
@@ -489,6 +545,7 @@ function pageToday(){
     ${card('How did your skin feel after last night?', `<div class="row">${['Calm','Tight','Stinging','Red','Flaking'].map(x=>`<button class="chip" type="button" aria-pressed="${S.log===x}" data-act="log" data-v="${x}">${x}</button>`).join('')}</div><p class="small muted">Stinging or flaking? Tap “It stung or flaked” on My Shelf and Clay pauses that active.</p>`, {h:'h3'})}`;
   const rail = `
     ${card(t==='pm'?'Tonight’s weather':'Today’s weather', `<div class="grid3 num">${(t==='pm'?[['moon','7°','low'],['drop','34%','humidity'],['wind','28','wind, km/h']]:[['sun','21°','high'],['drop','31%','humidity'],['alert','6','UV index']]).map(w=>`<div>${ic(w[0],16)}<div style="font-family:var(--display);font-size:26px;line-height:1.1">${w[1]}</div><div class="small muted">${w[2]}</div></div>`).join('')}</div><a href="#" class="small" data-act="go" data-v="pairs">Season settings</a>`, {h:'h3'})}
+    ${tripCard()}
     ${card('Next scan in 5 days', `<p class="small">Same window, same time of day, so the comparison is fair.</p><a href="#" class="small" data-act="go" data-v="scan">Open Scan</a>`, {h:'h3', icon:'scan'})}
     ${card('Scent of the season', `<p class="small muted">On the side, for body only</p><div class="row">${pack('pump','#C9A27E',40,52)}<b>+</b>${pack('jar','#EAD7C0',40,52)}<b>+</b>${pack('mist','#E7C8A0',40,52)}</div><p style="font-family:var(--display);font-size:16px">Sweet and cozy: vanilla wash, almond-milk body cream, caramel mist.</p><a href="#" class="small" data-act="scentgo">See scent layering</a>`, {h:'h3'})}`;
   return {main, rail};
@@ -2021,6 +2078,9 @@ document.addEventListener('click', async (e)=>{
   if (a==='season') S.season=v;
   if (a==='scentSeason') S.scentSeason=v;
   if (a==='clay') S.clayFor=v;
+  if (a==='tripc'){ TRIP.c=v; tripSave(); }
+  if (a==='tripd'){ TRIP.d=+v; tripSave(); }
+  if (a==='tripfly'){ TRIP.fly=!TRIP.fly; tripSave(); }
   if (a==='scanStep') S.scanStep=v;
   if (a==='pairsMode') S.pairsMode=v;
   if (a==='trad') S.trad=v;
