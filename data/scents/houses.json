@@ -117,7 +117,13 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "Mini size",
+   "amt": 1760,
+   "cur": "JPY",
+   "url": "https://shiro-shiro.jp/category/528/12576.html"
+  }
  },
  {
   "id": "j-scent",
@@ -410,7 +416,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "40 ml mini multi perfume",
+   "amt": 30,
+   "cur": "USD",
+   "ml": 40,
+   "url": "https://en.granhand.com/category/perfume/46/"
+  }
  },
  {
   "id": "borntostandout",
@@ -977,7 +990,14 @@
    "perfume oil",
    "solid perfume",
    "bangkok"
-  ]
+  ],
+  "try": {
+   "label": "10 ml body oil",
+   "amt": 1550,
+   "cur": "THB",
+   "ml": 10,
+   "url": "https://karmakamet.co.th/en/product/authentic-perfume-body-oil-10-ml-blend/"
+  }
  },
  {
   "id": "hmns",
@@ -1090,7 +1110,14 @@
    "canada link",
    "tropical",
    "philippine materials"
-  ]
+  ],
+  "try": {
+   "label": "10 ml travel spray",
+   "amt": 60,
+   "cur": "CAD",
+   "ml": 10,
+   "url": "https://www.tadhana.co/products/rockstar"
+  }
  },
  {
   "id": "wren-atelier",
@@ -1419,7 +1446,14 @@
    "oud oil",
    "bakhoor",
    "heritage"
-  ]
+  ],
+  "try": {
+   "label": "0.5 ml sample",
+   "amt": 8.9,
+   "cur": "USD",
+   "ml": 0.5,
+   "url": "https://www.anabis.com/de/Abdul-Samad-Al-Qurashi-Makkah-Blend.html"
+  }
  },
  {
   "id": "swiss-arabian",
@@ -1603,7 +1637,14 @@
    "istanbul",
    "extrait",
    "pineapple"
-  ]
+  ],
+  "try": {
+   "label": "15 ml extrait",
+   "amt": 105,
+   "cur": "EUR",
+   "ml": 15,
+   "url": "https://nishane.com/product/hacivat-15ml/"
+  }
  },
  {
   "id": "saint-dici",
@@ -2092,7 +2133,14 @@
   "tags": [
    "storytelling",
    "smoky"
-  ]
+  ],
+  "try": {
+   "label": "2 ml sample",
+   "amt": 7,
+   "cur": "USD",
+   "ml": 2,
+   "url": "https://imaginaryauthors.com/products/a-city-on-fire"
+  }
  },
  {
   "id": "goldfield-banks",
@@ -2151,7 +2199,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "10 ml",
+   "amt": 54,
+   "cur": "AUD",
+   "ml": 10,
+   "url": "https://www.goldfieldandbanks.com/products/pacific-rock-moss"
+  }
  },
  {
   "id": "hiram-green",
@@ -2267,7 +2322,15 @@
   "alt": [
    "Tiziana Terenzi Borelli",
    "Maison Francis Kurkdjian 724"
-  ]
+  ],
+  "try": {
+   "label": "10 ml travel size",
+   "amt": null,
+   "cur": "THB",
+   "ml": 10,
+   "url": "https://www.instagram.com/borom.official/",
+   "note": "Given free with Shopee bundles (your research)"
+  }
  },
  {
   "id": "reunrom",
@@ -2854,7 +2917,13 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "Discovery 5 set",
+   "amt": 25000,
+   "cur": "KRW",
+   "url": "https://kinfolknotes.com/products/discovery-5"
+  }
  },
  {
   "id": "skybottle",
@@ -3016,7 +3085,13 @@
   "tags": [
    "gourmand",
    "food memory"
-  ]
+  ],
+  "try": {
+   "label": "Sample",
+   "amt": 9,
+   "cur": "USD",
+   "url": "https://stele.nyc/products/kst-scent-banana-milk-coffee-eau-de-parfum"
+  }
  },
  {
   "id": "cosmic-mansion",
@@ -3339,7 +3414,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "SUGI 50 ml at Japan House London",
+   "amt": 170,
+   "cur": "GBP",
+   "ml": 50,
+   "url": "https://shop.japanhouselondon.uk/shop/kitowa-fragrance-sugi"
+  }
  },
  {
   "id": "isak",
@@ -3398,7 +3480,14 @@
   "tags": [
    "attar",
    "spray and oil"
-  ]
+  ],
+  "try": {
+   "label": "3 ml attar",
+   "amt": 490,
+   "cur": "INR",
+   "ml": 3,
+   "url": "https://isakfragrances.com/products/a-royal-walk-attar"
+  }
  },
  {
   "id": "naso-profumi",
@@ -3498,7 +3587,14 @@
   "tags": [
    "petrichor",
    "vetiver"
-  ]
+  ],
+  "try": {
+   "label": "15 ml",
+   "amt": 1900,
+   "cur": "INR",
+   "ml": 15,
+   "url": "https://neeshperfumes.com/products/haute-vetiver"
+  }
  },
  {
   "id": "the-perfumatory",
@@ -3662,7 +3758,14 @@
   "tags": [
    "oil perfume",
    "kampong glam"
-  ]
+  ],
+  "try": {
+   "label": "15 ml oil",
+   "amt": 55,
+   "cur": "SGD",
+   "ml": 15,
+   "url": "https://sifr.sg/products/rajawali"
+  }
  },
  {
   "id": "afnan",
@@ -3778,7 +3881,14 @@
    "canada",
    "montreal",
    "stories"
-  ]
+  ],
+  "try": {
+   "label": "15 ml",
+   "amt": 85,
+   "cur": "USD",
+   "ml": 15,
+   "url": "https://universalflowering.com/products/big-night"
+  }
  },
  {
   "id": "monsillage",
@@ -3832,7 +3942,14 @@
    "canada",
    "montreal",
    "green"
-  ]
+  ],
+  "try": {
+   "label": "7.5 ml travel spray",
+   "amt": 35,
+   "cur": "CAD",
+   "ml": 7.5,
+   "url": "https://monsillage.com/products/eau-de-celeri-7-5ml"
+  }
  },
  {
   "id": "curionoir",
@@ -3888,7 +4005,14 @@
   "tags": [
    "aotearoa",
    "extrait"
-  ]
+  ],
+  "try": {
+   "label": "4 ml pocket parfum",
+   "amt": 60,
+   "cur": "NZD",
+   "ml": 4,
+   "url": "https://curionoir.com/products/moon-moss-1"
+  }
  },
  {
   "id": "the-virtue",
@@ -4194,7 +4318,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "Petite Chérie 30 ml",
+   "amt": 95,
+   "cur": "EUR",
+   "ml": 30,
+   "url": "https://goutalparis.com/"
+  }
  },
  {
   "id": "essential-parfums",
@@ -4298,7 +4429,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "6 ml",
+   "amt": 38,
+   "cur": "EUR",
+   "ml": 6,
+   "url": "https://matiere-premiere.com/products/metal-lavender"
+  }
  },
  {
   "id": "ormaie",
@@ -4350,7 +4488,14 @@
   ],
   "like": [
    "diptyque"
-  ]
+  ],
+  "try": {
+   "label": "20 ml",
+   "amt": 159,
+   "cur": "USD",
+   "ml": 20,
+   "url": "https://ormaie.com/products/papier-carbone-50ml"
+  }
  },
  {
   "id": "etat-libre-dorange",
@@ -4559,7 +4704,14 @@
   "tags": [
    "extrait",
    "long-lasting"
-  ]
+  ],
+  "try": {
+   "label": "5 ml",
+   "amt": 25,
+   "cur": "EUR",
+   "ml": 5,
+   "url": "https://maisoncrivelli.com/products/hibiscus-mahajad"
+  }
  },
  {
   "id": "floral-street",
@@ -4660,7 +4812,14 @@
   "tags": [
    "london",
    "saffron"
-  ]
+  ],
+  "try": {
+   "label": "2 × 10 ml",
+   "amt": 90,
+   "cur": "EUR",
+   "ml": 20,
+   "url": "https://ormondejayne.com/products/bijou-zafran"
+  }
  },
  {
   "id": "miller-harris",
@@ -4763,7 +4922,14 @@
   "tags": [
    "heritage",
    "london"
-  ]
+  ],
+  "try": {
+   "label": "30 ml",
+   "amt": 130,
+   "cur": "USD",
+   "ml": 30,
+   "url": "https://www.penhaligons.com/us/en/p/luna-eau-de-toilette-30ml--000000000065223850"
+  }
  },
  {
   "id": "santa-maria-novella",
@@ -4913,7 +5079,14 @@
   "tags": [
    "extrait",
    "cult"
-  ]
+  ],
+  "try": {
+   "label": "4 ml perfume oil",
+   "amt": 55,
+   "cur": "EUR",
+   "ml": 4,
+   "url": "https://nasomatto.com/products/baraonda"
+  }
  },
  {
   "id": "vilhelm-parfumerie",
@@ -5426,7 +5599,14 @@
   "alt": [
    "Byredo Pulp",
    "Maison Margiela Replica By the Fireplace"
-  ]
+  ],
+  "try": {
+   "label": "2 ml tester included with every bottle",
+   "amt": null,
+   "cur": "ZAR",
+   "ml": 2,
+   "url": "https://wickfragrances.com/products/eau-de-parfum-sugar-hyde-50-ml"
+  }
  },
  {
   "id": "lartisan-parfumeur",
@@ -5769,7 +5949,14 @@
    "on": "2026-10-24",
    "note": "Coltraits US$235 per 50 ml; extraits US$395 per 50 ml (read from their shop; LA origin from your research)."
   },
-  "tags": []
+  "tags": [],
+  "try": {
+   "label": "10 ml perfume oil",
+   "amt": 115,
+   "cur": "USD",
+   "ml": 10,
+   "url": "https://perfumehead.com/collections/all"
+  }
  },
  {
   "id": "histoires-de-parfums",

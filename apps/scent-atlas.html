@@ -1,15 +1,15 @@
 <title>Scent Atlas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,100;1,9..144,400..600,100&family=Nunito+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: a field guide. Summary strip, sticky filter rail, then a grid of specimen cards; glossary and leads below. */
+/* Fonts match Clay (Fraunces, Nunito Sans, IBM Plex Mono). Layout: a field guide. Summary strip, sticky filter rail, then a grid of specimen cards; glossary and leads below. */
 :root {
   --bg: #f1f2f5; --paper: #ffffff; --ink: #1d1f2b; --muted: #5d6072; --line: #dcdee6;
   --accent: #3b3f8f; --accent-soft: #e4e5f4; --resin: #9a6a12; --resin-soft: #f5ecd9;
   --ok: #2f7a4f; --warn: #a3620a; --bad: #b3363a;
-  --display: "Bodoni Moda", "Didot", Georgia, serif;
-  --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
@@ -103,6 +103,15 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .finder .go:disabled { opacity: .5; cursor: default }
 .match { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; background: var(--resin-soft); color: var(--ink); border-radius: 10px; padding: 10px 14px; font-size: 14px }
 .why-match { font-size: 12.5px; background: var(--resin-soft); border-radius: 6px; padding: 4px 8px }
+.themes { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px; align-items: center; margin-top: 14px; padding-bottom: 4px; scrollbar-width: thin }
+.th { flex: none }
+.th { display: inline-flex; align-items: center; gap: 6px; font: 500 12.5px var(--body); color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px 4px 5px; cursor: pointer }
+.th[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) }
+.th .sw { display: inline-flex; border-radius: 999px; overflow: hidden; height: 16px }
+.th .sw i { width: 8px; height: 16px; display: block }
+.try { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; font-size: 13px; border: 1px dashed var(--line); border-radius: 8px; padding: 7px 10px }
+.try b { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--resin); font-weight: 500 }
+.famlink { font: inherit; font-weight: 600; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: 3px }
 footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
 @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s } .card:hover { border-color: var(--accent) } }
 </style>
@@ -113,6 +122,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <h1>Perfume from <em>everywhere</em></h1>
     <p class="lede">Perfume houses, attar makers and incense masters from Asia first, then the Gulf, Africa, the Americas, Oceania and indie Europe. Every entry explains the signature scent, its notes from first spray to dry-down, and what it costs, with Canadian-dollar estimates.</p>
     <div class="stats" id="stats"></div>
+    <div class="themes" id="themes" aria-label="Colour theme"><span class="eyebrow">Theme</span></div>
   </header>
 
   <section class="finder" id="finder">
@@ -128,6 +138,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <select id="sort" aria-label="Sort">
         <option value="region">Sort: by region</option>
         <option value="ml">Sort: cheapest per ml</option>
+        <option value="try">Sort: cheapest way to try</option>
         <option value="cad">Sort: lowest price</option>
         <option value="name">Sort: A to Z</option>
       </select>
@@ -243,6 +254,7 @@ function card(h) {
     <div class="best"><b>Best for</b><span>${prof.season}</span>·<span>${prof.when}</span>·<span>${prof.intensity}</span><i>estimated from its notes</i></div>
     ${h.alt ? `<div class="sim"><b style="font-weight:600;color:var(--ink)">Easy to find instead:</b> ${h.alt.map(esc).join(" · ")}</div>` : ""}
     <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
+    ${h.try ? `<div class="try"><b>Try first</b><span>${esc(h.try.label)}</span>${h.try.amt != null ? `<span class="cad">${money(h.try.amt, h.try.cur)}${h.try.cur !== "CAD" && cad(h.try, rates) != null ? ` · ≈ ${money(cad(h.try, rates), "CAD")}` : ""}</span>` : ""}${h.try.note ? `<span class="why">${esc(h.try.note)}</span>` : ""}${h.try.url ? `<a href="${esc(h.try.url)}" target="_blank" rel="noopener">See it</a>` : ""}</div>` : ""}
     <div class="price"><span class="amt">${amt}</span>${cadTxt ? `<span class="cad">${cadTxt}</span>` : ""}${perMl ? `<span class="cad">${perMl}</span>` : ""}<span class="st ${p.status}">${p.status}</span>
       ${p.note ? `<span class="note">${esc(p.note)}</span>` : ""}${liveTxt ? `<span class="live">${liveTxt}</span>` : ""}</div>
     <div class="links"><a href="${esc(h.site)}" target="_blank" rel="noopener">Visit shop</a>${h.sig.url && h.sig.url !== h.site ? `<a href="${esc(h.sig.url)}" target="_blank" rel="noopener">Scent page</a>` : ""}${p.src && p.src !== h.sig.url && p.src !== h.site ? `<a href="${esc(p.src)}" target="_blank" rel="noopener">Price source</a>` : ""}</div>
@@ -272,13 +284,16 @@ function render() {
     return [h.name, h.country, h.city, h.about, h.why, h.sig.name, h.sig.profile, ...(h.tags || []), ...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || [])].join(" ").toLowerCase().includes(q);
   });
   const key = { name: (h) => h.name, region: (h) => CONT_ORDER.indexOf(h.continent) * 1e6 + D.houses.indexOf(h),
-    cad: (h) => cad(h.price, rates) ?? 1e9, ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
+    cad: (h) => cad(h.price, rates) ?? 1e9, try: (h) => (h.try && cad(h.try, rates) != null ? cad(h.try, rates) : 1e9), ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
   list.sort((a, b) => state.sort === "name" ? a.name.localeCompare(b.name) : key[state.sort](a) - key[state.sort](b));
   $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">${state.shelf ? "Your shelf is empty. Tap ♡ on any house to save it here." : "Nothing matches. Clear a filter or try a single note such as rose or tea."}</p>`;
   $("count").textContent = `${list.length} of ${D.houses.length} houses`;
   const ccs = [...new Set(list.map((h) => h.cc))];
   const reg = ccs.length === 1 && D.regions.find((r) => r.cc === ccs[0]);
-  $("region").hidden = !reg;
+  const famOnly = !reg && state.fam.size === 1 && !q && [...state.fam][0];
+  $("region").hidden = !reg && !famOnly;
+  if (famOnly) { const f = D.fam[famOnly]; const picks = [...list].filter((h) => h.price.ml && cad(h.price, rates) != null).sort((a, b) => cad(a.price, rates) / a.price.ml - cad(b.price, rates) / b.price.ml).slice(0, 3);
+    $("region").innerHTML = `<div class="eyebrow">Scent family</div><h2>${esc(f.label)}</h2><p>${esc(f.what)} ${esc(f.feel)}</p><p class="why">Best for: ${esc(f.wear)} · ${list.length} houses in the atlas</p>${picks.length ? `<p class="mats">Gentlest on the wallet: ${picks.map((h) => `<button class="mini" type="button" data-q="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}</p>` : ""}`; }
   if (reg) $("region").innerHTML = `<div class="eyebrow">Scent culture</div><h2>${esc(reg.country)}</h2><p>${esc(reg.style)}</p><p class="why">${esc(reg.roots)}</p><p class="mats">Key materials: ${esc(reg.materials.join(" · "))}${reg.where ? " · Where to shop: " + esc(reg.where) : ""}</p>`;
 }
 
@@ -301,7 +316,7 @@ function render() {
   $("q").oninput = (e) => { state.q = e.target.value; render(); };
   $("sort").onchange = (e) => { state.sort = e.target.value; render(); };
   $("pyrnote").textContent = families._pyramid || "";
-  $("famlist").innerHTML = famKeys.map((k) => `<div><b>${esc(families[k].label)}</b><span>${esc(families[k].what)} ${esc(families[k].feel)} Best for: ${esc(families[k].wear)}</span></div>`).join("");
+  $("famlist").innerHTML = famKeys.map((k) => `<div><button class="famlink" type="button" data-fam="${k}">${esc(families[k].label)} · see all</button><span>${esc(families[k].what)} ${esc(families[k].feel)} Best for: ${esc(families[k].wear)}</span></div>`).join("");
   $("acclist").innerHTML = Object.entries(families._accents || {}).map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join("");
   $("leads").innerHTML = leads.map((l) => `<li><span><b>${esc(l.name)}</b> · ${esc(l.country)}</span><small>${esc(l.lead)}${l.src ? ` <a href="${esc(l.src)}" target="_blank" rel="noopener">source</a>` : ""}</small></li>`).join("");
   $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
@@ -345,6 +360,39 @@ function render() {
     if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); }
   };
   $("shelfBtn").textContent = `My shelf (${SHELF.size})`;
+  $("region").onclick = (e) => { const q = e.target.closest("[data-q]"); if (q) { state.fam.clear(); document.querySelectorAll("#fams .chip").forEach((c) => c.setAttribute("aria-pressed", "false")); state.q = q.dataset.q; $("q").value = state.q; render(); } };
+  $("famlist").onclick = (e) => { const b = e.target.closest("[data-fam]"); if (!b) return; state.fam.clear(); state.fam.add(b.dataset.fam); state.q = ""; $("q").value = "";
+    document.querySelectorAll("#fams .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === D.fam[b.dataset.fam].label)); render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  // Themes
+  const THEMES = [
+    ["default", "Atlas", null],
+    ["nocturne", "Nocturne Bloom", { sw: ["#1A1026", "#4B2A46", "#7E496B", "#B79AB4", "#EDE6EE"] }],
+    ["dune", "Ethereal Dune", { sw: ["#6B705C", "#B69F7B", "#C49A8A", "#E7CDB8", "#F4EFE6"], light: true }],
+    ["lagoon", "Astral Lagoon", { sw: ["#0D2B36", "#1F5F63", "#4CA7A1", "#A6D6C9", "#E6D6EA"] }],
+    ["crimson", "Crimson Haze", { sw: ["#2B0A12", "#6E1D2F", "#9E3F57", "#C77D8B", "#E7D7D9"] }],
+    ["jade", "Jade Whisper", { sw: ["#1B2E28", "#336B5C", "#71A897", "#B6D8C7", "#ECF3E9"] }],
+    ["velvet", "Velvet Twilight", { sw: ["#1A1331", "#3A2257", "#6B3F7C", "#9A78A6", "#D8C8E6"] }],
+    ["amber", "Amber Mirage", { sw: ["#4A2C1A", "#A35C1E", "#D99A4E", "#EBCB9C", "#FFF3E0"], accent: "#D99A4E", resin: "#EBCB9C" }],
+    ["sakura", "Midnight Sakura", { sw: ["#0B0E1A", "#2C1B2F", "#5E3A5C", "#B47A9A", "#F3E6EC"] }],
+    ["ruix", "Orchid & Abyss", { sw: ["#08202A", "#5A2D5E", "#0F4D5A", "#D9B3D8", "#F4ECF4"], accent: "#D9B3D8", resin: "#6FB3C0" }],
+    ["fig", "Fig Leaf", { sw: ["#260729", "#543A55", "#A091A3", "#B6C648", "#DFE6B0"], accent: "#B6C648", resin: "#C9B8CC" }]];
+  const hx = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, t) => { const A = hx(a), B = hx(b); return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * t).toString(16).padStart(2, "0")).join(""); };
+  const VARS = ["--bg", "--paper", "--ink", "--muted", "--line", "--accent", "--accent-soft", "--resin", "--resin-soft"];
+  function applyTheme(id) {
+    const root = document.documentElement, t = (THEMES.find((x) => x[0] === id) || THEMES[0])[2];
+    VARS.forEach((v) => root.style.removeProperty(v)); root.style.removeProperty("color-scheme");
+    if (t) { const [c0, c1, c2, c3, c4] = t.sw; let v;
+      if (t.light) v = { "--bg": c4, "--paper": mix(c4, "#ffffff", 0.6), "--ink": mix(c0, "#000000", 0.55), "--muted": mix(c0, "#000000", 0.15), "--line": mix(c3, c4, 0.3), "--accent": mix(c2, "#000000", 0.35), "--accent-soft": mix(c3, c4, 0.55), "--resin": mix(c0, "#000000", 0.3), "--resin-soft": mix(c1, c4, 0.65) };
+      else v = { "--bg": c0, "--paper": mix(c0, c1, 0.35), "--ink": c4, "--muted": mix(c4, c2, 0.4), "--line": mix(c0, c1, 0.85), "--accent": t.accent || c3, "--accent-soft": mix(c0, c2, 0.3), "--resin": t.resin || mix(c2, c4, 0.35), "--resin-soft": mix(c0, c2, 0.22) };
+      Object.entries(v).forEach(([k, val]) => root.style.setProperty(k, val)); root.style.setProperty("color-scheme", t.light ? "light" : "dark"); }
+    document.querySelectorAll(".th").forEach((b) => b.setAttribute("aria-pressed", b.dataset.th === id));
+    try { localStorage.setItem("scentatlas.theme", id); } catch (e) {}
+  }
+  $("themes").insertAdjacentHTML("beforeend", THEMES.map(([id, name, t]) => `<button class="th" type="button" data-th="${id}" aria-pressed="false" title="${name}"><span class="sw">${(t ? [t.sw[0], t.sw[2], t.accent || t.sw[3]] : ["#f1f2f5", "#3b3f8f", "#9a6a12"]).map((c) => `<i style="background:${c}"></i>`).join("")}</span>${name}</button>`).join(""));
+  $("themes").onclick = (e) => { const b = e.target.closest("[data-th]"); if (b) applyTheme(b.dataset.th); };
+  let saved = "default"; try { saved = localStorage.getItem("scentatlas.theme") || "default"; } catch (e) {}
+  applyTheme(saved);
   render();
 })();
 </script>
