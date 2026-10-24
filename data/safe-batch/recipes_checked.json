@@ -51235,5 +51235,225 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "glycerin-cleansing-body-oil",
+    "name": "Glycerin-rich cleansing body oil",
+    "claim": "Cushiony oil-gel wash that leaves skin soft, not stripped",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "glycerin",
+        45,
+        "g"
+      ],
+      [
+        "sunflower",
+        25,
+        "g"
+      ],
+      [
+        "jojoba",
+        10,
+        "g"
+      ],
+      [
+        "polysorbate80",
+        15,
+        "g"
+      ],
+      [
+        "showergel",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Stir the oils and polysorbate 80 together, then the glycerin and a little shower gel; shake before each use. Massage onto damp skin, add water so it turns milky, and rinse. Keep water out of the bottle. Shower oils suit dry and many acne-prone skins because they clean without stripping; if you break out, rinse well and avoid heavy oils like coconut on the back and chest.",
+    "inspired": "Onty body cleansing oil (50% glycerin) and pharmacy shower oils",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "body-dark-spot-serum",
+    "name": "Niacinamide and alpha arbutin body serum",
+    "claim": "For uneven tone, post-acne marks and friction spots",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        86,
+        "g"
+      ],
+      [
+        "niacinamide",
+        5,
+        "g"
+      ],
+      [
+        "arbutin",
+        2,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Dissolve niacinamide and arbutin in the water, add glycerin, panthenol and the preservative. Apply a few drops to damp skin or mix into your lotion, once or twice a day. Spots on the body fade slowly (8 to 12 weeks), and only with daily sunscreen on exposed areas. Tranexamic acid and kojic acid in store serums aren't easy to source for home use.",
+    "inspired": "Niacinamide + TXA and alpha arbutin + kojic serums",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "rice-milk-vanilla-musk-perfume-oil",
+    "name": "Rice milk, vanilla and clean musk perfume oil",
+    "claim": "Soft, skin-like musky clean scent",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "musk",
+        0.4,
+        "g"
+      ],
+      [
+        "vanilla",
+        3,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.2,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top with jojoba and rest 2 weeks. White musk is the clean-skin base; a touch of vanilla and sandalwood make it milky; add a rice milk or powdery fragrance oil for the 'fresh laundry' feel.",
+    "inspired": "Clean musk perfumes from Arab brands (Eshal Musk, Aura Vanilla Milk, Rice Milk & Angel Musk)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "frosted-plum-amber-sugar-scrub",
+    "name": "Frosted plum and amber sugar scrub",
+    "claim": "Jammy plum and warm amber scrub",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sugar",
+        1,
+        "cup"
+      ],
+      [
+        "sunflower",
+        0.25,
+        "cup"
+      ],
+      [
+        "shea",
+        2,
+        "tbsp"
+      ],
+      [
+        "vite",
+        0.5,
+        "tsp"
+      ],
+      [
+        "fragrance",
+        3,
+        "g"
+      ],
+      [
+        "mica",
+        0.25,
+        "tsp"
+      ]
+    ],
+    "note": "Melt the shea into the oil, cool, stir in the sugar, a plum or plum-amber fragrance oil and a pinch of purple mica. Keep water out of the jar and scoop with a dry spoon. Use on wet skin 1 to 2 times a week; the floor gets slippery.",
+    "inspired": "Frosted plum shower stack (scrub, wash, lotion, mist)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "milk-and-honey-whipped-body-butter",
+    "name": "Milk and honey whipped body butter",
+    "claim": "Rich, creamy butter with a soft honey scent",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        60,
+        "g"
+      ],
+      [
+        "mango",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "arrowroot",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ]
+    ],
+    "note": "Melt, chill until just set, then whip 5 minutes with the arrowroot (it cuts the greasy feel) and a milk-and-honey fragrance oil. Real honey doesn't mix into an all-butter whip and can weep out, so the scent does the work here. Apply to damp skin after the shower.",
+    "inspired": "Milk and honey shower stack",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

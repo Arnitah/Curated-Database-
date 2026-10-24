@@ -6616,5 +6616,36 @@
     "seen_in": "C-beauty brand pages",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "shower-oils-break-out-acne-prone-skin",
+    "title": "Shower oils will break out acne-prone skin",
+    "topics": [
+      "body",
+      "acne"
+    ],
+    "claims": [
+      {
+        "claim": "Any oil in a body wash clogs pores",
+        "verdict": "false",
+        "truth": "Shower oils contain cleansers that turn the oil milky and rinse it away. Many people with acne-prone skin tolerate them well because they clean without stripping, which can mean less irritation.",
+        "grade": "C"
+      },
+      {
+        "claim": "Shower oils clear acne",
+        "verdict": "partly",
+        "truth": "They can calm dry, irritated skin, but they don't treat acne. Salicylic acid, benzoyl peroxide or a dermatologist's treatment do that.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: back acne tips",
+        "url": "https://www.aad.org/public/diseases/acne/really-works/back-acne"
+      }
+    ],
+    "seen_in": "Body-care carousels on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

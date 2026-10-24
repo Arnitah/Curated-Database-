@@ -7117,5 +7117,29 @@
  "caramel-apple-shea-body-lotion": {
   "verdict": "ok",
   "flags": []
+ },
+ "glycerin-cleansing-body-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Add soap to each scoop, not the jar"
+  ]
+ },
+ "body-dark-spot-serum": {
+  "verdict": "care",
+  "flags": [
+   "care: Too much niacinamide"
+  ]
+ },
+ "rice-milk-vanilla-musk-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "frosted-plum-amber-sugar-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "milk-and-honey-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
  }
 }
