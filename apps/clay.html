@@ -342,7 +342,7 @@ p{margin:0}
 <div class="toast" id="toast" hidden></div>
 
 <script>
-const ICONS = {"sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/>", "moon": "<path d=\"M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z\"/>", "plus": "<path d=\"M12 5v14M5 12h14\"/>", "search": "<circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m20 20-4.2-4.2\"/>", "alert": "<path d=\"M12 3 2.5 20h19z\"/><path d=\"M12 10v4.5M12 17.2v.3\"/>", "stop": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M5.6 5.6l12.8 12.8\"/>", "info": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 11v5.5M12 7.8v.3\"/>", "check": "<path d=\"m4.5 12.5 5 5 10-11\"/>", "shelf": "<path d=\"M3 20h18M3 12h18M5 12V5h4v7M11 12V7h3v5M16 20v-5h3v5M6 20v-5h5v5\"/>", "today": "<rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2\"/><path d=\"M3.5 10h17M8 3v4M16 3v4\"/>", "layers": "<path d=\"m12 3 9 5-9 5-9-5z\"/><path d=\"m3 13 9 5 9-5\"/>", "scan": "<path d=\"M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16\"/><circle cx=\"12\" cy=\"12\" r=\"3.5\"/>", "chev": "<path d=\"m9 5 7 7-7 7\"/>", "back": "<path d=\"m15 5-7 7 7 7\"/>", "split": "<path d=\"M7 4v6a4 4 0 0 0 4 4h6M7 20v-6\"/><path d=\"m14 11 3 3-3 3\"/>", "swap": "<path d=\"M4 8h13l-3-3M20 16H7l3 3\"/>", "leaf": "<path d=\"M5 19c0-8 5-13 14-14 0 9-5 14-13 14\"/><path d=\"M5 19 13 11\"/>", "shield": "<path d=\"M12 3 4.5 6v5.5c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5V6z\"/>", "sample": "<path d=\"M9 3h6M10 3v4l-4 11a2 2 0 0 0 1.9 3h8.2a2 2 0 0 0 1.9-3L14 7V3\"/><path d=\"M7.5 14h9\"/>", "user": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6\"/>", "wallet": "<rect x=\"3\" y=\"6\" width=\"18\" height=\"14\" rx=\"2.5\"/><path d=\"M3 10h18M16 15h2\"/>", "clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/>", "drop": "<path d=\"M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z\"/>", "x": "<path d=\"M6 6l12 12M18 6 6 18\"/>", "filter": "<path d=\"M4 6h16M7 12h10M10 18h4\"/>"}
+const ICONS = {"plane": "<path d=\"M3 13.5 21 6l-3.5 13-5.5-4.5-3 3v-4.5L18 8\"/>", "sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/>", "moon": "<path d=\"M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z\"/>", "plus": "<path d=\"M12 5v14M5 12h14\"/>", "search": "<circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m20 20-4.2-4.2\"/>", "alert": "<path d=\"M12 3 2.5 20h19z\"/><path d=\"M12 10v4.5M12 17.2v.3\"/>", "stop": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M5.6 5.6l12.8 12.8\"/>", "info": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 11v5.5M12 7.8v.3\"/>", "check": "<path d=\"m4.5 12.5 5 5 10-11\"/>", "shelf": "<path d=\"M3 20h18M3 12h18M5 12V5h4v7M11 12V7h3v5M16 20v-5h3v5M6 20v-5h5v5\"/>", "today": "<rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2\"/><path d=\"M3.5 10h17M8 3v4M16 3v4\"/>", "layers": "<path d=\"m12 3 9 5-9 5-9-5z\"/><path d=\"m3 13 9 5 9-5\"/>", "scan": "<path d=\"M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16\"/><circle cx=\"12\" cy=\"12\" r=\"3.5\"/>", "chev": "<path d=\"m9 5 7 7-7 7\"/>", "back": "<path d=\"m15 5-7 7 7 7\"/>", "split": "<path d=\"M7 4v6a4 4 0 0 0 4 4h6M7 20v-6\"/><path d=\"m14 11 3 3-3 3\"/>", "swap": "<path d=\"M4 8h13l-3-3M20 16H7l3 3\"/>", "leaf": "<path d=\"M5 19c0-8 5-13 14-14 0 9-5 14-13 14\"/><path d=\"M5 19 13 11\"/>", "shield": "<path d=\"M12 3 4.5 6v5.5c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5V6z\"/>", "sample": "<path d=\"M9 3h6M10 3v4l-4 11a2 2 0 0 0 1.9 3h8.2a2 2 0 0 0 1.9-3L14 7V3\"/><path d=\"M7.5 14h9\"/>", "user": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6\"/>", "wallet": "<rect x=\"3\" y=\"6\" width=\"18\" height=\"14\" rx=\"2.5\"/><path d=\"M3 10h18M16 15h2\"/>", "clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/>", "drop": "<path d=\"M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z\"/>", "x": "<path d=\"M6 6l12 12M18 6 6 18\"/>", "filter": "<path d=\"M4 6h16M7 12h10M10 18h4\"/>"}
 ;
 Object.assign(ICONS, {
   palette:'<path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-.8 2-1.8 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1 .8-1.6 1.8-1.6H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/>',
@@ -385,7 +385,7 @@ try { const saved = JSON.parse(localStorage.getItem('clay-web')||'{}'); Object.a
 const save = () => { try { localStorage.setItem('clay-web', JSON.stringify({page:S.page,t:S.t,pairsMode:S.pairsMode,scanStep:S.scanStep,zone:S.zone,palette:S.palette,feedback:S.feedback,season:S.season,scentSeason:S.scentSeason,peer:S.peer,cat:S.cat,ing:S.ing})); } catch(e){} };
 
 const PAGES = [
-  ['today','today','Today'], ['routine','layers','Routine'], ['year','clock','Your year'], ['shelf','shelf','My Shelf'],
+  ['today','today','Today'], ['routine','layers','Routine'], ['year','clock','Your year'], ['shelf','shelf','My Shelf'], ['travel','plane','Travel'],
   ['discover','search','Discover'], ['pairs','heart','Pairs <span class="lbl-long">&amp; scent</span>'], ['learn','book','Learn'], ['scan','scan','Scan']
 ];
 
@@ -519,7 +519,6 @@ function tripPack(){
   // underarms
   const deo=find('under',/Deodorant/); if(deo) add('Underarms',deo.n,'Your all-day odour control.');
   const ap=find('under',/Antiperspirant/); if(ap&&(hot||TRIP.d>=5)) add('Underarms',ap.n,hot?'At night on dry skin for heavy sweat days.':'Optional, for long or busy days.');
-  add('Period care','Period bag','Check pads, liners or cups for the whole trip, plus a spare change of underwear.');
   return out;
 }
 const TRIP_WHERE={
@@ -568,6 +567,43 @@ function tripCard(){
    ${TRIP.fly?`<p class="small muted" style="margin-top:8px">Carry-on: liquids, creams and roll-ons in 100 ml or smaller, all in one clear 1 L bag. Bars, solid balms and powders don’t count. Check your airline before you go.</p>`:''}
    <p class="small muted">Check the real forecast before you leave; this goes by climate, not the day’s weather.</p>`, {h:'h3', icon:'today'});
 }
+/* ---------- Travel page: Pack · Scents · Buy there ---------- */
+const TRIP_SWKEY={coolwet:'cold',cold:'cold',hothumid:'hothumid',hotdry:'hotdry',mild:'mild'};
+const TRIP_SCENT_IDEA={coolwet:['vanilla, amber, woody or musky','Warmer, cosier scents carry better in cool, damp air; light citrus fades fast in the cold.'],cold:['vanilla, amber, woody or spicy','Rich scents shine in cold air; skin is drier, so layer over lotion.'],hothumid:['citrus, fruity, fresh and watery','Heavy sweet and amber scents turn cloying in heat; keep it light and spray less.'],hotdry:['citrus, green or fruity','Dry heat burns scent off quickly; reapply a small spray rather than one big dose.'],mild:['floral, fruity or musky','Almost anything works; this is the time for your favourites.']};
+function tripScentsHTML(){
+  const k=TRIP_SWKEY[TRIP.c]||'mild', idea=TRIP_SCENT_IDEA[TRIP.c];
+  const rated=SW.filter(x=>x.type!=='deo'&&x.type!=='wash').map(x=>({x,s:swScore(x,k)})).filter(r=>r.s!==null).sort((a,b)=>b.s-a.s);
+  const pick=rated.filter(r=>r.s>0).slice(0,3), skip=rated.filter(r=>r.s<0).slice(0,2);
+  const deo=MP.find(p=>(p.s==='cur'||p.s==='have')&&p.a==='under'&&/Deodorant/.test(p.st));
+  const row=(n,why)=>`<div style="padding:6px 0"><b>${esc(n)}</b><br><span class="muted">${esc(why)}</span></div>`;
+  return `<p class="small" style="margin-top:0">For this climate, reach for <b>${esc(idea[0])}</b> scents. ${esc(idea[1])}</p>
+   ${pick.length?`<p class="small" style="margin:10px 0 2px"><b>Pack from your scent wardrobe</b></p><div class="list small">${pick.map(r=>row(r.x.n,(SW_TYPE[r.x.type]||'Scent')+' · suits this weather')).join('')}</div>`
+     :`<p class="small muted">${SW.length?'None of your saved scents suit this climate especially well; one light, clean scent is the safe pick.':'Add scents to your wardrobe on the Pairs & scent page and Clay will pick the best ones for each trip.'}</p>`}
+   ${skip.length?`<p class="small" style="margin:10px 0 2px"><b>Leave at home</b></p><div class="list small">${skip.map(r=>row(r.x.n,'Likely to feel too heavy or fade fast here')).join('')}</div>`:''}
+   <p class="small" style="margin:10px 0 2px"><b>Travel tips</b></p><div class="list small">
+    ${row('Bring one scent stack, not five','A matching wash or deodorant plus one perfume is enough for a week'+(deo?` (your ${deo.n.split(',')[0]} already gives you a scent base).`:'.'))}
+    ${row('Go solid or tiny','A roll-on perfume oil, a solid perfume balm or a 5 to 10 ml refill atomiser fits the liquids bag; full glass bottles can leak or break.')}
+    ${row('Spray clothes and hair ends','Scent lasts longer on fabric and hair than on skin, especially in wind and rain.')}
+    ${row('Keep it out of the sun and heat','Heat in cars, beaches and checked luggage breaks perfume down.')}</div>`;
+}
+let TRIPTAB='pack'; try{ TRIPTAB=localStorage.getItem('clay-trip-tab')||'pack'; }catch(e){}
+function pageTravel(){
+  const C=TRIP_CLIM[TRIP.c], L=tripPack(), secs=[...new Set(L.map(x=>x.sec))], miss=L.filter(x=>x.miss);
+  const tabs=[['pack','Pack'],['scents','Scents'],['buy','Buy there']];
+  const setup=card('Where are you going?', `<div class="row" style="flex-wrap:wrap;gap:6px">${Object.entries(TRIP_CLIM).map(([k,x])=>`<button class="chip" type="button" aria-pressed="${TRIP.c===k}" data-act="tripc" data-v="${k}">${esc(x.n)}</button>`).join('')}</div>
+   <div class="row" style="gap:6px;flex-wrap:wrap;margin-top:8px">${[3,5,7,14].map(d=>`<button class="chip" type="button" aria-pressed="${TRIP.d===d}" data-act="tripd" data-v="${d}">${d} days</button>`).join('')}<button class="chip" type="button" aria-pressed="${TRIP.fly}" data-act="tripfly">Carry-on only</button></div>`, {h:'h3', icon:'plane'});
+  const seg=`<div class="seg fill" role="group" aria-label="Trip section" style="margin:0 0 12px">${tabs.map(([k,n])=>`<button type="button" aria-pressed="${TRIPTAB===k}" data-act="triptab" data-v="${k}">${n}</button>`).join('')}</div>`;
+  let body='';
+  if(TRIPTAB==='pack') body=card('Pack from your shelf', `${miss.length?`<div class="mp-chk mp-info" style="margin-top:0"><b class="small">Not on your shelf: ${esc(miss.map(x=>x.item).join(', '))}</b><p class="small" style="margin:4px 0 0">See “Buy there” for good-value picks.</p></div>`:''}
+    ${secs.map(s=>{ const it=L.filter(x=>x.sec===s&&!x.miss); return it.length?`<details ${s==='Face'||s==='Body'?'open':''} style="margin-top:8px"><summary class="small" style="cursor:pointer"><b>${esc(s)}</b> <span class="muted">· ${it.length}</span></summary><div class="list small">${it.map(x=>`<div style="padding:6px 0"><b>${esc(x.item)}</b><br><span class="muted">${esc(x.why)}</span></div>`).join('')}</div></details>`:''; }).join('')}`, {h:'h3'});
+  else if(TRIPTAB==='scents') body=card('Scents for this trip', tripScentsHTML(), {h:'h3', icon:'heart'});
+  else body=card('Worth buying there', tripBuyHTML(miss).replace(/^<p class="small" style="margin:12px 0 4px"><b>Worth buying there<\/b><\/p>/,''), {h:'h3', icon:'wallet'});
+  const main=`<div class="head"><span class="eyebrow">Travel</span><h1>Pack for your trip</h1></div>${setup}${seg}${body}`;
+  const rail=`${card('What to expect', `<p class="small" style="margin-top:0"><b>${esc(C.n)}</b> · ${esc(C.ex)}</p><p class="small">${esc(C.expect)}</p><p class="small muted">Goes by climate, not the day’s weather; check the forecast before you leave.</p>`, {h:'h3', icon:'sun'})}
+    ${TRIP.fly?card('Carry-on rules', `<p class="small" style="margin-top:0">Liquids, creams, gels and roll-ons in 100 ml or smaller, all in one clear 1 L bag. Bars, solid balms, powders and solid perfume don’t count.</p><p class="small muted">Check your airline before you go.</p>`, {h:'h3'}):''}
+    ${card('Period care', `<p class="small" style="margin-top:0">Pack pads, liners or cups for the whole trip plus a spare change of underwear; Clay’s cycle reminder tells you when.</p>`, {h:'h3'})}`;
+  return {main, rail};
+}
 function pageToday(){
   const t = S.t, steps = realRoutine(t), ac=acidTonight();
   const real=steps.filter(s=>!s[5]).length, done = steps.filter((s,i)=>!s[5]&&S.done[t+i]).length;
@@ -580,7 +616,7 @@ function pageToday(){
     ${card('How did your skin feel after last night?', `<div class="row">${['Calm','Tight','Stinging','Red','Flaking'].map(x=>`<button class="chip" type="button" aria-pressed="${S.log===x}" data-act="log" data-v="${x}">${x}</button>`).join('')}</div><p class="small muted">Stinging or flaking? Tap “It stung or flaked” on My Shelf and Clay pauses that active.</p>`, {h:'h3'})}`;
   const rail = `
     ${card(t==='pm'?'Tonight’s weather':'Today’s weather', `<div class="grid3 num">${(t==='pm'?[['moon','7°','low'],['drop','34%','humidity'],['wind','28','wind, km/h']]:[['sun','21°','high'],['drop','31%','humidity'],['alert','6','UV index']]).map(w=>`<div>${ic(w[0],16)}<div style="font-family:var(--display);font-size:26px;line-height:1.1">${w[1]}</div><div class="small muted">${w[2]}</div></div>`).join('')}</div><a href="#" class="small" data-act="go" data-v="pairs">Season settings</a>`, {h:'h3'})}
-    ${tripCard()}
+    ${card('Travelling soon?', `<p class="small" style="margin-top:0">Clay can pack from your shelf for the weather where you’re going, pick scents for the trip and suggest good-value buys there.</p><a href="#" class="small" data-act="go" data-v="travel">Open Travel</a>`, {h:'h3', icon:'plane'})}
     ${card('Next scan in 5 days', `<p class="small">Same window, same time of day, so the comparison is fair.</p><a href="#" class="small" data-act="go" data-v="scan">Open Scan</a>`, {h:'h3', icon:'scan'})}
     ${card('Scent of the season', `<p class="small muted">On the side, for body only</p><div class="row">${pack('pump','#C9A27E',40,52)}<b>+</b>${pack('jar','#EAD7C0',40,52)}<b>+</b>${pack('mist','#E7C8A0',40,52)}</div><p style="font-family:var(--display);font-size:16px">Sweet and cozy: vanilla wash, almond-milk body cream, caramel mist.</p><a href="#" class="small" data-act="scentgo">See scent layering</a>`, {h:'h3'})}`;
   return {main, rail};
@@ -2068,7 +2104,7 @@ function pageYear(){
    return {main: main+card('From Safe Batch', importBox('log'), {h:'h3', icon:'today'}), rail};
 }
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const RENDER = {check:pageCheck, today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
+const RENDER = {check:pageCheck, today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, travel:pageTravel, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
 const $ = (s) => document.querySelector(s);
 function currentPalette(){ return S.palette || 'clay'; }
 function render(){
@@ -2114,6 +2150,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='season') S.season=v;
   if (a==='scentSeason') S.scentSeason=v;
   if (a==='clay') S.clayFor=v;
+  if (a==='triptab'){ TRIPTAB=v; try{ localStorage.setItem('clay-trip-tab',v); }catch(e){} }
   if (a==='tripc'){ TRIP.c=v; tripSave(); }
   if (a==='tripd'){ TRIP.d=+v; tripSave(); }
   if (a==='tripfly'){ TRIP.fly=!TRIP.fly; tripSave(); }
