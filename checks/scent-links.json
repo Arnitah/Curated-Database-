@@ -1,0 +1,205 @@
+{
+ "checked": "2026-10-24",
+ "summary": {
+  "pass": 35,
+  "blocked": 4,
+  "fail": 0
+ },
+ "houses": {
+  "parfum-satori": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "shiro": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "j-scent": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "shoyeido": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "tamburins": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "nonfiction": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "granhand": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "borntostandout": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "pesade": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "to-summer": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "documents": {
+   "site": "blocked",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "uttori": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ichun": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "bombay-perfumery": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "gulab-singh-johrimal": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "spa-ceylon": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "karmakamet": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "hmns": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "tadhana": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "wren-atelier": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "gp-fragrances": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "toouch": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "maison-bagian": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "amouage": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "abdul-samad-al-qurashi": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "swiss-arabian": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lattafa": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "nishane": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "saint-dici": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "scentury": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "beguile": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "xinu": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "coqui-coqui": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "fueguia-1833": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "natura": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "zoologist": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "imaginary-authors": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "goldfield-banks": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "hiram-green": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  }
+ }
+}

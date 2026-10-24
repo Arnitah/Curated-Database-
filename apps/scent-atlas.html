@@ -1,0 +1,233 @@
+<title>Scent Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field guide. Summary strip, sticky filter rail, then a grid of specimen cards; glossary and leads below. */
+:root {
+  --bg: #f1f2f5; --paper: #ffffff; --ink: #1d1f2b; --muted: #5d6072; --line: #dcdee6;
+  --accent: #3b3f8f; --accent-soft: #e4e5f4; --resin: #9a6a12; --resin-soft: #f5ecd9;
+  --ok: #2f7a4f; --warn: #a3620a; --bad: #b3363a;
+  --display: "Bodoni Moda", "Didot", Georgia, serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #14151c; --paper: #1c1e28; --ink: #ecedf3; --muted: #a2a5b8; --line: #2e3140;
+  --accent: #a9adf2; --accent-soft: #2a2d4e; --resin: #e0b45c; --resin-soft: #3a2f18;
+  --ok: #6fcf97; --warn: #f0b35a; --bad: #f08a8d; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #14151c; --paper: #1c1e28; --ink: #ecedf3; --muted: #a2a5b8; --line: #2e3140;
+  --accent: #a9adf2; --accent-soft: #2a2d4e; --resin: #e0b45c; --resin-soft: #3a2f18;
+  --ok: #6fcf97; --warn: #f0b35a; --bad: #f08a8d; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px }
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 28px }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0 }
+h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.02; letter-spacing: -0.01em }
+h1 em { color: var(--accent); font-style: italic }
+h2 { font-size: 1.6rem }
+.lede { max-width: 62ch; color: var(--muted); margin: 10px 0 0 }
+.eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted) }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 18px; font-variant-numeric: tabular-nums }
+.stats div { display: grid } .stats b { font-family: var(--display); font-size: 1.7rem; font-weight: 500; line-height: 1.1 }
+.stats span { font-size: 12px; color: var(--muted) }
+
+.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: grid; gap: 8px }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
+.row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
+.row .lab { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); min-width: 74px }
+input[type=search], select { font: inherit; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px }
+input[type=search] { flex: 1 1 220px; min-width: 0 }
+.chip { font: 500 13px var(--body); color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+.chip:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.count { font-size: 13px; color: var(--muted); margin-left: auto }
+
+.region { background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; display: grid; gap: 6px }
+.region p { margin: 0; max-width: 75ch }
+.region .mats { font-family: var(--mono); font-size: 12px; color: var(--muted) }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; align-items: start }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 10px; min-width: 0 }
+.head { display: flex; justify-content: space-between; gap: 10px; align-items: start }
+.head h3 { font-size: 1.35rem; line-height: 1.15 }
+.where { font-size: 13px; color: var(--muted) }
+.tags { display: flex; flex-wrap: wrap; gap: 5px }
+.tag { font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em; border-radius: 4px; padding: 2px 6px; background: var(--bg); color: var(--muted) }
+.tag.type { background: var(--resin-soft); color: var(--resin) }
+.dot { width: 9px; height: 9px; border-radius: 50%; flex: none; margin-top: 8px }
+.dot.pass { background: var(--ok) } .dot.blocked { background: var(--warn) } .dot.fail { background: var(--bad) } .dot.none { background: var(--line) }
+.sig { border-top: 1px dashed var(--line); padding-top: 10px; display: grid; gap: 8px }
+.sig .nm { font-family: var(--display); font-style: italic; font-size: 1.08rem }
+.pyr { display: grid; grid-template-columns: 44px 1fr; gap: 3px 8px; font-size: 13px }
+.pyr dt { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-top: 2px }
+.pyr dd { margin: 0 }
+.profile { margin: 0; font-size: 14px }
+.why { margin: 0; font-size: 13px; color: var(--muted) }
+.price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; background: var(--bg); border-radius: 8px; padding: 8px 10px; font-variant-numeric: tabular-nums }
+.price .amt { font-family: var(--mono); font-weight: 500; font-size: 15px }
+.price .cad { font-family: var(--mono); font-size: 13px; color: var(--accent) }
+.price .note { flex-basis: 100%; font-size: 12px; color: var(--muted) }
+.st { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; border: 1px solid currentColor }
+.st.verified { color: var(--ok) } .st.retailer { color: var(--accent) } .st.reported { color: var(--warn) } .st.unknown { color: var(--muted) }
+.live { font-size: 12px; color: var(--muted); flex-basis: 100% }
+.links { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px }
+a { color: var(--accent); text-underline-offset: 3px }
+.empty { color: var(--muted); padding: 24px 0 }
+
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; align-items: start }
+details { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px }
+summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
+.gl { display: grid; gap: 10px; margin-top: 12px }
+.gl div { display: grid; gap: 2px } .gl b { font-weight: 600 } .gl span { font-size: 13.5px; color: var(--muted) }
+.leads { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px }
+.leads li { font-size: 13.5px; display: grid; gap: 1px } .leads small { color: var(--muted) }
+footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s } .card:hover { border-color: var(--accent) } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Curated database · scents</div>
+    <h1>Perfume from <em>everywhere</em></h1>
+    <p class="lede">Perfume houses, attar makers and incense masters from Asia first, then the Gulf, Africa, the Americas, Oceania and indie Europe. Every entry explains the signature scent, its notes from first spray to dry-down, and what it costs, with Canadian-dollar estimates.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="rail">
+    <div class="row">
+      <input type="search" id="q" placeholder="Search a note, house or country (try osmanthus, oud, tea)" aria-label="Search">
+      <select id="sort" aria-label="Sort">
+        <option value="region">Sort: by region</option>
+        <option value="ml">Sort: cheapest per ml</option>
+        <option value="cad">Sort: lowest price</option>
+        <option value="name">Sort: A to Z</option>
+      </select>
+    </div>
+    <div class="row" id="conts"><span class="lab">Continent</span></div>
+    <div class="row" id="fams"><span class="lab">Smells</span></div>
+    <div class="row" id="types"><span class="lab">Kind</span><span class="count" id="count"></span></div>
+  </div>
+
+  <section class="region" id="region" hidden></section>
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <div class="two">
+    <details id="gloss" open>
+      <summary>How to read a scent</summary>
+      <p class="why" id="pyrnote"></p>
+      <div class="gl" id="famlist"></div>
+      <h3 style="font-size:1.05rem;margin-top:16px">Words you will meet</h3>
+      <div class="gl" id="acclist"></div>
+    </details>
+    <details id="leadbox">
+      <summary>Next to research</summary>
+      <p class="why">Houses found but not yet checked well enough for a full entry.</p>
+      <ul class="leads" id="leads"></ul>
+    </details>
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const GH = "https://raw.githubusercontent.com/Arnitah/curated-database-/main/";
+const BASES = ["./", "../", GH];
+async function load(f, fallback) {
+  for (const b of BASES) { try { const r = await fetch(b + f, { cache: "no-cache" }); if (r.ok) return await r.json(); } catch (e) {} }
+  return fallback;
+}
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const CONT_ORDER = ["Asia", "Europe/Asia", "Africa", "Americas", "Oceania", "Europe"];
+const TYPE_LABEL = { niche: "Niche", indie: "Indie", lifestyle: "Lifestyle", attar: "Attar & oil", incense: "Incense", mass: "Affordable", "inspired-by": "Inspired-by" };
+const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region" };
+let D;
+
+function cad(p, rates, which = "amt") {
+  const v = p[which]; const r = rates[p.cur];
+  return typeof v === "number" && r ? v * r : null;
+}
+const money = (v, cur) => v == null ? "" : new Intl.NumberFormat("en-CA", { style: "currency", currency: cur, maximumFractionDigits: v >= 1000 ? 0 : 2 }).format(v);
+
+function chips(el, values, set, label = (v) => v) {
+  for (const v of values) {
+    const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.textContent = label(v); b.setAttribute("aria-pressed", "false");
+    b.onclick = () => { set.has(v) ? set.delete(v) : set.add(v); b.setAttribute("aria-pressed", set.has(v)); render(); };
+    el.appendChild(b);
+  }
+}
+
+function card(h) {
+  const rates = D.rates.cad_per, p = h.price || {}, link = D.links.houses?.[h.id], live = D.prices.houses?.[h.id];
+  const worst = !link ? "none" : Object.values(link).filter(Boolean).some((s) => s.startsWith("fail")) ? "fail" : Object.values(link).includes("blocked") ? "blocked" : "pass";
+  const linkTitle = { none: "Link not checked yet", pass: "Links working at last check", blocked: "Site refuses automated checks; open it yourself", fail: "A link failed at last check" }[worst];
+  const c1 = cad(p, rates), c2 = cad(p, rates, "amt_max");
+  const amt = p.amt == null ? "Price not published" : money(p.amt, p.cur) + (p.amt_max ? " to " + money(p.amt_max, p.cur) : "") + (p.ml ? ` · ${p.ml} ml` : "");
+  const cadTxt = c1 == null || p.cur === "CAD" ? "" : `≈ ${money(c1, "CAD")}${c2 ? " to " + money(c2, "CAD") : ""}`;
+  const perMl = c1 != null && p.ml ? `${money(c1 / p.ml, "CAD")}/ml` : "";
+  const n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
+  const liveTxt = live && live.variants?.length ? "Shop today: " + live.variants.slice(0, 3).map((v) => `${esc(v.title === "Default Title" ? "" : v.title + " ")}${v.price}`).join(" · ") + (live.changed ? " (changed since last week)" : "") : "";
+  return `<article class="card">
+    <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(h.city || "")}${h.city ? ", " : ""}${esc(h.country)}${h.founded ? " · since " + h.founded : ""}</div></div>
+      <span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></div>
+    <div class="tags"><span class="tag type">${esc(TYPE_LABEL[h.type] || h.type)}</span>${h.families.map((f) => `<span class="tag">${esc(D.fam[f]?.label || f)}</span>`).join("")}${(h.accents || []).map((a) => `<span class="tag">${esc(a)}</span>`).join("")}</div>
+    <p class="why">${esc(h.about)}</p>
+    <div class="sig"><div class="nm">${esc(h.sig.name)}</div>
+      ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v.join(", "))}</dd>`).join("")}</dl>` : ""}
+      <p class="profile">${esc(h.sig.profile)}</p></div>
+    <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
+    <div class="price"><span class="amt">${amt}</span>${cadTxt ? `<span class="cad">${cadTxt}</span>` : ""}${perMl ? `<span class="cad">${perMl}</span>` : ""}<span class="st ${p.status}">${p.status}</span>
+      ${p.note ? `<span class="note">${esc(p.note)}</span>` : ""}${liveTxt ? `<span class="live">${liveTxt}</span>` : ""}</div>
+    <div class="links"><a href="${esc(h.site)}" target="_blank" rel="noopener">Visit shop</a>${h.sig.url && h.sig.url !== h.site ? `<a href="${esc(h.sig.url)}" target="_blank" rel="noopener">Scent page</a>` : ""}${p.src && p.src !== h.sig.url && p.src !== h.site ? `<a href="${esc(p.src)}" target="_blank" rel="noopener">Price source</a>` : ""}</div>
+  </article>`;
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase(), rates = D.rates.cad_per;
+  let list = D.houses.filter((h) => {
+    if (state.cont.size && !state.cont.has(h.continent)) return false;
+    if (state.fam.size && !h.families.some((f) => state.fam.has(f))) return false;
+    if (state.type.size && !state.type.has(h.type)) return false;
+    if (!q) return true;
+    const n = h.sig.notes || {};
+    return [h.name, h.country, h.city, h.about, h.why, h.sig.name, h.sig.profile, ...(h.tags || []), ...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || [])].join(" ").toLowerCase().includes(q);
+  });
+  const key = { name: (h) => h.name, region: (h) => CONT_ORDER.indexOf(h.continent) * 1e6 + D.houses.indexOf(h),
+    cad: (h) => cad(h.price, rates) ?? 1e9, ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
+  list.sort((a, b) => state.sort === "name" ? a.name.localeCompare(b.name) : key[state.sort](a) - key[state.sort](b));
+  $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">Nothing matches. Clear a filter or try a single note such as rose or tea.</p>`;
+  $("count").textContent = `${list.length} of ${D.houses.length} houses`;
+  const ccs = [...new Set(list.map((h) => h.cc))];
+  const reg = ccs.length === 1 && D.regions.find((r) => r.cc === ccs[0]);
+  $("region").hidden = !reg;
+  if (reg) $("region").innerHTML = `<div class="eyebrow">Scent culture</div><h2>${esc(reg.country)}</h2><p>${esc(reg.style)}</p><p class="why">${esc(reg.roots)}</p><p class="mats">Key materials: ${esc(reg.materials.join(" · "))}${reg.where ? " · Where to shop: " + esc(reg.where) : ""}</p>`;
+}
+
+(async () => {
+  const [houses, families, regions, rates, leads, links, prices] = await Promise.all([
+    load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
+    load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []),
+    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} })]);
+  D = { houses, regions, rates, leads, links, prices, fam: families };
+  const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
+  const verified = houses.filter((h) => h.price.status === "verified" || h.price.status === "retailer").length;
+  $("stats").innerHTML = [[houses.length, "houses"], [countries.size, "countries"], [verified, "prices checked"], [leads.length, "leads to research"],
+    [links.checked || rates.on || "–", "last check"]].map(([b, s]) => `<div><b>${esc(b)}</b><span>${s}</span></div>`).join("");
+  chips($("conts"), conts, state.cont, (c) => c === "Europe/Asia" ? "Türkiye" : c);
+  const famKeys = Object.keys(families).filter((k) => !k.startsWith("_") && houses.some((h) => h.families.includes(k)));
+  chips($("fams"), famKeys, state.fam, (k) => families[k].label);
+  chips($("types"), Object.keys(TYPE_LABEL).filter((t) => houses.some((h) => h.type === t)), state.type, (t) => TYPE_LABEL[t]);
+  $("types").appendChild($("count"));
+  $("q").oninput = (e) => { state.q = e.target.value; render(); };
+  $("sort").onchange = (e) => { state.sort = e.target.value; render(); };
+  $("pyrnote").textContent = families._pyramid || "";
+  $("famlist").innerHTML = famKeys.map((k) => `<div><b>${esc(families[k].label)}</b><span>${esc(families[k].what)} ${esc(families[k].feel)} Best for: ${esc(families[k].wear)}</span></div>`).join("");
+  $("acclist").innerHTML = Object.entries(families._accents || {}).map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join("");
+  $("leads").innerHTML = leads.map((l) => `<li><span><b>${esc(l.name)}</b> · ${esc(l.country)}</span><small>${esc(l.lead)} <a href="${esc(l.src)}" target="_blank" rel="noopener">source</a></small></li>`).join("");
+  $("foot").innerHTML = `Prices are as found on the check date: <b>verified</b> means read on the brand's own shop, <b>retailer</b> a reseller, <b>reported</b> from an article. Canadian-dollar figures are estimates from ${esc(rates.source || "seed")} rates on ${esc(rates.on || "")} and exclude shipping and duties. Dots show whether each house's links worked at the last weekly check (green working, amber site blocks automated checks, red broken). Not affiliated with any brand.`;
+  render();
+})();
+</script>

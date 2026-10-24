@@ -1,0 +1,36 @@
+name: Weekly scent atlas check
+
+# Every Monday: refresh exchange rates, check every perfume house link, and read live prices
+# from shops that expose them. Results land in checks/scent-links.json and checks/scent-prices.json.
+on:
+  schedule:
+    - cron: '47 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refs/heads/main
+  cancel-in-progress: false
+
+jobs:
+  scents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check links, prices and rates
+        run: node scripts/check-scents.mjs
+      - name: Validate and bump version
+        run: node scripts/build.mjs
+      - name: Commit if anything changed
+        run: |
+          git add checks data/scents version.json
+          if git diff --cached --quiet; then echo "Nothing changed this week"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Weekly scent atlas check [skip ci]"
+          git pull --rebase && git push

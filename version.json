@@ -1,6 +1,6 @@
 {
-  "version": 66,
-  "updated_at": "2026-10-24T00:51:33.188Z",
+  "version": 67,
+  "updated_at": "2026-10-24T01:36:02.784Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -313,6 +313,36 @@
       "bytes": 43836,
       "hash": "d2c47844abef",
       "updated_at": "2026-10-24T00:10:53.878Z"
+    },
+    "scents/families": {
+      "count": 12,
+      "bytes": 3208,
+      "hash": "6114073a1d07",
+      "updated_at": "2026-10-24T01:36:02.784Z"
+    },
+    "scents/houses": {
+      "count": 39,
+      "bytes": 54643,
+      "hash": "5572992fdb26",
+      "updated_at": "2026-10-24T01:36:02.784Z"
+    },
+    "scents/leads": {
+      "count": 19,
+      "bytes": 3788,
+      "hash": "104ef4db2b9f",
+      "updated_at": "2026-10-24T01:36:02.784Z"
+    },
+    "scents/rates": {
+      "count": 5,
+      "bytes": 657,
+      "hash": "4de9c142503c",
+      "updated_at": "2026-10-24T01:36:02.784Z"
+    },
+    "scents/regions": {
+      "count": 23,
+      "bytes": 7060,
+      "hash": "4150f837ab84",
+      "updated_at": "2026-10-24T01:36:02.784Z"
     }
   }
 }

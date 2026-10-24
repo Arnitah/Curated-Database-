@@ -1,0 +1,21 @@
+[
+ { "name": "Di Ser", "country": "Japan", "cc": "JP", "lead": "Hokkaido natural perfumer; hard to buy, few samples.", "src": "https://www.parfumo.com/forums/post/180717" },
+ { "name": "çanoma", "country": "Japan", "cc": "JP", "lead": "Sold at Nose Shop (Tokyo, Osaka). Scent example: 8-17 Matsukaze.", "src": "https://www.parfumo.com/forums/post/180717" },
+ { "name": "Ko-Gu", "country": "Japan", "cc": "JP", "lead": "Test-tube bottles at Nose Shop; known for Banana.", "src": "https://www.parfumo.com/forums/post/180717" },
+ { "name": "Yubune", "country": "Japan", "cc": "JP", "lead": "Japanese bath-house inspired scents (Take, Tsuki).", "src": "https://www.parfumo.com/forums/post/180717" },
+ { "name": "Nose Shop", "country": "Japan", "cc": "JP", "lead": "Tokyo and Osaka niche shop; best single place to find Japanese indies.", "src": "https://www.parfumo.com/forums/post/180717" },
+ { "name": "Reclassified", "country": "China", "cc": "CN", "lead": "Story-led scents from Chinese myth and literature (Sheng, Dan).", "src": "https://mega-asia.com/beauty/chinese-niche-perfume-brands-fragrance-guide/" },
+ { "name": "Melt Season", "country": "China", "cc": "CN", "lead": "Marine and woody scents with an Eastern lens (Persona).", "src": "https://mega-asia.com/beauty/chinese-niche-perfume-brands-fragrance-guide/" },
+ { "name": "Alchemist", "country": "Indonesia", "cc": "ID", "lead": "Local brand: Home Garden, Pink Laundry.", "src": "https://harpersbazaar.my/beauty/indonesian-perfume-brands/" },
+ { "name": "Zentja", "country": "Indonesia", "cc": "ID", "lead": "Since Day One, Give It Time; bergamot and white musk style.", "src": "https://harpersbazaar.my/beauty/indonesian-perfume-brands/" },
+ { "name": "Onix Fragrance", "country": "Indonesia", "cc": "ID", "lead": "Instagram-led local brand; floral, woody, musky.", "src": "https://harpersbazaar.my/beauty/indonesian-perfume-brands/" },
+ { "name": "Gramiix", "country": "Philippines", "cc": "PH", "lead": "Bare Nude, Mandarin Caramel; says 15-20% oil concentration.", "src": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt" },
+ { "name": "Olfacto Perfumery", "country": "Philippines", "cc": "PH", "lead": "Scents named after Ilocano words (Ayat, Isem, Kapya).", "src": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt" },
+ { "name": "d'Annam", "country": "Vietnam", "cc": "VN", "lead": "Vietnamese Coffee scent (roasted beans, condensed milk).", "src": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands" },
+ { "name": "Maison de Nguyen", "country": "Vietnam", "cc": "VN", "lead": "Huế-inspired: rice, lotus, saffron, incense.", "src": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands" },
+ { "name": "Y25", "country": "Vietnam", "cc": "VN", "lead": "Hội An Déjà Vu, L'Automne de Hà Nội.", "src": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands" },
+ { "name": "Ajmal", "country": "United Arab Emirates", "cc": "AE", "lead": "Large Dubai house with Indian roots; oud and attar ranges. Shop blocks automated reading.", "src": "https://en-ae.ajmal.com/collection" },
+ { "name": "Marrakech Imperial", "country": "Morocco (inspired)", "cc": "MA", "lead": "Moroccan-inspired niche sold in European niche shops; origin still to confirm.", "src": "https://thingtesting.com/brands/marrakech-imperial" },
+ { "name": "Scent of Africa", "country": "Africa (pan-African)", "cc": "ZA", "lead": "Buchu, Egyptian jasmine, Moroccan armoise; sold via Lux Afrique.", "src": "https://yourluxury.africa/fashion-beauty/africa-bottled/" },
+ { "name": "Monbeau Afrique", "country": "Africa", "cc": "TZ", "lead": "Cratère Tanzanien: savannah after a storm.", "src": "https://yourluxury.africa/fashion-beauty/africa-bottled/" }
+]

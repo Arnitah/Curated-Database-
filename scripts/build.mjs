@@ -85,6 +85,34 @@ if (myths) {
   if (legacy) warnings.push(`${legacy} legacy myths still need verdicts and sources (upgrade to format v2 over time)`);
 }
 
+// Scents: perfume houses
+const houses = sets['scents/houses']?.data;
+if (houses) {
+  const fam = new Set(Object.keys(sets['scents/families']?.data || {}).filter((k) => !k.startsWith('_')));
+  const regionCc = new Set((sets['scents/regions']?.data || []).map((r) => r.cc));
+  const rates = sets['scents/rates']?.data?.cad_per || {};
+  const ST = new Set(['verified', 'retailer', 'reported', 'unknown']), seen = new Set();
+  const url = (u) => typeof u === 'string' && /^https?:\/\//.test(u);
+  for (const h of houses) {
+    const w = `scents/houses ${h?.id || '?'}`;
+    if (!h.id || !/^[a-z0-9-]+$/.test(h.id)) errors.push(`${w}: needs an id (lowercase-with-dashes)`);
+    else if (seen.has(h.id)) errors.push(`${w}: duplicate id`);
+    seen.add(h.id);
+    for (const k of ['name', 'country', 'cc', 'continent', 'type', 'about']) if (!h[k]) errors.push(`${w}: missing ${k}`);
+    if (!url(h.site)) errors.push(`${w}: site must be a link`);
+    if (!Array.isArray(h.families) || !h.families.length) errors.push(`${w}: needs at least one family`);
+    for (const f of h.families || []) if (fam.size && !fam.has(f)) errors.push(`${w}: unknown family "${f}"`);
+    if (!h.sig?.name || !h.sig?.profile) errors.push(`${w}: signature needs name and profile`);
+    if (h.sig?.url && !url(h.sig.url)) errors.push(`${w}: sig.url must be a link`);
+    const p = h.price || {};
+    if (!ST.has(p.status)) errors.push(`${w}: price.status must be verified, retailer, reported or unknown`);
+    if (p.status !== 'unknown' && typeof p.amt !== 'number') errors.push(`${w}: price.amt must be a number unless status is unknown`);
+    if (p.cur && !(p.cur in rates)) errors.push(`${w}: no exchange rate for ${p.cur}`);
+    if (!url(p.src) || !/^\d{4}-\d{2}-\d{2}$/.test(p.on || '')) errors.push(`${w}: price needs src link and checked date`);
+    if (regionCc.size && !regionCc.has(h.cc)) warnings.push(`${w}: no regions entry for ${h.cc}`);
+  }
+}
+
 // Never allow personal data in this repo
 for (const k of Object.keys(sets)) if (/user|profile|log|saved|personal/i.test(k.split('/')[1]) && !/^safe-batch\/(year_|qy_)/.test(k)) errors.push(`${k}: personal data doesn't belong in this repo`);
 

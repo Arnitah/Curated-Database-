@@ -1,0 +1,2174 @@
+[
+ {
+  "id": "parfum-satori",
+  "name": "Parfum Satori",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Tokyo (Shibuya)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://parfum-satori.com/",
+  "about": "A one-perfumer house run by a French-trained Japanese nose who works almost entirely from Japanese plants, tea, incense culture and seasonal moods.",
+  "why": "Barely distributed outside Japan, so it is still a discovery for most Western noses. One of the clearest examples of a modern Japanese perfume voice.",
+  "families": [
+   "woody",
+   "spicy",
+   "amber"
+  ],
+  "accents": [
+   "incense",
+   "cacao"
+  ],
+  "sig": {
+   "name": "SATORI (Eau de Parfum)",
+   "url": "https://parfum-satori.com/?tid=18&mode=f23",
+   "notes": {
+    "t": [
+     "bergamot",
+     "coriander"
+    ],
+    "h": [
+     "cinnamon",
+     "clove",
+     "cacao",
+     "vanilla"
+    ],
+    "b": [
+     "olibanum",
+     "sandalwood",
+     "oakmoss"
+    ]
+   },
+   "profile": "Imagine the calm of a temple incense ceremony, then add a thread of cocoa and cinnamon. It is built to suggest kyara, the rarest grade of agarwood, without the barnyard heaviness some oud carries: dry, quiet, warm and very straight-lined on skin."
+  },
+  "price": {
+   "amt": 21120,
+   "cur": "JPY",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://parfum-satori.com/?tid=18&mode=f23",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "japanese incense",
+   "kyara",
+   "quiet"
+  ]
+ },
+ {
+  "id": "shiro",
+  "name": "SHIRO",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Hokkaido origin, stores across Japan",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://shiro-shiro.jp/",
+  "about": "A Japanese skincare-and-fragrance brand known for soft, clean, everyday scents sold at very gentle prices.",
+  "why": "Hugely popular inside Japan but little known abroad. The easiest, cheapest way to try the Japanese taste for clean, close-to-skin scent.",
+  "families": [
+   "citrus",
+   "green",
+   "musk"
+  ],
+  "accents": [
+   "tea"
+  ],
+  "sig": {
+   "name": "White Tea Eau de Parfum",
+   "url": "https://shiro-shiro.jp/item/12906.html?category_from=283",
+   "notes": {
+    "t": [
+     "grapefruit",
+     "lemon",
+     "green notes"
+    ],
+    "h": [
+     "green tea",
+     "jasmine",
+     "rose",
+     "lily"
+    ],
+    "b": [
+     "musk",
+     "woody notes",
+     "amber"
+    ]
+   },
+   "profile": "Fresh-cut citrus over a cup of green tea, finishing like clean laundry. Light, polite and office-safe; the brand says it lasts about five to six hours."
+  },
+  "price": {
+   "amt": 3810,
+   "cur": "JPY",
+   "ml": 40,
+   "status": "verified",
+   "src": "https://shiro-shiro.jp/item/12906.html?category_from=283",
+   "on": "2026-10-23",
+   "note": "Page did not say whether tax is included. Was sold out on the check date."
+  },
+  "tags": [
+   "budget",
+   "clean",
+   "everyday"
+  ]
+ },
+ {
+  "id": "j-scent",
+  "name": "J-Scent",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Japan",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.luckyscent.com/brands/jscent",
+  "about": "A Japanese line that turns everyday Japanese moments (sake, tatami, ramune soda, wet streets) into wearable perfumes.",
+  "why": "Playful and very place-specific, a good bridge between Japanese culture and Western perfume formats.",
+  "families": [
+   "floral",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "sake"
+  ],
+  "sig": {
+   "name": "Hanamizake",
+   "url": "https://www.beautytheshop.com/ca/fragrance/ladies-fragrance/j-scent-hanamizake-eau-de-parfum-spray-50ml-7",
+   "notes": {
+    "t": [
+     "ginjo sake",
+     "pear",
+     "apple",
+     "raspberry",
+     "green note"
+    ],
+    "h": [
+     "cherry blossom",
+     "rose",
+     "lily of the valley"
+    ],
+    "b": [
+     "musk",
+     "cedarwood"
+    ]
+   },
+   "profile": "Cherry blossom drifting into a cup of chilled sake: a fruity, rice-wine sweetness on top, then soft spring florals and a clean woody musk. Bright and springlike."
+  },
+  "price": {
+   "amt": 239.85,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "retailer",
+   "src": "https://www.beautytheshop.com/ca/fragrance/ladies-fragrance/j-scent-hanamizake-eau-de-parfum-spray-50ml-7",
+   "on": "2026-10-23",
+   "note": "Canadian price from an overseas reseller; it costs much less in Japan."
+  },
+  "tags": [
+   "sake",
+   "cherry blossom",
+   "spring"
+  ]
+ },
+ {
+  "id": "shoyeido",
+  "name": "Shoyeido",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Kyoto",
+  "type": "incense",
+  "scale": "mid",
+  "site": "https://shoyeido.com/",
+  "about": "A centuries-old Kyoto incense maker. Not perfume in a bottle, but the root of how Japan thinks about scent (the art of kōdō, 'listening' to incense).",
+  "why": "Incense is the original Asian perfume. Useful for Clay as a room-and-ritual layer, and a cheap way to learn notes like sandalwood, agarwood and clove.",
+  "families": [
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "incense"
+  ],
+  "sig": {
+   "name": "Kyonishiki (Autumn Leaves) incense",
+   "url": "https://shoyeido.com/products/daily-kyonishiki-autumnleaves",
+   "notes": {
+    "t": [],
+    "h": [
+     "cinnamon"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "Cinnamon and sandalwood smoke meant to recall autumn in Kyoto's Arashiyama hills: warm, spiced and soothing rather than churchy."
+  },
+  "price": {
+   "amt": 3.6,
+   "cur": "USD",
+   "ml": null,
+   "status": "verified",
+   "src": "https://shoyeido.com/products/daily-kyonishiki-autumnleaves",
+   "on": "2026-10-23",
+   "note": "Starting price for the smallest bundle (incense sticks, not ml). Sold out on the check date."
+  },
+  "tags": [
+   "incense",
+   "kodo",
+   "heritage"
+  ]
+ },
+ {
+  "id": "tamburins",
+  "name": "Tamburins",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://www.tamburins.com/en/shop/perfume/perfumes/",
+  "about": "A Seoul design-led beauty brand from the team behind the eyewear label Gentle Monster. Famous for sculptural stores and egg-shaped perfume bottles.",
+  "why": "Defines the 'K-scent' look: soft, skin-like, slightly herbal, with art-gallery packaging.",
+  "families": [
+   "green",
+   "woody",
+   "musk",
+   "amber"
+  ],
+  "accents": [
+   "herbal",
+   "honeyed"
+  ],
+  "sig": {
+   "name": "Perfume CHAMO",
+   "url": "https://www.tamburins.com/en/item/1662462471/",
+   "notes": {
+    "t": [
+     "clary sage",
+     "chamomile"
+    ],
+    "h": [
+     "water accord",
+     "cypriol"
+    ],
+    "b": [
+     "amber",
+     "musk",
+     "blond wood"
+    ]
+   },
+   "profile": "Chamomile tea with a spoon of honey, sharpened by a slightly bitter sage, then settling into pale wood and warm musk. Cozy and calming."
+  },
+  "price": {
+   "amt": 159000,
+   "cur": "KRW",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.tamburins.com/en/item/1662462471/",
+   "on": "2026-10-23",
+   "note": "11 ml and 14 ml egg sizes also sold."
+  },
+  "tags": [
+   "k-beauty",
+   "design",
+   "herbal"
+  ]
+ },
+ {
+  "id": "nonfiction",
+  "name": "Nonfiction",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://nonfiction-beauty.com/collections/perfume",
+  "about": "A Korean fragrance-and-body brand known for warm, wearable 'skin scents' and a strong cult following across Asia.",
+  "why": "Shows the Korean move from sweet to grown-up woods and tobacco, at prices well below Western niche.",
+  "families": [
+   "woody",
+   "citrus",
+   "spicy"
+  ],
+  "accents": [
+   "tobacco"
+  ],
+  "sig": {
+   "name": "In The Shower",
+   "url": "https://nonfiction-beauty.com/collections/perfume",
+   "notes": {
+    "t": [
+     "bitter orange",
+     "Campari accord"
+    ],
+    "h": [
+     "smoky tobacco"
+    ],
+    "b": [
+     "patchouli",
+     "guaiac wood"
+    ]
+   },
+   "profile": "A bitter-orange aperitif poured over smoky tobacco and dry wood. Despite the name it is warm and moody rather than soapy."
+  },
+  "price": {
+   "amt": 155,
+   "cur": "SGD",
+   "ml": null,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/korean-perfume-brands/",
+   "on": "2026-10-23",
+   "note": "Price reported by a Singapore beauty site; bottle size not given."
+  },
+  "tags": [
+   "k-beauty",
+   "tobacco",
+   "unisex"
+  ]
+ },
+ {
+  "id": "granhand",
+  "name": "GRANHAND.",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://en.granhand.com/category/perfume/46/",
+  "about": "A Seoul perfumery with apothecary-style shops, making perfumes, multi-use sprays and scented goods.",
+  "why": "Very affordable Korean niche with an English store, good for building a first 'Korean shelf'.",
+  "families": [
+   "floral",
+   "fruity",
+   "gourmand"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Marine Orchid (Multi Perfume)",
+   "url": "https://en.granhand.com/multiperfume/?idx=245",
+   "notes": {
+    "t": [
+     "mandarin",
+     "pear",
+     "lemon"
+    ],
+    "h": [
+     "rose",
+     "lily of the valley",
+     "orchid"
+    ],
+    "b": [
+     "musk",
+     "toffee",
+     "patchouli"
+    ]
+   },
+   "profile": "Juicy pear and mandarin over a soft bouquet, finished with a hint of toffee. Sweet but airy; the 'multi perfume' format is meant for skin, fabric and rooms."
+  },
+  "price": {
+   "amt": 35,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://en.granhand.com/category/perfume/46/",
+   "on": "2026-10-23",
+   "note": "Price shown for the Susie Salmon Multi Perfume 100 ml; the multi perfumes share this format."
+  },
+  "tags": [
+   "budget",
+   "multi-use",
+   "seoul"
+  ]
+ },
+ {
+  "id": "borntostandout",
+  "name": "BORNTOSTANDOUT (BTSO)",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://borntostandout.com/",
+  "about": "A bold Seoul house with dramatic, cocktail-like concepts that has started to appear in Western niche shops.",
+  "why": "The most 'loud' Korean house, a counterpoint to the soft K-scent stereotype.",
+  "families": [
+   "gourmand",
+   "floral",
+   "amber"
+  ],
+  "accents": [
+   "boozy",
+   "honeyed"
+  ],
+  "sig": {
+   "name": "Mad Honey",
+   "url": "https://borntostandout.com/",
+   "notes": {
+    "t": [
+     "pink pepper",
+     "rum"
+    ],
+    "h": [
+     "damask rose",
+     "golden honey"
+    ],
+    "b": [
+     "bourbon vanilla",
+     "tonka bean",
+     "patchouli",
+     "benzoin"
+    ]
+   },
+   "profile": "Rum-soaked honey and rose over thick vanilla and resin. Rich, sticky-sweet and long-lasting; best for cold evenings."
+  },
+  "price": {
+   "amt": 250000,
+   "cur": "KRW",
+   "ml": null,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/korean-perfume-brands/",
+   "on": "2026-10-23",
+   "note": "Bottle size not given in the source."
+  },
+  "tags": [
+   "bold",
+   "boozy",
+   "honey"
+  ]
+ },
+ {
+  "id": "pesade",
+  "name": "Pesade",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "South Korea",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://en.pesade.kr/",
+  "about": "A small Korean label with an English shop and very low entry prices.",
+  "why": "One of the cheapest ways to sample Korean indie perfume.",
+  "families": [
+   "floral",
+   "woody",
+   "citrus",
+   "musk"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Mid Mountain",
+   "url": "https://en.pesade.kr/",
+   "notes": {
+    "t": [
+     "lemon"
+    ],
+    "h": [
+     "rose",
+     "lily of the valley",
+     "orchid"
+    ],
+    "b": [
+     "cedarwood",
+     "amber",
+     "musk",
+     "patchouli"
+    ]
+   },
+   "profile": "A clean lemon-and-flowers opening on a soft cedar and musk base. Easy, fresh and versatile."
+  },
+  "price": {
+   "amt": 20298,
+   "cur": "KRW",
+   "ml": null,
+   "status": "reported",
+   "src": "https://dailyvanity.sg/news/korean-perfume-brands/",
+   "on": "2026-10-23",
+   "note": "Reported price, possibly a sale price; size not given."
+  },
+  "tags": [
+   "budget",
+   "fresh"
+  ]
+ },
+ {
+  "id": "to-summer",
+  "name": "To Summer (观夏)",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "China",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://tosummer.shop/collections/tosummerperfume",
+  "about": "One of the brands leading China's new 'Eastern' perfume wave, built on tea, osmanthus, magnolia and quiet botanical moods.",
+  "why": "Chinese niche is the fastest-growing scene in Asia and still almost unknown in Canada. This house is the most approachable entry point and ships internationally.",
+  "families": [
+   "floral",
+   "fruity",
+   "amber",
+   "musk"
+  ],
+  "accents": [
+   "tea",
+   "osmanthus"
+  ],
+  "sig": {
+   "name": "Osmanthus Perfume",
+   "url": "https://tosummer.shop/products/osmanthus-perfume",
+   "notes": {
+    "t": [
+     "bitter orange",
+     "peach",
+     "green notes"
+    ],
+    "h": [
+     "osmanthus",
+     "centifolia rose",
+     "jasmine",
+     "violet"
+    ],
+    "b": [
+     "amber",
+     "white musk"
+    ]
+   },
+   "profile": "Osmanthus is the apricot-and-suede flower that scents Chinese autumns. Here it is juicy and peachy at first, then settles into a soft, clean amber. Also see their Triple Tea, a dry, unsweetened mix of green, black and rock tea."
+  },
+  "price": {
+   "amt": 139.9,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://tosummer.shop/products/osmanthus-perfume",
+   "on": "2026-10-23",
+   "note": "30 ml US$139.90, 100 ml US$279.90 (read from the shop data). Was sold out on the check date.",
+   "amt_max": 279.9
+  },
+  "tags": [
+   "osmanthus",
+   "tea",
+   "eastern aesthetic"
+  ]
+ },
+ {
+  "id": "documents",
+  "name": "DOCUMENTS (闻献)",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Shanghai",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://shop574779841.taobao.com/",
+  "about": "A Shanghai house started around 2020, known for dark, concentrated perfumes, incense and tea themes, and gallery-like stores. Its themes lean on Chinese materials and Zen calm.",
+  "why": "Considered the most avant-garde of the new Chinese houses. Mostly sold in China (Taobao/Tmall), so it is truly untapped here.",
+  "families": [
+   "woody",
+   "spicy",
+   "musk",
+   "amber"
+  ],
+  "accents": [
+   "incense",
+   "tea",
+   "sichuan pepper"
+  ],
+  "sig": {
+   "name": "Naive (初熟之物)",
+   "url": "https://scentverdict.com/brand/documents",
+   "notes": {
+    "t": [
+     "aldehydes",
+     "Sichuan pepper",
+     "citrus",
+     "bergamot"
+    ],
+    "h": [
+     "cedar",
+     "incense",
+     "tea",
+     "florals"
+    ],
+    "b": [
+     "patchouli",
+     "musk",
+     "resins",
+     "sandalwood",
+     "amber"
+    ]
+   },
+   "profile": "The house style: a numbing tingle of Sichuan pepper and bright citrus, then incense smoke, tea and cedar on a resinous, musky base. Meditative and bold at once. (Notes listed are the house's typical palette, not one confirmed formula.)"
+  },
+  "price": {
+   "amt": null,
+   "cur": "CNY",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://scentverdict.com/brand/documents",
+   "on": "2026-10-23",
+   "note": "No public English price list; check their Taobao or Tmall store."
+  },
+  "tags": [
+   "avant-garde",
+   "incense",
+   "shanghai"
+  ]
+ },
+ {
+  "id": "uttori",
+  "name": "Uttori",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "China",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.baroma.asia/brand/uttori/",
+  "about": "A Chinese artisan house that reworks familiar Chinese plants, tea and gardens into modern perfumes.",
+  "why": "Small, story-led and still rare outside China.",
+  "families": [
+   "floral",
+   "fruity",
+   "woody",
+   "musk"
+  ],
+  "accents": [
+   "moss garden"
+  ],
+  "sig": {
+   "name": "Moss Rock (苔庭)",
+   "url": "https://www.parfumo.com/Perfumes/uttori/moss-rock",
+   "notes": {
+    "t": [
+     "bergamot",
+     "coconut",
+     "pear"
+    ],
+    "h": [
+     "magnolia",
+     "rose",
+     "tiare"
+    ],
+    "b": [
+     "cashmere wood",
+     "musk",
+     "vanilla"
+    ]
+   },
+   "profile": "Named after a moss garden but softer than it sounds: creamy coconut and pear with tropical white flowers over a soft vanilla wood. Gentle and comforting."
+  },
+  "price": {
+   "amt": null,
+   "cur": "CNY",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.parfumo.com/Perfumes/uttori/moss-rock",
+   "on": "2026-10-23",
+   "note": "Price not published in English sources."
+  },
+  "tags": [
+   "garden",
+   "creamy"
+  ]
+ },
+ {
+  "id": "ichun",
+  "name": "ICHUN",
+  "country": "Taiwan",
+  "cc": "TW",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Taiwan",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://en.pinkoi.com/product/HbYnH6PV",
+  "about": "A small Taiwanese perfumer (sold through the YANYANTANG aroma shop) whose scents come from childhood memories of Taiwanese temples and hometown flowers.",
+  "why": "Taiwan's indie scene is tiny and almost invisible abroad. Temple-inspired perfume is a scent story you won't find in Western lines.",
+  "families": [
+   "woody",
+   "floral",
+   "spicy",
+   "amber"
+  ],
+  "accents": [
+   "temple incense",
+   "agarwood"
+  ],
+  "sig": {
+   "name": "Prayer (初一十五)",
+   "url": "https://en.pinkoi.com/product/HbYnH6PV",
+   "notes": {
+    "t": [
+     "pink pepper",
+     "bergamot"
+    ],
+    "h": [
+     "rose"
+    ],
+    "b": [
+     "agarwood",
+     "sandalwood",
+     "patchouli",
+     "vanilla"
+    ]
+   },
+   "profile": "A visit to a Taiwanese temple on the 1st and 15th of the lunar month, without the heavy smoke: pink pepper stands in for incense sparks, then rose and a warm agarwood-sandalwood base."
+  },
+  "price": {
+   "amt": 111.84,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://en.pinkoi.com/product/HbYnH6PV",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "temple",
+   "agarwood",
+   "micro-brand"
+  ]
+ },
+ {
+  "id": "bombay-perfumery",
+  "name": "Bombay Perfumery",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "Mumbai",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://global.bombayperfumery.com/",
+  "about": "A modern Mumbai house that tells Indian city and travel stories with Western-style eaux de parfum, many using Indian materials.",
+  "why": "Modern India in a bottle, at mid prices, with a global store that ships.",
+  "families": [
+   "citrus",
+   "musk",
+   "gourmand",
+   "woody"
+  ],
+  "accents": [
+   "chai",
+   "tea"
+  ],
+  "sig": {
+   "name": "Chai Musk",
+   "url": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk",
+   "notes": {
+    "t": [
+     "lemongrass",
+     "ginger root",
+     "green tea"
+    ],
+    "h": [
+     "osmanthus",
+     "maté",
+     "roasted nut accord"
+    ],
+    "b": [
+     "cade oil",
+     "sandalwood",
+     "hot milk accord"
+    ]
+   },
+   "profile": "A railway-station cup of masala chai: ginger and lemongrass steam, toasted nuts, then a milky, slightly smoky sandalwood. Warm and comforting. Their Seven Islands is the beachy alternative."
+  },
+  "price": {
+   "amt": 90,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "chai",
+   "modern india"
+  ]
+ },
+ {
+  "id": "gulab-singh-johrimal",
+  "name": "Gulab Singh Johrimal",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "Delhi (Chandni Chowk); distillery in Hathras",
+  "founded": 1816,
+  "type": "attar",
+  "scale": "heritage",
+  "site": "https://www.gulabsinghjohrimal.com/",
+  "about": "Delhi's oldest perfumery, run by the same family since 1816. Makes ittars (attars): plant oils distilled the old way into a sandalwood-oil base, plus pure 'ruh' (the first, purest distillate of a flower).",
+  "why": "Attars are alcohol-free, very concentrated, and almost unknown to Western shoppers. Ruh Gulab (rose) here is among the most respected anywhere.",
+  "families": [
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "attar",
+   "vetiver",
+   "rose"
+  ],
+  "sig": {
+   "name": "Ruh Gulab (pure rose distillate)",
+   "url": "https://homegrown.co.in/homegrown-explore/aromatic-alchemy-across-centuries-step-inside-delhis-oldest-perfumery",
+   "notes": {
+    "t": [],
+    "h": [
+     "rose"
+    ],
+    "b": []
+   },
+   "profile": "Rose the way the petals smell, not perfume-counter rose: green, honeyed and almost fruity, worn as a drop of oil. Also look for khus (vetiver root), cooling and earthy, and their sandalwood blends."
+  },
+  "price": {
+   "amt": 100,
+   "amt_max": 28000,
+   "cur": "INR",
+   "ml": 10,
+   "status": "reported",
+   "src": "https://homegrown.co.in/homegrown-explore/aromatic-alchemy-across-centuries-step-inside-delhis-oldest-perfumery",
+   "on": "2026-10-23",
+   "note": "Owner's stated range per 10 ml: blended perfumes from about ₹100, pure Ruh Gulab up to ₹28,000. Their own shop sells discovery sets from about ₹1,065 to ₹2,005."
+  },
+  "tags": [
+   "attar",
+   "ruh",
+   "alcohol-free",
+   "heritage"
+  ]
+ },
+ {
+  "id": "spa-ceylon",
+  "name": "Spa Ceylon",
+  "country": "Sri Lanka",
+  "cc": "LK",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "Colombo",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://lk.spaceylon.com/",
+  "about": "A Sri Lankan Ayurveda-inspired wellness brand whose perfumes are named after island places: Kandy, Mirissa, Arugam Bay.",
+  "why": "Sri Lankan scent stories (temple flowers, spice gardens, surf towns) at accessible prices.",
+  "families": [
+   "floral",
+   "fruity",
+   "gourmand"
+  ],
+  "accents": [
+   "ayurveda"
+  ],
+  "sig": {
+   "name": "Kandyan Rose Eau de Perfume",
+   "url": "https://lk.spaceylon.com/products/kandyan-rose-eau-de-perfume-100ml",
+   "notes": {
+    "t": [
+     "sweet orange",
+     "wild berries"
+    ],
+    "h": [
+     "Kandyan rose",
+     "jasmine",
+     "rose geranium"
+    ],
+    "b": [
+     "sugar",
+     "vanilla"
+    ]
+   },
+   "profile": "A sugared rose garden: berry-bright rose and jasmine on a candy-soft vanilla base, inspired by the royal flower gardens of old Kandy."
+  },
+  "price": {
+   "amt": 15900,
+   "cur": "LKR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://lk.spaceylon.com/products/kandyan-rose-eau-de-perfume-100ml",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "rose",
+   "ayurveda",
+   "island"
+  ]
+ },
+ {
+  "id": "karmakamet",
+  "name": "Karmakamet",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Bangkok",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://karmakamet.co.th/en/product-category/body-care/fragrance/",
+  "about": "A Bangkok scent house in apothecary style, known for perfume oils, solid perfumes and its 'Scentorium', a free walk-through museum of hundreds of smells.",
+  "why": "Thai scent culture (tea houses, jasmine garlands, Chinese-Thai apothecaries) in oil and balm forms that are rare in the West.",
+  "families": [
+   "floral",
+   "green"
+  ],
+  "accents": [
+   "tea",
+   "perfume oil"
+  ],
+  "sig": {
+   "name": "Authentic Perfume Body Oil (blends)",
+   "url": "https://karmakamet.co.th/en/product/authentic-perfume-body-oil-10-ml-blend/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Concentrated body oils in blends with names like Tea Chamber, Hainan, Garden Breath and White Space. Oils sit closer to skin than sprays and last well in heat. (Notes per blend are listed on the site.)"
+  },
+  "price": {
+   "amt": 1550,
+   "cur": "THB",
+   "ml": 10,
+   "status": "verified",
+   "src": "https://karmakamet.co.th/en/product/authentic-perfume-body-oil-10-ml-blend/",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "perfume oil",
+   "solid perfume",
+   "bangkok"
+  ]
+ },
+ {
+  "id": "hmns",
+  "name": "HMNS",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Jakarta",
+  "type": "indie",
+  "scale": "mid",
+  "site": "https://hmnsperfume.com/",
+  "about": "One of the brands behind Indonesia's local-perfume boom (pronounced 'humans'), with bold names and earthy, spicy, sweet scents at friendly prices.",
+  "why": "Indonesia is the source of patchouli, vetiver and clove for the whole perfume world, and its local brands are only now getting noticed.",
+  "families": [
+   "fruity",
+   "floral",
+   "gourmand",
+   "amber"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "ORGSM Eau de Parfum",
+   "url": "https://hmnsperfume.com/products/orgsm",
+   "notes": {
+    "t": [
+     "red apple"
+    ],
+    "h": [
+     "rose",
+     "jasmine",
+     "peony"
+    ],
+    "b": [
+     "vanilla bean",
+     "amber"
+    ]
+   },
+   "profile": "Crisp red apple opening onto the three classic flowers (rose, jasmine, peony), then a warm vanilla-amber finish. A sweet, flirty floral and the brand's best known scent."
+  },
+  "price": {
+   "amt": 524358,
+   "cur": "IDR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://hmnsperfume.com/products/orgsm",
+   "on": "2026-10-24",
+   "note": "Read from the shop's product data (Rupiah)."
+  },
+  "tags": [
+   "indonesia boom",
+   "local pride"
+  ]
+ },
+ {
+  "id": "tadhana",
+  "name": "TADHANA",
+  "country": "Philippines",
+  "cc": "PH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Philippines; company incorporated in Toronto (2023)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.tadhana.co/collections/all",
+  "about": "A Filipino niche house by ISIPCA-trained perfumer Shale Albao, built on Philippine materials like sampaguita, calamansi, dalandan, almaciga resin and Davao coffee. Prices are in Canadian dollars.",
+  "why": "A Filipino house with a Toronto link, so shipping and pricing are friendly for Canada. A rare chance to smell Philippine raw materials in fine perfume.",
+  "families": [
+   "fruity",
+   "citrus",
+   "floral",
+   "woody",
+   "aquatic"
+  ],
+  "accents": [
+   "tropical"
+  ],
+  "sig": {
+   "name": "Rockstar",
+   "url": "https://www.tadhana.co/products/rockstar",
+   "notes": {
+    "t": [
+     "mango",
+     "dalandan",
+     "black currant"
+    ],
+    "h": [
+     "coconut water",
+     "tuberose",
+     "ylang-ylang"
+    ],
+    "b": [
+     "sea breeze",
+     "agarwood",
+     "Philippine vetiver"
+    ]
+   },
+   "profile": "Ripe mango and dalandan (a green Philippine orange) with coconut water and creamy island flowers, grounded by vetiver and a touch of agarwood. Sunny but not cheap-smelling."
+  },
+  "price": {
+   "amt": 250,
+   "cur": "CAD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.tadhana.co/products/rockstar",
+   "on": "2026-10-23",
+   "note": "10 ml travel size C$60."
+  },
+  "tags": [
+   "canada link",
+   "tropical",
+   "philippine materials"
+  ]
+ },
+ {
+  "id": "wren-atelier",
+  "name": "Wren Atelier",
+  "country": "Philippines",
+  "cc": "PH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Manila",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://www.parfumo.com/Perfumes/wren-atelier/manila-oud",
+  "about": "A small Filipino atelier that mixes Manila street food and local flowers with classic perfume materials.",
+  "why": "Possibly the only perfume with a banana-cue (caramelized street banana) accord. Pure local storytelling.",
+  "families": [
+   "spicy",
+   "citrus",
+   "woody",
+   "amber",
+   "floral"
+  ],
+  "accents": [
+   "oud",
+   "incense",
+   "leather"
+  ],
+  "sig": {
+   "name": "Manila Oud",
+   "url": "https://yuchengcomuseum.org/product/manila-oud-parfum/",
+   "notes": {
+    "t": [
+     "calamansi",
+     "ginger",
+     "nutmeg"
+    ],
+    "h": [
+     "elemi",
+     "sampaguita",
+     "banana cue accord"
+    ],
+    "b": [
+     "oud",
+     "cistus",
+     "incense",
+     "patchouli",
+     "leather",
+     "amber"
+    ]
+   },
+   "profile": "Calamansi zest and ginger, then sampaguita (the Philippine jasmine) and a caramel-banana note, all sinking into smoky oud, leather and incense. Gourmand meets cathedral."
+  },
+  "price": {
+   "amt": 6500,
+   "cur": "PHP",
+   "ml": null,
+   "status": "retailer",
+   "src": "https://yuchengcomuseum.org/product/manila-oud-parfum/",
+   "on": "2026-10-23",
+   "note": "Sold through the Yuchengco Museum shop; size not listed."
+  },
+  "tags": [
+   "street food",
+   "oud",
+   "manila"
+  ]
+ },
+ {
+  "id": "gp-fragrances",
+  "name": "GP Fragrances",
+  "country": "Philippines",
+  "cc": "PH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Philippines",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt",
+  "about": "A Filipino label whose 'Elements' series maps scents to places: Baguio, Banaue, Siargao, Mayon volcano.",
+  "why": "A scent map of the Philippines; good material for the regional map project too.",
+  "families": [
+   "green",
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "pine",
+   "wet earth"
+  ],
+  "sig": {
+   "name": "Baguio Verde",
+   "url": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt",
+   "notes": {
+    "t": [
+     "morning mist",
+     "pine needles",
+     "dalandan"
+    ],
+    "h": [
+     "crushed green leaves",
+     "violet"
+    ],
+    "b": [
+     "wet earth",
+     "Philippine vetiver"
+    ]
+   },
+   "profile": "A cool morning in the mountain city of Baguio: pine, mist and crushed leaves over damp soil and vetiver. Green and outdoorsy."
+  },
+  "price": {
+   "amt": null,
+   "cur": "PHP",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt",
+   "on": "2026-10-23",
+   "note": "Sold mainly through Instagram; no public price found."
+  },
+  "tags": [
+   "place scents",
+   "green"
+  ]
+ },
+ {
+  "id": "toouch",
+  "name": "Toouch",
+  "country": "Vietnam",
+  "cc": "VN",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Vietnam",
+  "founded": 2025,
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+  "about": "A new Vietnamese label (2025, perfumer Sy Truong) with one scent per city: Ho Chi Minh City, Da Nang, Hanoi.",
+  "why": "Vietnam's perfume scene is just forming; this is a city-by-city scent portrait of the country.",
+  "families": [
+   "gourmand",
+   "aquatic",
+   "citrus",
+   "green",
+   "woody"
+  ],
+  "accents": [
+   "coffee",
+   "tea"
+  ],
+  "sig": {
+   "name": "Smoky Graze (Ho Chi Minh City)",
+   "url": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+   "notes": {
+    "t": [],
+    "h": [
+     "coffee",
+     "cacao"
+    ],
+    "b": [
+     "amber"
+    ]
+   },
+   "profile": "Saigon street coffee and cacao on warm amber. Its siblings: Dreamy Nautica (citrus and sea salt, Da Nang) and Heritage Nuzzle (green tea and soft woods, Hanoi)."
+  },
+  "price": {
+   "amt": null,
+   "cur": "VND",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "city scents",
+   "coffee",
+   "new"
+  ]
+ },
+ {
+  "id": "maison-bagian",
+  "name": "Maison Bagian",
+  "country": "Vietnam",
+  "cc": "VN",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Vietnam (made in Grasse, France)",
+  "founded": 2018,
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+  "about": "Founded in 2018 by Hiệp Nguyễn and Alexandre Perucca: concepts developed in Vietnam, perfumes made in Grasse.",
+  "why": "A French-Vietnamese bridge, with scents named Hanoian, Saigonaise and Mékong.",
+  "families": [
+   "floral",
+   "woody"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Hanoian",
+   "url": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "A portrait of Hanoi; notes to be added after the next check."
+  },
+  "price": {
+   "amt": null,
+   "cur": "VND",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.tatlerasia.com/style/beauty/vietnamese-perfume-brands",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "french-vietnamese",
+   "grasse"
+  ]
+ },
+ {
+  "id": "amouage",
+  "name": "Amouage",
+  "country": "Oman",
+  "cc": "OM",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Muscat",
+  "type": "niche",
+  "scale": "large",
+  "site": "https://amouage.com/",
+  "about": "Oman's royal-born luxury house, famous for frankincense (Oman's ancient export) and grand, layered compositions.",
+  "why": "Not untapped, but the benchmark for Gulf-style luxury: frankincense, oud and spice done with Western craftsmanship.",
+  "families": [
+   "spicy",
+   "amber",
+   "woody"
+  ],
+  "accents": [
+   "frankincense",
+   "oud",
+   "leather"
+  ],
+  "sig": {
+   "name": "Interlude Man",
+   "url": "https://amouage.com/pages/the-main-collection",
+   "notes": {
+    "t": [
+     "oregano",
+     "bergamot",
+     "allspice"
+    ],
+    "h": [
+     "amber",
+     "frankincense",
+     "opoponax"
+    ],
+    "b": [
+     "leather",
+     "agarwood",
+     "sandalwood"
+    ]
+   },
+   "profile": "Smoky frankincense and leather with a herbal bite of oregano. Powerful and dramatic; a little goes a long way. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 395,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://amouage.com/pages/the-main-collection",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "frankincense",
+   "luxury",
+   "benchmark"
+  ]
+ },
+ {
+  "id": "abdul-samad-al-qurashi",
+  "name": "Abdul Samad Al Qurashi",
+  "country": "Saudi Arabia",
+  "cc": "SA",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Mecca origins; stores across the Gulf",
+  "type": "attar",
+  "scale": "heritage",
+  "site": "https://www.anabis.com/de/Abdul-Samad-Al-Qurashi-Makkah-Blend.html",
+  "about": "A Saudi family house known for oud oils, bakhoor (scented wood chips to burn) and concentrated oil blends.",
+  "why": "Real Gulf oud culture: oils dabbed on skin and clothes, often layered with a spray. A big step beyond 'oud' as a Western marketing word.",
+  "families": [
+   "woody",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "oud",
+   "perfume oil"
+  ],
+  "sig": {
+   "name": "Makkah Blend (perfume oil)",
+   "url": "https://www.anabis.com/de/Abdul-Samad-Al-Qurashi-Makkah-Blend.html",
+   "notes": {
+    "t": [],
+    "h": [
+     "floral tones"
+    ],
+    "b": [
+     "oud",
+     "musk"
+    ]
+   },
+   "profile": "A dense, oily oud softened with flowers and musk. Intense and long-lasting; one dab is enough."
+  },
+  "price": {
+   "amt": 94.2,
+   "cur": "USD",
+   "ml": 12,
+   "status": "retailer",
+   "src": "https://www.anabis.com/de/Abdul-Samad-Al-Qurashi-Makkah-Blend.html",
+   "on": "2026-10-23",
+   "note": "European reseller; sold out on the check date. 0.5 ml sample about US$8.90."
+  },
+  "tags": [
+   "oud oil",
+   "bakhoor",
+   "heritage"
+  ]
+ },
+ {
+  "id": "swiss-arabian",
+  "name": "Swiss Arabian",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Dubai",
+  "type": "mass",
+  "scale": "large",
+  "site": "https://www.walmart.com/ip/Swiss-Arabian-Shaghaf-Oud-Arabian-Perfume-for-Women-and-Men-2-5-oz/299139320",
+  "about": "A long-running Dubai perfume maker selling Arabian-style scents worldwide at low prices.",
+  "why": "Affordable way to learn the Gulf palette (saffron, oud, rose, praline) before buying luxury.",
+  "families": [
+   "woody",
+   "floral",
+   "gourmand",
+   "amber"
+  ],
+  "accents": [
+   "oud",
+   "saffron"
+  ],
+  "sig": {
+   "name": "Shaghaf Oud",
+   "url": "https://www.walmart.com/ip/Swiss-Arabian-Shaghaf-Oud-Arabian-Perfume-for-Women-and-Men-2-5-oz/299139320",
+   "notes": {
+    "t": [
+     "saffron",
+     "oud"
+    ],
+    "h": [
+     "rose",
+     "praline",
+     "oud"
+    ],
+    "b": [
+     "oud",
+     "vanilla"
+    ]
+   },
+   "profile": "Saffron and rose over a sweet, nutty praline and soft oud. Warm, sweet and crowd-pleasing; a cold-weather scent."
+  },
+  "price": {
+   "amt": 39.59,
+   "cur": "USD",
+   "ml": 75,
+   "status": "retailer",
+   "src": "https://www.walmart.com/ip/Swiss-Arabian-Shaghaf-Oud-Arabian-Perfume-for-Women-and-Men-2-5-oz/299139320",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "budget",
+   "oud",
+   "saffron"
+  ]
+ },
+ {
+  "id": "lattafa",
+  "name": "Lattafa",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "UAE",
+  "type": "mass",
+  "scale": "large",
+  "site": "https://www.lattafa-usa.com/",
+  "about": "The UAE brand behind the Arabian-perfume trend online, famous for rich sweet scents and for close alternatives to expensive designer and niche perfumes.",
+  "why": "The trend you mentioned. Useful for Clay's 'expensive vs just as good' comparisons.",
+  "families": [
+   "gourmand",
+   "spicy",
+   "amber"
+  ],
+  "accents": [
+   "dates",
+   "boozy"
+  ],
+  "sig": {
+   "name": "Khamrah",
+   "url": "https://www.lattafa-usa.com/collections/spo-filter-in-stock-0fc857ff172e6a0363604e8bdcf86ee4",
+   "notes": {
+    "t": [
+     "cinnamon",
+     "nutmeg",
+     "bergamot"
+    ],
+    "h": [
+     "dates",
+     "praline",
+     "tuberose"
+    ],
+    "b": [
+     "vanilla",
+     "tonka bean",
+     "benzoin",
+     "myrrh"
+    ]
+   },
+   "profile": "Spiced dates and praline in a warm, boozy-feeling vanilla. Very sweet and very long-lasting; often compared to pricier boozy gourmands. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 44.99,
+   "cur": "USD",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.lattafa-usa.com/collections/spo-filter-in-stock-0fc857ff172e6a0363604e8bdcf86ee4",
+   "on": "2026-10-23",
+   "note": "US distributor; size assumed from the standard 100 ml bottle."
+  },
+  "tags": [
+   "trending",
+   "dupes",
+   "gourmand"
+  ]
+ },
+ {
+  "id": "nishane",
+  "name": "Nishane",
+  "country": "Türkiye",
+  "cc": "TR",
+  "region": "Middle East",
+  "continent": "Europe/Asia",
+  "city": "Istanbul",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://nishane.com/",
+  "about": "An Istanbul niche house drawing on Ottoman stories and Turkish shadow-puppet theatre, mostly in strong extrait concentration.",
+  "why": "Shows how a non-Western house broke into global niche; the 15 ml size makes it easy to try.",
+  "families": [
+   "citrus",
+   "fruity",
+   "woody"
+  ],
+  "accents": [
+   "chypre",
+   "oakmoss"
+  ],
+  "sig": {
+   "name": "Hacivat (Extrait de Parfum)",
+   "url": "https://nishane.com/product/hacivat-15ml/",
+   "notes": {
+    "t": [
+     "bergamot",
+     "pineapple",
+     "grapefruit"
+    ],
+    "h": [
+     "jasmine",
+     "patchouli",
+     "cedarwood"
+    ],
+    "b": [
+     "clearwood",
+     "oakmoss",
+     "dry woods"
+    ]
+   },
+   "profile": "Bright pineapple and bergamot over mossy, dry woods: a fresh, confident 'chypre' style that many compare to famous pineapple-birch scents."
+  },
+  "price": {
+   "amt": 105,
+   "cur": "EUR",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://nishane.com/product/hacivat-15ml/",
+   "on": "2026-10-23",
+   "note": "Also sold in 50 ml and 100 ml."
+  },
+  "tags": [
+   "istanbul",
+   "extrait",
+   "pineapple"
+  ]
+ },
+ {
+  "id": "saint-dici",
+  "name": "Saint d'Ici (now Saint VII)",
+  "country": "South Africa",
+  "cc": "ZA",
+  "region": "Southern Africa",
+  "continent": "Africa",
+  "city": "Johannesburg",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://www.saintvii.co.za/",
+  "about": "Natural, small-batch perfumes by Marie Aoun, made mostly from African materials bought from small farmers and craft distillers, including indigenous plants like buchu.",
+  "why": "African indigenous botanicals (buchu, ouhout) are almost absent from global perfume. Each natural batch varies slightly year to year.",
+  "families": [
+   "woody",
+   "citrus",
+   "spicy",
+   "floral"
+  ],
+  "accents": [
+   "buchu",
+   "natural"
+  ],
+  "sig": {
+   "name": "Moussem",
+   "url": "https://www.thecaviarspoon.com/uncategorized/marie-aoun-saint-dici-perfumes/",
+   "notes": {
+    "t": [
+     "cardamom"
+    ],
+    "h": [
+     "rose"
+    ],
+    "b": [
+     "aged vetiver",
+     "aged patchouli"
+    ]
+   },
+   "profile": "Cardamom and rose over aged, earthy vetiver and patchouli. Natural perfumes wear softer and closer to skin than synthetic ones. Also see Nsika, built on the mossy, camphor-like South African ouhout shrub."
+  },
+  "price": {
+   "amt": null,
+   "cur": "ZAR",
+   "ml": 30,
+   "status": "unknown",
+   "src": "https://yourluxury.africa/fashion-beauty/africa-bottled/",
+   "on": "2026-10-23",
+   "note": "Full bottles are 30 ml with 1 ml samples; current prices at saintvii.co.za."
+  },
+  "tags": [
+   "natural",
+   "indigenous botanicals",
+   "small batch"
+  ]
+ },
+ {
+  "id": "scentury",
+  "name": "Scentury Perfume & Co.",
+  "country": "South Africa",
+  "cc": "ZA",
+  "region": "Southern Africa",
+  "continent": "Africa",
+  "city": "South Africa",
+  "type": "inspired-by",
+  "scale": "small",
+  "site": "https://scenturysa.co.za/",
+  "about": "A South African maker of oil-based perfumes, many openly 'inspired by' famous designer scents, plus some original signatures.",
+  "why": "Local, very affordable, and a clear example of the inspired-by market Clay will compare against originals.",
+  "families": [
+   "floral",
+   "amber",
+   "spicy"
+  ],
+  "accents": [
+   "oud",
+   "oil-based"
+  ],
+  "sig": {
+   "name": "Vallée des Roses Oud (Extrait)",
+   "url": "https://scenturysa.co.za/product/scentury-signature-vallee-des-roses-oud-extrait-de-parfum-premium-south-african-artisanal-perfume-for-unisex-handcrafted-long-lasting-oil-based-fragrance-100ml/",
+   "notes": {
+    "t": [],
+    "h": [
+     "rose"
+    ],
+    "b": [
+     "oud"
+    ]
+   },
+   "profile": "A rose-and-oud signature (floral, warm, spicy) in an oil-based extrait. Detailed notes not published."
+  },
+  "price": {
+   "amt": 449.9,
+   "cur": "ZAR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://scenturysa.co.za/product/scentury-signature-vallee-des-roses-oud-extrait-de-parfum-premium-south-african-artisanal-perfume-for-unisex-handcrafted-long-lasting-oil-based-fragrance-100ml/",
+   "on": "2026-10-23",
+   "note": "Sale price; regular R549.90."
+  },
+  "tags": [
+   "inspired-by",
+   "budget",
+   "dupes"
+  ]
+ },
+ {
+  "id": "beguile",
+  "name": "Beguile",
+  "country": "Nigeria",
+  "cc": "NG",
+  "region": "West Africa",
+  "continent": "Africa",
+  "city": "Nigeria",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.shopbeguile.com/",
+  "about": "A Nigerian fragrance house making strong, long-lasting perfumes priced for the local market, where big 100 ml bottles and powerful projection are preferred.",
+  "why": "Nigeria has one of Africa's most passionate perfume cultures, and its own houses are just emerging.",
+  "families": [
+   "gourmand",
+   "floral",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "oud",
+   "saffron"
+  ],
+  "sig": {
+   "name": "Blush Bloom",
+   "url": "https://www.shopbeguile.com/perfumes/blush-bloom",
+   "notes": {
+    "t": [
+     "bitter almond"
+    ],
+    "h": [
+     "vanilla orchid",
+     "tuberose"
+    ],
+    "b": [
+     "sandalwood",
+     "tonka bean"
+    ]
+   },
+   "profile": "Almond and vanilla-orchid with creamy tuberose on a soft sandalwood base. Sweet, creamy and feminine. Their Sweet Oud pairs saffron and lavender with smoky oud."
+  },
+  "price": {
+   "amt": null,
+   "cur": "NGN",
+   "ml": null,
+   "status": "unknown",
+   "src": "https://www.shopbeguile.com/",
+   "on": "2026-10-23",
+   "note": "Prices on their shop; not read on this pass."
+  },
+  "tags": [
+   "nigeria",
+   "long-lasting"
+  ]
+ },
+ {
+  "id": "xinu",
+  "name": "XINÚ",
+  "country": "Mexico",
+  "cc": "MX",
+  "region": "Latin America",
+  "continent": "Americas",
+  "city": "Mexico City",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.luckyscent.com/fragrances?f.l.country=Mexico",
+  "about": "A Mexican niche house built on native Mexican plants: copal, mesquite, vanilla, tobacco, agave and tropical leaves.",
+  "why": "The clearest 'Mexico in a bottle' line; vanilla itself is native to Mexico.",
+  "families": [
+   "amber",
+   "spicy",
+   "gourmand"
+  ],
+  "accents": [
+   "copal",
+   "incense"
+  ],
+  "sig": {
+   "name": "Copala",
+   "url": "https://www.luckyscent.com/products/copala-by-xinu",
+   "notes": {
+    "t": [
+     "pink pepper"
+    ],
+    "h": [
+     "copal",
+     "mesquite"
+    ],
+    "b": [
+     "Mexican vanilla"
+    ]
+   },
+   "profile": "Copal is the sacred tree resin burned in Mexican ceremonies since Maya times: lemony, smoky, holy. Here it is warmed by mesquite and native vanilla. Powdery-smoky and soothing."
+  },
+  "price": {
+   "amt": 240,
+   "cur": "USD",
+   "ml": 50,
+   "status": "retailer",
+   "src": "https://www.luckyscent.com/products/copala-by-xinu",
+   "on": "2026-10-23",
+   "note": "US retailer Luckyscent; samples available."
+  },
+  "tags": [
+   "copal",
+   "native plants",
+   "mexico"
+  ]
+ },
+ {
+  "id": "coqui-coqui",
+  "name": "Coqui Coqui",
+  "country": "Mexico",
+  "cc": "MX",
+  "region": "Latin America",
+  "continent": "Americas",
+  "city": "Yucatán",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.luckyscent.com/brands/coqui-coqui",
+  "about": "A Yucatán perfumery-and-hotel brand making simple, single-idea scents from local plants.",
+  "why": "Yucatán orange blossom is sweeter and less bitter than the European kind, a true terroir difference you can smell.",
+  "families": [
+   "floral",
+   "citrus"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Flor de Naranjo",
+   "url": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui",
+   "notes": {
+    "t": [],
+    "h": [
+     "orange blossom"
+    ],
+    "b": []
+   },
+   "profile": "Just orange blossom from Yucatán orange trees: honeyed, fresh and soft. Simple and sunny. Also try their Coco Coco and Tabaco."
+  },
+  "price": {
+   "amt": 145,
+   "cur": "USD",
+   "ml": 100,
+   "status": "retailer",
+   "src": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "single note",
+   "terroir",
+   "yucatan"
+  ]
+ },
+ {
+  "id": "fueguia-1833",
+  "name": "Fueguia 1833",
+  "country": "Argentina",
+  "cc": "AR",
+  "region": "Latin America",
+  "continent": "Americas",
+  "city": "Buenos Aires (made in Italy)",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://fueguia.com/",
+  "about": "An Argentine house that works like a botanical expedition, using rare South American plants, plant-based musks and long maturing times.",
+  "why": "Patagonian and Amazonian plants you won't find elsewhere, with clean-formula standards.",
+  "families": [
+   "floral",
+   "citrus",
+   "woody"
+  ],
+  "accents": [
+   "palo santo",
+   "botanical"
+  ],
+  "sig": {
+   "name": "Agua Magnoliana",
+   "url": "https://shop.fueguia.com/products/agua-magnoliana",
+   "notes": {
+    "t": [
+     "magnolia"
+    ],
+    "h": [
+     "rosewood (palo de rosa)"
+    ],
+    "b": [
+     "palo santo"
+    ]
+   },
+   "profile": "A giant Amazonian magnolia tree in bloom: lemony-fresh magnolia petals over soft rosewood and the gentle, incense-like palo santo. Airy and luminous."
+  },
+  "price": {
+   "amt": 245,
+   "cur": "USD",
+   "ml": 30,
+   "amt_max": 408,
+   "status": "verified",
+   "src": "https://shop.fueguia.com/products/agua-magnoliana",
+   "on": "2026-10-23",
+   "note": "30 ml $245, 100 ml $408 at the New York store."
+  },
+  "tags": [
+   "botanical",
+   "patagonia",
+   "clean formula"
+  ]
+ },
+ {
+  "id": "natura",
+  "name": "Natura (Ekos)",
+  "country": "Brazil",
+  "cc": "BR",
+  "region": "Latin America",
+  "continent": "Americas",
+  "city": "São Paulo",
+  "type": "mass",
+  "scale": "large",
+  "site": "https://www.naturabrasil.com/",
+  "about": "Brazil's largest beauty brand. Its Ekos line uses Amazon materials (priprioca root, copaiba, pataqueira) sourced with forest communities.",
+  "why": "Amazon raw materials at drugstore-ish prices, with sourcing stories you can check.",
+  "families": [
+   "citrus",
+   "green",
+   "aquatic",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "amazonian",
+   "rain"
+  ],
+  "sig": {
+   "name": "Ekos Ryo Chuva",
+   "url": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette",
+   "notes": {
+    "t": [
+     "mandarin",
+     "orange",
+     "black pepper",
+     "juniper",
+     "pataqueira",
+     "priprioca",
+     "rain accord"
+    ],
+    "h": [
+     "sambac jasmine",
+     "rose",
+     "orange blossom",
+     "iris",
+     "violet leaf"
+    ],
+    "b": [
+     "musk",
+     "amber",
+     "sandalwood",
+     "moss",
+     "vetiver",
+     "copaiba"
+    ]
+   },
+   "profile": "Rain falling on the Amazon: wet citrus, peppery green roots and leaves, then soft florals and a mossy wood base. Fresh and green."
+  },
+  "price": {
+   "amt": 76,
+   "cur": "USD",
+   "ml": null,
+   "status": "verified",
+   "src": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette",
+   "on": "2026-10-23",
+   "note": "US store price; size not shown on the page."
+  },
+  "tags": [
+   "amazon",
+   "sourcing",
+   "eau de toilette"
+  ]
+ },
+ {
+  "id": "zoologist",
+  "name": "Zoologist Perfumes",
+  "country": "Canada",
+  "cc": "CA",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Toronto",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.zoologistperfumes.com/collections/all",
+  "about": "A Toronto indie house where each perfume is an animal (Bat, Moth, Beaver, Tiger...), made with different guest perfumers.",
+  "why": "Close to home, ships from Canada, and one of the most respected indie houses in the world.",
+  "families": [
+   "woody",
+   "floral",
+   "amber",
+   "green"
+  ],
+  "accents": [
+   "animalic",
+   "art"
+  ],
+  "sig": {
+   "name": "Deluxe bottles (e.g. Moth, Bat, Beaver)",
+   "url": "https://www.zoologistperfumes.com/collections/deluxe-bottles",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Each animal is a different scent world, from powdery and soft (Moth) to dark, damp cave and fruit (Bat). Start with their sample sets."
+  },
+  "price": {
+   "amt": 200,
+   "amt_max": 240,
+   "cur": "USD",
+   "ml": null,
+   "status": "verified",
+   "src": "https://www.zoologistperfumes.com/collections/deluxe-bottles",
+   "on": "2026-10-23",
+   "note": "Most deluxe bottles US$200, a few US$240; size not shown on the list page. Travel sprays and sample sets also sold."
+  },
+  "tags": [
+   "canada",
+   "art",
+   "indie"
+  ]
+ },
+ {
+  "id": "imaginary-authors",
+  "name": "Imaginary Authors",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Portland, Oregon",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://imaginaryauthors.com/",
+  "about": "A US indie house where every scent comes with a made-up book or story.",
+  "why": "Story-driven and affordable for niche; a contrast to the Asian houses' minimalism.",
+  "families": [
+   "woody",
+   "fruity",
+   "amber"
+  ],
+  "accents": [
+   "smoke"
+  ],
+  "sig": {
+   "name": "A City on Fire",
+   "url": "https://imaginaryauthors.com/products/a-city-on-fire",
+   "notes": {
+    "t": [
+     "cardamom",
+     "dark berries"
+    ],
+    "h": [
+     "spikenard",
+     "burnt match"
+    ],
+    "b": [
+     "cade oil",
+     "clearwood",
+     "labdanum"
+    ]
+   },
+   "profile": "A struck match, smoke and dark berries over warm resin. Smoky but polished; an evening scent."
+  },
+  "price": {
+   "amt": 115,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://imaginaryauthors.com/products/a-city-on-fire",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "storytelling",
+   "smoky"
+  ]
+ },
+ {
+  "id": "goldfield-banks",
+  "name": "Goldfield & Banks",
+  "country": "Australia",
+  "cc": "AU",
+  "region": "Oceania",
+  "continent": "Oceania",
+  "city": "Australia",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://www.goldfieldandbanks.com/",
+  "about": "An Australian house built on native Australian plants and coastlines, with French perfumers.",
+  "why": "Australian native botanicals (coastal moss, desert lime, sandalwood) are a whole palette most people never smell.",
+  "families": [
+   "aquatic",
+   "citrus",
+   "green",
+   "woody"
+  ],
+  "accents": [
+   "coastal",
+   "australian native"
+  ],
+  "sig": {
+   "name": "Pacific Rock Moss",
+   "url": "https://www.goldfieldandbanks.com/products/pacific-rock-moss",
+   "notes": {
+    "t": [
+     "lemon",
+     "Australian coastal moss"
+    ],
+    "h": [
+     "sage",
+     "geranium"
+    ],
+    "b": [
+     "cedarwood",
+     "white musk"
+    ]
+   },
+   "profile": "Sea spray on rocks: salty, herbal and lemony, with a clean cedar finish. Their best seller and a great summer scent."
+  },
+  "price": {
+   "amt": 280,
+   "cur": "AUD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://www.goldfieldandbanks.com/products/pacific-rock-moss",
+   "on": "2026-10-23",
+   "note": "Price shown for the default size, assumed 100 ml (50 and 10 ml also sold)."
+  },
+  "tags": [
+   "australian native",
+   "aquatic"
+  ]
+ },
+ {
+  "id": "hiram-green",
+  "name": "Hiram Green",
+  "country": "Netherlands",
+  "cc": "NL",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Netherlands",
+  "type": "indie",
+  "scale": "micro",
+  "site": "https://hiramgreen.com/",
+  "about": "A one-man indie house making all-natural perfumes by hand.",
+  "why": "Proof that fully natural perfume can be rich and long-lasting; a great reference for Safe Batch's 'build from scratch' side.",
+  "families": [
+   "floral",
+   "gourmand",
+   "spicy"
+  ],
+  "accents": [
+   "natural",
+   "tuberose"
+  ],
+  "sig": {
+   "name": "Moon Bloom",
+   "url": "https://hiramgreen.com/products/moon-bloom",
+   "notes": {
+    "t": [
+     "leafy greens"
+    ],
+    "h": [
+     "tuberose",
+     "jasmine",
+     "ylang-ylang",
+     "tropical spices"
+    ],
+    "b": [
+     "coconut",
+     "resins"
+    ]
+   },
+   "profile": "A tuberose stem cut fresh: green at first, then a creamy, spicy white-flower heart and a coconut-resin base. Lush and tropical."
+  },
+  "price": {
+   "amt": 220,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://hiramgreen.com/products/moon-bloom",
+   "on": "2026-10-23"
+  },
+  "tags": [
+   "all natural",
+   "handmade"
+  ]
+ }
+]

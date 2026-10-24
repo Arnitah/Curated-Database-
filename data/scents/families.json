@@ -1,0 +1,22 @@
+{
+ "citrus": { "label": "Citrus", "what": "Zest and juice: lemon, bergamot, grapefruit, yuzu, calamansi, dalandan.", "feel": "Bright, awake, clean. Fades fastest, so it usually opens a perfume.", "wear": "Heat, mornings, work." },
+ "fruity": { "label": "Fruity", "what": "Flesh and juice of fruit: pear, peach, mango, berries, pineapple.", "feel": "Playful, juicy, sometimes candy-like.", "wear": "Daytime, spring and summer." },
+ "floral": { "label": "Floral", "what": "Flowers: rose, jasmine, sampaguita, osmanthus, tuberose, magnolia, cherry blossom, orange blossom.", "feel": "Anywhere from fresh and dewy to creamy and heady. White flowers (tuberose, jasmine) are the richest.", "wear": "Any time; white florals shine in warm evenings." },
+ "green": { "label": "Green", "what": "Leaves, stems, grass, tea leaves, herbs, pine.", "feel": "Crisp, outdoorsy, slightly bitter.", "wear": "Spring, daytime, when you want to feel fresh but not sweet." },
+ "gourmand": { "label": "Gourmand", "what": "Edible notes: vanilla, honey, praline, caramel, coffee, cacao, dates, milk.", "feel": "Cozy, sweet, comforting. Can feel heavy in heat.", "wear": "Cold weather, evenings." },
+ "woody": { "label": "Woody", "what": "Sandalwood, cedar, vetiver, patchouli, guaiac, agarwood (oud).", "feel": "Grounded, calm, dry or creamy depending on the wood.", "wear": "All year; the backbone of most unisex scents." },
+ "amber": { "label": "Amber (oriental)", "what": "A warm blend of resins and balsams such as labdanum, benzoin, copal and frankincense, often with vanilla.", "feel": "Glowing, enveloping, sensual.", "wear": "Autumn and winter, evenings." },
+ "musk": { "label": "Musk", "what": "Soft 'skin' molecules (today almost always lab-made or plant-based).", "feel": "Clean laundry, warm skin, softness. Makes other notes last.", "wear": "Everyday, close-to-skin scents." },
+ "aquatic": { "label": "Aquatic", "what": "Sea salt, sea spray, rain, coastal moss, water accords.", "feel": "Cool, airy, breezy.", "wear": "Summer, beach, gym." },
+ "spicy": { "label": "Spicy", "what": "Cinnamon, clove, cardamom, pepper, saffron, nutmeg, ginger, Sichuan pepper.", "feel": "Warm or tingly; adds energy and depth.", "wear": "Cooler months; small doses in summer." },
+ "_accents": {
+  "incense": "Smoke from burned resin or wood. In Japan and Taiwan it ties to temples and the kōdō ceremony.",
+  "oud": "Agarwood: resin that forms in aquilaria trees. Can smell woody, leathery, animalic or sweet. Central to Gulf and South-East Asian scent culture.",
+  "attar": "Plant material distilled into a sandalwood-oil base. Alcohol-free and very concentrated; worn as a dab.",
+  "ruh": "The first, purest distillate of a single flower (ruh gulab = rose).",
+  "tea": "Green, black, oolong or rock tea notes: dry, slightly bitter, calm. A signature of Chinese and Japanese houses.",
+  "copal": "Sacred tree resin of Mexico and Central America: lemony, smoky, holy.",
+  "perfume oil": "Fragrance in oil instead of alcohol; sits close to skin and lasts well in heat."
+ },
+ "_pyramid": "Top notes are what you smell first (minutes). Heart notes are the main character (an hour or more). Base notes are the dry-down that stays for hours."
+}

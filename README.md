@@ -9,19 +9,24 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), exchange rates to CAD (rates)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
-apps/           the current Safe Batch and Clay app files (single HTML each)
+apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
 checks/hub-coverage.json  ingredients common in real products that the apps don't explain yet (to-do list)
+checks/scent-links.json   weekly pass / blocked / fail for every perfume house link
+checks/scent-prices.json  weekly live prices read from shops that expose product data
 schemas/myth.md       the myth and recipe record formats
 version.json    data version + per-dataset count, size, hash and last-changed date
 scripts/build.mjs             validator + version builder
 scripts/bridge-hub.mjs        pulls the Skincare Data Hub into index/ and data/safe-batch/ingredient_facts.json
+scripts/check-scents.mjs      weekly scent atlas check: rates, links, live prices
 scripts/check-verdicts.mjs    re-runs every recipe through apps/safe-batch.html and compares to checks/verdicts.json
 scripts/migrations/           one-off data conversions (kept for the record)
 .github/workflows/data.yml      validator; on main, bumps version.json
 .github/workflows/verdicts.yml  verdict regression check
 .github/workflows/hub-bridge.yml  daily pull from the hub (11:23 UTC, after the hub's 09:17 run)
+.github/workflows/scents.yml      weekly scent atlas check (Mondays 12:47 UTC)
 ```
 
 ## How updates flow
@@ -81,3 +86,17 @@ What the apps merge today:
 - **Clay:** hair_tips, hair_wash_steps, product_steps, feel_words
 
 Deleting an item here doesn't remove it from the apps' built-in copy until the app files are next republished.
+
+## Scent Atlas (data/scents)
+A curated guide to perfume houses outside the usual Western names, Asia first. Each house in `houses.json` has its country and city, kind (niche, indie, attar, incense, affordable, inspired-by), scent families that match Clay's (`citrus, fruity, floral, green, gourmand, woody, amber, musk, aquatic, spicy`) plus free-form accents (tea, oud, incense...), one signature scent with top/heart/base notes and a plain-English profile, and a price with its status:
+
+| status | meaning |
+|---|---|
+| verified | read on the brand's own shop on the `on` date |
+| retailer | read on a reseller's page |
+| reported | taken from an article |
+| unknown | not published or not yet read |
+
+All descriptions are written in our own words. Every Monday the scent check refreshes `rates.json`, tests every link and reads live shop prices into `checks/`. It never edits `houses.json`: a price marked `changed` in `checks/scent-prices.json` is a to-do to review by hand. Houses found but not yet verified live in `leads.json`.
+
+Planned Clay link: `families` already uses Clay's scent family names, so scent stacks and dupe comparisons (`type: inspired-by`, `mass`) can read this file directly.

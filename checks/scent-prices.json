@@ -1,0 +1,258 @@
+{
+ "checked": "2026-10-24",
+ "note": "Live variant prices read from shop product data. Prices are in each shop’s base currency, which can differ from the local price on the page (e.g. a store that shows CAD may report USD here). \"changed\" means different from the last run: review and update houses.json by hand.",
+ "houses": {
+  "bombay-perfumery": {
+   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk.json",
+   "product": "CHAI MUSK",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 90,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "shoyeido": {
+   "src": "https://shoyeido.com/products/daily-kyonishiki-autumnleaves.json",
+   "product": "Kyonishiki - Autumn Leaves",
+   "variants": [
+    {
+     "title": "35 8.75\" sticks bundle",
+     "price": 3.6,
+     "available": null
+    },
+    {
+     "title": "10 bundle carton",
+     "price": 35.95,
+     "available": null
+    },
+    {
+     "title": "450 5.25\" sticks box",
+     "price": 37.95,
+     "available": null
+    },
+    {
+     "title": "150 5.25\" sticks box",
+     "price": 15.95,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "to-summer": {
+   "src": "https://tosummer.shop/products/osmanthus-perfume.json",
+   "product": "OSMANTHUS PERFUME",
+   "variants": [
+    {
+     "title": "30ML",
+     "price": 139.9,
+     "available": null
+    },
+    {
+     "title": "100ML",
+     "price": 279.9,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "hmns": {
+   "src": "https://hmnsperfume.com/products/orgsm.json",
+   "product": "HMNS ORGSM Eau De Parfum 100 ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 524358,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "xinu": {
+   "src": "https://www.luckyscent.com/products/copala-by-xinu.json",
+   "error": 404
+  },
+  "spa-ceylon": {
+   "src": "https://lk.spaceylon.com/products/kandyan-rose-eau-de-perfume-100ml.json",
+   "product": "Kandyan Rose - Eau De Perfume 100ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 15900,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "coqui-coqui": {
+   "src": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui.json",
+   "error": 404
+  },
+  "natura": {
+   "src": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette.json",
+   "error": 404
+  },
+  "fueguia-1833": {
+   "src": "https://shop.fueguia.com/products/agua-magnoliana.json",
+   "product": "Agua Magnoliana",
+   "variants": [
+    {
+     "title": "100ml - Perfume / I-XXIV",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / II-XXIII",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "30ml - Perfume / II-XXIV",
+     "price": 245,
+     "available": null
+    },
+    {
+     "title": "8ml - Pura Esencia / II-XXIII",
+     "price": 367,
+     "available": null
+    },
+    {
+     "title": "8ml - Pura Esencia / I-XXIII",
+     "price": 367,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / II-XXIV",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / I-XXV",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "30ml - Perfume / I-XXV",
+     "price": 245,
+     "available": null
+    },
+    {
+     "title": "8ml - Pura Esencia / I-XXV",
+     "price": 367,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / II-XXV",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "30ml - Perfume / II-XXV",
+     "price": 245,
+     "available": null
+    },
+    {
+     "title": "8ml - Pura Esencia / II-XXV",
+     "price": 367,
+     "available": null
+    },
+    {
+     "title": "30ml - Perfume / III-XXV",
+     "price": 245,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / III-XXV",
+     "price": 408,
+     "available": null
+    },
+    {
+     "title": "30ml - Perfume / I-XXVI",
+     "price": 245,
+     "available": null
+    },
+    {
+     "title": "100ml - Perfume / I-XXVI",
+     "price": 408,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "tadhana": {
+   "src": "https://www.tadhana.co/products/rockstar.json",
+   "product": "Rockstar",
+   "variants": [
+    {
+     "title": "50ml",
+     "price": 180,
+     "available": null
+    },
+    {
+     "title": "10ml travel size",
+     "price": 45,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "imaginary-authors": {
+   "src": "https://imaginaryauthors.com/products/a-city-on-fire.json",
+   "product": "A CITY ON FIRE - FRAGRANCE",
+   "variants": [
+    {
+     "title": "50ml",
+     "price": 115,
+     "available": null
+    },
+    {
+     "title": "14ml",
+     "price": 46,
+     "available": null
+    },
+    {
+     "title": "2ml",
+     "price": 7,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "goldfield-banks": {
+   "src": "https://www.goldfieldandbanks.com/products/pacific-rock-moss.json",
+   "product": "Pacific Rock Moss",
+   "variants": [
+    {
+     "title": "100ml",
+     "price": 280,
+     "available": null
+    },
+    {
+     "title": "50ml",
+     "price": 198,
+     "available": null
+    },
+    {
+     "title": "10ml",
+     "price": 54,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "hiram-green": {
+   "src": "https://hiramgreen.com/products/moon-bloom.json",
+   "product": "Moon bloom",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 220,
+     "available": null
+    }
+   ],
+   "changed": false
+  }
+ }
+}
