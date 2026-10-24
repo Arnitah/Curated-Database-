@@ -6555,5 +6555,35 @@
     "seen_in": "Booster-shot moisturiser tubes on Instagram",
     "checked": "2026-10-23",
     "format": "v2"
+  },
+  {
+    "id": "kojic-acid-body-wash-brightens-skin",
+    "title": "Kojic acid and turmeric body wash brightens your skin",
+    "topics": [
+      "body"
+    ],
+    "claims": [
+      {
+        "claim": "Washing with kojic acid fades dark spots",
+        "verdict": "partly",
+        "truth": "Kojic acid can slow pigment-making, but in a wash it sits on skin for seconds before rinsing away. Leave-on products and daily sunscreen matter far more.",
+        "grade": "C"
+      },
+      {
+        "claim": "It's gentle because it's natural",
+        "verdict": "false",
+        "truth": "Kojic acid comes from fermentation and is a known cause of irritation and allergy in some people. Patch test and stop if skin itches or stings.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Healthline: kojic acid uses, benefits and risks",
+        "url": "https://healthline.com/health/kojic-acid"
+      }
+    ],
+    "seen_in": "Paid body-wash posts on Instagram",
+    "checked": "2026-10-23",
+    "format": "v2"
   }
 ]

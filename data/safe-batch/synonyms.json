@@ -1,5 +1,85 @@
 [
   [
+    "\\bharitaki|\\bhirda\\b|\\bharad\\b|terminalia chebula|chebulic myrobalan",
+    "haritaki"
+  ],
+  [
+    "bibhitaki|\\bbehda\\b|\\bbaheda|terminalia bel+[ei]rica",
+    "bibhitaki"
+  ],
+  [
+    "nagarmotha|nagar ?motha",
+    "nagarmotha"
+  ],
+  [
+    "\\bkachora|\\bkachur|curcuma zedoaria|zedoary|white turmeric",
+    "kachora"
+  ],
+  [
+    "kapur ?kachri|hedychium|spiked ginger lily",
+    "kapurkachri"
+  ],
+  [
+    "\\baguaje|\\bburiti|\\bmoriche|mauritia flexuosa",
+    "buriti"
+  ],
+  [
+    "jabuticaba|plinia cauliflora",
+    "jabuticaba"
+  ],
+  [
+    "camu ?camu|myrciaria dubia",
+    "camucamu"
+  ],
+  [
+    "pitahaya|pitaya|dragon ?fruit|selenicereus",
+    "pitahaya"
+  ],
+  [
+    "\\bpepino|solanum muricatum",
+    "pepino"
+  ],
+  [
+    "\\bmatoa\\b|pometia pinnata|island lychee",
+    "matoa"
+  ],
+  [
+    "\\bmarang\\b|\\btarap\\b|artocarpus odoratissimus",
+    "marang"
+  ],
+  [
+    "wax apple|\\bmakopa|java apple|syzygium samarangense",
+    "waxapple"
+  ],
+  [
+    "canistel|egg ?fruit|pouteria campechiana",
+    "canistel"
+  ],
+  [
+    "pitanga|surinam(ese)? cherry|eugenia uniflora",
+    "pitanga"
+  ],
+  [
+    "barberr(y|ies)|zereshk|berberis",
+    "barberry"
+  ],
+  [
+    "\\browan|sorbus aucuparia|mountain ash",
+    "rowan"
+  ],
+  [
+    "blue magic|hair grease|hair pomade|hair fertili[sz]er",
+    "storegrease"
+  ],
+  [
+    "wild growth|store hair oil",
+    "storehairoil"
+  ],
+  [
+    "store(-bought)? conditioner|rinse-out conditioner",
+    "storeconditioner"
+  ],
+  [
     "\\bmandarin(?! orange peel powder)|\\btangerine",
     "mandarin"
   ],

@@ -49695,5 +49695,570 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "daily-fresh-mint-breath-pearls",
+    "name": "Daily fresh mint breath pearls",
+    "claim": "Sugar-free mint drops for on the go",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "xylitol",
+        4,
+        "tbsp"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ]
+    ],
+    "note": "Melt the xylitol in a small pan on the lowest heat, stirring, until it turns clear (it melts around 93 °C). Take it off the heat, wait 20 seconds, stir in the flavour, and drip pea-size drops onto a silicone mat. They harden into opaque pearls within minutes. Dust with a little xylitol and store airtight. Take 1 or 2 at a time; lots of xylitol can upset the stomach. Very toxic to dogs. They freshen breath for a while but don't replace brushing; bad breath that lasts can point to gum or tooth problems, so see a dentist.",
+    "inspired": "Breath pearls concept (Daily Fresh)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "coffee-reset-mint-breath-pearls",
+    "name": "Coffee reset mint and cardamom breath pearls",
+    "claim": "Mint with cardamom for after coffee",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "xylitol",
+        4,
+        "tbsp"
+      ],
+      [
+        "peppermint",
+        2,
+        "drops"
+      ],
+      [
+        "cardamom",
+        1,
+        "drops"
+      ]
+    ],
+    "note": "Melt the xylitol in a small pan on the lowest heat, stirring, until it turns clear (it melts around 93 °C). Take it off the heat, wait 20 seconds, stir in the flavour, and drip pea-size drops onto a silicone mat. They harden into opaque pearls within minutes. Dust with a little xylitol and store airtight. Take 1 or 2 at a time; lots of xylitol can upset the stomach. Very toxic to dogs. They freshen breath for a while but don't replace brushing; bad breath that lasts can point to gum or tooth problems, so see a dentist. Chewing cardamom pods after coffee or meals is a long-standing breath habit in South Asia and the Middle East.",
+    "inspired": "Breath pearls concept (Coffee Reset)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "meal-reset-mint-and-green-tea-breath-pearls",
+    "name": "Meal reset mint and green tea breath pearls",
+    "claim": "Mint and matcha for after strong food",
+    "type": "oral",
+    "use": "store",
+    "rows": [
+      [
+        "xylitol",
+        4,
+        "tbsp"
+      ],
+      [
+        "greenteapowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ]
+    ],
+    "note": "Melt the xylitol in a small pan on the lowest heat, stirring, until it turns clear (it melts around 93 °C). Take it off the heat, wait 20 seconds, stir in the flavour, and drip pea-size drops onto a silicone mat. They harden into opaque pearls within minutes. Dust with a little xylitol and store airtight. Take 1 or 2 at a time; lots of xylitol can upset the stomach. Very toxic to dogs. They freshen breath for a while but don't replace brushing; bad breath that lasts can point to gum or tooth problems, so see a dentist. Stir the matcha in with the mint; green tea polyphenols are studied for reducing mouth odour. Garlic and onion breath partly comes from the gut, so mints only mask it for a while.",
+    "inspired": "Breath pearls concept (Meal Reset)",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "mahabhringaraj-style-hair-oil-as-posted",
+    "name": "Mahabhringaraj-style herbal hair oil (as on the label)",
+    "claim": "Ayurvedic oil for dandruff, greying and hair fall",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "coconut",
+        50,
+        "g"
+      ],
+      [
+        "sesame",
+        50,
+        "g"
+      ],
+      [
+        "bhringraj",
+        1,
+        "tbsp"
+      ],
+      [
+        "brahmi",
+        1,
+        "tsp"
+      ],
+      [
+        "amla",
+        1,
+        "tsp"
+      ],
+      [
+        "haritaki",
+        1,
+        "tsp"
+      ],
+      [
+        "bibhitaki",
+        1,
+        "tsp"
+      ],
+      [
+        "nagarmotha",
+        1,
+        "tsp"
+      ],
+      [
+        "kachora",
+        0.5,
+        "tsp"
+      ],
+      [
+        "babchi",
+        0.5,
+        "tsp"
+      ],
+      [
+        "spikenard",
+        2,
+        "drops"
+      ],
+      [
+        "kapurkachri",
+        0.5,
+        "tsp"
+      ],
+      [
+        "rosebuds",
+        1,
+        "tbsp"
+      ],
+      [
+        "vetiver",
+        1,
+        "tsp"
+      ]
+    ],
+    "note": "Built from the herbs on the label. It includes bawachi (babchi), whose psoralens make skin burn and darken in sunlight, and the store version adds a green dye. Use the safer version instead.",
+    "inspired": "Mahabhringaraj oil",
+    "source": {
+      "creator": "Haircare by Jade",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "mahabhringaraj-style-hair-oil-safer",
+    "name": "Bhringraj herbal hair oil (safer)",
+    "claim": "Massage oil for the scalp and lengths before washing",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "coconut",
+        50,
+        "g"
+      ],
+      [
+        "sesame",
+        50,
+        "g"
+      ],
+      [
+        "bhringraj",
+        1,
+        "tbsp"
+      ],
+      [
+        "brahmi",
+        1,
+        "tsp"
+      ],
+      [
+        "amla",
+        1,
+        "tsp"
+      ],
+      [
+        "haritaki",
+        1,
+        "tsp"
+      ],
+      [
+        "bibhitaki",
+        1,
+        "tsp"
+      ],
+      [
+        "nagarmotha",
+        1,
+        "tsp"
+      ],
+      [
+        "kachora",
+        0.5,
+        "tsp"
+      ],
+      [
+        "kapurkachri",
+        0.5,
+        "tsp"
+      ],
+      [
+        "rosebuds",
+        1,
+        "tbsp"
+      ],
+      [
+        "vetiver",
+        1,
+        "tsp"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Babchi and the dye are left out, and jatamansi too (it's over-harvested; vetiver and rose cover the scent). Warm the oils with the herbs on the lowest heat for 1 to 2 hours, cool, strain through cloth, and add vitamin E. Massage into the scalp, leave a few hours or overnight, then shampoo. Unsure about coconut oil? It's one of the few oils shown to get inside the hair and reduce protein loss, but some coarse or low-porosity hair feels stiff with it; use all sesame instead. The herbs' growth claims rest on traditional use and animal studies.",
+    "inspired": "Mahabhringaraj oil",
+    "source": {
+      "creator": "Haircare by Jade",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "sidr-rose-herbal-scalp-mask",
+    "name": "Sidr and rose herbal scalp mask",
+    "claim": "Gentle cleansing, conditioning herb mask",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "sidr",
+        2,
+        "tbsp"
+      ],
+      [
+        "rosepowder",
+        1,
+        "tbsp"
+      ],
+      [
+        "amla",
+        1,
+        "tsp"
+      ],
+      [
+        "brahmi",
+        1,
+        "tsp"
+      ],
+      [
+        "tulsi",
+        1,
+        "tsp"
+      ],
+      [
+        "fenugreek",
+        1,
+        "tsp"
+      ],
+      [
+        "water",
+        0.5,
+        "cup"
+      ]
+    ],
+    "note": "Mix the powders with warm water or cooled rose tea into a yogurt-thick paste, apply to the scalp and lengths for 20 to 30 minutes, then rinse very well and condition. Sidr cleanses mildly; amla and rose leave hair soft. Make it fresh each time. Skip fenugreek if you're allergic to peanuts or chickpeas.",
+    "inspired": "Indian market hair haul",
+    "source": {
+      "creator": "Haircare by Jade",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "grease-and-growth-oil-mix-as-posted",
+    "name": "Hair grease and growth oil mix (as posted)",
+    "claim": "Hair growth oil",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "storegrease",
+        4,
+        "tbsp"
+      ],
+      [
+        "storehairoil",
+        2,
+        "tbsp"
+      ]
+    ],
+    "note": "As posted: two greases (Blue Magic and Virgin Hair Fertilizer) melted with Wild Growth oil. It seals moisture and cuts breakage, which helps hair keep its length, but nothing in it makes hair grow faster. Heavy on the scalp; keep it to edges, lengths and ends.",
+    "inspired": "Blue Magic, Virgin Hair Fertilizer and Wild Growth hair oil",
+    "source": {
+      "creator": "Ryan Chloe",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "castor-shea-length-retention-pomade",
+    "name": "Castor and shea length-retention pomade",
+    "claim": "Lighter DIY grease for edges, ends and protective styles",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        30,
+        "g"
+      ],
+      [
+        "castor",
+        25,
+        "g"
+      ],
+      [
+        "petrolatum",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "coconut",
+        9,
+        "g"
+      ],
+      [
+        "rosemary",
+        8,
+        "drops"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Melt the shea and petrolatum, stir in the oils, cool slightly, add rosemary and vitamin E, and whip as it sets. Use a fingertip on ends, edges and between braids. Clarify weekly so it doesn't build up on the scalp.",
+    "inspired": "Blue Magic and Wild Growth hair oil",
+    "source": {
+      "creator": "Ryan Chloe",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "chocolate-coffee-vanilla-lip-balm",
+    "name": "Chocolate, coffee and vanilla lip balm",
+    "claim": "Cocoa butter lip balm with a dessert scent",
+    "type": "lip",
+    "use": "store",
+    "rows": [
+      [
+        "petrolatum",
+        20,
+        "g"
+      ],
+      [
+        "cocoa",
+        10,
+        "g"
+      ],
+      [
+        "beeswax",
+        3,
+        "g"
+      ],
+      [
+        "lipflavor",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Melt in a water bath, stir in a lip-safe chocolate, coffee or vanilla flavour, and pour into small tubs. Petroleum jelly and cocoa butter make the soft, glossy pot-balm feel. For a beeswax-free version, use more cocoa butter.",
+    "inspired": "Vaseline Lip Therapy cocoa",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "niacinamide-brightening-body-wash",
+    "name": "Niacinamide brightening body wash",
+    "claim": "Gentle wash for an even-looking body tone",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "showergel",
+        200,
+        "g"
+      ],
+      [
+        "niacinamide",
+        4,
+        "g"
+      ],
+      [
+        "glycerin",
+        6,
+        "g"
+      ],
+      [
+        "turmericeo",
+        4,
+        "drops"
+      ]
+    ],
+    "note": "Dissolve the niacinamide in a spoonful of the gel, then stir it all together. Turmeric oil gives the scent without the yellow stains of the powder. Rinse-off products touch skin for under a minute, so for dark spots a leave-on niacinamide lotion and daily sunscreen do more. Kojic acid is skipped: it browns quickly and can irritate.",
+    "inspired": "Medicube Kojic Acid Turmeric brightening body wash",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "rosemary-silk-hair-oil",
+    "name": "Rosemary silk hair oil",
+    "claim": "Light shine oil for dry, damaged ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "squalane",
+        40,
+        "g"
+      ],
+      [
+        "camellia",
+        30,
+        "g"
+      ],
+      [
+        "jojoba",
+        29,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "rosemary",
+        6,
+        "drops"
+      ]
+    ],
+    "note": "Mix and bottle. Smooth 1 to 2 drops through damp or dry ends. PDRN (salmon DNA) in store versions can't be bought for home use, and its hair evidence is thin; squalane and camellia give the silky finish.",
+    "inspired": "Medicube Rosemary PDRN silk hair oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "rosemary-leave-in-detangling-spray",
+    "name": "Rosemary leave-in detangling spray",
+    "claim": "Softens and detangles damp hair",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        85,
+        "g"
+      ],
+      [
+        "storeconditioner",
+        8,
+        "g"
+      ],
+      [
+        "aloe",
+        5,
+        "g"
+      ],
+      [
+        "glycerin",
+        1,
+        "g"
+      ],
+      [
+        "rosemary",
+        4,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Shake the conditioner and rosemary into the water, then add aloe, glycerin and the preservative. Mist onto damp hair and comb through. Use within 2 months.",
+    "inspired": "Medicube Rosemary PDRN leave-in conditioner spray",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "white-clay-enzyme-powder-cleanser",
+    "name": "White clay enzyme powder cleanser",
+    "claim": "Powder wash for rough texture and blackheads",
+    "type": "face_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "kaolin",
+        3,
+        "tbsp"
+      ],
+      [
+        "oats",
+        2,
+        "tbsp"
+      ],
+      [
+        "riceflour",
+        2,
+        "tbsp"
+      ],
+      [
+        "enzymes",
+        0.25,
+        "tsp"
+      ]
+    ],
+    "note": "Mix the powders and keep them in a dry jar. Tip half a teaspoon into a wet palm: a little water makes a soft scrub paste, more makes a milky wash. Massage 30 seconds and rinse. Use 2 to 3 times a week; enzymes can sting sensitive skin, so patch test first.",
+    "inspired": "Skin Signal White Clay Enzyme Cleanser",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]

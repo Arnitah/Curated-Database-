@@ -6957,5 +6957,68 @@
   "flags": [
    "care: Keep using a fluoride toothpaste"
   ]
+ },
+ "daily-fresh-mint-breath-pearls": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "coffee-reset-mint-breath-pearls": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "meal-reset-mint-and-green-tea-breath-pearls": {
+  "verdict": "care",
+  "flags": [
+   "care: Keep using a fluoride toothpaste"
+  ]
+ },
+ "mahabhringaraj-style-hair-oil-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Endangered plant: buy certified only",
+   "stop: Remove babchi (bakuchi seed) oil or powder"
+  ]
+ },
+ "mahabhringaraj-style-hair-oil-safer": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sidr-rose-herbal-scalp-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "grease-and-growth-oil-mix-as-posted": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "castor-shea-length-retention-pomade": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chocolate-coffee-vanilla-lip-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "niacinamide-brightening-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-silk-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "rosemary-leave-in-detangling-spray": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "white-clay-enzyme-powder-cleanser": {
+  "verdict": "ok",
+  "flags": []
  }
 }

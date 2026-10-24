@@ -6253,5 +6253,208 @@
     "lvl": "ok",
     "good": "Sweet, soft citrus scent; a gentler choice than lemon or lime in leave-on products.",
     "care": "Not considered sun-sensitizing, unlike cold-pressed lemon, lime and bergamot. Oxidizes once old, so store cool and use within a year."
+  },
+  {
+    "id": "haritaki",
+    "grp": "Powders and exfoliants",
+    "name": "Haritaki (hirda, Terminalia chebula) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Tannin-rich Ayurvedic fruit, one of the three in triphala. Used in hair oils, rinses and herbal hair colour blends for its astringent, toning feel.",
+    "care": "Astringent, so it can feel drying on dry or curly hair. With iron-rich water or tools it can darken hair and stain."
+  },
+  {
+    "id": "bibhitaki",
+    "grp": "Powders and exfoliants",
+    "name": "Bibhitaki (behda, Terminalia bellirica) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "The second triphala fruit; astringent and tannin-rich, traditional in Ayurvedic hair oils and scalp rinses.",
+    "care": "Can dry hair if used often. Little research on hair itself."
+  },
+  {
+    "id": "nagarmotha",
+    "grp": "Dried botanicals",
+    "name": "Nagarmotha (nut grass root, Cyperus rotundus)",
+    "ph": "botan",
+    "tsp": 2.5,
+    "lvl": "ok",
+    "good": "Earthy, woody root used in Ayurvedic hair oils, ubtans and bath powders, mostly for its scent and a light cleansing feel.",
+    "care": "Low risk. Patch test, as with any root powder."
+  },
+  {
+    "id": "kachora",
+    "grp": "Powders and exfoliants",
+    "name": "Kachur (white turmeric, Curcuma zedoaria) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Aromatic turmeric relative used in ubtans and hair oils; it stains far less than yellow turmeric.",
+    "care": "Low risk; can tingle on sensitive scalps."
+  },
+  {
+    "id": "kapurkachri",
+    "grp": "Dried botanicals",
+    "name": "Kapur kachri (spiked ginger lily, Hedychium spicatum)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Fragrant rhizome found in Indian herbal shampoo powders and hair oils for its camphor-like scent.",
+    "care": "Little research. Patch test; keep out of eyes."
+  },
+  {
+    "id": "buriti",
+    "grp": "Carrier oils",
+    "name": "Buriti (aguaje, moriche palm) oil",
+    "ph": "oil",
+    "d": 0.9,
+    "lvl": "ok",
+    "good": "From the fruit of the Amazonian aguaje palm (Mauritia flexuosa). Very high in beta-carotene and oleic acid, so it adds softness and gloss to hair and dry skin.",
+    "care": "Deep orange: it can tint light or bleached hair, towels and fabric. Use 5 to 10% in a blend rather than neat."
+  },
+  {
+    "id": "jabuticaba",
+    "grp": "Fresh foods",
+    "name": "Jabuticaba (Brazilian grape tree, Plinia cauliflora) fruit or peel extract",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Dark purple peel rich in anthocyanin antioxidants; extracts appear in Brazilian skin and hair care.",
+    "care": "Fresh pulp spoils within a day and the peel stains. Little research on hair; use as a fresh mask only."
+  },
+  {
+    "id": "camucamu",
+    "grp": "Powders and exfoliants",
+    "name": "Camu camu (Myrciaria dubia) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Camu camu is acidic",
+    "good": "One of the richest natural sources of vitamin C; used in brightening masks.",
+    "care": "Its vitamin C breaks down fast once wet, and the acidity can sting. Mix fresh, keep off broken skin, and rinse off."
+  },
+  {
+    "id": "pitahaya",
+    "grp": "Fresh foods",
+    "name": "Pitahaya (yellow or red dragon fruit) pulp",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Watery, mildly hydrating pulp; the seeds give a linoleic-rich oil.",
+    "care": "Fresh pulp spoils within a day; the seeds can scratch if rubbed hard."
+  },
+  {
+    "id": "pepino",
+    "grp": "Fresh foods",
+    "name": "Pepino melon (Solanum muricatum)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Juicy, melon-like fruit used like cucumber in cooling masks.",
+    "care": "Nightshade family; patch test if you react to tomatoes. Spoils fast."
+  },
+  {
+    "id": "matoa",
+    "grp": "Fresh foods",
+    "name": "Matoa (island lychee, Pometia pinnata)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Soapberry-family fruit from Papua and Maluku; leaves and bark are used in traditional washes.",
+    "care": "Almost no cosmetic research. Treat as a food scent inspiration, not an active."
+  },
+  {
+    "id": "marang",
+    "grp": "Fresh foods",
+    "name": "Marang (tarap, Artocarpus odoratissimus)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Jackfruit relative with sweet, custard-like flesh; a gourmand scent inspiration.",
+    "care": "The rind's sticky latex can irritate skin. No cosmetic research on the flesh."
+  },
+  {
+    "id": "waxapple",
+    "grp": "Fresh foods",
+    "name": "Wax apple (makopa, Syzygium samarangense)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Crisp, watery fruit; a light, fresh scent idea.",
+    "care": "Little cosmetic research. Spoils fast."
+  },
+  {
+    "id": "canistel",
+    "grp": "Fresh foods",
+    "name": "Canistel (egg fruit, Pouteria campechiana)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Dry, creamy, carotene-rich pulp that mashes into a smooth mask like sweet potato.",
+    "care": "Use fresh, the same day. Little research."
+  },
+  {
+    "id": "pitanga",
+    "grp": "Fresh foods",
+    "name": "Pitanga (Surinam cherry, Eugenia uniflora)",
+    "ph": "fresh",
+    "d": 1.02,
+    "lvl": "ok",
+    "good": "Fruit high in vitamin C and carotenoids; the aromatic leaves are used in Brazilian teas and rinses.",
+    "care": "Tart and acidic, so it can sting. Little research on skin or hair."
+  },
+  {
+    "id": "barberry",
+    "grp": "Dried botanicals",
+    "name": "Barberry (zereshk, Berberis vulgaris)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Barberry root and bark contain berberine",
+    "good": "Tart dried berries rich in fruit acids and vitamin C; the root and bark hold berberine, studied for its antimicrobial effects.",
+    "care": "Berberine stains yellow and is not for use in pregnancy. The berries are acidic and can sting. Rinse off."
+  },
+  {
+    "id": "rowan",
+    "grp": "Dried botanicals",
+    "name": "Rowan berries (mountain ash, Sorbus aucuparia)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Raw rowan berries are irritating",
+    "good": "Traditional Northern European berry for jams and tonics once cooked; rich in vitamin C.",
+    "care": "Raw berries contain parasorbic acid, which irritates the stomach and skin; cooking or drying breaks it down. Little cosmetic research."
+  },
+  {
+    "id": "storegrease",
+    "grp": "Store-bought products",
+    "name": "Store hair grease or pomade (e.g. Blue Magic)",
+    "ph": "butter",
+    "d": 0.9,
+    "lvl": "ok",
+    "good": "Petrolatum, lanolin and mineral oil seal moisture in and protect ends and edges.",
+    "care": "Heavy and slow to wash out. On the scalp it can build up and trap flakes; use on lengths and edges and clarify weekly."
+  },
+  {
+    "id": "storehairoil",
+    "grp": "Store-bought products",
+    "name": "Store hair oil (e.g. Wild Growth)",
+    "ph": "oil",
+    "d": 0.9,
+    "lvl": "ok",
+    "good": "Blends of plant oils with fragrance for shine and softness.",
+    "care": "Fragrance can irritate a sensitive scalp. No oil makes hair grow faster; it helps by cutting breakage."
+  },
+  {
+    "id": "storeconditioner",
+    "grp": "Store-bought products",
+    "name": "Store-bought conditioner",
+    "ph": "emul",
+    "d": 1,
+    "lvl": "ok",
+    "good": "Ready-made conditioner; diluted, it becomes a leave-in detangling spray.",
+    "care": "Diluting it with water also dilutes its preservative, so add one (and use within 1 to 2 months)."
   }
 ]
