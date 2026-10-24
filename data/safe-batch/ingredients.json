@@ -6608,5 +6608,66 @@
     "lvl": "ok",
     "good": "Tart cherry that's one of the richest natural sources of vitamin C; used in brightening masks.",
     "care": "Its vitamin C fades fast once wet and it's acidic, so mix fresh and rinse off."
+  },
+  {
+    "id": "raffiaoil",
+    "grp": "Carrier oils",
+    "name": "Raffia palm (raphia) fruit oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "care",
+    "good": "Pressed from the fruit pulp of Raphia farinifera, the raffia palm grown in Madagascar and East Africa. Mostly used for soap and cooking; older botanical notes also mention it as a hair dressing.",
+    "care": "Rare and barely studied on skin or hair, and hard to buy pure. The hair use isn't confirmed by a named source yet. Patch test, and buy only from a seller who names the species."
+  },
+  {
+    "id": "dateseedoil",
+    "grp": "Carrier oils",
+    "name": "Date seed (date pit) oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "Pressed from date pits (Phoenix dactylifera). About half oleic acid with some lauric acid, so it feels between olive and coconut oil: soft, with a light coating on hair.",
+    "care": "Little research on skin or hair; studies so far only measure its make-up. Low risk; patch test."
+  },
+  {
+    "id": "licurioil",
+    "grp": "Carrier oils",
+    "name": "Licuri (ouricuri) oil",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "ok",
+    "comedo": true,
+    "good": "Kernel oil of the licuri palm (Syagrus coronata) from northeastern Brazil. High in lauric acid like coconut and babassu, so it lathers well in soap and coats hair.",
+    "care": "Like coconut oil, it can clog pores on the face. Better for soap, body and hair."
+  },
+  {
+    "id": "macaubaoil",
+    "grp": "Carrier oils",
+    "name": "Macaúba (macaw palm) oil",
+    "ph": "oil",
+    "d": 0.91,
+    "lvl": "ok",
+    "good": "From the macaw palm (Acrocomia aculeata). The fruit pulp oil is mostly oleic acid, a soft, glossy oil for hair and dry skin; the kernel oil is mostly lauric acid, like coconut.",
+    "care": "Check which one you're buying: pulp oil and kernel oil behave differently, and kernel oil can clog pores on the face. Little research on hair or skin."
+  },
+  {
+    "id": "cranberryoil",
+    "grp": "Carrier oils",
+    "name": "Cranberry seed oil",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "ok",
+    "good": "Cold-pressed from cranberry seeds. Unusually even in omega-3 and omega-6 fats, plus vitamin E, so it's a light, fast-absorbing oil for dry skin and scalp blends.",
+    "care": "High in omega-3, so it goes rancid sooner than most oils. Buy small, keep it cool and dark, and use within a few months."
+  },
+  {
+    "id": "acaipowder",
+    "grp": "Powders and exfoliants",
+    "name": "Açaí or juçara fruit powder",
+    "ph": "powder",
+    "tsp": 2.5,
+    "lvl": "ok",
+    "good": "Freeze-dried fruit of the açaí palm (Euterpe oleracea) or its Atlantic Forest cousin juçara (E. edulis). Adds colour and antioxidant-rich fruit to masks.",
+    "care": "Deep purple: it can tint light skin, grout and towels for a while. Antioxidant-rich doesn't mean it treats skin; it's a gentle mask base. Juçara is threatened by palm-heart harvesting, so look for certified sources."
   }
 ]
