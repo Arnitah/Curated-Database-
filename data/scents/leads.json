@@ -140,17 +140,10 @@
   "src": "https://hankyhouse.com/"
  },
  {
-  "name": "Janua",
-  "country": "Thailand (to confirm)",
-  "cc": "TH",
-  "lead": "Colourful stacked perfume bottles seen in Thai scent posts. Seen in your Instagram finds.",
-  "src": "https://janua.co/"
- },
- {
   "name": "Wick Parfums",
   "country": "Thailand (to confirm)",
   "cc": "TH",
-  "lead": "Pocket-size solid or travel perfume case. Seen in your Instagram finds.",
+  "lead": "The case in your Thai screenshot. Possibly linked to Wick Fragrances (Cape Town, now a full entry), not confirmed.",
   "src": null
  },
  {
@@ -172,13 +165,6 @@
   "country": "Thailand",
   "cc": "TH",
   "lead": "Herbal inhalers and balms (Poy Sian, Siang Pure, Peppermint Field) sold as souvenirs; a Thai everyday scent ritual.",
-  "src": null
- },
- {
-  "name": "LOE",
-  "country": "South Korea (to confirm)",
-  "cc": "KR",
-  "lead": "Solid perfume sticks (White Shirts, Peach & Tea). Seen in your Instagram finds.",
   "src": null
  },
  {
@@ -250,5 +236,54 @@
   "cc": "NZ",
   "lead": "NZ perfume studio.",
   "src": "https://www.essencional.com/en/posts/scenting-the-land-of-the-long-white-cloud-perfume-and-artistry-in-new-zealand/"
+ },
+ {
+  "name": "Frau Tonis Parfum",
+  "country": "Germany",
+  "cc": "DE",
+  "lead": "Berlin perfumery near Hackescher Markt; known for Linde Berlin (linden blossom).",
+  "src": "https://www.visitberlin.de/de/frau-tonis-parfum"
+ },
+ {
+  "name": "Perfumehead",
+  "country": "To confirm",
+  "cc": "CA",
+  "lead": "Indie house with scents like Canadian Tuxedo and Reine des Anges (rose, saffron, angelica, vetiver); origin unconfirmed.",
+  "src": "https://perfumehead.com/"
+ },
+ {
+  "name": "L'Artisan Parfumeur",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Paris pioneer of niche (1976); fig and green scents, a Diptyque cousin.",
+  "src": null
+ },
+ {
+  "name": "Frédéric Malle",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Paris 'publisher' of perfumers; shop blocks automated checks.",
+  "src": null
+ },
+ {
+  "name": "Acqua di Parma",
+  "country": "Italy",
+  "cc": "IT",
+  "lead": "Parma colognes (Colonia); shop blocks automated checks.",
+  "src": null
+ },
+ {
+  "name": "Ramón Monegal",
+  "country": "Spain",
+  "cc": "ES",
+  "lead": "Barcelona perfumer from a fragrance family.",
+  "src": null
+ },
+ {
+  "name": "Agonist",
+  "country": "Sweden",
+  "cc": "SE",
+  "lead": "Swedish niche with glass-art bottles.",
+  "src": null
  }
 ]

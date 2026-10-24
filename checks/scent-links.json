@@ -1,8 +1,8 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 65,
-  "blocked": 6,
+  "pass": 91,
+  "blocked": 7,
   "fail": 0
  },
  "houses": {
@@ -204,7 +204,7 @@
   "borom": {
    "site": "blocked",
    "sig": "pass",
-   "price": "pass"
+   "price": "blocked"
   },
   "reunrom": {
    "site": "pass",
@@ -357,6 +357,141 @@
    "price": "pass"
   },
   "the-virtue": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "diptyque": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "byredo": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "buly-1803": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "goutal": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "essential-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "matiere-premiere": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ormaie": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "etat-libre-dorange": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "serge-lutens": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "memo-paris": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "maison-crivelli": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "floral-street": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "ormonde-jayne": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "miller-harris": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "penhaligons": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "santa-maria-novella": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "xerjoff": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "nasomatto": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "vilhelm-parfumerie": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "mizensir": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "bdk-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "claus-porto": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "korres": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "skandinavisk": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "janua": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "loe": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "wick-fragrances": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"

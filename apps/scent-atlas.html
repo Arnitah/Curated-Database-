@@ -109,6 +109,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       </select>
     </div>
     <div class="row" id="conts"><span class="lab">Continent</span></div>
+    <div class="row"><span class="lab">Your taste</span><button class="chip" type="button" id="likeDip" aria-pressed="false">If you love Diptyque</button></div>
     <div class="row" id="fams"><span class="lab">Smells</span></div>
     <div class="row" id="types"><span class="lab">Kind</span><span class="count" id="count"></span></div>
   </div>
@@ -150,7 +151,7 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const CONT_ORDER = ["Asia", "Europe/Asia", "Africa", "Americas", "Oceania", "Europe"];
 const TYPE_LABEL = { niche: "Niche", indie: "Indie", lifestyle: "Lifestyle", attar: "Attar & oil", incense: "Incense", mass: "Affordable", "inspired-by": "Inspired-by" };
-const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region" };
+const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region", like: false };
 let D;
 
 function cad(p, rates, which = "amt") {
@@ -180,7 +181,7 @@ function card(h) {
   return `<article class="card">
     <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(h.city || "")}${h.city ? ", " : ""}${esc(h.country)}${h.founded ? " · since " + h.founded : ""}</div></div>
       <span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></div>
-    <div class="tags"><span class="tag type">${esc(TYPE_LABEL[h.type] || h.type)}</span>${h.families.map((f) => `<span class="tag">${esc(D.fam[f]?.label || f)}</span>`).join("")}${(h.accents || []).map((a) => `<span class="tag">${esc(a)}</span>`).join("")}</div>
+    <div class="tags"><span class="tag type">${esc(TYPE_LABEL[h.type] || h.type)}</span>${(h.like || []).includes("diptyque") ? `<span class="tag type">Diptyque fans</span>` : ""}${h.families.map((f) => `<span class="tag">${esc(D.fam[f]?.label || f)}</span>`).join("")}${(h.accents || []).map((a) => `<span class="tag">${esc(a)}</span>`).join("")}</div>
     <p class="why">${esc(h.about)}</p>
     <div class="sig"><div class="nm">${esc(h.sig.name)}</div>
       ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v.join(", "))}</dd>`).join("")}</dl>` : ""}
@@ -199,6 +200,7 @@ function render() {
     if (state.cont.size && !state.cont.has(h.continent)) return false;
     if (state.fam.size && !h.families.some((f) => state.fam.has(f))) return false;
     if (state.type.size && !state.type.has(h.type)) return false;
+    if (state.like && !(h.id === "diptyque" || (h.like || []).includes("diptyque"))) return false;
     if (!q) return true;
     const n = h.sig.notes || {};
     return [h.name, h.country, h.city, h.about, h.why, h.sig.name, h.sig.profile, ...(h.tags || []), ...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || [])].join(" ").toLowerCase().includes(q);
@@ -229,6 +231,7 @@ function render() {
   chips($("fams"), famKeys, state.fam, (k) => families[k].label);
   chips($("types"), Object.keys(TYPE_LABEL).filter((t) => houses.some((h) => h.type === t)), state.type, (t) => TYPE_LABEL[t]);
   $("types").appendChild($("count"));
+  $("likeDip").onclick = (e) => { state.like = !state.like; e.currentTarget.setAttribute("aria-pressed", state.like); render(); };
   $("q").oninput = (e) => { state.q = e.target.value; render(); };
   $("sort").onchange = (e) => { state.sort = e.target.value; render(); };
   $("pyrnote").textContent = families._pyramid || "";

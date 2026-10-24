@@ -64,5 +64,29 @@
   "city": "Montreal",
   "country": "Canada",
   "what": "Niche shops carrying Montreal indies like Universal Flowering and Miskeo."
+ },
+ {
+  "name": "Diptyque, 34 boulevard Saint-Germain",
+  "city": "Paris",
+  "country": "France",
+  "what": "Diptyque's original 1961 shop."
+ },
+ {
+  "name": "Le Marais and Palais-Royal",
+  "city": "Paris",
+  "country": "France",
+  "what": "Serge Lutens, Buly 1803, État Libre d'Orange and many niche boutiques within walking distance."
+ },
+ {
+  "name": "Officina di Santa Maria Novella, Via della Scala",
+  "city": "Florence",
+  "country": "Italy",
+  "what": "The historic monastery pharmacy, open to visitors."
+ },
+ {
+  "name": "Covent Garden and Burlington Arcade",
+  "city": "London",
+  "country": "United Kingdom",
+  "what": "Floral Street, Penhaligon's, Miller Harris and more."
  }
 ]

@@ -114,6 +114,9 @@
    "budget",
    "clean",
    "everyday"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -288,6 +291,9 @@
     "price": "Price not read",
     "url": "https://www.tamburins.com/en/shop/perfume/perfumes/"
    }
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -342,6 +348,9 @@
    "k-beauty",
    "tobacco",
    "unisex"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -398,6 +407,9 @@
    "budget",
    "multi-use",
    "seoul"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -572,6 +584,9 @@
    "osmanthus",
    "tea",
    "eastern aesthetic"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -1901,6 +1916,9 @@
    "botanical",
    "patagonia",
    "clean formula"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -2130,6 +2148,9 @@
   "tags": [
    "australian native",
    "aquatic"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -2226,16 +2247,17 @@
      "powdery finish"
     ]
    },
-   "profile": "A soft, powdery vanilla brightened by mandarin and peach with a little ginger warmth. Others in the range: Japanese Cotton (melon and jasmine), Sweet Tweed (rose and peach), Red Velvet (orange, chocolate, hazelnut), Cashmere Unnamed and Naked Satin."
+   "profile": "A soft, powdery vanilla brightened by mandarin and peach with a little ginger warmth. Others in the range: Japanese Cotton (melon and jasmine), Sweet Tweed (rose and peach), Red Velvet (orange, chocolate, hazelnut), Cashmere Unnamed and Naked Satin. The bestseller is Lace VII.XII, a clean white floral."
   },
   "price": {
-   "amt": null,
+   "amt": 3500,
+   "amt_max": 3900,
    "cur": "THB",
-   "ml": null,
-   "status": "unknown",
-   "src": "https://dailyvanity.sg/news/thai-fragrance-brands/",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://www.instagram.com/borom.official/",
    "on": "2026-10-24",
-   "note": "No public online price list; sold at its Bangkok counters."
+   "note": "From your research: Vanilla Collection ฿3,500 and Textile Collection ฿3,900 per 30 ml; Shopee Thailand bundles add free 10 ml travel sizes."
   },
   "tags": [
    "textile",
@@ -2825,6 +2847,9 @@
   "tags": [
    "magazine",
    "discovery set"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -3307,6 +3332,9 @@
    "alcohol-free",
    "hinoki",
    "forest"
+  ],
+  "like": [
+   "diptyque"
   ]
  },
  {
@@ -3900,6 +3928,1472 @@
   "tags": [
    "coastal",
    "incense"
+  ]
+ },
+ {
+  "id": "diptyque",
+  "name": "Diptyque",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris (34 boulevard Saint-Germain)",
+  "type": "niche",
+  "scale": "large",
+  "site": "https://diptyqueparis.com/",
+  "about": "A Paris house started in 1961 by three artists as a fabric-and-curiosities shop on boulevard Saint-Germain. Famous for its oval labels, candles, and natural-feeling, travel-inspired scents (several drawn from a founder's childhood in Vietnam).",
+  "why": "Your favourite, and the reference point for the 'quiet, artistic, nature-first' style. Houses tagged 'If you love Diptyque' share that feel.",
+  "families": [
+   "green",
+   "woody",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "fig",
+   "incense",
+   "candle"
+  ],
+  "sig": {
+   "name": "Philosykos (Eau de Parfum)",
+   "url": "https://diptyqueparis.com/products/eau-de-parfum-philosykos-philop75cv1",
+   "notes": {
+    "t": [
+     "fig leaf",
+     "green notes"
+    ],
+    "h": [
+     "fig",
+     "coconut"
+    ],
+    "b": [
+     "white cedar",
+     "fig tree wood"
+    ]
+   },
+   "profile": "A whole fig tree on a hot Greek afternoon: green, milky fig leaves, a little sweet fruit, then dry pale wood from the trunk and bark. Fresh and creamy at once; the eau de parfum leans more woody than the original toilette."
+  },
+  "price": {
+   "amt": 180,
+   "cur": "EUR",
+   "ml": 75,
+   "status": "verified",
+   "src": "https://diptyqueparis.com/products/eau-de-parfum-philosykos-philop75cv1",
+   "on": "2026-10-24",
+   "note": "Price from the European shop; the Canadian site prices in CAD. Holiday editions sell at the same price."
+  },
+  "tags": [
+   "iconic",
+   "candles",
+   "paris"
+  ],
+  "founded": 1961,
+  "like": [
+   "diptyque"
+  ],
+  "also": [
+   {
+    "name": "Tam Dao (EDP)",
+    "notes": "Creamy sandalwood with cypress, cedar and a breath of Asian spice, inspired by a Vietnamese temple forest.",
+    "price": "€180 · 75 ml",
+    "url": "https://diptyqueparis.com/products/eau-de-parfum-tam-dao-tamdaop75cv1"
+   },
+   {
+    "name": "Do Son (EDP)",
+    "notes": "Tuberose and orange blossom carried on a sea breeze, from a childhood beach in Vietnam. Rich but airy.",
+    "price": "€180 · 75 ml",
+    "url": "https://diptyqueparis.com/products/eau-de-parfum-do-son-holiday-edition-xm26dosp75"
+   },
+   {
+    "name": "Orphéon (EDP)",
+    "notes": "A smoky 1960s Paris jazz bar: juniper, a little jasmine, tonka and cedar. Soft and woody.",
+    "price": "€180 · 75 ml",
+    "url": "https://diptyqueparis.com/products/eau-de-parfum-orpheon-holiday-edition-xm26orph75"
+   },
+   {
+    "name": "Fleur de Peau (EDP)",
+    "notes": "Powdery iris and pink pepper over warm, skin-like musk and ambrette. Intimate and clean.",
+    "price": "€350 · large format",
+    "url": "https://diptyqueparis.com/products/eau-de-parfum-exceptional-format-fleur-de-peau-largeedpfl"
+   },
+   {
+    "name": "Eau Rose (EDP)",
+    "notes": "A bright, fresh-cut rose with a lychee-like juiciness. Easy everyday rose.",
+    "price": "€180 · 75 ml",
+    "url": "https://diptyqueparis.com/products/eau-de-parfum-eau-rose-holiday-edition-xm26rose75"
+   }
+  ]
+ },
+ {
+  "id": "byredo",
+  "name": "BYREDO",
+  "country": "Sweden",
+  "cc": "SE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Stockholm",
+  "type": "niche",
+  "scale": "large",
+  "site": "https://www.byredo.com/ca_en/gypsy-water-eau-de-parfum-100ml",
+  "about": "A Stockholm house known for minimal bottles and memory-based scents, each told in a few words.",
+  "why": "Same calm, artful feel as Diptyque with a Scandinavian, more minimal twist. Has a Canadian online store.",
+  "families": [
+   "woody",
+   "citrus",
+   "spicy"
+  ],
+  "accents": [
+   "incense",
+   "pine"
+  ],
+  "sig": {
+   "name": "Gypsy Water",
+   "url": "https://www.byredo.com/ca_en/gypsy-water-eau-de-parfum-100ml",
+   "notes": {
+    "t": [
+     "bergamot",
+     "juniper",
+     "lemon",
+     "pepper"
+    ],
+    "h": [
+     "incense",
+     "orris",
+     "pine needle"
+    ],
+    "b": [
+     "amber",
+     "sandalwood",
+     "vanilla"
+    ]
+   },
+   "profile": "A campfire in a pine forest: bright citrus and juniper, then incense smoke and pine needles, settling into soft vanilla sandalwood. Woody, cozy and genderless."
+  },
+  "price": {
+   "amt": 422,
+   "cur": "CAD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://www.byredo.com/ca_en/gypsy-water-eau-de-parfum-100ml",
+   "on": "2026-10-24",
+   "note": "Canadian store price; size taken from the product link."
+  },
+  "tags": [
+   "minimal",
+   "stockholm"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "buly-1803",
+  "name": "Officine Universelle Buly 1803",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://buly1803.com/",
+  "about": "A revived 19th-century Paris apothecary selling water-based perfumes, oils, powders and combs in beautiful old-fashioned shops (including in Japan).",
+  "why": "Diptyque-like Parisian heritage charm; its water-based 'Eau Triple' perfumes are alcohol-free.",
+  "families": [
+   "woody",
+   "floral"
+  ],
+  "accents": [
+   "alcohol-free",
+   "apothecary"
+  ],
+  "sig": {
+   "name": "Eau Triple Oud de Médine",
+   "url": "https://buly1803.com/products/eau-triple-oud-de-medine",
+   "notes": {
+    "t": [],
+    "h": [
+     "oud"
+    ],
+    "b": [
+     "woods"
+    ]
+   },
+   "profile": "A gentle, water-based oud that sits softly on skin rather than shouting. Their perfumes are designed to be noticed only up close."
+  },
+  "price": {
+   "amt": 150,
+   "cur": "EUR",
+   "ml": null,
+   "status": "verified",
+   "src": "https://buly1803.com/products/eau-triple-oud-de-medine",
+   "on": "2026-10-24",
+   "note": "Size not shown on the page."
+  },
+  "tags": [
+   "apothecary",
+   "alcohol-free"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "goutal",
+  "name": "Goutal Paris",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://goutalparis.com/",
+  "about": "Annick Goutal's Paris house, founded on light, natural-feeling citrus and floral scents, many tied to personal memories.",
+  "why": "A classic French 'garden' style that Diptyque fans often love.",
+  "families": [
+   "citrus",
+   "floral",
+   "fruity"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Eau d'Hadrien",
+   "url": "https://goutalparis.com/products/eau-dhadrien-mixte",
+   "notes": {
+    "t": [
+     "lemon",
+     "grapefruit",
+     "cypress"
+    ],
+    "h": [
+     "citron"
+    ],
+    "b": [
+     "cypress wood"
+    ]
+   },
+   "profile": "Tuscan summer in a glass: sharp lemon and grapefruit softened by green cypress. Clean and timeless. For something sweeter, Petite Chérie is pear, rose and vanilla."
+  },
+  "price": {
+   "amt": 205,
+   "cur": "EUR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://goutalparis.com/products/eau-dhadrien-mixte",
+   "on": "2026-10-24",
+   "note": "Petite Chérie 30 ml €95."
+  },
+  "tags": [
+   "citrus",
+   "classic"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "essential-parfums",
+  "name": "Essential Parfums",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://essentialparfums.com/",
+  "about": "A Paris house that gives famous perfumers a single key ingredient and sells the results at fair prices in refillable bottles.",
+  "why": "Big-name perfumers at accessible prices, with refills.",
+  "families": [
+   "woody",
+   "citrus",
+   "musk"
+  ],
+  "accents": [
+   "refillable"
+  ],
+  "sig": {
+   "name": "Bois Impérial (Extrait)",
+   "url": "https://essentialparfums.com/products/bois-imperial-extrait-de-parfum-vaporisateur-30-ml",
+   "notes": {
+    "t": [
+     "basil"
+    ],
+    "h": [
+     "vetiver",
+     "patchouli"
+    ],
+    "b": [
+     "akigalawood",
+     "woods"
+    ]
+   },
+   "profile": "A modern woody scent with a fresh herbal lift; the extrait version is darker, richer and twice as concentrated."
+  },
+  "price": {
+   "amt": 98,
+   "cur": "EUR",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://essentialparfums.com/products/bois-imperial-extrait-de-parfum-vaporisateur-30-ml",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "refillable",
+   "value"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "matiere-premiere",
+  "name": "Matière Première",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Grasse / Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://matiere-premiere.com/",
+  "about": "A Grasse-rooted house where each perfume showcases one raw material, often from its own organic fields.",
+  "why": "Ingredient-first perfumery, useful background for Safe Batch.",
+  "families": [
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "organic lavandin"
+  ],
+  "sig": {
+   "name": "Metal Lavender",
+   "url": "https://matiere-premiere.com/products/metal-lavender",
+   "notes": {
+    "t": [],
+    "h": [
+     "organic lavandin"
+    ],
+    "b": []
+   },
+   "profile": "Lavender as you would smell it in a steel distillery in Provence: clean, cool and slightly metallic rather than soapy."
+  },
+  "price": {
+   "amt": 170,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://matiere-premiere.com/products/metal-lavender",
+   "on": "2026-10-24",
+   "note": "100 ml €250."
+  },
+  "tags": [
+   "single ingredient",
+   "grasse"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "ormaie",
+  "name": "Ormaie",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://ormaie.com/",
+  "about": "A mother-and-son Paris house using mostly natural materials in refillable bottles with wooden caps.",
+  "why": "Natural-leaning, literary scents in the same spirit as Diptyque.",
+  "families": [
+   "woody",
+   "gourmand"
+  ],
+  "accents": [
+   "paper",
+   "liquorice"
+  ],
+  "sig": {
+   "name": "Papier Carbone",
+   "url": "https://ormaie.com/products/papier-carbone-50ml",
+   "notes": {
+    "t": [],
+    "h": [
+     "liquorice"
+    ],
+    "b": [
+     "woods"
+    ]
+   },
+   "profile": "The smell of old novels on wooden shelves, with a soft liquorice sweetness. Quiet and nostalgic."
+  },
+  "price": {
+   "amt": 300,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://ormaie.com/products/papier-carbone-50ml",
+   "on": "2026-10-24",
+   "note": "US shop price; 20 ml US$159, refills sold."
+  },
+  "tags": [
+   "natural",
+   "refillable"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "etat-libre-dorange",
+  "name": "État Libre d'Orange",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://etatlibredorange.com/",
+  "about": "A cheeky Paris house known for provocative names and surprisingly wearable scents.",
+  "why": "The playful opposite of Diptyque's calm, at fair niche prices.",
+  "families": [
+   "green",
+   "floral",
+   "citrus"
+  ],
+  "accents": [
+   "mint"
+  ],
+  "sig": {
+   "name": "You or Someone Like You",
+   "url": "https://etatlibredorange.com/products/you-or-someone-like-you",
+   "notes": {
+    "t": [
+     "mint",
+     "bergamot"
+    ],
+    "h": [
+     "rose",
+     "green notes"
+    ],
+    "b": [
+     "grass",
+     "musk"
+    ]
+   },
+   "profile": "A cool, minty, green rose on a hot Los Angeles day. Bright, airy and very easy to wear."
+  },
+  "price": {
+   "amt": 110,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://etatlibredorange.com/products/you-or-someone-like-you",
+   "on": "2026-10-24",
+   "note": "100 ml €165."
+  },
+  "tags": [
+   "playful",
+   "value"
+  ]
+ },
+ {
+  "id": "serge-lutens",
+  "name": "Serge Lutens",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris (Palais-Royal)",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://sergelutens.com/",
+  "about": "The Paris artist's house, famous for rich, dark, resinous compositions.",
+  "why": "A historic niche house; the opposite end from light colognes.",
+  "families": [
+   "woody",
+   "amber",
+   "spicy"
+  ],
+  "accents": [
+   "resin",
+   "pine"
+  ],
+  "sig": {
+   "name": "Fille en Aiguilles",
+   "url": "https://sergelutens.com/products/fille-en-aiguilles-eau-de-parfum-spray",
+   "notes": {
+    "t": [
+     "pine needles"
+    ],
+    "h": [
+     "resin",
+     "spices"
+    ],
+    "b": [
+     "frankincense",
+     "dried fruit"
+    ]
+   },
+   "profile": "Sun-warmed pine needles and sticky resin on a Mediterranean beach, with a little candied fruit. Warm and resinous."
+  },
+  "price": {
+   "amt": 375,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://sergelutens.com/products/fille-en-aiguilles-eau-de-parfum-spray",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "resinous",
+   "historic niche"
+  ]
+ },
+ {
+  "id": "memo-paris",
+  "name": "Memo Paris",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://memoparis.com/",
+  "about": "A Paris house of travel-diary perfumes, each named after a place (Marfa, Inlé, Irish Leather).",
+  "why": "Travel scents like Diptyque's, but bolder.",
+  "families": [
+   "gourmand",
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "travel"
+  ],
+  "sig": {
+   "name": "Sky Paris Sky",
+   "url": "https://memoparis.com/products/sky-paris-sky-eau-de-parfum",
+   "notes": {
+    "t": [],
+    "h": [
+     "cocoa butter"
+    ],
+    "b": [
+     "soft woods",
+     "amber"
+    ]
+   },
+   "profile": "A tribute to the Art Deco dome of Galeries Lafayette: creamy cocoa butter and vanilla over soft woods and amber."
+  },
+  "price": {
+   "amt": 255,
+   "cur": "EUR",
+   "ml": 75,
+   "status": "verified",
+   "src": "https://memoparis.com/products/sky-paris-sky-eau-de-parfum",
+   "on": "2026-10-24",
+   "note": "Galeries Lafayette exclusive."
+  },
+  "tags": [
+   "travel"
+  ]
+ },
+ {
+  "id": "maison-crivelli",
+  "name": "Maison Crivelli",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://maisoncrivelli.com/",
+  "about": "A Paris house built on 'unexpected encounters' between materials, with strong, long-lasting extraits.",
+  "why": "Big, vivid scents loved in the Gulf.",
+  "families": [
+   "floral",
+   "gourmand",
+   "fruity"
+  ],
+  "accents": [
+   "leather",
+   "hibiscus"
+  ],
+  "sig": {
+   "name": "Hibiscus Mahajád",
+   "url": "https://maisoncrivelli.com/products/hibiscus-mahajad",
+   "notes": {
+    "t": [],
+    "h": [
+     "hibiscus",
+     "rose"
+    ],
+    "b": [
+     "vanilla",
+     "leather",
+     "musk"
+    ]
+   },
+   "profile": "Hibiscus tea in a gemstone market: tart, ruby-red hibiscus and rose against soft vanilla, leather and musk. Very long-lasting."
+  },
+  "price": {
+   "amt": 200,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://maisoncrivelli.com/products/hibiscus-mahajad",
+   "on": "2026-10-24",
+   "note": "100 ml €350; 5 ml €25."
+  },
+  "tags": [
+   "extrait",
+   "long-lasting"
+  ]
+ },
+ {
+  "id": "floral-street",
+  "name": "Floral Street",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "London (Covent Garden)",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://floralstreet.com/",
+  "about": "A London brand of bright, fun florals in recyclable pulp packaging.",
+  "why": "Affordable, playful UK floral perfumes.",
+  "families": [
+   "floral",
+   "fruity",
+   "aquatic"
+  ],
+  "accents": [
+   "rhubarb"
+  ],
+  "sig": {
+   "name": "Electric Rhubarb",
+   "url": "https://floralstreet.com/products/electric-rhubarb-eau-de-parfum-50ml-10ml-bundle",
+   "notes": {
+    "t": [
+     "English rhubarb",
+     "sea air"
+    ],
+    "h": [
+     "gardenia"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "Chilled prosecco in a summer garden: tart rhubarb and salty air with creamy gardenia on soft sandalwood."
+  },
+  "price": {
+   "amt": 86,
+   "cur": "GBP",
+   "ml": 60,
+   "status": "verified",
+   "src": "https://floralstreet.com/products/electric-rhubarb-eau-de-parfum-50ml-10ml-bundle",
+   "on": "2026-10-24",
+   "note": "50 ml plus 10 ml bundle."
+  },
+  "tags": [
+   "london",
+   "fun"
+  ]
+ },
+ {
+  "id": "ormonde-jayne",
+  "name": "Ormonde Jayne",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "London",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://ormondejayne.com/",
+  "about": "A London house known for rare materials and refined, warm compositions.",
+  "why": "Elegant British niche; strong on saffron and oud.",
+  "families": [
+   "spicy",
+   "woody",
+   "floral"
+  ],
+  "accents": [
+   "saffron"
+  ],
+  "sig": {
+   "name": "Bijou Zafran",
+   "url": "https://ormondejayne.com/products/bijou-zafran",
+   "notes": {
+    "t": [],
+    "h": [
+     "saffron"
+    ],
+    "b": [
+     "woods"
+    ]
+   },
+   "profile": "A smouldering saffron scent that stays close and warm rather than loud."
+  },
+  "price": {
+   "amt": 260,
+   "cur": "EUR",
+   "ml": 88,
+   "status": "verified",
+   "src": "https://ormondejayne.com/products/bijou-zafran",
+   "on": "2026-10-24",
+   "note": "2 × 10 ml travel set €90."
+  },
+  "tags": [
+   "london",
+   "saffron"
+  ]
+ },
+ {
+  "id": "miller-harris",
+  "name": "Miller Harris",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "London",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://millerharris.com/",
+  "about": "A London house making natural-feeling, English-garden and tea scents.",
+  "why": "Gentle and botanical like Diptyque.",
+  "families": [
+   "citrus",
+   "green"
+  ],
+  "accents": [
+   "tea",
+   "herbs"
+  ],
+  "sig": {
+   "name": "Citron Citron",
+   "url": "https://millerharris.com/products/citron-citron-1",
+   "notes": {
+    "t": [
+     "citrus"
+    ],
+    "h": [
+     "herbs"
+    ],
+    "b": [
+     "dry woods"
+    ]
+   },
+   "profile": "Mediterranean citrus groves: sunny mixed citrus over dry herbs and crisp wood. Their Tea Tonique adds bergamot, Earl Grey, maté and birch."
+  },
+  "price": {
+   "amt": 140,
+   "cur": "GBP",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://millerharris.com/products/citron-citron-1",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "english garden",
+   "tea"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "penhaligons",
+  "name": "Penhaligon's",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "London",
+  "type": "niche",
+  "scale": "large",
+  "site": "https://www.penhaligons.com/us/en/p/luna-eau-de-toilette-30ml--000000000065223850",
+  "about": "A London perfumer dating back to the Victorian era, known for its bow-tied bottles and animal-head 'Portraits'.",
+  "why": "British heritage perfumery.",
+  "families": [
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [],
+  "sig": {
+   "name": "Luna",
+   "url": "https://www.penhaligons.com/us/en/p/luna-eau-de-toilette-30ml--000000000065223850",
+   "notes": {
+    "t": [
+     "orange"
+    ],
+    "h": [
+     "jasmine",
+     "rose"
+    ],
+    "b": [
+     "fir balsam"
+    ]
+   },
+   "profile": "A moonlit garden: bright orange and soft jasmine-rose that fade into a gentle woody fir finish."
+  },
+  "price": {
+   "amt": 130,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://www.penhaligons.com/us/en/p/luna-eau-de-toilette-30ml--000000000065223850",
+   "on": "2026-10-24",
+   "note": "100 ml US$260."
+  },
+  "tags": [
+   "heritage",
+   "london"
+  ]
+ },
+ {
+  "id": "santa-maria-novella",
+  "name": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+  "country": "Italy",
+  "cc": "IT",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Florence",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://us.smnovella.com/",
+  "about": "One of the world's oldest pharmacies, started by Dominican monks in Florence. Still makes colognes from centuries-old recipes.",
+  "why": "Perfume history you can still buy; light, classic colognes.",
+  "families": [
+   "citrus",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "cologne",
+   "heritage"
+  ],
+  "sig": {
+   "name": "Acqua della Regina",
+   "url": "https://us.smnovella.com/products/edcregina",
+   "notes": {
+    "t": [
+     "citrus",
+     "petitgrain"
+    ],
+    "h": [
+     "neroli",
+     "rosemary",
+     "lavender"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "The cologne said to have been made for Catherine de' Medici in 1533: bright citrus, orange blossom and herbs on soft musk. Clean and timeless. Melograno adds pomegranate and rose."
+  },
+  "price": {
+   "amt": 130,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://us.smnovella.com/products/edcregina",
+   "on": "2026-10-24",
+   "note": "100 ml US$180."
+  },
+  "tags": [
+   "heritage",
+   "florence"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "xerjoff",
+  "name": "Xerjoff",
+  "country": "Italy",
+  "cc": "IT",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Turin",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://xerjoff.com/",
+  "about": "A Turin luxury house known for rich, high-concentration perfumes and jewel-like bottles.",
+  "why": "Italian luxury niche; very popular in the Gulf.",
+  "families": [
+   "citrus",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "luxury"
+  ],
+  "sig": {
+   "name": "Torino25",
+   "url": "https://xerjoff.com/products/torino25-eau-de-parfum",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "A celebratory, elegant scent tied to the brand's tennis partnership. Notes per scent on their site."
+  },
+  "price": {
+   "amt": 205,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://xerjoff.com/products/torino25-eau-de-parfum",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "luxury",
+   "turin"
+  ]
+ },
+ {
+  "id": "nasomatto",
+  "name": "Nasomatto",
+  "country": "Netherlands (Italian perfumer)",
+  "cc": "NL",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Amsterdam",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://nasomatto.com/",
+  "about": "Alessandro Gualtieri's Amsterdam-based project of cryptic, very strong extraits in wooden-cap bottles.",
+  "why": "Cult niche; tiny 30 ml bottles of very concentrated scent.",
+  "families": [
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "extrait"
+  ],
+  "sig": {
+   "name": "Baraonda",
+   "url": "https://nasomatto.com/products/baraonda",
+   "notes": {
+    "t": [],
+    "h": [
+     "whisky-like woods"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "A boozy, woody, raw-skin scent; the brand describes ideas rather than notes. Powerful, so one spray is enough."
+  },
+  "price": {
+   "amt": 130,
+   "cur": "EUR",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://nasomatto.com/products/baraonda",
+   "on": "2026-10-24",
+   "note": "4 ml perfume oil €55."
+  },
+  "tags": [
+   "extrait",
+   "cult"
+  ]
+ },
+ {
+  "id": "vilhelm-parfumerie",
+  "name": "Vilhelm Parfumerie",
+  "country": "France (Swedish founder)",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://vilhelmparfumerie.com/",
+  "about": "A Paris house by a Swedish founder, with colourful bottles and story-led scents.",
+  "why": "Modern Paris niche with Scandinavian polish.",
+  "families": [
+   "citrus",
+   "fruity",
+   "woody"
+  ],
+  "accents": [
+   "tea"
+  ],
+  "sig": {
+   "name": "Dear Polly",
+   "url": "https://vilhelmparfumerie.com/products/dear-polly-2",
+   "notes": {
+    "t": [
+     "bergamot",
+     "apple"
+    ],
+    "h": [
+     "Ceylon black tea"
+    ],
+    "b": [
+     "oakmoss",
+     "musk",
+     "amber"
+    ]
+   },
+   "profile": "A cup of black tea at dawn: bergamot and apple, warm Ceylon tea and a soft mossy musk. Cozy and polished."
+  },
+  "price": {
+   "amt": 250,
+   "cur": "EUR",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://vilhelmparfumerie.com/products/dear-polly-2",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "tea"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "mizensir",
+  "name": "Mizensir",
+  "country": "Switzerland",
+  "cc": "CH",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Geneva",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://mizensir.com/",
+  "about": "The Geneva house of master perfumer Alberto Morillas, known for clean, luminous woods.",
+  "why": "A famous perfumer's own brand; precise and clean.",
+  "families": [
+   "woody",
+   "musk"
+  ],
+  "accents": [
+   "ambrox"
+  ],
+  "sig": {
+   "name": "Bright Wood",
+   "url": "https://mizensir.com/products/bright-wood-eau-de-parfum",
+   "notes": {
+    "t": [],
+    "h": [
+     "ambrox"
+    ],
+    "b": [
+     "musk",
+     "woods"
+    ]
+   },
+   "profile": "Dawn light through a quiet room: warm, glowing woods and soft musk. Clean and calm."
+  },
+  "price": {
+   "amt": 210,
+   "cur": "EUR",
+   "ml": null,
+   "status": "verified",
+   "src": "https://mizensir.com/products/bright-wood-eau-de-parfum",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "geneva",
+   "clean"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "bdk-parfums",
+  "name": "BDK Parfums",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "Paris",
+  "type": "niche",
+  "scale": "mid",
+  "site": "https://bdkparfums.com/",
+  "about": "A Paris house of modern, sensual scents named after Parisian life.",
+  "why": "Gris Charnel is a cult fig-tea-iris scent.",
+  "families": [
+   "woody",
+   "floral",
+   "spicy"
+  ],
+  "accents": [
+   "tea",
+   "fig"
+  ],
+  "sig": {
+   "name": "Gris Charnel",
+   "url": "https://bdkparfums.com/products/la-famille-gris-charnel",
+   "notes": {
+    "t": [
+     "fig",
+     "cardamom",
+     "black tea"
+    ],
+    "h": [
+     "iris",
+     "bourbon vetiver"
+    ],
+    "b": [
+     "sandalwood",
+     "tonka bean"
+    ]
+   },
+   "profile": "A soft grey cashmere scarf: fig and black tea with powdery iris on a creamy sandalwood base. (Notes from common listings.)"
+  },
+  "price": {
+   "amt": 312,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://bdkparfums.com/products/la-famille-gris-charnel",
+   "on": "2026-10-24",
+   "note": "100 ml €397."
+  },
+  "tags": [
+   "fig",
+   "cashmere"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "claus-porto",
+  "name": "Claus Porto",
+  "country": "Portugal",
+  "cc": "PT",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Porto",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://clausporto.com/",
+  "about": "Portugal's oldest soap and fragrance house (1887), famous for Art Deco-patterned wrapped soaps.",
+  "why": "Portuguese heritage scent; lovely gifts.",
+  "families": [
+   "citrus",
+   "floral"
+  ],
+  "accents": [
+   "soap",
+   "heritage"
+  ],
+  "sig": {
+   "name": "Le Parfum",
+   "url": "https://clausporto.com/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Their perfumes echo the classic soap scents: citrus, florals and fresh herbs."
+  },
+  "price": {
+   "amt": 95,
+   "cur": "EUR",
+   "ml": null,
+   "status": "verified",
+   "src": "https://clausporto.com/",
+   "on": "2026-10-24",
+   "note": "Size not shown on the list page."
+  },
+  "tags": [
+   "porto",
+   "soap"
+  ],
+  "founded": 1887
+ },
+ {
+  "id": "korres",
+  "name": "KORRES",
+  "country": "Greece",
+  "cc": "GR",
+  "region": "Southern Europe",
+  "continent": "Europe",
+  "city": "Athens",
+  "type": "mass",
+  "scale": "mid",
+  "site": "https://korres.com/",
+  "about": "A Greek pharmacy-born natural beauty brand with sunny Aegean scents.",
+  "why": "Mediterranean beach scents at drugstore prices.",
+  "families": [
+   "floral",
+   "gourmand"
+  ],
+  "accents": [
+   "sand",
+   "beach"
+  ],
+  "sig": {
+   "name": "Aegean Bronze (Eau de Parfum)",
+   "url": "https://korres.com/products/mini-eau-de-parfum-aegean-bronze-10ml",
+   "notes": {
+    "t": [
+     "citron",
+     "bergamot"
+    ],
+    "h": [
+     "freesia",
+     "burnt sugar",
+     "frangipani"
+    ],
+    "b": [
+     "sand accord",
+     "vanilla",
+     "musk"
+    ]
+   },
+   "profile": "Warm skin after a day on a Greek beach: citrus, frangipani and caramelised sugar on a sandy vanilla musk."
+  },
+  "price": {
+   "amt": 24,
+   "cur": "USD",
+   "ml": 10,
+   "status": "verified",
+   "src": "https://korres.com/products/mini-eau-de-parfum-aegean-bronze-10ml",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "beach",
+   "budget"
+  ]
+ },
+ {
+  "id": "skandinavisk",
+  "name": "Skandinavisk",
+  "country": "Denmark",
+  "cc": "DK",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Copenhagen",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://www.skandinavisk.com/deep-forest-eau-de-parfum.html",
+  "about": "A Danish B Corp brand that bottles Nordic landscapes, made in France.",
+  "why": "Nordic forest calm; scents built heavily on essential oils.",
+  "families": [
+   "woody",
+   "green",
+   "spicy"
+  ],
+  "accents": [
+   "forest"
+  ],
+  "sig": {
+   "name": "Deep Førest",
+   "url": "https://www.skandinavisk.com/deep-forest-eau-de-parfum.html",
+   "notes": {
+    "t": [
+     "eucalyptus",
+     "pink pepper"
+    ],
+    "h": [
+     "cypress",
+     "pine"
+    ],
+    "b": [
+     "vetiver",
+     "cedarwood"
+    ]
+   },
+   "profile": "A walk through a Nordic boreal forest: cool eucalyptus, pine and cypress over earthy vetiver and cedar."
+  },
+  "price": {
+   "amt": 150,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.skandinavisk.com/deep-forest-eau-de-parfum.html",
+   "on": "2026-10-24"
+  },
+  "tags": [
+   "nordic",
+   "forest"
+  ],
+  "like": [
+   "diptyque"
+  ]
+ },
+ {
+  "id": "janua",
+  "name": "Janua",
+  "country": "Thailand",
+  "cc": "TH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "city": "Thailand",
+  "type": "mass",
+  "scale": "mid",
+  "site": "https://www.watsons.co.th/en/all-brands/list/161118/janua",
+  "about": "A Thai drugstore perfume brand built on 'new beginnings': young, sweet, fluffy and fruity scents in colourful bottles, including a collaboration with singer BamBam.",
+  "why": "The budget opposite of BOROM; a full 30 ml bottle costs less than a coffee in Canada.",
+  "families": [
+   "fruity",
+   "gourmand",
+   "musk",
+   "floral"
+  ],
+  "accents": [
+   "cotton candy"
+  ],
+  "sig": {
+   "name": "Dreamy Cloud",
+   "url": "https://www.watsons.co.th/en/all-brands/list/161118/janua",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Soft, fluffy, sugary musk. Others: Bonnie Bo, Sweetie Picnic, Kiss Me More, and the BamBam line (Forget Me Not, Morning Satin, La La Rosie)."
+  },
+  "price": {
+   "amt": 199,
+   "cur": "THB",
+   "ml": 30,
+   "status": "retailer",
+   "src": "https://www.watsons.co.th/en/all-brands/list/161118/janua",
+   "on": "2026-10-24",
+   "note": "Watsons Thailand ฿199 to ฿339 per 30 ml (member prices about 10% lower). International resellers about US$13 to US$20.",
+   "amt_max": 339
+  },
+  "tags": [
+   "budget",
+   "drugstore"
+  ]
+ },
+ {
+  "id": "loe",
+  "name": "LOE (Life on Earth)",
+  "country": "South Korea",
+  "cc": "KR",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Seoul",
+  "type": "lifestyle",
+  "scale": "mid",
+  "site": "https://loe-cosmetics-us.com/",
+  "about": "A Korean clean-beauty brand making simple 'everyday comfort' scents (fresh laundry, flower shops, cut grass) plus solid perfume sticks and diffusers.",
+  "why": "Clean, cozy skin scents; ships from a US store.",
+  "families": [
+   "floral",
+   "musk",
+   "green"
+  ],
+  "accents": [
+   "laundry",
+   "solid perfume"
+  ],
+  "sig": {
+   "name": "White Shirts",
+   "url": "https://loe-cosmetics-us.com/products/loe-white-shirts-edt-50ml",
+   "notes": {
+    "t": [
+     "aquatic amaryllis",
+     "lotus"
+    ],
+    "h": [
+     "linen blossom",
+     "white soap",
+     "lily of the valley",
+     "freesia",
+     "pink tulip"
+    ],
+    "b": [
+     "white musk",
+     "vetiver"
+    ]
+   },
+   "profile": "The warmth between a crisp white shirt and your skin: watery flowers, clean soap and soft musk. Also: Harsh Green, Laundry Scent, Sincere Wood."
+  },
+  "price": {
+   "amt": 45,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://loe-cosmetics-us.com/products/loe-white-shirts-edt-50ml",
+   "on": "2026-10-24",
+   "note": "About US$30 at Shilla Duty Free (from your research)."
+  },
+  "tags": [
+   "clean",
+   "laundry"
+  ]
+ },
+ {
+  "id": "wick-fragrances",
+  "name": "Wick Fragrances",
+  "country": "South Africa",
+  "cc": "ZA",
+  "region": "Southern Africa",
+  "continent": "Africa",
+  "city": "Cape Town",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://wickfragrances.com/",
+  "about": "A Cape Town house that started with candles and now hand-pours perfumes and solid perfumes, with gourmand and volcanic-earth themes.",
+  "why": "Artisanal South African scent at mid prices; each bottle comes with a 2 ml tester.",
+  "families": [
+   "gourmand",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "solid perfume",
+   "tea"
+  ],
+  "sig": {
+   "name": "Sugar & Hyde",
+   "url": "https://wickfragrances.com/products/eau-de-parfum-sugar-hyde-50-ml",
+   "notes": {
+    "t": [
+     "cardamom",
+     "fig",
+     "black tea"
+    ],
+    "h": [
+     "iris",
+     "bourbon"
+    ],
+    "b": [
+     "leather",
+     "vetiver",
+     "white sandalwood",
+     "tonka bean"
+    ]
+   },
+   "profile": "Fig, cardamom and black tea, then a dark, boozy turn of bourbon and leather softened by tonka. Chic with an edge."
+  },
+  "price": {
+   "amt": 785,
+   "cur": "ZAR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://wickfragrances.com/products/eau-de-parfum-sugar-hyde-50-ml",
+   "on": "2026-10-24",
+   "note": "May not be the same brand as the 'WICK PARFUMS' case in your Thai screenshot. Wicked Fragrance House in Canada looks like a separate home-decor shop."
+  },
+  "tags": [
+   "cape town",
+   "hand-poured"
   ]
  }
 ]

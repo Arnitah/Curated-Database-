@@ -298,14 +298,13 @@
  {
   "cc": "NL",
   "country": "Netherlands",
-  "style": "Small natural-perfume ateliers.",
-  "roots": "European natural perfumery revival.",
+  "style": "Small natural perfumers and cult niche projects.",
+  "roots": "Amsterdam's independent scene.",
   "materials": [
    "tuberose",
-   "jasmine",
-   "resins"
+   "woods"
   ],
-  "where": "Online"
+  "where": "Amsterdam"
  },
  {
   "cc": "KW",
@@ -369,5 +368,104 @@
    "sea salt"
   ],
   "where": "Auckland (Ponsonby), New Plymouth"
+ },
+ {
+  "cc": "FR",
+  "country": "France",
+  "style": "The home of modern perfumery: Grasse grows the flowers, Paris houses range from quiet, nature-first (Diptyque, Goutal) to bold and provocative.",
+  "roots": "Grasse has supplied jasmine, rose and tuberose since the 1600s; Paris turned perfume into fashion.",
+  "materials": [
+   "Grasse jasmine",
+   "rose de mai",
+   "tuberose",
+   "lavender",
+   "iris"
+  ],
+  "where": "Paris: Saint-Germain, Le Marais, Galeries Lafayette; Grasse"
+ },
+ {
+  "cc": "GB",
+  "country": "United Kingdom",
+  "style": "English gardens, tea and gentle florals, plus Victorian heritage houses.",
+  "roots": "London perfumers to the royal court since the 1800s.",
+  "materials": [
+   "rose",
+   "tea",
+   "lavender",
+   "rhubarb"
+  ],
+  "where": "London: Covent Garden, Mayfair, Burlington Arcade"
+ },
+ {
+  "cc": "IT",
+  "country": "Italy",
+  "style": "From ancient monastery colognes to bold luxury extraits.",
+  "roots": "Florentine pharmacies and the Renaissance cologne tradition; Calabrian bergamot.",
+  "materials": [
+   "bergamot",
+   "neroli",
+   "iris",
+   "pomegranate"
+  ],
+  "where": "Florence, Turin, Milan"
+ },
+ {
+  "cc": "SE",
+  "country": "Sweden",
+  "style": "Minimal, memory-based, genderless scents.",
+  "roots": "Scandinavian design.",
+  "materials": [
+   "pine",
+   "juniper",
+   "birch"
+  ],
+  "where": "Stockholm"
+ },
+ {
+  "cc": "DK",
+  "country": "Denmark",
+  "style": "Nordic landscapes and essential-oil-led blends.",
+  "roots": "Hygge and Nordic nature.",
+  "materials": [
+   "pine",
+   "eucalyptus",
+   "cedar"
+  ],
+  "where": "Copenhagen"
+ },
+ {
+  "cc": "CH",
+  "country": "Switzerland",
+  "style": "Precise, clean woods and musks from master perfumers.",
+  "roots": "Geneva is home to big fragrance companies (Firmenich, Givaudan).",
+  "materials": [
+   "ambrox",
+   "musk",
+   "woods"
+  ],
+  "where": "Geneva"
+ },
+ {
+  "cc": "PT",
+  "country": "Portugal",
+  "style": "Heritage soaps and colognes with Art Deco packaging.",
+  "roots": "Porto soap-making since the 1800s.",
+  "materials": [
+   "citrus",
+   "floral"
+  ],
+  "where": "Porto, Lisbon"
+ },
+ {
+  "cc": "GR",
+  "country": "Greece",
+  "style": "Sunny Aegean scents: figs, beach, herbs.",
+  "roots": "Mediterranean herbs and pharmacy tradition.",
+  "materials": [
+   "fig",
+   "frangipani",
+   "herbs"
+  ],
+  "where": "Athens"
  }
 ]
