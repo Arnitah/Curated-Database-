@@ -1,9 +1,9 @@
 {
  "checked": "2026-10-24",
  "summary": {
-  "pass": 35,
+  "pass": 34,
   "blocked": 4,
-  "fail": 0
+  "fail": 1
  },
  "houses": {
   "parfum-satori": {
@@ -18,8 +18,8 @@
   },
   "j-scent": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "shoyeido": {
    "site": "pass",
@@ -57,12 +57,12 @@
    "price": "pass"
   },
   "documents": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
   "uttori": {
-   "site": "pass",
+   "site": "fail 500",
    "sig": "pass",
    "price": "pass"
   },
