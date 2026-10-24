@@ -51455,5 +51455,180 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "round-yuja-citrus-soap",
+    "name": "Round yuja citrus soap (melt and pour)",
+    "claim": "Bright, refreshing citrus ball soap",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "soapbase",
+        200,
+        "g"
+      ],
+      [
+        "lemondistilled",
+        12,
+        "drops"
+      ],
+      [
+        "mandarin",
+        10,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the base gently (never boil), take off the heat, stir in the extras around 60 °C, pour and spritz the top with rubbing alcohol to pop bubbles. Unmold after a few hours and wrap in plastic so the glycerin doesn't sweat. Pour into a sphere mold. Yuja (yuzu) smells like mandarin crossed with grapefruit; a yuzu fragrance oil gives the truest note, with distilled lemon and mandarin to brighten it. A drop of yellow soap colour or a pinch of turmeric gives the sunny colour (turmeric can tint washcloths).",
+    "inspired": "Botany soap yuja soap",
+    "source": {
+      "creator": "_botany_soap",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "golden-wheat-swirl-honey-oat-soap",
+    "name": "Golden wheat swirl honey and oat soap",
+    "claim": "Creamy feathered-swirl bar that smells like warm bread",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "soapbase",
+        400,
+        "g"
+      ],
+      [
+        "oats",
+        1,
+        "tbsp"
+      ],
+      [
+        "honey",
+        2,
+        "tsp"
+      ],
+      [
+        "cocoapowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "fragrance",
+        2,
+        "g"
+      ]
+    ],
+    "note": "Melt the base gently (never boil), take off the heat, stir in the extras around 60 °C, pour and spritz the top with rubbing alcohol to pop bubbles. Unmold after a few hours and wrap in plastic so the glycerin doesn't sweat. Split the melted base: keep most white with the oats and honey, tint a small part gold-brown with a pinch of cocoa. Pour both into the mold together and drag a skewer back and forth for the wheat-feather pattern. A 'fresh bread' or vanilla-wheat fragrance oil completes it. The original is cold process, which needs lye; this melt-and-pour version gets the look without it.",
+    "inspired": "Botany soap golden wheat pattern soap",
+    "source": {
+      "creator": "_botany_soap",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vanilla-croissant-soap-toppers",
+    "name": "Vanilla croissant soap toppers",
+    "claim": "Mini croissant-shaped soaps to top bars or gift on their own",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "soapbase",
+        150,
+        "g"
+      ],
+      [
+        "cocoapowder",
+        0.25,
+        "tsp"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the base gently (never boil), take off the heat, stir in the extras around 60 °C, pour and spritz the top with rubbing alcohol to pop bubbles. Unmold after a few hours and wrap in plastic so the glycerin doesn't sweat. Pour into croissant molds; once set, brush the tops with a little melted base tinted with cocoa for a golden-baked look. Press onto a freshly poured bar so they fuse. Vanilla absolute and vanillin fragrances slowly turn soap tan, which here helps the 'baked' look. They look edible, so keep them away from small children.",
+    "inspired": "Botany soap croissant soap",
+    "source": {
+      "creator": "_botany_soap",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "pearl-shell-clear-soap",
+    "name": "Pearl shell clear soap",
+    "claim": "Clear shell soap with pearly spheres inside",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "soapbase",
+        200,
+        "g"
+      ],
+      [
+        "mica",
+        0.25,
+        "tsp"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the base gently (never boil), take off the heat, stir in the extras around 60 °C, pour and spritz the top with rubbing alcohol to pop bubbles. Unmold after a few hours and wrap in plastic so the glycerin doesn't sweat. Make small white pearls first: stir pearl mica into a little opaque base and pour into a tiny sphere mold. Set them in a shell mold, then cover with clear base at about 55 °C so the pearls don't melt. Use clear base for the shell and keep fragrance low so it stays clear.",
+    "inspired": "Botany soap pearl shell soap",
+    "source": {
+      "creator": "_botany_soap",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "sea-shell-marine-soap",
+    "name": "Sea shell marine soap",
+    "claim": "Fresh, salty-ocean scented shell bar",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "soapbase",
+        200,
+        "g"
+      ],
+      [
+        "kelp",
+        0.5,
+        "tsp"
+      ],
+      [
+        "salt",
+        1,
+        "tsp"
+      ],
+      [
+        "fragrance",
+        1.5,
+        "g"
+      ]
+    ],
+    "note": "Melt the base gently (never boil), take off the heat, stir in the extras around 60 °C, pour and spritz the top with rubbing alcohol to pop bubbles. Unmold after a few hours and wrap in plastic so the glycerin doesn't sweat. Stir in a little kelp powder and very fine sea salt, then a sea-breeze fragrance oil, and pour into a shell mold. Keep salt to a teaspoon; more makes melt-and-pour weep and crumble.",
+    "inspired": "Botany soap Geoje sea shell soap",
+    "source": {
+      "creator": "_botany_soap",
+      "platform": "Instagram"
+    }
   }
 ]
