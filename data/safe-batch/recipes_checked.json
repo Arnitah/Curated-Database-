@@ -51790,5 +51790,60 @@
       "creator": "Tajiah",
       "platform": "TikTok"
     }
+  },
+  {
+    "id": "peach-pear-protein-hair-perfume",
+    "name": "Peach and pear protein hair perfume",
+    "claim": "Juicy fruity scent that also smooths the cuticle",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        84,
+        "g"
+      ],
+      [
+        "polysorbate",
+        3,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "wheatprotein",
+        1.5,
+        "g"
+      ],
+      [
+        "silkprotein",
+        1,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Stir a peach-pear fragrance oil into the polysorbate, add the water slowly, then glycerin, the proteins and panthenol, and the preservative last. Mist lengths from 20 cm. Small (hydrolyzed) proteins cling to the hair surface and make it feel smoother and glossier; plant proteins like wheat and silk stand in for the keratin the store version uses. Skip wheat protein if you avoid gluten. Use within 3 months.",
+    "inspired": "Whipped Peach Pear keratin hair perfume",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]
