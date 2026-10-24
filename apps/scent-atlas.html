@@ -86,6 +86,23 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .gl div { display: grid; gap: 2px } .gl b { font-weight: 600 } .gl span { font-size: 13.5px; color: var(--muted) }
 .leads { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px }
 .leads li { font-size: 13.5px; display: grid; gap: 1px } .leads small { color: var(--muted) }
+.best { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 12.5px; align-items: baseline }
+.best b { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 400 }
+.best i { color: var(--muted); font-size: 11.5px }
+.mini { font: inherit; font-size: 12.5px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px }
+.note-btn { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; border-bottom: 1px dotted var(--muted) }
+.note-btn:hover { color: var(--accent) }
+.sim { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px }
+.fav { font: 600 18px var(--body); line-height: 1; background: none; border: 0; cursor: pointer; color: var(--muted); padding: 2px 4px }
+.fav[aria-pressed="true"] { color: var(--resin) }
+.finder { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 12px }
+.finder h2 { font-size: 1.4rem }
+.qrow { display: grid; gap: 6px }
+.qrow .qt { font-weight: 600; font-size: 14px }
+.finder .go { font: 600 14px var(--body); background: var(--accent); color: var(--paper); border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer; justify-self: start }
+.finder .go:disabled { opacity: .5; cursor: default }
+.match { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; background: var(--resin-soft); color: var(--ink); border-radius: 10px; padding: 10px 14px; font-size: 14px }
+.why-match { font-size: 12.5px; background: var(--resin-soft); border-radius: 6px; padding: 4px 8px }
 footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
 @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s } .card:hover { border-color: var(--accent) } }
 </style>
@@ -98,6 +115,13 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <div class="stats" id="stats"></div>
   </header>
 
+  <section class="finder" id="finder">
+    <div><div class="eyebrow">Scent finder</div><h2>Find your next scent in five taps</h2>
+    <p class="why">Answer what you can; skipped questions count as "no preference". Matches come with the reasons they fit.</p></div>
+    <div id="qs"></div>
+    <button class="go" type="button" id="go">Show my matches</button>
+  </section>
+
   <div class="rail">
     <div class="row">
       <input type="search" id="q" placeholder="Search a note, house or country (try osmanthus, oud, tea)" aria-label="Search">
@@ -109,11 +133,12 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       </select>
     </div>
     <div class="row" id="conts"><span class="lab">Continent</span></div>
-    <div class="row"><span class="lab">Your taste</span><button class="chip" type="button" id="likeDip" aria-pressed="false">If you love Diptyque</button></div>
+    <div class="row"><span class="lab">Your taste</span><button class="chip" type="button" id="likeDip" aria-pressed="false">If you love Diptyque</button><button class="chip" type="button" id="shelfBtn" aria-pressed="false">My shelf</button></div>
     <div class="row" id="fams"><span class="lab">Smells</span></div>
     <div class="row" id="types"><span class="lab">Kind</span><span class="count" id="count"></span></div>
   </div>
 
+  <div class="match" id="matchbar" hidden></div>
   <section class="region" id="region" hidden></section>
   <section class="grid" id="grid" aria-live="polite"></section>
 
@@ -151,7 +176,7 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const CONT_ORDER = ["Asia", "Europe/Asia", "Africa", "Americas", "Oceania", "Europe"];
 const TYPE_LABEL = { niche: "Niche", indie: "Indie", lifestyle: "Lifestyle", attar: "Attar & oil", incense: "Incense", mass: "Affordable", "inspired-by": "Inspired-by" };
-const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region", like: false };
+const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "region", like: false, shelf: false, quiz: null };
 let D;
 
 function cad(p, rates, which = "amt") {
@@ -168,6 +193,33 @@ function chips(el, values, set, label = (v) => v) {
   }
 }
 
+const WARM = new Set(["amber", "gourmand", "spicy", "woody"]), FRESH = new Set(["citrus", "aquatic", "green", "fruity"]);
+const BOLD_RE = /oud|incense|leather|smoke|extrait|boozy|resin|saffron|animalic|bold/i, SOFT_RE = /skin scent|clean|laundry|tea|hair|mist|body spray|alcohol-free|natural|powdery|cologne/i;
+function profileOf(h) {
+  const f = h.families, warm = f.filter((x) => WARM.has(x)).length, fresh = f.filter((x) => FRESH.has(x)).length;
+  const acc = [...(h.accents || []), ...(h.tags || [])].join(" ");
+  const score = (BOLD_RE.test(acc) ? 2 : 0) + (h.type === "attar" ? 2 : 0) + warm - fresh - (SOFT_RE.test(acc) ? 2 : 0);
+  const intensity = score >= 2 ? "Bold" : score <= -1 ? "Soft" : "Moderate";
+  const season = warm > fresh ? "Fall & winter" : fresh > warm ? "Spring & summer" : "All year";
+  const when = intensity === "Bold" ? "Evening & dates" : intensity === "Soft" || f.includes("citrus") || f.includes("green") ? "Daytime & office" : "Day to night";
+  return { intensity, season, when };
+}
+function feats(h) { return new Set([...h.families.map((f) => "f:" + f), ...(h.accents || []).map((a) => "a:" + a.toLowerCase()), ...(h.tags || []).map((t) => "t:" + t.toLowerCase())]); }
+function buildSimilar() {
+  const F = new Map(D.houses.map((h) => [h.id, feats(h)])); D.sim = {};
+  for (const h of D.houses) {
+    const a = F.get(h.id);
+    D.sim[h.id] = D.houses.filter((o) => o.id !== h.id).map((o) => {
+      const b = F.get(o.id); let inter = 0; for (const x of a) if (b.has(x)) inter += x.startsWith("f:") ? 1 : 1.5;
+      return [o, inter / (a.size + b.size - inter || 1) + (o.cc === h.cc ? 0.02 : 0)];
+    }).sort((x, y) => y[1] - x[1]).slice(0, 3).map(([o]) => o);
+  }
+}
+let SHELF = new Set();
+try { SHELF = new Set(JSON.parse(localStorage.getItem("scentatlas.shelf") || "[]")); } catch (e) {}
+function saveShelf() { try { localStorage.setItem("scentatlas.shelf", JSON.stringify([...SHELF])); } catch (e) {} }
+const noteBtns = (arr) => arr.map((x) => `<button class="note-btn" type="button" data-q="${esc(x)}">${esc(x)}</button>`).join(", ");
+
 function card(h) {
   const rates = D.rates.cad_per, p = h.price || {}, link = D.links.houses?.[h.id], live = D.prices.houses?.[h.id];
   const worst = !link ? "none" : Object.values(link).filter(Boolean).some((s) => s.startsWith("fail")) ? "fail" : Object.values(link).includes("blocked") ? "blocked" : "pass";
@@ -176,27 +228,40 @@ function card(h) {
   const amt = p.amt == null ? "Price not published" : money(p.amt, p.cur) + (p.amt_max ? " to " + money(p.amt_max, p.cur) : "") + (p.ml ? ` · ${p.ml} ml` : "");
   const cadTxt = c1 == null || p.cur === "CAD" ? "" : `≈ ${money(c1, "CAD")}${c2 ? " to " + money(c2, "CAD") : ""}`;
   const perMl = c1 != null && p.ml ? `${money(c1 / p.ml, "CAD")}/ml` : "";
-  const n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
+  const prof = profileOf(h), n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
   const liveTxt = live && live.variants?.length ? "Shop today: " + live.variants.slice(0, 3).map((v) => `${esc(v.title === "Default Title" ? "" : v.title + " ")}${v.price}`).join(" · ") + (live.changed ? " (changed since last week)" : "") : "";
   return `<article class="card">
     <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(h.city || "")}${h.city ? ", " : ""}${esc(h.country)}${h.founded ? " · since " + h.founded : ""}</div></div>
-      <span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></div>
+      <span><button class="fav" type="button" data-fav="${h.id}" aria-pressed="${SHELF.has(h.id)}" title="Save to my shelf" aria-label="Save ${esc(h.name)} to my shelf">${SHELF.has(h.id) ? "♥" : "♡"}</button><span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></span></div>
+    ${state.quiz?.why[h.id] ? `<div class="why-match"><b>Why it matches:</b> ${esc(state.quiz.why[h.id])}</div>` : ""}
     <div class="tags"><span class="tag type">${esc(TYPE_LABEL[h.type] || h.type)}</span>${(h.like || []).includes("diptyque") ? `<span class="tag type">Diptyque fans</span>` : ""}${h.families.map((f) => `<span class="tag">${esc(D.fam[f]?.label || f)}</span>`).join("")}${(h.accents || []).map((a) => `<span class="tag">${esc(a)}</span>`).join("")}</div>
     <p class="why">${esc(h.about)}</p>
     <div class="sig"><div class="nm">${esc(h.sig.name)}</div>
-      ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v.join(", "))}</dd>`).join("")}</dl>` : ""}
+      ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${noteBtns(v)}</dd>`).join("")}</dl>` : ""}
       <p class="profile">${esc(h.sig.profile)}</p></div>
     ${(h.also || []).map((a) => `<div class="also"><span class="nm">Also: ${esc(a.name)}</span><span>${esc(a.notes)}</span><span class="cad">${esc(a.price)}</span>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">See it</a>` : ""}</div>`).join("")}
+    <div class="best"><b>Best for</b><span>${prof.season}</span>·<span>${prof.when}</span>·<span>${prof.intensity}</span><i>estimated from its notes</i></div>
     <p class="why"><b>Why it's here:</b> ${esc(h.why)}</p>
     <div class="price"><span class="amt">${amt}</span>${cadTxt ? `<span class="cad">${cadTxt}</span>` : ""}${perMl ? `<span class="cad">${perMl}</span>` : ""}<span class="st ${p.status}">${p.status}</span>
       ${p.note ? `<span class="note">${esc(p.note)}</span>` : ""}${liveTxt ? `<span class="live">${liveTxt}</span>` : ""}</div>
     <div class="links"><a href="${esc(h.site)}" target="_blank" rel="noopener">Visit shop</a>${h.sig.url && h.sig.url !== h.site ? `<a href="${esc(h.sig.url)}" target="_blank" rel="noopener">Scent page</a>` : ""}${p.src && p.src !== h.sig.url && p.src !== h.site ? `<a href="${esc(p.src)}" target="_blank" rel="noopener">Price source</a>` : ""}</div>
+    <div class="sim">Similar: ${(D.sim[h.id] || []).map((o) => `<button class="mini" type="button" data-q="${esc(o.name)}">${esc(o.name)}</button>`).join("")}</div>
   </article>`;
 }
 
 function render() {
   const q = state.q.trim().toLowerCase(), rates = D.rates.cad_per;
+  if (state.quiz) {
+    const list = state.quiz.ids.map((id) => D.houses.find((h) => h.id === id));
+    $("grid").innerHTML = list.map(card).join("");
+    $("matchbar").hidden = false;
+    $("matchbar").innerHTML = `<b>Your ${list.length} matches</b><span>Ranked by how well they fit your answers.</span><button class="mini" type="button" id="clearQuiz">Back to the full atlas</button>`;
+    $("clearQuiz").onclick = () => { state.quiz = null; render(); };
+    $("count").textContent = `${list.length} matches`; $("region").hidden = true; return;
+  }
+  $("matchbar").hidden = true;
   let list = D.houses.filter((h) => {
+    if (state.shelf && !SHELF.has(h.id)) return false;
     if (state.cont.size && !state.cont.has(h.continent)) return false;
     if (state.fam.size && !h.families.some((f) => state.fam.has(f))) return false;
     if (state.type.size && !state.type.has(h.type)) return false;
@@ -208,7 +273,7 @@ function render() {
   const key = { name: (h) => h.name, region: (h) => CONT_ORDER.indexOf(h.continent) * 1e6 + D.houses.indexOf(h),
     cad: (h) => cad(h.price, rates) ?? 1e9, ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
   list.sort((a, b) => state.sort === "name" ? a.name.localeCompare(b.name) : key[state.sort](a) - key[state.sort](b));
-  $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">Nothing matches. Clear a filter or try a single note such as rose or tea.</p>`;
+  $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">${state.shelf ? "Your shelf is empty. Tap ♡ on any house to save it here." : "Nothing matches. Clear a filter or try a single note such as rose or tea."}</p>`;
   $("count").textContent = `${list.length} of ${D.houses.length} houses`;
   const ccs = [...new Set(list.map((h) => h.cc))];
   const reg = ccs.length === 1 && D.regions.find((r) => r.cc === ccs[0]);
@@ -240,6 +305,45 @@ function render() {
   $("leads").innerHTML = leads.map((l) => `<li><span><b>${esc(l.name)}</b> · ${esc(l.country)}</span><small>${esc(l.lead)}${l.src ? ` <a href="${esc(l.src)}" target="_blank" rel="noopener">source</a>` : ""}</small></li>`).join("");
   $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
   $("foot").innerHTML = `Prices are as found on the check date: <b>verified</b> means read on the brand's own shop, <b>retailer</b> a reseller, <b>reported</b> from an article. Canadian-dollar figures are estimates from ${esc(rates.source || "seed")} rates on ${esc(rates.on || "")} and exclude shipping and duties. Dots show whether each house's links worked at the last weekly check (green working, amber site blocks automated checks, red broken). Not affiliated with any brand.`;
+  buildSimilar();
+  const QS = [
+    ["pull", "Which smells pull you in?", [["fresh", "Fresh & clean"], ["warm", "Warm & cozy"], ["floral", "Flowers"], ["sweet", "Sweet & edible"], ["woody", "Woody & earthy"]]],
+    ["loud", "How noticeable should it be?", [["Soft", "Soft, close to skin"], ["Moderate", "In between"], ["Bold", "Bold, people notice"]]],
+    ["when", "When will you wear it most?", [["day", "Every day"], ["evening", "Evenings & dates"], ["summer", "Summer heat"], ["winter", "Cold months"]]],
+    ["where", "Explore which part of the world?", [["any", "Anywhere"], ["Asia", "Asia"], ["Middle East", "Middle East"], ["Europe", "Europe"], ["Africa", "Africa"], ["Americas", "Americas & Oceania"]]],
+    ["budget", "Budget for a bottle (CAD)?", [["50", "Under $50"], ["150", "Under $150"], ["300", "Under $300"], ["9999", "No limit"]]]];
+  const ans = {};
+  $("qs").innerHTML = QS.map(([k, t, opts]) => `<div class="qrow"><span class="qt">${t}</span><div class="row">${opts.map(([v, l]) => `<button class="chip" type="button" data-qk="${k}" data-qv="${v}" aria-pressed="false">${l}</button>`).join("")}</div></div>`).join("");
+  $("qs").onclick = (e) => { const b = e.target.closest("[data-qk]"); if (!b) return; const k = b.dataset.qk, v = b.dataset.qv;
+    ans[k] = ans[k] === v ? undefined : v; $("qs").querySelectorAll(`[data-qk="${k}"]`).forEach((x) => x.setAttribute("aria-pressed", x.dataset.qv === ans[k])); };
+  const PULL = { fresh: ["citrus", "green", "aquatic"], warm: ["amber", "spicy", "gourmand"], floral: ["floral"], sweet: ["gourmand", "fruity"], woody: ["woody"] };
+  const PULL_LABEL = { fresh: "fresh", warm: "warm", floral: "floral", sweet: "sweet", woody: "woody" };
+  $("go").onclick = () => {
+    const rates = D.rates.cad_per, why = {};
+    const scored = D.houses.map((h) => {
+      const pr = profileOf(h); let s = 0; const r = [];
+      if (ans.pull) { const hit = PULL[ans.pull].filter((f) => h.families.includes(f)); if (hit.length) { s += 3 + hit.length; r.push(`${PULL_LABEL[ans.pull]} (${hit.map((f) => (D.fam[f]?.label || f).replace(/ \(.*\)/, "")).join(", ").toLowerCase()})`); } else s -= 2; }
+      if (ans.loud) { if (pr.intensity === ans.loud) { s += 2; r.push(pr.intensity.toLowerCase() + " strength"); } else if (pr.intensity === "Moderate" || ans.loud === "Moderate") s += 0.5; else s -= 1; }
+      if (ans.when) { const ok = { day: pr.when === "Daytime & office" || pr.when === "Day to night", evening: pr.when === "Evening & dates" || pr.when === "Day to night", summer: pr.season === "Spring & summer", winter: pr.season === "Fall & winter" }[ans.when];
+        if (ok) { s += 2; r.push({ day: "easy for every day", evening: "good for evenings", summer: "suits warm weather", winter: "suits cold months" }[ans.when]); } else if (pr.season === "All year") s += 0.5; }
+      if (ans.where && ans.where !== "any") { const ok = ans.where === "Middle East" ? h.region === "Middle East" : ans.where === "Americas" ? ["Americas", "Oceania"].includes(h.continent) : ans.where === "Asia" ? h.continent === "Asia" && h.region !== "Middle East" : h.continent === ans.where || (ans.where === "Europe" && h.continent === "Europe/Asia");
+        if (ok) { s += 2; r.push("from " + h.country); } else s -= 5; }
+      if (ans.budget) { const c = cad(h.price, rates); if (c == null) s -= 0.5; else if (c <= +ans.budget) { s += 1; if (+ans.budget < 9999) r.push(`about ${money(c, "CAD")}`); } else s -= 4; }
+      if (r.length) why[h.id] = r.join(" · ");
+      return [h, s];
+    }).filter(([, s]) => s > 0).sort((a, b) => b[1] - a[1]).slice(0, 12);
+    state.quiz = { ids: scored.map(([h]) => h.id), why };
+    if (!scored.length) { state.quiz = null; $("matchbar").hidden = false; $("matchbar").textContent = "No houses fit all of those answers yet. Try loosening the budget or region."; return; }
+    render(); $("matchbar").scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  $("shelfBtn").onclick = (e) => { state.shelf = !state.shelf; e.currentTarget.setAttribute("aria-pressed", state.shelf); render(); };
+  $("grid").onclick = (e) => {
+    const f = e.target.closest("[data-fav]");
+    if (f) { const id = f.dataset.fav; SHELF.has(id) ? SHELF.delete(id) : SHELF.add(id); saveShelf(); f.setAttribute("aria-pressed", SHELF.has(id)); f.textContent = SHELF.has(id) ? "♥" : "♡"; $("shelfBtn").textContent = `My shelf (${SHELF.size})`; if (state.shelf) render(); return; }
+    const q = e.target.closest("[data-q]");
+    if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); }
+  };
+  $("shelfBtn").textContent = `My shelf (${SHELF.size})`;
   render();
 })();
 </script>
