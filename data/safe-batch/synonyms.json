@@ -1,5 +1,41 @@
 [
   [
+    "raffia|raphia (farinifera|vinifera|oil)",
+    "raffiaoil"
+  ],
+  [
+    "date (seed|pit|stone|kernel) oil|phoenix dactylifera (seed )?oil",
+    "dateseedoil"
+  ],
+  [
+    "licuri|ouricuri|syagrus coronata",
+    "licurioil"
+  ],
+  [
+    "maca[uú]ba|macaw palm|acrocomia",
+    "macaubaoil"
+  ],
+  [
+    "cranberry seed oil|vaccinium macrocarpon (seed )?oil",
+    "cranberryoil"
+  ],
+  [
+    "a[cç]a[ií] (fruit |berry )?powder|ju[cç]ara|euterpe (edulis|oleracea) (fruit|pulp) powder",
+    "acaipowder"
+  ],
+  [
+    "rosa (damascena|centifolia|gallica|alba)[a-z ]*(oil|otto|absolute)|damask rose (oil|otto|absolute)",
+    "roseeo"
+  ],
+  [
+    "rosa (damascena|centifolia|gallica|alba)[a-z ]*(water|hydrosol|distillate)|damask rose water",
+    "hydrosol"
+  ],
+  [
+    "white rose|rosa (damascena|centifolia|gallica|alba)|damask rose|cabbage rose|apothecary rose|french rose",
+    "rosebuds"
+  ],
+  [
     "tetrahexyldecyl ascorbate|ascorbyl tetraisopalmitate|thd ascorbate|oil.soluble vitamin c",
     "thdascorbate"
   ],
