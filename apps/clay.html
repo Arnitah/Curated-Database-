@@ -522,6 +522,40 @@ function tripPack(){
   add('Period care','Period bag','Check pads, liners or cups for the whole trip, plus a spare change of underwear.');
   return out;
 }
+const TRIP_WHERE={
+ ie:{n:'Ireland & UK',tip:'Visitors from outside the EU can usually claim back VAT on purchases: ask for a tax-free form at the till and keep receipts.',buy:[
+  ['spf','Boots Soltan sunscreen','Boots’ own sunscreen line is well tested and much cheaper than big brands. A good everyday SPF for your face and body.'],
+  ['lip','Pharmacy lip balm and hand cream','Boots and Penneys own-brand balms and hand creams cost very little and handle wind-chapped lips and hands.'],
+  ['moist','Lidl Cien or Aldi Lacura face cream','Supermarket skincare that often scores well in independent tests; an easy, cheap way to fill a moisturiser gap.'],
+  ['','The Inkey List and Revolution Skincare','UK budget brands with simple single-active serums and toners, usually cheaper here than overseas.'],
+  ['','Penneys (Primark) PS… skincare and hair accessories','Very cheap basics, satin bonnets and scrunchies; good for travel-size refills.'],
+  ['','Irish seaweed skincare (Voya, Seapoint)','A local speciality from the west coast; a nice souvenir rather than a must.'],
+  ['','The Handmade Soap Company bars','Irish-made soaps that travel well and skip the liquids limit.'],
+  ['hair','Afro hair and beauty shops near Moore Street and Parnell Street','Familiar oils, leave-ins and gels for textured hair if you run out.']]},
+ fr:{n:'France',tip:'Pharmacies (look for “parapharmacie”) sell French brands for much less than abroad.',buy:[
+  ['spf','La Roche-Posay Anthelios or Avène sunscreen','Excellent filters, cheaper than at home.'],['moist','La Roche-Posay Cicaplast Baume B5','A repair balm for dry patches, lips and windburn.'],['','Bioderma Sensibio micellar water','A cult cleanser at a fraction of the export price.'],['','Nuxe Huile Prodigieuse','The dry oil, often in value sets.'],['hair','Klorane dry shampoo','Good for travel and second-day hair.']]},
+ de:{n:'Germany & Austria',tip:'dm and Rossmann are the go-to drugstores; their house brands are very cheap and well regarded.',buy:[
+  ['moist','Balea and Isana face and body creams','dm and Rossmann house brands; huge range for a few euros.'],['spf','SUNDANCE sunscreen (dm)','Cheap, well-tested SPF.'],['','Eucerin Urea body lotions','Cheaper here; great for rough skin and KP.'],['','Alverde natural skincare (dm)','Certified natural line at drugstore prices.'],['lip','Balea lip balms','Pocket-money prices, many flavours.']]},
+ kr:{n:'South Korea',tip:'Olive Young stores run frequent 1+1 deals; passport purchases over a set amount can be tax-free.',buy:[
+  ['spf','Korean sunscreens (Beauty of Joseon, Round Lab)','Light, non-greasy and much cheaper than abroad.'],['moist','Aestura or Illiyoon ceramide creams','Barrier creams loved locally, great value.'],['','Torriden or Round Lab toners and serums','Hydrating basics at local prices.'],['hair','Scalp care and treatments','Korean scalp tonics and hair masks are cheap and widely sold.'],['','Daiso tools and travel bottles','Very cheap accessories.']]},
+ jp:{n:'Japan',tip:'Drugstores like Matsumoto Kiyoshi offer tax-free shopping with your passport.',buy:[
+  ['spf','Japanese drugstore sunscreens (Bioré UV, Skin Aqua)','Some of the best-value sunscreens anywhere.'],['moist','Hada Labo Gokujyun lotion and Curel creams','Hydrating, gentle and cheap.'],['','Urea body milks','Great for rough skin and KP.'],['hair','Tsubaki or &honey hair care','Good, affordable shampoo and treatment lines.'],['lip','Mentholatum and DHC lip balms','Cheap and everywhere.']]},
+ wa:{n:'Nigeria & Ghana',tip:'Markets are cheapest; buy from busy stalls and smell for freshness.',buy:[
+  ['moist','Raw unrefined shea butter','Fresh, cheap and multi-use for skin, hair and lips.'],['','African black soap','Traditional soap at local prices; follow with a moisturiser.'],['hair','Pure coconut and palm kernel oils','For hair oiling and sealing.'],['','Avoid unlabelled “toning” creams','Some contain mercury, hydroquinone or strong steroids.']]},
+ ma:{n:'Morocco',tip:'Buy argan from women’s cooperatives and check it’s cosmetic (unroasted), not culinary.',buy:[
+  ['moist','Pure cosmetic argan oil','For face, body and hair ends.'],['','Rhassoul clay','Gentle cleansing clay for skin and hair.'],['','Beldi black soap and kessa glove','The hammam scrub ritual to take home.'],['','Rose water from the Dades valley','Fresh floral water at local prices.']]},
+ cb:{n:'Caribbean',tip:'Sunscreen is often pricey on islands, so bring yours; some islands ban certain sunscreen filters to protect reefs.',buy:[
+  ['hair','Jamaican black castor oil','Local and cheaper; good for edges and sealing ends.'],['moist','Virgin coconut oil and fresh aloe','For after-sun and dry skin.'],['','Local sea moss gel','A soothing mask ingredient.']]},
+ us:{n:'United States',tip:'Drugstore and big-box prices are usually lower than in Canada.',buy:[
+  ['moist','CeraVe, Vanicream and Aquaphor big tubs','Much cheaper in large sizes.'],['lip','Aquaphor or Vaseline lip products','Cheap and effective.'],['','Trader Joe’s body care','Low-priced washes, scrubs and mists.'],['spf','Drugstore sunscreens','Wide choice, often on sale.']]}};
+let TRIPW='ie'; try{ TRIPW=localStorage.getItem('clay-trip-where')||'ie'; }catch(e){}
+function tripBuyHTML(miss){
+  const W=TRIP_WHERE[TRIPW]; if(!W) return '';
+  const gap={spf:miss.some(x=>/sunscreen/i.test(x.item)),moist:miss.some(x=>/cream|moistur/i.test(x.item)&&!/hand/i.test(x.item)),lip:miss.some(x=>/lip|hand/i.test(x.item)),hair:false};
+  const rows=W.buy.map(b=>({k:b[0],n:b[1],why:b[2],g:!!gap[b[0]]})).sort((a,b)=>b.g-a.g);
+  return `<p class="small" style="margin:12px 0 4px"><b>Worth buying there</b></p><div class="row" style="flex-wrap:wrap;gap:6px">${Object.entries(TRIP_WHERE).map(([k,x])=>`<button class="chip" type="button" aria-pressed="${TRIPW===k}" data-act="tripw" data-v="${k}">${esc(x.n)}</button>`).join('')}</div>
+   <div class="list small">${rows.map(r=>`<div style="padding:6px 0"><b>${esc(r.n)}</b>${r.g?` ${tag('fills a gap','ok','check')}`:''}<br><span class="muted">${esc(r.why)}</span></div>`).join('')}</div><p class="small muted">${esc(W.tip)} Patch test anything new before a full routine.</p>`;
+}
 function tripCard(){
   const C=TRIP_CLIM[TRIP.c], L=tripPack(), secs=[...new Set(L.map(x=>x.sec))], miss=L.filter(x=>x.miss);
   return card('Pack for a trip', `<p class="small" style="margin-top:0">Pick the weather where you’re going; Clay picks from your shelf and flags what’s missing.</p>
@@ -530,6 +564,7 @@ function tripCard(){
    <div class="row" style="gap:6px;flex-wrap:wrap">${[3,5,7,14].map(d=>`<button class="chip" type="button" aria-pressed="${TRIP.d===d}" data-act="tripd" data-v="${d}">${d} days</button>`).join('')}<button class="chip" type="button" aria-pressed="${TRIP.fly}" data-act="tripfly">Carry-on only</button></div>
    ${miss.length?`<div class="mp-chk mp-info" style="margin-top:8px"><b class="small">Not on your shelf: ${esc(miss.map(x=>x.item).join(', '))}</b></div>`:''}
    ${secs.map(s=>`<p class="small" style="margin:10px 0 2px"><b>${esc(s)}</b></p><div class="list small">${L.filter(x=>x.sec===s&&!x.miss).map(x=>`<div style="padding:6px 0"><b>${esc(x.item)}</b><br><span class="muted">${esc(x.why)}</span></div>`).join('')}</div>`).join('')}
+   ${tripBuyHTML(miss)}
    ${TRIP.fly?`<p class="small muted" style="margin-top:8px">Carry-on: liquids, creams and roll-ons in 100 ml or smaller, all in one clear 1 L bag. Bars, solid balms and powders don’t count. Check your airline before you go.</p>`:''}
    <p class="small muted">Check the real forecast before you leave; this goes by climate, not the day’s weather.</p>`, {h:'h3', icon:'today'});
 }
@@ -2081,6 +2116,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='tripc'){ TRIP.c=v; tripSave(); }
   if (a==='tripd'){ TRIP.d=+v; tripSave(); }
   if (a==='tripfly'){ TRIP.fly=!TRIP.fly; tripSave(); }
+  if (a==='tripw'){ TRIPW=v; try{ localStorage.setItem('clay-trip-where',v); }catch(e){} }
   if (a==='scanStep') S.scanStep=v;
   if (a==='pairsMode') S.pairsMode=v;
   if (a==='trad') S.trad=v;
