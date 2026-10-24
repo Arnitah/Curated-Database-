@@ -91,6 +91,7 @@ if (houses) {
   const fam = new Set(Object.keys(sets['scents/families']?.data || {}).filter((k) => !k.startsWith('_')));
   const regionCc = new Set((sets['scents/regions']?.data || []).map((r) => r.cc));
   const rates = sets['scents/rates']?.data?.cad_per || {};
+  const geo = sets['scents/geo']?.data;
   const ST = new Set(['verified', 'retailer', 'reported', 'unknown']), seen = new Set();
   const url = (u) => typeof u === 'string' && /^https?:\/\//.test(u);
   for (const h of houses) {
@@ -110,6 +111,7 @@ if (houses) {
     if (p.cur && !(p.cur in rates)) errors.push(`${w}: no exchange rate for ${p.cur}`);
     if (!url(p.src) || !/^\d{4}-\d{2}-\d{2}$/.test(p.on || '')) errors.push(`${w}: price needs src link and checked date`);
     if (regionCc.size && !regionCc.has(h.cc)) warnings.push(`${w}: no regions entry for ${h.cc}`);
+    if (geo && !geo[h.id]) warnings.push(`${w}: no map coordinates in scents/geo`);
   }
 }
 

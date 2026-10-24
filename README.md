@@ -9,9 +9,9 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
-  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates)
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
-apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents)
+apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents) and scent-map.html (interactive world map)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
 checks/hub-coverage.json  ingredients common in real products that the apps don't explain yet (to-do list)
 checks/scent-links.json   weekly pass / blocked / fail for every perfume house link
@@ -100,3 +100,6 @@ A curated guide to perfume houses outside the usual Western names, Asia first. E
 All descriptions are written in our own words. Every Monday the scent check refreshes `rates.json`, tests every link and reads live shop prices into `checks/`. It never edits `houses.json`: a price marked `changed` in `checks/scent-prices.json` is a to-do to review by hand. Houses found but not yet verified live in `leads.json`.
 
 Planned Clay link: `families` already uses Clay's scent family names, so scent stacks and dupe comparisons (`type: inspired-by`, `mass`) can read this file directly.
+
+### Scent World Map
+`apps/scent-map.html` draws the world with country shapes built in (Natural Earth 110m via world-atlas, Equal Earth projection) so it needs no map-tile service. It reads `houses.json` and `geo.json`; when you add a house, add its coordinates to `geo.json` (`precision: "country"` when only the country is known). The validator warns if a house has no coordinates.

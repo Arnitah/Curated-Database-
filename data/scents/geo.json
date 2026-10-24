@@ -1,0 +1,776 @@
+{
+ "parfum-satori": {
+  "lat": 35.68,
+  "lon": 139.69,
+  "place": "Tokyo",
+  "precision": "city"
+ },
+ "shiro": {
+  "lat": 43.06,
+  "lon": 141.35,
+  "place": "Sapporo",
+  "precision": "region"
+ },
+ "j-scent": {
+  "lat": 35.68,
+  "lon": 139.69,
+  "place": "Tokyo",
+  "precision": "country"
+ },
+ "shoyeido": {
+  "lat": 35.01,
+  "lon": 135.77,
+  "place": "Kyoto",
+  "precision": "city"
+ },
+ "tamburins": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "nonfiction": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "granhand": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "borntostandout": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "pesade": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "country"
+ },
+ "to-summer": {
+  "lat": 31.23,
+  "lon": 121.47,
+  "place": "Shanghai",
+  "precision": "country"
+ },
+ "documents": {
+  "lat": 31.23,
+  "lon": 121.47,
+  "place": "Shanghai",
+  "precision": "city"
+ },
+ "uttori": {
+  "lat": 30.27,
+  "lon": 120.15,
+  "place": "Hangzhou",
+  "precision": "country"
+ },
+ "ichun": {
+  "lat": 25.03,
+  "lon": 121.56,
+  "place": "Taipei",
+  "precision": "country"
+ },
+ "bombay-perfumery": {
+  "lat": 19.08,
+  "lon": 72.88,
+  "place": "Mumbai",
+  "precision": "city"
+ },
+ "gulab-singh-johrimal": {
+  "lat": 28.65,
+  "lon": 77.23,
+  "place": "Delhi",
+  "precision": "city"
+ },
+ "spa-ceylon": {
+  "lat": 6.93,
+  "lon": 79.86,
+  "place": "Colombo",
+  "precision": "city"
+ },
+ "karmakamet": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "hmns": {
+  "lat": -6.2,
+  "lon": 106.85,
+  "place": "Jakarta",
+  "precision": "city"
+ },
+ "tadhana": {
+  "lat": 14.6,
+  "lon": 120.98,
+  "place": "Manila",
+  "precision": "country"
+ },
+ "wren-atelier": {
+  "lat": 14.6,
+  "lon": 120.98,
+  "place": "Manila",
+  "precision": "city"
+ },
+ "gp-fragrances": {
+  "lat": 14.6,
+  "lon": 120.98,
+  "place": "Manila",
+  "precision": "country"
+ },
+ "toouch": {
+  "lat": 10.82,
+  "lon": 106.63,
+  "place": "Ho Chi Minh City",
+  "precision": "country"
+ },
+ "maison-bagian": {
+  "lat": 21.03,
+  "lon": 105.85,
+  "place": "Hanoi",
+  "precision": "country"
+ },
+ "amouage": {
+  "lat": 23.59,
+  "lon": 58.41,
+  "place": "Muscat",
+  "precision": "city"
+ },
+ "abdul-samad-al-qurashi": {
+  "lat": 21.42,
+  "lon": 39.83,
+  "place": "Mecca",
+  "precision": "city"
+ },
+ "swiss-arabian": {
+  "lat": 25.2,
+  "lon": 55.27,
+  "place": "Dubai",
+  "precision": "city"
+ },
+ "lattafa": {
+  "lat": 25.4,
+  "lon": 55.51,
+  "place": "Ajman",
+  "precision": "country"
+ },
+ "nishane": {
+  "lat": 41.01,
+  "lon": 28.98,
+  "place": "Istanbul",
+  "precision": "city"
+ },
+ "saint-dici": {
+  "lat": -26.2,
+  "lon": 28.05,
+  "place": "Johannesburg",
+  "precision": "city"
+ },
+ "scentury": {
+  "lat": -29.86,
+  "lon": 31.02,
+  "place": "Durban",
+  "precision": "country"
+ },
+ "beguile": {
+  "lat": 6.52,
+  "lon": 3.38,
+  "place": "Lagos",
+  "precision": "country"
+ },
+ "xinu": {
+  "lat": 19.43,
+  "lon": -99.13,
+  "place": "Mexico City",
+  "precision": "city"
+ },
+ "coqui-coqui": {
+  "lat": 20.97,
+  "lon": -89.62,
+  "place": "Mérida",
+  "precision": "city"
+ },
+ "fueguia-1833": {
+  "lat": -34.6,
+  "lon": -58.38,
+  "place": "Buenos Aires",
+  "precision": "city"
+ },
+ "natura": {
+  "lat": -23.55,
+  "lon": -46.63,
+  "place": "São Paulo",
+  "precision": "city"
+ },
+ "zoologist": {
+  "lat": 43.65,
+  "lon": -79.38,
+  "place": "Toronto",
+  "precision": "city"
+ },
+ "imaginary-authors": {
+  "lat": 45.52,
+  "lon": -122.68,
+  "place": "Portland",
+  "precision": "city"
+ },
+ "goldfield-banks": {
+  "lat": -33.87,
+  "lon": 151.21,
+  "place": "Sydney",
+  "precision": "country"
+ },
+ "hiram-green": {
+  "lat": 52.37,
+  "lon": 4.9,
+  "place": "Amsterdam",
+  "precision": "country"
+ },
+ "borom": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "reunrom": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "country"
+ },
+ "siam-1928": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "panpuri": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "butterfly-thai-perfume": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "mith-bangkok": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "solure": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "country"
+ },
+ "postes": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "youssoful": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "royal-water": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "sw19": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "kinfolk-notes": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "skybottle": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "country"
+ },
+ "whipped": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "country"
+ },
+ "kst-scent": {
+  "lat": 40.71,
+  "lon": -74.01,
+  "place": "New York",
+  "precision": "country"
+ },
+ "cosmic-mansion": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "etlee": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "oct-kw": {
+  "lat": 29.38,
+  "lon": 47.98,
+  "place": "Kuwait City",
+  "precision": "city"
+ },
+ "milky-mane": {
+  "lat": 52.23,
+  "lon": 21.01,
+  "place": "Warsaw",
+  "precision": "country"
+ },
+ "dries-van-noten": {
+  "lat": 51.22,
+  "lon": 4.4,
+  "place": "Antwerp",
+  "precision": "city"
+ },
+ "kitowa": {
+  "lat": 35.68,
+  "lon": 139.69,
+  "place": "Tokyo",
+  "precision": "city"
+ },
+ "isak": {
+  "lat": 28.65,
+  "lon": 77.23,
+  "place": "Delhi",
+  "precision": "country"
+ },
+ "naso-profumi": {
+  "lat": 28.65,
+  "lon": 77.23,
+  "place": "Delhi",
+  "precision": "country"
+ },
+ "neesh": {
+  "lat": 19.08,
+  "lon": 72.88,
+  "place": "Mumbai",
+  "precision": "country"
+ },
+ "the-perfumatory": {
+  "lat": 19.08,
+  "lon": 72.88,
+  "place": "Mumbai",
+  "precision": "city"
+ },
+ "saff-and-co": {
+  "lat": -6.91,
+  "lon": 107.61,
+  "place": "Bandung",
+  "precision": "country"
+ },
+ "sifr-aromatics": {
+  "lat": 1.3,
+  "lon": 103.86,
+  "place": "Singapore",
+  "precision": "city"
+ },
+ "afnan": {
+  "lat": 25.2,
+  "lon": 55.27,
+  "place": "Dubai",
+  "precision": "city"
+ },
+ "universal-flowering": {
+  "lat": 45.5,
+  "lon": -73.57,
+  "place": "Montreal",
+  "precision": "city"
+ },
+ "monsillage": {
+  "lat": 45.5,
+  "lon": -73.57,
+  "place": "Montreal",
+  "precision": "city"
+ },
+ "curionoir": {
+  "lat": -36.85,
+  "lon": 174.76,
+  "place": "Auckland",
+  "precision": "city"
+ },
+ "the-virtue": {
+  "lat": -39.06,
+  "lon": 174.08,
+  "place": "New Plymouth",
+  "precision": "city"
+ },
+ "diptyque": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "byredo": {
+  "lat": 59.33,
+  "lon": 18.07,
+  "place": "Stockholm",
+  "precision": "city"
+ },
+ "buly-1803": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "goutal": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "essential-parfums": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "matiere-premiere": {
+  "lat": 43.66,
+  "lon": 6.92,
+  "place": "Grasse",
+  "precision": "city"
+ },
+ "ormaie": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "etat-libre-dorange": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "serge-lutens": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "memo-paris": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "maison-crivelli": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "floral-street": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "city"
+ },
+ "ormonde-jayne": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "city"
+ },
+ "miller-harris": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "city"
+ },
+ "penhaligons": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "city"
+ },
+ "santa-maria-novella": {
+  "lat": 43.77,
+  "lon": 11.26,
+  "place": "Florence",
+  "precision": "city"
+ },
+ "xerjoff": {
+  "lat": 45.07,
+  "lon": 7.69,
+  "place": "Turin",
+  "precision": "city"
+ },
+ "nasomatto": {
+  "lat": 52.37,
+  "lon": 4.9,
+  "place": "Amsterdam",
+  "precision": "city"
+ },
+ "vilhelm-parfumerie": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "mizensir": {
+  "lat": 46.2,
+  "lon": 6.14,
+  "place": "Geneva",
+  "precision": "city"
+ },
+ "bdk-parfums": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "claus-porto": {
+  "lat": 41.15,
+  "lon": -8.61,
+  "place": "Porto",
+  "precision": "city"
+ },
+ "korres": {
+  "lat": 37.98,
+  "lon": 23.73,
+  "place": "Athens",
+  "precision": "city"
+ },
+ "skandinavisk": {
+  "lat": 55.68,
+  "lon": 12.57,
+  "place": "Copenhagen",
+  "precision": "city"
+ },
+ "janua": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "country"
+ },
+ "loe": {
+  "lat": 37.57,
+  "lon": 126.98,
+  "place": "Seoul",
+  "precision": "city"
+ },
+ "wick-fragrances": {
+  "lat": -33.92,
+  "lon": 18.42,
+  "place": "Cape Town",
+  "precision": "city"
+ },
+ "lartisan-parfumeur": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "frederic-malle": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "acqua-di-parma": {
+  "lat": 44.8,
+  "lon": 10.33,
+  "place": "Parma",
+  "precision": "city"
+ },
+ "frau-tonis": {
+  "lat": 52.52,
+  "lon": 13.4,
+  "place": "Berlin",
+  "precision": "city"
+ },
+ "ramon-monegal": {
+  "lat": 41.39,
+  "lon": 2.17,
+  "place": "Barcelona",
+  "precision": "city"
+ },
+ "agonist": {
+  "lat": 59.33,
+  "lon": 18.07,
+  "place": "Stockholm",
+  "precision": "city"
+ },
+ "perfumehead": {
+  "lat": 34.05,
+  "lon": -118.24,
+  "place": "Los Angeles",
+  "precision": "city"
+ },
+ "histoires-de-parfums": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "michael-malul": {
+  "lat": 39.5,
+  "lon": -98.35,
+  "place": "United States",
+  "precision": "country"
+ },
+ "kayali": {
+  "lat": 25.2,
+  "lon": 55.27,
+  "place": "Dubai",
+  "precision": "city"
+ },
+ "sana-jardin": {
+  "lat": 31.63,
+  "lon": -7.99,
+  "place": "Marrakech",
+  "precision": "country"
+ },
+ "floraiku": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "ds-and-durga": {
+  "lat": 40.71,
+  "lon": -74.01,
+  "place": "New York",
+  "precision": "city"
+ },
+ "arquiste": {
+  "lat": 40.71,
+  "lon": -74.01,
+  "place": "New York",
+  "precision": "city"
+ },
+ "henry-rose": {
+  "lat": 34.05,
+  "lon": -118.24,
+  "place": "Los Angeles",
+  "precision": "city"
+ },
+ "maya-njie": {
+  "lat": 59.33,
+  "lon": 18.07,
+  "place": "Stockholm",
+  "precision": "city"
+ },
+ "27-87": {
+  "lat": 41.39,
+  "lon": 2.17,
+  "place": "Barcelona",
+  "precision": "city"
+ },
+ "rogue-perfumery": {
+  "lat": 39.5,
+  "lon": -98.35,
+  "place": "United States",
+  "precision": "country"
+ },
+ "sultan-pasha": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "country"
+ },
+ "libertine": {
+  "lat": 49.28,
+  "lon": -123.12,
+  "place": "Vancouver",
+  "precision": "city"
+ },
+ "liquides-imaginaires": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "ellis-brooklyn": {
+  "lat": 40.71,
+  "lon": -74.01,
+  "place": "New York",
+  "precision": "city"
+ },
+ "dusita": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "Paris",
+  "precision": "city"
+ },
+ "zielinski-rozen": {
+  "lat": 32.05,
+  "lon": 34.75,
+  "place": "Tel Aviv",
+  "precision": "city"
+ },
+ "areej-le-dore": {
+  "lat": 55.76,
+  "lon": 37.62,
+  "place": "Moscow",
+  "precision": "country"
+ },
+ "bortnikoff": {
+  "lat": 55.76,
+  "lon": 37.62,
+  "place": "Moscow",
+  "precision": "country"
+ },
+ "ensar-oud": {
+  "lat": 11.56,
+  "lon": 104.92,
+  "place": "Phnom Penh",
+  "precision": "country"
+ },
+ "pekji": {
+  "lat": 41.01,
+  "lon": 28.98,
+  "place": "Istanbul",
+  "precision": "city"
+ },
+ "aftelier": {
+  "lat": 37.87,
+  "lon": -122.27,
+  "place": "Berkeley",
+  "precision": "city"
+ },
+ "strangers-parfumerie": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "place": "Bangkok",
+  "precision": "city"
+ },
+ "phlur": {
+  "lat": 39.5,
+  "lon": -98.35,
+  "place": "United States",
+  "precision": "country"
+ }
+}
