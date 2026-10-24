@@ -130,8 +130,12 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .tile .raw { font-family: var(--mono); font-size: 11px; color: var(--muted) }
 .tile .ex { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 8px }
 .tile .explore { justify-self: start; font: 600 12.5px var(--body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer }
-.tabs { display: inline-flex; gap: 4px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-top: 16px }
-.tabs button { font: 600 14px var(--body); color: var(--ink); background: none; border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer }
+.offtab { display: none !important }
+.more { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; padding: 8px 0 }
+.more .go { font: 600 14px var(--body); background: var(--accent); color: var(--paper); border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer }
+.tabs { display: flex; width: fit-content; max-width: 100%; overflow-x: auto; scrollbar-width: none; gap: 4px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-top: 16px }
+.tabs::-webkit-scrollbar { display: none }
+.tabs button { white-space: nowrap; flex: none; font: 600 14px var(--body); color: var(--ink); background: none; border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer }
 .tabs button[aria-selected="true"] { background: var(--accent); color: var(--paper) }
 .twins { display: grid; gap: 8px; margin-top: 12px }
 .twin { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 8px; align-items: center; font-size: 13.5px; background: var(--bg); border-radius: 10px; padding: 8px 10px }
@@ -214,9 +218,9 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <div class="themes" id="themes" aria-label="Colour theme"><span class="eyebrow">Theme</span></div>
   </header>
 
-  <div class="tabs" role="tablist" aria-label="View"><button type="button" role="tab" id="tab-cards" aria-selected="true">Cards</button><button type="button" role="tab" id="tab-map" aria-selected="false">World map</button></div>
+  <div class="tabs" role="tablist" aria-label="Sections" id="tabs"><button type="button" role="tab" id="tab-browse" data-tab="browse" aria-selected="true">Browse</button><button type="button" role="tab" id="tab-finder" data-tab="finder" aria-selected="false">Finder</button><button type="button" role="tab" id="tab-styles" data-tab="styles" aria-selected="false">Styles</button><button type="button" role="tab" id="tab-traditions" data-tab="traditions" aria-selected="false">Traditions</button><button type="button" role="tab" id="tab-twins" data-tab="twins" aria-selected="false">Twins &amp; trends</button><button type="button" role="tab" id="tab-learn" data-tab="learn" aria-selected="false">Learn</button><button type="button" role="tab" id="tab-shops" data-tab="shops" aria-selected="false">Shops &amp; leads</button><button type="button" role="tab" id="tab-map" data-tab="map" aria-selected="false">World map</button></div>
 
-  <section id="mapview" hidden>
+  <section id="mapview" class="offtab">
     <p class="why">Tap a country, then a city, a house, its signature scent and any single note. Tapping a note lights up every house in the world that uses it.</p>
   <nav class="crumbs" id="m-crumbs" aria-label="Where you are on the map"></nav>
   <div class="desk">
@@ -245,6 +249,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <p class="why">Answer what you can; skipped questions count as "no preference". Matches come with the reasons they fit.</p></div>
     <div id="qs"></div>
     <button class="go" type="button" id="go">Show my matches</button>
+    <p class="why" id="gomsg" aria-live="polite"></p>
   </section>
 
   <section class="map" id="mapsec">
@@ -413,6 +418,8 @@ function card(h) {
   </article>`;
 }
 
+const PAGE = { sig: "", n: 24 };
+document.addEventListener("click", (e) => { if (e.target.id === "moreBtn") { PAGE.n += 24; render(); } });
 function render() {
   const q = state.q.trim().toLowerCase(), rates = D.rates.cad_per;
   if (state.quiz) {
@@ -438,7 +445,8 @@ function render() {
   const key = { name: (h) => h.name, region: (h) => CONT_ORDER.indexOf(h.continent) * 1e6 + D.houses.indexOf(h),
     cad: (h) => cad(h.price, rates) ?? 1e9, try: (h) => (h.try && cad(h.try, rates) != null ? cad(h.try, rates) : 1e9), ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
   list.sort((a, b) => state.sort === "name" ? a.name.localeCompare(b.name) : key[state.sort](a) - key[state.sort](b));
-  $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">${state.shelf ? "Your shelf is empty. Tap ♡ on any house to save it here." : "Nothing matches. Clear a filter or try a single note such as rose or tea."}</p>`;
+  const sig = list.map((h) => h.id).join(","); if (sig !== PAGE.sig) { PAGE.sig = sig; PAGE.n = 24; }
+  $("grid").innerHTML = list.length ? list.slice(0, PAGE.n).map(card).join("") + (list.length > PAGE.n ? `<div class="more"><button class="go" type="button" id="moreBtn">Show ${Math.min(24, list.length - PAGE.n)} more</button><span class="why">Showing ${PAGE.n} of ${list.length}</span></div>` : "") : `<p class="empty">${state.shelf ? "Your shelf is empty. Tap ♡ on any house to save it here." : "Nothing matches. Clear a filter or try a single note such as rose or tea."}</p>`;
   $("count").textContent = `${list.length} of ${D.houses.length} houses`;
   const ccs = [...new Set(list.map((h) => h.cc))];
   const reg = ccs.length === 1 && D.regions.find((r) => r.cc === ccs[0]);
@@ -474,7 +482,7 @@ function render() {
   const byIdA = Object.fromEntries(houses.map((h) => [h.id, h]));
   $("twins").innerHTML = twins.map((t) => `<div class="twin"><span><b>${esc(t.budget)}</b><small>${esc(t.budgetBrand)}${t.format ? " · " + esc(t.format) : ""}</small></span><span class="arrow">${t.direction === "similar" ? "≈" : "smells like"}</span><span><b>${esc(t.luxury)}</b><small>${esc(t.luxuryBrand || "")}${t.notes && t.notes.length ? (t.luxuryBrand ? " · " : "") + esc(t.notes.join(", ")) : ""}</small></span></div>`).join("");
   $("trends").innerHTML = trends.map((t) => `<div class="trend"><b>${esc(t.title)}</b><span class="why">${esc(t.what)} ${esc(t.note)}</span><span class="sim">See: ${t.examples.filter((x) => byIdA[x]).map((x) => `<button class="mini" type="button" data-q="${esc(byIdA[x].name)}">${esc(byIdA[x].name)}</button>`).join("")}</span></div>`).join("");
-  document.querySelector(".two").addEventListener("click", (e) => { const q = e.target.closest("[data-q]"); if (q && q.closest("#trends")) { state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); } });
+  document.querySelector(".two").addEventListener("click", (e) => { const q = e.target.closest("[data-q]"); if (q && q.closest("#trends")) { state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } });
   $("trads").innerHTML = traditions.map((t) => `<div class="tradcard"><span class="eyebrow">${esc(t.country)}</span><b>${esc(t.name)}</b><span class="why">${esc(t.what)}</span><button class="mini" type="button" data-trad="${t.id}">See it on the map</button></div>`).join("");
   $("trads").onclick = async (e) => { const b = e.target.closest("[data-trad]"); if (!b) return; await showView("map"); window.mapGoTradition && window.mapGoTradition(b.dataset.trad); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); };
   $("stores").innerHTML = stores.map((x) => `<li><span><b>${esc(x.name)}</b> · ${esc(x.city)}</span><small>${esc(x.what)}</small></li>`).join("");
@@ -486,8 +494,8 @@ function render() {
     return `<div class="tile"><h3>${name}</h3><span class="vibe">${vibe} · ${hs.length} houses</span><span class="raw">${raw}</span><div class="ex">${ex.map((h) => `<button class="mini" type="button" data-q="${esc(h.name)}">${esc(h.name)}</button>`).join("")}</div><button class="explore" type="button" data-style="${k}">Explore this style</button></div>`; }).join("");
   $("mapgrid").onclick = (e) => {
     const st = e.target.closest("[data-style]");
-    if (st) { state.quiz = null; state.style.clear(); state.style.add(st.dataset.style); document.querySelectorAll("#styles .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === MAP.find((m) => m[0] === st.dataset.style)[1])); render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
-    const q = e.target.closest("[data-q]"); if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); } };
+    if (st) { state.quiz = null; state.style.clear(); state.style.add(st.dataset.style); document.querySelectorAll("#styles .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === MAP.find((m) => m[0] === st.dataset.style)[1])); render(); toBrowse(); return; }
+    const q = e.target.closest("[data-q]"); if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } };
   const QS = [
     ["pull", "Which smells pull you in?", [["fresh", "Fresh & clean"], ["warm", "Warm & cozy"], ["floral", "Flowers"], ["sweet", "Sweet & edible"], ["woody", "Woody & earthy"]]],
     ["loud", "How noticeable should it be?", [["Soft", "Soft, close to skin"], ["Moderate", "In between"], ["Bold", "Bold, people notice"]]],
@@ -515,20 +523,21 @@ function render() {
       return [h, s];
     }).filter(([, s]) => s > 0).sort((a, b) => b[1] - a[1]).slice(0, 12);
     state.quiz = { ids: scored.map(([h]) => h.id), why };
-    if (!scored.length) { state.quiz = null; $("matchbar").hidden = false; $("matchbar").textContent = "No houses fit all of those answers yet. Try loosening the budget or region."; return; }
-    render(); $("matchbar").scrollIntoView({ behavior: "smooth", block: "start" });
+    if (!scored.length) { state.quiz = null; $("gomsg").textContent = Object.keys(ans).length ? "No houses fit all of those answers yet. Try loosening the budget or region." : "Pick at least one answer first."; return; }
+    $("gomsg").textContent = "";
+    render(); toBrowse();
   };
   $("shelfBtn").onclick = (e) => { state.shelf = !state.shelf; e.currentTarget.setAttribute("aria-pressed", state.shelf); render(); };
   $("grid").onclick = (e) => {
     const f = e.target.closest("[data-fav]");
     if (f) { const id = f.dataset.fav; SHELF.has(id) ? SHELF.delete(id) : SHELF.add(id); saveShelf(); f.setAttribute("aria-pressed", SHELF.has(id)); f.textContent = SHELF.has(id) ? "♥" : "♡"; $("shelfBtn").textContent = `My shelf (${SHELF.size})`; if (state.shelf) render(); return; }
     const q = e.target.closest("[data-q]");
-    if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); }
+    if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); }
   };
   $("shelfBtn").textContent = `My shelf (${SHELF.size})`;
   $("region").onclick = (e) => { const q = e.target.closest("[data-q]"); if (q) { state.fam.clear(); document.querySelectorAll("#fams .chip").forEach((c) => c.setAttribute("aria-pressed", "false")); state.q = q.dataset.q; $("q").value = state.q; render(); } };
   $("famlist").onclick = (e) => { const b = e.target.closest("[data-fam]"); if (!b) return; state.fam.clear(); state.fam.add(b.dataset.fam); state.q = ""; $("q").value = "";
-    document.querySelectorAll("#fams .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === D.fam[b.dataset.fam].label)); render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); };
+    document.querySelectorAll("#fams .chip").forEach((c) => c.setAttribute("aria-pressed", c.textContent === D.fam[b.dataset.fam].label)); render(); toBrowse(); };
   // Themes
   const THEMES = [
     ["default", "Atlas", null],
@@ -559,18 +568,25 @@ function render() {
   $("themes").onclick = (e) => { const b = e.target.closest("[data-th]"); if (b) applyTheme(b.dataset.th); };
   let saved = "default"; try { saved = localStorage.getItem("scentatlas.theme") || "default"; } catch (e) {}
   applyTheme(saved);
-  const cardsEls = ["finder", "mapsec"].map($).concat([document.querySelector(".rail"), $("matchbar"), $("region"), $("grid"), document.querySelector(".two")]);
-  let mapReady = false;
+  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox"], learn: ["#gloss"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
+  let mapReady = false, curTab = "browse";
   async function showView(v) {
-    const map = v === "map"; $("tab-map").setAttribute("aria-selected", map); $("tab-cards").setAttribute("aria-selected", !map);
-    $("mapview").hidden = !map; cardsEls.forEach((el) => { if (!el) return; if (map) { el.dataset.wasHidden = el.hidden; el.hidden = true; } else if (el.dataset.wasHidden !== undefined) { el.hidden = el.dataset.wasHidden === "true"; delete el.dataset.wasHidden; } });
-    if (map && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions }); }
-    if (!map) render();
+    if (!PANELS[v]) v = "browse"; curTab = v;
+    document.querySelectorAll("#tabs [data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === v));
+    Object.entries(PANELS).forEach(([k, sels]) => sels.forEach((sel) => { const el = document.querySelector(sel); if (el) el.classList.toggle("offtab", k !== v); }));
+    const two = document.querySelector(".two"); if (two) two.classList.toggle("offtab", !["traditions", "twins", "learn", "shops"].includes(v));
+    document.querySelectorAll(".two details").forEach((d) => { if (!d.classList.contains("offtab")) d.open = true; });
+    const tb = document.querySelector("#tab-" + v); if (tb) tb.scrollIntoView({ block: "nearest", inline: "nearest" });
+    try { history.replaceState(null, "", v === "browse" ? location.pathname + location.search : "#" + v); } catch (e) {}
+    try { localStorage.setItem("scentatlas.tab", v); } catch (e) {}
+    if (v === "map" && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions }); }
+    if (v === "browse") render();
   }
-  $("tab-cards").onclick = () => showView("cards"); $("tab-map").onclick = () => showView("map");
-  window.atlasOpenCard = (name) => { showView("cards"); state.quiz = null; state.q = name; $("q").value = name; render(); document.querySelector(".rail").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  function toBrowse() { if (curTab !== "browse") showView("browse"); $("tabs").scrollIntoView({ behavior: "smooth", block: "start" }); }
+  $("tabs").onclick = (e) => { const b = e.target.closest("[data-tab]"); if (b) showView(b.dataset.tab); };
+  window.atlasOpenCard = (name) => { state.quiz = null; state.q = name; $("q").value = name; showView("browse"); render(); toBrowse(); };
   render();
-  if (location.hash === "#map") showView("map");
+  { let start = (location.hash || "").slice(1); if (!PANELS[start]) { try { start = localStorage.getItem("scentatlas.tab") || "browse"; } catch (e) { start = "browse"; } } showView(start); }
 })();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>

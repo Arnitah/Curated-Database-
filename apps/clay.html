@@ -1575,6 +1575,34 @@ function lyMatch(a,b){ const A=lyParse(a||''), B=lyParse(b||''); if(!A.fs.length
   const first=A.weight>=B.weight?0:1;
   return {score,shared:sh.map(f=>LY_FN[f]),good:[...new Set(good)].slice(0,3),risk:[...new Set(risk)].slice(0,2),first};
 }
+/* ---------- Scent Atlas link (data/scents in the Curated Database): houses to discover and scent rituals ---------- */
+const ATLAS_URL='https://claude.ai/artifact/YbseUHCnoj4vsYsm3v3Q25';
+window.CLAY_ATLAS=window.CLAY_ATLAS||{houses:[],trads:[],rates:{}};
+function atlasPrice(p){ if(!p||typeof p.amt!=='number') return ''; const f=(v,c)=>{ try{ return new Intl.NumberFormat('en-CA',{style:'currency',currency:c,maximumFractionDigits:v>=100?0:2}).format(v); }catch(e){ return `${Math.round(v)} ${c}`; } };
+  const r=(window.CLAY_ATLAS.rates||{})[p.cur]; return (p.cur==='CAD'||!r?f(p.amt,p.cur):`about ${f(p.amt*r,'CAD')}`)+(p.ml?` · ${p.ml} ml`:''); }
+function atlasCard(){
+  const A=window.CLAY_ATLAS; if(!A||!A.houses.length) return '';
+  const k=SW_SEASONKEY[S.scentSeason]||'mild', fit=SW_FIT[k]||{}, own={};
+  SW.forEach(x=>lyParse(x.notes||'').fs.forEach(f=>{ own[f]=(own[f]||0)+1; }));
+  const mine=Object.keys(own).length;
+  const ranked=A.houses.map(h=>({h,s:h.families.reduce((a,f,i)=>a+(fit[f]||0)*(i?1:1.5)+(own[f]?2:0),0)})).filter(r=>r.s>0).sort((a,b)=>b.s-a.s||a.h.name.localeCompare(b.h.name));
+  if(!ranked.length) return '';
+  const off=((S.atlasOff||0)*3)%ranked.length, pick=ranked.slice(off,off+3); if(pick.length<3) pick.push(...ranked.slice(0,3-pick.length));
+  const row=({h})=>{ const pr=atlasPrice(h.price), prof=String(h.sig&&h.sig.profile||h.about||''); return `<div style="padding:10px 0"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><b>${esc(h.name)}</b><span class="muted small num">${esc([h.city||h.country, pr].filter(Boolean).join(' · '))}</span></div>
+    <span class="small muted">${esc(h.families.map(f=>LY_FN[f]||f).join(' · '))}${h.sig&&h.sig.name?` · try ${esc(h.sig.name)}`:''}</span>
+    <p class="small" style="margin:4px 0 0">${esc(prof.length>170?prof.slice(0,prof.lastIndexOf(' ',165))+'…':prof)}</p>${h.site?`<a class="small" href="${esc(h.site)}" target="_blank" rel="noopener">Visit ${esc(h.name)}</a>`:''}</div>`; };
+  return card('Discover a new scent house', `<p class="small muted" style="margin-top:0">From the Scent Atlas: smaller perfume houses from around the world, picked for ${esc(S.scentSeason)}${mine?' and the families already in your wardrobe':''}.</p>
+    <div class="list">${pick.map(row).join('')}</div>
+    <div class="row" style="margin-top:8px"><button class="btn" type="button" data-act="atlasmore">Show others</button><a class="small" href="${ATLAS_URL}" target="_blank" rel="noopener">Open the Scent Atlas</a></div>
+    <p class="small muted">Prices are as last checked and can change. Smell a sample before buying a full bottle.</p>`, {h:'h3', icon:'search'});
+}
+function atlasRitualCard(){
+  const T=(window.CLAY_ATLAS||{}).trads||[]; if(!T.length) return '';
+  const day=Math.floor((Date.now()-new Date(new Date().getFullYear(),0,0))/864e5), t=T[day%T.length];
+  return card('Scent ritual of the day', `<p class="small muted" style="margin-top:0">${esc(t.place||t.country||'')}</p><p style="font-family:var(--display);font-size:17px;margin:0 0 6px">${esc(t.name)}</p>
+    <p class="small"><b>How it smells:</b> ${esc(t.smell||'')}</p><p class="small">${esc(t.how||'')}</p>
+    <a class="small" href="${ATLAS_URL}#traditions" target="_blank" rel="noopener">More scent traditions in the Scent Atlas</a>`, {h:'h3', icon:'spark'});
+}
 function scentWardrobeCard(){
   const k=SW_SEASONKEY[S.scentSeason]||'mild', rated=SW.map((x,i)=>({x,i,s:swScore(x,k)})).filter(r=>r.s!==null).sort((a,b)=>b.s-a.s);
   let pairs=[]; for(let i=0;i<SW.length;i++) for(let j=i+1;j<SW.length;j++){ const m=lyMatch(SW[i].notes,SW[j].notes); if(m) pairs.push({i,j,m}); }
@@ -1630,7 +1658,7 @@ function pagePairs(){
       <button class="btn" type="button" data-act="pairsMode" data-v="scent">Open the scent builder</button></section>`;
   const railScent = `${card('From Arab perfumery', `<p class="small">Attar is a concentrated, alcohol-free perfume oil. Worn under a spray fragrance, it anchors the scent so it lasts. Oud, rose and amber are classic bases.</p><p class="small muted">Bakhoor (scented wood chips) perfumes hair and clothes with smoke, not on skin.</p>`, {h:'h3', icon:'spark'})}
     ${card('Works with your skincare', `<p class="small">Fragrance-free body lotion under perfume helps it last on dry skin. Your face routine stays unscented while your barrier recovers.</p>`, {h:'h3', cls:'ok'})}`;
-  return {main: head + (mode==='skin'?skinMain:scentWardrobeCard()+scentMain()), rail: mode==='skin'?railSkin:railScent};
+  return {main: head + (mode==='skin'?skinMain:scentWardrobeCard()+atlasCard()+scentMain()), rail: mode==='skin'?railSkin:atlasRitualCard()+railScent};
 }
 
 /* ---------- Learn */
@@ -1984,6 +2012,7 @@ document.addEventListener('click', async (e)=>{
     return; }
   const a = el.dataset.act, v = el.dataset.v;
   if (el.tagName==='A') e.preventDefault();
+  if (a==='atlasmore'){ S.atlasOff=(S.atlasOff||0)+1; render(); return; }
   if (a==='scentgo'){ S.page='pairs'; S.pairsMode='scent'; render(); window.scrollTo({top:0}); return; }
   if (a==='go'){ S.page=v; if(v!=='discover') S.ing=null; render(); $('#main').focus({preventScroll:true}); window.scrollTo({top:0,behavior:'smooth'}); return; }
   if (a==='time') S.t=v;
@@ -2109,6 +2138,16 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
   const [tips,steps,areas,feel]=await Promise.all(["hair_tips","hair_wash_steps","product_steps","feel_words"].map(pick));
   try{ const fam=ver.datasets['safe-batch/scent_families']?await get('data/safe-batch/scent_families.json'):null; if(Array.isArray(fam)&&fam.length){ const have=new Set(LY_FAM.map(x=>x[0])); fam.forEach(([f,src])=>{ try{ const i=LY_FAM.findIndex(x=>x[0]===f); const re=new RegExp(src); if(i>=0) LY_FAM[i]=[f,re]; else if(LY_W[f]!==undefined){ LY_FAM.push([f,re]); } }catch(e){} }); } }catch(e){}
   let n=0;
+  try{ const [tw,hs,tr,rt]=await Promise.all(['twins','houses','traditions','rates'].map(async nm=>{ try{ return ver.datasets['scents/'+nm]?await get('data/scents/'+nm+'.json'):null; }catch(e){ return null; } }));
+    if(Array.isArray(tw)){ const have=new Set(SA.map(x=>x.alt)), cnt={};
+      tw.forEach(t=>{ if(!t||!t.budget||!t.luxury||!Array.isArray(t.notes)) return; const alt=`${t.budget} (${t.budgetBrand||'budget'})`; if(have.has(alt)) return; have.add(alt);
+        const notes=[...new Set(t.notes.flatMap(x=>{ const l=String(x).toLowerCase().trim(); cnt[l]=(cnt[l]||0)+1; return [l,...SA_NOTES.filter(b=>b!==l&&l.includes(b.replace(/s$/,'')))]; }))];
+        SA.push({alt,ref:`${t.luxuryBrand?t.luxuryBrand+' ':''}${t.luxury}`,notes,price:'$',kind:String(t.format||'body mist').split(',')[0].toLowerCase()+' · a creator’s pick'}); n++; });
+      Object.entries(cnt).filter(([w,c])=>c>=2&&!SA_NOTES.includes(w)).slice(0,3).forEach(([w])=>SA_NOTES.push(w)); }
+    if(Array.isArray(hs)){ window.CLAY_ATLAS.houses=hs.filter(h=>h&&h.id&&h.name&&Array.isArray(h.families)&&h.families.length); n++; }
+    if(rt&&rt.cad_per) window.CLAY_ATLAS.rates=rt.cad_per;
+    if(Array.isArray(tr)){ window.CLAY_ATLAS.trads=tr.filter(t=>t&&t.name&&t.smell); n++; }
+  }catch(e){}
   if(tips&&typeof tips==="object"){ Object.entries(tips).forEach(([k,v])=>{ if(HTIPS[k]!==v){ HTIPS[k]=v; n++; } }); }
   if(Array.isArray(steps)&&steps.length&&JSON.stringify(steps)!==JSON.stringify(HW_STEPS)){ HW_STEPS.splice(0,HW_STEPS.length,...steps); n++; }
   if(areas&&typeof areas==="object"){ Object.entries(areas).forEach(([a,list])=>{ if(!MP_STEPS[a]||!Array.isArray(list)) return; list.forEach(st=>{ if(!MP_STEPS[a].includes(st)){ const o=MP_STEPS[a].indexOf('Other'); MP_STEPS[a].splice(o<0?MP_STEPS[a].length:o,0,st); n++; } }); }); }

@@ -682,5 +682,115 @@
     "watch": "Cloves can sting the scalp, and some blends add henna that tints hair. Rinse well so grit doesn't stay in.",
     "modern": "A mishat paste with yogurt and a few drops of oil, washed out after 30 to 45 minutes, then shampoo and condition.",
     "q": "mahlab"
+  },
+  {
+    "id": "gowe",
+    "name": "Gowé (tuber incense)",
+    "region": "Africa",
+    "place": "Senegal River valley, Senegal and Mali",
+    "how": "Women dig up the black tubers of a wild sedge, sun-dry and pound them. The powder is burned at home as incense, and the dried tuber is also brewed into a herbal drink.",
+    "ev": "f",
+    "does": "Fills a room, clothes and hair with an earthy, woody smell close to vetiver, with a soft dried-fruit sweetness. It's a scent ritual, not a skin treatment.",
+    "watch": "Burn it in a ventilated room and keep short sessions; smoke irritates lungs, so skip it around babies and people with asthma. There's no safety data on drinking it, so avoid that in pregnancy.",
+    "modern": "Perfume houses are now working with gowé extract made with the women who harvest it. On skin, vetiver essential oil at 1% in a carrier oil gives a similar earthy note."
+  },
+  {
+    "id": "thiouraye",
+    "name": "Thiouraye (Senegalese incense)",
+    "region": "Africa",
+    "place": "Senegal and the Gambia",
+    "how": "Small grains of resin, roots and woods are soaked in perfume, dried and kept in a jar. They're burned on charcoal in a clay pot so the smoke scents the home, bedding and clothes, often as part of hosting and married life.",
+    "ev": "f",
+    "does": "Leaves a warm, sweet, long-lasting scent in fabric and rooms, and is a sign of welcome and care for the home.",
+    "watch": "Hot charcoal and loose fabric don't mix, so keep the burner on a stable surface away from clothes and children. Ventilate, and skip it with asthma or a newborn in the room.",
+    "modern": "Scent clothes and drawers with a fabric spray or a sachet of resin instead of smoke, or use an electric incense burner that heats without charcoal."
+  },
+  {
+    "id": "uunsi",
+    "name": "Uunsi (Somali incense)",
+    "region": "Africa",
+    "place": "Somalia, Djibouti and the Somali diaspora",
+    "how": "Frankincense and other resins are cooked with sugar and perfume oils into fragrant crystals, then burned on charcoal in a clay burner (dabqaad). The smoke welcomes guests and is wafted over hair and clothes.",
+    "ev": "f",
+    "does": "Gives a sweet, resinous scent that clings to fabric and hair for hours. It's mostly hospitality and ritual.",
+    "watch": "Smoke and hot charcoal: keep the burner away from hair and fabric, keep sessions short in a ventilated room, and avoid around babies and people with asthma.",
+    "modern": "For hair, a hair perfume or a drop of frankincense oil diluted in a carrier oil on the ends gives the scent without smoke."
+  },
+  {
+    "id": "kyphi",
+    "name": "Kyphi (ancient Egyptian temple incense)",
+    "region": "Africa",
+    "place": "Ancient Egypt",
+    "how": "A paste of resins such as myrrh and frankincense, spices, raisins, honey and wine was blended, aged and burned in temples at dusk. Several ancient recipes survive on temple walls and in Greek writings.",
+    "ev": "f",
+    "does": "Historically a sacred evening incense said to calm and help sleep. Today it's recreated by incense makers as a piece of perfume history.",
+    "watch": "Old recipes can include ingredients we wouldn't burn or touch today. Burning any incense indoors adds fine smoke, so ventilate and keep it occasional.",
+    "modern": "Buy kyphi from a maker who lists the ingredients, or enjoy the idea in perfumes built on myrrh, honey and spice."
+  },
+  {
+    "id": "mitti",
+    "name": "Mitti attar (the smell of first rain)",
+    "region": "South Asia",
+    "place": "Kannauj, Uttar Pradesh, India",
+    "how": "Discs of baked river clay are heated in copper stills, and the steam is caught in sandalwood oil over days. The result is a perfume oil that smells like rain on dry earth.",
+    "ev": "f",
+    "does": "An alcohol-free perfume oil that sits close to the skin and lasts long. Purely a fragrance.",
+    "watch": "Many cheap 'attars' are synthetic scent in mineral oil, so buy from a maker who says how it's made. Patch test, keep it off the face and broken skin.",
+    "modern": "Dab a little on pulse points, a scarf or the ends of hair. Safe Batch's perfume oil recipes use the same idea with skin-safe amounts."
+  },
+  {
+    "id": "gajra",
+    "name": "Gajra (jasmine hair garland)",
+    "region": "South Asia",
+    "place": "India, Sri Lanka, Bangladesh and Pakistan",
+    "how": "Fresh jasmine buds, sometimes with roses, are strung into a garland and pinned around a bun or braid for weddings, festivals, prayer and everyday wear.",
+    "ev": "f",
+    "does": "A natural, fresh floral scent that lasts through the evening as the buds open. It doesn't treat hair; it's beauty and ritual.",
+    "watch": "Heavy garlands and tight pins can pull on the hairline over time. Some people are sensitive to strong flower scent or pollen.",
+    "modern": "Pin it to a loose bun or a low-tension style. For days without fresh flowers, a light jasmine hair mist works."
+  },
+  {
+    "id": "kodo",
+    "name": "Kōdō (the way of incense)",
+    "region": "East Asia",
+    "place": "Japan",
+    "how": "Small pieces of fragrant wood, such as aloeswood, are warmed on a thin mica plate over hot ash, not set alight. Guests pass the cup and 'listen' to the scent, sometimes in guessing games.",
+    "ev": "f",
+    "does": "A slow, mindful ritual. Because the wood is heated rather than burned, it gives off more scent and less smoke.",
+    "watch": "Hot ash and charcoal can burn, so handle the cup carefully. Real aloeswood is costly and often faked; buy from known incense houses.",
+    "modern": "Electric incense heaters warm wood chips without charcoal. Japanese incense houses also sell low-smoke sticks."
+  },
+  {
+    "id": "zhar",
+    "name": "Orange blossom water (zhar)",
+    "region": "Middle East and North Africa",
+    "place": "Morocco, Tunisia, Lebanon and across the Mediterranean",
+    "how": "Bitter orange flowers are steam-distilled each spring and the fragrant water is kept for the year. It's sprinkled on guests' hands, added to pastries and tea, and patted on the face.",
+    "ev": "f",
+    "does": "A gentle, lightly scented flower water that feels fresh and soothing as a face mist. It doesn't treat skin conditions.",
+    "watch": "Pure flower water spoils, so keep it in the fridge and use within weeks. Kitchen versions can contain added flavouring; for skin choose a hydrosol that lists its preservative. It can still irritate very sensitive skin.",
+    "modern": "Use it like rose water: a mist after cleansing, before your serum or moisturiser."
+  },
+  {
+    "id": "hungarywater",
+    "name": "Hungary Water",
+    "region": "Europe",
+    "place": "Hungary and later all of Europe, from the 1600s",
+    "how": "Fresh rosemary (later also lavender, mint and lemon peel) was steeped and distilled in alcohol. It was splashed on as a perfume and used as a face tonic, with a legend tying it to a Hungarian queen.",
+    "ev": "f",
+    "does": "One of Europe's first alcohol-based perfumes. It smells herbal and fresh; any youth-restoring claims are legend.",
+    "watch": "High-alcohol splashes dry and sting skin, especially on the face. Rosemary oil is strong, so keep it well diluted and away from the eyes.",
+    "modern": "For the face, a rosemary hydrosol is the gentle version. As a body splash, keep rosemary oil around 1%."
+  },
+  {
+    "id": "copal",
+    "name": "Copal smoke",
+    "region": "Americas",
+    "place": "Mexico and Central America",
+    "how": "Tree resin is burned on charcoal in clay burners during ceremonies, on Día de Muertos altars and in sweat lodges (temazcal) to cleanse a space and honour ancestors.",
+    "ev": "f",
+    "does": "Gives a bright, piney, lemony smoke that scents rooms and clothes. For many communities it's sacred, not a trend.",
+    "watch": "Ventilate, keep it brief, and skip with asthma or around babies. Respect it as ceremony and buy from Indigenous or local sellers where you can.",
+    "modern": "Copal is also sold as a diffuser oil and appears in perfumes as a resin note, which avoids smoke."
   }
 ]

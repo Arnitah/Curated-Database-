@@ -99,9 +99,11 @@ A curated guide to perfume houses outside the usual Western names, Asia first. E
 
 All descriptions are written in our own words. Every Monday the scent check refreshes `rates.json`, tests every link and reads live shop prices into `checks/`. It never edits `houses.json`: a price marked `changed` in `checks/scent-prices.json` is a to-do to review by hand. Houses found but not yet verified live in `leads.json`.
 
-Planned Clay link: `families` already uses Clay's scent family names, so scent stacks and dupe comparisons (`type: inspired-by`, `mass`) can read this file directly.
+**Linked to Clay** (scent builder): `twins.json` is added to Clay's "Smell-alikes, by notes" list (marked as a creator's pick); `houses.json` drives a "Discover a new scent house" card picked for the season and the families in the person's own scent wardrobe, with CAD estimates from `rates.json`; `traditions.json` shows one "Scent ritual of the day" on the side rail. When publishing Clay, publish these four files next to it.
+
+**Linked to Safe Batch:** scent rituals that have a skin or safety angle (gowé, thiouraye, uunsi, kyphi, mitti attar, gajra, kōdō, orange blossom water, Hungary Water, copal) were added to `safe-batch/traditions.json` with Safe Batch's evidence and safety fields, so they appear in its Traditions tab.
 
 ### Scent World Map
 `apps/scent-map.html` draws the world with country shapes built in (Natural Earth 110m via world-atlas, Equal Earth projection) so it needs no map-tile service. It reads `houses.json` and `geo.json`; when you add a house, add its coordinates to `geo.json` (`precision: "country"` when only the country is known). The validator warns if a house has no coordinates.
 
-The atlas page now includes the world map as a **World map** tab (same data, same theme). Traditional scent rituals from `traditions.json` show as gold diamonds on the map. Budget twins are opinions from creators or research, labelled as such.
+The atlas page is split into tabs (Browse, Finder, Styles, Traditions, Twins & trends, Learn, Shops & leads, World map); the tab is kept in the link (`#traditions`, `#map`...) and Browse shows 24 houses at a time. Traditional scent rituals from `traditions.json` show as gold diamonds on the map. Budget twins are opinions from creators or research, labelled as such.
