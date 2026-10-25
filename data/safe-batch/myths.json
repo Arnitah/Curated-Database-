@@ -6677,5 +6677,36 @@
     "seen_in": "Natural hair TikTok",
     "checked": "2026-10-24",
     "format": "v2"
+  },
+  {
+    "id": "at-home-devices-give-clinic-results",
+    "title": "At-home K-beauty devices give clinic-grade results",
+    "topics": [
+      "face",
+      "devices"
+    ],
+    "claims": [
+      {
+        "claim": "\"Clinic-grade\" home devices match in-office treatments",
+        "verdict": "false",
+        "truth": "Home devices run at much lower power for safety. Dermatologists describe the results as subtle at best compared with in-clinic lasers, ultrasound or microneedling.",
+        "grade": "B"
+      },
+      {
+        "claim": "A device can fix acne, dandruff, sagging or a damaged barrier on its own",
+        "verdict": "unproven",
+        "truth": "Proven treatments (retinoids, benzoyl peroxide, medicated shampoos, sunscreen, barrier creams) still do the heavy lifting; a device may add a little on top.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dermatology Times: home devices, bust or boom",
+        "url": "https://dermatologytimes.com/view/home-devices-bottom-line-bust-or-boom"
+      }
+    ],
+    "seen_in": "K-beauty device carousels",
+    "checked": "2026-10-25",
+    "format": "v2"
   }
 ]

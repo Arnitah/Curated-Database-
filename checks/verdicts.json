@@ -7197,5 +7197,21 @@
   "flags": [
    "care: Willow bark isn't salicylic acid"
   ]
+ },
+ "banana-vanilla-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "strawberry-cheesecake-bath-body-shave-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "toasted-vanilla-macadamia-hair-and-body-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-vanilla-deodorant-body-mist": {
+  "verdict": "ok",
+  "flags": []
  }
 }
