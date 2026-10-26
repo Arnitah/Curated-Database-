@@ -503,7 +503,7 @@ function render() {
     if (state.like && !(h.id === "diptyque" || (h.like || []).includes("diptyque"))) return false;
     if (!q) return true;
     const n = h.sig.notes || {};
-    return [h.name, h.country, h.city, h.about, h.why, h.sig.name, h.sig.profile, ...(h.tags || []), ...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || [])].join(" ").toLowerCase().includes(q);
+    return [h.name, h.country, h.city, h.about, h.why, h.sig.name, h.sig.profile, ...(h.tags || []), ...(h.accents || []), ...(n.t || []), ...(n.h || []), ...(n.b || []), ...(h.also || []).map((x) => `${x.name} ${x.notes || ""}`)].join(" ").toLowerCase().includes(q);
   });
   const key = { name: (h) => h.name, region: (h) => CONT_ORDER.indexOf(h.continent) * 1e6 + D.houses.indexOf(h),
     cad: (h) => cad(h.price, rates) ?? 1e9, try: (h) => (h.try && cad(h.try, rates) != null ? cad(h.try, rates) : 1e9), ml: (h) => (h.price.ml && cad(h.price, rates) != null ? cad(h.price, rates) / h.price.ml : 1e9) };
