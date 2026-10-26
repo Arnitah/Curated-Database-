@@ -137,6 +137,13 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .tile .ex { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 8px }
 .tile .explore { justify-self: start; font: 600 12.5px var(--body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer }
 .offtab { display: none !important }
+.bnav { display: none }
+@media (max-width: 600px) {
+  .bnav { display: grid; grid-template-columns: repeat(6, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--paper); border-top: 1px solid var(--line); padding: 4px 4px calc(4px + env(safe-area-inset-bottom, 0px)) }
+  .bnav button { font: 600 11px var(--body); color: var(--muted); background: none; border: 0; border-radius: 10px; padding: 7px 2px; cursor: pointer; min-width: 0 }
+  .bnav button[aria-current="page"] { color: var(--paper); background: var(--accent) }
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) }
+}
 .also { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; padding: 4px 0 }
 .also .k { font: 600 10.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 2px }
 .also button { font: inherit; font-size: 13px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; cursor: pointer }
@@ -281,6 +288,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <div class="themes" id="themes" aria-label="Colour theme"><span class="eyebrow">Theme</span></div>
   </header>
 
+  <nav class="bnav" id="bnav" aria-label="Quick sections"><button type="button" data-bnav="browse">Browse</button><button type="button" data-bnav="finder">Find</button><button type="button" data-bnav="travel">Travel</button><button type="button" data-bnav="map">Map</button><button type="button" data-bnav="passport">Passport</button><button type="button" data-bnav="more">More</button></nav>
   <div class="tabs" role="tablist" aria-label="Sections" id="tabs"><button type="button" role="tab" id="tab-browse" data-tab="browse" aria-selected="true">Browse</button><button type="button" role="tab" id="tab-finder" data-tab="finder" aria-selected="false">Find</button><button type="button" role="tab" id="tab-travel" data-tab="travel" aria-selected="false">Travel</button><button type="button" role="tab" id="tab-passport" data-tab="passport" aria-selected="false">Passport</button><button type="button" role="tab" id="tab-traditions" data-tab="traditions" aria-selected="false">Traditions</button><button type="button" role="tab" id="tab-twins" data-tab="twins" aria-selected="false">Trends</button><button type="button" role="tab" id="tab-learn" data-tab="learn" aria-selected="false">Learn</button><button type="button" role="tab" id="tab-map" data-tab="map" aria-selected="false">World map</button></div>
 
   <section id="mapview" class="offtab">
@@ -859,7 +867,7 @@ function render() {
   $("matnote").textContent = materials && materials.note ? materials.note : "";
   const MCOL = { flower: "#c2577f", citrus: "#d98a1c", spice: "#b2452f", wood: "#7a5634", herb: "#4d8a4a", resin: "#b08a2e" };
   $("matkey").innerHTML = Object.entries(MTYPE).map(([k, l]) => `<span class="t"><i class="mtk" style="background:${MCOL[k]}"></i> ${esc(l)}</span>`).join("");
-  $("mats").innerHTML = MATS.map((m) => { const n = houses.filter((h) => m.keys.some((k) => HT[h.id].includes(k))).length; return `<div class="tradcard"><span class="eyebrow">${esc(MTYPE[m.type] || m.type)}</span><b>${esc(m.name)}</b><span class="why">${esc(m.what)}</span><span class="buy">Grown in: ${esc(m.origins.map((o) => o.place).join(" · "))}</span><span class="buy">${n ? `In ${n} house${n === 1 ? "" : "s"} in the atlas.` : "No house in the atlas lists it yet."}</span><button class="mini" type="button" data-mat="${m.id}">See it on the map</button></div>`; }).join("");
+  $("mats").innerHTML = MATS.map((m) => { const n = houses.filter((h) => m.keys.some((k) => HT[h.id].includes(k))).length; return `<div class="tradcard"><span class="eyebrow">${esc(MTYPE[m.type] || m.type)}</span><b>${esc(m.name)}</b>${m.latin ? `<i class="buy">${esc(m.latin)}</i>` : ""}<span class="why">${esc(m.what)}</span><span class="buy">Grown in: ${esc(m.origins.map((o) => o.place).join(" · "))}</span><span class="buy">${n ? `In ${n} house${n === 1 ? "" : "s"} in the atlas.` : "No house in the atlas lists it yet."}</span><button class="mini" type="button" data-mat="${m.id}">See it on the map</button></div>`; }).join("");
   $("mats").onclick = async (e) => { const b = e.target.closest("[data-mat]"); if (!b) return; await showView("map"); window.mapGoMaterial && window.mapGoMaterial(b.dataset.mat); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); };
   // ---------- Travel destination cards ----------
   (() => {
@@ -876,7 +884,7 @@ function render() {
   // ---------- Search beyond houses (ingredients, traditions, travel guides) ----------
   const tradMatsOf = (m) => traditions.filter((t) => (t.materials || []).concat([t.name, t.what || ""]).join(" ").toLowerCase().match(new RegExp(m.keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"))));
   window.atlasAlso = (q) => {
-    const mats = MATS.filter((m) => m.name.toLowerCase().includes(q) || m.keys.some((k) => k.includes(q) || q.includes(k))).slice(0, 4);
+    const mats = MATS.filter((m) => m.name.toLowerCase().includes(q) || (m.latin || "").toLowerCase().includes(q) || m.keys.some((k) => k.includes(q) || q.includes(k))).slice(0, 4);
     const trs = traditions.filter((t) => [t.name, t.local, t.country, ...(t.materials || [])].join(" ").toLowerCase().includes(q)).slice(0, 4);
     const gds = travel.filter((g) => `${g.city} ${g.country}`.toLowerCase().includes(q));
     if (!mats.length && !trs.length && !gds.length) return "";
@@ -898,6 +906,7 @@ function render() {
   async function showView(v) {
     v = { styles: "finder", shops: "travel" }[v] || v; if (!PANELS[v]) v = "browse"; curTab = v;
     document.querySelectorAll("#tabs [data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === v));
+    document.querySelectorAll("#bnav [data-bnav]").forEach((b) => { if (b.dataset.bnav === v || (b.dataset.bnav === "more" && ["traditions", "twins", "learn"].includes(v))) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
     Object.entries(PANELS).forEach(([k, sels]) => sels.forEach((sel) => { const el = document.querySelector(sel); if (el) el.classList.toggle("offtab", k !== v); }));
     const two = document.querySelector(".two"); if (two) two.classList.toggle("offtab", !["traditions", "twins", "learn"].includes(v));
     document.querySelectorAll(".two details").forEach((d) => { if (!d.classList.contains("offtab")) d.open = true; });
@@ -910,6 +919,7 @@ function render() {
     if (v === "passport") renderPass();
   }
   function toBrowse() { if (curTab !== "browse") showView("browse"); $("tabs").scrollIntoView({ behavior: "smooth", block: "start" }); }
+  $("bnav").onclick = async (e) => { const b = e.target.closest("[data-bnav]"); if (!b) return; if (b.dataset.bnav === "more") { $("tabs").scrollIntoView({ behavior: "smooth", block: "center" }); return; } await showView(b.dataset.bnav); window.scrollTo({ top: $("tabs").getBoundingClientRect().top + window.scrollY - 8, behavior: "smooth" }); };
   $("tabs").onclick = (e) => { const b = e.target.closest("[data-tab]"); if (b) showView(b.dataset.tab); };
   window.atlasOpenCard = (name) => { state.quiz = null; state.q = name; $("q").value = name; showView("browse"); render(); toBrowse(); };
   render();
@@ -1119,7 +1129,7 @@ function goMaterial(id) {
   flyBox(d3.min(pts, (p) => p[0]) - 30, d3.min(pts, (p) => p[1]) - 30, d3.max(pts, (p) => p[0]) + 30, d3.max(pts, (p) => p[1]) + 30, 6); crumbs(); restyle();
   $("m-crumbs").insertAdjacentHTML("beforeend", `<span class="sep">›</span><b>ingredient: ${esc(m.name)}</b>`);
   const by = d3.groups(hs, (h) => h.country).sort((a, b) => b[1].length - a[1].length);
-  $("m-panel").innerHTML = `<div class="eyebrow">Where it grows</div><h2>${esc(m.name)}</h2><p>${esc(m.what)}</p>
+  $("m-panel").innerHTML = `<div class="eyebrow">Where it grows</div><h2>${esc(m.name)}</h2>${m.latin ? `<p class="muted"><i>${esc(m.latin)}</i></p>` : ""}<p>${esc(m.what)}</p>
     <ul class="list">${m.origins.map((o) => `<li>${esc(o.place)}</li>`).join("")}</ul>
     ${(() => { const tr = window.atlasTradOfMat ? window.atlasTradOfMat(m.id) : []; return tr.length ? `<h3>Traditions that use it</h3><ul class="list">${tr.map((t) => `<li><button class="note" type="button" data-trad-go="${t.id}">${esc(t.name)}</button></li>`).join("")}</ul>` : ""; })()}
     <p class="muted">${hs.length ? `Listed as a note by ${hs.length} house${hs.length > 1 ? "s" : ""} in the atlas; they glow on the map. A listed note doesn't prove the natural material is used; many perfumes use a synthetic version.` : "No house in the atlas lists it yet."}</p>

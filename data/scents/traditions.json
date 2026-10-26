@@ -682,11 +682,11 @@
   "cc": "OM",
   "lat": 17.02,
   "lon": 54.09,
-  "place": "Dhofar, around Salalah",
+  "place": "Dhofar, around Salalah (Wadi Dawkah)",
   "what": "Resin tapped from Boswellia sacra trees in southern Oman, traded for thousands of years along the incense routes. Grades are sorted by colour and purity; the pale green-white Hojari is the most prized.",
   "smell": "Fresh, lemony and piney when warmed, turning deeper, smoky and mineral as it burns.",
   "how": "Burned on charcoal in clay burners to scent homes, clothes and guests; also chewed and soaked in water.",
-  "meaning": "Hospitality and daily life, and a source of the region's ancient wealth. Wild trees are under pressure, so sustainable harvesting matters.",
+  "meaning": "Hospitality and daily life, and the source of the region's ancient wealth. The frankincense trees of Wadi Dawkah and the old caravan and port sites of Shisr, Khor Rori and al-Baleed make up UNESCO's Land of Frankincense World Heritage Site, listed in 2000. Wild trees are under pressure, so sustainable harvesting matters.",
   "materials": [
    "frankincense",
    "resin",
@@ -720,7 +720,8 @@
     "house": "meleg-perfumes",
     "note": "Built around Hojari frankincense."
    }
-  ]
+  ],
+  "source": "https://whc.unesco.org/en/list/1010/"
  },
  {
   "id": "ylang-comoros",
