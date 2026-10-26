@@ -3409,16 +3409,26 @@
   ]
  },
  "marshmallowroot": {
-  "listings": 1,
+  "listings": 2,
   "suppliers": [
+   "formulator_sample_shop",
    "windy_point"
   ],
   "use_pct": [
-   5,
-   5
+   3,
+   7.5
   ],
-  "use_n": 1,
+  "use_n": 2,
+  "ph": [
+   4,
+   7
+  ],
+  "shelf_months": 12,
   "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-marshmallow-root-extract-sno"
+   },
    {
     "s": "windy_point",
     "u": "https://windypointsoap.com/products/marshmallow-root-powder"
@@ -5264,7 +5274,7 @@
   ]
  },
  "sunflower": {
-  "listings": 14,
+  "listings": 17,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -5274,7 +5284,7 @@
    1,
    10
   ],
-  "use_n": 12,
+  "use_n": 15,
   "ph": [
    4,
    7

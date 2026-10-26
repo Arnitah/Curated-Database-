@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-25T14:58:15.358Z",
+ "built_at": "2026-10-26T17:26:14.406Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
  "explained_in_safe_batch": 281,
  "queue": [
@@ -9,7 +9,7 @@
   },
   {
    "ingredient": "caprylyl glycol",
-   "products": 1452
+   "products": 1451
   },
   {
    "ingredient": "butyrospermum parkii butter",
@@ -21,7 +21,7 @@
   },
   {
    "ingredient": "helianthus annuus seed oil",
-   "products": 1145
+   "products": 1144
   },
   {
    "ingredient": "alpha-isomethyl ionone",
@@ -101,7 +101,7 @@
   },
   {
    "ingredient": "palmitic acid",
-   "products": 527
+   "products": 526
   },
   {
    "ingredient": "c12-15 alkyl benzoate",
@@ -121,7 +121,7 @@
   },
   {
    "ingredient": "acrylates/c10-30 alkyl acrylate crosspolymer",
-   "products": 480
+   "products": 479
   },
   {
    "ingredient": "butyl methoxydibenzoylmethane",
@@ -229,7 +229,7 @@
   },
   {
    "ingredient": "glyceryl caprylate",
-   "products": 304
+   "products": 303
   },
   {
    "ingredient": "dicaprylyl carbonate",
@@ -397,7 +397,7 @@
   },
   {
    "ingredient": "sodium phytate",
-   "products": 200
+   "products": 199
   },
   {
    "ingredient": "tetrasodium etidronate",
@@ -476,15 +476,15 @@
    "products": 167
   },
   {
-   "ingredient": "sodium gluconate",
-   "products": 166
-  },
-  {
    "ingredient": "sodium polyacrylate",
    "products": 166
   },
   {
    "ingredient": "ethylparaben",
+   "products": 165
+  },
+  {
+   "ingredient": "sodium gluconate",
    "products": 165
   },
   {
@@ -584,12 +584,12 @@
    "products": 140
   },
   {
-   "ingredient": "sorbitan isostearate",
+   "ingredient": "trisodium ethylenediamine disuccinate",
    "products": 138
   },
   {
-   "ingredient": "trisodium ethylenediamine disuccinate",
-   "products": 138
+   "ingredient": "sorbitan isostearate",
+   "products": 137
   },
   {
    "ingredient": "microcrystalline cellulose",
