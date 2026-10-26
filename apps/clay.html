@@ -1686,8 +1686,11 @@ const SA=[
  {alt:'Sugar & Amber perfume oil (Sand + Fog)',ref:'Kayali Vanilla 28',notes:['vanilla','brown sugar','amber','tonka'],price:'$',kind:'perfume oil'},
  {alt:'Vanilla Latte perfume oil (Sand + Fog)',ref:'Giardini di Toscana Bianco Latte',notes:['vanilla','milk','caramel','honey','musk'],price:'$',kind:'perfume oil'},
  {alt:'Pumpkin Crème perfume oil (Sand + Fog)',ref:'Le Monde Gourmand Pumpkin Crème',notes:['pumpkin','vanilla','cinnamon','gourmand'],price:'$',kind:'perfume oil'},
- {alt:'Bloom body butter (Saltair)',ref:'Angel Dust or Genetic Bliss',notes:['musk','powdery','woody','vanilla'],price:'$$',kind:'body butter'}];
-const SA_NOTES=['vanilla','rose','lychee','berries','jasmine','bergamot','frankincense','sandalwood','powdery','musk','cypress','marshmallow','amber','brown sugar','cinnamon','pistachio','pumpkin','milk'];
+ {alt:'Bloom body butter (Saltair)',ref:'Angel Dust or Genetic Bliss',notes:['musk','powdery','woody','vanilla'],price:'$$',kind:'body butter'},
+ {alt:'Tonka Royale eau de parfum (Mango)',ref:'Montale Arabians Tonka',notes:['amber','tonka','vanilla','spicy','rose','oud','musk'],price:'$',kind:'eau de parfum'},
+ {alt:'Musk Tahara perfume oil (Naseem)',ref:'a clean "your skin but better" white musk',notes:['musk','powdery','vanilla'],price:'$',kind:'perfume oil'},
+ {alt:'Coco Vanilla body wash (TONE)',ref:'coconut-vanilla body mists',notes:['vanilla','coconut','musk'],price:'$',kind:'body wash'}];
+const SA_NOTES=['vanilla','rose','lychee','berries','jasmine','bergamot','frankincense','sandalwood','powdery','musk','cypress','marshmallow','amber','brown sugar','cinnamon','pistachio','pumpkin','milk','tonka','oud','coconut'];
 function saMatches(){ const P=S.saPick||['vanilla','rose']; if(!P.length) return [];
   return SA.map(x=>({...x,hit:P.filter(n=>x.notes.includes(n)).length,of:P.length})).filter(x=>x.hit).sort((a,b)=>b.hit-a.hit).slice(0,5); }
 const SW_FIT={hothumid:{powdery:-1,fruity:2,citrus:2,aquatic:2,green:1,floral:0,musk:0,gourmand:-2,amber:-2,woody:-1,spicy:-2},hotdry:{powdery:0,fruity:2,citrus:2,aquatic:1,green:1,floral:1,musk:0,gourmand:-1,amber:-2,woody:-1,spicy:-1},mild:{powdery:2,floral:2,fruity:1,musk:1,green:1,citrus:1,aquatic:0,gourmand:0,woody:0,amber:-1,spicy:0},cold:{powdery:1,gourmand:2,amber:2,woody:2,spicy:2,musk:1,floral:0,fruity:-1,citrus:-1,green:-1,aquatic:-2}};

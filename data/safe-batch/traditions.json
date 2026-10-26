@@ -792,5 +792,17 @@
     "does": "Gives a bright, piney, lemony smoke that scents rooms and clothes. For many communities it's sacred, not a trend.",
     "watch": "Ventilate, keep it brief, and skip with asthma or around babies. Respect it as ceremony and buy from Indigenous or local sellers where you can.",
     "modern": "Copal is also sold as a diffuser oil and appears in perfumes as a resin note, which avoids smoke."
+  },
+  {
+    "id": "khamreya",
+    "name": "Khamreya (Egyptian perfumed body oil)",
+    "region": "Africa",
+    "place": "Egypt",
+    "how": "A light body oil scented like a fine perfume, often with gold shimmer, smoothed on after a bath. Sold in large glass decanters and shared or decanted among friends and for brides.",
+    "ev": "f",
+    "does": "Oil holds scent on skin for hours and leaves a soft glow; it's a lighter, everyday cousin of Sudanese khumra.",
+    "watch": "Fragrance and shimmer can irritate sensitive or freshly waxed skin. Store away from heat so the oil doesn't go rancid.",
+    "modern": "A dry oil (caprylic, jojoba) with a skin-safe fragrance and a pinch of cosmetic mica.",
+    "q": "body oil"
   }
 ]

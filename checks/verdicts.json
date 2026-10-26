@@ -7255,5 +7255,27 @@
  "mocha-martini-perfume-oil": {
   "verdict": "ok",
   "flags": []
+ },
+ "khamreya-style-shimmer-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "linen-and-pillow-fabric-perfume": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "guava-buchu-hair-body-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vietnamese-herbal-bath-soak": {
+  "verdict": "care",
+  "flags": [
+   "care: Mugwort: skip in pregnancy and with ragweed allergy"
+  ]
+ },
+ "jobs-tears-hydrating-body-milk": {
+  "verdict": "ok",
+  "flags": []
  }
 }

@@ -52615,5 +52615,230 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "khamreya-style-shimmer-body-oil",
+    "name": "Khamreya-style shimmer body oil",
+    "claim": "Golden, perfumed shimmer oil for skin and hair ends",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        55,
+        "g"
+      ],
+      [
+        "jojoba",
+        30,
+        "g"
+      ],
+      [
+        "sesame",
+        12,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "mica",
+        0.6,
+        "g"
+      ],
+      [
+        "fragrance",
+        1.5,
+        "g"
+      ]
+    ],
+    "note": "Mix the oils, vitamin E and a skin-safe fragrance (vanilla oud, coconut vanilla, a powdery white musk), then add gold mica and shake before every use. Smooth onto damp skin after a bath or dilka. Inspired by Egyptian and Sudanese perfumed body oils (khumra traditions), sold in big decanters to share. Patch test; keep perfumed oils off broken skin.",
+    "inspired": "Cozy Khamreya body oil",
+    "source": {
+      "creator": "cozy_officiall",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "linen-and-pillow-fabric-perfume",
+    "name": "Linen and pillow fabric perfume",
+    "claim": "Clean, airy scent for bedding, towels and clothes",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        27,
+        "g"
+      ],
+      [
+        "lavender",
+        15,
+        "drops"
+      ],
+      [
+        "musk",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scents in the alcohol, add distilled water, shake. Mist bedding and clothes from 30 cm and let dry before lying on it. Lavender with white musk gives a soft 'clean laundry' scent; sandalwood and jasmine make a richer bedtime version. Test on a hidden spot first, since oils can mark silk and pale fabric. It's for fabric, not skin.",
+    "inspired": "The Laundress fabric perfume",
+    "source": {
+      "creator": "pamper_mint",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "guava-buchu-hair-body-mist",
+    "name": "Guava, buchu and pink pepper hair and body mist",
+    "claim": "Green, juicy guava that dries down to soft sandalwood",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "lemondistilled",
+        6,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve scents in the alcohol, add water and glycerin, rest 1 week. A guava fragrance oil carries it; distilled lemon gives the green, slightly bitter opening and sandalwood the soft skin finish. Buchu and timur pepper are costly niche oils, so a pink pepper or green fragrance oil stands in.",
+    "inspired": "toDefine Bounty",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vietnamese-herbal-bath-soak",
+    "name": "Vietnamese-style herbal bath soak",
+    "claim": "Warming, aromatic soak for cold, damp days",
+    "type": "soak",
+    "use": "now",
+    "rows": [
+      [
+        "lemongrassherb",
+        2,
+        "tbsp"
+      ],
+      [
+        "mugwort",
+        2,
+        "tbsp"
+      ],
+      [
+        "pomelopeel",
+        2,
+        "tbsp"
+      ],
+      [
+        "gingerpowder",
+        1,
+        "tbsp"
+      ],
+      [
+        "cinnamonstick",
+        1,
+        "tbsp"
+      ],
+      [
+        "water",
+        2,
+        "cup"
+      ]
+    ],
+    "note": "Simmer the herbs in 2 cups of water for 15 minutes, strain, and pour the tea into a warm bath (or tie them in a muslin bag and steep in the tub). Soak 15 to 20 minutes, then rinse and moisturise. Ready-made packs (often '28 herbs') vary; avoid ones with no ingredient list. Ginger and cinnamon can tingle, so skip them on broken or very sensitive skin, and avoid hot herbal soaks in pregnancy or with heart conditions.",
+    "inspired": "Vietnamese 28-herb bath soak (thuốc ngâm bồn tắm)",
+    "source": {
+      "creator": "Chu Muội Dưỡng Sinh Ký",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "jobs-tears-hydrating-body-milk",
+    "name": "Job's tears hydrating body milk",
+    "claim": "Light, quick-absorbing milky lotion for everyday",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        80,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "jobstears",
+        1,
+        "g"
+      ],
+      [
+        "sunflower",
+        6,
+        "g"
+      ],
+      [
+        "ewax",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Steep the Job's tears powder in the warm water 10 minutes and strain through a coffee filter. Heat that water with glycerin, and separately the oil and emulsifying wax, to 70 °C; blend, cool, add panthenol and preservative below 40 °C. A runny, featherlight milk like Hatomugi; use within 3 months.",
+    "inspired": "Hatomugi body milk (coix seed)",
+    "source": {
+      "creator": "theskinstitution",
+      "platform": "Instagram"
+    }
   }
 ]
