@@ -1,6 +1,6 @@
 {
  "src": "https://www.instagram.com/scentreport1/",
- "note": "Release lists as posted by the Scent Report account on Instagram; names and dates only, not reviewed by smell.",
+ "note": "New launches from smaller and independent houses, from the Scent Report account on Instagram; names and dates only, not reviewed by smell. Big-brand launches are left out.",
  "months": [
   {
    "month": "2026-09",
@@ -9,122 +9,146 @@
     {
      "brand": "Ellis Brooklyn",
      "name": "Miss Amber and Cocoa Blanco",
-     "kind": "perfume mists"
+     "kind": "perfume mists",
+     "small": true
     },
     {
      "brand": "Tree Hut",
      "name": "Holiday Collection (Frosted Plum, Candy Cane, Marshmallow Lodge, Cranberry Fluff)",
-     "kind": "sugar scrubs"
+     "kind": "sugar scrubs",
+     "small": false
     },
     {
      "brand": "Summer Fridays",
      "name": "Marshmallow",
-     "kind": "body butter and mist"
+     "kind": "body butter and mist",
+     "small": false
     },
     {
      "brand": "Anecdotes by Artists",
      "name": "Debut collection (The Villa, Wild Cousin and more)",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Fenty Skin",
      "name": "Lil Miss Wonderful",
-     "kind": "body care and mist"
+     "kind": "body care and mist",
+     "small": false
     },
     {
      "brand": "Gisou",
      "name": "Cherry Chocolate",
-     "kind": "hair perfume"
+     "kind": "hair perfume",
+     "small": false
     },
     {
      "brand": "Juliette Has a Gun",
      "name": "Purple Trouble",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "LoveShackFancy",
      "name": "Just a Girl",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": false
     },
     {
      "brand": "Brown Girl Jane x Barbie",
      "name": "Halo",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Dedcool",
      "name": "Mocha Magic",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Clean Reserve / Clean",
      "name": "Dark Cherry Intense and Matcha Mood",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": false
     },
     {
      "brand": "Cécred",
      "name": "Temple Oud",
-     "kind": "fragrance"
+     "kind": "fragrance",
+     "small": false
     },
     {
      "brand": "YSL",
      "name": "Libre Santal Couture",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": false
     },
     {
      "brand": "Sol de Janeiro",
      "name": "Cheirosa 91 Intense and Cheirosa 48 jelly balm",
-     "kind": "mist and balm"
+     "kind": "mist and balm",
+     "small": false
     },
     {
      "brand": "Nette",
      "name": "Mr Cloud",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "The 7 Virtues",
      "name": "Amber Orchid",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "NOYZ",
      "name": "Loose Ends",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Henry Rose",
      "name": "Rhu Berry",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Snif",
      "name": "Lychee Lacquer",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": true
     },
     {
      "brand": "Brach's",
      "name": "Ode to Candy Corn",
-     "kind": "eau de parfum"
+     "kind": "eau de parfum",
+     "small": false
     },
     {
      "brand": "Kheir",
      "name": "Soft Spoken",
-     "kind": "extrait"
+     "kind": "extrait",
+     "small": true
     },
     {
      "brand": "Obart",
      "name": "Debut collection (Lady in Rouge, Ambre Animal, Vanille Magnétique)",
-     "kind": "perfume"
+     "kind": "perfume",
+     "small": true
     },
     {
      "brand": "Sand + Fog",
      "name": "Back to the Library (Sweet Thing, Berry Silk, Sugared Almond)",
-     "kind": "perfume oils"
+     "kind": "perfume oils",
+     "small": true
     },
     {
      "brand": "Skylar",
      "name": "Sweet Treat",
-     "kind": "rollerball"
+     "kind": "rollerball",
+     "small": true
     }
    ]
   },
@@ -136,37 +160,43 @@
      "brand": "Jo Malone",
      "name": "Vanilla Scotch",
      "kind": "cologne",
-     "date": "2026-10-01"
+     "date": "2026-10-01",
+     "small": false
     },
     {
      "brand": "Orebella",
      "name": "Vanilla's Touch",
      "kind": "body and hair mist",
-     "date": "2026-10-02"
+     "date": "2026-10-02",
+     "small": false
     },
     {
      "brand": "Commodity",
      "name": "Spice collection",
      "kind": "fragrance",
-     "date": "2026-10-05"
+     "date": "2026-10-05",
+     "small": true
     },
     {
      "brand": "Skylar",
      "name": "Fated Flame",
      "kind": "eau de parfum",
-     "date": "2026-10-06"
+     "date": "2026-10-06",
+     "small": true
     },
     {
      "brand": "Emi Jay x Dedcool",
      "name": "Mochi Milk Mist",
      "kind": "body and hair mist",
-     "date": "2026-10-06"
+     "date": "2026-10-06",
+     "small": true
     },
     {
      "brand": "Valentino",
      "name": "Rendez-Vous Ruby",
      "kind": "eau de parfum",
-     "date": "2026-10-15"
+     "date": "2026-10-15",
+     "small": false
     }
    ]
   }

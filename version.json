@@ -1,6 +1,6 @@
 {
-  "version": 91,
-  "updated_at": "2026-10-26T09:37:41.121Z",
+  "version": 92,
+  "updated_at": "2026-10-26T10:09:38.383Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -358,9 +358,9 @@
     },
     "scents/releases": {
       "count": 3,
-      "bytes": 3792,
-      "hash": "182e5fdee388",
-      "updated_at": "2026-10-24T20:25:18.881Z"
+      "bytes": 4466,
+      "hash": "58292ce5e48e",
+      "updated_at": "2026-10-26T10:09:38.380Z"
     },
     "scents/spotlights": {
       "count": 1,
@@ -388,9 +388,9 @@
     },
     "scents/trends": {
       "count": 7,
-      "bytes": 3181,
-      "hash": "81e84963d348",
-      "updated_at": "2026-10-26T09:37:41.120Z"
+      "bytes": 2761,
+      "hash": "2d17fdb1cb66",
+      "updated_at": "2026-10-26T10:09:38.383Z"
     },
     "scents/twins": {
       "count": 14,
