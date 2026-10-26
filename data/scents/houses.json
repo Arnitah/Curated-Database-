@@ -8034,5 +8034,61 @@
    "organic",
    "rare gem"
   ]
+ },
+ {
+  "id": "cozy-khamreya",
+  "name": "Cozy (Khamreya)",
+  "country": "Egypt",
+  "cc": "EG",
+  "region": "North Africa",
+  "continent": "Africa",
+  "city": "Port Said (sold at Lili's Room, Helnan Walk, Port Fouad)",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.instagram.com/cozy_officiall/",
+  "about": "A small Egyptian body-care brand selling khamreya, a shimmering scented body product poured into glass decanters, in a range of sweet, powdery and oud scents. Orders go through its Instagram messages, where staff help pick a scent.",
+  "why": "A local Egyptian take on the khumra idea (perfumed body care from the Nile region), sold in huge bottles made for sharing.",
+  "families": [
+   "gourmand",
+   "musk",
+   "woody"
+  ],
+  "accents": [
+   "oud",
+   "vanilla",
+   "coconut",
+   "shimmer"
+  ],
+  "sig": {
+   "name": "Khamreya (400 ml)",
+   "url": "https://www.instagram.com/cozy_officiall/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Scents include Vanilla Oud, Coconut Vanilla, Sugar Babe, Feminine Energy (a soft powdery one), Thousand Wishes and Fakhama Night (white oud). Individual notes aren't published."
+  },
+  "price": {
+   "amt": 450,
+   "cur": "EGP",
+   "ml": 400,
+   "status": "reported",
+   "src": "https://www.instagram.com/cozy_officiall/",
+   "on": "2026-08-05",
+   "note": "From the brand's Instagram post; message the brand to order."
+  },
+  "try": {
+   "label": "XL (about 1.5 kg) with 6 empty bottles to split with friends",
+   "amt": 800,
+   "cur": "EGP",
+   "url": "https://www.instagram.com/cozy_officiall/",
+   "note": "Works out to about 130 EGP a share, per the brand."
+  },
+  "tags": [
+   "egypt",
+   "share size",
+   "instagram shop"
+  ]
  }
 ]

@@ -1,0 +1,166 @@
+{
+ "src": "https://www.instagram.com/dirtyboysgetclean/",
+ "note": "Fan-imagined perfumes from a creator's 'fragrances that don't exist but should' post. They are not real products. For each one, the atlas suggests real scents with similar notes.",
+ "items": [
+  {
+   "brand": "Boy Smells",
+   "name": "Soft Wood (eau de parfum)",
+   "idea": "The Soft Wood body mist, but as a longer-lasting perfume.",
+   "notes": [
+    "woods",
+    "musk"
+   ],
+   "families": [
+    "woody",
+    "musk"
+   ]
+  },
+  {
+   "brand": "Glossier",
+   "name": "You Bonheur",
+   "idea": "A happier, brighter take on Glossier You with bergamot, lily of the valley and water jasmine.",
+   "notes": [
+    "bergamot",
+    "lily of the valley",
+    "jasmine"
+   ],
+   "families": [
+    "floral",
+    "musk",
+    "citrus"
+   ]
+  },
+  {
+   "brand": "Lore",
+   "name": "Jungle Gym",
+   "idea": "A fresh, green gym scent that never offends: ylang-ylang, cedar, cypress and vetiver.",
+   "notes": [
+    "ylang",
+    "cedar",
+    "cypress",
+    "vetiver"
+   ],
+   "families": [
+    "green",
+    "woody"
+   ]
+  },
+  {
+   "brand": "Snif",
+   "name": "Me & You",
+   "idea": "A stronger version of Snif's Me with pink pepper, almond and tuberose.",
+   "notes": [
+    "pink pepper",
+    "almond",
+    "tuberose"
+   ],
+   "families": [
+    "floral",
+    "gourmand",
+    "spicy"
+   ]
+  },
+  {
+   "brand": "Kayali",
+   "name": "Secret Scent 24",
+   "idea": "A mystery perfume whose notes are never revealed: light, airy and a little sweet.",
+   "notes": [],
+   "families": []
+  },
+  {
+   "brand": "Unnamed",
+   "name": "Cosmic flanker",
+   "idea": "Milky and sunny, like coconut milk poured over white flowers.",
+   "notes": [
+    "coconut",
+    "milk",
+    "white flowers",
+    "frangipani"
+   ],
+   "families": [
+    "floral",
+    "gourmand"
+   ]
+  },
+  {
+   "brand": "CYKLAR",
+   "name": "Milky Ways",
+   "idea": "Cold milk, a metallic edge, salt, soft flowers and incense: a space-age skin scent.",
+   "notes": [
+    "milk",
+    "metallic",
+    "salt",
+    "incense"
+   ],
+   "families": [
+    "musk",
+    "amber"
+   ]
+  },
+  {
+   "brand": "Phlur",
+   "name": "Lost Boys",
+   "idea": "A deeper, more masculine cousin of Missing Person: incense, leather, woods, musk and apricot skin.",
+   "notes": [
+    "incense",
+    "leather",
+    "woods",
+    "musk",
+    "apricot"
+   ],
+   "families": [
+    "woody",
+    "musk",
+    "amber"
+   ]
+  },
+  {
+   "brand": "by/rosie jane",
+   "name": "Vanilla Paradiso",
+   "idea": "A fruity vanilla dessert: vanilla icing with tropical fruit and dark berries.",
+   "notes": [
+    "vanilla",
+    "papaya",
+    "blackberry"
+   ],
+   "families": [
+    "gourmand",
+    "fruity"
+   ]
+  },
+  {
+   "brand": "Salt & Stone",
+   "name": "Water lily eau de parfum",
+   "idea": "Water lily with soft flowers, watery notes and warm musk.",
+   "notes": [
+    "water lily",
+    "lotus",
+    "aquatic",
+    "musk"
+   ],
+   "families": [
+    "aquatic",
+    "floral",
+    "musk"
+   ]
+  },
+  {
+   "brand": "Unnamed",
+   "name": "Just Breathe",
+   "idea": "A calm, spa-like unisex scent: eucalyptus, frankincense, cedar, soft musk and salt.",
+   "notes": [
+    "eucalyptus",
+    "olibanum",
+    "frankincense",
+    "cedar",
+    "salt",
+    "musk"
+   ],
+   "families": [
+    "green",
+    "woody",
+    "musk"
+   ]
+  }
+ ]
+}
