@@ -6745,5 +6745,66 @@
     "seen_in": "Hair-growth drink videos on TikTok",
     "checked": "2026-10-26",
     "format": "v2"
+  },
+  {
+    "id": "dove-cerave-vanicream-bars-are-toxic",
+    "title": "Dove, CeraVe and Vanicream bars are toxic; switch to non-toxic bar soap",
+    "topics": [
+      "body"
+    ],
+    "claims": [
+      {
+        "claim": "These drugstore bars are toxic",
+        "verdict": "false",
+        "truth": "\"Non-toxic\" has no legal definition. Dove, CeraVe and Vanicream are mild, low-pH cleansing bars; Vanicream and CeraVe carry the National Eczema Association's seal and are fragrance-free.",
+        "grade": "B"
+      },
+      {
+        "claim": "Natural, tallow or essential-oil bars are gentler",
+        "verdict": "partly",
+        "truth": "Some are lovely, but true soap is alkaline and essential oils and fragrance are common irritants. For dry or eczema-prone skin, a fragrance-free syndet bar is often the gentler pick.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "National Eczema Association: Seal of Acceptance products",
+        "url": "https://nationaleczema.org/eczema-products/"
+      }
+    ],
+    "seen_in": "Clean-living swap carousels on Instagram",
+    "checked": "2026-10-26",
+    "format": "v2"
+  },
+  {
+    "id": "classic-tcm-formulas-are-safe-wellness-supplements",
+    "title": "Classic Chinese herbal formulas are safe everyday wellness supplements",
+    "topics": [
+      "body",
+      "wellness"
+    ],
+    "claims": [
+      {
+        "claim": "Popular formulas like Liu Wei Di Huang Wan are general supplements",
+        "verdict": "false",
+        "truth": "They are medicines in traditional Chinese medicine, chosen for a specific pattern by a practitioner. Even the creator in the post says not to self-prescribe from a symptom list.",
+        "grade": "B"
+      },
+      {
+        "claim": "Herbal means it can't interact or harm",
+        "verdict": "false",
+        "truth": "Some imported herbal products have been found contaminated with heavy metals or undeclared drugs, and herbs can interact with prescription medicines. Tell your doctor and buy from reputable sources.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NCCIH: Traditional Chinese medicine, what you need to know",
+        "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know"
+      }
+    ],
+    "seen_in": "TCM practitioner posts on Instagram",
+    "checked": "2026-10-26",
+    "format": "v2"
   }
 ]

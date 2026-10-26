@@ -52310,5 +52310,310 @@
       "creator": "Zaa",
       "platform": "TikTok"
     }
+  },
+  {
+    "id": "matted-coily-hair-detangling-butter",
+    "name": "Matted coily hair detangling butter",
+    "claim": "Heavy slip to tease out mats and tangles on 4c hair",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        40,
+        "g"
+      ],
+      [
+        "castor",
+        25,
+        "g"
+      ],
+      [
+        "avocadooil",
+        25,
+        "g"
+      ],
+      [
+        "btms",
+        8,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Melt the BTMS and shea, stir in the oils and vitamin E, and whip as it cools. To detangle: wet a small section, coat it generously, and work from the ends up with fingers first, then a wide-tooth comb. Go slowly rather than cutting mats out: patience saves length. Rinse and follow with a regular conditioner. BTMS is what gives conditioner its slip; shea and thick oils cushion the strands. If hair mats often, check for shed hair left in braids too long, and detangle before every wash.",
+    "inspired": "Ghanaian shea, homemade conditioner and thick oils detangle",
+    "source": {
+      "creator": "Adom Mawuena",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "curl-finishing-butter",
+    "name": "Curl finishing butter",
+    "claim": "Defines and softens waves and curls, seals dry, porous ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        70,
+        "g"
+      ],
+      [
+        "shea",
+        8,
+        "g"
+      ],
+      [
+        "mango",
+        5,
+        "g"
+      ],
+      [
+        "btms",
+        5,
+        "g"
+      ],
+      [
+        "cetearyl",
+        2,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "flaxgel",
+        5,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat the water, glycerin and flax gel, and separately melt the butters, BTMS and cetearyl alcohol, to about 70 °C; blend together and cool, adding panthenol and preservative below 40 °C. Rake through soaking-wet hair in sections and let it dry without touching. Store butters that claim heat protection use tested film-formers; a DIY butter doesn't protect from hot tools, so use a heat protectant spray before styling.",
+    "inspired": "Santa Melena Finishing Butter",
+    "source": {
+      "creator": "santamelenabr",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "marshmallow-vanilla-chiffon-hair-body-mist",
+    "name": "Marshmallow and vanilla chiffon hair and body mist",
+    "claim": "Spun sugar, whipped cream and soft sandalwood",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it's kinder to hair ends; spray from a distance. Use a marshmallow or whipped-cream fragrance oil; vanilla absolute and sandalwood are the base.",
+    "inspired": "Athena Club Bare Gold",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "black-cherry-violet-hair-body-mist",
+    "name": "Black cherry and violet hair and body mist",
+    "claim": "Dark cherry, plum and smoky amber",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "frankincense",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it's kinder to hair ends; spray from a distance. A black cherry or cherry-plum fragrance oil carries it; frankincense gives the smoky amber edge. Never use bitter almond oil for a cherry note.",
+    "inspired": "Athena Club Up Close",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "fig-berry-iris-hair-body-mist",
+    "name": "Fig, berry and iris hair and body mist",
+    "claim": "Sparkling berries, fig and soft cashmere musk",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "cardamom",
+        2,
+        "drops"
+      ],
+      [
+        "vanilla",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it's kinder to hair ends; spray from a distance. Fig and iris come from fragrance oil (there's no fig essential oil, and orris is very costly); a drop of cardamom echoes the spice.",
+    "inspired": "Athena Club Sweet Talk",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vanilla-latte-perfume-oil",
+    "name": "Vanilla latte perfume oil",
+    "claim": "Milky coffee, caramel and vanilla",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 2 weeks. A coffee or latte fragrance oil plus vanilla absolute; a tiny pinch of instant coffee steeped in the jojoba for a week and strained adds a real roasted edge.",
+    "inspired": "Sand + Fog Vanilla Latte perfume oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "mocha-martini-perfume-oil",
+    "name": "Mocha martini perfume oil",
+    "claim": "Dark chocolate, espresso and a boozy vanilla finish",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "cocoaabs",
+        3,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 2 weeks. Cocoa absolute and vanilla carry the dessert side; an espresso or coffee liqueur fragrance oil adds the martini.",
+    "inspired": "Sand + Fog Mocha Martini perfume oil",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]
