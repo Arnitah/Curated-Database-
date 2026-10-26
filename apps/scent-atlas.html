@@ -137,6 +137,22 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 .tile .ex { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 8px }
 .tile .explore { justify-self: start; font: 600 12.5px var(--body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer }
 .offtab { display: none !important }
+.also { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; padding: 4px 0 }
+.also .k { font: 600 10.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 2px }
+.also button { font: inherit; font-size: 13px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; cursor: pointer }
+.srcflag { font-size: 11.5px; color: var(--muted); border: 1px dashed var(--line); border-radius: 999px; padding: 1px 8px; justify-self: start }
+#mapview .mat { stroke: var(--paper); vector-effect: non-scaling-stroke; cursor: pointer; opacity: .9 }
+#mapview .mat.off { display: none }
+.mt-flower { fill: #c2577f } .mt-citrus { fill: #d98a1c } .mt-spice { fill: #b2452f } .mt-wood { fill: #7a5634 } .mt-herb { fill: #4d8a4a } .mt-resin { fill: #b08a2e }
+.mtk { display: inline-block; width: 9px; height: 9px; border-radius: 50% }
+.matgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 10px; margin-top: 10px }
+.matgrid .tradcard b { font-size: 1rem }
+.tvcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 170px), 1fr)); gap: 10px }
+.tvcard { text-align: left; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 12px; cursor: pointer; display: grid; gap: 3px; min-width: 0 }
+.tvcard b { font-family: var(--display); font-weight: 500; font-size: 1.08rem }
+.tvcard small { color: var(--muted); font-size: 12px }
+.tvcard[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset }
+.tvcard.guide { background: var(--accent-soft) }
 .pform { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 8px; align-items: center }
 .pform input, .pform textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0 }
 .pform textarea, .pform .tv-tags { grid-column: 1 / -1 }
@@ -275,7 +291,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <div class="mapbox" id="m-mapbox">
         <svg id="m-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="World map of perfume houses">
           <rect width="1000" height="500" fill="transparent" id="m-seaRect"></rect>
-          <g id="m-zoom"><g id="m-lands"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g></g>
+          <g id="m-zoom"><g id="m-lands"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g><g id="m-mat"></g></g>
         </svg>
         <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button></div>
       </div>
@@ -371,6 +387,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
   </div>
 
   <div class="match" id="matchbar" hidden></div>
+  <div class="also" id="alsobar" hidden></div>
   <section class="region" id="region" hidden></section>
   <section class="grid" id="grid" aria-live="polite"></section>
 
@@ -381,6 +398,12 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <div class="gl" id="famlist"></div>
       <h3 style="font-size:1.05rem;margin-top:16px">Words you will meet</h3>
       <div class="gl" id="acclist"></div>
+    </details>
+    <details id="matbox" open style="grid-column: 1 / -1">
+      <summary>Where ingredients come from</summary>
+      <p class="why" id="matnote"></p>
+      <div class="tv-tags" id="matkey"></div>
+      <div class="matgrid" id="mats"></div>
     </details>
     <details id="spotbox" open>
       <summary>Note spotlight</summary>
@@ -545,6 +568,7 @@ function render() {
   const sig = list.map((h) => h.id).join(","); if (sig !== PAGE.sig) { PAGE.sig = sig; PAGE.n = 24; }
   $("grid").innerHTML = list.length ? list.slice(0, PAGE.n).map(card).join("") + (list.length > PAGE.n ? `<div class="more"><button class="go" type="button" id="moreBtn">Show ${Math.min(24, list.length - PAGE.n)} more</button><span class="why">Showing ${PAGE.n} of ${list.length}</span></div>` : "") : `<p class="empty">${state.shelf ? "Your shelf is empty. Tap ♡ on any house to save it here." : "Nothing matches. Clear a filter or try a single note such as rose or tea."}</p>`;
   $("count").textContent = `${list.length} of ${D.houses.length} houses`;
+  try { const ab = $("alsobar"), html = q.length >= 3 && window.atlasAlso ? window.atlasAlso(q) : ""; ab.hidden = !html; ab.innerHTML = html; } catch (e) {}
   if (state.like && D.houses.find((x) => x.id === state.like)) { const lh = D.houses.find((x) => x.id === state.like); $("region").hidden = false; $("region").innerHTML = `<div class="eyebrow">Because you love</div><h2>${esc(lh.name)}</h2><p>Shown with the houses closest to it in style and notes.</p><p><button class="mini" type="button" id="clearLike">Back to the full atlas</button></p>`; $("clearLike").onclick = () => { state.like = false; render(); }; return; }
   const ccs = [...new Set(list.map((h) => h.cc))];
   const reg = ccs.length === 1 && D.regions.find((r) => r.cc === ccs[0]);
@@ -556,10 +580,10 @@ function render() {
 }
 
 (async () => {
-  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel, releases, spotlights, bespoke] = await Promise.all([
+  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel, releases, spotlights, bespoke, materials] = await Promise.all([
     load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
     load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []), load("data/scents/stores.json", []), load("data/scents/twins.json", []), load("data/scents/trends.json", []), load("data/scents/traditions.json", []),
-    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", []), load("data/scents/releases.json", null), load("data/scents/spotlights.json", []), load("data/scents/bespoke.json", [])]);
+    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", []), load("data/scents/releases.json", null), load("data/scents/spotlights.json", []), load("data/scents/bespoke.json", []), load("data/scents/materials.json", { items: [] })]);
   D = { houses, regions, rates, leads, links, prices, fam: families };
   const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
   const verified = houses.filter((h) => h.price.status === "verified" || h.price.status === "retailer").length;
@@ -829,7 +853,47 @@ function render() {
   $("wishGo").onclick = wishRun;
   document.querySelectorAll("[data-wish]").forEach((b) => b.onclick = () => { $("wishIn").value = b.dataset.wish; wishRun(); });
   $("wishOut").addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o) window.atlasOpenCard(o.dataset.open); });
-  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder", "#lovebox", "#wishbox", "#mapsec"], travel: ["#travelview"], traditions: ["#tradbox"], twins: ["#trendbox", "#twinbox", "#relbox"], passport: ["#passview"], learn: ["#gloss", "#spotbox"], map: ["#mapview"] };
+  // ---------- Where ingredients come from ----------
+  const MTYPE = { flower: "Flowers", citrus: "Citrus", spice: "Spices and seeds", wood: "Woods and roots", herb: "Herbs and leaves", resin: "Resins" };
+  const MATS = (materials && materials.items) || [];
+  $("matnote").textContent = materials && materials.note ? materials.note : "";
+  const MCOL = { flower: "#c2577f", citrus: "#d98a1c", spice: "#b2452f", wood: "#7a5634", herb: "#4d8a4a", resin: "#b08a2e" };
+  $("matkey").innerHTML = Object.entries(MTYPE).map(([k, l]) => `<span class="t"><i class="mtk" style="background:${MCOL[k]}"></i> ${esc(l)}</span>`).join("");
+  $("mats").innerHTML = MATS.map((m) => { const n = houses.filter((h) => m.keys.some((k) => HT[h.id].includes(k))).length; return `<div class="tradcard"><span class="eyebrow">${esc(MTYPE[m.type] || m.type)}</span><b>${esc(m.name)}</b><span class="why">${esc(m.what)}</span><span class="buy">Grown in: ${esc(m.origins.map((o) => o.place).join(" · "))}</span><span class="buy">${n ? `In ${n} house${n === 1 ? "" : "s"} in the atlas.` : "No house in the atlas lists it yet."}</span><button class="mini" type="button" data-mat="${m.id}">See it on the map</button></div>`; }).join("");
+  $("mats").onclick = async (e) => { const b = e.target.closest("[data-mat]"); if (!b) return; await showView("map"); window.mapGoMaterial && window.mapGoMaterial(b.dataset.mat); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); };
+  // ---------- Travel destination cards ----------
+  (() => {
+    const score = {}; houses.forEach((h) => { score[h.cc] = (score[h.cc] || 0) + 1; }); traditions.forEach((t) => { score[t.cc] = (score[t.cc] || 0) + 1; });
+    const top = DESTS.filter((d) => d.cc).sort((a, b) => (score[b.cc] || 0) - (score[a.cc] || 0)).slice(0, 7);
+    const cnt = (cc) => ({ h: houses.filter((h) => h.cc === cc).length, t: traditions.filter((t) => t.cc === cc).length });
+    const cards = DESTS.filter((d) => d.guide).map((d) => `<button type="button" class="tvcard guide" data-dest="${d.key}"><small>Full travel guide</small><b>${esc(d.guide.city)}</b><small>${esc(d.guide.country)} · shops, seasons, near you</small></button>`)
+      .concat(top.map((d) => { const c = cnt(d.cc); return `<button type="button" class="tvcard" data-dest="${d.key}"><small>Country overview</small><b>${esc(d.label)}</b><small>${c.h} house${c.h === 1 ? "" : "s"}${c.t ? ` · ${c.t} tradition${c.t === 1 ? "" : "s"}` : ""}</small></button>`; }));
+    document.querySelector("#travelview .tv-pick").insertAdjacentHTML("beforebegin", `<div class="tvcards" id="tvCards">${cards.join("")}</div><small class="why">Or pick any country:</small>`);
+    const sync = () => document.querySelectorAll("#tvCards .tvcard").forEach((c) => c.setAttribute("aria-pressed", c.dataset.dest === tvCur));
+    $("tvCards").onclick = (e) => { const c = e.target.closest("[data-dest]"); if (!c) return; tvCur = c.dataset.dest; try { localStorage.setItem("scentatlas.dest", tvCur); } catch (err) {} renderTravel(); sync(); $("tvBody").scrollIntoView({ behavior: "smooth", block: "start" }); };
+    $("tvSel").addEventListener("change", sync); sync();
+  })();
+  // ---------- Search beyond houses (ingredients, traditions, travel guides) ----------
+  const tradMatsOf = (m) => traditions.filter((t) => (t.materials || []).concat([t.name, t.what || ""]).join(" ").toLowerCase().match(new RegExp(m.keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"))));
+  window.atlasAlso = (q) => {
+    const mats = MATS.filter((m) => m.name.toLowerCase().includes(q) || m.keys.some((k) => k.includes(q) || q.includes(k))).slice(0, 4);
+    const trs = traditions.filter((t) => [t.name, t.local, t.country, ...(t.materials || [])].join(" ").toLowerCase().includes(q)).slice(0, 4);
+    const gds = travel.filter((g) => `${g.city} ${g.country}`.toLowerCase().includes(q));
+    if (!mats.length && !trs.length && !gds.length) return "";
+    return `<span class="k">Also in the atlas</span>${mats.map((m) => `<button type="button" data-also-mat="${m.id}">Ingredient · ${esc(m.name)}</button>`).join("")}${trs.map((t) => `<button type="button" data-also-trad="${t.id}">Tradition · ${esc(t.name)}</button>`).join("")}${gds.map((g) => `<button type="button" data-also-guide="g:${g.id}">Travel guide · ${esc(g.city)}</button>`).join("")}`;
+  };
+  $("alsobar").onclick = async (e) => {
+    const m = e.target.closest("[data-also-mat]"), t = e.target.closest("[data-also-trad]"), g = e.target.closest("[data-also-guide]");
+    if (m) { await showView("map"); window.mapGoMaterial && window.mapGoMaterial(m.dataset.alsoMat); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); }
+    if (t) { await showView("map"); window.mapGoTradition && window.mapGoTradition(t.dataset.alsoTrad); $("mapview").scrollIntoView({ behavior: "smooth", block: "start" }); }
+    if (g) { tvCur = g.dataset.alsoGuide; try { localStorage.setItem("scentatlas.dest", tvCur); } catch (err) {} showView("travel"); }
+  };
+  // material cards: traditions that use it
+  document.querySelectorAll("#mats .tradcard").forEach((card, i) => { const m = MATS[i]; const tr = tradMatsOf(m); if (tr.length) card.querySelector("[data-mat]").insertAdjacentHTML("beforebegin", `<span class="buy">Traditions: ${tr.map((t) => esc(t.name)).join(" · ")}</span>`); });
+  window.atlasTradOfMat = (id) => { const m = MATS.find((x) => x.id === id); return m ? tradMatsOf(m).map((t) => ({ id: t.id, name: t.name })) : []; };
+  // tradition cards: sourcing label
+  document.querySelectorAll("#trads .tradcard").forEach((card, i) => { const t = traditions[i]; if (!t) return; card.querySelector("b").insertAdjacentHTML("afterend", `<span class="srcflag">${t.source ? "Sourced" : "From general knowledge · to verify"}</span>`); });
+  const PANELS = { browse: [".rail", "#matchbar", "#alsobar", "#region", "#grid"], finder: ["#finder", "#lovebox", "#wishbox", "#mapsec"], travel: ["#travelview"], traditions: ["#tradbox"], twins: ["#trendbox", "#twinbox", "#relbox"], passport: ["#passview"], learn: ["#gloss", "#matbox", "#spotbox"], map: ["#mapview"] };
   let mapReady = false, curTab = "browse";
   async function showView(v) {
     v = { styles: "finder", shops: "travel" }[v] || v; if (!PANELS[v]) v = "browse"; curTab = v;
@@ -840,7 +904,7 @@ function render() {
     const tb = document.querySelector("#tab-" + v); if (tb) tb.scrollIntoView({ block: "nearest", inline: "nearest" });
     try { history.replaceState(null, "", v === "browse" ? location.pathname + location.search : "#" + v); } catch (e) {}
     try { localStorage.setItem("scentatlas.tab", v); } catch (e) {}
-    if (v === "map" && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions }); }
+    if (v === "map" && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions, materials }); }
     if (v === "browse") { render(); fLabel(); }
     if (v === "travel") renderTravel();
     if (v === "passport") renderPass();
@@ -859,7 +923,7 @@ const MapView = (() => {
 const WORLD = MAPWORLD;
 function flyTo(x, y, k) { const t = d3.zoomIdentity.translate(500, 250).scale(k).translate(-x, -y); svg.transition().duration(matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 750).call(zoom.transform, t); }
 function flyBox(x0, y0, x1, y1, max = 14) { const w = Math.max(x1 - x0, 4), hgt = Math.max(y1 - y0, 4); const k = Math.min(max, 0.85 / Math.max(w / 1000, hgt / 500)); flyTo((x0 + x1) / 2, (y0 + y1) / 2, Math.max(1, k)); }
-let proj, svg, gZoom, zoom, TRAD = [], showTrad = true; let K = 1;
+let proj, svg, gZoom, zoom, TRAD = [], showTrad = true, MAT = [], showMat = false; let K = 1;
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const money = (v, cur) => v == null ? "" : new Intl.NumberFormat("en-CA", { style: "currency", currency: cur, maximumFractionDigits: v >= 1000 ? 0 : 2 }).format(v);
 let D, RATES = {};
@@ -910,6 +974,8 @@ function drawBase() {
   d3.select("#m-pins").selectAll("circle").data(dots, (d) => d.h.id).join("circle").attr("class", "dot").attr("fill", (d) => colorOf(d.h))
     .on("click", (e, d) => { e.stopPropagation(); goHouse(d.h.id); }).append("title").text((d) => `${d.h.name} · ${d.p.place}`);
   d3.select("#m-labels").selectAll("text").data(places).join("text").attr("class", "placelab").text((d) => d.place);
+  const MP = MAT.flatMap((m) => m.origins.map((o) => ({ m, o })));
+  d3.select("#m-mat").selectAll("circle").data(MP).join("circle").attr("class", (d) => `mat mt-${d.m.type}`).on("click", (e, d) => { e.stopPropagation(); goMaterial(d.m.id); }).append("title").text((d) => `${d.m.name} · ${d.o.place}`);
   d3.select("#m-trad").selectAll("rect").data(TRAD).join("rect").attr("class", "trad").on("click", (e, d) => { e.stopPropagation(); goTradition(d.id); }).append("title").text((d) => `Tradition: ${d.name}`);
   restyle();
 }
@@ -928,6 +994,7 @@ function restyle() {
     .classed("glow", (d) => !!state.hl && state.hl.has(d.h.id))
     .classed("sel", (d) => d.h.id === state.house);
   d3.select("#m-map").selectAll(".trad").classed("off", !showTrad).each(function (d) { const [x, y] = proj([d.lon, d.lat]); const z = 7 / S / K; d3.select(this).attr("x", x - z / 2).attr("y", y - z / 2).attr("width", z).attr("height", z).attr("transform", `rotate(45 ${x} ${y})`).attr("stroke-width", 1); });
+  d3.select("#m-map").selectAll(".mat").classed("off", !showMat).style("opacity", (d) => state.mat && state.mat !== d.m.id ? 0.15 : null).each(function (d) { const [x, y] = proj([d.o.lon, d.o.lat]); d3.select(this).attr("cx", x).attr("cy", y).attr("r", (state.mat === d.m.id ? 7.5 : 4.2) / S / K).attr("stroke-width", 1); });
   d3.select("#m-map").selectAll(".placelab").attr("display", K >= 7 ? null : "none").attr("x", (d) => d.x + (8 + Math.min(12, d.houses.length) * 2.6) / S / K).attr("y", (d) => d.y - 6 / S / K)
     .attr("font-size", 12 / S / K).attr("stroke-width", 3 / S / K);
   d3.select("#m-map").selectAll(".land").classed("sel", (d) => d.cc === state.cc).classed("hl", (d) => !!state.hl && D.houses.some((h) => h.cc === d.cc && state.hl.has(h.id)));
@@ -946,7 +1013,7 @@ function crumbs() {
 }
 const houseBtn = (h, sub) => `<li><button type="button" data-house="${h.id}"><span><span style="color:${colorOf(h)}">●</span> <b>${esc(h.name)}</b></span><small>${esc(sub ?? (D.geo[h.id].place + " · " + (stylesOf(h).map(styleName).slice(0, 2).join(", ") || h.families.join(", "))))}</small></button></li>`;
 
-function goWorld() {
+function goWorld() { state.mat = null;
   Object.assign(state, { level: "world", cc: null, place: null, house: null, note: null, hl: state.style ? state.hl : null });
   flyTo(500, 250, 1); crumbs(); restyle();
   const byCc = d3.rollups(D.houses, (v) => v.length, (h) => h.cc).sort((a, b) => b[1] - a[1]);
@@ -1043,9 +1110,25 @@ function goTradition(id) {
     ${mods.length ? `<h3>Modern houses that echo it</h3><ul class="list">${mods.map((h) => houseBtn(h)).join("")}</ul>` : ""}
     ${t.source ? `<p class="muted"><a href="${esc(t.source)}" target="_blank" rel="noopener">Source</a></p>` : ""}`;
 }
+function goMaterial(id) {
+  const m = MAT.find((x) => x.id === id); if (!m) return;
+  if (!showMat) { showMat = true; const b = $("m-matbtn"); if (b) b.setAttribute("aria-pressed", "true"); }
+  const hs = D.houses.filter((h) => m.keys.some((k) => textOf(h).includes(k)));
+  Object.assign(state, { level: "material", note: null, house: null, place: null, cc: null, style: null, mat: id, hl: new Set(hs.map((h) => h.id)) }); syncLegend();
+  const pts = m.origins.map((o) => proj([o.lon, o.lat]));
+  flyBox(d3.min(pts, (p) => p[0]) - 30, d3.min(pts, (p) => p[1]) - 30, d3.max(pts, (p) => p[0]) + 30, d3.max(pts, (p) => p[1]) + 30, 6); crumbs(); restyle();
+  $("m-crumbs").insertAdjacentHTML("beforeend", `<span class="sep">›</span><b>ingredient: ${esc(m.name)}</b>`);
+  const by = d3.groups(hs, (h) => h.country).sort((a, b) => b[1].length - a[1].length);
+  $("m-panel").innerHTML = `<div class="eyebrow">Where it grows</div><h2>${esc(m.name)}</h2><p>${esc(m.what)}</p>
+    <ul class="list">${m.origins.map((o) => `<li>${esc(o.place)}</li>`).join("")}</ul>
+    ${(() => { const tr = window.atlasTradOfMat ? window.atlasTradOfMat(m.id) : []; return tr.length ? `<h3>Traditions that use it</h3><ul class="list">${tr.map((t) => `<li><button class="note" type="button" data-trad-go="${t.id}">${esc(t.name)}</button></li>`).join("")}</ul>` : ""; })()}
+    <p class="muted">${hs.length ? `Listed as a note by ${hs.length} house${hs.length > 1 ? "s" : ""} in the atlas; they glow on the map. A listed note doesn't prove the natural material is used; many perfumes use a synthetic version.` : "No house in the atlas lists it yet."}</p>
+    ${by.map(([c, l]) => `<h3>${esc(c)}</h3><ul class="list">${l.map((h) => houseBtn(h)).join("")}</ul>`).join("")}`;
+}
 function syncLegend() { document.querySelectorAll("#m-legend .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.style === state.style)); }
 
 $("m-panel").addEventListener("click", (e) => {
+  const tg = e.target.closest("[data-trad-go]"); if (tg) { goTradition(tg.dataset.tradGo); return; }
   const oc = e.target.closest("[data-card]"); if (oc) { window.atlasOpenCard(oc.dataset.card); return; }
   const t = e.target.closest("[data-house],[data-cc],[data-place],[data-note]"); if (!t) return;
   if (t.dataset.house) goHouse(t.dataset.house); else if (t.dataset.cc) goCountry(t.dataset.cc); else if (t.dataset.place) goPlace(t.dataset.place); else if (t.dataset.note) goNote(t.dataset.note);
@@ -1058,7 +1141,7 @@ $("m-notego").onclick = () => goNote($("m-noteq").value);
 $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(e.target.value); });
 
   return async function initMapView(src) {
-  const { houses, regions, rates, stores, families, traditions } = src; TRAD = traditions || []; const geo = await load("data/scents/geo.json", {});
+  const { houses, regions, rates, stores, families, traditions, materials } = src; TRAD = traditions || []; MAT = (materials && materials.items) || []; const geo = await load("data/scents/geo.json", {});
   // Projection that matches the pre-drawn map
   proj = d3.geoEqualEarth().scale(WORLD.scale).translate(WORLD.translate);
   svg = d3.select("#m-map"); gZoom = d3.select("#m-zoom");
@@ -1071,12 +1154,13 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   D.byId = Object.fromEntries(D.houses.map((h) => [h.id, h]));
   $("m-legend").innerHTML = '<span class="eyebrow" style="align-self:center">Styles · tap to light up</span>' + MAP.map(([k, name]) => `<button class="chip" type="button" data-style="${k}" aria-pressed="false"><i style="background:var(--s-${k})"></i>${name}</button>`).join("");
   $("m-legend").insertAdjacentHTML("beforeend", `<button class="chip" type="button" id="m-tradbtn" aria-pressed="true"><i style="background:var(--resin);border-radius:2px;transform:rotate(45deg)"></i>Traditions</button>`);
-  $("m-legend").onclick = (e) => { if (e.target.closest("#m-tradbtn")) { showTrad = !showTrad; $("m-tradbtn").setAttribute("aria-pressed", showTrad); restyle(); return; } const b = e.target.closest("[data-style]"); if (b) goStyle(b.dataset.style); };
+  $("m-legend").insertAdjacentHTML("beforeend", `<button class="chip" type="button" id="m-matbtn" aria-pressed="false"><i style="background:#4d8a4a"></i>Where ingredients grow</button>`);
+  $("m-legend").onclick = (e) => { if (e.target.closest("#m-matbtn")) { showMat = !showMat; $("m-matbtn").setAttribute("aria-pressed", showMat); restyle(); return; } if (e.target.closest("#m-tradbtn")) { showTrad = !showTrad; $("m-tradbtn").setAttribute("aria-pressed", showTrad); restyle(); return; } const b = e.target.closest("[data-style]"); if (b) goStyle(b.dataset.style); };
   const notes = new Set(); for (const h of D.houses) { const n = h.sig.notes || {}; [...(n.t || []), ...(n.h || []), ...(n.b || []), ...(h.accents || [])].forEach((x) => notes.add(x.toLowerCase())); }
   $("m-notelist").innerHTML = [...notes].sort().map((n) => `<option value="${esc(n)}"></option>`).join("");
   drawBase(); window.addEventListener("resize", () => restyle());
   goWorld();
-  window.mapGoHouse = goHouse; window.mapGoTradition = goTradition;
+  window.mapGoHouse = goHouse; window.mapGoTradition = goTradition; window.mapGoMaterial = goMaterial;
   };
 
 })();

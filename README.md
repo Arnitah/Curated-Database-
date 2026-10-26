@@ -9,7 +9,7 @@ Shared reference data for **Safe Batch** (DIY skincare safety checker) and **Cla
 data/
   safe-batch/   33 datasets: ingredients, recipes, myths, terms, traditions, proof grades, scent and layering data...
   clay/         16 datasets: product areas and steps, product seed list, hair plan options...
-  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country), budget twins (twins: cheap scent and the luxury perfume it is said to resemble), trends (trends), traditional scent rituals with map points (traditions), city travel guides (travel), monthly new releases (releases), note spotlights (spotlights), places that make custom perfume to order (bespoke: workshops and perfumers, with lat/lon)
+  scents/       Scent Atlas: perfume houses (houses), scent families glossary, country scent cultures (regions), houses still to research (leads), shops and streets to visit (stores), exchange rates to CAD (rates), map coordinates per house (geo: lat, lon, place, precision city/country), budget twins (twins: cheap scent and the luxury perfume it is said to resemble), trends (trends), traditional scent rituals with map points (traditions), city travel guides (travel), monthly new releases (releases), note spotlights (spotlights), places that make custom perfume to order (bespoke: workshops and perfumers, with lat/lon), where natural materials are grown (materials: type, short description, search keys, origin points)
 index/clay/products/   Clay's store-product search, built daily from the Skincare Data Hub (names.json + 500-product files)
 apps/           the current Safe Batch and Clay app files (single HTML each), plus scent-atlas.html (explorer for data/scents, world map included)
 checks/verdicts.json  every recipe's verdict and flags from the real checker
@@ -109,6 +109,8 @@ The World map tab (formerly `apps/scent-map.html`, now in `archive/`) draws the 
 **Traditions** carry an `access` level from Canada (1 easy to find, 2 specialist shop, 3 import or specialist, 4 from the source or community, 5 research stage), optional `buy` (where to get the raw material, with status), `perfumes` (modern perfumes that use or echo it), and `botany` / `verify` where the plant identity is unsettled (gowé).
 
 **Find tab, 'Wish it existed?':** a visitor describes a scent; the page lists the closest real houses (by notes and families) and the bespoke places from `bespoke.json`, sorted by distance when a location is set in Travel. Fan-imagined perfumes were removed from the page (kept in `archive/dreams.json`).
+
+**Ingredients:** `materials.json` drives a 'Where ingredients grow' layer on the World map and a list in Learn; each links to the houses listing that note (a listed note is not proof the natural material is used) and to traditions that use it. Searching in Browse also suggests matching ingredients, traditions and travel guides. Tradition cards say whether they are sourced or still to verify.
 
 **Passport tab:** visitors log perfumes they smell (name, brand, where, date, verdict, notes) on their device; the page suggests atlas houses from the families and notes they loved. Every house card has a 'Log it' button.
 

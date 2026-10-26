@@ -1,0 +1,802 @@
+{
+ "note": "Main growing regions for natural perfume materials, compiled from standard perfumery references (raw-material maps in The Big Book of Perfume, Renata Ashcar's guide and supplier origin lists) and written in our own words. Synthetic versions of many of these exist and are widely used.",
+ "items": [
+  {
+   "id": "vetiver",
+   "name": "Vetiver",
+   "type": "wood",
+   "what": "Roots of a tall grass, dug up and distilled. Earthy, smoky and cool.",
+   "keys": [
+    "vetiver"
+   ],
+   "origins": [
+    {
+     "place": "Southern Haiti",
+     "cc": "HT",
+     "lat": 18.2,
+     "lon": -73.75
+    },
+    {
+     "place": "Java, Indonesia",
+     "cc": "ID",
+     "lat": -7.3,
+     "lon": 110.0
+    },
+    {
+     "place": "South India",
+     "cc": "IN",
+     "lat": 11.0,
+     "lon": 78.0
+    }
+   ]
+  },
+  {
+   "id": "ylang",
+   "name": "Ylang-ylang",
+   "type": "flower",
+   "what": "Yellow star-shaped flowers picked at dawn and distilled. Creamy, sweet, banana-like.",
+   "keys": [
+    "ylang"
+   ],
+   "origins": [
+    {
+     "place": "Anjouan, Comoros",
+     "cc": "KM",
+     "lat": -12.25,
+     "lon": 44.45
+    },
+    {
+     "place": "Nosy Be, Madagascar",
+     "cc": "MG",
+     "lat": -13.33,
+     "lon": 48.27
+    }
+   ]
+  },
+  {
+   "id": "rose",
+   "name": "Rose",
+   "type": "flower",
+   "what": "Damask and cabbage roses picked by hand in late spring and distilled or extracted.",
+   "keys": [
+    "rose"
+   ],
+   "origins": [
+    {
+     "place": "Kazanlak, Bulgaria",
+     "cc": "BG",
+     "lat": 42.62,
+     "lon": 25.4
+    },
+    {
+     "place": "Isparta, Türkiye",
+     "cc": "TR",
+     "lat": 37.76,
+     "lon": 30.55
+    },
+    {
+     "place": "Kelaat M'Gouna, Morocco",
+     "cc": "MA",
+     "lat": 31.24,
+     "lon": -6.13
+    },
+    {
+     "place": "Grasse, France",
+     "cc": "FR",
+     "lat": 43.66,
+     "lon": 6.92
+    },
+    {
+     "place": "Kashan, Iran",
+     "cc": "IR",
+     "lat": 33.98,
+     "lon": 51.43
+    }
+   ]
+  },
+  {
+   "id": "jasmine",
+   "name": "Jasmine",
+   "type": "flower",
+   "what": "Night-scented white flowers, mostly extracted as an absolute. Rich, heady and a little animalic.",
+   "keys": [
+    "jasmine",
+    "sampaguita"
+   ],
+   "origins": [
+    {
+     "place": "Tamil Nadu, India",
+     "cc": "IN",
+     "lat": 9.93,
+     "lon": 78.12
+    },
+    {
+     "place": "Nile Delta, Egypt",
+     "cc": "EG",
+     "lat": 30.79,
+     "lon": 31.0
+    },
+    {
+     "place": "Grasse, France",
+     "cc": "FR",
+     "lat": 43.66,
+     "lon": 6.92
+    }
+   ]
+  },
+  {
+   "id": "vanilla",
+   "name": "Vanilla",
+   "type": "spice",
+   "what": "Cured pods of a climbing orchid, hand-pollinated. Creamy, sweet and boozy.",
+   "keys": [
+    "vanilla"
+   ],
+   "origins": [
+    {
+     "place": "SAVA region, Madagascar",
+     "cc": "MG",
+     "lat": -14.27,
+     "lon": 50.17
+    },
+    {
+     "place": "Réunion",
+     "cc": "RE",
+     "lat": -21.1,
+     "lon": 55.5
+    },
+    {
+     "place": "Papantla, Mexico",
+     "cc": "MX",
+     "lat": 20.45,
+     "lon": -97.32
+    }
+   ]
+  },
+  {
+   "id": "bergamot",
+   "name": "Bergamot",
+   "type": "citrus",
+   "what": "A sour green citrus grown almost only on one coast; its peel oil is cold-pressed. Bright and tea-like.",
+   "keys": [
+    "bergamot"
+   ],
+   "origins": [
+    {
+     "place": "Calabria, Italy",
+     "cc": "IT",
+     "lat": 38.11,
+     "lon": 15.65
+    }
+   ]
+  },
+  {
+   "id": "patchouli",
+   "name": "Patchouli",
+   "type": "herb",
+   "what": "Leaves of a mint-family shrub, dried and distilled. Dark, earthy and chocolatey with age.",
+   "keys": [
+    "patchouli"
+   ],
+   "origins": [
+    {
+     "place": "Sulawesi, Indonesia",
+     "cc": "ID",
+     "lat": -2.0,
+     "lon": 121.0
+    }
+   ]
+  },
+  {
+   "id": "sandalwood",
+   "name": "Sandalwood",
+   "type": "wood",
+   "what": "Heartwood of slow-growing trees, distilled. Creamy, milky and soft. Indian sandalwood is now tightly restricted.",
+   "keys": [
+    "sandalwood",
+    "santal"
+   ],
+   "origins": [
+    {
+     "place": "Mysore, India",
+     "cc": "IN",
+     "lat": 12.3,
+     "lon": 76.65
+    },
+    {
+     "place": "Western Australia",
+     "cc": "AU",
+     "lat": -26.0,
+     "lon": 121.0
+    },
+    {
+     "place": "New Caledonia",
+     "cc": "NC",
+     "lat": -21.3,
+     "lon": 165.4
+    }
+   ]
+  },
+  {
+   "id": "tonka",
+   "name": "Tonka bean",
+   "type": "spice",
+   "what": "Seeds of a South American tree, soaked in rum and dried. Almond, hay and vanilla.",
+   "keys": [
+    "tonka"
+   ],
+   "origins": [
+    {
+     "place": "Orinoco basin, Venezuela",
+     "cc": "VE",
+     "lat": 7.5,
+     "lon": -64.0
+    },
+    {
+     "place": "Northern Brazil",
+     "cc": "BR",
+     "lat": -3.0,
+     "lon": -52.0
+    }
+   ]
+  },
+  {
+   "id": "benzoin",
+   "name": "Benzoin",
+   "type": "resin",
+   "what": "Resin tapped from styrax trees. Vanilla-sweet and balsamic.",
+   "keys": [
+    "benzoin"
+   ],
+   "origins": [
+    {
+     "place": "Northern Laos",
+     "cc": "LA",
+     "lat": 20.0,
+     "lon": 102.5
+    },
+    {
+     "place": "Sumatra, Indonesia",
+     "cc": "ID",
+     "lat": 2.0,
+     "lon": 99.0
+    }
+   ]
+  },
+  {
+   "id": "oud",
+   "name": "Oud (agarwood)",
+   "type": "wood",
+   "what": "Dark resin that forms in aquilaria trees when they're infected. Woody, smoky, leathery. Wild trees are protected; much is now cultivated.",
+   "keys": [
+    "oud",
+    "agarwood",
+    "kyara"
+   ],
+   "origins": [
+    {
+     "place": "Assam, India",
+     "cc": "IN",
+     "lat": 26.2,
+     "lon": 92.9
+    },
+    {
+     "place": "Cambodia",
+     "cc": "KH",
+     "lat": 12.5,
+     "lon": 104.9
+    },
+    {
+     "place": "Central Vietnam",
+     "cc": "VN",
+     "lat": 15.0,
+     "lon": 108.0
+    },
+    {
+     "place": "Borneo",
+     "cc": "MY",
+     "lat": 1.5,
+     "lon": 113.5
+    }
+   ]
+  },
+  {
+   "id": "frankincense",
+   "name": "Frankincense",
+   "type": "resin",
+   "what": "Resin tapped from boswellia trees in dry hills. Lemony, piney and smoky.",
+   "keys": [
+    "frankincense",
+    "olibanum",
+    "luban"
+   ],
+   "origins": [
+    {
+     "place": "Dhofar, Oman",
+     "cc": "OM",
+     "lat": 17.02,
+     "lon": 54.09
+    },
+    {
+     "place": "Somalia",
+     "cc": "SO",
+     "lat": 10.5,
+     "lon": 47.5
+    }
+   ]
+  },
+  {
+   "id": "myrrh",
+   "name": "Myrrh",
+   "type": "resin",
+   "what": "Bitter, red-brown resin from thorny commiphora trees. Warm, medicinal, mushroomy.",
+   "keys": [
+    "myrrh"
+   ],
+   "origins": [
+    {
+     "place": "Somalia",
+     "cc": "SO",
+     "lat": 8.5,
+     "lon": 46.0
+    },
+    {
+     "place": "Ethiopia",
+     "cc": "ET",
+     "lat": 7.0,
+     "lon": 44.0
+    }
+   ]
+  },
+  {
+   "id": "lavender",
+   "name": "Lavender",
+   "type": "herb",
+   "what": "Flowering tops distilled in summer. Fresh, herbal and soapy.",
+   "keys": [
+    "lavender"
+   ],
+   "origins": [
+    {
+     "place": "Provence, France",
+     "cc": "FR",
+     "lat": 43.84,
+     "lon": 5.98
+    },
+    {
+     "place": "Kazanlak valley, Bulgaria",
+     "cc": "BG",
+     "lat": 42.55,
+     "lon": 25.2
+    }
+   ]
+  },
+  {
+   "id": "iris",
+   "name": "Iris (orris)",
+   "type": "flower",
+   "what": "Iris roots dried for about three years, then distilled into one of perfumery's priciest materials. Powdery, violet-like.",
+   "keys": [
+    "iris",
+    "orris"
+   ],
+   "origins": [
+    {
+     "place": "Tuscany, Italy",
+     "cc": "IT",
+     "lat": 43.77,
+     "lon": 11.25
+    },
+    {
+     "place": "France",
+     "cc": "FR",
+     "lat": 45.5,
+     "lon": 2.5
+    }
+   ]
+  },
+  {
+   "id": "orangeblossom",
+   "name": "Orange blossom and neroli",
+   "type": "flower",
+   "what": "Flowers of the bitter orange tree: distilled into neroli, or extracted for a richer absolute.",
+   "keys": [
+    "orange blossom",
+    "neroli"
+   ],
+   "origins": [
+    {
+     "place": "Nabeul, Tunisia",
+     "cc": "TN",
+     "lat": 36.45,
+     "lon": 10.73
+    },
+    {
+     "place": "Fez region, Morocco",
+     "cc": "MA",
+     "lat": 34.0,
+     "lon": -5.0
+    },
+    {
+     "place": "Egypt",
+     "cc": "EG",
+     "lat": 30.5,
+     "lon": 31.2
+    }
+   ]
+  },
+  {
+   "id": "mimosa",
+   "name": "Mimosa",
+   "type": "flower",
+   "what": "Fluffy yellow acacia blossom picked in late winter. Powdery, honeyed, almond-like.",
+   "keys": [
+    "mimosa"
+   ],
+   "origins": [
+    {
+     "place": "Tanneron, France",
+     "cc": "FR",
+     "lat": 43.59,
+     "lon": 6.87
+    }
+   ]
+  },
+  {
+   "id": "cedar",
+   "name": "Cedarwood",
+   "type": "wood",
+   "what": "Wood of cedars and junipers, distilled. Dry, pencil-shavings woody.",
+   "keys": [
+    "cedar"
+   ],
+   "origins": [
+    {
+     "place": "Middle Atlas, Morocco",
+     "cc": "MA",
+     "lat": 33.5,
+     "lon": -5.1
+    },
+    {
+     "place": "Texas and Virginia, USA",
+     "cc": "US",
+     "lat": 32.0,
+     "lon": -99.0
+    }
+   ]
+  },
+  {
+   "id": "osmanthus",
+   "name": "Osmanthus",
+   "type": "flower",
+   "what": "Tiny autumn flowers that smell of apricot, leather and tea.",
+   "keys": [
+    "osmanthus"
+   ],
+   "origins": [
+    {
+     "place": "Guilin, China",
+     "cc": "CN",
+     "lat": 25.27,
+     "lon": 110.29
+    }
+   ]
+  },
+  {
+   "id": "labdanum",
+   "name": "Labdanum",
+   "type": "resin",
+   "what": "Sticky gum from rockrose shrubs. Ambery, leathery, the backbone of 'amber' accords.",
+   "keys": [
+    "labdanum"
+   ],
+   "origins": [
+    {
+     "place": "Andalusia, Spain",
+     "cc": "ES",
+     "lat": 37.4,
+     "lon": -6.0
+    }
+   ]
+  },
+  {
+   "id": "tuberose",
+   "name": "Tuberose",
+   "type": "flower",
+   "what": "Waxy white flowers picked at night. Creamy, buttery and very heady.",
+   "keys": [
+    "tuberose"
+   ],
+   "origins": [
+    {
+     "place": "South India",
+     "cc": "IN",
+     "lat": 12.97,
+     "lon": 77.59
+    }
+   ]
+  },
+  {
+   "id": "cardamom",
+   "name": "Cardamom",
+   "type": "spice",
+   "what": "Green seed pods, distilled. Cool, citrusy spice.",
+   "keys": [
+    "cardamom"
+   ],
+   "origins": [
+    {
+     "place": "Alta Verapaz, Guatemala",
+     "cc": "GT",
+     "lat": 15.5,
+     "lon": -90.3
+    },
+    {
+     "place": "Kerala, India",
+     "cc": "IN",
+     "lat": 9.8,
+     "lon": 77.0
+    }
+   ]
+  },
+  {
+   "id": "pinkpepper",
+   "name": "Pink pepper",
+   "type": "spice",
+   "what": "Berries of a peppertree, not true pepper. Rosy, fizzy and fresh.",
+   "keys": [
+    "pink pepper"
+   ],
+   "origins": [
+    {
+     "place": "Madagascar",
+     "cc": "MG",
+     "lat": -21.0,
+     "lon": 47.0
+    },
+    {
+     "place": "Réunion",
+     "cc": "RE",
+     "lat": -21.1,
+     "lon": 55.5
+    }
+   ]
+  },
+  {
+   "id": "clove",
+   "name": "Clove",
+   "type": "spice",
+   "what": "Dried flower buds of a tropical tree. Warm, sweet and dental.",
+   "keys": [
+    "clove"
+   ],
+   "origins": [
+    {
+     "place": "Madagascar",
+     "cc": "MG",
+     "lat": -17.0,
+     "lon": 49.4
+    },
+    {
+     "place": "Maluku, Indonesia",
+     "cc": "ID",
+     "lat": -3.7,
+     "lon": 128.0
+    },
+    {
+     "place": "Zanzibar, Tanzania",
+     "cc": "TZ",
+     "lat": -6.1,
+     "lon": 39.3
+    }
+   ]
+  },
+  {
+   "id": "geranium",
+   "name": "Geranium",
+   "type": "flower",
+   "what": "Leaves of scented pelargoniums, distilled. Rosy, minty and green.",
+   "keys": [
+    "geranium"
+   ],
+   "origins": [
+    {
+     "place": "Egypt",
+     "cc": "EG",
+     "lat": 29.3,
+     "lon": 30.8
+    },
+    {
+     "place": "Réunion",
+     "cc": "RE",
+     "lat": -21.1,
+     "lon": 55.5
+    }
+   ]
+  },
+  {
+   "id": "lemon",
+   "name": "Lemon",
+   "type": "citrus",
+   "what": "Cold-pressed peel oil. Sharp and sparkling.",
+   "keys": [
+    "lemon"
+   ],
+   "origins": [
+    {
+     "place": "Sicily, Italy",
+     "cc": "IT",
+     "lat": 37.5,
+     "lon": 14.2
+    },
+    {
+     "place": "Tucumán, Argentina",
+     "cc": "AR",
+     "lat": -26.8,
+     "lon": -65.2
+    }
+   ]
+  },
+  {
+   "id": "mint",
+   "name": "Mint",
+   "type": "herb",
+   "what": "Peppermint and spearmint leaves, distilled. Cool and green.",
+   "keys": [
+    "mint"
+   ],
+   "origins": [
+    {
+     "place": "Pacific Northwest, USA",
+     "cc": "US",
+     "lat": 46.0,
+     "lon": -119.0
+    },
+    {
+     "place": "Uttar Pradesh, India",
+     "cc": "IN",
+     "lat": 27.0,
+     "lon": 80.0
+    }
+   ]
+  },
+  {
+   "id": "magnolia",
+   "name": "Magnolia and champaca",
+   "type": "flower",
+   "what": "Creamy, lemony blossoms. Champaca, magnolia's warmer Asian cousin, is a classic attar flower.",
+   "keys": [
+    "magnolia",
+    "champaca"
+   ],
+   "origins": [
+    {
+     "place": "Yunnan, China",
+     "cc": "CN",
+     "lat": 25.0,
+     "lon": 102.7
+    },
+    {
+     "place": "South India",
+     "cc": "IN",
+     "lat": 13.0,
+     "lon": 77.6
+    }
+   ]
+  },
+  {
+   "id": "grapefruit",
+   "name": "Grapefruit",
+   "type": "citrus",
+   "what": "Peel oil. Juicy, bitter and a little sulphurous in a good way.",
+   "keys": [
+    "grapefruit"
+   ],
+   "origins": [
+    {
+     "place": "Florida, USA",
+     "cc": "US",
+     "lat": 27.6,
+     "lon": -81.5
+    }
+   ]
+  },
+  {
+   "id": "cinnamon",
+   "name": "Cinnamon",
+   "type": "spice",
+   "what": "Inner bark of a laurel tree. Warm, sweet spice.",
+   "keys": [
+    "cinnamon"
+   ],
+   "origins": [
+    {
+     "place": "Sri Lanka",
+     "cc": "LK",
+     "lat": 6.9,
+     "lon": 80.4
+    }
+   ]
+  },
+  {
+   "id": "hinoki",
+   "name": "Hinoki",
+   "type": "wood",
+   "what": "Japanese cypress, used for temples and bathtubs. Clean, lemony wood.",
+   "keys": [
+    "hinoki"
+   ],
+   "origins": [
+    {
+     "place": "Kiso valley, Japan",
+     "cc": "JP",
+     "lat": 35.8,
+     "lon": 137.7
+    }
+   ]
+  },
+  {
+   "id": "yuzu",
+   "name": "Yuzu",
+   "type": "citrus",
+   "what": "Knobbly East Asian citrus. Tart, floral and grapefruit-like.",
+   "keys": [
+    "yuzu"
+   ],
+   "origins": [
+    {
+     "place": "Kōchi, Japan",
+     "cc": "JP",
+     "lat": 33.56,
+     "lon": 133.53
+    },
+    {
+     "place": "Goheung, South Korea",
+     "cc": "KR",
+     "lat": 34.6,
+     "lon": 127.3
+    }
+   ]
+  },
+  {
+   "id": "lime",
+   "name": "Lime",
+   "type": "citrus",
+   "what": "Peel oil, often distilled. Zesty and green.",
+   "keys": [
+    "lime"
+   ],
+   "origins": [
+    {
+     "place": "Veracruz, Mexico",
+     "cc": "MX",
+     "lat": 19.0,
+     "lon": -96.5
+    }
+   ]
+  },
+  {
+   "id": "orange",
+   "name": "Sweet orange",
+   "type": "citrus",
+   "what": "Cold-pressed from juice-orange peel. Cheerful and sweet.",
+   "keys": [
+    "orange"
+   ],
+   "origins": [
+    {
+     "place": "São Paulo state, Brazil",
+     "cc": "BR",
+     "lat": -22.0,
+     "lon": -48.0
+    },
+    {
+     "place": "Florida, USA",
+     "cc": "US",
+     "lat": 28.0,
+     "lon": -81.7
+    }
+   ]
+  }
+ ]
+}
