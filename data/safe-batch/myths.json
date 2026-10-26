@@ -6708,5 +6708,42 @@
     "seen_in": "K-beauty device carousels",
     "checked": "2026-10-25",
     "format": "v2"
+  },
+  {
+    "id": "collagen-drinks-and-hair-growth-powders-regrow-hair",
+    "title": "Collagen drinks and hair-growth powders stop hair fall and regrow hair",
+    "topics": [
+      "hair",
+      "body"
+    ],
+    "claims": [
+      {
+        "claim": "Drinking collagen regrows hair",
+        "verdict": "unproven",
+        "truth": "Collagen is digested into amino acids like any protein. Small, mostly company-funded studies suggest modest skin hydration benefits; good evidence for hair regrowth is lacking.",
+        "grade": "C"
+      },
+      {
+        "claim": "Expensive collagen tubs work better than food",
+        "verdict": "false",
+        "truth": "Enough protein, iron, vitamin D and zinc from food matter more. Shedding that lasts more than a few months is worth a doctor's check for iron, thyroid or hormone causes.",
+        "grade": "B"
+      },
+      {
+        "claim": "Nettle, moringa and golden elixir drinks stop hair fall",
+        "verdict": "unproven",
+        "truth": "They're nutritious and safe for most people, but there's no solid evidence they stop shedding. Check with a doctor before herbal powders if you're pregnant or on blood thinners.",
+        "grade": "D"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: hair loss causes",
+        "url": "https://www.aad.org/public/diseases/hair-loss/causes/18-causes"
+      }
+    ],
+    "seen_in": "Hair-growth drink videos on TikTok",
+    "checked": "2026-10-26",
+    "format": "v2"
   }
 ]

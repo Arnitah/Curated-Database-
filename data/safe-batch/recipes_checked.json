@@ -52195,5 +52195,120 @@
       "creator": "thingsfor_her",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "two-step-henna-then-indigo-black-hair",
+    "name": "Two-step henna then indigo (natural black hair colour)",
+    "claim": "Deep black, glossy colour without chemical dye",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "henna",
+        100,
+        "g"
+      ],
+      [
+        "water",
+        1,
+        "cup"
+      ],
+      [
+        "indigo",
+        100,
+        "g"
+      ]
+    ],
+    "note": "Step 1: mix body-art-quality henna with warm water (or weak tea) to yogurt thickness, rest 4 to 8 hours for dye release, apply to clean hair, cover and leave 2 to 4 hours, then rinse with water only. Step 2: mix indigo with warm water and a pinch of salt just before use (it fades within about 20 minutes), apply to damp henna-dyed hair, leave 1 to 2 hours, rinse with water only. Skip shampoo for 2 days while the colour darkens. Wear gloves and protect skin and clothes. Strand test first. Use only pure henna (Lawsonia), never \"black henna\", which can contain PPD and cause severe reactions. Henna is permanent and can react with chemical colour or relaxers, so strand test if your hair is chemically treated.",
+    "inspired": "Two-step henna and indigo",
+    "source": {
+      "creator": "Haircare by Jade",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "shea-avocado-olive-whipped-body-butter",
+    "name": "Shea, avocado and olive whipped body butter",
+    "claim": "Rich, fluffy all-over moisture for dry skin",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        120,
+        "g"
+      ],
+      [
+        "avocadooil",
+        30,
+        "g"
+      ],
+      [
+        "olive",
+        25,
+        "g"
+      ],
+      [
+        "jojoba",
+        20,
+        "g"
+      ],
+      [
+        "arrowroot",
+        5,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the shea gently, stir in the oils, chill until it just sets around the edges, then whip 5 to 8 minutes in a stand mixer with the arrowroot until fluffy like frosting. Spoon into jars and keep cool. Use a little on damp skin; arrowroot cuts the greasy feel.",
+    "inspired": "The Shea Parlor whipped body butter",
+    "source": {
+      "creator": "The Shea Parlor",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "caffeine-rice-water-scalp-spray",
+    "name": "Caffeine and rice water scalp spray",
+    "claim": "Light daily leave-in for a thinning-feeling scalp",
+    "type": "hair_leave",
+    "use": "fridge",
+    "rows": [
+      [
+        "ricewater",
+        90,
+        "g"
+      ],
+      [
+        "caffeine",
+        1,
+        "g"
+      ],
+      [
+        "panthenol",
+        2,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the caffeine in warm rice water, cool, add panthenol, glycerin and preservative. Spray on the scalp, massage, leave in. Keep in the fridge and use within 2 weeks; rice water spoils fast. Topical biotin does little (biotin only helps if you are deficient), and for real hair loss a dermatologist can check iron, thyroid and hormone causes.",
+    "inspired": "Rice nutrition spray with biotin and caffeine",
+    "source": {
+      "creator": "Zaa",
+      "platform": "TikTok"
+    }
   }
 ]

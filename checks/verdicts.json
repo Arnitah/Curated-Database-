@@ -7213,5 +7213,19 @@
  "coconut-vanilla-deodorant-body-mist": {
   "verdict": "ok",
   "flags": []
+ },
+ "two-step-henna-then-indigo-black-hair": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-avocado-olive-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "caffeine-rice-water-scalp-spray": {
+  "verdict": "care",
+  "flags": [
+   "care: Rice water spoils fast"
+  ]
  }
 }
