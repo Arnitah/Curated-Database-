@@ -7277,5 +7277,19 @@
  "jobs-tears-hydrating-body-milk": {
   "verdict": "ok",
   "flags": []
+ },
+ "baking-soda-free-vanilla-deodorant-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-copaiba-body-stone": {
+  "verdict": "care",
+  "flags": [
+   "care: Old resin can cause allergy; keep at 1% or less"
+  ]
+ },
+ "dewy-water-gel-cream": {
+  "verdict": "ok",
+  "flags": []
  }
 }

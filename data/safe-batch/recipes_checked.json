@@ -52840,5 +52840,165 @@
       "creator": "theskinstitution",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "baking-soda-free-vanilla-deodorant-stick",
+    "name": "Baking-soda-free vanilla deodorant stick",
+    "claim": "Gentle odour control for sensitive underarms",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        30,
+        "g"
+      ],
+      [
+        "arrowroot",
+        28,
+        "g"
+      ],
+      [
+        "candelilla",
+        12,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        12,
+        "g"
+      ],
+      [
+        "coconut",
+        9,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        10,
+        "drops"
+      ]
+    ],
+    "note": "Melt the wax, shea and coconut oil into the caprylic oil, whisk in the arrowroot and magnesium hydroxide, add vitamin E and vanilla, and pour into a twist-up tube. Magnesium hydroxide neutralises odour without baking soda's rash risk, so it suits sensitive or darkening underarms; it's gentler but a little less strong. Not an antiperspirant.",
+    "inspired": "Vanilla baking-soda-free deodorants (Curie, Cliganic, Primally Pure)",
+    "source": {
+      "creator": "detoxyourdome",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "vanilla-copaiba-body-stone",
+    "name": "Vanilla and copaiba body stone (lotion bar)",
+    "claim": "Solid, mess-free moisturiser that glides on after the shower",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "beeswax",
+        30,
+        "g"
+      ],
+      [
+        "cocoa",
+        35,
+        "g"
+      ],
+      [
+        "shea",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        14,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        8,
+        "drops"
+      ],
+      [
+        "copaiba",
+        4,
+        "drops"
+      ]
+    ],
+    "note": "Melt, cool slightly, stir in the vitamin E, vanilla and copaiba, and pour into round soap molds. Glide over damp skin after the shower and let the warmth melt it. Copaiba adds a soft, woody-balsamic note under the vanilla. Keep in a tin, out of the sun.",
+    "inspired": "Kate McLeod The Body Stone (vanilla and copaiba)",
+    "source": {
+      "creator": "detoxyourdome",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "dewy-water-gel-cream",
+    "name": "Dewy water gel cream (fragrance-free)",
+    "claim": "Light, bouncy hydration for normal to oily skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        86,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "niacinamide",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "squalane",
+        2,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.6,
+        "g"
+      ],
+      [
+        "hyaluronic",
+        0.2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Sprinkle hyaluronic acid and xanthan over the glycerin, stir to a slurry, add the water and let it thicken an hour. Dissolve the niacinamide and panthenol, stir in the squalane and preservative, and blend until smooth. A water cream like the Korean-style ones: glycerin and panthenol hold water, niacinamide calms and balances oil. Use within 3 months.",
+    "inspired": "Balea Inspired by Korean Skincare Dewy Water Cream",
+    "source": {
+      "creator": "dm_balea",
+      "platform": "Instagram"
+    }
   }
 ]
