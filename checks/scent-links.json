@@ -1,8 +1,8 @@
 {
- "checked": "2026-10-24",
+ "checked": "2026-10-26",
  "summary": {
-  "pass": 121,
-  "blocked": 10,
+  "pass": 132,
+  "blocked": 8,
   "fail": 0
  },
  "houses": {
@@ -18,8 +18,8 @@
   },
   "j-scent": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "shoyeido": {
    "site": "pass",
@@ -57,7 +57,7 @@
    "price": "pass"
   },
   "documents": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
    "price": "pass"
   },
@@ -202,9 +202,9 @@
    "price": "pass"
   },
   "borom": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
-   "price": "blocked"
+   "price": "pass"
   },
   "reunrom": {
    "site": "pass",
@@ -517,9 +517,9 @@
    "price": "pass"
   },
   "ramon-monegal": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "agonist": {
    "site": "pass",
@@ -652,11 +652,56 @@
    "price": "blocked"
   },
   "bath-body-works": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "blocked"
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "pass"
   },
   "cyklar": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "cloon-keen": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "burren-perfumery": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "stories-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "inis": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "meleg-perfumes": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lvnea": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "le-falcone": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "waters-and-wild": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "cozy-khamreya": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"
