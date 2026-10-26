@@ -1,0 +1,103 @@
+[
+ {
+  "id": "parfumarija-bespoke",
+  "name": "Parfumarija",
+  "city": "Dublin",
+  "country": "Ireland",
+  "cc": "IE",
+  "lat": 53.3418,
+  "lon": -6.2611,
+  "address": "25 Westbury Mall, Dublin 2",
+  "kind": "bespoke",
+  "what": "The Grasse-trained owner creates custom perfumes to suit your taste. Ask in the shop or contact them for the process and price.",
+  "url": "https://www.parfumarija.com/",
+  "src": "https://www.lhw.com/get-inspired/destination-experiences/dublin/artisan-stories/marija-aslimoska",
+  "on": "2026-10-26"
+ },
+ {
+  "id": "the-workshop-temple-bar",
+  "name": "The Workshop (House of Read)",
+  "city": "Dublin",
+  "country": "Ireland",
+  "cc": "IE",
+  "lat": 53.3447,
+  "lon": -6.266,
+  "address": "Crane Lane, Temple Bar, Dublin 2",
+  "kind": "workshop",
+  "what": "A hands-on perfumery class where you blend your own fragrance. Price and times on their site.",
+  "url": "https://houseofread.ie/workshops",
+  "src": "https://www.dublinguide.ie/tours/the-workshop/",
+  "on": "2026-10-26"
+ },
+ {
+  "id": "perfume-studio-belfast",
+  "name": "The Perfume Studio",
+  "city": "Belfast",
+  "country": "United Kingdom (Northern Ireland)",
+  "cc": "GB",
+  "lat": 54.597,
+  "lon": -5.93,
+  "address": "Belfast (exact address sent after booking)",
+  "kind": "workshop",
+  "what": "Two-hour session building your own perfume. Your formula is saved so you can reorder it.",
+  "price": {
+   "amt": 49,
+   "cur": "GBP",
+   "ml": 5,
+   "note": "£65 for 20 ml"
+  },
+  "url": "https://classbento.co.uk/perfume-making-workshop-belfast",
+  "src": "https://classbento.co.uk/perfume-making-workshop-belfast",
+  "on": "2026-10-26"
+ },
+ {
+  "id": "orris-labs",
+  "name": "Orris Labs",
+  "city": "Toronto",
+  "country": "Canada",
+  "cc": "CA",
+  "lat": 43.6745,
+  "lon": -79.4005,
+  "address": "326 Davenport Road, Toronto",
+  "kind": "workshop",
+  "what": "Guided session choosing from 50+ notes with a perfumer; they keep your formula on file for reorders. Also runs pop-up sessions in Niagara wine country (Trius Winery, Niagara-on-the-Lake, in 2026).",
+  "price": {
+   "amt": 85,
+   "cur": "CAD",
+   "note": "per guest (C$169 for two), as reported"
+  },
+  "url": "https://orrislabs.ca/",
+  "src": "https://curiocity.com/orris-labs-perfume-making-toronto/",
+  "on": "2026-10-26"
+ },
+ {
+  "id": "galimard-studio",
+  "name": "Galimard Studio des Fragrances",
+  "city": "Grasse",
+  "country": "France",
+  "cc": "FR",
+  "lat": 43.645,
+  "lon": 6.94,
+  "address": "5 route de Pégomas, Grasse",
+  "kind": "workshop",
+  "what": "Compose your own perfume at a perfumer's organ in France's perfume capital, guided by Galimard's team; bottled with your name.",
+  "url": "https://galimard.com/en/studio-des-fragrances",
+  "src": "https://galimard.com/en/studio-des-fragrances",
+  "on": "2026-10-26"
+ },
+ {
+  "id": "art-and-olfaction",
+  "name": "The Institute for Art and Olfaction",
+  "city": "Los Angeles",
+  "country": "United States",
+  "cc": "US",
+  "lat": 34.05,
+  "lon": -118.24,
+  "address": "Los Angeles",
+  "kind": "workshop",
+  "what": "Non-profit running beginner perfume-blending workshops by theme (boozy woods, summer, holidays).",
+  "url": "https://artandolfaction.com/",
+  "src": "https://artandolfaction.com/events/boozy-woody-smells-perfume-making-workshop-for-beginners",
+  "on": "2026-10-26"
+ }
+]

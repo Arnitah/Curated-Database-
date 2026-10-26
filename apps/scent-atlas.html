@@ -333,6 +333,15 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <p class="why" id="loveMsg" aria-live="polite"></p>
   </section>
 
+  <section class="finder" id="wishbox">
+    <div><div class="eyebrow">Wish it existed?</div><h2>Describe the scent you can't find</h2>
+    <p class="why">Type notes, a place or a mood. You'll get the closest real perfumes you can smell now, and perfumers and studios that can blend it for you properly.</p></div>
+    <textarea id="wishIn" rows="2" placeholder="e.g. eucalyptus, frankincense, cedar, sea salt, calm like a spa" aria-label="Describe the scent" style="font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px"></textarea>
+    <div class="tv-tags"><span>Try:</span><button class="chip" type="button" data-wish="eucalyptus, frankincense, cedar, sea salt, spa">Spa calm</button><button class="chip" type="button" data-wish="coconut milk, white flowers, sunshine">Milky coconut</button><button class="chip" type="button" data-wish="ylang-ylang, cedar, cypress, vetiver, fresh green">Fresh green</button><button class="chip" type="button" data-wish="incense, leather, woods, apricot">Incense and leather</button></div>
+    <button class="go" type="button" id="wishGo">Find it</button>
+    <div id="wishOut" aria-live="polite"></div>
+  </section>
+
   <section class="map" id="mapsec">
     <div><div class="eyebrow">Scent map</div><h2>Browse by how it wears, not by price</h2>
     <p class="why">Six styles, each house placed by its families and notes. A house can sit in more than one.</p></div>
@@ -392,11 +401,6 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
       <summary>Budget twins</summary>
       <p class="why">Cheaper scents that creators and researchers say smell like famous perfumes. These are opinions, so smell before you buy.</p>
       <div class="twins" id="twins"></div>
-    </details>
-    <details id="dreambox" open style="grid-column: 1 / -1">
-      <summary>Dream scents</summary>
-      <p class="why" id="dreamnote"></p>
-      <div class="tradgrid" id="dreams"></div>
     </details>
     <details id="relbox" open style="grid-column: 1 / -1">
       <summary>New from smaller houses</summary>
@@ -552,10 +556,10 @@ function render() {
 }
 
 (async () => {
-  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel, releases, spotlights, dreams] = await Promise.all([
+  const [houses, families, regions, rates, leads, stores, twins, trends, traditions, links, prices, travel, releases, spotlights, bespoke] = await Promise.all([
     load("data/scents/houses.json", []), load("data/scents/families.json", {}), load("data/scents/regions.json", []),
     load("data/scents/rates.json", { cad_per: {} }), load("data/scents/leads.json", []), load("data/scents/stores.json", []), load("data/scents/twins.json", []), load("data/scents/trends.json", []), load("data/scents/traditions.json", []),
-    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", []), load("data/scents/releases.json", null), load("data/scents/spotlights.json", []), load("data/scents/dreams.json", null)]);
+    load("checks/scent-links.json", { houses: {} }), load("checks/scent-prices.json", { houses: {} }), load("data/scents/travel.json", []), load("data/scents/releases.json", null), load("data/scents/spotlights.json", []), load("data/scents/bespoke.json", [])]);
   D = { houses, regions, rates, leads, links, prices, fam: families };
   const countries = new Set(houses.map((h) => h.country)), conts = CONT_ORDER.filter((c) => houses.some((h) => h.continent === c));
   const verified = houses.filter((h) => h.price.status === "verified" || h.price.status === "retailer").length;
@@ -697,7 +701,7 @@ function render() {
   const tvBox = (title, inner, cls = "") => `<section class="tv-box ${cls}"><h3>${title}</h3>${inner}</section>`;
   const listBox = () => { const items = Object.entries(TRIP); return tvBox(`My trip list (${items.length})`, items.length ? `<div class="tv-list"><ol>${items.map(([k, v]) => `<li>${esc(v.label)} <span class="tv-src">· ${esc(v.dest)}</span> <button class="mini" type="button" data-untrip="${esc(k)}">remove</button></li>`).join("")}</ol></div><div class="tv-acts"><button class="tv-btn" type="button" id="tvCopy">Copy list</button><button class="mini" type="button" id="tvClear">Clear list</button><span class="tv-src" id="tvCopied" aria-live="polite"></span></div>` : `<small>Tick "On my list" on anything you want to smell or buy. The list stays on this device, so you can check it in the shop.</small>`); };
   const km = (a, b) => { const R = 6371, r = Math.PI / 180, dLa = (b.lat - a.lat) * r, dLo = (b.lon - a.lon) * r; const h = Math.sin(dLa / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLo / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
-  const howFar = (d) => d < 0.15 ? "right here" : d <= 3.5 ? `about ${Math.max(1, Math.round(d * 1.3 / 4.8 * 60))} min walk` : `${d.toFixed(1)} km · bus, train or taxi`;
+  const howFar = (d) => d < 0.15 ? "right here" : d <= 3.5 ? `about ${Math.max(1, Math.round(d * 1.3 / 4.8 * 60))} min walk` : d > 60 ? `${Math.round(d).toLocaleString("en-CA")} km away` : `${d.toFixed(1)} km · bus, train or taxi`;
   let HERE = null; try { HERE = JSON.parse(localStorage.getItem("scentatlas.here") || "null"); } catch (e) {}
   let tvSeason = null;
   const anyItem = (x, dest) => x.house && byId[x.house] ? houseItem(byId[x.house], x.why || x.buzz, dest).replace('<div class="tv-acts">', x.where ? `<small>Where: ${esc(x.where)}</small><div class="tv-acts">` : '<div class="tv-acts">') : `<div class="tv-item"><div class="top"><b>${esc(x.name)}</b>${x.price ? `<small>${esc(priceTxt(x.price))}</small>` : ""}</div><span>${esc(x.why || x.buzz || "")}</span>${x.where ? `<small>Where: ${esc(x.where)}</small>` : ""}<div class="tv-acts">${x.src ? `<a class="mini" href="${esc(x.src)}" target="_blank" rel="noopener">Source</a>` : ""}${tick("x:" + x.name, x.name, dest)}</div></div>`;
@@ -767,11 +771,6 @@ function render() {
   const matchDream = (d) => { if (!(d.notes || []).length && !(d.families || []).length) return [];
     return houses.map((h) => { const t = HT[h.id]; const hit = (d.notes || []).filter((n) => t.includes(n.toLowerCase()) || t.includes(n.toLowerCase().split(" ")[0])).length; const fam = (d.families || []).filter((f) => h.families.includes(f)).length; return [h, hit * 2 + fam * 0.6]; })
       .filter(([, sc]) => sc >= 2.6).sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).slice(0, 3).map(([h]) => h); };
-  if (dreams && dreams.items) {
-    $("dreamnote").innerHTML = `${esc(dreams.note)} <a href="${esc(dreams.src)}" target="_blank" rel="noopener">Source</a>`;
-    $("dreams").innerHTML = dreams.items.map((d) => { const m = matchDream(d); return `<div class="tradcard"><span class="eyebrow">${esc(d.brand)} · not a real product</span><b>${esc(d.name)}</b><span class="why">${esc(d.idea)}</span><span class="buy">${(d.notes || []).length || (d.families || []).length ? (m.length ? `Smell now: ${m.map((h) => `<button class="mini" type="button" data-q="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}` : "No close match in the atlas yet.") : "A mystery by design, so there's nothing to match."}</span></div>`; }).join("");
-    $("dreams").onclick = (e) => { const q = e.target.closest("[data-q]"); if (q) { state.quiz = null; state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } };
-  }
   // ---------- Scent passport ----------
   let PASS = []; try { PASS = JSON.parse(localStorage.getItem("scentatlas.passport") || "[]") || []; } catch (e) {}
   const passSave = () => { try { localStorage.setItem("scentatlas.passport", JSON.stringify(PASS)); } catch (e) {} };
@@ -814,7 +813,23 @@ function render() {
   renderPass();
   $("loveGo").onclick = () => { const v = $("loveIn").value.trim().toLowerCase(); const h = houses.find((x) => x.name.toLowerCase() === v) || houses.find((x) => x.name.toLowerCase().includes(v) && v.length > 2);
     if (!h) { $("loveMsg").textContent = "Pick a house from the list."; return; } $("loveMsg").textContent = ""; state.quiz = null; state.q = ""; $("q").value = ""; state.like = h.id; showView("browse"); toBrowse(); };
-  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder", "#lovebox", "#mapsec"], travel: ["#travelview"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox", "#dreambox", "#relbox"], passport: ["#passview"], learn: ["#gloss", "#spotbox"], map: ["#mapview"] };
+  // ---------- Wish it existed? ----------
+  function wishRun() {
+    const txt = $("wishIn").value.toLowerCase().trim(); if (!txt) { $("wishOut").innerHTML = `<p class="why">Describe a scent first.</p>`; return; }
+    const STOPW = new Set(["like", "with", "and", "the", "smell", "scent", "notes", "something", "very", "little", "soft", "calm", "fresh"]);
+    const words = [...new Set(txt.split(/[^a-zà-ÿ-]+/).filter((w) => w.length >= 3 && !STOPW.has(w)))];
+    const fams = Object.keys(FAMRE).filter((f) => FAMRE[f].test(txt));
+    const ranked = houses.map((h) => { const t = HT[h.id]; const hit = words.filter((w) => t.includes(w) || (w.endsWith("s") && t.includes(w.slice(0, -1)))).length; const fm = fams.filter((f) => h.families.includes(f)).length; return [h, hit * 2 + fm * 0.7, hit]; })
+      .filter(([, sc, hit]) => hit > 0 && sc >= 2.7).sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).slice(0, 5).map(([h]) => h);
+    const near = (bespoke || []).map((b) => [b, HERE ? km(HERE, b) : null]).sort((a, b) => (a[1] == null || b[1] == null) ? 0 : a[1] - b[1]);
+    const brief = $("wishIn").value.trim();
+    $("wishOut").innerHTML = `<div class="tv-grid" style="margin-top:6px">${tvBox("Closest you can smell now", ranked.length ? ranked.map((h) => houseItem(h, h.sig.profile, "Wish list")).join("") : `<small>Nothing close in the atlas yet. A perfumer can build it from scratch.</small>`)}${tvBox("Have it made", `<small>${HERE ? `Sorted by distance from ${esc(HERE.name)}.` : `Set where you are in the Travel tab to sort these by distance.`} Take your description with you; a perfumer will turn it into a formula and keep it on file.</small>${near.map(([b, d]) => `<div class="tv-item"><div class="top"><b>${esc(b.name)}</b><small>${esc(b.city)}${d != null ? " · " + esc(howFar(d)) : ""}</small></div><span>${esc(b.what)}</span>${b.price ? `<small>From ${esc(money(b.price.amt, b.price.cur))}${b.price.ml ? ` (${b.price.ml} ml)` : ""}${b.price.note ? " · " + esc(b.price.note) : ""}</small>` : ""}<small>${esc(b.address || "")}</small><div class="tv-acts"><a class="mini" href="${esc(b.url)}" target="_blank" rel="noopener">Website</a><a class="mini" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(b.name + " " + (b.address || b.city))}" target="_blank" rel="noopener">Map</a></div></div>`).join("")}<div class="tv-acts"><button class="tv-btn" type="button" id="wishCopy">Copy my brief for the perfumer</button><span class="tv-src" id="wishMsg" aria-live="polite"></span></div>`)}</div>`;
+    $("wishCopy").onclick = async () => { let ok = false; try { await navigator.clipboard.writeText(`Perfume I'd like made: ${brief}${ranked.length ? `\nClose to: ${ranked.slice(0, 3).map((h) => h.sig.name + " (" + h.name + ")").join(", ")}` : ""}`); ok = true; } catch (e) {} $("wishMsg").textContent = ok ? "Copied." : "Couldn't copy here."; };
+  }
+  $("wishGo").onclick = wishRun;
+  document.querySelectorAll("[data-wish]").forEach((b) => b.onclick = () => { $("wishIn").value = b.dataset.wish; wishRun(); });
+  $("wishOut").addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o) window.atlasOpenCard(o.dataset.open); });
+  const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder", "#lovebox", "#wishbox", "#mapsec"], travel: ["#travelview"], traditions: ["#tradbox"], twins: ["#trendbox", "#twinbox", "#relbox"], passport: ["#passview"], learn: ["#gloss", "#spotbox"], map: ["#mapview"] };
   let mapReady = false, curTab = "browse";
   async function showView(v) {
     v = { styles: "finder", shops: "travel" }[v] || v; if (!PANELS[v]) v = "browse"; curTab = v;

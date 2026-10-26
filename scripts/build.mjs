@@ -133,6 +133,14 @@ if (travel) {
   }
 }
 
+// Scents: places that make custom perfume
+for (const b of sets['scents/bespoke']?.data || []) {
+  const w = `scents/bespoke ${b?.id || '?'}`;
+  if (!b.id || !b.name || !b.what || !b.city) errors.push(`${w}: needs id, name, city and what`);
+  if (typeof b.lat !== 'number' || typeof b.lon !== 'number') errors.push(`${w}: needs lat and lon`);
+  if (!/^https?:\/\//.test(b.src || '') || !/^\d{4}-\d{2}-\d{2}$/.test(b.on || '')) errors.push(`${w}: needs a source link and checked date`);
+}
+
 // Never allow personal data in this repo
 for (const k of Object.keys(sets)) if (/user|profile|log|saved|personal/i.test(k.split('/')[1]) && !/^safe-batch\/(year_|qy_)/.test(k)) errors.push(`${k}: personal data doesn't belong in this repo`);
 
