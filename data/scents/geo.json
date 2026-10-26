@@ -481,7 +481,7 @@
  },
  "memo-paris": {
   "lat": 48.86,
-  "lon": 2.35,
+  "lon": 2.34,
   "place": "Paris",
   "precision": "city"
  },
@@ -825,6 +825,12 @@
   "lat": 25.2,
   "lon": 55.27,
   "place": "Dubai",
+  "precision": "city"
+ },
+ "waters-and-wild": {
+  "lat": 51.565,
+  "lon": -9.12,
+  "place": "Glandore, West Cork",
   "precision": "city"
  }
 }

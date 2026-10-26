@@ -7973,5 +7973,66 @@
    "affordable",
    "bag bottle"
   ]
+ },
+ {
+  "id": "waters-and-wild",
+  "name": "Waters + Wild",
+  "country": "Ireland",
+  "cc": "IE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Glandore, West Cork",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://watersandwild.com/",
+  "about": "A West Cork organic perfume and skincare house started in 2016 by Joan Woods and June Housden, first made in an old barn near Union Hall. It uses local materials such as seaweed absolute.",
+  "why": "Billed as Ireland's first organic perfume and named a 'One to Watch' at the Pitti Fragranze fair in Florence. Small, coastal and hard to find outside Ireland.",
+  "families": [
+   "floral",
+   "woody",
+   "amber"
+  ],
+  "accents": [
+   "organic",
+   "seaweed",
+   "oud"
+  ],
+  "sig": {
+   "name": "Rose + Oud",
+   "url": "https://watersandwild.com/",
+   "notes": {
+    "t": [],
+    "h": [
+     "rose"
+    ],
+    "b": [
+     "oud"
+    ]
+   },
+   "profile": "A natural rose deepened with dark, woody oud. Rich but soft, as organic perfumes tend to sit close to the skin."
+  },
+  "price": {
+   "amt": 45,
+   "cur": "EUR",
+   "status": "reported",
+   "src": "https://www.irishtimes.com/life-style/fashion/2024/12/18/oh-parfum-pick-a-delicious-irish-scent-for-your-loved-one-this-christmas/",
+   "on": "2024-12-18",
+   "note": "'From €45' in the Irish Times; size not stated."
+  },
+  "also": [
+   {
+    "name": "Tuberose + Frankincense",
+    "notes": "Creamy tuberose with resinous frankincense; a classic, rich pairing."
+   },
+   {
+    "name": "Cedarwood + Cognac",
+    "notes": "Warm, earthy cedar with a boozy edge."
+   }
+  ],
+  "tags": [
+   "ireland",
+   "organic",
+   "rare gem"
+  ]
  }
 ]

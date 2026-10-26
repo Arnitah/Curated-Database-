@@ -7,7 +7,7 @@
   "lat": 53.349,
   "lon": -6.26,
   "curated": true,
-  "on": "2026-10-24",
+  "on": "2026-10-26",
   "intro": "Dublin's perfume scene is small but personal: one serious niche boutique, the Dublin shop of a Galway perfume house, and department stores with the big international niche names. Irish perfumers bottle their wet landscape, so look for moss, fern, gorse, wool, rain, sea air and church incense.",
   "weather": {
    "when": "Autumn and winter",
@@ -76,34 +76,71 @@
     "address": "25 Westbury Mall, Dublin 2, D02 E524",
     "what": "Dublin's niche perfume boutique. The owner trained as a perfumer in Grasse; rare independent houses, a guided smelling tour, and custom scents.",
     "url": "https://www.parfumarija.com/",
-    "src": "https://www.dublintown.ie/business/parfumarija/"
+    "src": "https://www.dublintown.ie/business/parfumarija/",
+    "lat": 53.3418,
+    "lon": -6.2611
    },
    {
     "name": "Cloon Keen (Powerscourt Townhouse)",
     "address": "Powerscourt Townhouse, South William Street, Dublin 2",
     "what": "The Galway house's Dublin shop in a Georgian townhouse full of small boutiques.",
     "url": "https://cloonkeen.com/",
-    "src": "https://thegloss.ie/visit-the-best-specialist-shops-in-ireland-2024/"
+    "src": "https://thegloss.ie/visit-the-best-specialist-shops-in-ireland-2024/",
+    "lat": 53.3423,
+    "lon": -6.2635
    },
    {
     "name": "Brown Thomas",
     "address": "Grafton Street, Dublin 2",
     "what": "Ireland's luxury department store: big perfume hall with international niche brands (Le Labo and others).",
     "url": "https://www.brownthomas.com/",
-    "src": "https://thegloss.ie/le-labo-stockists-ireland"
+    "src": "https://thegloss.ie/le-labo-stockists-ireland",
+    "lat": 53.342,
+    "lon": -6.2601
    },
    {
     "name": "Arnotts",
     "address": "Henry Street, Dublin 1",
     "what": "Large department store north of the river with a wide perfume and beauty floor.",
     "url": "https://www.arnotts.ie/",
-    "src": "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers"
+    "src": "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers",
+    "lat": 53.3489,
+    "lon": -6.2627
    },
    {
     "name": "Dublin Airport duty free",
     "address": "Terminals 1 and 2, after security",
     "what": "Last chance for big brands (Le Labo is sold here) and bottles over 100 ml, since you buy them after security.",
-    "src": "https://thegloss.ie/le-labo-stockists-ireland"
+    "src": "https://thegloss.ie/le-labo-stockists-ireland",
+    "lat": 53.4264,
+    "lon": -6.2499
+   },
+   {
+    "name": "Rituals (Grafton Street)",
+    "address": "Grafton Street, Dublin 2",
+    "what": "Dutch home and body brand with perfumes, candles and gift sets that match.",
+    "url": "https://www.rituals.com/",
+    "lat": 53.3412,
+    "lon": -6.2603,
+    "src": "https://irishbeauty.ie/Rituals-Cosmetics-opens-on-Grafton-Street-store.html"
+   },
+   {
+    "name": "Rituals (Jervis Centre)",
+    "address": "Jervis Shopping Centre, Dublin 1",
+    "what": "Second city-centre Rituals, north of the river.",
+    "url": "https://www.rituals.com/",
+    "lat": 53.3482,
+    "lon": -6.2665,
+    "src": "https://irishbeauty.ie/RITUALS-OPEN-NEW-STORE-IN-JERVIS-SHOPPING-CENTRE.html"
+   },
+   {
+    "name": "The Perfume Shop (Swords Pavilions)",
+    "address": "Swords Pavilions Shopping Centre, Swords",
+    "what": "Chain perfume shop near the airport with free gift wrapping and a bottle-recycling discount.",
+    "url": "https://www.theperfumeshop.com/ie",
+    "lat": 53.4553,
+    "lon": -6.2196,
+    "src": "https://www.theretailbulletin.com/health-and-beauty/the-perfume-shop-gets-ready-to-open-new-experiential-store-in-dublin-04-07-2023/"
    }
   ],
   "trips": [
@@ -123,14 +160,250 @@
    "Prices are in euros. The atlas shows Canadian-dollar estimates on each house card."
   ],
   "sources": [
+   "https://burrenperfumery.com/",
+   "https://cloonkeen.com/",
+   "https://irishbeauty.ie/Rituals-Cosmetics-opens-on-Grafton-Street-store.html",
+   "https://irishdesignshop.com/blogs/stories/oxmantown-skincare",
+   "https://storiesparfums.com/",
+   "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers",
+   "https://thegloss.ie/le-labo-stockists-ireland",
    "https://thegloss.ie/visit-the-best-specialist-shops-in-ireland-2024/",
    "https://www.dublintown.ie/business/parfumarija/",
-   "https://cloonkeen.com/",
-   "https://burrenperfumery.com/",
-   "https://storiesparfums.com/",
    "https://www.inishpharmacy.com/products/inis-cologne-spray-100ml",
-   "https://thegloss.ie/le-labo-stockists-ireland",
-   "https://thegloss.ie/4-fresh-spring-scents-to-try-from-irish-brands-and-perfumers"
-  ]
+   "https://www.irishtimes.com/life-style/fashion/2024/12/18/oh-parfum-pick-a-delicious-irish-scent-for-your-loved-one-this-christmas/",
+   "https://www.memoparis.com/products/irish-leather-eau-de-parfum-75ml",
+   "https://www.rte.ie/lifestyle/fashion/2025/0122/1492186-what-are-the-best-irish-fragrances-and-where-can-you-find-them/"
+  ],
+  "places": [
+   {
+    "name": "Grafton Street / St Stephen's Green",
+    "lat": 53.3409,
+    "lon": -6.2605
+   },
+   {
+    "name": "Trinity College",
+    "lat": 53.3438,
+    "lon": -6.2546
+   },
+   {
+    "name": "Temple Bar",
+    "lat": 53.3455,
+    "lon": -6.2643
+   },
+   {
+    "name": "O'Connell Street / Henry Street",
+    "lat": 53.3498,
+    "lon": -6.2603
+   },
+   {
+    "name": "Smithfield / Stoneybatter",
+    "lat": 53.3485,
+    "lon": -6.2785
+   },
+   {
+    "name": "Docklands",
+    "lat": 53.347,
+    "lon": -6.239
+   },
+   {
+    "name": "Ballsbridge",
+    "lat": 53.329,
+    "lon": -6.228
+   },
+   {
+    "name": "Dún Laoghaire",
+    "lat": 53.294,
+    "lon": -6.134
+   },
+   {
+    "name": "Howth",
+    "lat": 53.387,
+    "lon": -6.065
+   },
+   {
+    "name": "Dublin Airport",
+    "lat": 53.4264,
+    "lon": -6.2499
+   }
+  ],
+  "worn": {
+   "basis": "There's no public sales ranking for Dublin, so this is what Irish shops and the Irish press feature most, not a sales chart. The big designer bestsellers at Boots and Brown Thomas are much the same as in Canada.",
+   "items": [
+    {
+     "house": "inis",
+     "why": "The Irish-made cologne you'll see in pharmacies and gift shops everywhere; a common gift and souvenir."
+    },
+    {
+     "house": "cloon-keen",
+     "why": "Báinín, the Aran-wool scent, is the Irish niche perfume the press keeps coming back to."
+    },
+    {
+     "house": "memo-paris",
+     "why": "Irish Leather, from a Paris house with a Tipperary co-founder, is the 'Irish' luxury perfume in duty free."
+    },
+    {
+     "name": "Designer favourites",
+     "why": "Big designer names fill Boots, Arnotts and Brown Thomas, as at home. Nothing you need to fly here for."
+    }
+   ],
+   "src": [
+    "https://www.rte.ie/lifestyle/fashion/2025/0122/1492186-what-are-the-best-irish-fragrances-and-where-can-you-find-them/",
+    "https://www.irishtimes.com/life-style/fashion/2024/12/18/oh-parfum-pick-a-delicious-irish-scent-for-your-loved-one-this-christmas/"
+   ]
+  },
+  "grab": {
+   "basis": "Things that are hard to find or smell in Canada, or that make sense to buy while you're here.",
+   "items": [
+    {
+     "house": "cloon-keen",
+     "why": "Rarely sold outside Ireland. Smell the full line at Powerscourt before buying; the €80 set of three 10 ml bottles fits a carry-on.",
+     "where": "Cloon Keen (Powerscourt Townhouse)"
+    },
+    {
+     "house": "burren-perfumery",
+     "why": "Its €45 library of all nine scents (2 ml each) is light, cheap to carry and very Irish.",
+     "where": "Online, or at the perfumery in County Clare"
+    },
+    {
+     "house": "inis",
+     "why": "About €40 for 100 ml at pharmacies; the easy, affordable Irish gift. Pack it in checked luggage (over 100 ml)."
+    },
+    {
+     "house": "waters-and-wild",
+     "why": "Small organic West Cork house; you're unlikely to see it in Canada."
+    },
+    {
+     "house": "stories-parfums",
+     "why": "15 ml travel bottles, made for carry-ons."
+    },
+    {
+     "name": "European niche at EU prices",
+     "why": "Irish prices include 23% VAT. As a non-EU visitor you can claim part of it back on goods you take home (refund services keep a fee), so compare with the Canadian price before buying at Parfumarija or Brown Thomas.",
+     "where": "Parfumarija, Brown Thomas"
+    },
+    {
+     "house": "memo-paris",
+     "why": "Bought after security at Dublin Airport, so the 75 ml size isn't stuck at the liquids check.",
+     "where": "Dublin Airport duty free"
+    }
+   ]
+  },
+  "seasons": [
+   {
+    "name": "Autumn",
+    "months": [
+     9,
+     10,
+     11
+    ],
+    "feel": "Shorter, damp days, wet leaves, and Halloween, which grew out of the old Irish festival of Samhain. Expect bonfire smoke on Halloween night, roasting chestnuts and barmbrack, the Irish spiced fruit loaf.",
+    "smells": [
+     "bonfire smoke",
+     "chestnut",
+     "spiced fruit",
+     "wet leaves",
+     "apple"
+    ],
+    "picks": [
+     "cloon-keen",
+     "burren-perfumery",
+     "memo-paris"
+    ],
+    "note": "Try Castaña (roasted chestnut) at Cloon Keen and Burren's Autumn Harvest (blackcurrant, hazelnut)."
+   },
+   {
+    "name": "Winter",
+    "months": [
+     12,
+     1,
+     2
+    ],
+    "feel": "Cold, dark and festive: Christmas markets, turf and log fires, mulled wine and church incense at midnight mass.",
+    "smells": [
+     "incense",
+     "turf smoke",
+     "pine",
+     "mulled spice",
+     "wool"
+    ],
+    "picks": [
+     "cloon-keen",
+     "burren-perfumery",
+     "lvnea"
+    ],
+    "note": "Róisín Dubh (incense rose) and Burren's Winter Woods (cedar, pine, vetiver) suit it best."
+   },
+   {
+    "name": "Spring",
+    "months": [
+     3,
+     4,
+     5
+    ],
+    "feel": "Gorse turns the hills yellow and smells of coconut; bluebells fill the woods; St Patrick's Day in March.",
+    "smells": [
+     "gorse",
+     "wild herbs",
+     "green grass",
+     "bluebell"
+    ],
+    "picks": [
+     "burren-perfumery",
+     "cloon-keen"
+    ],
+    "note": "Burren's Spring Harvest (mint, lemon balm, fennel) and Cloon Keen's Lá Bealtaine (sunny blossom) fit the season."
+   },
+   {
+    "name": "Summer",
+    "months": [
+     6,
+     7,
+     8
+    ],
+    "feel": "Long, light evenings, sea swims at the Forty Foot and Howth, meadows of meadowsweet.",
+    "smells": [
+     "sea air",
+     "meadowsweet",
+     "cut grass",
+     "wild rose"
+    ],
+    "picks": [
+     "burren-perfumery",
+     "inis",
+     "stories-parfums"
+    ],
+    "note": "Burren's Summer Harvest (meadowsweet, chamomile) and Inis's sea cologne are made for it."
+   }
+  ],
+  "gems": {
+   "basis": "Small or newer names that have had recent attention in the Irish press or at fragrance fairs. 'Buzz' means coverage, not sales.",
+   "items": [
+    {
+     "house": "waters-and-wild",
+     "buzz": "Named a 'One to Watch' at Pitti Fragranze, and featured by RTÉ and the Irish Times as an organic West Cork house.",
+     "src": "https://www.irishexaminer.com/lifestyle/features/meet-the-new-breed-of-irish-perfumers-making-bespoke-one-off-fragrances-463751.html"
+    },
+    {
+     "name": "Madigan Rose 27",
+     "buzz": "A fresh rose from an Irish cashmere brand, first made to scent its shops and then released because customers kept asking for it.",
+     "src": "https://www.rte.ie/lifestyle/fashion/2025/0122/1492186-what-are-the-best-irish-fragrances-and-where-can-you-find-them/"
+    },
+    {
+     "name": "Oxmantown",
+     "buzz": "Roll-on scented oils made by hand by an aromatherapist in a small Stoneybatter studio (jasmine and ylang-ylang, Atlas cedar, lemongrass).",
+     "src": "https://irishdesignshop.com/blogs/stories/oxmantown-skincare"
+    },
+    {
+     "name": "A custom scent at Parfumarija",
+     "buzz": "The Grasse-trained owner makes bespoke perfumes, a one-off souvenir nobody else has.",
+     "src": "https://www.irishexaminer.com/lifestyle/features/meet-the-new-breed-of-irish-perfumers-making-bespoke-one-off-fragrances-463751.html"
+    },
+    {
+     "house": "memo-paris",
+     "buzz": "Irish Leather keeps appearing in Irish Christmas gift guides.",
+     "src": "https://www.irishtimes.com/life-style/fashion/2024/12/18/oh-parfum-pick-a-delicious-irish-scent-for-your-loved-one-this-christmas/"
+    }
+   ]
+  }
  }
 ]

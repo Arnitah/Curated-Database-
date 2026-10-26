@@ -650,6 +650,25 @@ function render() {
   const suits = (wx, cc, skip) => houses.filter((h) => !skip.has(h.id)).map((h) => [h, h.families.filter((f) => wx.good.includes(f)).length * 2 - h.families.filter((f) => wx.fades.includes(f)).length * 2 + (h.cc === cc ? 1 : 0)]).filter(([, sc]) => sc >= 4).sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).slice(0, 5).map(([h]) => h);
   const tvBox = (title, inner, cls = "") => `<section class="tv-box ${cls}"><h3>${title}</h3>${inner}</section>`;
   const listBox = () => { const items = Object.entries(TRIP); return tvBox(`My trip list (${items.length})`, items.length ? `<div class="tv-list"><ol>${items.map(([k, v]) => `<li>${esc(v.label)} <span class="tv-src">· ${esc(v.dest)}</span> <button class="mini" type="button" data-untrip="${esc(k)}">remove</button></li>`).join("")}</ol></div><div class="tv-acts"><button class="tv-btn" type="button" id="tvCopy">Copy list</button><button class="mini" type="button" id="tvClear">Clear list</button><span class="tv-src" id="tvCopied" aria-live="polite"></span></div>` : `<small>Tick "On my list" on anything you want to smell or buy. The list stays on this device, so you can check it in the shop.</small>`); };
+  const km = (a, b) => { const R = 6371, r = Math.PI / 180, dLa = (b.lat - a.lat) * r, dLo = (b.lon - a.lon) * r; const h = Math.sin(dLa / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLo / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
+  const howFar = (d) => d < 0.15 ? "right here" : d <= 3.5 ? `about ${Math.max(1, Math.round(d * 1.3 / 4.8 * 60))} min walk` : `${d.toFixed(1)} km · bus, train or taxi`;
+  let HERE = null; try { HERE = JSON.parse(localStorage.getItem("scentatlas.here") || "null"); } catch (e) {}
+  let tvSeason = null;
+  const anyItem = (x, dest) => x.house && byId[x.house] ? houseItem(byId[x.house], x.why || x.buzz, dest).replace('<div class="tv-acts">', x.where ? `<small>Where: ${esc(x.where)}</small><div class="tv-acts">` : '<div class="tv-acts">') : `<div class="tv-item"><div class="top"><b>${esc(x.name)}</b>${x.price ? `<small>${esc(priceTxt(x.price))}</small>` : ""}</div><span>${esc(x.why || x.buzz || "")}</span>${x.where ? `<small>Where: ${esc(x.where)}</small>` : ""}<div class="tv-acts">${x.src ? `<a class="mini" href="${esc(x.src)}" target="_blank" rel="noopener">Source</a>` : ""}${tick("x:" + x.name, x.name, dest)}</div></div>`;
+  function nearBox(g) {
+    const pts = (g.shops || []).filter((x) => typeof x.lat === "number");
+    if (!pts.length) return "";
+    const opts = (g.places || []).map((pl, i) => `<option value="${i}"${HERE && HERE.name === pl.name ? " selected" : ""}>${esc(pl.name)}</option>`).join("");
+    const list = HERE ? pts.map((x) => [x, km(HERE, x)]).sort((a, b) => a[1] - b[1]).map(([x, d]) => `<div class="tv-item"><div class="top"><b>${esc(x.name)}</b><small>${esc(howFar(d))}</small></div><small>${esc(x.address || "")}</small><div class="tv-acts"><a class="mini" href="https://www.google.com/maps/dir/?api=1&destination=${x.lat},${x.lon}&travelmode=walking" target="_blank" rel="noopener">Directions</a></div></div>`).join("") : `<small>Pick where you are, or use your location, to sort the shops by distance.</small>`;
+    return tvBox("Near you right now", `<div class="tv-pick"><select id="tvHere" aria-label="Where you are"><option value="">Where are you?</option>${opts}${HERE && HERE.gps ? '<option value="gps" selected>My location</option>' : ""}</select><button class="mini" type="button" id="tvGps">Use my location</button><span class="tv-src" id="tvGpsMsg" aria-live="polite"></span></div>${list}`, "wide");
+  }
+  function seasonBox(g) {
+    const S = g.seasons || []; if (!S.length) return "";
+    const m = new Date().getMonth() + 1, now = S.findIndex((x) => x.months.includes(m)); const i = tvSeason == null ? Math.max(0, now) : tvSeason; const se = S[i];
+    const picks = (se.picks || []).map((id) => byId[id]).filter(Boolean);
+    return tvBox("Scents of the season", `<div class="tv-tags">${S.map((x, j) => `<button class="chip" type="button" data-season="${j}" aria-pressed="${j === i}">${esc(x.name)}${j === now ? " · now" : ""}</button>`).join("")}</div><p style="margin:0">${esc(se.feel)}</p><div class="tv-tags">In the air: ${se.smells.map((x) => `<span class="t">${esc(x)}</span>`).join("")}</div>${se.note ? `<p style="margin:0">${esc(se.note)}</p>` : ""}${picks.length ? `<small>Open: ${picks.map((h) => `<button class="mini" type="button" data-open="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}</small>` : ""}`);
+  }
+  const listSection = (title, blk, dest) => blk && (blk.items || []).length ? tvBox(title, `${blk.basis ? `<small>${esc(blk.basis)}</small>` : ""}${blk.items.map((x) => anyItem(x, dest)).join("")}`) : "";
   function renderTravel() {
     const d = DESTS.find((x) => x.key === tvCur) || DESTS[0]; if (!d) return; $("tvSel").value = d.key;
     let html = "";
@@ -657,6 +676,7 @@ function render() {
       const g = d.guide, wx = g.weather, dest = g.city, local = new Set((g.lookfor || []).map((x) => x.house).filter(Boolean));
       const look = (g.lookfor || []).map((x) => x.house && byId[x.house] ? houseItem(byId[x.house], x.why, dest) : `<div class="tv-item"><div class="top"><b>${esc(x.name)}</b>${x.price ? `<small>${esc(priceTxt(x.price))}</small>` : ""}</div><span>${esc(x.why)}</span><div class="tv-acts">${tick("x:" + x.name, x.name, dest)}</div></div>`).join("");
       html += `<section class="tv-box wide"><div class="eyebrow">Travel guide · checked ${esc(g.on)}</div><h3 style="font-size:1.35rem">${esc(g.city)}, ${esc(g.country)}</h3><p style="margin:0">${esc(g.intro)}</p></section><div class="tv-grid" style="margin-top:14px">`;
+      html += nearBox(g) + seasonBox(g) + listSection("Worth buying here", g.grab, dest) + listSection("What locals wear", g.worn, dest) + listSection("Rare finds with a buzz", g.gems, dest);
       if (wx) { const sug = suits(wx, g.cc, local); html += tvBox("What to wear in this weather", `<p style="margin:0"><b>${esc(wx.when)}:</b> ${esc(wx.feel)}</p><p style="margin:0">${esc(wx.wear)}</p><div class="tv-tags">Lasts well: ${wx.good.map((f) => `<span class="t">${esc(famLabel(f))}</span>`).join("")}</div><div class="tv-tags">Fades fast: ${wx.fades.map((f) => `<span class="t">${esc(famLabel(f))}</span>`).join("")}</div>${sug.length ? `<small>Also good for this weather, from the atlas: ${sug.map((h) => `<button class="mini" type="button" data-open="${esc(h.name)}">${esc(h.name)}</button>`).join(" · ")}</small>` : ""}`, "tv-wx"); }
       if (look) html += tvBox("Perfumes to smell here", look);
       if ((g.shops || []).length) html += tvBox("Where to smell them", g.shops.map((x) => shopItem(x, dest)).join(""));
@@ -680,7 +700,10 @@ function render() {
   }
   $("tvSel").onchange = () => { tvCur = $("tvSel").value; try { localStorage.setItem("scentatlas.dest", tvCur); } catch (e) {} renderTravel(); };
   $("tvBody").addEventListener("change", (e) => { const c = e.target.closest("[data-trip]"); if (!c) return; const k = c.dataset.trip; if (c.checked) TRIP[k] = { label: c.dataset.label, dest: c.dataset.dest }; else delete TRIP[k]; tripSave(); renderTravel(); });
+  $("tvBody").addEventListener("change", (e) => { if (e.target.id !== "tvHere") return; const d = DESTS.find((x) => x.key === tvCur), v = e.target.value; if (v === "gps" || !d || !d.guide) return; HERE = v === "" ? null : d.guide.places[+v]; try { localStorage.setItem("scentatlas.here", JSON.stringify(HERE)); } catch (err) {} renderTravel(); });
   $("tvBody").addEventListener("click", async (e) => {
+    const sb = e.target.closest("[data-season]"); if (sb) { tvSeason = +sb.dataset.season; renderTravel(); return; }
+    if (e.target.id === "tvGps") { const msg = $("tvGpsMsg"); if (!navigator.geolocation) { msg.textContent = "Location isn't available here; pick a place instead."; return; } msg.textContent = "Finding you…"; navigator.geolocation.getCurrentPosition((pos) => { HERE = { name: "My location", lat: pos.coords.latitude, lon: pos.coords.longitude, gps: true }; try { localStorage.setItem("scentatlas.here", JSON.stringify(HERE)); } catch (err) {} renderTravel(); }, () => { msg.textContent = "Location isn't allowed here; pick a place instead."; }, { timeout: 8000, maximumAge: 300000 }); return; }
     const o = e.target.closest("[data-open]"); if (o) { window.atlasOpenCard(o.dataset.open); return; }
     const u = e.target.closest("[data-untrip]"); if (u) { delete TRIP[u.dataset.untrip]; tripSave(); renderTravel(); return; }
     if (e.target.id === "tvClear") { TRIP = {}; tripSave(); renderTravel(); return; }
