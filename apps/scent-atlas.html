@@ -44,7 +44,13 @@ h2 { font-size: 1.6rem }
 .stats div { display: grid } .stats b { font-family: var(--display); font-size: 1.7rem; font-weight: 500; line-height: 1.1 }
 .stats span { font-size: 12px; color: var(--muted) }
 
-.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: grid; gap: 8px }
+.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; max-height: 70vh; overflow-y: auto; overscroll-behavior: contain }
+.rail .bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
+.rail .bar input[type=search] { flex: 1 1 200px; min-width: 0 }
+.fbtn { font: 600 13px var(--body); color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; cursor: pointer; white-space: nowrap }
+.fbtn[aria-expanded="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+#filters { display: grid; gap: 8px }
+#filters[hidden] { display: none !important }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
 .row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
 .row .lab { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); min-width: 74px }
@@ -173,7 +179,7 @@ summary { cursor: pointer; font-family: var(--display); font-size: 1.25rem }
 #mapview .crumbs b { font-weight: 600 }
 #mapview .desk { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 16px; align-items: start }
 @media (max-width: 860px) {#mapview .desk { grid-template-columns: minmax(0, 1fr) } }
-#mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: none }
+#mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: pan-y }
 #mapview .mapbox svg { display: block; width: 100%; height: auto; cursor: grab }
 @media (max-width: 600px) {#mapview .mapbox svg { height: 380px } }
 #mapview .mapbox svg:active { cursor: grabbing }
@@ -275,7 +281,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     </div>
     <aside class="panel" id="m-panel" aria-live="polite"></aside>
   </div>
-  <p class="hint">Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
+  <p class="hint">To move the map: drag with a mouse, use two fingers on a phone, or the + and − buttons. One finger scrolls the page. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
   </section>
 
   <section class="travel offtab" id="travelview" aria-live="polite">
@@ -302,7 +308,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
   </section>
 
   <div class="rail">
-    <div class="row">
+    <div class="bar">
       <input type="search" id="q" placeholder="Search a note, house or country (try osmanthus, oud, tea)" aria-label="Search">
       <select id="sort" aria-label="Sort">
         <option value="region">Sort: by region</option>
@@ -311,12 +317,16 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
         <option value="cad">Sort: lowest price</option>
         <option value="name">Sort: A to Z</option>
       </select>
+      <button class="fbtn" type="button" id="fbtn" aria-expanded="false" aria-controls="filters">Filters</button>
+      <span class="count" id="count"></span>
     </div>
+    <div id="filters" hidden>
     <div class="row" id="conts"><span class="lab">Continent</span></div>
     <div class="row"><span class="lab">Your taste</span><button class="chip" type="button" id="likeDip" aria-pressed="false">If you love Diptyque</button><button class="chip" type="button" id="shelfBtn" aria-pressed="false">My shelf</button></div>
     <div class="row" id="styles"><span class="lab">Style</span></div>
     <div class="row" id="fams"><span class="lab">Smells</span></div>
-    <div class="row" id="types"><span class="lab">Kind</span><span class="count" id="count"></span></div>
+    <div class="row" id="types"><span class="lab">Kind</span></div>
+    </div>
   </div>
 
   <div class="match" id="matchbar" hidden></div>
@@ -710,6 +720,10 @@ function render() {
     if (e.target.id === "tvCopy") { const txt = "Scents to look out for\n" + Object.values(TRIP).map((v) => `- ${v.label} (${v.dest})`).join("\n"); let ok = false; try { await navigator.clipboard.writeText(txt); ok = true; } catch (err) {} $("tvCopied").textContent = ok ? "Copied." : "Couldn't copy here; select the list and copy it."; }
   });
   renderTravel();
+  const fCount = () => state.cont.size + state.fam.size + state.type.size + state.style.size + (state.like ? 1 : 0) + (state.shelf ? 1 : 0);
+  const fLabel = () => { const n = fCount(); $("fbtn").textContent = n ? `Filters · ${n}` : "Filters"; };
+  $("fbtn").onclick = () => { const f = $("filters"), open = f.hidden; f.hidden = !open; $("fbtn").setAttribute("aria-expanded", open); };
+  document.querySelector(".rail").addEventListener("click", () => setTimeout(fLabel, 0));
   const PANELS = { browse: [".rail", "#matchbar", "#region", "#grid"], finder: ["#finder"], travel: ["#travelview"], styles: ["#mapsec"], traditions: ["#tradbox"], twins: ["#twinbox", "#trendbox", "#relbox"], learn: ["#gloss", "#spotbox"], shops: ["#storebox", "#leadbox"], map: ["#mapview"] };
   let mapReady = false, curTab = "browse";
   async function showView(v) {
@@ -722,7 +736,7 @@ function render() {
     try { history.replaceState(null, "", v === "browse" ? location.pathname + location.search : "#" + v); } catch (e) {}
     try { localStorage.setItem("scentatlas.tab", v); } catch (e) {}
     if (v === "map" && !mapReady && window.d3) { mapReady = true; await MapView({ houses, regions, rates, stores, families, traditions }); }
-    if (v === "browse") render();
+    if (v === "browse") { render(); fLabel(); }
     if (v === "travel") renderTravel();
   }
   function toBrowse() { if (curTab !== "browse") showView("browse"); $("tabs").scrollIntoView({ behavior: "smooth", block: "start" }); }
@@ -943,7 +957,8 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   proj = d3.geoEqualEarth().scale(WORLD.scale).translate(WORLD.translate);
   svg = d3.select("#m-map"); gZoom = d3.select("#m-zoom");
     zoom = d3.zoom().scaleExtent([1, 60]).translateExtent([[-100, -60], [1100, 560]]).on("zoom", (e) => { gZoom.attr("transform", e.transform); K = e.transform.k; restyle(); });
-  svg.call(zoom).on("dblclick.zoom", null);
+  zoom.filter((e) => e.type === "wheel" ? (e.ctrlKey || e.metaKey) : e.type.startsWith("touch") ? (e.touches && e.touches.length > 1) : !e.button);
+  svg.call(zoom).on("dblclick.zoom", null); svg.style("touch-action", "pan-y");
   
   
   D = { houses: houses.filter((h) => geo[h.id]), geo, regions, stores, fam: families }; RATES = rates.cad_per || {};
