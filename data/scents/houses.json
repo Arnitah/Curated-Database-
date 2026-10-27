@@ -3107,7 +3107,15 @@
    "amt": 9,
    "cur": "USD",
    "url": "https://stele.nyc/products/kst-scent-banana-milk-coffee-eau-de-parfum"
-  }
+  },
+  "also": [
+   {
+    "name": "Persimmon Bingsu",
+    "notes": "Korean autumn in a bottle: ripe and half-dried persimmon with yuja-ginger syrup, over milky shaved ice, red-bean rice cake and condensed milk.",
+    "price": "US$79 · 30 ml (2 ml vial US$10)",
+    "url": "https://kstscent.com/products/persimmon-bingsu"
+   }
+  ]
  },
  {
   "id": "cosmic-mansion",
@@ -3912,7 +3920,21 @@
    "cur": "USD",
    "ml": 15,
    "url": "https://universalflowering.com/products/big-night"
-  }
+  },
+  "also": [
+   {
+    "name": "Heliotrope Milkbath",
+    "notes": "Candied apricot, almondy heliotrope and almond milk with soft musk; a creator's pick for heliotrope lovers.",
+    "price": "US$180 · 50 ml (15 ml US$85)",
+    "url": "https://universalflowering.com/products/heliotrope-milkbath"
+   },
+   {
+    "name": "Seduction Theory",
+    "notes": "Blackcurrant, elemi and jasmine with a lychee-martini sweetness, myrrh and tobacco.",
+    "price": "US$180 · 50 ml (15 ml US$85)",
+    "url": "https://universalflowering.com/products/seduction-theory"
+   }
+  ]
  },
  {
   "id": "monsillage",
@@ -9214,6 +9236,138 @@
    "indonesia",
    "tropical",
    "incense"
+  ]
+ },
+ {
+  "id": "otter-haus",
+  "name": "Otter Haus",
+  "country": "Philippines",
+  "cc": "PH",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://otterhausph.com/",
+  "about": "A Filipino house whose numbered perfumes each capture a small everyday moment, with hand-drawn labels and 25% concentration.",
+  "why": "Affordable, well-made local perfume with a story on every bottle, and 10 ml minis to try first.",
+  "families": [
+   "floral",
+   "musk",
+   "amber"
+  ],
+  "accents": [
+   "plum",
+   "davana"
+  ],
+  "sig": {
+   "name": "No. 8 White Noise",
+   "url": "https://otterhausph.com/products/white-noise",
+   "notes": {
+    "t": [
+     "bergamot",
+     "lemon",
+     "tangerine",
+     "lily of the valley"
+    ],
+    "h": [
+     "iris",
+     "ylang-ylang",
+     "jasmine",
+     "rose"
+    ],
+    "b": [
+     "davana",
+     "amber",
+     "musk"
+    ]
+   },
+   "profile": "The quiet after a long day: easy white flowers with ylang and jasmine that soften into a skin-close musk."
+  },
+  "price": {
+   "amt": 990,
+   "cur": "PHP",
+   "status": "verified",
+   "src": "https://otterhausph.com/products/white-noise",
+   "on": "2026-10-27",
+   "note": "Size not shown on the page; 10 ml minis ₱350."
+  },
+  "also": [
+   {
+    "name": "No. 7 Double Take",
+    "notes": "Plum, labdanum and rose drying to a dark vanilla.",
+    "price": "₱990",
+    "url": "https://otterhausph.com/products/double-take"
+   },
+   {
+    "name": "No. 4 Slow Mornings",
+    "notes": "Clean, powdery bergamot, rose and geranium on musk and amber.",
+    "price": "₱990",
+    "url": "https://otterhausph.com/products/slow-mornings"
+   }
+  ],
+  "tags": [
+   "philippines",
+   "musk",
+   "white floral"
+  ]
+ },
+ {
+  "id": "inde-wild",
+  "name": "Indē Wild",
+  "country": "India / United States",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://indewild.com/",
+  "about": "An Ayurveda-inspired beauty brand with mostly-natural hair and body perfume mists.",
+  "why": "A creator's pick for hair scent that lasts. Warm and spicy rather than sugary, for a reasonable price.",
+  "families": [
+   "amber",
+   "floral",
+   "spicy"
+  ],
+  "accents": [
+   "hair perfume",
+   "black pepper"
+  ],
+  "sig": {
+   "name": "After Heat (Hair & Body Perfume Mist)",
+   "url": "https://indewild.com/products/after-heat-hair-body-perfume-mist",
+   "notes": {
+    "t": [
+     "black pepper"
+    ],
+    "h": [
+     "jasmine"
+    ],
+    "b": [
+     "spicy amber"
+    ]
+   },
+   "profile": "The warmth of a hot day carried into evening: peppery spiced amber with a thread of jasmine. About 93% natural."
+  },
+  "price": {
+   "amt": 22,
+   "cur": "USD",
+   "ml": 60,
+   "status": "verified",
+   "src": "https://indewild.com/products/after-heat-hair-body-perfume-mist",
+   "on": "2026-10-27"
+  },
+  "also": [
+   {
+    "name": "Solar Skin, Chandra, Surya",
+    "notes": "Citrus-jasmine-cedar; serene fruity floral; sunny floral with sandalwood.",
+    "price": "US$22 · 60 ml",
+    "url": "https://indewild.com/"
+   }
+  ],
+  "tags": [
+   "hair perfume",
+   "natural",
+   "spice"
   ]
  }
 ]

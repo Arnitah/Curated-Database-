@@ -940,5 +940,17 @@
   "lon": 106.85,
   "place": "Jakarta",
   "precision": "country"
+ },
+ "otter-haus": {
+  "lat": 14.6,
+  "lon": 120.98,
+  "place": "Manila",
+  "precision": "country"
+ },
+ "inde-wild": {
+  "lat": 19.08,
+  "lon": 72.88,
+  "place": "Mumbai",
+  "precision": "country"
  }
 }
