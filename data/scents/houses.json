@@ -9138,6 +9138,14 @@
    "cinnamon",
    "strength options",
    "spice"
+  ],
+  "also": [
+   {
+    "name": "Milk",
+    "notes": "Commodity's soft milky skin scent; a creator files it under 'you smell cozy'.",
+    "price": "See shop",
+    "url": "https://commodityfragrances.com/"
+   }
   ]
  },
  {
@@ -9400,6 +9408,75 @@
    "hair perfume",
    "natural",
    "spice"
+  ]
+ },
+ {
+  "id": "fugazzi",
+  "name": "Fugazzi",
+  "country": "Netherlands",
+  "cc": "NL",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://fugazzifragrances.com/",
+  "about": "An Amsterdam house best known for Angel Dust, a soft skin-scent that grew into a whole line of body, hair and extrait versions.",
+  "why": "A good 'cosy, expensive skin' scent with real sampling options: 2 ml for €8, 8 ml travel size, and a darker extrait if the original is too quiet.",
+  "families": [
+   "woody",
+   "amber",
+   "musk"
+  ],
+  "accents": [
+   "cashmere wood",
+   "pink pepper",
+   "saffron"
+  ],
+  "sig": {
+   "name": "Angel Dust (Eau de Parfum)",
+   "url": "https://fugazzifragrances.com/products/angel-dust",
+   "notes": {
+    "t": [
+     "black pepper",
+     "saffron"
+    ],
+    "h": [
+     "cashmere wood"
+    ],
+    "b": [
+     "white amber",
+     "woods"
+    ]
+   },
+   "profile": "Warm, close and skin-like: a peppery-saffron lift over soft cashmere woods and white amber. The extrait is darker and spicier, with more pink pepper."
+  },
+  "price": {
+   "amt": 95,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://fugazzifragrances.com/products/angel-dust",
+   "on": "2026-10-27",
+   "note": "100 ml €140; 8 ml €35; 2 ml €8. Extrait €145 / 50 ml."
+  },
+  "also": [
+   {
+    "name": "Angel Dust Extrait de Parfum",
+    "notes": "Pink pepper, cashmere, white amber and dark wood; double the amber and cashmeran of the original.",
+    "price": "€145 · 50 ml (€205 · 100 ml)",
+    "url": "https://fugazzifragrances.com/products/angel-dust-extrait-de-parfum"
+   },
+   {
+    "name": "Angel Dust Hair Mist and Body Mist",
+    "notes": "The same scent in lighter forms.",
+    "price": "€35 · 30 ml hair; €45 · 250 ml body",
+    "url": "https://fugazzifragrances.com/products/angel-dust-30-ml-hair-mist"
+   }
+  ],
+  "tags": [
+   "skin scent",
+   "amber",
+   "netherlands"
   ]
  }
 ]
