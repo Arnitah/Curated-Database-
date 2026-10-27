@@ -4388,6 +4388,13 @@
   ],
   "like": [
    "diptyque"
+  ],
+  "also": [
+   {
+    "name": "Ambre Latte (EDP)",
+    "notes": "A milky amber by Jordi Fernandez: caramel, almond milk and vanilla over tonka, benzoin, sandalwood, guaiac and soft white musk. Creamy rather than sugary.",
+    "price": "price not checked"
+   }
   ]
  },
  {
@@ -8089,6 +8096,52 @@
    "egypt",
    "share size",
    "instagram shop"
+  ]
+ },
+ {
+  "id": "asateer",
+  "name": "Asateer",
+  "country": "Kuwait",
+  "cc": "KW",
+  "region": "Middle East",
+  "continent": "Asia",
+  "city": "Kuwait",
+  "type": "lifestyle",
+  "scale": "small",
+  "site": "https://www.instagram.com/stylespottingkw/",
+  "about": "A Kuwaiti brand making 'milkshake' body lotion sprays: a moisturising lotion you spray on, in dessert scents.",
+  "why": "A Gulf take on gourmand body care, and a sprayable lotion is handy layered under perfume so it lasts.",
+  "families": [
+   "gourmand",
+   "fruity"
+  ],
+  "accents": [
+   "milkshake",
+   "lotion spray"
+  ],
+  "sig": {
+   "name": "Pink Vanilla Milkshake (lotion spray)",
+   "url": "https://www.instagram.com/stylespottingkw/",
+   "notes": {
+    "t": [],
+    "h": [],
+    "b": []
+   },
+   "profile": "Named scents: Pink Vanilla, Fluffy Marshmallow, Golden Caramel, Creamy Banana and Buttery Cheesecake. Full notes aren't published; expect sweet, creamy dessert scents."
+  },
+  "price": {
+   "amt": 15,
+   "cur": "KWD",
+   "ml": 100,
+   "status": "reported",
+   "src": "https://www.instagram.com/stylespottingkw/",
+   "on": "2026-10-26",
+   "note": "Seen at half price (7.5 KWD) in a Boutiqaat sale post."
+  },
+  "tags": [
+   "kuwait",
+   "body care",
+   "lotion spray"
   ]
  }
 ]
