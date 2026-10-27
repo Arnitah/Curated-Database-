@@ -6836,5 +6836,35 @@
     "seen_in": "Japan shopping reels",
     "checked": "2026-10-27",
     "format": "v2"
+  },
+  {
+    "id": "silk-and-keratin-shampoo-repairs-hair-overnight",
+    "title": "Silk and keratin night-repair shampoos repair damaged hair while you sleep",
+    "topics": [
+      "hair"
+    ],
+    "claims": [
+      {
+        "claim": "Hair repairs itself overnight with the right shampoo",
+        "verdict": "false",
+        "truth": "Hair is dead keratin and can't heal. Hydrolysed silk and keratin coat the surface and fill gaps, making hair smoother and less tangly until your next wash, whatever time you use them.",
+        "grade": "B"
+      },
+      {
+        "claim": "PDRN, peptides and collagen in face creams rebuild skin",
+        "verdict": "unproven",
+        "truth": "Peptides and PDRN have small, mostly brand-funded studies. Retinoids, sunscreen and a good moisturiser have far more evidence.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: tips for healthy hair",
+        "url": "https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips"
+      }
+    ],
+    "seen_in": "Japanese and K-beauty haul posts",
+    "checked": "2026-10-27",
+    "format": "v2"
   }
 ]

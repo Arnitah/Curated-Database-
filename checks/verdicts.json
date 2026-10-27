@@ -7309,5 +7309,27 @@
  "anti-frizz-hair-gloss-perfume": {
   "verdict": "ok",
   "flags": []
+ },
+ "marshmallow-donut-body-lotion": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cherry-oud-whipped-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "angel-cake-whipped-shea-and-lip-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "mint-choco-body-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "saffron-cashmere-shower-gel": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked"
+  ]
  }
 }

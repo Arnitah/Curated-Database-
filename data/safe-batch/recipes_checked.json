@@ -53180,5 +53180,270 @@
       "creator": "Store product",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "marshmallow-donut-body-lotion",
+    "name": "Marshmallow donut perfumed body lotion",
+    "claim": "Sweet glazed-donut scent in a light lotion",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately the shea, oil, emulsifying wax and cetearyl, to 70 °C; blend and cool, adding scent and preservative below 40 °C. Use a marshmallow or glazed-donut fragrance oil with a little vanilla absolute. Use within 3 months.",
+    "inspired": "Miraculum The Marshmallow Donut lotion and mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "cherry-oud-whipped-body-butter",
+    "name": "Cherry oud whipped body butter",
+    "claim": "Dark cherry and smoky woods in a rich butter",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        60,
+        "g"
+      ],
+      [
+        "mango",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "arrowroot",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ]
+    ],
+    "note": "Melt the butters, stir in the oil, chill until just set at the edges, then whip 5 minutes with the arrowroot until fluffy. Add the scent while whipping. Apply to damp skin. A cherry-oud fragrance oil carries it. Never use bitter almond oil for the cherry note.",
+    "inspired": "Sand + Fog Cherry Oud whipped body butter",
+    "source": {
+      "creator": "sdstyleandshop",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "angel-cake-whipped-shea-and-lip-butter",
+    "name": "Angel cake whipped shea butter",
+    "claim": "Vanilla, cashmere and tonka cake scent",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        60,
+        "g"
+      ],
+      [
+        "mango",
+        20,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "arrowroot",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Melt the butters, stir in the oil, chill until just set at the edges, then whip 5 minutes with the arrowroot until fluffy. Add the scent while whipping. Apply to damp skin. Pick a vanilla cake or tonka fragrance oil. For a matching lip butter, melt 1 part beeswax, 2 parts shea and 1 part jojoba with a lip-safe vanilla flavour.",
+    "inspired": "Tree Hut Angel Cake",
+    "source": {
+      "creator": "trendmood1",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "mint-choco-body-cream",
+    "name": "Mint choc chip body cream",
+    "claim": "Cool mint and chocolate in a soft cream",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "cocoa",
+        8,
+        "g"
+      ],
+      [
+        "sunflower",
+        9,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "cocoaabs",
+        3,
+        "drops"
+      ],
+      [
+        "peppermint",
+        3,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately cocoa butter, oil, emulsifying wax and cetearyl, to 70 °C; blend and cool, adding cocoa absolute, a little peppermint and the preservative below 40 °C. Keep peppermint low; it can tingle, so avoid freshly shaved skin. Use within 3 months.",
+    "inspired": "Intra Gourmand Mint Choco",
+    "source": {
+      "creator": "intracosmetics",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "saffron-cashmere-shower-gel",
+    "name": "Saffron and cashmere shower gel",
+    "claim": "Warm saffron, woods and musk in a clear gel",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "showergel",
+        200,
+        "g"
+      ],
+      [
+        "saffron",
+        0.05,
+        "g"
+      ],
+      [
+        "sandalwood",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Steep the saffron threads in a spoonful of warm water for 20 minutes, then stir it with the fragrance and sandalwood into an unscented clear shower gel. A saffron-cashmere or santal-vetiver fragrance oil completes it.",
+    "inspired": "Velvet & Bloom (Salt & Stone Santal & Vetiver dupe)",
+    "source": {
+      "creator": "monasoflynpretty",
+      "platform": "Instagram"
+    }
   }
 ]
