@@ -53924,5 +53924,115 @@
       "creator": "mayu_cosumebu",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "just-showered-soap-scent-body-lotion",
+    "name": "\"Just showered\" soap-scent body lotion",
+    "claim": "Clean white musk and soft soap scent, not sweet",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "musk",
+        0.5,
+        "g"
+      ],
+      [
+        "lavender",
+        3,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately shea, oil, emulsifying wax and cetearyl, to 70 °C; blend and cool, adding white musk, a touch of lavender and the preservative below 40 °C. White musk plus a clean 'soap' or 'fresh cotton' fragrance oil is what makes the 'I just showered' scent. Layer with a white musk roll-on deodorant. Use within 3 months.",
+    "inspired": "Milk Baobab white soap body lotion and Necessary white musk roll-on",
+    "source": {
+      "creator": "_.divalicious666._",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "golden-neroli-shimmer-body-oil",
+    "name": "Golden neroli shimmer body oil",
+    "claim": "Fast-absorbing body oil with a gold glow",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        60,
+        "g"
+      ],
+      [
+        "jojoba",
+        25,
+        "g"
+      ],
+      [
+        "sunflower",
+        13,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "neroli",
+        8,
+        "drops"
+      ],
+      [
+        "mica",
+        0.6,
+        "g"
+      ]
+    ],
+    "note": "Mix, add gold mica and shake well. MCT (caprylic) oil sinks in quickly. Mica always settles in thin oils, so shake before every use; a little tallow or a pinch of silica thickens it so mica stays suspended longer. Neroli smells of orange blossom and isn't sun-sensitizing. Patch test.",
+    "inspired": "Better Tallow Golden Neroli body oil",
+    "source": {
+      "creator": "bettertallow",
+      "platform": "Instagram"
+    }
   }
 ]
