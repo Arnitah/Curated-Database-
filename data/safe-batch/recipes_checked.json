@@ -54214,5 +54214,80 @@
       "creator": "fragrancebabesandy",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "golden-shimmer-shine-body-lotion",
+    "name": "Golden shimmer shine body lotion",
+    "claim": "Light lotion with a soft gold glow, in coconut, vanilla or hazelnut-chocolate scents",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        70,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "coconut",
+        6,
+        "g"
+      ],
+      [
+        "shea",
+        6,
+        "g"
+      ],
+      [
+        "sunflower",
+        6,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.3,
+        "g"
+      ],
+      [
+        "mica",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water, glycerin and xanthan, and separately the oils, butter, emulsifying wax and cetearyl, to 70 °C; blend, then cool, adding gold mica, scent and preservative below 40 °C. Xanthan keeps the shimmer suspended in the lotion. Pick coconut, vanilla, baby powder or a hazelnut-chocolate fragrance oil. Mica sits on top of skin, so it suits any skin tone; avoid the face and eyes. Use within 3 months.",
+    "inspired": "Asuo shine body lotion",
+    "source": {
+      "creator": "asuo.beauty.care",
+      "platform": "Instagram"
+    }
   }
 ]
