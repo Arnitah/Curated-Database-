@@ -659,5 +659,38 @@
   "luxuryBrand": "Burberry",
   "notes": [],
   "source": "Instagram graphic (the.perfume.pookie), pairs matched by position on the shelf; creator's opinion, not verified by smell"
+ },
+ {
+  "budget": "Arrogate Pink Rose",
+  "budgetBrand": "Assaf",
+  "luxury": "Rose Prick",
+  "luxuryBrand": "Tom Ford",
+  "notes": [
+   "rose"
+  ],
+  "source": "Instagram (giltedgegalleria), creator calls them exact; opinion, not verified by smell"
+ },
+ {
+  "budget": "Miss Arrogate",
+  "budgetBrand": "Assaf",
+  "luxury": "Chance Eau Vive",
+  "luxuryBrand": "Chanel",
+  "notes": [
+   "citrus",
+   "floral"
+  ],
+  "source": "Instagram (giltedgegalleria), creator calls them exact; opinion, not verified by smell"
+ },
+ {
+  "budget": "Daydream",
+  "budgetBrand": "Mykonos",
+  "luxury": "Acne Studios par Frederic Malle",
+  "luxuryBrand": "Frederic Malle",
+  "notes": [
+   "floral",
+   "musk"
+  ],
+  "direction": "similar",
+  "source": "Instagram (farahsthoughts): a denser floral take; opinion"
  }
 ]

@@ -251,6 +251,24 @@
      "name": "new fragrance (name not yet given)",
      "kind": "fragrance",
      "small": false
+    },
+    {
+     "brand": "Barbie x Brown Girl Jane",
+     "name": "Encore",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Rayhaan x Noel Thomas",
+     "name": "Palawan",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Swiss Arabian",
+     "name": "Echoes of St. Moritz",
+     "kind": "extrait de parfum",
+     "small": true
     }
    ]
   }
