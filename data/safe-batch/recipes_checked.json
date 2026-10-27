@@ -53744,5 +53744,185 @@
       "creator": "by.ludmilla_",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "chai-spice-body-icing-cream",
+    "name": "Chai spice body icing cream",
+    "claim": "Whipped, frosting-soft cream with warm chai spice",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        72,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        4,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "gingereo",
+        3,
+        "drops"
+      ],
+      [
+        "cardamom",
+        2,
+        "drops"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately the shea, oil, emulsifying wax and cetearyl, to 70 °C; blend, then cool, adding scent and preservative below 40 °C. Use within 3 months. Whip the cooled cream with a hand mixer for a fluffy icing texture. Ginger and cardamom give real chai warmth; a fig or musk fragrance oil can round it out. Avoid cinnamon bark oil, a strong skin allergen.",
+    "inspired": "Le Monde Gourmand Chai Épicé body icing crème",
+    "source": {
+      "creator": "gourmandbeauty",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "honey-blush-nourishing-body-oil",
+    "name": "Honey blush nourishing body oil",
+    "claim": "Nectarine, honey and vanilla dry oil",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        50,
+        "g"
+      ],
+      [
+        "coconut",
+        25,
+        "g"
+      ],
+      [
+        "jojoba",
+        23,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Mix and bottle. Press onto damp skin after the shower. Use a honey-nectarine fragrance oil; real honey won't mix into oil. Swap the fragrance for cappuccino and cedar for a 'vanilla blush' version.",
+    "inspired": "Bubble Beauty honey blush and vanilla blush body oils",
+    "source": {
+      "creator": "pamper_mint",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "fig-perfume-hand-cream",
+    "name": "Fig perfume hand cream",
+    "claim": "Rich, fast-sinking hand cream with a green fig scent",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        68,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "niacinamide",
+        2,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "ewax",
+        5,
+        "g"
+      ],
+      [
+        "cetearyl",
+        1.5,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately the shea, oil, emulsifying wax and cetearyl, to 70 °C; blend, then cool, adding scent and preservative below 40 °C. Use within 3 months. Dissolve the niacinamide in the water phase. A fig-leaf or fig-coconut fragrance oil gives the 'Pale Blush' scent; swap for a rain-and-flowers or white floral oil for the other two moods. Keep it in a small tube for your bag.",
+    "inspired": "Bathproject perfume hand creams",
+    "source": {
+      "creator": "mayu_cosumebu",
+      "platform": "Instagram"
+    }
   }
 ]

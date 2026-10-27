@@ -6866,5 +6866,43 @@
     "seen_in": "Japanese and K-beauty haul posts",
     "checked": "2026-10-27",
     "format": "v2"
+  },
+  {
+    "id": "1850-skincare-was-pure-and-2026-skincare-is-toxic",
+    "title": "1850s products were pure; today's moisturisers, soaps, toothpaste and lip balm are full of toxins",
+    "topics": [
+      "body",
+      "oral",
+      "lip"
+    ],
+    "claims": [
+      {
+        "claim": "Modern products contain 1,4-dioxane, 'bacteria goo' and 'paint pigment'",
+        "verdict": "partly",
+        "truth": "1,4-dioxane can be a trace by-product of some ethoxylated ingredients and is limited by regulators. Xanthan gum ('bacteria goo') is a fermented thickener used in food; titanium dioxide is a white mineral. Labels like 'laxative' and 'dish detergent' describe the same safe ingredients in scary words.",
+        "grade": "B"
+      },
+      {
+        "claim": "Old-style tallow cream, lye soap and baking soda tooth powder are better",
+        "verdict": "false",
+        "truth": "Tallow can go rancid, home lye soap can be harsh if not made precisely, and baking soda with salt has no fluoride, which is what prevents cavities. Many old products contained mercury, lead or arsenic. Some simple formulas are lovely, but 'old' doesn't mean safer.",
+        "grade": "B"
+      },
+      {
+        "claim": "Preservatives like phenoxyethanol are the problem",
+        "verdict": "false",
+        "truth": "Preservatives stop bacteria and mould growing in anything with water. Unpreserved creams can spoil within days and cause infections.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FDA: 1,4-dioxane in cosmetics",
+        "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics-manufacturing-byproduct"
+      }
+    ],
+    "seen_in": "'Are we really evolving?' carousels on Instagram",
+    "checked": "2026-10-27",
+    "format": "v2"
   }
 ]
