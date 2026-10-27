@@ -1,6 +1,6 @@
 {
-  "version": 127,
-  "updated_at": "2026-10-27T22:22:47.559Z",
+  "version": 128,
+  "updated_at": "2026-10-27T23:00:37.418Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -153,10 +153,10 @@
       "updated_at": "2026-10-27T16:43:33.511Z"
     },
     "safe-batch/ingredients": {
-      "count": 657,
-      "bytes": 226880,
-      "hash": "b463b30775ec",
-      "updated_at": "2026-10-27T22:22:47.552Z"
+      "count": 668,
+      "bytes": 232934,
+      "hash": "9d4dcb0a0ff7",
+      "updated_at": "2026-10-27T23:00:37.413Z"
     },
     "safe-batch/layering_good": {
       "count": 21,
@@ -297,10 +297,10 @@
       "updated_at": "2026-10-22T23:21:48.789Z"
     },
     "safe-batch/synonyms": {
-      "count": 728,
-      "bytes": 41153,
-      "hash": "6d698ec99b9a",
-      "updated_at": "2026-10-27T22:22:47.558Z"
+      "count": 739,
+      "bytes": 42271,
+      "hash": "92a9260691b3",
+      "updated_at": "2026-10-27T23:00:37.418Z"
     },
     "safe-batch/terms": {
       "count": 62,

@@ -2056,7 +2056,7 @@
     "tsp": 2,
     "lvl": "ok",
     "good": "Popular in hair loss blends.",
-    "care": "The hair studies used it taken by mouth, mostly in men. There's little evidence it works on the scalp."
+    "care": "The hair studies used it taken by mouth, mostly in men. There's little evidence it works on the scalp. Saw palmetto is Serenoa repens. It's often mixed up with cabbage palm (Sabal palmetto), a different palm with no hair-loss research."
   },
   {
     "id": "marshmallow",
@@ -6711,5 +6711,121 @@
     "lvl": "ok",
     "good": "Contains soy isoflavones (genistein, daidzein), protein and vitamin K. Soy extracts in creams have some evidence for firmness and even tone; soy protein coats and strengthens hair.",
     "care": "Blended fresh beans spoil within hours and aren't the same as stabilised soy extracts. For hair, hydrolysed soy protein works better. Skip if allergic to soy."
+  },
+  {
+    "id": "passionfruitoil",
+    "grp": "Carrier oils",
+    "name": "Passion fruit seed oil (maracujá, Passiflora edulis)",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "ok",
+    "good": "Light, very high in linoleic acid (omega-6), so it sinks in fast and suits oily or acne-prone skin; adds slip and softness to hair ends.",
+    "care": "High-linoleic oils go rancid quickly: buy small, keep cool and dark, and add vitamin E."
+  },
+  {
+    "id": "wildrice",
+    "grp": "Powders and exfoliants",
+    "name": "Wild rice (Zizania), ground or as rice water",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A North American aquatic grass seed, traditionally harvested by Anishinaabe and other First Nations. Ground fine, it works like rice flour in masks and scrubs; its cooking water can be used like rice water.",
+    "care": "Grind very fine to avoid scratching. Rice-water rinses can build up protein on low-porosity hair. Little cosmetic research specific to wild rice."
+  },
+  {
+    "id": "cactusfruit",
+    "grp": "Fresh foods",
+    "name": "Cactus fruit (prickly pear or tuna, Opuntia ficus-indica) pulp",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "care",
+    "flag": "Remove every glochid",
+    "good": "Juicy, betalain-rich pulp used in hydrating masks; the seeds give prized prickly pear seed oil.",
+    "care": "The skin carries tiny hair-like spines (glochids) that lodge in skin; peel with gloves or buy peeled. Use the pulp the same day."
+  },
+  {
+    "id": "wildmushroom",
+    "grp": "Dried botanicals",
+    "name": "Wild edible mushrooms (black trumpet, boletes, russula, coral, Caesar's mushroom)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Never forage mushrooms for skincare",
+    "good": "Many edible mushrooms contain beta-glucans, ergothioneine and other antioxidants, which is why mushroom extracts appear in hydrating and calming skincare.",
+    "care": "Several of these have deadly look-alikes: Caesar's mushroom is easily confused with death cap and destroying angel Amanitas, and some coral fungi are toxic. Only use dried mushrooms bought as food, or cosmetic extracts. Benefits on skin are mostly from lab studies; reishi and tremella are better studied."
+  },
+  {
+    "id": "jellypalm",
+    "grp": "Fresh foods",
+    "name": "Jelly palm and queen palm fruit (Butia, Syagrus romanzoffiana)",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "ok",
+    "good": "Sweet, fibrous fruit used for jelly in South America; the kernels are oily, like a small coconut.",
+    "care": "No commercial cosmetic oil exists; claims about 4C hair and cracked skin are untested. Use coconut, babassu or palm kernel oil for the same lauric-rich feel."
+  },
+  {
+    "id": "chileanwinepalm",
+    "grp": "Fresh foods",
+    "name": "Chilean wine palm (Jubaea chilensis) fruit and coquitos",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "care",
+    "flag": "Endangered palm",
+    "good": "Its small 'coquito' nuts are eaten in Chile and contain a coconut-like oil; the sap is traditionally boiled into palm honey.",
+    "care": "Wild populations are endangered and protected in Chile, and there's no cosmetic oil on the market. Use coconut or babassu oil instead."
+  },
+  {
+    "id": "cocodemer",
+    "grp": "Dried botanicals",
+    "name": "Coco de mer (double coconut, Lodoicea maldivica)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Endangered and protected",
+    "good": "The world's largest seed, from the Seychelles; sought after for its rarity and symbolism.",
+    "care": "Endangered and strictly protected; export is controlled, and there's no legitimate cosmetic ingredient made from it. Products claiming to contain it are a red flag. Coconut or babassu oil give the barrier and hair benefits."
+  },
+  {
+    "id": "yuccaroot",
+    "grp": "Powders and exfoliants",
+    "name": "Yucca root (Yucca schidigera, Y. aloifolia) powder",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Yucca saponins can irritate",
+    "good": "The root is rich in steroidal saponins, which lather and cleanse; Indigenous peoples of the American Southwest have long used it as a shampoo.",
+    "care": "Saponins can sting eyes and dry the scalp; use as a rinse-off only and patch test. Not the same plant as cassava (yuca). Anti-dandruff claims are traditional."
+  },
+  {
+    "id": "palmyra",
+    "grp": "Fresh foods",
+    "name": "Palmyra palm (Borassus flabellifer) fruit and jaggery",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "ok",
+    "good": "Its jelly-like 'ice apple' fruit (nungu) is a cooling food in South India and Sri Lanka, and the sap makes palm jaggery and toddy; the jelly is used as a soothing summer face pack.",
+    "care": "Fresh fruit spoils within a day. Little cosmetic research."
+  },
+  {
+    "id": "ornamentalpalms",
+    "grp": "Never on skin",
+    "name": "Ornamental houseplant palms (parlor, areca, bamboo, cat, lady, majesty, ponytail, bottle, foxtail, fan, Bismarck, Washingtonia, royal, Christmas, windmill, traveler's palm)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "No skincare use",
+    "good": "Grown for looks; some give fibres (raffia, buri) used for tools, brushes and weaving.",
+    "care": "These have no established cosmetic use, and some 'palms' sold for homes are toxic: sago palm (Cycas revoluta) is a cycad that is deadly if eaten by pets or people, and areca nut is a carcinogen. Don't make skin or hair products from houseplant leaves or seeds."
+  },
+  {
+    "id": "sagocycad",
+    "grp": "Never on skin",
+    "name": "Sago palm (Cycas revoluta), a cycad",
+    "ph": "botan",
+    "tsp": 2,
+    "never": true,
+    "lvl": "stop",
+    "care": "Not a true palm. All parts, especially the seeds, contain cycasin, which causes liver failure and is often fatal to pets. Never use it in skin or hair products. Edible sago starch comes from a different plant (Metroxylon sagu)."
   }
 ]

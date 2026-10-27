@@ -1,5 +1,49 @@
 [
   [
+    "passion ?fruit (seed )?oil|maracuja|passiflora edulis",
+    "passionfruitoil"
+  ],
+  [
+    "wild rice|zizania|manoomin",
+    "wildrice"
+  ],
+  [
+    "cactus fruit|tuna fruit|prickly pear fruit",
+    "cactusfruit"
+  ],
+  [
+    "black trumpet|craterellus|bolete|boletus|russula|caesar.?s mushroom|amanita caesarea|clavaria|coral mushroom|butter ?foot",
+    "wildmushroom"
+  ],
+  [
+    "jelly palm|pindo|butia|queen palm|syagrus",
+    "jellypalm"
+  ],
+  [
+    "chilean wine palm|jubaea|coquito",
+    "chileanwinepalm"
+  ],
+  [
+    "coco de mer|double coconut|lodoicea",
+    "cocodemer"
+  ],
+  [
+    "yucca",
+    "yuccaroot"
+  ],
+  [
+    "palmyra|borassus|ice apple|nungu|toddy palm",
+    "palmyra"
+  ],
+  [
+    "cycas|sago palm|king sago",
+    "sagocycad"
+  ],
+  [
+    "parlou?r palm|areca palm|bamboo palm|cat palm|lady palm|majesty palm|ponytail palm|bottle palm|foxtail palm|fan palm|bismarck|washingtonia|royal palm|christmas palm|windmill palm|traveller?.?s palm|roebelenii|pygmy date|canary island date|dragon tree|raphia|raffia|buri palm|lala palm|sabal palmetto|cabbage palm",
+    "ornamentalpalms"
+  ],
+  [
     "bai ?he|lily bulb|lilium (lancifolium|brownii)",
     "lilybulb"
   ],
