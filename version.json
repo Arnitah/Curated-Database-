@@ -1,6 +1,6 @@
 {
-  "version": 121,
-  "updated_at": "2026-10-27T19:54:32.858Z",
+  "version": 122,
+  "updated_at": "2026-10-27T20:06:48.738Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -339,10 +339,10 @@
       "updated_at": "2026-10-27T19:48:19.952Z"
     },
     "scents/leads": {
-      "count": 93,
-      "bytes": 27625,
-      "hash": "8e4c059259ba",
-      "updated_at": "2026-10-27T19:54:32.858Z"
+      "count": 97,
+      "bytes": 29354,
+      "hash": "0d8225dfdc7d",
+      "updated_at": "2026-10-27T20:06:48.732Z"
     },
     "scents/materials": {
       "count": 3,
@@ -382,9 +382,9 @@
     },
     "scents/traditions": {
       "count": 25,
-      "bytes": 24074,
-      "hash": "81fbac766b8f",
-      "updated_at": "2026-10-26T22:54:56.836Z"
+      "bytes": 24251,
+      "hash": "e4ad11c75bbb",
+      "updated_at": "2026-10-27T20:06:48.738Z"
     },
     "scents/travel": {
       "count": 1,
