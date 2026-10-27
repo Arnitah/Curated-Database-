@@ -2079,7 +2079,7 @@
   ]
  },
  "geogard": {
-  "listings": 5,
+  "listings": 4,
   "suppliers": [
    "aromantic",
    "lotioncrafter",
@@ -2089,7 +2089,7 @@
    0.5,
    1
   ],
-  "use_n": 4,
+  "use_n": 3,
   "ph": [
    3,
    12
@@ -3050,17 +3050,17 @@
   ]
  },
  "lemonpeel": {
-  "listings": 2,
+  "listings": 3,
   "suppliers": [
    "formulator_sample_shop"
   ],
   "use_pct": [
-   0.75,
-   6
+   0.5,
+   2
   ],
-  "use_n": 2,
+  "use_n": 3,
   "ph": [
-   5,
+   4,
    7
   ],
   "shelf_months": 12,
@@ -3913,6 +3913,38 @@
    }
   ]
  },
+ "optiphen": {
+  "listings": 5,
+  "suppliers": [
+   "formulator_sample_shop",
+   "lotioncrafter",
+   "windy_point"
+  ],
+  "use_pct": [
+   0.5,
+   1.5
+  ],
+  "use_n": 5,
+  "ph": [
+   3,
+   12
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/optiphen"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/lotioncrafter-pe-9010"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/optiphen-plus"
+   }
+  ]
+ },
  "orange": {
   "listings": 2,
   "suppliers": [
@@ -4091,33 +4123,6 @@
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-peppermint-oil"
-   }
-  ]
- },
- "perfumersalcohol": {
-  "listings": 3,
-  "suppliers": [
-   "formulator_sample_shop",
-   "lotioncrafter"
-  ],
-  "use_pct": [
-   0.5,
-   1
-  ],
-  "use_n": 3,
-  "ph": [
-   3,
-   12
-  ],
-  "shelf_months": 12,
-  "links": [
-   {
-    "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/optiphen"
-   },
-   {
-    "s": "lotioncrafter",
-    "u": "https://lotioncrafter.com/products/lotioncrafter-pe-9010"
    }
   ]
  },
@@ -4705,7 +4710,7 @@
   ]
  },
  "safflower": {
-  "listings": 3,
+  "listings": 4,
   "suppliers": [
    "formulator_sample_shop"
   ],
