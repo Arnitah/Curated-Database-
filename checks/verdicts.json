@@ -7291,5 +7291,23 @@
  "dewy-water-gel-cream": {
   "verdict": "ok",
   "flags": []
+ },
+ "creamy-african-black-soap-body-wash-zandy": {
+  "verdict": "care",
+  "flags": [
+   "care: Preservative amount is off"
+  ]
+ },
+ "perfumed-pearl-gel-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "milkshake-moisturising-body-lotion-spray": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "anti-frizz-hair-gloss-perfume": {
+  "verdict": "ok",
+  "flags": []
  }
 }

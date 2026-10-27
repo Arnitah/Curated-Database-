@@ -6806,5 +6806,35 @@
     "seen_in": "TCM practitioner posts on Instagram",
     "checked": "2026-10-26",
     "format": "v2"
+  },
+  {
+    "id": "cheap-fermented-essence-is-an-sk-ii-dupe",
+    "title": "Muji's booster essence is an SK-II dupe",
+    "topics": [
+      "face"
+    ],
+    "claims": [
+      {
+        "claim": "It's the same as SK-II Facial Treatment Essence",
+        "verdict": "partly",
+        "truth": "Both are watery fermented essences, but SK-II is built on its own galactomyces ferment; Muji's uses different ferments and humectants. They feel similar and both hydrate, but they aren't identical.",
+        "grade": "C"
+      },
+      {
+        "claim": "Fermented essences do something special",
+        "verdict": "unproven",
+        "truth": "Ferments add some amino acids and humectants. Evidence that they outperform a simple hydrating toner with glycerin and hyaluronic acid is limited.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Healthline: what is galactomyces ferment filtrate",
+        "url": "https://www.healthline.com/health/galactomyces-ferment-filtrate"
+      }
+    ],
+    "seen_in": "Japan shopping reels",
+    "checked": "2026-10-27",
+    "format": "v2"
   }
 ]

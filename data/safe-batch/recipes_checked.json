@@ -53000,5 +53000,185 @@
       "creator": "dm_balea",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "creamy-african-black-soap-body-wash-zandy",
+    "name": "Creamy African black soap body wash (shea and glycerin)",
+    "claim": "Deep-cleansing but soft, creamy black soap wash",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "ghanasoap",
+        40,
+        "g"
+      ],
+      [
+        "water",
+        220,
+        "g"
+      ],
+      [
+        "capb",
+        50,
+        "g"
+      ],
+      [
+        "glycerin",
+        25,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "xanthan",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        4,
+        "g"
+      ]
+    ],
+    "note": "Dissolve grated black soap in warm water overnight. Melt the shea and stir it in while warm, then the CAPB and glycerin. Sprinkle xanthan over a spoonful of glycerin first so it doesn't clump, then whisk it in for a creamy, squeezable texture. Add the preservative last; it contains water, so it's essential. Black soap is alkaline, so follow with a moisturiser, and keep it off the face if it feels tight.",
+    "inspired": "Zandy creamy African black soap body wash",
+    "source": {
+      "creator": "Zandy (FREE Skincare Recipes)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "perfumed-pearl-gel-body-wash",
+    "name": "Perfumed pearl gel body wash",
+    "claim": "Clear gel wash with scented beads that burst as you lather",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "showergel",
+        200,
+        "g"
+      ],
+      [
+        "jojobabeads",
+        4,
+        "g"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Use a clear, thick gel body wash (or thicken a clear one with a pinch of xanthan). Stir in coloured jojoba beads and a little fragrance oil so they stay suspended. The beads melt softly as you rub, releasing scent and a touch of oil. Never use plastic microbeads, which are banned in many countries.",
+    "inspired": "Documents Perfumed Pearl body wash",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "milkshake-moisturising-body-lotion-spray",
+    "name": "Milkshake moisturising body lotion spray",
+    "claim": "Thin, sprayable lotion that sinks in fast",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        84,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "sunflower",
+        6,
+        "g"
+      ],
+      [
+        "ewax",
+        2,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "vanilla",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.8,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water and glycerin, and separately the oil and a small amount of emulsifying wax, to 70 °C; blend, then cool, adding panthenol, scent and preservative below 40 °C. With so little wax it stays thin enough for a fine-mist pump. Shake before use; spray on damp skin. Pick a milkshake, marshmallow, caramel or banana fragrance oil. Use within 3 months.",
+    "inspired": "Asateer milkshake moisturising body lotion sprays",
+    "source": {
+      "creator": "stylespottingkw",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "anti-frizz-hair-gloss-perfume",
+    "name": "Anti-frizz hair gloss and perfume",
+    "claim": "Light gloss that smooths flyaways and scents hair",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        50,
+        "g"
+      ],
+      [
+        "squalane",
+        30,
+        "g"
+      ],
+      [
+        "camellia",
+        18,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        6,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Mix and bottle in a fine-mist sprayer. Mist lightly over dry lengths and ends, or onto a brush, not the scalp. Squalane and camellia give shine and tame frizz without weighing hair down. Store versions that claim heat protection use tested film-formers; this DIY oil isn't heat-tested, so use a heat protectant before hot tools.",
+    "inspired": "Bouf hair gloss and perfume; Crémerie anti-frizz hair mist",
+    "source": {
+      "creator": "Store product",
+      "platform": "Instagram"
+    }
   }
 ]
