@@ -54289,5 +54289,470 @@
       "creator": "asuo.beauty.care",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "orange-peel-sudanese-bath-scrub",
+    "name": "Orange peel Sudanese bath scrub (orange 'arooka)",
+    "claim": "Brightening, smoothing legume-and-citrus body scrub",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "besan",
+        3,
+        "tbsp"
+      ],
+      [
+        "masoor",
+        3,
+        "tbsp"
+      ],
+      [
+        "oats",
+        2,
+        "tbsp"
+      ],
+      [
+        "orangepeel",
+        2,
+        "tbsp"
+      ]
+    ],
+    "note": "Grind dried chickpeas, red lentils, oats and fava beans (or use besan and masoor flour) with orange peel dried in a low oven or air fryer, until fine. Keep the dry mix in a jar. To use, mix a few spoons with water, milk or yogurt into a paste, rub over damp skin in the bath, and rinse. Use 1 to 2 times a week. Grind very fine so it doesn't scratch; orange peel powder is fine on rinse-off skin and isn't sun-sensitizing once rinsed.",
+    "inspired": "Sudanese bath ('arooka with orange peel)",
+    "source": {
+      "creator": "Miss Sarah (Falak Beauty)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "flower-herb-hair-butter-as-posted",
+    "name": "Flower and herb hair butter with tea (as posted)",
+    "claim": "Rich butter for thirsty high-porosity curls",
+    "type": "hair_leave",
+    "use": "fridge",
+    "rows": [
+      [
+        "shea",
+        55,
+        "g"
+      ],
+      [
+        "mango",
+        50,
+        "g"
+      ],
+      [
+        "jojoba",
+        28,
+        "g"
+      ],
+      [
+        "herbtea",
+        60,
+        "g"
+      ]
+    ],
+    "note": "As posted: herbal tea (hibiscus, chrysanthemum, rosemary) whipped into melted shea, mango and jojoba, kept in the fridge for 2 weeks. Water whipped into butter with no emulsifier separates and has no preservative, so mould can grow even in the fridge. Use the oil-infused version instead.",
+    "inspired": "DIY flower and herb hair butter",
+    "source": {
+      "creator": "Amour (Mountain Rose Herbs partnership)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "flower-herb-hair-butter-oil-infused",
+    "name": "Flower and herb hair butter (oil-infused, keeps)",
+    "claim": "Rich, shelf-stable butter for high-porosity curls",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        55,
+        "g"
+      ],
+      [
+        "mango",
+        50,
+        "g"
+      ],
+      [
+        "jojoba",
+        28,
+        "g"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "chrysanthemum",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Infuse the dried hibiscus, chrysanthemum and rosemary in the warm jojoba on the lowest heat for an hour, strain well, then melt with the butters, chill 30 minutes and whip. No water means no mould and no fridge: it keeps about 6 months with a dry spoon. Apply to damp hair to seal in moisture. High porosity: use generously. Low porosity: use sparingly so it doesn't sit on top.",
+    "inspired": "DIY flower and herb hair butter",
+    "source": {
+      "creator": "Amour (Mountain Rose Herbs partnership)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "qasil-hibiscus-hair-mask-as-posted",
+    "name": "Qasil, hibiscus and onion-garlic hair mask (as posted)",
+    "claim": "Cleanses the scalp and strengthens roots",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "qasil",
+        3,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tsp"
+      ],
+      [
+        "onion",
+        2,
+        "tbsp"
+      ],
+      [
+        "garlic",
+        1,
+        "tsp"
+      ],
+      [
+        "water",
+        1,
+        "cup"
+      ]
+    ],
+    "note": "As posted: onion, garlic, rosemary, black seed and hibiscus boiled into a tea, then mixed with qasil powder and massaged into the scalp. Raw or boiled garlic can burn and blister the scalp. Use the version without garlic.",
+    "inspired": "Qasil hair growth mask",
+    "source": {
+      "creator": "Mihret",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "qasil-hibiscus-hair-mask-gentler",
+    "name": "Qasil and hibiscus scalp mask (gentler)",
+    "claim": "Gentle cleansing, conditioning scalp mask",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "qasil",
+        3,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tsp"
+      ],
+      [
+        "water",
+        1,
+        "cup"
+      ]
+    ],
+    "note": "Simmer hibiscus, rosemary and black seed in water for 10 minutes, strain, and mix the warm tea with qasil into a yogurt-thick paste. Section the hair, massage into the scalp, leave 15 to 20 minutes, rinse well and condition. Garlic is left out because it can burn skin. Onion juice is optional; if you add it, keep it to a spoonful and rinse thoroughly. Growth claims are traditional; a clean, calm scalp is the real benefit.",
+    "inspired": "Qasil hair growth mask",
+    "source": {
+      "creator": "Mihret",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "nine-herb-infused-hair-oil",
+    "name": "Nine-herb infused hair oil",
+    "claim": "Pre-wash scalp and hair oil",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "olive",
+        60,
+        "g"
+      ],
+      [
+        "castor",
+        30,
+        "g"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "calendula",
+        1,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        1,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "nettle",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosebuds",
+        1,
+        "tbsp"
+      ],
+      [
+        "greenteapowder",
+        1,
+        "tsp"
+      ],
+      [
+        "burdock",
+        1,
+        "tbsp"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "frankincense",
+        6,
+        "drops"
+      ]
+    ],
+    "note": "Fill a jar loosely with the dried herbs, cover with olive and castor oil, and infuse 4 to 6 weeks in a warm, dark spot (or 2 to 3 hours on the lowest heat). Strain through cloth until clear, add vitamin E and frankincense, and bottle in droppers. Massage into the scalp and lengths, leave 1 to 3 hours or overnight, then shampoo. Herbs must be completely dry, or the oil can grow mould.",
+    "inspired": "Cypress Apothecary hair oil",
+    "source": {
+      "creator": "Cypress Apothecary",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "amla-moringa-okra-pre-poo",
+    "name": "Amla, moringa and okra pre-poo mask",
+    "claim": "Stimulating, strengthening mask before shampoo",
+    "type": "hair_rinse",
+    "use": "now",
+    "rows": [
+      [
+        "amla",
+        1,
+        "tbsp"
+      ],
+      [
+        "kapurkachri",
+        1,
+        "tsp"
+      ],
+      [
+        "mintpowder",
+        1,
+        "tsp"
+      ],
+      [
+        "moringa",
+        1,
+        "tsp"
+      ],
+      [
+        "fenugreek",
+        1,
+        "tsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tsp"
+      ],
+      [
+        "okra",
+        3,
+        "tbsp"
+      ],
+      [
+        "water",
+        0.5,
+        "cup"
+      ]
+    ],
+    "note": "Simmer moringa, fenugreek and rosemary in water 10 minutes and strain. Mix the warm infusion with amla, kapur kachri and mint powder, then stir in okra gel (boil sliced okra 10 minutes and strain the slime) for slip. Apply to the scalp and lengths for 30 minutes before shampooing. Skip fenugreek if you're allergic to peanuts or chickpeas.",
+    "inspired": "Stimulating pre-poo mask",
+    "source": {
+      "creator": "LauBeauty",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "vintage-green-chypre-perfume-oil",
+    "name": "Vintage green chypre perfume oil",
+    "claim": "Crisp green leaves, bergamot and mossy woods, like old-school green perfumes",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "bergamotfcf",
+        4,
+        "drops"
+      ],
+      [
+        "vetivereo",
+        2,
+        "drops"
+      ],
+      [
+        "clarysage",
+        2,
+        "drops"
+      ],
+      [
+        "patchouli",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 2 weeks. Classic green perfumes pair a sharp green opening with a mossy, woody base. Vetiver and patchouli stand in for oakmoss, which is heavily restricted as a skin allergen; a galbanum or green-leaf fragrance oil adds the snap. Bergamot FCF avoids sun sensitivity.",
+    "inspired": "Vintage green perfumes (Chamade, Emeraude, Palais Jamais)",
+    "source": {
+      "creator": "piffevinaigre",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "chocolate-caramel-tonka-perfume-oil",
+    "name": "Chocolate, caramel and tonka perfume oil",
+    "claim": "Dark chocolate, creamy caramel and warm tonka",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "cocoaabs",
+        3,
+        "drops"
+      ],
+      [
+        "vanilla",
+        5,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Drip into a 20 ml roller, top up with jojoba and rest 2 weeks. Cocoa absolute and vanilla absolute are the base; a caramel-tonka fragrance oil finishes it.",
+    "inspired": "Jean Marc Paris de Gourmand Chocolate Caramel Cream",
+    "source": {
+      "creator": "pamper_mint",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "velvet-berry-amber-hair-body-mist",
+    "name": "Velvet berry and amber woods hair and body mist",
+    "claim": "Blackberry swirl over warm amber woods",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "vanilla",
+        3,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it can go on hair ends too. Use a blackberry fragrance oil; sandalwood and vanilla give the amber-woods dry-down.",
+    "inspired": "Fleurish Velvet Berry hair and body mist",
+    "source": {
+      "creator": "scentxscent",
+      "platform": "Instagram"
+    }
   }
 ]

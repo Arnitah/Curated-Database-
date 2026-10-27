@@ -6629,5 +6629,15 @@
     "lvl": "care",
     "good": "Herbal, fresh scent used in deodorants for its mild antimicrobial effect.",
     "care": "Contains thujone; keep it at or below 0.5% and avoid in pregnancy, epilepsy and for young children. Clary sage is a gentler choice for scent."
+  },
+  {
+    "id": "qasil",
+    "grp": "Powders and exfoliants",
+    "name": "Qasil powder (gob tree leaf, Ziziphus mauritiana)",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Somali and East African cleansing powder from dried gob tree leaves; it lathers lightly and is used as a face mask, body wash and hair cleanser. A close cousin of sidr.",
+    "care": "Can be drying on very dry skin or hair; follow with a moisturiser or conditioner. Mix fresh each time."
   }
 ]

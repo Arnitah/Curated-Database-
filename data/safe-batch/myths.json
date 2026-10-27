@@ -6904,5 +6904,42 @@
     "seen_in": "'Are we really evolving?' carousels on Instagram",
     "checked": "2026-10-27",
     "format": "v2"
+  },
+  {
+    "id": "pregnancy-pigmentation-scrub-and-whitening-creams",
+    "title": "A scrub or 'whitening' body cream clears stubborn pregnancy pigmentation and is safe for pregnant and breastfeeding mums",
+    "topics": [
+      "body",
+      "pregnancy"
+    ],
+    "claims": [
+      {
+        "claim": "A body scrub removes deep pregnancy pigmentation",
+        "verdict": "false",
+        "truth": "Pregnancy darkening (melasma, the dark line on the belly, darker underarms) is in the deeper layers and is hormonal. It usually fades over months after birth. Scrubbing harder can irritate and make it darker.",
+        "grade": "B"
+      },
+      {
+        "claim": "'Whitening' creams sold as pregnancy-safe are safe",
+        "verdict": "unproven",
+        "truth": "Unlabelled whitening creams can contain hydroquinone, steroids or mercury, which are not advised in pregnancy or breastfeeding. Check the ingredient list; azelaic acid and daily sunscreen are generally considered safer, but ask your doctor or midwife.",
+        "grade": "B"
+      },
+      {
+        "claim": "Micro-needling (derma stamp) before a herbal hair mask boosts results",
+        "verdict": "false",
+        "truth": "Needling opens tiny wounds. Putting unsterile herbal pastes into them raises the risk of infection and irritation. Use needling only with clean, sterile products, or skip it.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: melasma",
+        "url": "https://www.aad.org/public/diseases/a-z/melasma-overview"
+      }
+    ],
+    "seen_in": "Gulf and Vietnamese body-care TikToks",
+    "checked": "2026-10-27",
+    "format": "v2"
   }
 ]

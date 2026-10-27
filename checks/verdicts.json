@@ -7398,5 +7398,53 @@
  "golden-shimmer-shine-body-lotion": {
   "verdict": "ok",
   "flags": []
+ },
+ "orange-peel-sudanese-bath-scrub": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "flower-herb-hair-butter-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Oil and water will separate",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "flower-herb-hair-butter-oil-infused": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "qasil-hibiscus-hair-mask-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Onion juice can irritate the scalp",
+   "stop: Remove raw garlic"
+  ]
+ },
+ "qasil-hibiscus-hair-mask-gentler": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "nine-herb-infused-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "amla-moringa-okra-pre-poo": {
+  "verdict": "care",
+  "flags": [
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "vintage-green-chypre-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "chocolate-caramel-tonka-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "velvet-berry-amber-hair-body-mist": {
+  "verdict": "ok",
+  "flags": []
  }
 }

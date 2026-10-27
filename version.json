@@ -1,6 +1,6 @@
 {
-  "version": 120,
-  "updated_at": "2026-10-27T19:48:19.953Z",
+  "version": 121,
+  "updated_at": "2026-10-27T19:50:28.672Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -153,10 +153,10 @@
       "updated_at": "2026-10-27T16:43:33.511Z"
     },
     "safe-batch/ingredients": {
-      "count": 649,
-      "bytes": 221913,
-      "hash": "07c341058c52",
-      "updated_at": "2026-10-27T13:35:09.785Z"
+      "count": 650,
+      "bytes": 222395,
+      "hash": "35f19257a379",
+      "updated_at": "2026-10-27T19:50:28.670Z"
     },
     "safe-batch/layering_good": {
       "count": 21,
@@ -195,10 +195,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/myths": {
-      "count": 389,
-      "bytes": 296449,
-      "hash": "696ab1182684",
-      "updated_at": "2026-10-27T03:51:40.639Z"
+      "count": 390,
+      "bytes": 298141,
+      "hash": "cb9ecfef3f79",
+      "updated_at": "2026-10-27T19:50:28.671Z"
     },
     "safe-batch/product_actives": {
       "count": 61,
@@ -243,10 +243,10 @@
       "updated_at": "2026-10-22T14:18:12.987Z"
     },
     "safe-batch/recipes_checked": {
-      "count": 1478,
-      "bytes": 1141198,
-      "hash": "a870939ddbbc",
-      "updated_at": "2026-10-27T14:00:30.059Z"
+      "count": 1488,
+      "bytes": 1152296,
+      "hash": "f1daa55fa324",
+      "updated_at": "2026-10-27T19:50:28.671Z"
     },
     "safe-batch/recipes_starter": {
       "count": 8,
@@ -297,10 +297,10 @@
       "updated_at": "2026-10-22T23:21:48.789Z"
     },
     "safe-batch/synonyms": {
-      "count": 717,
-      "bytes": 40461,
-      "hash": "9069e2a7fcff",
-      "updated_at": "2026-10-27T13:35:33.119Z"
+      "count": 718,
+      "bytes": 40524,
+      "hash": "a4dd6cb4e41c",
+      "updated_at": "2026-10-27T19:50:28.671Z"
     },
     "safe-batch/terms": {
       "count": 62,
