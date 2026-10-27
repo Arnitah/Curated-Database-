@@ -182,6 +182,14 @@
    "sake",
    "cherry blossom",
    "spring"
+  ],
+  "also": [
+   {
+    "name": "Handkerchief",
+    "notes": "Bergamot, green leaves and lotus; peony, rose and jasmine; sandalwood, vanilla, amber and musk. A creator calls the house 'criminally underrated'. Notes as reported.",
+    "price": "Price not read",
+    "url": "https://www.luckyscent.com/brands/jscent"
+   }
   ]
  },
  {
@@ -3308,6 +3316,14 @@
    "hair perfume",
    "drugstore",
    "gourmand"
+  ],
+  "also": [
+   {
+    "name": "004 Milky Cinnabun (x SKY)",
+    "notes": "A cinnamon-roll and milk hair perfume, a creator's autumn favourite. Box says it also contains propanediol, aloe juice and panthenol for hair.",
+    "price": "Price not read",
+    "url": "https://boozyshop.com/collections/milky-mane"
+   }
   ]
  },
  {
@@ -8878,6 +8894,326 @@
   "tags": [
    "indonesia",
    "local ingredients"
+  ]
+ },
+ {
+  "id": "belnu",
+  "name": "Belnu",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://belnu.com/",
+  "about": "A small American house built around essential oils picked for mood, worked by well-known perfumers into soft, wearable eaux de parfum. Vegan and transparent about ingredients.",
+  "why": "Two new launches this autumn, a tea-rose and a coconut-milk vanilla, from big-name noses at a smaller house's price, with US$20 minis to try first.",
+  "families": [
+   "gourmand",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "coconut milk",
+   "black tea"
+  ],
+  "sig": {
+   "name": "Vanilla Bouclé (Eau de Parfum)",
+   "url": "https://belnu.com/products/vanilla-boucle",
+   "notes": {
+    "t": [
+     "white almond",
+     "coconut milk",
+     "chamomile"
+    ],
+    "h": [
+     "violet leaf",
+     "cypress",
+     "olibanum"
+    ],
+    "b": [
+     "vanilla",
+     "sandalwood",
+     "amber"
+    ]
+   },
+   "profile": "A soft, nubbly-blanket vanilla: almond and coconut milk calmed with chamomile, a green flick of violet leaf and a little incense, settling into creamy sandalwood. By Ilias Ermenidis."
+  },
+  "price": {
+   "amt": 170,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://belnu.com/products/vanilla-boucle",
+   "on": "2026-10-27",
+   "note": "1.5 ml mini US$20."
+  },
+  "also": [
+   {
+    "name": "Still Bloom",
+    "notes": "Steeped black tea and Rose de Mai with orange and cardamom, geranium, then guaiac wood, cedar and musk. By Frank Voelkl.",
+    "price": "US$170 · 50 ml",
+    "url": "https://belnu.com/products/still-bloom"
+   }
+  ],
+  "tags": [
+   "vanilla",
+   "tea",
+   "coconut"
+  ]
+ },
+ {
+  "id": "liberation-of-flowers",
+  "name": "Liberation of Flowers",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://www.liberationofflowers.com/",
+  "about": "A new house that pairs each perfume with a painting: its first three bottles wear flower paintings by artist Ashley Longshore, with the scents composed by Christophe Laudamiel.",
+  "why": "Perfume as wearable art from day one, and a debut trio that covers a gourmand rose, a bright citrus-lavender and a soft spiced floral.",
+  "families": [
+   "floral",
+   "citrus",
+   "amber"
+  ],
+  "accents": [
+   "watermelon",
+   "lavandin",
+   "date"
+  ],
+  "sig": {
+   "name": "Plot Twist (Eau de Parfum)",
+   "url": "https://www.liberationofflowers.com/products/plot-twist",
+   "notes": {
+    "t": [
+     "bergamot",
+     "tangerine",
+     "lime",
+     "ginger",
+     "watermelon",
+     "rosemary",
+     "pink pepper"
+    ],
+    "h": [
+     "lavandin absolute",
+     "myrrh",
+     "sweet pea"
+    ],
+    "b": [
+     "balsams",
+     "opoponax",
+     "sandalwood",
+     "vetiver",
+     "soft musks"
+    ]
+   },
+   "profile": "Opens like a summer cocktail of citrus, ginger and juicy watermelon with a herbal rosemary edge, then drifts into lavender fields and finishes warm and resinous."
+  },
+  "price": {
+   "amt": 210,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.liberationofflowers.com/products/plot-twist",
+   "on": "2026-10-27",
+   "note": "Notes from the launch post; the brand page confirms the citrus, watermelon, rosemary, lavandin and resin outline."
+  },
+  "also": [
+   {
+    "name": "Divine Intervention",
+    "notes": "Damask rose, vanilla orchid and cardamom; apricot, cinnamon bark and blond tobacco; a warm milk, caramel and date base.",
+    "price": "US$210 · 50 ml",
+    "url": "https://www.liberationofflowers.com/products/divine-intervention"
+   },
+   {
+    "name": "Peace Offering",
+    "notes": "Saffron, violet, honey and pomegranate; walnut, nutmeg, ylang and peony; sandalwood and skin musk.",
+    "price": "US$210 · 50 ml",
+    "url": "https://www.liberationofflowers.com/products/peace-offering"
+   }
+  ],
+  "tags": [
+   "art",
+   "rose",
+   "lavender"
+  ]
+ },
+ {
+  "id": "commodity",
+  "name": "Commodity",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://commodityfragrances.com/",
+  "about": "An American line that sells each scent in three strengths ('Scent Space'): Personal stays close to skin, Expressive is the everyday version, Bold fills a room.",
+  "why": "A smart idea for anyone who worries about wearing too much: try the same scent at three volumes in one sample kit. Its new Spice is a cinnamon that doesn't smell like a candle.",
+  "families": [
+   "gourmand",
+   "amber",
+   "woody"
+  ],
+  "accents": [
+   "cinnamon",
+   "saffron",
+   "condensed milk"
+  ],
+  "sig": {
+   "name": "Spice (Expressive)",
+   "url": "https://commodityfragrances.com/products/spice-expressive",
+   "notes": {
+    "t": [
+     "saffron",
+     "cinnamon",
+     "sugar"
+    ],
+    "h": [
+     "allspice",
+     "condensed milk"
+    ],
+    "b": [
+     "sandalwood",
+     "tonka bean"
+    ]
+   },
+   "profile": "Cinnamon sugar and suede-soft saffron with a milky sweetness, on warm woods. Spice- is the close skin version; Spice+ adds leather."
+  },
+  "price": {
+   "amt": 55,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://commodityfragrances.com/products/spice-e-30ml",
+   "on": "2026-10-27",
+   "note": "100 ml US$160; a kit of all three strengths in 2 ml is US$18."
+  },
+  "tags": [
+   "cinnamon",
+   "strength options",
+   "spice"
+  ]
+ },
+ {
+  "id": "paragraf-parfums",
+  "name": "Paragraf Parfums",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://paragrafparfums.com/",
+  "about": "A small Indonesian house with just a couple of perfumes, each written like a paragraph about a mood.",
+  "why": "A creator says the quality is obvious from the first spray: light and airy but long-lasting, and worth its higher price for a local brand.",
+  "families": [
+   "citrus",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "buddha's hand",
+   "magnolia"
+  ],
+  "sig": {
+   "name": "The Morning Within (Eau de Parfum)",
+   "url": "https://paragrafparfums.com/products/the-morning-within",
+   "notes": {
+    "t": [
+     "bergamot",
+     "neroli",
+     "buddha's hand"
+    ],
+    "h": [
+     "magnolia",
+     "jasmine",
+     "amberwood"
+    ],
+    "b": [
+     "ambrette",
+     "tonka bean",
+     "ambroxan"
+    ]
+   },
+   "profile": "Early-morning freshness: bright citrus and the fragrant rind of Buddha's hand, then soft magnolia and jasmine, ending in a clean, quietly confident musk."
+  },
+  "price": {
+   "amt": 990000,
+   "cur": "IDR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://paragrafparfums.com/products/the-morning-within",
+   "on": "2026-10-27"
+  },
+  "tags": [
+   "indonesia",
+   "clean",
+   "morning"
+  ]
+ },
+ {
+  "id": "etre-parfums",
+  "name": "Être Parfums",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://etreparfums.com/",
+  "about": "An Indonesian house with a wide, playful range: café and pastry scents, matcha, tropical florals and extraits.",
+  "why": "A creator wishes A Place We Call Home got more hype: yellow and white flowers with smooth incense and a hint of sea, something familiar and comforting.",
+  "families": [
+   "floral",
+   "woody",
+   "gourmand"
+  ],
+  "accents": [
+   "incense",
+   "matcha"
+  ],
+  "sig": {
+   "name": "A Place We Call Home",
+   "url": "https://etreparfums.com/products/a-place-we-call-home",
+   "notes": {
+    "t": [
+     "sea air"
+    ],
+    "h": [
+     "yellow flowers",
+     "white flowers"
+    ],
+    "b": [
+     "incense",
+     "woods"
+    ]
+   },
+   "profile": "A tropical home by the sea: sunny yellow and white flowers over soft incense and wood. Notes as a creator describes them; the brand calls it clean and bright."
+  },
+  "price": {
+   "amt": 489000,
+   "cur": "IDR",
+   "status": "verified",
+   "src": "https://etreparfums.com/products/a-place-we-call-home",
+   "on": "2026-10-27",
+   "note": "Bottle size not shown on the product page."
+  },
+  "also": [
+   {
+    "name": "Matcha Muse, Café Curieux, Pain Perdu",
+    "notes": "Their tea, coffee and French-toast gourmands.",
+    "price": "See shop",
+    "url": "https://etreparfums.com/"
+   }
+  ],
+  "tags": [
+   "indonesia",
+   "tropical",
+   "incense"
   ]
  }
 ]

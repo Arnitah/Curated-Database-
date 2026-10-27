@@ -197,6 +197,60 @@
      "kind": "eau de parfum",
      "date": "2026-10-15",
      "small": false
+    },
+    {
+     "brand": "Liberation of Flowers",
+     "name": "Divine Intervention, Plot Twist, Peace Offering",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Belnu",
+     "name": "Still Bloom and Vanilla Bouclé",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Narcotica",
+     "name": "Amber Radiance",
+     "kind": "extrait de parfum",
+     "small": true
+    },
+    {
+     "brand": "J-Scent",
+     "name": "Handkerchief",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Room 1015",
+     "name": "Kokoa Bang",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Gritti",
+     "name": "Yasuni Amber",
+     "kind": "extrait de parfum",
+     "small": true
+    },
+    {
+     "brand": "Reinvented",
+     "name": "Lunar Reverie",
+     "kind": "extrait de parfum",
+     "small": true
+    },
+    {
+     "brand": "Byredo",
+     "name": "Havana Tonka",
+     "kind": "extrait de parfum",
+     "small": false
+    },
+    {
+     "brand": "Merit",
+     "name": "new fragrance (name not yet given)",
+     "kind": "fragrance",
+     "small": false
     }
    ]
   }

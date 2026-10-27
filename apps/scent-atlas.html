@@ -553,6 +553,12 @@ function stylesOf(h) {
   return (h._st = MAP.filter((m) => m[4](h, t)).map((m) => m[0]));
 }
 function feats(h) { return new Set([...h.families.map((f) => "f:" + f), ...(h.accents || []).map((a) => "a:" + a.toLowerCase()), ...(h.tags || []).map((t) => "t:" + t.toLowerCase())]); }
+function likeWhy(h) {
+  const lh = D.houses.find((x) => x.id === state.like); if (!lh) return "";
+  const A = feats(lh), out = []; for (const x of feats(h)) if (A.has(x)) { const v = x.slice(2); const l = x[0] === "f" ? (D.fam[v]?.label || v).toLowerCase() : v; if (!out.includes(l)) out.push(l); }
+  const txt = out.length >= 3 ? `Close to ${lh.name}: both are ${out.slice(0, 4).join(", ")}.` : out.length ? `A neighbour, not a twin: shares ${out.join(" and ")} with ${lh.name} but goes its own way.` : `A contrast to ${lh.name}, worth smelling side by side.`;
+  return `<div class="why-match">${esc(txt)}</div>`;
+}
 function buildSimilar() {
   const F = new Map(D.houses.map((h) => [h.id, feats(h)])); D.sim = {};
   for (const h of D.houses) {
@@ -583,6 +589,7 @@ function card(h) {
     <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(h.city || "")}${h.city ? ", " : ""}${esc(h.country)}${h.founded ? " · since " + h.founded : ""}</div></div>
       <span><button class="logbtn" type="button" data-log="${h.id}" title="Log in my scent passport">Log it</button><button class="fav" type="button" data-fav="${h.id}" aria-pressed="${SHELF.has(h.id)}" title="Want to smell (saved to Passport)" aria-label="Save ${esc(h.name)} to want to smell">${SHELF.has(h.id) ? "♥" : "♡"}</button><span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></span></div>
     ${state.quiz?.why[h.id] ? `<div class="why-match"><b>Why it matches:</b> ${esc(state.quiz.why[h.id])}</div>` : ""}
+    ${state.like && state.like !== h.id ? likeWhy(h) : ""}
     <div class="tags"><span class="tag type">${esc(TYPE_LABEL[h.type] || h.type)}</span>${h.families.map((f) => `<span class="tag">${esc(D.fam[f]?.label || f)}</span>`).join("")}</div>
     <div class="sig"><div class="nm">${esc(h.sig.name)}</div>
       ${pyr.length ? `<dl class="pyr">${pyr.map(([k, v]) => `<dt>${k}</dt><dd>${noteBtns(v)}</dd>`).join("")}</dl>` : ""}

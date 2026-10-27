@@ -910,5 +910,35 @@
   "lon": 144.32,
   "place": "Surf Coast, Victoria",
   "precision": "city"
+ },
+ "belnu": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "liberation-of-flowers": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "commodity": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "paragraf-parfums": {
+  "lat": -6.2,
+  "lon": 106.85,
+  "place": "Jakarta",
+  "precision": "country"
+ },
+ "etre-parfums": {
+  "lat": -6.2,
+  "lon": 106.85,
+  "place": "Jakarta",
+  "precision": "country"
  }
 }
