@@ -958,5 +958,11 @@
   "lon": 4.9,
   "place": "Amsterdam",
   "precision": "city"
+ },
+ "dedcool": {
+  "lat": 34.05,
+  "lon": -118.24,
+  "place": "Los Angeles",
+  "precision": "city"
  }
 }

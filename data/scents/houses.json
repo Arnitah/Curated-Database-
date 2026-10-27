@@ -6892,6 +6892,14 @@
   "tags": [
    "clean beauty",
    "rice"
+  ],
+  "also": [
+   {
+    "name": "Plum Tonic",
+    "notes": "A crisp plum cocktail with soapy musks, per a creator's plum roundup.",
+    "price": "US$115 (travel US$33)",
+    "url": "https://ellisbrooklyn.com/products/plum-tonic-eau-de-parfum"
+   }
   ]
  },
  {
@@ -9477,6 +9485,90 @@
    "skin scent",
    "amber",
    "netherlands"
+  ]
+ },
+ {
+  "id": "dedcool",
+  "name": "DedCool",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "city": "Los Angeles",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://dedcool.com/",
+  "about": "A Los Angeles brand built around close-to-skin 'Milk' scents, made to layer with each other and with its body care and laundry products.",
+  "why": "The go-to for soft, comforting skin scents: Xtra Milk is a clean musk, Mochi Milk the sweet one, Mineral Milk the salty seaside one. US$30 travel sprays make trying easy.",
+  "families": [
+   "musk",
+   "gourmand",
+   "amber"
+  ],
+  "accents": [
+   "rice milk",
+   "marshmallow",
+   "marine salt"
+  ],
+  "sig": {
+   "name": "Mochi Milk",
+   "url": "https://dedcool.com/products/mochi-milk-fragrance",
+   "notes": {
+    "t": [
+     "peach nectar"
+    ],
+    "h": [
+     "marshmallow",
+     "sweet rice milk"
+    ],
+    "b": [
+     "vanilla",
+     "sandalwood",
+     "amber",
+     "white musk"
+    ]
+   },
+   "profile": "The sweetest of the Milk family: peach and fluffy marshmallow whipped into sweet rice milk, on soft woods and musk. Like sleeping on a cloud."
+  },
+  "price": {
+   "amt": 90,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://dedcool.com/products/mochi-milk-fragrance",
+   "on": "2026-10-27",
+   "note": "15 ml travel spray US$30. In Ireland about €77–86 at Space NK (reported)."
+  },
+  "also": [
+   {
+    "name": "Xtra Milk",
+    "notes": "Bergamot, white musk and amber: a 'your skin but better' musk.",
+    "price": "US$90 · 50 ml",
+    "url": "https://dedcool.com/products/xtra-milk-fragrance"
+   },
+   {
+    "name": "Mineral Milk",
+    "notes": "The Milk musk taken to the seaside: golden nectar sweetness over marine salt, cosy and fresh.",
+    "price": "US$90 · 50 ml",
+    "url": "https://dedcool.com/products/mineral-milk-fragrance"
+   },
+   {
+    "name": "Sunlit Blooms",
+    "notes": "White orange blossom at noon; a creator says it lasts longest of the line.",
+    "price": "US$90 · 50 ml",
+    "url": "https://dedcool.com/products/sunlit-blooms"
+   },
+   {
+    "name": "Mocha Magic",
+    "notes": "Fresh-ground coffee and espresso-martini warmth.",
+    "price": "US$90 · 50 ml",
+    "url": "https://dedcool.com/products/mocha-magic-fragrance"
+   }
+  ],
+  "tags": [
+   "skin scent",
+   "milk",
+   "layering"
   ]
  }
 ]

@@ -99,5 +99,20 @@
   "url": "https://artandolfaction.com/",
   "src": "https://artandolfaction.com/events/boozy-woody-smells-perfume-making-workshop-for-beginners",
   "on": "2026-10-26"
+ },
+ {
+  "id": "beauty-lab-da-nang",
+  "name": "Beauty Lab",
+  "city": "Da Nang",
+  "country": "Vietnam",
+  "cc": "VN",
+  "lat": 16.054,
+  "lon": 108.202,
+  "address": "Khue My, Ngu Hanh Son, Da Nang",
+  "kind": "workshop",
+  "what": "A custom-perfume studio where visitors blend their own scent with staff help; popular as a Da Nang souvenir activity. Check booking and price before going.",
+  "url": "https://www.tiktok.com/@beautylab.danang",
+  "src": "https://www.tiktok.com/@beautylab.danang",
+  "on": "2026-10-27"
  }
 ]
