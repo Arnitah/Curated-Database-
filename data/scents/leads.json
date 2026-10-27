@@ -266,38 +266,80 @@
   "src": "https://www.instagram.com/todefine.official/"
  },
  {
-  "name": "Libroaria",
-  "country": "Japan",
-  "cc": "JP",
-  "lead": "Japanese brand with a 'Library' stained-glass collection: three story scents (Moonlight Corridor, a lotus-and-dew morning scent, and a third). Find notes and price.",
-  "src": "https://www.instagram.com/libroaria_official/"
+  "name": "Tomolab",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Yugen Kettle: earthy, woody tea scent. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
  },
  {
-  "name": "Stardust & Stems",
+  "name": "Alien Objects",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Osmanthus Blanc (osmanthus tea, nectar) and Jade Oolong (green, airy floral). Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Amthra",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Catch the Light (clean, soapy, musky floral) and After Hours (warm powdery floral). Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Gerimist",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Neera: palm sugar and pandan, a very local Indonesian pairing; also Bergamood, Lignin and Blooming in 10 ml rollers. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Anamcara",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Grainee: grainy, leathery extrait. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Saudade",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Tangled Thread: clean, watery floral. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Shaia",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Neroli: fresh, green, slightly bitter. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Ur in Flores",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. 'Call me when' : clean, aquatic, a little sweet; named after Flores island. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "The Body Tale",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Hibiscus Crimson (sweet, bold floral) and Soy Milk (milky, nutty). Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Kitschy",
+  "country": "Indonesia",
+  "cc": "ID",
+  "lead": "Indonesian local brand from a creator's roundup. Vanity and Pillow; small 30 ml bottles. Find price and shop.",
+  "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "What We Do Is Secret",
   "country": "To confirm",
   "cc": "US",
-  "lead": "Indie house with storybook labels; Cocoa Cozy (cocoa, warm milk, madeleine, sandalwood) and Violet Milk (violet, cherry, osmanthus, milk, tonka).",
-  "src": "https://www.instagram.com/smellslikealyssa/"
- },
- {
-  "name": "L'Epoque Parfums",
-  "country": "To confirm",
-  "cc": "US",
-  "lead": "Inner Child: linen, freesia, lily of the valley and bergamot over white wood, vanilla and skin musk.",
-  "src": "https://www.instagram.com/smellslikealyssa/"
- },
- {
-  "name": "Régime des Fleurs",
-  "country": "United States",
-  "cc": "US",
-  "lead": "Little Flower: rose, peony and blackcurrant with pomelo, black tea, honeysuckle, incense and palo santo.",
-  "src": "https://www.instagram.com/smellslikealyssa/"
- },
- {
-  "name": "Sarah Baker",
-  "country": "United Kingdom",
-  "cc": "GB",
-  "lead": "Year XOXO (by Margaux Le Pain Guérin): green apple, ozonic and paper notes with vanilla, cashmere wood and musk.",
-  "src": "https://www.instagram.com/smellslikealyssa/"
+  "lead": "Messy Sexy Just Rolled Out of Bed, by Dominique Ropion: bergamot, peach blossom, heliotrope, Turkish rose, toffee, vanilla, tonka, sandalwood, musk, amber. Sold at Luckyscent; price to check.",
+  "src": "https://www.luckyscent.com/products/messy-sexy-just-rolled-out-of-bed-by-what-we-do-is-secret"
  }
 ]

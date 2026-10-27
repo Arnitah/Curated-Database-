@@ -844,5 +844,35 @@
   "lon": 47.98,
   "place": "Kuwait City",
   "precision": "country"
+ },
+ "libroaria": {
+  "lat": 35.68,
+  "lon": 139.69,
+  "place": "Japan",
+  "precision": "country"
+ },
+ "stardust-stems": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "lepoque": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "regime-des-fleurs": {
+  "lat": 34.05,
+  "lon": -118.24,
+  "place": "Los Angeles",
+  "precision": "city"
+ },
+ "sarah-baker": {
+  "lat": 51.51,
+  "lon": -0.13,
+  "place": "London",
+  "precision": "city"
  }
 }

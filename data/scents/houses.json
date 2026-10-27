@@ -8143,5 +8143,332 @@
    "body care",
    "lotion spray"
   ]
+ },
+ {
+  "id": "libroaria",
+  "name": "Libroaria",
+  "country": "Japan",
+  "cc": "JP",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "Japan",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://libroaria.com/",
+  "about": "A Japanese house that bottles scenes from books: each perfume comes in a book-like box with a short story, and the Stained Glass collection adds a glass charm for the bottle.",
+  "why": "Story-first perfume from Japan, with 'little' sizes for trying, and scents named after quiet reading moments.",
+  "families": [
+   "floral",
+   "musk",
+   "woody"
+  ],
+  "accents": [
+   "story",
+   "library"
+  ],
+  "sig": {
+   "name": "Moonlight Corridor (月光回廊, Eau de Parfum)",
+   "url": "https://libroaria.com/products/gekkou",
+   "notes": {
+    "t": [
+     "bergamot",
+     "mandarin",
+     "green leaves"
+    ],
+    "h": [
+     "lily of the valley",
+     "jasmine",
+     "magnolia"
+    ],
+    "b": [
+     "musk",
+     "dry amber",
+     "amber"
+    ]
+   },
+   "profile": "A hushed hallway in an old Western-style house at night, with moonlight spilling across the floor: fresh citrus, then soft white flowers, settling into clean musk and a dry, glowing amber."
+  },
+  "price": {
+   "amt": 13750,
+   "cur": "JPY",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://libroaria.com/products/gekkou",
+   "on": "2026-10-27",
+   "note": "Stained Glass collection; may sell out."
+  },
+  "try": {
+   "label": "'Little' size of other scents",
+   "amt": 5280,
+   "cur": "JPY",
+   "url": "https://libroaria.com/products/little-ame"
+  },
+  "also": [
+   {
+    "name": "Rainy Library (雨の図書室, EDP)",
+    "notes": "Spring rain on leaves outside a library window: marine notes and grapefruit, powdery iris like old books with a touch of cinnamon, then cedar, sandalwood, vetiver and moss.",
+    "price": "¥13,200 · 50 ml",
+    "url": "https://libroaria.com/products/ame"
+   }
+  ],
+  "tags": [
+   "japan",
+   "story",
+   "book"
+  ]
+ },
+ {
+  "id": "stardust-stems",
+  "name": "Stardust & Stems",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://stardustandstems.com/",
+  "about": "A small indie maker of storybook-labelled gourmand and floral perfumes, sold as sprays, oil rollerballs and samples, plus handmade lip balms.",
+  "why": "Cosy, nostalgic scents with cheap samples, so you can try the whole idea for a few dollars.",
+  "families": [
+   "gourmand",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "milk",
+   "cocoa",
+   "violet"
+  ],
+  "sig": {
+   "name": "Violet Milk",
+   "url": "https://stardustandstems.com/products/violet-milk",
+   "notes": {
+    "t": [
+     "violet pastilles",
+     "black cherry",
+     "sugared violet petals"
+    ],
+    "h": [
+     "violet leaf",
+     "osmanthus",
+     "chilled milk"
+    ],
+    "b": [
+     "tonka bean",
+     "cashmere santal"
+    ]
+   },
+   "profile": "Old-fashioned violet sweets and a splash of cherry, softened by cold milk and apricot-like osmanthus over tonka and creamy wood. Powdery and comforting rather than sugary."
+  },
+  "price": {
+   "amt": 62,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://stardustandstems.com/products/violet-milk",
+   "on": "2026-10-27",
+   "note": "15 ml US$36; 10 ml oil rollerball US$32."
+  },
+  "try": {
+   "label": "2 ml sample",
+   "amt": 8,
+   "cur": "USD",
+   "ml": 2,
+   "url": "https://stardustandstems.com/products/violet-milk"
+  },
+  "also": [
+   {
+    "name": "Cocoa Cozy",
+    "notes": "Hot cocoa with burnt sugar, warm milk, whipped cream and a madeleine, over sandalwood and cashmere woods.",
+    "price": "US$62 · 30 ml",
+    "url": "https://stardustandstems.com/products/cocoa-cozy"
+   },
+   {
+    "name": "Book Fair",
+    "notes": "An old-book and library scent.",
+    "price": "US$62 · 30 ml",
+    "url": "https://stardustandstems.com/products/book-fair-perfume-old-book-library-academia-smell"
+   }
+  ],
+  "tags": [
+   "indie",
+   "samples",
+   "gourmand"
+  ]
+ },
+ {
+  "id": "lepoque",
+  "name": "L'Epoque Parfums",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.lepoqueparfums.com/",
+  "about": "A small house making quiet, emotional skin scents in 30 ml bottles.",
+  "why": "A clean, soft 'freshly washed' scent for people who like their perfume close and calm.",
+  "families": [
+   "musk",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "linen",
+   "clean"
+  ],
+  "sig": {
+   "name": "Inner Child (Eau de Parfum)",
+   "url": "https://www.lepoqueparfums.com/products/inner-child-eau-de-parfum",
+   "notes": {
+    "t": [
+     "bergamot",
+     "linen"
+    ],
+    "h": [
+     "freesia",
+     "lily of the valley"
+    ],
+    "b": [
+     "white wood",
+     "birch",
+     "vanilla",
+     "skin musk"
+    ]
+   },
+   "profile": "Fresh sheets and clean skin on a slow morning: airy freesia and lily of the valley over pale woods, a little vanilla and soft musk. By perfumer Elena Valdivieso Ruiz."
+  },
+  "price": {
+   "amt": 125,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://www.lepoqueparfums.com/products/inner-child-eau-de-parfum",
+   "on": "2026-10-27"
+  },
+  "tags": [
+   "skin scent",
+   "clean"
+  ]
+ },
+ {
+  "id": "regime-des-fleurs",
+  "name": "Régime des Fleurs",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "Los Angeles",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://regimedesfleurs.com/",
+  "about": "A Los Angeles niche house known for artistic, flower-led perfumes and collaborations.",
+  "why": "Little Flower, made with Chloë Sevigny, is a romantic rose with an unusual tea-and-incense finish.",
+  "families": [
+   "floral",
+   "fruity",
+   "woody"
+  ],
+  "accents": [
+   "rose",
+   "tea",
+   "incense"
+  ],
+  "sig": {
+   "name": "Little Flower (Eau de Parfum)",
+   "url": "https://regimedesfleurs.com/products/little-flower",
+   "notes": {
+    "t": [
+     "pomelo",
+     "blackcurrant bud"
+    ],
+    "h": [
+     "Ottoman rose",
+     "peony",
+     "bleeding heart",
+     "honeysuckle"
+    ],
+    "b": [
+     "black tea",
+     "palo santo incense",
+     "woody musk"
+    ]
+   },
+   "profile": "A dewy, slightly tart rose with blackcurrant and pomelo, drying to black tea, pale incense and soft woody musk."
+  },
+  "price": {
+   "amt": 290,
+   "cur": "USD",
+   "ml": 75,
+   "status": "verified",
+   "src": "https://regimedesfleurs.com/products/little-flower",
+   "on": "2026-10-27"
+  },
+  "tags": [
+   "rose",
+   "collaboration"
+  ]
+ },
+ {
+  "id": "sarah-baker",
+  "name": "Sarah Baker",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "London",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://sarahbakerperfumes.com/",
+  "about": "A British niche house working with different perfumers on bold, playful compositions.",
+  "why": "Year XOXO is a vanilla with a crisp, airy twist: green apple and paper instead of plain sweetness.",
+  "families": [
+   "gourmand",
+   "fruity",
+   "musk"
+  ],
+  "accents": [
+   "vanilla",
+   "paper"
+  ],
+  "sig": {
+   "name": "Year XOXO",
+   "url": "https://sarahbakerperfumes.com/products/year-xoxo",
+   "notes": {
+    "t": [
+     "green apple",
+     "ozonic notes"
+    ],
+    "h": [
+     "paper"
+    ],
+    "b": [
+     "vanilla",
+     "vanillin",
+     "cashmere wood",
+     "musk"
+    ]
+   },
+   "profile": "Crunchy green apple and cool air over a soft vanilla, with a dry paper note and cashmere woods. By perfumer Margaux Le Paih Guérin."
+  },
+  "price": {
+   "amt": 155,
+   "cur": "GBP",
+   "status": "verified",
+   "src": "https://sarahbakerperfumes.com/products/year-xoxo",
+   "on": "2026-10-27",
+   "note": "Shop doesn't show the size; check before buying."
+  },
+  "also": [
+   {
+    "name": "Peach's Revenge",
+    "notes": "A peach-led scent by perfumer Chris Maurice; notes not checked.",
+    "price": "price not checked"
+   }
+  ],
+  "tags": [
+   "vanilla",
+   "uk"
+  ]
  }
 ]
