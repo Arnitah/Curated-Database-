@@ -874,5 +874,11 @@
   "lon": -0.13,
   "place": "London",
   "precision": "city"
+ },
+ "chujian": {
+  "lat": 35.0,
+  "lon": 105.0,
+  "place": "China",
+  "precision": "country"
  }
 }

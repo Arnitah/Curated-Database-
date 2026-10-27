@@ -8470,5 +8470,78 @@
    "vanilla",
    "uk"
   ]
+ },
+ {
+  "id": "chujian",
+  "name": "Chujian (初柬)",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://trovemy.com/",
+  "about": "A Chinese house whose twelve extraits are named after Chinese landscapes (Changbai mountains, Tianshan springs) and built around Asian botanicals. Sold in Malaysia through the Trove boutique.",
+  "why": "Calm, landscape-inspired Chinese perfumery, now reachable through a Kuala Lumpur shop.",
+  "families": [
+   "woody",
+   "green",
+   "floral",
+   "aquatic"
+  ],
+  "accents": [
+   "tea",
+   "landscape"
+  ],
+  "sig": {
+   "name": "ChangBai Sandal No.M37 (Extrait)",
+   "url": "https://www.instagram.com/trovemy/",
+   "notes": {
+    "t": [
+     "pink pepper",
+     "lime"
+    ],
+    "h": [
+     "tea",
+     "fig"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "Woody-aromatic: a little pepper and lime over tea and green fig, settling into soft sandalwood."
+  },
+  "price": {
+   "amt": 450,
+   "cur": "MYR",
+   "ml": 30,
+   "status": "reported",
+   "src": "https://www.instagram.com/trovemy/",
+   "on": "2026-10-12",
+   "note": "'From RM450' in Trove's launch post."
+  },
+  "also": [
+   {
+    "name": "Boreal Fir No.M39",
+    "notes": "Saffron, cedar, vetiver, guaiac wood and ambergris; a cold northern forest."
+   },
+   {
+    "name": "Tianshan Spring No.L31",
+    "notes": "Juniper, bergamot, watery notes, lavender and ambergris; fresh mountain spring."
+   },
+   {
+    "name": "Moonlight Silken Veil No.L32",
+    "notes": "Rose, cedar, cashmere woods, white musk and amber."
+   },
+   {
+    "name": "Ambergris Rose No.P29",
+    "notes": "Rose and pink pepper over cedar, cashmere woods and ambergris."
+   }
+  ],
+  "tags": [
+   "china",
+   "malaysia",
+   "extrait"
+  ]
  }
 ]
