@@ -2151,12 +2151,12 @@
   {
     "id": "fennel",
     "grp": "Dried botanicals",
-    "name": "Fennel seeds",
+    "name": "Fennel seeds (Foeniculum vulgare)",
     "ph": "botan",
     "tsp": 2,
     "lvl": "ok",
-    "good": "Warm scent in infused oils.",
-    "care": "Low risk as whole seed."
+    "good": "Warm, sweet scent in infused oils and steams. Contains anethole and fenchone; fennel tea compresses are a traditional de-puffing trick, and its antimicrobial compounds suit oily-scalp rinses.",
+    "care": "Low risk as whole seed or tea. Fennel essential oil contains estragole and is not for pregnancy, breastfeeding or young children; keep it under 1%."
   },
   {
     "id": "coriander",
@@ -5565,8 +5565,8 @@
     "ph": "fresh",
     "d": 1.05,
     "lvl": "ok",
-    "good": "Starchy, creamy mask base used in the Caribbean and Pacific.",
-    "care": "Use the same day."
+    "good": "Starchy, creamy mask base used in the Caribbean and Pacific. Breadfruit extracts contain artocarpin and prenylated flavonoids that inhibit tyrosinase (the pigment enzyme) in lab studies, so they're being explored for dark spots.",
+    "care": "The brightening evidence is from lab extracts, not the mashed fruit. Use the same day."
   },
   {
     "id": "nopal",
@@ -5586,7 +5586,7 @@
     "d": 1.02,
     "lvl": "care",
     "flag": "Can make skin burn in the sun",
-    "good": "Popular juice; sometimes added to rinses.",
+    "good": "Celery seed and stalk contain limonene, phthalides and apigenin; seed extracts show antimicrobial and calming effects in lab work, which is why they're tried in flaky-scalp rinses.",
     "care": "Celery contains psoralens that can cause burns and dark patches on skin in sunlight. Rinse off, and skip it before sun.",
     "photo": true
   },
@@ -6639,5 +6639,77 @@
     "lvl": "ok",
     "good": "Somali and East African cleansing powder from dried gob tree leaves; it lathers lightly and is used as a face mask, body wash and hair cleanser. A close cousin of sidr.",
     "care": "Can be drying on very dry skin or hair; follow with a moisturiser or conditioner. Mix fresh each time."
+  },
+  {
+    "id": "lilybulb",
+    "grp": "Dried botanicals",
+    "name": "Lily bulb (bai he, Lilium lancifolium or L. brownii), dried",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A soothing TCM bulb rich in mucilage and starchy polysaccharides, plus steroidal saponins. Brewed into teas, rinses or masks, it gives a slippery, calming feel on hot, dry or itchy skin and scalp.",
+    "care": "Use culinary dried bai he only. Ornamental lilies are a different plant and are deadly to cats, so keep any lily material away from pets. Little skin research."
+  },
+  {
+    "id": "mangosteen",
+    "grp": "Powders and exfoliants",
+    "name": "Mangosteen rind (Garcinia mangostana) powder or extract",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "The purple rind holds xanthones such as alpha- and gamma-mangostin and tannins. Lab studies show strong antioxidant and antibacterial activity, including against acne bacteria, so it appears in spot and scalp products.",
+    "care": "Evidence is mostly lab-based, not human trials. The rind's tannins stain purple-brown; rinse off and patch test."
+  },
+  {
+    "id": "custardapple",
+    "grp": "Fresh foods",
+    "name": "Custard apple or sugar apple (Annona squamosa)",
+    "ph": "fresh",
+    "d": 1.05,
+    "lvl": "care",
+    "flag": "Keep the seeds out",
+    "good": "Creamy, vitamin C-rich pulp used as a soft mask; leaf and fruit extracts show antimicrobial activity in lab studies.",
+    "care": "The seeds and leaves contain acetogenins, which are toxic and irritate the eyes: never grind seeds into a mask, and keep it away from eyes. Collagen and follicle claims haven't been tested in people. Use the pulp fresh, the same day."
+  },
+  {
+    "id": "starfruit",
+    "grp": "Fresh foods",
+    "name": "Star fruit (carambola, Averrhoa carambola)",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "care",
+    "flag": "Star fruit is very acidic",
+    "good": "Tart juice with oxalic and other fruit acids, vitamin C and quercetin; traditionally used to brighten and as a shine rinse.",
+    "care": "Its main acid is oxalic acid, which is harsher than skincare AHAs like glycolic or lactic and can sting or irritate. Dilute well, rinse off quickly, avoid broken skin, and don't drink it if you have kidney problems. A store AHA is more predictable for exfoliation."
+  },
+  {
+    "id": "rambutan",
+    "grp": "Fresh foods",
+    "name": "Rambutan (Nephelium lappaceum) peel or fruit",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "ok",
+    "good": "The hairy peel is rich in geraniin, corilagin and other ellagitannins, which are strong antioxidants in lab work; the fruit adds vitamin C. Peel extracts are being studied for anti-ageing skincare.",
+    "care": "Human evidence for elasticity, UV protection or hair roots is lacking. Peel extract is astringent; use the fruit fresh."
+  },
+  {
+    "id": "salak",
+    "grp": "Fresh foods",
+    "name": "Snake fruit (salak, Salacca zalacca)",
+    "ph": "fresh",
+    "d": 1.03,
+    "lvl": "ok",
+    "good": "Southeast Asian fruit with chlorogenic acid, flavonoids and tannins; astringent and antioxidant, traditionally used to tone and firm.",
+    "care": "Firming and cuticle-smoothing claims are traditional, not tested. Spoils fast; use fresh."
+  },
+  {
+    "id": "edamame",
+    "grp": "Fresh foods",
+    "name": "Edamame (young green soybeans), blended",
+    "ph": "fresh",
+    "d": 1.05,
+    "lvl": "ok",
+    "good": "Contains soy isoflavones (genistein, daidzein), protein and vitamin K. Soy extracts in creams have some evidence for firmness and even tone; soy protein coats and strengthens hair.",
+    "care": "Blended fresh beans spoil within hours and aren't the same as stabilised soy extracts. For hair, hydrolysed soy protein works better. Skip if allergic to soy."
   }
 ]

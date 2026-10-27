@@ -1,5 +1,45 @@
 [
   [
+    "bai ?he|lily bulb|lilium (lancifolium|brownii)",
+    "lilybulb"
+  ],
+  [
+    "mangosteen|garcinia mangostana|mangostin",
+    "mangosteen"
+  ],
+  [
+    "custard apple|sugar apple|sweetsop|annona squamosa",
+    "custardapple"
+  ],
+  [
+    "star ?fruit|carambola|averrhoa",
+    "starfruit"
+  ],
+  [
+    "rambutan|nephelium",
+    "rambutan"
+  ],
+  [
+    "\\bsalak\\b|snake fruit|salacca",
+    "salak"
+  ],
+  [
+    "edamame|green soy ?beans?",
+    "edamame"
+  ],
+  [
+    "foeniculum|fennel seed",
+    "fennel"
+  ],
+  [
+    "artocarpus altilis",
+    "breadfruit"
+  ],
+  [
+    "apium graveolens|celery seed",
+    "celery"
+  ],
+  [
     "qasil|gob tree|ziziphus mauritiana",
     "qasil"
   ],
