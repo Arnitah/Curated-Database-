@@ -6618,5 +6618,16 @@
     "lvl": "ok",
     "good": "A broad-spectrum preservative common in home-made lotions and creams; works across a wide pH range.",
     "care": "Use 0.75% to 1.5% of the total weight, added below 80 °C. The neat liquid irritates eyes, so wear gloves and goggles when measuring. Not accepted in most natural certifications."
+  },
+  {
+    "id": "sageeo",
+    "grp": "Essential oils",
+    "name": "Sage essential oil (Salvia officinalis)",
+    "ph": "eo",
+    "d": 0.92,
+    "max": 0.5,
+    "lvl": "care",
+    "good": "Herbal, fresh scent used in deodorants for its mild antimicrobial effect.",
+    "care": "Contains thujone; keep it at or below 0.5% and avoid in pregnancy, epilepsy and for young children. Clary sage is a gentler choice for scent."
   }
 ]

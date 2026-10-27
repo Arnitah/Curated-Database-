@@ -1,5 +1,9 @@
 [
   [
+    "^sage (essential )?oil|salvia officinalis",
+    "sageeo"
+  ],
+  [
     "optiphen|phenoxyethanol",
     "optiphen"
   ],

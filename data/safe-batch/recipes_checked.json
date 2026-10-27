@@ -54034,5 +54034,185 @@
       "creator": "bettertallow",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "sensitive-rice-starch-deodorant-stick",
+    "name": "Sensitive rice starch deodorant stick (no baking soda)",
+    "claim": "Gentle odour control for sensitive or darkening underarms",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        30,
+        "g"
+      ],
+      [
+        "riceflour",
+        14,
+        "g"
+      ],
+      [
+        "tapioca",
+        14,
+        "g"
+      ],
+      [
+        "candelilla",
+        10,
+        "g"
+      ],
+      [
+        "coconut",
+        8,
+        "g"
+      ],
+      [
+        "cocoa",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        8,
+        "g"
+      ],
+      [
+        "zincric",
+        3,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.8,
+        "g"
+      ]
+    ],
+    "note": "Melt the wax, butters and coconut oil into the caprylic oil, whisk in the rice and tapioca starches, magnesium hydroxide and zinc ricinoleate, add vitamin E and scent, and pour into a twist-up tube. Built like Wild's Sensitive stick: rice starch replaces baking soda, while zinc ricinoleate traps odour and magnesium hydroxide neutralises it. Gentler than a baking-soda stick; not an antiperspirant.",
+    "inspired": "Wild Sensitive natural deodorant",
+    "source": {
+      "creator": "Store product",
+      "platform": "Boots"
+    }
+  },
+  {
+    "id": "zinc-sage-roll-on-deodorant",
+    "name": "Zinc and sage roll-on deodorant",
+    "claim": "Light, quick-drying roll-on with no baking soda",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        80,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "zincric",
+        3,
+        "g"
+      ],
+      [
+        "polysorbate",
+        3,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.5,
+        "g"
+      ],
+      [
+        "sunflower",
+        2,
+        "g"
+      ],
+      [
+        "vite",
+        0.3,
+        "g"
+      ],
+      [
+        "sageeo",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Stir the zinc ricinoleate, scent and sunflower oil into the polysorbate, then whisk in the water, glycerin and xanthan until smooth, and add the preservative. Pour into a roll-on bottle. Zinc ricinoleate traps odour; a drop of sage adds a fresh herbal note. Keep sage low and skip it in pregnancy. Use within 3 months.",
+    "inspired": "Wild roll-on deodorant",
+    "source": {
+      "creator": "Store product",
+      "platform": "Boots"
+    }
+  },
+  {
+    "id": "vanilla-tonka-iris-perfumed-body-oil",
+    "name": "Vanilla, tonka and iris perfumed body oil",
+    "claim": "Creamy, cocooning perfumed body oil",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        50,
+        "g"
+      ],
+      [
+        "jojoba",
+        30,
+        "g"
+      ],
+      [
+        "almond",
+        18,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "vanilla",
+        10,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1.5,
+        "g"
+      ]
+    ],
+    "note": "Mix and bottle. Smooth onto damp skin after a bath. Vanilla absolute is the base; add a tonka or iris (orris) fragrance oil for the other two moods. Real orris butter costs a fortune, so the iris note nearly always comes from fragrance. Patch test.",
+    "inspired": "Guerlain perfumed body oils (Vanille Planifolia, Tonka Sarrapia, Iris Pallida)",
+    "source": {
+      "creator": "fragrancebabesandy",
+      "platform": "Instagram"
+    }
   }
 ]
