@@ -964,5 +964,17 @@
   "lon": -118.24,
   "place": "Los Angeles",
   "precision": "city"
+ },
+ "forward-perfume": {
+  "lat": 21.03,
+  "lon": 105.85,
+  "place": "Hanoi",
+  "precision": "country"
+ },
+ "eau-so-dramatic": {
+  "lat": 28.61,
+  "lon": 77.21,
+  "place": "India",
+  "precision": "country"
  }
 }

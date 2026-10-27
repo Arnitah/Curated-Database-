@@ -9570,5 +9570,131 @@
    "milk",
    "layering"
   ]
+ },
+ {
+  "id": "forward-perfume",
+  "name": "Forward Perfume",
+  "country": "Vietnam",
+  "cc": "VN",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://forwardperfume.com/",
+  "about": "A Vietnamese house that writes each perfume as a little story from Vietnamese places and food: Son Doong cave, Ban Gioc falls, pandan, corn custard, sponge cake. Also makes herbal candles in Bat Trang pottery.",
+  "why": "Very few houses bottle Vietnam itself. Pandan with oolong and milk is a smell almost nobody outside Southeast Asia sells.",
+  "families": [
+   "gourmand",
+   "green",
+   "floral"
+  ],
+  "accents": [
+   "pandan",
+   "oolong",
+   "milk"
+  ],
+  "sig": {
+   "name": "Pandan Silk Cream (Lục Dứa Thanh Khê)",
+   "url": "https://forwardperfume.com/products/pandan-silk-cream-l%E1%BB%A5c-d%E1%BB%A9a-thanh-khe",
+   "notes": {
+    "t": [
+     "pandan leaf",
+     "oolong tea"
+    ],
+    "h": [
+     "milk",
+     "jasmine"
+    ],
+    "b": [
+     "brown sugar",
+     "sandalwood",
+     "musk"
+    ]
+   },
+   "profile": "Stepping out of a steamy bath: green, nutty pandan and oolong soften into milk and jasmine, settling on brown sugar and creamy sandalwood."
+  },
+  "price": {
+   "amt": 2300000,
+   "cur": "VND",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://forwardperfume.com/products/pandan-silk-cream-l%E1%BB%A5c-d%E1%BB%A9a-thanh-khe",
+   "on": "2026-10-27",
+   "note": "10 ml ₫700,000; 30 ml ₫1,700,000; 100 ml ₫4,200,000."
+  },
+  "also": [
+   {
+    "name": "In the Cave of Son Doong, Rose of Ban Gioc Falls, Corn Ancestral Custard, Vanilla Bông Lan",
+    "notes": "Place and food stories from around Vietnam.",
+    "price": "See shop",
+    "url": "https://forwardperfume.com/"
+   }
+  ],
+  "tags": [
+   "vietnam",
+   "pandan",
+   "tea"
+  ]
+ },
+ {
+  "id": "eau-so-dramatic",
+  "name": "Eau So Dramatic",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.eausodramatic.com/",
+  "about": "An Indian line (labelled ESD) of affordable, mood-led perfumes, each written as a 'sensation' and a 'drama'.",
+  "why": "Pure Silk is the 'smells like Dove soap' perfume creators keep asking about: a clean, just-showered skin scent at a small price.",
+  "families": [
+   "floral",
+   "musk",
+   "clean"
+  ],
+  "accents": [
+   "aldehydes",
+   "soap"
+  ],
+  "sig": {
+   "name": "Pure Silk",
+   "url": "https://www.eausodramatic.com/products/pure-silk-perfume",
+   "notes": {
+    "t": [
+     "aldehydes"
+    ],
+    "h": [
+     "white lily",
+     "rose"
+    ],
+    "b": [
+     "skin musk"
+    ]
+   },
+   "profile": "Creamy soap lather: bright, steamy aldehydes melting into lily and soft rose, then a smooth, moisturised-skin musk."
+  },
+  "price": {
+   "amt": 899,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.eausodramatic.com/products/pure-silk-perfume",
+   "on": "2026-10-27",
+   "note": "0.6 oz (about 18 ml) ₹399. Shared by a creator under the Gaurav Aromatic name."
+  },
+  "also": [
+   {
+    "name": "Ivory Dusk",
+    "notes": "A powdery white cloud of soft petals and sunlit dust, matte and very clean.",
+    "price": "₹899 · 50 ml (18 ml ₹399)",
+    "url": "https://www.eausodramatic.com/products/ivory-dusk-perfume"
+   }
+  ],
+  "tags": [
+   "india",
+   "clean",
+   "soap"
+  ]
  }
 ]
