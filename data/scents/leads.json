@@ -514,7 +514,7 @@
   "name": "HEIR",
   "country": "India",
   "cc": "IN",
-  "lead": "New Mumbai niche house (founder Priyanka Malhotra), blended in Spain; five EDPs sold on heirbeauty.com since July 2026. Nectra: rambutan, hibiscus and elderflower, a tart fruity musk. Miras: cardamom, orris and cacao, with jaggery per a creator. Creator says not blind-buy safe and shortish wear; try the discovery set. Reported (AI check of its shop): discovery set ₹1,200 for five 2 ml vials; Nectra ₹4,500 / 50 ml; blended in Spain with perfumer Michael Nordstrand.",
+  "lead": "New Mumbai niche house (founder Priyanka Malhotra), blended in Spain; five EDPs sold on heirbeauty.com since July 2026. Nectra: rambutan, hibiscus and elderflower, a tart fruity musk. Miras: cardamom, orris and cacao, with jaggery per a creator. Creator says not blind-buy safe and shortish wear; try the discovery set. Its own shop (seen via indexed pages, not opened from here): discovery set ₹1,200 for five 2 ml vials; Nectra ₹4,500 / 50 ml; blended in Spain with perfumer Michael Nordstrand.",
   "src": "https://businessnewsthisweek.com/business/heir-debuts-as-a-niche-fragrance-house-with-five-original-eau-de-parfums/"
  },
  {
@@ -542,14 +542,77 @@
   "name": "Femmenina (hair & body mists)",
   "country": "To confirm",
   "cc": "",
-  "lead": "Bakery-style hair and body mists: Crème Brûlée (vanilla milk jam, caramelised sugar, a hint of banana), Butter & Cinnamon Cake, Musky Cinnamon. 18.50–19.90 per mist on its own shop (currency not shown); creators note high shipping costs.",
+  "lead": "Bakery-style, alcohol-free hair and body mists: Crème Brûlée (vanilla milk jam, caramelised sugar, a hint of banana) US$18.50, Butter & Cinnamon Cake US$19.90, Musky Cinnamon. Prices in US$ per an AI check of the shop; creators note high shipping costs.",
   "src": "https://shopfemmenina.com/products/creme-brulee-body-hair-mist"
  },
  {
   "name": "Unké Naru (Tesso Nilo)",
   "country": "Indonesia",
   "cc": "ID",
-  "lead": "Extrait named after Tesso Nilo National Park in Riau, Sumatra: fresh, green, citrus and aromatic, with cypress and wood. Find price.",
+  "lead": "Named after Tesso Nilo National Park in Riau, Sumatra (a mood, not an ingredient source): bergamot, juniper and cypress; rose, jasmine and cedar; guaiac wood. By Benjamin Foatelli, 2024. Reported Rp325.000 / 50 ml on its own shop (out of stock), Rp322.800 at a retailer.",
   "src": "https://www.instagram.com/thesea.journal/"
+ },
+ {
+  "name": "Casa de Vayu (Maya)",
+  "country": "India",
+  "cc": "IN",
+  "lead": "Indian house; Maya is a molecular-style skin scent creators layer for a clean, soapy effect. ₹900 / 10 ml, ₹2,200 / 50 ml on its own shop (price shown without currency; Indian rupees likely).",
+  "src": "https://casadevayu.com/products/maya"
+ },
+ {
+  "name": "Indian budget picks (fragrancefind)",
+  "country": "India",
+  "cc": "IN",
+  "lead": "An Indian creator's mood picks under mall prices: Ombre Bliss Vanilla Kiss (vanilla, rum, oud), Embarouq Urban Oud, Panache, Nykaa Moi (Silver Pear, Amour, Joie de Vivre, Raison d'Être), XLNC Azure Blue, Café Drops, Zebaish Tiramisu S'mores, Fragan Baked Vanilla, Sharon Beauty Sea Side, Alternate Scents Lust, Fastrack Celeb. Find prices.",
+  "src": "https://www.instagram.com/fragrancefind/"
+ },
+ {
+  "name": "Gaurav Aromatic (Pure Silk)",
+  "country": "India",
+  "cc": "IN",
+  "lead": "A creator says it smells like Dove soap: a clean, just-showered perfume. Find notes and price.",
+  "src": "https://www.instagram.com/_.divalicious666._/"
+ },
+ {
+  "name": "Pictura Fragrans (In From the Cold)",
+  "country": "To confirm",
+  "cc": "",
+  "lead": "Memory of a late-Cold-War winter kitchen: snow, spearmint, black tea and hyssop; tuberose, old books, toast and steam; cedar, opoponax, musk and rice pudding. 234 / 50 ml, 119 / 15 ml on its own shop (currency not shown).",
+  "src": "https://picturafragrans.com/products/in-from-the-cold"
+ },
+ {
+  "name": "Hédonisme (Skinny Dip N°22)",
+  "country": "To confirm",
+  "cc": "",
+  "lead": "New: bergamot and vanilla, an earthy-mossy heart, honey base. Find price.",
+  "src": "https://www.instagram.com/clay.note.fragrance/"
+ },
+ {
+  "name": "Flor de Mayo (Ice Cream Vainilla)",
+  "country": "Mexico",
+  "cc": "MX",
+  "lead": "Mexican house in an ice-cream-cone bottle: milk, coconut and pineapple; jasmine and lily of the valley; musk, chocolate and vanilla. Find price.",
+  "src": "https://www.instagram.com/clay.note.fragrance/"
+ },
+ {
+  "name": "Jousset Parfums (Donut Crave)",
+  "country": "To confirm",
+  "cc": "",
+  "lead": "Frosted-vanilla donut extrait: powdered sugar, warm milk, donut dough, vanilla and caramelised sugar. Sold at Scent Split. Find price.",
+  "src": "https://www.instagram.com/scentsplit/"
+ },
+ {
+  "name": "Skin & Body Shop (Gardenia Powder)",
+  "country": "To confirm (Arabic-speaking)",
+  "cc": "",
+  "lead": "Small handmade shop: Gardenia Powder as a 30 ml perfume, a hair-and-body oil and a musk roll-on. Find price and location.",
+  "src": "https://www.instagram.com/skin.andbodyshop/"
+ },
+ {
+  "name": "Osmo x Sai De Silva (P.S. Never Forgotten)",
+  "country": "United States",
+  "cc": "US",
+  "lead": "New EDP by Christophe Laudamiel with the AI-scent company Osmo, built around patchouli and the memory of handwritten letters. Find price.",
+  "src": "https://www.instagram.com/osmo_smell/"
  }
 ]

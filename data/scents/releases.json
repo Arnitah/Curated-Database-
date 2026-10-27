@@ -276,6 +276,42 @@
      "kind": "extrait de parfum",
      "date": "2026-10-10",
      "small": true
+    },
+    {
+     "brand": "BORNTOSTANDOUT",
+     "name": "Saint Petal",
+     "kind": "extrait de parfum",
+     "small": true
+    },
+    {
+     "brand": "Pictura Fragrans",
+     "name": "In From the Cold",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Hédonisme",
+     "name": "Skinny Dip N°22",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Flor de Mayo",
+     "name": "Ice Cream Vainilla",
+     "kind": "eau de parfum",
+     "small": true
+    },
+    {
+     "brand": "Jousset",
+     "name": "Donut Crave",
+     "kind": "extrait de parfum",
+     "small": true
+    },
+    {
+     "brand": "Sai De Silva x Osmo",
+     "name": "P.S. Never Forgotten",
+     "kind": "eau de parfum",
+     "small": true
     }
    ]
   }
