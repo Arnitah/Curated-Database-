@@ -8543,5 +8543,341 @@
    "malaysia",
    "extrait"
   ]
+ },
+ {
+  "id": "the-body-tale",
+  "name": "The Body Tale",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://thebodytale.com/",
+  "about": "An Indonesian house whose 'Tale of Asia' series turns everyday Asian drinks and places into extraits, made with French perfumers.",
+  "why": "Soy milk and hojicha in perfume: comforting, very Asian everyday smells you won't find in Western lines.",
+  "families": [
+   "gourmand",
+   "floral",
+   "woody"
+  ],
+  "accents": [
+   "soy milk",
+   "rice",
+   "tea"
+  ],
+  "sig": {
+   "name": "Soy Milk (Extrait de Parfum)",
+   "url": "https://thebodytale.com/products/soy-milk-extrait-de-parfum",
+   "notes": {
+    "t": [
+     "warm rice",
+     "soy milk",
+     "pepper"
+    ],
+    "h": [
+     "violet",
+     "orris",
+     "white flowers"
+    ],
+    "b": [
+     "sandalwood",
+     "cedar",
+     "patchouli",
+     "vetiver",
+     "musk",
+     "woody amber"
+    ]
+   },
+   "profile": "A cup of warm soy milk: creamy, softly green and a little like steamed rice, with powdery violet and iris, resting on clean woods. By perfumer Romane Zarzycki."
+  },
+  "price": {
+   "amt": 60,
+   "cur": "USD",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://thebodytale.com/products/soy-milk-extrait-de-parfum",
+   "on": "2026-10-27",
+   "note": "50 ml US$85 on the international shop; cheaper at home in Indonesia."
+  },
+  "also": [
+   {
+    "name": "Hojicha Latte",
+    "notes": "Roasted green tea with steamed milk.",
+    "price": "US$60 · 30 ml",
+    "url": "https://thebodytale.com/products/hojicha-latte-extrait-de-parfum"
+   },
+   {
+    "name": "Portrait of Kyoto",
+    "notes": "Earl Grey and black tea with crisp apple.",
+    "price": "US$60 · 30 ml",
+    "url": "https://thebodytale.com/products/portrait-of-kyoto-extrait-de-parfum"
+   }
+  ],
+  "tags": [
+   "indonesia",
+   "tea",
+   "milk"
+  ]
+ },
+ {
+  "id": "kitschy",
+  "name": "Kitschy",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://kitschybeauty.com/",
+  "about": "A playful Indonesian beauty brand with mood-named 30 ml extraits.",
+  "why": "Fun, affordable Indonesian extraits; a good entry point to the local scene.",
+  "families": [
+   "fruity",
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "candy"
+  ],
+  "sig": {
+   "name": "AURA Vanity (Extrait de Parfum)",
+   "url": "https://kitschybeauty.com/products/kitschy-aura-vanity-extrait-de-parfum-30ml",
+   "notes": {
+    "t": [
+     "pomegranate",
+     "pear",
+     "watermelon"
+    ],
+    "h": [
+     "raspberry",
+     "magnolia",
+     "fruity jam"
+    ],
+    "b": [
+     "sandalwood",
+     "amber",
+     "vanilla"
+    ]
+   },
+   "profile": "Fruity candy for a night out: pomegranate, watermelon and raspberry jam with a touch of magnolia over soft vanilla and sandalwood."
+  },
+  "price": {
+   "amt": 189000,
+   "cur": "IDR",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://kitschybeauty.com/products/kitschy-aura-vanity-extrait-de-parfum-30ml",
+   "on": "2026-10-27"
+  },
+  "also": [
+   {
+    "name": "AURA Pillow",
+    "notes": "Companion 30 ml extrait.",
+    "price": "Rp189.000 · 30 ml",
+    "url": "https://kitschybeauty.com/products/kitschy-aura-pillow-extrait-de-parfum-30ml"
+   },
+   {
+    "name": "Skin Symphony",
+    "notes": "Soft skin scent of white flowers and powdery musk.",
+    "price": "Rp239.000 · 50 ml",
+    "url": "https://kitschybeauty.com/products/kitschy-skin-symphony-extrait-de-perfume-50ml"
+   }
+  ],
+  "tags": [
+   "indonesia",
+   "affordable"
+  ]
+ },
+ {
+  "id": "aroma-concepts",
+  "name": "Aroma Concepts",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "type": "inspired-by",
+  "scale": "small",
+  "site": "https://www.aromaconcepts.com/",
+  "about": "An affordable fragrance brand with bold gourmand and fruity 100 ml 'Creations', plus Gulf-made lines.",
+  "why": "Big, sweet, fun scents at around US$50 for 100 ml.",
+  "families": [
+   "fruity",
+   "gourmand",
+   "floral"
+  ],
+  "accents": [
+   "rum",
+   "tropical"
+  ],
+  "sig": {
+   "name": "Strawberry Almanac (Creation)",
+   "url": "https://www.aromaconcepts.com/products/strawberry-almanac",
+   "notes": {
+    "t": [
+     "lemon",
+     "strawberry",
+     "raspberry"
+    ],
+    "h": [
+     "rum",
+     "violet",
+     "rose"
+    ],
+    "b": [
+     "sugar",
+     "amber",
+     "musk"
+    ]
+   },
+   "profile": "Juicy berries and lemon like a sorbet, turning boozy-sweet with rum and violet, then soft sugar and musk close to the skin."
+  },
+  "price": {
+   "amt": 51.99,
+   "cur": "USD",
+   "ml": 100,
+   "status": "verified",
+   "src": "https://www.aromaconcepts.com/products/strawberry-almanac",
+   "on": "2026-10-27",
+   "note": "All three Creations together: US$125."
+  },
+  "also": [
+   {
+    "name": "Exotic Isobar",
+    "notes": "Mango, passion fruit and vanilla; a tropical cocktail.",
+    "price": "US$51.99 · 100 ml",
+    "url": "https://www.aromaconcepts.com/products/exotic-isobar"
+   },
+   {
+    "name": "Coco Love",
+    "notes": "Coconut with lemongrass, lily of the valley and ambergris.",
+    "price": "US$51.99 · 100 ml",
+    "url": "https://www.aromaconcepts.com/products/coco-love"
+   }
+  ],
+  "tags": [
+   "affordable",
+   "gourmand"
+  ]
+ },
+ {
+  "id": "celia-loves",
+  "name": "Celia Loves",
+  "country": "Australia",
+  "cc": "AU",
+  "region": "Oceania",
+  "continent": "Oceania",
+  "city": "Surf Coast, Victoria",
+  "type": "lifestyle",
+  "scale": "small",
+  "site": "https://celialoves.com.au/",
+  "about": "A home-fragrance maker on Victoria's Surf Coast with candles and room-and-linen sprays in keep-forever packaging. Not a skin perfume.",
+  "why": "For scenting your room or sheets to match your perfume: dessert and tea scents in gift-worthy boxes.",
+  "families": [
+   "gourmand"
+  ],
+  "accents": [
+   "home scent",
+   "matcha"
+  ],
+  "sig": {
+   "name": "Matcha Milk (Room & Linen Spray)",
+   "url": "https://celialoves.com.au/products/matcha-milk-room-spray-50ml",
+   "notes": {
+    "t": [
+     "black tea",
+     "bergamot",
+     "cream"
+    ],
+    "h": [
+     "matcha",
+     "vanilla",
+     "macadamia"
+    ],
+    "b": [
+     "musk",
+     "patchouli",
+     "amber"
+    ]
+   },
+   "profile": "A slow morning: black tea and matcha softened with vanilla and macadamia milk, a little warm amber underneath."
+  },
+  "price": {
+   "amt": 45,
+   "cur": "AUD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://celialoves.com.au/products/matcha-milk-room-spray-50ml",
+   "on": "2026-10-27",
+   "note": "Room and linen spray; Sugar Cookie is the same price."
+  },
+  "tags": [
+   "australia",
+   "home scent"
+  ]
+ },
+ {
+  "id": "gerimist",
+  "name": "Gerimist",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.instagram.com/gerimist.id/",
+  "about": "An Indonesian perfume house that turns local food and plants into perfume: palm nectar with pandan, steamed rice, young mango.",
+  "why": "Exactly what the atlas looks for: Indonesian ingredients in modern perfume. Reported as a finalist for an Asia Perfume Awards emerging-brand prize.",
+  "families": [
+   "gourmand",
+   "floral",
+   "green"
+  ],
+  "accents": [
+   "pandan",
+   "palm sugar",
+   "rice"
+  ],
+  "sig": {
+   "name": "Neera",
+   "url": "https://www.instagram.com/gerimist.id/",
+   "notes": {
+    "t": [
+     "pandan",
+     "palm nectar"
+    ],
+    "h": [
+     "jasmine",
+     "frangipani",
+     "rose"
+    ],
+    "b": [
+     "sandalwood",
+     "amber",
+     "patchouli"
+    ]
+   },
+   "profile": "Fresh palm nectar at sunrise: sweet palm sugar and green pandan, softened by jasmine and frangipani over warm sandalwood. Notes as reported; check with the brand."
+  },
+  "price": {
+   "status": "unknown",
+   "src": "https://www.instagram.com/gerimist.id/",
+   "on": "2026-10-27",
+   "note": "Reported between about Rp116.000 and Rp250.000 depending on size; sold through Shopee Indonesia. Not checked."
+  },
+  "also": [
+   {
+    "name": "Fragrant Rice",
+    "notes": "Freshly steamed rice: green, a little spicy, clean musk."
+   },
+   {
+    "name": "Mengkel",
+    "notes": "Tart, green unripe mango."
+   }
+  ],
+  "tags": [
+   "indonesia",
+   "local ingredients"
+  ]
  }
 ]

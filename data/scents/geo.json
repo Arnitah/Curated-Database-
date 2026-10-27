@@ -880,5 +880,35 @@
   "lon": 105.0,
   "place": "China",
   "precision": "country"
+ },
+ "the-body-tale": {
+  "lat": -6.2,
+  "lon": 106.82,
+  "place": "Indonesia",
+  "precision": "country"
+ },
+ "kitschy": {
+  "lat": -6.2,
+  "lon": 106.82,
+  "place": "Indonesia",
+  "precision": "country"
+ },
+ "gerimist": {
+  "lat": -6.2,
+  "lon": 106.82,
+  "place": "Indonesia",
+  "precision": "country"
+ },
+ "aroma-concepts": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
+ },
+ "celia-loves": {
+  "lat": -38.33,
+  "lon": 144.32,
+  "place": "Surf Coast, Victoria",
+  "precision": "city"
  }
 }
