@@ -504,10 +504,38 @@
   "src": "https://maisonasrar.com/products/milky-way"
  },
  {
-  "name": "Paris Corner (Dulzura Vanilla Envie)",
+  "name": "Paris Corner (Dulzura, Eshal Musk)",
   "country": "United Arab Emirates",
   "cc": "AE",
-  "lead": "Airy, nutty, softly spicy vanilla with anise, almond and soft florals; a creator rates it 8.5/10 and says it stands on its own. Find price.",
-  "src": "https://www.instagram.com/scentedcloud18/"
+  "lead": "UAE budget house; its own shop confirms the notes (100 ml) but shows no price. Dulzura Vanilla Envie: anise and ginger, almond and soft white flowers, vanilla and musk; a creator rates it 8.5/10. Eshal Musk: lotus, lily of the valley and caramel over violet, musk and vanilla, a 'bubble-bath clean' musk the same creator wore non-stop (9.5/10). Find price.",
+  "src": "https://pariscornerperfumes.com/products/eshal-musk"
+ },
+ {
+  "name": "HEIR",
+  "country": "India",
+  "cc": "IN",
+  "lead": "New Mumbai niche house (founder Priyanka Malhotra), blended in Spain; five EDPs sold on heirbeauty.com since July 2026. Nectra: rambutan, hibiscus and elderflower, a tart fruity musk. Miras: cardamom, orris and cacao, with jaggery per a creator. Creator says not blind-buy safe and shortish wear; try the discovery set. Find prices.",
+  "src": "https://businessnewsthisweek.com/business/heir-debuts-as-a-niche-fragrance-house-with-five-original-eau-de-parfums/"
+ },
+ {
+  "name": "Liis (Choux Choux)",
+  "country": "United States",
+  "cc": "US",
+  "lead": "Cream-puff gourmand: citrus peel, fresh cream and vanilla with salted caramel, named for the founder's French upbringing. US$178 / 50 ml on its own shop.",
+  "src": "https://liisfragrances.com/products/choux-choux"
+ },
+ {
+  "name": "Ana Teodoro (Parfum)",
+  "country": "Brazil",
+  "cc": "BR",
+  "lead": "Brazilian perfume house presenting its numbered parfums (e.g. 01 Marcondes, 100 ml) as a ritual from unboxing to skin. Find notes and price.",
+  "src": "https://www.instagram.com/anateodorofragrances/"
+ },
+ {
+  "name": "Glossy Dose (hair mists)",
+  "country": "Egypt",
+  "cc": "EG",
+  "lead": "Small Egyptian brand selling 120 ml hair mists at 280 EGP (buy 2 get 1): Cloud Kiss (floral, woody, citrus) and Bare Vanilla Bloom (powdery vanilla musk). Price from the brand's own comment.",
+  "src": "https://www.instagram.com/glossydose_/"
  }
 ]
