@@ -53445,5 +53445,304 @@
       "creator": "monasoflynpretty",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "sea-buckthorn-tallow-body-butter-as-posted",
+    "name": "Sea buckthorn tallow body butter (as posted)",
+    "claim": "Rich, glowy body butter for dry skin",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "tallow",
+        80,
+        "g"
+      ],
+      [
+        "seabuckthorn",
+        10,
+        "g"
+      ],
+      [
+        "jojoba",
+        10,
+        "g"
+      ]
+    ],
+    "note": "Melt rendered tallow, stir in sea buckthorn and jojoba, whip as it sets. Sea buckthorn is deep orange and can tint skin, towels and pale fabric; use it at about 5 to 10%. Tallow must be well rendered and smell neutral, or it goes rancid. The creator found pink clay didn't suit this formula.",
+    "inspired": "bielunele sea buckthorn body butter",
+    "source": {
+      "creator": "bielunele",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "budget-3-ingredient-body-butter",
+    "name": "Budget 3-ingredient whipped body butter",
+    "claim": "Simple, cheap body butter from easy-to-find ingredients",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        100,
+        "g"
+      ],
+      [
+        "coconut",
+        40,
+        "g"
+      ],
+      [
+        "sunflower",
+        30,
+        "g"
+      ]
+    ],
+    "note": "Answering the 'no rare ingredients' request: unrefined shea, coconut oil and any kitchen oil (sunflower, olive or sweet almond). Melt, chill until just set, then whip 5 minutes until fluffy. Add a teaspoon of cornstarch for a less greasy feel, and a few drops of lavender if you like. No water, so no preservative needed; keeps 6 months with a dry spoon.",
+    "source": {
+      "creator": "Lume (comment request)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "soy-milk-ceramide-body-milk",
+    "name": "Soy milk and ceramide body milk",
+    "claim": "Light, milky body lotion for dry skin",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        78,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "soyprotein",
+        1,
+        "g"
+      ],
+      [
+        "sunflower",
+        8,
+        "g"
+      ],
+      [
+        "shea",
+        3,
+        "g"
+      ],
+      [
+        "ewax",
+        3,
+        "g"
+      ],
+      [
+        "panthenol",
+        1,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Heat water, glycerin and soy protein, and separately the oil, shea and emulsifying wax, to 70 °C; blend and cool, adding panthenol and preservative below 40 °C. Pump-thin and quick to absorb, like the Japanese soy milk body milks. Store versions add soy isoflavones and ceramides that are hard to buy at home; shea and sunflower give similar barrier lipids. Use within 3 months.",
+    "inspired": "Sana Nameraka Honpo soy milk body milk",
+    "source": {
+      "creator": "sakino.f",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "bare-nectar-style-mist",
+    "name": "Peach skin and warm sandalwood mist",
+    "claim": "Soft peach, honeyed agave and creamy sandalwood",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "sandalwood",
+        4,
+        "drops"
+      ],
+      [
+        "vanilla",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        2.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it can go on hair ends too. A peach or peach-nectar fragrance oil carries it; sandalwood and a little vanilla give the warm, skin-like base.",
+    "inspired": "Victoria's Secret Bare Nectar",
+    "source": {
+      "creator": "uselushop",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "bare-magnolia-style-mist",
+    "name": "Orange blossom, magnolia and musk mist",
+    "claim": "Clean white flowers on soft musk",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "neroli",
+        6,
+        "drops"
+      ],
+      [
+        "musk",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        1.5,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it can go on hair ends too. Neroli is the orange blossom; a magnolia fragrance oil and white musk finish it.",
+    "inspired": "Victoria's Secret Bare Magnolia",
+    "source": {
+      "creator": "uselushop",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "sueded-vanilla-skin-mist",
+    "name": "Sueded vanilla skin mist",
+    "claim": "Soft, suede-like vanilla musk",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "perfumersalcohol",
+        70,
+        "g"
+      ],
+      [
+        "water",
+        24,
+        "g"
+      ],
+      [
+        "glycerin",
+        2,
+        "g"
+      ],
+      [
+        "vanilla",
+        8,
+        "drops"
+      ],
+      [
+        "musk",
+        0.6,
+        "g"
+      ],
+      [
+        "sandalwood",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Dissolve the scent in the perfumer's alcohol, add water and glycerin, shake and rest 1 week. Lower alcohol than a body-only mist, so it can go on hair ends too. Vanilla absolute and white musk do most of the work; a suede or cashmere fragrance oil adds the soft, powdery texture.",
+    "inspired": "Victoria's Secret Bare Sueded Vanilla",
+    "source": {
+      "creator": "uselushop",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "shea-coconut-frizz-hair-serum",
+    "name": "Shea and coconut frizz hair serum",
+    "claim": "Smooths frizz and adds shine to dry ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        45,
+        "g"
+      ],
+      [
+        "coconut",
+        20,
+        "g"
+      ],
+      [
+        "squalane",
+        20,
+        "g"
+      ],
+      [
+        "shea",
+        10,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Melt the shea into the coconut oil, stir in the rest and bottle. Warm 1 to 2 pumps in your palms and smooth over mid-lengths and ends. Store serums that claim heat protection use tested film-formers; this DIY one isn't heat-tested, so use a heat protectant before hot tools.",
+    "inspired": "Trader Joe's shea butter and coconut oil hair serum",
+    "source": {
+      "creator": "by.ludmilla_",
+      "platform": "Instagram"
+    }
   }
 ]

@@ -6608,5 +6608,15 @@
     "lvl": "ok",
     "good": "Tart cherry that's one of the richest natural sources of vitamin C; used in brightening masks.",
     "care": "Its vitamin C fades fast once wet and it's acidic, so mix fresh and rinse off."
+  },
+  {
+    "id": "optiphen",
+    "grp": "Preserving and mixing",
+    "name": "Optiphen (phenoxyethanol, caprylyl glycol)",
+    "ph": "pres",
+    "d": 1,
+    "lvl": "ok",
+    "good": "A broad-spectrum preservative common in home-made lotions and creams; works across a wide pH range.",
+    "care": "Use 0.75% to 1.5% of the total weight, added below 80 °C. The neat liquid irritates eyes, so wear gloves and goggles when measuring. Not accepted in most natural certifications."
   }
 ]

@@ -7331,5 +7331,36 @@
   "flags": [
    "care: Saffron is often faked"
   ]
+ },
+ "sea-buckthorn-tallow-body-butter-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Sea buckthorn stains orange",
+   "care: Too much sea buckthorn oil"
+  ]
+ },
+ "budget-3-ingredient-body-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soy-milk-ceramide-body-milk": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bare-nectar-style-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "bare-magnolia-style-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sueded-vanilla-skin-mist": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "shea-coconut-frizz-hair-serum": {
+  "verdict": "ok",
+  "flags": []
  }
 }
