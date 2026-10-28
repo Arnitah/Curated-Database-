@@ -10178,5 +10178,74 @@
    "iris",
    "powdery"
   ]
+ },
+ {
+  "id": "muse-beauty",
+  "name": "Muse Beauty",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.musebeauty.in/",
+  "about": "An Indian dessert-and-comfort perfume house with illustrated boxes; its 'Museluxe' line is the stronger EDP+ range.",
+  "why": "Café-counter gourmands at a fair price (whipped-cream pistachio, choco éclair, s'mores, mocha martini) plus a clean powdery Angel Dust, all with ₹399 15 ml sizes to try.",
+  "families": [
+   "gourmand",
+   "musk",
+   "floral"
+  ],
+  "accents": [
+   "pistachio",
+   "rice powder",
+   "honey"
+  ],
+  "sig": {
+   "name": "Angel Dust",
+   "url": "https://www.musebeauty.in/products/angel-dust",
+   "notes": {
+    "t": [
+     "aldehydes"
+    ],
+    "h": [
+     "heliotrope",
+     "cotton"
+    ],
+    "b": [
+     "rice powder",
+     "soft musks"
+    ]
+   },
+   "profile": "Fluffy cotton and baby powder, like freshly bathed skin."
+  },
+  "price": {
+   "amt": 999,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.musebeauty.in/products/angel-dust",
+   "on": "2026-10-28",
+   "note": "Most scents ₹999 / 50 ml and ₹399 / 15 ml; Angel Dust also as a ₹399 6 ml roll-on."
+  },
+  "also": [
+   {
+    "name": "Whipped Cream Pistachio, Caramel Pistachio, Choco Glazed Eclair, Smoky Vanilla",
+    "notes": "The dessert counter: pistachio cream, choco éclair, a smoky vanilla.",
+    "price": "₹999 · 50 ml (15 ml ₹399)",
+    "url": "https://www.musebeauty.in/"
+   },
+   {
+    "name": "Scandalous Honey, Strawberry Champagne, Mocha Caramel Martini, S'mores by the Fireplace; Museluxe Strawberry Milkshake",
+    "notes": "Honeyed white florals and orange (a creator compares it to JPG Scandal); strawberry with a fizzy citrus lift; coffee-caramel; toasted marshmallow; dark berries and creamy vanilla.",
+    "price": "See shop",
+    "url": "https://www.musebeauty.in/"
+   }
+  ],
+  "tags": [
+   "india",
+   "gourmand",
+   "budget"
+  ]
  }
 ]

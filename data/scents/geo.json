@@ -1024,5 +1024,11 @@
   "lon": 18.07,
   "place": "Sweden",
   "precision": "country"
+ },
+ "muse-beauty": {
+  "lat": 28.61,
+  "lon": 77.21,
+  "place": "India",
+  "precision": "country"
  }
 }
