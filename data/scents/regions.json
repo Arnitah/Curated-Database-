@@ -568,5 +568,18 @@
    "rose"
   ],
   "where": "Cairo's old perfume-oil shops around Khan el-Khalili; small brands sell through Instagram"
+ },
+ {
+  "cc": "TZ",
+  "country": "Tanzania",
+  "style": "Gulf-style perfumes, oils and bakhoor sold through local resellers, often on Instagram and WhatsApp.",
+  "roots": "Swahili coast trade with Oman and the Gulf brought oud, rose and incense into everyday life.",
+  "materials": [
+   "oud",
+   "rose",
+   "musk",
+   "incense"
+  ],
+  "where": "Dar es Salaam, Zanzibar"
  }
 ]

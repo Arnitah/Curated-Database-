@@ -1006,5 +1006,17 @@
   "lon": -0.13,
   "place": "London",
   "precision": "city"
+ },
+ "latelier-parfum": {
+  "lat": 46.6,
+  "lon": 2.4,
+  "place": "France",
+  "precision": "country"
+ },
+ "maison-mataha": {
+  "lat": 48.86,
+  "lon": 2.35,
+  "place": "France",
+  "precision": "country"
  }
 }

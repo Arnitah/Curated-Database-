@@ -189,6 +189,12 @@
     "notes": "Bergamot, green leaves and lotus; peony, rose and jasmine; sandalwood, vanilla, amber and musk. A creator calls the house 'criminally underrated'. Notes as reported.",
     "price": "Price not read",
     "url": "https://www.luckyscent.com/brands/jscent"
+   },
+   {
+    "name": "Honey & Lemon",
+    "notes": "Honey, lemon and jasmine with peach and soft wood; a creator calls it the most realistic honey-lemon tea perfume.",
+    "price": "Price not read",
+    "url": "https://www.luckyscent.com/brands/jscent"
    }
   ]
  },
@@ -9996,6 +10002,117 @@
    "london",
    "citrus",
    "pure perfume"
+  ]
+ },
+ {
+  "id": "latelier-parfum",
+  "name": "L'Atelier Parfum",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://latelierparfum.com/",
+  "about": "A French house of numbered 'Opus' collections, each scent told as a short scene.",
+  "why": "White Mirage is a rich white-flower bouquet at a fair price, with a €39 15 ml to try.",
+  "families": [
+   "floral",
+   "woody",
+   "fruity"
+  ],
+  "accents": [
+   "tuberose",
+   "pear"
+  ],
+  "sig": {
+   "name": "Opus 2 · White Mirage",
+   "url": "https://latelierparfum.com/products/white-mirage-new",
+   "notes": {
+    "t": [
+     "bergamot",
+     "pear"
+    ],
+    "h": [
+     "tuberose",
+     "indian jasmine",
+     "magnolia",
+     "orange blossom"
+    ],
+    "b": [
+     "sandalwood",
+     "vetiver"
+    ]
+   },
+   "profile": "A tuberose shimmering in desert heat: creamy jasmine, magnolia and orange blossom with a juicy pear touch, over soft sandalwood. Notes as a creator lists them."
+  },
+  "price": {
+   "amt": 95,
+   "cur": "EUR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://latelierparfum.com/products/white-mirage-new",
+   "on": "2026-10-28",
+   "note": "15 ml €39; 100 ml €140."
+  },
+  "tags": [
+   "white floral",
+   "tuberose",
+   "france"
+  ]
+ },
+ {
+  "id": "maison-mataha",
+  "name": "Maison Mataha",
+  "country": "France",
+  "cc": "FR",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://maisonmataha.com/",
+  "about": "A French niche house of extraits in sculpted-leaf caps, working with well-known perfumers.",
+  "why": "Printemps Blanc is a creamy white-flower and white-tea extrait by Vincent Ricord that a creator calls an obsession.",
+  "families": [
+   "floral",
+   "citrus",
+   "musk"
+  ],
+  "accents": [
+   "white tea",
+   "jasmine sambac"
+  ],
+  "sig": {
+   "name": "Printemps Blanc (Extrait)",
+   "url": "https://maisonmataha.com/products/printemps-blanc",
+   "notes": {
+    "t": [
+     "grapefruit"
+    ],
+    "h": [
+     "orange blossom",
+     "jasmine sambac",
+     "white tea"
+    ],
+    "b": [
+     "vanilla",
+     "sandalwood"
+    ]
+   },
+   "profile": "Spring opening up: creamy white flowers and white tea with a bright grapefruit lift, softened by vanilla. By Vincent Ricord."
+  },
+  "price": {
+   "amt": 190,
+   "cur": "EUR",
+   "status": "verified",
+   "src": "https://maisonmataha.com/products/printemps-blanc",
+   "on": "2026-10-28",
+   "note": "Size not shown on the page."
+  },
+  "tags": [
+   "white floral",
+   "tea",
+   "extrait"
   ]
  }
 ]

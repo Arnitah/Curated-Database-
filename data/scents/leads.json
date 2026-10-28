@@ -626,7 +626,7 @@
   "name": "The Scent Arena (Muse Gourmand Series)",
   "country": "Nigeria",
   "cc": "NG",
-  "lead": "Nigerian seller's 100 ml gourmand line (e.g. Marshmallow Dream, soft and creamy). Estimated ₦10,500–12,000 per bottle: ₦10,500 at The Scent Arena and ₦12,000 at another seller (prices seen in posts, not checked on a shop). Maker still to confirm.",
+  "lead": "Resolved: this is Muse – The Gourmand Series by Prestige Cosmetics (Lagos), four 100 ml EDPs: Marshmallow Dream (light, sugary, strawberry cotton candy), Vanilla Dream (caramel vanilla), Pistachio Dream (pistachio gelato with whipped cream) and Mango (fresh, juicy, tropical). Estimated ₦10,500–12,000 a bottle from sellers' posts.",
   "src": "https://www.instagram.com/thescentarena/"
  },
  {
@@ -703,7 +703,7 @@
   "name": "Indian homegrown picks",
   "country": "India",
   "cc": "IN",
-  "lead": "A creator's homegrown rotation. Plum BodyLovin' Moonkissed Drama (blackberry, rose, musk): ₹375 / 15 ml, ₹150 / 5 ml on Plum's shop (checked; the creator's ₹700 is likely the bigger bottle). Reported by an AI check: Secret Alchemist Madurai Jasmine (orange blossom, Indian jasmine, vanilla) ₹1,419 / 100 ml, ₹375 / 10 ml; Sharon Beauty Satin Nude (clean, 'sun-dried laundry') ₹749; Adorable Bliss Golden Drizzle (dark chocolate, coffee, almond, caramel, vanilla) ₹1,199 / 50 ml. Cloud Candy (creamy marshmallow, about ₹2,000) may be the Khadlaj scent of that name. Also: Muse Beauty Angel Dust (rice powder, aldehydes, heliotrope, cotton, musk; ₹999 / 50 ml, ₹399 / 6 ml roll-on on its shop) and Sharon Beauty The 5th White (aldehydes, cotton flower, sandalwood).",
+  "lead": "A creator's homegrown rotation. Plum BodyLovin' Moonkissed Drama (blackberry, rose, musk): ₹375 / 15 ml, ₹150 / 5 ml on Plum's shop (checked; the creator's ₹700 is likely the bigger bottle). Reported by an AI check: Secret Alchemist Madurai Jasmine (orange blossom, Indian jasmine, vanilla) ₹1,419 / 100 ml, ₹375 / 10 ml; Sharon Beauty Satin Nude (clean, 'sun-dried laundry') ₹749; Adorable Bliss Golden Drizzle (dark chocolate, coffee, almond, caramel, vanilla) ₹1,199 / 50 ml. Cloud Candy (creamy marshmallow, about ₹2,000) may be the Khadlaj scent of that name. Also: Muse Beauty Angel Dust (rice powder, aldehydes, heliotrope, cotton, musk; ₹999 / 50 ml, ₹399 / 6 ml roll-on on its shop) and Sharon Beauty The 5th White (aldehydes, cotton flower, sandalwood). Renee Bloom (almond; tuberose, jasmine, sandalwood; vanilla, cocoa, tonka): ₹749 / 100 ml, ₹510 / 50 ml on Renee's shop (checked).",
   "src": "https://www.instagram.com/arougeaffair/"
  },
  {
@@ -743,8 +743,8 @@
  },
  {
   "name": "Ibraq (Summer collection)",
-  "country": "To confirm (Gulf house, since 1929)",
-  "cc": "",
+  "country": "Tanzania (reseller); brand origin to confirm",
+  "cc": "TZ",
   "lead": "Sold by a reseller in Dar es Salaam, Tanzania: Chasing Waves (bergamot, cardamom, lavender; vetiver, cinnamon; vanilla, tonka, cedar) full size TSh 110,000 on sale (was 130,000); also Sea Breeze (rose, sandalwood, cashmeran, amber), Red Coral (peach, jasmine, clove, white musk) and Riviera Sunset.",
   "src": "https://www.instagram.com/el3amryladyyy/"
  },
@@ -754,5 +754,47 @@
   "cc": "",
   "lead": "Ten-scent line in velvet bottles: Grand Delusion (fruity citrus, spicy woods), Forbidden Memory (warm smoky spice), Aura of Innocence (clean powdery floral), Ruthless (smoky leather), Bloom Fury (fruity, nutty, creamy wood), plus Lord of Ash, Subtle Ego, Self Seduction, Velvet Tyrant, Unedited Thoughts. Find price.",
   "src": "https://www.instagram.com/fragrance__planet/"
+ },
+ {
+  "name": "Soft florals to try (scentedcloud18)",
+  "country": "",
+  "cc": "",
+  "lead": "Creator's soft-floral picks: Lydeen Horsika Blue extrait (iris, violet, rose, heliotrope with mint and spice; 'a fluffy cloud'), Jeroboam Floro (juicy fruit, jasmine, woods, musk), Les Bains Guerbois 1992 Purple Night (bubblegum tuberose with mandarin, tobacco, jasmine). Find prices.",
+  "src": "https://www.instagram.com/scentedcloud18/"
+ },
+ {
+  "name": "Volare (Dreams Don't Die)",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "lead": "Neroli, bergamot and pink pepper into iris, jasmine and honeysuckle, with sugar, marshmallow and vanilla; a creator compares it to Kilian Love, Don't Be Shy. AED 80 on its own shop (checked).",
+  "src": "https://volareperfumes.com/products/dreams-dont-die"
+ },
+ {
+  "name": "Dossier (Vanilla Flirt)",
+  "country": "France (made) / US brand",
+  "cc": "",
+  "lead": "Budget 'inspired-by' house. Vanilla Flirt: cherry, pear and almond, orange flower and white flowers, vanilla gourmand. US$49 / 50 ml on its own shop (checked). Seen in-store at Target.",
+  "src": "https://www.dossier.co/"
+ },
+ {
+  "name": "Pacifica (Dream Moon)",
+  "country": "United States",
+  "cc": "US",
+  "lead": "Vegan clean-beauty brand. Dream Moon: pink rose, sandalwood and patchouli; a creator says it smells like cotton candy and more expensive than it is. US$22 spray perfume, US$12 hair and body mist on its own shop (checked).",
+  "src": "https://pacificabeauty.com/products/dream-moon-spray-perfume-1"
+ },
+ {
+  "name": "Kiss Colors & Care (scented hair mists)",
+  "country": "United States",
+  "cc": "US",
+  "lead": "Drugstore hair mists, 118 ml: Sugarcloud Mirage (vanilla) and Seville Blossom. US$6.99 on the shelf tag in a creator's photo.",
+  "src": "https://www.instagram.com/pamper_mint/"
+ },
+ {
+  "name": "Nemat (fragrance oils)",
+  "country": "United States",
+  "cc": "US",
+  "lead": "Long-standing roll-on fragrance oils (Amber, etc.) in 10 ml bottles, sold as body-chemistry signature scents. Find price.",
+  "src": "https://www.instagram.com/pretti_goddess/"
  }
 ]
