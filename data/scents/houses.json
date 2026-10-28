@@ -9688,6 +9688,12 @@
     "notes": "A powdery white cloud of soft petals and sunlit dust, matte and very clean.",
     "price": "₹899 · 50 ml (18 ml ₹399)",
     "url": "https://www.eausodramatic.com/products/ivory-dusk-perfume"
+   },
+   {
+    "name": "Lullaby in White and Ivory Dawn",
+    "notes": "More clean, soft skin scents: Lullaby in White smells like freshly bathed skin in a plush towel; a creator pairs both with Pure Silk for a 'soft and cozy' rotation.",
+    "price": "₹899 · 50 ml (18 ml ₹399)",
+    "url": "https://www.eausodramatic.com/products/lullaby-in-white"
    }
   ],
   "tags": [
@@ -9930,6 +9936,66 @@
    "apricot",
    "osmanthus",
    "suede"
+  ]
+ },
+ {
+  "id": "aurra-london",
+  "name": "Aurra London",
+  "country": "United Kingdom",
+  "cc": "GB",
+  "region": "Western Europe",
+  "continent": "Europe",
+  "city": "London",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://aurralondon.com/",
+  "about": "A small London house making 'pure perfume' in compact 15 ml bottles, with a discovery set to try the range.",
+  "why": "Pocket-size, high-concentration bottles at a gentle price, and £20 3 ml samples.",
+  "families": [
+   "citrus",
+   "floral",
+   "musk"
+  ],
+  "accents": [
+   "mandarin"
+  ],
+  "sig": {
+   "name": "Gaze (Pure Perfume)",
+   "url": "https://aurralondon.com/products/gaze",
+   "notes": {
+    "t": [
+     "citrus"
+    ],
+    "h": [
+     "soft florals"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "Sunlight through linen curtains: breezy, sparkling citrus softened by gentle florals. Fresh but not sharp."
+  },
+  "price": {
+   "amt": 65,
+   "cur": "GBP",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://aurralondon.com/products/gaze",
+   "on": "2026-10-28",
+   "note": "3 ml £20; discovery set £60."
+  },
+  "also": [
+   {
+    "name": "Dusklight, Zephyr, Onyx, Obsidian, Velvet",
+    "notes": "The rest of the range.",
+    "price": "£65 · 15 ml each",
+    "url": "https://aurralondon.com/"
+   }
+  ],
+  "tags": [
+   "london",
+   "citrus",
+   "pure perfume"
   ]
  }
 ]
