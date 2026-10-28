@@ -2062,7 +2062,11 @@
     "hemp"
   ],
   [
-    "safflower",
+    "h[ồo]ng ?hoa|hong ?hua|safflower (petal|flower)|carthamus tinctorius (flower|petal)|carthamus(?! tinctorius seed)",
+    "safflowerpetal"
+  ],
+  [
+    "safflower|carthamus tinctorius seed oil",
     "safflower"
   ],
   [
@@ -2272,10 +2276,6 @@
   [
     "cốt toái bổ|drynaria|gu sui bu",
     "drynaria"
-  ],
-  [
-    "hồng hoa|safflower (petal|flower)|carthamus",
-    "safflowerpetal"
   ],
   [
     "raspberry seed|rubus idaeus",

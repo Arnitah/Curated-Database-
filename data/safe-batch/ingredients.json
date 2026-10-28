@@ -238,12 +238,12 @@
   {
     "id": "safflower",
     "grp": "Carrier oils",
-    "name": "Safflower oil (high linoleic)",
+    "name": "Safflower oil (Carthamus tinctorius seed oil)",
     "ph": "oil",
     "d": 0.92,
     "lvl": "ok",
-    "good": "Light and inexpensive.",
-    "care": "Can trigger reactions in people allergic to daisies or ragweed."
+    "good": "Light, fast-absorbing and inexpensive. The high-linoleic type is rich in omega-6 linoleic acid, which supports the skin barrier and in a small study reduced clogged pores in acne-prone skin, so it suits oily and combination skin. The high-oleic type is richer and more stable, better for dry skin and hair ends.",
+    "care": "High-linoleic safflower goes rancid quickly: buy small, store cool and dark, and add vitamin E. Daisy family, so it can trigger reactions in people allergic to ragweed, chamomile or marigold."
   },
   {
     "id": "ricebran",
@@ -3924,11 +3924,11 @@
   {
     "id": "safflowerpetal",
     "grp": "Dried botanicals",
-    "name": "Safflower petals (hồng hoa)",
+    "name": "Safflower petals (hong hua, hồng hoa, Carthamus tinctorius flower)",
     "ph": "botan",
     "tsp": 0.5,
     "lvl": "ok",
-    "good": "Bright red-orange petals that colour tonics and oils; a 'blood-moving' herb in Chinese medicine.",
+    "good": "Bright red-orange petals once used as a fabric and food dye (a cheap saffron substitute) and a traditional rouge; a \"blood-moving\" herb in Chinese medicine, also steeped into oils and tonics for colour.",
     "care": "Stains. Avoid in pregnancy (traditionally said to stimulate the uterus). Not the same as safflower cooking oil."
   },
   {
