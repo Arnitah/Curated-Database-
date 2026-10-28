@@ -1018,5 +1018,11 @@
   "lon": 2.35,
   "place": "France",
   "precision": "country"
+ },
+ "lydeen": {
+  "lat": 59.33,
+  "lon": 18.07,
+  "place": "Sweden",
+  "precision": "country"
  }
 }

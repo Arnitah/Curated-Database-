@@ -10114,5 +10114,64 @@
    "tea",
    "extrait"
   ]
+ },
+ {
+  "id": "lydeen",
+  "name": "Lydeen Parfums",
+  "country": "Sweden",
+  "cc": "SE",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://lydeenparfums.com/",
+  "about": "A Swedish niche house of soft, dreamy eaux de parfum and extraits.",
+  "why": "Horsika Blue is the 'fluffy cloud' powdery iris a creator raves about: spice and mint over orris, rose and violet.",
+  "families": [
+   "floral",
+   "woody",
+   "spicy"
+  ],
+  "accents": [
+   "orris",
+   "mint"
+  ],
+  "sig": {
+   "name": "Horsika Blue",
+   "url": "https://lydeenparfums.com/products/horsika-blue-edp",
+   "notes": {
+    "t": [
+     "cardamom",
+     "cinnamon",
+     "ginger",
+     "mint",
+     "rum"
+    ],
+    "h": [
+     "orris",
+     "rose",
+     "violet"
+    ],
+    "b": [
+     "heliotrope",
+     "woods"
+    ]
+   },
+   "profile": "Smooth and powdery, like sunlight over sea foam: a cool spiced-mint opening melting into soft iris, violet and rose."
+  },
+  "price": {
+   "amt": 780,
+   "cur": "SEK",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://lydeenparfums.com/products/horsika-blue-edp",
+   "on": "2026-10-28",
+   "note": "50 ml SEK 1,684 on its shop."
+  },
+  "tags": [
+   "sweden",
+   "iris",
+   "powdery"
+  ]
  }
 ]
