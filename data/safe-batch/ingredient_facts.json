@@ -395,6 +395,19 @@
    }
   ]
  },
+ "astragalus": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/astragalus-huang-qi-cellular-extract"
+   }
+  ]
+ },
  "avocado": {
   "listings": 1,
   "suppliers": [
@@ -1231,6 +1244,19 @@
    }
   ]
  },
+ "celery": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/celery-seed-cellular-extract"
+   }
+  ]
+ },
  "centella": {
   "listings": 3,
   "suppliers": [
@@ -1794,7 +1820,7 @@
   ]
  },
  "digera": {
-  "listings": 228,
+  "listings": 223,
   "suppliers": [
    "native_extracts"
   ],
@@ -1931,10 +1957,11 @@
   ]
  },
  "fennel": {
-  "listings": 3,
+  "listings": 4,
   "suppliers": [
    "aromantic",
-   "formulator_sample_shop"
+   "formulator_sample_shop",
+   "native_extracts"
   ],
   "use_pct": [
    1,
@@ -1954,6 +1981,10 @@
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-fennel-extract"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/fennel-seed-cellular-extract"
    }
   ]
  },
@@ -3362,6 +3393,29 @@
    }
   ]
  },
+ "mangosteen": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "native_extracts"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-mangosteen-oil"
+   },
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/mangosteen-cellular-extract"
+   }
+  ]
+ },
  "manjistha": {
   "listings": 1,
   "suppliers": [
@@ -4065,7 +4119,7 @@
   ]
  },
  "passionflower": {
-  "listings": 3,
+  "listings": 2,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop"
@@ -4074,7 +4128,7 @@
    1,
    10
   ],
-  "use_n": 2,
+  "use_n": 1,
   "ph": [
    4,
    7
@@ -4085,6 +4139,24 @@
     "s": "aromantic",
     "u": "https://aromantic.co.uk/products/passionflower-seed-oil"
    },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-passionflower-extract-sno"
+   }
+  ]
+ },
+ "passionfruitoil": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "shelf_months": 12,
+  "links": [
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-passion-fruit-extract"
@@ -4710,7 +4782,34 @@
   ]
  },
  "safflower": {
-  "listings": 4,
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   100
+  ],
+  "use_n": 1,
+  "ph": [
+   4.5,
+   6
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-thistle-oil"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-safflower-oil"
+   }
+  ]
+ },
+ "safflowerpetal": {
+  "listings": 3,
   "suppliers": [
    "formulator_sample_shop"
   ],
@@ -4728,23 +4827,6 @@
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-mango-flower-extract-os"
-   }
-  ]
- },
- "safflowerpetal": {
-  "listings": 2,
-  "suppliers": [
-   "aromantic"
-  ],
-  "use_pct": [
-   1,
-   100
-  ],
-  "use_n": 1,
-  "links": [
-   {
-    "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/organic-thistle-oil"
    }
   ]
  },
@@ -5199,6 +5281,19 @@
    {
     "s": "lotioncrafter",
     "u": "https://lotioncrafter.com/products/linoret-af"
+   }
+  ]
+ },
+ "starfruit": {
+  "listings": 1,
+  "suppliers": [
+   "native_extracts"
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "native_extracts",
+    "u": "https://www.nativeextracts.com/products/starfruit-cellular-extract"
    }
   ]
  },
