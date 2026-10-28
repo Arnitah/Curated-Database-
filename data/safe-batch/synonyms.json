@@ -1,5 +1,37 @@
 [
   [
+    "poria|fu ?ling|wolfiporia|hoelen",
+    "poria"
+  ],
+  [
+    "codonopsis|dang ?shen",
+    "codonopsis"
+  ],
+  [
+    "atractylodes|bai ?zhu",
+    "atractylodes"
+  ],
+  [
+    "hyacinth bean|bai ?bian ?dou|lablab|dolichos",
+    "hyacinthbean"
+  ],
+  [
+    "chinese yam|shan ?yao|nagaimo|dioscorea (polystachya|opposita|batatas)",
+    "chineseyam"
+  ],
+  [
+    "euryale|qian ?shi|gorgon nut",
+    "foxnut"
+  ],
+  [
+    "yi ?yi ?ren|hatomugi",
+    "jobstears"
+  ],
+  [
+    "huang ?qi\\b",
+    "astragalus"
+  ],
+  [
     "passion ?fruit (seed )?oil|maracuja|passiflora edulis",
     "passionfruitoil"
   ],

@@ -5251,11 +5251,11 @@
   {
     "id": "astragalus",
     "grp": "Dried botanicals",
-    "name": "Astragalus or codonopsis root (huang qi, dang shen)",
+    "name": "Astragalus root (huang qi)",
     "ph": "botan",
     "tsp": 2,
     "lvl": "ok",
-    "good": "Classic Chinese tonic roots simmered into soups and teas.",
+    "good": "Classic Chinese tonic root simmered into soups and teas. For dang shen, see codonopsis.",
     "care": "Hair claims are about eating them; little evidence on the scalp. Low risk as a rinse."
   },
   {
@@ -5411,11 +5411,11 @@
   {
     "id": "foxnut",
     "grp": "Powders and exfoliants",
-    "name": "Fox nut (makhana) powder",
+    "name": "Fox nut (makhana, qian shi, Euryale ferox) powder",
     "ph": "powder",
     "tsp": 3,
     "lvl": "ok",
-    "good": "Starchy flour from lotus-family seeds; a soft mask base.",
+    "good": "Starchy flour from the seeds of the prickly water lily (Euryale ferox), eaten as makhana in India and qian shi in China; a soft, gentle mask base with antioxidant polyphenols.",
     "care": "Low risk. Mix fresh."
   },
   {
@@ -5431,11 +5431,11 @@
   {
     "id": "jobstears",
     "grp": "Powders and exfoliants",
-    "name": "Job's tears (coix seed) powder",
+    "name": "Job's tears (coix seed, yi yi ren, hatomugi) powder",
     "ph": "powder",
     "tsp": 3,
     "lvl": "ok",
-    "good": "An Asian grain flour used in brightening masks.",
+    "good": "An Asian grain used in Japanese hatomugi lotions and Chinese masks; soft, hydrating and slightly brightening in feel.",
     "care": "Brightening evidence is weak. Low risk."
   },
   {
@@ -6827,5 +6827,57 @@
     "never": true,
     "lvl": "stop",
     "care": "Not a true palm. All parts, especially the seeds, contain cycasin, which causes liver failure and is often fatal to pets. Never use it in skin or hair products. Edible sago starch comes from a different plant (Metroxylon sagu)."
+  },
+  {
+    "id": "poria",
+    "grp": "Dried botanicals",
+    "name": "Poria (fu ling, Wolfiporia extensa / Poria cocos), dried",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A medicinal fungus that grows on pine roots, used in Chinese soups, teas and the classic 'eight treasures' cake. In a rat and cell study, poria extract and its triterpenoids raised collagen and hyaluronic acid; it appears in Asian brightening and soothing skincare as a powder or extract.",
+    "care": "Skin evidence is from animal and cell studies, not people. Low risk as a mask powder; buy it as a food or herbal product, not foraged."
+  },
+  {
+    "id": "codonopsis",
+    "grp": "Dried botanicals",
+    "name": "Codonopsis root (dang shen, Codonopsis pilosula)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A gentle TCM tonic root, often used as a milder stand-in for ginseng in soups and teas; contains polysaccharides and saponins studied for antioxidant effects.",
+    "care": "Its benefits are traditional and about eating it; little skin research. Low risk as a rinse or mask powder."
+  },
+  {
+    "id": "atractylodes",
+    "grp": "Dried botanicals",
+    "name": "Atractylodes root (bai zhu, Atractylodes macrocephala)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A TCM root often included in traditional skin-brightening formulas; compounds such as atractylenolide I inhibit tyrosinase (the pigment enzyme) and calm inflammation in lab studies.",
+    "care": "Brightening evidence is indirect, from lab work and traditional use. Daisy-family plant, so patch test if you react to ragweed, chamomile or arnica."
+  },
+  {
+    "id": "hyacinthbean",
+    "grp": "Dried botanicals",
+    "name": "White hyacinth bean (bai bian dou, Lablab purpureus)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Hyacinth beans must be cooked if eaten",
+    "good": "A TCM bean, cooked into soups and the eight-treasures cake; ground fine it can be used like other bean flours in rinse-off masks.",
+    "care": "Raw or undercooked dried beans contain cyanogenic glycosides and lectins and are toxic if eaten: soak and boil thoroughly for food. For skin, use only as a rinse-off flour, and keep it away from children who might taste it."
+  },
+  {
+    "id": "chineseyam",
+    "grp": "Fresh foods",
+    "name": "Chinese yam (shan yao, Dioscorea polystachya / D. opposita)",
+    "ph": "fresh",
+    "d": 1.05,
+    "lvl": "care",
+    "flag": "Raw yam can make skin itch",
+    "good": "A slippery, mucilage-rich tuber eaten in Chinese and Japanese cooking (nagaimo); the dried root powder is a classic TCM food. Yam extracts show antioxidant and mild brightening effects in lab studies.",
+    "care": "Peeling or touching raw yam often causes itching and flaking, likely from saponins and oxalate crystals; wear gloves. Use dried powder or cooked yam in masks rather than raw. Brightening evidence is lab-only."
   }
 ]
