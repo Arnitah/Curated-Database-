@@ -6879,5 +6879,15 @@
     "flag": "Raw yam can make skin itch",
     "good": "A slippery, mucilage-rich tuber eaten in Chinese and Japanese cooking (nagaimo); the dried root powder is a classic TCM food. Yam extracts show antioxidant and mild brightening effects in lab studies.",
     "care": "Peeling or touching raw yam often causes itching and flaking, likely from saponins and oxalate crystals; wear gloves. Use dried powder or cooked yam in masks rather than raw. Brightening evidence is lab-only."
+  },
+  {
+    "id": "arborvitaeseed",
+    "grp": "Dried botanicals",
+    "name": "Arborvitae seed (bai zi ren, Platycladus orientalis seed kernel)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "The oily seed kernel of Chinese arborvitae, a calming herb in Chinese medicine. Rich in fatty oil, it can be crushed and warmed in a carrier oil for a soft, resinous, woody scent in hair oils, balms and aromatherapy blends.",
+    "care": "Little cosmetic research; its uses are traditional. The kernels go rancid quickly, so store sealed and cool. Not the same as arborvitae or thuja essential oil: Western thuja (Thuja occidentalis) oil is high in thujone and toxic if swallowed. Taken by mouth it has a laxative effect, so keep it out of reach of children."
   }
 ]
