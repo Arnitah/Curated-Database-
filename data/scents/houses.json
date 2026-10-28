@@ -9695,5 +9695,241 @@
    "clean",
    "soap"
   ]
+ },
+ {
+  "id": "rooh-amer",
+  "name": "Rooh Amer",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "city": "Jaipur",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.roohamerindia.com/",
+  "about": "A Jaipur family perfume house (its roots go back to 1957) with shops at Amer Fort, Rambagh Palace and Jantar Mantar, making perfumes named after Rajasthan's cities and India's flowers.",
+  "why": "A perfume souvenir you can buy right inside Jaipur's palaces and forts, with each bottle tied to a place: Jaipur, Jodhpur, Jaisalmer, Udaipur, Kashi.",
+  "families": [
+   "floral",
+   "amber",
+   "gourmand"
+  ],
+  "accents": [
+   "saffron",
+   "frangipani"
+  ],
+  "sig": {
+   "name": "Jaisalmer (Eau de Parfum)",
+   "url": "https://www.roohamerindia.com/",
+   "notes": {
+    "t": [
+     "saffron"
+    ],
+    "h": [
+     "spices"
+    ],
+    "b": [
+     "sandalwood"
+    ]
+   },
+   "profile": "The golden desert city in a bottle: warm saffron over creamy sandalwood. Udaipur is the vanilla-caramel one; Frangipani adds mandarin, basil and pepper."
+  },
+  "price": {
+   "amt": 1975,
+   "cur": "INR",
+   "ml": 30,
+   "status": "verified",
+   "src": "https://www.roohamerindia.com/",
+   "on": "2026-10-28",
+   "note": "Three-city set (Jaipur, Jodhpur, Jaisalmer) ₹5,595. Limited Kashi with designer Suneet Varma ₹3,995 / 30 ml."
+  },
+  "also": [
+   {
+    "name": "Rose, Jasmine, Frangipani",
+    "notes": "Their Indian-flower trio.",
+    "price": "₹1,975 · 30 ml each",
+    "url": "https://www.roohamerindia.com/"
+   },
+   {
+    "name": "Kashi (with Suneet Varma)",
+    "notes": "Limited edition inspired by Varanasi: the Ganga, ghats, incense and temple flowers.",
+    "price": "₹3,995 · 30 ml",
+    "url": "https://www.roohamerindia.com/"
+   }
+  ],
+  "tags": [
+   "jaipur",
+   "rajasthan",
+   "souvenir"
+  ]
+ },
+ {
+  "id": "fraganote",
+  "name": "Fraganote",
+  "country": "India",
+  "cc": "IN",
+  "region": "South Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "medium",
+  "site": "https://fraganote.com/",
+  "about": "An affordable Indian perfume brand with small sizes for trying, plus candles and gift sets.",
+  "why": "Vanilla Wood is the 'Irish cream' vanilla creators rave about, at under ₹1,000 for a full bottle and ₹199 for 10 ml.",
+  "families": [
+   "gourmand",
+   "woody",
+   "floral"
+  ],
+  "accents": [
+   "irish cream",
+   "vanilla"
+  ],
+  "sig": {
+   "name": "Vanilla Wood",
+   "url": "https://fraganote.com/products/vanilla-wood-50ml",
+   "notes": {
+    "t": [
+     "vanilla bean",
+     "irish cream liqueur"
+    ],
+    "h": [
+     "may rose",
+     "jasmine"
+    ],
+    "b": [
+     "amber",
+     "sandalwood"
+    ]
+   },
+   "profile": "A creamy, boozy vanilla with a splash of Irish cream, softened by rose and jasmine and grounded in warm woods. Not sugary."
+  },
+  "price": {
+   "amt": 999,
+   "cur": "INR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://fraganote.com/products/vanilla-wood-50ml",
+   "on": "2026-10-28",
+   "note": "25 ml ₹599; 10 ml ₹199."
+  },
+  "tags": [
+   "india",
+   "vanilla",
+   "budget"
+  ]
+ },
+ {
+  "id": "gabar",
+  "name": "Gabar",
+  "country": "United States / United Kingdom",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "city": "New York (founded)",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://gabarworld.com/",
+  "about": "A small house that started in New York, with botanical-print bottles and a numbered 'Urban Collection' about city moments.",
+  "why": "04 Rise is a calm, skin-like morning scent, and a £10 sample makes it easy to try.",
+  "families": [
+   "aromatic",
+   "woody",
+   "musk"
+  ],
+  "accents": [
+   "lavender",
+   "juniper"
+  ],
+  "sig": {
+   "name": "04 (NOLITA) Rise",
+   "url": "https://gabarworld.com/products/rise",
+   "notes": {
+    "t": [
+     "juniper",
+     "pink pepper"
+    ],
+    "h": [
+     "lavender",
+     "cypress",
+     "lily of the valley"
+    ],
+    "b": [
+     "amberwood",
+     "cashmere wood"
+    ]
+   },
+   "profile": "Waking up to crisp city air: juniper and pink pepper, a cool lavender-cypress heart, then soft skin-like woods. By Gus Romero."
+  },
+  "price": {
+   "amt": 130,
+   "cur": "GBP",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://gabarworld.com/products/rise",
+   "on": "2026-10-28",
+   "note": "2 ml sample £10."
+  },
+  "tags": [
+   "new 2026",
+   "lavender",
+   "skin scent"
+  ]
+ },
+ {
+  "id": "amouroud",
+  "name": "Amouroud",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "North America",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://amouroud.com/",
+  "about": "A niche house of rich, oud-and-floral perfumes in faceted bottles.",
+  "why": "Apricot Nectar is a sunny, juicy osmanthus-apricot with suede and incense, and the US$30 travel spray lets you try it.",
+  "families": [
+   "fruity",
+   "floral",
+   "amber"
+  ],
+  "accents": [
+   "apricot",
+   "osmanthus"
+  ],
+  "sig": {
+   "name": "Apricot Nectar",
+   "url": "https://amouroud.com/products/apricot-nectar",
+   "notes": {
+    "t": [
+     "spices",
+     "fruits"
+    ],
+    "h": [
+     "rose",
+     "osmanthus",
+     "apricot"
+    ],
+    "b": [
+     "suede",
+     "patchouli",
+     "amber",
+     "incense"
+    ]
+   },
+   "profile": "Sunshine and ripe apricot: sparkling spice and rose melt into osmanthus and nectar, over soft suede, amber and a wisp of incense."
+  },
+  "price": {
+   "amt": 240,
+   "cur": "USD",
+   "status": "verified",
+   "src": "https://amouroud.com/products/apricot-nectar",
+   "on": "2026-10-28",
+   "note": "Size not shown on the page. 5 ml travel spray US$30."
+  },
+  "tags": [
+   "apricot",
+   "osmanthus",
+   "suede"
+  ]
  }
 ]

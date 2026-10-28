@@ -976,5 +976,29 @@
   "lon": 77.21,
   "place": "India",
   "precision": "country"
+ },
+ "rooh-amer": {
+  "lat": 26.985,
+  "lon": 75.851,
+  "place": "Jaipur (Amer Fort)",
+  "precision": "city"
+ },
+ "fraganote": {
+  "lat": 28.61,
+  "lon": 77.21,
+  "place": "India",
+  "precision": "country"
+ },
+ "gabar": {
+  "lat": 40.72,
+  "lon": -73.99,
+  "place": "New York",
+  "precision": "city"
+ },
+ "amouroud": {
+  "lat": 39.8,
+  "lon": -98.6,
+  "place": "United States",
+  "precision": "country"
  }
 }
