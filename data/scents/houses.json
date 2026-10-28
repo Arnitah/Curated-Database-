@@ -10247,5 +10247,57 @@
    "gourmand",
    "budget"
   ]
+ },
+ {
+  "id": "goldfield-banks",
+  "name": "Goldfield & Banks",
+  "country": "Australia",
+  "cc": "AU",
+  "region": "Oceania",
+  "continent": "Oceania",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://goldfieldandbanks.com/",
+  "about": "An Australian niche house built around native and tropical Australian botanicals, with 'botanical' perfume concentrates.",
+  "why": "Silky Woods is the creator's 'hot chocolate with zero calories': creamy, cocoa-soft woods, with a A$15 sample to try.",
+  "families": [
+   "woody",
+   "gourmand",
+   "amber"
+  ],
+  "accents": [
+   "cocoa",
+   "sandalwood"
+  ],
+  "sig": {
+   "name": "Silky Woods",
+   "url": "https://goldfieldandbanks.com/",
+   "notes": {
+    "t": [
+     "cocoa"
+    ],
+    "h": [
+     "australian sandalwood"
+    ],
+    "b": [
+     "woods",
+     "musk"
+    ]
+   },
+   "profile": "A soft, creamy cocoa-and-sandalwood skin scent, like hot chocolate without the sugar. Notes as a creator describes them."
+  },
+  "price": {
+   "amt": 72,
+   "cur": "AUD",
+   "status": "verified",
+   "src": "https://goldfieldandbanks.com/",
+   "on": "2026-10-28",
+   "note": "As listed on its shop search (size not shown); Elixir A$88; 2 ml sample A$15."
+  },
+  "tags": [
+   "australia",
+   "cocoa",
+   "woods"
+  ]
  }
 ]
