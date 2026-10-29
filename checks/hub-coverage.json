@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-28T17:11:53.248Z",
+ "built_at": "2026-10-29T17:27:41.535Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
  "explained_in_safe_batch": 286,
  "queue": [
@@ -272,16 +272,16 @@
    "products": 274
   },
   {
-   "ingredient": "arginine",
-   "products": 269
-  },
-  {
    "ingredient": "chlorphenesin",
    "products": 269
   },
   {
    "ingredient": "ethylhexyl triazone",
    "products": 269
+  },
+  {
+   "ingredient": "arginine",
+   "products": 268
   },
   {
    "ingredient": "hydrogenated palm glycerides citrate",

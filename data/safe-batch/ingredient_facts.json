@@ -4921,7 +4921,7 @@
   ]
  },
  "sci": {
-  "listings": 7,
+  "listings": 8,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -4932,7 +4932,7 @@
    1.25,
    55
   ],
-  "use_n": 5,
+  "use_n": 6,
   "ph": [
    5,
    6
