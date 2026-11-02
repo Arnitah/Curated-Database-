@@ -1,6 +1,6 @@
 {
-  "version": 152,
-  "updated_at": "2026-11-02T20:49:50.339Z",
+  "version": 153,
+  "updated_at": "2026-11-02T21:58:06.321Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -352,9 +352,9 @@
     },
     "scents/rates": {
       "count": 5,
-      "bytes": 772,
-      "hash": "dcecca5ecf31",
-      "updated_at": "2026-11-02T19:50:05.350Z"
+      "bytes": 775,
+      "hash": "4c414e5def2d",
+      "updated_at": "2026-11-02T21:58:06.321Z"
     },
     "scents/regions": {
       "count": 45,

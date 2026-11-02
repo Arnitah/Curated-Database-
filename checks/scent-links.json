@@ -1,9 +1,9 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-11-02",
  "summary": {
-  "pass": 132,
-  "blocked": 8,
-  "fail": 0
+  "pass": 157,
+  "blocked": 13,
+  "fail": 5
  },
  "houses": {
   "parfum-satori": {
@@ -132,9 +132,9 @@
    "price": "pass"
   },
   "swiss-arabian": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "fail 412",
+   "sig": "fail 412",
+   "price": "fail 412"
   },
   "lattafa": {
    "site": "pass",
@@ -148,7 +148,7 @@
   },
   "saint-dici": {
    "site": "pass",
-   "sig": "pass",
+   "sig": "fail UND_ERR_CONNECT_TIMEOUT",
    "price": "pass"
   },
   "scentury": {
@@ -202,9 +202,9 @@
    "price": "pass"
   },
   "borom": {
-   "site": "pass",
+   "site": "blocked",
    "sig": "pass",
-   "price": "pass"
+   "price": "blocked"
   },
   "reunrom": {
    "site": "pass",
@@ -272,9 +272,9 @@
    "price": "pass"
   },
   "kst-scent": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
   },
   "cosmic-mansion": {
    "site": "pass",
@@ -473,8 +473,8 @@
   },
   "korres": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "fail 404",
+   "price": "fail 404"
   },
   "skandinavisk": {
    "site": "pass",
@@ -632,9 +632,9 @@
    "price": "pass"
   },
   "pekji": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "fail ETIMEDOUT",
+   "sig": "fail ETIMEDOUT",
+   "price": "fail ETIMEDOUT"
   },
   "aftelier": {
    "site": "pass",
@@ -652,9 +652,9 @@
    "price": "blocked"
   },
   "bath-body-works": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "pass"
+   "site": "pass",
+   "sig": "pass",
+   "price": "fail ENOTFOUND"
   },
   "cyklar": {
    "site": "pass",
@@ -702,6 +702,181 @@
    "price": "pass"
   },
   "cozy-khamreya": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "asateer": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "libroaria": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "stardust-stems": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lepoque": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "regime-des-fleurs": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "sarah-baker": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "chujian": {
+   "site": "pass",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "the-body-tale": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "kitschy": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "aroma-concepts": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "celia-loves": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "gerimist": {
+   "site": "blocked",
+   "sig": "blocked",
+   "price": "blocked"
+  },
+  "belnu": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "liberation-of-flowers": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "commodity": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "paragraf-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "etre-parfums": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "otter-haus": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "inde-wild": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "fugazzi": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "dedcool": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "forward-perfume": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "eau-so-dramatic": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "rooh-amer": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "fraganote": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "gabar": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "amouroud": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "aurra-london": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "latelier-parfum": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "maison-mataha": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lydeen": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "muse-beauty": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "lova": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "oaken-lab": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "son-venin": {
    "site": "pass",
    "sig": "pass",
    "price": "pass"
