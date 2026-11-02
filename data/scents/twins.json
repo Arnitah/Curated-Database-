@@ -757,15 +757,17 @@
   "source": "Instagram (_.divalicious666._) calls it a perfect dupe; opinion, not verified by smell"
  },
  {
-  "budget": "Marshmallow Muse (₹854, 50 ml)",
+  "budget": "Marshmallow Muse (₹854 / 50 ml, ₹382 / 20 ml on Myntra)",
   "budgetBrand": "Nuvana",
   "luxury": "Yum Boujee Marshmallow 81",
   "luxuryBrand": "Kayali",
   "notes": [
+   "strawberry",
    "marshmallow",
-   "sugar"
+   "coconut",
+   "vanilla"
   ],
-  "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell"
+  "source": "Nuvana itself names Kayali Yum Boujee Marshmallow as the inspiration; a creator agrees. Inspiration is declared, smell not verified."
  },
  {
   "budget": "Yacht Club (₹1,099)",
@@ -773,25 +775,26 @@
   "luxury": "Wavechild",
   "luxuryBrand": "Room 1015",
   "notes": [
-   "fruity",
-   "coconut",
-   "creamy"
+   "citrus",
+   "watermelon",
+   "coconut milk",
+   "vanilla"
   ],
   "direction": "similar",
   "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell"
  },
  {
-  "budget": "Trendy (₹284)",
+  "budget": "Trendy Woman EDT (75 ml)",
   "budgetBrand": "Nike",
   "luxury": "Angel",
   "luxuryBrand": "Mugler",
   "notes": [
-   "chocolate",
-   "caramel",
-   "patchouli"
+   "blackcurrant",
+   "honey",
+   "bergamot"
   ],
   "direction": "similar",
-  "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell"
+  "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell. Low confidence: its listed notes (blackcurrant, honey, bergamot) don't match Angel's chocolate-patchouli, so treat as a loose impression."
  },
  {
   "budget": "Khayal (₹599)",
@@ -800,8 +803,10 @@
   "luxuryBrand": "Louis Vuitton",
   "notes": [
    "citrus",
+   "neroli",
    "ginger",
-   "tea"
+   "tea",
+   "ambroxan"
   ],
   "direction": "similar",
   "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell"
@@ -812,12 +817,14 @@
   "luxury": "Silver Mountain Water",
   "luxuryBrand": "Creed",
   "notes": [
-   "citrus",
-   "green tea",
-   "musk"
+   "bergamot",
+   "lemon",
+   "iris",
+   "sandalwood",
+   "ambergris"
   ],
   "direction": "similar",
-  "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell"
+  "source": "Instagram (vanilla.goddess_diaryy), creator's price and opinion; not verified by smell. Reported ₹3,500 on Parisbelle's shop, about ₹2,499 elsewhere."
  },
  {
   "budget": "Burbon Vanile (40 ml)",
@@ -829,7 +836,7 @@
    "brown sugar",
    "amber"
   ],
-  "source": "Instagram (prettyfinds.by.k), creator's opinion; not verified by smell"
+  "source": "Alternate Scents itself says it is inspired by Vanilla 28 (reported ₹359 / 40 ml, ₹749 / 100 ml); a creator agrees. Inspiration is declared, smell not verified."
  },
  {
   "budget": "Coco Gold attar",
@@ -837,8 +844,11 @@
   "luxury": "Black Opium",
   "luxuryBrand": "YSL",
   "notes": [
-   "coffee",
-   "vanilla"
+   "almond",
+   "tuberose",
+   "orange blossom",
+   "vanilla",
+   "patchouli"
   ],
   "direction": "similar",
   "source": "Instagram (prettyfinds.by.k), creator's opinion; not verified by smell"
