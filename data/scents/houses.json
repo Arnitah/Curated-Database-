@@ -6513,7 +6513,15 @@
    "cur": "USD",
    "ml": 8,
    "url": "https://henryrose.com/products/flora-carnivora-perfume"
-  }
+  },
+  "also": [
+   {
+    "name": "French Exit",
+    "notes": "A dewy white floral with a clean, musky, woody dry-down; a creator's easy everyday reach.",
+    "price": "See shop",
+    "url": "https://henryrose.com/"
+   }
+  ]
  },
  {
   "id": "maya-njie",
@@ -9159,7 +9167,7 @@
      "tonka bean"
     ]
    },
-   "profile": "Cinnamon sugar and suede-soft saffron with a milky sweetness, on warm woods. Spice- is the close skin version; Spice+ adds leather."
+   "profile": "Cinnamon sugar and suede-soft saffron with a milky sweetness, on warm woods. Spice- is the close skin version; Spice+ adds leather. Spice- (the close-to-skin version) swaps the woods for skin musk and ambroxan; a creator calls it fall spices as a skin scent."
   },
   "price": {
    "amt": 55,
