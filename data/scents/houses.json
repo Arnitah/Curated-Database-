@@ -10402,5 +10402,57 @@
    "moss",
    "incense"
   ]
+ },
+ {
+  "id": "son-venin",
+  "name": "Son Venin",
+  "country": "Norway",
+  "cc": "NO",
+  "region": "Northern Europe",
+  "continent": "Europe",
+  "city": "Oslo",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://sonvenin.com/",
+  "about": "A Norwegian house of everyday-object scents in round, pebble-like bottles.",
+  "why": "Pain Nouveau smells of cereal bread and lavender, an unusual pairing a creator found in Norway and calls unique but pretty. A good souvenir from a Nordic trip.",
+  "families": [
+   "gourmand",
+   "green"
+  ],
+  "accents": [
+   "bread",
+   "lavender"
+  ],
+  "sig": {
+   "name": "Pain Nouveau",
+   "url": "https://sonvenin.com/",
+   "notes": {
+    "t": [
+     "lavender"
+    ],
+    "h": [
+     "cereal bread"
+    ],
+    "b": [
+     "musk"
+    ]
+   },
+   "profile": "Freshly baked grain bread with a soft lavender lift. Notes as a creator describes them."
+  },
+  "price": {
+   "amt": 1700,
+   "cur": "NOK",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://sonvenin.com/",
+   "on": "2026-11-02",
+   "note": "Solid-perfume 3 g NOK 500."
+  },
+  "tags": [
+   "norway",
+   "bread",
+   "lavender"
+  ]
  }
 ]
