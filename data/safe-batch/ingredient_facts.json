@@ -40,24 +40,19 @@
   ]
  },
  "alcohol": {
-  "listings": 6,
+  "listings": 5,
   "suppliers": [
-   "aromantic",
    "formulator_sample_shop",
    "lotioncrafter",
    "windy_point"
   ],
   "use_pct": [
    1,
-   7.5
+   10
   ],
-  "use_n": 6,
+  "use_n": 5,
   "shelf_months": 12,
   "links": [
-   {
-    "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/montanov-s"
-   },
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-behenyl-alcohol"
@@ -65,6 +60,10 @@
    {
     "s": "lotioncrafter",
     "u": "https://lotioncrafter.com/products/behenyl-alcohol"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/isopropyl-myristate"
    }
   ]
  },
@@ -1548,6 +1547,32 @@
    }
   ]
  },
+ "cocoglucoside": {
+  "listings": 3,
+  "suppliers": [
+   "aromantic",
+   "lotioncrafter"
+  ],
+  "use_pct": [
+   1,
+   5
+  ],
+  "use_n": 3,
+  "ph": [
+   11.5,
+   12.5
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/lamesoft-po65"
+   },
+   {
+    "s": "lotioncrafter",
+    "u": "https://lotioncrafter.com/products/surfpro-cg"
+   }
+  ]
+ },
  "coconut": {
   "listings": 12,
   "suppliers": [
@@ -1816,6 +1841,29 @@
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-date-seed-powder"
+   }
+  ]
+ },
+ "decylglucoside": {
+  "listings": 2,
+  "suppliers": [
+   "formulator_sample_shop",
+   "windy_point"
+  ],
+  "use_pct": [
+   3.5,
+   16.5
+  ],
+  "use_n": 2,
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/poly-suga-mulse-d9"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/dls-mild-liquid-surfactant-copy"
    }
   ]
  },
@@ -3650,9 +3698,8 @@
   ]
  },
  "moringa": {
-  "listings": 2,
+  "listings": 1,
   "suppliers": [
-   "aromantic",
    "formulator_sample_shop"
   ],
   "use_pct": [
@@ -3667,12 +3714,20 @@
   "shelf_months": 12,
   "links": [
    {
-    "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/moringa-oil"
-   },
-   {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-moringa-pterygosperma-seed-extract-g"
+   }
+  ]
+ },
+ "moringaoil": {
+  "listings": 1,
+  "suppliers": [
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/moringa-oil"
    }
   ]
  },
@@ -5149,6 +5204,28 @@
    }
   ]
  },
+ "soapnut": {
+  "listings": 1,
+  "suppliers": [
+   "formulator_sample_shop"
+  ],
+  "use_pct": [
+   1,
+   10
+  ],
+  "use_n": 1,
+  "ph": [
+   9.5,
+   11.5
+  ],
+  "shelf_months": 12,
+  "links": [
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-soapberry-saponins"
+   }
+  ]
+ },
  "sodiumlactate": {
   "listings": 2,
   "suppliers": [
@@ -5805,7 +5882,7 @@
   ]
  },
  "water": {
-  "listings": 33,
+  "listings": 32,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -5816,10 +5893,10 @@
    1,
    10
   ],
-  "use_n": 26,
+  "use_n": 25,
   "ph": [
    0.5,
-   11.5
+   8
   ],
   "shelf_months": 12,
   "links": [
