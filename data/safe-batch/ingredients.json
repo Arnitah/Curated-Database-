@@ -7070,5 +7070,16 @@
     "flag": "Shoofly plant is toxic to livestock",
     "good": "Seeds of the shoofly plant (apple of Peru). Rubbed in a cloth bag under water, they release a pectin-like gel that sets into clear bingfen ice jelly in southwest China. That slippery gel can also give hair slip for detangling.",
     "care": "Hardly studied. The leaves and plant are toxic to livestock, so use only seeds sold for bingfen, and never forage it. The gel spoils within a day: make it fresh and rinse it out. Many 'bingfen powders' are actually konjac or agar."
+  },
+  {
+    "id": "loomi",
+    "grp": "Powders and exfoliants",
+    "name": "Dried black lime (loomi, noomi basra), ground",
+    "ph": "powder",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Lime peel can cause sun burns",
+    "good": "Whole limes boiled in brine and sun-dried until black. It's a sour Gulf and Persian spice, and Moroccan and Gulf body scrubs add the powder for its tangy citrus scent and mild acidity.",
+    "care": "Lime peel contains furocoumarins, which can cause blistering burns or dark marks in sunlight (phytophotodermatitis). Use it only in rinse-off scrubs, rinse well, and keep scrubbed skin out of strong sun that day. It's gritty, so skip the face and broken skin."
   }
 ]

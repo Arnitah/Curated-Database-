@@ -7515,5 +7515,59 @@
    "care: Don't rely on this as sunscreen",
    "care: You can't make reliable sunscreen at home"
   ]
+ },
+ "vanilla-comfort-bath-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "vanilla-lavender-magnesium-deodorant-stick": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "blended-rice-face-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "stretchy-turmeric-lime-rose-body-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Lime peel can cause sun burns",
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "coffee-sidr-aloe-cleansing-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "eleven-ingredient-date-pit-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "rhassoul-olive-detangling-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "amber-gem-body-wash": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "caramel-milk-tonka-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "saffron-cinnamon-sandalwood-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "sage-sea-salt-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-mango-jasmine-perfume-oil": {
+  "verdict": "ok",
+  "flags": []
  }
 }

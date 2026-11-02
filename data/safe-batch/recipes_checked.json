@@ -55226,5 +55226,511 @@
       "creator": "bielunele",
       "platform": "TikTok"
     }
+  },
+  {
+    "id": "vanilla-comfort-bath-body-oil",
+    "name": "Vanilla comfort bath and body oil",
+    "claim": "Soft vanilla oil for damp skin or a few drops in the bath",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        50,
+        "ml"
+      ],
+      [
+        "almond",
+        45,
+        "ml"
+      ],
+      [
+        "vanillaabs",
+        4,
+        "drops"
+      ],
+      [
+        "vite",
+        1,
+        "ml"
+      ]
+    ],
+    "note": "Mix and shake. Smooth it onto damp skin straight after a shower, or swirl a teaspoon into bath water. Oil makes the tub slippery, so step out carefully. Vanilla absolute is thick, so warm the bottle in your hands to blend it. The magnesium in the original is mostly a selling point at that dose.",
+    "inspired": "Dr Teal's Vanilla Comfort Bath & Body Oil",
+    "source": {
+      "creator": "BeautymanorKe",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "vanilla-lavender-magnesium-deodorant-stick",
+    "name": "Vanilla and lavender magnesium deodorant stick",
+    "claim": "Baking-soda-free stick deodorant",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "shea",
+        20,
+        "g"
+      ],
+      [
+        "coconut",
+        15,
+        "g"
+      ],
+      [
+        "beeswax",
+        12,
+        "g"
+      ],
+      [
+        "arrowroot",
+        20,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        10,
+        "g"
+      ],
+      [
+        "vanillaabs",
+        4,
+        "drops"
+      ],
+      [
+        "lavender",
+        8,
+        "drops"
+      ]
+    ],
+    "note": "Melt the shea, coconut oil and beeswax, whisk in the arrowroot and magnesium hydroxide until smooth, cool slightly, add the scents and pour into an empty tube. Magnesium hydroxide fights odour gently without the sting of baking soda. Like any aluminium-free deodorant, it controls smell, not wetness.",
+    "inspired": "Dr Teal's Vanilla & Lavender Aluminum-Free Deodorant",
+    "source": {
+      "creator": "BeautymanorKe",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "blended-rice-face-mask",
+    "name": "Blended cooked rice face mask",
+    "claim": "Soft, soothing starch mask",
+    "type": "face_rinse",
+    "use": "fresh",
+    "rows": [
+      [
+        "cookedrice",
+        3,
+        "tbsp"
+      ],
+      [
+        "water",
+        2,
+        "tbsp"
+      ]
+    ],
+    "note": "Boil plain rice until very soft, cool it completely, and blend it with a little water into a smooth paste. Leave it on 10 to 15 minutes and rinse with lukewarm water. The starch feels soothing and leaves skin soft, but don't expect it to clear acne. Make it fresh every time and throw away leftovers, because cooked rice spoils quickly. Daily use is fine if your skin likes it.",
+    "source": {
+      "creator": "ugcniambi",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "stretchy-turmeric-lime-rose-body-scrub",
+    "name": "Stretchy turmeric, black lime and rose body scrub",
+    "claim": "Glossy, stretchy sugar scrub for soft, glowing skin",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sugar",
+        150,
+        "g"
+      ],
+      [
+        "shea",
+        30,
+        "g"
+      ],
+      [
+        "coconut",
+        30,
+        "g"
+      ],
+      [
+        "olive",
+        30,
+        "g"
+      ],
+      [
+        "glycerin",
+        15,
+        "g"
+      ],
+      [
+        "xanthan",
+        1,
+        "g"
+      ],
+      [
+        "turmeric",
+        0.5,
+        "tsp"
+      ],
+      [
+        "loomi",
+        1,
+        "tsp"
+      ],
+      [
+        "rosepowder",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Whisk the xanthan into the glycerin first so it doesn't clump. Melt the butters with the olive oil, cool, then whip in the glycerin gel to get the stretchy texture. Fold in the powders and sugar. Scoop it with a dry spoon and keep water out of the jar. Turmeric stains towels, and lime peel can make skin burn in sun, so rinse well and use it in the evening. A scrub smooths and softens; it won't remove deep dark spots.",
+    "source": {
+      "creator": "Btissam Beauty",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "coffee-sidr-aloe-cleansing-hair-mask",
+    "name": "Coffee, sidr and aloe cleansing hair mask",
+    "claim": "Gentle cleansing mask for scalp and lengths",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "rows": [
+      [
+        "water",
+        144,
+        "g"
+      ],
+      [
+        "coffeepowder",
+        31,
+        "g"
+      ],
+      [
+        "aloe",
+        3,
+        "tbsp"
+      ],
+      [
+        "sidr",
+        6,
+        "tsp"
+      ],
+      [
+        "olive",
+        10,
+        "g"
+      ],
+      [
+        "honey",
+        1,
+        "tbsp"
+      ],
+      [
+        "sci",
+        9,
+        "g"
+      ]
+    ],
+    "note": "As posted, with plain water standing in for the herbal water. Warm the water and stir in the SCI until it melts, then mix in the coffee, sidr, aloe, olive oil and honey. Work it into wet hair and scalp, leave it 10 to 20 minutes and rinse well. The SCI and sidr cleanse, so it can replace shampoo that day. Coffee can tint light or bleached hair. Mix it fresh.",
+    "source": {
+      "creator": "Btissam Beauty",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "eleven-ingredient-date-pit-hair-oil",
+    "name": "Eleven-ingredient date pit hair oil",
+    "claim": "Warm, spiced olive oil infusion for scalp and ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "olive",
+        500,
+        "ml"
+      ],
+      [
+        "datepit",
+        2,
+        "tbsp"
+      ],
+      [
+        "coffee",
+        1,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        2,
+        "tbsp"
+      ],
+      [
+        "fenugreek",
+        1,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "bayleaf",
+        4,
+        "g"
+      ],
+      [
+        "clovewhole",
+        1,
+        "tsp"
+      ],
+      [
+        "staranise",
+        2,
+        "g"
+      ],
+      [
+        "rosebuds",
+        2,
+        "tbsp"
+      ]
+    ],
+    "note": "Everything must be bone dry. Put the dried ingredients in a clean jar, cover with extra virgin olive oil, and infuse for 40 days somewhere dark, shaking every few days. Strain well through a cloth. Massage a little into the scalp before washing, or use it as a pre-poo. Clove and bay are warming, so patch test, and skip it on a sore scalp. The 'stronger, longer hair' claim is traditional; oiling mainly protects the lengths from breakage.",
+    "source": {
+      "creator": "Btissam Beauty",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "rhassoul-olive-detangling-mask",
+    "name": "Rhassoul and olive 3-in-1 detangling mask",
+    "claim": "Cleanse, condition and detangle in one step",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "rows": [
+      [
+        "rhassoul",
+        3,
+        "tbsp"
+      ],
+      [
+        "aloe",
+        4,
+        "tbsp"
+      ],
+      [
+        "water",
+        4,
+        "tbsp"
+      ],
+      [
+        "olive",
+        1,
+        "tbsp"
+      ],
+      [
+        "marshmallowroot",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Steep the marshmallow root in hot water for 15 minutes and strain. Mix the warm tea with rhassoul, aloe and olive oil into a smooth, pourable cream; add more tea if it's thick. Apply it in sections on wet hair, finger-detangle, leave it 10 minutes and rinse well. Rhassoul cleanses gently, so on coily hair this can stand in for shampoo. Mix it fresh each time and use a plastic or wooden bowl if you like; metal won't harm clay.",
+    "inspired": "Rhindia Masque nourrissant (rhassoul and olive)",
+    "source": {
+      "creator": "MC FELL",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "amber-gem-body-wash",
+    "name": "Amber gem body wash",
+    "claim": "Golden, warm amber body wash",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "showergel",
+        250,
+        "ml"
+      ],
+      [
+        "glycerin",
+        10,
+        "ml"
+      ],
+      [
+        "jojobabeads",
+        1,
+        "tsp"
+      ],
+      [
+        "fragrance",
+        2,
+        "g"
+      ]
+    ],
+    "note": "Start with an unscented gel body wash so the beads stay suspended. Stir in glycerin and an amber or amber-vanilla fragrance oil, then fold in coloured jojoba beads for the 'gem' look; they melt as you rub. Keep fragrance under 1% for a body wash, and patch test.",
+    "inspired": "Kabut Amber Powder Gem Body Wash",
+    "source": {
+      "creator": "Khalifah TheEmpress",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "caramel-milk-tonka-perfume-oil",
+    "name": "Caramel milk and honey perfume oil",
+    "claim": "Creamy caramel, milk and honey over vanilla musk",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "vanillaabs",
+        4,
+        "drops"
+      ],
+      [
+        "musk",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.6,
+        "g"
+      ]
+    ],
+    "note": "Use a caramel-milk or tonka-honey fragrance oil. Drip everything into a 20 ml roller, top up with jojoba and rest for 2 weeks. Vanilla absolute and white musk make the soft base.",
+    "inspired": "Paris Corner Taskeen Caramel Cascade",
+    "source": {
+      "creator": "Fragrance research workbook",
+      "platform": "Safe Batch"
+    }
+  },
+  {
+    "id": "saffron-cinnamon-sandalwood-perfume-oil",
+    "name": "Saffron, cinnamon and sandalwood perfume oil",
+    "claim": "Warm, sweet amber-spice oil",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "sandalwood",
+        5,
+        "drops"
+      ],
+      [
+        "vanillaabs",
+        4,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Use a saffron-cinnamon accord fragrance oil (skin-safe at this level) rather than cinnamon bark oil, which is a strong skin irritant even at one drop. Drip everything into a 20 ml roller, top up with jojoba and rest 2 weeks.",
+    "inspired": "Arabian Oud Kalemat",
+    "source": {
+      "creator": "Fragrance research workbook",
+      "platform": "Safe Batch"
+    }
+  },
+  {
+    "id": "sage-sea-salt-perfume-oil",
+    "name": "Sage and sea salt perfume oil",
+    "claim": "Airy, salty-woody seaside scent",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "clarysage",
+        3,
+        "drops"
+      ],
+      [
+        "sandalwood",
+        3,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Use a sea salt or ocean-mineral accord fragrance oil. Clary sage gives the herbal note; garden-sage oil is higher in thujone, so leave it out. Rest 2 weeks.",
+    "inspired": "Jo Malone Wood Sage & Sea Salt",
+    "source": {
+      "creator": "Fragrance research workbook",
+      "platform": "Safe Batch"
+    }
+  },
+  {
+    "id": "coconut-mango-jasmine-perfume-oil",
+    "name": "Coconut, mango and jasmine perfume oil",
+    "claim": "Creamy tropical coconut with mango and soft florals",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        18,
+        "g"
+      ],
+      [
+        "jasmineeo",
+        2,
+        "drops"
+      ],
+      [
+        "vanillaabs",
+        3,
+        "drops"
+      ],
+      [
+        "musk",
+        0.3,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Use a coconut-mango or passion fruit fragrance oil. Vanilla and musk make the creamy base. Rest 2 weeks. For depth, layer it with a peppery berry-mango scent.",
+    "inspired": "Lattafa Yara Tous",
+    "source": {
+      "creator": "Fragrance research workbook",
+      "platform": "Safe Batch"
+    }
   }
 ]

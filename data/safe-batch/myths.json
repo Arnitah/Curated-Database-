@@ -7006,5 +7006,49 @@
     "seen_in": "TikTok body-care, hair and DIY posts; an ethnobotanical master list",
     "checked": "2026-11-02",
     "format": "v2"
+  },
+  {
+    "id": "rice-mask-kojic-vitc-soap-curl-type-aluminium-free",
+    "title": "A rice mask clears back acne, a vitamin C and kojic soap brightens, and aluminium-free deodorant stops sweat",
+    "topics": [
+      "face",
+      "body",
+      "hair"
+    ],
+    "claims": [
+      {
+        "claim": "Boiled, blended rice clears acne and mosquito bites in 4 days",
+        "verdict": "unproven",
+        "truth": "The starch in rice can soothe and soften skin for a while. But there's no evidence it clears acne, and bites fade on their own within days. Cooked rice also spoils fast, so make it fresh each time.",
+        "grade": "C"
+      },
+      {
+        "claim": "A vitamin C and kojic acid soap evens skin tone",
+        "verdict": "partly",
+        "truth": "Kojic acid fades dark spots best in leave-on products. A soap rinses off in seconds. Vitamin C also breaks down at soap's high pH and in light. Some fake or unlabelled 'brightening' bars contain mercury or hydroquinone, so buy from a known seller and check for a registration number.",
+        "grade": "B"
+      },
+      {
+        "claim": "Aluminium-free deodorant gives all-day wetness protection",
+        "verdict": "false",
+        "truth": "Only antiperspirants with aluminium salts reduce sweat. Aluminium-free deodorants, including magnesium ones, control odour.",
+        "grade": "A"
+      },
+      {
+        "claim": "Choose your hair routine by curl pattern (2A to 4C)",
+        "verdict": "partly",
+        "truth": "Curl pattern is a useful start, but porosity, strand thickness, density and scalp oil matter more for which products work. One head often has several patterns.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FDA: Mercury poisoning linked to skin products",
+        "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+      }
+    ],
+    "seen_in": "TikTok skincare, hair routine and brightening-soap posts",
+    "checked": "2026-11-02",
+    "format": "v2"
   }
 ]
