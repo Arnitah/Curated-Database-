@@ -1030,5 +1030,17 @@
   "lon": 77.21,
   "place": "India",
   "precision": "country"
+ },
+ "lova": {
+  "lat": 25.2,
+  "lon": 55.27,
+  "place": "UAE",
+  "precision": "country"
+ },
+ "oaken-lab": {
+  "lat": -6.2,
+  "lon": 106.85,
+  "place": "Jakarta",
+  "precision": "country"
  }
 }

@@ -10127,6 +10127,14 @@
    "white floral",
    "tea",
    "extrait"
+  ],
+  "also": [
+   {
+    "name": "Escapade Gourmande (extrait)",
+    "notes": "Sugar cane over vanilla and tonka, with benzoin and musk: a rich, caramel-sugary vanilla. Notes as a creator lists them.",
+    "price": "See shop",
+    "url": "https://maisonmataha.com/"
+   }
   ]
  },
  {
@@ -10260,6 +10268,125 @@
    "india",
    "gourmand",
    "budget"
+  ]
+ },
+ {
+  "id": "lova",
+  "name": "Lova",
+  "country": "United Arab Emirates",
+  "cc": "AE",
+  "region": "Middle East",
+  "continent": "Asia",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://lovaperfumes.com/",
+  "about": "An Emirati niche house with hourglass bottles under carved wooden domes, mixing Arabic warmth with a French style; its perfumes are composed with perfumers in Europe and the UAE.",
+  "why": "Mango Oud pairs Indian mango with oud, and Mochi is a soft tea-and-citrus scent: Gulf perfumery in a lighter, modern voice.",
+  "families": [
+   "fruity",
+   "woody",
+   "floral"
+  ],
+  "accents": [
+   "mango",
+   "oud",
+   "tea"
+  ],
+  "sig": {
+   "name": "Mango Oud",
+   "url": "https://lovaperfumes.com/",
+   "notes": {
+    "t": [
+     "mango"
+    ],
+    "h": [
+     "florals"
+    ],
+    "b": [
+     "oud"
+    ]
+   },
+   "profile": "Ripe Indian mango laid over smooth oud: sweet, juicy and warm at once."
+  },
+  "price": {
+   "amt": 350,
+   "cur": "AED",
+   "status": "verified",
+   "src": "https://lovaperfumes.com/",
+   "on": "2026-11-02",
+   "note": "Size not shown on the shop."
+  },
+  "also": [
+   {
+    "name": "Mochi",
+    "notes": "Bergamot and orange, a soft floral heart, Chinese tea and ambroxan.",
+    "price": "AED 250 · 50 ml, AED 390 · 100 ml",
+    "url": "https://lovaperfumes.com/"
+   },
+   {
+    "name": "Desert Vetiver",
+    "notes": "Bergamot, a leathery aromatic heart, vetiver and cashmere wood; by perfumer Shadi Samra.",
+    "price": "AED 390",
+    "url": "https://lovaperfumes.com/"
+   }
+  ],
+  "tags": [
+   "uae",
+   "mango",
+   "oud"
+  ]
+ },
+ {
+  "id": "oaken-lab",
+  "name": "Oaken Lab",
+  "country": "Indonesia",
+  "cc": "ID",
+  "region": "Southeast Asia",
+  "continent": "Asia",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://oakenlab.com/",
+  "about": "An Indonesian scent studio making perfume alongside matching incense and scent tags, so one smell can fill your skin, room and car.",
+  "why": "Temple Moss is a quiet, mossy incense scent, and you can also burn it as incense.",
+  "families": [
+   "green",
+   "woody"
+  ],
+  "accents": [
+   "moss",
+   "incense"
+  ],
+  "sig": {
+   "name": "Temple Moss (Eau de Parfum)",
+   "url": "https://oakenlab.com/products/eau-de-parfume-temple-moss-50ml",
+   "notes": {
+    "t": [
+     "green leaves"
+    ],
+    "h": [
+     "patchouli",
+     "incense"
+    ],
+    "b": [
+     "tree moss",
+     "cedar"
+    ]
+   },
+   "profile": "A mossy temple courtyard: green leaves, soft incense smoke, damp moss and dry cedar. Notes as reported."
+  },
+  "price": {
+   "amt": 899000,
+   "cur": "IDR",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://oakenlab.com/products/eau-de-parfume-temple-moss-50ml",
+   "on": "2026-11-02",
+   "note": "Matching incense (20 sticks) Rp199.000; scent tag Rp99.000."
+  },
+  "tags": [
+   "indonesia",
+   "moss",
+   "incense"
   ]
  }
 ]
