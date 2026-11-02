@@ -114,5 +114,35 @@
   "url": "https://www.tiktok.com/@beautylab_danang",
   "src": "https://www.tiktok.com/@beautylab_danang",
   "on": "2026-10-27"
+ },
+ {
+  "id": "atelier-rosa-rose",
+  "name": "Atelier de Rosa Rose",
+  "city": "Grasse",
+  "country": "France",
+  "cc": "FR",
+  "lat": 43.6584,
+  "lon": 6.9225,
+  "address": "1 Rue des Fabreries, Grasse (by appointment)",
+  "kind": "workshop",
+  "what": "Perfumer Laurence Fanuel's studio and olfactory art gallery: create your own perfume in a workshop, or buy her original perfumes and paintings. Open all year by appointment.",
+  "url": "https://www.paysdegrassetourisme.fr/en/atelier-de-rosa-rose-6210568/",
+  "src": "https://www.paysdegrassetourisme.fr/en/atelier-de-rosa-rose-6210568/",
+  "on": "2026-11-02"
+ },
+ {
+  "id": "1000-flowers-bespoke",
+  "name": "1000 Flowers",
+  "city": "Grasse",
+  "country": "France",
+  "cc": "FR",
+  "lat": 43.6589,
+  "lon": 6.9233,
+  "address": "4 Place aux Aires, Grasse",
+  "kind": "bespoke",
+  "what": "Jessica Buchanan's small-batch Grasse perfume house with a boutique; offers bespoke perfumes, but the bespoke calendar is full until 2028. Visit the boutique meanwhile.",
+  "url": "https://www.1000flowers.fr/bespoke",
+  "src": "https://www.1000flowers.fr/bespoke",
+  "on": "2026-11-02"
  }
 ]

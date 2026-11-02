@@ -1,6 +1,6 @@
 {
-  "version": 143,
-  "updated_at": "2026-10-29T17:27:41.635Z",
+  "version": 141,
+  "updated_at": "2026-11-02T17:07:23.720Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -315,10 +315,10 @@
       "updated_at": "2026-10-26T22:46:31.159Z"
     },
     "scents/bespoke": {
-      "count": 7,
-      "bytes": 3984,
-      "hash": "8ffd94423707",
-      "updated_at": "2026-10-27T19:54:32.851Z"
+      "count": 9,
+      "bytes": 5116,
+      "hash": "ec01d6639406",
+      "updated_at": "2026-11-02T17:07:23.714Z"
     },
     "scents/families": {
       "count": 12,
@@ -339,10 +339,10 @@
       "updated_at": "2026-10-28T01:07:25.769Z"
     },
     "scents/leads": {
-      "count": 114,
-      "bytes": 42663,
-      "hash": "539a22cbe6b2",
-      "updated_at": "2026-10-28T01:07:25.771Z"
+      "count": 118,
+      "bytes": 44297,
+      "hash": "6f5d2d216af3",
+      "updated_at": "2026-11-02T17:07:23.720Z"
     },
     "scents/materials": {
       "count": 3,
