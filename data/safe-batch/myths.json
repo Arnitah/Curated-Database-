@@ -7050,5 +7050,58 @@
     "seen_in": "TikTok skincare, hair routine and brightening-soap posts",
     "checked": "2026-11-02",
     "format": "v2"
+  },
+  {
+    "id": "toning-soap-glucosides-acid-hair-comb-peptide-spray",
+    "title": "A toning soap fades stretch marks in 21 days, glucosides are acid cleansers, and an herb paste or peptide spray reverses hair loss",
+    "topics": [
+      "body",
+      "hair"
+    ],
+    "claims": [
+      {
+        "claim": "An exfoliating 'complexion toning' soap fades dark spots, stretch marks, sunburn and acne in 21 days",
+        "verdict": "false",
+        "truth": "Soap is rinsed off in seconds. Stretch marks are scars in the deeper skin and don't fade from any soap. Some unlabelled toning soaps contain hydroquinone, steroids or mercury, which can thin or damage skin. Check for a full ingredient list and registration.",
+        "grade": "A"
+      },
+      {
+        "claim": "Coco glucoside is an acid cleanser",
+        "verdict": "false",
+        "truth": "Coco and decyl glucoside are sold at a high pH (around 11 to 12). Shampoos made with them need citric acid to bring the pH down to about 5 to 5.5, and preservatives like Cosgard need that low pH to work.",
+        "grade": "A"
+      },
+      {
+        "claim": "Herb 'comb' powders dilate scalp blood vessels and feed the follicle to stop hair loss",
+        "verdict": "unproven",
+        "truth": "Amla, hibiscus, mahlab and rose make a pleasant conditioning mask. No study shows a rinse-off herb paste reaches the follicle or treats hair loss. Sudden or patchy shedding should be checked by a doctor.",
+        "grade": "C"
+      },
+      {
+        "claim": "A peptide (Capixyl) spray blocks DHT and raises hair density by 70%",
+        "verdict": "unproven",
+        "truth": "The headline figures come from small studies run by the ingredient maker. Independent trials are lacking, and it isn't proven to match minoxidil or finasteride.",
+        "grade": "C"
+      },
+      {
+        "claim": "Amla, bhringraj and rosemary are the strongest trio: they grow hair, stop shedding and delay greying",
+        "verdict": "unproven",
+        "truth": "One small trial found rosemary oil comparable to low-strength minoxidil, and bhringraj results come from animal studies. Amla's anti-grey use is traditional. Oiling mainly protects the lengths from breakage.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FDA: Mercury poisoning linked to skin products",
+        "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+      },
+      {
+        "title": "Rosemary oil vs minoxidil 2% for androgenetic alopecia (Skinmed, 2015)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25842469/"
+      }
+    ],
+    "seen_in": "TikTok and online-store hair and soap posts",
+    "checked": "2026-11-02",
+    "format": "v2"
   }
 ]

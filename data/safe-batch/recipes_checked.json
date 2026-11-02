@@ -55732,5 +55732,339 @@
       "creator": "Fragrance research workbook",
       "platform": "Safe Batch"
     }
+  },
+  {
+    "id": "hibiscus-glucoside-cream-shampoo",
+    "name": "Hibiscus glucoside cream shampoo",
+    "claim": "Mild, creamy sulfate-free shampoo",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        66.6,
+        "g"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "olivem",
+        4,
+        "g"
+      ],
+      [
+        "glycerin",
+        6,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.8,
+        "g"
+      ],
+      [
+        "cocoglucoside",
+        10,
+        "g"
+      ],
+      [
+        "decylglucoside",
+        10,
+        "g"
+      ],
+      [
+        "agave",
+        2,
+        "g"
+      ],
+      [
+        "cosgard",
+        0.6,
+        "g"
+      ],
+      [
+        "citricacid",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "As posted, in percentages for a 100 g batch. Steep the hibiscus in hot water, strain and weigh it back to 66.6 g. Melt the Olivem 1000 into the warm tea. Disperse the xanthan in the glycerin and whisk it in, then add the glucosides, agave and Cosgard once it's cool. Glucosides are strongly alkaline, not acidic, so add citric acid a little at a time and check with pH strips until you reach 5 to 5.5. Cosgard only works below about pH 6.",
+    "source": {
+      "creator": "Leslie",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "mahlab-amla-hibiscus-rose-hair-mask-powder",
+    "name": "Mahlab, amla, hibiscus and rose hair mask powder",
+    "claim": "Conditioning herb paste for scalp and lengths",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "mahlab",
+        2,
+        "tbsp"
+      ],
+      [
+        "amla",
+        2,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        2,
+        "tbsp"
+      ],
+      [
+        "rosepowder",
+        2,
+        "tbsp"
+      ]
+    ],
+    "note": "Grind everything very fine and store it dry and airtight. To use, mix 2 to 3 tablespoons with warm water, a little oil or both until it's like thick yogurt. Rest 10 minutes, then spread it on slightly damp hair and scalp in sections. Leave it 30 to 45 minutes, then wash with a gentle shampoo. Once or twice a week. Patch test first, because mahlab contains coumarin. It may leave a slight reddish tint on light hair.",
+    "inspired": "Dr Noor Hair Comb Mask",
+    "source": {
+      "creator": "Dr Noor",
+      "platform": "Shopify store"
+    }
+  },
+  {
+    "id": "soapberry-honey-locust-herbal-shampoo",
+    "name": "Soapberry and honey locust herbal shampoo",
+    "claim": "Traditional low-foam Chinese herbal hair wash",
+    "type": "hair_rinse",
+    "use": "fridge",
+    "rows": [
+      [
+        "water",
+        1000,
+        "ml"
+      ],
+      [
+        "soapnut",
+        30,
+        "g"
+      ],
+      [
+        "zaojiao",
+        10,
+        "g"
+      ],
+      [
+        "foti",
+        5,
+        "g"
+      ],
+      [
+        "bhringraj",
+        5,
+        "g"
+      ],
+      [
+        "privet",
+        5,
+        "g"
+      ],
+      [
+        "arborvitae",
+        5,
+        "g"
+      ],
+      [
+        "redsage",
+        3,
+        "g"
+      ],
+      [
+        "kuding",
+        3,
+        "g"
+      ],
+      [
+        "slipperyelm",
+        1,
+        "tbsp"
+      ],
+      [
+        "pineneedle",
+        3,
+        "g"
+      ],
+      [
+        "spearmint",
+        2,
+        "g"
+      ]
+    ],
+    "note": "Soak the herbs for an hour, then simmer for 30 to 40 minutes and strain through a cloth. Stir the slippery elm into the hot liquid for slip (it stands in for Chinese elm bark). Massage it into wet hair like shampoo and rinse. Keep it out of your eyes: the saponins sting. It lasts 3 to 4 days in the fridge, or freeze portions in an ice tray. Skip the village method of maturing it for months with oils: without a preservative it can grow mould. Ginseng and ku shen root are optional extras.",
+    "source": {
+      "creator": "Procesos Milenarios",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "sidr-date-pit-black-tea-hair-mask",
+    "name": "Sidr, date pit and black tea hair mask",
+    "claim": "Cleansing, body-boosting mask for scalp and hair",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "rows": [
+      [
+        "sidr",
+        4,
+        "tbsp"
+      ],
+      [
+        "datepit",
+        2,
+        "tbsp"
+      ],
+      [
+        "herbtea",
+        120,
+        "ml"
+      ],
+      [
+        "olive",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Brew strong black tea and let it cool until warm. Mix it with the sidr and finely ground date pit into a smooth paste, then stir in the oil. The post's 'black tea oil' is unclear, so this uses brewed tea plus a little oil. Apply it to the scalp and hair for 30 minutes, then rinse and condition. Twice a week. Black tea can darken light hair slightly.",
+    "source": {
+      "creator": "Ali Arab shops",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "avocado-moringa-whipped-hair-butter",
+    "name": "Avocado and moringa whipped hair butter",
+    "claim": "Rich butter for dry, coarse or split ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "avocadobutter",
+        40,
+        "g"
+      ],
+      [
+        "shea",
+        30,
+        "g"
+      ],
+      [
+        "moringaoil",
+        20,
+        "g"
+      ],
+      [
+        "avocadooil",
+        10,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Melt the butters gently, stir in the oils, then chill until just firm at the edges and whip into a fluffy cream. A small amount goes on damp ends to seal in moisture after a leave-in. On fine hair, use it only on the ends.",
+    "source": {
+      "creator": "3ashba.aljamal",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "amla-bhringraj-rosemary-hair-oil",
+    "name": "Amla, bhringraj and rosemary hair oil",
+    "claim": "Herbal scalp oil, matched to fine or thick hair",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "olive",
+        150,
+        "ml"
+      ],
+      [
+        "castor",
+        50,
+        "ml"
+      ],
+      [
+        "amla",
+        1,
+        "tbsp"
+      ],
+      [
+        "bhringraj",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "clovewhole",
+        1,
+        "tsp"
+      ],
+      [
+        "fenugreek",
+        1,
+        "tbsp"
+      ],
+      [
+        "horsetail",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Warm everything on the lowest heat for 1 to 2 hours (don't let it bubble), cool, then strain through a fine cloth. The three-herb version is just amla, bhringraj and rosemary; cloves, fenugreek and horsetail are the extended blend. Choose the oil by hair: argan or sweet almond for fine, light hair; olive and castor for thick, coarse hair. Massage a little into the scalp 1 to 2 hours before washing. Cloves are warming, so patch test.",
+    "source": {
+      "creator": "LAGOMWAYS",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "sage-lavender-yarrow-glycerite",
+    "name": "Sage, lavender and yarrow glycerite",
+    "claim": "Herbal glycerin extract for oily skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "glycerin",
+        100,
+        "ml"
+      ],
+      [
+        "sage",
+        1,
+        "tbsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tbsp"
+      ],
+      [
+        "yarrow",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Use dried herbs; fresh ones add water and the glycerite can spoil. Cover the herbs fully with glycerin, seal, keep somewhere warm and dark, and shake daily for 6 weeks. Strain well and label with the date. Pure glycerin is sticky and can feel heavy on oily skin, so mix a few drops into your gel moisturiser or toner rather than using it on its own. Yarrow is in the daisy family: skip it if ragweed or chamomile bother you.",
+    "source": {
+      "creator": "bielunele",
+      "platform": "TikTok"
+    }
   }
 ]

@@ -7081,5 +7081,57 @@
     "flag": "Lime peel can cause sun burns",
     "good": "Whole limes boiled in brine and sun-dried until black. It's a sour Gulf and Persian spice, and Moroccan and Gulf body scrubs add the powder for its tangy citrus scent and mild acidity.",
     "care": "Lime peel contains furocoumarins, which can cause blistering burns or dark marks in sunlight (phytophotodermatitis). Use it only in rinse-off scrubs, rinse well, and keep scrubbed skin out of strong sun that day. It's gritty, so skip the face and broken skin."
+  },
+  {
+    "id": "cocoglucoside",
+    "grp": "Preserving and mixing",
+    "name": "Coco glucoside (plant-sugar surfactant)",
+    "ph": "surf",
+    "d": 1.1,
+    "lvl": "ok",
+    "good": "A gentle, biodegradable cleanser made from coconut fatty alcohol and corn sugar. It foams softly and is common in natural shampoos and baby washes.",
+    "care": "Sold as a thick liquid with a high pH (about 11 to 12), so a shampoo made with it needs citric acid to bring it down to about pH 5 to 5.5. It can sting the eyes."
+  },
+  {
+    "id": "decylglucoside",
+    "grp": "Preserving and mixing",
+    "name": "Decyl glucoside (plant-sugar surfactant)",
+    "ph": "surf",
+    "d": 1.1,
+    "lvl": "ok",
+    "good": "A mild, low-irritation cleanser from plant sugars and fatty alcohol. It's often paired with coco glucoside in sulfate-free shampoos and face washes.",
+    "care": "High pH (about 11 to 12) as sold, so adjust the finished product with citric acid. Rarely, people develop an allergy to it. Avoid the eyes."
+  },
+  {
+    "id": "zaojiao",
+    "grp": "Dried botanicals",
+    "name": "Chinese honey locust pods (zao jiao, 皂角, Gleditsia sinensis)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Zao jiao stings eyes; never swallow",
+    "good": "Long dark pods full of saponins. Boiled into a foaming wash, they're the classic Chinese hair-cleansing herb, much like shikakai in India.",
+    "care": "Saponins sting the eyes badly and can dry the scalp if used often. The pods and seeds are toxic if swallowed, so keep them away from children. Rinse-off use only."
+  },
+  {
+    "id": "moringaoil",
+    "grp": "Carrier oils",
+    "name": "Moringa (ben) seed oil",
+    "ph": "oil",
+    "d": 0.9,
+    "lvl": "ok",
+    "good": "A light, stable oil pressed from moringa seeds. It's rich in oleic acid and behenic acid and resists going rancid, so it suits hair butters and oils.",
+    "care": "Low risk. Pure oil is pale and mild-smelling; strong green colour usually means a leaf-extract blend."
+  },
+  {
+    "id": "capixyl",
+    "grp": "Store-bought products",
+    "name": "Capixyl (acetyl tetrapeptide-3 with red clover extract)",
+    "ph": "active",
+    "d": 1,
+    "lvl": "care",
+    "flag": "Capixyl: maker's studies only",
+    "good": "A branded peptide and red clover complex sold for thinning hair, used at about 2 to 5% in scalp serums and sprays.",
+    "care": "Most of the evidence comes from small studies run or funded by the maker. It hasn't been shown to work as well as minoxidil. Buy it from a cosmetic supplier and follow their usage rate; it needs a preservative in water-based sprays."
   }
 ]

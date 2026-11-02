@@ -7569,5 +7569,43 @@
  "coconut-mango-jasmine-perfume-oil": {
   "verdict": "ok",
   "flags": []
+ },
+ "hibiscus-glucoside-cream-shampoo": {
+  "verdict": "care",
+  "flags": [
+   "care: Citric acid can sting"
+  ]
+ },
+ "mahlab-amla-hibiscus-rose-hair-mask-powder": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "soapberry-honey-locust-herbal-shampoo": {
+  "verdict": "care",
+  "flags": [
+   "care: Arborvitae leaf can irritate",
+   "care: Fo-ti has safety concerns",
+   "care: The fridge slows spoilage but doesn't stop it",
+   "care: Zao jiao stings eyes; never swallow"
+  ]
+ },
+ "sidr-date-pit-black-tea-hair-mask": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "avocado-moringa-whipped-hair-butter": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "amla-bhringraj-rosemary-hair-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
+ },
+ "sage-lavender-yarrow-glycerite": {
+  "verdict": "ok",
+  "flags": []
  }
 }

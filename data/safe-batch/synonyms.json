@@ -1,5 +1,57 @@
 [
   [
+    "coco[ -]?glucoside",
+    "cocoglucoside"
+  ],
+  [
+    "decyl[ -]?glucoside",
+    "decylglucoside"
+  ],
+  [
+    "皂角|zao ?jiao|gleditsia|chinese honey ?locust",
+    "zaojiao"
+  ],
+  [
+    "moringa (seed )?oil|ben oil",
+    "moringaoil"
+  ],
+  [
+    "capixyl|acetyl tetrapeptide",
+    "capixyl"
+  ],
+  [
+    "女贞子|nu ?zhen ?zi",
+    "privet"
+  ],
+  [
+    "丹参|dan ?shen",
+    "redsage"
+  ],
+  [
+    "墨旱莲|mo ?han ?lian|eclipta",
+    "bhringraj"
+  ],
+  [
+    "无患子|wu ?huan ?zi|sapindus|soapberr",
+    "soapnut"
+  ],
+  [
+    "侧柏叶|ce ?bai ?ye",
+    "arborvitae"
+  ],
+  [
+    "苦丁",
+    "kuding"
+  ],
+  [
+    "榆树皮|elm bark",
+    "slipperyelm"
+  ],
+  [
+    "何首乌|he ?shou ?wu",
+    "foti"
+  ],
+  [
     "loomi|noomi|black lime|dried lime",
     "loomi"
   ],
