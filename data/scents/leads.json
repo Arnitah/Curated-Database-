@@ -913,28 +913,49 @@
   "name": "House of Bō (Xuxú)",
   "country": "Mexico",
   "cc": "MX",
-  "lead": "Mexican niche house. Xuxú parfum: champagne, chili pepper, clementine, rose, blackberry macaron, Earl Grey, white musk, Mexican vanilla, saffron; a sparkling, spicy fruity musk. 250 for 40 ml on its own shop (currency not shown).",
+  "lead": "Mexican niche house whose gemstone caps are hand-carved by Mexican artisans. Xuxú parfum by Nathalie Lorson: champagne, clementine peel, chili pepper; damask rose, blackberry macaron, Earl Grey; white musk, Mexican vanilla, saffron. A sparkling, spicy fruity musk. 250 for 40 ml on its own shop (US$ per an AI check).",
   "src": "https://www.houseofbo.co/"
  },
  {
   "name": "House of Ayakari (Attention)",
-  "country": "Nigeria",
+  "country": "To confirm (seen in Nigeria)",
   "cc": "NG",
-  "lead": "Nigerian house; Attention extrait (100 ml) is tropical, sweet, powdery and spicy, a creator's 100/10 with strong projection. Also seen: 247 Fragrance Store NG's own perfume oils (Golden Accord, Nectar Glow). Find prices.",
+  "lead": "Attention extrait: orange blossom, pineapple, apple; jasmine, rose, orris, saffron, coconut, marshmallow; vanilla, oud, musk, amber. A Nigerian creator's 100/10: tropical, sweet, powdery and strong. Reported US$140 on its own shop; where the house is based is unconfirmed. Also seen: 247 Fragrance Store NG's own oils (Golden Accord, Nectar Glow), a Nigerian oil seller with 2,000+ oils, ordering via WhatsApp.",
   "src": "https://www.instagram.com/yettyclassy/"
  },
  {
   "name": "Lore (Somewhere But Nowhere, Lil Softie)",
   "country": "United States",
   "cc": "US",
-  "lead": "Pebble-bottle house. Somewhere But Nowhere: fig, cardamom, black tea, vanilla cream, leather, cedar. Lil Softie: cereal milk, bergamot, musk mallow, jasmine, rice milk, ambroxan. Find price.",
+  "lead": "Pebble-bottle house. Somewhere But Nowhere by Jérôme Epinette: cedar, black tea, cardamom, vanilla cream, worn-in leather (a creator also lists fig). Lil Softie by Elena Ruiz: cereal milk, pink pepper, ambery musk; databases add rice. Reported US$92 / 50 ml, US$28 / 10 ml.",
   "src": "https://www.instagram.com/coffee.and.concealers/"
  },
  {
   "name": "The Nue Co (Moon Rice)",
   "country": "United Kingdom",
   "cc": "GB",
-  "lead": "Wellness brand's sleep fragrance: cardamom milk, lavender, steamed rice, jasmine, heavy cream, suede woods. A creator wears it to ease 'Sunday scaries'. Find price.",
+  "lead": "Wellness brand's sleep fragrance by Carine Certain Boin: cardamom milk, lavender, bergamot; angelica, jasmine, steamed rice; amber, suede woods, heavy cream. US$38 / 10 ml on its own shop (checked); reported US$125 / 50 ml. The sleep benefit is the brand's claim.",
   "src": "https://www.instagram.com/coffee.and.concealers/"
+ },
+ {
+  "name": "French Cowboy (Paris)",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Playful Paris house in candy-coloured bottles. Fig Lemonade: fizzy, juicy fig that a creator says feels almost cold; Pear Pavlova: juicy pear meringue. €90 each, €3 samples on its own shop (checked).",
+  "src": "https://www.frenchcowboy.com/"
+ },
+ {
+  "name": "Indie discoveries (fragrant.whims)",
+  "country": "",
+  "cc": "",
+  "lead": "A creator's sample tin: Chasing Scents (Australia) Matcha Break (matcha, bamboo, jasmine, milk, cream, white chocolate; A$160, travel A$55 on its own shop, checked); Emotional Design Studio Tea Must Be Black (tea, tobacco leaf, dried fruit, book pages, pencil shavings); Eris Parfums Mother's Milk (creamy milk with an animalic edge); Chapel Factory Baptisma (milky ginger, frankincense, resins); Sentire × Sainte Cellier Talisman (incense smoke through juniper); Scent Trunk Marigold by Tanaïs (marigold, rose, carnation garland on a salty wind); Mutabor 2K17 (realistic cigarette smoke in peach iced tea and warm sand). Find prices.",
+  "src": "https://www.instagram.com/fragrant.whims/"
+ },
+ {
+  "name": "Fig perfumes (scentrox)",
+  "country": "",
+  "cc": "",
+  "lead": "A creator's fig favourites from smaller houses: French Cowboy Fig Lemonade (cold, fizzy fig), Fugazzi Thirsty, D.S. & Durga Debaser (green fig, coconut, pear), Henry Rose London 1983 (fig, black pepper, florals, musk), Phlur Father Figure (fig, iris, sandalwood, vanilla).",
+  "src": "https://www.instagram.com/scentrox/"
  }
 ]
