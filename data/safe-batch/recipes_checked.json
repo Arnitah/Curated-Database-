@@ -54754,5 +54754,39 @@
       "creator": "scentxscent",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "beetroot-okra-flaxseed-slip-hair-mask",
+    "name": "Beetroot, okra and flaxseed slip mask",
+    "claim": "Slippery, softening mask that detangles and adds shine",
+    "type": "hair_rinse",
+    "use": "fridge",
+    "rows": [
+      [
+        "water",
+        3,
+        "cup"
+      ],
+      [
+        "beetroot",
+        100,
+        "g"
+      ],
+      [
+        "okra",
+        6,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        3,
+        "tbsp"
+      ]
+    ],
+    "note": "Simmer 1 small grated beetroot, 6 to 8 sliced okra pods and 3 tablespoons of whole flaxseed in 3 cups of water for 10 to 15 minutes, until the liquid turns slippery. Strain while warm through a cloth or stocking (flax gel gets hard to strain once cold), then let it cool. Apply to damp, clean hair in sections, leave 20 to 30 minutes under a cap, and rinse with cool water. Okra and flax give slip for detangling and soft definition. Beetroot adds a faint red tint that shows on blonde, grey or bleached hair and stains towels and grout, so wear an old shirt. Keep leftovers in the fridge and use within 3 to 4 days.",
+    "source": {
+      "creator": "user request",
+      "platform": "Safe Batch"
+    }
   }
 ]

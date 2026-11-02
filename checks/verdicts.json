@@ -7446,5 +7446,12 @@
  "velvet-berry-amber-hair-body-mist": {
   "verdict": "ok",
   "flags": []
+ },
+ "beetroot-okra-flaxseed-slip-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: Beetroot stains",
+   "care: Use fresh food within a day"
+  ]
  }
 }
