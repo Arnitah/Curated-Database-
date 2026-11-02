@@ -7453,5 +7453,67 @@
    "care: Beetroot stains",
    "care: Use fresh food within a day"
   ]
+ },
+ "almond-supple-skin-body-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "turmeric-glow-body-wash": {
+  "verdict": "care",
+  "flags": [
+   "care: Turmeric stains and can cause allergy"
+  ]
+ },
+ "calendula-flower-toner": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "saffron-shimmer-body-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Saffron is often faked",
+   "care: Some amounts are missing"
+  ]
+ },
+ "bingfen-seed-detangling-slip": {
+  "verdict": "care",
+  "flags": [
+   "care: Shoofly plant is toxic to livestock"
+  ]
+ },
+ "whipped-butter-jar-deodorant": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "cocoa-shea-knee-balm": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "arborvitae-leaf-perfume-tincture": {
+  "verdict": "care",
+  "flags": [
+   "care: Arborvitae leaf can irritate"
+  ]
+ },
+ "queens-crown-hair-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "oat-marshmallow-honey-hair-mask": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "myrrh-frankincense-resin-glow-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pink-clay-charcoal-neem-mask-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Don't rely on this as sunscreen",
+   "care: You can't make reliable sunscreen at home"
+  ]
  }
 }

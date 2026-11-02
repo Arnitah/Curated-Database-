@@ -3515,7 +3515,7 @@
     "tsp": 2.5,
     "lvl": "ok",
     "good": "Ground kernels of the St Lucie cherry; sweet almond-cherry scent. A key note in Sudanese khumra and dilka.",
-    "care": "Infuse in oil and strain, or use in rinse-off scrubs. Skip with a stone-fruit or almond allergy."
+    "care": "Infuse in oil and strain, or use in rinse-off scrubs. Its sweet smell comes from coumarin, a listed fragrance allergen, so patch test. Skip with a stone-fruit or almond allergy. The kernels go rancid, so buy small amounts."
   },
   {
     "id": "myrrhresin",
@@ -6889,5 +6889,186 @@
     "lvl": "ok",
     "good": "The oily seed kernel of Chinese arborvitae, a calming herb in Chinese medicine. Rich in fatty oil, it can be crushed and warmed in a carrier oil for a soft, resinous, woody scent in hair oils, balms and aromatherapy blends.",
     "care": "Little cosmetic research; its uses are traditional. The kernels go rancid quickly, so store sealed and cool. Not the same as arborvitae or thuja essential oil: Western thuja (Thuja occidentalis) oil is high in thujone and toxic if swallowed. Taken by mouth it has a laxative effect, so keep it out of reach of children."
+  },
+  {
+    "id": "alchornea",
+    "grp": "Dried botanicals",
+    "name": "Christmas bush leaf (Alchornea cordifolia), dried",
+    "ph": "botan",
+    "tsp": 1,
+    "lvl": "care",
+    "flag": "Alchornea: lab evidence only",
+    "good": "A West African shrub whose leaves are boiled into washes and rinses for sores, rashes and scalp problems. Leaf extracts kill several bacteria and fungi in lab tests.",
+    "care": "No human skin trials, and the eczema and dark-spot claims are traditional. The leaves are high in tannins, so they can dry the skin and stain light fabric. Patch test, and don't use it in place of treatment for an infected wound."
+  },
+  {
+    "id": "mitracarpus",
+    "grp": "Dried botanicals",
+    "name": "Mitracarpus (girdlepod, Mitracarpus scaber/hirtus), dried herb",
+    "ph": "botan",
+    "tsp": 1,
+    "lvl": "care",
+    "flag": "Mitracarpus: lab evidence only",
+    "good": "A small West African weed whose leaf juice or paste is a traditional remedy for ringworm and other fungal skin problems. Its extracts and the compound harounoside are antifungal in lab studies.",
+    "care": "Lab and traditional evidence only. The idea that it fades dark spots isn't established. A fungal rash that doesn't clear in two weeks needs a doctor and a proper antifungal."
+  },
+  {
+    "id": "katemfe",
+    "grp": "Fresh foods",
+    "name": "Katemfe fruit (miracle fruit of West Africa, Thaumatococcus daniellii)",
+    "ph": "fresh",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Its arils hold thaumatin, a protein thousands of times sweeter than sugar that's used as a food sweetener. The big leaves are used to wrap food.",
+    "care": "No cosmetic research. The claim that it coats and seals hair isn't backed by evidence. The fresh pulp spoils fast, so keep it in the fridge and use it the same day."
+  },
+  {
+    "id": "amaranthoil",
+    "grp": "Carrier oils",
+    "name": "Amaranth seed oil",
+    "ph": "oil",
+    "d": 0.92,
+    "lvl": "ok",
+    "good": "Pressed from amaranth grain, it's one of the richest plant sources of squalene (around 5 to 8%), a lipid your own skin makes. A light, softening oil for face and hair.",
+    "care": "Expensive and often sold blended with cheaper oils. Store it cool. Claims that it strengthens hair are untested."
+  },
+  {
+    "id": "datesyrup",
+    "grp": "Humectants",
+    "name": "Date syrup (silan, dibs)",
+    "ph": "humectant",
+    "d": 1.4,
+    "lvl": "care",
+    "flag": "Date syrup spoils; make fresh",
+    "good": "A thick syrup of date sugars. Like honey, it draws water into skin and hair, so a little adds softness and shine to a rinse-off mask.",
+    "care": "Very sticky, and the sugar feeds microbes, so mix it fresh and rinse it off. It doesn't have honey's antibacterial effect."
+  },
+  {
+    "id": "uziza",
+    "grp": "Dried botanicals",
+    "name": "Uziza or Ashanti pepper seeds (Piper guineense)",
+    "ph": "botan",
+    "tsp": 1,
+    "lvl": "care",
+    "flag": "Uziza pepper irritates skin",
+    "good": "A West African pepper related to black pepper and cubeb. Its warming, spicy seeds and leaves go into food and traditional scalp rubs.",
+    "care": "Pepper compounds warm the scalp by irritating it, and that tingle isn't proof of growth. Use a tiny amount in rinse-off products, and keep it away from eyes and broken skin. Not the same plant as cubeb (Piper cubeba)."
+  },
+  {
+    "id": "costus",
+    "grp": "Dried botanicals",
+    "name": "Costus root (qust al-hindi, kuth, Saussurea costus) powder",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Costus is a strong skin allergen",
+    "good": "An aromatic root from Arab, Indian and Chinese traditional medicine, sold as qust powder. The oil smells heavy, earthy and animalic.",
+    "care": "Its sesquiterpene lactones (costunolide) are strong contact allergens. That's why IFRA bans costus root oil in fragrance. Use the powder only in rinse-off masks, patch test, and skip it if daisy-family plants make you react. The wild plant is endangered and listed by CITES. The antifungal claims come from lab work."
+  },
+  {
+    "id": "njangsa",
+    "grp": "Carrier oils",
+    "name": "Njangsa or akpi kernel oil (Ricinodendron heudelotii)",
+    "ph": "oil",
+    "d": 0.93,
+    "lvl": "care",
+    "flag": "Njangsa oil goes rancid fast",
+    "good": "Oil from the kernels of a West African tree. The kernels are also a soup spice. It's very high in alpha-eleostearic acid, an unusual fatty acid, and it feels rich and softening.",
+    "care": "That fatty acid oxidises quickly, so the oil turns rancid and tacky fast. Buy it fresh, keep it in the fridge and add vitamin E. The firming claims are untested."
+  },
+  {
+    "id": "mastic",
+    "grp": "Dried botanicals",
+    "name": "Mastic gum (Chios mastic, Pistacia lentiscus), tears or powder",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Resin tears from the mastic shrub of Chios, with a fresh pine-and-cedar scent. It partly dissolves in warm oil or alcohol and is used in Greek and Middle Eastern incense, balms and perfumes.",
+    "care": "The pore and oil-control claims come from lab work. It's sticky, so strain it well. Allergy is rare."
+  },
+  {
+    "id": "harmal",
+    "grp": "Never on skin",
+    "name": "Harmal seed (Syrian rue, Peganum harmala)",
+    "ph": "botan",
+    "tsp": 2,
+    "never": true,
+    "lvl": "stop",
+    "care": "Its alkaloids (harmine, harmaline) cause poisoning when swallowed: vomiting, tremors and hallucinations. They also block the MAO enzyme, which interacts dangerously with many medicines, and they can cause miscarriage. It isn't worth putting in skin or hair products, and the hair-darkening claim is unproven. If you burn it as incense, which is traditional, ventilate the room and keep the seeds away from children and pets."
+  },
+  {
+    "id": "rehmannia",
+    "grp": "Dried botanicals",
+    "name": "Rehmannia root (di huang, raw or prepared black)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "A Chinese tonic root, used raw (sheng di huang) or steamed until black (shu di huang). It's in traditional hair-darkening and moisturising formulas and contains catalpol, an iridoid studied in labs.",
+    "care": "Its benefits are traditional or lab-based. The black prepared root can stain. Low risk as a rinse or mask."
+  },
+  {
+    "id": "motherwort",
+    "grp": "Dried botanicals",
+    "name": "Motherwort (yi mu cao, Leonurus), dried",
+    "ph": "botan",
+    "tsp": 1,
+    "lvl": "care",
+    "preg": true,
+    "flag": "Motherwort: skip in pregnancy",
+    "good": "A bitter mint-family herb from Chinese and European folk medicine. Chinese-inspired skin formulas use it for dull, uneven skin.",
+    "care": "It can make the uterus contract, so skip it in pregnancy. The skin claims are traditional or lab-based. Patch test."
+  },
+  {
+    "id": "kewra",
+    "grp": "Water-based",
+    "name": "Kewra water (kewda, screwpine flower water, Pandanus)",
+    "ph": "water",
+    "d": 1,
+    "lvl": "ok",
+    "good": "A distilled water from the fragrant male screwpine flower, sweet and honeyed. It's used in South Asian cooking and attars and as a cooling face splash.",
+    "care": "It counts as water, so it spoils. Keep it in the fridge once opened. Many 'kewra essences' are synthetic flavourings with alcohol, so check the label."
+  },
+  {
+    "id": "terebinth",
+    "grp": "Dried botanicals",
+    "name": "Terebinth resin (Chios turpentine, Pistacia terebinthus)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Terebinth resin can sensitise",
+    "good": "A resin from the terebinth tree with a piney, balsamic scent, used in traditional balms and incense.",
+    "care": "Its turpentine-like terpenes oxidise into skin sensitisers. Use small amounts, keep it sealed and patch test. The acne claims come from lab work."
+  },
+  {
+    "id": "mahua",
+    "grp": "Butters and waxes",
+    "name": "Mahua or mowrah butter (Madhuca longifolia)",
+    "ph": "butter",
+    "d": 0.9,
+    "tsp": 4.5,
+    "lvl": "ok",
+    "good": "A soft butter from mahua seeds, used in India for soaps, balms and lip care. Rich in oleic and stearic acids.",
+    "care": "Low risk. Choose refined butter: crude mahua can contain bitter saponins."
+  },
+  {
+    "id": "atractylis",
+    "grp": "Never on skin",
+    "name": "Atractylis gummifera (addad, glue thistle) root",
+    "ph": "botan",
+    "tsp": 2,
+    "never": true,
+    "lvl": "stop",
+    "care": "One of North Africa's most dangerous poisonous plants. Its atractyloside causes liver and kidney failure that is often fatal, and Moroccan poison centres report poisonings every year, including children. There is no safe cosmetic use. Not to be confused with atractylodes (bai zhu), a safe Chinese root."
+  },
+  {
+    "id": "nicandra",
+    "grp": "Dried botanicals",
+    "name": "Shoofly or bingfen seed (Nicandra physalodes)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "care",
+    "flag": "Shoofly plant is toxic to livestock",
+    "good": "Seeds of the shoofly plant (apple of Peru). Rubbed in a cloth bag under water, they release a pectin-like gel that sets into clear bingfen ice jelly in southwest China. That slippery gel can also give hair slip for detangling.",
+    "care": "Hardly studied. The leaves and plant are toxic to livestock, so use only seeds sold for bingfen, and never forage it. The gel spoils within a day: make it fresh and rinse it out. Many 'bingfen powders' are actually konjac or agar."
   }
 ]

@@ -54788,5 +54788,443 @@
       "creator": "user request",
       "platform": "Safe Batch"
     }
+  },
+  {
+    "id": "almond-supple-skin-body-oil",
+    "name": "Almond supple skin body oil",
+    "claim": "Silky dry-touch body oil with a sweet almond scent",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "almond",
+        70,
+        "ml"
+      ],
+      [
+        "jojoba",
+        25,
+        "ml"
+      ],
+      [
+        "vite",
+        2,
+        "ml"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Mix in a pump or spray bottle and shake. Use a cherry-almond fragrance oil for that marzipan smell; skip bitter almond oil, which isn't skin-safe unless it's sold as prussic-acid free. As in the post, it can go over a retinol body lotion to seal it: let the retinol sink in first, start it 2 to 3 nights a week, and wear sunscreen on treated areas by day.",
+    "inspired": "L'Occitane Almond Supple Skin Oil (paired with Bhumi Illipe Retinol Body Serum)",
+    "source": {
+      "creator": "allhailclearskin",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "turmeric-glow-body-wash",
+    "name": "Turmeric glow body wash",
+    "claim": "Golden, gently foaming body wash",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "showergel",
+        200,
+        "ml"
+      ],
+      [
+        "glycerin",
+        10,
+        "ml"
+      ],
+      [
+        "turmeric",
+        0.25,
+        "tsp"
+      ]
+    ],
+    "note": "Stir the turmeric and glycerin into a paste, then whisk it into unscented castile soap or shower gel. Keep the turmeric tiny: more stains towels, grout and nails yellow. A wash only touches skin for seconds, so don't expect it to brighten. The vitamin C and collagen in the store version rinse away too. Make a small batch and use it within a month.",
+    "inspired": "OKAY Skin Brightening Turmeric Body Wash",
+    "source": {
+      "creator": "iherb",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "calendula-flower-toner",
+    "name": "Calendula flower toner",
+    "claim": "Soothing, lightly hydrating toner for sensitive skin",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        100,
+        "ml"
+      ],
+      [
+        "calendula",
+        2,
+        "tbsp"
+      ],
+      [
+        "glycerin",
+        1,
+        "tsp"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "Pour just-boiled distilled water over the dried petals, cover, steep 20 minutes and strain through a coffee filter. Weigh the liquid back to 100 g with fresh water, then stir in glycerin and preservative. Without the preservative, keep it in the fridge and use it within 3 days. Skip it if daisies or ragweed make you react.",
+    "inspired": "One Thing Calendula Officinalis Flower Extract",
+    "source": {
+      "creator": "iherb",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "saffron-shimmer-body-oil",
+    "name": "Saffron shimmer body oil",
+    "claim": "Rosy, glowing shimmer oil for legs, shoulders and collarbones",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "argan",
+        40,
+        "ml"
+      ],
+      [
+        "jojoba",
+        45,
+        "ml"
+      ],
+      [
+        "saffron",
+        1,
+        "pinch"
+      ],
+      [
+        "mica",
+        0.5,
+        "tsp"
+      ],
+      [
+        "vite",
+        1,
+        "ml"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Warm the oils gently with the saffron threads for 20 minutes, cool and strain, then add mica (pink or rose gold), vitamin E and fragrance. Shake before each use because mica settles. The niacinamide, peptides and hyaluronic acid on the original label dissolve in water, not oil, so a homemade oil leaves them out. Mica can rub onto pale clothing.",
+    "inspired": "Truly Birthday Sex Luxury Body Oil",
+    "source": {
+      "creator": "iherb",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "bingfen-seed-detangling-slip",
+    "name": "Bingfen seed detangling slip",
+    "claim": "Slippery plant gel for detangling before rinsing",
+    "type": "hair_rinse",
+    "use": "fresh",
+    "rows": [
+      [
+        "water",
+        500,
+        "ml"
+      ],
+      [
+        "nicandra",
+        15,
+        "g"
+      ]
+    ],
+    "note": "Tie the seeds in a fine cloth bag and squeeze and rub it in cool water for about 10 minutes, until the water feels slippery. Let it sit 20 to 30 minutes to thicken, then smooth it through wet hair, detangle and rinse out. Use only seeds sold for bingfen ice jelly, and make it fresh each time; the gel turns sour within a day.",
+    "source": {
+      "creator": "sensenapi",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "whipped-butter-jar-deodorant",
+    "name": "Whipped butter jar deodorant",
+    "claim": "Soft, baking-soda-free cream deodorant",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "coconut",
+        20,
+        "g"
+      ],
+      [
+        "mango",
+        20,
+        "g"
+      ],
+      [
+        "shea",
+        20,
+        "g"
+      ],
+      [
+        "arrowroot",
+        30,
+        "g"
+      ],
+      [
+        "lavender",
+        12,
+        "drops"
+      ]
+    ],
+    "note": "Melt the butters and coconut oil gently, stir in arrowroot, cool until it starts to set, then whip and add the essential oil. Spoon it into a jar and apply a pea-sized amount with your fingers. For a stick, melt in 8 to 10 g beeswax. It soaks up a little dampness and the oils help with odour, but it won't stop sweat. Without baking soda it is gentler on underarms.",
+    "source": {
+      "creator": "Navy Heart Essential Oils",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "cocoa-shea-knee-balm",
+    "name": "Cocoa and shea knee balm",
+    "claim": "Thick balm for dry, ashy knees and elbows",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "cocoa",
+        25,
+        "g"
+      ],
+      [
+        "shea",
+        20,
+        "g"
+      ],
+      [
+        "castor",
+        10,
+        "g"
+      ],
+      [
+        "beeswax",
+        5,
+        "g"
+      ]
+    ],
+    "note": "Melt everything together, pour into a tin and let it set. Use it in the leg routine from the post: mist your legs with water, apply your usual body butter, press a little balm onto the knees, then finish with a broad-spectrum sunscreen spray in the daytime. Use a store-bought sunscreen, because homemade SPF can't be tested.",
+    "inspired": "Palmer's Cocoa Butter Formula balm (with Josie Maran body butter and Vacation Classic SPF spray)",
+    "source": {
+      "creator": "je'mai-alzonia",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "arborvitae-leaf-perfume-tincture",
+    "name": "Arborvitae leaf perfume tincture",
+    "claim": "Crisp green-woody base for natural perfumes",
+    "type": "perfume",
+    "use": "store",
+    "rows": [
+      [
+        "arborvitae",
+        10,
+        "g"
+      ],
+      [
+        "perfumersalcohol",
+        100,
+        "ml"
+      ]
+    ],
+    "note": "Grind dried Chinese arborvitae (Platycladus) leaves to a coarse powder and steep them in perfumer's alcohol in a dark glass jar. Shake every day for 2 to 4 weeks, then strain through a coffee filter. Blend it with cedarwood, vetiver or a citrus top note. Spray it on clothes or small pulse points, never near the eyes. Don't swap in Western thuja (Thuja occidentalis): it's higher in thujone.",
+    "source": {
+      "creator": "TUT_PerfumeOEM",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "queens-crown-hair-oil",
+    "name": "Queen's crown hair oil",
+    "claim": "Ten-oil blend for scalp and lengths",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "jojoba",
+        25,
+        "g"
+      ],
+      [
+        "baobab",
+        15,
+        "g"
+      ],
+      [
+        "safflower",
+        15,
+        "g"
+      ],
+      [
+        "argan",
+        10,
+        "g"
+      ],
+      [
+        "grapeseed",
+        10,
+        "g"
+      ],
+      [
+        "castor",
+        10,
+        "g"
+      ],
+      [
+        "rosehip",
+        5,
+        "g"
+      ],
+      [
+        "blackseedoil",
+        5,
+        "g"
+      ],
+      [
+        "rosemaryherb",
+        4,
+        "g"
+      ],
+      [
+        "vite",
+        1,
+        "g"
+      ]
+    ],
+    "note": "As posted, in percentages (weighed out here as a 100 g batch). Warm the dried rosemary in the jojoba on low for an hour and strain it to make the 4% rosemary-infused oil, then mix in the rest. A light-to-medium oil: a few drops on the scalp or damp ends. It's well balanced, but the oils mostly soften and add shine; growth claims for any one oil are weak.",
+    "source": {
+      "creator": "Lois Botanica",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "oat-marshmallow-honey-hair-mask",
+    "name": "Oat, marshmallow root and honey hair mask",
+    "claim": "Soothing, slippery mask for gentle detangling",
+    "type": "hair_rinse",
+    "use": "fridge",
+    "rows": [
+      [
+        "water",
+        2,
+        "cup"
+      ],
+      [
+        "oats",
+        3,
+        "tbsp"
+      ],
+      [
+        "marshmallowroot",
+        2,
+        "tbsp"
+      ],
+      [
+        "honey",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Simmer the oats and marshmallow root in water for 10 minutes, then strain through a fine cloth while it's still warm. Straining is what makes the mask smooth and keeps oat bits out of your hair. Stir in the honey once it's cool. Leave it on 20 to 30 minutes and rinse well. Keep it in the fridge and use it within 3 days.",
+    "source": {
+      "creator": "Arielle",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "myrrh-frankincense-resin-glow-oil",
+    "name": "Myrrh and frankincense resin oil",
+    "claim": "Warm, resinous skin oil infused slowly",
+    "type": "face_leave",
+    "use": "store",
+    "rows": [
+      [
+        "myrrhresin",
+        2,
+        "tbsp"
+      ],
+      [
+        "frankresin",
+        2,
+        "tbsp"
+      ],
+      [
+        "castor",
+        240,
+        "ml"
+      ],
+      [
+        "jojoba",
+        240,
+        "ml"
+      ]
+    ],
+    "note": "Crush the resins to a powder, put them in a jar, add castor oil and top up with jojoba. Infuse in a warm dark place for 6 weeks to a few months, shaking often, then strain twice through cheesecloth and a coffee filter. Resins only partly dissolve, so most of what transfers is scent. Half castor is thick, so on the face use a drop or two, or cut it with more jojoba. Many references advise against myrrh in pregnancy.",
+    "source": {
+      "creator": "Mushroom Hearth Apothecary",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "pink-clay-charcoal-neem-mask-powder",
+    "name": "Pink clay, charcoal and neem mask powder",
+    "claim": "Oil-absorbing clay mask and cleanser",
+    "type": "face_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "pinkclay",
+        7,
+        "tsp"
+      ],
+      [
+        "oats",
+        4,
+        "tsp"
+      ],
+      [
+        "charcoal",
+        1,
+        "tsp"
+      ],
+      [
+        "neempowder",
+        1,
+        "tsp"
+      ],
+      [
+        "zincoxide",
+        1,
+        "tsp"
+      ]
+    ],
+    "note": "Mix the powders and store them dry and airtight; they keep up to a year. To use, mix a teaspoon with alcohol-free witch hazel or a hydrosol into a paste. Leave it on 10 to 15 minutes and rinse before it cracks, or massage it onto damp skin as a cleanser. Don't breathe in the powders. It soaks up surface oil, so pores look clearer for a while, but it doesn't dissolve blackheads; salicylic acid does that better.",
+    "source": {
+      "creator": "bielunele",
+      "platform": "TikTok"
+    }
   }
 ]

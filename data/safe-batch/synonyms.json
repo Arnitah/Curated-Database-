@@ -1,5 +1,73 @@
 [
   [
+    "atractylis|glue thistle|\\baddad\\b",
+    "atractylis"
+  ],
+  [
+    "nicandra|shoofly|bingfen seed|ice jelly seed",
+    "nicandra"
+  ],
+  [
+    "alchornea|christmas bush",
+    "alchornea"
+  ],
+  [
+    "mitracarpus|girdlepod",
+    "mitracarpus"
+  ],
+  [
+    "katemfe|thaumatococcus",
+    "katemfe"
+  ],
+  [
+    "amaranth (seed )?oil",
+    "amaranthoil"
+  ],
+  [
+    "date syrup|\\bsilan\\b|date honey|\\bdibs\\b",
+    "datesyrup"
+  ],
+  [
+    "uziza|ashanti pepper|piper guineense",
+    "uziza"
+  ],
+  [
+    "costus|qust|\\bkuth\\b|saussurea (costus|lappa)",
+    "costus"
+  ],
+  [
+    "njangsa|akpi|ricinodendron",
+    "njangsa"
+  ],
+  [
+    "mastic|pistacia lentiscus|mastiha",
+    "mastic"
+  ],
+  [
+    "harmal|syrian rue|peganum",
+    "harmal"
+  ],
+  [
+    "rehmannia|di ?huang",
+    "rehmannia"
+  ],
+  [
+    "motherwort|yi ?mu ?cao|leonurus",
+    "motherwort"
+  ],
+  [
+    "kewra|kewda|screwpine|pandanus",
+    "kewra"
+  ],
+  [
+    "terebinth|chios turpentine|pistacia terebinthus",
+    "terebinth"
+  ],
+  [
+    "mahua|mowrah|madhuca",
+    "mahua"
+  ],
+  [
     "arborvitae seed|bai ?zi ?ren|platycladi semen|platycladus orientalis seed",
     "arborvitaeseed"
   ],

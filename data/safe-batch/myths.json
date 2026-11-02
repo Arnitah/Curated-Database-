@@ -6941,5 +6941,70 @@
     "seen_in": "Gulf and Vietnamese body-care TikToks",
     "checked": "2026-10-27",
     "format": "v2"
+  },
+  {
+    "id": "body-oil-actives-clay-blackheads-sesame-balls-atractylis",
+    "title": "A shimmer oil delivers niacinamide and hyaluronic acid, clay clears blackheads, sesame balls reverse white hair",
+    "topics": [
+      "body",
+      "face",
+      "hair",
+      "herbs"
+    ],
+    "claims": [
+      {
+        "claim": "Niacinamide, peptides and hyaluronic acid boost a body oil",
+        "verdict": "partly",
+        "truth": "All three dissolve in water, not oil. A pure oil can only hold tiny amounts or special oil-soluble forms. The glow you see comes from the oil and the shimmer.",
+        "grade": "C"
+      },
+      {
+        "claim": "A clay, charcoal and neem mask clears blackheads",
+        "verdict": "partly",
+        "truth": "Clay soaks up surface oil, so pores look cleaner for a day or so. It doesn't loosen the plug inside the pore. Salicylic acid, retinoids and gentle regular cleansing do that.",
+        "grade": "B"
+      },
+      {
+        "claim": "A turmeric body wash brightens skin",
+        "verdict": "unproven",
+        "truth": "A wash is on skin for seconds before it's rinsed off. The small curcumin studies used leave-on products, and turmeric powder mostly stains.",
+        "grade": "C"
+      },
+      {
+        "claim": "Black sesame balls with collagen, goji and moringa reverse white hairs",
+        "verdict": "unproven",
+        "truth": "Greying is mostly down to genes and age. Low B12, iron or copper is linked to early greying, and fixing a real deficiency can help. The snack is fine food, but no study shows it brings colour back. Collagen is digested into amino acids; it doesn't turn straight into hair keratin.",
+        "grade": "B"
+      },
+      {
+        "claim": "Bingfen (ice jelly) is made from the seeds of the shoofly plant",
+        "verdict": "true",
+        "truth": "The traditional jelly sets from the gel in Nicandra physalodes seeds. Many modern versions use konjac or agar instead. The rest of the plant is toxic to livestock, so only use seeds sold for food.",
+        "grade": "B"
+      },
+      {
+        "claim": "Atractylis (addad) tones sagging skin and calms scalp redness",
+        "verdict": "false",
+        "truth": "Atractylis gummifera contains atractyloside, which causes often-fatal liver and kidney failure. It is a leading plant poisoning in Morocco. It has no safe cosmetic use, and it shouldn't be confused with atractylodes (bai zhu).",
+        "grade": "A"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Nicandra physalodes (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Nicandra_physalodes"
+      },
+      {
+        "title": "Acute toxicity of Nicandra physaloides in cattle and mice (Kenya Veterinarian)",
+        "url": "https://www.ajol.info/index.php/kenvet/article/view/55765"
+      },
+      {
+        "title": "Collective poisoning by Atractylis gummifera, Morocco",
+        "url": "https://www.em-consulte.com/article/905852/article/p49-collective-poisoning-by-atractylis-gummifera-l"
+      }
+    ],
+    "seen_in": "TikTok body-care, hair and DIY posts; an ethnobotanical master list",
+    "checked": "2026-11-02",
+    "format": "v2"
   }
 ]
