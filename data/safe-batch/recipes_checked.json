@@ -56066,5 +56066,334 @@
       "creator": "bielunele",
       "platform": "TikTok"
     }
+  },
+  {
+    "id": "seventeen-herb-mishat-hair-powder",
+    "name": "Seventeen-herb mishat hair powder",
+    "claim": "Gulf-style herb mask for strengthening and length care",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sidr",
+        3,
+        "tbsp"
+      ],
+      [
+        "amla",
+        2,
+        "tbsp"
+      ],
+      [
+        "hibiscus",
+        2,
+        "tbsp"
+      ],
+      [
+        "rosebuds",
+        2,
+        "tbsp"
+      ],
+      [
+        "shikakai",
+        1,
+        "tbsp"
+      ],
+      [
+        "aritha",
+        1,
+        "tbsp"
+      ],
+      [
+        "mahlab",
+        1,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        1,
+        "tbsp"
+      ],
+      [
+        "currylea",
+        1,
+        "tbsp"
+      ],
+      [
+        "moringa",
+        1,
+        "tbsp"
+      ],
+      [
+        "madderroot",
+        1,
+        "tsp"
+      ],
+      [
+        "clovepowder",
+        0.5,
+        "tsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "aniseed",
+        1,
+        "tsp"
+      ],
+      [
+        "staranise",
+        1,
+        "tsp"
+      ]
+    ],
+    "note": "Use only fully dried herbs (dry the curry leaves completely first) and grind everything to a fine powder. Store airtight and dry. To use, mix a few spoonfuls with warm water or rose water into a soft paste, apply to damp hair and scalp for 30 to 45 minutes, then rinse and condition. Shikakai and reetha cleanse, so it can stand in for shampoo; keep it out of your eyes. Madder and hibiscus tint light hair red. Once a week.",
+    "source": {
+      "creator": "Goldenherbs84",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "tuberose-magnolia-hand-cream",
+    "name": "Tuberose and magnolia hand cream",
+    "claim": "Rich, fast-absorbing floral hand cream in a tin",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        68,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "ewax",
+        6,
+        "g"
+      ],
+      [
+        "shea",
+        8,
+        "g"
+      ],
+      [
+        "almond",
+        10,
+        "g"
+      ],
+      [
+        "cetearyl",
+        2,
+        "g"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ],
+      [
+        "tuberose",
+        2,
+        "drops"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Heat the water and glycerin in one jug and the emulsifying wax, cetearyl alcohol, shea and almond oil in another, both to about 70 °C. Pour the oils into the water and blend for 2 minutes, then stir as it cools. Below 40 °C add the preservative and scents (a magnolia or white-floral fragrance oil with a touch of tuberose). Fill small tins. The preservative is not optional: this is mostly water.",
+    "source": {
+      "creator": "ashleyczhang",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "almond-shower-oil",
+    "name": "Almond shower oil",
+    "claim": "Cleansing oil that turns milky with water",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "almond",
+        70,
+        "g"
+      ],
+      [
+        "sunflower",
+        15,
+        "g"
+      ],
+      [
+        "polysorbate80",
+        15,
+        "g"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Stir everything together and pour into a pump bottle. On wet skin it turns milky and rinses away, so it cleans gently and leaves skin soft. Use it first in the routine, with a net sponge if you like. The shower floor gets slippery, so rinse it after.",
+    "source": {
+      "creator": "theskinstitution",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "coconut-amber-shave-oil",
+    "name": "Coconut and amber shave oil",
+    "claim": "Slippery oil that cuts razor friction",
+    "type": "body_leave",
+    "use": "store",
+    "rows": [
+      [
+        "caprylic",
+        40,
+        "g"
+      ],
+      [
+        "argan",
+        20,
+        "g"
+      ],
+      [
+        "avocadooil",
+        25,
+        "g"
+      ],
+      [
+        "jojoba",
+        15,
+        "g"
+      ],
+      [
+        "fragrance",
+        0.3,
+        "g"
+      ]
+    ],
+    "note": "Mix and shake. After scrubbing, smooth a thin layer over wet skin and shave over it; rinse the razor often. Any shower oil can do the job too. Skip fragrance for the bikini area or if you get razor bumps.",
+    "source": {
+      "creator": "theskinstitution",
+      "platform": "Instagram"
+    }
+  },
+  {
+    "id": "pumpkin-spice-emulsified-body-polish",
+    "name": "Pumpkin spice emulsified body polish",
+    "claim": "Creamy scrub that rinses clean without oil separating",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sugar",
+        120,
+        "g"
+      ],
+      [
+        "shea",
+        20,
+        "g"
+      ],
+      [
+        "pumpkinoil",
+        15,
+        "g"
+      ],
+      [
+        "sunflower",
+        25,
+        "g"
+      ],
+      [
+        "ewax",
+        8,
+        "g"
+      ],
+      [
+        "glycerin",
+        5,
+        "g"
+      ],
+      [
+        "mica",
+        0.5,
+        "tsp"
+      ],
+      [
+        "cinnamonpow",
+        0.25,
+        "tsp"
+      ],
+      [
+        "vite",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Melt the shea, emulsifying wax and oils, stir in glycerin, cool until thickening, then whip and fold in sugar, an orange mica and a pinch of cinnamon. The emulsifier lets it rinse off milky instead of greasy. It has no water, but water splashed into the jar can still grow mould, so use a dry scoop. The post's oil gelling agent (a quillaja and soapwort blend) is a branded alternative.",
+    "source": {
+      "creator": "tara",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "palo-santo-sage-sugar-scrub",
+    "name": "Palo santo and sage sugar scrub",
+    "claim": "Calming woody-herbal body scrub",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sugar",
+        150,
+        "g"
+      ],
+      [
+        "coconut",
+        40,
+        "g"
+      ],
+      [
+        "sunflower",
+        40,
+        "g"
+      ],
+      [
+        "palosanto",
+        8,
+        "drops"
+      ],
+      [
+        "clarysage",
+        4,
+        "drops"
+      ]
+    ],
+    "note": "Mix the oils, stir in sugar and the essential oils. Use on damp skin and rinse well. Clary sage gives the sage note gently; garden-sage oil is higher in thujone. Keep it away from freshly shaved skin.",
+    "source": {
+      "creator": "thingsfor_her",
+      "platform": "Instagram"
+    }
   }
 ]

@@ -1,5 +1,81 @@
 [
   [
+    "rubia tinctorum|fuwwa|فوة|dyer'?s madder",
+    "madderroot"
+  ],
+  [
+    "aniseed(?! myrtle)|anise seed|yansoon|يانسون|pimpinella",
+    "aniseed"
+  ],
+  [
+    "palo santo|bursera",
+    "palosanto"
+  ],
+  [
+    "شيكاكاي",
+    "shikakai"
+  ],
+  [
+    "ريتا|ريثا",
+    "aritha"
+  ],
+  [
+    "الأملج|الأملا",
+    "amla"
+  ],
+  [
+    "كركديه",
+    "hibiscus"
+  ],
+  [
+    "المحلب",
+    "mahlab"
+  ],
+  [
+    "الورد البلدي",
+    "rosebuds"
+  ],
+  [
+    "البابونج",
+    "chamomileflower"
+  ],
+  [
+    "أوراق الكاري",
+    "currylea"
+  ],
+  [
+    "المورينجا",
+    "moringa"
+  ],
+  [
+    "القرنفل",
+    "clovewhole"
+  ],
+  [
+    "الخزامى",
+    "lavenderbud"
+  ],
+  [
+    "الأزير|إكليل الجبل|اكليل الجبل",
+    "rosemaryherb"
+  ],
+  [
+    "السدر",
+    "sidr"
+  ],
+  [
+    "البهرنجراج",
+    "bhringraj"
+  ],
+  [
+    "الحلبة",
+    "fenugreek"
+  ],
+  [
+    "ذيل الحصان",
+    "horsetail"
+  ],
+  [
     "coco[ -]?glucoside",
     "cocoglucoside"
   ],

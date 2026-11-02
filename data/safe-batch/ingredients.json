@@ -7133,5 +7133,37 @@
     "flag": "Capixyl: maker's studies only",
     "good": "A branded peptide and red clover complex sold for thinning hair, used at about 2 to 5% in scalp serums and sprays.",
     "care": "Most of the evidence comes from small studies run or funded by the maker. It hasn't been shown to work as well as minoxidil. Buy it from a cosmetic supplier and follow their usage rate; it needs a preservative in water-based sprays."
+  },
+  {
+    "id": "madderroot",
+    "grp": "Dried botanicals",
+    "name": "Dyer's madder root (fuwwa, فوة, Rubia tinctorum)",
+    "ph": "botan",
+    "tsp": 2.5,
+    "lvl": "care",
+    "flag": "Madder: rinse-off only",
+    "good": "The classic red dye root of the Middle East and Europe. In Gulf and Sudanese mishat blends it adds a reddish tint and earthy colour to hair masks.",
+    "care": "It contains lucidin, which damaged DNA in lab tests, and the EU withdrew madder colour as a food additive for that reason. Use it only in rinse-off hair masks, not leave-on products, and never drink it. It tints light hair, skin and towels red. Indian madder (manjistha) is a related plant."
+  },
+  {
+    "id": "aniseed",
+    "grp": "Dried botanicals",
+    "name": "Aniseed (yansoon, يانسون, Pimpinella anisum)",
+    "ph": "botan",
+    "tsp": 2,
+    "lvl": "ok",
+    "good": "Sweet, liquorice-scented seeds used in teas and in Gulf hair blends for their scent.",
+    "care": "Low risk in rinse-off masks. The essential oil is high in anethole and should stay very low on skin. Not the same as star anise."
+  },
+  {
+    "id": "palosanto",
+    "grp": "Essential oils",
+    "name": "Palo santo essential oil (Bursera graveolens)",
+    "ph": "eo",
+    "d": 0.9,
+    "lvl": "care",
+    "flag": "Palo santo: choose ethical, keep low",
+    "good": "A sweet, woody, citrusy oil from South American wood, popular in calming scent blends and with sage.",
+    "care": "High in limonene, which oxidises into a skin sensitiser, so keep it under 1% and store it cool. Buy oil from fallen wood with a sustainability claim; the related Peruvian palo santo is protected. Patch test."
   }
 ]

@@ -7103,5 +7103,54 @@
     "seen_in": "TikTok and online-store hair and soap posts",
     "checked": "2026-11-02",
     "format": "v2"
+  },
+  {
+    "id": "resveratrol-postpartum-exfoliating-soap-date-pit-iron-grease-growth",
+    "title": "A resveratrol drink regrows postpartum hair, a date-pit mask fixes low iron, and hair grease grows hair",
+    "topics": [
+      "hair",
+      "body"
+    ],
+    "claims": [
+      {
+        "claim": "Drinking a resveratrol supplement grew back hair lost after giving birth",
+        "verdict": "unproven",
+        "truth": "Postpartum shedding (telogen effluvium) usually stops and regrows on its own within 6 to 12 months. No good trial shows resveratrol speeds it up. Shedding that lasts longer is worth checking for low iron or thyroid problems. Ask before taking supplements while breastfeeding.",
+        "grade": "B"
+      },
+      {
+        "claim": "Date pits on the hair help people who are low on iron",
+        "verdict": "false",
+        "truth": "Iron deficiency is fixed by diet or supplements a doctor recommends, not by a hair mask. Date-pit powder can add body and scent to a mask, but it can't correct a deficiency.",
+        "grade": "A"
+      },
+      {
+        "claim": "A grease or pomade like Blue Magic makes hair grow",
+        "verdict": "partly",
+        "truth": "Petrolatum and lanolin coat the hair and reduce breakage, so you keep more length. They don't speed up growth at the root, and heavy grease on the scalp can clog follicles for some people.",
+        "grade": "B"
+      },
+      {
+        "claim": "An exfoliating argan soap brightens skin",
+        "verdict": "partly",
+        "truth": "Scrubbing particles remove dead skin for a smoother look. Brightening actives in a soap rinse off quickly. Check the label: some strong 'exfoliating' bars also contain lightening agents.",
+        "grade": "C"
+      },
+      {
+        "claim": "Hypochlorous acid spray calms tretinoin stinging and helps acne",
+        "verdict": "partly",
+        "truth": "Hypochlorous acid is a gentle antimicrobial and some small studies support it for redness and acne, but evidence is limited. Moisturiser and spacing out tretinoin are the main fixes for stinging.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Academy of Dermatology: hair loss after pregnancy",
+        "url": "https://www.aad.org/public/diseases/hair-loss/insider/new-mom"
+      }
+    ],
+    "seen_in": "TikTok and Instagram hair and skincare posts",
+    "checked": "2026-11-02",
+    "format": "v2"
   }
 ]

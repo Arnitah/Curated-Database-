@@ -7607,5 +7607,32 @@
  "sage-lavender-yarrow-glycerite": {
   "verdict": "ok",
   "flags": []
+ },
+ "seventeen-herb-mishat-hair-powder": {
+  "verdict": "care",
+  "flags": [
+   "care: Fry fresh leaves until crisp",
+   "care: Madder: rinse-off only"
+  ]
+ },
+ "tuberose-magnolia-hand-cream": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "coconut-amber-shave-oil": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "pumpkin-spice-emulsified-body-polish": {
+  "verdict": "care",
+  "flags": [
+   "care: Cinnamon powder can burn"
+  ]
+ },
+ "palo-santo-sage-sugar-scrub": {
+  "verdict": "care",
+  "flags": [
+   "care: Palo santo: choose ethical, keep low"
+  ]
  }
 }
