@@ -238,6 +238,7 @@ details.more > div { display: grid; gap: 10px; margin-top: 10px }
 .tabs button { white-space: nowrap; flex: none; font: 600 14px var(--body); color: var(--ink); background: none; border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer }
 .tabs button[aria-selected="true"] { background: var(--accent); color: var(--paper) }
 .twins { display: grid; gap: 8px; margin-top: 12px }
+.tbasis { display: inline-block; margin-top: 2px; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted) } .tbasis.declared { color: var(--accent); border-color: currentColor } .tbasis.low { opacity: .75; font-style: italic }
 .twin { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 8px; align-items: center; font-size: 13.5px; background: var(--bg); border-radius: 10px; padding: 8px 10px }
 .twin .arrow { color: var(--muted); font-family: var(--mono) }
 .twin small { display: block; color: var(--muted); font-size: 12px }
@@ -559,6 +560,12 @@ function likeWhy(h) {
   const txt = out.length >= 3 ? `Close to ${lh.name}: both are ${out.slice(0, 4).join(", ")}.` : out.length ? `A neighbour, not a twin: shares ${out.join(" and ")} with ${lh.name} but goes its own way.` : `A contrast to ${lh.name}, worth smelling side by side.`;
   return `<div class="why-match">${esc(txt)}</div>`;
 }
+function twinBasis(t) {
+  const src = (t.source || "").toLowerCase();
+  const k = t.basis || (/itself (says|names)|declared|brand says/.test(src) ? "declared" : /low confidence|loose impression/.test(src) ? "low" : "opinion");
+  const L = { declared: "Brand says it's inspired by this", opinion: "A creator's opinion", low: "Loose match: notes differ" }[k];
+  return `<span style="grid-column:1/-1"><span class="tbasis ${k}" title="${esc(t.source || "")}">${L}</span></span>`;
+}
 function buildSimilar() {
   const F = new Map(D.houses.map((h) => [h.id, feats(h)])); D.sim = {};
   for (const h of D.houses) {
@@ -674,7 +681,7 @@ function render() {
   $("famlist").innerHTML = famKeys.map((k) => `<div><button class="famlink" type="button" data-fam="${k}">${esc(families[k].label)} · see all</button><span>${esc(families[k].what)} ${esc(families[k].feel)} Best for: ${esc(families[k].wear)}</span></div>`).join("");
   $("acclist").innerHTML = Object.entries(families._accents || {}).map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join("");
   const byIdA = Object.fromEntries(houses.map((h) => [h.id, h]));
-  $("twins").innerHTML = twins.map((t) => `<div class="twin"><span><b>${esc(t.budget)}</b><small>${esc(t.budgetBrand)}${t.format ? " · " + esc(t.format) : ""}</small></span><span class="arrow">${t.direction === "similar" ? "≈" : "smells like"}</span><span><b>${esc(t.luxury)}</b><small>${esc(t.luxuryBrand || "")}${t.notes && t.notes.length ? (t.luxuryBrand ? " · " : "") + esc(t.notes.join(", ")) : ""}</small></span></div>`).join("");
+  $("twins").innerHTML = twins.map((t) => `<div class="twin"><span><b>${esc(t.budget)}</b><small>${esc(t.budgetBrand)}${t.format ? " · " + esc(t.format) : ""}</small></span><span class="arrow">${t.direction === "similar" ? "≈" : "smells like"}</span><span><b>${esc(t.luxury)}</b><small>${esc(t.luxuryBrand || "")}${t.notes && t.notes.length ? (t.luxuryBrand ? " · " : "") + esc(t.notes.join(", ")) : ""}</small></span>${twinBasis(t)}</div>`).join("");
   $("trends").innerHTML = trends.map((t) => `<div class="trend"><b>${esc(t.title)}</b><span class="why">${esc(t.what)} ${esc(t.note)}</span><span class="sim">See: ${t.examples.filter((x) => byIdA[x]).map((x) => `<button class="mini" type="button" data-q="${esc(byIdA[x].name)}">${esc(byIdA[x].name)}</button>`).join("")}</span></div>`).join("");
   document.querySelector(".two").addEventListener("click", (e) => { const q = e.target.closest("[data-q]"); if (q && q.closest("#trends")) { state.q = q.dataset.q; $("q").value = state.q; render(); toBrowse(); } });
   // Access scale, tradition cards, releases, note spotlight
