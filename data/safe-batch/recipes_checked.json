@@ -56395,5 +56395,178 @@
       "creator": "thingsfor_her",
       "platform": "Instagram"
     }
+  },
+  {
+    "id": "baking-soda-aloe-lavender-deodorant-as-posted",
+    "name": "Baking soda, aloe and lavender deodorant (as posted)",
+    "claim": "Three-ingredient homemade deodorant",
+    "type": "deodorant",
+    "use": "fridge",
+    "rows": [
+      [
+        "water",
+        2,
+        "tbsp"
+      ],
+      [
+        "bakingsoda",
+        1,
+        "tbsp"
+      ],
+      [
+        "aloe",
+        3,
+        "tbsp"
+      ],
+      [
+        "lavender",
+        5,
+        "drops"
+      ]
+    ],
+    "note": "As shown: dissolve baking soda in a little water, stir in aloe gel and a few drops of lavender oil, and apply with fingers. It does kill odour, but baking soda is strongly alkaline (pH about 8 to 9) and often causes red, itchy or darkened underarms with daily use. Being water and aloe with no preservative, it also spoils within about a week even in the fridge. See the gentler magnesium version.",
+    "source": {
+      "creator": "Karim's Studio",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "aloe-magnesium-lavender-gel-deodorant",
+    "name": "Aloe and magnesium lavender gel deodorant",
+    "claim": "Gentler, baking-soda-free gel deodorant",
+    "type": "deodorant",
+    "use": "store",
+    "rows": [
+      [
+        "aloe",
+        60,
+        "g"
+      ],
+      [
+        "maghydroxide",
+        8,
+        "g"
+      ],
+      [
+        "glycerin",
+        3,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.3,
+        "g"
+      ],
+      [
+        "lavender",
+        6,
+        "drops"
+      ],
+      [
+        "geogard",
+        0.6,
+        "g"
+      ]
+    ],
+    "note": "Whisk the xanthan into the glycerin, then stir into the aloe gel. Mix in magnesium hydroxide until smooth, then the lavender and preservative. Shake before use; it settles. Magnesium hydroxide neutralises odour like baking soda but is far less irritating. Controls smell, not wetness.",
+    "source": {
+      "creator": "Karim's Studio (safer version)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "herbal-hair-food-oil",
+    "name": "Herbal hair food oil",
+    "claim": "Slow-infused herb oil for scalp and lengths",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "coconut",
+        60,
+        "ml"
+      ],
+      [
+        "almond",
+        50,
+        "ml"
+      ],
+      [
+        "sesame",
+        40,
+        "ml"
+      ],
+      [
+        "castor",
+        30,
+        "ml"
+      ],
+      [
+        "amlaoil",
+        20,
+        "ml"
+      ],
+      [
+        "fenugreek",
+        1,
+        "tbsp"
+      ],
+      [
+        "horsetail",
+        1,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "burdock",
+        1,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        1,
+        "tbsp"
+      ],
+      [
+        "moringa",
+        1,
+        "tsp"
+      ],
+      [
+        "clovewhole",
+        0.5,
+        "tsp"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "blackseedoil",
+        10,
+        "ml"
+      ],
+      [
+        "rosemary",
+        10,
+        "drops"
+      ],
+      [
+        "peppermint",
+        4,
+        "drops"
+      ]
+    ],
+    "note": "Use bone-dry herbs. Warm them in the carrier oils on the lowest heat for 2 hours, or steep in a dark jar for 3 to 4 weeks, shaking often. Strain through cloth, then add black seed oil and the essential oils. Massage into the scalp 2 to 3 times a week, an hour or overnight before washing. Peppermint and clove tingle: patch test and keep away from eyes. Coconut oil solidifies when cool, so warm the bottle in your hands.",
+    "inspired": "Nurveda Hair Food",
+    "source": {
+      "creator": "Nurveda Organics",
+      "platform": "Shopify store"
+    }
   }
 ]

@@ -7152,5 +7152,61 @@
     "seen_in": "TikTok and Instagram hair and skincare posts",
     "checked": "2026-11-02",
     "format": "v2"
+  },
+  {
+    "id": "baking-soda-deodorant-hypochlorous-cancels-silicone-hydrates",
+    "title": "Baking soda deodorant replaces everything, hypochlorous spray 'cancels' other products, and silicone serums hydrate hair",
+    "topics": [
+      "body",
+      "face",
+      "hair"
+    ],
+    "claims": [
+      {
+        "claim": "A baking soda, aloe and lavender mix means you'll never need deodorant again",
+        "verdict": "partly",
+        "truth": "Baking soda does neutralise odour, but its high pH irritates many underarms, causing rashes and darkening with daily use. Magnesium hydroxide works similarly and is much gentler. It won't stop sweat.",
+        "grade": "B"
+      },
+      {
+        "claim": "You must let hypochlorous acid spray dry or it cancels your other products",
+        "verdict": "unproven",
+        "truth": "There's no evidence the spray deactivates serums or tretinoin. Letting each layer dry is still sensible before tretinoin, because damp skin absorbs it faster and stings more.",
+        "grade": "C"
+      },
+      {
+        "claim": "Silicone hair serums moisturise hair",
+        "verdict": "false",
+        "truth": "Silicones coat the strand for slip, shine and frizz control. They hold in water that's already there but add none. Water-based leave-ins hydrate.",
+        "grade": "A"
+      },
+      {
+        "claim": "Mineral oil and petrolatum in hair lotions damage hair",
+        "verdict": "false",
+        "truth": "They're inert, well-tolerated sealants that reduce water loss and breakage. They can feel heavy and build up on fine hair, so clarify now and then, but they don't harm the strand.",
+        "grade": "B"
+      },
+      {
+        "claim": "Old-style pink hair lotions are just moisturiser",
+        "verdict": "partly",
+        "truth": "Some older formulas also contain ingredients now rarely used, such as the UV filter ethylhexyl dimethyl PABA (padimate O), which can irritate or sensitise, and formaldehyde-releasing preservatives like imidazolidinyl urea. Check the current label if your scalp reacts.",
+        "grade": "C"
+      },
+      {
+        "claim": "Cyclic silicones in hair oils are unregulated",
+        "verdict": "false",
+        "truth": "The EU now limits D4, D5 and D6 cyclosiloxanes (such as cyclopentasiloxane and cyclotetrasiloxane) to 0.1% in cosmetics for environmental reasons, so many serums have been reformulated. They're considered low-risk on skin.",
+        "grade": "B"
+      }
+    ],
+    "sources": [
+      {
+        "title": "European Chemicals Agency: restriction of D4, D5 and D6",
+        "url": "https://echa.europa.eu/hot-topics/d4-d5-d6"
+      }
+    ],
+    "seen_in": "TikTok and Instagram deodorant, skincare routine and hair product posts",
+    "checked": "2026-11-03",
+    "format": "v2"
   }
 ]

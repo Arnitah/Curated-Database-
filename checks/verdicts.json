@@ -7634,5 +7634,23 @@
   "flags": [
    "care: Palo santo: choose ethical, keep low"
   ]
+ },
+ "baking-soda-aloe-lavender-deodorant-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Baking soda is the usual cause of deodorant rash",
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
+ },
+ "aloe-magnesium-lavender-gel-deodorant": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "herbal-hair-food-oil": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Fenugreek can trigger legume allergies"
+  ]
  }
 }
