@@ -56568,5 +56568,110 @@
       "creator": "Nurveda Organics",
       "platform": "Shopify store"
     }
+  },
+  {
+    "id": "royal-bridal-tbrima-as-posted",
+    "name": "Royal bridal tbrima (as posted)",
+    "claim": "Moroccan bridal body mask for an even, glowing look",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "rosebuds",
+        20,
+        "g"
+      ],
+      [
+        "cowrie",
+        15,
+        "g"
+      ],
+      [
+        "frankresin",
+        10,
+        "g"
+      ],
+      [
+        "gumarabic",
+        10,
+        "g"
+      ],
+      [
+        "cuttlebone",
+        15,
+        "g"
+      ],
+      [
+        "licorice",
+        10,
+        "g"
+      ],
+      [
+        "akerfassi",
+        3,
+        "g"
+      ],
+      [
+        "kaolin",
+        20,
+        "g"
+      ],
+      [
+        "nila",
+        2,
+        "g"
+      ]
+    ],
+    "note": "As shown: everything is ground together into a fine powder. To use, mix a spoonful with rose water into a paste, spread on damp skin after the hammam, leave 10 to 15 minutes, then rub and rinse. It polishes and softens, but it doesn't bleach skin. Nila and aker fassi stain and are often mixed with synthetic dyes, and cowrie and cuttlebone can scratch if not sieved very fine.",
+    "inspired": "Moroccan tbrima al-arousa",
+    "source": {
+      "creator": "Mouad Bio",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "royal-bridal-tbrima-gentler",
+    "name": "Royal bridal tbrima (gentler)",
+    "claim": "Soft rose and clay body polish for wedding prep",
+    "type": "body_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "rosebuds",
+        20,
+        "g"
+      ],
+      [
+        "kaolin",
+        30,
+        "g"
+      ],
+      [
+        "cuttlebone",
+        10,
+        "g"
+      ],
+      [
+        "licorice",
+        10,
+        "g"
+      ],
+      [
+        "gumarabic",
+        5,
+        "g"
+      ],
+      [
+        "frankresin",
+        5,
+        "g"
+      ],
+      [
+        "riceflour",
+        20,
+        "g"
+      ]
+    ],
+    "note": "Grind the rose, resin and gum to a powder, mix with the rest and sieve through a fine tea strainer. Store dry. Mix with rose water, apply after a warm shower, leave 10 minutes and rinse. Drops the nila and aker fassi (stain and dye risk) and cowrie (sharp). Patch test a week before a wedding, never right before."
   }
 ]

@@ -7165,5 +7165,16 @@
     "flag": "Palo santo: choose ethical, keep low",
     "good": "A sweet, woody, citrusy oil from South American wood, popular in calming scent blends and with sage.",
     "care": "High in limonene, which oxidises into a skin sensitiser, so keep it under 1% and store it cool. Buy oil from fallen wood with a sustainability claim; the related Peruvian palo santo is protected. Patch test."
+  },
+  {
+    "id": "cuttlebone",
+    "grp": "Powders and exfoliants",
+    "name": "Cuttlebone (lisan al-bahr, لسان البحر), ground",
+    "ph": "powder",
+    "tsp": 2.5,
+    "lvl": "care",
+    "flag": "Cuttlebone is gritty",
+    "good": "The internal shell of the cuttlefish, mostly calcium carbonate (chalk). Moroccan and Gulf body masks such as tbrima use the ground powder as a soft polish.",
+    "care": "Sieve it very fine: coarse bits scratch. It doesn't whiten skin; it only polishes off dead skin for a brighter look. Skip it with a shellfish allergy, and keep it off the face and broken skin."
   }
 ]

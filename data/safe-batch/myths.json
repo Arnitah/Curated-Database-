@@ -7208,5 +7208,61 @@
     "seen_in": "TikTok and Instagram deodorant, skincare routine and hair product posts",
     "checked": "2026-11-03",
     "format": "v2"
+  },
+  {
+    "id": "tbrima-whitening-magnesium-feet-toothpaste-jelly-beauty-tea-repacks",
+    "title": "Bridal tbrima whitens skin, magnesium spray on the feet helps you sleep, and toothpaste sets jelly",
+    "topics": [
+      "body",
+      "food",
+      "sleep"
+    ],
+    "claims": [
+      {
+        "claim": "Royal bridal tbrima whitens the skin",
+        "verdict": "false",
+        "truth": "Clay, shell powder and rose polish off dead skin, so skin looks brighter and smoother for a day or two. Nothing in the blend changes skin colour. 'Whitening' powders sold in markets sometimes contain mercury or hidden lightening agents, so buy ones with a full ingredient list.",
+        "grade": "B"
+      },
+      {
+        "claim": "Magnesium spray on the soles of the feet relaxes you and helps sleep",
+        "verdict": "unproven",
+        "truth": "There's little evidence skin absorbs meaningful magnesium. The warm shower, socks and bedtime ritual may help on their own. Magnesium chloride sprays often tingle or itch.",
+        "grade": "C"
+      },
+      {
+        "claim": "Toothpaste is a fine coagulant for mulian (fig) seed jelly",
+        "verdict": "false",
+        "truth": "The jelly sets from calcium. Old recipes used chalky toothpowder, but modern toothpaste contains fluoride, detergents and flavours that aren't meant to be eaten. Use food-grade calcium (such as calcium lactate) or hard mineral water instead.",
+        "grade": "B"
+      },
+      {
+        "claim": "A date, goji, hibiscus and chia tea makes your skin glow",
+        "verdict": "unproven",
+        "truth": "It's a pleasant, hydrating drink with antioxidants and fibre, but no study shows it changes skin. Hibiscus can lower blood pressure, so go easy if you take blood-pressure medicine.",
+        "grade": "C"
+      },
+      {
+        "claim": "Repacked 'brightening' lotions in small tubs are the same as the original",
+        "verdict": "partly",
+        "truth": "Some vendors decant or mix products, so you can't tell what's in the tub. Mixed 'lightening' creams have been found with hydroquinone, steroids or mercury. Buy sealed, labelled products from known sellers.",
+        "grade": "B"
+      },
+      {
+        "claim": "Mitracarpus corrects dark spots",
+        "verdict": "unproven",
+        "truth": "Mitracarpus is a traditional West African skin herb, and lab tests show some anti-enzyme and antifungal activity, but there are no good human trials for dark spots. Sunscreen, azelaic acid or niacinamide have far better evidence.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "FDA: Mercury poisoning linked to skin products",
+        "url": "https://www.fda.gov/consumers/consumer-updates/mercury-poisoning-linked-skin-products"
+      }
+    ],
+    "seen_in": "TikTok and Instagram Moroccan beauty, wellness and food posts",
+    "checked": "2026-11-03",
+    "format": "v2"
   }
 ]

@@ -7652,5 +7652,20 @@
    "care: Clove infusion can irritate",
    "care: Fenugreek can trigger legume allergies"
   ]
+ },
+ "royal-bridal-tbrima-as-posted": {
+  "verdict": "care",
+  "flags": [
+   "care: Check what's in your aker fassi",
+   "care: Cowrie shell powder can scratch",
+   "care: Cuttlebone is gritty",
+   "care: Nila powder stains and is often adulterated"
+  ]
+ },
+ "royal-bridal-tbrima-gentler": {
+  "verdict": "care",
+  "flags": [
+   "care: Cuttlebone is gritty"
+  ]
  }
 }
