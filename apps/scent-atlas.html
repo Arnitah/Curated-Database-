@@ -250,21 +250,31 @@ details.more > div { display: grid; gap: 10px; margin-top: 10px }
 #mapview .crumbs b { font-weight: 600 }
 #mapview .desk { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 16px; align-items: start }
 @media (max-width: 860px) {#mapview .desk { grid-template-columns: minmax(0, 1fr) } }
+#mapview { --snap-sea: #8fd6f5; --snap-sea2: #b9e7fa; --snap-land: #f6f3ea; --snap-land-on: #dff0cf; --snap-edge: #ffffff; --snap-pin-ring: #ffffff; --snap-shadow: rgba(16,40,70,.28) }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #mapview { --snap-sea: #12324a; --snap-sea2: #1a4562; --snap-land: #2b313b; --snap-land-on: #355443; --snap-edge: #12324a; --snap-pin-ring: #f4f6fa; --snap-shadow: rgba(0,0,0,.55) } }
+:root[data-theme="dark"] #mapview { --snap-sea: #12324a; --snap-sea2: #1a4562; --snap-land: #2b313b; --snap-land-on: #355443; --snap-edge: #12324a; --snap-pin-ring: #f4f6fa; --snap-shadow: rgba(0,0,0,.55) }
+#mapview .mapbox { background: radial-gradient(120% 90% at 50% 40%, var(--snap-sea2), var(--snap-sea)) !important }
+#mapview .heat { pointer-events: none; mix-blend-mode: multiply; transition: opacity .3s }
+:root[data-theme="dark"] #mapview .heat { mix-blend-mode: screen }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #mapview .heat { mix-blend-mode: screen } }
+#mapview .heat.off { display: none }
 #mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: pan-y }
 #mapview .mapbox svg { display: block; width: 100%; height: auto; cursor: grab }
 @media (max-width: 600px) {#mapview .mapbox svg { height: 380px } }
 #mapview .mapbox svg:active { cursor: grabbing }
-#mapview .land { fill: var(--land); stroke: var(--sea); stroke-width: .5; vector-effect: non-scaling-stroke; transition: fill .2s }
-#mapview .land.on { fill: var(--land-on); cursor: pointer }
+#mapview .land { fill: var(--snap-land); stroke: var(--snap-edge); stroke-width: .8; vector-effect: non-scaling-stroke; transition: fill .2s }
+#mapview .land.on { fill: var(--snap-land-on); cursor: pointer }
 #mapview .land.on:hover, #mapview .land.sel { fill: var(--accent) }
 #mapview .land.hl { stroke: var(--resin); stroke-width: 1.6 }
-#mapview .bubble circle { fill: var(--accent); fill-opacity: .85; stroke: var(--paper); stroke-width: 1.2; vector-effect: non-scaling-stroke; cursor: pointer }
-#mapview .bubble text { fill: var(--paper); font: 600 9px var(--body); text-anchor: middle; dominant-baseline: central; pointer-events: none }
-#mapview .dot { stroke: var(--paper); vector-effect: non-scaling-stroke; cursor: pointer; transition: opacity .2s }
+#mapview .bubble { filter: drop-shadow(0 1.5px 2px var(--snap-shadow)) }
+#mapview .bubble circle { fill: #ffffff; fill-opacity: 1; stroke: var(--accent); stroke-width: 2.4; vector-effect: non-scaling-stroke; cursor: pointer }
+#mapview .bubble text { fill: #1d2230; font: 700 9.5px var(--body); text-anchor: middle; dominant-baseline: central; pointer-events: none }
+#mapview #m-pins { filter: drop-shadow(0 1px 1.5px var(--snap-shadow)) }
+#mapview .dot { stroke: var(--snap-pin-ring); vector-effect: non-scaling-stroke; cursor: pointer; transition: opacity .2s }
 #mapview .dot.fade { opacity: .12 }
 #mapview .dot.sel { stroke: var(--ink); stroke-width: 2 }
 #mapview .dot.glow { stroke: var(--resin); stroke-width: 2.5 }
-#mapview .placelab { fill: var(--ink); font-family: var(--body); font-weight: 600; paint-order: stroke; stroke: var(--sea); stroke-width: 1.2px; pointer-events: none }
+#mapview .placelab { fill: var(--ink); font-family: var(--body); font-weight: 700; paint-order: stroke; stroke: var(--snap-land); stroke-width: 1.2px; pointer-events: none }
 #mapview .ctrl { position: absolute; right: 10px; top: 10px; display: grid; gap: 6px }
 #mapview .ctrl button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); font: 600 17px var(--body); cursor: pointer }
 #mapview .legend { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 12px; border-top: 1px solid var(--line); background: var(--paper) }
@@ -338,8 +348,8 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     <div>
       <div class="mapbox" id="m-mapbox">
         <svg id="m-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="World map of perfume houses">
-          <rect width="1000" height="500" fill="transparent" id="m-seaRect"></rect>
-          <g id="m-zoom"><g id="m-lands"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g><g id="m-mat"></g></g>
+          <defs><radialGradient id="m-heatg"><stop offset="0" stop-color="#ff3b30" stop-opacity=".78"/><stop offset=".28" stop-color="#ffb000" stop-opacity=".6"/><stop offset=".58" stop-color="#3ec6ff" stop-opacity=".32"/><stop offset="1" stop-color="#3ec6ff" stop-opacity="0"/></radialGradient></defs><rect width="1000" height="500" fill="transparent" id="m-seaRect"></rect>
+          <g id="m-zoom"><g id="m-lands"></g><g id="m-heat" class="heat"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g><g id="m-mat"></g></g>
         </svg>
         <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button></div>
       </div>
@@ -352,7 +362,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     </div>
     <aside class="panel" id="m-panel" aria-live="polite"></aside>
   </div>
-  <p class="hint">To move the map: drag with a mouse, use two fingers on a phone, or the + and − buttons. One finger scrolls the page. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
+  <p class="hint">To move the map: drag with a mouse, use two fingers on a phone, or the + and − buttons. One finger scrolls the page. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style; the glowing hot spots (map style inspired by Snap Map) show where houses cluster. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
   </section>
 
   <section class="travel offtab" id="travelview" aria-live="polite">
@@ -1039,7 +1049,7 @@ const MapView = (() => {
 const WORLD = MAPWORLD;
 function flyTo(x, y, k) { const t = d3.zoomIdentity.translate(500, 250).scale(k).translate(-x, -y); svg.transition().duration(matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 750).call(zoom.transform, t); }
 function flyBox(x0, y0, x1, y1, max = 14) { const w = Math.max(x1 - x0, 4), hgt = Math.max(y1 - y0, 4); const k = Math.min(max, 0.85 / Math.max(w / 1000, hgt / 500)); flyTo((x0 + x1) / 2, (y0 + y1) / 2, Math.max(1, k)); }
-let proj, svg, gZoom, zoom, TRAD = [], showTrad = true, MAT = [], showMat = false; let K = 1;
+let showHeat = true; let proj, svg, gZoom, zoom, TRAD = [], showTrad = true, MAT = [], showMat = false; let K = 1;
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const money = (v, cur) => v == null ? "" : new Intl.NumberFormat("en-CA", { style: "currency", currency: cur, maximumFractionDigits: v >= 1000 ? 0 : 2 }).format(v);
 let D, RATES = {};
@@ -1089,6 +1099,7 @@ function drawBase() {
   D.places = places; D.dots = dots;
   d3.select("#m-pins").selectAll("circle").data(dots, (d) => d.h.id).join("circle").attr("class", "dot").attr("fill", (d) => colorOf(d.h))
     .on("click", (e, d) => { e.stopPropagation(); goHouse(d.h.id); }).append("title").text((d) => `${d.h.name} · ${d.p.place}`);
+  d3.select("#m-heat").selectAll("circle").data(places).join("circle").attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("fill", "url(#m-heatg)");
   d3.select("#m-labels").selectAll("text").data(places).join("text").attr("class", "placelab").text((d) => d.place);
   const MP = MAT.flatMap((m) => m.origins.map((o) => ({ m, o })));
   d3.select("#m-mat").selectAll("circle").data(MP).join("circle").attr("class", (d) => `mat mt-${d.m.type}`).on("click", (e, d) => { e.stopPropagation(); goMaterial(d.m.id); }).append("title").text((d) => `${d.m.name} · ${d.o.place}`);
@@ -1099,13 +1110,14 @@ function restyle() {
   const world = K < 2.6, el = $("m-map"), S = Math.max(el.clientWidth / 1000, el.clientHeight / 500) || 1;
   d3.select("#m-map").selectAll(".bubble").attr("display", world && !state.hl ? null : "none").attr("transform", (d) => `translate(${d.x},${d.y}) scale(${1 / K / Math.max(S, 0.6)})`)
     .select("circle").attr("r", (d) => 6 + Math.sqrt(d.n) * 3.2);
+  d3.select("#m-heat").classed("off", !showHeat).style("opacity", K > 14 ? 0.45 : 1).selectAll("circle").attr("r", (d) => (9 + Math.sqrt(d.houses.length) * 7) / Math.sqrt(K) / Math.max(S, 0.6));
   const rr = (d) => ((state.hl && state.hl.has(d.h.id) ? 6.5 : 5.5) / S) / K;
   const R = (d) => d.p.houses.length > 1 ? rr(d) * Math.max(1.9, Math.min(12, d.p.houses.length) * 0.45) * d.ring : 0;
   d3.select("#m-map").selectAll(".dot").attr("display", world && !state.hl ? "none" : null)
     .attr("cx", (d) => d.x + Math.cos(d.a) * R(d))
     .attr("cy", (d) => d.y + Math.sin(d.a) * R(d))
     .attr("r", rr)
-    .attr("stroke-width", 1)
+    .attr("stroke-width", 1.8)
     .classed("fade", (d) => !!state.hl && !state.hl.has(d.h.id))
     .classed("glow", (d) => !!state.hl && state.hl.has(d.h.id))
     .classed("sel", (d) => d.h.id === state.house);
@@ -1271,7 +1283,8 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   $("m-legend").innerHTML = '<span class="eyebrow" style="align-self:center">Styles · tap to light up</span>' + MAP.map(([k, name]) => `<button class="chip" type="button" data-style="${k}" aria-pressed="false"><i style="background:var(--s-${k})"></i>${name}</button>`).join("");
   $("m-legend").insertAdjacentHTML("beforeend", `<button class="chip" type="button" id="m-tradbtn" aria-pressed="true"><i style="background:var(--resin);border-radius:2px;transform:rotate(45deg)"></i>Traditions</button>`);
   $("m-legend").insertAdjacentHTML("beforeend", `<button class="chip" type="button" id="m-matbtn" aria-pressed="false"><i style="background:#4d8a4a"></i>Where ingredients grow</button>`);
-  $("m-legend").onclick = (e) => { if (e.target.closest("#m-matbtn")) { showMat = !showMat; $("m-matbtn").setAttribute("aria-pressed", showMat); restyle(); return; } if (e.target.closest("#m-tradbtn")) { showTrad = !showTrad; $("m-tradbtn").setAttribute("aria-pressed", showTrad); restyle(); return; } const b = e.target.closest("[data-style]"); if (b) goStyle(b.dataset.style); };
+  $("m-legend").insertAdjacentHTML("beforeend", `<button class="chip" type="button" id="m-heatbtn" aria-pressed="true"><i style="background:radial-gradient(#ff3b30,#ffb000 45%,#3ec6ff)"></i>Hot spots</button>`);
+  $("m-legend").onclick = (e) => { if (e.target.closest("#m-heatbtn")) { showHeat = !showHeat; $("m-heatbtn").setAttribute("aria-pressed", showHeat); restyle(); return; } if (e.target.closest("#m-matbtn")) { showMat = !showMat; $("m-matbtn").setAttribute("aria-pressed", showMat); restyle(); return; } if (e.target.closest("#m-tradbtn")) { showTrad = !showTrad; $("m-tradbtn").setAttribute("aria-pressed", showTrad); restyle(); return; } const b = e.target.closest("[data-style]"); if (b) goStyle(b.dataset.style); };
   const notes = new Set(); for (const h of D.houses) { const n = h.sig.notes || {}; [...(n.t || []), ...(n.h || []), ...(n.b || []), ...(h.accents || [])].forEach((x) => notes.add(x.toLowerCase())); }
   $("m-notelist").innerHTML = [...notes].sort().map((n) => `<option value="${esc(n)}"></option>`).join("");
   drawBase(); window.addEventListener("resize", () => restyle());

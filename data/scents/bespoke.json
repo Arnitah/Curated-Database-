@@ -144,5 +144,20 @@
   "url": "https://www.1000flowers.fr/bespoke",
   "src": "https://www.1000flowers.fr/bespoke",
   "on": "2026-11-02"
+ },
+ {
+  "id": "je-sens-shanghai",
+  "name": "Je Sens (觉森)",
+  "city": "Shanghai",
+  "country": "China",
+  "cc": "CN",
+  "lat": 31.2213,
+  "lon": 121.4747,
+  "address": "HAI550, 550 Huaihai Middle Road, Shanghai (floor not confirmed)",
+  "kind": "bespoke",
+  "what": "Chinese fragrance brand offering a custom-fragrance experience, with sculptural ceramic-capped bottles. Chinese business reporting places its Shanghai debut at HAI550 (per Nitah's verification check, 3 Nov 2026). A travel directory gives a different (K11) address, likely older; other branches not verified. Price not given.",
+  "url": "https://www.instagram.com/jesens_official/",
+  "src": "https://www.instagram.com/zoe.rammie/",
+  "on": "2026-11-03"
  }
 ]

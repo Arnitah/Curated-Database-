@@ -1,6 +1,6 @@
 {
   "version": 160,
-  "updated_at": "2026-11-03T21:36:34.495Z",
+  "updated_at": "2026-11-03T21:39:57.935Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -315,10 +315,16 @@
       "updated_at": "2026-10-26T22:46:31.159Z"
     },
     "scents/bespoke": {
-      "count": 9,
-      "bytes": 5116,
-      "hash": "ec01d6639406",
-      "updated_at": "2026-11-02T17:07:23.714Z"
+      "count": 10,
+      "bytes": 5841,
+      "hash": "ebfa02bf49be",
+      "updated_at": "2026-11-03T21:39:57.928Z"
+    },
+    "scents/exclusions": {
+      "count": 2,
+      "bytes": 1461,
+      "hash": "c142e42251d8",
+      "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/families": {
       "count": 12,
@@ -334,15 +340,15 @@
     },
     "scents/houses": {
       "count": 178,
-      "bytes": 270911,
-      "hash": "b7f46791de17",
-      "updated_at": "2026-11-03T18:01:33.697Z"
+      "bytes": 273657,
+      "hash": "1a90f7ef8d1b",
+      "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/leads": {
-      "count": 159,
-      "bytes": 77305,
-      "hash": "ddb82554236f",
-      "updated_at": "2026-11-03T18:01:41.617Z"
+      "count": 169,
+      "bytes": 85773,
+      "hash": "bd4abd4293ef",
+      "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/materials": {
       "count": 3,
@@ -375,10 +381,10 @@
       "updated_at": "2026-10-24T20:25:18.881Z"
     },
     "scents/stores": {
-      "count": 19,
-      "bytes": 3532,
-      "hash": "07b1a54028fd",
-      "updated_at": "2026-11-02T23:45:04.620Z"
+      "count": 21,
+      "bytes": 4523,
+      "hash": "51c054371899",
+      "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/traditions": {
       "count": 25,
@@ -394,9 +400,9 @@
     },
     "scents/trends": {
       "count": 8,
-      "bytes": 5107,
-      "hash": "e7d5d2fd807d",
-      "updated_at": "2026-11-02T23:52:10.564Z"
+      "bytes": 5282,
+      "hash": "e0974d2ea6d1",
+      "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/twins": {
       "count": 86,

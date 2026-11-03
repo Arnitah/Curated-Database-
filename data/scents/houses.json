@@ -739,7 +739,7 @@
   "type": "niche",
   "scale": "small",
   "site": "https://www.baroma.asia/brand/uttori/",
-  "about": "A Chinese artisan house that reworks familiar Chinese plants, tea and gardens into modern perfumes.",
+  "about": "A Chinese house (reportedly linked to a Shanghai company; perfumes since 2017; about 37 scents listed on Fragrantica) that reworks Chinese tea, plants, gardens and water towns into small 18 ml perfumes with perfumers such as Yann Vasnier, Nisrine Bouazzaoui Grillié, Michel Girard and Nanako Ogi. A fragrance-industry editorial (Fragrantica, 3 Dec 2025) describes Fukudo as its sister brand, founded together in 2011; that is editorial reporting, not a company filing.",
   "why": "Small, story-led and still rare outside China.",
   "families": [
    "floral",
@@ -773,13 +773,13 @@
    "profile": "Named after a moss garden but softer than it sounds: creamy coconut and pear with tropical white flowers over a soft vanilla wood. Gentle and comforting."
   },
   "price": {
-   "amt": null,
+   "amt": 218,
    "cur": "CNY",
-   "ml": null,
-   "status": "unknown",
-   "src": "https://www.parfumo.com/Perfumes/uttori/moss-rock",
-   "on": "2026-10-23",
-   "note": "Price not published in English sources."
+   "ml": 18,
+   "status": "reported",
+   "src": "https://www.fragrantica.com/designers/Uttori.html",
+   "on": "2026-11-03",
+   "note": "Indexed ¥218 / 18 ml across Tmall-flagship listings; a separate marketplace report showed about ¥188. Neither is a checked checkout price."
   },
   "tags": [
    "garden",
@@ -788,9 +788,23 @@
   "also": [
    {
     "name": "Tea Mountain (茶山)",
-    "notes": "A tea-garden scent, featured in a creator's 'Chinese perfume brands you should know'.",
-    "price": "See shop",
+    "notes": "Bergamot and Lapsang Souchong (a smoked black tea, not green tea), then jasmine, orchid and neroli on moss, cedar and vetiver. Perfumer listed in fragrance databases: Nisrine Bouazzaoui Grillié. One reviewer found it more woody-floral than tea-forward.",
+    "price": "Indexed ¥218 / 18 ml (Tmall listings, not a checked checkout)",
     "url": "https://www.baroma.asia/brand/uttori/"
+   },
+   {
+    "name": "Phoenix Oolong (鸭屎香)",
+    "notes": "Named after a famous Phoenix Mountain dancong oolong. Spice, bergamot and cypriol over oolong and magnolia, on guaiac wood and vetiver; reviewers describe smoky, roasted tea with a dried-plum feel. Perfumer Eric Ye.",
+    "price": "Reported about ¥188 / 18 ml (one marketplace); indexed ¥218 / 18 ml (Tmall listings). Separate observations, neither is a checked official price."
+   },
+   {
+    "name": "Jiangnan collection (2025)",
+    "notes": "Four 18 ml scents inspired by the water towns south of the Yangtze: Alley (老街, spice, jasmine, moss), Inking Spring (春染, chamomile and mimosa), Black Shelter (乌篷, lemon, sage, mint, vetiver) and River Levee (拂堤, grapefruit, galbanum, willow, vetiver).",
+    "price": "Reported ¥188 / 18 ml"
+   },
+   {
+    "name": "New in 2026 (names only)",
+    "notes": "Ginger Lily (姜百合), Gold (大吉), Sweet Ripples (荔波). Notes, perfumers and availability not yet checked. Also Osmanthus (桂) and Moss Rock at ¥218 / 18 ml in indexed listings."
    }
   ]
  },
@@ -2580,6 +2594,14 @@
   "tags": [
    "spa",
    "tea"
+  ],
+  "also": [
+   {
+    "name": "Care Eau de Parfum (limited)",
+    "notes": "Alcohol-free fragrance for skin, hair and body in ten scents: No One Is Watching, Blue Hour Letters, Little Light Still Burning, The Soft Within, I'll Stay Until You Sleep, Not the End Yet, The Ground Remembers, The Quiet Between, What the Wind Forgot, Whisper of Sun. Limited release, in select stores and online.",
+    "price": "See shop",
+    "url": "https://www.instagram.com/panpuriofficial/"
+   }
   ]
  },
  {
@@ -8631,8 +8653,8 @@
   "continent": "Asia",
   "type": "niche",
   "scale": "small",
-  "site": "https://trovemy.com/",
-  "about": "A Chinese house whose twelve extraits are named after Chinese landscapes (Changbai mountains, Tianshan springs) and built around Asian botanicals. Sold in Malaysia through the Trove boutique.",
+  "site": "https://chujianparfums.com/",
+  "about": "A Chinese house whose twelve extraits are named after Chinese landscapes (Changbai mountains, Tianshan springs) and built around Asian botanicals. Sold in Malaysia through the Trove boutique. Official site chujianparfums.com; also sold through Anfulu (安福路), a Chinese luxury retail platform.",
   "why": "Calm, landscape-inspired Chinese perfumery, now reachable through a Kuala Lumpur shop.",
   "families": [
    "woody",
@@ -8674,7 +8696,7 @@
   "also": [
    {
     "name": "Boreal Fir No.M39",
-    "notes": "Saffron, cedar, vetiver, guaiac wood and ambergris; a cold northern forest."
+    "notes": "Pink pepper, cardamom and saffron; fir, cedar, sandalwood, tea and vetiver; guaiac wood, cypriol, musk and Cashmeran: a cold northern forest. Perfumer Mathilde Bijaoui, named on the brand's own product page (per Nitah's verification check, 3 Nov 2026)."
    },
    {
     "name": "Tianshan Spring No.L31",
@@ -9680,6 +9702,11 @@
     "notes": "Fresh-ground coffee and espresso-martini warmth.",
     "price": "US$90 · 50 ml",
     "url": "https://dedcool.com/products/mocha-magic-fragrance"
+   },
+   {
+    "name": "Mochi Milk",
+    "notes": "A creator pairs it with Ellis Brooklyn's Marshmallows hair and body mist for a fluffy, slightly fruity marshmallow combination.",
+    "price": "See shop"
    }
   ],
   "tags": [
