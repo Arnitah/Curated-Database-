@@ -604,7 +604,7 @@
    "status": "verified",
    "src": "https://tosummer.shop/products/osmanthus-perfume",
    "on": "2026-10-23",
-   "note": "30 ml US$139.90, 100 ml US$279.90 (read from the shop data). Was sold out on the check date.",
+   "note": "30 ml US$139.90, 100 ml US$279.90 (read from the shop data). Was sold out on the check date. A Thai pre-order shop lists 30 ml at ฿2,990–4,590 (reported).",
    "amt_max": 279.9
   },
   "tags": [
@@ -621,6 +621,37 @@
     "notes": "Aged Xinhui tangerine peel and kumquat, jasmine, wild honey and damask rose, on pu'er tea, cedar and amber: a warm, bittersweet cup of red tea.",
     "price": "See shop",
     "url": "https://tosummer.shop/collections/tosummerperfume"
+   },
+   {
+    "name": "Pomelo (柚)",
+    "notes": "Bergamot, mandarin, grapefruit and aldehydes, then mint, thyme, raspberry and jasmine, on white musk and amber.",
+    "price": "฿2,990 / 30 ml (reported, Thailand)",
+    "url": "https://www.instagram.com/cafeprops/"
+   },
+   {
+    "name": "Tipsy Rose (烧)",
+    "notes": "Chinese rhubarb and davana over a smoky rose, on patchouli and guaiac wood.",
+    "price": "฿2,990 / 30 ml (reported)"
+   },
+   {
+    "name": "Void (空)",
+    "notes": "Bergamot, sage and green notes; maté, Sri Lankan tea, jasmine and rose; amber and musk.",
+    "price": "฿4,590 / 30 ml (reported)"
+   },
+   {
+    "name": "Nude (裸)",
+    "notes": "A cotton accord with pear and bergamot; magnolia, water lily, violet and ambrette; ambergris and amber.",
+    "price": "฿3,590 / 30 ml (reported)"
+   },
+   {
+    "name": "Jazz Bar (时)",
+    "notes": "Grapefruit, bitter orange and rum; coffee, whisky and benzoin; patchouli, tobacco and Chinese cedar.",
+    "price": "฿4,590 / 30 ml (reported)"
+   },
+   {
+    "name": "Also on the Thai list",
+    "notes": "Cedarwood, Rambler Rose, Magnolia, Bitters, Leisure, Chapter 149, 475 Mansion, 111, Her (我, with Buddha's hand and orris) and Pearl Box (珍, orris and rose on Phoebe zhennan wood).",
+    "price": "฿2,990–4,590 / 30 ml (reported)"
    }
   ]
  },
@@ -687,6 +718,14 @@
    "avant-garde",
    "incense",
    "shanghai"
+  ],
+  "also": [
+   {
+    "name": "Shè (红麝)",
+    "notes": "Its name means 'red musk'; sold in a lacquer-red bottle. A reviewer describes a soft incense with a porcelain-clay note.",
+    "price": "See shop",
+    "url": "https://www.parfumo.com/PerfumeBrand/documents"
+   }
   ]
  },
  {
@@ -10497,6 +10536,216 @@
    "norway",
    "bread",
    "lavender"
+  ]
+ },
+ {
+  "id": "zhiwuzhi",
+  "name": "Zhiwuzhi (挚物志)",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "China",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://bloomperfume.com/collections/zhiwuzhi",
+  "about": "A Chinese house whose name means a 'gratitude journal'. It turns tea rituals, mountain landscapes and classical Chinese scent culture into calm, restorative perfumes.",
+  "why": "One of the few new Chinese houses already stocked by a big Western niche shop (Bloom, London), so it is reachable from Canada.",
+  "families": [
+   "green",
+   "citrus",
+   "woody",
+   "floral"
+  ],
+  "accents": [
+   "tea",
+   "bamboo",
+   "incense"
+  ],
+  "sig": {
+   "name": "Youhuang (幽篁)",
+   "url": "https://www.parfumo.com/Perfumes/zhiwuzhi/youhuang",
+   "notes": {
+    "t": [
+     "pomelo",
+     "bergamot",
+     "bitter orange"
+    ],
+    "h": [
+     "bamboo",
+     "jasmine",
+     "tea"
+    ],
+    "b": [
+     "moss",
+     "musk",
+     "ylang-ylang"
+    ]
+   },
+   "profile": "Its name means a deep bamboo grove. A juicy pomelo start drifts into jasmine tea and green bamboo, then a soft mossy musk. From the house's Chang'an line."
+  },
+  "price": {
+   "amt": 120,
+   "cur": "GBP",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://bloomperfume.co.uk/products/distant-hills-in-silence",
+   "on": "2026-11-03",
+   "note": "£120 / 50 ml at Bloom Perfumery (UK retailer, not the brand's own shop); 1 ml samples £5."
+  },
+  "tags": [
+   "tea",
+   "bamboo",
+   "eastern aesthetic"
+  ],
+  "also": [
+   {
+    "name": "Distant Hills in Silence (远山听寂)",
+    "notes": "Lemon, mandarin and Buddha's hand with clary sage and black pepper, over frankincense, elemi, violet and patchouli: a quiet, incense-lit hillside.",
+    "price": "£120 / 50 ml",
+    "url": "https://bloomperfume.co.uk/products/distant-hills-in-silence"
+   },
+   {
+    "name": "Ruoming Green Withering (摇青)",
+    "notes": "Named after the step where fresh tea leaves are tossed and wilted; a curator frames it as a green, leafy kind of freshness that isn't citrus.",
+    "price": "See shop",
+    "url": "https://www.instagram.com/baroma.asia/"
+   },
+   {
+    "name": "Also at Bloom",
+    "notes": "Misty Cypress Ash (青岚柏烬), Celestial Robe (羽衣), Abode of Brahma (梵天境), Beyond Lethe (不忘川).",
+    "price": "£120 / 50 ml",
+    "url": "https://bloomperfume.com/collections/zhiwuzhi"
+   }
+  ]
+ },
+ {
+  "id": "zhufu",
+  "name": "Zhufu (竹浮)",
+  "country": "China",
+  "cc": "CN",
+  "region": "East Asia",
+  "continent": "Asia",
+  "city": "China",
+  "type": "niche",
+  "scale": "small",
+  "site": "https://ministryofscent.com/collections/zhufu-fragrance/zhufu",
+  "about": "A Chinese house making small 15 ml parfums in a tall dark bottle with a bamboo-style cap, mixing tea and temple themes with playful gourmands (pistachio, cocoa toffee, mango).",
+  "why": "Sold in the US (Ministry of Scent), the UK (Bloom) and Japan (Nose Shop), so it is one of the easier Chinese houses to sample.",
+  "families": [
+   "woody",
+   "gourmand",
+   "aquatic",
+   "green"
+  ],
+  "accents": [
+   "tea",
+   "pu'er"
+  ],
+  "sig": {
+   "name": "Aged Pu-er Tea",
+   "url": "https://ministryofscent.com/products/aged-pu-er-tea",
+   "notes": {
+    "t": [
+     "bergamot",
+     "aquatic notes"
+    ],
+    "h": [
+     "pu'er tea"
+    ],
+    "b": [
+     "vetiver",
+     "cedar",
+     "sandalwood"
+    ]
+   },
+   "profile": "Earthy aged pu'er brightened with bergamot and a cool watery note, resting on dry woods; set in a wooden cabin, says the shop. Perfumer: Meng Gu."
+  },
+  "price": {
+   "amt": 120,
+   "cur": "USD",
+   "ml": 15,
+   "status": "verified",
+   "src": "https://ministryofscent.com/products/aged-pu-er-tea",
+   "on": "2026-11-03",
+   "note": "US$120 / 15 ml at Ministry of Scent (San Francisco retailer); sold out on the check date. Other scents US$100–135, samples US$7."
+  },
+  "tags": [
+   "tea",
+   "small bottle",
+   "gourmand"
+  ],
+  "also": [
+   {
+    "name": "More from the range",
+    "notes": "Triple Matcha, Donglin Temple, Above the Clouds, Pistachio Muse, Cocoa Toffee, Mango Ambrosia, Caffè Roma, Poet.",
+    "price": "US$100–135",
+    "url": "https://ministryofscent.com/collections/zhufu-fragrance/zhufu"
+   }
+  ]
+ },
+ {
+  "id": "nostos",
+  "name": "Nostos",
+  "country": "United States",
+  "cc": "US",
+  "region": "North America",
+  "continent": "Americas",
+  "city": "United States",
+  "type": "indie",
+  "scale": "small",
+  "site": "https://www.luckyscent.com/products/shiver-by-nostos",
+  "about": "A young US brand (2025) about memory and coming home, founded by Jackie Mayol with New York perfumer Marissa Zappas. Three scents so far: Shiver, Calico and Teen.",
+  "why": "A tiny, story-led line with an unusual cold, mineral style; carried by Luckyscent and FWRD.",
+  "families": [
+   "green",
+   "woody",
+   "aquatic"
+  ],
+  "accents": [
+   "mineral",
+   "wet concrete"
+  ],
+  "sig": {
+   "name": "Shiver",
+   "url": "https://stele.nyc/products/nostos-shiver-eau-de-parfum",
+   "notes": {
+    "t": [
+     "eucalyptus",
+     "bergamot",
+     "ivy",
+     "white pepper"
+    ],
+    "h": [
+     "wet concrete",
+     "vetiver",
+     "cold metal",
+     "orris",
+     "pear"
+    ],
+    "b": [
+     "amber",
+     "cedar",
+     "oakmoss",
+     "musk",
+     "patchouli"
+    ]
+   },
+   "profile": "The end of winter: melting snow, damp pavement and the first green shoots. Cool, airy and a little metallic, hopeful rather than heavy."
+  },
+  "price": {
+   "amt": 150,
+   "cur": "USD",
+   "ml": 50,
+   "status": "verified",
+   "src": "https://www.luckyscent.com/products/shiver-by-nostos",
+   "on": "2026-11-03",
+   "note": "US$150 / 50 ml at Luckyscent and Stele (retailers)."
+  },
+  "tags": [
+   "mineral",
+   "cold",
+   "new"
   ]
  }
 ]

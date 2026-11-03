@@ -171,7 +171,7 @@
   "name": "baroma",
   "country": "Asia",
   "cc": "CN",
-  "lead": "Asian niche curator (carries Uttori and Chinese houses).",
+  "lead": "Asian niche curator; carries Uttori, Zhiwuzhi, toDefine and Zhufu.",
   "src": "https://www.baroma.asia/brand/uttori/"
  },
  {
@@ -262,7 +262,7 @@
   "name": "toDefine (寓义)",
   "country": "China",
   "cc": "CN",
-  "lead": "Chinese niche house; Bounty is a guava scent with buchu leaf, Timur pepper, freesia, lily of the valley and rose over sandalwood, sage and musk. Find price and shop.",
+  "lead": "Chinese niche house; Bounty is a guava scent with buchu leaf, Timur pepper, freesia, lily of the valley and rose over sandalwood, sage and musk. Find price and shop. Redamancy (至深深深处, octagonal bottle) is a boozy dessert: three oranges and rum, then butter, caramel and sugar, on cinnamon, clove, vanilla, ambergris and woods (notes per Parfumo). Stocked by the curator baroma.",
   "src": "https://www.instagram.com/todefine.official/"
  },
  {
@@ -1101,7 +1101,7 @@
   "name": "Chinese indie houses (NOTES Shanghai fair)",
   "country": "China",
   "cc": "CN",
-  "lead": "Brands named on a Shanghai fragrance-fair list (not yet checked one by one): FIFTYSIX, outis, Charm Notes, Chasense, Artìdote, Zhiwuzhi, Shennong, Xiang Gu, Maisonshan, Inscent Lab, Solivagant, Eastern Incense, Aentos, Scent Tells, Oneiros, Narratus, Yinora, Justiscents, Mobius, To Define, Mangla, Qicunjiu. Uttori and Chujian are already in the atlas. The fair (NOTES Shanghai) reportedly returns in March 2027; dates to confirm. A creator's 'Chinese brands you should know' adds bottles to look for: Zhufu (竹浮) in a gold bamboo-style bottle; Qicunjiu with hand-painted glass and a jade cap; To Define Gezelligheid (光与光); Nodoff 039 The Invisible Gardener; Rong Gather 72 Wild Bamboo Forest (野竹林, 25 ml); Aentos Shēng; Mo Maek Dried Tangerine Peel & Osmanthus (桂花陈皮); and a Beast 'daydreaming' parfum with a winged-boar cameo. Uttori's Tea Mountain is on its card.",
+  "lead": "Brands named on a Shanghai fragrance-fair list (not yet checked one by one): FIFTYSIX, outis, Charm Notes, Artìdote, Shennong, Xiang Gu, Maisonshan, Inscent Lab, Solivagant, Eastern Incense, Aentos, Scent Tells, Oneiros, Narratus, Yinora, Justiscents, Mobius, To Define, Mangla, Qicunjiu. Uttori, Chujian, Zhiwuzhi and Zhufu are already in the atlas; Chasense has its own lead. The fair (NOTES Shanghai) runs twice a year at the West Bund centre (spring 2026 edition: 2–5 April, checked). An AI summary of the October 2026 stand list adds more names, not yet checked: Absolute Breath, Nook Hill, Christell, Neon Li Bai, Flying Noze, Yamingdi, Fenshine, Rirana (Malaysia), Fu Ge, Fable Aroma, Banadle, Voyagecygnus, This Is For U (Hong Kong), Atypic Edition, Suoyin, Cinojad, Effortless, Maoment, Whoom 5., Mat Kuro, Coeur de Fleur, Fen Yuan, Heiseey, Vanchaly, Letfful, Wengesense, Le'Baron and With Black. It also lists first-time exhibitors from Oman and the UAE (Kinamic, Hind Al Oud, Khaltat). A creator's 'Chinese brands you should know' adds bottles to look for: Qicunjiu with hand-painted glass and a jade cap; To Define Gezelligheid (光与光); Nodoff 039 The Invisible Gardener; Rong Gather 72 Wild Bamboo Forest (野竹林, 25 ml); Aentos Shēng; Mo Maek Dried Tangerine Peel & Osmanthus (桂花陈皮); and a Beast 'daydreaming' parfum with a winged-boar cameo. Uttori's Tea Mountain is on its card.",
   "src": "https://chatgpt.com/share/6ae6d5e0-bda0-83ea-ac4f-3c7c4654755d"
  },
  {
@@ -1348,5 +1348,54 @@
   "cc": "SA",
   "lead": "Large Saudi house. Kalemat is a warm amber-wood scent: saffron and cinnamon over vanilla and sandalwood. One scent, not a picture of the whole region.",
   "src": "https://us.arabianoud.com/en/0301020146-kalemat-100-ml"
+ },
+ {
+  "name": "Chasense (茶香师)",
+  "country": "China",
+  "cc": "CN",
+  "lead": "A Chinese tea-perfume house, 50 ml stone-shaped bottles, at the NOTES Shanghai fair. A Singapore review lists about a dozen teas: Spring Tea (tangerine peel, Longjing, pear blossom, licorice, vetiver), Biluochun, Osmanthus Oolong, Ganpu (pu'er in a mandarin), Zentea Zheng (black and maté tea, incense, pine). Reported about S$50–60 each through a reseller. Find the official shop.",
+  "src": "https://shopee.sg/blog/chasense-perfume-review/"
+ },
+ {
+  "name": "Black Paw (黑爪)",
+  "country": "China",
+  "cc": "CN",
+  "lead": "Chinese house with a large tea-and-plant catalogue: Catmint (猫薄荷, 50 ml, mint-green cap), Longjing, Phoenix Dancong, Silver Needle, jasmine pearl tea, pine, gardenia, ink and more. Find notes and price.",
+  "src": "https://www.parfumo.com/Perfumes/black-paw/bamboo"
+ },
+ {
+  "name": "Fukudo",
+  "country": "To confirm",
+  "cc": "",
+  "lead": "Brand with Zen and Tibetan-themed names (Karesansui, Ryoanji, Samye Dawn, Yukiyo); Karesansui is sandalwood, cedar and moss with lotus, wisteria and incense (per Parfumo). A creator's video shows a green-capped bottle in a box marked Uttori, so it may be linked to Uttori. Confirm origin and price.",
+  "src": "https://www.parfumo.com/Perfumes/fukudo/karesansui"
+ },
+ {
+  "name": "Arome Manpo (馥郁满铺)",
+  "country": "China",
+  "cc": "CN",
+  "lead": "Chinese house seen in a creator's list; Osmanthus Nectar is a 50 ml EDP with a stone-like cap. No shop or notes found yet.",
+  "src": "https://www.instagram.com/eau_jen/"
+ },
+ {
+  "name": "Stellar Essence",
+  "country": "China (per creator)",
+  "cc": "CN",
+  "lead": "Black-bottle line with about 20 scents (Misty Hill, Ring of Saturn, Brumous Rose, Jazz Night, Oriental Sip); 50 ml. Notes and price not found yet.",
+  "src": "https://www.parfumo.com/Perfumes/stellar-essence/undercurrent"
+ },
+ {
+  "name": "handhandhand",
+  "country": "China (per creator)",
+  "cc": "",
+  "lead": "Leather-wrapped cap; Rebel Beige EDP, 50 ml. No shop or notes found yet.",
+  "src": "https://www.instagram.com/eau_jen/"
+ },
+ {
+  "name": "The Beast (野兽派)",
+  "country": "China",
+  "cc": "CN",
+  "lead": "Shanghai lifestyle brand (flowers, home, perfume) named by Lifestyle Asia among Chinese houses to watch. Oriental Beauty (东方美人, 2021, named after the oolong tea) is a fresh floral with citrus, camellia, linden and tea over musk. Find price.",
+  "src": "https://www.parfumo.com/Perfumes/beast/oriental-beauty"
  }
 ]

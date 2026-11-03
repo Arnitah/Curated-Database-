@@ -1048,5 +1048,23 @@
   "lon": 10.75,
   "place": "Oslo",
   "precision": "country"
+ },
+ "zhiwuzhi": {
+  "lat": 35.0,
+  "lon": 105.0,
+  "place": "China",
+  "precision": "country"
+ },
+ "zhufu": {
+  "lat": 35.0,
+  "lon": 105.0,
+  "place": "China",
+  "precision": "country"
+ },
+ "nostos": {
+  "lat": 40.71,
+  "lon": -74.01,
+  "place": "New York (perfumer)",
+  "precision": "country"
  }
 }
