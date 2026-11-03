@@ -620,7 +620,21 @@
   "country": "",
   "cc": "",
   "lead": "Small-house plum picks (prices from an AI check): d'Annam Tokyo Nights, umeshu plum wine, osmanthus, amber, tobacco, US$160 / 50 ml (out of stock); Curatrix Heist, cherry, plum, jasmine, vanilla, US$190; Obvious Plum Cream, salty umeboshi plum, rum, davana, €95 / 50 ml (€36 / 10 ml). Blind Barber Only You, Babe: star anise and red plum, clove and saffron with a saffiano-leather accord, birch tar, sandalwood and musk; US$98 / 50 ml on its own shop (checked). d'Annam also makes Matcha Soft Serve, a creator's ice-cream gourmand. More plums from a second creator: Sentire (Kyiv) × Sainte Cellier Smoked Plum Tea parfum (dried plum, black tea, saffron, osmanthus, leather, guaiac; 30 ml), and Bohoboco Plum Spray Paint (plum and cinnamon with a paint-fume accord, rum, whisky, leather, smoke; 'sample first').",
-  "src": "https://www.instagram.com/parfumpixie/"
+  "src": "https://www.instagram.com/parfumpixie/",
+  "checked": [
+   {
+    "what": "Plum BodyLovin' range",
+    "url": "https://plumgoodness.com/collections/under999",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Blind Barber Only You, Babe",
+    "url": "https://blindbarber.com/products/eau-de-parfum-only-you-babe",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "The Scent Arena (Muse Gourmand Series)",
@@ -662,7 +676,29 @@
   "country": "",
   "cc": "",
   "lead": "Creator picks with euro prices: Al Rehab Choco Musk (≈€6 oil, €15 spray; vanilla fluff with cocoa powder, the oil is creamier and lasts), Lattafa Nebras (≈€35, vanilla with cacao and berries), Theodoros Kalotinis Velvet Chocolate (≈€45, gooey brownie), by/Rosie Jane Dulce (≈€60, white-chocolate vanilla), Maison Tahité Vicious Cacao (≈€75, boozy hot chocolate). Others: Al-Nuaim Chocolate Musk (alcohol-free roll-on and spray), Al Rehab Choco Musk Pistachio and Marshmallow, Gulf Orchid Musk Collection Toffee, Paris Corner Qissa Delicious, Grandeur Tubbees Chocolate Fudge. Gulf Orchid also makes Musk Collection Tahara Vanilla (Mukhmaria), a soft vanilla musk cream in a jar; one buyer said it faded after a few days of use.",
-  "src": "https://www.instagram.com/perfumeprescenter/"
+  "src": "https://www.instagram.com/perfumeprescenter/",
+  "checked": [
+   {
+    "what": "Al Rehab Choco Musk",
+    "url": "https://www.alrehab.com/product/choco-musk/",
+    "kind": "official product page",
+    "note": "Check format and size.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Al Rehab Soft",
+    "url": "https://al-rehab.com/product/soft/",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Gulf Orchid Tahara Vanilla",
+    "url": "https://gulforchid.com/",
+    "kind": "official site only",
+    "note": "Product page and jar format not confirmed.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Qafila Naar Al Attar",
@@ -683,28 +719,168 @@
   "country": "India",
   "cc": "IN",
   "lead": "Clean hair perfumes (prices from an AI check of the brand shops): Saavi Silk Goddess (vanilla, lavender, cacao, jasmine, sandalwood) and Fresh Strands (apples, blackcurrant, berries, rose), ₹749 / 50 ml; Sacred Grove Rani Baug (damask rose, peony, white musk; alcohol-free), ₹713 / 50 ml on its own shop (checked); Naseem Asmira hair mist (cherry, saffron, tuberose, milk, vanilla), ₹800 / 30 ml, sold out when checked.",
-  "src": "https://www.instagram.com/vanilla.goddess_diaryy/"
+  "src": "https://www.instagram.com/vanilla.goddess_diaryy/",
+  "checked": [
+   {
+    "what": "SAAVI hair perfume (Silk Goddess / Fresh Strands)",
+    "url": "https://saaviskincare.com/products/hair-perfume-for-women-fragrance-haircare-in-one-50ml",
+    "kind": "official product page",
+    "note": "One page covers the line; check each variant.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Sacred Grove Rani Baug",
+    "url": "https://sacredgrove.in/products/rani-baug-hair-perfume-for-women-buy-2-999",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Naseem Asmira hair mist (30 ml)",
+    "url": "https://www.naseemperfume.in/collections/hair-mist/products/asmira-hair-mist-30ml",
+    "kind": "official product page",
+    "note": "A hair mist, not the same as Asmira eau de parfum.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Al Rehab Choco Musk trio",
   "country": "United Arab Emirates",
   "cc": "AE",
   "lead": "Choco Musk has siblings: Pistachio (listed with toffee, raspberry, almond and vanilla; creators say the pistachio is hard to find) and Marshmallow (vanilla, white rose, chocolate and marshmallow per the brand). 6 ml oils and sprays; cheap and widely sold.",
-  "src": "https://www.instagram.com/alrehabperfumes/"
+  "src": "https://www.instagram.com/alrehabperfumes/",
+  "checked": [
+   {
+    "what": "Al Rehab Choco Musk",
+    "url": "https://www.alrehab.com/product/choco-musk/",
+    "kind": "official product page",
+    "note": "Check format and size.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Al Rehab Soft",
+    "url": "https://al-rehab.com/product/soft/",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Swiss Arabian perfume oils",
   "country": "United Arab Emirates",
   "cc": "AE",
   "lead": "Creator-favourite 12 ml concentrated oils for layering (US prices; Musk 07 US$38 and Private Musk US$33 checked on its shop; Secret Oud US$33 reported). Also loved in the comments: Ajmal Musk Silk (pomegranate, strawberry, peony, powdery woods; AED 44.10 / 12 g) and Paris Corner Khair Confection oil (pear, whipped cream, marshmallow, vanilla; AED 85 / 25 ml).",
-  "src": "https://www.tiktok.com/@danielrene"
+  "src": "https://www.tiktok.com/@danielrene",
+  "checked": [
+   {
+    "what": "Swiss Arabian oils",
+    "url": "https://swissarabian.com/collections/private",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Ajmal Musk Silk",
+    "url": "https://en-ae.ajmal.com/musk-silk",
+    "kind": "official product page (UAE)",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Paris Corner Khair Confection oil (25 ml)",
+    "url": "https://pariscorner.ae/product/khair-confection-concentrated-perfume-oil-25ml/",
+    "kind": "official product page",
+    "note": "The oil and the eau de parfum are separate products.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Indian homegrown picks",
   "country": "India",
   "cc": "IN",
   "lead": "A creator's homegrown rotation. Plum BodyLovin' Moonkissed Drama (blackberry, rose, musk): ₹375 / 15 ml, ₹150 / 5 ml on Plum's shop (checked; the creator's ₹700 is likely the bigger bottle). Reported by an AI check: Secret Alchemist Madurai Jasmine (orange blossom, Indian jasmine, vanilla) ₹1,419 / 100 ml, ₹375 / 10 ml; Sharon Beauty Satin Nude (clean, 'sun-dried laundry') ₹749; Adorable Bliss Golden Drizzle (dark chocolate, coffee, almond, caramel, vanilla) ₹1,199 / 50 ml. Cloud Candy (creamy marshmallow, about ₹2,000) may be the Khadlaj scent of that name. Also: Sharon Beauty The 5th White (aldehydes, cotton flower, sandalwood). Renee Bloom (almond; tuberose, jasmine, sandalwood; vanilla, cocoa, tonka): ₹749 / 100 ml, ₹510 / 50 ml on Renee's shop (checked). EM5 Red Elixir (red apple, litchi, blackcurrant; berries, jasmine, rose; sugar, vanilla, musk): ₹449 / 50 ml, ₹249 / 15 ml on EM5's shop (checked). Also from a budget-perfume creator: Bella Vita Fresh (almond, bergamot, lavender) and Hot Mess, Sharon Beauty Glow (shimmer perfume oil: lemon, mandarin, vanilla, caramel, sandalwood; reported ₹550 / 10 ml), Plum BodyLovin' Smokin' Vanilla (honeysuckle, woods, vanilla, balsam, white musk; ₹764 / 50 ml, ₹293 / 15 ml on Plum's shop, checked) and Tulips Don't Lie, Skinn Caramel Charm mist. Checked on brand shops: Atmos Living Black Sea (pear, lavender, mint, bergamot; cinnamon, caraway, clary sage; black vanilla husk, amber, cedar; 'the most refreshing clean scent') ₹1,499 / 50 ml; Brew Beauty Java Chip Espresso (dark coffee gourmand) and Femme Fatale (boozy vanilla-choco musk) ₹899 / 15 ml, ₹2,599 / 50 ml. Also seen: Aeronot November (pear, caramel, jasmine, coffee, vanilla, patchouli, pink pepper; 'syrupy spicy sweet'; ₹2,000 / 50 ml, ₹3,000 / 100 ml, confirmed by Nitah), Itari Botanicals Paris Intense (sweet floral, ₹299 on its shop, checked; Paris EDP ₹449), Paris Corner Taskeen Caramel Cascade (caramel and milk, tonka and honey, vanilla and musk; notes on Paris Corner's shop; reported €26.99 / 100 ml at an Irish Arabic-perfume shop), Indinoir Café Noir apparel perfume, Amir & Sons King extrait (₹599 on its shop, checked). More from the same creator: Sharon Beauty British Lane (pear and champagne; freesia, wild rose; white musk, patchouli: a soft English-garden floral; ₹899 / 60 ml, confirmed by Nitah) and its wider shelf (Velveteen, Pristine, Whimsy, Glow), Adorable Bliss Raspberry Crown (raspberry, citrus, pear; orange blossom, jasmine; vanilla, amber, cedar: 'clean laundry'; reported ₹1,199 / 50 ml, ₹499 / 15 ml), Skylaa Main Character Peony, Naseem Juliet oil (jasmine, apple, blackcurrant; magnolia, peach; amber, musk, vanilla; reported ₹275 / 24 ml roll-on), Ajmal Musk Silk Supreme (soft white musk; reported AED 105 / 50 ml; the creator wears it over Musk Silk oil: 'oil for longevity, spray for elegance') and Aurum Summer (fruity floral musk; reported £34.93 / 75 ml), Al-Nuaim Candy roll-on (strawberry, raspberry, caramel, vanilla, sugary musk; reported ₹389 / 9.9 ml). Skinn 24/7 Caramel EDP (₹1,309 / 100 ml, confirmed by Nitah) is the caramel in the Vanilla Muse layering pair. Newest picks: Brunbae Celestial Sass (water-based perfume, ₹1,199 / 50 ml, checked), Casa de Vayu Leher (₹600 on its shop, checked; layered with Maya as a 'soft-girl blend'), Nusuk Raheek (honey-amber in a honeycomb bottle), Fragance Baked Vanilla (vanilla-cupcake EDP), Olga Bad Girl, Riiffs Fleurie Emerald (fresh florals on soft vanilla), Al Rehab Lovely (35 ml spray, 'office safe'), Rasasi Hawas and Embark Goa. Creator misses, for balance: National Crush (turned plasticky on her skin) and Rare (pleasant but generic). From her budget lists: Olga Red Cherry, Icebox and Bad Girl (100 ml); Bla Bli Blu Lights Off (passionfruit, caramel, amber; 'soft girl after dark'); Secret Alchemist Rare Vanilla (heliotrope-led airy vanilla, 100 ml); Adorable Bliss Citrus Veil; Beyond Rising Tide (aquatic); Carlton London Lush; Nykaa Moi Joie de Vivre (bright citrus). Her lists start around ₹750–1,200. Under-₹500 finds: Kalakari Coffee Rose (bitter coffee, rose, vanilla, white musk, amber; reported ₹359 / 30 ml on its shop), Alternate Scents Burbon Vanile (40 ml extrait, vanilla orchid, brown sugar, tonka, amber; under ₹350 on Amazon), Lattafa Éclairs mini (about 3–4 hours' wear), Ajmal Coco Gold attar (pink pepper, almond; tuberose, orange blossom; patchouli, vanilla, tonka; reported ₹349–450 / 5 ml). Lattafa Éclairs full size is reported at ₹4,000 / 100 ml in India; the cheap 'minis' may be resellers' decants. Quick-commerce minis on Blinkit (Bla Bli Blu Lights Off, Ajmal Aurum, Musk Rose). Another creator's 'squeaky clean and soapy' layering pair: a green perfume labelled Jungle Vibe with Sharon Beauty Satin Nude (exact Jungle Vibe maker unconfirmed).",
-  "src": "https://www.instagram.com/arougeaffair/"
+  "src": "https://www.instagram.com/arougeaffair/",
+  "checked": [
+   {
+    "what": "Bella Vita catalogue",
+    "url": "https://bellavitaorganic.com/collections/all-products",
+    "kind": "official catalogue",
+    "note": "Honey Oud is only an example; the creator's exact pick is unknown.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Plum BodyLovin' Smokin' Vanilla",
+    "url": "https://plumgoodness.com/products/smokin-vanilla-eau-de-parfum-by-plum-bodylovin",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Skinn by Titan",
+    "url": "https://www.skinn.in/",
+    "kind": "official site",
+    "note": "The creator's exact pick is unknown; 'Caramel Charm' could not be confirmed.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Sharon Beauty (Vanilla Muse, Satin Nude, Glow Huile de Parfum)",
+    "url": "https://www.thesharonbeauty.com/",
+    "kind": "official shop",
+    "note": "Glow Huile de Parfum has its own product page (thesharonbeauty.com/product-page/glow-huile-de-parfum); Vanilla Muse's page was not found. Satin Nude and Satin Nude Blonde are different scents.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "EM5 La-Vanilla",
+    "url": "https://www.houseofem5.com/collections/best-seller",
+    "kind": "official shop",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Secret Alchemist Madurai Jasmine",
+    "url": "https://secretalchemist.com/products/madurai-jasmine",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Adorable Bliss Golden Drizzle",
+    "url": "https://adorablebliss.com/collections/best-seller/products/golden-drizzle-perfume-50ml",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Aeronot November",
+    "url": "https://www.aeronot-store.com/products/november-100ml",
+    "kind": "official product page",
+    "note": "Pear, caramel and jasmine over coffee and vanilla, with patchouli and pink pepper. ₹2,000 / 50 ml, ₹3,000 / 100 ml; both sold out when checked.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Taskeen Caramel Cascade (Paris Corner)",
+    "url": "https://www.pariscornerperfumes.com/products/taskeen-caramel-cascade",
+    "kind": "official product page",
+    "note": "The brand spells it Taskeen, not Tasmeen. Caramel and milk, then tonka and honey, settling into vanilla and white musk. An Irish shop had 100 ml at €26.99.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Amir & Sons King Perfume",
+    "url": "https://amirandsons.com/",
+    "kind": "official shop",
+    "note": "On sale at ₹599 (from ₹999) when checked; notes not confirmed.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "IndiNoir (Café Noir)",
+    "url": "https://indinoir.com/collections/all",
+    "kind": "official catalogue",
+    "note": "The brand is real, but no scent called Café Noir is in its catalogue. Keep Café Noir unconfirmed.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Itari Paris Intense",
+    "url": "https://www.google.com/search?q=%22Itari+Paris+Intense%22+perfume",
+    "kind": "not found",
+    "note": "No product page or maker found; don't record notes or price yet.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Pure Elements India (Raga collection)",
@@ -725,42 +901,144 @@
   "country": "Pakistan",
   "cc": "PK",
   "lead": "Long-lasting local picks from a Pakistani roundup (longevity is commenters' opinion). Checked on J.'s own shop: Janan Pour Femme PKR 6,900 / 100 ml (PKR 2,800 / 30 ml; Janan Gold and Sport are separate scents); Wasim Akram 502 for Her (fruity peach-plum-berry, floral heart, vanilla, sandalwood, musk) PKR 6,400 / 100 ml, PKR 2,100 / 30 ml. Reported: Bonanza Satrangi Enchant (citrus, rose, patchouli, amber, musk) PKR 5,280 / 85 ml, not in its current shop; Khaadi Midnight Musk (bergamot, tuberose, oakmoss, musk) £26.99 at a UK retailer; ECS Mauvelous. Commenters also suggest Maria B (perfumes PKR 2,490–6,291 on its shop) and Sapphire.",
-  "src": "https://www.instagram.com/pgbazaar/"
+  "src": "https://www.instagram.com/pgbazaar/",
+  "checked": [
+   {
+    "what": "J. Janan",
+    "url": "https://www.junaidjamshed.com/collections/fragrances-collection-janan-fragrances",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Wasim Akram 502 for Her",
+    "url": "https://www.junaidjamshed.com/",
+    "kind": "official shop",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Bonanza Satrangi Enchant",
+    "url": "https://bonanzasatrangi.com/",
+    "kind": "official shop",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Khaadi Midnight Musk",
+    "url": "https://pk.khaadi.com/",
+    "kind": "official shop",
+    "note": "Availability differs by country.",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Maria B fragrances",
+    "url": "https://www.mariab.pk/collections/fragrances",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Sapphire Enchant",
+    "url": "https://pk.sapphireonline.pk/collections/womens-perfumes/products/000000FRL078.html",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Privé Luxe (Kakigori)",
   "country": "To confirm (likely India)",
   "cc": "",
   "lead": "Small brand in plain square bottles; Kakigori (named after Japanese shaved ice, green label, 50 ml) featured in an Indian creator's picks alongside BLC Cookie Crumble and Olga Bang Bang. Find notes and price. Olga Bang Bang 2.0 (citrus, ginger, neroli, cinnamon; black tea, ambroxan, guaiac) is reported at about ₹849–989 / 100 ml at Indian retailers.",
-  "src": "https://www.instagram.com/pearlrecommends/"
+  "src": "https://www.instagram.com/pearlrecommends/",
+  "checked": [
+   {
+    "what": "Olga Bang Bang",
+    "url": "https://perfuminate.com/product/olga-bang-bang-for-unisex/",
+    "kind": "retailer",
+    "note": "Link to Privé Luxe not confirmed.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Indonesian 'unusual clean' perfumes",
   "country": "Indonesia",
   "cc": "ID",
   "lead": "Clean scents that aren't soapy, per a creator. LAYR Empty Room extrait (dusty paper, creamy fig, wood, a little smoke: a freshly painted room with dried flowers), reported Rp349.000 / 50 ml; not in LAYR's online shop when checked (it lists Kyoto Jazz, Osmanthus Crystal, Hinoki Sublime, Second Skin). dr soap × Cinfung Liberate (blackcurrant, fig, orris; oat, poppy; barley, grain, white musk), reported Rp199.000 / 30 ml. Titik Nadi Canvas (citrus, laundered white sheets, powdery woods), reported Rp198.000 / 30 ml.",
-  "src": "https://www.instagram.com/thesea.journal/"
+  "src": "https://www.instagram.com/thesea.journal/",
+  "checked": [
+   {
+    "what": "LAYR (store locator)",
+    "url": "https://layrfragrance.com/pages/store-page",
+    "kind": "official store page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "dr soap × Cinfung Liberate",
+    "url": "https://dr-soap.com/collections/fragrance",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Titik Nadi Canvas",
+    "url": "https://www.tuesbellescent.com/categories/26019/layr",
+    "kind": "wrong page",
+    "note": "This link is a shop page for LAYR, not Canvas. Canvas's own page and price are still unknown.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Ibraq (Summer collection)",
   "country": "Tanzania (reseller); brand origin to confirm",
   "cc": "TZ",
   "lead": "Sold by a reseller in Dar es Salaam, Tanzania: Chasing Waves (bergamot, cardamom, lavender; vetiver, cinnamon; vanilla, tonka, cedar) full size TSh 110,000 on sale (was 130,000); also Sea Breeze (rose, sandalwood, cashmeran, amber), Red Coral (peach, jasmine, clove, white musk) and Riviera Sunset.",
-  "src": "https://www.instagram.com/el3amryladyyy/"
+  "src": "https://www.instagram.com/el3amryladyyy/",
+  "checked": [
+   {
+    "what": "Ibraq on Zudua (Tanzania)",
+    "url": "https://lifestyle.zudua.co.tz/b/ibraq/",
+    "kind": "retailer",
+    "note": "Brand listed; Chasing Waves listing and price not found.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Fragrance Planet (Narcissist Diary)",
   "country": "Nigeria (retailer)",
   "cc": "NG",
   "lead": "Nigerian storefront's Narcissist Diary line in velvet bottles: Grand Delusion (fruity citrus, spicy woods), Forbidden Memory (warm smoky spice), Aura of Innocence (clean powdery floral), Ruthless (smoky leather), Bloom Fury (fruity, nutty, creamy wood), plus Subtle Ego, Self Seduction, Velvet Tyrant, Unedited Thoughts. Reported ₦75,000 each on its .com.ng shop (AI check; not opened from here). Where it's made is not stated.",
-  "src": "https://www.instagram.com/fragrance__planet/"
+  "src": "https://www.instagram.com/fragrance__planet/",
+  "checked": [
+   {
+    "what": "Fragrance Planet search",
+    "url": "https://fragranceplanet.com.ng/browse?q=Narcissist+dairy",
+    "kind": "retailer search",
+    "note": "The shop's listing spells it 'dairy'; confirm the real name.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Soft florals to try (scentedcloud18)",
   "country": "",
   "cc": "",
   "lead": "Creator's soft-floral picks, checked or reported: Jeroboam Floro extrait (juicy fruit, petals, creamy sandalwood, dry woods, musk), €250 / 100 ml, €100 / 30 ml, €4 / 1 ml sample on its own shop (checked). Les Bains Guerbois 1992 Purple Night by Dominique Ropion (mandarin; tuberose, jasmine; tobacco, suede, patchouli: a 'bubblegum tuberose'), €90 / 30 ml, €210 / 100 ml, confirmed by Nitah. Lydeen Horsika Blue has its own card.",
-  "src": "https://www.instagram.com/scentedcloud18/"
+  "src": "https://www.instagram.com/scentedcloud18/",
+  "checked": [
+   {
+    "what": "Jeroboam Floro",
+    "url": "https://jeroboamparis.com/en/collections/all-our-extracts/products/floro",
+    "kind": "official product page",
+    "on": "2026-11-01"
+   },
+   {
+    "what": "Les Bains Guerbois 1992 Purple Night",
+    "url": "https://lesbainsguerbois.com/en/product/1992-purple-night/",
+    "kind": "official product page",
+    "note": "Price depends on the size chosen.",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Volare (Dreams Don't Die)",
@@ -795,7 +1073,15 @@
   "country": "United States",
   "cc": "US",
   "lead": "Long-standing alcohol-free roll-on oils inspired by Indian attars (Amber, Egyptian Musk, Himalayan Musk, Gardenia, Arabian Wood, Nag Champa, Mogra and more). US$20.99 per 10 ml oil; discovery kit US$29.99 on its own shop (checked).",
-  "src": "https://www.instagram.com/pretti_goddess/"
+  "src": "https://www.instagram.com/pretti_goddess/",
+  "checked": [
+   {
+    "what": "Nemat perfume oils",
+    "url": "https://nematperfumes.com/collections/perfume-oils",
+    "kind": "official collection",
+    "on": "2026-11-01"
+   }
+  ]
  },
  {
   "name": "Le Comptoir Olfactif (travelling perfume workshop)",
@@ -1013,5 +1299,54 @@
   "cc": "ID",
   "lead": "Indonesian beauty brand's alcohol-free 4 g perfume balms in bottle-shaped keychains with heart charms, made to clip on a bag and layer with its sprays. Dreamy (bergamot, ginger, pear; jasmine, tuberose; amber, heliotrope, vanilla), Velvet Rouge (mandarin, galbanum; tuberose, white florals; vanilla, tonka, musk), Jolly (neroli, coffee, prune; jasmine, rose, heliotrope; sandalwood, vanilla, patchouli). Find price.",
   "src": "https://www.instagram.com/scarlettperfume/"
+ },
+ {
+  "name": "Maison Waterlot Paris",
+  "country": "France",
+  "cc": "FR",
+  "lead": "One-man Paris house (Valentin Waterlot): three scents composed by hand in small batches from producer-sourced materials. No online shop; bottles are reserved directly with the house.",
+  "src": "https://www.waterlot-paris.fr/"
+ },
+ {
+  "name": "1000 Flowers (Jessica Buchanan)",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Grasse atelier-boutique making small-batch perfumes in house with botanical materials. Already listed as a bespoke place; bespoke calendar reported full through 2027. Could become a full house card.",
+  "src": "https://www.1000flowers.fr/"
+ },
+ {
+  "name": "Bissoumine (Kitty Shpirer)",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Independent Grasse perfume house founded 2009 by an artist-perfumer who also creates scents for exhibitions, museums and performances. Public workshops not confirmed.",
+  "src": "https://www.kittyshpirer.com/"
+ },
+ {
+  "name": "Poésie Parfumée",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Independent natural perfumer (Guillaume Bonnabaud La Bruyère) with his own collection and personalised perfume workshops; studio location to confirm. '100% natural' is the brand's own claim.",
+  "src": "https://poesie-parfumee.fr/"
+ },
+ {
+  "name": "HF Perfumes (Hélène Prévot)",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Grasse perfumer with about 30 years' experience offering bespoke fragrance development, mostly for brands and labs (5 Place aux Aires, Grasse). Ask whether she takes private clients.",
+  "src": "https://hfperfumes.fr/en/home"
+ },
+ {
+  "name": "Le Comptoir Olfactif",
+  "country": "France",
+  "cc": "FR",
+  "lead": "Mobile two-hour perfume-making workshops (2–8 people, 12+, French or English) where you leave with your own 30 ml bottle. Comes to you rather than a fixed studio; confirm area and price.",
+  "src": "https://www.comptoirolfactif.com/"
+ },
+ {
+  "name": "Arabian Oud (Kalemat)",
+  "country": "Saudi Arabia",
+  "cc": "SA",
+  "lead": "Large Saudi house. Kalemat is a warm amber-wood scent: saffron and cinnamon over vanilla and sandalwood. One scent, not a picture of the whole region.",
+  "src": "https://us.arabianoud.com/en/0301020146-kalemat-100-ml"
  }
 ]
