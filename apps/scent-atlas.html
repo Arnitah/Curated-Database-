@@ -258,6 +258,18 @@ details.more > div { display: grid; gap: 10px; margin-top: 10px }
 :root[data-theme="dark"] #mapview .heat { mix-blend-mode: screen }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #mapview .heat { mix-blend-mode: screen } }
 #mapview .heat.off { display: none }
+#mapview .heat circle { animation: m-breathe 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center }
+#mapview .heat circle:nth-child(3n) { animation-delay: -1.2s } #mapview .heat circle:nth-child(3n+1) { animation-delay: -2.4s }
+@keyframes m-breathe { 0%,100% { transform: scale(.9); opacity: .85 } 50% { transform: scale(1.12); opacity: 1 } }
+#mapview .mapbox.live { position: fixed; inset: 0; z-index: 60; border-radius: 0; border: 0 }
+#mapview .mapbox.live svg { height: 100% !important; width: 100%; touch-action: none }
+#mapview .mapbox.live .ctrl { top: max(12px, env(safe-area-inset-top)) }
+#mapview .mcard { position: absolute; left: 12px; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); background: var(--paper); color: var(--ink); border-radius: 18px; padding: 12px 14px; box-shadow: 0 8px 28px var(--snap-shadow); display: none; gap: 4px; font-size: 14px; max-width: 460px; margin: 0 auto }
+#mapview .mapbox.live .mcard.on { display: grid; animation: m-up .25s ease-out }
+@keyframes m-up { from { transform: translateY(16px); opacity: 0 } }
+#mapview .mcard b { font-family: var(--display); font-size: 1.15rem; font-weight: 500 }
+#mapview .mcard .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px }
+@media (prefers-reduced-motion: reduce) { #mapview .heat circle, #mapview .mapbox.live .mcard.on { animation: none } }
 #mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: none }
 #mapview .dot.sel { animation: pinpulse 1.6s ease-in-out infinite }
 @keyframes pinpulse { 50% { stroke-width: 5; stroke-opacity: .55 } }
@@ -271,7 +283,7 @@ details.more > div { display: grid; gap: 10px; margin-top: 10px }
 #mapview .mapbox svg:active { cursor: grabbing }
 #mapview .land { fill: var(--snap-land); stroke: var(--snap-edge); stroke-width: .8; vector-effect: non-scaling-stroke; transition: fill .2s }
 #mapview .land.on { fill: var(--snap-land-on); cursor: pointer }
-#mapview .land.on:hover, #mapview .land.sel { fill: var(--accent) }
+#mapview .land.on:hover { fill: color-mix(in srgb, var(--snap-land-on) 85%, var(--accent)) } #mapview .land.sel { fill: color-mix(in srgb, var(--snap-land) 72%, var(--accent)) }
 #mapview .land.hl { stroke: var(--resin); stroke-width: 1.6 }
 #mapview .bubble { filter: drop-shadow(0 1.5px 2px var(--snap-shadow)) }
 #mapview .bubble circle { fill: #ffffff; fill-opacity: 1; stroke: var(--accent); stroke-width: 2.4; vector-effect: non-scaling-stroke; cursor: pointer }
@@ -358,7 +370,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
           <defs><radialGradient id="m-heatg"><stop offset="0" stop-color="#ff3b30" stop-opacity=".78"/><stop offset=".28" stop-color="#ffb000" stop-opacity=".6"/><stop offset=".58" stop-color="#3ec6ff" stop-opacity=".32"/><stop offset="1" stop-color="#3ec6ff" stop-opacity="0"/></radialGradient></defs><rect width="1000" height="500" fill="transparent" id="m-seaRect"></rect>
           <g id="m-zoom"><g id="m-lands"></g><g id="m-heat" class="heat"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g><g id="m-mat"></g></g>
         </svg>
-        <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button><button type="button" id="m-dice" class="dice" aria-label="Take me somewhere: open a random house" title="Take me somewhere">✦</button></div><div class="peek" id="m-peek" aria-hidden="true"></div>
+        <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button><button type="button" id="m-live" aria-label="Explore full screen" title="Explore full screen">⛶</button><button type="button" id="m-dice" class="dice" aria-label="Take me somewhere: open a random house" title="Take me somewhere">✦</button></div><div class="peek" id="m-peek" aria-hidden="true"></div><div class="mcard" id="m-card" aria-live="polite"></div>
       </div>
       <div class="find">
         <input id="m-noteq" list="m-notelist" placeholder="Find a note anywhere (jasmine, oud, tea, vanilla…)" aria-label="Find a note">
@@ -369,7 +381,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     </div>
     <aside class="panel" id="m-panel" aria-live="polite"></aside>
   </div>
-  <p class="hint">Drag the map with a finger or mouse, pinch or use + and − to zoom, and tap ✦ to jump to a random house. Scroll the page from outside the map. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style; the glowing hot spots (map style inspired by Snap Map) show where houses cluster. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
+  <p class="hint">Drag the map with a finger or mouse, pinch or use + and − to zoom, tap ✦ to jump to a random house, or ⛶ to explore full screen like a phone map. Scroll the page from outside the map. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style; the glowing hot spots (map style inspired by Snap Map) show where houses cluster. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
   </section>
 
   <section class="travel offtab" id="travelview" aria-live="polite">
@@ -1130,7 +1142,7 @@ function restyle() {
     .classed("sel", (d) => d.h.id === state.house);
   d3.select("#m-map").selectAll(".trad").classed("off", !showTrad).each(function (d) { const [x, y] = proj([d.lon, d.lat]); const z = 7 / S / K; d3.select(this).attr("x", x - z / 2).attr("y", y - z / 2).attr("width", z).attr("height", z).attr("transform", `rotate(45 ${x} ${y})`).attr("stroke-width", 1); });
   d3.select("#m-map").selectAll(".mat").classed("off", !showMat).style("opacity", (d) => state.mat && state.mat !== d.m.id ? 0.15 : null).each(function (d) { const [x, y] = proj([d.o.lon, d.o.lat]); d3.select(this).attr("cx", x).attr("cy", y).attr("r", (state.mat === d.m.id ? 7.5 : 4.2) / S / K).attr("stroke-width", 1); });
-  d3.select("#m-map").selectAll(".placelab").attr("display", K >= 7 ? null : "none").attr("x", (d) => d.x + (8 + Math.min(12, d.houses.length) * 2.6) / S / K).attr("y", (d) => d.y - 6 / S / K)
+  d3.select("#m-map").selectAll(".placelab").attr("display", K >= 7 ? null : "none").attr("x", (d) => d.x + (8 + Math.min(12, d.houses.length) * 2.6) / S / K).attr("y", (d) => d.y - 6 / S / K).style("stroke-width", (2.6 / S / K) + "px")
     .attr("font-size", 12 / S / K).attr("stroke-width", 3 / S / K);
   d3.select("#m-map").selectAll(".land").classed("sel", (d) => d.cc === state.cc).classed("hl", (d) => !!state.hl && D.houses.some((h) => h.cc === d.cc && state.hl.has(h.id)));
 }
@@ -1188,7 +1200,7 @@ function goPlace(place) {
 function goHouse(id) {
   const h = D.byId[id], g = D.geo[id];
   Object.assign(state, { level: "house", house: id, cc: h.cc, place: g.place, note: null, hl: null, style: null }); syncLegend();
-  const [x, y] = proj([g.lon, g.lat]); flyTo(x, y, Math.max(K, 22)); crumbs(); restyle();
+  const [x, y] = proj([g.lon, g.lat]); flyTo(x, y, Math.max(K, 22)); crumbs(); restyle(); liveCard(id);
   const n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
   const p = h.price || {}, c1 = cad(p), c2 = cad(p, "amt_max"), pr = profileOf(h);
   const sim = similar(h);
@@ -1271,6 +1283,14 @@ $("m-panel").addEventListener("click", (e) => {
 });
 $("m-zin").onclick = () => svg.transition().call(zoom.scaleBy, 1.8);
 $("m-zout").onclick = () => svg.transition().call(zoom.scaleBy, 1 / 1.8);
+let live = false;
+let liveFix = [];
+function setLive(on) { live = on; const mb = $("m-mapbox"); if (on) { for (let el = mb.parentElement; el && el !== document.documentElement; el = el.parentElement) { const cs = getComputedStyle(el); if (cs.transform !== "none" || cs.filter !== "none" || cs.contain !== "none" || cs.backdropFilter && cs.backdropFilter !== "none" || cs.willChange.includes("transform")) { liveFix.push([el, el.getAttribute("style")]); el.style.transform = "none"; el.style.filter = "none"; el.style.contain = "none"; el.style.backdropFilter = "none"; el.style.willChange = "auto"; el.style.animation = "none"; } } } else { for (const [el, st] of liveFix) st == null ? el.removeAttribute("style") : el.setAttribute("style", st); liveFix = []; } mb.classList.toggle("live", on); $("m-live").textContent = on ? "✕" : "⛶"; $("m-live").setAttribute("aria-label", on ? "Close full screen" : "Explore full screen"); document.body.style.overflow = on ? "hidden" : ""; if (!on) $("m-card").classList.remove("on"); setTimeout(restyle, 50); }
+$("m-live").onclick = () => setLive(!live);
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && live) setLive(false); });
+function liveCard(id) { if (!live) return; const h = D.byId[id], g = D.geo[id]; const pr = h.price && h.price.amt ? `${money(h.price.amt, h.price.cur)}${h.price.ml ? " / " + h.price.ml + " ml" : ""}` : "";
+  $("m-card").innerHTML = `<small class="muted">${esc(g.place)} · ${esc(h.country)}</small><b>${esc(h.name)}</b><span>${esc(h.sig.name)}${pr ? " · " + esc(pr) : ""}</span><div class="acts"><button class="btn" type="button" id="m-cardmore">See the full card</button><button class="chip" type="button" id="m-cardnext">Somewhere else ✦</button></div>`;
+  $("m-card").classList.add("on"); $("m-cardmore").onclick = () => { setLive(false); $("m-panel").scrollIntoView({ behavior: "smooth", block: "start" }); }; $("m-cardnext").onclick = () => $("m-dice").click(); }
 $("m-dice").onclick = () => { const hs = D.houses; const h = hs[Math.floor(Math.random() * hs.length)]; goHouse(h.id); };
 const peekShow = (d) => { const pk = $("m-peek"); const h = d.h; pk.innerHTML = `<b>${esc(h.name)}</b>${esc(d.p.place)} · ${esc(h.sig.name)}`; pk.classList.add("on"); };
 const peekHide = () => $("m-peek").classList.remove("on");
@@ -1284,7 +1304,7 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   proj = d3.geoEqualEarth().scale(WORLD.scale).translate(WORLD.translate);
   svg = d3.select("#m-map"); gZoom = d3.select("#m-zoom");
     zoom = d3.zoom().scaleExtent([1, 60]).translateExtent([[-100, -60], [1100, 560]]).on("zoom", (e) => { gZoom.attr("transform", e.transform); K = e.transform.k; restyle(); });
-  zoom.filter((e) => e.type === "wheel" ? (e.ctrlKey || e.metaKey) : e.type.startsWith("touch") ? true : !e.button);
+  zoom.filter((e) => e.type === "wheel" ? (e.ctrlKey || e.metaKey || live) : e.type.startsWith("touch") ? true : !e.button);
   svg.call(zoom).on("dblclick.zoom", null); svg.style("touch-action", "none");
   
   
