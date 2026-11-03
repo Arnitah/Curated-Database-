@@ -977,7 +977,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
   #p-home .wtile span{display:none}
   #p-home .wtile strong{font-size:14px;line-height:1.25}
   #p-home .wtile svg{width:20px;height:20px}
-  #p-home .ctxrow{grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+  #p-home .ctxrow{grid-template-columns:1fr;gap:8px;margin-top:12px}
   #p-home .ctxrow>*{padding:10px 12px;font-size:14px}
   #p-home .ctxrow .hint{display:none}
 }
@@ -1019,6 +1019,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 .sw-row{margin-top:10px}.sw-list{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:6px}.sw-list li{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .inspired{font-size:12px;color:var(--muted);margin:2px 0 4px}
 .loc-list{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:8px}
+.p-pick{background:var(--accent,#2c3e7a);color:#fff}
 </style>
 
 <div class="wrap">
@@ -3343,7 +3344,8 @@ function renderMyths(){
     const nv2=MYTHS.filter(m=>typeof m==="object"&&m.format==="v2").length;
     bar.innerHTML=`<button type="button" class="chip" data-mtopic="" aria-pressed="${!mythTopic}">All</button>`+(nv2?`<button type="button" class="chip" data-mtopic="__v2" aria-pressed="${mythTopic==="__v2"}">With sources ${nv2}</button>`:"")+Object.entries(tc).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`<button type="button" class="chip" data-mtopic="${esc(t)}" aria-pressed="${mythTopic===t}">${esc(MYTH_TOPIC_LABEL[t]||t)} ${n}</button>`).join("");
   }
-  $("#mythCards").innerHTML=list.map(mythHTML).join("")||`<p class="hint">No matches.</p>`;
+  { const isV2=m=>typeof m==="object"&&m.format==="v2"; const v2=list.filter(isV2).reverse(), old=list.filter(m=>!isV2(m));
+    $("#mythCards").innerHTML=(v2.map(mythHTML).join("")+(old.length?`<p class="hint" style="margin:18px 0 6px;grid-column:1/-1"><b>Older notes (${old.length})</b> · written before verdicts and sources were added. Being re-checked over time.</p>`+old.map(mythHTML).join(""):""))||`<p class="hint">No matches.</p>`; }
 }
 document.addEventListener("click",e=>{ const b=e.target.closest("[data-mtopic]"); if(!b) return; mythTopic=mythTopic===b.dataset.mtopic?"":b.dataset.mtopic; renderMyths(); });
 $("#mythSearch").addEventListener("input",renderMyths);
@@ -3386,7 +3388,7 @@ function renderSaved(){
     if(a.empty) a={verdict:"care",iss:[{sev:"care",title:"Add amounts to check this recipe"}]};
     const top=a.iss.find(i=>i.sev===a.verdict)||a.iss[0];
     return `<article class="card">
-      <div class="vline"><span class="pill ${VL[a.verdict][1]}">${VL[a.verdict][0]}</span><span class="tag">${esc((TYPES[r.type]||{label:"Other"}).label.split(" (")[0])}</span></div>
+      <div class="vline">${r.pick?`<span class="pill p-pick">★ Best of</span>`:""}<span class="pill ${VL[a.verdict][1]}">${VL[a.verdict][0]}</span><span class="tag">${esc((TYPES[r.type]||{label:"Other"}).label.split(" (")[0])}</span></div>
       ${svName===r.id?`<div class="sv-ed"><input id="svNameIn" value="${esc(r.name)}" aria-label="Recipe name"><button class="btn primary" data-svnamesave="${esc(r.id)}">Save</button><button class="btn" data-svcancel>Cancel</button></div>`:`<h3><button class="sv-name" data-svname="${esc(r.id)}" title="Tap to rename">${esc(r.name)} <span class="hint" aria-hidden="true">✎</span></button></h3>`}
       <ul>${r.rows.map(x=>`<li>${esc((BY[x.id]||{name:x.id}).name)} <span class="amt">${esc(x.amt)} ${esc(x.unit)}</span></li>`).join("")}</ul>
       ${top?`<p class="why">${esc(top.title)}</p>`:""}
@@ -4395,7 +4397,7 @@ const VIRAL=[
   {name:"Herbal rose lavender lip oil",claim:"Glossy, softly scented lips",type:"lip",use:"store",note:"Dried petals infused 1 to 2 weeks then strained, so no water. Use lavender at 3 drops only.",rows:[["jojoba",30,"ml"],["almond",30,"ml"],["rosebuds",2,"tbsp"],["lavenderbud",1,"tbsp"],["vite",0.5,"tsp"],["lavender",3,"drops"]]},
   {name:"Rose lip butter with dragon fruit",claim:"Soft, pink-tinted lips",type:"lip",use:"store",note:"Amounts filled in. Freeze-dried dragon fruit powder tints pink; a pinch only. Strain rose-infused oil well.",rows:[["shea",1,"tbsp"],["beeswax",1,"tsp"],["coconut",1,"tbsp"],["fruitpowder",0.25,"tsp"],["vite",2,"drops"]]},
   {name:"Soft pink lip balm (honey)",claim:"Soft, smooth lips",type:"lip",use:"store",note:"Honey beads in the wax; stir as it cools.",rows:[["beeswax",1,"tbsp"],["coconut",1,"tbsp"],["honey",1,"tsp"],["vite",3,"drops"]]},
-  {name:"Plumping lip gloss (Tessa's)",claim:"Glossy lips with a tingle",type:"lip",use:"store",note:"Peppermint and cinnamon irritate lips to make them swell slightly; it lasts minutes. Cinnamon bark is a strong allergen even at half a drop. Germall isn't needed in a water-free oil.",rows:[["castor",2,"tsp"],["jojoba",1,"tsp"],["almond",1,"tsp"],["vite",1,"drops"],["peppermint",1,"drops"],["lipflavor",2,"drops"]]},
+  {name:"Plumping lip gloss",claim:"Glossy lips with a tingle",type:"lip",use:"store",note:"Peppermint and cinnamon irritate lips to make them swell slightly; it lasts minutes. Cinnamon bark is a strong allergen even at half a drop. Germall isn't needed in a water-free oil.",rows:[["castor",2,"tsp"],["jojoba",1,"tsp"],["almond",1,"tsp"],["vite",1,"drops"],["peppermint",1,"drops"],["lipflavor",2,"drops"]]},
   {name:"Simple lip oil (BamGlamDIY)",claim:"Light, smooth lip oil",type:"lip",use:"store",note:"30 g batch: well balanced and water-free.",rows:[["almond",15,"g"],["caprylic",9,"g"],["castor",5.7,"g"],["vite",0.3,"g"]]},
   {name:"Bridal glow body oil",claim:"Radiant, softly shimmering skin",type:"body_leave",use:"store",note:"Well built, 100 g. The optional fragrance (17 drops) is under 1%. Mica only cosmetic grade.",rows:[["almond",35,"g"],["jojoba",25,"g"],["rosehip",20,"g"],["argan",10,"g"],["vite",1,"g"],["mica",2,"g"],["roseeo",8,"drops"],["vanilla",5,"drops"],["jasmineeo",4,"drops"]]},
   {name:"Lip sleeping mask (BamGlam Spa)",claim:"Soft, smooth lips by morning",type:"lip",use:"store",note:"100 g, water-free and well balanced. Lanolin is a top-tier lip sealant; patch test if you have eczema or wool allergy.",rows:[["shea",25,"g"],["lanolin",25,"g"],["castor",30,"g"],["rosehip",15,"g"],["beeswax",4,"g"],["vite",1,"g"]]},
@@ -4639,7 +4641,7 @@ const VIRAL=[
   {name:"After-shave and ingrown oil (light, non-greasy)",claim:"Calms razor burn and helps prevent ingrowns",type:"body_leave",use:"store",note:"The 4-step shave routine: shave butter, sharp razor, after-shave oil, ingrown oil. This oil does the last two in one. Squalane and jojoba sink in fast (it won't stain clothes once absorbed), and a little tea tree calms bumps. Press 3 to 4 drops into freshly shaved skin. Ingrowns are best prevented by a sharp blade, shaving with the grain, and a gentle exfoliant (lactic or salicylic acid lotion) 2 to 3 nights a week, on non-shave nights. If your thighs get hives and itch after shaving, that's razor irritation: try an electric trimmer, never dry shave, and skip fragranced products there.",rows:[["squalane",15,"g"],["jojoba",13,"g"],["teatree",4,"drops"],["vite",.3,"g"]]},
   {name:"Eczema cooling mist (fragrance-free)",claim:"Calms itchy, tight patches between moisturiser layers",type:"body_leave",use:"store",note:"The creator's \"eczema cooler\" idea, made gentle: water, glycerin, panthenol and colloidal oatmeal extract, the one ingredient approved as a skin protectant for eczema itch. No essential oils, no fragrance, no witch hazel (all common eczema triggers). Mist, then seal straight away with a thick fragrance-free cream or balm, so the water doesn't evaporate and leave skin drier. Keep in the fridge for an extra cooling effect. For flares that bleed, weep or don't settle, see a doctor; short courses of prescribed creams are safe and stop the itch-scratch cycle.",rows:[["water",88,"g"],["glycerin",4,"g"],["panthenol",3,"g"],["oats",2,"g"],["allantoin",.5,"g"],["xanthan",.2,"g"],["geogard",1,"g"]]},
   {name:"Coffee licorice sugar scrub (as posted)",inspired:"an Arabic Pangju-style scrub",claim:"Coffee-chocolate polish with a creamy foam",type:"body_rinse",use:"now",note:"From the comments: fine sugar, coffee grounds, licorice oil, wheat germ oil, almond oil and shower gel, softened with rose water. Lovely to use, but once you add shower gel and rose water it's a wet mix, so make one use at a time, or leave both out and add them in your palm each time. Licorice in a 5-minute rinse-off does little for dark spots; the glow is from the scrub and oils.",rows:[["sugar",4,"tbsp"],["coffee",2,"tbsp"],["licoriceoil",1,"tsp"],["wheatgerm",1,"tsp"],["almond",1,"tbsp"],["showergel",1,"tbsp"],["hydrosol",1,"tbsp"]]},
-  {name:"Vanilla brown sugar body scrub (THE SKINCARE QUEEN, measured)",claim:"Soft, glowy, vanilla-scented skin",type:"body_rinse",use:"store",note:"Her list with measurements added (sugar = half raw cane, half brown): raw cane and brown sugar, coconut, argan, jojoba and avocado oils, vitamin E, and vanilla and almond extract. Swap kitchen extracts for vanilla absolute or a skin-safe fragrance oil: food extracts are mostly alcohol and water, which shorten shelf life and add little scent. No water in it, so it keeps 2 to 3 months if you scoop with a dry spoon; mould comes from wet hands in the jar, which is why some people get it and she doesn't. Glycerin does not stop mould (a commenter's tip); only a broad-spectrum preservative like Optiphen does, and only if the scrub contains water. Coconut oil firms up below 24 C, which can coat old drains; run hot water after. Epsom salt works instead of sugar but stings on fresh shaves.",rows:[["sugar",200,"g"],["coconut",40,"g"],["avocadooil",25,"g"],["jojoba",15,"g"],["argan",10,"g"],["vite",1,"g"],["vanilla",8,"drops"]]},
+  {name:"Vanilla brown sugar body scrub (measured)",claim:"Soft, glowy, vanilla-scented skin",type:"body_rinse",use:"store",note:"Her list with measurements added (sugar = half raw cane, half brown): raw cane and brown sugar, coconut, argan, jojoba and avocado oils, vitamin E, and vanilla and almond extract. Swap kitchen extracts for vanilla absolute or a skin-safe fragrance oil: food extracts are mostly alcohol and water, which shorten shelf life and add little scent. No water in it, so it keeps 2 to 3 months if you scoop with a dry spoon; mould comes from wet hands in the jar, which is why some people get it and she doesn't. Glycerin does not stop mould (a commenter's tip); only a broad-spectrum preservative like Optiphen does, and only if the scrub contains water. Coconut oil firms up below 24 C, which can coat old drains; run hot water after. Epsom salt works instead of sugar but stings on fresh shaves.",rows:[["sugar",200,"g"],["coconut",40,"g"],["avocadooil",25,"g"],["jojoba",15,"g"],["argan",10,"g"],["vite",1,"g"],["vanilla",8,"drops"]]},
   {name:"Foaming vanilla poppy seed scrub (mariadelcarmencreates)",claim:"Whipped, foaming sugar scrub",type:"body_rinse",use:"store",note:"As posted: ⅓ cup whipped soap base, 1¼ cups sugar, 2 tbsp unscented castile soap, a few drops vanilla, 1 tsp vanilla bean powder, 1 tbsp almond oil, 1 tsp poppy seeds. Castile soap is mostly water, which is why she says 1 to 3 weeks without a preservative. This version drops the castile so the preserved whipped base is the only soap; it keeps much longer if you scoop with a dry spoon.",rows:[["fswb",80,"g"],["sugar",250,"g"],["almond",14,"g"],["vanillabean",2,"g"],["poppy",3,"g"],["vanilla",6,"drops"]]},
   {name:"Curl combo (leave-in + flaxseed gel)",claim:"Hydration plus soft, defined hold",type:"hair_leave",use:"store",note:"The \"curl combo\" is a leave-in cream topped with a gel. Use your favourite leave-in, then this preserved flaxseed-aloe gel on soaking-wet hair, in sections; let it dry without touching (it forms a soft cast you scrunch out). The ingredient \"avoid\" lists online are overstated: water-soluble silicones and mineral oil are fine for many coily heads if you clarify every few weeks; drying alcohols are the only real one to skip. Flaxseed gel vs African Pride: the gel defines more; African Pride's pre-poo detangles more. Use both if you like.",rows:[["water",200,"ml"],["flaxwhole",20,"g"],["aloe",40,"g"],["glycerin",4,"g"],["geogard",2,"g"]]},
   {name:"Oat, rice and chia slip hair mask with egg yolk (as posted)",claim:"Soft, slippery, shiny hair",type:"hair_rinse",use:"now",note:"Your recipe: blend oats, rice, chia seeds and (optional) dried hibiscus with warm water, strain through a fine cloth, then stir in egg yolk, argan and jojoba. The strained \"milk\" is starchy and slippery, which helps detangling; egg yolk adds fat and a little protein; the oils seal. Apply to damp hair, leave 20 to 30 minutes under a cap, rinse with cool or lukewarm water (hot water cooks the egg into bits), then a gentle shampoo or co-wash and conditioner. Hibiscus can tint very light or blonde hair pink. Make fresh and use the same day; don't store it.",rows:[["water",200,"ml"],["oats",2,"tbsp"],["riceflour",1,"tbsp"],["chiaseed",1,"tbsp"],["hibiscus",1,"tbsp"],["egg",1,"tbsp"],["argan",1,"tsp"],["jojoba",1,"tsp"]]},
@@ -4655,10 +4657,10 @@ const VIRAL=[
   {name:"Lavender sugar wax",claim:"Smells like a spa",type:"sugar_wax",use:"store",rows:[["sugar",1,"cup"],["lemonjuice",2,"tbsp"],["water",2,"tbsp"],["lavender",10,"drops"]]}
 ];
 const VL={stop:["Don't use","p-stop"],care:["Adjust first","p-care"],ok:["Passes","p-ok"]};
-try{ const ll=document.getElementById("lotLine"); if(ll) ll.innerHTML=`Lot ${String(VIRAL.length).padStart(4,"0")} · ${ING.length} ingredients<span class="xtra"> · ${MYTHS.length} myths checked</span>`; }catch(e){}
+try{ const ll=document.getElementById("lotLine"); if(ll) ll.innerHTML=`${VIRAL.length.toLocaleString()} recipes<span class="xtra"> · ${ING.length} ingredients · ${MYTHS.length} myths</span>`; }catch(e){}
 let VRES=[]; function computeVRES(){ VRES=VIRAL.map(r=>{const a=analyze({type:r.type,use:r.use,skin:r.skin||{},rows:r.rows.map(([id,amt,unit])=>({id,amt:String(amt),unit}))}); if(r.claimStop){a.verdict="stop"; a.iss.unshift({sev:"stop",title:r.claimStop[0],body:r.claimStop[1]});} return a;}); }
 computeVRES();
-let vFilter="all", vCat="all", vLimit=24, vSort="az", vLet="";
+let vFilter="pick", vCat="all", vLimit=24, vSort="az", vLet="";
 const VKEY=r=>r.name.replace(/^[^A-Za-z0-9]+/,"").replace(/^(diy|homemade|easy|simple|the|a|an|my)\s+/i,"").replace(/^[^A-Za-z0-9]+/,"").toLowerCase();
 const VLET=r=>{const c=VKEY(r).charAt(0).toUpperCase(); return /[A-Z]/.test(c)?c:"#";};
 try{vSort=localStorage.getItem("safebatch-vsort")||"az";}catch(_){}
@@ -4677,11 +4679,11 @@ function renderViral(){
   { const have=new Set(VIRAL.map((r,k)=>k).filter(k=>{const sv=vLet; vLet=""; const m=vMatch(VIRAL[k],k); vLet=sv; return m;}).map(k=>VLET(VIRAL[k])));
     $("#vAz").innerHTML=`<a href="#" data-vl="" class="${vLet?"":"on"}">All</a>`+["#",..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"].filter(L=>L!=="#"||have.has("#")).map(L=>have.has(L)?`<a href="#" data-vl="${L}" class="${vLet===L?"on":""}">${L}</a>`:`<span aria-hidden="true">${L}</span>`).join("");
     $("#viralSort").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.vs===vSort)); }
-  const counts={all:pool.length,stop:0,care:0,ok:0}; pool.forEach(k=>counts[VRES[k].verdict]++); counts.usable=counts.ok+counts.care;
+  const counts={all:pool.length,stop:0,care:0,ok:0,pick:0}; pool.forEach(k=>{counts[VRES[k].verdict]++; if(VIRAL[k].pick) counts.pick++;}); counts.usable=counts.ok+counts.care; const vf=(vFilter==="pick"&&!counts.pick)?"all":vFilter;
   const cc={}; VIRAL.forEach(r=>cc[CAT(r.type)]=(cc[CAT(r.type)]||0)+1);
   $("#viralCats").innerHTML=[["all",`All types`],...CATS.filter(c=>cc[c]).map(c=>[c,`${c} (${cc[c]})`])].map(([k,l])=>`<button class="chip" data-vc="${esc(k)}" aria-pressed="${vCat===k}">${l}</button>`).join("");
-  $("#viralChips").innerHTML=[["all","Any result",""],["ok","Passes","ok-chip"],["usable","Passes or adjust","ok-chip"],["care","Adjust first","care-chip"],["stop","Don't use","stop-chip"]].map(([k,l,c])=>`<button class="chip ${c}" data-vf="${k}" aria-pressed="${vFilter===k}">${l} (${counts[k]})</button>`).join("");
-  const shown=pool.filter(k=>vFilter==="all"||(vFilter==="usable"?VRES[k].verdict!=="stop":VRES[k].verdict===vFilter));
+  $("#viralChips").innerHTML=[["pick","★ Best of","pick-chip"],["all","Any result",""],["ok","Passes","ok-chip"],["usable","Passes or adjust","ok-chip"],["care","Adjust first","care-chip"],["stop","Don't use","stop-chip"]].map(([k,l,c])=>`<button class="chip ${c}" data-vf="${k}" aria-pressed="${vf===k}">${l} (${counts[k]})</button>`).join("");
+  const shown=pool.filter(k=>vf==="all"||vf==="pick"&&!!VIRAL[k].pick||vf!=="pick"&&(vf==="usable"?VRES[k].verdict!=="stop":VRES[k].verdict===vf));
   const page=new Set(shown.slice(0,vLimit));
   $("#viralMore").hidden=shown.length<=vLimit; $("#viralMore").textContent=`Show more (${shown.length-Math.min(vLimit,shown.length)} left)`;
   renderStrip();
@@ -4693,7 +4695,7 @@ function renderViral(){
     const useTag={now:"Make fresh",fridge:"Fridge",store:"Keeps"}[r.use]||"";
     return `<article class="card flip"><div class="fl">
      <div class="fl-f">
-      <div class="vline"><span class="pill ${VL[a.verdict][1]}">${VL[a.verdict][0]}</span><span class="tag">${TYPES[r.type].label.split(" (")[0]}</span><span class="tag">${useTag}</span></div>
+      <div class="vline">${r.pick?`<span class="pill p-pick">★ Best of</span>`:""}<span class="pill ${VL[a.verdict][1]}">${VL[a.verdict][0]}</span><span class="tag">${TYPES[r.type].label.split(" (")[0]}</span><span class="tag">${useTag}</span></div>
       <h3>${esc(r.name)}</h3>
       ${r.inspired?`<p class="inspired">Inspired by ${esc(r.inspired)} · not affiliated</p>`:""}
       <p class="claim">The claim: ${esc(r.claim)}</p>
@@ -8293,7 +8295,7 @@ function swRender(){ const w=swWeather();
     try{ computeVRES(); }catch(e){}
     [()=>renderViral(),()=>renderMyths(),()=>renderTerms(),()=>renderTrads(),()=>renderGuide(),()=>renderStarters()].forEach(f=>{ try{ f(); }catch(e){} });
   }
-  try{ const ll=document.getElementById("lotLine"); if(ll) ll.innerHTML=`Lot ${String(VIRAL.length).padStart(4,"0")} · ${ING.length} ingredients · data v${ver.version}<span class="xtra"> · ${MYTHS.length} myths checked</span>`; }catch(e){}
+  try{ const ll=document.getElementById("lotLine"); if(ll) ll.innerHTML=`${VIRAL.length.toLocaleString()} recipes<span class="xtra"> · ${ING.length} ingredients · ${MYTHS.length} myths</span>`; ll.title=`Data version ${ver.version}`; }catch(e){}
 })();
 
 /* ---------- Hand-off to Clay: copy the log and scent wardrobe as a code Clay can import ---------- */

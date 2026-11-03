@@ -15680,7 +15680,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "aromatic-pain-relief-oil",
@@ -25855,7 +25856,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "brightening-body-lotion-haps-style-dupe",
@@ -25988,7 +25990,8 @@
         "g"
       ]
     ],
-    "inspired": "Haps anti-aging cream"
+    "inspired": "Haps anti-aging cream",
+    "pick": true
   },
   {
     "id": "mineral-toothpaste-as-posted",
@@ -26573,7 +26576,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "raw-honey-and-milk-facial-cleanser",
@@ -29320,7 +29324,8 @@
         0.5,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "overnight-eye-butter",
@@ -31369,7 +31374,7 @@
   },
   {
     "id": "plumping-lip-gloss-tessa-s",
-    "name": "Plumping lip gloss (Tessa's)",
+    "name": "Plumping lip gloss",
     "claim": "Glossy lips with a tingle",
     "type": "lip",
     "use": "store",
@@ -31405,7 +31410,8 @@
         2,
         "drops"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "simple-lip-oil-bamglamdiy",
@@ -32103,7 +32109,8 @@
         "g"
       ]
     ],
-    "inspired": "Trader Joe's"
+    "inspired": "Trader Joe's",
+    "pick": true
   },
   {
     "id": "pumpkin-spice-hand-cream-gentler-tj-style",
@@ -32647,7 +32654,8 @@
         "g"
       ]
     ],
-    "inspired": "Reedle"
+    "inspired": "Reedle",
+    "pick": true
   },
   {
     "id": "mellow-leave-in-hair-cream-anaze-style",
@@ -32693,7 +32701,8 @@
         "g"
       ]
     ],
-    "inspired": "Anaze"
+    "inspired": "Anaze",
+    "pick": true
   },
   {
     "id": "beef-marrow-pre-shampoo-hair-butter-tutano",
@@ -34043,7 +34052,8 @@
         "drops"
       ]
     ],
-    "inspired": "Kitsch"
+    "inspired": "Kitsch",
+    "pick": true
   },
   {
     "id": "castor-oil-shampoo-bar-kitsch-style",
@@ -34094,7 +34104,8 @@
         "drops"
       ]
     ],
-    "inspired": "Kitsch"
+    "inspired": "Kitsch",
+    "pick": true
   },
   {
     "id": "coconut-oil-shampoo-bar-kitsch-style",
@@ -34196,7 +34207,8 @@
         "drops"
       ]
     ],
-    "inspired": "Kitsch"
+    "inspired": "Kitsch",
+    "pick": true
   },
   {
     "id": "rosemary-and-charcoal-shampoo-bar-kitsch-rosemary-biotin-sty",
@@ -34252,7 +34264,8 @@
         "drops"
       ]
     ],
-    "inspired": "Kitsch Rosemary & Biotin"
+    "inspired": "Kitsch Rosemary & Biotin",
+    "pick": true
   },
   {
     "id": "ultra-gentle-unscented-shampoo-and-body-bar-kitsch-ultra-sen",
@@ -34298,7 +34311,8 @@
         "g"
       ]
     ],
-    "inspired": "Kitsch Ultra Sensitive"
+    "inspired": "Kitsch Ultra Sensitive",
+    "pick": true
   },
   {
     "id": "moisture-conditioner-bar-coconut-and-castor-kitsch-style",
@@ -35629,7 +35643,8 @@
         3,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "coffee-and-honey-scalp-mask",
@@ -35822,7 +35837,8 @@
         "drops"
       ]
     ],
-    "inspired": "Lush Sleepy Face"
+    "inspired": "Lush Sleepy Face",
+    "pick": true
   },
   {
     "id": "almond-and-kaolin-powder-cleanser-like-lush-angels-on-bare-s",
@@ -35924,7 +35940,8 @@
         "g"
       ]
     ],
-    "inspired": "Lush's linseed cream"
+    "inspired": "Lush's linseed cream",
+    "pick": true
   },
   {
     "id": "rosemary-coconut-hair-butter-as-posted",
@@ -36387,7 +36404,8 @@
         "g"
       ]
     ],
-    "inspired": "Knock Melt In Body Toner"
+    "inspired": "Knock Melt In Body Toner",
+    "pick": true
   },
   {
     "id": "colour-correcting-setting-powder-green-or-pink-suppin-style",
@@ -36634,7 +36652,8 @@
         4,
         "drops"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "baobab-shine-oil-like-loma-nourishing-oil-silicone-free",
@@ -36716,7 +36735,8 @@
         "g"
       ]
     ],
-    "inspired": "Stokli"
+    "inspired": "Stokli",
+    "pick": true
   },
   {
     "id": "13-herb-rice-wine-hair-tonic-loom-beauty-as-posted",
@@ -37267,7 +37287,8 @@
         0.3,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "coconut-coffee-lip-buffer-as-posted",
@@ -37771,7 +37792,8 @@
         "g"
       ]
     ],
-    "inspired": "Indigo Elixirs Black ʻOlena"
+    "inspired": "Indigo Elixirs Black ʻOlena",
+    "pick": true
   },
   {
     "id": "five-oil-hair-growth-blend-olive-rosemary-flax-coconut-casto",
@@ -37903,7 +37925,8 @@
         "g"
       ]
     ],
-    "inspired": "Lush"
+    "inspired": "Lush",
+    "pick": true
   },
   {
     "id": "cardamom-orange-massage-bar-like-lush-hayl",
@@ -38225,7 +38248,8 @@
         "g"
       ]
     ],
-    "inspired": "Lush The Bump"
+    "inspired": "Lush The Bump",
+    "pick": true
   },
   {
     "id": "almond-shower-oil-as-posted-castile",
@@ -38397,7 +38421,8 @@
         "g"
       ]
     ],
-    "inspired": "Queen Helene"
+    "inspired": "Queen Helene",
+    "pick": true
   },
   {
     "id": "charcoal-mascara-as-posted",
@@ -38472,7 +38497,8 @@
         0.1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "chamomile-winter-hand-butter-as-posted",
@@ -38597,7 +38623,8 @@
         4,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "heavy-cream-hair-butter-as-posted",
@@ -38913,7 +38940,8 @@
         "g"
       ]
     ],
-    "inspired": "The Inkey List or Kundal"
+    "inspired": "The Inkey List or Kundal",
+    "pick": true
   },
   {
     "id": "niacinamide-brightening-body-gel-leave-on",
@@ -38958,7 +38986,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "protein-hair-mask-for-damaged-hair-like-elizavecca-cer-100",
@@ -39004,7 +39033,8 @@
         "g"
       ]
     ],
-    "inspired": "Elizavecca CER-100"
+    "inspired": "Elizavecca CER-100",
+    "pick": true
   },
   {
     "id": "korean-herbal-scalp-shampoo-bar-like-saebom",
@@ -39080,7 +39110,8 @@
         "drops"
       ]
     ],
-    "inspired": "Saebom"
+    "inspired": "Saebom",
+    "pick": true
   },
   {
     "id": "saebom-scalp-bar-full-herb-list-closest-match",
@@ -39685,7 +39716,8 @@
         2,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "spicy-rose-perfume-oil-like-mallee-rose-burn",
@@ -39772,7 +39804,8 @@
         "g"
       ]
     ],
-    "inspired": "Rellet"
+    "inspired": "Rellet",
+    "pick": true
   },
   {
     "id": "korean-rice-cream-hair-mask-as-posted-blended-rice",
@@ -39985,7 +40018,8 @@
         "g"
       ]
     ],
-    "inspired": "Sahajan"
+    "inspired": "Sahajan",
+    "pick": true
   },
   {
     "id": "japanese-hot-spring-bath-powder-like-matsukiyo-bathclin",
@@ -40026,7 +40060,8 @@
         "drops"
       ]
     ],
-    "inspired": "Matsukiyo and Bathclin"
+    "inspired": "Matsukiyo and Bathclin",
+    "pick": true
   },
   {
     "id": "japanese-herbal-bath-sachet-yakuto-like-matsukiyo-lab",
@@ -40097,7 +40132,8 @@
         "g"
       ]
     ],
-    "inspired": "Inoki"
+    "inspired": "Inoki",
+    "pick": true
   },
   {
     "id": "kneipp-style-aroma-bath-oil-dispersing",
@@ -40138,7 +40174,8 @@
         "g"
       ]
     ],
-    "inspired": "Kneipp"
+    "inspired": "Kneipp",
+    "pick": true
   },
   {
     "id": "kneipp-style-bath-crystals",
@@ -40256,7 +40293,8 @@
         "g"
       ]
     ],
-    "inspired": "Penaten"
+    "inspired": "Penaten",
+    "pick": true
   },
   {
     "id": "sweet-winter-bath-crystals-like-kneipp-su-e-winterzeit",
@@ -40333,7 +40371,8 @@
         "g"
       ]
     ],
-    "inspired": "Pangju Formula 01"
+    "inspired": "Pangju Formula 01",
+    "pick": true
   },
   {
     "id": "chocolate-glaze-oil-scrub-like-pangju-formula-02",
@@ -40429,7 +40468,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "chamomile-salve-as-posted-evergreen-apothecary",
@@ -40967,7 +41007,8 @@
         1,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "coffee-licorice-sugar-scrub-arabic-pangju-style-as-posted",
@@ -41017,7 +41058,7 @@
   },
   {
     "id": "vanilla-brown-sugar-body-scrub-the-skincare-queen-measured",
-    "name": "Vanilla brown sugar body scrub (THE SKINCARE QUEEN, measured)",
+    "name": "Vanilla brown sugar body scrub (measured)",
     "claim": "Soft, glowy, vanilla-scented skin",
     "type": "body_rinse",
     "use": "store",
@@ -41058,7 +41099,8 @@
         8,
         "drops"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "foaming-vanilla-poppy-seed-scrub-mariadelcarmencreates",
@@ -41133,7 +41175,8 @@
         2,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "oat-rice-and-chia-slip-hair-mask-with-egg-yolk-as-posted",
@@ -42009,7 +42052,8 @@
       "creator": "Dupe of Glysolid Glycerin Cream",
       "platform": "Store product"
     },
-    "inspired": "Glysolid"
+    "inspired": "Glysolid",
+    "pick": true
   },
   {
     "id": "aloe-petroleum-jelly-herbolene-style",
@@ -43335,7 +43379,7 @@
   },
   {
     "id": "pink-clay-powder-mask-brwnsgr",
-    "name": "Pink clay powder mask (Brwnsgr Skincare)",
+    "name": "Pink clay powder mask",
     "claim": "An easy, gentle clay mask kept as a dry powder",
     "type": "face_rinse",
     "use": "store",
@@ -43360,7 +43404,8 @@
     "source": {
       "creator": "Brwnsgr Skincare",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "turmeric-aloe-jelly-mask-crowncare-as-posted",
@@ -43427,7 +43472,7 @@
   },
   {
     "id": "strawberry-rose-clay-mask-houseoforangeco",
-    "name": "Strawberry and rose clay cream mask (houseoforangeco)",
+    "name": "Strawberry and rose clay cream mask",
     "claim": "Soothing, softening cream clay mask",
     "type": "face_rinse",
     "use": "store",
@@ -43482,7 +43527,8 @@
     "source": {
       "creator": "houseoforangeco",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "seven-oil-hair-growth-oil-mamba-style",
@@ -44221,7 +44267,8 @@
     "source": {
       "creator": "Store product",
       "platform": "YesStyle"
-    }
+    },
+    "pick": true
   },
   {
     "id": "shaking-two-phase-body-mist",
@@ -44786,7 +44833,8 @@
     "source": {
       "creator": "Store product",
       "platform": "YesStyle"
-    }
+    },
+    "pick": true
   },
   {
     "id": "tea-scented-hand-and-nail-cream",
@@ -44851,7 +44899,8 @@
     "source": {
       "creator": "Store product",
       "platform": "YesStyle"
-    }
+    },
+    "pick": true
   },
   {
     "id": "pine-centella-gentle-body-wash",
@@ -45329,7 +45378,8 @@
     "source": {
       "creator": "Store product",
       "platform": "botanysoap.co.kr"
-    }
+    },
+    "pick": true
   },
   {
     "id": "pick-your-own-seed-and-herb-hair-oil",
@@ -46130,7 +46180,8 @@
     "source": {
       "creator": "Store product",
       "platform": "madsasssoap.com"
-    }
+    },
+    "pick": true
   },
   {
     "id": "frankincense-lavender-whipped-body-butter",
@@ -46459,7 +46510,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram (refill store)"
-    }
+    },
+    "pick": true
   },
   {
     "id": "fragrance-free-green-clay-deodorant-cream",
@@ -46622,7 +46674,8 @@
         10,
         "g"
       ]
-    ]
+    ],
+    "pick": true
   },
   {
     "id": "strawberry-milk-perfume-oil",
@@ -46722,7 +46775,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "beeswax-braid-and-knot-pomade",
@@ -46827,7 +46881,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Malagasy brand"
-    }
+    },
+    "pick": true
   },
   {
     "id": "turmeric-honey-glycerin-soap",
@@ -47080,7 +47135,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "mini-travel-soaps-in-a-tin",
@@ -48239,7 +48295,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Marshalls"
-    }
+    },
+    "pick": true
   },
   {
     "id": "strawberry-milkshake-whipped-shower-foam",
@@ -48419,7 +48476,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "soursop-lime-coconut-perfume-oil",
@@ -48454,7 +48512,8 @@
     "source": {
       "creator": "Scent inspiration",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "plantain-vanilla-nutmeg-perfume-oil",
@@ -48724,7 +48783,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "clay-and-rice-bran-scrub-bar",
@@ -48839,7 +48899,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "honeyed-lemon-strawberry-body-mist",
@@ -48914,7 +48975,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "lemon-coconut-vanilla-body-mist",
@@ -49259,7 +49321,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "bergamot-bliss-shower-steamers",
@@ -49304,7 +49367,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "lavender-star-lotion-melts",
@@ -50104,7 +50168,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "niacinamide-brightening-body-wash",
@@ -50409,7 +50474,8 @@
     "source": {
       "creator": "Store product",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "centella-calming-toner",
@@ -50449,7 +50515,8 @@
     "source": {
       "creator": "Store product",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "willow-bark-clarifying-toner",
@@ -50724,7 +50791,8 @@
     "source": {
       "creator": "OLAH Haircare",
       "platform": "Website"
-    }
+    },
+    "pick": true
   },
   {
     "id": "rose-dendrobium-care-lip-balm",
@@ -50774,7 +50842,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Florasis"
-    }
+    },
+    "pick": true
   },
   {
     "id": "jade-pearl-loose-setting-powder",
@@ -51079,7 +51148,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "cinnamon-roll-icing-body-mist",
@@ -51114,7 +51184,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "peach-cobbler-shea-body-lotion",
@@ -51174,7 +51245,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "caramel-apple-shea-body-lotion",
@@ -51234,7 +51306,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "glycerin-cleansing-body-oil",
@@ -51669,7 +51742,8 @@
     "source": {
       "creator": "Store product",
       "platform": "dm"
-    }
+    },
+    "pick": true
   },
   {
     "id": "magnesium-probiotic-deodorant-stick",
@@ -51789,7 +51863,8 @@
     "source": {
       "creator": "Tajiah",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "peach-pear-protein-hair-perfume",
@@ -51844,7 +51919,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "clear-glow-multi-balm",
@@ -51884,7 +51960,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Jones Road"
-    }
+    },
+    "pick": true
   },
   {
     "id": "tinted-cheek-and-lip-balm-shade-guide",
@@ -51929,7 +52006,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Jones Road"
-    }
+    },
+    "pick": true
   },
   {
     "id": "dry-scalp-hydrating-urea-serum",
@@ -51979,7 +52057,8 @@
     "source": {
       "creator": "theskinstitution",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "oily-scalp-niacinamide-willow-tonic",
@@ -52154,7 +52233,8 @@
     "source": {
       "creator": "thingsfor_her",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "coconut-vanilla-deodorant-body-mist",
@@ -52349,7 +52429,8 @@
     "source": {
       "creator": "Adom Mawuena",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "curl-finishing-butter",
@@ -52409,7 +52490,8 @@
     "source": {
       "creator": "santamelenabr",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "marshmallow-vanilla-chiffon-hair-body-mist",
@@ -52699,7 +52781,8 @@
     "source": {
       "creator": "pamper_mint",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "guava-buchu-hair-body-mist",
@@ -52999,7 +53082,8 @@
     "source": {
       "creator": "dm_balea",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "creamy-african-black-soap-body-wash-zandy",
@@ -53558,7 +53642,8 @@
     "source": {
       "creator": "sakino.f",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "bare-nectar-style-mist",
@@ -53648,7 +53733,8 @@
     "source": {
       "creator": "uselushop",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "sueded-vanilla-skin-mist",
@@ -53923,7 +54009,8 @@
     "source": {
       "creator": "mayu_cosumebu",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "just-showered-soap-scent-body-lotion",
@@ -54103,7 +54190,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Boots"
-    }
+    },
+    "pick": true
   },
   {
     "id": "zinc-sage-roll-on-deodorant",
@@ -54168,7 +54256,8 @@
     "source": {
       "creator": "Store product",
       "platform": "Boots"
-    }
+    },
+    "pick": true
   },
   {
     "id": "vanilla-tonka-iris-perfumed-body-oil",
@@ -54288,7 +54377,8 @@
     "source": {
       "creator": "asuo.beauty.care",
       "platform": "Instagram"
-    }
+    },
+    "pick": true
   },
   {
     "id": "orange-peel-sudanese-bath-scrub",
@@ -56472,7 +56562,8 @@
     "source": {
       "creator": "Karim's Studio (safer version)",
       "platform": "TikTok"
-    }
+    },
+    "pick": true
   },
   {
     "id": "herbal-hair-food-oil",
