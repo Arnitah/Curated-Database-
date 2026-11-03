@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-02T20:49:50.219Z",
+ "built_at": "2026-11-03T18:29:04.753Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
  "explained_in_safe_batch": 290,
  "queue": [
@@ -89,7 +89,7 @@
   },
   {
    "ingredient": "butane",
-   "products": 528
+   "products": 529
   },
   {
    "ingredient": "palmitic acid",
@@ -161,7 +161,7 @@
   },
   {
    "ingredient": "hydroxyethylcellulose",
-   "products": 387
+   "products": 388
   },
   {
    "ingredient": "persea gratissima oil",
@@ -264,16 +264,16 @@
    "products": 274
   },
   {
+   "ingredient": "arginine",
+   "products": 269
+  },
+  {
    "ingredient": "chlorphenesin",
    "products": 269
   },
   {
    "ingredient": "ethylhexyl triazone",
    "products": 269
-  },
-  {
-   "ingredient": "arginine",
-   "products": 268
   },
   {
    "ingredient": "hydrogenated palm glycerides citrate",
@@ -577,7 +577,7 @@
   },
   {
    "ingredient": "trisodium ethylenediamine disuccinate",
-   "products": 138
+   "products": 139
   },
   {
    "ingredient": "sorbitan isostearate",

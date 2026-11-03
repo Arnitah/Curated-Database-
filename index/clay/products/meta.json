@@ -1,13 +1,13 @@
 {
- "built_at": "2026-11-02T20:49:46.395Z",
- "hub_run": "2026-11-02T19:30:16+00:00",
- "products": 14014,
+ "built_at": "2026-11-03T18:29:01.706Z",
+ "hub_run": "2026-11-03T17:04:34+00:00",
+ "products": 14015,
  "shards": 29,
  "by_category": {
   "baby": 183,
   "body": 2675,
   "deodorant": 785,
-  "face": 1369,
+  "face": 1370,
   "fragrance": 370,
   "hair": 2214,
   "makeup": 458,
@@ -18,6 +18,6 @@
   "added": 2,
   "cosrx": 90,
   "open_beauty_facts": 13861,
-  "round_lab": 61
+  "round_lab": 62
  }
 }
