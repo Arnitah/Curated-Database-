@@ -1,6 +1,6 @@
 {
-  "version": 161,
-  "updated_at": "2026-11-03T21:44:15.088Z",
+  "version": 163,
+  "updated_at": "2026-11-03T21:53:46.964Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -322,9 +322,9 @@
     },
     "scents/exclusions": {
       "count": 2,
-      "bytes": 1461,
-      "hash": "c142e42251d8",
-      "updated_at": "2026-11-03T21:39:57.934Z"
+      "bytes": 1621,
+      "hash": "2453c0dc82cd",
+      "updated_at": "2026-11-03T21:53:37.752Z"
     },
     "scents/families": {
       "count": 12,
@@ -345,10 +345,10 @@
       "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/leads": {
-      "count": 169,
-      "bytes": 85773,
-      "hash": "bd4abd4293ef",
-      "updated_at": "2026-11-03T21:39:57.934Z"
+      "count": 172,
+      "bytes": 87577,
+      "hash": "73500f9c9070",
+      "updated_at": "2026-11-03T21:53:37.842Z"
     },
     "scents/materials": {
       "count": 3,
@@ -400,15 +400,15 @@
     },
     "scents/trends": {
       "count": 8,
-      "bytes": 5282,
-      "hash": "b25b6bfc963a",
-      "updated_at": "2026-11-03T21:44:15.085Z"
+      "bytes": 5566,
+      "hash": "59581c2883ce",
+      "updated_at": "2026-11-03T21:53:37.842Z"
     },
     "scents/twins": {
-      "count": 86,
-      "bytes": 26820,
-      "hash": "02232112634e",
-      "updated_at": "2026-11-02T18:31:33.120Z"
+      "count": 87,
+      "bytes": 27091,
+      "hash": "7bede7ac9f74",
+      "updated_at": "2026-11-03T21:53:46.964Z"
     }
   }
 }

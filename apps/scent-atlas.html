@@ -258,7 +258,14 @@ details.more > div { display: grid; gap: 10px; margin-top: 10px }
 :root[data-theme="dark"] #mapview .heat { mix-blend-mode: screen }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #mapview .heat { mix-blend-mode: screen } }
 #mapview .heat.off { display: none }
-#mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: pan-y }
+#mapview .mapbox { position: relative; background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; touch-action: none }
+#mapview .dot.sel { animation: pinpulse 1.6s ease-in-out infinite }
+@keyframes pinpulse { 50% { stroke-width: 5; stroke-opacity: .55 } }
+@media (prefers-reduced-motion: reduce) { #mapview .dot.sel { animation: none } }
+#mapview .ctrl button.dice { font-size: 15px }
+#mapview .peek { position: absolute; left: 10px; bottom: 10px; max-width: min(78%, 300px); background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; font-size: 13px; box-shadow: 0 4px 14px var(--snap-shadow); pointer-events: none; opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s }
+#mapview .peek.on { opacity: 1; transform: none }
+#mapview .peek b { display: block; font-size: 14px }
 #mapview .mapbox svg { display: block; width: 100%; height: auto; cursor: grab }
 @media (max-width: 600px) {#mapview .mapbox svg { height: 380px } }
 #mapview .mapbox svg:active { cursor: grabbing }
@@ -351,7 +358,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
           <defs><radialGradient id="m-heatg"><stop offset="0" stop-color="#ff3b30" stop-opacity=".78"/><stop offset=".28" stop-color="#ffb000" stop-opacity=".6"/><stop offset=".58" stop-color="#3ec6ff" stop-opacity=".32"/><stop offset="1" stop-color="#3ec6ff" stop-opacity="0"/></radialGradient></defs><rect width="1000" height="500" fill="transparent" id="m-seaRect"></rect>
           <g id="m-zoom"><g id="m-lands"></g><g id="m-heat" class="heat"></g><g id="m-bubbles"></g><g id="m-pins"></g><g id="m-labels"></g><g id="m-trad"></g><g id="m-mat"></g></g>
         </svg>
-        <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button></div>
+        <div class="ctrl"><button type="button" id="m-zin" aria-label="Zoom in">+</button><button type="button" id="m-zout" aria-label="Zoom out">−</button><button type="button" id="m-zreset" aria-label="Back to the whole world">⌂</button><button type="button" id="m-dice" class="dice" aria-label="Take me somewhere: open a random house" title="Take me somewhere">✦</button></div><div class="peek" id="m-peek" aria-hidden="true"></div>
       </div>
       <div class="find">
         <input id="m-noteq" list="m-notelist" placeholder="Find a note anywhere (jasmine, oud, tea, vanilla…)" aria-label="Find a note">
@@ -362,7 +369,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 80ch }
     </div>
     <aside class="panel" id="m-panel" aria-live="polite"></aside>
   </div>
-  <p class="hint">To move the map: drag with a mouse, use two fingers on a phone, or the + and − buttons. One finger scrolls the page. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style; the glowing hot spots (map style inspired by Snap Map) show where houses cluster. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
+  <p class="hint">Drag the map with a finger or mouse, pinch or use + and − to zoom, and tap ✦ to jump to a random house. Scroll the page from outside the map. Pins are placed on each house's city; houses marked "country" have no exact city on record. Colours show each house's main style; the glowing hot spots (map style inspired by Snap Map) show where houses cluster. Prices are as last checked; CAD figures are estimates. Not affiliated with any brand.</p>
   </section>
 
   <section class="travel offtab" id="travelview" aria-live="polite">
@@ -1098,7 +1105,7 @@ function drawBase() {
     p.houses.forEach((h, i) => { const a = (i / n) * Math.PI * 2, ring = n === 1 ? 0 : 1 + Math.floor(i / 12) * 0.6; dots.push({ h, p, x, y, a, ring }); }); }
   D.places = places; D.dots = dots;
   d3.select("#m-pins").selectAll("circle").data(dots, (d) => d.h.id).join("circle").attr("class", "dot").attr("fill", (d) => colorOf(d.h))
-    .on("click", (e, d) => { e.stopPropagation(); goHouse(d.h.id); }).append("title").text((d) => `${d.h.name} · ${d.p.place}`);
+    .on("click", (e, d) => { e.stopPropagation(); peekHide(); goHouse(d.h.id); }).on("mouseenter", (e, d) => peekShow(d)).on("mouseleave", peekHide).append("title").text((d) => `${d.h.name} · ${d.p.place}`);
   d3.select("#m-heat").selectAll("circle").data(places).join("circle").attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("fill", "url(#m-heatg)");
   d3.select("#m-labels").selectAll("text").data(places).join("text").attr("class", "placelab").text((d) => d.place);
   const MP = MAT.flatMap((m) => m.origins.map((o) => ({ m, o })));
@@ -1264,6 +1271,9 @@ $("m-panel").addEventListener("click", (e) => {
 });
 $("m-zin").onclick = () => svg.transition().call(zoom.scaleBy, 1.8);
 $("m-zout").onclick = () => svg.transition().call(zoom.scaleBy, 1 / 1.8);
+$("m-dice").onclick = () => { const hs = D.houses; const h = hs[Math.floor(Math.random() * hs.length)]; goHouse(h.id); };
+const peekShow = (d) => { const pk = $("m-peek"); const h = d.h; pk.innerHTML = `<b>${esc(h.name)}</b>${esc(d.p.place)} · ${esc(h.sig.name)}`; pk.classList.add("on"); };
+const peekHide = () => $("m-peek").classList.remove("on");
 $("m-zreset").onclick = () => { state.style = null; state.hl = null; syncLegend(); goWorld(); };
 $("m-notego").onclick = () => goNote($("m-noteq").value);
 $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(e.target.value); });
@@ -1274,8 +1284,8 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   proj = d3.geoEqualEarth().scale(WORLD.scale).translate(WORLD.translate);
   svg = d3.select("#m-map"); gZoom = d3.select("#m-zoom");
     zoom = d3.zoom().scaleExtent([1, 60]).translateExtent([[-100, -60], [1100, 560]]).on("zoom", (e) => { gZoom.attr("transform", e.transform); K = e.transform.k; restyle(); });
-  zoom.filter((e) => e.type === "wheel" ? (e.ctrlKey || e.metaKey) : e.type.startsWith("touch") ? (e.touches && e.touches.length > 1) : !e.button);
-  svg.call(zoom).on("dblclick.zoom", null); svg.style("touch-action", "pan-y");
+  zoom.filter((e) => e.type === "wheel" ? (e.ctrlKey || e.metaKey) : e.type.startsWith("touch") ? true : !e.button);
+  svg.call(zoom).on("dblclick.zoom", null); svg.style("touch-action", "none");
   
   
   D = { houses: houses.filter((h) => geo[h.id]), geo, regions, stores, fam: families }; RATES = rates.cad_per || {};
@@ -1289,6 +1299,7 @@ $("m-noteq").addEventListener("keydown", (e) => { if (e.key === "Enter") goNote(
   $("m-notelist").innerHTML = [...notes].sort().map((n) => `<option value="${esc(n)}"></option>`).join("");
   drawBase(); window.addEventListener("resize", () => restyle());
   goWorld();
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) { svg.call(zoom.transform, d3.zoomIdentity.translate(500, 250).scale(1.9).translate(-560, -210)); svg.transition().delay(250).duration(1400).ease(d3.easeCubicOut).call(zoom.transform, d3.zoomIdentity); }
   window.mapGoHouse = goHouse; window.mapGoTradition = goTradition; window.mapGoMaterial = goMaterial;
   };
 
