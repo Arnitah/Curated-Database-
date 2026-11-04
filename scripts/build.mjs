@@ -115,6 +115,27 @@ if (houses) {
   }
 }
 
+// Scents: dated evidence records (one per sighting)
+const obsSet = sets['scents/observations']?.data;
+if (obsSet) {
+  const hid = new Set((houses || []).map((h) => h.id)), seen = new Set();
+  const rates = sets['scents/rates']?.data?.cad_per || {};
+  const EV = new Set(['checked', 'retailer', 'brand', 'database', 'editorial', 'reported', 'creator', 'nitah']);
+  for (const o of obsSet.records || []) {
+    const w = `scents/observations ${o?.id || '?'}`;
+    if (!o.id || seen.has(o.id)) errors.push(`${w}: needs a unique id`); seen.add(o.id);
+    if (!o.house && !o.lead) errors.push(`${w}: needs a house id or a lead name`);
+    if (o.house && !hid.has(o.house)) errors.push(`${w}: unknown house "${o.house}"`);
+    if (!['price', 'claim'].includes(o.kind)) errors.push(`${w}: kind must be price or claim`);
+    if (!EV.has(o.evidence)) errors.push(`${w}: evidence must be one of ${[...EV].join(', ')}`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(o.seen || '')) errors.push(`${w}: needs a seen date (YYYY-MM-DD)`);
+    if (o.evidence !== 'nitah' && !/^https?:\/\//.test(o.src || '')) errors.push(`${w}: needs a source link`);
+    if (o.kind === 'price') { if (typeof o.amt !== 'number') errors.push(`${w}: price needs amt`); if (!(o.cur in rates)) errors.push(`${w}: no exchange rate for ${o.cur}`); }
+    if (o.kind === 'claim' && !o.text) errors.push(`${w}: a claim needs text`);
+  }
+}
+for (const e of sets['scents/fieldnotes']?.data?.entries || []) if (!/^\d{4}-\d{2}-\d{2}$/.test(e.on || '') || !e.text) errors.push(`scents/fieldnotes: each entry needs an on date and text`);
+
 // Scents: travel guides
 const travel = sets['scents/travel']?.data;
 if (travel) {

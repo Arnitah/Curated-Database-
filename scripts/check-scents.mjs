@@ -83,3 +83,22 @@ await pool(houses, 4, async (h) => {
 write(P('checks/scent-prices.json'), prices);
 const ch = Object.entries(prices.houses).filter(([, v]) => v.changed).map(([k]) => k);
 console.log(`prices ${Object.keys(prices.houses).length} shops read${ch.length ? ', changed: ' + ch.join(', ') : ''}`);
+
+// 4. Field notes: write what this run found into the Atlas's notebook (newest first, one entry per finding)
+const fnPath = P('data/scents/fieldnotes.json'), fn = read(fnPath, null);
+if (fn) {
+  const add = [];
+  for (const id of ch) add.push({ on: today, kind: 'price-change', text: `Live price changed at ${id}'s shop since last week; needs review.`, ref: id });
+  for (const [id, row] of Object.entries(links.houses)) if (Object.values(row).some((s) => s && s.startsWith('fail'))) add.push({ on: today, kind: 'broken-link', text: `A link for ${id} failed this week (site, perfume page or price source).`, ref: id });
+  const obs = read(P('data/scents/observations.json'), { records: [] }).records || [];
+  const cutoff = new Date(Date.now() - 180 * 864e5).toISOString().slice(0, 10);
+  const latest = {};
+  for (const o of obs) if (o.kind === 'price' && o.house && (!latest[o.house] || o.seen > latest[o.house])) latest[o.house] = o.seen;
+  const stale = Object.entries(latest).filter(([, d]) => d < cutoff).map(([k]) => k);
+  if (stale.length) add.push({ on: today, kind: 'stale', text: `${stale.length} houses have no price seen in the last six months: ${stale.slice(0, 12).join(', ')}${stale.length > 12 ? '…' : ''}.` });
+  add.push({ on: today, kind: 'checked', text: `Weekly check: ${links.summary.pass} houses fully reachable, ${links.summary.blocked} blocked a robot, ${links.summary.fail} with a failing link; ${Object.keys(prices.houses).length} shop prices read live.` });
+  const old = (fn.entries || []).filter((e) => !(e.on === today && ['price-change', 'broken-link', 'stale', 'checked'].includes(e.kind)));
+  fn.entries = [...add, ...old].slice(0, 400);
+  write(fnPath, fn);
+  console.log(`notes  ${add.length} field notes added`);
+}
