@@ -1,5 +1,69 @@
 [
   [
+    "castor beans?|castor seeds?|حب الخروع|بذور الخروع|^الخروع$",
+    "castorbean"
+  ],
+  [
+    "bitter almond kernels?|bitter almonds? \\(whole|^اللوز المر$",
+    "bitteralmondkernel"
+  ],
+  [
+    "stavesacre|staphisagria|حبة ?الراس|حب الرأس|حبة راس",
+    "stavesacre"
+  ],
+  [
+    "oak galls?|quercus infectoria|majuphal|majakani|العفصة|عفص",
+    "oakgall"
+  ],
+  [
+    "takaout|tamarisk galls?|تاكاوت",
+    "takaout"
+  ],
+  [
+    "lentisk|الضرو|pistacia lentiscus leaf",
+    "lentiskleaf"
+  ],
+  [
+    "caper leaf|caper leaves|أوراق الكبار|capparis",
+    "caperleaf"
+  ],
+  [
+    "raspberry leaf|raspberry leaves",
+    "raspberryleaf"
+  ],
+  [
+    "pumpkin seeds?(?! oil)|بذور اليقطين",
+    "pumpkinseed"
+  ],
+  [
+    "ورق السدر",
+    "sidr"
+  ],
+  [
+    "البديانة|بادية",
+    "staranise"
+  ],
+  [
+    "^خزامة|الخزامى",
+    "lavenderbud"
+  ],
+  [
+    "بذور الشيا",
+    "chiaseed"
+  ],
+  [
+    "زريعة الكتان",
+    "flaxwhole"
+  ],
+  [
+    "السنبل",
+    "spikenard"
+  ],
+  [
+    "القرنفل",
+    "clovewhole"
+  ],
+  [
     "cuttle ?bone|cuttlefish bone|lisan al[- ]?bahr|لسان البحر",
     "cuttlebone"
   ],

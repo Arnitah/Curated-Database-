@@ -7667,5 +7667,59 @@
   "flags": [
    "care: Cuttlebone is gritty"
   ]
+ },
+ "neem-aloe-anti-dandruff-shampoo": {
+  "verdict": "care",
+  "flags": [
+   "care: Citric acid can sting"
+  ]
+ },
+ "marshmallow-raspberry-leaf-facial-steam": {
+  "verdict": "ok",
+  "flags": []
+ },
+ "berry-vinegar-scalp-toner": {
+  "verdict": "care",
+  "flags": [
+   "care: Vinegar needs care"
+  ]
+ },
+ "seed-blend-hair-oil-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "stop: Remove bitter almond kernels (اللوز المر), whole or ground",
+   "stop: Remove whole castor beans (حب الخروع, ricinus communis seeds)"
+  ]
+ },
+ "seed-and-rosemary-hair-oil-safe": {
+  "verdict": "care",
+  "flags": [
+   "care: Clove infusion can irritate"
+  ]
+ },
+ "moroccan-khalta-hair-herbs-as-posted": {
+  "verdict": "stop",
+  "flags": [
+   "care: Clove infusion can irritate",
+   "care: Endangered plant: buy certified only",
+   "care: Oak galls stain dark",
+   "care: Takaout stains dark",
+   "stop: Remove stavesacre seeds (حبة الراس / حب الرأس, delphinium staphisagria)",
+   "stop: Remove whole castor beans (حب الخروع, ricinus communis seeds)"
+  ]
+ },
+ "moroccan-khalta-hair-herbs-safer": {
+  "verdict": "care",
+  "flags": [
+   "care: Oak galls stain dark",
+   "care: Takaout stains dark"
+  ]
+ },
+ "rosemary-lavender-rose-sidr-rinse": {
+  "verdict": "care",
+  "flags": [
+   "care: The fridge slows spoilage but doesn't stop it"
+  ]
  }
 }

@@ -56764,5 +56764,522 @@
       ]
     ],
     "note": "Grind the rose, resin and gum to a powder, mix with the rest and sieve through a fine tea strainer. Store dry. Mix with rose water, apply after a warm shower, leave 10 minutes and rinse. Drops the nila and aker fassi (stain and dye risk) and cowrie (sharp). Patch test a week before a wedding, never right before."
+  },
+  {
+    "id": "neem-aloe-anti-dandruff-shampoo",
+    "name": "Neem and aloe scalp shampoo",
+    "claim": "Gentle sulfate-free shampoo for itchy, flaky scalps",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        57,
+        "g"
+      ],
+      [
+        "neemleaf",
+        1,
+        "tbsp"
+      ],
+      [
+        "aloe",
+        15,
+        "g"
+      ],
+      [
+        "cocoglucoside",
+        10,
+        "g"
+      ],
+      [
+        "decylglucoside",
+        10,
+        "g"
+      ],
+      [
+        "glycerin",
+        4,
+        "g"
+      ],
+      [
+        "xanthan",
+        0.7,
+        "g"
+      ],
+      [
+        "cosgard",
+        0.6,
+        "g"
+      ],
+      [
+        "citricacid",
+        0.5,
+        "g"
+      ]
+    ],
+    "note": "Simmer the neem leaves in the water for 10 minutes, strain and weigh back to 57 g. Disperse the xanthan in the glycerin, whisk into the cooled tea with the aloe, then add the glucosides and Cosgard. Bring to pH 5 to 5.5 with citric acid, checking with strips. Massage into the scalp and leave 3 to 5 minutes before rinsing. Neem is antifungal in lab tests, but for stubborn dandruff a pharmacy shampoo with ketoconazole, zinc pyrithione or selenium sulfide works better.",
+    "source": {
+      "creator": "basicorganicproducts",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "marshmallow-raspberry-leaf-facial-steam",
+    "name": "Marshmallow, raspberry leaf and calendula facial steam",
+    "claim": "Soft, soothing herbal steam before a mask",
+    "type": "steamer",
+    "use": "now",
+    "rows": [
+      [
+        "water",
+        4,
+        "cup"
+      ],
+      [
+        "marshmallowroot",
+        1,
+        "tbsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tbsp"
+      ],
+      [
+        "raspberryleaf",
+        1,
+        "tbsp"
+      ],
+      [
+        "spearmint",
+        1,
+        "tsp"
+      ],
+      [
+        "calendula",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Pour just-boiled water over the herbs in a wide bowl and wait a minute. Hold your face about 30 cm above it, a towel over your head, for 5 to 10 minutes; lift away if it feels too hot. Skip it with rosacea, eczema flares, broken capillaries or very sensitive skin. Pat dry and follow with moisturiser.",
+    "source": {
+      "creator": "hadiherbs",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "berry-vinegar-scalp-toner",
+    "name": "Hibiscus and apple cider vinegar scalp rinse",
+    "claim": "Clarifying scalp treatment after shampoo",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "water",
+        78,
+        "g"
+      ],
+      [
+        "hibiscus",
+        1,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        1,
+        "tbsp"
+      ],
+      [
+        "acv",
+        8,
+        "g"
+      ],
+      [
+        "aloe",
+        10,
+        "g"
+      ],
+      [
+        "panthenol",
+        2,
+        "g"
+      ],
+      [
+        "peppermint",
+        1,
+        "drops"
+      ],
+      [
+        "geogard",
+        1,
+        "g"
+      ]
+    ],
+    "note": "The post sells a leave-on vinegar toner; Safe Batch keeps vinegar rinse-off, because it can irritate skin it stays on. Steep the hibiscus and chamomile in just-boiled water for 15 minutes, strain and cool, weigh back to 78 g, then add the vinegar, aloe, panthenol, peppermint and preservative. After shampoo, spray or pour onto the scalp, massage for a minute, wait 3 to 5 minutes and rinse. Keep it out of the eyes. Without the preservative, keep it in the fridge and use within a week. Hibiscus can tint very light hair pink.",
+    "source": {
+      "creator": "hadiherbs",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "seed-blend-hair-oil-as-posted",
+    "name": "Seed blend hair mix with bitter almond and castor beans (as posted)",
+    "claim": "For falling, dry, dull hair",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "pumpkinseed",
+        2,
+        "tbsp"
+      ],
+      [
+        "bitteralmondkernel",
+        2,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        2,
+        "tbsp"
+      ],
+      [
+        "chiaseed",
+        1,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        1,
+        "tbsp"
+      ],
+      [
+        "coconutflakes",
+        2,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "castorbean",
+        1,
+        "tbsp"
+      ],
+      [
+        "clovewhole",
+        1,
+        "tsp"
+      ],
+      [
+        "olive",
+        300,
+        "ml"
+      ]
+    ],
+    "note": "As shown in the shop video, with an oil base assumed. Two ingredients make this unsafe to prepare at home: whole castor beans hold ricin and bitter almonds release cyanide. Both are deadly if a child eats the mix. See the safe seed oil version.",
+    "source": {
+      "creator": "Maachabat Didi",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "seed-and-rosemary-hair-oil-safe",
+    "name": "Pumpkin seed, nigella and rosemary hair oil",
+    "claim": "Warm seed and herb oil for scalp massage and dry ends",
+    "type": "hair_leave",
+    "use": "store",
+    "rows": [
+      [
+        "olive",
+        200,
+        "ml"
+      ],
+      [
+        "sesame",
+        50,
+        "ml"
+      ],
+      [
+        "castor",
+        50,
+        "ml"
+      ],
+      [
+        "pumpkinseed",
+        2,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        1,
+        "tbsp"
+      ],
+      [
+        "chiaseed",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        2,
+        "tbsp"
+      ],
+      [
+        "clovewhole",
+        0.5,
+        "tsp"
+      ],
+      [
+        "vite",
+        1,
+        "ml"
+      ]
+    ],
+    "note": "The seed-blend idea without the dangerous seeds: castor oil replaces whole castor beans, and bitter almonds are left out. Lightly crush the seeds, warm everything on the lowest heat for 1 to 2 hours without bubbling, cool and strain through cloth. Add vitamin E. Massage a little into the scalp an hour before washing. Cloves warm the scalp, so patch test. Oiling protects lengths from breakage; it doesn't stop shedding from the root.",
+    "source": {
+      "creator": "Maachabat Didi (safer version)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "moroccan-khalta-hair-herbs-as-posted",
+    "name": "Moroccan herb khalta for hair fall (as posted)",
+    "claim": "Twenty-herb mix for falling hair",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "rosemaryherb",
+        2,
+        "tbsp"
+      ],
+      [
+        "lavenderbud",
+        2,
+        "tbsp"
+      ],
+      [
+        "rosebuds",
+        2,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        2,
+        "tbsp"
+      ],
+      [
+        "sidr",
+        2,
+        "tbsp"
+      ],
+      [
+        "myrtle",
+        2,
+        "tbsp"
+      ],
+      [
+        "caperleaf",
+        2,
+        "tbsp"
+      ],
+      [
+        "lentiskleaf",
+        2,
+        "tbsp"
+      ],
+      [
+        "clovewhole",
+        1,
+        "tbsp"
+      ],
+      [
+        "oakgall",
+        1,
+        "tbsp"
+      ],
+      [
+        "stavesacre",
+        1,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "flaxwhole",
+        1,
+        "tbsp"
+      ],
+      [
+        "castorbean",
+        1,
+        "tbsp"
+      ],
+      [
+        "amla",
+        2,
+        "tbsp"
+      ],
+      [
+        "spikenard",
+        5,
+        "drops"
+      ],
+      [
+        "staranise",
+        1,
+        "tbsp"
+      ],
+      [
+        "takaout",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "As shown (ground and used as a hair mask). Two seeds make it unsafe: stavesacre (حبة الراس) is poisonous and can absorb through scratched scalp, and whole castor beans contain ricin. The video's الريحان is likely myrtle (its Moroccan meaning), and تارة, الأزاز and زريعة الكيف (hemp seed) are left out because they couldn't be confirmed or add nothing. See the safer khalta.",
+    "source": {
+      "creator": "Maachabat Didi",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "moroccan-khalta-hair-herbs-safer",
+    "name": "Moroccan herb khalta for hair (safer)",
+    "claim": "Astringent, fragrant herb mask that deepens henna",
+    "type": "hair_rinse",
+    "use": "store",
+    "rows": [
+      [
+        "sidr",
+        3,
+        "tbsp"
+      ],
+      [
+        "rosemaryherb",
+        2,
+        "tbsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosebuds",
+        2,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        1,
+        "tbsp"
+      ],
+      [
+        "myrtle",
+        2,
+        "tbsp"
+      ],
+      [
+        "lentiskleaf",
+        1,
+        "tbsp"
+      ],
+      [
+        "caperleaf",
+        1,
+        "tbsp"
+      ],
+      [
+        "amla",
+        2,
+        "tbsp"
+      ],
+      [
+        "nigella",
+        1,
+        "tbsp"
+      ],
+      [
+        "clovepowder",
+        0.5,
+        "tsp"
+      ],
+      [
+        "staranise",
+        1,
+        "tsp"
+      ],
+      [
+        "oakgall",
+        1,
+        "tsp"
+      ],
+      [
+        "takaout",
+        1,
+        "tsp"
+      ]
+    ],
+    "note": "Grind everything very fine and store dry and airtight. Mix a few spoonfuls with warm water (or into henna) to a yogurt-like paste, apply to damp hair and scalp for 30 to 45 minutes, then wash and condition well; the galls are drying. Oak gall and takaout darken hair and stain, so skip them on light hair. No stavesacre or castor beans.",
+    "source": {
+      "creator": "Maachabat Didi (safer version)",
+      "platform": "TikTok"
+    }
+  },
+  {
+    "id": "rosemary-lavender-rose-sidr-rinse",
+    "name": "Rosemary, lavender, rose, chamomile and sidr rinse",
+    "claim": "Soft, fragrant herbal hair rinse",
+    "type": "hair_rinse",
+    "use": "fridge",
+    "rows": [
+      [
+        "water",
+        4,
+        "cup"
+      ],
+      [
+        "rosemaryherb",
+        1,
+        "tbsp"
+      ],
+      [
+        "lavenderbud",
+        1,
+        "tbsp"
+      ],
+      [
+        "rosebuds",
+        1,
+        "tbsp"
+      ],
+      [
+        "chamomileflower",
+        1,
+        "tbsp"
+      ],
+      [
+        "sidr",
+        1,
+        "tbsp"
+      ]
+    ],
+    "note": "Pour just-boiled water over the herbs, cover and steep 30 minutes, then strain through cloth. Pour over hair after shampoo, massage the scalp, and leave in or rinse lightly. Keeps 3 days in the fridge.",
+    "source": {
+      "creator": "Maachabat Didi",
+      "platform": "TikTok"
+    }
   }
 ]

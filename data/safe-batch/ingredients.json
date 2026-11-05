@@ -7176,5 +7176,97 @@
     "flag": "Cuttlebone is gritty",
     "good": "The internal shell of the cuttlefish, mostly calcium carbonate (chalk). Moroccan and Gulf body masks such as tbrima use the ground powder as a soft polish.",
     "care": "Sieve it very fine: coarse bits scratch. It doesn't whiten skin; it only polishes off dead skin for a brighter look. Skip it with a shellfish allergy, and keep it off the face and broken skin."
+  },
+  {
+    "id": "castorbean",
+    "grp": "Never on skin",
+    "name": "Whole castor beans (حب الخروع, Ricinus communis seeds)",
+    "ph": "botan",
+    "tsp": 3,
+    "never": true,
+    "lvl": "stop",
+    "care": "The whole beans contain ricin, one of the most toxic plant proteins. A few chewed or ground seeds can kill a child, and grinding them at home also releases dust. Castor oil is safe because ricin stays in the pressed cake, not the oil. Buy castor oil; never grind or infuse the beans."
+  },
+  {
+    "id": "bitteralmondkernel",
+    "grp": "Never on skin",
+    "name": "Bitter almond kernels (اللوز المر), whole or ground",
+    "ph": "botan",
+    "tsp": 2.5,
+    "never": true,
+    "lvl": "stop",
+    "care": "Raw bitter almonds release cyanide when crushed and eaten; a handful can poison an adult and far fewer a child. Keep them out of any seed or herb blend that could be eaten or mistaken for food. For hair, sweet almond oil gives the same softening without the risk."
+  },
+  {
+    "id": "stavesacre",
+    "grp": "Never on skin",
+    "name": "Stavesacre seeds (حبة الراس / حب الرأس, Delphinium staphisagria)",
+    "ph": "botan",
+    "tsp": 2,
+    "never": true,
+    "lvl": "stop",
+    "care": "An old lice remedy. The seeds hold delphinine and related alkaloids, which are poisonous if swallowed and can be absorbed through broken or scratched scalp skin. There are safe, tested lice treatments now. Not worth adding to a hair blend. Herbalists use the name for this seed; check before buying anything sold as حبة راس."
+  },
+  {
+    "id": "oakgall",
+    "grp": "Dried botanicals",
+    "name": "Oak galls (العفصة, aleppo or 'majuphal' galls, Quercus infectoria)",
+    "ph": "botan",
+    "tsp": 2.5,
+    "lvl": "care",
+    "flag": "Oak galls stain dark",
+    "good": "Hard round growths on oak twigs, very rich in tannins (gallotannins). Ground into Moroccan and Indian hair blends to deepen henna toward brown-black and as a strong astringent rinse.",
+    "care": "Stains skin, nails and towels dark, especially with iron. Very drying if used often. The darkening is a dye effect, not a reversal of grey hair."
+  },
+  {
+    "id": "takaout",
+    "grp": "Dried botanicals",
+    "name": "Takaout (تاكاوت, tamarisk galls, Tamarix)",
+    "ph": "botan",
+    "tsp": 2.5,
+    "lvl": "care",
+    "flag": "Takaout stains dark",
+    "good": "Galls from Saharan tamarisk trees, ground and mixed with henna in Morocco to darken hair and brows. Tannin-rich and astringent.",
+    "care": "Stains dark brown to black. Strong tannins can dry hair; follow with a conditioner. Patch test before brows or skin."
+  },
+  {
+    "id": "lentiskleaf",
+    "grp": "Dried botanicals",
+    "name": "Lentisk leaves (الضرو, mastic shrub, Pistacia lentiscus)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Leaves of the mastic shrub, boiled into North African hair and scalp rinses. Astringent and resinous-smelling.",
+    "care": "Lab and traditional evidence only. Low risk as a rinse; can tint light hair slightly."
+  },
+  {
+    "id": "caperleaf",
+    "grp": "Dried botanicals",
+    "name": "Caper leaves (أوراق الكبار, Capparis spinosa)",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "Leaves of the caper bush, rich in flavonoids like rutin; used in Moroccan herbal hair mixes.",
+    "care": "Very little cosmetic research. Low risk in a rinse-off mask; patch test."
+  },
+  {
+    "id": "raspberryleaf",
+    "grp": "Dried botanicals",
+    "name": "Raspberry leaf, dried",
+    "ph": "botan",
+    "tsp": 0.7,
+    "lvl": "ok",
+    "good": "A mild, tannin-rich leaf used in herbal teas and gentle steams and toners.",
+    "care": "Low risk. Mildly astringent."
+  },
+  {
+    "id": "pumpkinseed",
+    "grp": "Dried botanicals",
+    "name": "Pumpkin seeds (بذور اليقطين), hulled",
+    "ph": "botan",
+    "tsp": 3,
+    "lvl": "ok",
+    "good": "Oily seeds that can be warmed into a hair oil. Pumpkin seed oil supplements showed modest benefit in one small hair-loss trial.",
+    "care": "Food-safe. Infusing whole seeds adds little; the pressed oil is more useful."
   }
 ]

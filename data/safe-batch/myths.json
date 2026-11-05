@@ -7264,5 +7264,74 @@
     "seen_in": "TikTok and Instagram Moroccan beauty, wellness and food posts",
     "checked": "2026-11-03",
     "format": "v2"
+  },
+  {
+    "id": "seed-blends-stop-hair-fall-neem-dandruff-caffeine-oil",
+    "title": "Seed blends stop hair fall, neem ends dandruff, and a 25% caffeine oil blocks DHT",
+    "topics": [
+      "hair",
+      "herbs"
+    ],
+    "claims": [
+      {
+        "claim": "A mix of pumpkin, sesame, flax, chia and other seeds stops falling hair",
+        "verdict": "unproven",
+        "truth": "Seeds are good food, but no study shows a seed blend, eaten or used as an oil, stops hair fall. Shedding usually has a cause (stress, iron, thyroid, hormones, genetics) worth checking.",
+        "grade": "C"
+      },
+      {
+        "claim": "Bitter almonds and castor beans are fine in a home hair mix",
+        "verdict": "false",
+        "truth": "Crushed bitter almonds release cyanide and whole castor beans contain ricin. Both are dangerous if eaten, especially by children. The oils sold for hair are processed to be safe; the raw seeds are not.",
+        "grade": "A"
+      },
+      {
+        "claim": "Habb ras (stavesacre) in a hair mix strengthens hair",
+        "verdict": "false",
+        "truth": "Stavesacre was an old lice poison. Its alkaloids are toxic and can be absorbed through scratched scalp. It has no proven benefit for hair.",
+        "grade": "B"
+      },
+      {
+        "claim": "Neem shampoo ends dandruff for good",
+        "verdict": "unproven",
+        "truth": "Neem is antifungal in lab tests, but there are no good trials against the yeast behind dandruff. Ketoconazole, zinc pyrithione and selenium sulfide shampoos are proven.",
+        "grade": "C"
+      },
+      {
+        "claim": "A hair oil with 25% caffeine",
+        "verdict": "false",
+        "truth": "Caffeine barely dissolves in oil, so 25% in an oil isn't possible as a true solution. Caffeine scalp products are water- or alcohol-based, usually around 1 to 2%.",
+        "grade": "B"
+      },
+      {
+        "claim": "Caffeine blocks DHT and stops hair loss from week one",
+        "verdict": "unproven",
+        "truth": "Lab studies show caffeine can stimulate hair follicles, and one trial found a caffeine liquid comparable to 5% minoxidil, but evidence is limited and no topical works in a week. Shedding often rises in the first weeks of any real treatment.",
+        "grade": "C"
+      },
+      {
+        "claim": "A 25% vitamin E serum is extra nourishing",
+        "verdict": "partly",
+        "truth": "Vitamin E is a useful antioxidant at low levels, but high concentrations are a known cause of contact allergy and can feel heavy. Patch test first.",
+        "grade": "C"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Castor bean (ricin) toxicity, CDC",
+        "url": "https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/ricin.html"
+      },
+      {
+        "title": "Delphinium staphisagria (Medicinal plants of Epirus)",
+        "url": "https://mediplantepirus.med.uoi.gr/pharmacology_en/plant_details.php?id=335"
+      },
+      {
+        "title": "Stavesacre, WebMD",
+        "url": "https://www.webmd.com/vitamins/ai/ingredientmono-363/stavesacre"
+      }
+    ],
+    "seen_in": "TikTok herbalist (Moroccan) and hair-oil shop posts",
+    "checked": "2026-11-05",
+    "format": "v2"
   }
 ]
