@@ -2176,6 +2176,80 @@
    "src": "https://www.luckyscent.com/products/shiver-by-nostos",
    "seen": "2026-11-03",
    "note": "US$150 / 50 ml at Luckyscent and Stele (retailers)."
+  },
+  {
+   "id": "ellis-brooklyn-marshmallows-mist-price-1",
+   "house": "ellis-brooklyn",
+   "product": "Marshmallows hair & body mist",
+   "kind": "price",
+   "amt": 39,
+   "cur": "USD",
+   "ml": 240,
+   "evidence": "checked",
+   "src": "https://ellisbrooklyn.com/products/marshmallows-hair-and-body-fragrance-mist",
+   "seen": "2026-11-04"
+  },
+  {
+   "id": "naseem-crystal-berry-price-1",
+   "lead": "Naseem (Musk Tahara)",
+   "product": "Crystal Berry Aqua Parfum",
+   "kind": "price",
+   "amt": 499,
+   "cur": "INR",
+   "ml": 55,
+   "evidence": "retailer",
+   "src": "https://www.aarfragrances.com/product/naseem-crystal-berry",
+   "note": "Out of stock when checked.",
+   "seen": "2026-11-04"
+  },
+  {
+   "id": "jovoy-fire-at-will-price-1",
+   "lead": "Jovoy Paris (Fire at Will)",
+   "product": "Fire at Will",
+   "kind": "price",
+   "amt": 260,
+   "cur": "CAD",
+   "ml": 75,
+   "evidence": "retailer",
+   "src": "https://hparfums.com/products/fire-at-will",
+   "note": "Also CA$75 / 15 ml and CA$9.50 sample at H Parfums, Montreal.",
+   "seen": "2026-11-04"
+  },
+  {
+   "id": "noyz-love-club-price-1",
+   "lead": "Solid perfume tins (India)",
+   "product": "NOYZ Love Club solid",
+   "kind": "price",
+   "amt": 42,
+   "cur": "USD",
+   "ml": null,
+   "evidence": "checked",
+   "src": "https://noyz.com/products/the-solid-fragrance-pair",
+   "note": "Solid, 7 g in the pair; sold individually at US$42.",
+   "seen": "2026-11-04"
+  },
+  {
+   "id": "kyse-delizia-price-1",
+   "lead": "Kyse Perfumes (Delizia di Marshmallow)",
+   "product": "Delizia di Marshmallow",
+   "kind": "price",
+   "amt": 95,
+   "cur": "USD",
+   "ml": 60,
+   "evidence": "retailer",
+   "src": "https://www.luckyscent.com/products/delizia-di-marshmallow-by-kyse-perfumes",
+   "note": "On backorder when checked.",
+   "seen": "2026-11-04"
+  },
+  {
+   "id": "rosie-jane-dulce-notes-1",
+   "lead": "Rosie Jane (Dulce)",
+   "product": "Dulce",
+   "kind": "claim",
+   "text": "Notes: vanilla, brown sugar; dulce de leche, vanilla blossom; hinoki wood, tonka, amber, sugar cane. Released 2022.",
+   "evidence": "database",
+   "src": "https://www.parfumo.com/Perfumes/by-rosie-jane/dulce-eau-de-parfum",
+   "seen": "2026-11-04"
   }
  ]
 }

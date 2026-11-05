@@ -3,6 +3,16 @@
  "entries": [
   {
    "on": "2026-11-04",
+   "kind": "inbox",
+   "text": "First find from the new inbox: 12 perfumes from six screenshots. Prices or notes confirmed for Ellis Brooklyn Marshmallows, NOYZ, Jovoy Fire at Will (sold in Montreal), Naseem Crystal Berry, Kyse Delizia di Marshmallow and Rosie Jane Dulce."
+  },
+  {
+   "on": "2026-11-04",
+   "kind": "open",
+   "text": "Still unconfirmed: Brunbae Sweet Seduction, Hair Drama Marshmallow Whip, Cieal and Amafhh Herbarium solid tins. No shop found yet."
+  },
+  {
+   "on": "2026-11-04",
    "kind": "system",
    "text": "Started keeping one dated record per price sighting (observations), so prices can go stale visibly."
   },
