@@ -750,7 +750,7 @@
   ]
  },
  "bentonite": {
-  "listings": 6,
+  "listings": 5,
   "suppliers": [
    "formulator_sample_shop",
    "lotioncrafter",
@@ -761,15 +761,11 @@
    80
   ],
   "use_n": 4,
-  "ph": [
-   8.5,
-   10.5
-  ],
   "shelf_months": 12,
   "links": [
    {
     "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/fss-bentonite-clay"
+    "u": "https://formulatorsampleshop.com/products/fss-dark-brown-clay"
    },
    {
     "s": "lotioncrafter",
@@ -2860,20 +2856,15 @@
   ]
  },
  "kaolin": {
-  "listings": 5,
+  "listings": 4,
   "suppliers": [
    "aromantic",
-   "formulator_sample_shop",
    "windy_point"
   ],
   "links": [
    {
     "s": "aromantic",
     "u": "https://aromantic.co.uk/products/kaolin"
-   },
-   {
-    "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/fss-white-kaolin-clay"
    },
    {
     "s": "windy_point",
@@ -4529,9 +4520,20 @@
   ]
  },
  "pumpkinoil": {
-  "listings": 6,
+  "listings": 1,
   "suppliers": [
-   "aromantic",
+   "aromantic"
+  ],
+  "links": [
+   {
+    "s": "aromantic",
+    "u": "https://aromantic.co.uk/products/organic-pumpkin-seed-oil"
+   }
+  ]
+ },
+ "pumpkinseed": {
+  "listings": 5,
+  "suppliers": [
    "formulator_sample_shop",
    "lotioncrafter"
   ],
@@ -4546,10 +4548,6 @@
   ],
   "shelf_months": 12,
   "links": [
-   {
-    "s": "aromantic",
-    "u": "https://aromantic.co.uk/products/organic-pumpkin-seed-oil"
-   },
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-phyto-biotics-pumpkin-seed"
@@ -4921,7 +4919,7 @@
   ]
  },
  "salt": {
-  "listings": 5,
+  "listings": 3,
   "suppliers": [
    "windy_point"
   ],
