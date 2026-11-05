@@ -751,7 +751,12 @@ button.sseg:hover,button.sseg:focus-visible{filter:brightness(1.12)}
 .flip .push{display:flex;gap:8px;flex-wrap:wrap}.flip .push .btn.primary{margin-left:0}
 .flipbtn{display:inline-flex;align-items:center;gap:6px}.flipbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media (prefers-reduced-motion:reduce){.fl{transition:none}}
-.fl{position:relative}.flip:not(.flipped) .fl-b,.flip.flipped .fl-f{position:absolute;top:0;left:0;right:0;height:100%;overflow:hidden}
+.fl{position:relative}
+.ingtap{padding-left:18px}.ingpop{all:unset;cursor:pointer;color:var(--ink);text-decoration:underline dotted;text-underline-offset:3px;padding:6px 0;min-height:32px}.ingpop:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vban{border-left:4px solid currentColor;padding:8px 12px;border-radius:8px;font-weight:600;margin:2px 0}.vb-ok{background:var(--ok-bg,#e3efe6);color:var(--ok,#2a6b3f)}.vb-care{background:var(--care-bg,#f6ead2);color:var(--care,#8a5a00)}.vb-stop{background:var(--stop-bg,#f7dcd8);color:var(--stop,#9b2a1e)}
+.wstarget{align-items:center;gap:8px;flex-wrap:wrap}
+#ingSheet{border:0;border-radius:18px;padding:0;max-width:min(520px,94vw);width:100%;background:var(--surface);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.3)}#ingSheet::backdrop{background:rgba(20,20,20,.45)}
+#ingSheet .is-in{padding:20px 22px 18px;max-height:78vh;overflow:auto}#ingSheet h3{margin:6px 0 4px}#ingSheet .is-x{float:right;min-width:44px;min-height:44px}.flip:not(.flipped) .fl-b,.flip.flipped .fl-f{position:absolute;top:0;left:0;right:0;height:100%;overflow:hidden}
 .goal-chips{display:none}
 .goalbar{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap;margin:16px 0 14px}
 .gpick{position:relative;flex:1 1 260px;min-width:0}
@@ -1023,6 +1028,7 @@ a.btn{text-decoration:none;display:inline-flex;align-items:center}.cm-steps{marg
 .p-pick{background:var(--accent,#2c3e7a);color:#fff}
 </style>
 
+<dialog id="ingSheet" aria-labelledby="isName"><div class="is-in" id="isBody"></div></dialog>
 <div class="wrap">
 <header>
   <div class="brand">
@@ -4700,13 +4706,13 @@ function renderViral(){
       <h3>${esc(r.name)}</h3>
       ${r.inspired?`<p class="inspired">Inspired by ${esc(r.inspired)} · not affiliated</p>`:""}
       <p class="claim">The claim: ${esc(r.claim)}</p>
-      ${top&&a.verdict!=="ok"?`<p class="why">${esc(top.title)}</p>`:`<p class="why ok-why">No problems found</p>`}
+      ${top&&a.verdict!=="ok"?`<p class="why vban vb-${a.verdict}">${esc(top.title)}</p>`:`<p class="why ok-why vban vb-ok">No problems found</p>`}
       ${a.verdict!=="stop"?suitsHTML(k):""}
       <div class="push"><button class="btn flipbtn" data-flip aria-label="Flip for ingredients and tips"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg> Ingredients</button>${a.verdict!=="stop"?`<button class="btn primary" data-wsmake="${k}">Make it</button>`:""}</div>
      </div>
      <div class="fl-b" aria-hidden="true">
       <div class="vline"><span class="blabel">${esc(r.name)}</span></div>
-      <ul>${r.rows.map(([id,a2,u])=>`<li>${esc(BY[id].name)} <span class="amt">${a2} ${u}</span></li>`).join("")}</ul>
+      <ul class="ingtap">${r.rows.map(([id,a2,u])=>`<li><button type="button" class="ingpop" data-ingpop="${id}">${esc(BY[id].name)}</button> <span class="amt">${a2} ${u}</span></li>`).join("")}</ul>
       ${a.verdict!=="stop"?`<p class="tip"><strong>Before you start:</strong> ${esc(beforeTip(r.type,r.rows.map(x=>x[0]),r.use,top&&a.verdict!=="ok"?top.title:""))}</p>`:""}
       ${top&&a.verdict!=="ok"?`<p>${esc(top.body)}</p>`:`<div>${benChips(recipeBenefits(r.type,r.rows))}</div>`}
       ${r.note?`<p class="note">${esc(r.note)}</p>`:""}
@@ -7133,7 +7139,7 @@ function renderWS(){
   const sameGroup=id=>{const p=BY[id]&&BY[id].ph; return ING.filter(i=>i.ph===p).sort((a,b)=>a.name.localeCompare(b.name));};
   const tray=w.rows?`<ul class="wsedit">${w.rows.map(([id,a,u],i)=>`<li><select data-wsw="${i}" aria-label="Swap ingredient">${sameGroup(id).map(x=>`<option value="${x.id}" ${x.id===id?"selected":""}>${esc(x.name)}</option>`).join("")}</select><span class="wsamt"><input type="number" min="0" step="any" value="${fmtA(a)}" data-wsa="${i}" aria-label="Amount"><span>${esc(u)}</span></span><button class="icon-btn" data-wsx="${i}" aria-label="Remove">×</button></li>`).join("")}</ul>
       <div class="wsrow"><select id="wsAdd" aria-label="Add an ingredient"><option value="">+ Add an ingredient</option>${ING.filter(i=>!i.never).slice().sort((a,b)=>a.name.localeCompare(b.name)).map(i=>`<option value="${i.id}">${esc(i.name)}</option>`).join("")}</select>
-      <div class="tog" role="group" aria-label="Batch size"><button data-wss="0.5">½×</button><button data-wss="2">2×</button></div></div>`
+      <div class="tog" role="group" aria-label="Batch size"><button data-wss="0.5">½×</button><button data-wss="2">2×</button></div></div>${v&&v.total?`<div class="wsrow wstarget"><span class="hint">Make about</span><div class="tog" role="group" aria-label="Target batch size">${[50,100,250].map(g=>`<button data-wst="${g}" aria-pressed="${Math.abs(v.total-g)<g*0.04}">${g} g</button>`).join("")}</div><span class="hint">now ≈ ${fmtA(Math.round(v.total))} g</span></div>`:""}`
     :`<ul>${w.tray.map(([t,a])=>`<li><span>${esc(t)}</span><span class="amt">${esc(a)}</span></li>`).join("")}</ul>`;
   $("#wsOut").innerHTML=`<div class="panel wsbox">
     <div class="wstray"><div class="wshead"><div><div class="blabel">Your tray</div><h3>${esc(w.name)}</h3></div>${v?`<span class="pill ${VL[v.verdict][1]}">${VL[v.verdict][0]}</span>`:""}</div>
@@ -7153,11 +7159,17 @@ function renderWSRes(){
   $("#wsRes").innerHTML=hits.length?hits.map(k=>`<button class="wsresbtn" data-wsv="${k}"><span>${esc(VIRAL[k].name)}</span><span class="pill ${VL[VRES[k].verdict][1]}">${VL[VRES[k].verdict][0]}</span></button>`).join(""):`<p class="hint">No match. Try a shorter word.</p>`;
 }
 $("#wsSearch").addEventListener("input",renderWSRes);
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-ingpop]"); if(!b) return; e.stopPropagation(); const i=BY[b.dataset.ingpop]; if(!i) return;
+  const lv={ok:["Gentle","p-ok"],care:["Use with care","p-care"],stop:["Never on skin","p-stop"]}[i.lvl]||["",""];
+  $("#isBody").innerHTML=`<button class="btn is-x" data-isx aria-label="Close">✕</button><span class="blabel">${esc(i.grp||"")}</span><h3 id="isName">${esc(i.name)}</h3>${lv[0]?`<span class="pill ${lv[1]}">${lv[0]}</span>`:""}${i.flag?`<p class="why vban vb-${i.lvl==="stop"?"stop":"care"}">${esc(i.flag)}</p>`:""}${ingBody(i)}`;
+  const d=$("#ingSheet"); if(d.showModal) d.showModal(); else d.setAttribute("open",""); },true);
+document.addEventListener("click",e=>{ const d=$("#ingSheet"); if(!d||!d.open) return; if(e.target.closest("[data-isx]")||e.target===d) d.close(); });
 $("#wsRes").addEventListener("click",e=>{const b=e.target.closest("[data-wsv]"); if(!b) return; const r=VIRAL[+b.dataset.wsv]; wsSel=null; wsOpen({name:r.name,claim:r.claim,type:r.type,use:r.use,rows:r.rows,note:r.note}); $("#wsRes").innerHTML=""; $("#wsSearch").value="";});
 $("#wsGrid").addEventListener("click",e=>{const b=e.target.closest("[data-ws]"); if(!b) return; if(wsSel===b.dataset.ws){wsSel=null; wsCur=null; renderWS(); return;} wsSel=b.dataset.ws; wsOpen(WS.find(x=>x.id===wsSel));});
 $("#wsOut").addEventListener("click",e=>{
   const n=e.target.closest("[data-wsnav]"); if(n){ wsStep=Math.max(0,wsStep+ +n.dataset.wsnav); renderWS(); return; }
   const x=e.target.closest("[data-wsx]"); if(x){ wsCur.rows.splice(+x.dataset.wsx,1); wsCur.steps=null; renderWS(); return; }
+  const st=e.target.closest("[data-wst]"); if(st){ const v=wsVerdict(); if(v&&v.total){ const f=+st.dataset.wst/v.total; wsCur.rows.forEach(r=>{const x=r[1]*f; r[1]=r[2]==="drops"?Math.max(1,Math.round(x)):r[2]==="pinch"?Math.max(1,Math.round(x)):Math.round(x*10)/10;}); renderWS(); } return; }
   const sc=e.target.closest("[data-wss]"); if(sc){ wsCur.rows.forEach(r=>r[1]=r[1]*+sc.dataset.wss); renderWS(); return; }
   if(e.target.closest("[data-wscheck]")) loadRecipe({name:wsCur.name,claim:wsCur.what,type:wsCur.type,use:wsCur.use,rows:wsCur.rows});
 });
