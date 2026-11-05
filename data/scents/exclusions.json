@@ -1,53 +1,65 @@
 {
- "_about": "Exclusion log: accounts and products deliberately left out of the Scent Atlas, with the reason, so they aren't re-added by accident.",
- "items": [
-  {
-   "name": "sweet_dreamperfumes",
-   "where": "Instagram (Dubai seller)",
-   "reason": "Sells copies/imitations of major-brand fragrances ('factory-direct, 10,000+ scents'); doesn't fit the Atlas's original-creation focus.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Fatma Fragrance Oil (fatma_fragranceoil)",
-   "where": "Deira Gold Souq, Dubai",
-   "reason": "B2B wholesaler of inspired (copy) oils and private label, MOQ 100 ml; not a consumer perfume house.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Luxodor (luxodoroil)",
-   "where": "Al Quoz, Dubai",
-   "reason": "B2B supplier of Swiss-made fragrance oils to brands (samples, bulk); not a consumer perfume house. Could suit the Global Regional Map as a sourcing lead instead.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "MS Luxury Perfumes 'Parfum Milky' (marouaa_shop)",
-   "where": "Morocco (219 DH)",
-   "reason": "Post is labelled AI content; skipped under the no-AI-content rule.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Kenzo Parfum d'Été",
-   "where": "retailer listing",
-   "reason": "Big designer brand; out of scope.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Atelier Cologne Vanille Insensée",
-   "where": "creator rotation",
-   "reason": "Big-group brand (L'Oréal); out of scope.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Botari (botari.k) hand creams",
-   "where": "Korea",
-   "reason": "Scented hand creams, not perfume; out of scope.",
-   "on": "2026-11-03"
-  },
-  {
-   "name": "Cieal Perfumes (ciealperfumes)",
-   "where": "Calicut, Kerala, India",
-   "reason": "Most of its range is sold as 'inspired versions' of designer perfumes (Jean Paul Gaultier, YSL, Burberry, Victoria's Secret). Its solid perfume tins come only in sets of 12 × 10 g (₹890) with no named scents or notes.",
-   "on": "2026-11-05"
-  }
- ]
+  "_about": "Exclusion log: accounts and products deliberately left out of the Scent Atlas, with the reason, so they aren't re-added by accident.",
+  "items": [
+    {
+      "name": "sweet_dreamperfumes",
+      "where": "Instagram (Dubai seller)",
+      "reason": "Sells copies/imitations of major-brand fragrances ('factory-direct, 10,000+ scents'); doesn't fit the Atlas's original-creation focus.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Fatma Fragrance Oil (fatma_fragranceoil)",
+      "where": "Deira Gold Souq, Dubai",
+      "reason": "B2B wholesaler of inspired (copy) oils and private label, MOQ 100 ml; not a consumer perfume house.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Luxodor (luxodoroil)",
+      "where": "Al Quoz, Dubai",
+      "reason": "B2B supplier of Swiss-made fragrance oils to brands (samples, bulk); not a consumer perfume house. Could suit the Global Regional Map as a sourcing lead instead.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "MS Luxury Perfumes 'Parfum Milky' (marouaa_shop)",
+      "where": "Morocco (219 DH)",
+      "reason": "Post is labelled AI content; skipped under the no-AI-content rule.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Kenzo Parfum d'Été",
+      "where": "retailer listing",
+      "reason": "Big designer brand; out of scope.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Atelier Cologne Vanille Insensée",
+      "where": "creator rotation",
+      "reason": "Big-group brand (L'Oréal); out of scope.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Botari (botari.k) hand creams",
+      "where": "Korea",
+      "reason": "Scented hand creams, not perfume; out of scope.",
+      "on": "2026-11-03"
+    },
+    {
+      "name": "Cieal Perfumes (ciealperfumes)",
+      "where": "Calicut, Kerala, India",
+      "reason": "Most of its range is sold as 'inspired versions' of designer perfumes (Jean Paul Gaultier, YSL, Burberry, Victoria's Secret). Its solid perfume tins come only in sets of 12 × 10 g (₹890) with no named scents or notes.",
+      "on": "2026-11-05"
+    },
+    {
+      "name": "Cloudar (Drake)",
+      "where": "Instagram ad",
+      "reason": "Celebrity fragrance line, outside the Atlas's small-house focus.",
+      "on": "2026-11-05"
+    },
+    {
+      "name": "Big and celebrity launches in the Oct/Nov release lists",
+      "where": "Instagram release roundups",
+      "reason": "Valentino, Rabanne, Jo Malone, Paris Hilton, Tate McRae, Dove, eos and Squishmallows: big designer, celebrity or mass brands.",
+      "on": "2026-11-05"
+    }
+  ]
 }

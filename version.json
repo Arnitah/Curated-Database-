@@ -1,6 +1,6 @@
 {
-  "version": 171,
-  "updated_at": "2026-11-05T05:24:15.467Z",
+  "version": 172,
+  "updated_at": "2026-11-05T05:46:05.534Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -322,9 +322,9 @@
     },
     "scents/exclusions": {
       "count": 2,
-      "bytes": 1972,
-      "hash": "eb221f3d411c",
-      "updated_at": "2026-11-05T05:20:20.769Z"
+      "bytes": 2590,
+      "hash": "f302c3a31187",
+      "updated_at": "2026-11-05T05:46:05.527Z"
     },
     "scents/families": {
       "count": 12,
@@ -334,9 +334,9 @@
     },
     "scents/fieldnotes": {
       "count": 2,
-      "bytes": 2267,
-      "hash": "cbeeb760407f",
-      "updated_at": "2026-11-05T05:24:15.465Z"
+      "bytes": 2936,
+      "hash": "46491c7baf15",
+      "updated_at": "2026-11-05T05:46:05.534Z"
     },
     "scents/geo": {
       "count": 178,
@@ -346,15 +346,15 @@
     },
     "scents/houses": {
       "count": 178,
-      "bytes": 274087,
-      "hash": "6bc80dafe0d6",
-      "updated_at": "2026-11-05T02:06:11.926Z"
+      "bytes": 305199,
+      "hash": "9b2f6d8446d5",
+      "updated_at": "2026-11-05T05:46:05.534Z"
     },
     "scents/leads": {
-      "count": 174,
-      "bytes": 90601,
-      "hash": "a2e535cf881d",
-      "updated_at": "2026-11-05T05:24:15.466Z"
+      "count": 177,
+      "bytes": 95851,
+      "hash": "46307ddb88bd",
+      "updated_at": "2026-11-05T05:46:05.534Z"
     },
     "scents/materials": {
       "count": 3,
@@ -364,9 +364,9 @@
     },
     "scents/observations": {
       "count": 2,
-      "bytes": 63117,
-      "hash": "225b61b8e74e",
-      "updated_at": "2026-11-05T05:24:15.466Z"
+      "bytes": 71631,
+      "hash": "8da815e9b9f0",
+      "updated_at": "2026-11-05T05:46:05.534Z"
     },
     "scents/rates": {
       "count": 5,
@@ -382,9 +382,9 @@
     },
     "scents/releases": {
       "count": 3,
-      "bytes": 6919,
-      "hash": "625c127a038b",
-      "updated_at": "2026-10-27T19:36:38.578Z"
+      "bytes": 9112,
+      "hash": "f8054713dd2b",
+      "updated_at": "2026-11-05T05:46:05.534Z"
     },
     "scents/spotlights": {
       "count": 1,

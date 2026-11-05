@@ -1,63 +1,74 @@
 {
- "_about": "The Atlas's field notebook: what was found, checked, corrected or excluded, newest first. The weekly check adds price changes and broken links automatically.",
- "entries": [
-  {
-   "on": "2026-11-05",
-   "kind": "checked",
-   "text": "Brunbae Sweet Seduction confirmed on its shop (₹1,199 sale / ₹1,999, 50 ml, water-based) with full notes; Hair Drama Co. is in Ahmedabad, Marshmallow Whip sold as a ₹299 gift pouch of 2."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "excluded",
-   "text": "Excluded Cieal: its shop is mostly 'inspired versions' of designer perfumes."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "checked",
-   "text": "Amafhh checked: an artisan attar and oud house (French-made blends, bottled in India), not a solid-perfume brand."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "inbox",
-   "text": "First find from the new inbox: 12 perfumes from six screenshots. Prices or notes confirmed for Ellis Brooklyn Marshmallows, NOYZ, Jovoy Fire at Will (sold in Montreal), Naseem Crystal Berry, Kyse Delizia di Marshmallow and Rosie Jane Dulce."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "open",
-   "text": "Still unconfirmed: Brunbae Sweet Seduction, Hair Drama Marshmallow Whip, Cieal and Amafhh Herbarium solid tins. No shop found yet."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "system",
-   "text": "Started keeping one dated record per price sighting (observations), so prices can go stale visibly."
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "added",
-   "text": "Added Zhiwuzhi and Zhufu, two Chinese tea houses sold in London and San Francisco, with checked prices.",
-   "ref": "zhiwuzhi"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "corrected",
-   "text": "Tea Mountain is smoked black tea (Lapsang Souchong), not green tea.",
-   "ref": "uttori"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "corrected",
-   "text": "Separated Uttori's two marketplace prices (¥188 and ¥218) instead of picking one.",
-   "ref": "uttori"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "moved",
-   "text": "Took MAT KURO atelier off the map until its Shanghai address is confirmed."
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "excluded",
-   "text": "Started an exclusion log: copy-scent sellers, bulk oil suppliers and AI-made posts stay out."
-  }
- ]
+  "_about": "The Atlas's field notebook: what was found, checked, corrected or excluded, newest first. The weekly check adds price changes and broken links automatically.",
+  "entries": [
+    {
+      "on": "2026-11-05",
+      "kind": "checked",
+      "text": "Brunbae Sweet Seduction confirmed on its shop (₹1,199 sale / ₹1,999, 50 ml, water-based) with full notes; Hair Drama Co. is in Ahmedabad, Marshmallow Whip sold as a ₹299 gift pouch of 2."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "excluded",
+      "text": "Excluded Cieal: its shop is mostly 'inspired versions' of designer perfumes."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "checked",
+      "text": "Amafhh checked: an artisan attar and oud house (French-made blends, bottled in India), not a solid-perfume brand."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "inbox",
+      "text": "First find from the new inbox: 12 perfumes from six screenshots. Prices or notes confirmed for Ellis Brooklyn Marshmallows, NOYZ, Jovoy Fire at Will (sold in Montreal), Naseem Crystal Berry, Kyse Delizia di Marshmallow and Rosie Jane Dulce."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "open",
+      "text": "Still unconfirmed: Brunbae Sweet Seduction, Hair Drama Marshmallow Whip, Cieal and Amafhh Herbarium solid tins. No shop found yet."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "system",
+      "text": "Started keeping one dated record per price sighting (observations), so prices can go stale visibly."
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "added",
+      "text": "Added Zhiwuzhi and Zhufu, two Chinese tea houses sold in London and San Francisco, with checked prices.",
+      "ref": "zhiwuzhi"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "corrected",
+      "text": "Tea Mountain is smoked black tea (Lapsang Souchong), not green tea.",
+      "ref": "uttori"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "corrected",
+      "text": "Separated Uttori's two marketplace prices (¥188 and ¥218) instead of picking one.",
+      "ref": "uttori"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "moved",
+      "text": "Took MAT KURO atelier off the map until its Shanghai address is confirmed."
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "excluded",
+      "text": "Started an exclusion log: copy-scent sellers, bulk oil suppliers and AI-made posts stay out."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "inbox",
+      "text": "Worked through 30 screenshots: added Voice from the Sky, Chabaud's chocolate scent, Gabar's Deities line, Haeze and a November release list. Several bottles in the screenshots had no visible brand and wait on names."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "price-seen",
+      "text": "Gabar Nagar Min shows $202 at Stele NYC today; a screenshot from a few days earlier showed $208.",
+      "ref": "gabar-nagar-min-price-1"
+    }
+  ]
 }
