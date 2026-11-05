@@ -2263,6 +2263,57 @@
    "src": "https://houseofamafhh.com/collections/artisenal-scents/products/mukhallat-prachin-50ml",
    "seen": "2026-11-05",
    "note": "'From' price on the collection page; a 10 ml size is also listed."
+  },
+  {
+   "id": "brunbae-sweet-seduction-price-1",
+   "lead": "Brunbae and Hair Drama (Indian hair and body mists)",
+   "product": "Brunbae Sweet Seduction (water-based, 50 ml)",
+   "kind": "price",
+   "amt": 1199,
+   "cur": "INR",
+   "ml": 50,
+   "evidence": "checked",
+   "src": "https://brunbae.com/collections/perfume/products/sweet-seduction",
+   "seen": "2026-11-05",
+   "note": "Sale price; regular ₹1,999."
+  },
+  {
+   "id": "brunbae-celestial-sass-price-2",
+   "lead": "Brunbae and Hair Drama (Indian hair and body mists)",
+   "product": "Brunbae Celestial Sass (water-based, 50 ml)",
+   "kind": "price",
+   "amt": 1199,
+   "cur": "INR",
+   "ml": 50,
+   "evidence": "checked",
+   "src": "https://brunbae.com/collections/perfume/products/celestial-sass",
+   "seen": "2026-11-05",
+   "note": "Sale price; regular ₹1,999."
+  },
+  {
+   "id": "hairdrama-marshmallow-whip-price-1",
+   "lead": "Brunbae and Hair Drama (Indian hair and body mists)",
+   "product": "Hair Drama Marshmallow Whip gift pouch (set of 2)",
+   "kind": "price",
+   "amt": 299,
+   "cur": "INR",
+   "ml": null,
+   "evidence": "checked",
+   "src": "https://hairdramacompany.com/collections/fragrance-styling/products/marshmallow-whip-gift-pouch",
+   "seen": "2026-11-05",
+   "note": "Contents and sizes not stated on the listing."
+  },
+  {
+   "id": "hairdrama-sea-you-soon-price-1",
+   "lead": "Brunbae and Hair Drama (Indian hair and body mists)",
+   "product": "Hair Drama Sea You Soon hair perfume mist",
+   "kind": "price",
+   "amt": 249,
+   "cur": "INR",
+   "ml": 20,
+   "evidence": "checked",
+   "src": "https://hairdramacompany.com/collections/fragrance-styling/products/sea-you-soon-hair-perfume-mist-20ml-fresh-aquatic-0-alcohol-with-rice-protein",
+   "seen": "2026-11-05"
   }
  ]
 }
