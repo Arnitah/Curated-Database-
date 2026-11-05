@@ -2250,6 +2250,19 @@
    "evidence": "database",
    "src": "https://www.parfumo.com/Perfumes/by-rosie-jane/dulce-eau-de-parfum",
    "seen": "2026-11-04"
+  },
+  {
+   "id": "amafhh-mukhallat-prachin-price-1",
+   "lead": "Solid perfume tins (India)",
+   "product": "Amafhh Mukhallat Prachin (attar)",
+   "kind": "price",
+   "amt": 7000,
+   "cur": "INR",
+   "ml": 50,
+   "evidence": "checked",
+   "src": "https://houseofamafhh.com/collections/artisenal-scents/products/mukhallat-prachin-50ml",
+   "seen": "2026-11-05",
+   "note": "'From' price on the collection page; a 10 ml size is also listed."
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
-  "version": 169,
-  "updated_at": "2026-11-05T04:59:07.188Z",
+  "version": 170,
+  "updated_at": "2026-11-05T05:20:20.774Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -322,9 +322,9 @@
     },
     "scents/exclusions": {
       "count": 2,
-      "bytes": 1621,
-      "hash": "2453c0dc82cd",
-      "updated_at": "2026-11-03T21:53:37.752Z"
+      "bytes": 1972,
+      "hash": "eb221f3d411c",
+      "updated_at": "2026-11-05T05:20:20.769Z"
     },
     "scents/families": {
       "count": 12,
@@ -334,9 +334,9 @@
     },
     "scents/fieldnotes": {
       "count": 2,
-      "bytes": 1681,
-      "hash": "10185de00e42",
-      "updated_at": "2026-11-05T02:06:11.922Z"
+      "bytes": 2007,
+      "hash": "3c176453e238",
+      "updated_at": "2026-11-05T05:20:20.774Z"
     },
     "scents/geo": {
       "count": 178,
@@ -352,9 +352,9 @@
     },
     "scents/leads": {
       "count": 174,
-      "bytes": 89697,
-      "hash": "5bd13730c1b1",
-      "updated_at": "2026-11-05T04:59:07.179Z"
+      "bytes": 90008,
+      "hash": "3111f73e41b9",
+      "updated_at": "2026-11-05T05:20:20.774Z"
     },
     "scents/materials": {
       "count": 3,
@@ -364,9 +364,9 @@
     },
     "scents/observations": {
       "count": 2,
-      "bytes": 60915,
-      "hash": "fd8b235f50d9",
-      "updated_at": "2026-11-05T02:06:11.926Z"
+      "bytes": 61356,
+      "hash": "43c0c94e4f14",
+      "updated_at": "2026-11-05T05:20:20.774Z"
     },
     "scents/rates": {
       "count": 5,
