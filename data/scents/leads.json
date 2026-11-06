@@ -1596,5 +1596,19 @@
     "cc": "IN",
     "lead": "New Delhi-based independent fragrance house, described on its current official site as founded by a Delhi-based perfumer and operating since 2018. Active online catalogue includes perfumes, essential oils and botanical skincare. Founder is not named on the page and manufacturing location is not established; keep as a reported discovery lead pending identity and production verification.",
     "src": "https://scentuaryindia.com/pages/our-story"
+  },
+  {
+    "name": "Pisello Parfum",
+    "country": "Mexico",
+    "cc": "MX",
+    "lead": "Mexico-based artisanal perfume house led by perfumer and artist Alejandro Bojórquez (also credited as Manuel Alejandro Bojórquez Segovia). Official site lists a current, substantial catalogue, discovery sets, and states that fragrances are created and bottled in Mexico; specialist retailer ZGO independently describes the house as handcrafted in Mexico. Founder/brand ownership and actual production arrangements merit further corroboration. Distinguish this from the previously added Lula Curioca atelier; separate house.",
+    "src": "https://www.piselloparfum.com/pages/nosotros"
+  },
+  {
+    "name": "SCENGE",
+    "country": "Switzerland",
+    "cc": "CH",
+    "lead": "Zürich-based rare niche perfume house founded in 2023. Official site lists three Extrait de Parfum creations, says they are hand-composed and crafted in Zürich, and identifies an atelier at Glockengasse 3 and membership in the Made in Zürich Initiative. Very limited/on-request sales; verify independent evidence of the perfume manufacturing process and ownership. Do not conflate the flacon/woodwork origin with perfume formulation/filling without further evidence.",
+    "src": "https://scenge.com/about"
   }
 ]
