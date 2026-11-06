@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-05T18:49:16.785Z",
+ "built_at": "2026-11-06T18:04:46.355Z",
  "note": "Most common ingredients in hub products that Clay's checker and Safe Batch do not explain yet (fillers removed). Work from the top.",
  "explained_in_safe_batch": 291,
  "queue": [
@@ -9,7 +9,7 @@
   },
   {
    "ingredient": "caprylyl glycol",
-   "products": 1451
+   "products": 1452
   },
   {
    "ingredient": "butyrospermum parkii butter",
@@ -220,12 +220,12 @@
    "products": 314
   },
   {
-   "ingredient": "glyceryl caprylate",
+   "ingredient": "dicaprylyl carbonate",
    "products": 303
   },
   {
-   "ingredient": "dicaprylyl carbonate",
-   "products": 302
+   "ingredient": "glyceryl caprylate",
+   "products": 303
   },
   {
    "ingredient": "glyceryl stearate se",
@@ -240,12 +240,12 @@
    "products": 293
   },
   {
-   "ingredient": "chamomilla recutita flower extract",
+   "ingredient": "betaine",
    "products": 292
   },
   {
-   "ingredient": "betaine",
-   "products": 291
+   "ingredient": "chamomilla recutita flower extract",
+   "products": 292
   },
   {
    "ingredient": "sodium levulinate",
@@ -361,7 +361,7 @@
   },
   {
    "ingredient": "magnesium sulfate",
-   "products": 214
+   "products": 215
   },
   {
    "ingredient": "ppg-5-ceteth-20",
@@ -468,15 +468,15 @@
    "products": 167
   },
   {
+   "ingredient": "sodium gluconate",
+   "products": 166
+  },
+  {
    "ingredient": "sodium polyacrylate",
    "products": 166
   },
   {
    "ingredient": "ethylparaben",
-   "products": 165
-  },
-  {
-   "ingredient": "sodium gluconate",
    "products": 165
   },
   {
