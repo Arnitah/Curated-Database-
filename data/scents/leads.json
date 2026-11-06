@@ -1526,5 +1526,47 @@
     "checked": "2026-11-05",
     "lead": "Not independent: a brand Target co-developed with Josh Williams and Eric Prum, sold only at Target from 1 November 2026. Five scents (& Only This, Petal Pusher, SPF 1987, Down Pour, Ember Noir) as eau de parfum ($49), mist ($25), solid ($20), candle ($10) and a discovery set ($20). Kept as a lead for price comparison, not as a house.",
     "src": "https://corporate.target.com/news-features/article/2026/10/haeze-fine-fragrance"
+  },
+  {
+    "name": "Jijide",
+    "country": "Italy",
+    "cc": "IT",
+    "lead": "2016-founded artistic perfumery brand; official site describes cross-cultural artist collaborations and production within 50 km of metropolitan Milan. Broad-discovery lead; ownership and manufacturing details need independent corroboration.",
+    "src": "https://www.jijide.com/en"
+  },
+  {
+    "name": "Hart + Hedi",
+    "country": "Australia",
+    "cc": "AU",
+    "lead": "Independent Australian fragrance house founded by Juliette Fournier and Richard Adamson; official brand says it uses Australian native flora and designs, makes and packages products in Australia. Verify exact manufacturing arrangements and current ownership.",
+    "src": "https://www.hartandhedi.com/pages/our-story"
+  },
+  {
+    "name": "Fort & Manlé",
+    "country": "Australia",
+    "cc": "AU",
+    "lead": "Luxury niche perfume house associated with founder-perfumer Rasei Fort; official site describes handcrafted perfume and artisanal blending. Verify company base, production location and current catalogue.",
+    "src": "https://fortandmanle.com/pages/about-us"
+  },
+  {
+    "name": "Aurrelis",
+    "country": "India",
+    "cc": "IN",
+    "lead": "Mumbai fragrance house founded by Sourjya Mohanty; official founder/about pages describe a perfumer-led business with Extrait and alcohol-free attar collections. Very recent launch coverage dated 6 Nov 2026; catalogue, manufacturing and operating status need independent checks.",
+    "src": "https://www.aurrelis.com/pages/our-founder"
+  },
+  {
+    "name": "Amyi",
+    "country": "Brazil",
+    "cc": "BR",
+    "lead": "Brazilian niche perfumery brand founded in 2019; official site names Larissa Mota, Paula Penna and Luciana Guidi and describes collaborative work with Brazilian perfumers. Verify current ownership, production location and active catalogue.",
+    "src": "https://amyi.co/pages/sobre-nos"
+  },
+  {
+    "name": "Oaken Lab",
+    "country": "Indonesia",
+    "cc": "ID",
+    "lead": "Jakarta-rooted Indonesian artisan scent and body-care brand; official site says founders handmake fragrances, with a store in Ubud. Jakarta Post reporting (2025) describes its founders and move into perfume after body-care experimentation. Already has a full house record; retain here only as a discovery cross-reference, not a duplicate house entry.",
+    "src": "https://oakenlab.com/"
   }
 ]
