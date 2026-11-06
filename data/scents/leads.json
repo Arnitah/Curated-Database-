@@ -1568,5 +1568,33 @@
     "cc": "ID",
     "lead": "Jakarta-rooted Indonesian artisan scent and body-care brand; official site says founders handmake fragrances, with a store in Ubud. Jakarta Post reporting (2025) describes its founders and move into perfume after body-care experimentation. Already has a full house record; retain here only as a discovery cross-reference, not a duplicate house entry.",
     "src": "https://oakenlab.com/"
+  },
+  {
+    "name": "Lula Curioca Olfactory Studio",
+    "country": "Mexico",
+    "cc": "MX",
+    "lead": "Independent Mexico-based artisanal perfumery atelier founded in 2018 by perfumer and olfactory artist Lula Curioca. Current official catalogue lists multiple eau de parfums and discovery/travel formats; a Mexico City lab-atelier offers bespoke perfumery and the brand describes small-batch artisanal production. Strong discovery lead; verify legal entity, founder ownership and distribution beyond direct sales.",
+    "src": "https://www.lulacurioca.com/acerca?lang=en"
+  },
+  {
+    "name": "Maison Alverin",
+    "country": "Switzerland",
+    "cc": "CH",
+    "lead": "Independent Swiss perfume manufactory founded by brothers Samuel and Jonathan Vinzens. Official site states that it develops and composes its own formulas, produces small batches in Switzerland, hand-fills perfumes and makes its own wooden flacons; current product and direct shop are listed. Strong discovery lead; verify legal/company registration and independent corroboration of manufacturing claims.",
+    "src": "https://www.maisonalverin.ch/unsere-geschichte/schweizer-parfum-manufaktur"
+  },
+  {
+    "name": "House of Velara",
+    "country": "Indonesia",
+    "cc": "ID",
+    "lead": "Independent Indonesian narrative fragrance house operated by PT Velara Semesta Indonesia (business registration NIB 2307260134229). Official page distinguishes registered office in Jakarta from operations in Medan, North Sumatra, and says fragrances are released in limited numbered batches. Verify actual perfume manufacturing site and founder/ownership details; do not conflate fulfilment location with production origin.",
+    "src": "https://velarafragrance.com/about"
+  },
+  {
+    "name": "Scentuary",
+    "country": "India",
+    "cc": "IN",
+    "lead": "New Delhi-based independent fragrance house, described on its current official site as founded by a Delhi-based perfumer and operating since 2018. Active online catalogue includes perfumes, essential oils and botanical skincare. Founder is not named on the page and manufacturing location is not established; keep as a reported discovery lead pending identity and production verification.",
+    "src": "https://scentuaryindia.com/pages/our-story"
   }
 ]
