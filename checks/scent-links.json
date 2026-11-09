@@ -1,9 +1,9 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-09",
  "summary": {
-  "pass": 157,
-  "blocked": 13,
-  "fail": 5
+  "pass": 161,
+  "blocked": 15,
+  "fail": 2
  },
  "houses": {
   "parfum-satori": {
@@ -64,7 +64,7 @@
   "uttori": {
    "site": "pass",
    "sig": "pass",
-   "price": "pass"
+   "price": "blocked"
   },
   "ichun": {
    "site": "pass",
@@ -132,9 +132,9 @@
    "price": "pass"
   },
   "swiss-arabian": {
-   "site": "fail 412",
-   "sig": "fail 412",
-   "price": "fail 412"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "lattafa": {
    "site": "pass",
@@ -148,7 +148,7 @@
   },
   "saint-dici": {
    "site": "pass",
-   "sig": "fail UND_ERR_CONNECT_TIMEOUT",
+   "sig": "pass",
    "price": "pass"
   },
   "scentury": {
@@ -632,9 +632,9 @@
    "price": "pass"
   },
   "pekji": {
-   "site": "fail ETIMEDOUT",
-   "sig": "fail ETIMEDOUT",
-   "price": "fail ETIMEDOUT"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "aftelier": {
    "site": "pass",
@@ -652,8 +652,8 @@
    "price": "blocked"
   },
   "bath-body-works": {
-   "site": "pass",
-   "sig": "pass",
+   "site": "blocked",
+   "sig": "blocked",
    "price": "fail ENOTFOUND"
   },
   "cyklar": {
@@ -879,6 +879,21 @@
   "son-venin": {
    "site": "pass",
    "sig": "pass",
+   "price": "pass"
+  },
+  "zhiwuzhi": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "zhufu": {
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
+  },
+  "nostos": {
+   "site": "pass",
+   "sig": "blocked",
    "price": "pass"
   }
  }

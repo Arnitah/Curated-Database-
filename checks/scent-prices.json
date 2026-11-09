@@ -1,19 +1,7 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-09",
  "note": "Live variant prices read from shop product data. Prices are in each shop’s base currency, which can differ from the local price on the page (e.g. a store that shows CAD may report USD here). \"changed\" means different from the last run: review and update houses.json by hand.",
  "houses": {
-  "bombay-perfumery": {
-   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk.json",
-   "product": "CHAI MUSK",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 90,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "to-summer": {
    "src": "https://tosummer.shop/products/osmanthus-perfume.json",
    "product": "OSMANTHUS PERFUME",
@@ -29,7 +17,19 @@
      "available": null
     }
    ],
-   "changed": true
+   "changed": false
+  },
+  "bombay-perfumery": {
+   "src": "https://global.bombayperfumery.com/collections/perfumes/products/chai-musk.json",
+   "product": "CHAI MUSK",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 90,
+     "available": null
+    }
+   ],
+   "changed": false
   },
   "shoyeido": {
    "src": "https://shoyeido.com/products/daily-kyonishiki-autumnleaves.json",
@@ -70,6 +70,18 @@
    ],
    "changed": false
   },
+  "hmns": {
+   "src": "https://hmnsperfume.com/products/orgsm.json",
+   "product": "HMNS ORGSM Eau De Parfum 100 ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 524358,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
   "tadhana": {
    "src": "https://www.tadhana.co/products/rockstar.json",
    "product": "Rockstar",
@@ -82,18 +94,6 @@
     {
      "title": "10ml travel size",
      "price": 45,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "hmns": {
-   "src": "https://hmnsperfume.com/products/orgsm.json",
-   "product": "HMNS ORGSM Eau De Parfum 100 ml",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 524358,
      "available": null
     }
    ],
@@ -190,9 +190,27 @@
    "src": "https://naturabrasil.com/products/ekos-ryo-chuva-eau-de-toilette.json",
    "error": 404
   },
-  "coqui-coqui": {
-   "src": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui.json",
-   "error": 404
+  "imaginary-authors": {
+   "src": "https://imaginaryauthors.com/products/a-city-on-fire.json",
+   "product": "A CITY ON FIRE - FRAGRANCE",
+   "variants": [
+    {
+     "title": "50ml",
+     "price": 115,
+     "available": null
+    },
+    {
+     "title": "14ml",
+     "price": 46,
+     "available": null
+    },
+    {
+     "title": "2ml",
+     "price": 7,
+     "available": null
+    }
+   ],
+   "changed": false
   },
   "goldfield-banks": {
    "src": "https://www.goldfieldandbanks.com/products/pacific-rock-moss.json",
@@ -216,65 +234,25 @@
    ],
    "changed": false
   },
-  "imaginary-authors": {
-   "src": "https://imaginaryauthors.com/products/a-city-on-fire.json",
-   "product": "A CITY ON FIRE - FRAGRANCE",
+  "reunrom": {
+   "src": "https://reunrom.com/products/reunrom-perfume-100ml-bangkokian-moon-cap.json",
+   "product": "Reunrom Moon Perfume 100ml Bangkokian",
    "variants": [
     {
-     "title": "50ml",
-     "price": 115,
-     "available": null
-    },
-    {
-     "title": "14ml",
-     "price": 46,
-     "available": null
-    },
-    {
-     "title": "2ml",
-     "price": 7,
+     "title": "Default Title",
+     "price": 1832,
      "available": null
     }
    ],
    "changed": false
+  },
+  "coqui-coqui": {
+   "src": "https://www.luckyscent.com/products/flor-de-naranjo-by-coqui-coqui.json",
+   "error": 404
   },
   "xinu": {
    "src": "https://www.luckyscent.com/products/copala-by-xinu.json",
    "error": 404
-  },
-  "hiram-green": {
-   "src": "https://hiramgreen.com/products/moon-bloom.json",
-   "product": "Moon bloom",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 220,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "kinfolk-notes": {
-   "src": "https://kinfolknotes.com/products/edp-gds.json",
-   "product": "[오 드 퍼퓸] 가든샤워",
-   "variants": [
-    {
-     "title": "30ml",
-     "price": 110,
-     "available": null
-    },
-    {
-     "title": "50ml",
-     "price": 150,
-     "available": null
-    },
-    {
-     "title": "100ml",
-     "price": 220,
-     "available": null
-    }
-   ],
-   "changed": false
   },
   "youssoful": {
    "src": "https://www.dodoskin.com/products/youssoful-je-taime-extrait-de-parfum-50ml.json",
@@ -283,6 +261,18 @@
     {
      "title": "Default Title",
      "price": 75,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "hiram-green": {
+   "src": "https://hiramgreen.com/products/moon-bloom.json",
+   "product": "Moon bloom",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 220,
      "available": null
     }
    ],
@@ -316,13 +306,23 @@
    ],
    "changed": false
   },
-  "oct-kw": {
-   "src": "https://octkw.com/products/hot-cakes-%F0%9F%8E%82.json",
-   "product": "Hot cakes 🎂",
+  "kinfolk-notes": {
+   "src": "https://kinfolknotes.com/products/edp-gds.json",
+   "product": "[오 드 퍼퓸] 가든샤워",
    "variants": [
     {
-     "title": "Default Title",
-     "price": 13,
+     "title": "30ml",
+     "price": 110,
+     "available": null
+    },
+    {
+     "title": "50ml",
+     "price": 150,
+     "available": null
+    },
+    {
+     "title": "100ml",
+     "price": 220,
      "available": null
     }
    ],
@@ -335,18 +335,6 @@
     {
      "title": "Default Title",
      "price": 178,
-     "available": null
-    }
-   ],
-   "changed": true
-  },
-  "reunrom": {
-   "src": "https://reunrom.com/products/reunrom-perfume-100ml-bangkokian-moon-cap.json",
-   "product": "Reunrom Moon Perfume 100ml Bangkokian",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 1832,
      "available": null
     }
    ],
@@ -364,31 +352,21 @@
    ],
    "changed": false
   },
-  "dries-van-noten": {
-   "src": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten.json",
-   "error": 404
-  },
-  "neesh": {
-   "src": "https://neeshperfumes.com/products/haute-vetiver.json",
-   "product": "Haute Vetiver",
+  "oct-kw": {
+   "src": "https://octkw.com/products/hot-cakes-%F0%9F%8E%82.json",
+   "product": "Hot cakes 🎂",
    "variants": [
     {
-     "title": "100ml",
-     "price": 8500,
-     "available": null
-    },
-    {
-     "title": "50ml",
-     "price": 6490,
-     "available": null
-    },
-    {
-     "title": "15ml",
-     "price": 1900,
+     "title": "Default Title",
+     "price": 13,
      "available": null
     }
    ],
    "changed": false
+  },
+  "dries-van-noten": {
+   "src": "https://www.luckyscent.com/products/soie-malaquais-by-dries-van-noten.json",
+   "error": 404
   },
   "naso-profumi": {
    "src": "https://nasoprofumi.com/products/khus-noir.json",
@@ -407,13 +385,23 @@
    ],
    "changed": false
   },
-  "saff-and-co": {
-   "src": "https://saffnco.com/products/extrait-de-parfum-mechline.json",
-   "product": "Extrait de Parfum MECHLINE",
+  "neesh": {
+   "src": "https://neeshperfumes.com/products/haute-vetiver.json",
+   "product": "Haute Vetiver",
    "variants": [
     {
-     "title": "Default Title",
-     "price": 319000,
+     "title": "100ml",
+     "price": 8500,
+     "available": null
+    },
+    {
+     "title": "50ml",
+     "price": 6490,
+     "available": null
+    },
+    {
+     "title": "15ml",
+     "price": 1900,
      "available": null
     }
    ],
@@ -442,6 +430,23 @@
     }
    ],
    "changed": false
+  },
+  "saff-and-co": {
+   "src": "https://saffnco.com/products/extrait-de-parfum-mechline.json",
+   "product": "Extrait de Parfum MECHLINE",
+   "variants": [
+    {
+     "title": "MECHLINE",
+     "price": 319000,
+     "available": null
+    },
+    {
+     "title": "Glow in Pink Bundle",
+     "price": 638000,
+     "available": null
+    }
+   ],
+   "changed": true
   },
   "universal-flowering": {
    "src": "https://universalflowering.com/products/big-night.json",
@@ -472,6 +477,18 @@
    ],
    "changed": false
   },
+  "the-virtue": {
+   "src": "https://thevirtue.co.nz/products/back-beach-15ml-parfum.json",
+   "product": "Back Beach Parfum 15ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 89,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
   "curionoir": {
    "src": "https://curionoir.com/products/moon-moss-1.json",
    "product": "MOON MOSS",
@@ -489,21 +506,9 @@
    ],
    "changed": false
   },
-  "buly-1803": {
-   "src": "https://buly1803.com/products/eau-triple-oud-de-medine.json",
-   "product": "Eau Triple Oud De Médine",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 150,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "sifr-aromatics": {
    "src": "https://sifr.sg/products/rajawali.json",
-   "product": "Rajawali Perfumę",
+   "product": "Rajawali Perfume",
    "variants": [
     {
      "title": "15ml Oil Perfume",
@@ -533,25 +538,25 @@
    ],
    "changed": false
   },
-  "the-virtue": {
-   "src": "https://thevirtue.co.nz/products/back-beach-15ml-parfum.json",
-   "product": "Back Beach Parfum 15ml",
+  "buly-1803": {
+   "src": "https://buly1803.com/products/eau-triple-oud-de-medine.json",
+   "product": "Eau Triple Oud De Médine",
    "variants": [
     {
      "title": "Default Title",
-     "price": 89,
+     "price": 150,
      "available": null
     }
    ],
    "changed": false
   },
-  "essential-parfums": {
-   "src": "https://essentialparfums.com/products/bois-imperial-extrait-de-parfum-vaporisateur-30-ml.json",
-   "product": "Bois Impérial - Extrait de Parfum Vaporisateur 30 ML",
+  "goutal": {
+   "src": "https://goutalparis.com/products/eau-dhadrien-mixte.json",
+   "product": "Eau d'Hadrien",
    "variants": [
     {
-     "title": "Default Title",
-     "price": 98,
+     "title": "100 ml",
+     "price": 205,
      "available": null
     }
    ],
@@ -564,6 +569,18 @@
     {
      "title": "Default Title",
      "price": 180,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "essential-parfums": {
+   "src": "https://essentialparfums.com/products/bois-imperial-extrait-de-parfum-vaporisateur-30-ml.json",
+   "product": "Bois Impérial - Extrait de Parfum Vaporisateur 30 ML",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 98,
      "available": null
     }
    ],
@@ -591,18 +608,6 @@
    ],
    "changed": false
   },
-  "goutal": {
-   "src": "https://goutalparis.com/products/eau-dhadrien-mixte.json",
-   "product": "Eau d'Hadrien",
-   "variants": [
-    {
-     "title": "100 ml",
-     "price": 205,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "ormaie": {
    "src": "https://ormaie.com/products/papier-carbone-50ml.json",
    "product": "Papier Carbone",
@@ -610,18 +615,6 @@
     {
      "title": "Default Title",
      "price": 300,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "serge-lutens": {
-   "src": "https://sergelutens.com/products/fille-en-aiguilles-eau-de-parfum-spray.json",
-   "product": "Fille en aiguilles",
-   "variants": [
-    {
-     "title": "100 ml",
-     "price": 375,
      "available": null
     }
    ],
@@ -639,6 +632,18 @@
     {
      "title": "50 ml",
      "price": 110,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "serge-lutens": {
+   "src": "https://sergelutens.com/products/fille-en-aiguilles-eau-de-parfum-spray.json",
+   "product": "Fille en aiguilles",
+   "variants": [
+    {
+     "title": "100 ml",
+     "price": 375,
      "available": null
     }
    ],
@@ -662,11 +667,11 @@
    "variants": [
     {
      "title": "Default Title",
-     "price": 86,
+     "price": 107,
      "available": null
     }
    ],
-   "changed": false
+   "changed": true
   },
   "maison-crivelli": {
    "src": "https://maisoncrivelli.com/products/hibiscus-mahajad.json",
@@ -690,22 +695,17 @@
    ],
    "changed": false
   },
-  "ormonde-jayne": {
-   "src": "https://ormondejayne.com/products/bijou-zafran.json",
-   "product": "Bijou Zafran",
+  "miller-harris": {
+   "src": "https://millerharris.com/products/citron-citron-1.json",
+   "product": "Citron Citron",
    "variants": [
     {
-     "title": "88ml",
-     "price": 260,
-     "available": null
-    },
-    {
-     "title": "2 x 10ml",
-     "price": 90,
+     "title": "100ml EDP",
+     "price": 128,
      "available": null
     }
    ],
-   "changed": false
+   "changed": true
   },
   "santa-maria-novella": {
    "src": "https://us.smnovella.com/products/edcregina.json",
@@ -736,42 +736,18 @@
    ],
    "changed": false
   },
-  "nasomatto": {
-   "src": "https://nasomatto.com/products/baraonda.json",
-   "product": "BARAONDA",
+  "ormonde-jayne": {
+   "src": "https://ormondejayne.com/products/bijou-zafran.json",
+   "product": "Bijou Zafran",
    "variants": [
     {
-     "title": "30 ml / 1.0 fl oz  Extrait de Parfum",
-     "price": 130,
+     "title": "88ml",
+     "price": 260,
      "available": null
     },
     {
-     "title": "4 ml / 0.135 fl oz Perfume Oil in Roller bottle",
-     "price": 55,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "miller-harris": {
-   "src": "https://millerharris.com/products/citron-citron-1.json",
-   "product": "Citron Citron",
-   "variants": [
-    {
-     "title": "100ml EDP",
-     "price": 160,
-     "available": null
-    }
-   ],
-   "changed": true
-  },
-  "mizensir": {
-   "src": "https://mizensir.com/products/bright-wood-eau-de-parfum.json",
-   "product": "BRIGHT WOOD | Eau de parfum",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 210,
+     "title": "2 x 10ml",
+     "price": 90,
      "available": null
     }
    ],
@@ -789,9 +765,17 @@
    ],
    "changed": false
   },
-  "korres": {
-   "src": "https://korres.com/products/mini-eau-de-parfum-aegean-bronze-10ml.json",
-   "error": 404
+  "mizensir": {
+   "src": "https://mizensir.com/products/bright-wood-eau-de-parfum.json",
+   "product": "BRIGHT WOOD | Eau de parfum",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 210,
+     "available": null
+    }
+   ],
+   "changed": false
   },
   "bdk-parfums": {
    "src": "https://bdkparfums.com/products/la-famille-gris-charnel.json",
@@ -815,17 +799,26 @@
    ],
    "changed": false
   },
-  "loe": {
-   "src": "https://loe-cosmetics-us.com/products/loe-white-shirts-edt-50ml.json",
-   "product": "LOE White Shirts EDT 50ml",
+  "nasomatto": {
+   "src": "https://nasomatto.com/products/baraonda.json",
+   "product": "BARAONDA",
    "variants": [
     {
-     "title": "Default Title",
-     "price": 45,
+     "title": "30 ml / 1.0 fl oz  Extrait de Parfum",
+     "price": 130,
+     "available": null
+    },
+    {
+     "title": "4 ml / 0.135 fl oz Perfume Oil in Roller bottle",
+     "price": 55,
      "available": null
     }
    ],
    "changed": false
+  },
+  "korres": {
+   "src": "https://korres.com/products/mini-eau-de-parfum-aegean-bronze-10ml.json",
+   "error": 404
   },
   "wick-fragrances": {
    "src": "https://wickfragrances.com/products/eau-de-parfum-sugar-hyde-50-ml.json",
@@ -834,6 +827,18 @@
     {
      "title": "Default Title",
      "price": 785,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "loe": {
+   "src": "https://loe-cosmetics-us.com/products/loe-white-shirts-edt-50ml.json",
+   "product": "LOE White Shirts EDT 50ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 45,
      "available": null
     }
    ],
@@ -871,6 +876,11 @@
      "available": null
     },
     {
+     "title": "30ml",
+     "price": 65,
+     "available": null
+    },
+    {
      "title": "10ml",
      "price": 30,
      "available": null
@@ -881,7 +891,7 @@
      "available": null
     }
    ],
-   "changed": false
+   "changed": true
   },
   "sana-jardin": {
    "src": "https://sanajardin.com/products/nubian-musk.json",
@@ -927,35 +937,6 @@
    ],
    "changed": false
   },
-  "floraiku": {
-   "src": "https://floraiku.com/products/one-umbrella-for-two-eau-de-parfum-10ml-v2.json",
-   "product": "One Umbrella For Two",
-   "variants": [
-    {
-     "title": "10ml",
-     "price": 60,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "arquiste": {
-   "src": "https://arquiste.com/products/almond-suede.json",
-   "product": "ALMOND SUEDE",
-   "variants": [
-    {
-     "title": "100ml",
-     "price": 225,
-     "available": null
-    },
-    {
-     "title": "30ml",
-     "price": 105,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "kayali": {
    "src": "https://kayali.com/products/yum-vanilla-cupcake-108.json",
    "product": "Yum Vanilla Cupcake | 108",
@@ -986,7 +967,36 @@
      "available": null
     }
    ],
-   "changed": true
+   "changed": false
+  },
+  "floraiku": {
+   "src": "https://floraiku.com/products/one-umbrella-for-two-eau-de-parfum-10ml-v2.json",
+   "product": "One Umbrella For Two",
+   "variants": [
+    {
+     "title": "10ml",
+     "price": 60,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "arquiste": {
+   "src": "https://arquiste.com/products/almond-suede.json",
+   "product": "ALMOND SUEDE",
+   "variants": [
+    {
+     "title": "100ml",
+     "price": 225,
+     "available": null
+    },
+    {
+     "title": "30ml",
+     "price": 105,
+     "available": null
+    }
+   ],
+   "changed": false
   },
   "henry-rose": {
    "src": "https://henryrose.com/products/flora-carnivora-perfume.json",
@@ -1056,6 +1066,33 @@
    ],
    "changed": false
   },
+  "sultan-pasha": {
+   "src": "https://sultanpashaattars.com/products/shirin-chai.json",
+   "product": "Shirin Chai",
+   "variants": [
+    {
+     "title": "3ml",
+     "price": 342.74,
+     "available": null
+    },
+    {
+     "title": "1ml",
+     "price": 120.64,
+     "available": null
+    },
+    {
+     "title": "6ml",
+     "price": 616.93,
+     "available": null
+    },
+    {
+     "title": "12ml",
+     "price": 1028.21,
+     "available": null
+    }
+   ],
+   "changed": true
+  },
   "libertine": {
    "src": "https://libertinefragrance.com/products/fruit-thieves-tart-juicy-passionfruit.json",
    "product": "FRUIT THIEVES | TART, JUICY PASSIONFRUIT",
@@ -1072,33 +1109,6 @@
     }
    ],
    "changed": false
-  },
-  "sultan-pasha": {
-   "src": "https://sultanpashaattars.com/products/shirin-chai.json",
-   "product": "Shirin Chai",
-   "variants": [
-    {
-     "title": "3ml",
-     "price": 341.99,
-     "available": null
-    },
-    {
-     "title": "1ml",
-     "price": 120.38,
-     "available": null
-    },
-    {
-     "title": "6ml",
-     "price": 615.58,
-     "available": null
-    },
-    {
-     "title": "12ml",
-     "price": 1025.96,
-     "available": null
-    }
-   ],
-   "changed": true
   },
   "ellis-brooklyn": {
    "src": "https://ellisbrooklyn.com/products/vanilla-rice-eau-de-parfum.json",
@@ -1136,30 +1146,6 @@
    ],
    "changed": false
   },
-  "stories-parfums": {
-   "src": "https://storiesparfums.com/products/stories-no1-edp-30ml.json",
-   "product": "STORIES Nº.01 Eau de Parfum 30ml",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 125,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "burren-perfumery": {
-   "src": "https://burrenperfumery.com/products/ilaun.json",
-   "product": "Ilaun Eau de Parfum",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 96,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "cloon-keen": {
    "src": "https://cloonkeen.com/products/roisin-dubh-perfume.json",
    "product": "Róisín Dubh Refillable Eau de Parfum",
@@ -1172,6 +1158,18 @@
     {
      "title": "200 mL Róisín Dubh Refill",
      "price": 235,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "stories-parfums": {
+   "src": "https://storiesparfums.com/products/stories-no1-edp-30ml.json",
+   "product": "STORIES Nº.01 Eau de Parfum 30ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 125,
      "available": null
     }
    ],
@@ -1195,7 +1193,7 @@
    "variants": [
     {
      "title": "Default Title",
-     "price": 145.8,
+     "price": 144.48,
      "available": null
     }
    ],
@@ -1213,6 +1211,30 @@
     {
      "title": "1.5ml SAMPLE",
      "price": 9,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "le-falcone": {
+   "src": "https://www.justmylook.com/products/le-falcone-bonita-pour-femme-eau-de-parfum-100ml.json",
+   "product": "Le Falcone Bonita Pour Femme Eau De Parfum 100ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 21.95,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "burren-perfumery": {
+   "src": "https://burrenperfumery.com/products/ilaun.json",
+   "product": "Ilaun Eau de Parfum",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 96,
      "available": null
     }
    ],
@@ -1262,25 +1284,13 @@
    ],
    "changed": false
   },
-  "le-falcone": {
-   "src": "https://www.justmylook.com/products/le-falcone-bonita-pour-femme-eau-de-parfum-100ml.json",
-   "product": "Le Falcone Bonita Pour Femme Eau De Parfum 100ml",
+  "regime-des-fleurs": {
+   "src": "https://regimedesfleurs.com/products/little-flower.json",
+   "product": "LITTLE FLOWER",
    "variants": [
     {
      "title": "Default Title",
-     "price": 21.95,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "sarah-baker": {
-   "src": "https://sarahbakerperfumes.com/products/year-xoxo.json",
-   "product": "Year XOXO",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 195,
+     "price": 290,
      "available": null
     }
    ],
@@ -1293,18 +1303,6 @@
     {
      "title": "Default Title",
      "price": 125,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "regime-des-fleurs": {
-   "src": "https://regimedesfleurs.com/products/little-flower.json",
-   "product": "LITTLE FLOWER",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 290,
      "available": null
     }
    ],
@@ -1327,6 +1325,18 @@
    ],
    "changed": false
   },
+  "sarah-baker": {
+   "src": "https://sarahbakerperfumes.com/products/year-xoxo.json",
+   "product": "Year XOXO",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 195,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
   "aroma-concepts": {
    "src": "https://www.aromaconcepts.com/products/strawberry-almanac.json",
    "product": "Strawberry Almanac Creation by Aroma Concepts",
@@ -1334,30 +1344,6 @@
     {
      "title": "Default Title",
      "price": 51.99,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "celia-loves": {
-   "src": "https://celialoves.com.au/products/matcha-milk-room-spray-50ml.json",
-   "product": "Matcha Milk - Room Spray 50ml",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 33,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "belnu": {
-   "src": "https://belnu.com/products/vanilla-boucle.json",
-   "product": "Vanilla Bouclé",
-   "variants": [
-    {
-     "title": "50 ML / 1.6 FL OZ",
-     "price": 170,
      "available": null
     }
    ],
@@ -1375,9 +1361,17 @@
    ],
    "changed": false
   },
-  "liquides-imaginaires": {
-   "src": "https://liquidesimaginaires.com/products/blanche-bete.json",
-   "error": 404
+  "belnu": {
+   "src": "https://belnu.com/products/vanilla-boucle.json",
+   "product": "Vanilla Bouclé",
+   "variants": [
+    {
+     "title": "50 ML / 1.6 FL OZ",
+     "price": 136,
+     "available": null
+    }
+   ],
+   "changed": true
   },
   "liberation-of-flowers": {
    "src": "https://www.liberationofflowers.com/products/plot-twist.json",
@@ -1386,6 +1380,30 @@
     {
      "title": "Default Title",
      "price": 210,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "celia-loves": {
+   "src": "https://celialoves.com.au/products/matcha-milk-room-spray-50ml.json",
+   "product": "Matcha Milk - Room Spray 50ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 32,
+     "available": null
+    }
+   ],
+   "changed": true
+  },
+  "paragraf-parfums": {
+   "src": "https://paragrafparfums.com/products/the-morning-within.json",
+   "product": "The Morning Within",
+   "variants": [
+    {
+     "title": "50ml",
+     "price": 2500000,
      "available": null
     }
    ],
@@ -1403,13 +1421,13 @@
    ],
    "changed": false
   },
-  "paragraf-parfums": {
-   "src": "https://paragrafparfums.com/products/the-morning-within.json",
-   "product": "The Morning Within",
+  "otter-haus": {
+   "src": "https://otterhausph.com/products/white-noise.json",
+   "product": "White Noise",
    "variants": [
     {
-     "title": "50ml",
-     "price": 2500000,
+     "title": "Default Title",
+     "price": 990,
      "available": null
     }
    ],
@@ -1427,18 +1445,6 @@
    ],
    "changed": false
   },
-  "otter-haus": {
-   "src": "https://otterhausph.com/products/white-noise.json",
-   "product": "White Noise",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 990,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
   "inde-wild": {
    "src": "https://indewild.com/products/after-heat-hair-body-perfume-mist.json",
    "product": "After Heat Hair & Body Perfume Mist",
@@ -1446,6 +1452,22 @@
     {
      "title": "60ml",
      "price": 22,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "liquides-imaginaires": {
+   "src": "https://liquidesimaginaires.com/products/blanche-bete.json",
+   "error": 404
+  },
+  "dedcool": {
+   "src": "https://dedcool.com/products/mochi-milk-fragrance.json",
+   "product": "Mochi Milk Fragrance",
+   "variants": [
+    {
+     "title": "1.7 OZ",
+     "price": 90,
      "available": null
     }
    ],
@@ -1478,34 +1500,44 @@
    ],
    "changed": false
   },
-  "dedcool": {
-   "src": "https://dedcool.com/products/mochi-milk-fragrance.json",
-   "product": "Mochi Milk Fragrance",
+  "fugazzi": {
+   "src": "https://fugazzifragrances.com/products/angel-dust.json",
+   "product": "Angel Dust",
    "variants": [
     {
-     "title": "1.7 OZ",
-     "price": 90,
+     "title": "50 ML",
+     "price": 125,
+     "available": null
+    },
+    {
+     "title": "100 ML",
+     "price": 175,
+     "available": null
+    },
+    {
+     "title": "8 ML",
+     "price": 41,
      "available": null
     }
    ],
-   "changed": false
+   "changed": true
   },
   "eau-so-dramatic": {
    "src": "https://www.eausodramatic.com/products/pure-silk-perfume.json",
    "product": "Pure Silk",
    "variants": [
     {
-     "title": "0.6 oz",
-     "price": 399,
-     "available": null
-    },
-    {
      "title": "1.7 oz",
      "price": 899,
      "available": null
+    },
+    {
+     "title": "0.6 oz",
+     "price": 399,
+     "available": null
     }
    ],
-   "changed": false
+   "changed": true
   },
   "gabar": {
    "src": "https://gabarworld.com/products/rise.json",
@@ -1513,12 +1545,24 @@
    "variants": [
     {
      "title": "50ml",
-     "price": 178,
+     "price": 179,
      "available": null
     },
     {
      "title": "2ml",
      "price": 14,
+     "available": null
+    }
+   ],
+   "changed": true
+  },
+  "fraganote": {
+   "src": "https://fraganote.com/products/vanilla-wood-50ml.json",
+   "product": "Vanilla Wood 50ML",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 999,
      "available": null
     }
    ],
@@ -1536,61 +1580,22 @@
    ],
    "changed": false
   },
-  "fugazzi": {
-   "src": "https://fugazzifragrances.com/products/angel-dust.json",
-   "product": "Angel Dust",
+  "aurra-london": {
+   "src": "https://aurralondon.com/products/gaze.json",
+   "product": "GAZE",
    "variants": [
     {
-     "title": "50 ML",
-     "price": 125,
+     "title": "15ML",
+     "price": 90,
      "available": null
     },
     {
-     "title": "100 ML",
-     "price": 175,
-     "available": null
-    },
-    {
-     "title": "8 ML",
-     "price": 40,
+     "title": "3ML",
+     "price": 28,
      "available": null
     }
    ],
-   "changed": false
-  },
-  "fraganote": {
-   "src": "https://fraganote.com/products/vanilla-wood-50ml.json",
-   "product": "Vanilla Wood 50ML",
-   "variants": [
-    {
-     "title": "Default Title",
-     "price": 999,
-     "available": null
-    }
-   ],
-   "changed": false
-  },
-  "latelier-parfum": {
-   "src": "https://latelierparfum.com/products/white-mirage-new.json",
-   "product": "WHITE MIRAGE",
-   "variants": [
-    {
-     "title": "15ml",
-     "price": 39,
-     "available": null
-    },
-    {
-     "title": "50ml",
-     "price": 95,
-     "available": null
-    },
-    {
-     "title": "100ml",
-     "price": 140,
-     "available": null
-    }
-   ],
-   "changed": false
+   "changed": true
   },
   "maison-mataha": {
    "src": "https://maisonmataha.com/products/printemps-blanc.json",
@@ -1621,26 +1626,27 @@
    ],
    "changed": false
   },
-  "aurra-london": {
-   "src": "https://aurralondon.com/products/gaze.json",
-   "product": "GAZE",
+  "latelier-parfum": {
+   "src": "https://latelierparfum.com/products/white-mirage-new.json",
+   "product": "WHITE MIRAGE",
    "variants": [
     {
-     "title": "15ML",
-     "price": 89,
+     "title": "15ml",
+     "price": 39,
      "available": null
     },
     {
-     "title": "3ML",
-     "price": 28,
+     "title": "50ml",
+     "price": 95,
+     "available": null
+    },
+    {
+     "title": "100ml",
+     "price": 140,
      "available": null
     }
    ],
    "changed": false
-  },
-  "oaken-lab": {
-   "src": "https://oakenlab.com/products/eau-de-parfume-temple-moss-50ml.json",
-   "error": 404
   },
   "lydeen": {
    "src": "https://lydeenparfums.com/products/horsika-blue-edp.json",
@@ -1648,11 +1654,86 @@
    "variants": [
     {
      "title": "30ML",
-     "price": 771,
+     "price": 774,
+     "available": null
+    }
+   ],
+   "changed": true
+  },
+  "zhufu": {
+   "src": "https://ministryofscent.com/products/aged-pu-er-tea.json",
+   "product": "Aged Pu-er Tea",
+   "variants": [
+    {
+     "title": "15ml Eau de Parfum",
+     "price": 120,
+     "available": null
+    },
+    {
+     "title": "2ml Spray Sample",
+     "price": 7,
      "available": null
     }
    ],
    "changed": false
+  },
+  "oaken-lab": {
+   "src": "https://oakenlab.com/products/eau-de-parfume-temple-moss-50ml.json",
+   "product": "Eau De Parfum - Temple Moss - 50ml",
+   "variants": [
+    {
+     "title": "Default Title",
+     "price": 1250000,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "zhiwuzhi": {
+   "src": "https://bloomperfume.co.uk/products/distant-hills-in-silence.json",
+   "product": "Distant Hills in Silence 远山听寂",
+   "variants": [
+    {
+     "title": "50 ml / EdP / ol",
+     "price": 120,
+     "available": null
+    },
+    {
+     "title": "1 ml / EdP / ol",
+     "price": 5,
+     "available": null
+    },
+    {
+     "title": "50 ml / EdP / tf",
+     "price": 100,
+     "available": null
+    },
+    {
+     "title": "50 ml / EdP / sd",
+     "price": 115,
+     "available": null
+    },
+    {
+     "title": "50 ml / EdP / tfsd",
+     "price": 95.83,
+     "available": null
+    },
+    {
+     "title": "1 ml / EdP / tf",
+     "price": 4.17,
+     "available": null
+    },
+    {
+     "title": "10 ml / EdP / ato",
+     "price": 0,
+     "available": null
+    }
+   ],
+   "changed": false
+  },
+  "nostos": {
+   "src": "https://www.luckyscent.com/products/shiver-by-nostos.json",
+   "error": 404
   }
  }
 }
