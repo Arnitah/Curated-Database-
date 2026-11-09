@@ -2856,15 +2856,20 @@
   ]
  },
  "kaolin": {
-  "listings": 4,
+  "listings": 5,
   "suppliers": [
    "aromantic",
+   "formulator_sample_shop",
    "windy_point"
   ],
   "links": [
    {
     "s": "aromantic",
     "u": "https://aromantic.co.uk/products/kaolin"
+   },
+   {
+    "s": "formulator_sample_shop",
+    "u": "https://formulatorsampleshop.com/products/fss-white-kaolin-clay"
    },
    {
     "s": "windy_point",
