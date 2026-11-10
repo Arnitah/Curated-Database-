@@ -1,0 +1,267 @@
+{
+  "schema_version": "0.1.0",
+  "ingredients": [
+    {
+      "id": "glycolic_acid",
+      "inci": "Glycolic Acid",
+      "aliases": [
+        "Glycolic Acid"
+      ],
+      "families": [
+        "aha_exfoliant"
+      ],
+      "functions": [
+        "chemical_exfoliant",
+        "ph_adjuster"
+      ],
+      "evidence_status": "established_function",
+      "notes": "AHA; product effect depends on concentration, pH, vehicle and use conditions."
+    },
+    {
+      "id": "lactic_acid",
+      "inci": "Lactic Acid",
+      "aliases": [
+        "Lactic Acid"
+      ],
+      "families": [
+        "aha_exfoliant"
+      ],
+      "functions": [
+        "chemical_exfoliant",
+        "humectant"
+      ],
+      "evidence_status": "established_function",
+      "notes": "AHA; effect depends on formulation and concentration."
+    },
+    {
+      "id": "mandelic_acid",
+      "inci": "Mandelic Acid",
+      "aliases": [
+        "Mandelic Acid"
+      ],
+      "families": [
+        "aha_exfoliant"
+      ],
+      "functions": [
+        "chemical_exfoliant"
+      ],
+      "evidence_status": "established_function",
+      "notes": "AHA; product-specific formulation details matter."
+    },
+    {
+      "id": "salicylic_acid",
+      "inci": "Salicylic Acid",
+      "aliases": [
+        "Salicylic Acid"
+      ],
+      "families": [
+        "bha_exfoliant"
+      ],
+      "functions": [
+        "keratolytic",
+        "exfoliant"
+      ],
+      "evidence_status": "established_function",
+      "notes": "BHA; product directions and concentration matter."
+    },
+    {
+      "id": "retinol",
+      "inci": "Retinol",
+      "aliases": [
+        "Retinol"
+      ],
+      "families": [
+        "retinoid"
+      ],
+      "functions": [
+        "skin_conditioning"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Retinoid family; cosmetic ingredient list does not disclose concentration in all markets/products."
+    },
+    {
+      "id": "retinal",
+      "inci": "Retinal",
+      "aliases": [
+        "Retinaldehyde",
+        "Retinal"
+      ],
+      "families": [
+        "retinoid"
+      ],
+      "functions": [
+        "skin_conditioning"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Retinoid family; distinguish from prescription retinoids."
+    },
+    {
+      "id": "niacinamide",
+      "inci": "Niacinamide",
+      "aliases": [
+        "Nicotinamide",
+        "Niacinamide"
+      ],
+      "families": [
+        "barrier_support",
+        "tone_support"
+      ],
+      "functions": [
+        "skin_conditioning"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Multifunctional ingredient; avoid inferring a specific benefit from presence alone."
+    },
+    {
+      "id": "hyaluronic_acid",
+      "inci": "Hyaluronic Acid",
+      "aliases": [
+        "Sodium Hyaluronate",
+        "Hydrolyzed Hyaluronic Acid",
+        "Hyaluronic Acid"
+      ],
+      "families": [
+        "humectant"
+      ],
+      "functions": [
+        "humectant"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Aliases are not chemically identical forms; retain the exact INCI alongside the canonical family."
+    },
+    {
+      "id": "ceramide_np",
+      "inci": "Ceramide NP",
+      "aliases": [
+        "Ceramide 3",
+        "Ceramide NP"
+      ],
+      "families": [
+        "barrier_lipid"
+      ],
+      "functions": [
+        "skin_conditioning",
+        "barrier_support"
+      ],
+      "evidence_status": "established_function",
+      "notes": "One ceramide; do not collapse all ceramides into an identical ingredient record."
+    },
+    {
+      "id": "ascorbic_acid",
+      "inci": "Ascorbic Acid",
+      "aliases": [
+        "L-Ascorbic Acid",
+        "Ascorbic Acid"
+      ],
+      "families": [
+        "vitamin_c"
+      ],
+      "functions": [
+        "antioxidant"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Formulation stability and pH are relevant; derivatives require separate records."
+    },
+    {
+      "id": "benzoyl_peroxide",
+      "inci": "Benzoyl Peroxide",
+      "aliases": [
+        "Benzoyl Peroxide"
+      ],
+      "families": [
+        "acne_active"
+      ],
+      "functions": [
+        "oxidizing_antimicrobial"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Product type, formulation and directions are important."
+    },
+    {
+      "id": "panthenol",
+      "inci": "Panthenol",
+      "aliases": [
+        "D-Panthenol",
+        "Panthenol"
+      ],
+      "families": [
+        "humectant",
+        "barrier_support"
+      ],
+      "functions": [
+        "humectant",
+        "skin_conditioning"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Supportive ingredient; formulation context still matters."
+    },
+    {
+      "id": "urea",
+      "inci": "Urea",
+      "aliases": [
+        "Urea"
+      ],
+      "families": [
+        "humectant",
+        "keratolytic"
+      ],
+      "functions": [
+        "humectant",
+        "keratolytic"
+      ],
+      "evidence_status": "established_function",
+      "notes": "Function depends on concentration and formulation."
+    },
+    {
+      "id": "zinc_oxide",
+      "inci": "Zinc Oxide",
+      "aliases": [
+        "Zinc Oxide",
+        "CI 77947"
+      ],
+      "families": [
+        "uv_filter"
+      ],
+      "functions": [
+        "uv_filter"
+      ],
+      "evidence_status": "established_function",
+      "review_status": "added_by_claude_pending_review",
+      "notes": "Declared UV filter. Added so the existing sun-protection rule can run; identity only, no new claim. Needs reviewer confirmation against CosIng."
+    },
+    {
+      "id": "titanium_dioxide",
+      "inci": "Titanium Dioxide",
+      "aliases": [
+        "Titanium Dioxide",
+        "CI 77891"
+      ],
+      "families": [
+        "uv_filter"
+      ],
+      "functions": [
+        "uv_filter"
+      ],
+      "evidence_status": "established_function",
+      "review_status": "added_by_claude_pending_review",
+      "notes": "Declared UV filter. Added so the existing sun-protection rule can run; identity only, no new claim. Needs reviewer confirmation against CosIng."
+    },
+    {
+      "id": "avobenzone",
+      "inci": "Butyl Methoxydibenzoylmethane",
+      "aliases": [
+        "Butyl Methoxydibenzoylmethane",
+        "Avobenzone"
+      ],
+      "families": [
+        "uv_filter"
+      ],
+      "functions": [
+        "uv_filter"
+      ],
+      "evidence_status": "established_function",
+      "review_status": "added_by_claude_pending_review",
+      "notes": "Declared UV filter. Added so the existing sun-protection rule can run; identity only, no new claim. Needs reviewer confirmation against CosIng."
+    }
+  ]
+}

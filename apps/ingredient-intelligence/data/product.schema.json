@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clay Product Intelligence Record",
+  "type": "object",
+  "required": [
+    "product_id",
+    "name",
+    "category",
+    "status",
+    "ingredient_list",
+    "ingredient_list_source"
+  ],
+  "properties": {
+    "product_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "enum": [
+        "face_cleanser",
+        "toner",
+        "serum",
+        "treatment",
+        "moisturiser",
+        "sunscreen",
+        "body",
+        "hair",
+        "other"
+      ]
+    },
+    "status": {
+      "enum": [
+        "in_use",
+        "paused",
+        "owned_not_using",
+        "finished",
+        "wishlist"
+      ]
+    },
+    "area": {
+      "enum": [
+        "face",
+        "body",
+        "scalp",
+        "hair",
+        "multi",
+        "unknown"
+      ]
+    },
+    "format": {
+      "enum": [
+        "leave_on",
+        "rinse_off",
+        "wash_off",
+        "unknown"
+      ]
+    },
+    "frequency_per_week": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 14
+    },
+    "ingredient_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "inci"
+        ],
+        "properties": {
+          "inci": {
+            "type": "string"
+          },
+          "canonical_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "position": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "concentration_pct": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    },
+    "ingredient_list_source": {
+      "enum": [
+        "package_photo",
+        "manufacturer",
+        "retailer",
+        "user_entered",
+        "unknown"
+      ]
+    },
+    "ingredient_list_verified": {
+      "type": "boolean"
+    },
+    "directions_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "known_ph": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 14
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

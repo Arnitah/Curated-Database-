@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.1.0",
+  "classification": [
+    "compatible",
+    "complementary",
+    "use_with_care",
+    "separate",
+    "avoid_combination",
+    "insufficient_evidence",
+    "insufficient_data"
+  ],
+  "rules": [
+    {
+      "id": "aha_retinoid_cumulative_irritation",
+      "match": {
+        "families": [
+          "aha_exfoliant",
+          "retinoid"
+        ]
+      },
+      "classification": "use_with_care",
+      "confidence": "limited",
+      "scope": "routine_level",
+      "reason": "Both product types may contribute to irritation. The ingredient list alone does not establish that the specific formulations are chemically incompatible.",
+      "recommendation": "Consider using them on separate nights or reducing frequency if irritation occurs. Follow each product's directions; do not assume every formulation requires separation.",
+      "required_context": [
+        "leave_on_or_rinse_off",
+        "product_directions",
+        "frequency",
+        "user_tolerance"
+      ],
+      "evidence": [
+        "AAD_RETINOID",
+        "AAD_TEST_PRODUCTS",
+        "FDA_AHA"
+      ],
+      "limitations": [
+        "No concentration or pH inference from INCI order.",
+        "This is a conservative irritation-management suggestion, not a claim of chemical incompatibility."
+      ]
+    },
+    {
+      "id": "aha_bha_cumulative_exfoliation",
+      "match": {
+        "families": [
+          "aha_exfoliant",
+          "bha_exfoliant"
+        ]
+      },
+      "classification": "use_with_care",
+      "confidence": "limited",
+      "scope": "routine_level",
+      "reason": "Combining exfoliating product types can increase total exfoliation and irritation burden; risk depends on formulation, frequency and tolerance.",
+      "recommendation": "Avoid automatically scheduling both in the same routine. Consider alternating use and follow product directions.",
+      "required_context": [
+        "leave_on_or_rinse_off",
+        "product_directions",
+        "frequency",
+        "user_tolerance"
+      ],
+      "evidence": [
+        "FDA_AHA",
+        "AAD_TEST_PRODUCTS",
+        "AHA_REVIEW"
+      ],
+      "limitations": [
+        "Not a universal prohibition; do not label the ingredients chemically incompatible."
+      ]
+    },
+    {
+      "id": "duplicate_aha_family",
+      "match": {
+        "families": [
+          "aha_exfoliant",
+          "aha_exfoliant"
+        ]
+      },
+      "classification": "use_with_care",
+      "confidence": "limited",
+      "scope": "routine_level",
+      "reason": "Two AHA-containing products may duplicate exfoliating function and increase cumulative exposure.",
+      "recommendation": "Check whether both are needed and consider reducing frequency or alternating. Product directions take priority.",
+      "required_context": [
+        "concentration",
+        "frequency",
+        "leave_on_or_rinse_off"
+      ],
+      "evidence": [
+        "FDA_AHA",
+        "AHA_REVIEW"
+      ],
+      "limitations": [
+        "INCI lists do not provide sufficient information to calculate total acid exposure."
+      ]
+    },
+    {
+      "id": "duplicate_retinoid_family",
+      "match": {
+        "families": [
+          "retinoid",
+          "retinoid"
+        ]
+      },
+      "classification": "use_with_care",
+      "confidence": "limited",
+      "scope": "routine_level",
+      "reason": "Using multiple retinoid-containing products can duplicate active exposure and increase irritation risk.",
+      "recommendation": "Do not automatically combine. Check exact retinoid identity, product directions and frequency; consider selecting one retinoid product for the routine.",
+      "required_context": [
+        "retinoid_identity",
+        "concentration",
+        "frequency",
+        "product_directions"
+      ],
+      "evidence": [
+        "AAD_RETINOID",
+        "AAD_TEST_PRODUCTS"
+      ],
+      "limitations": [
+        "Different retinoids and formulations are not interchangeable; ingredient presence alone cannot quantify exposure."
+      ]
+    },
+    {
+      "id": "aha_sun_sensitivity_context",
+      "match": {
+        "families": [
+          "aha_exfoliant",
+          "uv_filter"
+        ]
+      },
+      "classification": "complementary",
+      "confidence": "high",
+      "scope": "day_night_context",
+      "reason": "FDA advises sun-protection measures when using topical AHA products because they may increase sun sensitivity.",
+      "recommendation": "When an AHA is in the routine, surface daytime sun-protection guidance and follow the AHA product label. Sunscreen does not make overuse of exfoliants safe.",
+      "required_context": [
+        "daytime_use",
+        "product_directions"
+      ],
+      "evidence": [
+        "FDA_AHA"
+      ],
+      "limitations": [
+        "This is a protection-context rule, not a claim that sunscreen chemically neutralises an AHA."
+      ]
+    },
+    {
+      "id": "humectant_barrier_support",
+      "match": {
+        "families": [
+          "humectant",
+          "barrier_lipid"
+        ]
+      },
+      "classification": "complementary",
+      "confidence": "limited",
+      "scope": "function_level",
+      "reason": "Humectant and barrier-lipid ingredients can serve complementary formulation roles.",
+      "recommendation": "Explain their different roles; do not imply that the combination is required or that ingredient presence guarantees a particular product outcome.",
+      "required_context": [
+        "product_formulation"
+      ],
+      "evidence": [
+        "INGREDIENT_FUNCTIONS"
+      ],
+      "limitations": [
+        "The effect depends on the finished formulation and the wider ingredient system."
+      ]
+    }
+  ]
+}

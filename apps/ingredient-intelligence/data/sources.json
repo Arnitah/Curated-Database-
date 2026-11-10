@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "FDA_AHA",
+      "publisher": "U.S. Food and Drug Administration",
+      "title": "Alpha Hydroxy Acids",
+      "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/alpha-hydroxy-acids",
+      "source_type": "regulatory_guidance",
+      "accessed": "2026-11-10",
+      "supports": [
+        "AHA function and exfoliation",
+        "effect depends on type, concentration, pH and other ingredients",
+        "sun-sensitivity warning and sun-protection guidance"
+      ]
+    },
+    {
+      "id": "AAD_TEST_PRODUCTS",
+      "publisher": "American Academy of Dermatology",
+      "title": "How to test skin care products",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products",
+      "source_type": "professional_guidance",
+      "accessed": "2026-11-10",
+      "supports": [
+        "retinol and glycolic acid can irritate, especially sensitive skin",
+        "introduce/test products cautiously",
+        "stop use if reaction occurs and seek care for severe reactions"
+      ]
+    },
+    {
+      "id": "AAD_RETINOID",
+      "publisher": "American Academy of Dermatology",
+      "title": "Retinoid or retinol?",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol/",
+      "source_type": "professional_guidance",
+      "accessed": "2026-11-10",
+      "supports": [
+        "retinoid use considerations",
+        "start slowly and follow professional advice",
+        "sun protection and irritation context"
+      ]
+    },
+    {
+      "id": "AHA_REVIEW",
+      "publisher": "Karwal K, Mukovozov I.",
+      "title": "Topical AHA in Dermatology: Formulations, Mechanisms of Action, Efficacy, and Future Perspectives",
+      "url": "https://doi.org/10.3390/cosmetics10050131",
+      "source_type": "peer_reviewed_review",
+      "published": "2023",
+      "accessed": "2026-11-10",
+      "supports": [
+        "AHA formulation context",
+        "concentration, pH and vehicle uncertainties"
+      ]
+    },
+    {
+      "id": "INGREDIENT_FUNCTIONS",
+      "publisher": "European Commission CosIng",
+      "title": "Cosmetic ingredient database",
+      "url": "https://ec.europa.eu/growth/tools-databases/cosing/",
+      "source_type": "regulatory_ingredient_reference",
+      "accessed": "2026-11-10",
+      "supports": [
+        "ingredient identity and declared cosmetic functions; not proof of finished-product efficacy or safety"
+      ]
+    },
+    {
+      "id": "HEALTH_CANADA_INGREDIENT_LABELS",
+      "publisher": "Health Canada",
+      "title": "Industry Guide for the Labelling of Cosmetics — Ingredient declaration order",
+      "url": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/industry-professionals/labelling-cosmetics.html",
+      "source_type": "regulatory_guidance",
+      "accessed": "2026-11-10",
+      "supports": [
+        "ingredient declaration order in Canada",
+        "ingredients above 1% listed in descending order",
+        "ingredients at or below 1% may appear in any order"
+      ]
+    }
+  ]
+}
