@@ -201,28 +201,6 @@
    }
   ]
  },
- "amla": {
-  "listings": 1,
-  "suppliers": [
-   "formulator_sample_shop"
-  ],
-  "use_pct": [
-   1,
-   10
-  ],
-  "use_n": 1,
-  "ph": [
-   3.5,
-   7
-  ],
-  "shelf_months": 12,
-  "links": [
-   {
-    "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/fss-indian-gooseberry-extract-pf"
-   }
-  ]
- },
  "annatto": {
   "listings": 1,
   "suppliers": [
