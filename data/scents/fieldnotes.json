@@ -1,174 +1,179 @@
 {
- "_about": "The Atlas's field notebook: what was found, checked, corrected or excluded, newest first. The weekly check adds price changes and broken links automatically.",
- "entries": [
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at saff-and-co's shop since last week; needs review.",
-   "ref": "saff-and-co"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at floral-street's shop since last week; needs review.",
-   "ref": "floral-street"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at miller-harris's shop since last week; needs review.",
-   "ref": "miller-harris"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at michael-malul's shop since last week; needs review.",
-   "ref": "michael-malul"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at sultan-pasha's shop since last week; needs review.",
-   "ref": "sultan-pasha"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at meleg-perfumes's shop since last week; needs review.",
-   "ref": "meleg-perfumes"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at belnu's shop since last week; needs review.",
-   "ref": "belnu"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at celia-loves's shop since last week; needs review.",
-   "ref": "celia-loves"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at fugazzi's shop since last week; needs review.",
-   "ref": "fugazzi"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at eau-so-dramatic's shop since last week; needs review.",
-   "ref": "eau-so-dramatic"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at gabar's shop since last week; needs review.",
-   "ref": "gabar"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at aurra-london's shop since last week; needs review.",
-   "ref": "aurra-london"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "price-change",
-   "text": "Live price changed at lydeen's shop since last week; needs review.",
-   "ref": "lydeen"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "broken-link",
-   "text": "A link for korres failed this week (site, perfume page or price source).",
-   "ref": "korres"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "broken-link",
-   "text": "A link for bath-body-works failed this week (site, perfume page or price source).",
-   "ref": "bath-body-works"
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "stale",
-   "text": "1 houses have no price seen in the last six months: waters-and-wild."
-  },
-  {
-   "on": "2026-11-09",
-   "kind": "checked",
-   "text": "Weekly check: 161 houses fully reachable, 15 blocked a robot, 2 with a failing link; 111 shop prices read live."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "checked",
-   "text": "Brunbae Sweet Seduction confirmed on its shop (₹1,199 sale / ₹1,999, 50 ml, water-based) with full notes; Hair Drama Co. is in Ahmedabad, Marshmallow Whip sold as a ₹299 gift pouch of 2."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "excluded",
-   "text": "Excluded Cieal: its shop is mostly 'inspired versions' of designer perfumes."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "checked",
-   "text": "Amafhh checked: an artisan attar and oud house (French-made blends, bottled in India), not a solid-perfume brand."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "inbox",
-   "text": "First find from the new inbox: 12 perfumes from six screenshots. Prices or notes confirmed for Ellis Brooklyn Marshmallows, NOYZ, Jovoy Fire at Will (sold in Montreal), Naseem Crystal Berry, Kyse Delizia di Marshmallow and Rosie Jane Dulce."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "open",
-   "text": "Still unconfirmed: Brunbae Sweet Seduction, Hair Drama Marshmallow Whip, Cieal and Amafhh Herbarium solid tins. No shop found yet."
-  },
-  {
-   "on": "2026-11-04",
-   "kind": "system",
-   "text": "Started keeping one dated record per price sighting (observations), so prices can go stale visibly."
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "added",
-   "text": "Added Zhiwuzhi and Zhufu, two Chinese tea houses sold in London and San Francisco, with checked prices.",
-   "ref": "zhiwuzhi"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "corrected",
-   "text": "Tea Mountain is smoked black tea (Lapsang Souchong), not green tea.",
-   "ref": "uttori"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "corrected",
-   "text": "Separated Uttori's two marketplace prices (¥188 and ¥218) instead of picking one.",
-   "ref": "uttori"
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "moved",
-   "text": "Took MAT KURO atelier off the map until its Shanghai address is confirmed."
-  },
-  {
-   "on": "2026-11-03",
-   "kind": "excluded",
-   "text": "Started an exclusion log: copy-scent sellers, bulk oil suppliers and AI-made posts stay out."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "inbox",
-   "text": "Worked through 30 screenshots: added Voice from the Sky, Chabaud's chocolate scent, Gabar's Deities line, Haeze and a November release list. Several bottles in the screenshots had no visible brand and wait on names."
-  },
-  {
-   "on": "2026-11-05",
-   "kind": "price-seen",
-   "text": "Gabar Nagar Min shows $202 at Stele NYC today; a screenshot from a few days earlier showed $208.",
-   "ref": "gabar-nagar-min-price-1"
-  }
- ]
+  "_about": "The Atlas's field notebook: what was found, checked, corrected or excluded, newest first. The weekly check adds price changes and broken links automatically.",
+  "entries": [
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at saff-and-co's shop since last week; needs review.",
+      "ref": "saff-and-co"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at floral-street's shop since last week; needs review.",
+      "ref": "floral-street"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at miller-harris's shop since last week; needs review.",
+      "ref": "miller-harris"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at michael-malul's shop since last week; needs review.",
+      "ref": "michael-malul"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at sultan-pasha's shop since last week; needs review.",
+      "ref": "sultan-pasha"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at meleg-perfumes's shop since last week; needs review.",
+      "ref": "meleg-perfumes"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at belnu's shop since last week; needs review.",
+      "ref": "belnu"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at celia-loves's shop since last week; needs review.",
+      "ref": "celia-loves"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at fugazzi's shop since last week; needs review.",
+      "ref": "fugazzi"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at eau-so-dramatic's shop since last week; needs review.",
+      "ref": "eau-so-dramatic"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at gabar's shop since last week; needs review.",
+      "ref": "gabar"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at aurra-london's shop since last week; needs review.",
+      "ref": "aurra-london"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "price-change",
+      "text": "Live price changed at lydeen's shop since last week; needs review.",
+      "ref": "lydeen"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "broken-link",
+      "text": "A link for korres failed this week (site, perfume page or price source).",
+      "ref": "korres"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "broken-link",
+      "text": "A link for bath-body-works failed this week (site, perfume page or price source).",
+      "ref": "bath-body-works"
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "stale",
+      "text": "1 houses have no price seen in the last six months: waters-and-wild."
+    },
+    {
+      "on": "2026-11-09",
+      "kind": "checked",
+      "text": "Weekly check: 161 houses fully reachable, 15 blocked a robot, 2 with a failing link; 111 shop prices read live."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "checked",
+      "text": "Brunbae Sweet Seduction confirmed on its shop (₹1,199 sale / ₹1,999, 50 ml, water-based) with full notes; Hair Drama Co. is in Ahmedabad, Marshmallow Whip sold as a ₹299 gift pouch of 2."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "excluded",
+      "text": "Excluded Cieal: its shop is mostly 'inspired versions' of designer perfumes."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "checked",
+      "text": "Amafhh checked: an artisan attar and oud house (French-made blends, bottled in India), not a solid-perfume brand."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "inbox",
+      "text": "First find from the new inbox: 12 perfumes from six screenshots. Prices or notes confirmed for Ellis Brooklyn Marshmallows, NOYZ, Jovoy Fire at Will (sold in Montreal), Naseem Crystal Berry, Kyse Delizia di Marshmallow and Rosie Jane Dulce."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "open",
+      "text": "Still unconfirmed: Brunbae Sweet Seduction, Hair Drama Marshmallow Whip, Cieal and Amafhh Herbarium solid tins. No shop found yet."
+    },
+    {
+      "on": "2026-11-04",
+      "kind": "system",
+      "text": "Started keeping one dated record per price sighting (observations), so prices can go stale visibly."
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "added",
+      "text": "Added Zhiwuzhi and Zhufu, two Chinese tea houses sold in London and San Francisco, with checked prices.",
+      "ref": "zhiwuzhi"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "corrected",
+      "text": "Tea Mountain is smoked black tea (Lapsang Souchong), not green tea.",
+      "ref": "uttori"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "corrected",
+      "text": "Separated Uttori's two marketplace prices (¥188 and ¥218) instead of picking one.",
+      "ref": "uttori"
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "moved",
+      "text": "Took MAT KURO atelier off the map until its Shanghai address is confirmed."
+    },
+    {
+      "on": "2026-11-03",
+      "kind": "excluded",
+      "text": "Started an exclusion log: copy-scent sellers, bulk oil suppliers and AI-made posts stay out."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "inbox",
+      "text": "Worked through 30 screenshots: added Voice from the Sky, Chabaud's chocolate scent, Gabar's Deities line, Haeze and a November release list. Several bottles in the screenshots had no visible brand and wait on names."
+    },
+    {
+      "on": "2026-11-05",
+      "kind": "price-seen",
+      "text": "Gabar Nagar Min shows $202 at Stele NYC today; a screenshot from a few days earlier showed $208.",
+      "ref": "gabar-nagar-min-price-1"
+    },
+    {
+      "on": "2026-11-11",
+      "kind": "inbox",
+      "text": "Added a screenshot batch: Naisday, Thameen, Versatile Paris, Yarahèl and a list of Indonesian indie picks waiting on shop checks; new scents on Etre, Gerimist and To Summer."
+    }
+  ]
 }

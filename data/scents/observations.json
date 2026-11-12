@@ -2574,6 +2574,56 @@
       "lead": "Mezel",
       "open": "Year and production site not stated.",
       "note": "From the WS6 research pass (11 Nov 2026), rewritten."
+    },
+    {
+      "id": "thameen-patiala-price-1",
+      "lead": "Thameen London (Patiala)",
+      "product": "Thameen Patiala extrait",
+      "kind": "price",
+      "amt": 195,
+      "cur": "GBP",
+      "ml": 50,
+      "evidence": "retailer",
+      "src": "https://www.libertylondon.com/uk/patiala-extrait-de-parfum-50ml-000774126.html",
+      "seen": "2026-11-11",
+      "note": "Shown reduced to £125, out of stock."
+    },
+    {
+      "id": "versatile-matcha-price-1",
+      "lead": "Versatile Paris (roll-on extraits)",
+      "product": "Versatile It's a Match-a roll-on extrait",
+      "kind": "price",
+      "amt": 65,
+      "cur": "USD",
+      "ml": 15,
+      "evidence": "retailer",
+      "src": "https://www.smallflower.com/products/versatile-paris-its-a-match-a-extrait-de-parfum-roll-on-15-ml",
+      "seen": "2026-11-11",
+      "note": "Sold out when checked."
+    },
+    {
+      "id": "naisday-bundle-price-1",
+      "lead": "Naisday (Jakarta)",
+      "product": "Naisday 3 × 30 ml bundle incl. Magnetic",
+      "kind": "price",
+      "amt": 245500,
+      "cur": "IDR",
+      "ml": 90,
+      "evidence": "retailer",
+      "src": "https://www.tokopedia.com/find/parfum-naisday-ons",
+      "seen": "2026-11-11",
+      "note": "Official store, bundle of three (ONS, Thousand Kisses, Magnetic); listed original Rp527,000."
+    },
+    {
+      "id": "naisday-hq-1",
+      "lead": "Naisday (Jakarta)",
+      "kind": "claim",
+      "topic": "hq",
+      "text": "Official Tokopedia store located in East Jakarta.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://www.tokopedia.com/find/parfum-naisday-ons",
+      "seen": "2026-11-11"
     }
   ]
 }
