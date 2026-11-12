@@ -120,10 +120,11 @@
   },
   {
     "name": "Scent of Africa",
-    "country": "Africa (pan-African)",
-    "cc": "ZA",
-    "lead": "Buchu, Egyptian jasmine, Moroccan armoise; sold via Lux Afrique.",
-    "src": "https://yourluxury.africa/fashion-beauty/africa-bottled/"
+    "country": "Ghana (made in France)",
+    "cc": "GH",
+    "lead": "A luxury brand founded by Tanal Ghandour, launched out of Accra, Ghana. Its scents are reported to be made in France, with perfumers from the big fragrance companies. The first pair (Rakh and Nefee) launched in March 2022. Materials named include buchu, Egyptian jasmine and Moroccan armoise. Sold through Lux Afrique and duty free. Headquarters and production differ, so it stays a lead.",
+    "src": "https://www.premiumbeautynews.com/en/how-scent-of-africa-is-building-a,23408",
+    "checked": "2026-11-11"
   },
   {
     "name": "Monbeau Afrique",
@@ -220,8 +221,9 @@
     "name": "Mezel",
     "country": "Morocco / France",
     "cc": "MA",
-    "lead": "Moroccan heritage niche house in Paris.",
-    "src": "https://www.formesdeluxe.com/article/moroccan-heritage-meets-parisian-flair-at-niche-fragrance-brand-mezel.65367"
+    "lead": "A niche house that describes itself as born between Casablanca and Paris, founded by French-Moroccan Sophia Gyé-Jacquot. Founding year and where it's made aren't stated, so it stays a lead.",
+    "src": "https://fragranze.pittimmagine.com/en/exhibitors/M/mezel",
+    "checked": "2026-11-11"
   },
   {
     "name": "Ambiance by Talata",

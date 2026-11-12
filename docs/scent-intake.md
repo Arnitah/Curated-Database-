@@ -33,3 +33,25 @@ The inbox's "Research template" tab holds a prompt that makes research tools ret
 `.github/workflows/scents.yml` runs `scripts/check-scents.mjs`: refreshes rates, tests every link, reads live shop prices,
 and writes price changes, broken links, stale prices (no sighting in 6 months) and a summary into `fieldnotes.json`.
 Changed prices are to-dos for review; curated prices are never overwritten automatically.
+
+## Ownership, production and the verified-house rule (added 11 Nov 2026)
+
+Facts about who a house is go in `data/scents/observations.json` as `kind: "claim"` records with a `topic`, one record per source:
+
+| topic | what it records |
+| --- | --- |
+| `hq` | where the house is based |
+| `made_in` | where it is formulated, made or filled |
+| `founder` | who founded it |
+| `owner` | who owns it now (parent company, majority holder) |
+| `catalogue` | what it currently sells |
+| `status` | whether it is still trading |
+| `history` | founding year, origin story, milestones |
+
+Each topic claim needs `strength`: **A** official, registry, government or academic; **B** credible journalism or trade press; **C** brand self-description, retailer or lifestyle press; **D** unsourced. Add `published` (YYYY, YYYY-MM or YYYY-MM-DD) when the source shows a date, and `open` for anything still unresolved. `seen` is the access date. When two sources disagree, keep both and say which one stands and why.
+
+Houses can carry an optional `class`: `independent`, `artisan`, `commercial` (part of a larger company), `contract-made`, `diaspora` (rooted in one place, made in another), `retailer` or `tradition`. Set it only when the evidence supports it.
+
+**Verified-house rule.** A house counts as verified only when `owner`, `made_in` and `catalogue` each have at least one claim at strength A or B that is not the brand's own site. The app shows this under "Where this comes from". A website alone never promotes a lead.
+
+Traditions take a `sources` list (`url`, `title`, `strength`, `published`, `accessed`) and a `verify` line for what is still unconfirmed. `scripts/build.mjs` checks all of these fields.

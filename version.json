@@ -1,6 +1,6 @@
 {
-  "version": 182,
-  "updated_at": "2026-11-11T18:44:22.780Z",
+  "version": 183,
+  "updated_at": "2026-11-12T00:15:15.129Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -322,9 +322,9 @@
     },
     "scents/exclusions": {
       "count": 2,
-      "bytes": 2590,
-      "hash": "f302c3a31187",
-      "updated_at": "2026-11-05T05:46:05.527Z"
+      "bytes": 2952,
+      "hash": "9eee72a7318d",
+      "updated_at": "2026-11-12T00:15:15.125Z"
     },
     "scents/families": {
       "count": 12,
@@ -340,21 +340,21 @@
     },
     "scents/geo": {
       "count": 178,
-      "bytes": 17651,
-      "hash": "62398dddef35",
-      "updated_at": "2026-11-03T23:55:31.692Z"
+      "bytes": 19428,
+      "hash": "64e1ff5e1e40",
+      "updated_at": "2026-11-12T00:15:15.128Z"
     },
     "scents/houses": {
       "count": 178,
-      "bytes": 305199,
-      "hash": "9b2f6d8446d5",
-      "updated_at": "2026-11-05T05:46:05.534Z"
+      "bytes": 305434,
+      "hash": "b9a6ff1f88e0",
+      "updated_at": "2026-11-12T00:15:15.128Z"
     },
     "scents/leads": {
       "count": 189,
-      "bytes": 101808,
-      "hash": "d6e11d3d38de",
-      "updated_at": "2026-11-06T19:59:11.559Z"
+      "bytes": 102307,
+      "hash": "a11feb0b079d",
+      "updated_at": "2026-11-12T00:15:15.128Z"
     },
     "scents/materials": {
       "count": 3,
@@ -364,9 +364,9 @@
     },
     "scents/observations": {
       "count": 2,
-      "bytes": 71631,
-      "hash": "8da815e9b9f0",
-      "updated_at": "2026-11-05T05:46:05.534Z"
+      "bytes": 79202,
+      "hash": "4d4c2100edc7",
+      "updated_at": "2026-11-12T00:15:15.128Z"
     },
     "scents/rates": {
       "count": 5,
@@ -399,10 +399,10 @@
       "updated_at": "2026-11-03T21:39:57.934Z"
     },
     "scents/traditions": {
-      "count": 25,
-      "bytes": 24422,
-      "hash": "bd712868e17b",
-      "updated_at": "2026-11-02T18:31:33.120Z"
+      "count": 27,
+      "bytes": 35041,
+      "hash": "21b44e8e67ce",
+      "updated_at": "2026-11-12T00:15:15.128Z"
     },
     "scents/travel": {
       "count": 1,

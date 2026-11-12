@@ -1,812 +1,1014 @@
 [
- {
-  "id": "gowe",
-  "name": "Gowé",
-  "local": "Gowé",
-  "country": "Senegal and Mali",
-  "cc": "SN",
-  "lat": 16.5,
-  "lon": -15.0,
-  "place": "Senegal River valley",
-  "what": "A wild sedge-like plant whose black tubers are dug up by women, dried in the sun and pounded. It is drunk as a herbal decoction and burned as incense.",
-  "smell": "Woody and earthy, close to vetiver and cypriol, with hay, myrrh and a dried-fruit sweetness (plum, apricot).",
-  "how": "Ground tubers are burned at home as incense; a new extract made with women harvesters in northern Senegal is being used in fine perfume.",
-  "meaning": "Described by its producers as 'the smell of Africa'. Harvesting has become an income source for local women since 2021.",
-  "materials": [
-   "vetiver",
-   "myrrh",
-   "hay",
-   "dried apricot"
-  ],
-  "modern": [
-   "amouage"
-  ],
-  "source": "https://mag.bynez.com/en/?p=51781",
-  "access": {
-   "level": 4,
-   "note": "The dried tuber is sold by some Senegalese sellers abroad, but its botanical name and shipping to Canada need checking. No finished gowé perfume is on sale yet."
-  },
-  "botany": "Sources disagree on the plant: one names it Cyperus articulatus, another Cyperus rotundus (both sedges). Treat the botanical name as unconfirmed.",
-  "verify": "Botanical name, local-language names, where it's harvested and how it's prepared.",
-  "buy": [
-   {
-    "name": "Maison Téranga (Canada)",
-    "what": "Dried gowé, 100 g",
-    "price": {
-     "amt": 12,
-     "cur": "CAD"
+  {
+    "id": "gowe",
+    "name": "Gowé",
+    "local": "Gowé",
+    "country": "Senegal and Mali",
+    "cc": "SN",
+    "lat": 16.5,
+    "lon": -15.0,
+    "place": "Senegal River valley",
+    "what": "A wild sedge-like plant whose black tubers are dug up by women, dried in the sun and pounded. It is drunk as a herbal decoction and burned as incense.",
+    "smell": "Woody and earthy, close to vetiver and cypriol, with hay, myrrh and a dried-fruit sweetness (plum, apricot).",
+    "how": "Ground tubers are burned at home as incense; a new extract made with women harvesters in northern Senegal is being used in fine perfume.",
+    "meaning": "Described by its producers as 'the smell of Africa'. Harvesting has become an income source for local women since 2021.",
+    "materials": [
+      "vetiver",
+      "myrrh",
+      "hay",
+      "dried apricot"
+    ],
+    "modern": [
+      "amouage"
+    ],
+    "source": "https://mag.bynez.com/en/?p=51781",
+    "access": {
+      "level": 4,
+      "note": "The dried tuber is sold by some Senegalese sellers abroad, but its botanical name and shipping to Canada need checking. No finished gowé perfume is on sale yet."
     },
-    "status": "reported",
-    "note": "From your research; not checked yet. Confirm the plant and intended use with the seller."
-   }
-  ],
-  "perfumes": [
-   {
-    "name": "Amouage gowé perfume",
-    "house": "amouage",
-    "note": "In development for 2027, using an extract made with women harvesters in northern Senegal."
-   }
-  ]
- },
- {
-  "id": "thiouraye",
-  "name": "Thiouraye (churai)",
-  "local": "Thiouraye",
-  "country": "Senegal",
-  "cc": "SN",
-  "lat": 14.69,
-  "lon": -17.45,
-  "place": "Dakar",
-  "what": "A home-made incense of wood shavings, fragrant herbs and resins blended with sandalwood, musk, oud or amber, then left to mature for months or years.",
-  "smell": "Warm, smoky and sweet, different in every household.",
-  "how": "Burned on charcoal to scent the home, clothes and the body, especially for guests, celebrations and intimacy.",
-  "meaning": "An unwritten recipe passed from mother to daughter, so each blend carries family memory.",
-  "materials": [
-   "sandalwood",
-   "musk",
-   "oud",
-   "amber",
-   "resin"
-  ],
-  "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
-  "access": {
-   "level": 3,
-   "note": "Sold by Senegalese shops and online sellers, mostly outside mainstream perfume stores. Recipes vary by maker."
+    "botany": "Sources disagree on the plant: one names it Cyperus articulatus, another Cyperus rotundus (both sedges). Treat the botanical name as unconfirmed.",
+    "verify": "Botanical name, local-language names, where it's harvested and how it's prepared.",
+    "buy": [
+      {
+        "name": "Maison Téranga (Canada)",
+        "what": "Dried gowé, 100 g",
+        "price": {
+          "amt": 12,
+          "cur": "CAD"
+        },
+        "status": "reported",
+        "note": "From your research; not checked yet. Confirm the plant and intended use with the seller."
+      }
+    ],
+    "perfumes": [
+      {
+        "name": "Amouage gowé perfume",
+        "house": "amouage",
+        "note": "In development for 2027, using an extract made with women harvesters in northern Senegal."
+      }
+    ]
   },
-  "perfumes": [
-   {
-    "name": "No modern perfume found yet",
-    "note": "A gap: a thiouraye-inspired perfume or fabric scent could be made, as long as it credits the tradition."
-   }
-  ]
- },
- {
-  "id": "kyphi",
-  "name": "Kyphi",
-  "local": "Kyphi",
-  "country": "Ancient Egypt",
-  "cc": "EG",
-  "lat": 25.69,
-  "lon": 32.64,
-  "place": "Thebes (Luxor)",
-  "what": "One of the oldest recorded perfume recipes: resins, honey, wine and aromatic plants cooked into a paste and burned.",
-  "smell": "Resinous, honeyed and spicy.",
-  "how": "Burned in temples at dusk, used in medicine and in preparing the dead.",
-  "meaning": "Egyptians linked fragrance to the divine; kyphi was a temple offering.",
-  "materials": [
-   "resin",
-   "honey",
-   "myrrh"
-  ],
-  "modern": [
-   "curionoir",
-   "meleg-perfumes"
-  ],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
-  "access": {
-   "level": 2,
-   "note": "Modern recreations exist from incense makers, and some perfumes are inspired by it."
-  },
-  "perfumes": [
-   {
-    "name": "Temple of Horus",
-    "house": "meleg-perfumes",
-    "note": "Canadian incense perfume inspired by a formula on the Temple of Horus walls at Edfu; inspired by it, not a copy of it."
-   }
-  ]
- },
- {
-  "id": "frankincense-horn",
-  "name": "Frankincense harvesting",
-  "local": "Lubaan / foox",
-  "country": "Somalia, Ethiopia and Oman",
-  "cc": "SO",
-  "lat": 10.0,
-  "lon": 47.0,
-  "place": "Horn of Africa",
-  "what": "Resin tapped by hand from Boswellia trees, the same way for thousands of years, and traded across the ancient world.",
-  "smell": "Bright, lemony, smoky and clean.",
-  "how": "Burned as incense, chewed, and distilled into oil.",
-  "meaning": "One of the world's oldest scent trades; Oman's Dhofar coast and the Horn of Africa still supply most of it.",
-  "materials": [
-   "frankincense",
-   "olibanum"
-  ],
-  "modern": [
-   "amouage",
-   "parfum-satori"
-  ],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
-  "access": {
-   "level": 1,
-   "note": "Frankincense resin and oil are easy to buy, including from Canadian suppliers."
-  },
-  "buy": [
-   {
-    "name": "LVNEA (Montreal)",
-    "what": "Frankincense essential oil, Somali (carterii)",
-    "price": {
-     "amt": 10.95,
-     "cur": "CAD",
-     "ml": 5
+  {
+    "id": "thiouraye",
+    "name": "Thiouraye (churai)",
+    "local": "Thiouraye",
+    "country": "Senegal",
+    "cc": "SN",
+    "lat": 14.69,
+    "lon": -17.45,
+    "place": "Dakar",
+    "what": "A home-made incense of wood shavings, fragrant herbs and resins blended with sandalwood, musk, oud or amber, then left to mature for months or years.",
+    "smell": "Warm, smoky and sweet, different in every household.",
+    "how": "Burned on charcoal to scent the home, clothes and the body, especially for guests, celebrations and intimacy.",
+    "meaning": "An unwritten recipe passed from mother to daughter, so each blend carries family memory.",
+    "materials": [
+      "sandalwood",
+      "musk",
+      "oud",
+      "amber",
+      "resin"
+    ],
+    "modern": [],
+    "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+    "access": {
+      "level": 3,
+      "note": "Sold by Senegalese shops and online sellers, mostly outside mainstream perfume stores. Recipes vary by maker."
     },
-    "url": "https://www.lvnea.com/products/frankincense-somalia-essential-oil-pure-plant-extract-1",
-    "status": "verified"
-   }
-  ],
-  "perfumes": [
-   {
-    "name": "Temple of Horus",
-    "house": "meleg-perfumes",
-    "note": "Frankincense-led incense perfume made in Canada."
-   }
-  ]
- },
- {
-  "id": "uunsi",
-  "name": "Uunsi welcome smoke",
-  "local": "Uunsi",
-  "country": "Somalia",
-  "cc": "SO",
-  "lat": 2.05,
-  "lon": 45.32,
-  "place": "Mogadishu",
-  "what": "A Somali incense blend burned in a clay burner (dabqaad).",
-  "smell": "Sweet, resinous and perfumed.",
-  "how": "Guests wave the smoke over themselves on arrival; it also scents clothes and hair.",
-  "meaning": "Hospitality and cleansing in one gesture.",
-  "materials": [
-   "frankincense",
-   "resin",
-   "musk"
-  ],
-  "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
-  "access": {
-   "level": 3,
-   "note": "Found through Somali shops and online sellers rather than perfume stores."
-  }
- },
- {
-  "id": "kunukia",
-  "name": "Scented smoke of the Swahili coast",
-  "local": "Kunukia (to perfume)",
-  "country": "Kenya and Tanzania coast",
-  "cc": "KE",
-  "lat": -4.04,
-  "lon": 39.67,
-  "place": "Mombasa",
-  "what": "Clothes, hair and bedding are perfumed with fragrant smoke before important occasions.",
-  "smell": "Smoky, sweet and woody.",
-  "how": "A burner is placed under clothing or a basket so the smoke soaks in.",
-  "meaning": "Marks weddings and other life moments.",
-  "materials": [
-   "oud",
-   "sandalwood",
-   "resin"
-  ],
-  "modern": [],
-  "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
-  "access": {
-   "level": 4,
-   "note": "Mostly made at home or bought locally on the coast; hard to find abroad."
-  }
- },
- {
-  "id": "dukhan",
-  "name": "Dukhan smoke bath and khumra",
-  "local": "Dukhan, khumra",
-  "country": "Sudan",
-  "cc": "SD",
-  "lat": 15.5,
-  "lon": 32.56,
-  "place": "Khartoum",
-  "what": "Women sit wrapped in a blanket over a pit of smouldering fragrant acacia wood (dukhan); khumra is a rich bridal perfume oil blend.",
-  "smell": "Smoky acacia wood, then layered musk, sandalwood and floral oils.",
-  "how": "Part of bridal preparation and married women's beauty routines.",
-  "meaning": "A deeply personal Sudanese ritual of beauty and celebration.",
-  "materials": [
-   "acacia wood",
-   "sandalwood",
-   "musk"
-  ],
-  "modern": [],
-  "source": null,
-  "access": {
-   "level": 3,
-   "note": "Smoke wood and blends are sold by Sudanese shops and online sellers; the full ritual is learned, not bought."
-  }
- },
- {
-  "id": "bakhoor",
-  "name": "Bakhoor",
-  "local": "Bakhoor",
-  "country": "Arabian Peninsula",
-  "cc": "SA",
-  "lat": 24.71,
-  "lon": 46.68,
-  "place": "Arabian Gulf",
-  "what": "Wood chips soaked in perfume oils, resins and sugar, burned on charcoal in a mabkhara burner.",
-  "smell": "Sweet, smoky, oud-rich and floral.",
-  "how": "Passed around to scent guests, clothes and rooms; also wafted through hair.",
-  "meaning": "A central sign of welcome in Gulf homes.",
-  "materials": [
-   "oud",
-   "rose",
-   "amber",
-   "musk"
-  ],
-  "modern": [
-   "abdul-samad-al-qurashi",
-   "kayali",
-   "swiss-arabian"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Widely sold by Gulf perfume brands and Middle Eastern shops, online and in big Canadian cities."
-  }
- },
- {
-  "id": "taif-rose",
-  "name": "Taif rose distillation",
-  "local": "Ward Taifi",
-  "country": "Saudi Arabia",
-  "cc": "SA",
-  "lat": 21.27,
-  "lon": 40.42,
-  "place": "Taif",
-  "what": "Mountain roses picked at dawn each spring and distilled into rose water and precious rose oil.",
-  "smell": "Fresh, deep and spicy rose.",
-  "how": "Rose water is used in cooking and to cleanse; the oil is worn as perfume.",
-  "meaning": "A spring harvest festival and a symbol of the region.",
-  "materials": [
-   "rose",
-   "Taif rose"
-  ],
-  "modern": [
-   "abdul-samad-al-qurashi"
-  ],
-  "source": null,
-  "access": {
-   "level": 3,
-   "note": "Genuine Taif rose oil is rare and expensive; check the seller and the origin."
+    "perfumes": [
+      {
+        "name": "No modern perfume found yet",
+        "note": "A gap: a thiouraye-inspired perfume or fabric scent could be made, as long as it credits the tradition."
+      }
+    ],
+    "verify": "Its only source is a lifestyle article with no citations (evidence D). It needs an academic or official source.",
+    "sources": [
+      {
+        "url": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+        "title": "Unruly, Before the bottle (uncited)",
+        "strength": "D",
+        "accessed": "2026-11-11",
+        "published": "2026-03-31"
+      }
+    ]
   },
-  "buy": [
-   "Abdul Samad Al Qurashi's Special Taif Rose set (12 ml oil and 30 ml spray) is a pilgrim favourite in Makkah; a creator says it smells like the Haram."
-  ]
- },
- {
-  "id": "golab",
-  "name": "Rose water festival (golabgiri)",
-  "local": "Golābgiri",
-  "country": "Iran",
-  "cc": "IR",
-  "lat": 33.98,
-  "lon": 51.44,
-  "place": "Kashan",
-  "what": "Families distil Damask roses into rose water in copper stills during a spring festival.",
-  "smell": "Soft, green, honeyed rose.",
-  "how": "Rose water flavours sweets and is used in rituals and cleansing.",
-  "meaning": "A centuries-old seasonal celebration.",
-  "materials": [
-   "rose",
-   "Damask rose"
-  ],
-  "modern": [],
-  "source": null,
-  "access": {
-   "level": 1,
-   "note": "Rose water is sold in most grocery stores; Kashan-origin rose water is harder to find."
-  }
- },
- {
-  "id": "attar",
-  "name": "Attar and mitti",
-  "local": "Ittar, mitti attar",
-  "country": "India",
-  "cc": "IN",
-  "lat": 27.05,
-  "lon": 79.92,
-  "place": "Kannauj",
-  "what": "Flowers are distilled in copper pots into sandalwood oil (the deg-bhapka method); mitti attar captures baked clay from the riverbed.",
-  "smell": "Mitti smells like the first monsoon rain on dry earth; floral attars are rich and oily.",
-  "how": "Dabbed on wrists and clothes; alcohol-free.",
-  "meaning": "Kannauj has made attars for centuries; mitti is the smell of hope for rain.",
-  "materials": [
-   "sandalwood",
-   "rose",
-   "vetiver",
-   "mitti"
-  ],
-  "modern": [
-   "gulab-singh-johrimal",
-   "isak",
-   "naso-profumi",
-   "neesh"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Finished attars are easy to order online; a specific traditional distillation such as true mitti is harder to source."
-  },
-  "perfumes": [
-   {
-    "name": "Mitti-style petrichor",
-    "note": "A gap: rain-on-earth (mitti) is hard to reproduce consistently, so few modern perfumes do it well."
-   }
-  ],
-  "buy": [
-   "Kannauj Distillery (Gulab, a handmade rose attar) and Delhi's Mir Perfumery (Purple Tahara, sold near Delhi Gate) are creator favourites for modern attars."
-  ]
- },
- {
-  "id": "gajra",
-  "name": "Jasmine garlands",
-  "local": "Gajra, phuang malai, sampaguita",
-  "country": "South and Southeast Asia",
-  "cc": "TH",
-  "lat": 13.75,
-  "lon": 100.5,
-  "place": "Bangkok",
-  "what": "Fresh jasmine and other white flowers threaded into garlands for hair, shrines and gifts (gajra in India, phuang malai in Thailand, sampaguita in the Philippines).",
-  "smell": "Heady, sweet white flowers.",
-  "how": "Worn in the hair, hung at shrines, given as welcome.",
-  "meaning": "Respect, devotion and welcome.",
-  "materials": [
-   "jasmine",
-   "sampaguita",
-   "tuberose"
-  ],
-  "modern": [
-   "dusita",
-   "tadhana",
-   "wren-atelier"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Fresh jasmine garlands can sometimes be found at South Asian shops, especially around festivals."
-  }
- },
- {
-  "id": "yadom",
-  "name": "Yadom herbal inhalers",
-  "local": "Ya dom",
-  "country": "Thailand",
-  "cc": "TH",
-  "lat": 14.5,
-  "lon": 100.9,
-  "place": "Thailand",
-  "what": "Small sticks and balms of camphor, menthol, borneol and herbs carried everywhere.",
-  "smell": "Cool, sharp and herbal.",
-  "how": "Sniffed for freshness in heat, travel and crowds.",
-  "meaning": "An everyday Thai scent ritual and a favourite souvenir.",
-  "materials": [
-   "camphor",
-   "menthol",
-   "lemongrass"
-  ],
-  "modern": [
-   "karmakamet"
-  ],
-  "source": null,
-  "access": {
-   "level": 1,
-   "note": "Thai herbal inhalers are sold at Asian grocery stores and online."
-  }
- },
- {
-  "id": "kodo",
-  "name": "Kōdō, the way of incense",
-  "local": "香道",
-  "country": "Japan",
-  "cc": "JP",
-  "lat": 35.01,
-  "lon": 135.77,
-  "place": "Kyoto",
-  "what": "A formal art of appreciating rare woods like kyara agarwood, heated gently rather than burned.",
-  "smell": "Subtle, warm, resinous wood.",
-  "how": "Guests 'listen' to incense and play guessing games of matching scents.",
-  "meaning": "One of Japan's three classical arts of refinement.",
-  "materials": [
-   "kyara",
-   "agarwood",
-   "sandalwood"
-  ],
-  "modern": [
-   "shoyeido",
-   "parfum-satori",
-   "kitowa"
-  ],
-  "source": null,
-  "access": {
-   "level": 3,
-   "note": "Kōdō sets and genuine aloeswood come from specialist Japanese incense houses; real aloeswood needs careful, legal sourcing."
-  }
- },
- {
-  "id": "xiangdao",
-  "name": "Chinese incense culture",
-  "local": "香道 (xiangdao)",
-  "country": "China",
-  "cc": "CN",
-  "lat": 30.27,
-  "lon": 120.15,
-  "place": "Hangzhou",
-  "what": "Scholars burned blended incense while reading, painting and drinking tea, a culture that peaked in the Song dynasty.",
-  "smell": "Agarwood, sandalwood, tea and resins.",
-  "how": "Burned in small censers in studies and tea rooms.",
-  "meaning": "Calm, focus and refinement.",
-  "materials": [
-   "agarwood",
-   "sandalwood",
-   "tea"
-  ],
-  "modern": [
-   "documents",
-   "to-summer",
-   "uttori"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Chinese incense is easy to find; high-grade agarwood and sandalwood incense is specialist."
-  }
- },
- {
-  "id": "hyangnang",
-  "name": "Scent pouches",
-  "local": "향낭 (hyangnang)",
-  "country": "Korea",
-  "cc": "KR",
-  "lat": 37.57,
-  "lon": 126.98,
-  "place": "Seoul",
-  "what": "Small embroidered pouches of fragrant herbs and musk worn on clothing in the Joseon era.",
-  "smell": "Herbal, musky and soft.",
-  "how": "Hung from hanbok ties or carried; also used to keep away insects.",
-  "meaning": "Elegance and protection; an ancestor of today's bag-charm perfumes.",
-  "materials": [
-   "musk",
-   "herbs"
-  ],
-  "modern": [
-   "whipped",
-   "tamburins"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Easy to make with dried herbs and resin; ready-made pouches from Korean craft sellers."
-  }
- },
- {
-  "id": "tram-huong",
-  "name": "Agarwood incense",
-  "local": "Trầm hương",
-  "country": "Vietnam",
-  "cc": "VN",
-  "lat": 12.25,
-  "lon": 109.19,
-  "place": "Khánh Hòa",
-  "what": "Vietnam's central coast is famous for agarwood, burned as incense at family altars and temples.",
-  "smell": "Deep, sweet, resinous wood.",
-  "how": "Burned daily at ancestor altars.",
-  "meaning": "Honouring ancestors.",
-  "materials": [
-   "agarwood",
-   "oud"
-  ],
-  "modern": [
-   "ensar-oud"
-  ],
-  "source": null,
-  "access": {
-   "level": 3,
-   "note": "Genuine agarwood is costly, often faked and trade-restricted, so buy only with clear, legal provenance."
-  }
- },
- {
-  "id": "copal",
-  "name": "Copal smoke",
-  "local": "Copal",
-  "country": "Mexico",
-  "cc": "MX",
-  "lat": 17.06,
-  "lon": -96.73,
-  "place": "Oaxaca",
-  "what": "Tree resin burned since Maya and Aztec times.",
-  "smell": "Lemony, piney, smoky and sweet.",
-  "how": "Burned in ceremonies, healing rituals and on Day of the Dead altars.",
-  "meaning": "A bridge between people and the sacred.",
-  "materials": [
-   "copal",
-   "resin"
-  ],
-  "modern": [
-   "xinu"
-  ],
-  "source": null,
-  "access": {
-   "level": 2,
-   "note": "Raw copal resin is fairly easy to find; the tree species and origin vary between sellers."
-  },
-  "perfumes": [
-   {
-    "name": "Copal resin notes",
-    "note": "Appears as a resin note in some niche perfumes; check which species a perfumer used."
-   }
-  ]
- },
- {
-  "id": "orange-blossom-water",
-  "name": "Orange blossom water",
-  "local": "Mazhar",
-  "country": "Morocco",
-  "cc": "MA",
-  "lat": 34.03,
-  "lon": -5.0,
-  "place": "Fez",
-  "what": "Bitter-orange blossoms distilled each spring into fragrant water.",
-  "smell": "Fresh, honeyed orange flower.",
-  "how": "Sprinkled on guests' hands, used in pastries and skin care.",
-  "meaning": "Welcome and celebration.",
-  "materials": [
-   "orange blossom",
-   "neroli"
-  ],
-  "modern": [
-   "sana-jardin",
-   "coqui-coqui"
-  ],
-  "source": null,
-  "access": {
-   "level": 1,
-   "note": "Sold in grocery stores and Middle Eastern shops; neroli oil is a standard perfume material."
-  },
-  "buy": [
-   {
-    "name": "LVNEA (Montreal)",
-    "what": "Rose absolute (for comparison with Moroccan rose)",
-    "price": {
-     "amt": 15.95,
-     "cur": "CAD",
-     "ml": 5
+  {
+    "id": "kyphi",
+    "name": "Kyphi",
+    "local": "Kyphi",
+    "country": "Ancient Egypt",
+    "cc": "EG",
+    "lat": 25.69,
+    "lon": 32.64,
+    "place": "Thebes (Luxor)",
+    "what": "One of the oldest recorded perfume recipes: resins, honey, wine and aromatic plants cooked into a paste and burned.",
+    "smell": "Resinous, honeyed and spicy.",
+    "how": "Burned in temples at dusk, used in medicine and in preparing the dead.",
+    "meaning": "Egyptians linked fragrance to the divine; kyphi was a temple offering.",
+    "materials": [
+      "resin",
+      "honey",
+      "myrrh"
+    ],
+    "modern": [
+      "curionoir",
+      "meleg-perfumes"
+    ],
+    "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+    "access": {
+      "level": 2,
+      "note": "Modern recreations exist from incense makers, and some perfumes are inspired by it."
     },
-    "url": "https://www.lvnea.com/products/rose-absolute",
-    "status": "verified",
-    "note": "Diluted 5 ml; undiluted is C$35.95."
-   }
-  ]
- },
- {
-  "id": "hungary-water",
-  "name": "Hungary Water",
-  "local": "Aqua Reginae Hungariae",
-  "country": "Hungary",
-  "cc": "HU",
-  "lat": 47.5,
-  "lon": 19.04,
-  "place": "Budapest",
-  "what": "A 14th-century rosemary-in-alcohol water, often called the first alcohol-based perfume in Europe.",
-  "smell": "Herbal rosemary and citrus.",
-  "how": "Used as a tonic and a fragrance.",
-  "meaning": "A bridge from medicine to perfume.",
-  "materials": [
-   "rosemary",
-   "citrus"
-  ],
-  "modern": [
-   "santa-maria-novella"
-  ],
-  "source": null,
-  "access": {
-   "level": 1,
-   "note": "Rosemary oil and hydrosol are easy to buy; perfumers sell modern versions."
-  }
- },
- {
-  "id": "eau-de-cologne",
-  "name": "Eau de Cologne",
-  "local": "Kölnisch Wasser",
-  "country": "Germany",
-  "cc": "DE",
-  "lat": 50.94,
-  "lon": 6.96,
-  "place": "Cologne",
-  "what": "A light citrus-herbal water created in Cologne in 1709 that gave its name to a whole type of fragrance.",
-  "smell": "Bergamot, lemon, neroli and herbs.",
-  "how": "Splashed on freely for freshness.",
-  "meaning": "The start of modern fresh perfume.",
-  "materials": [
-   "bergamot",
-   "neroli",
-   "lemon"
-  ],
-  "modern": [
-   "acqua-di-parma",
-   "santa-maria-novella"
-  ],
-  "source": null,
-  "access": {
-   "level": 1,
-   "note": "Classic colognes are sold everywhere, including the original Cologne brands."
-  }
- },
- {
-  "id": "sweetgrass",
-  "name": "Sacred plants of First Nations",
-  "local": "Sweetgrass, sage, cedar, tobacco",
-  "country": "Canada and the US",
-  "cc": "CA",
-  "lat": 46.0,
-  "lon": -80.0,
-  "place": "Turtle Island",
-  "what": "Many Indigenous nations hold sweetgrass, sage, cedar and tobacco as sacred medicines.",
-  "smell": "Sweetgrass smells like vanilla and fresh hay.",
-  "how": "Used in ceremony and prayer by the communities who keep these teachings.",
-  "meaning": "Sacred, not a fragrance trend; shown here with respect, not as something to copy or sell.",
-  "materials": [
-   "sweetgrass",
-   "cedar",
-   "sage"
-  ],
-  "modern": [],
-  "source": null,
-  "access": {
-   "level": 4,
-   "note": "Sacred to many First Nations. Buy braids only from Indigenous makers, and leave ceremonial use to the communities it belongs to."
-  }
- },
- {
-  "id": "dhofar-frankincense",
-  "name": "Dhofar frankincense",
-  "local": "Luban",
-  "country": "Oman",
-  "cc": "OM",
-  "lat": 17.02,
-  "lon": 54.09,
-  "place": "Dhofar, around Salalah (Wadi Dawkah)",
-  "what": "Resin tapped from Boswellia sacra trees in southern Oman, traded for thousands of years along the incense routes. Grades are sorted by colour and purity; the pale green-white Hojari is the most prized.",
-  "smell": "Fresh, lemony and piney when warmed, turning deeper, smoky and mineral as it burns.",
-  "how": "Burned on charcoal in clay burners to scent homes, clothes and guests; also chewed and soaked in water.",
-  "meaning": "Hospitality and daily life, and the source of the region's ancient wealth. The frankincense trees of Wadi Dawkah and the old caravan and port sites of Shisr, Khor Rori and al-Baleed make up UNESCO's Land of Frankincense World Heritage Site, listed in 2000. Wild trees are under pressure, so sustainable harvesting matters.",
-  "materials": [
-   "frankincense",
-   "resin",
-   "lemon",
-   "pine"
-  ],
-  "modern": [
-   "meleg-perfumes",
-   "amouage"
-  ],
-  "access": {
-   "level": 1,
-   "note": "Easy: frankincense oil from the same species is sold by Canadian suppliers; good resin grades are specialist."
+    "perfumes": [
+      {
+        "name": "Temple of Horus",
+        "house": "meleg-perfumes",
+        "note": "Canadian incense perfume inspired by a formula on the Temple of Horus walls at Edfu; inspired by it, not a copy of it."
+      }
+    ],
+    "verify": "Its only source is a lifestyle article with no citations (evidence D). It needs an academic or official source.",
+    "sources": [
+      {
+        "url": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+        "title": "Unruly, Before the bottle (uncited)",
+        "strength": "D",
+        "accessed": "2026-11-11",
+        "published": "2026-03-31"
+      }
+    ]
   },
-  "buy": [
-   {
-    "name": "LVNEA (Montreal)",
-    "what": "Frankincense sacra essential oil",
-    "price": {
-     "amt": 19.95,
-     "cur": "CAD",
-     "ml": 5
+  {
+    "id": "frankincense-horn",
+    "name": "Frankincense harvesting",
+    "local": "Lubaan / foox",
+    "country": "Somalia, Ethiopia and Oman",
+    "cc": "SO",
+    "lat": 10.0,
+    "lon": 47.0,
+    "place": "Horn of Africa",
+    "what": "Resin tapped by hand from Boswellia trees, the same way for thousands of years, and traded across the ancient world.",
+    "smell": "Bright, lemony, smoky and clean.",
+    "how": "Burned as incense, chewed, and distilled into oil.",
+    "meaning": "One of the world's oldest scent trades; Oman's Dhofar coast and the Horn of Africa still supply most of it.",
+    "materials": [
+      "frankincense",
+      "olibanum"
+    ],
+    "modern": [
+      "amouage",
+      "parfum-satori"
+    ],
+    "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+    "access": {
+      "level": 1,
+      "note": "Frankincense resin and oil are easy to buy, including from Canadian suppliers."
     },
-    "url": "https://www.lvnea.com/products/frankincense-sacra-essential-oil",
-    "status": "verified"
-   }
-  ],
-  "perfumes": [
-   {
-    "name": "Temple of Horus",
-    "house": "meleg-perfumes",
-    "note": "Built around Hojari frankincense."
-   }
-  ],
-  "source": "https://whc.unesco.org/en/list/1010/"
- },
- {
-  "id": "ylang-comoros",
-  "name": "Ylang-ylang of the Comoros and Madagascar",
-  "local": "Ylang-ylang",
-  "country": "Comoros and Madagascar",
-  "cc": "KM",
-  "lat": -12.25,
-  "lon": 44.45,
-  "place": "Anjouan (Comoros) and Nosy Be (Madagascar)",
-  "what": "Star-shaped yellow flowers picked at dawn and steam-distilled in small island stills. The oil is split into grades by how long it's distilled. Much of it is grown for export to perfumers.",
-  "smell": "Rich, creamy and sweet, between jasmine and banana custard, with a soft spicy edge.",
-  "how": "Distilled into oil for the global perfume industry; flowers are also used locally in hair and on bedding.",
-  "meaning": "A key island livelihood. Being a big export doesn't mean every community has the same traditional uses, so local practice and export crop are kept apart here.",
-  "materials": [
-   "ylang-ylang",
-   "vanilla",
-   "clove"
-  ],
-  "modern": [],
-  "access": {
-   "level": 1,
-   "note": "Easy: ylang-ylang oil is sold by Canadian suppliers. Specific grades and island origins are harder."
+    "buy": [
+      {
+        "name": "LVNEA (Montreal)",
+        "what": "Frankincense essential oil, Somali (carterii)",
+        "price": {
+          "amt": 10.95,
+          "cur": "CAD",
+          "ml": 5
+        },
+        "url": "https://www.lvnea.com/products/frankincense-somalia-essential-oil-pure-plant-extract-1",
+        "status": "verified"
+      }
+    ],
+    "perfumes": [
+      {
+        "name": "Temple of Horus",
+        "house": "meleg-perfumes",
+        "note": "Frankincense-led incense perfume made in Canada."
+      }
+    ],
+    "verify": "Its only source is a lifestyle article with no citations (evidence D). It needs an academic or official source.",
+    "sources": [
+      {
+        "url": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+        "title": "Unruly, Before the bottle (uncited)",
+        "strength": "D",
+        "accessed": "2026-11-11",
+        "published": "2026-03-31"
+      }
+    ]
   },
-  "buy": [
-   {
-    "name": "LVNEA (Montreal)",
-    "what": "Ylang-ylang essential oil",
-    "price": {
-     "amt": 9.95,
-     "cur": "CAD",
-     "ml": 5
+  {
+    "id": "uunsi",
+    "name": "Uunsi welcome smoke",
+    "local": "Uunsi",
+    "country": "Somalia",
+    "cc": "SO",
+    "lat": 2.05,
+    "lon": 45.32,
+    "place": "Mogadishu",
+    "what": "A Somali incense blend burned in a clay burner (dabqaad).",
+    "smell": "Sweet, resinous and perfumed.",
+    "how": "Guests wave the smoke over themselves on arrival; it also scents clothes and hair.",
+    "meaning": "Hospitality and cleansing in one gesture.",
+    "materials": [
+      "frankincense",
+      "resin",
+      "musk"
+    ],
+    "modern": [],
+    "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+    "access": {
+      "level": 3,
+      "note": "Found through Somali shops and online sellers rather than perfume stores."
     },
-    "url": "https://www.lvnea.com/products/ylang-ylang-pure-essential-oil",
-    "status": "verified"
-   }
-  ]
- },
- {
-  "id": "haiti-vetiver",
-  "name": "Haitian vetiver",
-  "local": "Vétiver",
-  "country": "Haiti",
-  "cc": "HT",
-  "lat": 18.2,
-  "lon": -73.75,
-  "place": "Southern Haiti, around Les Cayes",
-  "what": "Grass roots dug up by farming families, washed, dried and steam-distilled into one of the most used oils in fine perfume. Haiti is one of the world's main sources.",
-  "smell": "Earthy, rooty and woody, with a cool green freshness and a hint of smoke and grapefruit.",
-  "how": "Mostly distilled for export to perfumers; the roots also hold soil on hillsides.",
-  "meaning": "An important income for thousands of small farmers. A local crop that became a global perfume staple.",
-  "materials": [
-   "vetiver",
-   "grapefruit",
-   "smoke"
-  ],
-  "modern": [],
-  "access": {
-   "level": 1,
-   "note": "Easy to moderate: Haitian vetiver oil is sold by Canadian perfume suppliers, and many perfumes feature it."
+    "verify": "Its only source is a lifestyle article with no citations (evidence D). It needs an academic or official source.",
+    "sources": [
+      {
+        "url": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+        "title": "Unruly, Before the bottle (uncited)",
+        "strength": "D",
+        "accessed": "2026-11-11",
+        "published": "2026-03-31"
+      }
+    ]
   },
-  "buy": [
-   {
-    "name": "LVNEA (Montreal)",
-    "what": "Haitian vetiver essential oil",
-    "price": {
-     "amt": 14.95,
-     "cur": "CAD",
-     "ml": 5
+  {
+    "id": "kunukia",
+    "name": "Scented smoke of the Swahili coast",
+    "local": "Kunukia (to perfume)",
+    "country": "Kenya and Tanzania coast",
+    "cc": "KE",
+    "lat": -4.04,
+    "lon": 39.67,
+    "place": "Mombasa",
+    "what": "Clothes, hair and bedding are perfumed with fragrant smoke before important occasions.",
+    "smell": "Smoky, sweet and woody.",
+    "how": "A burner is placed under clothing or a basket so the smoke soaks in.",
+    "meaning": "Marks weddings and other life moments.",
+    "materials": [
+      "oud",
+      "sandalwood",
+      "resin"
+    ],
+    "modern": [],
+    "source": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+    "access": {
+      "level": 4,
+      "note": "Mostly made at home or bought locally on the coast; hard to find abroad."
     },
-    "url": "https://www.lvnea.com/products/vetiver-hydrodiffused-pure-essential-oil",
-    "status": "verified"
-   }
-  ],
-  "perfumes": [
-   {
-    "name": "Le Labo Vetiver 46",
-    "note": "A designer-niche perfume built around Haitian vetiver with pepper, labdanum and incense; sold in Canada."
-   }
-  ]
- }
+    "verify": "Its only source is a lifestyle article with no citations (evidence D). It needs an academic or official source.",
+    "sources": [
+      {
+        "url": "https://getunruly.com/articles/before-the-bottle-africas-long-history-with-fragrance",
+        "title": "Unruly, Before the bottle (uncited)",
+        "strength": "D",
+        "accessed": "2026-11-11",
+        "published": "2026-03-31"
+      }
+    ]
+  },
+  {
+    "id": "dukhan",
+    "name": "Dukhan smoke bath and khumra",
+    "local": "Dukhan, khumra",
+    "country": "Sudan",
+    "cc": "SD",
+    "lat": 15.5,
+    "lon": 32.56,
+    "place": "Khartoum",
+    "what": "Women sit wrapped in a blanket over a pit of smouldering fragrant acacia wood (dukhan); khumra is a rich bridal perfume oil blend.",
+    "smell": "Smoky acacia wood, then layered musk, sandalwood and floral oils.",
+    "how": "Part of bridal preparation and married women's beauty routines.",
+    "meaning": "A deeply personal Sudanese ritual of beauty and celebration.",
+    "materials": [
+      "acacia wood",
+      "sandalwood",
+      "musk"
+    ],
+    "modern": [],
+    "source": null,
+    "access": {
+      "level": 3,
+      "note": "Smoke wood and blends are sold by Sudanese shops and online sellers; the full ritual is learned, not bought."
+    },
+    "sources": [
+      {
+        "url": "https://dspace.mit.edu/bitstream/1721.1/97619/1/30_abusharaf.pdf",
+        "title": "Abusharaf, MIT working paper (smoke bath with shaff and talih wood, karkar and dilka)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2004-08"
+      }
+    ],
+    "verify": "The paper is about displaced Southern Sudanese women and was only partly read. Khumra, the bridal oil, still needs its own source."
+  },
+  {
+    "id": "bakhoor",
+    "name": "Bakhoor",
+    "local": "Bakhoor",
+    "country": "Arabian Peninsula",
+    "cc": "SA",
+    "lat": 24.71,
+    "lon": 46.68,
+    "place": "Arabian Gulf",
+    "what": "Wood chips soaked in perfume oils, resins and sugar, burned on charcoal in a mabkhara burner.",
+    "smell": "Sweet, smoky, oud-rich and floral.",
+    "how": "Passed around to scent guests, clothes and rooms; also wafted through hair.",
+    "meaning": "A central sign of welcome in Gulf homes.",
+    "materials": [
+      "oud",
+      "rose",
+      "amber",
+      "musk"
+    ],
+    "modern": [
+      "abdul-samad-al-qurashi",
+      "kayali",
+      "swiss-arabian"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Widely sold by Gulf perfume brands and Middle Eastern shops, online and in big Canadian cities."
+    }
+  },
+  {
+    "id": "taif-rose",
+    "name": "Taif rose distillation",
+    "local": "Ward Taifi",
+    "country": "Saudi Arabia",
+    "cc": "SA",
+    "lat": 21.27,
+    "lon": 40.42,
+    "place": "Taif",
+    "what": "Mountain roses picked at dawn each spring and distilled into rose water and precious rose oil.",
+    "smell": "Fresh, deep and spicy rose.",
+    "how": "Rose water is used in cooking and to cleanse; the oil is worn as perfume.",
+    "meaning": "A spring harvest festival and a symbol of the region.",
+    "materials": [
+      "rose",
+      "Taif rose"
+    ],
+    "modern": [
+      "abdul-samad-al-qurashi"
+    ],
+    "source": null,
+    "access": {
+      "level": 3,
+      "note": "Genuine Taif rose oil is rare and expensive; check the seller and the origin."
+    },
+    "buy": [
+      "Abdul Samad Al Qurashi's Special Taif Rose set (12 ml oil and 30 ml spray) is a pilgrim favourite in Makkah; a creator says it smells like the Haram."
+    ]
+  },
+  {
+    "id": "golab",
+    "name": "Rose water festival (golabgiri)",
+    "local": "Golābgiri",
+    "country": "Iran",
+    "cc": "IR",
+    "lat": 33.98,
+    "lon": 51.44,
+    "place": "Kashan",
+    "what": "Families distil Damask roses into rose water in copper stills during a spring festival.",
+    "smell": "Soft, green, honeyed rose.",
+    "how": "Rose water flavours sweets and is used in rituals and cleansing.",
+    "meaning": "A centuries-old seasonal celebration.",
+    "materials": [
+      "rose",
+      "Damask rose"
+    ],
+    "modern": [],
+    "source": null,
+    "access": {
+      "level": 1,
+      "note": "Rose water is sold in most grocery stores; Kashan-origin rose water is harder to find."
+    }
+  },
+  {
+    "id": "attar",
+    "name": "Attar and mitti",
+    "local": "Ittar, mitti attar",
+    "country": "India",
+    "cc": "IN",
+    "lat": 27.05,
+    "lon": 79.92,
+    "place": "Kannauj",
+    "what": "Flowers are distilled in copper pots into sandalwood oil (the deg-bhapka method); mitti attar captures baked clay from the riverbed.",
+    "smell": "Mitti smells like the first monsoon rain on dry earth; floral attars are rich and oily.",
+    "how": "Dabbed on wrists and clothes; alcohol-free.",
+    "meaning": "Kannauj has made attars for centuries; mitti is the smell of hope for rain.",
+    "materials": [
+      "sandalwood",
+      "rose",
+      "vetiver",
+      "mitti"
+    ],
+    "modern": [
+      "gulab-singh-johrimal",
+      "isak",
+      "naso-profumi",
+      "neesh"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Finished attars are easy to order online; a specific traditional distillation such as true mitti is harder to source."
+    },
+    "perfumes": [
+      {
+        "name": "Mitti-style petrichor",
+        "note": "A gap: rain-on-earth (mitti) is hard to reproduce consistently, so few modern perfumes do it well."
+      }
+    ],
+    "buy": [
+      "Kannauj Distillery (Gulab, a handmade rose attar) and Delhi's Mir Perfumery (Purple Tahara, sold near Delhi Gate) are creator favourites for modern attars."
+    ],
+    "sources": [
+      {
+        "url": "https://search.ipindia.gov.in/GIRPublicSearch/Application/Details/157",
+        "title": "Indian GI Registry, Kannauj Perfume (registered 31 Mar 2014)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2014-03-31"
+      },
+      {
+        "url": "https://journals.sagepub.com/doi/10.1177/24559296241301917",
+        "title": "Shukla and Mukherjee, Journal of Heritage Management (deg-bhapka method)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2024-12-11"
+      },
+      {
+        "url": "https://www.sahapedia.org/technologies-of-perfumery-india-overview-and-the-case-of-kannauj",
+        "title": "Sahapedia, Technologies of Perfumery in India",
+        "strength": "B",
+        "accessed": "2026-11-11"
+      },
+      {
+        "url": "https://www.thenationalnews.com/weekend/2023/08/04/monsoon-rain-perfume-attar/",
+        "title": "The National, on mitti attar",
+        "strength": "B",
+        "accessed": "2026-11-11",
+        "published": "2023-08-04"
+      }
+    ],
+    "verify": "No single Kannauj house is verified yet. Counts of working distilleries disagree (about 150 to 500 depending on source and year). Claims that the craft is 5,000 years old are not supported."
+  },
+  {
+    "id": "gajra",
+    "name": "Jasmine garlands",
+    "local": "Gajra, phuang malai, sampaguita",
+    "country": "South and Southeast Asia",
+    "cc": "TH",
+    "lat": 13.75,
+    "lon": 100.5,
+    "place": "Bangkok",
+    "what": "Fresh jasmine and other white flowers threaded into garlands for hair, shrines and gifts (gajra in India, phuang malai in Thailand, sampaguita in the Philippines).",
+    "smell": "Heady, sweet white flowers.",
+    "how": "Worn in the hair, hung at shrines, given as welcome.",
+    "meaning": "Respect, devotion and welcome.",
+    "materials": [
+      "jasmine",
+      "sampaguita",
+      "tuberose"
+    ],
+    "modern": [
+      "dusita",
+      "tadhana",
+      "wren-atelier"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Fresh jasmine garlands can sometimes be found at South Asian shops, especially around festivals."
+    }
+  },
+  {
+    "id": "yadom",
+    "name": "Yadom herbal inhalers",
+    "local": "Ya dom",
+    "country": "Thailand",
+    "cc": "TH",
+    "lat": 14.5,
+    "lon": 100.9,
+    "place": "Thailand",
+    "what": "Small sticks and balms of camphor, menthol, borneol and herbs carried everywhere.",
+    "smell": "Cool, sharp and herbal.",
+    "how": "Sniffed for freshness in heat, travel and crowds.",
+    "meaning": "An everyday Thai scent ritual and a favourite souvenir.",
+    "materials": [
+      "camphor",
+      "menthol",
+      "lemongrass"
+    ],
+    "modern": [
+      "karmakamet"
+    ],
+    "source": null,
+    "access": {
+      "level": 1,
+      "note": "Thai herbal inhalers are sold at Asian grocery stores and online."
+    }
+  },
+  {
+    "id": "kodo",
+    "name": "Kōdō, the way of incense",
+    "local": "香道",
+    "country": "Japan",
+    "cc": "JP",
+    "lat": 35.01,
+    "lon": 135.77,
+    "place": "Kyoto",
+    "what": "A formal art of appreciating rare woods like kyara agarwood, heated gently rather than burned.",
+    "smell": "Subtle, warm, resinous wood.",
+    "how": "Guests 'listen' to incense and play guessing games of matching scents.",
+    "meaning": "One of Japan's three classical arts of refinement.",
+    "materials": [
+      "kyara",
+      "agarwood",
+      "sandalwood"
+    ],
+    "modern": [
+      "shoyeido",
+      "parfum-satori",
+      "kitowa"
+    ],
+    "source": null,
+    "access": {
+      "level": 3,
+      "note": "Kōdō sets and genuine aloeswood come from specialist Japanese incense houses; real aloeswood needs careful, legal sourcing."
+    }
+  },
+  {
+    "id": "xiangdao",
+    "name": "Chinese incense culture",
+    "local": "香道 (xiangdao)",
+    "country": "China",
+    "cc": "CN",
+    "lat": 30.27,
+    "lon": 120.15,
+    "place": "Hangzhou",
+    "what": "Scholars burned blended incense while reading, painting and drinking tea, a culture that peaked in the Song dynasty.",
+    "smell": "Agarwood, sandalwood, tea and resins.",
+    "how": "Burned in small censers in studies and tea rooms.",
+    "meaning": "Calm, focus and refinement.",
+    "materials": [
+      "agarwood",
+      "sandalwood",
+      "tea"
+    ],
+    "modern": [
+      "documents",
+      "to-summer",
+      "uttori"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Chinese incense is easy to find; high-grade agarwood and sandalwood incense is specialist."
+    }
+  },
+  {
+    "id": "hyangnang",
+    "name": "Scent pouches",
+    "local": "향낭 (hyangnang)",
+    "country": "Korea",
+    "cc": "KR",
+    "lat": 37.57,
+    "lon": 126.98,
+    "place": "Seoul",
+    "what": "Small embroidered pouches of fragrant herbs and musk worn on clothing in the Joseon era.",
+    "smell": "Herbal, musky and soft.",
+    "how": "Hung from hanbok ties or carried; also used to keep away insects.",
+    "meaning": "Elegance and protection; an ancestor of today's bag-charm perfumes.",
+    "materials": [
+      "musk",
+      "herbs"
+    ],
+    "modern": [
+      "whipped",
+      "tamburins"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Easy to make with dried herbs and resin; ready-made pouches from Korean craft sellers."
+    },
+    "verify": "No source yet for scent pouches. The closest sourced Korean tradition is buyonghyang, the royal wedding incense."
+  },
+  {
+    "id": "tram-huong",
+    "name": "Agarwood incense",
+    "local": "Trầm hương",
+    "country": "Vietnam",
+    "cc": "VN",
+    "lat": 12.25,
+    "lon": 109.19,
+    "place": "Khánh Hòa",
+    "what": "Vietnam's central coast is famous for agarwood, burned as incense at family altars and temples.",
+    "smell": "Deep, sweet, resinous wood.",
+    "how": "Burned daily at ancestor altars.",
+    "meaning": "Honouring ancestors.",
+    "materials": [
+      "agarwood",
+      "oud"
+    ],
+    "modern": [
+      "ensar-oud"
+    ],
+    "source": null,
+    "access": {
+      "level": 3,
+      "note": "Genuine agarwood is costly, often faked and trade-restricted, so buy only with clear, legal provenance."
+    }
+  },
+  {
+    "id": "copal",
+    "name": "Copal smoke",
+    "local": "Copal",
+    "country": "Mexico",
+    "cc": "MX",
+    "lat": 17.06,
+    "lon": -96.73,
+    "place": "Oaxaca",
+    "what": "Tree resin burned since Maya and Aztec times.",
+    "smell": "Lemony, piney, smoky and sweet.",
+    "how": "Burned in ceremonies, healing rituals and on Day of the Dead altars.",
+    "meaning": "A bridge between people and the sacred.",
+    "materials": [
+      "copal",
+      "resin"
+    ],
+    "modern": [
+      "xinu"
+    ],
+    "source": null,
+    "access": {
+      "level": 2,
+      "note": "Raw copal resin is fairly easy to find; the tree species and origin vary between sellers."
+    },
+    "perfumes": [
+      {
+        "name": "Copal resin notes",
+        "note": "Appears as a resin note in some niche perfumes; check which species a perfumer used."
+      }
+    ]
+  },
+  {
+    "id": "orange-blossom-water",
+    "name": "Orange blossom water",
+    "local": "Mazhar",
+    "country": "Morocco",
+    "cc": "MA",
+    "lat": 34.03,
+    "lon": -5.0,
+    "place": "Fez",
+    "what": "Bitter-orange blossoms distilled each spring into fragrant water.",
+    "smell": "Fresh, honeyed orange flower.",
+    "how": "Sprinkled on guests' hands, used in pastries and skin care.",
+    "meaning": "Welcome and celebration.",
+    "materials": [
+      "orange blossom",
+      "neroli"
+    ],
+    "modern": [
+      "sana-jardin",
+      "coqui-coqui"
+    ],
+    "source": null,
+    "access": {
+      "level": 1,
+      "note": "Sold in grocery stores and Middle Eastern shops; neroli oil is a standard perfume material."
+    },
+    "buy": [
+      {
+        "name": "LVNEA (Montreal)",
+        "what": "Rose absolute (for comparison with Moroccan rose)",
+        "price": {
+          "amt": 15.95,
+          "cur": "CAD",
+          "ml": 5
+        },
+        "url": "https://www.lvnea.com/products/rose-absolute",
+        "status": "verified",
+        "note": "Diluted 5 ml; undiluted is C$35.95."
+      }
+    ]
+  },
+  {
+    "id": "hungary-water",
+    "name": "Hungary Water",
+    "local": "Aqua Reginae Hungariae",
+    "country": "Hungary",
+    "cc": "HU",
+    "lat": 47.5,
+    "lon": 19.04,
+    "place": "Budapest",
+    "what": "A 14th-century rosemary-in-alcohol water, often called the first alcohol-based perfume in Europe.",
+    "smell": "Herbal rosemary and citrus.",
+    "how": "Used as a tonic and a fragrance.",
+    "meaning": "A bridge from medicine to perfume.",
+    "materials": [
+      "rosemary",
+      "citrus"
+    ],
+    "modern": [
+      "santa-maria-novella"
+    ],
+    "source": null,
+    "access": {
+      "level": 1,
+      "note": "Rosemary oil and hydrosol are easy to buy; perfumers sell modern versions."
+    }
+  },
+  {
+    "id": "eau-de-cologne",
+    "name": "Eau de Cologne",
+    "local": "Kölnisch Wasser",
+    "country": "Germany",
+    "cc": "DE",
+    "lat": 50.94,
+    "lon": 6.96,
+    "place": "Cologne",
+    "what": "A light citrus-herbal water created in Cologne in 1709 that gave its name to a whole type of fragrance.",
+    "smell": "Bergamot, lemon, neroli and herbs.",
+    "how": "Splashed on freely for freshness.",
+    "meaning": "The start of modern fresh perfume.",
+    "materials": [
+      "bergamot",
+      "neroli",
+      "lemon"
+    ],
+    "modern": [
+      "acqua-di-parma",
+      "santa-maria-novella"
+    ],
+    "source": null,
+    "access": {
+      "level": 1,
+      "note": "Classic colognes are sold everywhere, including the original Cologne brands."
+    }
+  },
+  {
+    "id": "sweetgrass",
+    "name": "Sacred plants of First Nations",
+    "local": "Sweetgrass, sage, cedar, tobacco",
+    "country": "Canada and the US",
+    "cc": "CA",
+    "lat": 46.0,
+    "lon": -80.0,
+    "place": "Turtle Island",
+    "what": "Many Indigenous nations hold sweetgrass, sage, cedar and tobacco as sacred medicines.",
+    "smell": "Sweetgrass smells like vanilla and fresh hay.",
+    "how": "Used in ceremony and prayer by the communities who keep these teachings.",
+    "meaning": "Sacred, not a fragrance trend; shown here with respect, not as something to copy or sell.",
+    "materials": [
+      "sweetgrass",
+      "cedar",
+      "sage"
+    ],
+    "modern": [],
+    "source": null,
+    "access": {
+      "level": 4,
+      "note": "Sacred to many First Nations. Buy braids only from Indigenous makers, and leave ceremonial use to the communities it belongs to."
+    }
+  },
+  {
+    "id": "dhofar-frankincense",
+    "name": "Dhofar frankincense",
+    "local": "Luban",
+    "country": "Oman",
+    "cc": "OM",
+    "lat": 17.02,
+    "lon": 54.09,
+    "place": "Dhofar, around Salalah (Wadi Dawkah)",
+    "what": "Resin tapped from Boswellia sacra trees in southern Oman, traded for thousands of years along the incense routes. Grades are sorted by colour and purity; the pale green-white Hojari is the most prized.",
+    "smell": "Fresh, lemony and piney when warmed, turning deeper, smoky and mineral as it burns.",
+    "how": "Burned on charcoal in clay burners to scent homes, clothes and guests; also chewed and soaked in water.",
+    "meaning": "Hospitality and daily life, and the source of the region's ancient wealth. The frankincense trees of Wadi Dawkah and the old caravan and port sites of Shisr, Khor Rori and al-Baleed make up UNESCO's Land of Frankincense World Heritage Site, listed in 2000. Wild trees are under pressure, so sustainable harvesting matters.",
+    "materials": [
+      "frankincense",
+      "resin",
+      "lemon",
+      "pine"
+    ],
+    "modern": [
+      "meleg-perfumes",
+      "amouage"
+    ],
+    "access": {
+      "level": 1,
+      "note": "Easy: frankincense oil from the same species is sold by Canadian suppliers; good resin grades are specialist."
+    },
+    "buy": [
+      {
+        "name": "LVNEA (Montreal)",
+        "what": "Frankincense sacra essential oil",
+        "price": {
+          "amt": 19.95,
+          "cur": "CAD",
+          "ml": 5
+        },
+        "url": "https://www.lvnea.com/products/frankincense-sacra-essential-oil",
+        "status": "verified"
+      }
+    ],
+    "perfumes": [
+      {
+        "name": "Temple of Horus",
+        "house": "meleg-perfumes",
+        "note": "Built around Hojari frankincense."
+      }
+    ],
+    "source": "https://whc.unesco.org/en/list/1010/",
+    "sources": [
+      {
+        "url": "https://whc.unesco.org/en/decisions/2479",
+        "title": "UNESCO World Heritage Committee decision 24 COM X.C.1 (inscribed 2000)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2000"
+      },
+      {
+        "url": "https://ojs.acrps.ai/index.php/almuntaqa/article/view/issue014-art05/html",
+        "title": "Harrathi, Frankincense's Ritual Uses in Oman (North Al Batinah)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2023-05-01"
+      },
+      {
+        "url": "https://www.fairwild.org/news/2025/8/11/blazing-the-frankincense-trail-amouage-earns-fairwild-certification-for-wadi-dawkah",
+        "title": "FairWild, Wadi Dawkah certification",
+        "strength": "B",
+        "accessed": "2026-11-11",
+        "published": "2025-08-11"
+      }
+    ]
+  },
+  {
+    "id": "ylang-comoros",
+    "name": "Ylang-ylang of the Comoros and Madagascar",
+    "local": "Ylang-ylang",
+    "country": "Comoros and Madagascar",
+    "cc": "KM",
+    "lat": -12.25,
+    "lon": 44.45,
+    "place": "Anjouan (Comoros) and Nosy Be (Madagascar)",
+    "what": "Star-shaped yellow flowers picked at dawn and steam-distilled in small island stills. The oil is split into grades by how long it's distilled. Much of it is grown for export to perfumers.",
+    "smell": "Rich, creamy and sweet, between jasmine and banana custard, with a soft spicy edge.",
+    "how": "Distilled into oil for the global perfume industry; flowers are also used locally in hair and on bedding.",
+    "meaning": "A key island livelihood. Being a big export doesn't mean every community has the same traditional uses, so local practice and export crop are kept apart here.",
+    "materials": [
+      "ylang-ylang",
+      "vanilla",
+      "clove"
+    ],
+    "modern": [],
+    "access": {
+      "level": 1,
+      "note": "Easy: ylang-ylang oil is sold by Canadian suppliers. Specific grades and island origins are harder."
+    },
+    "buy": [
+      {
+        "name": "LVNEA (Montreal)",
+        "what": "Ylang-ylang essential oil",
+        "price": {
+          "amt": 9.95,
+          "cur": "CAD",
+          "ml": 5
+        },
+        "url": "https://www.lvnea.com/products/ylang-ylang-pure-essential-oil",
+        "status": "verified"
+      }
+    ]
+  },
+  {
+    "id": "haiti-vetiver",
+    "name": "Haitian vetiver",
+    "local": "Vétiver",
+    "country": "Haiti",
+    "cc": "HT",
+    "lat": 18.2,
+    "lon": -73.75,
+    "place": "Southern Haiti, around Les Cayes",
+    "what": "Grass roots dug up by farming families, washed, dried and steam-distilled into one of the most used oils in fine perfume. Haiti is one of the world's main sources.",
+    "smell": "Earthy, rooty and woody, with a cool green freshness and a hint of smoke and grapefruit.",
+    "how": "Mostly distilled for export to perfumers; the roots also hold soil on hillsides.",
+    "meaning": "An important income for thousands of small farmers. A local crop that became a global perfume staple.",
+    "materials": [
+      "vetiver",
+      "grapefruit",
+      "smoke"
+    ],
+    "modern": [],
+    "access": {
+      "level": 1,
+      "note": "Easy to moderate: Haitian vetiver oil is sold by Canadian perfume suppliers, and many perfumes feature it."
+    },
+    "buy": [
+      {
+        "name": "LVNEA (Montreal)",
+        "what": "Haitian vetiver essential oil",
+        "price": {
+          "amt": 14.95,
+          "cur": "CAD",
+          "ml": 5
+        },
+        "url": "https://www.lvnea.com/products/vetiver-hydrodiffused-pure-essential-oil",
+        "status": "verified"
+      }
+    ],
+    "perfumes": [
+      {
+        "name": "Le Labo Vetiver 46",
+        "note": "A designer-niche perfume built around Haitian vetiver with pepper, labdanum and incense; sold in Canada."
+      }
+    ]
+  },
+  {
+    "id": "buyonghyang",
+    "name": "Royal wedding incense",
+    "local": "부용향 (buyonghyang)",
+    "country": "Korea",
+    "cc": "KR",
+    "lat": 37.58,
+    "lon": 126.99,
+    "place": "Seoul, Joseon court",
+    "what": "A blended incense of about ten ingredients, built mainly on agarwood and sandalwood, burned during Joseon royal weddings.",
+    "smell": "Deep, resinous wood smoke with a sweet, balsamic edge.",
+    "how": "Burned during the wedding rites of the royal family; court records name the craftsmen and where the ingredients came from.",
+    "meaning": "A scent reserved for the court, tying ceremony, medicine texts and royal status together.",
+    "materials": [
+      "agarwood",
+      "sandalwood"
+    ],
+    "modern": [],
+    "source": "https://koreascience.kr/article/JAKO201968965447783.page?lang=en",
+    "sources": [
+      {
+        "url": "https://koreascience.kr/article/JAKO201968965447783.page?lang=en",
+        "title": "Ha Sumin, Korean Journal of Heritage: History and Science 52(3)",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2019"
+      },
+      {
+        "url": "https://www.koreajoongangdaily.com/lifestyle/incense-culture-makes-a-comeback/11695379",
+        "title": "Korea JoongAng Daily, incense culture in Korea",
+        "strength": "B",
+        "accessed": "2026-11-11",
+        "published": "2016-03-15"
+      }
+    ],
+    "access": {
+      "level": 4,
+      "note": "Not sold as such. Korean incense makers and palace programmes occasionally recreate royal blends."
+    },
+    "verify": "The full ingredient list is in the paper but not recorded here yet."
+  },
+  {
+    "id": "dades-rose",
+    "name": "Rose valley harvest",
+    "local": "Rose de Kelâa M'Gouna-Dadès",
+    "country": "Morocco",
+    "cc": "MA",
+    "lat": 31.24,
+    "lon": -6.13,
+    "place": "Kelâat M'Gouna, Dadès valley",
+    "what": "Damask roses picked by hand each spring along the Dadès valley and distilled in copper stills into rose water and a small amount of oil.",
+    "smell": "Honeyed, slightly spicy pink rose, greener in the fresh water than in the oil.",
+    "how": "Rose water is used on skin, in food and to welcome guests; the oil goes to perfumers. A rose fair is held in Kelâat M'Gouna each May.",
+    "meaning": "The harvest shapes the valley's year and income; two names from the valley are protected designations.",
+    "materials": [
+      "rose"
+    ],
+    "modern": [],
+    "source": "https://medias24.com/2025/05/09/rose-a-parfum-une-production-record-portee-par-une-dynamique-dinvestissement-soutenue/",
+    "sources": [
+      {
+        "url": "https://medias24.com/2025/05/09/rose-a-parfum-une-production-record-portee-par-une-dynamique-dinvestissement-soutenue/",
+        "title": "Médias24, citing the regional agriculture office (ORVMA Ouarzazate)",
+        "strength": "B",
+        "accessed": "2026-11-11",
+        "published": "2025-05-09"
+      },
+      {
+        "url": "https://www.maroc.ma/fr/actualites/le-60e-salon-international-de-la-rose-parfum-ouvre-ses-portes-kelaat-mgouna",
+        "title": "Moroccan government, 60th rose fair",
+        "strength": "A",
+        "accessed": "2026-11-11",
+        "published": "2025-05"
+      },
+      {
+        "url": "https://www.moroccoworldnews.com/2026/04/288317/moroccos-rose-oil-producers-expect-record-harvest-this-season/",
+        "title": "Morocco World News, 2026 harvest",
+        "strength": "B",
+        "accessed": "2026-11-11",
+        "published": "2026-04-23"
+      }
+    ],
+    "access": {
+      "level": 2,
+      "note": "Valley rose water is easy to buy from Moroccan shops; genuine Dadès rose oil is costly."
+    },
+    "verify": "Sources disagree on how many flowers make a litre of oil (3.5 to 5 tonnes). No Moroccan perfume house is verified yet."
+  }
 ]

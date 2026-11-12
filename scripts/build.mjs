@@ -116,6 +116,9 @@ if (houses) {
 }
 
 // Scents: dated evidence records (one per sighting)
+const TOPIC = new Set(['made_in', 'hq', 'founder', 'owner', 'catalogue', 'status', 'history']);
+const STRENGTH = new Set(['A', 'B', 'C', 'D']);
+const DATEISH = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 const obsSet = sets['scents/observations']?.data;
 if (obsSet) {
   const hid = new Set((houses || []).map((h) => h.id)), seen = new Set();
@@ -132,7 +135,22 @@ if (obsSet) {
     if (o.evidence !== 'nitah' && !/^https?:\/\//.test(o.src || '')) errors.push(`${w}: needs a source link`);
     if (o.kind === 'price') { if (typeof o.amt !== 'number') errors.push(`${w}: price needs amt`); if (!(o.cur in rates)) errors.push(`${w}: no exchange rate for ${o.cur}`); }
     if (o.kind === 'claim' && !o.text) errors.push(`${w}: a claim needs text`);
+    if (o.topic != null && !TOPIC.has(o.topic)) errors.push(`${w}: topic must be one of ${[...TOPIC].join(', ')}`);
+    if (o.strength != null && !STRENGTH.has(o.strength)) errors.push(`${w}: strength must be A, B, C or D`);
+    if (o.topic && !o.strength) errors.push(`${w}: a topic claim needs a strength (A-D)`);
+    if (o.published != null && !DATEISH.test(o.published)) errors.push(`${w}: published must be YYYY, YYYY-MM or YYYY-MM-DD`);
   }
+}
+// Scents: house class (optional; set only when evidence supports it)
+const CLASS = new Set(['independent', 'artisan', 'commercial', 'contract-made', 'diaspora', 'retailer', 'tradition']);
+for (const h of houses || []) if (h.class != null && !CLASS.has(h.class)) errors.push(`scents/houses ${h.id}: class must be one of ${[...CLASS].join(', ')}`);
+// Scents: tradition sources
+for (const t of sets['scents/traditions']?.data || []) for (const s of t.sources || []) {
+  const w = `scents/traditions ${t.id}`;
+  if (!/^https?:\/\//.test(s.url || '') || !s.title) errors.push(`${w}: each source needs a url and title`);
+  if (!STRENGTH.has(s.strength)) errors.push(`${w}: source strength must be A, B, C or D`);
+  if (s.published != null && !DATEISH.test(s.published)) errors.push(`${w}: published must be YYYY, YYYY-MM or YYYY-MM-DD`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s.accessed || '')) errors.push(`${w}: source needs an accessed date`);
 }
 for (const e of sets['scents/fieldnotes']?.data?.entries || []) if (!/^\d{4}-\d{2}-\d{2}$/.test(e.on || '') || !e.text) errors.push(`scents/fieldnotes: each entry needs an on date and text`);
 

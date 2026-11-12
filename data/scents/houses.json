@@ -314,7 +314,8 @@
     ],
     "like": [
       "diptyque"
-    ]
+    ],
+    "class": "commercial"
   },
   {
     "id": "nonfiction",
@@ -371,7 +372,8 @@
     ],
     "like": [
       "diptyque"
-    ]
+    ],
+    "class": "commercial"
   },
   {
     "id": "granhand",
@@ -1477,7 +1479,8 @@
       "frankincense",
       "luxury",
       "benchmark"
-    ]
+    ],
+    "class": "commercial"
   },
   {
     "id": "abdul-samad-al-qurashi",
@@ -1788,7 +1791,8 @@
       "natural",
       "indigenous botanicals",
       "small batch"
-    ]
+    ],
+    "class": "artisan"
   },
   {
     "id": "scentury",
@@ -3212,7 +3216,8 @@
         "price": "US$79 · 30 ml (2 ml vial US$10)",
         "url": "https://kstscent.com/products/persimmon-bingsu"
       }
-    ]
+    ],
+    "class": "diaspora"
   },
   {
     "id": "cosmic-mansion",
@@ -6623,16 +6628,16 @@
   {
     "id": "maya-njie",
     "name": "Maya Njie",
-    "country": "Sweden",
-    "cc": "SE",
-    "region": "Northern Europe",
+    "country": "United Kingdom",
+    "cc": "GB",
+    "region": "Western Europe",
     "continent": "Europe",
-    "city": "Stockholm",
+    "city": "London",
     "type": "indie",
     "scale": "micro",
     "site": "https://mayanjie.com/",
-    "about": "A Stockholm perfumer of Swedish and Gambian heritage who makes small-batch scents from memories and nature.",
-    "why": "Tiny Scandinavian studio, affordable for niche.",
+    "about": "A London perfumer, born and raised in Sweden with Gambian roots, who makes small-batch scents from family memories and nature in her own studio.",
+    "why": "A tiny independent studio with niche quality at a fair price.",
     "families": [
       "gourmand",
       "woody"
@@ -6664,8 +6669,9 @@
       "note": "Shop shown in GBP from abroad."
     },
     "tags": [
-      "stockholm",
-      "small batch"
+      "london",
+      "small batch",
+      "swedish-gambian"
     ],
     "try": {
       "label": "7.5 ml",
@@ -6676,7 +6682,8 @@
     },
     "like": [
       "diptyque"
-    ]
+    ],
+    "class": "independent"
   },
   {
     "id": "27-87",
