@@ -1,0 +1,2784 @@
+{
+  "_about": "DRAFT Places to Smell register for review. Not read by the app or the build, not published. Wording is our own; every record carries its sources, strength (A official/academic, B trusted press, C brand/listing, D creator/unsourced) and a verification status.",
+  "checked": "2026-11-11",
+  "status_values": {
+    "verified": "Operating and visitable, confirmed by an official or two independent recent sources",
+    "partly verified": "Exists and likely visitable; some details unconfirmed",
+    "unverified": "Single weak or old source",
+    "not visitable": "Real place but no confirmed or safe visitor access"
+  },
+  "type_values": [
+    "museum_archive",
+    "workshop_atelier",
+    "harvest_region",
+    "souk_market",
+    "bespoke",
+    "cultural_demonstration",
+    "visitor_centre"
+  ],
+  "places": [
+    {
+      "id": "molinard-grasse",
+      "name": "Molinard Bastide and workshops",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "Molinard Bastide historique & Musée, 60 boulevard Victor Hugo, 06130 Grasse",
+      "geo": {
+        "lat": 43.659,
+        "lon": 6.925,
+        "precision": "town"
+      },
+      "type": "workshop_atelier",
+      "also": [
+        "museum_archive"
+      ],
+      "can_do": [
+        "Compose a 50 ml eau de parfum at a perfumer's organ from about 90 essences, with a guide",
+        "Keep a numbered certificate so the blend can be re-ordered",
+        "See the historic bastide and museum"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Online through the house or resellers; group sessions on set dates"
+      },
+      "cost": {
+        "amt": 75,
+        "cur": "GBP",
+        "note": "Classic 1-hour workshop from about £75 on a reseller; premium and prestige versions cost more"
+      },
+      "season": "Year-round, selected dates",
+      "links": {
+        "traditions": [
+          "eau-de-cologne"
+        ],
+        "materials": [
+          "rose",
+          "jasmine",
+          "tuberose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.musement.com/uk/grasse/classic-perfume-workshop-by-molinard-parfums-in-grasse-bastide-80703/",
+          "title": "Musement listing, Molinard classic workshop",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Official Molinard booking page not opened; price from a reseller",
+          "Whether formulas are archived is implied (re-order by certificate number), not stated"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "galimard-grasse",
+      "name": "Galimard Studio des Fragrances",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "5 route de Pégomas, 06130 Grasse (also Èze-Village and Paris)",
+      "geo": {
+        "lat": 43.645,
+        "lon": 6.93,
+        "precision": "town"
+      },
+      "type": "workshop_atelier",
+      "also": [],
+      "can_do": [
+        "Compose a personal perfume with a perfumer's guidance at an organ",
+        "Have the formula stored so it can be re-ordered",
+        "Choose between classic, private Studio N°1 and 'Heritage' sessions"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Book online per location; forms need cookie consent"
+      },
+      "cost": {
+        "note": "Prices not shown on the page read; a 2025 workshop brochure exists"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [
+          "eau-de-cologne"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.galimard.com/en/studio-des-fragrances",
+          "title": "Galimard, Studio des Fragrances",
+          "kind": "official",
+          "strength": "C"
+        },
+        {
+          "url": "https://www.galimard.com/wp-content/uploads/2025/02/Ateliers-2025-EN.pdf",
+          "title": "Galimard workshops 2025 (PDF, not opened)",
+          "kind": "official",
+          "strength": "C",
+          "published": "2025-02"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Workshop prices and durations"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "mip-grasse",
+      "name": "Musée International de la Parfumerie",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "2 boulevard du Jeu de Ballon, 06130 Grasse",
+      "geo": {
+        "lat": 43.6587,
+        "lon": 6.9233,
+        "precision": "site"
+      },
+      "type": "museum_archive",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Walk through 4,000 years of perfume: raw materials, production, bottles and culture",
+        "Join a free 90-minute guided tour",
+        "Book smelling and tasting workshops",
+        "Seasonal exhibitions (e.g. 'Scents of Asia', June 2026 to January 2027)"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in; workshops via activites.musees@paysdegrasse.fr"
+      },
+      "cost": {
+        "amt": 6,
+        "cur": "EUR",
+        "note": "Adult €6, student €3; guided tours free"
+      },
+      "season": "Daily; 10:00-19:00 July-August, 10:00-18:00 otherwise; closed 1 Jan, 1 May, 25 Dec",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "rose",
+          "jasmine",
+          "tuberose",
+          "orangeblossom"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.paysdegrassetourisme.fr/en/musee-international-parfumerie",
+          "title": "Pays de Grasse tourist office",
+          "kind": "official",
+          "strength": "A"
+        },
+        {
+          "url": "https://provence-alpes-cotedazur.com/en/things-to-do/events/all-events/scents-of-asia-exhibition-traditional-olfactory-cultures-from-china-to-india-grasse-en-6637187/",
+          "title": "Regional tourism board, Scents of Asia exhibition",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Whether the museum's gardens at Mouans-Sartoux are open in winter"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "The 'Scents of Asia' exhibition links Grasse to Chinese and Indian scent traditions in the Atlas."
+    },
+    {
+      "id": "osmotheque-versailles",
+      "name": "Osmothèque, Conservatoire international des parfums",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "8 rue Saint-Simon, 78000 Versailles (moved September 2025 from the ISIPCA campus)",
+      "geo": {
+        "lat": 48.8,
+        "lon": 2.13,
+        "precision": "town"
+      },
+      "type": "museum_archive",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Smell reconstructed historic and discontinued perfumes from a collection of 3,200+",
+        "Attend guided olfactory sessions and talks"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "on set dates"
+      },
+      "booking": {
+        "required": true,
+        "how": "Sessions booked through osmotheque.fr; heritage-day visits via Weezevent"
+      },
+      "cost": {
+        "note": "Free on European Heritage Days; regular session prices not found"
+      },
+      "season": "Scheduled sessions; check the calendar",
+      "links": {
+        "traditions": [
+          "eau-de-cologne",
+          "kyphi"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.infosyvelines.fr/articles/versailles-losmotheque-demenage-au-8-rue-saint-simon-un-nouveau-lieu-historique-pour-le-conservatoire-des-parfums",
+          "title": "Infos Yvelines, Osmothèque moves",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-09-11"
+        },
+        {
+          "url": "https://www.sortiraparis.com/cs/zpravy/dny-dedictvi/articles/74353-journees-du-patrimoine-2025-a-l-osmotheque-conservatoire-des-parfums-a-versailles-le-programme",
+          "title": "Sortir à Paris, heritage days 2025",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-09"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Regular session calendar and prices (osmotheque.fr not opened)"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "It is not a walk-in museum; visits are by booked session."
+    },
+    {
+      "id": "henry-jacques-paris",
+      "name": "Henry Jacques flagship",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "Start of avenue Montaigne, Paris 8e (opened May 2022)",
+      "geo": {
+        "lat": 48.866,
+        "lon": 2.305,
+        "precision": "town"
+      },
+      "type": "bespoke",
+      "also": [
+        "workshop_atelier"
+      ],
+      "can_do": [
+        "See the house's signature scents in a two-level boutique",
+        "Book a private consultation for a made-to-measure perfume"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for bespoke",
+        "how": "Through the house"
+      },
+      "cost": {
+        "note": "Bespoke prices not published; ultra-luxury"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.yahoo.com/now/independent-perfumer-henry-jacques-opens-202529002.html",
+          "title": "WWD (via Yahoo), Henry Jacques opens Paris flagship",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2022-05-23"
+        },
+        {
+          "url": "https://www.esquireme.com/brief/henry-jacques-the-alchemy-of-allure",
+          "title": "Esquire Middle East on the boutique (not opened)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "The list's 'perfume bar with all 50 Les Classiques' isn't confirmed by the source read (it says about 50 creations in lit niches)",
+          "Current opening hours"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "Family-owned since 1975 (founded in Draguignan); CEO Anne-Lise Cremona."
+    },
+    {
+      "id": "serge-lutens-palais-royal",
+      "name": "Serge Lutens, Salons du Palais-Royal",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "142 galerie de Valois, Jardin du Palais-Royal, 75001 Paris (second boutique at 324 rue Saint-Honoré)",
+      "geo": {
+        "lat": 48.865,
+        "lon": 2.337,
+        "precision": "site"
+      },
+      "type": "visitor_centre",
+      "also": [],
+      "can_do": [
+        "Visit the original purple-and-black salon designed as the house's private universe",
+        "Smell the full range, including bell-jar exclusives"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Free to enter"
+      },
+      "season": "Mon-Sat 11:00-19:00; closed Sundays and French public holidays",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [
+          "serge-lutens"
+        ],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.visitparisregion.com/en/serge-lutens",
+          "title": "Paris Region tourism board",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Whether 'personalised encounters' (per the list) are bookable"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "A boutique, not a museum. Serge Lutens is owned by Shiseido."
+    },
+    {
+      "id": "guerlain-champs-elysees",
+      "name": "La Maison Guerlain",
+      "country": "France",
+      "cc": "FR",
+      "region": "Europe",
+      "place": "68 avenue des Champs-Élysées, 75008 Paris",
+      "geo": {
+        "lat": 48.871,
+        "lon": 2.304,
+        "precision": "site"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "bespoke"
+      ],
+      "can_do": [
+        "Explore the historic flagship",
+        "Personalise a Bee Bottle or have bottles engraved",
+        "Refill bottles; free fragrance consultation"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for appointments",
+        "how": "'Book an appointment' via guerlain.com/fr"
+      },
+      "cost": {
+        "note": "Personalisation and bespoke prices not published"
+      },
+      "season": "Mon-Sat 11:00-20:00, Sun 11:00-19:00",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://stores.guerlain.com/gb/en_GB/boutique/france/ile-de-france/paris/paris/FR001",
+          "title": "Guerlain store locator",
+          "kind": "official",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": []
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "Big designer brand (LVMH). As a place it fits; it won't become a house in the Atlas."
+    },
+    {
+      "id": "farina-cologne",
+      "name": "Farina Fragrance Museum (Duftmuseum im Farina-Haus)",
+      "country": "Germany",
+      "cc": "DE",
+      "region": "Europe",
+      "place": "Obenmarspforten 21, 50667 Köln",
+      "geo": {
+        "lat": 50.9375,
+        "lon": 6.958,
+        "precision": "site"
+      },
+      "type": "museum_archive",
+      "also": [
+        "visitor_centre"
+      ],
+      "can_do": [
+        "Tour the house where Johann Maria Farina made his Eau de Cologne (1709)",
+        "Smell natural materials at scent stations",
+        "Private English tour for groups up to 20"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for group tours",
+        "how": "Phone +49 221 399 89 94 or museum@farina1709.com"
+      },
+      "cost": {
+        "amt": 5,
+        "cur": "EUR",
+        "note": "Entry €5; private English tour €100 for up to 20"
+      },
+      "season": "Mon-Sat 10:00-19:00 (shorter Saturday hours are listed too; confirm)",
+      "links": {
+        "traditions": [
+          "eau-de-cologne"
+        ],
+        "materials": [
+          "bergamot",
+          "lemon",
+          "orange"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.museenkoeln.de/portal/pages/4078.aspx",
+          "title": "Museen Köln (city museums portal)",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Saturday hours are listed two ways"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "palazzo-mocenigo-venice",
+      "name": "Palazzo Mocenigo, perfume rooms",
+      "country": "Italy",
+      "cc": "IT",
+      "region": "Europe",
+      "place": "Santa Croce 1992, 30135 Venezia (vaporetto San Stae)",
+      "geo": {
+        "lat": 45.4405,
+        "lon": 12.33,
+        "precision": "site"
+      },
+      "type": "museum_archive",
+      "also": [
+        "workshop_atelier"
+      ],
+      "can_do": [
+        "Walk six rooms on Venice's perfume history: flacons, raw materials, a recreated perfumer's lab",
+        "Book a workshop in the ground-floor Perfume Laboratory (200+ essences)"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for workshops",
+        "how": "Tickets via the MUVE civic museums site"
+      },
+      "cost": {
+        "amt": 15,
+        "cur": "EUR",
+        "note": "€15 standard, €7.50 reduced; workshops extra"
+      },
+      "season": "Tue-Sun; 10:00-18:00 April-October, 10:00-17:00 November-March",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "benzoin",
+          "labdanum",
+          "frankincense"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://mocenigo.visitmuve.it/en/home/",
+          "title": "MUVE, Palazzo Mocenigo",
+          "kind": "official",
+          "strength": "A"
+        },
+        {
+          "url": "https://www.scento.com/blog/palazzo-mocenigo-perfume-museum-guide",
+          "title": "Scento guide",
+          "kind": "editorial",
+          "strength": "C",
+          "published": "2026-08-26"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "MUVE lists restoration work in progress; check before visiting",
+          "Hours and price confirmed by an independent guide (updated Oct 2026), not by the museum page"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "museo-villoresi-florence",
+      "name": "Museo Villoresi",
+      "country": "Italy",
+      "cc": "IT",
+      "region": "Europe",
+      "place": "Via de' Bardi 12, 50123 Firenze",
+      "geo": {
+        "lat": 43.7665,
+        "lon": 11.254,
+        "precision": "site"
+      },
+      "type": "museum_archive",
+      "also": [
+        "workshop_atelier"
+      ],
+      "can_do": [
+        "Guided tour through the Osmorama, a library of smellable materials",
+        "See the aromatic garden and terraces"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "by guided tour only"
+      },
+      "booking": {
+        "required": true,
+        "how": "Reserve by phone +39 055 2340715 or museovilloresi.it"
+      },
+      "cost": {
+        "amt": 18,
+        "cur": "EUR",
+        "note": "€18 full, €15 reduced"
+      },
+      "season": "By reservation",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "iris"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://museionline.info/firenze-musei-e-monumenti/museo-villoresi",
+          "title": "Musei Online",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "The list's '1,000+ smellable materials' isn't confirmed",
+          "Official site not opened"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "smn-florence",
+      "name": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+      "country": "Italy",
+      "cc": "IT",
+      "region": "Europe",
+      "place": "Via della Scala 16, 50123 Firenze",
+      "geo": {
+        "lat": 43.7745,
+        "lon": 11.2475,
+        "precision": "site"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "museum_archive"
+      ],
+      "can_do": [
+        "Walk through frescoed historic pharmacy rooms in the Dominican complex",
+        "Shop the house's perfumes, waters and remedies"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Boutique free to enter; museum-room access and any fee not confirmed"
+      },
+      "season": "Daily 09:30-20:00",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [
+          "santa-maria-novella"
+        ],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://us.smnovella.com/pages/store/via-della-scala-16",
+          "title": "Santa Maria Novella store page",
+          "kind": "official",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Which historic rooms are open and whether guided tours run"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "floris-london",
+      "name": "Floris, Jermyn Street",
+      "country": "United Kingdom",
+      "cc": "GB",
+      "region": "Europe",
+      "place": "89 Jermyn Street, London SW1Y 6JH (private perfumery behind the shop)",
+      "geo": {
+        "lat": 51.5085,
+        "lon": -0.1365,
+        "precision": "site"
+      },
+      "type": "bespoke",
+      "also": [
+        "visitor_centre"
+      ],
+      "can_do": [
+        "Fragrance Customisation: 2 hours with a perfumer adding accords to a base",
+        "'Together' session for two (3 hours)",
+        "Perfume Design: an original perfume over about six months and three consultations",
+        "Formula kept in the house ledgers for re-ordering"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Bought as an experience; certificate brought to the appointment"
+      },
+      "cost": {
+        "amt": 750,
+        "cur": "GBP",
+        "note": "£750 single; £1,250 for two; Perfume Design £6,000"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.florislondon.com/pages/bespoke",
+          "title": "Floris, Bespoke",
+          "kind": "official",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": []
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "Family-run on Jermyn Street since 1730."
+    },
+    {
+      "id": "iao-los-angeles",
+      "name": "The Institute for Art and Olfaction",
+      "country": "United States",
+      "cc": "US",
+      "region": "North America",
+      "place": "932 Chung King Road, Chinatown, Los Angeles CA 90012",
+      "geo": {
+        "lat": 34.0645,
+        "lon": -118.238,
+        "precision": "site"
+      },
+      "type": "workshop_atelier",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Open blending sessions, Perfume 101, accord-building classes, an 11-week materials course",
+        "Talks and exhibitions; runs the Art and Olfaction Awards"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Classes and events calendar on artandolfaction.com (Eventbrite)"
+      },
+      "cost": {
+        "note": "Prices vary by class"
+      },
+      "season": "Year-round; dated events",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://artandolfaction.com/about/",
+          "title": "IAO, About",
+          "kind": "official",
+          "strength": "C"
+        },
+        {
+          "url": "https://artandolfaction.com/events/2026-05-13/",
+          "title": "IAO event page, May 2026",
+          "kind": "official",
+          "strength": "C",
+          "published": "2026-05"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": []
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "Nonprofit (501(c)(3)), founded 2012."
+    },
+    {
+      "id": "amouage-muscat",
+      "name": "Amouage Manufacture and Visitor Centre",
+      "country": "Oman",
+      "cc": "OM",
+      "region": "Middle East",
+      "place": "Inside the Amouage manufacture, Muscat",
+      "geo": {
+        "lat": 23.59,
+        "lon": 58.38,
+        "precision": "region"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "museum_archive"
+      ],
+      "can_do": [
+        "Museum-style tour of the house's history and unseen archive pieces",
+        "Temporary exhibitions",
+        "Some tours include production stages"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Reservation via an Amouage help-centre link"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "Not stated",
+      "links": {
+        "traditions": [
+          "dhofar-frankincense",
+          "bakhoor"
+        ],
+        "materials": [
+          "frankincense"
+        ],
+        "houses": [
+          "amouage"
+        ],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.amouage.com/visitors-centre",
+          "title": "Amouage, Visitor's centre",
+          "kind": "official",
+          "strength": "C"
+        },
+        {
+          "url": "https://www.ghadiscovery.com/kempinski/kempinski-hotel-muscat/experiences/amouage-factory-tour",
+          "title": "Kempinski Muscat, factory tour listing (not opened)",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Hours and price",
+          "Exact site address"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "taif-rose",
+      "name": "Taif rose farms and Rose Season",
+      "country": "Saudi Arabia",
+      "cc": "SA",
+      "region": "Middle East",
+      "place": "Rose farms in Al-Hada, Al-Shafa and nearby villages, Taif",
+      "geo": {
+        "lat": 21.37,
+        "lon": 40.29,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Visit rose farms during harvest",
+        "Watch traditional distillation into rose water and rose oil",
+        "Attend the 10-14 day Rose Season festival (flower carpet in Arruddaf Park)"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "seasonal"
+      },
+      "booking": {
+        "required": "for farm visits, usually",
+        "how": "Through farms, tour operators or the festival"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "Spring (harvest roughly March-April)",
+      "links": {
+        "traditions": [
+          "taif-rose"
+        ],
+        "materials": [
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://saudipedia.com/en/rose-season",
+          "title": "Saudipedia, Rose Season",
+          "kind": "official",
+          "strength": "B"
+        },
+        {
+          "url": "https://saudipedia.com/en/rose-distillation",
+          "title": "Saudipedia, Rose distillation (not opened)",
+          "kind": "official",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "2027 festival dates",
+          "Which farms accept walk-in visitors"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "About 850 farms; up to 120 million roses a year (Saudipedia)."
+    },
+    {
+      "id": "kannauj-perfume-tourism",
+      "name": "Perfume Tourism, Kannauj",
+      "country": "India",
+      "cc": "IN",
+      "region": "Asia",
+      "place": "Pranav Kapoor's family haveli, Kannauj, Uttar Pradesh",
+      "geo": {
+        "lat": 27.05,
+        "lon": 79.92,
+        "precision": "town"
+      },
+      "type": "cultural_demonstration",
+      "also": [
+        "harvest_region",
+        "workshop_atelier"
+      ],
+      "can_do": [
+        "Stay in a 120-year-old haveli with a fragrance gallery and perfume bar",
+        "Pick flowers on a farm; watch deg-bhapka distillation",
+        "Blend your own attar; seven-course scent-and-flavour meal",
+        "Seasonal rose and jasmine festivals"
+      ],
+      "status": {
+        "operating": "yes (started March 2023)",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Not published; via @perfumetourism on Instagram"
+      },
+      "cost": {
+        "note": "Not published"
+      },
+      "season": "Rose in spring; jasmine in summer; mitti attar before the monsoon",
+      "links": {
+        "traditions": [
+          "attar"
+        ],
+        "materials": [
+          "rose",
+          "jasmine",
+          "sandalwood",
+          "vetiver"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.thebetterindia.com/319083/kannauj-perfumer-turns-ancestral-home-into-retreat-for-perfume-making-ancient-craft-history/",
+          "title": "The Better India",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2023-05-26"
+        },
+        {
+          "url": "https://khaleejtimes.com/travel/how-this-indian-perfumer-is-working-hard-to-preserve-kannaujs-ancient-legacy-of-scents",
+          "title": "Khaleej Times",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2023-09-14"
+        },
+        {
+          "url": "https://www.instagram.com/perfumetourism/",
+          "title": "A visitor's comment calling it a must-visit (Nov 2026)",
+          "kind": "creator",
+          "strength": "D"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Booking route and prices",
+          "Family firm name (he also runs B2B company Indian Naturals)"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "dubai-perfume-souk",
+      "name": "Perfume Souk, Deira",
+      "country": "United Arab Emirates",
+      "cc": "AE",
+      "region": "Middle East",
+      "place": "Sikkat Al Khail Street, Al Ras, Deira, next to the Gold Souk (Al Ras metro)",
+      "geo": {
+        "lat": 25.27,
+        "lon": 55.297,
+        "precision": "site"
+      },
+      "type": "souk_market",
+      "also": [
+        "bespoke"
+      ],
+      "can_do": [
+        "Smell oud oils, attars and Arabian perfumes",
+        "Have a blend mixed to order or an existing perfume recreated"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Free to browse; bargaining usual"
+      },
+      "season": "Daily; most shops 10:00-14:00 and 16:00-22:00, Friday afternoons only",
+      "links": {
+        "traditions": [
+          "bakhoor"
+        ],
+        "materials": [
+          "oud",
+          "sandalwood",
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://gulfnews.com/going-out/all-of-dubais-old-souks-your-ultimate-guide-1.2084164",
+          "title": "Gulf News, Dubai's old souks",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2021-06-07"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Hours source dates from 2021",
+          "Copies and dupes are common; the Atlas should point to named sellers, not the souk as a whole"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "ann-fragrance-tokyo",
+      "name": "ann fragrance",
+      "country": "Japan",
+      "cc": "JP",
+      "region": "Asia",
+      "place": "Prosper Aoyama 3F, Omotesando, Tokyo",
+      "geo": {
+        "lat": 35.666,
+        "lon": 139.71,
+        "precision": "site"
+      },
+      "type": "workshop_atelier",
+      "also": [],
+      "can_do": [
+        "Choose up to five of 37 fragrances and blend a 50 ml perfume with a specialist",
+        "Pick the liquid's colour and name the scent"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Online reservation"
+      },
+      "cost": {
+        "amt": 4950,
+        "cur": "JPY",
+        "note": "¥4,950 including a 50 ml bottle (Aug 2025)"
+      },
+      "season": "Year-round; about 50 minutes",
+      "links": {
+        "traditions": [
+          "kodo"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://en.jal.japantravel.com/tokyo/ann-fragrance-marks-a-new-chapter-with-its-new-atelier-in-omotesando/71798",
+          "title": "Japan Travel by JAL",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-08-07"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "The Asakusa atelier named in the list is not confirmed",
+          "Official site not opened"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list"
+    },
+    {
+      "id": "sifr-aromatics-singapore",
+      "name": "Sifr Aromatics",
+      "country": "Singapore",
+      "cc": "SG",
+      "region": "Asia",
+      "place": "42 Arab Street, Kampong Gelam, Singapore 199741",
+      "geo": {
+        "lat": 1.3023,
+        "lon": 103.8585,
+        "precision": "site"
+      },
+      "type": "bespoke",
+      "also": [
+        "workshop_atelier"
+      ],
+      "can_do": [
+        "Bespoke perfume consultations with perfumer Johari Kazura",
+        "Small-batch perfume oils, colognes, candles"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for bespoke",
+        "how": "Through the shop"
+      },
+      "cost": {
+        "note": "Not found"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [
+          "attar"
+        ],
+        "materials": [],
+        "houses": [
+          "sifr-aromatics"
+        ],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.roots.gov.sg/places/places-landing/Places/landmarks/Kampong-Gelam-Citizen-Engagement/Sifr-Aromatics",
+          "title": "Roots.gov.sg (National Heritage Board)",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Bespoke price and booking"
+        ]
+      },
+      "origin": "warpaint-pulpculture-list",
+      "note": "Family business since 1933 (Kazura Company, then Jamal Kazura Aromatics); Sifr founded 2010."
+    },
+    {
+      "id": "kelaat-mgouna-rose",
+      "name": "Rose fair and harvest, Kelâat M'Gouna",
+      "country": "Morocco",
+      "cc": "MA",
+      "region": "Africa",
+      "place": "Kelâat M'Gouna, Dadès valley, Tinghir province",
+      "geo": {
+        "lat": 31.24,
+        "lon": -6.13,
+        "precision": "town"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration",
+        "souk_market"
+      ],
+      "can_do": [
+        "Attend the rose festival: ahwash dances, Rose Queen, rose-product markets",
+        "Visit rose fields and distilleries in harvest season"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "seasonal"
+      },
+      "booking": {
+        "required": false,
+        "how": "Festival is public; distillery visits through cooperatives or guides"
+      },
+      "cost": {
+        "note": "Festival free"
+      },
+      "season": "Harvest late April to mid-May; festival about 6-9 May 2026",
+      "links": {
+        "traditions": [
+          "dades-rose"
+        ],
+        "materials": [
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.maroc.ma/fr/actualites/le-60e-salon-international-de-la-rose-parfum-ouvre-ses-portes-kelaat-mgouna",
+          "title": "Moroccan government, 60th rose fair (2025)",
+          "kind": "official",
+          "strength": "A",
+          "published": "2025-05"
+        },
+        {
+          "url": "https://www.exoticca.com/us/blog/rose-festival-morocco-dates-events-and-travel-guide-to-kelaat-mgouna/",
+          "title": "Exoticca, 2026 festival guide",
+          "kind": "editorial",
+          "strength": "C",
+          "published": "2026-04-29"
+        },
+        {
+          "url": "https://www.moroccoworldnews.com/2026/04/288317/moroccos-rose-oil-producers-expect-record-harvest-this-season/",
+          "title": "Morocco World News, 2026 harvest",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2026-04-23"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Named cooperatives that accept visitors",
+          "2027 dates"
+        ]
+      },
+      "origin": "ws6"
+    },
+    {
+      "id": "jabal-akhdar-rose",
+      "name": "Rose harvest, Al Jabal Al Akhdar",
+      "country": "Oman",
+      "cc": "OM",
+      "region": "Middle East",
+      "place": "Rose terraces of Al Jabal Al Akhdar (near Wadi Bani Habib), about 2 hours from Muscat",
+      "geo": {
+        "lat": 23.07,
+        "lon": 57.66,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Walk the rose terraces at dawn harvest",
+        "Watch family distillation in clay pots",
+        "Buy rose water and rose oil from farmers"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "seasonal"
+      },
+      "booking": {
+        "required": false,
+        "how": "Visit villages directly; resorts arrange tours"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "Mid-March to mid-May; peak mid-April",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.omanobserver.om/ampArticle/1135400",
+          "title": "Oman Observer, rose season FAQ",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2023-04-09"
+        },
+        {
+          "url": "https://www.omanobserver.om/article/1187695/features/lifestyle/a-harvest-of-heritage-in-al-jabal-al-akhdhar",
+          "title": "Oman Observer, harvest of heritage",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Road access rules (a police checkpoint has historically required 4x4 vehicles; not confirmed here)",
+          "Named distilleries open to visitors",
+          "No Omani rose-water tradition record exists yet (golab is Iranian); propose one"
+        ]
+      },
+      "origin": "ws6"
+    },
+    {
+      "id": "al-haffa-salalah",
+      "name": "Al Haffa souq and frankincense market",
+      "country": "Oman",
+      "cc": "OM",
+      "region": "Middle East",
+      "place": "Al Haffa beach market, Salalah, Dhofar",
+      "geo": {
+        "lat": 17.0,
+        "lon": 54.1,
+        "precision": "town"
+      },
+      "type": "souk_market",
+      "also": [],
+      "can_do": [
+        "Buy Omani frankincense, incense and handmade perfumes from local families",
+        "Browse embroidered textiles and silver"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Free"
+      },
+      "season": "Busiest in the khareef (monsoon) season, roughly June-September; 08:00-22:00 then",
+      "links": {
+        "traditions": [
+          "dhofar-frankincense",
+          "bakhoor"
+        ],
+        "materials": [
+          "frankincense"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.omanobserver.om/article/1174194/oman/al-haffa-a-monsoon-haven-for-frankincense-lovers",
+          "title": "Oman Observer",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-07-28"
+        },
+        {
+          "url": "https://www.muscatdaily.com/2025/07/29/frankincense-market-in-salalah-highlights-dhofars-heritage/",
+          "title": "Muscat Daily (not opened)",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-07-29"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Hours outside khareef"
+        ]
+      },
+      "origin": "ws6"
+    },
+    {
+      "id": "heungbokjeon-incense",
+      "name": "Royal incense talks, Heungbokjeon, Gyeongbokgung Palace",
+      "country": "South Korea",
+      "cc": "KR",
+      "region": "Asia",
+      "place": "Heungbokjeon hall, Gyeongbokgung Palace, Seoul",
+      "geo": {
+        "lat": 37.579,
+        "lon": 126.977,
+        "precision": "site"
+      },
+      "type": "cultural_demonstration",
+      "also": [
+        "museum_archive"
+      ],
+      "can_do": [
+        "Lectures on Joseon royal incense and incense burners (14, 21, 28 Nov 2026)",
+        "See the restored hall and its incense burners"
+      ],
+      "status": {
+        "operating": "time-limited",
+        "accepts_visitors": "on set dates"
+      },
+      "booking": {
+        "required": "not stated",
+        "how": "Through the Gyeongbokgung management office"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "Saturdays 7-28 November 2026 only",
+      "links": {
+        "traditions": [
+          "buyonghyang",
+          "hyangnang"
+        ],
+        "materials": [
+          "oud",
+          "sandalwood"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://view.asiae.co.kr/en/article/2026101002420877012",
+          "title": "Asia Business Daily",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2026-10-12"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/lifestyle/people-events/20261012/restored-gyeongbok-palace-hall-offers-rare-look-into-incense-royal-rituals",
+          "title": "Korea Times",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2026-10-12"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Booking, fee and lecture language",
+          "Ends 28 Nov 2026; keep only if it recurs"
+        ]
+      },
+      "origin": "ws6",
+      "note": "Lecturer on 28 Nov is Dr Ha Sumin, author of the buyonghyang paper the Atlas cites."
+    },
+    {
+      "id": "xuelei-museum-guangzhou",
+      "name": "Xuelei Fragrance Museum",
+      "country": "China",
+      "cc": "CN",
+      "region": "Asia",
+      "place": "Baiyun District, Guangzhou, Guangdong",
+      "geo": {
+        "lat": 23.25,
+        "lon": 113.27,
+        "precision": "region"
+      },
+      "type": "museum_archive",
+      "also": [],
+      "can_do": [
+        "Immersive museum with 300+ scent-sampling points and 50+ interactive installations"
+      ],
+      "status": {
+        "operating": "yes (opened July 2025)",
+        "accepts_visitors": "likely"
+      },
+      "booking": {
+        "required": "unknown",
+        "how": "Not found"
+      },
+      "cost": {
+        "note": "Not found"
+      },
+      "season": "Not found",
+      "links": {
+        "traditions": [
+          "xiangdao"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xuelei_Fragrance_Museum",
+          "title": "Wikipedia",
+          "kind": "database",
+          "strength": "C"
+        },
+        {
+          "url": "https://www.newsgd.com/node_c8f73edf09/556ceb3714.shtml",
+          "title": "Newsgd (Guangdong government news), opening",
+          "kind": "official",
+          "strength": "B",
+          "published": "2025-07"
+        },
+        {
+          "url": "https://blooloop.com/xuelei-fragrance-museum/",
+          "title": "Blooloop (not opened)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Admission, hours and booking"
+        ]
+      },
+      "origin": "nitah-comment",
+      "note": "Built by Guangdong Xuelei Fragrance Culture Co.; Guinness-certified largest immersive fragrance space."
+    },
+    {
+      "id": "kunjudo-awaji",
+      "name": "Kunjudo incense factory, Awaji Island",
+      "country": "Japan",
+      "cc": "JP",
+      "region": "Asia",
+      "place": "Northwestern Awaji Island, Hyogo",
+      "geo": {
+        "lat": 34.49,
+        "lon": 134.86,
+        "precision": "region"
+      },
+      "type": "workshop_atelier",
+      "also": [
+        "visitor_centre"
+      ],
+      "can_do": [
+        "Watch incense being kneaded, cut and dried",
+        "Make your own incense with staff help"
+      ],
+      "status": {
+        "operating": "likely",
+        "accepts_visitors": "likely"
+      },
+      "booking": {
+        "required": "unknown",
+        "how": "kunjudo.co.jp/try/"
+      },
+      "cost": {
+        "amt": 400,
+        "cur": "JPY",
+        "note": "About ¥400 for the factory tour in 2018; incense-making extra"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [
+          "kodo"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://en.jal.japantravel.com/hyogo/japanese-traditional-incense-at-kunjudo/42416",
+          "title": "Japan Travel by JAL",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2018-01-17"
+        },
+        {
+          "url": "https://www.kkday.com/en/product/271140",
+          "title": "KKday listing (not opened)",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Source is from 2018; current hours and prices"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "yamadamatsu-kyoto",
+      "name": "Yamadamatsu incense workshops",
+      "country": "Japan",
+      "cc": "JP",
+      "region": "Asia",
+      "place": "Yamadamatsu Kogiten, Kyoto",
+      "geo": {
+        "lat": 35.01,
+        "lon": 135.76,
+        "precision": "town"
+      },
+      "type": "workshop_atelier",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Monko incense games: compare kyara and aloeswood",
+        "Practice heating incense wood; sachet and kneaded-incense workshops"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Email or phone at least one business day ahead"
+      },
+      "cost": {
+        "amt": 1500,
+        "cur": "JPY",
+        "note": "¥1,500 (about 50 min) to ¥2,500 (about 60 min)"
+      },
+      "season": "Mon-Sat except holidays",
+      "links": {
+        "traditions": [
+          "kodo"
+        ],
+        "materials": [
+          "oud",
+          "sandalwood"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.yamadamatsu.co.jp/en/exp/course01.html",
+          "title": "Yamadamatsu, experiences",
+          "kind": "official",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Exact address and languages"
+        ]
+      },
+      "origin": "research",
+      "note": "Visitors are asked not to wear perfume."
+    },
+    {
+      "id": "nha-trang-agarwood",
+      "name": "Agarwood (trầm hương) museum, Khanh Hoa",
+      "country": "Vietnam",
+      "cc": "VN",
+      "region": "Asia",
+      "place": "Phuoc Dong commune, Nha Trang, Khanh Hoa",
+      "geo": {
+        "lat": 12.21,
+        "lon": 109.18,
+        "precision": "region"
+      },
+      "type": "museum_archive",
+      "also": [],
+      "can_do": [
+        "See and smell agarwood and calambac (kỳ nam) pieces",
+        "Guided tour"
+      ],
+      "status": {
+        "operating": "unknown",
+        "accepts_visitors": "unknown"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in (2019)"
+      },
+      "cost": {
+        "note": "Free in 2019"
+      },
+      "season": "Daily 08:00-18:00 (2019)",
+      "links": {
+        "traditions": [
+          "tram-huong"
+        ],
+        "materials": [
+          "oud"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://e.vnexpress.net/news/travel/places/led-by-the-nose-nha-trang-s-incense-museum-3946536.html",
+          "title": "VnExpress International",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2019-07-04"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Only source is from 2019",
+          "It sells souvenirs; check that it isn't mainly a shop"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "mysore-sandalwood-factory",
+      "name": "Government Sandalwood Oil Factory, Mysuru",
+      "country": "India",
+      "cc": "IN",
+      "region": "Asia",
+      "place": "KSDL sandalwood oil division, Mysuru, Karnataka",
+      "geo": {
+        "lat": 12.32,
+        "lon": 76.65,
+        "precision": "town"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Guided view of sandalwood oil extraction: powdering, distilling, collecting",
+        "Factory shop"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "unclear"
+      },
+      "booking": {
+        "required": "unclear",
+        "how": "Contact Karnataka Soaps and Detergents Ltd (KSDL)"
+      },
+      "cost": {
+        "note": "Listed as free"
+      },
+      "season": "09:30-18:30 (listing)",
+      "links": {
+        "traditions": [
+          "attar"
+        ],
+        "materials": [
+          "sandalwood"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://trawell.in/karnataka/mysore/government-sandalwood-oil-factory",
+          "title": "Trawell listing",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Recent sources describe college industrial visits; public walk-in access not confirmed"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "shubra-beloula-jasmine",
+      "name": "Jasmine fields of Shubra Beloula",
+      "country": "Egypt",
+      "cc": "EG",
+      "region": "Africa",
+      "place": "Shubra Beloula, Gharbia governorate, Nile Delta (about 100 km north of Cairo)",
+      "geo": {
+        "lat": 30.85,
+        "lon": 31.03,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [],
+      "can_do": [
+        "Watch the night jasmine harvest (from about 3 a.m.)"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "emerging"
+      },
+      "booking": {
+        "required": true,
+        "how": "Only through domestic tourism initiatives (not named)"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "June-December",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "jasmine"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://egyptianstreets.com/2025/09/29/shubra-beloula-the-tiny-egyptian-village-behind-the-worlds-perfumes/",
+          "title": "Egyptian Streets",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2025-09-29"
+        },
+        {
+          "url": "https://www.arabnews.com/node/2612908/middle-east",
+          "title": "Arab News / AFP, climate pressures",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "No named operator; a working village, so visits need care"
+        ]
+      },
+      "origin": "research",
+      "note": "Said to supply about 60% of the jasmine used in perfume worldwide (single source)."
+    },
+    {
+      "id": "khan-el-khalili-perfume",
+      "name": "Perfume and essence shops, Khan el-Khalili",
+      "country": "Egypt",
+      "cc": "EG",
+      "region": "Africa",
+      "place": "Khan el-Khalili bazaar, Islamic Cairo",
+      "geo": {
+        "lat": 30.0477,
+        "lon": 31.2623,
+        "precision": "town"
+      },
+      "type": "souk_market",
+      "also": [
+        "bespoke"
+      ],
+      "can_do": [
+        "Smell and buy essential oils and blended essences in hand-blown glass bottles"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Bargaining usual"
+      },
+      "season": "Daily",
+      "links": {
+        "traditions": [
+          "kyphi"
+        ],
+        "materials": [
+          "jasmine",
+          "rose",
+          "frankincense"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.egyptindependent.com/fragrances-arabian-nights-perfume-shopping-khan-al-khalili/",
+          "title": "Egypt Independent (could not open)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Need named, reputable shops; tourist 'perfume papyrus' stops are often commission-driven"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "zanzibar-spice-farms",
+      "name": "Spice farms, Kizimbani area",
+      "country": "Tanzania",
+      "cc": "TZ",
+      "region": "Africa",
+      "place": "Spice farms inland from Stone Town, Zanzibar",
+      "geo": {
+        "lat": -6.1,
+        "lon": 39.25,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Smell and taste clove, nutmeg and mace, vanilla, cinnamon, cardamom on working farms"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": true,
+        "how": "Half-day tours via hotels and operators"
+      },
+      "cost": {
+        "note": "Varies by operator"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [
+          "kunukia"
+        ],
+        "materials": [
+          "clove",
+          "vanilla",
+          "cinnamon",
+          "cardamom"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.expertafrica.com/zanzibar/excursions/spice-farm-tour",
+          "title": "Expert Africa",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Name a specific farm and a second source",
+          "Whether ylang-ylang is grown (not mentioned)"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "anjouan-ylang",
+      "name": "Ylang-ylang distilleries, Anjouan",
+      "country": "Comoros",
+      "cc": "KM",
+      "region": "Africa",
+      "place": "Anjouan island",
+      "geo": {
+        "lat": -12.21,
+        "lon": 44.43,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [],
+      "can_do": [
+        "See ylang-ylang flowers picked at dawn and distilled the same day"
+      ],
+      "status": {
+        "operating": "yes (industry)",
+        "accepts_visitors": "not confirmed"
+      },
+      "booking": {
+        "required": "unknown",
+        "how": "No visitor programme found"
+      },
+      "cost": {
+        "note": "n/a"
+      },
+      "season": "Flowers year-round; peaks vary",
+      "links": {
+        "traditions": [
+          "ylang-comoros"
+        ],
+        "materials": [
+          "ylang"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.biolandes.com/en/?p=95263",
+          "title": "Biolandes (distiller), ylang-ylang in the Comoros",
+          "kind": "official",
+          "strength": "C",
+          "published": "2022-09-03"
+        }
+      ],
+      "verification": {
+        "status": "not visitable",
+        "checked": "2026-11-11",
+        "open": [
+          "No confirmed visitor access; keep as a 'where it grows' point, not a visit"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "sava-vanilla",
+      "name": "Vanilla coast (SAVA region)",
+      "country": "Madagascar",
+      "cc": "MG",
+      "region": "Africa",
+      "place": "Sambava and the SAVA region, northeast Madagascar",
+      "geo": {
+        "lat": -14.27,
+        "lon": 50.17,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [],
+      "can_do": [
+        "Plantation and curing visits are offered by some tours"
+      ],
+      "status": {
+        "operating": "unknown",
+        "accepts_visitors": "unknown"
+      },
+      "booking": {
+        "required": true,
+        "how": "Tour operators"
+      },
+      "cost": {
+        "note": "Not found"
+      },
+      "season": "Curing season roughly June-December (not confirmed here)",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "vanilla"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://frewie.rezdy.com/97945/madagascar-vanilla-coast-marojejy-park-tour-of-sava-from-sambava?lang=es",
+          "title": "Tour listing (operator unnamed, price placeholder)",
+          "kind": "listing",
+          "strength": "D"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Need a named operator or cooperative and a reliable source"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "seinde-signature-lagos",
+      "name": "Seinde Signature perfume bar (Senbar)",
+      "country": "Nigeria",
+      "cc": "NG",
+      "region": "Africa",
+      "place": "6th floor, Ikoyi Plaza, Ikoyi, Lagos",
+      "geo": {
+        "lat": 6.45,
+        "lon": 3.43,
+        "precision": "town"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Sample niche perfumes in a lounge without pressure to buy",
+        "'Scent-to-taste' pairings: drinks built on a perfume's notes"
+      ],
+      "status": {
+        "operating": "yes (opened May 2026)",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "not stated",
+        "how": "Not stated"
+      },
+      "cost": {
+        "note": "Not stated"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.premiumtimesng.com/entertainment/naija-fashion/877397-seinde-signature-unveils-experiential-perfume-concept-in-lagos.html",
+          "title": "Premium Times Nigeria",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2026-05-06"
+        },
+        {
+          "url": "https://businessday.ng/bd-weekender/article/the-art-of-liquid-scents-inside-the-sensory-revolution-at-lagos-newest-senbar/",
+          "title": "BusinessDay (not opened)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Hours and booking"
+        ]
+      },
+      "origin": "research",
+      "note": "Already in the exclusion log as 'not a perfume house'; as a place it fits."
+    },
+    {
+      "id": "addis-coffee-ceremony",
+      "name": "Coffee ceremony with incense, Addis Ababa",
+      "country": "Ethiopia",
+      "cc": "ET",
+      "region": "Africa",
+      "place": "Restaurants and homes across Addis Ababa",
+      "geo": {
+        "lat": 9.03,
+        "lon": 38.74,
+        "precision": "town"
+      },
+      "type": "cultural_demonstration",
+      "also": [],
+      "can_do": [
+        "Sit in on a jebena buna ceremony: green beans roasted beside burning frankincense"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "At cafés and restaurants, or with hosts"
+      },
+      "cost": {
+        "note": "Varies"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [
+          "frankincense-horn"
+        ],
+        "materials": [
+          "frankincense"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://worldfootprints.com/cultural-heritage/ethiopias-coffee-ceremony-a-cultural-connection/",
+          "title": "World Footprints",
+          "kind": "editorial",
+          "strength": "C",
+          "published": "2025-09-24"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Venues named, but incense use at each isn't confirmed",
+          "Need a heritage or academic source on incense in the ceremony"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "gouyave-nutmeg",
+      "name": "Gouyave Nutmeg Processing Station",
+      "country": "Grenada",
+      "cc": "GD",
+      "region": "Caribbean",
+      "place": "Central Depradine Street, Gouyave, St John",
+      "geo": {
+        "lat": 12.165,
+        "lon": -61.73,
+        "precision": "site"
+      },
+      "type": "visitor_centre",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Watch nutmeg being sorted, graded and packed",
+        "Stencil a jute sack; buy spices"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "amt": 1,
+        "cur": "USD",
+        "note": "US$1 tour fee"
+      },
+      "season": "Weekdays (hours not confirmed)",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.puregrenada.com/gouyave-nutmeg-processing-station",
+          "title": "Pure Grenada (national tourism board)",
+          "kind": "official",
+          "strength": "A"
+        },
+        {
+          "url": "https://www.lonelyplanet.com/pois/1395288",
+          "title": "Lonely Planet (not opened)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Hours",
+          "Material (nutmeg / bay leaf) has no Atlas material record yet"
+        ]
+      },
+      "origin": "research",
+      "note": "Spice, not perfume: nutmeg and mace are perfume materials, so it fits 'where scent comes from'."
+    },
+    {
+      "id": "dominica-bay-oil",
+      "name": "Bay oil distilleries, east Dominica",
+      "country": "Dominica",
+      "cc": "DM",
+      "region": "Caribbean",
+      "place": "Bay-leaf distilleries around Petite Savanne, east Dominica",
+      "geo": {
+        "lat": 15.35,
+        "lon": -61.27,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "See bay leaves (Pimenta racemosa) distilled into bay oil for bay rum"
+      ],
+      "status": {
+        "operating": "yes (industry)",
+        "accepts_visitors": "not confirmed"
+      },
+      "booking": {
+        "required": "unknown",
+        "how": "Some island tours stop at a distillery"
+      },
+      "cost": {
+        "note": "n/a"
+      },
+      "season": "Year-round",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.dom767.com/dompedia/essential-oils-from-dominica",
+          "title": "Dom767, essential oils of Dominica",
+          "kind": "editorial",
+          "strength": "C"
+        },
+        {
+          "url": "https://pressroomopm.gov.dm/dexia-supporting-livelihoods-of-dominicas-bay-oil-farmers/",
+          "title": "Government of Dominica press room",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Whether any distillery receives visitors after recent hurricanes",
+          "Material (nutmeg / bay leaf) has no Atlas material record yet"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "haiti-vetiver",
+      "name": "Vetiver fields, Les Cayes",
+      "country": "Haiti",
+      "cc": "HT",
+      "region": "Caribbean",
+      "place": "Les Cayes region, southwest Haiti",
+      "geo": {
+        "lat": 18.19,
+        "lon": -73.75,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [],
+      "can_do": [
+        "Where most of the world's vetiver oil comes from"
+      ],
+      "status": {
+        "operating": "yes (industry)",
+        "accepts_visitors": "no"
+      },
+      "booking": {
+        "required": "n/a",
+        "how": "No safe visitor access"
+      },
+      "cost": {
+        "note": "n/a"
+      },
+      "season": "n/a",
+      "links": {
+        "traditions": [
+          "haiti-vetiver"
+        ],
+        "materials": [
+          "vetiver"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.premiumbeautynews.com/en/haitian-crisis-the-vetiver-sector,15916",
+          "title": "Premium Beauty News, crisis in the vetiver sector",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2019-12-03"
+        }
+      ],
+      "verification": {
+        "status": "not visitable",
+        "checked": "2026-11-11",
+        "open": [
+          "Show as a source landscape with an honest 'not safe to visit now' note; check current travel advice"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "papantla-vanilla",
+      "name": "Vanilla route, Papantla and Totonacapan",
+      "country": "Mexico",
+      "cc": "MX",
+      "region": "Latin America",
+      "place": "Papantla, Veracruz (Eco Parque Xanath; El Tajín nearby)",
+      "geo": {
+        "lat": 20.45,
+        "lon": -97.32,
+        "precision": "town"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Learn how vanilla goes from orchid to cured pod at Eco Parque Xanath",
+        "Meet Totonac producers; see the Voladores and El Tajín"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": "for tours",
+        "how": "Tour operators or the Visit Mexico route"
+      },
+      "cost": {
+        "note": "Varies"
+      },
+      "season": "Year-round; Cumbre Tajín festival in March",
+      "links": {
+        "traditions": [
+          "copal"
+        ],
+        "materials": [
+          "vanilla"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://visitmexico.com/en/itinerario/590/ruta-un-viaje-al-corazon-de-su-origen",
+          "title": "Visit Mexico (official tourism)",
+          "kind": "official",
+          "strength": "A"
+        },
+        {
+          "url": "https://www.musement.com/uk/veracruz/el-tajin-vanilla-route-and-papantla-flyers-guided-tour-361952/",
+          "title": "Musement tour listing",
+          "kind": "listing",
+          "strength": "C"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Opening hours of Eco Parque Xanath"
+        ]
+      },
+      "origin": "research",
+      "note": "Vanilla's original home, first cultivated by the Totonac."
+    },
+    {
+      "id": "mercado-sonora-cdmx",
+      "name": "Mercado de Sonora herb and botánica stalls",
+      "country": "Mexico",
+      "cc": "MX",
+      "region": "Latin America",
+      "place": "Fray Servando Teresa de Mier 419, Merced Balbuena, Mexico City",
+      "geo": {
+        "lat": 19.4227,
+        "lon": -99.1225,
+        "precision": "site"
+      },
+      "type": "souk_market",
+      "also": [],
+      "can_do": [
+        "Browse medicinal herbs and ritual botánica stalls"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Free"
+      },
+      "season": "Daily (hours not listed)",
+      "links": {
+        "traditions": [
+          "copal"
+        ],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://mexicocity.cdmx.gob.mx/venues/mercado-sonora/?lang=en",
+          "title": "Mexico City official tourism",
+          "kind": "official",
+          "strength": "A"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "The official page doesn't mention copal; a second source is needed",
+          "It also sells live animals; the Atlas should frame it carefully"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "ver-o-peso-belem",
+      "name": "Ver-o-Peso market perfume stalls",
+      "country": "Brazil",
+      "cc": "BR",
+      "region": "Latin America",
+      "place": "Ver-o-Peso market, Belém, Pará",
+      "geo": {
+        "lat": -1.452,
+        "lon": -48.503,
+        "precision": "site"
+      },
+      "type": "souk_market",
+      "also": [
+        "cultural_demonstration"
+      ],
+      "can_do": [
+        "Smell 'cheiro do Pará' herbal perfumes and banho de cheiro bath blends sold by herb sellers"
+      ],
+      "status": {
+        "operating": "yes",
+        "accepts_visitors": "yes"
+      },
+      "booking": {
+        "required": false,
+        "how": "Walk in"
+      },
+      "cost": {
+        "note": "Small bottles, inexpensive"
+      },
+      "season": "Daily",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "patchouli",
+          "vetiver"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://portalamazonia.com/amazonia/aroma-do-para-perfumes-tradicionais-que-atraem-amor-sorte-e-dinheiro",
+          "title": "Portal Amazônia",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2021-09-29"
+        },
+        {
+          "url": "https://diariodopara.com.br/belem/cop30-erveiras-estao-na-expectativa-para-o-aumento-de-visitantes/",
+          "title": "Diário do Pará, herb sellers (not opened)",
+          "kind": "editorial",
+          "strength": "B"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "Amazonian materials (priprioca, patchouli) need their own source",
+          "A strong candidate for a new tradition record"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "kazanlak-rose",
+      "name": "Rose Valley and Rose Festival, Kazanlak",
+      "country": "Bulgaria",
+      "cc": "BG",
+      "region": "Europe",
+      "place": "Rose fields around Kazanlak, central Bulgaria",
+      "geo": {
+        "lat": 42.62,
+        "lon": 25.39,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [
+        "cultural_demonstration",
+        "museum_archive"
+      ],
+      "can_do": [
+        "Join the rose-picking ritual in the fields",
+        "Watch distillation demonstrations and the town parade"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "seasonal"
+      },
+      "booking": {
+        "required": "for field rituals, often",
+        "how": "Programme on visitkazanlak.bg"
+      },
+      "cost": {
+        "note": "Festival events mostly free"
+      },
+      "season": "Late May to early June (123rd festival ended 7 June 2026)",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.bta.bg/en/news/bulgaria/1142176-annual-rose-picking-ritual-parade-in-kazanlak-attract-guests-from-bulgaria-abr",
+          "title": "BTA (Bulgarian News Agency)",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2026-06-07"
+        },
+        {
+          "url": "https://visitkazanlak.bg/wp-content/uploads/2026/04/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0-%D0%9F%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D0%BA-%D0%BD%D0%B0-%D1%80%D0%BE%D0%B7%D0%B0%D1%82%D0%B0-EN-2026-%D0%B3..pdf",
+          "title": "Kazanlak municipality, 2026 programme (PDF, not opened)",
+          "kind": "official",
+          "strength": "A",
+          "published": "2026-04"
+        }
+      ],
+      "verification": {
+        "status": "partly verified",
+        "checked": "2026-11-11",
+        "open": [
+          "The Rose Museum's hours and price"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "isparta-rose",
+      "name": "Rose harvest, Isparta",
+      "country": "Türkiye",
+      "cc": "TR",
+      "region": "Europe",
+      "place": "Rose fields of Isparta province",
+      "geo": {
+        "lat": 37.76,
+        "lon": 30.55,
+        "precision": "region"
+      },
+      "type": "harvest_region",
+      "also": [],
+      "can_do": [
+        "Watch the rose harvest; rose oil and rose water production"
+      ],
+      "status": {
+        "operating": "seasonal",
+        "accepts_visitors": "seasonal"
+      },
+      "booking": {
+        "required": "via tours",
+        "how": "Seasonal tours"
+      },
+      "cost": {
+        "note": "Varies"
+      },
+      "season": "Late May to June",
+      "links": {
+        "traditions": [],
+        "materials": [
+          "rose"
+        ],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://hurriyetdailynews.com/tour-to-the-land-of-roses--82815",
+          "title": "Hürriyet Daily News",
+          "kind": "editorial",
+          "strength": "B",
+          "published": "2015-05-22"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Only source is from 2015; need a current one"
+        ]
+      },
+      "origin": "research"
+    },
+    {
+      "id": "olfactora-perth",
+      "name": "Olfactora",
+      "country": "Australia",
+      "cc": "AU",
+      "region": "Oceania",
+      "place": "Perth, Western Australia (as stated in a comment)",
+      "geo": {
+        "lat": -31.95,
+        "lon": 115.86,
+        "precision": "town"
+      },
+      "type": "workshop_atelier",
+      "also": [],
+      "can_do": [
+        "Not confirmed"
+      ],
+      "status": {
+        "operating": "unknown",
+        "accepts_visitors": "unknown"
+      },
+      "booking": {
+        "required": "unknown",
+        "how": "unknown"
+      },
+      "cost": {
+        "note": "n/a"
+      },
+      "season": "n/a",
+      "links": {
+        "traditions": [],
+        "materials": [],
+        "houses": [],
+        "leads": []
+      },
+      "sources": [
+        {
+          "url": "https://www.instagram.com/olfactora/",
+          "title": "Self-promoting comment on the list",
+          "kind": "creator",
+          "strength": "D"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "checked": "2026-11-11",
+        "open": [
+          "Nothing found beyond the account's own comment"
+        ]
+      },
+      "origin": "nitah-comment"
+    }
+  ]
+}
