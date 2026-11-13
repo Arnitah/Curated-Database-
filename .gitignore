@@ -1,1 +1,4 @@
 node_modules
+
+# Clay test output (screenshots from failed checks)
+test-results/

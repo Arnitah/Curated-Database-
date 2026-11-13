@@ -1,0 +1,14 @@
+{
+  "_note": "Invented records for tests. No real shelf data, no real user ids. Names start with 'Synthetic ' so the leak scan can tell them apart.",
+  "records": [
+    { "id": 1, "a": "face", "st": "Cleanser", "n": "Synthetic gentle cleanser", "s": "cur" },
+    { "id": 2, "a": "face", "st": "Toner", "n": "Synthetic acid toner", "s": "cur" },
+    { "id": 3, "a": "body", "st": "Lotion or cream", "n": "Synthetic body lotion", "s": "have" },
+    { "id": 4, "a": "hair", "st": "Shampoo", "n": "Synthetic shampoo", "s": "past" },
+    { "id": 5, "a": "under", "st": "Deodorant", "n": "Synthetic stick deodorant", "s": "cur" },
+    { "id": 6, "a": "intimate", "st": "Wash", "n": "Synthetic intimate wash", "s": "cur" }
+  ],
+  "remoteHair": { "Mon": "Synthetic wash day" },
+  "remoteLog": { "2026-01-01": { "Synthetic task": true } },
+  "remoteScents": [ { "n": "Synthetic scent" } ]
+}
