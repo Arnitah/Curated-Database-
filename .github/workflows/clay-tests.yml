@@ -1,0 +1,56 @@
+name: Clay tests (advisory)
+
+# Runs the Clay page and the ingredient engine against an in-memory fake of the platform. No real database, no real user ids, no outside network.
+# ADVISORY: this is not a required check. A red run is a signal to look, not a merge block. Making it required is a repository setting, decided separately.
+# Read-only: it never commits, pushes or deploys anything.
+on:
+  pull_request:
+    paths:
+      - 'apps/clay.html'
+      - 'apps/ingredient-intelligence/**'
+      - 'tests/clay/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/clay-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/clay.html'
+      - 'apps/ingredient-intelligence/**'
+      - 'tests/clay/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/clay-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clay-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  clay-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies from the lockfile
+        run: npm ci
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+      - name: Run engine and Clay tests
+        run: npm run test:ci
+      - name: Keep screenshots from failed checks
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clay-test-results
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7
