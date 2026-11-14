@@ -1,23 +1,23 @@
 {
- "built_at": "2026-11-13T18:34:43.850Z",
- "hub_run": "2026-11-13T17:13:58+00:00",
- "products": 19160,
+ "built_at": "2026-11-14T17:12:26.950Z",
+ "hub_run": "2026-11-14T15:50:17+00:00",
+ "products": 19200,
  "shards": 39,
  "by_category": {
   "baby": 216,
-  "body": 3283,
-  "deodorant": 1023,
-  "face": 1994,
-  "fragrance": 482,
-  "hair": 3244,
-  "makeup": 975,
-  "other": 7174,
+  "body": 3289,
+  "deodorant": 1024,
+  "face": 2004,
+  "fragrance": 483,
+  "hair": 3261,
+  "makeup": 976,
+  "other": 7178,
   "sun_care": 769
  },
  "by_source": {
   "added": 2,
   "cosrx": 92,
-  "open_beauty_facts": 19004,
+  "open_beauty_facts": 19044,
   "round_lab": 62
  }
 }
