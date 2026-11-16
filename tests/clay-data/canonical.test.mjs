@@ -67,6 +67,23 @@ test('1d rejected inputs fail closed with a typed error', () => {
   assert.equal(code(() => canonicalJSON({ a: '\ud800' })), 'lone_surrogate');
   assert.equal(code(() => canonicalJSON({ a: ['x', '\udc00'] })), 'lone_surrogate');
 });
+test('1g key grammar (section 5.6): lowercase ASCII first character; then ASCII letters, digits or underscore', () => {
+  const ok = ['entityType', 'schemaVersion', 'ownedItemRef', 'rawText', 'a', 'a_1', 'aB', 'v1Doc', 'x9_Z'];
+  for (const k of ok) assert.doesNotThrow(() => canonicalJSON({ [k]: 1 }), k);
+  for (const k of ['Ab', 'A', '_a', '1a', 'a-b', 'a b', '', '\u00e9', 'a\u00e9', '\u0430', 'a.b']) assert.equal(code(() => canonicalJSON({ [k]: 1 })), 'invalid_key', JSON.stringify(k));
+  // nested objects and arrays are checked too
+  assert.equal(code(() => canonicalJSON({ a: [{ Bad: 1 }] })), 'invalid_key');
+  assert.equal(code(() => canonicalJSON({ a: { fineKey: { 'no-good': 1 } } })), 'invalid_key');
+});
+test('1h mixed-case keys sort by UTF-16 code unit order, case is significant and keys differing only by case are distinct', () => {
+  assert.equal(canonicalJSON({ ab: 1, a_: 2, aB: 3, a9: 4 }), '{"a9":4,"aB":3,"a_":2,"ab":1}');
+  assert.equal(canonicalJSON({ ab: 1, aB: 2 }), '{"aB":2,"ab":1}');
+  assert.equal(canonicalJSON({ aB: 2, ab: 1 }), canonicalJSON({ ab: 1, aB: 2 }));
+  assert.notEqual(contentHash({ ab: 1 }), contentHash({ aB: 1 }));
+  const keys = ['entityType', 'schemaVersion', 'ownedItemRef', 'rawText', 'a_1', 'zz', 'aB'];
+  const obj = Object.fromEntries(keys.map((k) => [k, 1]));
+  assert.deepEqual(Object.keys(JSON.parse(canonicalJSON(obj))), [...keys].sort());
+});
 test('1e fixture rejections', () => {
   const expected = { upper_case_key: 'invalid_key', float: 'not_a_safe_integer', beyond_safe_integer: 'not_a_safe_integer', lone_surrogate_in_string: 'lone_surrogate' };
   for (const r of vectors.rejections) assert.equal(code(() => canonicalJSON(JSON.parse(r.json))), expected[r.name], r.name);

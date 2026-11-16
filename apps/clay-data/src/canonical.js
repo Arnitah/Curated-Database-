@@ -10,9 +10,9 @@ export class CanonicalError extends Error {
 // ---- Restricted canonical JSON (in the spirit of RFC 8785, with stricter input rules) -------------
 // Allowed: null, true/false, strings, safe integers, arrays, plain objects.
 // Rejected: floats, -0, NaN, Infinity, integers beyond +-(2^53-1), undefined, Date, functions, symbols, bigint,
-// non-plain objects, strings with lone surrogates, keys outside ^[a-z][a-z0-9_]*$.
+// non-plain objects, strings with lone surrogates, keys outside ^[a-z][A-Za-z0-9_]*$ (spec section 5.6, Rev4.3).
 // Keys sorted by UTF-16 code unit order. No whitespace. Standard JSON string escaping.
-const KEY = /^[a-z][a-z0-9_]*$/;
+const KEY = /^[a-z][A-Za-z0-9_]*$/;
 
 function loneSurrogate(s) {
   for (let i = 0; i < s.length; i++) {
