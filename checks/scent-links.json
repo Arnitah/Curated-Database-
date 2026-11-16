@@ -1,9 +1,9 @@
 {
- "checked": "2026-11-09",
+ "checked": "2026-11-16",
  "summary": {
-  "pass": 161,
-  "blocked": 15,
-  "fail": 2
+  "pass": 166,
+  "blocked": 9,
+  "fail": 3
  },
  "houses": {
   "parfum-satori": {
@@ -18,8 +18,8 @@
   },
   "j-scent": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "shoyeido": {
    "site": "pass",
@@ -173,8 +173,8 @@
   },
   "fueguia-1833": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "fail 404",
+   "price": "fail 404"
   },
   "natura": {
    "site": "pass",
@@ -202,9 +202,9 @@
    "price": "pass"
   },
   "borom": {
-   "site": "blocked",
+   "site": "pass",
    "sig": "pass",
-   "price": "blocked"
+   "price": "pass"
   },
   "reunrom": {
    "site": "pass",
@@ -473,8 +473,8 @@
   },
   "korres": {
    "site": "pass",
-   "sig": "fail 404",
-   "price": "fail 404"
+   "sig": "pass",
+   "price": "pass"
   },
   "skandinavisk": {
    "site": "pass",
@@ -607,9 +607,9 @@
    "price": "pass"
   },
   "dusita": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "fail UND_ERR_CONNECT_TIMEOUT",
+   "sig": "fail UND_ERR_CONNECT_TIMEOUT",
+   "price": "fail UND_ERR_CONNECT_TIMEOUT"
   },
   "zielinski-rozen": {
    "site": "pass",
@@ -652,8 +652,8 @@
    "price": "blocked"
   },
   "bath-body-works": {
-   "site": "blocked",
-   "sig": "blocked",
+   "site": "pass",
+   "sig": "pass",
    "price": "fail ENOTFOUND"
   },
   "cyklar": {
@@ -702,14 +702,14 @@
    "price": "pass"
   },
   "cozy-khamreya": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "asateer": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "libroaria": {
    "site": "pass",
@@ -738,8 +738,8 @@
   },
   "chujian": {
    "site": "pass",
-   "sig": "blocked",
-   "price": "blocked"
+   "sig": "pass",
+   "price": "pass"
   },
   "the-body-tale": {
    "site": "pass",
@@ -762,9 +762,9 @@
    "price": "pass"
   },
   "gerimist": {
-   "site": "blocked",
-   "sig": "blocked",
-   "price": "blocked"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "belnu": {
    "site": "pass",

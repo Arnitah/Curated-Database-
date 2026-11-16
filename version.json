@@ -1,6 +1,6 @@
 {
-  "version": 186,
-  "updated_at": "2026-11-14T17:12:30.799Z",
+  "version": 187,
+  "updated_at": "2026-11-16T22:32:36.492Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -334,9 +334,9 @@
     },
     "scents/fieldnotes": {
       "count": 2,
-      "bytes": 6299,
-      "hash": "27a9c7427c63",
-      "updated_at": "2026-11-12T01:54:26.202Z"
+      "bytes": 8823,
+      "hash": "a7de662d10fd",
+      "updated_at": "2026-11-16T22:32:36.492Z"
     },
     "scents/geo": {
       "count": 178,
@@ -371,8 +371,8 @@
     "scents/rates": {
       "count": 5,
       "bytes": 776,
-      "hash": "3fd305f03ddb",
-      "updated_at": "2026-11-09T22:44:10.179Z"
+      "hash": "91cf7ddb1795",
+      "updated_at": "2026-11-16T22:32:36.492Z"
     },
     "scents/regions": {
       "count": 45,
