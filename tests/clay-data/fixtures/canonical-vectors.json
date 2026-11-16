@@ -1,0 +1,367 @@
+{
+ "synthetic": true,
+ "generator": "Hand-authored synthetic test vectors; no live data. Strings are stored as UTF-16 or code point arrays so that no literal look-alike characters appear in this file.",
+ "canonical": [
+  {
+   "name": "empty_object",
+   "value": {},
+   "hash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+   "name": "sorted_keys_and_array",
+   "value": {
+    "b": 1,
+    "a": [
+     true,
+     null,
+     {
+      "$cps": [
+       120
+      ]
+     }
+    ]
+   },
+   "hash": "sha256:54a65415ad370228851a1da4b31b6fd42dc58b19a50d35cae759325f7388ce64"
+  },
+  {
+   "name": "nfc_e_acute",
+   "value": {
+    "t": {
+     "$cps": [
+      233
+     ]
+    }
+   },
+   "hash": "sha256:5a4e86c58f34a06c3644a4e4593bf6b0fbdf422ebe55ba69d8c0497ed221acad"
+  },
+  {
+   "name": "nfd_e_acute",
+   "value": {
+    "t": {
+     "$cps": [
+      101,
+      769
+     ]
+    }
+   },
+   "hash": "sha256:82acf8eef379c4d8de882ddd312ca10688510defa5acfe42abce586b569e8f81"
+  },
+  {
+   "name": "escapes_and_u2028",
+   "value": {
+    "t": {
+     "$cps": [
+      97,
+      34,
+      98,
+      92,
+      99,
+      10,
+      9,
+      1,
+      8232,
+      32,
+      122
+     ]
+    }
+   },
+   "hash": "sha256:2073656985d9e284d490b8a2436538d59555cf382ee302b4b2a15f01b3262147"
+  },
+  {
+   "name": "emoji_and_negative",
+   "value": {
+    "t": {
+     "$cps": [
+      128512
+     ]
+    },
+    "z": 0,
+    "a_1": -5
+   },
+   "hash": "sha256:c3e689786eff0b6bc4f6789a49ac6367cfe406fc78024512fa04bc70ce03f884"
+  }
+ ],
+ "rejections": [
+  {
+   "name": "upper_case_key",
+   "json": "{\"A\":1}"
+  },
+  {
+   "name": "float",
+   "json": "{\"a\":1.5}"
+  },
+  {
+   "name": "beyond_safe_integer",
+   "json": "{\"a\":9007199254740992}"
+  },
+  {
+   "name": "lone_surrogate_in_string",
+   "json": "{\"a\":\"\\ud800\"}"
+  }
+ ],
+ "migrationIds": [
+  {
+   "name": "recorded_example_owned_item_12",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 12,
+    "part": "owned_item",
+    "ordinal": 0
+   },
+   "id": "m_15542227c9fde90f70a1f8bd145d2445"
+  },
+  {
+   "name": "same_record_identity",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 12,
+    "part": "identity",
+    "ordinal": 0
+   },
+   "id": "m_9cb2a0baae8e5692358005a572b0daa3"
+  },
+  {
+   "name": "same_record_observation",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 12,
+    "part": "observation",
+    "ordinal": 0
+   },
+   "id": "m_55454936263c9f533ad761889007faa0"
+  },
+  {
+   "name": "same_record_legacy_raw",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 12,
+    "part": "legacy_raw",
+    "ordinal": 0
+   },
+   "id": "m_145d83c32c232a4f311cb18597fd4671"
+  },
+  {
+   "name": "observation_second_output",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 12,
+    "part": "observation",
+    "ordinal": 1
+   },
+   "id": "m_c7186b842a8763bb65d1bcf0270d30f1"
+  },
+  {
+   "name": "other_record_owned_item_1",
+   "inputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 1,
+    "part": "owned_item",
+    "ordinal": 0
+   },
+   "id": "m_689e2de41e131d518dd8ead795a40711"
+  },
+  {
+   "name": "other_document",
+   "inputs": {
+    "v1_doc": "clay-hair",
+    "v1_id": 1,
+    "part": "owned_item",
+    "ordinal": 0
+   },
+   "id": "m_027343a1d0a31c0bdb42c41b15ccdd2a"
+  }
+ ],
+ "comparisonKeyVectors": [
+  {
+   "n": 1,
+   "utf16": [
+    83,
+    116,
+    114,
+    97,
+    223,
+    101
+   ]
+  },
+  {
+   "n": 2,
+   "utf16": [
+    931,
+    913,
+    931
+   ]
+  },
+  {
+   "n": 3,
+   "utf16": [
+    304,
+    115,
+    116,
+    97,
+    110,
+    98,
+    117,
+    108
+   ]
+  },
+  {
+   "n": 4,
+   "utf16": [
+    453
+   ]
+  },
+  {
+   "n": 5,
+   "utf16": [
+    64257,
+    110,
+    101
+   ]
+  },
+  {
+   "n": 6,
+   "utf16": [
+    8491
+   ]
+  },
+  {
+   "n": 7,
+   "utf16": [
+    197
+   ]
+  },
+  {
+   "n": 8,
+   "utf16": [
+    67,
+    97,
+    102,
+    101,
+    769
+   ]
+  },
+  {
+   "n": 9,
+   "utf16": [
+    67,
+    65,
+    70,
+    201
+   ]
+  },
+  {
+   "n": 10,
+   "utf16": [
+    32,
+    32,
+    65,
+    13,
+    10,
+    66,
+    9,
+    160,
+    99,
+    32,
+    32
+   ]
+  },
+  {
+   "n": 11,
+   "utf16": [
+    496
+   ]
+  },
+  {
+   "n": 12,
+   "utf16": [
+    7838
+   ]
+  },
+  {
+   "n": 13,
+   "utf16": [
+    8555
+   ]
+  },
+  {
+   "n": 14,
+   "utf16": [
+    65350,
+    65365,
+    65356,
+    65356
+   ]
+  },
+  {
+   "n": 15,
+   "utf16": [
+    837
+   ]
+  },
+  {
+   "n": 16,
+   "utf16": [
+    8072
+   ]
+  },
+  {
+   "n": 17,
+   "utf16": [
+    67,
+    97,
+    102,
+    201,
+    32,
+    55323,
+    56680
+   ]
+  },
+  {
+   "n": 18,
+   "utf16": [
+    42993
+   ]
+  },
+  {
+   "n": 19,
+   "utf16": [
+    55299,
+    56656
+   ]
+  },
+  {
+   "n": 20,
+   "utf16": [
+    65,
+    55296
+   ]
+  },
+  {
+   "n": 21,
+   "utf16": [
+    56319,
+    57343
+   ]
+  },
+  {
+   "n": 22,
+   "utf16": [
+    57344
+   ]
+  },
+  {
+   "n": 23,
+   "utf16": [
+    55352,
+    56368
+   ]
+  },
+  {
+   "n": 24,
+   "utf16": [
+    55418,
+    57328
+   ]
+  }
+ ]
+}
