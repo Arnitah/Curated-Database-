@@ -3,7 +3,7 @@
 // These are selected cases. The start-up check is a canary, not a conformance test.
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { canonicalJSON, contentHash, sha256Hex, comparisonKey, compareKeys, selfTest, runtimeIsUnicode15, CanonicalError, DATA, COMPARISON_KEY_VERSION, REASONS } from '../../apps/clay-data/src/canonical.js';
 
@@ -222,4 +222,41 @@ test('8 O2: official NormalizationTest Parts 0, 2, 3 executed; mutated copies fa
   // The original text is unchanged and still equals the committed file.
   assert.equal(text, readFileSync(fx('normalization-test-15.0.0-parts-0-2-3.txt'), 'utf8'));
   assert.equal(createHash('sha256').update(readFileSync(fx('normalization-test-15.0.0-parts-0-2-3.txt'))).digest('hex'), PIN.O2);
+});
+
+// Test 8 follow-up (sub-requirements 2, 4 and 5 of the Rev4.3 text): purity, no side effects, and the final re-read.
+test('8b O2: runConformance is pure; the run changes no environment variable, adds no file, and leaves the committed bytes identical', needsU15, () => {
+  const dir = new URL('./fixtures/', import.meta.url);
+  const envBefore = JSON.stringify(Object.entries(process.env).sort());
+  const listBefore = readdirSync(dir).sort();
+  const bytes = readFileSync(fx('normalization-test-15.0.0-parts-0-2-3.txt'));
+  const text = bytes.toString('utf8');
+  assert.deepEqual(Buffer.from(text, 'utf8'), bytes, 'the in-memory text must equal the on-disk bytes');
+  // Pure: the same input gives the same result, repeatedly, and the input text is not altered.
+  const a = runConformance(text), b = runConformance(text);
+  assert.deepEqual(a, b);
+  assert.equal(a.executed, O2_LINES); assert.deepEqual(a.failures, []);
+  assert.equal(sha256Hex(text), PIN.O2);
+  // Mutated copies report the failure or the count change and fail the gate; the original stays intact.
+  const lines = text.split('\n');
+  const first = lines.findIndex((l) => l !== '' && l[0] !== '#' && l[0] !== '@');
+  const cols = lines[first].split(';'); cols[4] = cols[4] + ' 0041';
+  const changed = [...lines]; changed[first] = cols.join(';');
+  const rc = runConformance(changed.join('\n'));
+  assert.equal(rc.executed, O2_LINES); assert.deepEqual(rc.failures, [1]);
+  assert.equal(gate(changed.join('\n')), false);
+  const dropped = lines.filter((_, i) => i !== first);
+  assert.equal(runConformance(dropped.join('\n')).executed, O2_LINES - 1);
+  assert.equal(gate(dropped.join('\n')), false);
+  // Presence or a count alone never passes: an empty text neither passes the gate nor reaches the expected count.
+  assert.equal(gate(''), false);
+  assert.deepEqual(runConformance(''), { executed: 0, failures: [] });
+  assert.equal(runConformance('').executed === O2_LINES, false);
+  // Nothing was written or altered by the run.
+  assert.equal(sha256Hex(text), PIN.O2);
+  assert.equal(JSON.stringify(Object.entries(process.env).sort()), envBefore);
+  assert.deepEqual(readdirSync(dir).sort(), listBefore);
+  const after = readFileSync(fx('normalization-test-15.0.0-parts-0-2-3.txt'));
+  assert.equal(Buffer.compare(after, bytes), 0);
+  assert.equal(createHash('sha256').update(after).digest('hex'), PIN.O2);
 });

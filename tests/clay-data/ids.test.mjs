@@ -148,3 +148,104 @@ test('9m observation (not the test of the duplicate branch): a few thousand synt
   assert.equal(seen.size, 6000);
   assert.equal(dup, 0);
 });
+
+// ---- Test 9 follow-up: sub-requirements not yet asserted line by line -----------------------------------------------------
+test('9n recorded known answer (spec literal, built from halves) and four different ids for the four parts', () => {
+  const recorded = 'm_' + ['15542227c9fde90f', '70a1f8bd145d2445'].join('');
+  assert.equal(migrationId({ v1_doc: 'clay-products', v1_id: 12, part: 'owned_item', ordinal: 0 }), recorded);
+  assert.equal(recorded.length, 34);
+  const four = PARTS.map((part) => migrationId({ ...base, part }));
+  assert.equal(new Set(four).size, 4);
+  assert.equal(four[PARTS.indexOf('owned_item')], recorded);
+  for (const v of vectors.migrationIds) assert.equal(v.id.length, 34, v.name);
+});
+
+test('9o input constraints: every field missing, null, undefined or non-finite fails closed with a typed error', () => {
+  for (const k of ['v1_doc', 'v1_id', 'part', 'ordinal']) {
+    const without = { ...base }; delete without[k];
+    assert.equal(code(() => migrationId(without)), 'invalid_input', 'missing ' + k);
+    for (const v of [null, undefined, '', {}, [], true]) assert.equal(code(() => migrationId({ ...base, [k]: v })), 'invalid_input', k + '=' + String(v));
+  }
+  for (const k of ['v1_id', 'ordinal']) for (const v of [Infinity, -Infinity, NaN, 2 ** 53, 2 ** 53 + 2, -0, -1, 0.5, '0', '1']) assert.equal(code(() => migrationId({ ...base, [k]: v })), 'invalid_input', k + '=' + String(v));
+  for (const k of ['index', 'position', 'scope', 'locator', 'kind', 'name', 'id']) assert.equal(code(() => migrationId({ ...base, [k]: 'x' })), 'invalid_input', 'extra ' + k);
+  for (const v of ['clay-product', 'CLAY-PRODUCTS', 'clay-products ', 'clay_products']) assert.equal(code(() => migrationId({ ...base, v1_doc: v })), 'invalid_input', v);
+  for (const v of ['Identity', 'owned-item', 'legacy', '']) assert.equal(code(() => migrationId({ ...base, part: v })), 'invalid_input', v);
+  assert.equal(migrationId({ ...base, v1_id: 2 ** 53 - 1 }).length, 34);
+});
+
+test('9p separation in code: neither family can call the other', () => {
+  const src = readFileSync(new URL('../../apps/clay-data/src/ids.js', import.meta.url), 'utf8').split('\n').filter((l) => !l.trim().startsWith('//')).join('\n');
+  const cut = src.indexOf('export function newEventId'), cut2 = src.indexOf('const isPlain');
+  assert.ok(cut > 0 && cut2 > cut);
+  const eventPart = src.slice(cut, cut2), migrationPart = src.slice(cut2);
+  assert.equal(/migration|MIGRATION|canonical|makeMigrationId|checkMigrationIds/.test(eventPart), false, 'event id code must not reach migration code');
+  assert.equal(/randomUUID|newEventId|EVENT_ID|uuid/i.test(migrationPart), false, 'migration id code must not reach event code');
+  for (const v of vectors.migrationIds) { assert.doesNotMatch(v.id, EVENT_ID); assert.match(v.id, MIGRATION_ID); }
+});
+
+test('9q ordinal: single outputs use 0; multi-output positions number 0..n-1 in source order; content never decides an ordinal', () => {
+  const single = PARTS.map((part) => migrationId({ ...base, part, ordinal: 0 }));
+  assert.equal(new Set(single).size, 4);
+  const outputsA = ['synthetic first', 'synthetic second', 'synthetic third'];
+  const outputsB = ['synthetic third', 'synthetic first', 'synthetic second']; // same content, different source positions
+  const idsFor = (outs) => outs.map((_, ordinal) => migrationId({ ...base, part: 'observation', ordinal }));
+  const a = idsFor(outputsA), b = idsFor(outputsB);
+  assert.deepEqual(a, b, 'the id belongs to the source position, not to what the output says');
+  assert.equal(new Set(a).size, 3);
+  assert.deepEqual(a.map((_, i) => i), [0, 1, 2]);
+  const n = 7;
+  const run = Array.from({ length: n }, (_, ordinal) => migrationId({ ...base, part: 'observation', ordinal }));
+  assert.equal(new Set(run).size, n);
+  assert.equal(run[3], migrationId({ ...base, part: 'observation', ordinal: 3 }));
+  assert.equal(code(() => migrationId({ ...base, part: 'observation', ordinal: -1 })), 'invalid_input');
+});
+
+test('9r quarantine boundary: the locator is a plain object, never an id, and no field of it can enter a migration id', () => {
+  const hash = 'sha256:' + 'c'.repeat(64);
+  const p = snapshotPosition({ v1SnapshotHash: hash, v1_doc: 'clay-log', index: 4 });
+  assert.equal(typeof p, 'object'); assert.equal(typeof p === 'string', false);
+  assert.equal(Object.getPrototypeOf(p), Object.prototype);
+  assert.deepEqual(Object.keys(p).sort(), ['index', 'v1SnapshotHash', 'v1_doc']);
+  for (const v of Object.values(p)) assert.equal(/^(m|e)_/.test(String(v)), false);
+  assert.equal(/^(m|e)_/.test(String(p)), false);
+  assert.throws(() => { p.index = 9; }, TypeError);
+  for (const k of ['v1SnapshotHash', 'index']) assert.equal(code(() => migrationId({ ...base, [k]: p[k] })), 'invalid_input', k);
+  assert.equal(code(() => migrationId({ ...base, v1_id: p.v1SnapshotHash })), 'invalid_input');
+  assert.equal(code(() => migrationId({ v1_doc: p.v1_doc, v1_id: p.v1SnapshotHash, part: 'identity', ordinal: p.index })), 'invalid_input');
+  for (const bad of [undefined, null, '', 'x', 1.5, -1, NaN, true, {}, []]) assert.equal(code(() => migrationId({ ...base, v1_id: bad })), 'invalid_input', String(bad));
+  assert.equal(code(() => snapshotPosition({ ...p, index: 2 ** 53 })), 'invalid_position');
+});
+
+test('9s duplicate detection by injection: truncation boundary both ways, e_-shaped existing id, positions only', () => {
+  const other = { ...base, v1_id: 99 };
+  const entry = (fn, inputs) => ({ inputs, id: fn(inputs) });
+  // Digests agree on the first 16 bytes and differ afterwards: equal ids, detected.
+  const late = makeMigrationId((t) => { const d = Buffer.alloc(32, 9); d.writeUInt8(t.length % 251, 20); return d; });
+  assert.equal(late(base), late(other));
+  assert.equal(code(() => checkMigrationIds([entry(late, base), entry(late, other)])), 'migration_id_collision');
+  // A stub that differs within the first 16 bytes gives different ids and no error.
+  const early = makeMigrationId((t) => { const d = Buffer.alloc(32, 9); d.writeUInt8(1 + (t.length % 200), 5); return d; });
+  assert.notEqual(early(base), early({ ...base, v1_id: 1234567 }));
+  assert.equal(checkMigrationIds([entry(early, base), entry(early, { ...base, v1_id: 1234567 })]), true);
+  // An entry whose id is an e_-shaped id equal to an existing id must throw.
+  const eId = newEventId();
+  assert.notEqual(code(() => checkMigrationIds([{ inputs: base, id: eId }], [eId])), 'no_error');
+  assert.equal(code(() => checkMigrationIds([{ inputs: base, id: eId }], [eId])), 'invalid_entries');
+  // The error names positions only: no input value, no id text.
+  const stub = makeMigrationId(() => Buffer.alloc(32, 7));
+  const e1 = entry(stub, base), e2 = entry(stub, other);
+  for (const run of [() => checkMigrationIds([e1, e2]), () => checkMigrationIds([e1], [e2.id]), () => checkMigrationIds([e1], [{ inputs: other, id: e2.id }])]) {
+    let err; try { run(); } catch (e) { err = e; }
+    assert.ok(err instanceof IdError); assert.equal(err.code, 'migration_id_collision');
+    assert.ok(Array.isArray(err.positions) && err.positions.every((x) => Number.isInteger(x) && x >= 0));
+    const shown = err.message + JSON.stringify(err.positions);
+    assert.equal(shown.includes(e1.id), false); assert.equal(/clay-products|99|owned_item/.test(shown), false);
+  }
+});
+
+test('9t no claim of collision-freedom: the README and the module header say detection is a failure condition', () => {
+  const readme = readFileSync(new URL('../../apps/clay-data/README.md', import.meta.url), 'utf8');
+  const header = readFileSync(new URL('../../apps/clay-data/src/ids.js', import.meta.url), 'utf8').slice(0, 900);
+  for (const t of [readme, header]) { assert.match(t, /not mathematically guaranteed/i); assert.match(t, /failure condition/i); }
+  assert.equal(/collision-free|never collide|cannot collide/i.test(readme.replace(/No guarantee of collision-freedom is claimed/i, '')), false);
+});

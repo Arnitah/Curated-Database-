@@ -122,3 +122,93 @@ test('11h the shipped registry loads: every $ref resolves and every schema compi
   assert.equal(reg.ids().length, 7);
   assert.deepEqual([...reg.ids()].sort(), ['urn:clay-data:common', 'urn:clay-data:correction', 'urn:clay-data:directions', 'urn:clay-data:ingredient-observation', 'urn:clay-data:manifest', 'urn:clay-data:owned-item', 'urn:clay-data:product-identity']);
 });
+
+// ---- Test 11 follow-up: sub-requirements of the Rev4.3 text not yet asserted -----------------------------------------------
+const thrown = (fn) => { try { fn(); } catch (e) { return e; } return null; };
+
+test('11u oneOf: a branch that is a $ref is evaluated; a failing branch leaks no errors; the real six-state schema behaves', () => {
+  const r = one({ $defs: { word: { type: 'string', minLength: 2, maxLength: 4 } }, oneOf: [{ $ref: '#/$defs/word' }, { type: 'object', required: ['k'], properties: { k: { type: 'integer' } }, additionalProperties: false }] });
+  assert.deepEqual(check(r, 'abc'), { ok: true, errors: [] });
+  assert.deepEqual(check(r, { k: 1 }), { ok: true, errors: [] });
+  assert.deepEqual(codes(check(r, 'a')), ['oneOf_no_match@']);
+  assert.deepEqual(codes(check(r, { k: 'x', z: 1 })), ['oneOf_no_match@']);
+  const state = createRegistry([...loadShippedSchemas(), S('urn:t:state', { type: 'object', additionalProperties: false, properties: { f: { $ref: 'urn:clay-data:common#/$defs/stringState' } } })]);
+  const src = { kind: 'user_entered' };
+  const six = [
+    { state: 'stated', value: 'synthetic', source: src, setBy: 'user' }, { state: 'not_stated', source: src, setBy: 'rule' },
+    { state: 'unknown', reason: 'no_label', setBy: 'user' }, { state: 'missing', reason: 'no_label', setBy: 'migration' },
+    { state: 'not_applicable', reason: 'no_label', setBy: 'rule' }, { state: 'conflicting', candidates: [{ value: 'one', source: src }, { value: 'two', source: src }], setBy: 'user' }];
+  for (const f of six) assert.deepEqual(check(state, { f }, 'urn:t:state'), { ok: true, errors: [] }, f.state);
+  for (const f of [{ state: 'invented', setBy: 'user' }, { state: 'stated', source: src, setBy: 'user' }, { ...six[0], extra: 1 }, { ...six[0], setBy: 'robot' }, 'stated', null]) assert.deepEqual(codes(check(state, { f }, 'urn:t:state')), ['oneOf_no_match@/f'], JSON.stringify(f));
+});
+
+test('11v $ref: three nested levels, the depth limit itself passes and one past it fails, a direct cycle fails, a relative path fails', () => {
+  const nested = one({ $defs: { a: { $ref: '#/$defs/b' }, b: { $ref: '#/$defs/c' }, c: { type: 'string', maxLength: 3 } }, properties: { p: { $ref: '#/$defs/a' } } });
+  assert.equal(check(nested, { p: 'abc' }).ok, true);
+  assert.deepEqual(codes(check(nested, { p: 'abcd' })), ['max_length@/p']);
+  const chain = (n) => { const d = {}; for (let i = 0; i < n; i++) d['d' + i] = i === n - 1 ? { type: 'string' } : { $ref: '#/$defs/d' + (i + 1) }; return one({ $defs: d, properties: { p: { $ref: '#/$defs/d0' } } }); };
+  assert.equal(check(chain(16), { p: 'x' }).ok, true, 'a chain of 16 definitions is at the limit and passes');
+  const over = thrown(() => chain(17));
+  assert.equal(over.code, 'ref_depth_exceeded');
+  assert.equal(code(() => one({ $defs: { y: { $ref: '#/$defs/y' } }, properties: { p: { $ref: '#/$defs/y' } } })), 'ref_cycle');
+  for (const rel of ['./other.json#/$defs/y', '../x#/$defs/y', 'other.json']) assert.notEqual(code(() => one({ properties: { p: { $ref: rel } } })), 'no_error', rel);
+  assert.equal(code(() => one({ properties: { p: { $ref: './other.json#/$defs/y' } } })), 'ref_unknown_schema');
+});
+
+test('11w pointer escaping: resolvePointer on a/b and m~n, ~01 is a literal ~1, percent-decoding comes first, bad pointers fail', () => {
+  assert.equal(resolvePointer({ 'a/b': 1 }, '/a~1b'), 1);
+  assert.equal(resolvePointer({ 'm~n': 2 }, '/m~0n'), 2);
+  assert.equal(resolvePointer({ '~1': 3, '/': 4 }, '/~01'), 3);
+  assert.deepEqual(parsePointer('/~01'), ['~1']);
+  assert.deepEqual(parsePointer(decodeFragment('/a%7E1b')), ['a/b']);
+  assert.deepEqual(parsePointer(decodeFragment('/a%7E01b')), ['a~1b']);
+  for (const bad of ['/~2', 'a', '/a~', '/~', 'x/y']) assert.equal(code(() => parsePointer(bad)), 'pointer_invalid', bad);
+  const e2e = one({ $defs: { 'm~n': { type: 'integer' }, 'a/b': { type: 'string' } }, properties: { p: { $ref: '#/$defs/m~0n' }, q: { $ref: '#/$defs/a~1b' } } });
+  assert.equal(check(e2e, { p: 1, q: 'x' }).ok, true);
+  assert.deepEqual(codes(check(e2e, { p: 'x', q: 1 })), ['type@/p', 'type@/q']);
+});
+
+test('11x invalid regular expressions throw invalid_pattern naming the pointer; a valid anchored pattern accepts and rejects', () => {
+  for (const pat of ['(', '[', '\\', '\\p{NotAProperty}', '^' + 'a'.repeat(201) + '$']) {
+    const e = thrown(() => one({ properties: { p: { type: 'string', pattern: pat, maxLength: 5 } } }));
+    assert.equal(e && e.code, 'invalid_pattern', pat);
+    assert.equal(e.pointer, '/properties/p/pattern', pat);
+  }
+  assert.equal(code(() => one({ properties: { p: { type: 'string', pattern: '^a$' } } })), 'pattern_requires_maxLength');
+  const ok = one({ properties: { p: { type: 'string', pattern: '^[a-z]{2}$', maxLength: 2 } } });
+  assert.equal(check(ok, { p: 'ab' }).ok, true);
+  assert.deepEqual(codes(check(ok, { p: 'AB' })), ['pattern@/p']);
+});
+
+test('11y each supported type: one accepting value and several rejecting values; unsupported types fail at load', () => {
+  const sets = {
+    string: { accept: ['', 'x'], reject: [1, null, {}, [], true] },
+    integer: { accept: [0, -1, 2 ** 53 - 1, -(2 ** 53 - 1)], reject: [1.5, NaN, Infinity, -Infinity, '1', 2 ** 53, -(2 ** 53), true, null] },
+    boolean: { accept: [true, false], reject: [0, 1, 'true', null, {}, []] },
+    object: { accept: [{}, { a: 1 }], reject: [[], null, 'x', 1, true] },
+    array: { accept: [[], [1]], reject: [{}, 'x', null, 1, true] },
+    null: { accept: [null], reject: [0, '', false, {}, []] }
+  };
+  for (const [type, { accept, reject }] of Object.entries(sets)) {
+    const r = one({ type });
+    for (const v of accept) assert.equal(check(r, v).ok, true, type + ' accepts ' + JSON.stringify(v));
+    for (const v of reject) assert.equal(check(r, v).ok, false, type + ' rejects ' + String(v));
+  }
+  for (const t of ['number', ['string', 'null'], 'text', '', 7, null]) {
+    const e = thrown(() => one({ type: t }));
+    assert.equal(e && e.code, 'unsupported_type', JSON.stringify(t));
+    assert.equal(e.pointer, '/type');
+  }
+});
+
+test('11z each unsupported keyword throws unsupported_keyword naming the keyword and its pointer', () => {
+  const words = ['format', 'anyOf', 'allOf', 'not', 'if', 'then', 'else', 'patternProperties', 'unevaluatedProperties', 'unevaluatedItems',
+    'dependentRequired', 'dependentSchemas', 'contains', 'uniqueItems', 'multipleOf', 'minProperties', 'maxProperties', 'propertyNames'];
+  for (const k of words) {
+    const e = thrown(() => one({ properties: { p: { type: 'string', [k]: k === 'uniqueItems' ? true : {} } } }));
+    assert.equal(e && e.code, 'unsupported_keyword', k);
+    assert.equal(e.keyword, k); assert.equal(e.pointer, '/properties/p/' + k);
+  }
+  const top = thrown(() => one({ not: {} }));
+  assert.equal(top.keyword, 'not'); assert.equal(top.pointer, '/not');
+});

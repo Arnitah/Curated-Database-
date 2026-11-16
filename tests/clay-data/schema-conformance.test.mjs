@@ -162,3 +162,73 @@ test('11t user-created records never carry migration provenance', () => {
   assert.equal(e('directions_owned_item_ref').origin, 'user');
   assert.equal(e('correction_annotates').idKind, 'event');
 });
+
+// ---- Test 11 follow-up: schema-level sub-requirements of the Rev4.3 text not yet asserted --------------------------------
+const walk = (node, at, visit) => {
+  if (Array.isArray(node)) node.forEach((x, i) => walk(x, at + '/' + i, visit));
+  else if (node && typeof node === 'object') { visit(node, at); for (const [k, v] of Object.entries(node)) walk(v, at + '/' + k, visit); }
+};
+const DEFS_NAME = /^[A-Za-z0-9_-]+$/;
+const lintDefs = (schema) => Object.keys(schema.$defs || {}).filter((k) => !DEFS_NAME.test(k));
+
+test('11u loading: every shipped schema loads with a unique $id; every object schema is closed explicitly', () => {
+  assert.equal(schemas.length, 7);
+  assert.equal(new Set(schemas.map((s) => s.$id)).size, 7);
+  assert.equal(reg.ids().length, 7);
+  // additionalProperties is set explicitly on every object schema. It is false everywhere except one declared open node:
+  // the owned-item legacy extras object, which exists to carry unknown v1 fields unchanged (the specification names legacy { v1Doc, v1Id, extras } in section 6.6).
+  const OPEN = ['urn:clay-data:owned-item/properties/legacy/properties/extras'];
+  const open = []; let objects = 0;
+  for (const s of schemas) walk(s, '', (n, at) => {
+    if (n.type !== 'object') return;
+    objects++;
+    assert.equal(typeof n.additionalProperties, 'boolean', s.$id + at + ' must set additionalProperties explicitly');
+    if (n.additionalProperties === true) open.push(s.$id + at);
+  });
+  assert.ok(objects >= 7);
+  assert.deepEqual(open, OPEN);
+});
+
+test('11v $defs naming lint: shipped keys pass; a synthetic key with a slash fails the lint', () => {
+  for (const s of schemas) assert.deepEqual(lintDefs(s), [], s.$id);
+  assert.deepEqual(lintDefs({ $defs: { 'a/b': { type: 'string' }, ok_name: {}, 'x~y': {} } }), ['a/b', 'x~y']);
+  assert.deepEqual(lintDefs({ $defs: { fine: {}, 'with space': {} } }), ['with space']);
+});
+
+test('11w manifest runId and counts: lowercase UUIDv4 only; negative or non-integer counts are rejected', () => {
+  const man = valid.cases.find((c) => c.name === 'manifest_one_run');
+  const run = (f) => { const x = fill(man.record); f(x.runs[0]); return reg.validate('urn:clay-data:manifest', x).ok; };
+  assert.equal(run(() => {}), true);
+  assert.equal(run((r) => { r.runId = randomUUID(); }), true);
+  assert.equal(run((r) => { r.runId = randomUUID().toUpperCase(); }), false);
+  assert.equal(run((r) => { const u = randomUUID(); r.runId = u.slice(0, 14) + '1' + u.slice(15); }), false, 'version 1');
+  assert.equal(run((r) => { const u = randomUUID(); r.runId = u.slice(0, 19) + 'c' + u.slice(20); }), false, 'variant outside 8 9 a b');
+  assert.equal(run((r) => { r.runId = randomUUID().replace('-', ''); }), false, 'a missing hyphen');
+  assert.equal(run((r) => { r.runId = 'e_' + randomUUID(); }), false, 'e_ prefix');
+  assert.equal(run((r) => { r.runId = 'm_' + hex(32); }), false, 'm_ prefix');
+  for (const v of [123, null, true, {}, [], undefined]) assert.equal(run((r) => { r.runId = v; }), false, String(v));
+  for (const k of ['input', 'migrated', 'migrated_with_flags', 'quarantined']) {
+    for (const v of [-1, 0.5, '1', null, NaN]) assert.equal(run((r) => { r.counts[k] = v; }), false, k + '=' + String(v));
+    assert.equal(run((r) => { r.counts[k] = 0; }), true, k + '=0');
+  }
+});
+
+test('11x partition detail: common defines no entity; no schema carries a part or ordinal field; the part list is frozen at four', () => {
+  const common = byId['urn:clay-data:common'];
+  for (const k of ['properties', 'required', 'type', 'oneOf']) assert.equal(common[k], undefined, 'common.' + k);
+  assert.equal(Object.keys(common.$defs).some((k) => /^(entity|record|item)$/i.test(k)), false);
+  for (const s of schemas) walk(s, '', (n, at) => {
+    for (const bad of ['part', 'ordinal', 'kind_part']) assert.equal(Boolean(n.properties) && bad in n.properties, false, s.$id + at + ' ' + bad);
+  });
+  assert.equal(PARTS.length, 4); assert.equal(Object.isFrozen(PARTS), true);
+  assert.equal(JSON.stringify(schemas).includes('clay-v1-migration'), false);
+});
+
+test('11y synthetic only: no fixture value equals the numbers held back from this work, and fixtures carry only synthetic markers', () => {
+  const held = [24, 56];
+  for (const [label, f] of [['valid', valid], ['invalid', invalid]]) walk(f, '', (n, at) => {
+    for (const [k, v] of Object.entries(n)) if (typeof v === 'number') assert.equal(held.includes(v), false, label + at + '/' + k);
+    if (n.idInputs) assert.equal(held.includes(n.idInputs.v1_id), false, label + at);
+  });
+  assert.equal(valid.synthetic, true); assert.equal(invalid.synthetic, true);
+});
