@@ -62,12 +62,19 @@ const VECTOR_HASHES = new Set(JSON.parse(readFileSync(new URL('./fixtures/canoni
 for (const v of JSON.parse(readFileSync(new URL('./fixtures/canonical-vectors.json', import.meta.url), 'utf8')).canonical) assert.equal(contentHash(build(v.value)), v.hash);
 // The three comparison-key reason codes contain digits, so they are declared rather than pattern-matched.
 const REASON_CODES = new Set(['code_point_not_assigned_in_unicode_15_0', 'lone_surrogate', 'runtime_unicode_older_than_15_0']);
-const tokenFindings = (text) => {
+// Public structural tokens: fixture case names (labels for hand-written synthetic cases) and one public documentation file name.
+// They hold no private values. Any other long token is a finding, however it is spelled.
+const STRUCTURAL_LONG_TOKENS = new Set([
+  'java-se-licensing-information-user-manual',
+  'recorded_example_owned_item_12',
+  'state_conflicting_one_candidate', 'product_wrong_schema_version', 'observation_unknown_source_kind', 'correction_migration_id_rejected', 'manifest_schema_version_zero',
+  'product_identity_user_all_states', 'owned_item_finished_with_extras', 'observation_migrated_legacy_unspecified', 'correction_with_new_observation'
+]);
+const tokenFindings = (text, declared = STRUCTURAL_LONG_TOKENS) => {
   const out = [];
   for (const m of text.matchAll(/\b[A-Za-z0-9_-]{28,}\b/g)) {
     const t = m[0];
-    if (PUBLIC_DIGESTS.has(t) || MIG.has(t) || VECTOR_HASHES.has(t) || REASON_CODES.has(t)) continue;
-    if (/^[A-Za-z]+(_[A-Za-z]+)*(_[0-9]+)?$/.test(t) || /^[a-z]+(-[a-z]+)+$/.test(t)) continue; // long identifiers and file names made of words
+    if (PUBLIC_DIGESTS.has(t) || MIG.has(t) || VECTOR_HASHES.has(t) || REASON_CODES.has(t) || declared.has(t)) continue;
     out.push(t.slice(0, 6) + '...');
   }
   return out;
@@ -166,4 +173,20 @@ test('12i fixtures: no URL-like text; every v1_doc, part, v1_id and ordinal is d
   for (const p of seen.parts) assert.equal(PARTS.includes(p), true, String(p));
   assert.ok(seen.ints.length > 0);
   for (const n of seen.ints) { assert.equal(Number.isSafeInteger(n) && n >= 0 && n < 100, true, String(n)); assert.equal(n === 24 || n === 56, false, 'rows 24 and 56 must never appear as an id or position'); }
+});
+
+test('12j an undeclared long token is flagged, even when it is only letters, underscores or hyphens; a declared one passes', () => {
+  const undeclaredAlpha = 'undeclared' + '_alphabetic'.repeat(3);
+  const undeclaredKebab = 'undeclared-' + 'word-'.repeat(6) + 'end';
+  assert.ok(undeclaredAlpha.length >= 28 && undeclaredKebab.length >= 28);
+  assert.equal(tokenFindings('x ' + undeclaredAlpha + ' y').length, 1);
+  assert.equal(tokenFindings('x ' + undeclaredKebab + ' y').length, 1);
+  assert.equal(tokenFindings('x ' + undeclaredAlpha + ' y', new Set([undeclaredAlpha])).length, 0);
+  for (const t of STRUCTURAL_LONG_TOKENS) { assert.ok(t.length >= 28, t); assert.deepEqual(tokenFindings('a ' + t + ' b'), [], t); }
+  assert.equal(STRUCTURAL_LONG_TOKENS.size, 11);
+});
+
+test('12k the allowlist is exact: every entry is used in a scanned file, so a stale entry fails', () => {
+  const all = files.map((u) => readFileSync(u, 'utf8')).join('\n');
+  for (const t of STRUCTURAL_LONG_TOKENS) assert.equal(all.includes(t), true, t);
 });

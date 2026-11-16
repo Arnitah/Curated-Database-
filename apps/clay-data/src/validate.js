@@ -151,7 +151,7 @@ export function createRegistry(schemas) {
   function typeOk(t, v) {
     switch (t) {
       case 'string': return typeof v === 'string';
-      case 'integer': return typeof v === 'number' && Number.isSafeInteger(v);
+      case 'integer': return typeof v === 'number' && Number.isSafeInteger(v) && !Object.is(v, -0);
       case 'boolean': return typeof v === 'boolean';
       case 'object': return isPlain(v);
       case 'array': return Array.isArray(v);

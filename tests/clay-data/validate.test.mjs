@@ -40,6 +40,15 @@ test('11b integer type is strict: no floats, no unsafe integers, no strings', ()
   for (const v of [0, 1, -5, 2 ** 53 - 1]) assert.equal(check(r, v).ok, true, String(v));
 });
 
+test('11b2 negative zero is rejected as an integer (it is rejected by canonical JSON); other integers are unchanged', () => {
+  const r = one({ type: 'integer' });
+  assert.deepEqual(codes(check(r, -0)), ['type@']);
+  assert.equal(check(one({ type: 'object', properties: { n: { type: 'integer' } } }), JSON.parse('{"n":-0}')).ok, false);
+  for (const v of [0, 1, -1, 5, -5, 2 ** 53 - 1, -(2 ** 53 - 1)]) assert.equal(check(r, v).ok, true, String(v));
+  assert.equal(check(r, 0).ok, true);
+  assert.equal(check(one({ type: 'integer', minimum: 0 }), -0).ok, false);
+});
+
 test('11c oneOf: exactly one branch; zero and several are distinct typed errors; empty oneOf is a schema error', () => {
   const r = one({ oneOf: [{ type: 'string' }, { type: 'integer' }] });
   assert.equal(check(r, 'x').ok, true);
