@@ -1,4 +1,4 @@
-// Tests 1 to 8 of the PR A specification (Revision 4.2): restricted canonical JSON, pinned data digests, the ck1 comparison key,
+// Tests 1 to 8 of the PR A specification (Revision 4.3): restricted canonical JSON, pinned data digests, the ck1 comparison key,
 // guard N1, the start-up self-test, and the official conformance fixture (O2).
 // These are selected cases. The start-up check is a canary, not a conformance test.
 import test from 'node:test';
