@@ -171,12 +171,13 @@ const walk = (node, at, visit) => {
 const DEFS_NAME = /^[A-Za-z0-9_-]+$/;
 const lintDefs = (schema) => Object.keys(schema.$defs || {}).filter((k) => !DEFS_NAME.test(k));
 
-test('11u loading: every shipped schema loads with a unique $id; every object schema is closed explicitly', () => {
+test('11u loading: every shipped schema loads with a unique $id; every object schema declares its additional-property policy explicitly', () => {
   assert.equal(schemas.length, 7);
   assert.equal(new Set(schemas.map((s) => s.$id)).size, 7);
   assert.equal(reg.ids().length, 7);
-  // additionalProperties is set explicitly on every object schema. It is false everywhere except one declared open node:
-  // the owned-item legacy extras object, which exists to carry unknown v1 fields unchanged (the specification names legacy { v1Doc, v1Id, extras } in section 6.6).
+  // Every object schema declares additionalProperties explicitly. Record objects are closed (false). The one intentional open
+  // container is the owned-item legacy extras object, which carries unknown v1 fields unchanged
+  // (the specification names legacy { v1Doc, v1Id, extras } in section 6.6).
   const OPEN = ['urn:clay-data:owned-item/properties/legacy/properties/extras'];
   const open = []; let objects = 0;
   for (const s of schemas) walk(s, '', (n, at) => {
