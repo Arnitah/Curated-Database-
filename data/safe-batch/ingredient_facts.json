@@ -6050,7 +6050,7 @@
   ]
  },
  "yogurt": {
-  "listings": 2,
+  "listings": 3,
   "suppliers": [
    "formulator_sample_shop"
   ],
@@ -6058,16 +6058,16 @@
    1,
    10
   ],
-  "use_n": 2,
+  "use_n": 3,
   "ph": [
-   4,
+   3.5,
    7
   ],
   "shelf_months": 12,
   "links": [
    {
     "s": "formulator_sample_shop",
-    "u": "https://formulatorsampleshop.com/products/fss-yogurt-extract-ef"
+    "u": "https://formulatorsampleshop.com/products/fss-yogurt-dermal-respiratory-factor-pf-lower-price"
    }
   ]
  },
