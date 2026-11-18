@@ -573,11 +573,16 @@ function toEngineProduct(mp) {
   const list = parseInci(mp.inci).map((inci, i) => ({ inci, position: i + 1 }));
   if (!list.length) notes.push("no ingredient list on file");
   if (mp.inci_verified !== true && list.length) notes.push("ingredient list has not been confirmed against the product packaging");
-  notes.push("directions, format, frequency, pH, concentration, brand and product role are not stored in Clay");
   const source = SOURCES.has(mp.inci_source) ? mp.inci_source : (list.length ? "user_entered" : "unknown");
   const format = ["leave_on", "rinse_off", "wash_off", "unknown"].includes(mp.format) ? mp.format : "unknown";
   const frequency = Number.isFinite(mp.frequency_per_week) && mp.frequency_per_week >= 0 && mp.frequency_per_week <= 14 ? mp.frequency_per_week : null;
   const knownPh = Number.isFinite(mp.known_ph) && mp.known_ph >= 0 && mp.known_ph <= 14 ? mp.known_ph : null;
+  if (!mp.directions_text) notes.push("product directions not on file");
+  if (format === "unknown") notes.push("product format not on file");
+  if (frequency === null) notes.push("use frequency not on file");
+  if (knownPh === null) notes.push("product pH not on file; no value inferred");
+  if (!mp.brand) notes.push("brand not on file");
+  notes.push("concentration and product role are not inferred from the ingredient list or broad shelf category");
   return {
     product_id: String(mp.id),
     name: String(mp.n || ""),
@@ -1161,7 +1166,7 @@ function mpSection(){
       :p.note?`<button type="button" class="mp-note" data-act="mpnote" data-v="${p.id}" title="Tap to edit note">“${esc(p.note)}” <span class="mp-pen" aria-hidden="true">✎</span></button>`
       :`<button type="button" class="linkbtn mp-addnote" data-act="mpnote" data-v="${p.id}">+ Add a note</button>`}
     <div class="mp-meta"><select class="mp-sel" data-mpar="${p.id}" aria-label="Area for ${esc(p.n)}">${MP_AREAS.map(([k,l])=>`<option value="${k}"${k===p.a?' selected':''}>${l}</option>`).join('')}</select><select class="mp-sel" data-mpst="${p.id}" aria-label="Step for ${esc(p.n)}">${steps.map(st=>`<option${st===p.st?' selected':''}>${esc(st)}</option>`).join('')}</select></div>
-    <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${p.inci?'Check ingredients ✓':'Check ingredients'}</button>
+    <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${!p.inci?'Add ingredients':p.inci_verified===true?'Ingredients checked ✓':'Review ingredient list'}</button>
     <div class="row" style="gap:6px">${p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:cur">Using it</button>`:''}${p.s!=='past'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:past">Used before</button>`:''}${p.s!=='next'&&p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:next">Try next</button>`:''}<button class="chip" type="button" data-act="mpdel" data-v="${p.id}" style="margin-left:auto;color:var(--stop)">Remove</button></div>
    </div></div>`; };
   const cur=list.filter(p=>p.s==='cur'), have=list.filter(p=>p.s==='have'), past=list.filter(p=>p.s==='past'), nxt=list.filter(p=>p.s==='next');
@@ -1802,7 +1807,7 @@ function iiShelfCard(){
   }
 }
 function pageCheck(){
-  const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci?' ✓':''}</option>`).join('')}`;
+  const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci_verified===true?' ✓ verified':p.inci?' · list saved':''}</option>`).join('')}`;
   const P=id=>MP.find(x=>x.id===+id);
   const cur=S.cp||(S.cp={a:'',b:'',na:'',nb:'',la:'',lb:''});
   ['a','b'].forEach(k=>{ const pr=P(cur[k]); if(pr&&cur['l'+k]===''&&pr.inci) cur['l'+k]=pr.inci; if(pr&&!cur['n'+k]) cur['n'+k]=pr.n; });
