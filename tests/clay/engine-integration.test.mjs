@@ -138,6 +138,7 @@ test('[integration] My Shelf and Routine use the live shelf records; packaging v
   assert.equal((await h.mp()).find(p => p.id === 101).inci_verified, true, 'explicit packaging confirmation is saved');
 
   await h.page.locator('[data-cpl="a"]').fill('Aqua, Glycolic Acid (7%), Glycerin, Panthenol');
+  await h.page.locator('[data-act="cpgo"]').click();
   await h.page.locator('[data-act="cpsave"][data-v="a"]').click();
   const updated = (await h.mp()).find(p => p.id === 101);
   assert.equal(updated.inci_verified, false, 'editing the ingredient list clears the previous verification');
