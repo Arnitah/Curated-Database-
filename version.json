@@ -1,6 +1,6 @@
 {
-  "version": 188,
-  "updated_at": "2026-11-17T19:54:52.220Z",
+  "version": 189,
+  "updated_at": "2026-11-18T19:26:21.700Z",
   "datasets": {
     "clay/clays": {
       "count": 5,
@@ -148,9 +148,9 @@
     },
     "safe-batch/ingredient_facts": {
       "count": 291,
-      "bytes": 101080,
-      "hash": "a6a734f1563d",
-      "updated_at": "2026-11-17T19:54:52.220Z"
+      "bytes": 101078,
+      "hash": "62b48896c7fc",
+      "updated_at": "2026-11-18T19:26:21.699Z"
     },
     "safe-batch/ingredients": {
       "count": 710,

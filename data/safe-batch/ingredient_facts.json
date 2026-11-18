@@ -5186,7 +5186,7 @@
   ]
  },
  "slsa": {
-  "listings": 3,
+  "listings": 4,
   "suppliers": [
    "lotioncrafter",
    "windy_point"
@@ -5336,7 +5336,7 @@
   ]
  },
  "squalane": {
-  "listings": 10,
+  "listings": 9,
   "suppliers": [
    "aromantic",
    "formulator_sample_shop",
@@ -5347,7 +5347,7 @@
    1,
    60
   ],
-  "use_n": 10,
+  "use_n": 9,
   "shelf_months": 12,
   "links": [
    {
