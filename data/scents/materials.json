@@ -20,13 +20,13 @@
      "place": "Java, Indonesia",
      "cc": "ID",
      "lat": -7.3,
-     "lon": 110
+     "lon": 110.0
     },
     {
      "place": "South India",
      "cc": "IN",
-     "lat": 11,
-     "lon": 78
+     "lat": 11.0,
+     "lon": 78.0
     }
    ],
    "latin": "Chrysopogon zizanioides"
@@ -117,7 +117,7 @@
      "place": "Nile Delta, Egypt",
      "cc": "EG",
      "lat": 30.79,
-     "lon": 31
+     "lon": 31.0
     },
     {
      "place": "Grasse, France",
@@ -188,8 +188,8 @@
     {
      "place": "Sulawesi, Indonesia",
      "cc": "ID",
-     "lat": -2,
-     "lon": 121
+     "lat": -2.0,
+     "lon": 121.0
     },
     {
      "place": "Aceh Selatan, Indonesia (Tapaktuan district locator)",
@@ -269,8 +269,8 @@
     {
      "place": "Western Australia",
      "cc": "AU",
-     "lat": -26,
-     "lon": 121
+     "lat": -26.0,
+     "lon": 121.0
     },
     {
      "place": "New Caledonia",
@@ -294,13 +294,13 @@
      "place": "Orinoco basin, Venezuela",
      "cc": "VE",
      "lat": 7.5,
-     "lon": -64
+     "lon": -64.0
     },
     {
      "place": "Northern Brazil",
      "cc": "BR",
-     "lat": -3,
-     "lon": -52
+     "lat": -3.0,
+     "lon": -52.0
     }
    ],
    "latin": "Dipteryx odorata"
@@ -317,14 +317,14 @@
     {
      "place": "Northern Laos",
      "cc": "LA",
-     "lat": 20,
+     "lat": 20.0,
      "lon": 102.5
     },
     {
      "place": "Sumatra, Indonesia",
      "cc": "ID",
-     "lat": 2,
-     "lon": 99
+     "lat": 2.0,
+     "lon": 99.0
     }
    ],
    "latin": "Styrax tonkinensis, Styrax benzoin"
@@ -355,8 +355,8 @@
     {
      "place": "Central Vietnam",
      "cc": "VN",
-     "lat": 15,
-     "lon": 108
+     "lat": 15.0,
+     "lon": 108.0
     },
     {
      "place": "Borneo",
@@ -406,13 +406,13 @@
      "place": "Somalia",
      "cc": "SO",
      "lat": 8.5,
-     "lon": 46
+     "lon": 46.0
     },
     {
      "place": "Ethiopia",
      "cc": "ET",
-     "lat": 7,
-     "lon": 44
+     "lat": 7.0,
+     "lon": 44.0
     }
    ],
    "latin": "Commiphora myrrha"
@@ -485,8 +485,8 @@
     {
      "place": "Fez region, Morocco",
      "cc": "MA",
-     "lat": 34,
-     "lon": -5
+     "lat": 34.0,
+     "lon": -5.0
     },
     {
      "place": "Egypt",
@@ -533,8 +533,8 @@
     {
      "place": "Texas and Virginia, USA",
      "cc": "US",
-     "lat": 32,
-     "lon": -99
+     "lat": 32.0,
+     "lon": -99.0
     }
    ],
    "latin": "Cedrus atlantica, Juniperus virginiana"
@@ -570,7 +570,7 @@
      "place": "Andalusia, Spain",
      "cc": "ES",
      "lat": 37.4,
-     "lon": -6
+     "lon": -6.0
     }
    ],
    "latin": "Cistus ladanifer"
@@ -612,7 +612,7 @@
      "place": "Kerala, India",
      "cc": "IN",
      "lat": 9.8,
-     "lon": 77
+     "lon": 77.0
     }
    ],
    "latin": "Elettaria cardamomum"
@@ -629,8 +629,8 @@
     {
      "place": "Madagascar",
      "cc": "MG",
-     "lat": -21,
-     "lon": 47
+     "lat": -21.0,
+     "lon": 47.0
     },
     {
      "place": "Réunion",
@@ -653,14 +653,14 @@
     {
      "place": "Madagascar",
      "cc": "MG",
-     "lat": -17,
+     "lat": -17.0,
      "lon": 49.4
     },
     {
      "place": "Maluku, Indonesia",
      "cc": "ID",
      "lat": -3.7,
-     "lon": 128
+     "lon": 128.0
     },
     {
      "place": "Zanzibar, Tanzania",
@@ -731,14 +731,14 @@
     {
      "place": "Pacific Northwest, USA",
      "cc": "US",
-     "lat": 46,
-     "lon": -119
+     "lat": 46.0,
+     "lon": -119.0
     },
     {
      "place": "Uttar Pradesh, India",
      "cc": "IN",
-     "lat": 27,
-     "lon": 80
+     "lat": 27.0,
+     "lon": 80.0
     }
    ],
    "latin": "Mentha × piperita, Mentha spicata"
@@ -756,13 +756,13 @@
     {
      "place": "Yunnan, China",
      "cc": "CN",
-     "lat": 25,
+     "lat": 25.0,
      "lon": 102.7
     },
     {
      "place": "South India",
      "cc": "IN",
-     "lat": 13,
+     "lat": 13.0,
      "lon": 77.6
     }
    ],
@@ -858,7 +858,7 @@
     {
      "place": "Veracruz, Mexico",
      "cc": "MX",
-     "lat": 19,
+     "lat": 19.0,
      "lon": -96.5
     }
    ],
@@ -876,13 +876,13 @@
     {
      "place": "São Paulo state, Brazil",
      "cc": "BR",
-     "lat": -22,
-     "lon": -48
+     "lat": -22.0,
+     "lon": -48.0
     },
     {
      "place": "Florida, USA",
      "cc": "US",
-     "lat": 28,
+     "lat": 28.0,
      "lon": -81.7
     }
    ],
