@@ -39,7 +39,7 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
     assert.match(scanResults, /not been checked against packaging\. Treat any findings as preliminary until verified/i, 'Scan discloses unverified ingredient lists');
     assert.match(scanResults, /Review example suggestions/);
     assert.doesNotMatch(scanResults, /\bApply\b/, 'the progress step no longer promises an apply action');
-    const scanRail = await page.locator('#rail').innerText();
+    const scanRail = await page.locator('.rail').innerText();
     assert.match(scanRail, /Prototype status/);
     assert.doesNotMatch(scanRail, /camera guides light|reads six things|quiz offers an optional first scan|Clay reminds you/i, 'unimplemented scanner capabilities are not presented as available');
     await assertNoPageOverflow(page, 'Scan results');
