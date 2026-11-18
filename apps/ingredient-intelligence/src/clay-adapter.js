@@ -1,9 +1,14 @@
 // Clay My Shelf record -> Ingredient Intelligence product record.
 // Read-only: never mutates Clay data, never invents values. Anything Clay does not store stays null/unknown
 // and is listed in mapping_notes so the UI can say "not on file" honestly.
-const CAT_FACE = { Cleanser: "face_cleanser", Toner: "toner", Serum: "serum", Treatment: "treatment", Moisturizer: "moisturiser", Sunscreen: "sunscreen" };
-const STATUS = { cur: "in_use", have: "owned_not_using", past: "finished" };
+const CAT_FACE = {
+  Cleanser: "face_cleanser", Toner: "toner", "Skin conditioner": "other",
+  Serum: "serum", Treatment: "treatment", Moisturizer: "moisturiser",
+  Eye: "other", Sunscreen: "sunscreen", Other: "other"
+};
+const STATUS = { cur: "in_use", have: "owned_not_using", past: "finished", next: "wishlist" };
 const AREA = { face: "face", body: "body", hair: "hair" };
+const SOURCES = new Set(["package_photo", "manufacturer", "retailer", "user_entered", "unknown"]);
 
 // Split a pasted INCI string on commas/newlines/semicolons/bullets, but not inside brackets.
 export function parseInci(raw) {
@@ -33,21 +38,31 @@ export function toEngineProduct(mp) {
   if (!status) notes.push(`status "${mp.s}" not recognised`);
   const list = parseInci(mp.inci).map((inci, i) => ({ inci, position: i + 1 }));
   if (!list.length) notes.push("no ingredient list on file");
-  notes.push("directions, format, frequency, pH, concentration, brand and product role are not stored in Clay");
+  if (mp.inci_verified !== true && list.length) notes.push("ingredient list has not been confirmed against the product packaging");
+  const source = SOURCES.has(mp.inci_source) ? mp.inci_source : (list.length ? "user_entered" : "unknown");
+  const format = ["leave_on", "rinse_off", "wash_off", "unknown"].includes(mp.format) ? mp.format : "unknown";
+  const frequency = Number.isFinite(mp.frequency_per_week) && mp.frequency_per_week >= 0 && mp.frequency_per_week <= 14 ? mp.frequency_per_week : null;
+  const knownPh = Number.isFinite(mp.known_ph) && mp.known_ph >= 0 && mp.known_ph <= 14 ? mp.known_ph : null;
+  if (!mp.directions_text) notes.push("product directions not on file");
+  if (format === "unknown") notes.push("product format not on file");
+  if (frequency === null) notes.push("use frequency not on file");
+  if (knownPh === null) notes.push("product pH not on file; no value inferred");
+  if (!mp.brand) notes.push("brand not on file");
+  notes.push("concentration and product role are not inferred from the ingredient list or broad shelf category");
   return {
     product_id: String(mp.id),
     name: String(mp.n || ""),
-    brand: null,
+    brand: typeof mp.brand === "string" ? mp.brand : null,
     category,
     status: status || "owned_not_using",
     area,
-    format: "unknown",
-    frequency_per_week: null,
+    format,
+    frequency_per_week: frequency,
     ingredient_list: list,
-    ingredient_list_source: list.length ? "user_entered" : "unknown",
-    ingredient_list_verified: false,
-    directions_text: null,
-    known_ph: null,
+    ingredient_list_source: source,
+    ingredient_list_verified: mp.inci_verified === true,
+    directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
+    known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
     mapping_notes: notes,
     clay_record: { ...mp }   // untouched copy, so nothing Clay stores is lost

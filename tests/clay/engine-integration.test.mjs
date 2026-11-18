@@ -109,3 +109,40 @@ test('[invariant] a finished product is not part of the active routine check', (
   const routine = E.evaluateRoutine([RECS[0], RECS[6]].map((r) => toEngineProduct(r)));
   assert.equal(JSON.stringify(routine).includes('Synthetic finished toner'), false);
 });
+
+
+test('[integration] My Shelf and Routine use the live shelf records; packaging verification is explicit and resets after edits', async () => {
+  const shelf = [
+    R(101, 'Toner', 'Synthetic shelf acid toner', 'Aqua, Glycolic Acid (7%), Glycerin'),
+    R(102, 'Serum', 'Synthetic shelf retinol serum', 'Aqua, Retinol 0.3%, Squalane'),
+  ];
+  const h = await openClay(browser, srv.base, { noClaude: true, local: { 'clay-products': shelf } });
+  const act = (a, v) => h.page.evaluate(([x, y]) => {
+    const b = document.createElement('button');
+    b.dataset.act = x; b.dataset.v = y; document.body.appendChild(b); b.click(); b.remove();
+  }, [a, v]);
+
+  await h.page.locator('#nav button[data-v="shelf"]').click();
+  await h.page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+  assert.equal(await h.page.getByText('Use with care').count(), 1, 'My Shelf shows the engine finding');
+  assert.match(await h.page.locator('text=checked against packaging').first().textContent().catch(() => ''), /checked against packaging/i);
+
+  await h.page.locator('#nav button[data-v="routine"]').click();
+  await h.page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+  assert.equal(await h.page.getByText('Use with care').count(), 1, 'Routine consumes the same engine result');
+
+  await act('cpopen', '101');
+  const verify = h.page.locator('[data-iiverify="101"]');
+  await verify.waitFor();
+  await verify.check();
+  assert.equal((await h.mp()).find(p => p.id === 101).inci_verified, true, 'explicit packaging confirmation is saved');
+
+  await h.page.locator('[data-cpl="a"]').fill('Aqua, Glycolic Acid (7%), Glycerin, Panthenol');
+  await h.page.locator('[data-act="cpgo"]').click();
+  await h.page.locator('[data-act="cpsave"][data-v="a"]').click();
+  const updated = (await h.mp()).find(p => p.id === 101);
+  assert.equal(updated.inci_verified, false, 'editing the ingredient list clears the previous verification');
+  assert.equal(updated.inci, 'Aqua, Glycolic Acid (7%), Glycerin, Panthenol');
+  assert.deepEqual(h.errors, [], 'no browser runtime errors');
+  await h.close();
+});

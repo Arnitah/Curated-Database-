@@ -31,7 +31,13 @@ const verified = (p) => ({ ...p, ingredient_list_verified: true });
 eq(P.aha.product_id, "1"); eq(P.aha.name, "Glow toner"); eq(P.aha.clay_record.st, "Toner");
 eq(P.aha.status, "in_use"); eq(P.old.status, "finished"); eq(P.aha.directions_text, null); eq(P.aha.brand, null);
 eq(P.aha.ingredient_list_verified, false); eq(P.none.ingredient_list_source, "unknown");
-eq(P.under.area, "unknown"); ok(P.under.mapping_notes.some(x => /no engine/.test(x)));
+eq(P.under.area, "unknown"); eq(P.under.category, "other");
+ok(P.under.mapping_notes.some(x => /no engine equivalent/.test(x)));
+eq(toEngineProduct({ ...mp.aha, inci_verified: true }).ingredient_list_verified, true, "explicit packaging check is preserved");
+eq(toEngineProduct({ ...mp.aha, inci_source: "package_photo" }).ingredient_list_source, "package_photo");
+eq(toEngineProduct({ ...mp.aha, s: "next" }).status, "wishlist");
+eq(toEngineProduct({ ...mp.aha, st: "Skin conditioner" }).category, "other");
+eq(toEngineProduct({ ...mp.aha, st: "Eye" }).category, "other");
 eq(P.bha.category, "treatment"); ok(!("role" in P.bha), "no role invented");
 eq(parseInci("Ingredients: Aqua (Water, Eau), Glycerin; Retinol\nSqualane.").join("|"), "Aqua (Water, Eau)|Glycerin|Retinol|Squalane");
 eq(parseInci("").length, 0); eq(parseInci(undefined).length, 0);
@@ -39,6 +45,7 @@ eq(parseInci("").length, 0); eq(parseInci(undefined).length, 0);
 // normaliser on real label shapes
 for (const [l, id] of [["Glycolic Acid (7%)", "glycolic_acid"], ["Retinol 0.3%", "retinol"], ["Lactic Acid*", "lactic_acid"], ["Sodium Hyaluronate", "hyaluronic_acid"], ["Avobenzone", "avobenzone"]]) eq(E.normalizeIngredient(l).canonical_id, id, l);
 eq(E.normalizeIngredient("Glycolic Acid (7%)").stated_pct, 7); eq(E.normalizeIngredient("Foo Bar Complex").matched, false);
+eq(E.normalizeIngredient("Avobenzone").review_status, "added_by_claude_pending_review", "registry review status is surfaced");
 
 // unverified lists stay unverified
 let r = E.evaluateProductPair(P.aha, P.ret);
@@ -55,9 +62,17 @@ ok(!["compatible", "complementary"].includes(r.classification));
 eq(E.evaluateProductPair(verified(P.ret), verified(P.ret2)).classification, "use_with_care");
 ok(E.evaluateProductPair(verified(P.ret), verified(P.ret2)).matched_rules.includes("duplicate_retinoid_family"));
 eq(E.evaluateProductPair(verified(P.aha), verified(P.aha2)).matched_rules.includes("duplicate_aha_family"), true);
-// complementary, and sun-protection rule now reachable
+// Pending-review UV filters are recognised but cannot activate evidence rules.
+r = E.evaluateProductPair(verified(P.aha), verified(P.spf));
+ok(!r.matched_rules.includes("aha_sun_sensitivity_context"), "pending-review UV filters are excluded from rule matching");
+ok(r.coverage[1].pending_review.includes("Zinc Oxide") && r.coverage[1].pending_review.includes("Avobenzone"));
+ok(r.limitations.some(x => /pending-review registry entries.*excluded/i.test(x)));
+// The same rule becomes available only after the registry entries are approved.
+const approvedIngredients = JSON.parse(JSON.stringify(ingredients));
+for (const item of approvedIngredients.ingredients) delete item.review_status;
+const approvedEngine = createEngine({ ingredients: approvedIngredients, rules, sources });
+ok(approvedEngine.evaluateProductPair(verified(P.aha), verified(P.spf)).matched_rules.includes("aha_sun_sensitivity_context"));
 eq(E.evaluateProductPair(verified(P.hum), verified(P.cer)).classification, "complementary");
-ok(E.evaluateProductPair(verified(P.aha), verified(P.spf)).matched_rules.includes("aha_sun_sensitivity_context"));
 // no list / not in use / finished
 r = E.evaluateProductPair(verified(P.none), verified(P.aha)); eq(r.classification, "insufficient_data"); ok(/no ingredient list/.test(r.rationale));
 r = E.evaluateProductPair(verified(P.old), verified(P.aha)); eq(r.classification, "insufficient_data"); ok(/not marked in use/.test(r.rationale));

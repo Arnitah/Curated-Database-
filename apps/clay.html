@@ -405,7 +405,8 @@ function createEngine({ ingredients, rules, sources }) {
       canonical_id: id || null,
       matched: Boolean(id),
       stated_pct: stated,
-      ingredient: id ? byId.get(id) : null
+      ingredient: id ? byId.get(id) : null,
+      review_status: id ? (byId.get(id).review_status || "approved") : null
     };
   }
 
@@ -413,12 +414,17 @@ function createEngine({ ingredients, rules, sources }) {
   function coverageFor(product) {
     const list = product?.ingredient_list || [];
     const unmatched = [];
+    const pending_review = [];
     let recognised = 0;
     for (const entry of list) {
       const id = entry.canonical_id || normalizeIngredient(entry.inci).canonical_id;
-      if (id && byId.get(id)) recognised++; else unmatched.push(entry.inci);
+      const item = id ? byId.get(id) : null;
+      if (item) {
+        recognised++;
+        if (item.review_status === "added_by_claude_pending_review") pending_review.push(entry.inci);
+      } else unmatched.push(entry.inci);
     }
-    return { total: list.length, recognised, unmatched };
+    return { total: list.length, recognised, unmatched, pending_review };
   }
 
   function familiesFor(product) {
@@ -426,7 +432,8 @@ function createEngine({ ingredients, rules, sources }) {
     for (const entry of (product.ingredient_list || [])) {
       const id = entry.canonical_id || normalizeIngredient(entry.inci).canonical_id;
       const item = id ? byId.get(id) : null;
-      if (item) item.families.forEach(f => out.add(f));
+      // Recognised records awaiting review remain visible in coverage, but cannot activate evidence rules.
+      if (item && item.review_status !== "added_by_claude_pending_review") item.families.forEach(f => out.add(f));
     }
     return out;
   }
@@ -480,12 +487,17 @@ function createEngine({ ingredients, rules, sources }) {
       if (!q.directions_text) base.missing_data.push(`${i ? "second" : "first"} product directions`);
       else base.limitations.push(`${i ? "Second" : "First"} product has directions on file. Clay does not interpret them; they take priority over this screening.`);
     }
+    const pendingReview = cov.flatMap((c, i) => c.pending_review.map(label => ({ product: i ? "second" : "first", label })));
+    if (pendingReview.length) {
+      base.limitations.push("Pending-review registry entries are recognised for visibility but excluded from evidence-rule matching: " + pendingReview.map(x => x.label).join(", ") + ".");
+      base.pending_review_ingredients = pendingReview;
+    }
     const fa = familiesFor(productA), fb = familiesFor(productB);
     const found = (rules.rules || []).filter(r => matchRule(r, fa, fb));
     if (!found.length) {
       const unverified = base.missing_data.includes("verified ingredient list");
       return {...base, classification: unverified ? "insufficient_data" : "insufficient_evidence",
-        rationale: unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale};
+        rationale: (unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale) + (pendingReview.length ? " One or more recognised ingredients are pending registry review and were not used to trigger a rule." : "")};
     }
     // Conservative resolution: most cautionary applicable rule wins; no automatic "compatible".
     const rank = {avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0};
@@ -535,9 +547,14 @@ function createEngine({ ingredients, rules, sources }) {
 // Clay My Shelf record -> Ingredient Intelligence product record.
 // Read-only: never mutates Clay data, never invents values. Anything Clay does not store stays null/unknown
 // and is listed in mapping_notes so the UI can say "not on file" honestly.
-const CAT_FACE = { Cleanser: "face_cleanser", Toner: "toner", Serum: "serum", Treatment: "treatment", Moisturizer: "moisturiser", Sunscreen: "sunscreen" };
-const STATUS = { cur: "in_use", have: "owned_not_using", past: "finished" };
+const CAT_FACE = {
+  Cleanser: "face_cleanser", Toner: "toner", "Skin conditioner": "other",
+  Serum: "serum", Treatment: "treatment", Moisturizer: "moisturiser",
+  Eye: "other", Sunscreen: "sunscreen", Other: "other"
+};
+const STATUS = { cur: "in_use", have: "owned_not_using", past: "finished", next: "wishlist" };
 const AREA = { face: "face", body: "body", hair: "hair" };
+const SOURCES = new Set(["package_photo", "manufacturer", "retailer", "user_entered", "unknown"]);
 
 // Split a pasted INCI string on commas/newlines/semicolons/bullets, but not inside brackets.
 function parseInci(raw) {
@@ -567,21 +584,31 @@ function toEngineProduct(mp) {
   if (!status) notes.push(`status "${mp.s}" not recognised`);
   const list = parseInci(mp.inci).map((inci, i) => ({ inci, position: i + 1 }));
   if (!list.length) notes.push("no ingredient list on file");
-  notes.push("directions, format, frequency, pH, concentration, brand and product role are not stored in Clay");
+  if (mp.inci_verified !== true && list.length) notes.push("ingredient list has not been confirmed against the product packaging");
+  const source = SOURCES.has(mp.inci_source) ? mp.inci_source : (list.length ? "user_entered" : "unknown");
+  const format = ["leave_on", "rinse_off", "wash_off", "unknown"].includes(mp.format) ? mp.format : "unknown";
+  const frequency = Number.isFinite(mp.frequency_per_week) && mp.frequency_per_week >= 0 && mp.frequency_per_week <= 14 ? mp.frequency_per_week : null;
+  const knownPh = Number.isFinite(mp.known_ph) && mp.known_ph >= 0 && mp.known_ph <= 14 ? mp.known_ph : null;
+  if (!mp.directions_text) notes.push("product directions not on file");
+  if (format === "unknown") notes.push("product format not on file");
+  if (frequency === null) notes.push("use frequency not on file");
+  if (knownPh === null) notes.push("product pH not on file; no value inferred");
+  if (!mp.brand) notes.push("brand not on file");
+  notes.push("concentration and product role are not inferred from the ingredient list or broad shelf category");
   return {
     product_id: String(mp.id),
     name: String(mp.n || ""),
-    brand: null,
+    brand: typeof mp.brand === "string" ? mp.brand : null,
     category,
     status: status || "owned_not_using",
     area,
-    format: "unknown",
-    frequency_per_week: null,
+    format,
+    frequency_per_week: frequency,
     ingredient_list: list,
-    ingredient_list_source: list.length ? "user_entered" : "unknown",
-    ingredient_list_verified: false,
-    directions_text: null,
-    known_ph: null,
+    ingredient_list_source: source,
+    ingredient_list_verified: mp.inci_verified === true,
+    directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
+    known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
     mapping_notes: notes,
     clay_record: { ...mp }   // untouched copy, so nothing Clay stores is lost
@@ -941,6 +968,7 @@ function pageRoutine(){
     ${(()=>{ const n=Math.max(realRoutine('am').filter(x=>!x[5]).length,realRoutine('pm').filter(x=>!x[5]).length), size=n<=3?'Minimalist · 3 steps or fewer':n<=6?'Balanced · 4–6 steps':'Extensive · 7+ steps', act=MP.filter(p=>p.a==='face'&&p.s==='cur'&&mpIsActive(p)).length;
       return `<div class="head"><span class="eyebrow">Your routine</span><h1>Routine check</h1><div class="row">${tag(size,'','layers')}${tag(act+' active'+(act===1?'':'s'))}</div></div>`; })()}
     ${mpChecks().map(([k,t,b])=>`<section class="card ${k==='stop'?'stop':k==='warn'?'warn':''}" data-comment-target><div class="card-head">${ic(k==='stop'?'stop':k==='warn'?'alert':'info',20)}<h3>${esc(t)}</h3>${cmt(t)}</div><p class="small">${esc(b)}</p></section>`).join('')}
+    ${iiShelfCard()}
     <div class="grid2">${col('am','Morning','sun')}${col('pm','Tonight','moon')}</div>`;
   const rail = `
     ${card('How layering works', layerSwatches(), {h:'h3'})}
@@ -1150,7 +1178,7 @@ function mpSection(){
       :p.note?`<button type="button" class="mp-note" data-act="mpnote" data-v="${p.id}" title="Tap to edit note">“${esc(p.note)}” <span class="mp-pen" aria-hidden="true">✎</span></button>`
       :`<button type="button" class="linkbtn mp-addnote" data-act="mpnote" data-v="${p.id}">+ Add a note</button>`}
     <div class="mp-meta"><select class="mp-sel" data-mpar="${p.id}" aria-label="Area for ${esc(p.n)}">${MP_AREAS.map(([k,l])=>`<option value="${k}"${k===p.a?' selected':''}>${l}</option>`).join('')}</select><select class="mp-sel" data-mpst="${p.id}" aria-label="Step for ${esc(p.n)}">${steps.map(st=>`<option${st===p.st?' selected':''}>${esc(st)}</option>`).join('')}</select></div>
-    <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${p.inci?'Check ingredients ✓':'Check ingredients'}</button>
+    <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${!p.inci?'Add ingredients':p.inci_verified===true?'Ingredients checked ✓':'Review ingredient list'}</button>
     <div class="row" style="gap:6px">${p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:cur">Using it</button>`:''}${p.s!=='past'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:past">Used before</button>`:''}${p.s!=='next'&&p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:next">Try next</button>`:''}<button class="chip" type="button" data-act="mpdel" data-v="${p.id}" style="margin-left:auto;color:var(--stop)">Remove</button></div>
    </div></div>`; };
   const cur=list.filter(p=>p.s==='cur'), have=list.filter(p=>p.s==='have'), past=list.filter(p=>p.s==='past'), nxt=list.filter(p=>p.s==='next');
@@ -1751,8 +1779,49 @@ function iiCard(){
     return card('Pairing screening', `<p class="small muted">A gentle screen of the lists above. It can’t see strengths or pH, and each product’s own directions come first. It never changes your routine.</p>${out}`, {h:'h3', icon:'check'});
   }catch(e){ return ''; }
 }
+function iiShelfCard(){
+  try{
+    if(!window.ClayII) return '';
+    const active=MP.filter(p=>p.a==='face'&&p.s==='cur');
+    const withList=active.filter(p=>typeof p.inci==='string'&&p.inci.trim());
+    const verified=withList.filter(p=>p.inci_verified===true).length;
+    const labels={use_with_care:'Use with care',complementary:'Complementary roles',separate:'Consider separating',avoid_combination:'Do not combine',insufficient_evidence:'Not enough evidence',insufficient_data:'Need product details',compatible:'Generally compatible'};
+    let body=`<p class="small muted">Read-only screening of your active face products. The engine never changes your shelf or routine. Hair and body analysis, morning/evening placement and weekly frequency are not included in this v0.1 screen.</p>
+      <p class="small"><b>${withList.length} of ${active.length}</b> active face products have an ingredient list; <b>${verified}</b> checked against packaging.</p>`;
+    if(withList.length<2){
+      body+=`<p class="small muted">Add ingredient lists for at least two products using “Check ingredients” on My Shelf. Then Clay can screen evidence-linked ingredient relationships.</p>`;
+    } else {
+      const E=window.ClayII, products=withList.map(p=>E.toEngineProduct(p));
+      const result=E.engine.evaluateRoutine(products,{});
+      const findings=result.pair_findings||[];
+      const pending=products.flatMap(p=>p.ingredient_list.map(x=>E.engine.normalizeIngredient(x.inci)).filter(x=>x.review_status==="added_by_claude_pending_review").map(x=>x.raw_label));
+      if(pending.length) body+=`<p class="small muted">Registry entries awaiting review (${pending.map(esc).join(', ')}) are recognised for visibility but excluded from evidence-rule matching.</p>`;
+      if(!findings.length) body+=`<p class="small">No matching evidence-linked rule was found in the current starter library. This does <b>not</b> establish that the products are compatible or safe together.</p>`;
+      findings.forEach(r=>{
+        const names=(r.products||[]).map(id=>(withList.find(p=>String(p.id)===String(id))||{}).n||'Product').join(' + ');
+        const coverage=r.coverage||[];
+        const evidence=(r.evidence||[]).map(x=>`<li>${esc(x.publisher||'Source')}: <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'Evidence source')}</a></li>`).join('');
+        const limits=[...(r.limitations||[]),...(r.missing_data||[])];
+        body+=`<div class="ii-pair"><h4>${esc(names)}<span class="ii-tag">${esc(labels[r.classification]||r.classification)}</span></h4>
+          <p>${esc(r.rationale||'A curated rule matched this pair.')}</p>
+          ${r.recommendation?`<p>${esc(r.recommendation)}</p>`:''}
+          <p class="small muted">Evidence: ${esc(r.confidence||'unknown')}. Ingredient recognition: ${coverage.map(c=>c.recognised+'/'+c.total).join(' · ')||'not available'}.</p>
+          <details><summary>Evidence, limitations and missing information</summary>
+            ${evidence?`<ul class="small">${evidence}</ul>`:''}
+            ${limits.length?`<ul class="small">${limits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+          </details></div>`;
+      });
+      if(result.unverified_products.length) body+=`<p class="small muted">Some ingredient lists have not been checked against packaging. Treat any findings as preliminary until verified.</p>`;
+    }
+    const review=active.filter(p=>!p.inci||p.inci_verified!==true).slice(0,5);
+    if(review.length) body+=`<div class="row" style="gap:6px">${review.map(p=>`<button class="chip" type="button" data-act="cpopen" data-v="${p.id}">${p.inci?'Verify':'Add ingredients'} · ${esc(p.n.slice(0,24))}</button>`).join('')}</div>`;
+    return card('Ingredient intelligence',body,{h:'h3',icon:'microscope'});
+  }catch(e){
+    return card('Ingredient intelligence','<p class="small muted">Ingredient screening is temporarily unavailable. Your shelf and routine are unchanged.</p>',{h:'h3',icon:'microscope'});
+  }
+}
 function pageCheck(){
-  const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci?' ✓':''}</option>`).join('')}`;
+  const mode=S.cpMode||'one', shelf=MP.filter(p=>p.s!=='past'||p.inci), opt=(sel)=>`<option value="">Type a new product…</option>${shelf.map(p=>`<option value="${p.id}"${+sel===p.id?' selected':''}>${esc(p.n)}${p.inci_verified===true?' ✓ verified':p.inci?' · list saved':''}</option>`).join('')}`;
   const P=id=>MP.find(x=>x.id===+id);
   const cur=S.cp||(S.cp={a:'',b:'',na:'',nb:'',la:'',lb:''});
   ['a','b'].forEach(k=>{ const pr=P(cur[k]); if(pr&&cur['l'+k]===''&&pr.inci) cur['l'+k]=pr.inci; if(pr&&!cur['n'+k]) cur['n'+k]=pr.n; });
@@ -1761,6 +1830,7 @@ function pageCheck(){
     <label class="small"><span class="muted">Or pick from My Shelf</span><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
     ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
     <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
+    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]===P(cur[k]).inci?`<label class="small" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" data-iiverify="${P(cur[k]).id}" ${P(cur[k]).inci_verified===true?'checked':''}> I checked this list against the product packaging</label>`:''}
     ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}
     ${cur['h'+k]?pdbNote(cur['h'+k],!P(cur[k])):''}</div>`;
   const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||'Product '+k.toUpperCase());
@@ -1778,6 +1848,7 @@ function pageShelf(){
     ${tabs}
     ${shelfGlance(a)}
     ${mpSection()}
+    ${a==='face'?iiShelfCard():''}
     ${a==='face'?amCard():''}
     ${a==='hair'?hairPlan():''}`;
   const chk=mpChecks();
@@ -2575,8 +2646,8 @@ document.addEventListener('click', async (e)=>{
     if(hit!=null){ try{ const h=await pdbRow(hit); h._k=k; S.cp['n'+k]=[h.brand,h.name].filter(Boolean).join(' '); S.cp['l'+k]=h.list; S.cp['h'+k]=h; toast('Added '+S.cp['n'+k]+' to compare'); }catch(err){ S.cp['n'+k]=v; S.cp['q'+k]=v; } }
     else { S.cp['n'+k]=v; S.cp['q'+k]=v; toast("Not in the product database yet: paste its list in slot "+k.toUpperCase()); }
     S.cpShow=cmpSlots().filter(x=>(S.cp['l'+x]||'').trim()).length>=2; }
-  if (a==='cpadd'){ const h=S.cp['h'+v]; if(h){ const area=PDB_AREA[h.cat]||'body', nm=[h.brand,h.name].filter(Boolean).join(' '); const id=Math.max(0,...MP.map(x=>x.id))+1; MP.push({id,a:area,st:pdbStep(area,h.name),n:nm,s:'have',inci:S.cp['l'+v],hub:h.id}); mpSave(); S.cp[v]=String(id); toast('Added to My Shelf as "Have"'); } }
-  if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); mpSave(); toast('List saved to '+pr.n); } }
+  if (a==='cpadd'){ const h=S.cp['h'+v]; if(h){ const area=PDB_AREA[h.cat]||'body', nm=[h.brand,h.name].filter(Boolean).join(' '); const id=Math.max(0,...MP.map(x=>x.id))+1; MP.push({id,a:area,st:pdbStep(area,h.name),n:nm,s:'have',inci:S.cp['l'+v],inci_verified:false,hub:h.id}); mpSave(); S.cp[v]=String(id); toast('Added to My Shelf as "Have"'); } }
+  if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); pr.inci_verified=false; mpSave(); toast('List saved. Check it against the packaging to verify.'); } }
   if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
   if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
   if (a==='swdel'){ SW.splice(+v,1); S.lyPick=[]; swSave(); }
@@ -2609,6 +2680,11 @@ $('#palBtn').addEventListener('click', ()=>{ const p=$('#palPop'); p.hidden=!p.h
 $('#fbBtn').addEventListener('click', ()=>{ S.feedback=!S.feedback; render(); if (S.feedback) toast('Comment buttons are on. Tap one on any card.'); });
 document.addEventListener('keydown', e=>{ if (e.target&&e.target.id==='mpRen'){ if(e.key==='Enter'){ e.preventDefault(); document.querySelector('[data-act=mpsave]').click(); } if(e.key==='Escape'){ S.mpEdit=null; render(); } return; } if (e.key==='Escape'){ $('#palPop').hidden=true; $('#palBtn').setAttribute('aria-expanded','false'); } });
 document.addEventListener('change', (e)=>{
+  if (e.target.dataset && e.target.dataset.iiverify){
+    const p=MP.find(x=>x.id===+e.target.dataset.iiverify);
+    if(p){ p.inci_verified=!!e.target.checked; mpSave(); toast(p.inci_verified?'Ingredient list marked as checked':'Ingredient list marked unverified'); render(); }
+    return;
+  }
   if (e.target.dataset && e.target.dataset.cpk){ const k=e.target.dataset.cpk; S.cp[k]=e.target.value; const pr=MP.find(x=>x.id===+e.target.value); S.cp['l'+k]=pr&&pr.inci||''; S.cp['n'+k]=''; S.cp['h'+k]=null; S.cpShow=false; render(); return; }
   if (e.target.classList && e.target.classList.contains('hs-in') && S.hs){ S.hs[{hsNow:'now',hsGoal:'goal',hsWash:'wash',hsStyle:'style',hsType:'type',hsPor:'por'}[e.target.id]]=e.target.value; return; }
   if (e.target.dataset && e.target.dataset.hw!==undefined){ const i=+e.target.dataset.hw; HR.wd=HR.wd||[]; if(e.target.checked){ if(!HR.wd.includes(i)) HR.wd.push(i); } else HR.wd=HR.wd.filter(x=>x!==i); hrSave(); render(); return; }

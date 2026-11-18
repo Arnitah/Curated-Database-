@@ -39,7 +39,8 @@ export function createEngine({ ingredients, rules, sources }) {
       canonical_id: id || null,
       matched: Boolean(id),
       stated_pct: stated,
-      ingredient: id ? byId.get(id) : null
+      ingredient: id ? byId.get(id) : null,
+      review_status: id ? (byId.get(id).review_status || "approved") : null
     };
   }
 
@@ -47,12 +48,17 @@ export function createEngine({ ingredients, rules, sources }) {
   function coverageFor(product) {
     const list = product?.ingredient_list || [];
     const unmatched = [];
+    const pending_review = [];
     let recognised = 0;
     for (const entry of list) {
       const id = entry.canonical_id || normalizeIngredient(entry.inci).canonical_id;
-      if (id && byId.get(id)) recognised++; else unmatched.push(entry.inci);
+      const item = id ? byId.get(id) : null;
+      if (item) {
+        recognised++;
+        if (item.review_status === "added_by_claude_pending_review") pending_review.push(entry.inci);
+      } else unmatched.push(entry.inci);
     }
-    return { total: list.length, recognised, unmatched };
+    return { total: list.length, recognised, unmatched, pending_review };
   }
 
   function familiesFor(product) {
@@ -60,7 +66,8 @@ export function createEngine({ ingredients, rules, sources }) {
     for (const entry of (product.ingredient_list || [])) {
       const id = entry.canonical_id || normalizeIngredient(entry.inci).canonical_id;
       const item = id ? byId.get(id) : null;
-      if (item) item.families.forEach(f => out.add(f));
+      // Recognised records awaiting review remain visible in coverage, but cannot activate evidence rules.
+      if (item && item.review_status !== "added_by_claude_pending_review") item.families.forEach(f => out.add(f));
     }
     return out;
   }
@@ -114,12 +121,17 @@ export function createEngine({ ingredients, rules, sources }) {
       if (!q.directions_text) base.missing_data.push(`${i ? "second" : "first"} product directions`);
       else base.limitations.push(`${i ? "Second" : "First"} product has directions on file. Clay does not interpret them; they take priority over this screening.`);
     }
+    const pendingReview = cov.flatMap((c, i) => c.pending_review.map(label => ({ product: i ? "second" : "first", label })));
+    if (pendingReview.length) {
+      base.limitations.push("Pending-review registry entries are recognised for visibility but excluded from evidence-rule matching: " + pendingReview.map(x => x.label).join(", ") + ".");
+      base.pending_review_ingredients = pendingReview;
+    }
     const fa = familiesFor(productA), fb = familiesFor(productB);
     const found = (rules.rules || []).filter(r => matchRule(r, fa, fb));
     if (!found.length) {
       const unverified = base.missing_data.includes("verified ingredient list");
       return {...base, classification: unverified ? "insufficient_data" : "insufficient_evidence",
-        rationale: unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale};
+        rationale: (unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale) + (pendingReview.length ? " One or more recognised ingredients are pending registry review and were not used to trigger a rule." : "")};
     }
     // Conservative resolution: most cautionary applicable rule wins; no automatic "compatible".
     const rank = {avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0};
