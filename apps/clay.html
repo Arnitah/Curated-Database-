@@ -1774,7 +1774,7 @@ function iiShelfCard(){
     const withList=active.filter(p=>typeof p.inci==='string'&&p.inci.trim());
     const verified=withList.filter(p=>p.inci_verified===true).length;
     const labels={use_with_care:'Use with care',complementary:'Complementary roles',separate:'Consider separating',avoid_combination:'Do not combine',insufficient_evidence:'Not enough evidence',insufficient_data:'Need product details',compatible:'Generally compatible'};
-    let body=`<p class="small muted">Read-only screening of your active face products. The engine never changes your shelf or routine. Hair and body analysis are not included in this v0.1 ruleset.</p>
+    let body=`<p class="small muted">Read-only screening of your active face products. The engine never changes your shelf or routine. Hair and body analysis, morning/evening placement and weekly frequency are not included in this v0.1 screen.</p>
       <p class="small"><b>${withList.length} of ${active.length}</b> active face products have an ingredient list; <b>${verified}</b> checked against packaging.</p>`;
     if(withList.length<2){
       body+=`<p class="small muted">Add ingredient lists for at least two products using “Check ingredients” on My Shelf. Then Clay can screen evidence-linked ingredient relationships.</p>`;
