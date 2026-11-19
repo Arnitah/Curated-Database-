@@ -2851,9 +2851,8 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
         const remote=snap.exists?snap.data():null, lt=CSYNC.ts[k]||0;
         const localData=CS_GET[k](), localHas=csHasContent(k,localData), remoteHas=!!(remote&&csHasContent(k,remote.data));
         if(remoteHas&&!localHas){ CS_SET[k](remote.data); csStamp(k,remote.at||Date.now()); changed=true; }
-        else if(localHas&&!remoteHas){ claySyncPush(k); }  // an empty/missing account copy cannot replace local data
-        else if(remote&&remoteHas&&localHas&&(remote.at||0)>lt){ CS_SET[k](remote.data); csStamp(k,remote.at); changed=true; }
-        else if(localHas&&(lt||!remote)){ claySyncPush(k); }
+        else if(remoteHas&&localHas&&(remote.at||0)>lt){ CS_SET[k](remote.data); csStamp(k,remote.at); changed=true; }
+        else if(localHas&&(lt||(!remoteHas&&k!=='clay-prefs'))){ claySyncPush(k); }
         csRef(k).onSnapshot(sn=>{
           const r=sn.exists?sn.data():null, localNow=CS_GET[k]();
           if(!r) return;
