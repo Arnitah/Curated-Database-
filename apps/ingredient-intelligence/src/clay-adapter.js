@@ -61,6 +61,7 @@ export function toEngineProduct(mp) {
     ingredient_list: list,
     ingredient_list_source: source,
     ingredient_list_verified: mp.inci_verified === true,
+    ingredient_list_completeness: mp.inci_complete === false ? "partial" : (mp.inci_verified === true ? "complete" : "unknown"),
     directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
     known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
