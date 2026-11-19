@@ -12,7 +12,7 @@ const R = (id, st, n, inci, s = "cur", a = "face") => ({ id, a, st, n, s, ...(in
 const mp = {
   aha:   R(1, "Toner", "Glow toner", "Glycolic Acid (7%)"),
   ret:   R(2, "Serum", "Night retinol", "Retinol 0.3%"),
-  ret2:  R(3, "Treatment", "Retinal drops", "Retinal, Squalane"),
+  ret2:  R(3, "Treatment", "Retinal drops", "Retinal, Ceramide NP"),
   aha2:  R(4, "Serum", "Lactic serum", "Lactic Acid*, Sodium Hyaluronate"),
   bha:   R(5, "Treatment", "BHA liquid", "Salicylic Acid, Niacinamide"),
   none:  R(6, "Moisturizer", "Plain cream"),                      // no inci at all
