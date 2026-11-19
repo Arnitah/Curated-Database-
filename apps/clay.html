@@ -452,6 +452,10 @@ function createEngine({ ingredients, rules, sources }) {
     return (famA.has(a) && famB.has(b)) || (famA.has(b) && famB.has(a));
   }
 
+  function rankFor(classification) {
+    return ({avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0})[classification] ?? 0;
+  }
+
   function evaluateProductPair(productA, productB, context = {}) {
     const base = {
       products: [productA?.product_id || null, productB?.product_id || null],
@@ -473,9 +477,14 @@ function createEngine({ ingredients, rules, sources }) {
       }
       return {...base, classification:"insufficient_data", rationale:"Clay cannot compare these products yet: " + why.join("; ") + ". This is not a safety finding.", missing_data:["in-use status","ingredient list"], coverage: [coverageFor(productA), coverageFor(productB)]};
     }
-    if (!productA.ingredient_list_verified || !productB.ingredient_list_verified) {
-      base.missing_data.push("verified ingredient list");
-    }
+    const verified = [productA.ingredient_list_verified === true, productB.ingredient_list_verified === true];
+    if (!verified.every(Boolean)) base.missing_data.push("verified ingredient list");
+    const completeness = [productA, productB].map((p, i) => {
+      // Legacy engine callers that explicitly verified packaging remain complete unless they mark the list partial.
+      const declared = p.ingredient_list_completeness;
+      return declared || (verified[i] ? "complete" : "unknown");
+    });
+    if (completeness.some(x => x !== "complete")) base.missing_data.push("complete ingredient list");
     const cov = [coverageFor(productA), coverageFor(productB)];
     base.coverage = cov;
     cov.forEach((c, i) => {
@@ -494,14 +503,42 @@ function createEngine({ ingredients, rules, sources }) {
     }
     const fa = familiesFor(productA), fb = familiesFor(productB);
     const found = (rules.rules || []).filter(r => matchRule(r, fa, fb));
+    const incomplete = !verified.every(Boolean) || completeness.some(x => x !== "complete")
+      || cov.some(c => c.unmatched.length > 0 || c.pending_review.length > 0);
+    if (incomplete) {
+      const ranked = [...found].sort((x,y)=>(rankFor(y.classification)-rankFor(x.classification)));
+      const candidate = ranked[0] || null;
+      const reasons = [];
+      if (!verified.every(Boolean)) reasons.push("one or both ingredient lists have not been checked against packaging");
+      if (completeness.some(x => x !== "complete")) reasons.push("the complete ingredient list has not been established");
+      if (cov.some(c => c.unmatched.length)) reasons.push("one or more ingredient labels are not recognised by the current registry");
+      if (cov.some(c => c.pending_review.length)) reasons.push("one or more registry entries are pending review");
+      const evidenceIds = [...new Set(found.flatMap(r => r.evidence || []))];
+      return {
+        ...base,
+        classification: "insufficient_data",
+        confidence: "unknown",
+        candidate_classification: candidate?.classification || null,
+        candidate_confidence: candidate?.confidence || null,
+        matched_rules: found.map(r => r.id),
+        rationale: (candidate
+          ? "A preliminary ingredient-pattern match was found, but this is not a full-product assessment. "
+          : "Clay cannot complete a product-level comparison yet. ")
+          + "Please verify the complete ingredient lists and resolve the listed data gaps: " + reasons.join("; ") + ".",
+        recommendation: "Check each complete ingredient list against the product packaging and follow the product directions before treating this as a product-level assessment.",
+        evidence: sourceRecords(evidenceIds),
+        limitations: [...new Set([...base.limitations, "Any matched rule is provisional until both complete ingredient lists are verified and all labels are covered by the reviewed registry.", ...found.flatMap(r => r.limitations || [])])],
+        missing_data: [...new Set([...base.missing_data, "complete, verified ingredient lists"])],
+        scope: candidate?.scope || null
+      };
+    }
     if (!found.length) {
       const unverified = base.missing_data.includes("verified ingredient list");
       return {...base, classification: unverified ? "insufficient_data" : "insufficient_evidence",
         rationale: (unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale) + (pendingReview.length ? " One or more recognised ingredients are pending registry review and were not used to trigger a rule." : "")};
     }
     // Conservative resolution: most cautionary applicable rule wins; no automatic "compatible".
-    const rank = {avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0};
-    found.sort((x,y)=>(rank[y.classification]||0)-(rank[x.classification]||0));
+    found.sort((x,y)=>rankFor(y.classification)-rankFor(x.classification));
     const chosen = found[0];
     const evidenceIds = [...new Set(found.flatMap(r => r.evidence || []))];
     return {
@@ -607,6 +644,7 @@ function toEngineProduct(mp) {
     ingredient_list: list,
     ingredient_list_source: source,
     ingredient_list_verified: mp.inci_verified === true,
+    ingredient_list_completeness: mp.inci_complete === false ? "partial" : (mp.inci_verified === true ? "complete" : "unknown"),
     directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
     known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
