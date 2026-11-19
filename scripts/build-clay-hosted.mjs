@@ -1,0 +1,182 @@
+// Builds the standalone, static-host Clay preview (Cloudflare Pages compatible) from apps/clay.html.
+//
+//   node scripts/build-clay-hosted.mjs              writes hosted/clay/
+//   node scripts/build-clay-hosted.mjs --out <dir>  writes somewhere else
+//
+// READ-ONLY on the source: apps/clay.html and apps/clay-web.html are never written. The output is
+// generated, git-ignored, and made only of: one page, a few public reference files, and two small
+// config files. It uses synthetic demo data and has no Claude artifact runtime and no Supabase.
+//
+// The page is derived, not forked: each change below is an exact, asserted patch of apps/clay.html.
+// If clay.html changes so a patch no longer matches exactly once, the build fails loudly instead of
+// silently shipping something unreviewed. Node built-ins only (no npm install needed to build).
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+export const REPO_ROOT = path.resolve(HERE, '..');
+export const DEFAULT_OUT = path.join(REPO_ROOT, 'hosted', 'clay');
+
+// Public reference files the page actually requests (checked by the tests: no 404s while browsing).
+// Deliberately NOT included: data/clay/my_products_seed.json (a personal shelf seed), anything under
+// data/users, index/added_products.json, or any other file the page does not ask for.
+export const COPY_FILES = [
+  'version.json',
+  'data/clay/hair_tips.json',
+  'data/clay/hair_wash_steps.json',
+  'data/clay/product_steps.json',
+  'data/clay/feel_words.json',
+  'data/safe-batch/scent_families.json',
+  'data/safe-batch/product_actives.json',
+  'data/safe-batch/product_hype_flags.json',
+  'data/safe-batch/proof_grades.json',
+  'data/scents/twins.json',
+  'data/scents/houses.json',
+  'data/scents/traditions.json',
+  'data/scents/rates.json',
+];
+export const COPY_DIRS = ['index/clay/products'];
+
+// Things that must never appear in the hosted output (the tests re-check this on the built page).
+export const FORBIDDEN = [
+  /window\.claude/, /claude\.use\s*\(/, /\.use\(\s*['"](?:db|user|comments)['"]\s*\)/,
+  /onSnapshot/, /\.collection\(/, /data\/users\//,
+  /raw\.githubusercontent\.com/, /supabase/i, /claudeusercontent/,
+  /my_products_seed/,
+];
+
+const HEADERS = `/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Robots-Tag: noindex, nofollow
+`;
+
+const ROBOTS = 'User-agent: *\nDisallow: /\n';
+
+const BANNER = '<div id="demo-banner" role="note" style="background:#ece6dc;color:#5a5249;border-bottom:1px solid #d9d1c5;font:600 12px/1.4 \'Nunito Sans\',system-ui,sans-serif;padding:6px 12px;text-align:center">Demo preview · every product and entry on this page is synthetic sample data</div>\n';
+
+function once(src, needle, label) {
+  const first = src.indexOf(needle);
+  if (first < 0) throw new Error(`patch "${label}": text not found in apps/clay.html`);
+  if (src.indexOf(needle, first + 1) >= 0) throw new Error(`patch "${label}": text found more than once`);
+  return first;
+}
+const replaceOnce = (src, needle, repl, label) => { const i = once(src, needle, label); return src.slice(0, i) + repl + src.slice(i + needle.length); };
+function replaceBetween(src, start, end, repl, label) {
+  const i = once(src, start, label);
+  const j = src.indexOf(end, i + start.length);
+  if (j < 0) throw new Error(`patch "${label}": end marker not found after start`);
+  return src.slice(0, i) + repl + src.slice(j + end.length);
+}
+function replaceLine(src, startsWith, repl, label) {
+  const re = new RegExp('^' + startsWith.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '.*$', 'gm');
+  const hits = [...src.matchAll(re)];
+  if (hits.length !== 1) throw new Error(`patch "${label}": expected exactly one line, found ${hits.length}`);
+  return src.slice(0, hits[0].index) + repl + src.slice(hits[0].index + hits[0][0].length);
+}
+
+export const quotedLiteralPresent = (text, name) => ["'", '"', '`'].some((q) => text.includes(q + name + q));
+
+export function readOriginalSeedNames(src) {
+  const i = src.indexOf('const MP_SEED=[');
+  const j = src.indexOf('];', i);
+  const rows = new Function('return ' + src.slice(i + 'const MP_SEED='.length, j + 1))();
+  return rows.map((r) => r[2]);
+}
+
+export function buildHosted({ outDir = DEFAULT_OUT, repoRoot = REPO_ROOT } = {}) {
+  const srcPath = path.join(repoRoot, 'apps', 'clay.html');
+  const raw = fs.readFileSync(srcPath, 'utf8');
+  const seedDoc = JSON.parse(fs.readFileSync(path.join(repoRoot, 'apps', 'clay-hosted', 'demo-seed.json'), 'utf8'));
+  if (seedDoc.synthetic !== true) throw new Error('demo-seed.json must be marked synthetic');
+  for (const [a, st, n, s] of seedDoc.shelf) {
+    if (!n.startsWith('Synthetic ')) throw new Error(`demo seed name must start with "Synthetic ": ${n}`);
+    if (!['cur', 'have', 'past', 'next'].includes(s)) throw new Error(`demo seed status invalid: ${n}`);
+    if (typeof a !== 'string' || typeof st !== 'string') throw new Error(`demo seed row malformed: ${n}`);
+  }
+  const originalNames = readOriginalSeedNames(raw);
+  const patches = [];
+  let s = raw;
+  const apply = (label, fn) => { s = fn(s); patches.push(label); };
+
+  apply('head: noindex, hosted marker, proper <title>', (x) => replaceOnce(x, '</head><body>\n<title>Clay Web</title>',
+    '<meta name="robots" content="noindex,nofollow"><meta name="clay-runtime" content="hosted-preview"><title>Clay Web (demo preview)</title></head><body>', 'head'));
+  apply('banner: synthetic-data notice above the app', (x) => replaceOnce(x, '<div class="app" id="app">', BANNER + '<div class="app" id="app">', 'banner'));
+  apply('sidebar: generic demo profile chip', (x) => replaceOnce(x,
+    '<div class="profile-chip"><span class="avatar">N</span><span><b>Your profile</b><br><span class="small muted">Combination · barrier recovering</span></span></div>',
+    '<div class="profile-chip"><span class="avatar">D</span><span><b>Demo profile</b><br><span class="small muted">Synthetic sample data</span></span></div>', 'profile chip'));
+  apply('seed: replace the personal starter shelf with synthetic demo rows', (x) => replaceBetween(x, 'const MP_SEED=[', '];',
+    'const MP_SEED=' + JSON.stringify(seedDoc.shelf) + ';', 'MP_SEED'));
+  apply('migrations: drop personal rename map and name-based re-adds', (x) => {
+    x = replaceLine(x, 'const MP_REN=', '/* hosted preview: no personal rename map */', 'MP_REN');
+    x = replaceLine(x, 'MP.forEach(p=>{ if(MP_REN[p.n])', '/* hosted preview: no personal renames */', 'MP_REN apply');
+    x = replaceLine(x, '[["Summer', '/* hosted preview: no name-based re-adds */', 'name re-adds');
+    x = replaceLine(x, "try{ if(!localStorage.getItem('clay-mig-hato'))", '/* hosted preview: no personal one-off migration */', 'hato migration');
+    return x;
+  });
+  apply('sync: remove the artifact-database sync layer (local saving only)', (x) => {
+    x = replaceBetween(x, '/* ---------- Save to your Claude account (private to you, follows you across devices) ----------', 'empty snapshots cannot replace non-empty saved data. */',
+      '/* ---------- Local saving in this browser (hosted preview; there is no account sync in this build) ---------- */', 'sync header');
+    return replaceBetween(x, 'const csRef=k=>CSYNC.db.collection(', "\n    finally{ CSYNC.writing[k]=false; }\n  },1200);\n}\n",
+      "function claySyncPush(k){ csStamp(k,Date.now()); }   /* hosted preview: nothing leaves this browser */\n", 'sync layer');
+  });
+  apply('boot: remove the artifact db/user hook block', (x) => replaceBetween(x, "(async()=>{\n  try{\n    const db=window.claude&&window.claude.use", "  }catch(e){ CSYNC.status='local'; }\n})();\n",
+    "CSYNC.status='local';   /* hosted preview: no account, no remote documents */\n", 'boot hooks'));
+  apply('comments: remove the Claude toolbar comment hook', (x) => {
+    x = replaceOnce(x, "window.claude?.use?.('comments').then(api=>{ commentsApi = api; }).catch(()=>{});\n", '', 'comments hook');
+    x = replaceOnce(x, 'let commentsApi = null;\n', '', 'commentsApi var');
+    return replaceBetween(x, '    if (!commentsApi){', "catch(err){ if (err && err.code==='unavailable'){ commentsApi=null; } toast('Use the comment button in the Claude toolbar, then click this card'); }",
+      "    toast('Comments are not part of the hosted preview.');", 'comment click');
+  });
+  apply('copy: replace Claude-account wording in the save note', (x) => replaceBetween(x, "${CSYNC.status==='synced'?'Saved to your Claude account", "to save to your account.'}",
+    'Demo preview: everything here is invented sample data, saved only in this browser. Nothing is sent anywhere.', 'save note'));
+  apply('data: same-origin only (no GitHub fallback)', (x) => {
+    x = replaceOnce(x, 'const CLAY_GH="https://raw.githubusercontent.com/Arnitah/curated-database-/main/";\n', '', 'CLAY_GH');
+    x = replaceOnce(x, '/* Data files are published next to the page (artifacts can\'t reach GitHub); GitHub is the fallback elsewhere */',
+      '/* Data files are served from the same origin as the page; there is no other fallback */', 'data comment');
+    return replaceOnce(x, 'const bases=window.CLAY_DATA_BASE?[window.CLAY_DATA_BASE]:["",CLAY_GH];', 'const bases=window.CLAY_DATA_BASE?[window.CLAY_DATA_BASE]:[""];', 'bases');
+  });
+
+  for (const re of FORBIDDEN) if (re.test(s)) throw new Error(`hosted page still matches forbidden pattern ${re}`);
+  // A seed name may still appear inside general advice prose; what must be gone is any quoted record literal.
+  for (const n of originalNames) for (const q of ["'", '"', '`']) if (s.includes(q + n + q)) throw new Error(`hosted page still contains an original seed record: ${n}`);
+
+  fs.rmSync(outDir, { recursive: true, force: true });
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'index.html'), s);
+  fs.writeFileSync(path.join(outDir, '_headers'), HEADERS);
+  fs.writeFileSync(path.join(outDir, 'robots.txt'), ROBOTS);
+
+  const copied = [];
+  const copy = (rel) => {
+    const from = path.join(repoRoot, rel), to = path.join(outDir, rel);
+    fs.mkdirSync(path.dirname(to), { recursive: true });
+    fs.copyFileSync(from, to);
+    copied.push(rel);
+  };
+  for (const f of COPY_FILES) copy(f);
+  for (const d of COPY_DIRS) for (const f of fs.readdirSync(path.join(repoRoot, d)).filter((n) => n.endsWith('.json')).sort()) copy(`${d}/${f}`);
+
+  const info = {
+    runtime: 'hosted-preview',
+    synthetic_demo_data: true,
+    source: 'apps/clay.html',
+    source_sha256: crypto.createHash('sha256').update(raw).digest('hex'),
+    patches,
+    copied_files: copied.length,
+    note: 'Generated by scripts/build-clay-hosted.mjs. Contains no account data, no credentials and no Claude artifact runtime.',
+  };
+  fs.writeFileSync(path.join(outDir, 'build-info.json'), JSON.stringify(info, null, 2) + '\n');
+  return { outDir, info, bytes: s.length };
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const i = process.argv.indexOf('--out');
+  const out = i > 0 ? path.resolve(process.argv[i + 1]) : DEFAULT_OUT;
+  const r = buildHosted({ outDir: out });
+  console.log(`Built hosted Clay preview: ${path.relative(REPO_ROOT, r.outDir) || r.outDir}`);
+  console.log(`  page ${r.bytes} chars, ${r.info.patches.length} patches, ${r.info.copied_files} data files, source sha256 ${r.info.source_sha256.slice(0, 12)}`);
+}

@@ -40,6 +40,10 @@ Known limitations recorded today:
 - `fixtures/synthetic-shelf.json` invented records
 - `boot`, `pages`, `sync`, `migrations`, `shelf-actions`, `engine-integration`, `bundle-parity`, `isolation` test files
 
+## Hosted preview tests
+
+`hosted.test.mjs` builds the static Cloudflare Pages preview into a temp folder and checks it with no fake platform at all: no `window.claude`, no artifact database, synthetic data only, same-origin network only. See `docs/clay-hosted-preview.md`.
+
 ## Limits
 
 The fake cannot prove the real platform's rules, listener timing or device-clock skew. The tests read `apps/clay.html` from the repository, so they only describe the published page if the two match.

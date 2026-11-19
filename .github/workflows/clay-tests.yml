@@ -7,6 +7,8 @@ on:
   pull_request:
     paths:
       - 'apps/clay.html'
+      - 'apps/clay-hosted/**'
+      - 'scripts/build-clay-hosted.mjs'
       - 'apps/ingredient-intelligence/**'
       - 'tests/clay/**'
       - 'package.json'
@@ -17,6 +19,8 @@ on:
     branches: [main]
     paths:
       - 'apps/clay.html'
+      - 'apps/clay-hosted/**'
+      - 'scripts/build-clay-hosted.mjs'
       - 'apps/ingredient-intelligence/**'
       - 'tests/clay/**'
       - 'package.json'

@@ -1,0 +1,22 @@
+{
+  "_note": "SYNTHETIC DEMO DATA for the hosted Clay preview. Every product here is invented. No real shelf, no real person, no real brand. Each name starts with 'Synthetic ' so tests and reviewers can tell it apart. Row shape: [area, step, name, status]; status is cur (using), have (in the cupboard), past (finished or stopped).",
+  "synthetic": true,
+  "shelf": [
+    ["face", "Cleanser", "Synthetic gentle cleanser", "cur"],
+    ["face", "Toner", "Synthetic acid toner", "cur"],
+    ["face", "Serum", "Synthetic retinol serum", "cur"],
+    ["face", "Moisturizer", "Synthetic barrier moisturizer", "cur"],
+    ["face", "Sunscreen", "Synthetic daily sunscreen", "cur"],
+    ["face", "Eye", "Synthetic eye cream", "have"],
+    ["face", "Treatment", "Synthetic spot treatment", "past"],
+    ["body", "Wash or soap", "Synthetic body wash", "cur"],
+    ["body", "Lotion or cream", "Synthetic body lotion", "cur"],
+    ["body", "Scrub", "Synthetic body scrub", "past"],
+    ["hair", "Shampoo", "Synthetic shampoo", "cur"],
+    ["hair", "Conditioner", "Synthetic conditioner", "cur"],
+    ["hair", "Leave-in", "Synthetic leave-in cream", "have"],
+    ["under", "Deodorant", "Synthetic stick deodorant", "cur"],
+    ["intimate", "Wash", "Synthetic gentle wash", "cur"],
+    ["oral", "Toothpaste", "Synthetic toothpaste", "cur"]
+  ]
+}
