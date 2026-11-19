@@ -1,6 +1,6 @@
 name: Clay tests (advisory)
 
-# Runs the Clay page and the ingredient engine against an in-memory fake of the platform. No real database, no real user ids, no outside network.
+# Runs Clay application tests against an in-memory fake and Supabase migration tests against an isolated local database. No hosted project or real user data.
 # ADVISORY: this is not a required check. A red run is a signal to look, not a merge block. Making it required is a repository setting, decided separately.
 # Read-only: it never commits, pushes or deploys anything.
 on:
