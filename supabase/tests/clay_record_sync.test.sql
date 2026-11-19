@@ -1,6 +1,6 @@
 begin;
 
-select plan(14);
+select plan(15);
 
 set local role authenticated;
 select set_config('request.jwt.claim.sub', '11111111-1111-4111-8111-111111111111', true);
@@ -72,8 +72,16 @@ select throws_ok(
   'NULL collection identifiers are rejected'
 );
 
+
 select throws_ok(
-  $$select public.clay_sync_apply_record('not-allowed','p-invalid',2,0,'{"name":"Invalid"}'::jsonb,false)$$,
+  $select public.clay_sync_clear_collection(null,2)$,
+  '22023',
+  'invalid collection',
+  'clear-all rejects a NULL collection identifier'
+);
+
+select throws_ok(
+  $select public.clay_sync_apply_record('not-allowed','p-invalid',2,0,'{"name":"Invalid"}'::jsonb,false)$,
   '22023',
   'invalid collection',
   'unknown collection identifiers are rejected'
