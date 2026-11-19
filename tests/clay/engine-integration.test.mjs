@@ -27,7 +27,7 @@ const RECS = [
   R(10, 'Wash', 'Synthetic intimate wash', 'Aqua', 'cur', 'intimate'),
   R(11, 'Treatment', 'Synthetic BHA liquid', 'Salicylic Acid, Niacinamide'),
 ];
-const verified = (p) => ({ ...p, ingredient_list_verified: true });
+const verified = (p) => ({ ...p, ingredient_list_verified: true, ingredient_list_completeness: 'complete' });
 
 let srv, browser;
 before(async () => { srv = await startServer(); browser = await launchBrowser(); });
