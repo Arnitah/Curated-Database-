@@ -1078,7 +1078,7 @@ const MP_SEED=[
 const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{}};
 try{ CSYNC.ts=JSON.parse(localStorage.getItem('clay-sync-ts')||'{}')||{}; }catch(e){}
 const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}), 'clay-scents':()=>SW };
-// Empty snapshots are not authoritative over saved data. Explicit item-level deletion still syncs normally.
+// Empty snapshots are treated as unloaded caches; explicit clear-all needs a separate clear marker or tombstone.
 const csHasContent=(k,d)=>Array.isArray(d)?d.length>0:!!(d&&typeof d==='object'&&Object.keys(d).length);
 const CS_SET={
   'clay-products':d=>{ if(Array.isArray(d)){ MP.splice(0,MP.length,...d); try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} } },
@@ -1099,7 +1099,13 @@ function claySyncPush(k){
     try{
       const localData=JSON.parse(JSON.stringify(CS_GET[k]()));
       const snap=await csRef(k).get(), remote=snap.exists?snap.data():null;
-      if(remote&&csHasContent(k,remote.data)&&!csHasContent(k,localData)){
+      const remoteHas=!!(remote&&csHasContent(k,remote.data)), localHas=csHasContent(k,localData);
+      if(remoteHas&&!localHas){
+        CS_SET[k](remote.data); csStamp(k,remote.at||Date.now()); CSYNC.status='synced';
+        try{ render(); }catch(e){}
+        return;
+      }
+      if(remoteHas&&localHas&&(Number(remote.at)||0)>(Number(CSYNC.ts[k])||0)){
         CS_SET[k](remote.data); csStamp(k,remote.at||Date.now()); CSYNC.status='synced';
         try{ render(); }catch(e){}
         return;
