@@ -172,6 +172,17 @@ test('[invariant] an empty live update cannot clear a non-empty local document, 
   await h.close();
 });
 
+test('[invariant] a delayed empty local write rechecks the account copy before writing', async () => {
+  const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
+  await h.settled();
+  await h.page.evaluate(() => { MP.splice(0, MP.length); mpSave(); });
+  await waitUntil(async () => (await h.mp()).length === FX.records.length, 6000);
+  assert.deepEqual(await h.mp(), FX.records, 'saved products restored after the delayed write guard');
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-products' && w.value.data.length === 0), false);
+  assert.deepEqual((await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-products'].data)), FX.records);
+  await h.close();
+});
+
 test('[invariant] a failed write never removes or changes the local copy', async () => {
   const h = await openClay(browser, srv.base, { remote: fullRemote(T), failSet: true });
   await h.settled();
