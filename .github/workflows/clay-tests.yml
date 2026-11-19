@@ -1,6 +1,6 @@
 name: Clay tests (advisory)
 
-# Runs the Clay page and the ingredient engine against an in-memory fake of the platform. No real database, no real user ids, no outside network.
+# Runs Clay application tests against an in-memory fake and Supabase migration tests against an isolated local database. No hosted project or real user data.
 # ADVISORY: this is not a required check. A red run is a signal to look, not a merge block. Making it required is a repository setting, decided separately.
 # Read-only: it never commits, pushes or deploys anything.
 on:
@@ -12,6 +12,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/clay-tests.yml'
+      - 'supabase/**'
   push:
     branches: [main]
     paths:
@@ -21,6 +22,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/clay-tests.yml'
+      - 'supabase/**'
   workflow_dispatch:
 
 permissions:
@@ -31,6 +33,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  database-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Supabase CLI
+        uses: supabase/setup-cli@v3
+      - name: Start isolated local Supabase stack
+        run: supabase start
+      - name: Run Clay pgTAP tests
+        run: supabase test db
+      - name: Lint local database
+        run: supabase db lint --fail-on error
+      - name: Stop local Supabase stack
+        if: always()
+        run: supabase stop
+
   clay-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 15

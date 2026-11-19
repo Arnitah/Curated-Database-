@@ -452,6 +452,10 @@ function createEngine({ ingredients, rules, sources }) {
     return (famA.has(a) && famB.has(b)) || (famA.has(b) && famB.has(a));
   }
 
+  function rankFor(classification) {
+    return ({avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0})[classification] ?? 0;
+  }
+
   function evaluateProductPair(productA, productB, context = {}) {
     const base = {
       products: [productA?.product_id || null, productB?.product_id || null],
@@ -473,9 +477,14 @@ function createEngine({ ingredients, rules, sources }) {
       }
       return {...base, classification:"insufficient_data", rationale:"Clay cannot compare these products yet: " + why.join("; ") + ". This is not a safety finding.", missing_data:["in-use status","ingredient list"], coverage: [coverageFor(productA), coverageFor(productB)]};
     }
-    if (!productA.ingredient_list_verified || !productB.ingredient_list_verified) {
-      base.missing_data.push("verified ingredient list");
-    }
+    const verified = [productA.ingredient_list_verified === true, productB.ingredient_list_verified === true];
+    if (!verified.every(Boolean)) base.missing_data.push("verified ingredient list");
+    const completeness = [productA, productB].map((p, i) => {
+      // Legacy engine callers that explicitly verified packaging remain complete unless they mark the list partial.
+      const declared = p.ingredient_list_completeness;
+      return declared || (verified[i] ? "complete" : "unknown");
+    });
+    if (completeness.some(x => x !== "complete")) base.missing_data.push("complete ingredient list");
     const cov = [coverageFor(productA), coverageFor(productB)];
     base.coverage = cov;
     cov.forEach((c, i) => {
@@ -494,14 +503,42 @@ function createEngine({ ingredients, rules, sources }) {
     }
     const fa = familiesFor(productA), fb = familiesFor(productB);
     const found = (rules.rules || []).filter(r => matchRule(r, fa, fb));
+    const incomplete = !verified.every(Boolean) || completeness.some(x => x !== "complete")
+      || cov.some(c => c.unmatched.length > 0 || c.pending_review.length > 0);
+    if (incomplete) {
+      const ranked = [...found].sort((x,y)=>(rankFor(y.classification)-rankFor(x.classification)));
+      const candidate = ranked[0] || null;
+      const reasons = [];
+      if (!verified.every(Boolean)) reasons.push("one or both ingredient lists have not been checked against packaging");
+      if (completeness.some(x => x !== "complete")) reasons.push("the complete ingredient list has not been established");
+      if (cov.some(c => c.unmatched.length)) reasons.push("one or more ingredient labels are not recognised by the current registry");
+      if (cov.some(c => c.pending_review.length)) reasons.push("one or more registry entries are pending review");
+      const evidenceIds = [...new Set(found.flatMap(r => r.evidence || []))];
+      return {
+        ...base,
+        classification: "insufficient_data",
+        confidence: "unknown",
+        candidate_classification: candidate?.classification || null,
+        candidate_confidence: candidate?.confidence || null,
+        matched_rules: found.map(r => r.id),
+        rationale: (candidate
+          ? "A preliminary ingredient-pattern match was found, but this is not a full-product assessment. "
+          : "Clay cannot complete a product-level comparison yet. ")
+          + "Please verify the complete ingredient lists and resolve the listed data gaps: " + reasons.join("; ") + ".",
+        recommendation: "Check each complete ingredient list against the product packaging and follow the product directions before treating this as a product-level assessment.",
+        evidence: sourceRecords(evidenceIds),
+        limitations: [...new Set([...base.limitations, "Any matched rule is provisional until both complete ingredient lists are verified and all labels are covered by the reviewed registry.", ...found.flatMap(r => r.limitations || [])])],
+        missing_data: [...new Set([...base.missing_data, "complete, verified ingredient lists"])],
+        scope: candidate?.scope || null
+      };
+    }
     if (!found.length) {
       const unverified = base.missing_data.includes("verified ingredient list");
       return {...base, classification: unverified ? "insufficient_data" : "insufficient_evidence",
         rationale: (unverified ? "At least one ingredient list is unverified. The comparison is incomplete." : base.rationale) + (pendingReview.length ? " One or more recognised ingredients are pending registry review and were not used to trigger a rule." : "")};
     }
     // Conservative resolution: most cautionary applicable rule wins; no automatic "compatible".
-    const rank = {avoid_combination:6,separate:5,use_with_care:4,insufficient_data:3,insufficient_evidence:2,complementary:1,compatible:0};
-    found.sort((x,y)=>(rank[y.classification]||0)-(rank[x.classification]||0));
+    found.sort((x,y)=>rankFor(y.classification)-rankFor(x.classification));
     const chosen = found[0];
     const evidenceIds = [...new Set(found.flatMap(r => r.evidence || []))];
     return {
@@ -607,6 +644,7 @@ function toEngineProduct(mp) {
     ingredient_list: list,
     ingredient_list_source: source,
     ingredient_list_verified: mp.inci_verified === true,
+    ingredient_list_completeness: mp.inci_complete === false ? "partial" : (mp.inci_verified === true ? "complete" : "unknown"),
     directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
     known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
@@ -1036,10 +1074,15 @@ const MP_SEED=[
  ['under','Deodorant','Arm & Hammer roll-on','past'],['under','Deodorant','Dove green tea and cucumber body spray','past']];
 /* ---------- Save to your Claude account (private to you, follows you across devices) ----------
    Each key is one private document at data/users/<you>/<key>. The browser copy stays as the offline cache.
-   Newest wins, by timestamp. */
-const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{}};
+   Non-empty copies use the device timestamp; empty snapshots cannot replace non-empty saved data. */
+const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{},emptyIntent:{}};
 try{ CSYNC.ts=JSON.parse(localStorage.getItem('clay-sync-ts')||'{}')||{}; }catch(e){}
+try{ CSYNC.emptyIntent=JSON.parse(localStorage.getItem('clay-sync-empty-intent')||'{}')||{}; }catch(e){}
 const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}), 'clay-scents':()=>SW };
+const csHasContent=(k,d)=>Array.isArray(d)?d.length>0:!!(d&&typeof d==='object'&&Object.keys(d).length);
+const csMarkEmptyIntent=k=>{ CSYNC.emptyIntent[k]=true; try{ localStorage.setItem('clay-sync-empty-intent',JSON.stringify(CSYNC.emptyIntent)); }catch(e){} };
+const csClearEmptyIntent=k=>{ delete CSYNC.emptyIntent[k]; try{ localStorage.setItem('clay-sync-empty-intent',JSON.stringify(CSYNC.emptyIntent)); }catch(e){} };
+const csHasEmptyIntent=k=>CSYNC.emptyIntent[k]===true;
 const CS_SET={
   'clay-products':d=>{ if(Array.isArray(d)){ MP.splice(0,MP.length,...d); try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} } },
   'clay-hair':d=>{ if(d&&typeof d==='object'){ Object.keys(HR).forEach(k=>delete HR[k]); Object.assign(HR,d); try{ localStorage.setItem('clay-hair',JSON.stringify(HR)); }catch(e){} } },
@@ -1056,7 +1099,21 @@ function claySyncPush(k){
   CSYNC.timers[k]=setTimeout(async()=>{
     if(CSYNC.writing[k]){ claySyncPush(k); return; }   // one write at a time per document
     CSYNC.writing[k]=true;
-    try{ await csRef(k).set({data:JSON.parse(JSON.stringify(CS_GET[k]())),at:CSYNC.ts[k]}); CSYNC.status='synced'; }
+    try{
+      const localData=JSON.parse(JSON.stringify(CS_GET[k]()));
+      const snap=await csRef(k).get(), remote=snap.exists?snap.data():null;
+      const localHas=csHasContent(k,localData), localEmptyIntent=!localHas&&csHasEmptyIntent(k);
+      const localAuthoritative=localHas||localEmptyIntent;
+      const remoteHas=!!(remote&&(csHasContent(k,remote.data)||remote.cleared===true));
+      if(remoteHas&&(!localAuthoritative||(Number(remote.at)||0)>(Number(CSYNC.ts[k])||0))){
+        CS_SET[k](remote.data); csClearEmptyIntent(k); csStamp(k,remote.at||Date.now()); CSYNC.status='synced';
+        try{ render(); }catch(e){}
+        return;
+      }
+      if(!localAuthoritative) return;
+      await csRef(k).set({data:localData,at:CSYNC.ts[k],...(localEmptyIntent?{cleared:true}:{})});
+      csClearEmptyIntent(k); CSYNC.status='synced';
+    }
     catch(e){ CSYNC.status='error'; }
     finally{ CSYNC.writing[k]=false; }
   },1200);
@@ -1076,7 +1133,7 @@ MP.forEach(p=>{ const n=(p.n||'').toLowerCase();
   if(!['cur','have','past','next'].includes(p.s)) p.s='cur';
 });
 try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){}
-const mpSave=()=>{ try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} try{ claySyncPush('clay-products'); }catch(e){} };
+const mpSave=(explicitEmpty=false)=>{ try{ localStorage.setItem('clay-products',JSON.stringify(MP)); }catch(e){} if(explicitEmpty&&!MP.length) csMarkEmptyIntent('clay-products'); try{ claySyncPush('clay-products'); }catch(e){} };
 function mpChecks(){
   const cur=a=>MP.filter(p=>p.a===a&&p.s==='cur'), has=(arr,re)=>arr.some(p=>re.test(p.n.toLowerCase())), F=cur('face'), B=cur('body'), H=cur('hair'), U=cur('under'), out=[];
   const acid=has(F,/glycolic|lactic|salicylic|aha|bha|peel/), fade=has(F,/spot|kojic|dark|correct|brighten|vitamin c/);
@@ -1873,7 +1930,7 @@ function pageCheck(){
     <label class="small"><span class="muted">Or pick from My Shelf</span><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
     ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
     <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
-    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]===P(cur[k]).inci?`<label class="small" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" data-iiverify="${P(cur[k]).id}" ${P(cur[k]).inci_verified===true?'checked':''}> I checked this list against the product packaging</label>`:''}
+    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]===P(cur[k]).inci?`<label class="small" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" data-iiverify="${P(cur[k]).id}" ${P(cur[k]).inci_verified===true?'checked':''}> I checked the complete ingredient list against the product packaging</label>`:''}
     ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}
     ${cur['h'+k]?pdbNote(cur['h'+k],!P(cur[k])):''}</div>`;
   const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||'Product '+k.toUpperCase());
@@ -2153,7 +2210,7 @@ function saMatches(){ const P=S.saPick||['vanilla','rose']; if(!P.length) return
 const SW_FIT={hothumid:{powdery:-1,fruity:2,citrus:2,aquatic:2,green:1,floral:0,musk:0,gourmand:-2,amber:-2,woody:-1,spicy:-2},hotdry:{powdery:0,fruity:2,citrus:2,aquatic:1,green:1,floral:1,musk:0,gourmand:-1,amber:-2,woody:-1,spicy:-1},mild:{powdery:2,floral:2,fruity:1,musk:1,green:1,citrus:1,aquatic:0,gourmand:0,woody:0,amber:-1,spicy:0},cold:{powdery:1,gourmand:2,amber:2,woody:2,spicy:2,musk:1,floral:0,fruity:-1,citrus:-1,green:-1,aquatic:-2}};
 
 let SW=[]; try{ SW=JSON.parse(localStorage.getItem('clay-scents'))||[]; }catch(e){}
-const swSave=()=>{ try{ localStorage.setItem('clay-scents',JSON.stringify(SW)); }catch(e){} try{ claySyncPush('clay-scents'); }catch(e){} };
+const swSave=(explicitEmpty=false)=>{ try{ localStorage.setItem('clay-scents',JSON.stringify(SW)); }catch(e){} if(explicitEmpty&&!SW.length) csMarkEmptyIntent('clay-scents'); try{ claySyncPush('clay-scents'); }catch(e){} };
 const SW_TYPE={wash:'Scented body wash or scrub',deo:'Scented deodorant',lotion:'Scented lotion, butter or oil',mist:'Body mist',perfume:'Perfume',home:'Candle or room scent'};
 const SW_ORDER=['wash','deo','lotion','mist','perfume','home'];
 const SW_TIERS=[['Essentials','wash and deodorant'],['Longevity','adds lotion, so the scent has something to hold onto'],['Layering','adds a mist or perfume on top'],['Full body','every layer, from wash to perfume']];
@@ -2696,7 +2753,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='cpsave'){ const pr=MP.find(x=>x.id===+S.cp[v]); if(pr){ pr.inci=S.cp['l'+v].trim(); pr.inci_verified=false; mpSave(); toast('List saved. Check it against the packaging to verify.'); } }
   if (a==='cpopen'){ S.page='check'; S.cpMode='one'; const pr=MP.find(x=>x.id===+v); S.cp={a:v,b:'',na:'',nb:'',la:pr&&pr.inci||'',lb:''}; S.cpShow=!!(pr&&pr.inci); window.scrollTo({top:0}); }
   if (a==='swadd'){ const n=($('#swN').value||'').trim(), t=($('#swNotes').value||'').trim(); if(!n){ toast('Add a name'); return; } if(!lyParse(t).fs.length){ toast('Add a few notes, like vanilla, berry or musk'); return; } SW.push({n,notes:t,type:$('#swT').value}); swSave(); toast('Added'); }
-  if (a==='swdel'){ SW.splice(+v,1); S.lyPick=[]; swSave(); }
+  if (a==='swdel'){ const last=SW.length===1; SW.splice(+v,1); S.lyPick=[]; swSave(last); }
   if (a==='sanote'){ const L=S.saPick||['vanilla','rose']; S.saPick=L.includes(v)?L.filter(x=>x!==v):L.concat(v); }
   if (a==='lypick'){ const i=+v, L=S.lyPick||[]; S.lyPick=L.includes(i)?L.filter(x=>x!==i):L.concat(i).slice(-2); }
   if (a==='impgo'){ toast(clayImport($('#impCode').value)); }
@@ -2717,7 +2774,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='qstart'||a==='qforce'){ const p=MP.find(x=>x.id===+v); if(p){ const busy=mpBuilding().filter(x=>x.id!==p.id); if(a==='qstart'&&mpIsActive(p)&&busy.length){ S.qWarn=p.id; render(); return; } p.s='cur'; p.startAt=dDay(); delete p.irrAt; S.qWarn=null; mpSave(); toast('Started: '+p.n); } }
   if (a==='qcancel'){ S.qWarn=null; }
   if (a==='mpset'){ const [id,st]=v.split(':'); const p=MP.find(x=>x.id===+id); if(p){ if(st==='cur'&&p.s!=='cur'&&mpIsActive(p)&&!p.startAt) p.startAt=dDay(); p.s=st; mpSave(); } }
-  if (a==='mpdel'){ MP=MP.filter(x=>x.id!==+v); mpSave(); }
+  if (a==='mpdel'){ const last=MP.length===1; MP=MP.filter(x=>x.id!==+v); mpSave(last); }
   if (a==='mpadd'){ const n=($('#mpName').value||'').trim(); if(!n){ toast('Type a product name'); return; } MP.push({id:Math.max(0,...MP.map(x=>x.id))+1,a:S.mpa||'face',st:$('#mpStep').value,n,s:$('#mpStat').value}); mpSave(); toast('Added'); }
   if (a==='toast'){ toast(v); return; }
   render();
@@ -2794,9 +2851,18 @@ document.addEventListener('toggle',e=>{ if(e.target&&e.target.classList&&e.targe
       try{
         const snap=await csRef(k).get();
         const remote=snap.exists?snap.data():null, lt=CSYNC.ts[k]||0;
-        if(remote&&(remote.at||0)>lt){ CS_SET[k](remote.data); csStamp(k,remote.at); changed=true; }
-        else if(lt||(!remote&&k!=='clay-prefs')) claySyncPush(k);   // first sign-in: upload what this device has
-        csRef(k).onSnapshot(sn=>{ const r=sn.exists?sn.data():null; if(r&&(r.at||0)>(CSYNC.ts[k]||0)){ CS_SET[k](r.data); csStamp(k,r.at); try{ render(); }catch(e){} } },()=>{});
+        const localData=CS_GET[k](), localHas=csHasContent(k,localData), localEmptyIntent=!localHas&&csHasEmptyIntent(k);
+        const localAuthoritative=localHas||localEmptyIntent, remoteHas=!!(remote&&(csHasContent(k,remote.data)||remote.cleared===true));
+        if(remoteHas&&(!localAuthoritative||(remote.at||0)>lt)){ CS_SET[k](remote.data); csClearEmptyIntent(k); csStamp(k,remote.at||Date.now()); changed=true; }
+        else if(localAuthoritative&&(lt||(!remoteHas&&k!=='clay-prefs'))){ claySyncPush(k); }
+        csRef(k).onSnapshot(sn=>{
+          const r=sn.exists?sn.data():null, localNow=CS_GET[k]();
+          if(!r) return;
+          const localNowHas=csHasContent(k,localNow), localNowIntent=!localNowHas&&csHasEmptyIntent(k);
+          const localNowAuthoritative=localNowHas||localNowIntent, remoteNowHas=csHasContent(k,r.data)||r.cleared===true;
+          if(remoteNowHas&&(!localNowAuthoritative||(r.at||0)>(CSYNC.ts[k]||0))){ CS_SET[k](r.data); csClearEmptyIntent(k); csStamp(k,r.at||Date.now()); try{ render(); }catch(e){}; return; }
+          if(!remoteNowHas&&localNowAuthoritative) return;
+        },()=>{});
       }catch(e){ CSYNC.status='error'; }
     }
     if(changed) try{ render(); }catch(e){}

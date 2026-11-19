@@ -46,16 +46,17 @@ test('[invariant] with a database but no signed-in user the app stays local and 
   await h.close();
 });
 
-test('[current-behaviour] first sign-in with an empty remote uploads this device’s copy once per document (not preferences), as {data, at}', async () => {
+test('[invariant] first sign-in uploads non-empty local documents and does not create empty documents', async () => {
   const h = await openClay(browser, srv.base);
-  await waitUntil(async () => (await h.log()).writes.length >= 4, 6000);
+  await waitUntil(async () => (await h.log()).writes.length >= 1, 6000);
   await sleep(1600);
   const { writes } = await h.log();
-  assert.deepEqual(writes.map((w) => w.key).sort(), ['clay-hair', 'clay-log', 'clay-products', 'clay-scents']);
+  assert.deepEqual(writes.map((w) => w.key).sort(), ['clay-products']);
   for (const w of writes) {
     assert.deepEqual(Object.keys(w.value).sort(), ['at', 'data']);
     assert.equal(typeof w.value.at, 'number');
     assert.equal(w.full, own(w.key));
+    assert.ok(Array.isArray(w.value.data) ? w.value.data.length > 0 : Object.keys(w.value.data || {}).length > 0, 'empty documents are not uploaded');
   }
   await h.close();
 });
@@ -97,17 +98,34 @@ test('[current-behaviour] a device copy that is newer than the remote is uploade
   await h.close();
 });
 
-test('[known-limitation] an EMPTY local document with a newer timestamp overwrites a non-empty remote one (decision pending, not a requirement)', async () => {
-  // Newest-wins uses the device clock and does not look at content. If a device holds an empty copy stamped newer than
-  // the remote, that empty copy replaces the remote. Documented for a separate decision; Phase 1 does not change it.
+test('[invariant] a delayed non-empty local write does not overwrite a newer remote document', async () => {
+  const mine = [rec(1, 'face', 'Cleanser', 'Synthetic older local', 'cur')];
+  const h = await openClay(browser, srv.base, {
+    local: { 'clay-products': mine, 'clay-sync-ts': { 'clay-products': T + 9000 } },
+    remote: { 'clay-products': { data: FX.records, at: T } },
+  });
+  await h.settled();
+  await sleep(200); // initial sync has queued a delayed write from the newer local timestamp
+  const newer = [...FX.records, rec(7, 'face', 'Serum', 'Synthetic newer remote', 'cur')];
+  const remoteAt = await h.page.evaluate(() => Date.now() + 10000);
+  await h.page.evaluate(({ data, at }) => window.__fake.setSilent('clay-products', { data, at }), { data: newer, at: remoteAt });
+  await sleep(1600); // allow the queued write to re-read the now-newer remote document
+  assert.deepEqual(await h.mp(), newer, 'newer remote data is applied locally');
+  assert.deepEqual(await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-products'].data), newer, 'newer remote data remains saved');
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-products'), false, 'stale local snapshot is not written');
+  await h.close();
+});
+
+test('[invariant] an empty local document with a newer timestamp never overwrites a non-empty remote copy', async () => {
   const h = await openClay(browser, srv.base, {
     local: { 'clay-hair': {}, 'clay-sync-ts': { 'clay-hair': T + 9000 } },
     remote: { 'clay-hair': { data: FX.remoteHair, at: T } },
   });
   await h.settled();
-  await waitUntil(async () => (await h.log()).writes.some((w) => w.key === 'clay-hair'), 6000);
-  const w = (await h.log()).writes.find((x) => x.key === 'clay-hair');
-  assert.deepEqual(w.value.data, {}, 'the empty copy replaced the non-empty remote');
+  await sleep(1800);
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-hair'), false, 'no empty write is sent');
+  assert.deepEqual(await h.lsJson('clay-hair'), FX.remoteHair, 'remote data is restored locally');
+  assert.deepEqual(await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-hair'].data), FX.remoteHair, 'remote remains unchanged');
   await h.close();
 });
 
@@ -160,6 +178,78 @@ test('[invariant] a live update that is older than this device is ignored; a new
   await sleep(200);
   assert.deepEqual(await h.mp(), newer);
   assert.deepEqual(await h.lsJson('clay-products'), newer);
+  await h.close();
+});
+
+test('[invariant] removing the final shelf product syncs an explicit empty marker', async () => {
+  const only = rec(1, 'face', 'Cleanser', 'Synthetic only product', 'cur');
+  const h = await openClay(browser, srv.base, { remote: { 'clay-products': { data: [only], at: T } } });
+  await h.settled();
+  assert.equal((await h.mp()).length, 1);
+  await h.page.evaluate(() => { document.querySelector('#nav button[data-v="shelf"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="mpopen"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="mpdel"]').click(); });
+  assert.equal((await h.mp()).length, 0, 'the final product is removed locally');
+  await waitUntil(async () => (await h.log()).writes.some(w => w.key === 'clay-products' && w.value.cleared === true), 6000);
+  const saved = await h.page.evaluate(() => window.__fake.store()[ 'data/users/test-user-a/clay-products' ]);
+  assert.deepEqual(saved.data, [], 'remote shelf is explicitly empty');
+  assert.equal(saved.cleared, true, 'empty state is distinguishable from an unloaded cache');
+  assert.equal((await h.lsJson('clay-sync-empty-intent'))['clay-products'], undefined, 'intent is cleared after successful sync');
+  await h.close();
+});
+
+test('[invariant] removing the final scent syncs an explicit empty marker', async () => {
+  const only = { n: 'Synthetic only scent', notes: 'vanilla, musk', type: 'perfume' };
+  const h = await openClay(browser, srv.base, { remote: { 'clay-scents': { data: [only], at: T } } });
+  await h.settled();
+  await h.page.evaluate(() => { document.querySelector('#nav button[data-v="pairs"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="pairsMode"][data-v="scent"]').click(); });
+  assert.equal(await h.page.evaluate(() => SW.length), 1);
+  await h.page.evaluate(() => { document.querySelector('[data-act="swdel"]').click(); });
+  assert.equal(await h.page.evaluate(() => SW.length), 0, 'the final scent is removed locally');
+  await waitUntil(async () => (await h.log()).writes.some(w => w.key === 'clay-scents' && w.value.cleared === true), 6000);
+  const saved = await h.page.evaluate(() => window.__fake.store()[ 'data/users/test-user-a/clay-scents' ]);
+  assert.deepEqual(saved.data, [], 'remote scent wardrobe is explicitly empty');
+  assert.equal(saved.cleared, true);
+  assert.equal((await h.lsJson('clay-sync-empty-intent'))['clay-scents'], undefined);
+  await h.close();
+});
+
+test('[invariant] an explicit empty marker from another device clears stale local shelf and scent copies', async () => {
+  const oldScent = { n: 'Synthetic stale local scent', notes: 'rose, musk', type: 'perfume' };
+  const h = await openClay(browser, srv.base, {
+    local: { 'clay-scents': [oldScent], 'clay-sync-ts': { 'clay-scents': T - 1000 } },
+    remote: {
+      'clay-products': { data: [], at: T, cleared: true },
+      'clay-scents': { data: [], at: T, cleared: true },
+    },
+  });
+  await h.settled();
+  assert.deepEqual(await h.mp(), [], 'explicit remote shelf deletion is applied');
+  assert.deepEqual(await h.page.evaluate(() => SW), [], 'explicit remote scent deletion is applied');
+  assert.deepEqual(await h.lsJson('clay-products'), []);
+  assert.deepEqual(await h.lsJson('clay-scents'), []);
+  await h.close();
+});
+
+test('[invariant] an empty live update cannot clear a non-empty local document, even with a newer timestamp', async () => {
+  const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
+  await h.settled();
+  await h.page.evaluate((t) => window.__fake.emit('clay-products', { data: [], at: t }), T + 90000);
+  await sleep(200);
+  assert.deepEqual(await h.mp(), FX.records);
+  assert.deepEqual(await h.lsJson('clay-products'), FX.records);
+  await h.close();
+});
+
+test('[invariant] a delayed empty local write rechecks the account copy before writing', async () => {
+  const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
+  await h.settled();
+  await h.page.evaluate(() => { MP.splice(0, MP.length); mpSave(); });
+  await waitUntil(async () => (await h.mp()).length === FX.records.length, 6000);
+  assert.deepEqual(await h.mp(), FX.records, 'saved products restored after the delayed write guard');
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-products' && w.value.data.length === 0), false);
+  assert.deepEqual((await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-products'].data)), FX.records);
   await h.close();
 });
 

@@ -31,8 +31,8 @@ Each test name starts with one of these:
 
 Known limitations recorded today:
 
-1. Sync uses "newest wins" by the device clock and does not look at content, so an empty local copy with a newer timestamp can replace a non-empty remote copy. Not fixed in Phase 1; needs a separate decision.
-2. The engine can return "complementary" (with limited confidence) from two unverified, user-entered lists.
+1. Sync still uses device timestamps when both copies contain data, but empty/missing snapshots are no longer authoritative over non-empty saved data. Whole-document concurrent edits and device-clock skew between two non-empty copies remain limitations; the current data model has no per-record revision or tombstone.
+2. The engine now withholds full-product classifications when either list is unverified, explicitly partial, contains unrecognised labels, or includes registry entries pending review. A provisional matched pattern may be retained for transparency, but the result is `insufficient_data` with unknown confidence.
 
 ## Files
 

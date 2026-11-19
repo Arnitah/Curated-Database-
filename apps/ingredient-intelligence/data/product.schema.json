@@ -118,6 +118,10 @@
     "ingredient_list_verified": {
       "type": "boolean"
     },
+    "ingredient_list_completeness": {
+      "enum": ["complete", "partial", "unknown"],
+      "description": "Whether the saved list is known to contain the complete packaging ingredient declaration."
+    },
     "directions_text": {
       "type": [
         "string",
