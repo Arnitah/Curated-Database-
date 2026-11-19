@@ -215,6 +215,23 @@ test('[invariant] removing the final scent syncs an explicit empty marker', asyn
   await h.close();
 });
 
+test('[invariant] an explicit empty marker from another device clears stale local shelf and scent copies', async () => {
+  const oldScent = { n: 'Synthetic stale local scent', notes: 'rose, musk', type: 'perfume' };
+  const h = await openClay(browser, srv.base, {
+    local: { 'clay-scents': [oldScent], 'clay-sync-ts': { 'clay-scents': T - 1000 } },
+    remote: {
+      'clay-products': { data: [], at: T, cleared: true },
+      'clay-scents': { data: [], at: T, cleared: true },
+    },
+  });
+  await h.settled();
+  assert.deepEqual(await h.mp(), [], 'explicit remote shelf deletion is applied');
+  assert.deepEqual(await h.page.evaluate(() => SW), [], 'explicit remote scent deletion is applied');
+  assert.deepEqual(await h.lsJson('clay-products'), []);
+  assert.deepEqual(await h.lsJson('clay-scents'), []);
+  await h.close();
+});
+
 test('[invariant] an empty live update cannot clear a non-empty local document, even with a newer timestamp', async () => {
   const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
   await h.settled();
