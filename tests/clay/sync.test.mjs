@@ -181,6 +181,40 @@ test('[invariant] a live update that is older than this device is ignored; a new
   await h.close();
 });
 
+test('[invariant] removing the final shelf product syncs an explicit empty marker', async () => {
+  const only = rec(1, 'face', 'Cleanser', 'Synthetic only product', 'cur');
+  const h = await openClay(browser, srv.base, { remote: { 'clay-products': { data: [only], at: T } } });
+  await h.settled();
+  assert.equal((await h.mp()).length, 1);
+  await h.page.evaluate(() => { document.querySelector('#nav button[data-v="shelf"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="mpopen"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="mpdel"]').click(); });
+  assert.equal((await h.mp()).length, 0, 'the final product is removed locally');
+  await waitUntil(async () => (await h.log()).writes.some(w => w.key === 'clay-products' && w.value.cleared === true), 6000);
+  const saved = await h.page.evaluate(() => window.__fake.store()[ 'data/users/test-user-a/clay-products' ]);
+  assert.deepEqual(saved.data, [], 'remote shelf is explicitly empty');
+  assert.equal(saved.cleared, true, 'empty state is distinguishable from an unloaded cache');
+  assert.equal((await h.lsJson('clay-sync-empty-intent'))['clay-products'], undefined, 'intent is cleared after successful sync');
+  await h.close();
+});
+
+test('[invariant] removing the final scent syncs an explicit empty marker', async () => {
+  const only = { n: 'Synthetic only scent', notes: 'vanilla, musk', type: 'perfume' };
+  const h = await openClay(browser, srv.base, { remote: { 'clay-scents': { data: [only], at: T } } });
+  await h.settled();
+  await h.page.evaluate(() => { document.querySelector('#nav button[data-v="pairs"]').click(); });
+  await h.page.evaluate(() => { document.querySelector('[data-act="pairsMode"][data-v="scent"]').click(); });
+  assert.equal(await h.page.evaluate(() => SW.length), 1);
+  await h.page.evaluate(() => { document.querySelector('[data-act="swdel"]').click(); });
+  assert.equal(await h.page.evaluate(() => SW.length), 0, 'the final scent is removed locally');
+  await waitUntil(async () => (await h.log()).writes.some(w => w.key === 'clay-scents' && w.value.cleared === true), 6000);
+  const saved = await h.page.evaluate(() => window.__fake.store()[ 'data/users/test-user-a/clay-scents' ]);
+  assert.deepEqual(saved.data, [], 'remote scent wardrobe is explicitly empty');
+  assert.equal(saved.cleared, true);
+  assert.equal((await h.lsJson('clay-sync-empty-intent'))['clay-scents'], undefined);
+  await h.close();
+});
+
 test('[invariant] an empty live update cannot clear a non-empty local document, even with a newer timestamp', async () => {
   const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
   await h.settled();
