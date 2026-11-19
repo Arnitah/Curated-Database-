@@ -56,3 +56,12 @@ The existing Claude artifact user id is not a credential and must never be trust
 - Local validation is automated by `.github/workflows/clay-tests.yml` (the existing pull-request workflow's `database-tests` job): start the local Supabase stack, run `supabase test db`, and run `supabase db lint --fail-on error`. The workflow has no hosted-project credentials and does not link to or mutate a remote Supabase project.
 - Run locally with `supabase start`, `supabase test db`, and `supabase db lint --fail-on error`. Stop the local stack with `supabase stop`.
 - This gate validates the migration and database policies only. It does not authorize project provisioning, real-data import, production deployment, or PR merge.
+
+## Browser adapter implementation slice · 19 Nov 2026
+
+- (ChatGPT · 2026-11-19) Started the first application-side integration slice on branch `feat/clay-supabase-record-adapter`, based on merged main commit [bb6c60c](https://github.com/Arnitah/Curated-Database-/commit/bb6c60c312f8e07bb289bbf857b4721b945319ca).
+- Added an isolated browser-compatible adapter at `apps/clay-sync/supabase-records.js`. It requires a Supabase Auth user before every operation, accepts no caller-supplied uid, reads only the current collection generation, preserves per-record versions and tombstones, and sends writes/deletes/clear-all through the existing transactional RPCs.
+- The adapter deliberately returns stale-generation/record conflicts unchanged. It does not silently retry, overwrite, infer identity from the Claude artifact account, or queue offline edits.
+- Added synthetic unit tests for authenticated reads, empty collections, generation filtering, per-record version forwarding, tombstone deletion, clear-all, unauthenticated denial, invalid input and conflict propagation.
+- This is an isolated adapter and test slice, not yet wired into `apps/clay.html`; no Supabase SDK, URL, publishable key, auth UI, cloud project, or real shelf data is present. Existing Claude artifact sync remains the active path. No deployment or data migration.
+- Next: validate this slice in CI; then design the explicit sign-in/account-linking state and connect the adapter behind an opt-in backend mode. Do not switch or import real shelf data until the user signs in and separately confirms a previewed import.

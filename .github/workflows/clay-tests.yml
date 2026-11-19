@@ -40,6 +40,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up Supabase CLI
         uses: supabase/setup-cli@v3
+      - name: Assign isolated Supabase ports for this CI run
+        shell: bash
+        run: |
+          offset=$(( (GITHUB_RUN_ID % 1000) * 4 ))
+          api_port=$((55000 + offset))
+          db_port=$((api_port + 1))
+          shadow_port=$((api_port + 2))
+          studio_port=$((api_port + 3))
+          sed -i "s/^port = 54321$/port = ${api_port}/" supabase/config.toml
+          sed -i "s/^port = 54322$/port = ${db_port}/" supabase/config.toml
+          sed -i "s/^shadow_port = 54320$/shadow_port = ${shadow_port}/" supabase/config.toml
+          sed -i "s/^port = 54323$/port = ${studio_port}/" supabase/config.toml
       - name: Start isolated local Supabase stack
         run: supabase start
       - name: Run Clay pgTAP tests
