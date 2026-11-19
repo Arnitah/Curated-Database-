@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clay-data:correction",
+  "title": "Clay v2 correction",
+  "description": "An append-only correction that never edits its target. Created by the user, not by migration; event ids only.",
+  "type": "object",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "const": "correction"
+    },
+    "schemaVersion": {
+      "$ref": "urn:clay-data:common#/$defs/schemaVersion"
+    },
+    "id": {
+      "$ref": "urn:clay-data:common#/$defs/eventId"
+    },
+    "idKind": {
+      "type": "string",
+      "const": "event"
+    },
+    "createdAt": {
+      "$ref": "urn:clay-data:common#/$defs/createdAt"
+    },
+    "clock": {
+      "$ref": "urn:clay-data:common#/$defs/clock"
+    },
+    "origin": {
+      "type": "string",
+      "const": "user"
+    },
+    "contentHash": {
+      "$ref": "urn:clay-data:common#/$defs/contentHash"
+    },
+    "targetRef": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "supersedes",
+        "annotates",
+        "disputes",
+        "resolves_conflict"
+      ]
+    },
+    "newObservationRef": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "rawNote": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "reason": {
+      "type": "string",
+      "maxLength": 500
+    }
+  },
+  "required": [
+    "entityType",
+    "schemaVersion",
+    "id",
+    "idKind",
+    "createdAt",
+    "clock",
+    "origin",
+    "contentHash",
+    "targetRef",
+    "kind",
+    "rawNote",
+    "reason"
+  ],
+  "additionalProperties": false
+}

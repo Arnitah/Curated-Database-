@@ -12,6 +12,12 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/clay-tests.yml'
+      - 'apps/clay-data/**'
+      - 'tests/clay-data/**'
+      - 'data/clay/**'
+      - 'data/safe-batch/**'
+      - 'data/scents/**'
+      - 'version.json'
   push:
     branches: [main]
     paths:
@@ -21,6 +27,12 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/clay-tests.yml'
+      - 'apps/clay-data/**'
+      - 'tests/clay-data/**'
+      - 'data/clay/**'
+      - 'data/safe-batch/**'
+      - 'data/scents/**'
+      - 'version.json'
   workflow_dispatch:
 
 permissions:

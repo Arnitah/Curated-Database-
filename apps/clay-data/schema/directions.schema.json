@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clay-data:directions",
+  "title": "Clay v2 directions",
+  "description": "Manufacturer or pack directions, kept as written. Created by the user, not by migration; event ids only. Exactly one of ownedItemRef and identityRef is present.",
+  "type": "object",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "const": "directions"
+    },
+    "schemaVersion": {
+      "$ref": "urn:clay-data:common#/$defs/schemaVersion"
+    },
+    "id": {
+      "$ref": "urn:clay-data:common#/$defs/eventId"
+    },
+    "idKind": {
+      "type": "string",
+      "const": "event"
+    },
+    "createdAt": {
+      "$ref": "urn:clay-data:common#/$defs/createdAt"
+    },
+    "clock": {
+      "$ref": "urn:clay-data:common#/$defs/clock"
+    },
+    "origin": {
+      "type": "string",
+      "const": "user"
+    },
+    "contentHash": {
+      "$ref": "urn:clay-data:common#/$defs/contentHash"
+    },
+    "ownedItemRef": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "identityRef": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "rawText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 5000
+    },
+    "sourceKind": {
+      "$ref": "urn:clay-data:common#/$defs/sourceKind"
+    },
+    "capturedOn": {
+      "$ref": "urn:clay-data:common#/$defs/stringState"
+    },
+    "frequency": {
+      "$ref": "urn:clay-data:common#/$defs/stringState"
+    }
+  },
+  "required": [
+    "entityType",
+    "schemaVersion",
+    "id",
+    "idKind",
+    "createdAt",
+    "clock",
+    "origin",
+    "contentHash",
+    "rawText",
+    "sourceKind",
+    "capturedOn",
+    "frequency"
+  ],
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "required": [
+        "ownedItemRef"
+      ]
+    },
+    {
+      "required": [
+        "identityRef"
+      ]
+    }
+  ]
+}

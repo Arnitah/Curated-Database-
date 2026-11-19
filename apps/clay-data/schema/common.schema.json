@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clay-data:common",
+  "title": "Clay v2 shared definitions",
+  "description": "Shared definitions only. This file defines no entity and no migration part.",
+  "$defs": {
+    "eventId": {
+      "type": "string",
+      "pattern": "^e_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "maxLength": 64,
+      "description": "Random id, created for records the user makes."
+    },
+    "migrationId": {
+      "type": "string",
+      "pattern": "^m_[0-9a-f]{32}$",
+      "maxLength": 64,
+      "description": "Deterministic id created by migration from v1 provenance."
+    },
+    "entityId": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/eventId"
+        },
+        {
+          "$ref": "#/$defs/migrationId"
+        }
+      ]
+    },
+    "idKind": {
+      "type": "string",
+      "enum": [
+        "event",
+        "migration"
+      ]
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "user",
+        "migration"
+      ]
+    },
+    "contentHash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "maxLength": 80
+    },
+    "snapshotHash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "maxLength": 80
+    },
+    "createdAt": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Device clock text; see the clock property."
+    },
+    "clock": {
+      "type": "string",
+      "const": "device"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 2
+    },
+    "setBy": {
+      "type": "string",
+      "enum": [
+        "user",
+        "rule",
+        "migration"
+      ]
+    },
+    "reasonCode": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 64
+    },
+    "sourceKind": {
+      "type": "string",
+      "enum": [
+        "user_observed_label",
+        "user_pasted",
+        "user_supplied",
+        "manufacturer_published",
+        "retailer_listing",
+        "community_database",
+        "legacy_unspecified"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "user_entered",
+            "user_observed_label",
+            "user_pasted",
+            "user_supplied",
+            "manufacturer_published",
+            "retailer_listing",
+            "community_database",
+            "legacy_unspecified",
+            "v1_migration"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "text500": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "$ref": "#/$defs/text500"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      },
+      "required": [
+        "value",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "statedField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "stated"
+        },
+        "value": {
+          "$ref": "#/$defs/text500"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "value",
+        "source",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "notStatedField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "not_stated"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "source",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "unknownField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "unknown"
+        },
+        "reason": {
+          "$ref": "#/$defs/reasonCode"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "reason",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "missingField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "missing"
+        },
+        "reason": {
+          "$ref": "#/$defs/reasonCode"
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "reason",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "notApplicableField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "not_applicable"
+        },
+        "reason": {
+          "$ref": "#/$defs/reasonCode"
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "reason",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "conflictingField": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "conflicting"
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "minItems": 2
+        },
+        "setBy": {
+          "$ref": "#/$defs/setBy"
+        }
+      },
+      "required": [
+        "state",
+        "candidates",
+        "setBy"
+      ],
+      "additionalProperties": false
+    },
+    "stringState": {
+      "description": "An optional text fact with its value state. Exactly one branch must match.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/statedField"
+        },
+        {
+          "$ref": "#/$defs/notStatedField"
+        },
+        {
+          "$ref": "#/$defs/unknownField"
+        },
+        {
+          "$ref": "#/$defs/missingField"
+        },
+        {
+          "$ref": "#/$defs/notApplicableField"
+        },
+        {
+          "$ref": "#/$defs/conflictingField"
+        }
+      ]
+    },
+    "v1Doc": {
+      "type": "string",
+      "enum": [
+        "clay-products",
+        "clay-hair",
+        "clay-log",
+        "clay-prefs",
+        "clay-scents"
+      ]
+    },
+    "v1Id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "area": {
+      "type": "string",
+      "enum": [
+        "body",
+        "face",
+        "hair",
+        "intimate",
+        "underarm"
+      ]
+    },
+    "step": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "usage": {
+      "type": "string",
+      "enum": [
+        "in_use",
+        "owned_not_using",
+        "finished"
+      ]
+    }
+  }
+}

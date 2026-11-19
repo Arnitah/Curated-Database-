@@ -1,0 +1,465 @@
+{
+ "synthetic": true,
+ "generator": "Hand-authored synthetic records. Placeholders in angle brackets are replaced at run time by the tests; no event id, run id or hash is stored here.",
+ "cases": [
+  {
+   "name": "product_identity_migrated",
+   "schema": "urn:clay-data:product-identity",
+   "record": {
+    "entityType": "productIdentity",
+    "schemaVersion": 2,
+    "id": "m_31aa2f6f3304b4156bda7e82cbdc6070",
+    "idKind": "migration",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "migration",
+    "contentHash": "<content-hash>",
+    "brand": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "productName": {
+     "state": "stated",
+     "value": "Synthetic Product A",
+     "source": {
+      "kind": "v1_migration"
+     },
+     "setBy": "migration"
+    },
+    "variant": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "format": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "size": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "category": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "visibility": "private"
+   },
+   "idInputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 1,
+    "part": "identity",
+    "ordinal": 0
+   }
+  },
+  {
+   "name": "product_identity_user_all_states",
+   "schema": "urn:clay-data:product-identity",
+   "record": {
+    "entityType": "productIdentity",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "brand": {
+     "state": "stated",
+     "value": "Synthetic Brand",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "productName": {
+     "state": "stated",
+     "value": "Synthetic Product B",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "variant": {
+     "state": "conflicting",
+     "candidates": [
+      {
+       "value": "Synthetic Variant One",
+       "source": {
+        "kind": "user_pasted"
+       }
+      },
+      {
+       "value": "Synthetic Variant Two",
+       "source": {
+        "kind": "retailer_listing"
+       }
+      }
+     ],
+     "setBy": "rule"
+    },
+    "format": {
+     "state": "not_applicable",
+     "reason": "not_applicable_to_item",
+     "setBy": "rule"
+    },
+    "size": {
+     "state": "unknown",
+     "reason": "user_does_not_know",
+     "setBy": "user"
+    },
+    "category": {
+     "state": "not_stated",
+     "source": {
+      "kind": "user_observed_label"
+     },
+     "setBy": "user"
+    },
+    "visibility": "private"
+   }
+  },
+  {
+   "name": "owned_item_migrated",
+   "schema": "urn:clay-data:owned-item",
+   "record": {
+    "entityType": "ownedItem",
+    "schemaVersion": 2,
+    "id": "m_689e2de41e131d518dd8ead795a40711",
+    "idKind": "migration",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "migration",
+    "contentHash": "<content-hash>",
+    "identityRef": "<event-id>",
+    "placement": {
+     "area": "face",
+     "step": "Synthetic step"
+    },
+    "usage": "in_use",
+    "openedOn": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "finishedOn": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "restockOf": null,
+    "legacy": {
+     "v1Doc": "clay-products",
+     "v1Id": 1,
+     "extras": {}
+    }
+   },
+   "idInputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 1,
+    "part": "owned_item",
+    "ordinal": 0
+   }
+  },
+  {
+   "name": "owned_item_finished_with_extras",
+   "schema": "urn:clay-data:owned-item",
+   "record": {
+    "entityType": "ownedItem",
+    "schemaVersion": 2,
+    "id": "m_689e2de41e131d518dd8ead795a40711",
+    "idKind": "migration",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "migration",
+    "contentHash": "<content-hash>",
+    "identityRef": "<event-id>",
+    "placement": {
+     "area": "face",
+     "step": "Synthetic step"
+    },
+    "usage": "finished",
+    "openedOn": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "finishedOn": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "restockOf": null,
+    "legacy": {
+     "v1Doc": "clay-products",
+     "v1Id": 1,
+     "extras": {
+      "synthetic_extra": "Synthetic extra",
+      "synthetic_count": 3
+     }
+    }
+   },
+   "idInputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 1,
+    "part": "owned_item",
+    "ordinal": 0
+   }
+  },
+  {
+   "name": "owned_item_user_no_legacy",
+   "schema": "urn:clay-data:owned-item",
+   "record": {
+    "entityType": "ownedItem",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "identityRef": "<event-id>",
+    "placement": {
+     "area": "body",
+     "step": "Synthetic step"
+    },
+    "usage": "owned_not_using",
+    "openedOn": {
+     "state": "stated",
+     "value": "2026-01-02",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "finishedOn": {
+     "state": "unknown",
+     "reason": "user_does_not_know",
+     "setBy": "user"
+    },
+    "restockOf": null
+   }
+  },
+  {
+   "name": "observation_migrated_legacy_unspecified",
+   "schema": "urn:clay-data:ingredient-observation",
+   "record": {
+    "entityType": "ingredientObservation",
+    "schemaVersion": 2,
+    "id": "m_bc655aea36c522973fdccfe1dd784789",
+    "idKind": "migration",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "migration",
+    "contentHash": "<content-hash>",
+    "ownedItemRef": "<event-id>",
+    "rawText": "Synthetic ingredient text",
+    "sourceKind": "legacy_unspecified",
+    "capturedOn": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "market": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "completeness": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    },
+    "transcriptionStatus": {
+     "state": "missing",
+     "reason": "not_captured_in_v1",
+     "setBy": "migration"
+    }
+   },
+   "idInputs": {
+    "v1_doc": "clay-products",
+    "v1_id": 1,
+    "part": "observation",
+    "ordinal": 0
+   }
+  },
+  {
+   "name": "observation_user",
+   "schema": "urn:clay-data:ingredient-observation",
+   "record": {
+    "entityType": "ingredientObservation",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "ownedItemRef": "<event-id>",
+    "rawText": "Synthetic pasted ingredient text",
+    "sourceKind": "user_pasted",
+    "capturedOn": {
+     "state": "stated",
+     "value": "2026-01-03",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "market": {
+     "state": "stated",
+     "value": "Synthetic market",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "completeness": {
+     "state": "unknown",
+     "reason": "user_does_not_know",
+     "setBy": "user"
+    },
+    "transcriptionStatus": {
+     "state": "stated",
+     "value": "Synthetic status",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    }
+   }
+  },
+  {
+   "name": "correction_annotates",
+   "schema": "urn:clay-data:correction",
+   "record": {
+    "entityType": "correction",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "targetRef": "<event-id>",
+    "kind": "annotates",
+    "rawNote": "Synthetic note",
+    "reason": "Synthetic reason"
+   }
+  },
+  {
+   "name": "correction_with_new_observation",
+   "schema": "urn:clay-data:correction",
+   "record": {
+    "entityType": "correction",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "targetRef": "<event-id>",
+    "kind": "supersedes",
+    "rawNote": "Synthetic note",
+    "reason": "Synthetic reason",
+    "newObservationRef": "<event-id>"
+   }
+  },
+  {
+   "name": "directions_owned_item_ref",
+   "schema": "urn:clay-data:directions",
+   "record": {
+    "entityType": "directions",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "ownedItemRef": "<event-id>",
+    "rawText": "Synthetic directions text",
+    "sourceKind": "user_supplied",
+    "capturedOn": {
+     "state": "stated",
+     "value": "2026-01-04",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "frequency": {
+     "state": "not_stated",
+     "source": {
+      "kind": "user_supplied"
+     },
+     "setBy": "user"
+    }
+   }
+  },
+  {
+   "name": "directions_identity_ref",
+   "schema": "urn:clay-data:directions",
+   "record": {
+    "entityType": "directions",
+    "schemaVersion": 2,
+    "id": "<event-id>",
+    "idKind": "event",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "clock": "device",
+    "origin": "user",
+    "contentHash": "<content-hash>",
+    "identityRef": "<event-id>",
+    "rawText": "Synthetic directions text",
+    "sourceKind": "user_supplied",
+    "capturedOn": {
+     "state": "stated",
+     "value": "2026-01-04",
+     "source": {
+      "kind": "user_entered"
+     },
+     "setBy": "user"
+    },
+    "frequency": {
+     "state": "not_stated",
+     "source": {
+      "kind": "user_supplied"
+     },
+     "setBy": "user"
+    }
+   }
+  },
+  {
+   "name": "manifest_no_runs",
+   "schema": "urn:clay-data:manifest",
+   "record": {
+    "schemaVersion": 1,
+    "runs": []
+   }
+  },
+  {
+   "name": "manifest_one_run",
+   "schema": "urn:clay-data:manifest",
+   "record": {
+    "schemaVersion": 1,
+    "runs": [
+     {
+      "runId": "<run-id>",
+      "mappingVersion": "synthetic-1",
+      "v1SnapshotHash": "<snapshot-hash>",
+      "counts": {
+       "input": 3,
+       "migrated": 2,
+       "migrated_with_flags": 1,
+       "quarantined": 0
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

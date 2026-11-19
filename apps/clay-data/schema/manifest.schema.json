@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clay-data:manifest",
+  "title": "Clay v2 manifest",
+  "description": "A record of migration runs, stored at clay2/manifest. Not an entity: no entity id, kind, type, origin, createdAt or contentHash. Written only in a later approved phase.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runs"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/run"
+      }
+    }
+  },
+  "$defs": {
+    "runId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "maxLength": 36,
+      "description": "Lowercase UUIDv4 identifying one migration run (a design decision of 16 Nov 2026)."
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "migrated": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "migrated_with_flags": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quarantined": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "input",
+        "migrated",
+        "migrated_with_flags",
+        "quarantined"
+      ],
+      "additionalProperties": false
+    },
+    "run": {
+      "type": "object",
+      "properties": {
+        "runId": {
+          "$ref": "#/$defs/runId"
+        },
+        "mappingVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "v1SnapshotHash": {
+          "$ref": "urn:clay-data:common#/$defs/snapshotHash"
+        },
+        "counts": {
+          "$ref": "#/$defs/counts"
+        }
+      },
+      "required": [
+        "runId",
+        "mappingVersion",
+        "v1SnapshotHash",
+        "counts"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

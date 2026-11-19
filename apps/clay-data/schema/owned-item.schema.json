@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clay-data:owned-item",
+  "title": "Clay v2 owned item",
+  "description": "One copy of a product a person owns. Migrated (part owned_item) or user-created.",
+  "type": "object",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "const": "ownedItem"
+    },
+    "schemaVersion": {
+      "$ref": "urn:clay-data:common#/$defs/schemaVersion"
+    },
+    "id": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "idKind": {
+      "$ref": "urn:clay-data:common#/$defs/idKind"
+    },
+    "createdAt": {
+      "$ref": "urn:clay-data:common#/$defs/createdAt"
+    },
+    "clock": {
+      "$ref": "urn:clay-data:common#/$defs/clock"
+    },
+    "origin": {
+      "$ref": "urn:clay-data:common#/$defs/origin"
+    },
+    "contentHash": {
+      "$ref": "urn:clay-data:common#/$defs/contentHash"
+    },
+    "identityRef": {
+      "$ref": "urn:clay-data:common#/$defs/entityId"
+    },
+    "placement": {
+      "type": "object",
+      "properties": {
+        "area": {
+          "$ref": "urn:clay-data:common#/$defs/area"
+        },
+        "step": {
+          "$ref": "urn:clay-data:common#/$defs/step"
+        }
+      },
+      "required": [
+        "area",
+        "step"
+      ],
+      "additionalProperties": false
+    },
+    "usage": {
+      "$ref": "urn:clay-data:common#/$defs/usage"
+    },
+    "openedOn": {
+      "$ref": "urn:clay-data:common#/$defs/stringState"
+    },
+    "finishedOn": {
+      "$ref": "urn:clay-data:common#/$defs/stringState"
+    },
+    "restockOf": {
+      "type": "null"
+    },
+    "legacy": {
+      "type": "object",
+      "properties": {
+        "v1Doc": {
+          "$ref": "urn:clay-data:common#/$defs/v1Doc"
+        },
+        "v1Id": {
+          "$ref": "urn:clay-data:common#/$defs/v1Id"
+        },
+        "extras": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "v1Doc",
+        "v1Id",
+        "extras"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "entityType",
+    "schemaVersion",
+    "id",
+    "idKind",
+    "createdAt",
+    "clock",
+    "origin",
+    "contentHash",
+    "identityRef",
+    "placement",
+    "usage",
+    "openedOn",
+    "finishedOn",
+    "restockOf"
+  ],
+  "additionalProperties": false
+}
