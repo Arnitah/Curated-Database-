@@ -34,6 +34,8 @@ eq(P.aha.ingredient_list_verified, false); eq(P.none.ingredient_list_source, "un
 eq(P.under.area, "unknown"); eq(P.under.category, "other");
 ok(P.under.mapping_notes.some(x => /no engine equivalent/.test(x)));
 eq(toEngineProduct({ ...mp.aha, inci_verified: true }).ingredient_list_verified, true, "explicit packaging check is preserved");
+eq(toEngineProduct({ ...mp.aha, inci_verified: true }).ingredient_list_completeness, "complete");
+eq(toEngineProduct({ ...mp.aha, inci_complete: false }).ingredient_list_completeness, "partial");
 eq(toEngineProduct({ ...mp.aha, inci_source: "package_photo" }).ingredient_list_source, "package_photo");
 eq(toEngineProduct({ ...mp.aha, s: "next" }).status, "wishlist");
 eq(toEngineProduct({ ...mp.aha, st: "Skin conditioner" }).category, "other");
@@ -47,9 +49,10 @@ for (const [l, id] of [["Glycolic Acid (7%)", "glycolic_acid"], ["Retinol 0.3%",
 eq(E.normalizeIngredient("Glycolic Acid (7%)").stated_pct, 7); eq(E.normalizeIngredient("Foo Bar Complex").matched, false);
 eq(E.normalizeIngredient("Avobenzone").review_status, "added_by_claude_pending_review", "registry review status is surfaced");
 
-// unverified lists stay unverified
+// unverified lists may expose a preliminary pattern, but never a full-product verdict
 let r = E.evaluateProductPair(P.aha, P.ret);
-eq(r.classification, "use_with_care"); ok(r.missing_data.includes("verified ingredient list"), "caution kept, unverified flagged");
+eq(r.classification, "insufficient_data"); eq(r.candidate_classification, "use_with_care");
+eq(r.confidence, "unknown"); ok(r.missing_data.includes("verified ingredient list"), "verification gap is explicit");
 eq(E.evaluateProductPair(P.bha, P.hum).classification, "insufficient_data", "no rule + unverified");
 // verified -> screening result, with evidence and limitations kept
 r = E.evaluateProductPair(verified(P.aha), verified(P.ret));
@@ -72,13 +75,16 @@ const approvedIngredients = JSON.parse(JSON.stringify(ingredients));
 for (const item of approvedIngredients.ingredients) delete item.review_status;
 const approvedEngine = createEngine({ ingredients: approvedIngredients, rules, sources });
 ok(approvedEngine.evaluateProductPair(verified(P.aha), verified(P.spf)).matched_rules.includes("aha_sun_sensitivity_context"));
-eq(E.evaluateProductPair(verified(P.hum), verified(P.cer)).classification, "complementary");
+r = E.evaluateProductPair(verified(P.hum), verified(P.cer));
+eq(r.classification, "complementary");
 // no list / not in use / finished
 r = E.evaluateProductPair(verified(P.none), verified(P.aha)); eq(r.classification, "insufficient_data"); ok(/no ingredient list/.test(r.rationale));
 r = E.evaluateProductPair(verified(P.old), verified(P.aha)); eq(r.classification, "insufficient_data"); ok(/not marked in use/.test(r.rationale));
 // partial recognition is reported, not hidden
 r = E.evaluateProductPair(verified(P.junk), verified(P.ret));
 const c = r.coverage[0]; eq(c.total, 5); eq(c.recognised, 1); ok(c.unmatched.includes("Foo Bar Complex") && c.unmatched.includes("Rosa Canina Extract"));
+eq(r.classification, "insufficient_data", "unrecognised labels block a full-product assessment");
+eq(r.candidate_classification, "use_with_care", "any known rule remains visible as preliminary");
 ok(r.limitations.some(x => /1 of 5 ingredients recognised/.test(x)));
 // empty verified list is insufficient_data, not insufficient_evidence
 eq(E.evaluateProductPair({ ...verified(P.none), status: "in_use" }, verified(P.aha)).classification, "insufficient_data");
