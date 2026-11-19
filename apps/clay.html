@@ -1884,7 +1884,7 @@ function pageCheck(){
     <label class="small"><span class="muted">Or pick from My Shelf</span><select class="mp-sel cp-in" data-cpk="${k}">${opt(cur[k])}</select></label>
     ${!P(cur[k])?`<input class="cp-in" data-cpn="${k}" value="${esc(cur['n'+k])}" placeholder="Product name" aria-label="Product name">`:''}
     <textarea class="cp-in" data-cpl="${k}" rows="4" placeholder="Paste the ingredient list: Aqua, Glycerin, Niacinamide…" aria-label="Ingredient list">${esc(cur['l'+k])}</textarea>
-    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]===P(cur[k]).inci?`<label class="small" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" data-iiverify="${P(cur[k]).id}" ${P(cur[k]).inci_verified===true?'checked':''}> I checked this list against the product packaging</label>`:''}
+    ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]===P(cur[k]).inci?`<label class="small" style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" data-iiverify="${P(cur[k]).id}" ${P(cur[k]).inci_verified===true?'checked':''}> I checked the complete ingredient list against the product packaging</label>`:''}
     ${P(cur[k])&&cur['l'+k].trim()&&cur['l'+k]!==P(cur[k]).inci?`<button class="chip" type="button" data-act="cpsave" data-v="${k}">Save this list to ${esc(P(cur[k]).n.slice(0,30))}</button>`:''}
     ${cur['h'+k]?pdbNote(cur['h'+k],!P(cur[k])):''}</div>`;
   const nm=k=>P(cur[k])?P(cur[k]).n:(cur['n'+k]||'Product '+k.toUpperCase());
