@@ -15,9 +15,9 @@ const E = createEngine({ ingredients: D('ingredients.json'), rules: D('pairing-r
 // Invented Clay-shaped records. No personal shelf data.
 const R = (id, st, n, inci, s = 'cur', a = 'face') => ({ id, a, st, n, s, ...(inci ? { inci } : {}) });
 const RECS = [
-  R(1, 'Toner', 'Synthetic acid toner', 'Aqua, Glycolic Acid (7%), Glycerin'),
-  R(2, 'Serum', 'Synthetic retinol serum', 'Aqua, Retinol 0.3%, Squalane'),
-  R(3, 'Moisturizer', 'Synthetic cream', 'Ceramide NP, Glycerin'),
+  R(1, 'Toner', 'Synthetic acid toner', 'Glycolic Acid (7%)'),
+  R(2, 'Serum', 'Synthetic retinol serum', 'Retinol 0.3%'),
+  R(3, 'Moisturizer', 'Synthetic cream', 'Ceramide NP'),
   R(4, 'Serum', 'Synthetic hydrating serum', 'Sodium Hyaluronate, Panthenol'),
   R(5, 'Cleanser', 'Synthetic cleanser without a list'),
   R(6, 'Serum', 'Synthetic mystery serum', 'Aqua, Foo Bar Complex, Glycolic Acid'),
