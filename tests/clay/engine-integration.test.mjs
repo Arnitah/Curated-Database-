@@ -88,15 +88,21 @@ test('[invariant] a missing list, or no matching rule, gives "insufficient_data"
   assert.notEqual(r.classification, 'complementary');
 });
 
-test('[invariant] a result built from an unverified, user-entered list is never presented with more than "limited" confidence', () => {
+test('[invariant] two unverified lists never receive a full-product classification or confidence', () => {
   const r = E.evaluateProductPair(toEngineProduct(RECS[2]), toEngineProduct(RECS[3]));
-  assert.equal(r.confidence, 'limited');
+  assert.equal(r.classification, 'insufficient_data');
+  assert.equal(r.confidence, 'unknown');
+  assert.equal(r.candidate_classification, 'complementary');
   assert.ok(r.limitations.length > 0);
 });
 
-test('[known-limitation] two unverified lists can already come back "complementary" (with limited confidence); a stricter rule is a Phase 5 decision, not a requirement', () => {
-  const r = E.evaluateProductPair(toEngineProduct(RECS[2]), toEngineProduct(RECS[3]));
-  assert.equal(r.classification, 'complementary');
+test('[invariant] an explicitly partial list blocks a full-product verdict even if it was otherwise marked verified', () => {
+  const a = { ...toEngineProduct(RECS[0]), ingredient_list_verified: true, ingredient_list_completeness: 'partial' };
+  const b = { ...toEngineProduct(RECS[1]), ingredient_list_verified: true, ingredient_list_completeness: 'complete' };
+  const r = E.evaluateProductPair(a, b);
+  assert.equal(r.classification, 'insufficient_data');
+  assert.equal(r.candidate_classification, 'use_with_care');
+  assert.ok(r.missing_data.includes('complete ingredient list'));
 });
 
 test('[current-behaviour] golden verdicts for the shipped rules on invented products', () => {
