@@ -168,7 +168,7 @@ begin
   if v_user is null then
     raise exception 'authentication required' using errcode = '28000';
   end if;
-  if p_collection not in ('products','hair','log','prefs','scents') then
+  if p_collection is null or p_collection not in ('products','hair','log','prefs','scents') then
     raise exception 'invalid collection' using errcode = '22023';
   end if;
   if p_expected_generation is null or p_expected_generation < 1 then
