@@ -25,7 +25,7 @@ const mp = {
   under: R(13, "Other", "Deodorant", "Aqua", "cur", "under"),
 };
 const P = Object.fromEntries(Object.entries(mp).map(([k, v]) => [k, toEngineProduct(v)]));
-const verified = (p) => ({ ...p, ingredient_list_verified: true });
+const verified = (p) => ({ ...p, ingredient_list_verified: true, ingredient_list_completeness: "complete" });
 
 // adapter: preserves, never invents
 eq(P.aha.product_id, "1"); eq(P.aha.name, "Glow toner"); eq(P.aha.clay_record.st, "Toner");
