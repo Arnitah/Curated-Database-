@@ -42,7 +42,16 @@ create policy clay_sync_collections_select_own
 drop policy if exists clay_sync_records_select_own on public.clay_sync_records;
 create policy clay_sync_records_select_own
   on public.clay_sync_records for select to authenticated
-  using ((select auth.uid()) = user_id);
+  using (
+    (select auth.uid()) = user_id
+    and exists (
+      select 1
+      from public.clay_sync_collections as current_collection
+      where current_collection.user_id = clay_sync_records.user_id
+        and current_collection.collection = clay_sync_records.collection
+        and current_collection.generation = clay_sync_records.generation
+    )
+  );
 
 revoke all on table public.clay_sync_collections from anon, authenticated;
 revoke all on table public.clay_sync_records from anon, authenticated;
@@ -74,7 +83,7 @@ begin
   if v_user is null then
     raise exception 'authentication required' using errcode = '28000';
   end if;
-  if p_collection not in ('products','hair','log','prefs','scents') then
+  if p_collection is null or p_collection not in ('products','hair','log','prefs','scents') then
     raise exception 'invalid collection' using errcode = '22023';
   end if;
   if p_record_id is null or length(p_record_id) not between 1 and 200 then
