@@ -65,3 +65,17 @@ The existing Claude artifact user id is not a credential and must never be trust
 - Added synthetic unit tests for authenticated reads, empty collections, generation filtering, per-record version forwarding, tombstone deletion, clear-all, unauthenticated denial, invalid input and conflict propagation.
 - This is an isolated adapter and test slice, not yet wired into `apps/clay.html`; no Supabase SDK, URL, publishable key, auth UI, cloud project, or real shelf data is present. Existing Claude artifact sync remains the active path. No deployment or data migration.
 - Next: validate this slice in CI; then design the explicit sign-in/account-linking state and connect the adapter behind an opt-in backend mode. Do not switch or import real shelf data until the user signs in and separately confirms a previewed import.
+
+## Email authentication controller slice · 19 Nov 2026
+
+- (ChatGPT · 2026-11-19) Added `apps/clay-sync/supabase-auth.js` on branch `feat/clay-supabase-email-auth`, based on the validated record-adapter branch.
+- The controller delegates identity to Supabase Auth, reports only a minimal verified user id/email state, supports email magic-link sign-in for existing accounts only (`shouldCreateUser: false`), supports sign-out, and exposes a minimal auth-state subscription with unsubscribe.
+- No external uid can be supplied, no account is implicitly created, no token/session secret is exposed, and no Supabase project URL or publishable key is embedded.
+- Added synthetic tests for signed-in/out state, minimal user projection, normalized email OTP, invalid email rejection, service errors, sign-out, subscription lifecycle and invalid client interfaces.
+- This is still an unconnected controller: no sign-in UI, callback/deep-link setup, Supabase SDK dependency, environment configuration, hosted project, deployment or real data migration. Existing artifact sync remains active.
+- Next: validate CI; then add an opt-in auth panel and a configuration contract only after the user provisions a Supabase project and supplies its project URL and publishable key through an appropriate secure client configuration. Do not create an account or initiate an email to the user without their direct action.
+
+
+## CI runner isolation · 19 Nov 2026
+
+- The local Supabase database test job assigns run-specific API, database, shadow and Studio ports before starting its Docker stack. This prevents concurrent workflow runs from colliding on the default local ports; it changes CI runtime configuration only, not any hosted or production project.
