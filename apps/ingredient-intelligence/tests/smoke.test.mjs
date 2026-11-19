@@ -25,8 +25,11 @@ const cer=p("d","Barrier cream",["Ceramide NP"]);
 assert.equal(engine.evaluateProductPair(hum,cer).classification,"complementary");
 
 const partial=p("u","Partial list",["Glycolic Acid"],"in_use",false);
-assert.equal(engine.evaluateProductPair(partial,ret).classification,"use_with_care");
-assert.ok(engine.evaluateProductPair(partial,ret).missing_data.includes("verified ingredient list"));
+const partialResult=engine.evaluateProductPair(partial,ret);
+assert.equal(partialResult.classification,"insufficient_data");
+assert.equal(partialResult.candidate_classification,"use_with_care");
+assert.equal(partialResult.confidence,"unknown");
+assert.ok(partialResult.missing_data.includes("verified ingredient list"));
 
 const routine=engine.evaluateRoutine([aha,ret],{a:"pm",r:"pm"});
 assert.equal(routine.pair_findings.length,1);
