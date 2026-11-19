@@ -97,17 +97,16 @@ test('[current-behaviour] a device copy that is newer than the remote is uploade
   await h.close();
 });
 
-test('[known-limitation] an EMPTY local document with a newer timestamp overwrites a non-empty remote one (decision pending, not a requirement)', async () => {
-  // Newest-wins uses the device clock and does not look at content. If a device holds an empty copy stamped newer than
-  // the remote, that empty copy replaces the remote. Documented for a separate decision; Phase 1 does not change it.
+test('[invariant] an empty local document with a newer timestamp never overwrites a non-empty remote copy', async () => {
   const h = await openClay(browser, srv.base, {
     local: { 'clay-hair': {}, 'clay-sync-ts': { 'clay-hair': T + 9000 } },
     remote: { 'clay-hair': { data: FX.remoteHair, at: T } },
   });
   await h.settled();
-  await waitUntil(async () => (await h.log()).writes.some((w) => w.key === 'clay-hair'), 6000);
-  const w = (await h.log()).writes.find((x) => x.key === 'clay-hair');
-  assert.deepEqual(w.value.data, {}, 'the empty copy replaced the non-empty remote');
+  await sleep(1800);
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-hair'), false, 'no empty write is sent');
+  assert.deepEqual(await h.lsJson('clay-hair'), FX.remoteHair, 'remote data is restored locally');
+  assert.deepEqual(await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-hair'].data), FX.remoteHair, 'remote remains unchanged');
   await h.close();
 });
 
@@ -160,6 +159,16 @@ test('[invariant] a live update that is older than this device is ignored; a new
   await sleep(200);
   assert.deepEqual(await h.mp(), newer);
   assert.deepEqual(await h.lsJson('clay-products'), newer);
+  await h.close();
+});
+
+test('[invariant] an empty live update cannot clear a non-empty local document, even with a newer timestamp', async () => {
+  const h = await openClay(browser, srv.base, { remote: fullRemote(T) });
+  await h.settled();
+  await h.page.evaluate((t) => window.__fake.emit('clay-products', { data: [], at: t }), T + 90000);
+  await sleep(200);
+  assert.deepEqual(await h.mp(), FX.records);
+  assert.deepEqual(await h.lsJson('clay-products'), FX.records);
   await h.close();
 });
 
