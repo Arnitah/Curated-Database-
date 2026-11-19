@@ -10,15 +10,15 @@ let n = 0; const ok = (c, m) => { assert.ok(c, m); n++; }; const eq = (a, b, m) 
 // Fixtures are invented, Clay-shaped records (id/a/st/n/s/inci). No personal shelf data.
 const R = (id, st, n, inci, s = "cur", a = "face") => ({ id, a, st, n, s, ...(inci ? { inci } : {}) });
 const mp = {
-  aha:   R(1, "Toner", "Glow toner", "Aqua (Water), Glycolic Acid (7%), Glycerin"),
-  ret:   R(2, "Serum", "Night retinol", "Aqua, Retinol 0.3%, Squalane"),
+  aha:   R(1, "Toner", "Glow toner", "Glycolic Acid (7%)"),
+  ret:   R(2, "Serum", "Night retinol", "Retinol 0.3%"),
   ret2:  R(3, "Treatment", "Retinal drops", "Retinal, Squalane"),
   aha2:  R(4, "Serum", "Lactic serum", "Lactic Acid*, Sodium Hyaluronate"),
   bha:   R(5, "Treatment", "BHA liquid", "Salicylic Acid, Niacinamide"),
   none:  R(6, "Moisturizer", "Plain cream"),                      // no inci at all
   hum:   R(7, "Serum", "Hydration", "Sodium Hyaluronate, Panthenol"),
-  cer:   R(8, "Moisturizer", "Barrier cream", "Ceramide NP, Glycerin"),
-  spf:   R(9, "Sunscreen", "Daily SPF", "Zinc Oxide, Avobenzone, Aqua"),
+  cer:   R(8, "Moisturizer", "Barrier cream", "Ceramide NP"),
+  spf:   R(9, "Sunscreen", "Daily SPF", "Zinc Oxide, Avobenzone"),
   junk:  R(10, "Serum", "Mystery serum", "Aqua, Xanthan Gum, Rosa Canina Extract, Foo Bar Complex, Glycolic Acid"),
   old:   R(11, "Serum", "Finished retinol", "Retinol", "past"),
   body:  R(12, "Other", "Body wash", "Aqua", "cur", "body"),
