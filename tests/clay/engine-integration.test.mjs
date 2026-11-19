@@ -130,12 +130,12 @@ test('[integration] My Shelf and Routine use the live shelf records; packaging v
 
   await h.page.locator('#nav button[data-v="shelf"]').click();
   await h.page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
-  assert.equal(await h.page.getByText('Use with care').count(), 1, 'My Shelf shows the engine finding');
+  assert.equal(await h.page.getByText('Need product details').count(), 1, 'My Shelf withholds a full-product verdict while either list is unverified');
   assert.match(await h.page.locator('text=checked against packaging').first().textContent().catch(() => ''), /checked against packaging/i);
 
   await h.page.locator('#nav button[data-v="routine"]').click();
   await h.page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
-  assert.equal(await h.page.getByText('Use with care').count(), 1, 'Routine consumes the same engine result');
+  assert.equal(await h.page.getByText('Need product details').count(), 1, 'Routine consumes the same guarded engine result');
 
   await act('cpopen', '101');
   const verify = h.page.locator('[data-iiverify="101"]');
