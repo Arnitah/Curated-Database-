@@ -1834,7 +1834,8 @@ function iiScanBridgeCard(){
       return '<div class="ii-pair"><h4>' + esc(names) + '<span class="ii-tag">' + esc(labels[r.classification] || r.classification) + '</span></h4><p>' + esc(r.rationale || 'A curated rule matched this pair.') + '</p>' + (r.recommendation ? '<p>' + esc(r.recommendation) + '</p>' : '') + '<details><summary>Evidence and limitations</summary>' + (evidence ? '<ul class="small">' + evidence + '</ul>' : '') + (limits ? '<ul class="small">' + limits + '</ul>' : '') + '</details></div>';
     }).join('');
     const empty = withList.length < 2 ? 'Add ingredient lists for at least two products to see a routine screen.' : 'No current rule matched these products. That is not proof of compatibility.';
-    const body = '<p class="small muted">These are your active face products from My Shelf. Ingredient screening is separate from photo observations; it does not explain or validate the appearance readings above.</p><p class="small"><b>' + withList.length + ' of ' + active.length + '</b> active face products have ingredient lists; <b>' + verified + '</b> are confirmed against packaging.</p>' + (findings || '<p class="small muted">' + empty + '</p>') + '<div class="row" style="gap:6px"><button class="chip" type="button" data-act="go" data-v="shelf">Review My Shelf</button><button class="chip" type="button" data-act="go" data-v="routine">Open Routine</button></div>';
+    const unverified = Array.isArray(result.unverified_products) ? result.unverified_products.length : 0;
+    const body = '<p class="small muted">These are your active face products from My Shelf. Ingredient screening is separate from photo observations; it does not explain or validate the appearance readings above.</p><p class="small"><b>' + withList.length + ' of ' + active.length + '</b> active face products have ingredient lists; <b>' + verified + '</b> are confirmed against packaging.</p>' + (findings || '<p class="small muted">' + empty + '</p>') + (unverified ? '<p class="small muted">Some ingredient lists have not been checked against packaging. Treat any findings as preliminary until verified.</p>' : '') + '<div class="row" style="gap:6px"><button class="chip" type="button" data-act="go" data-v="shelf">Review My Shelf</button><button class="chip" type="button" data-act="go" data-v="routine">Open Routine</button></div>';
     return card('Your product context (separate from the scan)', body, {h:'h3',icon:'microscope'});
   } catch (e) { return ''; }
 }
@@ -2321,7 +2322,7 @@ const CHANGES = [
   ['ret','Keep Retinal at 2 nights a week','No change. Your texture is improving.']
 ];
 function scanSteps(){
-  const st=[['take','1','Take a scan'],['results','2','Results'],['apply','3','Apply']];
+  const st=[['take','1','Take a scan'],['results','2','Results'],['apply','3','Review']];
   const cur=st.findIndex(x=>x[0]===S.scanStep);
   return `<div class="row" role="list" aria-label="Scan steps" style="gap:6px">${st.map((x,i)=>`<button type="button" role="listitem" class="chip" aria-pressed="${i===cur}" data-act="scanStep" data-v="${x[0]}"><span class="num" style="font-weight:800">${i<cur?'✓':x[1]}</span>${x[2]}</button>${i<2?'<span class="muted" aria-hidden="true">›</span>':''}`).join('')}</div>`;
 }
@@ -2339,7 +2340,7 @@ function pageScan(){
       <section class="card" data-comment-target><div class="card-head">${ic('sun',20)}<h3>For a fair read</h3>${cmt('scan checklist')}</div>
         <div class="list small">${[['Face a window or soft, even light','A warm bulb can read as redness'],['Bare skin','No tinted sunscreen or makeup'],['Hair back, looking straight ahead','So every zone is visible'],['Same spot as last time','So progress compares like with like']].map(x=>`<div style="padding:10px 0;display:flex;gap:10px">${ic('check',16,2.4)}<span><b>${x[0]}</b><br><span class="muted">${x[1]}</span></span></div>`).join('')}</div>
         <label class="row small" for="consent" style="min-height:44px"><input id="consent" type="checkbox" ${S.consent?'checked':''} data-act="consent" style="width:20px;height:20px;accent-color:var(--accent)"> I understand: this prototype does not upload or analyse the selected photo.</label>
-        <button class="btn primary" type="button" data-act="analyze" ${S.photo&&S.consent?'':'disabled style="opacity:.5;cursor:not-allowed"'}>${ic('scan',16)}Analyze photo</button></section>
+        <button class="btn primary" type="button" data-act="analyze" ${S.photo&&S.consent?'':'disabled style="opacity:.5;cursor:not-allowed"'}>${ic('scan',16)}Continue to demo results</button></section>
     </div>`;
   } else if (step==='results'){
     const m=METRICS[S.metric], mk=S.metric;
@@ -2371,7 +2372,7 @@ function pageScan(){
           ${(()=>{ const mine=sfItems(S.zone); return mine.length?`<div class="blabel" style="margin-top:4px">Your products</div><div class="list">${mine.map(it=>`<div style="display:flex;gap:12px;align-items:center;padding:10px 0">${pack(it.sh,it.ti,36,46)}<span><b>${esc(it.n)}</b><br><span class="small" style="color:${it.warn?'var(--stop)':'var(--muted)'}">${esc(it.how)}</span></span></div>`).join('')}</div>`:`<p class="small muted">None of your current face products go here. <a href="#" data-act="go" data-v="shelf">Add them on My Shelf</a>.</p>`; })()}
           ${(()=>{ const tips=z.items.filter(it=>it[0]==='shield'||!sfItems(S.zone).some(m=>m.n.toLowerCase().includes(it[2].toLowerCase().split(' ')[0]))); return tips.length?`<div class="blabel">Example suggestions (demo only)</div><div class="list">${tips.map(it=>it[0]==='shield'?`<div style="padding:10px 0;display:flex;gap:10px;align-items:center;color:var(--stop);font-weight:700">${ic('shield',18,2.2)}<span>${it[2]}<br><span class="small" style="font-weight:600">${it[3]}</span></span></div>`:`<div style="display:flex;gap:10px;align-items:center;padding:8px 0">${ic('spark',16)}<span class="small"><b>${it[2]}</b> <span class="muted">${it[3]}</span></span></div>`).join('')}</div>`:''; })()}</div></div></div></section>`;
   }
-  const rail = `${card('Where the scanner lives', `<div class="list small">${[['Phone: Scan tab','The camera guides light and angle, then reads six things.'],['Web: Scan, then upload','Use a recent front-facing photo.'],['After setup','The quiz offers an optional first scan.'],['Every 2–4 weeks','Clay reminds you, so progress compares fairly.']].map(x=>`<div style="padding:8px 0"><b>${x[0]}</b><br><span class="muted">${x[1]}</span></div>`).join('')}</div>`, {h:'h3', icon:'scan'})}
+  const rail = `${card('Prototype status', '<p class="small muted">This Scan experience is a preview-only prototype. Camera guidance and image analysis are not implemented. Selected photos stay in this browser session and are not uploaded or analysed; the readings and scan history shown here are illustrative demo data.</p><p class="small muted">Ingredient screening uses active face-product lists from My Shelf and is separate from photo observations.</p>', {h:'h3', icon:'scan'})}
     ${card('Example scan history (demo)', `<div class="list small num">${[['Oct 13','Redness 64 · Texture 41'],['Sep 29','Redness 61 · Texture 44'],['Sep 15','Redness 58 · Texture 47']].map(x=>`<div style="padding:8px 0;display:flex;justify-content:space-between;gap:10px"><b>${x[0]}</b><span class="muted">${x[1]}</span></div>`).join('')}</div>`, {h:'h3'})}`;
   return {main, rail};
 }
