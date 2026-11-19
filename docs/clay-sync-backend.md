@@ -46,3 +46,13 @@ The existing Claude artifact user id is not a credential and must never be trust
 - Offline edits should queue locally with base generation/version. On reconnect, apply sequentially; conflicts must be surfaced, never retried as unconditional writes.
 - Do not compact tombstones until retention/acknowledgement semantics for all active devices are implemented.
 - No backend is provisioned and no data has left the existing Claude artifact store.
+
+
+## Database validation gate · 18 Nov 2026
+
+- The records SELECT policy must enforce both ownership and equality with the current collection generation. This makes pre-clear records invisible through direct authenticated reads, not merely through client-side filtering. Current-generation tombstones remain readable so clients can learn about deletions.
+- Both mutation RPCs explicitly reject a NULL collection argument; SQL three-valued logic otherwise allows a NULL value to bypass a simple `NOT IN` guard.
+- The pgTAP suite now covers current-generation visibility, old-generation invisibility, NULL/unknown collection rejection, invalid payload rejection, and missing authenticated identity in addition to stale writes, tombstones, clear-all, and cross-user read isolation.
+- Local validation is automated by `.github/workflows/clay-database-tests.yml`: start the local Supabase stack, run `supabase test db`, and run `supabase db lint --fail-on error`. The workflow has no hosted-project credentials and does not link to or mutate a remote Supabase project.
+- Run locally with `supabase start`, `supabase test db`, and `supabase db lint --fail-on error`. Stop the local stack with `supabase stop`.
+- This gate validates the migration and database policies only. It does not authorize project provisioning, real-data import, production deployment, or PR merge.
