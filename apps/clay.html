@@ -1036,7 +1036,7 @@ const MP_SEED=[
  ['under','Deodorant','Arm & Hammer roll-on','past'],['under','Deodorant','Dove green tea and cucumber body spray','past']];
 /* ---------- Save to your Claude account (private to you, follows you across devices) ----------
    Each key is one private document at data/users/<you>/<key>. The browser copy stays as the offline cache.
-   Newest wins, by timestamp. */
+   Non-empty copies use the device timestamp; empty snapshots cannot replace non-empty saved data. */
 const CSYNC={db:null,uid:null,status:'local',ts:{},timers:{},writing:{}};
 try{ CSYNC.ts=JSON.parse(localStorage.getItem('clay-sync-ts')||'{}')||{}; }catch(e){}
 const CS_GET={ 'clay-products':()=>MP, 'clay-hair':()=>HR, 'clay-log':()=>YLOG, 'clay-prefs':()=>({tone:AM_TONE}), 'clay-scents':()=>SW };
