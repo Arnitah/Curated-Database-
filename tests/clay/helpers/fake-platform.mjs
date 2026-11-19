@@ -36,6 +36,7 @@ export function platformInit(opts) {
     log,
     store: () => Object.fromEntries([...store.entries()]),
     emit: (k, v) => { const full = own + '/' + k; store.set(full, JSON.parse(JSON.stringify(v))); (listeners.get(full) || []).forEach((cb) => cb(snap(full))); },
+    setSilent: (k, v) => { const full = own + '/' + k; store.set(full, JSON.parse(JSON.stringify(v))); },
   };
   if (!opts.noClaude) {
     window.claude = {
