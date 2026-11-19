@@ -46,16 +46,17 @@ test('[invariant] with a database but no signed-in user the app stays local and 
   await h.close();
 });
 
-test('[current-behaviour] first sign-in with an empty remote uploads this device’s copy once per document (not preferences), as {data, at}', async () => {
+test('[invariant] first sign-in uploads non-empty local documents and does not create empty documents', async () => {
   const h = await openClay(browser, srv.base);
-  await waitUntil(async () => (await h.log()).writes.length >= 4, 6000);
+  await waitUntil(async () => (await h.log()).writes.length >= 1, 6000);
   await sleep(1600);
   const { writes } = await h.log();
-  assert.deepEqual(writes.map((w) => w.key).sort(), ['clay-hair', 'clay-log', 'clay-products', 'clay-scents']);
+  assert.deepEqual(writes.map((w) => w.key).sort(), ['clay-products']);
   for (const w of writes) {
     assert.deepEqual(Object.keys(w.value).sort(), ['at', 'data']);
     assert.equal(typeof w.value.at, 'number');
     assert.equal(w.full, own(w.key));
+    assert.ok(Array.isArray(w.value.data) ? w.value.data.length > 0 : Object.keys(w.value.data || {}).length > 0, 'empty documents are not uploaded');
   }
   await h.close();
 });
