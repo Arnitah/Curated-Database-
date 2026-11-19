@@ -148,4 +148,3 @@ export function createClaySupabaseRecordsAdapter(client) {
   });
 }
 
-export { COLLECTIONS };
