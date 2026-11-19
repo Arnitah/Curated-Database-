@@ -10,7 +10,7 @@ let n = 0; const ok = (c, m) => { assert.ok(c, m); n++; }; const eq = (a, b, m) 
 // Fixtures are invented, Clay-shaped records (id/a/st/n/s/inci). No personal shelf data.
 const R = (id, st, n, inci, s = "cur", a = "face") => ({ id, a, st, n, s, ...(inci ? { inci } : {}) });
 const mp = {
-  aha:   R(1, "Toner", "Glow toner", "Aqua (Water), Glycolic Acid (7%), Glycerin, Parfum"),
+  aha:   R(1, "Toner", "Glow toner", "Aqua (Water), Glycolic Acid (7%), Glycerin"),
   ret:   R(2, "Serum", "Night retinol", "Aqua, Retinol 0.3%, Squalane"),
   ret2:  R(3, "Treatment", "Retinal drops", "Retinal, Squalane"),
   aha2:  R(4, "Serum", "Lactic serum", "Lactic Acid*, Sodium Hyaluronate"),
