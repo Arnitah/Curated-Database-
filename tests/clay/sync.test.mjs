@@ -98,6 +98,24 @@ test('[current-behaviour] a device copy that is newer than the remote is uploade
   await h.close();
 });
 
+test('[invariant] a delayed non-empty local write does not overwrite a newer remote document', async () => {
+  const mine = [rec(1, 'face', 'Cleanser', 'Synthetic older local', 'cur')];
+  const h = await openClay(browser, srv.base, {
+    local: { 'clay-products': mine, 'clay-sync-ts': { 'clay-products': T + 9000 } },
+    remote: { 'clay-products': { data: FX.records, at: T } },
+  });
+  await h.settled();
+  await sleep(200); // initial sync has queued a delayed write from the newer local timestamp
+  const newer = [...FX.records, rec(7, 'face', 'Serum', 'Synthetic newer remote', 'cur')];
+  const remoteAt = await h.page.evaluate(() => Date.now() + 10000);
+  await h.page.evaluate(({ data, at }) => window.__fake.setSilent('clay-products', { data, at }), { data: newer, at: remoteAt });
+  await sleep(1600); // allow the queued write to re-read the now-newer remote document
+  assert.deepEqual(await h.mp(), newer, 'newer remote data is applied locally');
+  assert.deepEqual(await h.page.evaluate(() => window.__fake.store()['data/users/test-user-a/clay-products'].data), newer, 'newer remote data remains saved');
+  assert.equal((await h.log()).writes.some((w) => w.key === 'clay-products'), false, 'stale local snapshot is not written');
+  await h.close();
+});
+
 test('[invariant] an empty local document with a newer timestamp never overwrites a non-empty remote copy', async () => {
   const h = await openClay(browser, srv.base, {
     local: { 'clay-hair': {}, 'clay-sync-ts': { 'clay-hair': T + 9000 } },
