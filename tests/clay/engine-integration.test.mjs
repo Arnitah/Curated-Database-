@@ -40,7 +40,8 @@ test('[invariant] the engine inside the page gives the same answers as the engin
     const pairs = [];
     for (let i = 0; i < P.length; i++) for (let j = i + 1; j < P.length; j++) {
       pairs.push(ClayII.engine.evaluateProductPair(P[i], P[j]));
-      pairs.push(ClayII.engine.evaluateProductPair({ ...P[i], ingredient_list_verified: true }, { ...P[j], ingredient_list_verified: true }));
+      const checked = (p) => ({ ...p, ingredient_list_verified: true, ingredient_list_completeness: 'complete' });
+      pairs.push(ClayII.engine.evaluateProductPair(checked(P[i]), checked(P[j])));
     }
     return { P, pairs, routine: ClayII.engine.evaluateRoutine(P) };
   }, RECS);
