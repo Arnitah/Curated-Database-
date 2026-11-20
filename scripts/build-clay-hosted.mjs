@@ -197,8 +197,20 @@ function walkNoFollow(root) {
   return out;
 }
 
+// The marker is protected explicitly: it is never read or written through a symlink, and must be a plain file.
+function assertMarkerIsRegularFile(out) {
+  const mp = path.join(out, MARKER_NAME);
+  let st;
+  try { st = fs.lstatSync(mp); } catch (e) { if (e.code === 'ENOENT') return false; throw e; }
+  if (!st.isFile()) throw unsafe(`its marker ${MARKER_NAME} is a ${st.isSymbolicLink() ? 'symbolic link' : st.isDirectory() ? 'folder' : 'special entry'}, not a regular file. Nothing was deleted`);
+  return true;
+}
+
 function writeMarker(out, files = []) {
-  fs.writeFileSync(path.join(out, MARKER_NAME), JSON.stringify({ id: MARKER_ID, generator: 'scripts/build-clay-hosted.mjs', note: 'Generated Clay hosted preview. Safe to rebuild.', files: [...files].sort() }, null, 2) + '\n');
+  assertMarkerIsRegularFile(out);   // refuse to write through a link or into a folder
+  const fd = fs.openSync(path.join(out, MARKER_NAME), fs.constants.O_WRONLY | fs.constants.O_CREAT | fs.constants.O_TRUNC | fs.constants.O_NOFOLLOW, 0o644);
+  try { fs.writeSync(fd, JSON.stringify({ id: MARKER_ID, generator: 'scripts/build-clay-hosted.mjs', note: 'Generated Clay hosted preview. Safe to rebuild.', files: [...files].sort() }, null, 2) + '\n'); }
+  finally { fs.closeSync(fd); }
 }
 
 // Everything this build wrote (the output folder was verified empty or ours at the start). Marker excluded.
@@ -216,6 +228,7 @@ export function permittedPaths(repoRoot = REPO_ROOT) {
 // The marker's list is only a record: it can narrow what may be deleted, never widen it beyond permittedPaths().
 export function planCleanup(out, repoRoot = REPO_ROOT) {
   const permitted = permittedPaths(repoRoot);
+  if (!assertMarkerIsRegularFile(out)) throw unsafe('its marker file is missing. Nothing was deleted');   // lstat before any read
   let marker;
   try { marker = JSON.parse(fs.readFileSync(path.join(out, MARKER_NAME), 'utf8')); } catch { marker = null; }
   if (!marker || marker.id !== MARKER_ID || !Array.isArray(marker.files)) throw unsafe('its marker file is not a Clay hosted preview marker for this version. Nothing was deleted');

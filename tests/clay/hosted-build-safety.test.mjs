@@ -286,6 +286,84 @@ for (const rel of ['notes.txt', 'data/clay/unexpected.txt', 'index/clay/products
   });
 }
 
+// ---- the marker itself is never followed or overwritten through a link ---------------------------------
+const bytesOf = (f) => fs.readFileSync(f);
+
+test('[marker] a marker replaced by a symlink to an external valid marker is refused before anything changes; the external file is untouched', () => {
+  const d = tmp(), ext = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const mk = path.join(out, MARKER_NAME);
+    const external = path.join(ext, 'external-marker.json');
+    fs.copyFileSync(mk, external);                       // a perfectly valid v2 marker with the full manifest
+    const externalBefore = bytesOf(external);
+    fs.rmSync(mk); fs.symlinkSync(external, mk);
+    rejectedRebuildKeepsEverything(out, /marker .*symbolic link/);
+    assert.ok(bytesOf(external).equals(externalBefore), 'external marker bytes identical');
+    assert.deepEqual(fs.readdirSync(ext), ['external-marker.json']);
+    assert.ok(fs.lstatSync(mk).isSymbolicLink(), 'the link itself was left in place, not followed or replaced');
+    assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /symbolic link/.test(e.message));
+    assert.ok(fs.existsSync(path.join(out, 'index.html')) && fs.existsSync(path.join(out, 'data', 'clay', 'hair_tips.json')));
+  } finally { rm(d); rm(ext); }
+});
+
+test('[marker] a dangling marker symlink is refused too, and nothing is created at its target', () => {
+  const d = tmp(), ext = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const mk = path.join(out, MARKER_NAME); const target = path.join(ext, 'does-not-exist.json');
+    fs.rmSync(mk); fs.symlinkSync(target, mk);
+    rejectedRebuildKeepsEverything(out, /symbolic link/);
+    assert.ok(!fs.existsSync(target));
+  } finally { rm(d); rm(ext); }
+});
+
+test('[marker] a marker path that is a directory is refused and its contents are untouched', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const mk = path.join(out, MARKER_NAME); fs.rmSync(mk); fs.mkdirSync(mk); fs.writeFileSync(path.join(mk, 'inner.txt'), 'inner');
+    rejectedRebuildKeepsEverything(out, /marker .*folder/);
+    assert.equal(fs.readFileSync(path.join(mk, 'inner.txt'), 'utf8'), 'inner');
+  } finally { rm(d); }
+});
+
+test('[marker] a non-regular marker (named pipe) is refused', { skip: process.platform === 'win32' }, async () => {
+  const { spawnSync } = await import('node:child_process');
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const mk = path.join(out, MARKER_NAME); fs.rmSync(mk);
+    const r = spawnSync('mkfifo', [mk]);
+    if (r.status !== 0) return;   // no mkfifo available
+    assert.ok(!fs.lstatSync(mk).isFile());
+    assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /special entry/.test(e.message));
+    assert.throws(() => buildHosted({ outDir: out }), (e) => e.code === 'UNSAFE_OUT');
+    assert.ok(fs.existsSync(path.join(out, 'index.html')));
+  } finally { rm(d); }
+});
+
+test('[marker] a missing marker in a non-empty folder is refused; an empty folder or a new one gets a plain-file marker', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    fs.rmSync(path.join(out, MARKER_NAME));
+    rejectedRebuildKeepsEverything(out, /no marker file/);
+    const fresh = path.join(d, 'fresh'); buildHosted({ outDir: fresh });
+    assert.ok(fs.lstatSync(path.join(fresh, MARKER_NAME)).isFile());
+  } finally { rm(d); }
+});
+
+test('[marker] writes are no-follow: even if a link appears at the marker path, writeMarker-by-build cannot write through it', () => {
+  const src = fs.readFileSync(path.join(R, 'scripts', 'build-clay-hosted.mjs'), 'utf8').replace(/\/\/.*$/gm, '');
+  assert.match(src, /O_NOFOLLOW/, 'marker is opened with O_NOFOLLOW');
+  assert.equal((src.match(/writeFileSync\([^)]*MARKER_NAME/g) || []).length, 0, 'no plain writeFileSync of the marker path');
+  const lst = src.indexOf('lstatSync(mp)'); const rd = src.indexOf("readFileSync(path.join(out, MARKER_NAME)");
+  assert.ok(lst > 0 && rd > 0);
+  const plan = src.indexOf('export function planCleanup');
+  assert.ok(src.indexOf('assertMarkerIsRegularFile(out)', plan) < rd, 'lstat check precedes the marker read');
+});
+
 test('[manifest] the permitted set is derived from the builder, not from any folder or marker, and covers exactly what a build writes', () => {
   const perm = permittedPaths();
   const d = tmp();
