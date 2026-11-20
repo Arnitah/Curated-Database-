@@ -204,14 +204,25 @@ function writeMarker(out, files = []) {
 // Everything this build wrote (the output folder was verified empty or ours at the start). Marker excluded.
 const listGenerated = (out) => walkNoFollow(out).filter((e) => e.type === 'file' && e.rel !== MARKER_NAME).map((e) => e.rel);
 
+// The only paths this builder can generate, derived from its own code and the repo's current product index,
+// never from the output folder or its marker.
+export function permittedPaths(repoRoot = REPO_ROOT) {
+  const set = new Set(['index.html', '_headers', 'robots.txt', 'build-info.json', ...COPY_FILES]);
+  for (const d of COPY_DIRS) for (const f of fs.readdirSync(path.join(repoRoot, d)).filter((n) => n.endsWith('.json'))) set.add(`${d}/${f}`);
+  return set;
+}
+
 // Pure: returns { files, dirs } to remove, or throws UNSAFE_OUT without having touched anything.
-export function planCleanup(out) {
+// The marker's list is only a record: it can narrow what may be deleted, never widen it beyond permittedPaths().
+export function planCleanup(out, repoRoot = REPO_ROOT) {
+  const permitted = permittedPaths(repoRoot);
   let marker;
   try { marker = JSON.parse(fs.readFileSync(path.join(out, MARKER_NAME), 'utf8')); } catch { marker = null; }
   if (!marker || marker.id !== MARKER_ID || !Array.isArray(marker.files)) throw unsafe('its marker file is not a Clay hosted preview marker for this version. Nothing was deleted');
   const listed = new Set();
   for (const f of marker.files) {
     if (typeof f !== 'string' || !f || f.startsWith('/') || f.includes('\\') || f.split('/').some((x) => x === '' || x === '.' || x === '..') || f === MARKER_NAME) throw unsafe('its marker lists an invalid path. Nothing was deleted');
+    if (!permitted.has(f)) throw unsafe(`its marker lists ${f}, which this builder cannot generate. Nothing was deleted; clean the folder manually`);
     listed.add(f);
   }
   const listedDirs = new Set();
@@ -220,7 +231,7 @@ export function planCleanup(out) {
   const bad = [];
   for (const e of found) {
     if (e.type === 'symlink' || e.type === 'other') bad.push(`${e.rel} (${e.type === 'symlink' ? 'symbolic link' : 'not a regular file'})`);
-    else if (e.type === 'file' && !listed.has(e.rel)) bad.push(`${e.rel} (unexpected file)`);
+    else if (e.type === 'file' && !(listed.has(e.rel) && permitted.has(e.rel))) bad.push(`${e.rel} (unexpected file)`);
     else if (e.type === 'dir' && !listedDirs.has(e.rel)) bad.push(`${e.rel}/ (unexpected folder)`);
   }
   if (bad.length) throw unsafe(`it contains entries this tool did not generate: ${bad.slice(0, 5).join(', ')}${bad.length > 5 ? `, and ${bad.length - 5} more` : ''}. Nothing was deleted`);
@@ -229,12 +240,12 @@ export function planCleanup(out) {
 
 // The only place anything is deleted: individually verified files, then folders that are then empty.
 // There is no recursive removal anywhere in this script.
-function prepareOutDir(out) {
+function prepareOutDir(out, repoRoot) {
   if (!fs.existsSync(out)) { fs.mkdirSync(out, { recursive: true }); writeMarker(out); return; }
   const entries = fs.readdirSync(out);
   if (entries.length === 0) { writeMarker(out); return; }
   if (!entries.includes(MARKER_NAME)) throw unsafe('it already exists, is not empty, and was not created by this tool (no marker file). Choose a new or empty folder');
-  const plan = planCleanup(out);   // every descendant checked before the first deletion
+  const plan = planCleanup(out, repoRoot);   // every descendant checked before the first deletion
   for (const f of plan.files) fs.unlinkSync(f);
   for (const d of plan.dirs) fs.rmdirSync(d);
   writeMarker(out);
@@ -316,7 +327,7 @@ export function buildHosted({ outDir = DEFAULT_OUT, repoRoot = REPO_ROOT } = {})
   // A seed name may still appear inside general advice prose; what must be gone is any quoted record literal.
   for (const n of originalNames) for (const q of ["'", '"', '`']) if (s.includes(q + n + q)) throw new Error(`hosted page still contains an original seed record: ${n}`);
 
-  prepareOutDir(out);   // the only deletion: manifest-checked files, never recursive
+  prepareOutDir(out, repoRoot);   // the only deletion: manifest-checked files, never recursive
   try {
   fs.writeFileSync(path.join(out, 'index.html'), s);
   fs.writeFileSync(path.join(out, '_headers'), HEADERS);

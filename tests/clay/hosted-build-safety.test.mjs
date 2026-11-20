@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { buildHosted, assertSafeOutDir, planCleanup, parseSeedRows, readOriginalSeedNames, MARKER_NAME, REPO_ROOT } from '../../scripts/build-clay-hosted.mjs';
+import { buildHosted, assertSafeOutDir, planCleanup, permittedPaths, parseSeedRows, readOriginalSeedNames, MARKER_NAME, REPO_ROOT } from '../../scripts/build-clay-hosted.mjs';
 
 const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'clay-safety-'));
 const rm = (d) => fs.rmSync(d, { recursive: true, force: true });
@@ -141,13 +141,13 @@ test('[safety] the script has no recursive removal; deletion is per verified fil
   const src = fs.readFileSync(path.join(R, 'scripts', 'build-clay-hosted.mjs'), 'utf8').replace(/\/\/.*$/gm, '');
   assert.ok(!/rmSync|recursive:\s*true\s*,?\s*force|rimraf/.test(src.replace(/mkdirSync\([^)]*recursive: true[^)]*\)/g, '')), 'no recursive deletion API');
   const prep = src.indexOf('function prepareOutDir');
-  const plan = src.indexOf('planCleanup(out)', prep);
+  const plan = src.indexOf('planCleanup(out, repoRoot)', prep);
   assert.ok(plan > prep && plan < src.indexOf('unlinkSync', prep), 'planCleanup runs before the first unlink');
   assert.ok(plan < src.indexOf('rmdirSync', prep), 'planCleanup runs before the first rmdir');
   assert.equal((src.match(/unlinkSync\(/g) || []).length, 1);
   const bh = src.indexOf('export function buildHosted');
   assert.ok(src.indexOf('assertSafeOutDir(outDir, repoRoot)', bh) < src.indexOf('readFileSync', bh), 'path is validated before anything is read');
-  assert.ok(src.indexOf('assertSafeOutDir(outDir, repoRoot)', bh) < src.indexOf('prepareOutDir(out)', bh));
+  assert.ok(src.indexOf('assertSafeOutDir(outDir, repoRoot)', bh) < src.indexOf('prepareOutDir(out, repoRoot)', bh));
 });
 
 // ---- nested entries: every descendant is checked before anything is deleted --------------------------------
@@ -233,7 +233,9 @@ test('[nested] a forged marker cannot widen the allowlist: bad paths are refused
       assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /invalid path/.test(e.message), bad);
     }
     fs.writeFileSync(mk, JSON.stringify({ ...m, files: [...m.files, 'data/listed-but-missing.json'] }));
-    assert.doesNotThrow(() => planCleanup(out));
+    assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /cannot generate/.test(e.message));
+    fs.writeFileSync(mk, JSON.stringify({ ...m, files: m.files.filter((x) => x !== 'data/clay/hair_tips.json') }));   // narrowing is allowed to plan, but then the real file is unlisted
+    assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /hair_tips\.json \(unexpected file\)/.test(e.message));
     fs.writeFileSync(mk, JSON.stringify({ id: 'clay-hosted-preview/v1' }));   // old marker has no manifest
     assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT');
     assert.ok(fs.existsSync(path.join(out, 'index.html')));
@@ -255,16 +257,45 @@ test('[nested] planCleanup is pure: it deletes nothing even when it approves, an
   } finally { rm(d); }
 });
 
-test('[nested] cleanup is limited to generated output: a clean rebuild removes stale generated files and empty folders only', () => {
+test('[nested] an older generated file that is no longer permitted is refused, not deleted, even when the marker lists it', () => {
   const d = tmp();
   try {
     const out = path.join(d, 'o'); buildHosted({ outDir: out });
     const m = path.join(out, MARKER_NAME); const meta = JSON.parse(fs.readFileSync(m, 'utf8'));
     fs.mkdirSync(path.join(out, 'data', 'old-gen'), { recursive: true }); fs.writeFileSync(path.join(out, 'data', 'old-gen', 'stale.json'), '{}');
-    fs.writeFileSync(m, JSON.stringify({ ...meta, files: [...meta.files, 'data/old-gen/stale.json'] }));   // as if an earlier build had written it
-    buildHosted({ outDir: out });
-    assert.ok(!fs.existsSync(path.join(out, 'data', 'old-gen')), 'stale generated file and its folder removed');
-    assert.ok(fs.existsSync(path.join(out, 'data', 'clay', 'hair_tips.json')));
+    fs.writeFileSync(m, JSON.stringify({ ...meta, files: [...meta.files, 'data/old-gen/stale.json'] }));
+    rejectedRebuildKeepsEverything(out, /cannot generate/);
+    assert.ok(fs.existsSync(path.join(out, 'data', 'old-gen', 'stale.json')), 'manual cleanup required');
+  } finally { rm(d); }
+});
+
+// ---- the marker is a record, never the authority -------------------------------------------------------
+for (const rel of ['notes.txt', 'data/clay/unexpected.txt', 'index/clay/products/unexpected.json', 'data/safe-batch/my_products_seed.json', 'index.html.bak']) {
+  test(`[manifest] editing the marker to list a foreign file (${rel}) does not make it deletable; the whole folder stays unchanged`, () => {
+    const d = tmp();
+    try {
+      const out = path.join(d, 'o'); buildHosted({ outDir: out });
+      const f = path.join(out, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, 'foreign sentinel');
+      const mk = path.join(out, MARKER_NAME); const m = JSON.parse(fs.readFileSync(mk, 'utf8'));
+      fs.writeFileSync(mk, JSON.stringify({ ...m, files: [...m.files, rel] }, null, 2));
+      rejectedRebuildKeepsEverything(out, /cannot generate/);
+      assert.equal(fs.readFileSync(f, 'utf8'), 'foreign sentinel');
+      assert.ok(fs.existsSync(path.join(out, 'index.html')) && fs.existsSync(path.join(out, 'data', 'clay', 'hair_tips.json')), 'previous build intact');
+      assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT');
+    } finally { rm(d); }
+  });
+}
+
+test('[manifest] the permitted set is derived from the builder, not from any folder or marker, and covers exactly what a build writes', () => {
+  const perm = permittedPaths();
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const m = JSON.parse(fs.readFileSync(path.join(out, MARKER_NAME), 'utf8'));
+    assert.deepEqual([...m.files].sort(), [...perm].sort(), 'every generated file is permitted, and every permitted path is generated');
+    for (const bad of ['data/clay/my_products_seed.json', 'index/added_products.json', 'notes.txt', MARKER_NAME]) assert.ok(!perm.has(bad), bad);
+    const out2 = path.join(d, 'o2'); fs.mkdirSync(out2); fs.writeFileSync(path.join(out2, 'x'), 'x');
+    assert.deepEqual([...permittedPaths()].sort(), [...perm].sort(), 'independent of folder contents');
   } finally { rm(d); }
 });
 
