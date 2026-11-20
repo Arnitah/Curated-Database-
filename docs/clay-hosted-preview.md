@@ -37,6 +37,41 @@ Line numbers are for `main` at commit `24f3505`. `clay-web.html` has the same ho
 
 **Reusable unchanged:** all rendering and state (nine sections), the ingredient engine, `localStorage` persistence, the shelf, hair, log and scent logic, product search, themes and the responsive layout. **Replaced:** the sync layer, the boot hook, the comments hook, the seed and personal migrations, the save wording, the data fallback. The UI separates cleanly; no redesign was needed.
 
+## Example-data audit (all nine sections)
+
+The 16-record shelf is not the only hard-coded content. Every top-level data block in the hosted page (80, found by a script, not by eye) is registered in `apps/clay-hosted/example-data-audit.json` with a class. `tests/clay/hosted-examples.test.mjs` fails if a block is added without being classified, if an invented block is shown without a visible label, or if a real brand name appears in a block classed as invented, generic or config.
+
+| Class | Meaning | Blocks |
+|---|---|---|
+| `illustrative-invented` | Invented products, figures, reviews, scan readings, pairings. Each shows a visible "Sample data" / "DEMO DATA" / "demo" / "not applied" label where it appears | PICKS, INGS, REVIEWS, PROD, P, PAIRS, SCENT, METRICS, ZONES, CHANGES (+ functions `ySample`, `segStats`) |
+| `demo-seed` | The 16 synthetic starter shelf rows | MP_SEED |
+| `unreferenced` | Never rendered by any code. Emptied in the hosted build | ROUTINE, SHELF, SHELFVIZ |
+| `generic-editorial` | General advice or education. No brand, product or person, no claim about the user | 16 blocks |
+| `ui-config` | Option lists, icons, palettes, rules | 44 blocks |
+| `reference-real` | **Real-world reference content that names real products, brands, perfumes or places.** Not synthetic, not user data | TRIP_WHERE, TRIP_HOME, CM, CM_WASH, SA, PDB_SRC |
+
+Changes made from this audit: the hard-coded "From your Oct 13 scan" and "you own both / one" claims are replaced by neutral "Sample profile (demo)" and "sample pairing" tags; the Pairs and scent-of-the-season cards and the Today scent idea now carry the same sample label the other examples already had; `ROUTINE`, `SHELF` and `SHELFVIZ` (which held a personal-looking routine and shelf and were never rendered) are emptied.
+
+**Decision for the reviewer: `reference-real`.** The brand-comparison lists (`CM`, `CM_WASH`), travel advice by city (`TRIP_WHERE`, `TRIP_HOME`) and the scent-family reference (`SA`), plus the copied product index and scent houses, name real brands and places. They are reference content, not invented samples, and they are not presented as synthetic. They are kept because removing them removes the Check, Travel and Scent features. If the preview must contain no real brand at all, these need to be replaced or hidden; say so and that is a follow-up. A brand denylist in the tests is a guard, not a proof, because the product index has no usable brand column.
+
+### Banner wording
+
+The banner reads "Demo preview · starts with synthetic sample data · your changes stay in this browser", and the shelf note says the shelf starts with invented sample data and that anything the user adds is saved only in this browser. Neither claims that every entry stays synthetic once a user adds their own. A test adds a product and checks both texts are still true. `build-info.json` records `starts_with_synthetic_demo_data`.
+
+### Build output safety
+
+`node scripts/build-clay-hosted.mjs [--out <folder>]` never deletes an arbitrary folder:
+
+- `assertSafeOutDir` runs before anything is read. It resolves symlinks and refuses the repository root, any parent of it, a filesystem root, an empty path, a file, a symlink, and anything inside the repository other than `hosted/<name>` (so `apps`, `data`, `tests`, `.git` and the like are refused).
+- A new or empty folder is accepted. A non-empty folder is accepted only if it carries the marker file `.clay-hosted-preview` with this tool's id and holds nothing but files this tool generates.
+- Only the known generated children are removed, never the folder itself, never when a symlink or unknown file is present. There is a single `rmSync` and a test pins its position after those checks.
+- An unsafe `--out` exits with code 2 and a message.
+- The marker file `.clay-hosted-preview` is part of the output and is deployed with it. It holds only a generator id and note.
+
+### Seed inspection
+
+The build no longer evaluates source code. `readOriginalSeedNames` and the seed patch use a small parser for the known `MP_SEED` shape (rows of four quoted strings). It rejects code, concatenation, template strings, comments, numbers and unterminated input, and tests show hostile text is inert.
+
 ## Files changed
 
 | File | Purpose |
@@ -54,7 +89,7 @@ Line numbers are for `main` at commit `24f3505`. `clay-web.html` has the same ho
 - `index.html`: the page. Noindex meta, a visible "Demo preview" banner.
 - `_headers`: Content-Security-Policy with `connect-src 'self'` (the page can call only its own origin), `X-Robots-Tag: noindex`, `Referrer-Policy: no-referrer`, `nosniff`, `frame-ancestors 'none'`.
 - `robots.txt`: disallow all.
-- `build-info.json`: source hash, list of patches, synthetic-data flag.
+- `build-info.json`: source hash, list of patches, synthetic-data flag (`starts_with_synthetic_demo_data`), and the marker `.clay-hosted-preview`.
 - 54 public reference files (about 13 MB, almost all the product index). **Not** copied: `data/clay/my_products_seed.json`, anything under `data/users`, `index/added_products.json`.
 
 ## Cloudflare Pages configuration
@@ -81,7 +116,7 @@ Limits to keep in mind (from memory of Cloudflare's published limits, not re-che
 
 1. the two existing Clay HTML files are never changed by the build, and that the build is repeatable;
 2. the output has no `window.claude`, `claude.use`, `onSnapshot`, `.collection(`, `data/users`, GitHub raw, Supabase or `claudeusercontent`;
-3. none of the 61 real seed records survive, and every demo record is named "Synthetic …";
+3. none of the 61 real seed records survive, and every demo record is named "Synthetic …" (further example-data tests are in `hosted-examples.test.mjs`, output-path and parser tests in `hosted-build-safety.test.mjs`);
 4. the output holds only the allowed files and stays inside the Pages limits;
 5. the CSP is origin-only;
 6. the page boots at 390 px with no script errors, no policy violations, nine sections, no sideways scroll, and no outside request except the font hosts;

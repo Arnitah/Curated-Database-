@@ -82,3 +82,39 @@ export async function openHosted(browser, base, { viewport = { width: 390, heigh
     close: () => ctx.close(),
   };
 }
+
+// ---- example-data audit helpers ---------------------------------------------------------------------
+// The app script is the <script> after the bundled ingredient engine. These helpers only read text.
+export function appScript(html) {
+  const i = html.indexOf('</script>', html.indexOf('<script id="ii-engine">'));
+  const j = html.indexOf('<script>', i);
+  return html.slice(j);
+}
+
+// Top-level const/let/var whose value starts with [ { or a backtick. Returns { name: text }.
+export function topLevelBlocks(html) {
+  const L = appScript(html).split('\n');
+  const blocks = {};
+  for (let k = 0; k < L.length;) {
+    const m = /^(?:const|let|var) ([A-Za-z_$][\w$]*)\s*=\s*([\[{`])/.exec(L[k]);
+    if (!m) { k++; continue; }
+    let n = k + 1;
+    const buf = [L[k]];
+    while (n < L.length && (!/^\S/.test(L[n]) || /^[\]\})];?/.test(L[n]))) buf.push(L[n++]);
+    blocks[m[1]] = buf.join('\n');
+    k = n;
+  }
+  return blocks;
+}
+
+export const brandRegex = (brands) => new RegExp('(?<![a-z0-9])(?:' + brands.map((b) => b.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![a-z0-9])', 'i');
+
+// Runs a view: ["nav", label] or ["act", name, value] (the app's own delegated action, same path as a tap).
+export async function runSteps(page, steps) {
+  for (const [kind, a, b] of steps) {
+    if (kind === 'nav') await page.evaluate((l) => [...document.querySelectorAll('#nav button')].find((x) => x.textContent.trim() === l).click(), a);
+    else await page.evaluate(([n, v]) => { const el = document.createElement('button'); el.dataset.act = n; el.dataset.v = v; document.body.appendChild(el); el.click(); el.remove(); }, [a, b]);
+    await page.waitForTimeout(350);
+  }
+  return page.$eval('#main', (m) => m.innerText);
+}

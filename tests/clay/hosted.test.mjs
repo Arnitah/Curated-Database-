@@ -64,7 +64,7 @@ test('[invariant] the hosted page contains no real shelf records and its demo sh
 });
 
 test('[invariant] the output folder holds only the page, its config, and the public reference files the page requests', () => {
-  const allowed = new Set(['index.html', '_headers', 'robots.txt', 'build-info.json', ...COPY_FILES]);
+  const allowed = new Set(['index.html', '_headers', 'robots.txt', 'build-info.json', '.clay-hosted-preview', ...COPY_FILES]);
   const files = walk(built.out);
   for (const f of files) {
     const ok = allowed.has(f) || COPY_DIRS.some((d) => f.startsWith(d + '/') && f.endsWith('.json'));
@@ -74,7 +74,7 @@ test('[invariant] the output folder holds only the page, its config, and the pub
   assert.ok(files.length < 20000, 'Cloudflare Pages allows 20,000 files');
   for (const f of files) assert.ok(fs.statSync(path.join(built.out, f)).size < 25 * 1024 * 1024, 'Pages allows 25 MiB per file: ' + f);
   const info = JSON.parse(fs.readFileSync(path.join(built.out, 'build-info.json'), 'utf8'));
-  assert.equal(info.synthetic_demo_data, true);
+  assert.equal(info.starts_with_synthetic_demo_data, true);
 });
 
 test('[invariant] the headers file locks the page to its own origin for network calls', () => {
@@ -142,6 +142,6 @@ test('[invariant] saving works in this browser: a removed product stays removed 
   assert.ok(!(await h.mp()).some((r) => !r.n.startsWith('Synthetic ')));
   await h.page.evaluate(() => document.querySelector('#nav button[data-v="shelf"]').click());
   await h.page.waitForTimeout(200);
-  assert.match(await h.page.$eval('#main', (m) => m.textContent), /invented sample data, saved only in this browser/);
+  assert.match(await h.page.$eval('#main', (m) => m.textContent), /starts with invented sample data\. Anything you add or change is saved only in this browser/);
   await h.close();
 });
