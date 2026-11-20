@@ -63,8 +63,9 @@ The banner reads "Demo preview · starts with synthetic sample data · your chan
 `node scripts/build-clay-hosted.mjs [--out <folder>]` never deletes an arbitrary folder:
 
 - `assertSafeOutDir` runs before anything is read. It resolves symlinks and refuses the repository root, any parent of it, a filesystem root, an empty path, a file, a symlink, and anything inside the repository other than `hosted/<name>` (so `apps`, `data`, `tests`, `.git` and the like are refused).
-- A new or empty folder is accepted. A non-empty folder is accepted only if it carries the marker file `.clay-hosted-preview` with this tool's id and holds nothing but files this tool generates.
-- Only the known generated children are removed, never the folder itself, never when a symlink or unknown file is present. There is a single `rmSync` and a test pins its position after those checks.
+- A new or empty folder is accepted. A non-empty folder is accepted only if it carries the marker file `.clay-hosted-preview` (id `clay-hosted-preview/v2`) whose `files` list is the exact manifest of what the previous build wrote.
+- Before anything is deleted, every descendant of the folder is enumerated without following symlinks and checked against that manifest at every depth. Any unlisted file, unlisted folder (even an empty one), symlink or special file anywhere, including inside `data/` and `index/`, rejects the rebuild and nothing is deleted. A marker listing an absolute, `..`, empty-segment or marker path is also rejected.
+- Cleanup then removes only the verified manifest files one at a time and the folders left empty. The script contains no recursive removal at all, and a test pins the order (check, then delete). A marker from the earlier format, or one left by an interrupted build, is refused rather than trusted; delete that generated folder yourself and rebuild.
 - An unsafe `--out` exits with code 2 and a message.
 - The marker file `.clay-hosted-preview` is part of the output and is deployed with it. It holds only a generator id and note.
 

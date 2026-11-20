@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { buildHosted, assertSafeOutDir, parseSeedRows, readOriginalSeedNames, MARKER_NAME, REPO_ROOT } from '../../scripts/build-clay-hosted.mjs';
+import { buildHosted, assertSafeOutDir, planCleanup, parseSeedRows, readOriginalSeedNames, MARKER_NAME, REPO_ROOT } from '../../scripts/build-clay-hosted.mjs';
 
 const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'clay-safety-'));
 const rm = (d) => fs.rmSync(d, { recursive: true, force: true });
@@ -91,7 +91,7 @@ test('[safety] a correctly marked folder that also holds a foreign file is refus
     buildHosted({ outDir: d });
     fs.writeFileSync(path.join(d, 'my-notes.txt'), 'precious');
     const before = fs.readdirSync(d).sort();
-    assert.throws(() => buildHosted({ outDir: d }), (e) => e.code === 'UNSAFE_OUT' && /did not generate/.test(e.message));
+    assert.throws(() => buildHosted({ outDir: d }), (e) => e.code === 'UNSAFE_OUT' && /did not generate|unexpected file/.test(e.message));
     assert.deepEqual(fs.readdirSync(d).sort(), before);
     assert.equal(fs.readFileSync(path.join(d, 'my-notes.txt'), 'utf8'), 'precious');
     assert.ok(fs.existsSync(path.join(d, 'index.html')), 'previous build left in place');
@@ -109,17 +109,20 @@ test('[safety] a marked folder containing a symlink is refused before any deleti
   } finally { rm(d); rm(outside); }
 });
 
-test('[safe repeat] new, empty and previously generated folders all build; stale generated files are cleaned; the marker is kept', () => {
+test('[safe repeat] new, empty and previously generated folders all build; the marker is kept', () => {
   const d = tmp();
   try {
     const out = path.join(d, 'new');
     buildHosted({ outDir: out });                       // new folder
     assert.ok(fs.existsSync(path.join(out, MARKER_NAME)));
     const first = fs.readFileSync(path.join(out, 'index.html'), 'utf8');
-    fs.writeFileSync(path.join(out, 'data', 'stale.json'), '{}'); fs.writeFileSync(path.join(out, 'robots.txt'), 'old');
     buildHosted({ outDir: out });                       // marked folder, repeat
-    assert.ok(!fs.existsSync(path.join(out, 'data', 'stale.json')), 'stale generated file removed');
     assert.equal(fs.readFileSync(path.join(out, 'index.html'), 'utf8'), first, 'deterministic');
+    fs.writeFileSync(path.join(out, 'data', 'stale.json'), '{}');   // not in the manifest: rejected, not silently deleted
+    assert.throws(() => buildHosted({ outDir: out }), (e) => e.code === 'UNSAFE_OUT');
+    assert.ok(fs.existsSync(path.join(out, 'data', 'stale.json')));
+    fs.rmSync(path.join(out, 'data', 'stale.json'));
+    buildHosted({ outDir: out });
     const empty = path.join(d, 'empty'); fs.mkdirSync(empty);
     buildHosted({ outDir: empty });                     // existing empty folder
     assert.ok(fs.existsSync(path.join(empty, 'index.html')));
@@ -134,16 +137,135 @@ test('[safe repeat] building never changes the source Clay files', () => {
   files.forEach((f, i) => assert.ok(before[i].equals(fs.readFileSync(f)), f + ' changed'));
 });
 
-test('[safety] the only recursive deletion is inside prepareOutDir, after the marker and unknown-entry checks; buildHosted validates first', () => {
-  const src = fs.readFileSync(path.join(R, 'scripts', 'build-clay-hosted.mjs'), 'utf8');
-  assert.equal((src.match(/fs\.rmSync\(/g) || []).length, 1, 'exactly one rmSync');
-  const rmAt = src.indexOf('fs.rmSync(');
+test('[safety] the script has no recursive removal; deletion is per verified file after a full pre-check; buildHosted validates the path first', () => {
+  const src = fs.readFileSync(path.join(R, 'scripts', 'build-clay-hosted.mjs'), 'utf8').replace(/\/\/.*$/gm, '');
+  assert.ok(!/rmSync|recursive:\s*true\s*,?\s*force|rimraf/.test(src.replace(/mkdirSync\([^)]*recursive: true[^)]*\)/g, '')), 'no recursive deletion API');
   const prep = src.indexOf('function prepareOutDir');
-  for (const needle of ['MARKER_ID', 'unknown.length', 'isSymbolicLink']) assert.ok(src.indexOf(needle, prep) > prep && src.indexOf(needle, prep) < rmAt, `${needle} must be checked before the deletion`);
-  assert.ok(!/rmSync\(\s*(out|outDir)\s*,/.test(src), 'the output folder itself is never removed');
+  const plan = src.indexOf('planCleanup(out)', prep);
+  assert.ok(plan > prep && plan < src.indexOf('unlinkSync', prep), 'planCleanup runs before the first unlink');
+  assert.ok(plan < src.indexOf('rmdirSync', prep), 'planCleanup runs before the first rmdir');
+  assert.equal((src.match(/unlinkSync\(/g) || []).length, 1);
   const bh = src.indexOf('export function buildHosted');
   assert.ok(src.indexOf('assertSafeOutDir(outDir, repoRoot)', bh) < src.indexOf('readFileSync', bh), 'path is validated before anything is read');
   assert.ok(src.indexOf('assertSafeOutDir(outDir, repoRoot)', bh) < src.indexOf('prepareOutDir(out)', bh));
+});
+
+// ---- nested entries: every descendant is checked before anything is deleted --------------------------------
+const snapshot = (dir) => {
+  const o = {};
+  const rec = (d) => { for (const n of fs.readdirSync(d)) { const a = path.join(d, n), st = fs.lstatSync(a); const r = path.relative(dir, a); if (st.isSymbolicLink()) o[r] = 'LINK->' + fs.readlinkSync(a); else if (st.isDirectory()) { o[r] = 'DIR'; rec(a); } else o[r] = fs.readFileSync(a, 'utf8').length + ':' + fs.readFileSync(a, 'utf8').slice(0, 40); } };
+  rec(dir); return o;
+};
+const rejectedRebuildKeepsEverything = (out, re) => {
+  const before = snapshot(out);
+  assert.throws(() => buildHosted({ outDir: out }), (e) => e.code === 'UNSAFE_OUT' && re.test(e.message));
+  assert.deepEqual(snapshot(out), before, 'nothing deleted, nothing changed after the rejected rebuild');
+};
+
+test('[nested] a sentinel file inside data/ blocks the rebuild and survives; the previous build stays whole', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const s = path.join(out, 'data', 'clay', 'SENTINEL-data.txt'); fs.writeFileSync(s, 'do not delete');
+    rejectedRebuildKeepsEverything(out, /data\/clay\/SENTINEL-data\.txt \(unexpected file\)/);
+    assert.equal(fs.readFileSync(s, 'utf8'), 'do not delete');
+    assert.ok(fs.existsSync(path.join(out, 'index.html')) && fs.existsSync(path.join(out, 'data', 'clay', 'hair_tips.json')));
+  } finally { rm(d); }
+});
+
+test('[nested] a sentinel file inside index/ (deep, in a shard folder) blocks the rebuild and survives', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const s = path.join(out, 'index', 'clay', 'products', 'SENTINEL-index.json'); fs.writeFileSync(s, '{"keep":true}');
+    rejectedRebuildKeepsEverything(out, /SENTINEL-index\.json \(unexpected file\)/);
+    assert.equal(fs.readFileSync(s, 'utf8'), '{"keep":true}');
+    const deep = path.join(out, 'index', 'clay', 'products', 'x', 'y'); fs.mkdirSync(deep, { recursive: true }); fs.writeFileSync(path.join(deep, 'SENTINEL-deep.txt'), 'deep');
+    fs.rmSync(s);
+    rejectedRebuildKeepsEverything(out, /index\/clay\/products\/x\/ \(unexpected folder\)/);
+    assert.equal(fs.readFileSync(path.join(deep, 'SENTINEL-deep.txt'), 'utf8'), 'deep');
+  } finally { rm(d); }
+});
+
+test('[nested] an unexpected empty folder, even one with no files in it, is rejected', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    fs.mkdirSync(path.join(out, 'data', 'my-empty-folder'));
+    rejectedRebuildKeepsEverything(out, /my-empty-folder\/ \(unexpected folder\)/);
+  } finally { rm(d); }
+});
+
+test('[nested] a symlink at depth (file link, folder link, dangling link) is rejected and its target is untouched', () => {
+  const d = tmp(), outside = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    fs.writeFileSync(path.join(outside, 'victim.txt'), 'victim'); fs.mkdirSync(path.join(outside, 'dir')); fs.writeFileSync(path.join(outside, 'dir', 'v2.txt'), 'v2');
+    for (const [rel, target] of [['data/clay/link-file', path.join(outside, 'victim.txt')], ['index/clay/products/link-dir', path.join(outside, 'dir')], ['data/scents/dangling', path.join(outside, 'nope')]]) {
+      const l = path.join(out, rel); fs.symlinkSync(target, l);
+      rejectedRebuildKeepsEverything(out, /symbolic link/);
+      fs.unlinkSync(l);
+    }
+    assert.equal(fs.readFileSync(path.join(outside, 'victim.txt'), 'utf8'), 'victim');
+    assert.equal(fs.readFileSync(path.join(outside, 'dir', 'v2.txt'), 'utf8'), 'v2');
+    buildHosted({ outDir: out });   // with the links removed the rebuild is allowed again
+  } finally { rm(d); rm(outside); }
+});
+
+test('[nested] a generated file replaced by a symlink to the same name is rejected, not followed', () => {
+  const d = tmp(), outside = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    fs.writeFileSync(path.join(outside, 'victim.txt'), 'victim');
+    const f = path.join(out, 'data', 'clay', 'hair_tips.json'); fs.rmSync(f); fs.symlinkSync(path.join(outside, 'victim.txt'), f);
+    rejectedRebuildKeepsEverything(out, /symbolic link/);
+    assert.equal(fs.readFileSync(path.join(outside, 'victim.txt'), 'utf8'), 'victim');
+  } finally { rm(d); rm(outside); }
+});
+
+test('[nested] a forged marker cannot widen the allowlist: bad paths are refused, and listed-but-absent files are harmless', () => {
+  const d = tmp(), outside = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const mk = path.join(out, MARKER_NAME); const m = JSON.parse(fs.readFileSync(mk, 'utf8'));
+    for (const bad of ['../escape.txt', '/etc/passwd', 'a//b', './x', 'data\\x', MARKER_NAME]) {
+      fs.writeFileSync(mk, JSON.stringify({ ...m, files: [...m.files, bad] }));
+      assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT' && /invalid path/.test(e.message), bad);
+    }
+    fs.writeFileSync(mk, JSON.stringify({ ...m, files: [...m.files, 'data/listed-but-missing.json'] }));
+    assert.doesNotThrow(() => planCleanup(out));
+    fs.writeFileSync(mk, JSON.stringify({ id: 'clay-hosted-preview/v1' }));   // old marker has no manifest
+    assert.throws(() => planCleanup(out), (e) => e.code === 'UNSAFE_OUT');
+    assert.ok(fs.existsSync(path.join(out, 'index.html')));
+  } finally { rm(d); rm(outside); }
+});
+
+test('[nested] planCleanup is pure: it deletes nothing even when it approves, and the manifest equals the generated files', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); const r = buildHosted({ outDir: out });
+    const before = snapshot(out);
+    const plan = planCleanup(out);
+    assert.deepEqual(snapshot(out), before);
+    const m = JSON.parse(fs.readFileSync(path.join(out, MARKER_NAME), 'utf8'));
+    assert.equal(m.id, 'clay-hosted-preview/v2');
+    assert.deepEqual(m.files, plan.files.map((f) => path.relative(out, f).split(path.sep).join('/')).filter((x) => x !== MARKER_NAME).sort());
+    assert.ok(m.files.includes('data/clay/hair_tips.json') && m.files.includes('index.html') && m.files.length > 50);
+    assert.ok(r.info.copied_files > 50);
+  } finally { rm(d); }
+});
+
+test('[nested] cleanup is limited to generated output: a clean rebuild removes stale generated files and empty folders only', () => {
+  const d = tmp();
+  try {
+    const out = path.join(d, 'o'); buildHosted({ outDir: out });
+    const m = path.join(out, MARKER_NAME); const meta = JSON.parse(fs.readFileSync(m, 'utf8'));
+    fs.mkdirSync(path.join(out, 'data', 'old-gen'), { recursive: true }); fs.writeFileSync(path.join(out, 'data', 'old-gen', 'stale.json'), '{}');
+    fs.writeFileSync(m, JSON.stringify({ ...meta, files: [...meta.files, 'data/old-gen/stale.json'] }));   // as if an earlier build had written it
+    buildHosted({ outDir: out });
+    assert.ok(!fs.existsSync(path.join(out, 'data', 'old-gen')), 'stale generated file and its folder removed');
+    assert.ok(fs.existsSync(path.join(out, 'data', 'clay', 'hair_tips.json')));
+  } finally { rm(d); }
 });
 
 test('[cli] unsafe --out exits non-zero and names the reason; missing value is rejected (only temp and refused paths used)', async () => {

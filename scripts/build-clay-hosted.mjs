@@ -144,8 +144,7 @@ export function readOriginalSeedNames(src) {
 
 // ---- output directory safety -------------------------------------------------------------------
 export const MARKER_NAME = '.clay-hosted-preview';
-const MARKER_ID = 'clay-hosted-preview/v1';
-const GENERATED_TOP = new Set(['index.html', '_headers', 'robots.txt', 'build-info.json', 'version.json', 'data', 'index', MARKER_NAME]);
+const MARKER_ID = 'clay-hosted-preview/v2';
 
 const unsafe = (why) => Object.assign(new Error(`Refusing to use this output folder: ${why}`), { code: 'UNSAFE_OUT' });
 
@@ -178,21 +177,67 @@ export function assertSafeOutDir(outDir, repoRoot = REPO_ROOT) {
   return out;
 }
 
-// The only place anything is deleted. Never removes the output folder itself; only the known generated
-// children of a folder that carries this tool's marker and holds nothing else.
-function prepareOutDir(out) {
-  const writeMarker = () => fs.writeFileSync(path.join(out, MARKER_NAME), JSON.stringify({ id: MARKER_ID, generator: 'scripts/build-clay-hosted.mjs', note: 'Generated Clay hosted preview. Safe to rebuild.' }, null, 2) + '\n');
-  if (!fs.existsSync(out)) { fs.mkdirSync(out, { recursive: true }); writeMarker(); return; }
-  const entries = fs.readdirSync(out);
-  if (entries.length === 0) { writeMarker(); return; }
-  if (!entries.includes(MARKER_NAME)) throw unsafe('it already exists, is not empty, and was not created by this tool (no marker file). Choose a new or empty folder');
+// ---- manifest-checked cleanup ------------------------------------------------------------------------
+// The marker holds the exact list of files the previous build wrote. Before anything is deleted, every
+// descendant of the output folder is enumerated (without following symlinks) and checked against that list.
+const toPosix = (rel) => rel.split(path.sep).join('/');
+
+function walkNoFollow(root) {
+  const out = [];
+  const rec = (dir) => {
+    for (const name of fs.readdirSync(dir)) {
+      const abs = path.join(dir, name);
+      const st = fs.lstatSync(abs);
+      const rel = toPosix(path.relative(root, abs));
+      out.push({ rel, abs, type: st.isSymbolicLink() ? 'symlink' : st.isDirectory() ? 'dir' : st.isFile() ? 'file' : 'other' });
+      if (st.isDirectory()) rec(abs);
+    }
+  };
+  rec(root);
+  return out;
+}
+
+function writeMarker(out, files = []) {
+  fs.writeFileSync(path.join(out, MARKER_NAME), JSON.stringify({ id: MARKER_ID, generator: 'scripts/build-clay-hosted.mjs', note: 'Generated Clay hosted preview. Safe to rebuild.', files: [...files].sort() }, null, 2) + '\n');
+}
+
+// Everything this build wrote (the output folder was verified empty or ours at the start). Marker excluded.
+const listGenerated = (out) => walkNoFollow(out).filter((e) => e.type === 'file' && e.rel !== MARKER_NAME).map((e) => e.rel);
+
+// Pure: returns { files, dirs } to remove, or throws UNSAFE_OUT without having touched anything.
+export function planCleanup(out) {
   let marker;
   try { marker = JSON.parse(fs.readFileSync(path.join(out, MARKER_NAME), 'utf8')); } catch { marker = null; }
-  if (!marker || marker.id !== MARKER_ID) throw unsafe('its marker file is not a Clay hosted preview marker');
-  const unknown = entries.filter((e) => !GENERATED_TOP.has(e));
-  if (unknown.length) throw unsafe(`it contains files this tool did not generate (${unknown.slice(0, 3).join(', ')}). Nothing was deleted`);
-  for (const e of entries) if (fs.lstatSync(path.join(out, e)).isSymbolicLink()) throw unsafe(`${e} is a symbolic link. Nothing was deleted`);
-  for (const e of entries) if (e !== MARKER_NAME) fs.rmSync(path.join(out, e), { recursive: true, force: true });
+  if (!marker || marker.id !== MARKER_ID || !Array.isArray(marker.files)) throw unsafe('its marker file is not a Clay hosted preview marker for this version. Nothing was deleted');
+  const listed = new Set();
+  for (const f of marker.files) {
+    if (typeof f !== 'string' || !f || f.startsWith('/') || f.includes('\\') || f.split('/').some((x) => x === '' || x === '.' || x === '..') || f === MARKER_NAME) throw unsafe('its marker lists an invalid path. Nothing was deleted');
+    listed.add(f);
+  }
+  const listedDirs = new Set();
+  for (const f of listed) { const parts = f.split('/'); for (let i = 1; i < parts.length; i++) listedDirs.add(parts.slice(0, i).join('/')); }
+  const found = walkNoFollow(out).filter((e) => e.rel !== MARKER_NAME);
+  const bad = [];
+  for (const e of found) {
+    if (e.type === 'symlink' || e.type === 'other') bad.push(`${e.rel} (${e.type === 'symlink' ? 'symbolic link' : 'not a regular file'})`);
+    else if (e.type === 'file' && !listed.has(e.rel)) bad.push(`${e.rel} (unexpected file)`);
+    else if (e.type === 'dir' && !listedDirs.has(e.rel)) bad.push(`${e.rel}/ (unexpected folder)`);
+  }
+  if (bad.length) throw unsafe(`it contains entries this tool did not generate: ${bad.slice(0, 5).join(', ')}${bad.length > 5 ? `, and ${bad.length - 5} more` : ''}. Nothing was deleted`);
+  return { files: found.filter((e) => e.type === 'file').map((e) => e.abs), dirs: found.filter((e) => e.type === 'dir').map((e) => e.abs).sort((x, y) => y.length - x.length) };
+}
+
+// The only place anything is deleted: individually verified files, then folders that are then empty.
+// There is no recursive removal anywhere in this script.
+function prepareOutDir(out) {
+  if (!fs.existsSync(out)) { fs.mkdirSync(out, { recursive: true }); writeMarker(out); return; }
+  const entries = fs.readdirSync(out);
+  if (entries.length === 0) { writeMarker(out); return; }
+  if (!entries.includes(MARKER_NAME)) throw unsafe('it already exists, is not empty, and was not created by this tool (no marker file). Choose a new or empty folder');
+  const plan = planCleanup(out);   // every descendant checked before the first deletion
+  for (const f of plan.files) fs.unlinkSync(f);
+  for (const d of plan.dirs) fs.rmdirSync(d);
+  writeMarker(out);
 }
 
 export function buildHosted({ outDir = DEFAULT_OUT, repoRoot = REPO_ROOT } = {}) {
@@ -271,7 +316,8 @@ export function buildHosted({ outDir = DEFAULT_OUT, repoRoot = REPO_ROOT } = {})
   // A seed name may still appear inside general advice prose; what must be gone is any quoted record literal.
   for (const n of originalNames) for (const q of ["'", '"', '`']) if (s.includes(q + n + q)) throw new Error(`hosted page still contains an original seed record: ${n}`);
 
-  prepareOutDir(out);   // the only deletion, and only inside a folder carrying this tool's marker
+  prepareOutDir(out);   // the only deletion: manifest-checked files, never recursive
+  try {
   fs.writeFileSync(path.join(out, 'index.html'), s);
   fs.writeFileSync(path.join(out, '_headers'), HEADERS);
   fs.writeFileSync(path.join(out, 'robots.txt'), ROBOTS);
@@ -297,6 +343,9 @@ export function buildHosted({ outDir = DEFAULT_OUT, repoRoot = REPO_ROOT } = {})
   };
   fs.writeFileSync(path.join(out, 'build-info.json'), JSON.stringify(info, null, 2) + '\n');
   return { outDir: out, info, bytes: s.length };
+  } finally {
+    writeMarker(out, listGenerated(out));   // exact manifest of what this build wrote, even if it failed part-way
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
