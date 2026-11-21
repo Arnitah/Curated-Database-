@@ -209,7 +209,7 @@ test('[integration] product-specific directions and provenance are saved and dis
     assert.match(text, /Product-specific instructions come first/);
     assert.match(text, /Do not use with strong retinoids in the same routine\./);
     assert.match(text, /Manufacturer directions not on file for: Synthetic retinol serum/);
-    assert.ok(text.indexOf('Product-specific instructions come first') < text.indexOf('General screen · Use with care'), 'manufacturer information is shown before generic screening');
+    assert.equal(await page.locator('#main .ii-instructions').evaluate(el => { const pair = document.querySelector('#main .ii-pair'); return !!pair && !!(el.compareDocumentPosition(pair) & Node.DOCUMENT_POSITION_FOLLOWING); }), true, 'product-specific instructions precede generic screening in the rendered DOM');
     assert.equal(await page.locator('a[href="https://example.test/acid-directions"]').count(), 1);
     assert.equal(await page.locator('a[href="https://example.test/acid-product"]').count(), 1);
 
