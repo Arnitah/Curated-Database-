@@ -4093,6 +4093,625 @@
         "cc": "VN",
         "site": "D'Net Multistory Concept"
       }
+    },
+    {
+      "id": "xinu-brand-origin-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Xinú identifies itself as a Mexican fragrance house; its company profile records a 2016 founding and Mexico City headquarters. No founding city is asserted here.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mx.linkedin.com/company/xinu",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Mexico",
+        "cc": "MX"
+      }
+    },
+    {
+      "id": "xinu-legal-base-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Xinú's official terms identify Botanicaromantica, S.A. de C.V. as the Mexican company operating the site, with its place of business at Alejandro Dumas 161, Polanco, Mexico City and Mexican taxpayer registration BOT150609FX8.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://xinuperfumes.com/pages/terms-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mexico City",
+        "region": "Miguel Hidalgo",
+        "country": "Mexico",
+        "cc": "MX",
+        "entity": "Botanicaromantica, S.A. de C.V."
+      }
+    },
+    {
+      "id": "xinu-commercial-base-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Xinú's company profile lists its headquarters in Miguel Hidalgo, Mexico City, and its primary location at Alejandro Dumas 161, Polanco.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mx.linkedin.com/company/xinu",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mexico City",
+        "region": "Miguel Hidalgo",
+        "country": "Mexico",
+        "cc": "MX"
+      }
+    },
+    {
+      "id": "xinu-retail-mexicocity-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official contact page lists Xinú's Polanco boutique at Alejandro Dumas 161, Mexico City.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://xinu.mx/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mexico City",
+        "region": "Miguel Hidalgo",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Xinú Polanco"
+      }
+    },
+    {
+      "id": "xinu-retail-merida-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official contact page lists a Xinú retail location at Paseo de Montejo 498 in Mérida, Yucatán.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://xinu.mx/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mérida",
+        "region": "Yucatán",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Xinú Mérida"
+      }
+    },
+    {
+      "id": "xinu-retail-san-miguel-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official contact page lists a Xinú retail location at Calle Hidalgo 19 in San Miguel de Allende, Guanajuato.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://xinu.mx/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "San Miguel de Allende",
+        "region": "Guanajuato",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Xinú San Miguel de Allende"
+      }
+    },
+    {
+      "id": "xinu-retail-oaxaca-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Xinú announced its Oaxaca store at Francisco I. Madero 129, Centro, Oaxaca de Juárez.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mx.linkedin.com/company/xinu",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Oaxaca de Juárez",
+        "region": "Oaxaca",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Xinú Oaxaca"
+      }
+    },
+    {
+      "id": "xinu-retail-tokyo-typed-1",
+      "house": "xinu",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Xinú announced the opening of its Tokyo space at 3-14-6 Kita-Aoyama, Minato City.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mx.linkedin.com/company/xinu",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Minato City",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Xinú Tokyo"
+      }
+    },
+    {
+      "id": "coqui-coqui-brand-origin-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Independent specialist coverage traces the brand's beginnings to the Yucatán Peninsula, where Nicolas Malleville's first perfumery business and the couple's life around the region developed.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://lechercheurdeparfum.com/en/coqui-coqui-stores/",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Yucatán Peninsula",
+        "country": "Mexico",
+        "cc": "MX"
+      },
+      "open": "The official brand page dates the perfumeria's founding to 2003 but does not state a founding city; the Yucatán origin is retained as a regional secondary-source account."
+    },
+    {
+      "id": "coqui-coqui-formulation-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Yucatán Today describes La Perfumería in Valladolid as the laboratory where Coqui Coqui fragrances begin and are created.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://yucatantoday.com/en/blog/coqui-coqui-the-essence-of-yucatan",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Valladolid",
+        "region": "Yucatán",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "La Perfumería"
+      }
+    },
+    {
+      "id": "coqui-coqui-retail-valladolid-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official Mexico location page lists La Perfumería in Valladolid.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.coquicoqui.com/visitusmexico",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Valladolid",
+        "region": "Yucatán",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "La Perfumería"
+      }
+    },
+    {
+      "id": "coqui-coqui-retail-coba-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official Mexico location page lists Papolchac at Cobá.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.coquicoqui.com/visitusmexico",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Cobá",
+        "region": "Quintana Roo",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Papolchac"
+      }
+    },
+    {
+      "id": "coqui-coqui-retail-merida-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official Mexico location page lists L'Épicerie in Mérida.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.coquicoqui.com/visitusmexico",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mérida",
+        "region": "Yucatán",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "L'Épicerie"
+      }
+    },
+    {
+      "id": "coqui-coqui-retail-izamal-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official Mexico location page lists Casa de los Santos in Izamal.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.coquicoqui.com/visitusmexico",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Izamal",
+        "region": "Yucatán",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Casa de los Santos"
+      }
+    },
+    {
+      "id": "coqui-coqui-retail-guadalajara-typed-1",
+      "house": "coqui-coqui",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official Mexico location page lists Casa Libertad in Guadalajara.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.coquicoqui.com/visitusmexico",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Guadalajara",
+        "region": "Jalisco",
+        "country": "Mexico",
+        "cc": "MX",
+        "site": "Casa Libertad"
+      }
+    },
+    {
+      "id": "fueguia-1833-brand-origin-typed-1",
+      "house": "fueguia-1833",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Fueguia's official site states that the artistic and scientific project was founded in Buenos Aires in 2010 by Julian Bedel.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fueguia.com/fueguia-1833",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "cc": "AR"
+      }
+    },
+    {
+      "id": "fueguia-1833-commercial-base-typed-1",
+      "house": "fueguia-1833",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Fueguia's official site identifies its current headquarters in Milan, Italy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fueguia.com/fueguia-1833",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Milan",
+        "region": "Lombardy",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "fueguia-1833-formulation-typed-1",
+      "house": "fueguia-1833",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Fueguia states that each perfume is formulated at its own laboratory in Milan.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fueguia.com/fueguia-1833",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Milan",
+        "region": "Lombardy",
+        "country": "Italy",
+        "cc": "IT",
+        "site": "Fueguia 1833 laboratory"
+      }
+    },
+    {
+      "id": "fueguia-1833-manufacturing-typed-1",
+      "house": "fueguia-1833",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Fueguia states that its limited-edition perfumes are produced at its own laboratory in Milan.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fueguia.com/fueguia-1833",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Milan",
+        "region": "Lombardy",
+        "country": "Italy",
+        "cc": "IT",
+        "site": "Fueguia 1833 laboratory"
+      }
+    },
+    {
+      "id": "natura-brand-origin-typed-1",
+      "house": "natura",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Natura's official investor-relations history states that Luiz Seabra founded the company in São Paulo in 1969.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ri.natura.com.br/en/company/history/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "São Paulo",
+        "region": "São Paulo",
+        "country": "Brazil",
+        "cc": "BR"
+      }
+    },
+    {
+      "id": "natura-manufacturing-typed-1",
+      "house": "natura",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Natura's official history says the Cajamar complex, inaugurated in 2001, includes factories, offices and an integrated production operation.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ri.natura.com.br/en/company/history/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Cajamar",
+        "region": "São Paulo",
+        "country": "Brazil",
+        "cc": "BR",
+        "site": "Espaço Natura"
+      }
+    },
+    {
+      "id": "natura-formulation-typed-1",
+      "house": "natura",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Natura's official history identifies a research centre within the integrated Cajamar complex, alongside factories and offices.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ri.natura.com.br/en/company/history/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Cajamar",
+        "region": "São Paulo",
+        "country": "Brazil",
+        "cc": "BR",
+        "site": "Espaço Natura research centre"
+      }
+    },
+    {
+      "id": "zoologist-brand-origin-typed-1",
+      "house": "zoologist",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Zoologist describes itself as a proud Canadian perfume company founded by Victor Wong in 2013; this records country of origin without asserting a founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.zoologistperfumes.com/pages/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "zoologist-commercial-base-typed-1",
+      "house": "zoologist",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Zoologist's official About page identifies the company as located in Toronto, Canada.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.zoologistperfumes.com/pages/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Toronto",
+        "region": "Ontario",
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "imaginary-authors-commercial-base-typed-1",
+      "house": "imaginary-authors",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Specialist perfumery retailer American Perfumer describes Imaginary Authors as based in Portland, Oregon.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://american-perfumer.com/collections/josh-meyer",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Portland",
+        "region": "Oregon",
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "The official brand About page does not publish a city address; Portland is retailer-reported and has not been confirmed against a company registry."
+    },
+    {
+      "id": "goldfield-banks-brand-origin-typed-1",
+      "house": "goldfield-banks",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Goldfield & Banks' official 2026 profile says the Australian fragrance house was founded in Sydney in 2016 by Dimitri Weber.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.goldfieldandbanks.com/blogs/news/the-nightly-australian-perfume-the-world-wanted",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "Australia",
+        "cc": "AU"
+      }
+    },
+    {
+      "id": "goldfield-banks-commercial-base-typed-1",
+      "house": "goldfield-banks",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The company's official LinkedIn profile lists Sydney, New South Wales as its headquarters and primary location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://au.linkedin.com/company/goldfield-banks-australia",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "Australia",
+        "cc": "AU"
+      }
+    },
+    {
+      "id": "goldfield-banks-legal-base-typed-1",
+      "house": "goldfield-banks",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Goldfield & Banks' official privacy policy identifies A Fragrance State of Mind Pty Ltd (ABN 22 613 075 979) and lists its registered address at Unit 4/171 William Street, Darlinghurst, NSW.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.goldfieldandbanks.com/policies/privacy-policy",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "Australia",
+        "cc": "AU",
+        "entity": "A Fragrance State of Mind Pty Ltd"
+      }
+    },
+    {
+      "id": "goldfield-banks-formulation-typed-1",
+      "house": "goldfield-banks",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The brand says it creates its perfume oil blends in Australia using Australian and global essences.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.goldfieldandbanks.com/pages/faqs",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Australia",
+        "cc": "AU"
+      },
+      "open": "The FAQ does not identify a specific Australian city for blending."
+    },
+    {
+      "id": "goldfield-banks-filling-typed-1",
+      "house": "goldfield-banks",
+      "kind": "claim",
+      "topic": "filling",
+      "text": "The brand says its perfume oil blends are sent to France to be diluted in alcohol and bottled.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.goldfieldandbanks.com/pages/faqs",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The FAQ identifies France as the dilution and bottling country but does not name the facility or city."
+    },
+    {
+      "id": "hiram-green-founder-origin-typed-1",
+      "house": "hiram-green",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Hiram Green's official biography identifies him as a Canadian perfumer.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hiramgreen.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "hiram-green-studio-typed-1",
+      "house": "hiram-green",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Hiram Green says he lives and works just outside Amsterdam in the Dutch countryside and develops fragrances in his own studio.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hiramgreen.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Netherlands",
+        "cc": "NL",
+        "site": "Hiram Green studio"
+      },
+      "open": "The official biography does not name the municipality; only the Netherlands and the area just outside Amsterdam are established."
+    },
+    {
+      "id": "hiram-green-formulation-typed-1",
+      "house": "hiram-green",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Hiram Green says every fragrance is developed in small batches in his studio in the Netherlands.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hiramgreen.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Netherlands",
+        "cc": "NL",
+        "site": "Hiram Green studio"
+      }
+    },
+    {
+      "id": "hiram-green-manufacturing-typed-1",
+      "house": "hiram-green",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Hiram Green says every fragrance is handcrafted in small batches in his studio in the Netherlands.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hiramgreen.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Netherlands",
+        "cc": "NL",
+        "site": "Hiram Green studio"
+      }
+    },
+    {
+      "id": "borom-retail-bangkok-typed-1",
+      "house": "borom",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "CNA Lifestyle reports Borom outlets at CentralWorld, Central Ladprao and ICONSIAM in Bangkok.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://cnalifestyle.channelnewsasia.com/style-beauty/thai-perfume-brands-470241",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      },
+      "open": "This establishes retail presence only; no brand headquarters or manufacturing site was established."
+    },
+    {
+      "id": "reunrom-retail-bangkok-typed-1",
+      "house": "reunrom",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "REUNROM's official store locator identifies its Song Wat flagship store in Bangkok and lists additional Bangkok department-store locations.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://reunrom.com/pages/store-locator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH",
+        "site": "REUNROM Song Wat flagship"
+      }
     }
   ]
 }
