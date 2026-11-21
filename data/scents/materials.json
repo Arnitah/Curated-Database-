@@ -190,9 +190,65 @@
      "cc": "ID",
      "lat": -2.0,
      "lon": 121.0
+    },
+    {
+     "place": "Aceh Selatan, Indonesia (Tapaktuan district locator)",
+     "cc": "ID",
+     "lat": 3.25568480860649,
+     "lon": 97.17590001283426,
+     "precision": "district-locator",
+     "basis": "BPS reports 88 tonnes of smallholder patchouli production in 2022; coordinates identify the district terminal, not a farm or plantation."
+    },
+    {
+     "place": "Aceh Jaya, Indonesia (Calang district locator)",
+     "cc": "ID",
+     "lat": 4.700256681423913,
+     "lon": 95.58808547388361,
+     "precision": "district-locator",
+     "basis": "BPS reports 36 tonnes of smallholder patchouli production in 2022; coordinates identify the district terminal, not a farm or plantation."
+    },
+    {
+     "place": "Aceh Barat, Indonesia (Meulaboh district locator)",
+     "cc": "ID",
+     "lat": 4.14943538370115,
+     "lon": 96.12597415639168,
+     "precision": "district-locator",
+     "basis": "BPS reports 22 tonnes of smallholder patchouli production in 2022; coordinates identify the district terminal, not a farm or plantation."
+    },
+    {
+     "place": "Gayo Lues, Indonesia (Blangkejeren district locator)",
+     "cc": "ID",
+     "lat": 4.003474793980929,
+     "lon": 97.33945047366312,
+     "precision": "district-locator",
+     "basis": "BPS reports 14 tonnes of smallholder patchouli production in 2022; coordinates identify the district terminal, not a farm or plantation."
+    },
+    {
+     "place": "Aceh Barat Daya, Indonesia (Blangpidie district locator)",
+     "cc": "ID",
+     "lat": 3.738003413125584,
+     "lon": 96.83806548695578,
+     "precision": "district-locator",
+     "basis": "BPS reports 4 tonnes of smallholder patchouli production in 2022; coordinates identify the district terminal, not a farm or plantation."
     }
    ],
-   "latin": "Pogostemon cablin"
+   "latin": "Pogostemon cablin",
+   "evidence": [
+    {
+     "claim": "Aceh is a documented patchouli-producing province; selected district production volumes are from 2022 smallholder statistics.",
+     "source": "BPS Aceh, Provinsi Aceh Dalam Angka 2025, Table 5.3.44, pp. 346",
+     "url": "https://web-api.bps.go.id/download.php?f=Nqe2FN65C2MS9rkuuKvDv2FSYndvMnluVXIxYy9kZjNUZG5ha3ZoMmlDWTJRWCtnY0U5bkU5eEpuV1diWUljTzd1QUZ6MDFxWXFNcU0rSDJ3U3ZyakNibVpGWmxXV2U2Z1c1NFl1THFoeWluWTBTNnRuOWJZbGVwTk1yVkdXWVdldk4ycHA1c0JpSmFBcVY2VnFpNGVrRDRpWThVamNDRUtSWGJ4aGhjdDUyVWpKOTRMMGdYZ3dzOXBmZEUzSFQ0UEt2anB1T01KYWNCVFdGWjdscURvZ0dhclpIdVBPOGp1OFNqWmllY0lmdHNlUHl3d01lSDlpdWpZaUU2cHJ3OXMxTDF5dFpEUm91eVcyaXc%3D",
+     "published": "2025",
+     "data_year": 2022
+    },
+    {
+     "claim": "Map markers use district-terminal coordinates as district-level locators, not farm or plantation coordinates.",
+     "source": "Aceh Government, Terminal reference directory",
+     "url": "https://sapa.acehprov.go.id/Referensi/Terminal",
+     "accessed": "2026-11-18"
+    }
+   ],
+   "originNote": "Aceh is an additional documented production region. The five Aceh markers are district-terminal locator points, not mapped farms; their production evidence is for 2022 and the selected districts are not an exhaustive list of all Aceh production."
   },
   {
    "id": "sandalwood",
