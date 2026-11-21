@@ -5839,6 +5839,656 @@
         "cc": "IN",
         "site": "Angadi Galleria"
       }
+    },
+    {
+      "id": "neesh-legal-base-typed-1",
+      "house": "neesh",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "NEESH's official contact page identifies NEESH Perfumes Private Limited and lists its address at Plot 31, HSIIDC Industrial Estate, Jagadhari Road, Ambala, Haryana.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://neeshperfumes.com/pages/support",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ambala",
+        "region": "Haryana",
+        "country": "India",
+        "cc": "IN",
+        "entity": "NEESH Perfumes Private Limited"
+      }
+    },
+    {
+      "id": "neesh-commercial-base-ambala-typed-1",
+      "house": "neesh",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "NEESH's company profile lists Ambala, Haryana as its headquarters and primary location in India.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://in.linkedin.com/company/neesh-perfumes",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ambala",
+        "region": "Haryana",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "neesh-commercial-base-paris-typed-1",
+      "house": "neesh",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "NEESH's official About page says the house has headquarters in Paris as well as India; this is recorded as a separate Paris commercial base, without inferring a legal entity or street address there.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://neeshperfumes.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand states a Paris headquarters but does not publish a Paris street address or legal entity on this page."
+    },
+    {
+      "id": "neesh-manufacturing-kannauj-typed-1",
+      "house": "neesh",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "NEESH says its traditional attar oils are distilled in Kannauj by M.L. Ramnarain Perfumers, a specialist partner; this is outsourced partner production, not NEESH's own factory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://neeshperfumes.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Kannauj",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The source attributes traditional attar distillation to a named partner; it does not say all NEESH perfumes are produced in Kannauj."
+    },
+    {
+      "id": "perfumatory-commercial-base-typed-1",
+      "house": "the-perfumatory",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The Perfumatory's company profile lists Mumbai, Maharashtra as its headquarters and primary location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://in.linkedin.com/company/the-perfumatory",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mumbai",
+        "region": "Maharashtra",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The brand's website currently describes an online-only payment model and does not publish a street address; Mumbai is the self-reported company-profile location."
+    },
+    {
+      "id": "perfumatory-retail-india-typed-1",
+      "house": "the-perfumatory",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The Perfumatory operates an online fragrance shop selling in Indian rupees; its own site says it currently accepts online payments only and does not offer cash on delivery.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://theperfumatory.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "Online retail channel only; no physical retail location is established."
+    },
+    {
+      "id": "saff-co-retail-bandung-typed-1",
+      "house": "saff-and-co",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SAFF & Co.'s official offline-store page lists its Paskal 23 store in Bandung.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://saffnco.com/pages/offline-store",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bandung",
+        "region": "West Java",
+        "country": "Indonesia",
+        "cc": "ID",
+        "site": "SAFF & Co. Paskal 23"
+      }
+    },
+    {
+      "id": "saff-co-retail-surabaya-typed-1",
+      "house": "saff-and-co",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SAFF & Co.'s official offline-store page lists its store at Pakuwon Mall in Surabaya.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://saffnco.com/pages/offline-store",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Surabaya",
+        "region": "East Java",
+        "country": "Indonesia",
+        "cc": "ID",
+        "site": "SAFF & Co. Pakuwon Mall"
+      }
+    },
+    {
+      "id": "saff-co-retail-bali-typed-1",
+      "house": "saff-and-co",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SAFF & Co.'s official offline-store page lists a store at Beachwalk Mall in Kuta, Bali.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://saffnco.com/pages/offline-store",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Kuta",
+        "region": "Bali",
+        "country": "Indonesia",
+        "cc": "ID",
+        "site": "SAFF & Co. Beachwalk"
+      }
+    },
+    {
+      "id": "saff-co-retail-medan-typed-1",
+      "house": "saff-and-co",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SAFF & Co.'s official offline-store page lists its store at Sun Plaza in Medan.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://saffnco.com/pages/offline-store",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Medan",
+        "region": "North Sumatra",
+        "country": "Indonesia",
+        "cc": "ID",
+        "site": "SAFF & Co. Sun Plaza"
+      }
+    },
+    {
+      "id": "sifr-aromatics-brand-origin-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Sifr Aromatics' official About page says the independent niche perfumery was established in Singapore in 2010 by Johari Kazura.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "cc": "SG"
+      }
+    },
+    {
+      "id": "sifr-aromatics-founder-origin-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Sifr's official biography describes Johari Kazura as a third-generation Singaporean perfumer.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/pages/the-perfumer",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Singapore",
+        "cc": "SG"
+      }
+    },
+    {
+      "id": "sifr-aromatics-commercial-base-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Sifr Aromatics lists its business address at 42 Arab Street, Singapore 199741.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "cc": "SG"
+      }
+    },
+    {
+      "id": "sifr-aromatics-studio-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Sifr identifies its atelier in a 19th-century heritage shophouse at 42 Arab Street in Kampong Gelam, Singapore.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "cc": "SG",
+        "site": "Sifr Aromatics atelier"
+      }
+    },
+    {
+      "id": "sifr-aromatics-formulation-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Sifr says its master perfumers locally blend its small-batch aromatic products in Singapore.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "cc": "SG",
+        "site": "Sifr Aromatics atelier"
+      }
+    },
+    {
+      "id": "sifr-aromatics-retail-typed-1",
+      "house": "sifr-aromatics",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Sifr's official contact page lists its walk-in perfumery at 42 Arab Street, Singapore.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sifr.sg/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "cc": "SG",
+        "site": "Sifr Aromatics 42 Arab Street"
+      }
+    },
+    {
+      "id": "afnan-brand-origin-typed-1",
+      "house": "afnan",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Afnan's official careers site says the fragrance house was founded in Ajman, UAE in 2007.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://careers.afnan.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ajman",
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "afnan-commercial-base-typed-1",
+      "house": "afnan",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Afnan's official careers site identifies Ajman as the company's headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://careers.afnan.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ajman",
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "afnan-legal-base-typed-1",
+      "house": "afnan",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Afnan's official terms identify AFNAN PERFUMES LLC and list its company address in Al Jurf Industrial Area 1, Ajman, UAE.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://afnan.com/policies/terms-of-service",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ajman",
+        "region": "Al Jurf Industrial Area 1",
+        "country": "United Arab Emirates",
+        "cc": "AE",
+        "entity": "AFNAN PERFUMES LLC"
+      }
+    },
+    {
+      "id": "afnan-manufacturing-typed-1",
+      "house": "afnan",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Afnan's official product legal information identifies AFNAN PERFUMES LLC as the manufacturer and gives its address in Al Jurf Industrial Area 1, Ajman, UAE.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://india.afnan.com/products/supremacy-incense",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ajman",
+        "region": "Al Jurf Industrial Area 1",
+        "country": "United Arab Emirates",
+        "cc": "AE",
+        "entity": "AFNAN PERFUMES LLC"
+      },
+      "open": "The product page names the manufacturer and address but does not state whether every Afnan SKU is produced at this site."
+    },
+    {
+      "id": "universal-flowering-legal-base-canada-typed-1",
+      "house": "universal-flowering",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Universal Flowering's official contact information identifies a Canadian entity, Universal Flowering Perfumes/Parfums Inc.; a Canadian federal corporation registry mirror lists the corporation at 300-204 Rue du Saint-Sacrement, Montréal, Québec.",
+      "evidence": "database",
+      "strength": "C",
+      "src": "https://federalcorporation.ca/corporation?address=300-204+rue+du+Saint-Sacrement",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Montréal",
+        "region": "Québec",
+        "country": "Canada",
+        "cc": "CA",
+        "entity": "Parfums Universal Flowering Inc."
+      },
+      "open": "The address comes from a third-party mirror of federal corporate data; confirm current registered office through Corporations Canada before treating as definitive."
+    },
+    {
+      "id": "universal-flowering-legal-base-us-typed-1",
+      "house": "universal-flowering",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Universal Flowering's official contact information identifies a separate US entity, UNIVERSAL FLOWERING INC.; the page does not publish a US street address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.universalflowering.com/policies/contact-information",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "Country-level entity identification only; no US registered-office address is published."
+    },
+    {
+      "id": "monsillage-commercial-base-typed-1",
+      "house": "monsillage",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Monsillage's official website describes the independent perfume house as based in Montréal, Québec.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://monsillage.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Montréal",
+        "region": "Québec",
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "monsillage-studio-typed-1",
+      "house": "monsillage",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "The City of Montréal's design directory describes founder Isabelle Michaud working from a small perfume laboratory in Montréal.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://designmontreal.com/en/directory-designers/monsillage",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Montréal",
+        "region": "Québec",
+        "country": "Canada",
+        "cc": "CA",
+        "site": "Monsillage micro-laboratory"
+      }
+    },
+    {
+      "id": "monsillage-retail-montreal-typed-1",
+      "house": "monsillage",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Monsillage's official stockist page lists multiple Montréal-area retailers carrying its full collection.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://monsillage.com/pages/frontpage",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Montréal",
+        "region": "Québec",
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "curionoir-brand-origin-typed-1",
+      "house": "curionoir",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A specialist New Zealand retailer describes Curionoir as founded and created in 2011 by Tiffany Witehira; this records the house's country origin, not a founding city.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://simonjames.co.nz/collections/curionoir/made-in-nz",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "New Zealand",
+        "cc": "NZ"
+      },
+      "open": "The retailer confirms founder and founding year but does not state a city of founding."
+    },
+    {
+      "id": "curionoir-commercial-base-typed-1",
+      "house": "curionoir",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Curionoir's official contact page lists its perfumery at 76A Ponsonby Road, Grey Lynn, Auckland, New Zealand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.curionoir.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Auckland",
+        "region": "Auckland",
+        "country": "New Zealand",
+        "cc": "NZ"
+      }
+    },
+    {
+      "id": "curionoir-retail-typed-1",
+      "house": "curionoir",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Curionoir's official stockist page lists its flagship perfumery at 76A Ponsonby Road in Auckland.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.curionoir.com/pages/stockists",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Auckland",
+        "region": "Auckland",
+        "country": "New Zealand",
+        "cc": "NZ",
+        "site": "Curionoir flagship perfumery"
+      }
+    },
+    {
+      "id": "curionoir-manufacturing-typed-1",
+      "house": "curionoir",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "A specialist New Zealand retailer categorises Curionoir as a New Zealand-made perfumery; the brand's own site confirms hand-crafted products but does not name a production facility.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://simonjames.co.nz/collections/curionoir/made-in-nz",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "New Zealand",
+        "cc": "NZ"
+      },
+      "open": "Country-level, retailer-reported manufacturing only; no city or facility is established."
+    },
+    {
+      "id": "the-virtue-brand-origin-typed-1",
+      "house": "the-virtue",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The Virtue identifies its work as designed and made in New Zealand; no founding city is stated on the official About page.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://thevirtue.co.nz/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "New Zealand",
+        "cc": "NZ"
+      }
+    },
+    {
+      "id": "the-virtue-commercial-base-typed-1",
+      "house": "the-virtue",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The Virtue's official contact page lists its business address at 112 Devon Street West, New Plymouth, New Zealand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://thevirtue.co.nz/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New Plymouth",
+        "region": "Taranaki",
+        "country": "New Zealand",
+        "cc": "NZ"
+      }
+    },
+    {
+      "id": "the-virtue-retail-typed-1",
+      "house": "the-virtue",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The Virtue's official site identifies its store at 112 Devon Street West, New Plymouth.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://thevirtue.co.nz/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New Plymouth",
+        "region": "Taranaki",
+        "country": "New Zealand",
+        "cc": "NZ",
+        "site": "The Virtue store"
+      }
+    },
+    {
+      "id": "the-virtue-manufacturing-typed-1",
+      "house": "the-virtue",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The Virtue says its products are handmade in New Plymouth, New Zealand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://thevirtue.co.nz/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New Plymouth",
+        "region": "Taranaki",
+        "country": "New Zealand",
+        "cc": "NZ"
+      },
+      "open": "This refers to finished-product hand-making/finishing; the brand separately says fragrance compounds are made in France."
+    },
+    {
+      "id": "the-virtue-formulation-typed-1",
+      "house": "the-virtue",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The Virtue's official FAQ states that its fragrances are compounded in France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://thevirtue.co.nz/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "diptyque-brand-origin-typed-1",
+      "house": "diptyque",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Diptyque's official history states that three artists brought the Maison to life in Paris in 1961, opening at 34 boulevard Saint-Germain.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.diptyqueparis.com/en-us/pages/the-story-of-diptyque",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "diptyque-legal-base-typed-1",
+      "house": "diptyque",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "France's official enterprise directory identifies DIPTYQUE SAS (SIREN 612 043 331) with registered office at 34 boulevard Saint-Germain, 75005 Paris.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://annuaire-entreprises.data.gouv.fr/entreprise/diptyque-612043331",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "DIPTYQUE SAS"
+      }
+    },
+    {
+      "id": "diptyque-commercial-base-typed-1",
+      "house": "diptyque",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official French enterprise directory lists Diptyque's registered head office at 34 boulevard Saint-Germain, Paris.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://annuaire-entreprises.data.gouv.fr/entreprise/diptyque-612043331",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "diptyque-retail-paris-typed-1",
+      "house": "diptyque",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Diptyque's official About page identifies 34 boulevard Saint-Germain in Paris as the birthplace of the Maison and its historic boutique.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://diptyqueparis.com/en-eu/pages/about-diptyque",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "site": "34 boulevard Saint-Germain boutique"
+      }
     }
   ]
 }
