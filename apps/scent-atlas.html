@@ -552,7 +552,7 @@ const CLASS_LABEL = { independent: "Independent house", artisan: "Artisan maker"
 const TOPIC_LABEL = { brand_origin: "Brand origin", founder_origin: "Founder origin", legal_base: "Legal base", commercial_base: "Operating base", studio: "Studio", formulation: "Formulation", manufacturing: "Manufacturing", filling: "Filling / bottling", assembly: "Assembly", sourcing: "Material sourcing", retail: "Retail location", hq: "Legacy: where it's based", made_in: "Legacy: where it's made", founder: "Who founded it", owner: "Who owns it", catalogue: "What it sells now", status: "Still trading?", history: "Its story" };
 const STR_LABEL = { A: "official or academic", B: "trusted press", C: "brand or lifestyle", D: "unsourced" };
 function claimsFor(key, isLead) { return OBS.filter((o) => o.kind === "claim" && o.topic && (isLead ? o.lead === key : o.house === key)); }
-function locationLabel(location) { return [location.site, location.city, location.region, location.country].filter(Boolean).join(", "); }
+function locationLabel(location) { return [location.entity, location.site, location.city, location.region, location.country].filter(Boolean).join(", "); }
 function houseLocationLine(h) {
   const origins = claimsFor(h.id).filter((o) => o.topic === "brand_origin" && o.location);
   if (origins.length) {
