@@ -68,6 +68,34 @@ test('[invariant] the adapter keeps what Clay knows and invents nothing: lists a
   }
 });
 
+test('[invariant] product identity and directions provenance pass through without being inferred', () => {
+  const source = {
+    ...R(21, 'Toner', 'Synthetic sourced toner', 'Aqua, Glycolic Acid'),
+    brand: 'Example Brand',
+    product_variant: 'Glycolic Toner 7%, 100 ml',
+    market: 'Canada',
+    identity_source: 'manufacturer',
+    identity_source_url: 'https://example.test/product',
+    identity_checked_at: '2026-11-21',
+    directions_text: 'Do not use with other direct acids in the same routine.',
+    directions_source: 'manufacturer',
+    directions_source_url: 'https://example.test/directions',
+    directions_checked_at: '2026-11-21',
+  };
+  const p = toEngineProduct(source);
+  assert.equal(p.brand, 'Example Brand');
+  assert.equal(p.product_variant, source.product_variant);
+  assert.equal(p.market, 'Canada');
+  assert.equal(p.identity_source, 'manufacturer');
+  assert.equal(p.identity_source_url, source.identity_source_url);
+  assert.equal(p.identity_checked_at, '2026-11-21');
+  assert.equal(p.directions_text, source.directions_text);
+  assert.equal(p.directions_source, 'manufacturer');
+  assert.equal(p.directions_source_url, source.directions_source_url);
+  assert.equal(p.directions_checked_at, '2026-11-21');
+  assert.deepEqual(p.clay_record, source, 'the original Clay record remains intact');
+});
+
 test('[invariant] status mapping: using, owned-not-using and finished map across; a wishlist item is never treated as in use', () => {
   assert.equal(toEngineProduct(RECS[0]).status, 'in_use');
   assert.equal(toEngineProduct(R(20, 'Toner', 'Synthetic', null, 'have')).status, 'owned_not_using');
@@ -152,4 +180,64 @@ test('[integration] My Shelf and Routine use the live shelf records; packaging v
   assert.equal(updated.inci, 'Aqua, Glycolic Acid (7%), Glycerin, Panthenol');
   assert.deepEqual(h.errors, [], 'no browser runtime errors');
   await h.close();
+});
+
+test('[integration] product-specific directions and provenance are saved and displayed ahead of generic ingredient screening', async () => {
+  const shelf = [
+    {
+      ...R(201, 'Toner', 'Synthetic sourced acid toner', 'Aqua, Glycolic Acid (7%), Glycerin'),
+      brand: 'Example Brand',
+      product_variant: '7% Glycolic Toner, 100 ml',
+      market: 'Canada',
+      identity_source: 'manufacturer',
+      identity_source_url: 'https://example.test/acid-product',
+      identity_checked_at: '2026-11-21',
+      directions_text: 'Do not use with strong retinoids in the same routine.',
+      directions_source: 'manufacturer',
+      directions_source_url: 'https://example.test/acid-directions',
+      directions_checked_at: '2026-11-21',
+    },
+    R(202, 'Serum', 'Synthetic retinol serum', 'Aqua, Retinol 0.3%, Squalane'),
+  ];
+  const h = await openClay(browser, srv.base, { noClaude: true, local: { 'clay-products': shelf } });
+  try {
+    const page = h.page;
+    await page.locator('#nav button[data-v="shelf"]').click();
+    await page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+    let text = await page.locator('#main').innerText();
+    assert.match(text, /Product-specific instructions come first/);
+    assert.match(text, /Do not use with strong retinoids in the same routine\./);
+    assert.match(text, /Manufacturer directions not on file for: Synthetic retinol serum/);
+    assert.ok(text.indexOf('Product-specific instructions come first') < text.indexOf('General screen · Use with care'), 'manufacturer information is shown before generic screening');
+    assert.equal(await page.locator('a[href="https://example.test/acid-directions"]').count(), 1);
+    assert.equal(await page.locator('a[href="https://example.test/acid-product"]').count(), 1);
+
+    await page.locator('[data-act="mpopen"][data-v="202"]').click();
+    await page.locator('.mp-ii-details summary').click();
+    await page.locator('#iiBrand').fill('Second Example Brand');
+    await page.locator('#iiVariant').fill('Retinol 0.3%, 30 ml');
+    await page.locator('#iiMarket').fill('Canada');
+    await page.locator('#iiIdentitySource').selectOption('manufacturer');
+    await page.locator('#iiIdentityUrl').fill('https://example.test/retinol-product');
+    await page.locator('#iiIdentityDate').fill('2026-11-21');
+    await page.locator('#iiDirections').fill('Use only as directed. Do not combine with other retinoids.');
+    await page.locator('#iiDirectionsSource').selectOption('manufacturer');
+    await page.locator('#iiDirectionsUrl').fill('https://example.test/retinol-directions');
+    await page.locator('#iiDirectionsDate').fill('2026-11-21');
+    await page.locator('[data-act="iisave"][data-v="202"]').click();
+    const saved = (await h.mp()).find(p => p.id === 202);
+    assert.equal(saved.brand, 'Second Example Brand');
+    assert.equal(saved.product_variant, 'Retinol 0.3%, 30 ml');
+    assert.equal(saved.market, 'Canada');
+    assert.equal(saved.identity_source_url, 'https://example.test/retinol-product');
+    assert.equal(saved.directions_text, 'Use only as directed. Do not combine with other retinoids.');
+    assert.equal(saved.directions_source_url, 'https://example.test/retinol-directions');
+    assert.equal(saved.directions_checked_at, '2026-11-21');
+    text = await page.locator('#main').innerText();
+    assert.match(text, /Use only as directed\. Do not combine with other retinoids\./);
+    assert.match(text, /Second Example Brand/);
+    assert.deepEqual(h.errors, [], 'no browser runtime errors');
+  } finally {
+    await h.close();
+  }
 });
