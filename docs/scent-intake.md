@@ -40,8 +40,17 @@ Facts about who a house is go in `data/scents/observations.json` as `kind: "clai
 
 | topic | what it records |
 | --- | --- |
-| `hq` | where the house is based |
-| `made_in` | where it is formulated, made or filled |
+| `brand_origin` | where the house itself was founded or created |
+| `founder_origin` | founder heritage / place of origin, not the house origin |
+| `legal_base` | registered legal entity or legal address |
+| `commercial_base` | principal operating or commercial base |
+| `studio` | perfumer, creative or brand studio |
+| `formulation` | where the composition is developed |
+| `manufacturing` | where the fragrance product is manufactured |
+| `filling` | where finished product is filled or bottled |
+| `sourcing` | where a named raw material is grown, harvested or sourced |
+| `retail` | official store, boutique, flagship or retail presence |
+| `hq` / `made_in` | legacy-only ambiguous topics; do not create new claims with these |
 | `founder` | who founded it |
 | `owner` | who owns it now (parent company, majority holder) |
 | `catalogue` | what it currently sells |
@@ -50,8 +59,13 @@ Facts about who a house is go in `data/scents/observations.json` as `kind: "clai
 
 Each topic claim needs `strength`: **A** official, registry, government or academic; **B** credible journalism or trade press; **C** brand self-description, retailer or lifestyle press; **D** unsourced. Add `published` (YYYY, YYYY-MM or YYYY-MM-DD) when the source shows a date, and `open` for anything still unresolved. `seen` is the access date. When two sources disagree, keep both and say which one stands and why.
 
+For every new geography topic, add `location: { country, cc, city?, region?, site? }` using an uppercase ISO 3166-1 alpha-2 `cc`. One observation is one source, one relationship and one place. Country-only facts are valid; do not guess a city. If a source establishes multiple sites, add one observation per site. Keep existing `hq` and `made_in` records as historical evidence until their source is re-reviewed; do not silently relabel them.
+
 Houses can carry an optional `class`: `independent`, `artisan`, `commercial` (part of a larger company), `contract-made`, `diaspora` (rooted in one place, made in another), `retailer` or `tradition`. Set it only when the evidence supports it.
 
-**Verified-house rule.** A house counts as verified only when `owner`, `made_in` and `catalogue` each have at least one claim at strength A or B that is not the brand's own site. The app shows this under "Where this comes from". A website alone never promotes a lead.
+**Verified-house rule.** A house counts as verified only when `owner`, `manufacturing` and `catalogue` each have at least one claim at strength A or B that is not the brand's own site. Formulation, filling, studio, sourcing and retail do not substitute for manufacturing. Legacy `made_in` claims do not count until their source has been reviewed and the relationship explicitly reclassified. The app shows this under "Where this comes from". A website alone never promotes a lead.
 
 Traditions take a `sources` list (`url`, `title`, `strength`, `published`, `accessed`) and a `verify` line for what is still unconfirmed. `scripts/build.mjs` checks all of these fields.
+
+
+See [Scent Atlas geography schema and migration plan](scent-geography.md) for the full relationship vocabulary, compatibility rules and migration sequence.
