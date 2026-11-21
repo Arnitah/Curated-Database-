@@ -7174,6 +7174,1011 @@
         "cc": "FR",
         "site": "Maison Crivelli flagship"
       }
+    },
+    {
+      "id": "floral-street-brand-origin-typed-1",
+      "house": "floral-street",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Floral Street's founder says the idea for the modern British fragrance brand came to her while walking through Covent Garden, London; this records the brand's conceptual origin, not its legal base.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://floralstreet.com/pages/help-faqs",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "floral-street-legal-base-typed-1",
+      "house": "floral-street",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "UK Companies House lists Floral Street Fragrances Limited at 4 Wharfe Mews, Wetherby, England, as its registered office.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/12167147",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Wetherby",
+        "region": "West Yorkshire",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "Floral Street Fragrances Limited"
+      }
+    },
+    {
+      "id": "floral-street-retail-london-typed-1",
+      "house": "floral-street",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Floral Street's official store/stockist listings include retail partners in London; the brand's name and concept are linked to Covent Garden.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://floralstreet.com/pages/store-locator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "ormonde-jayne-brand-origin-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Ormonde Jayne's official history traces the house's beginnings to London in 2000, with its first boutique opening in the Royal Arcade in 2001.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "ormonde-jayne-legal-base-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Ormonde Jayne's official terms identify Ormonde Jayne Limited (company number 04112155) with registered address 2 Park Village East, London NW1 7PX.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/terms-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "Ormonde Jayne Limited"
+      }
+    },
+    {
+      "id": "ormonde-jayne-commercial-base-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Ormonde Jayne's official contact and store pages identify its London business and flagship boutique in the Royal Arcade, Old Bond Street.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/store-finder",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "ormonde-jayne-retail-london-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official store finder lists Ormonde Jayne's flagship boutique at 16 The Royal Arcade, 28 Old Bond Street, London W1S 4SR.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/store-finder",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "Ormonde Jayne flagship"
+      }
+    },
+    {
+      "id": "ormonde-jayne-studio-london-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Ormonde Jayne's current homepage describes its own London laboratory as the place where it creates and manufactures its products.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "A separate official Our Story page says the studio is now in Kent; retain both reports until the brand clarifies whether these are separate sites or one page is stale."
+    },
+    {
+      "id": "ormonde-jayne-studio-kent-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Ormonde Jayne's official Our Story page says its studio is now located in Kent.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Kent",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "This conflicts with the current homepage's claim of an own London laboratory; it may indicate two sites or stale copy."
+    },
+    {
+      "id": "ormonde-jayne-manufacturing-london-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Ormonde Jayne's current homepage says it manufactures all products in its own London laboratory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "A separate official Our Story page says all products are made in the Kent studio; retain the conflict rather than selecting one location."
+    },
+    {
+      "id": "ormonde-jayne-manufacturing-kent-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Ormonde Jayne's official Our Story page says all products continue to be made in its studio, now located in Kent.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Kent",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "This conflicts with the current homepage's London laboratory claim; no reconciliation has been published."
+    },
+    {
+      "id": "ormonde-jayne-filling-kent-typed-1",
+      "house": "ormonde-jayne",
+      "kind": "claim",
+      "topic": "filling",
+      "text": "Ormonde Jayne's official Our Story page describes the Kent studio as the location where oils are matured, filtered and bottled.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormondejayne.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Kent",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "The same page conflicts with the homepage's London laboratory statement; keep the bottling location provisional."
+    },
+    {
+      "id": "miller-harris-brand-origin-typed-1",
+      "house": "miller-harris",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Miller Harris' official homepage states that the house was born in London in 2000.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.millerharris.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "miller-harris-legal-base-typed-1",
+      "house": "miller-harris",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "UK Companies House lists Miller Harris Fragrances Ltd (company number 12849282) with registered office at 86 Fetter Lane, London EC4A 1EN.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/12849282",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "Miller Harris Fragrances Ltd"
+      }
+    },
+    {
+      "id": "miller-harris-commercial-base-typed-1",
+      "house": "miller-harris",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Miller Harris' official contact information lists its London business address and the brand operates its principal boutiques in London.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.millerharris.com/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "miller-harris-retail-london-typed-1",
+      "house": "miller-harris",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Miller Harris' official store listings identify London boutiques and stockists, including its Monmouth Street and Covent Garden retail presence.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.millerharris.com/pages/our-stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "penhaligons-brand-origin-typed-1",
+      "house": "penhaligons",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Penhaligon's official history identifies the perfume house's London origin: William took over the Jermyn Street barbershop in 1870 and created Hammam Bouquet in 1872.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.penhaligons.com/uk/en/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "penhaligons-founder-origin-typed-1",
+      "house": "penhaligons",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Penhaligon's official history states that founder William H. Penhaligon was born in Penzance, Cornwall, in 1837.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.penhaligons.com/eu/en/penhaligons-past-and-present",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Penzance",
+        "region": "Cornwall",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "penhaligons-legal-base-typed-1",
+      "house": "penhaligons",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Penhaligon's official terms identify Penhaligon's Limited (company number 02110619) with registered office at Grainhouse, 6 Dryden Street, London WC2E 9NH.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.penhaligons.com/uk/en/terms-and-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "Penhaligon's Limited"
+      }
+    },
+    {
+      "id": "penhaligons-commercial-base-typed-1",
+      "house": "penhaligons",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Penhaligon's Limited is the official UK/EU order-fulfilment entity and has its registered office in London; the historic perfumery and current principal stores are also London-based.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.penhaligons.com/uk/en/terms-and-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "The company publishes a registered office and order-fulfilment role; it does not separately label this address as its operational headquarters."
+    },
+    {
+      "id": "penhaligons-retail-london-typed-1",
+      "house": "penhaligons",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Penhaligon's official store finder lists multiple London boutiques, including Jermyn Street and St James's locations.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.penhaligons.com/uk/en/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "region": "Greater London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "santa-maria-novella-brand-origin-typed-1",
+      "house": "santa-maria-novella",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Santa Maria Novella traces its institutional roots to the Dominican friars' infirmary in Florence in 1221; the house documents aromatic production from 1381 and later commercial establishment. This records Florence as the origin city, not 1221 as the modern company's incorporation date.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://eu.smnovella.com/pages/history",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Florence",
+        "region": "Tuscany",
+        "country": "Italy",
+        "cc": "IT"
+      },
+      "open": "The 1221 date refers to the religious institution's origins; commercial perfumery and the modern company developed later."
+    },
+    {
+      "id": "santa-maria-novella-legal-base-typed-1",
+      "house": "santa-maria-novella",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The Italian LEI record for Officina Profumo-Farmaceutica di Santa Maria Novella S.p.A. lists its legal address at Via della Scala 16, Florence.",
+      "evidence": "database",
+      "strength": "C",
+      "src": "https://lei-italy.infocamere.it/leii/ricerca",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Florence",
+        "region": "Tuscany",
+        "country": "Italy",
+        "cc": "IT",
+        "entity": "Officina Profumo-Farmaceutica di Santa Maria Novella S.p.A."
+      },
+      "open": "The address is from the LEI/InfoCamere data source; verify against the current Italian company-register extract before treating as definitive."
+    },
+    {
+      "id": "santa-maria-novella-commercial-base-typed-1",
+      "house": "santa-maria-novella",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Italmobiliare's official portfolio profile identifies Santa Maria Novella's headquarters in Florence.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.italmobiliare.it/en/portfolio/santa-maria-novella",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Florence",
+        "region": "Tuscany",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "santa-maria-novella-manufacturing-typed-1",
+      "house": "santa-maria-novella",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Santa Maria Novella's official heritage material says the house continues to manufacture its products in Florence, preserving its local production tradition.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://eu.smnovella.com/pages/made-in-florence",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Florence",
+        "region": "Tuscany",
+        "country": "Italy",
+        "cc": "IT"
+      },
+      "open": "The source identifies Florence as the production city but does not provide a separate current factory street address."
+    },
+    {
+      "id": "santa-maria-novella-retail-florence-typed-1",
+      "house": "santa-maria-novella",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official store locator lists the historic Officina Profumo-Farmaceutica boutique at Via della Scala 16, Florence.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://eu.smnovella.com/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Florence",
+        "region": "Tuscany",
+        "country": "Italy",
+        "cc": "IT",
+        "site": "Via della Scala 16 flagship"
+      }
+    },
+    {
+      "id": "xerjoff-brand-origin-typed-1",
+      "house": "xerjoff",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Xerjoff's official story says Sergio Momo and Dominique Salvo formally founded the perfume house in their hometown of Turin, Italy, in 2007.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.xerjoff.com/en-br/blogs/our-world/the-story-of-xerjoff",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Turin",
+        "region": "Piedmont",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "xerjoff-legal-base-typed-1",
+      "house": "xerjoff",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Xerjoff Group S.p.A.'s official legal information lists its registered office in Moncalieri, Metropolitan City of Turin, Italy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.xerjoff.com/pages/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Moncalieri",
+        "region": "Piedmont",
+        "country": "Italy",
+        "cc": "IT",
+        "entity": "Xerjoff Group S.p.A."
+      }
+    },
+    {
+      "id": "xerjoff-commercial-base-typed-1",
+      "house": "xerjoff",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Xerjoff's official company information lists its operational headquarters at Via Susa 242, Pianezza, in the Turin metropolitan area.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.xerjoff.com/pages/company-info",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Pianezza",
+        "region": "Piedmont",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "xerjoff-manufacturing-typed-1",
+      "house": "xerjoff",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Xerjoff identifies its fragrances as made in Italy, with its manufacturing and craft processes based in Italy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.xerjoff.com/pages/made-in-italy",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Italy",
+        "cc": "IT"
+      },
+      "open": "The brand does not name one single production city for all fragrances."
+    },
+    {
+      "id": "xerjoff-retail-turin-typed-1",
+      "house": "xerjoff",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Xerjoff's official store locator lists its Turin boutique in the city centre.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.xerjoff.com/pages/store-locator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Turin",
+        "region": "Piedmont",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "nasomatto-legal-base-typed-1",
+      "house": "nasomatto",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Nasomatto's official terms identify Nasomatto BV and list its address at Veemarkt 40, 1019 DD Amsterdam.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://nasomatto.com/pages/terms-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Amsterdam",
+        "region": "North Holland",
+        "country": "Netherlands",
+        "cc": "NL",
+        "entity": "Nasomatto BV"
+      }
+    },
+    {
+      "id": "nasomatto-commercial-base-typed-1",
+      "house": "nasomatto",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Nasomatto's official web store is operated by Nasomatto BV at Veemarkt 40, Amsterdam.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://nasomatto.com/pages/terms-conditions",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Amsterdam",
+        "region": "North Holland",
+        "country": "Netherlands",
+        "cc": "NL"
+      }
+    },
+    {
+      "id": "vilhelm-brand-origin-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Vilhelm Parfumerie's official About page describes the house as having New York roots, while distinguishing its current Paris creation and production network.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New York",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "The brand says 'New York roots' but does not identify a precise founding address or date in New York."
+    },
+    {
+      "id": "vilhelm-legal-base-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Vilhelm Parfumerie's official legal notice identifies VILHELM PARFUMERIE SAS with head office at 36 rue des Jeuneurs, 75002 Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.vilhelmparfumerie.com/pages/legal",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "VILHELM PARFUMERIE SAS"
+      }
+    },
+    {
+      "id": "vilhelm-commercial-base-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Vilhelm Parfumerie's official legal notice lists its head office in Paris, and its flagship boutique is also located in Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.vilhelmparfumerie.com/pages/legal",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "vilhelm-studio-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Vilhelm says its fragrances are created in Paris, France, in collaboration with renowned French perfumers.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "vilhelm-formulation-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Vilhelm states that its fragrances are created in Paris with perfumers Jérôme Épinette, Bertrand Duchaufour and Marc-Antoine Corticchiato.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "vilhelm-manufacturing-grasse-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Vilhelm says its perfumers are affiliated with fragrance manufacturers including Technicoflor and Robertet, whose roots are in Grasse, and who source, harvest, extract and transform raw materials into the final concentrate.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "region": "Provence-Alpes-Côte d'Azur",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand identifies its manufacturing partners' Grasse roots; it does not say every batch or every partner facility is in Grasse."
+    },
+    {
+      "id": "vilhelm-filling-central-france-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "filling",
+      "text": "Vilhelm's official FAQ says the fragrance concentrate is sent to a second factory in central France for maceration and bottling.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Central France",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand does not identify the specific city or factory address."
+    },
+    {
+      "id": "vilhelm-retail-paris-typed-1",
+      "house": "vilhelm-parfumerie",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Vilhelm's official store locator lists its Paris boutique at 58 rue Pierre Charron, 75008 Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vilhelmparfumerie.com/pages/store-locator-2",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "site": "Vilhelm Parfumerie Paris boutique"
+      }
+    },
+    {
+      "id": "mizensir-brand-origin-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Mizensir's official About page states that the family-run fragrance house was founded in 1999 by Alberto Morillas; official Geneva tourism identifies the house as founded in Geneva.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mizensirparfums.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "mizensir-legal-base-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "An official Georgian trademark-journal entry identifies MIZENSIR SA and lists its address at Chemin de la Pallanterie 11, CH-1252 Meinier, Switzerland.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.sakpatenti.gov.ge/media/publication_pdf/BL2218.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Meinier",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH",
+        "entity": "Mizensir SA"
+      },
+      "open": "This is the applicant address in an official trademark filing, not a current Swiss commercial-register extract."
+    },
+    {
+      "id": "mizensir-commercial-base-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Geneva Tourism identifies Mizensir as an independent Genevan perfumery and lists its boutique address at Rue Verdaine 4, 1204 Genève.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.geneve.com/en/shops/mizensir",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "mizensir-studio-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Mizensir says Alberto Morillas continues to write fragrance formulas by hand in his laboratory; the brand identifies Geneva as the location of its perfume production.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.mizensir.com/en/pages/savoir-faire",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "mizensir-formulation-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Mizensir says Alberto Morillas writes formulas by hand in his laboratory and that the brand's perfume production is in Geneva.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.mizensir.com/en/pages/savoir-faire",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "mizensir-manufacturing-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Mizensir's official interview states that its perfume production is in Geneva and its candles are produced in Switzerland in the company's own offices.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mizensirparfums.com/blogs/infos/double-m-mizensir-x-morillas",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "mizensir-retail-geneva-typed-1",
+      "house": "mizensir",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Geneva Tourism lists the Mizensir boutique at Rue Verdaine 4, 1204 Genève, Switzerland.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.geneve.com/en/shops/mizensir",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH",
+        "site": "Mizensir Geneva boutique"
+      }
+    },
+    {
+      "id": "bdk-parfums-brand-origin-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "BDK Parfums' official Maison page identifies the brand as a Parisian perfume house founded in 2016 by David Benedek.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "bdk-parfums-founder-origin-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "BDK Parfums' official biography identifies founder David Benedek as born and raised in Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "bdk-parfums-legal-base-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "BDK Parfums' official legal notice identifies BDK Parfums SAS and lists its registered office at 312 rue Saint-Honoré, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://bdkparfums.com/pages/mentions-legales",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "BDK Parfums SAS"
+      }
+    },
+    {
+      "id": "bdk-parfums-commercial-base-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "BDK Parfums' official company information lists its Paris address at 312 rue Saint-Honoré.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://bdkparfums.com/pages/mentions-legales",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "bdk-parfums-studio-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "BDK says its fragrance components are conceived, designed and developed in France within its own creative studio; the house and its founder are based in Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The page identifies France as the development country and Paris as the house location; it does not publish a separate studio street address."
+    },
+    {
+      "id": "bdk-parfums-formulation-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "BDK says each olfactive creation is developed through a dialogue between founder David Benedek and the perfumer, with components conceived and developed in France in the Maison's creative studio.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "bdk-parfums-manufacturing-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "BDK states that its fragrances are made in France, using French partners and supply chains.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "bdk-parfums-filling-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "filling",
+      "text": "BDK states that its fragrances are filled in the Cosmetic Valley of France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR",
+        "site": "Cosmetic Valley"
+      }
+    },
+    {
+      "id": "bdk-parfums-assembly-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "assembly",
+      "text": "BDK states that its fragrances are assembled in the Cosmetic Valley of France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.bdkparfums.com/pages/maison-bdk",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR",
+        "site": "Cosmetic Valley"
+      }
+    },
+    {
+      "id": "bdk-parfums-retail-paris-typed-1",
+      "house": "bdk-parfums",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "BDK Parfums' official store information lists its Paris boutique and retail presence in the city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://bdkparfums.com/pages/points-de-vente",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
     }
   ]
 }
