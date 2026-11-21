@@ -1,6 +1,6 @@
 export const GEO_TOPICS = Object.freeze(["brand_origin","founder_origin","legal_base","commercial_base","studio","formulation","manufacturing","filling","assembly","sourcing","retail"]);
 export const LEGACY_GEO_TOPICS = Object.freeze(["hq","made_in"]);
-const LOCATION_KEYS = new Set(["city","region","country","cc","site"]);
+const LOCATION_KEYS = new Set(["city","region","country","cc","site","entity"]);
 export function validateGeographyObservation(observation) {
   const errors = [];
   if (!observation || typeof observation !== "object" || Array.isArray(observation)) return ["observation must be an object"];
