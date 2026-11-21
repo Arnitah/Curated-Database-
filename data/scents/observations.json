@@ -3253,10 +3253,10 @@
       "house": "shiro",
       "kind": "claim",
       "topic": "brand_origin",
-      "text": "A Japanese government-backed Cool Japan case study says the brand began in Sunagawa, Hokkaido in 2009 under the name LAUREL and was renamed shiro in 2015, later styled SHIRO.",
+      "text": "SHIRO's official recruitment page identifies Sunagawa, Hokkaido as the birthplace of SHIRO and the place where the brand's activities are concentrated.",
       "evidence": "editorial",
       "strength": "B",
-      "src": "https://cjpf.jp/en/modelcase/?tag-id=22",
+      "src": "https://note.shiro-shiro.jp/n/ncf86373a5d68?hl=en",
       "seen": "2026-11-21",
       "location": {
         "city": "Sunagawa",
@@ -3264,7 +3264,7 @@
         "country": "Japan",
         "cc": "JP"
       },
-      "open": "This records the continuity from predecessor brand LAUREL to SHIRO; the company itself dates to 1989."
+      "open": "The company itself was established in 1989; this record concerns the SHIRO brand's stated birthplace, not the legal entity's incorporation location."
     },
     {
       "id": "shiro-commercial-base-typed-1",
@@ -3289,10 +3289,10 @@
       "house": "shiro",
       "kind": "claim",
       "topic": "manufacturing",
-      "text": "SHIRO Co., Ltd.'s official company overview lists its factory in Sunagawa, Hokkaido; the same page describes SHIRO's business as planning, developing, manufacturing and selling its own brand.",
+      "text": "SHIRO states that most of its products are carefully manufactured in its own factory inside Minna no Kojo in Sunagawa, Hokkaido.",
       "evidence": "brand",
       "strength": "C",
-      "src": "https://shiro-shiro.jp/ec/ext/policy/company/index.html",
+      "src": "https://hello.shiro-shiro.jp/product/labo-vol02/",
       "seen": "2026-11-21",
       "location": {
         "city": "Sunagawa",
@@ -3300,7 +3300,8 @@
         "country": "Japan",
         "cc": "JP",
         "site": "SHIRO factory"
-      }
+      },
+      "open": "The source says most products are made at this factory; it does not claim every product or every production stage is located there."
     },
     {
       "id": "j-scent-brand-origin-typed-1",
@@ -3631,10 +3632,10 @@
       "house": "documents",
       "kind": "claim",
       "topic": "legal_base",
-      "text": "Singapore's official Trade Marks Journal lists Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd. as the DOCUMENTS trademark applicant/proprietor and gives a Shanghai address; this is a trademark-filing address, not independently confirmed as the current registered office.",
+      "text": "The Canadian Intellectual Property Office's official trademark database lists the registered owner of the DOCUMENTS mark as Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd. and gives its address in Jiading District, Shanghai, China.",
       "evidence": "registry",
       "strength": "A",
-      "src": "https://file.go.gov.sg/tm001-2024.pdf",
+      "src": "https://ised-isde.canada.ca/cipo/trademark-search/2249669",
       "seen": "2026-11-21",
       "location": {
         "city": "Shanghai",
@@ -3643,7 +3644,7 @@
         "cc": "CN",
         "entity": "Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd."
       },
-      "open": "The registry source establishes the applicant's address for the trademark filing; current registered-office status was not independently checked."
+      "open": "This is the owner's address in an official trademark record, not independently confirmed as the company's current registered office."
     }
   ]
 }
