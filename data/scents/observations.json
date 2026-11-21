@@ -3181,6 +3181,469 @@
       },
       "open": "Online storefront only; no physical retail location is established by this source.",
       "lead": "Naisday (Jakarta)"
+    },
+    {
+      "id": "parfum-satori-brand-origin-typed-1",
+      "house": "parfum-satori",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Parfum Satori states that Satori Osawa opened her own perfume atelier in Tokyo in 2000, started the Parfum Satori brand, and launched the collection in 2003.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://parfum-satori.com/?mode=f3",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "cc": "JP"
+      }
+    },
+    {
+      "id": "parfum-satori-founder-origin-typed-1",
+      "house": "parfum-satori",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "The official biography states that perfumer and founder Satori Osawa was born in Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://parfum-satori.com/?mode=f3",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "cc": "JP"
+      }
+    },
+    {
+      "id": "parfum-satori-studio-typed-1",
+      "house": "parfum-satori",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "The brand identifies its perfume atelier in Roppongi, Tokyo; its current access page lists the atelier/shop address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://parfum-satori.com/?mode=f38",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Parfum Satori Roppongi atelier"
+      }
+    },
+    {
+      "id": "parfum-satori-retail-typed-1",
+      "house": "parfum-satori",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official access page lists the Parfum Satori Roppongi shop in Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://parfum-satori.com/?mode=f38",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Parfum Satori Roppongi shop"
+      }
+    },
+    {
+      "id": "shiro-brand-origin-typed-1",
+      "house": "shiro",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A Japanese government-backed Cool Japan case study says the brand began in Sunagawa, Hokkaido in 2009 under the name LAUREL and was renamed shiro in 2015, later styled SHIRO.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://cjpf.jp/en/modelcase/?tag-id=22",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Sunagawa",
+        "region": "Hokkaido",
+        "country": "Japan",
+        "cc": "JP"
+      },
+      "open": "This records the continuity from predecessor brand LAUREL to SHIRO; the company itself dates to 1989."
+    },
+    {
+      "id": "shiro-commercial-base-typed-1",
+      "house": "shiro",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "SHIRO Co., Ltd.'s official company overview lists its head office in Kita-Aoyama, Minato-ku, Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://shiro-shiro.jp/ec/ext/policy/company/index.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "entity": "SHIRO Co., Ltd."
+      }
+    },
+    {
+      "id": "shiro-manufacturing-typed-1",
+      "house": "shiro",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "SHIRO Co., Ltd.'s official company overview lists its factory in Sunagawa, Hokkaido; the same page describes SHIRO's business as planning, developing, manufacturing and selling its own brand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://shiro-shiro.jp/ec/ext/policy/company/index.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Sunagawa",
+        "region": "Hokkaido",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "SHIRO factory"
+      }
+    },
+    {
+      "id": "j-scent-brand-origin-typed-1",
+      "house": "j-scent",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "LUZ identifies J-Scent as its Japanese fragrance collection and dates the collection launch to 2017; no founding city is stated.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://luzfragrance.com/j-scent-global/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Japan",
+        "cc": "JP"
+      }
+    },
+    {
+      "id": "j-scent-commercial-base-typed-1",
+      "house": "j-scent",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "LUZ Co., Ltd., the company behind J-Scent, lists its Japan head office in Osaki, Shinagawa-ku, Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://luzfragrance.com/j-scent-global/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "entity": "LUZ Co., Ltd."
+      }
+    },
+    {
+      "id": "j-scent-studio-typed-1",
+      "house": "j-scent",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "LUZ's official company history records the opening of its in-house Tokyo Lab in 2008.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://luzfragrance.com/j-scent-global/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Tokyo Lab"
+      }
+    },
+    {
+      "id": "j-scent-manufacturing-shizuoka-typed-1",
+      "house": "j-scent",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "LUZ's official history identifies its Shizuoka cosmetics manufacturing factory as one of the domestic production sites for its fragrance business.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://luzfragrance.com/j-scent-global/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Shizuoka",
+        "region": "Shizuoka",
+        "country": "Japan",
+        "cc": "JP"
+      },
+      "open": "The source identifies the factory within LUZ's manufacturing network but does not map individual J-Scent SKUs to this factory."
+    },
+    {
+      "id": "j-scent-manufacturing-karatsu-typed-1",
+      "house": "j-scent",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "LUZ's official history records an in-house manufacturing factory opened in Karatsu, Saga in 2022.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://luzfragrance.com/j-scent-global/aboutus",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Karatsu",
+        "region": "Saga",
+        "country": "Japan",
+        "cc": "JP"
+      },
+      "open": "The source identifies the factory within LUZ's manufacturing network but does not map individual J-Scent SKUs to this factory."
+    },
+    {
+      "id": "shoyeido-commercial-base-typed-1",
+      "house": "shoyeido",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Shoyeido's official company overview lists its head office at Karasuma Nijo, Nakagyo-ku, Kyoto.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.shoyeido.co.jp/english/aboutus/overview.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Kyoto",
+        "region": "Kyoto",
+        "country": "Japan",
+        "cc": "JP",
+        "entity": "SHOYEIDO INCENSE CO."
+      }
+    },
+    {
+      "id": "shoyeido-manufacturing-kyoto-typed-1",
+      "house": "shoyeido",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Shoyeido states that handmade incense is blended in its downtown headquarters workshop in Kyoto.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.shoyeido.co.jp/english/aboutus/factory.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Kyoto",
+        "region": "Kyoto",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Traditional workshop at headquarters"
+      }
+    },
+    {
+      "id": "shoyeido-manufacturing-nagaokakyo-typed-1",
+      "house": "shoyeido",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Shoyeido's official company overview identifies a separate Nagaokakyo Factory in Kyoto Prefecture for modern manufacturing.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.shoyeido.co.jp/english/aboutus/overview.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Nagaokakyo",
+        "region": "Kyoto",
+        "country": "Japan",
+        "cc": "JP",
+        "site": "Nagaokakyo Factory"
+      }
+    },
+    {
+      "id": "tamburins-retail-seoul-typed-1",
+      "house": "tamburins",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Tamburins' official Korea store locator lists multiple official stores in Seoul, including Hannam, Seongsu, Samcheong and Sinsa.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.tamburins.com/en/store/korea/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      },
+      "open": "This establishes retail presence only; the store locator does not establish the brand's origin or headquarters."
+    },
+    {
+      "id": "nonfiction-brand-origin-typed-1",
+      "house": "nonfiction",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "NONFICTION's company profile states that the brand was established in Seoul in 2019.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://kr.linkedin.com/company/nonfictionfragrance",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "nonfiction-commercial-base-typed-1",
+      "house": "nonfiction",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "NONFICTION's company profile lists Seoul as its headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://kr.linkedin.com/company/nonfictionfragrance",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      },
+      "open": "This is the company's self-reported profile; no legal registry record was added in this pass."
+    },
+    {
+      "id": "nonfiction-retail-seoul-typed-1",
+      "house": "nonfiction",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "NONFICTION's official store locator lists several Seoul stores, including Seongsu, Hannam, Sinsa and Samcheong.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://nonfiction.kr/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "borntostandout-commercial-base-typed-1",
+      "house": "borntostandout",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "BORNTOSTANDOUT's official contact page lists its Seongsu office in Seoul; the source does not label this address as a registered legal headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://borntostandout.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR",
+        "site": "BORNTOSTANDOUT Seongsu office"
+      }
+    },
+    {
+      "id": "borntostandout-retail-typed-1",
+      "house": "borntostandout",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "BORNTOSTANDOUT's official contact page lists its Hannam flagship store in Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://borntostandout.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR",
+        "site": "Hannam flagship store"
+      }
+    },
+    {
+      "id": "pesade-brand-origin-typed-1",
+      "house": "pesade",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Pesade's official About page states that founder Mok Young-kyo established the fine perfumery brand in Seoul in 2022.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.pesade.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "pesade-commercial-base-typed-1",
+      "house": "pesade",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Pesade's official company information lists its business address in Seongsu-dong, Seongdong-gu, Seoul, under TBL Corporation.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.pesade.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "TBL Corporation"
+      }
+    },
+    {
+      "id": "tosummer-brand-origin-typed-1",
+      "house": "to-summer",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "InvestHK reports that To Summer was founded in Beijing in 2018, citing the brand.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.investhk.gov.hk/en/news/mainland-perfume-brand-establishes-foothold-in-hong-kong/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Beijing",
+        "country": "China",
+        "cc": "CN"
+      }
+    },
+    {
+      "id": "tosummer-retail-hongkong-typed-1",
+      "house": "to-summer",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "InvestHK reports that To Summer opened its first store outside Mainland China in Hong Kong, with Causeway Bay as its initial expansion base.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.investhk.gov.hk/en/news/mainland-perfume-brand-establishes-foothold-in-hong-kong/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong SAR",
+        "cc": "HK"
+      },
+      "open": "The cited government article reports the first overseas store and Causeway Bay base; it does not provide a full street address."
+    },
+    {
+      "id": "documents-brand-origin-typed-1",
+      "house": "documents",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The Bicester Collection's brand profile says Chinese fragrance house DOCUMENTS was founded in Shanghai in 2021; this is a retailer-reported origin claim.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://china.thebicestercollection.cn/en/brands/documents",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Shanghai",
+        "country": "China",
+        "cc": "CN"
+      },
+      "open": "No direct brand-origin statement was located on DOCUMENTS' official website in this pass; retain as retailer-reported until corroborated."
+    },
+    {
+      "id": "documents-legal-base-typed-1",
+      "house": "documents",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Singapore's official Trade Marks Journal lists Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd. as the DOCUMENTS trademark applicant/proprietor and gives a Shanghai address; this is a trademark-filing address, not independently confirmed as the current registered office.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://file.go.gov.sg/tm001-2024.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Shanghai",
+        "region": "Jiading District",
+        "country": "China",
+        "cc": "CN",
+        "entity": "Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd."
+      },
+      "open": "The registry source establishes the applicant's address for the trademark filing; current registered-office status was not independently checked."
     }
   ]
 }
