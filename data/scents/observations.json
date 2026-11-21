@@ -5215,6 +5215,630 @@
         "country": "South Korea",
         "cc": "KR"
       }
+    },
+    {
+      "id": "skybottle-commercial-base-typed-1",
+      "house": "skybottle",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Skybottle's official company-information page lists its business at Yongsan-gu, Seoul; another guide page on the same domain lists a different company name and Gangnam-gu address. Only city-level Seoul is retained.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.skybottle.co.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      },
+      "open": "The same brand domain publishes inconsistent business identities and addresses (Haneul Damda Co., Ltd. in Yongsan; Jourboo_design in Gangnam). Do not infer the current legal entity or precise operating address until reconciled."
+    },
+    {
+      "id": "whipped-legal-base-typed-1",
+      "house": "whipped",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Whipped's official company information identifies Semo Company Co., Ltd. (주식회사 세모컴퍼니), business registration 730-81-02087, at 16 Seongsui-ro 20-gil, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://whipped.co.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "주식회사 세모컴퍼니"
+      },
+      "open": "Company identity and business address are published by the brand; no separate government registry extract was checked."
+    },
+    {
+      "id": "whipped-commercial-base-typed-1",
+      "house": "whipped",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Whipped's official company page lists its operating address at 16 Seongsui-ro 20-gil, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://whipped.co.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "cosmic-mansion-legal-base-typed-1",
+      "house": "cosmic-mansion",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Cosmic Mansion's official website identifies 주식회사 코스믹맨션, business registration 253-87-00847, at 31 Itaewon-ro 54-gil, Yongsan-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.cosmicmansion.co.kr/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Yongsan-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "주식회사 코스믹맨션"
+      },
+      "open": "This is the company information published on the brand website; no separate government registry extract was checked."
+    },
+    {
+      "id": "cosmic-mansion-commercial-base-typed-1",
+      "house": "cosmic-mansion",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Cosmic Mansion's official website lists its business address in Yongsan-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.cosmicmansion.co.kr/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Yongsan-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "cosmic-mansion-retail-seoul-typed-1",
+      "house": "cosmic-mansion",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The Seoul Metropolitan Government's official travel guide lists Cosmic Mansion Seochon at 52-1 Jahamun-ro, Jongno-gu, Seoul.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://english.visitseoul.net/other/cosmicmansion/ENP4sh9je",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Jongno-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "site": "Cosmic Mansion Seochon"
+      }
+    },
+    {
+      "id": "etlee-legal-base-typed-1",
+      "house": "etlee",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Etlee's official company information identifies K&Beauty Co., Ltd. (주식회사 케이앤뷰티), business registration 318-81-11348, at 11 Yeongdong-daero 82-gil, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://etlee.co.kr/shopinfo/brand.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "주식회사 케이앤뷰티"
+      },
+      "open": "This is the company information published on the brand website; no separate government registry extract was checked."
+    },
+    {
+      "id": "etlee-commercial-base-typed-1",
+      "house": "etlee",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Etlee's official company page lists its operating address at 11 Yeongdong-daero 82-gil, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://etlee.co.kr/shopinfo/brand.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "oct-kw-retail-kuwait-typed-1",
+      "house": "oct-kw",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "OCT's official e-commerce site operates an online retail channel serving Kuwait, including perfume and body-fragrance products; no physical store address is published on the contact page.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://octkw.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Kuwait",
+        "cc": "KW"
+      },
+      "open": "Online retail presence only; no legal entity, headquarters or physical retail location was established."
+    },
+    {
+      "id": "milky-mane-legal-base-typed-1",
+      "house": "milky-mane",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Milky Mane's official terms identify the shop operator as Aleksandra Sosfa, NIP 6762527795, with its address at Rynek 9, 32-100 Proszowice, Poland.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://milkymane.shop/pl/i/Regulamin/16",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Proszowice",
+        "region": "Lesser Poland",
+        "country": "Poland",
+        "cc": "PL",
+        "entity": "Aleksandra Sosfa"
+      }
+    },
+    {
+      "id": "milky-mane-commercial-base-typed-1",
+      "house": "milky-mane",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Milky Mane's official contact page lists its business address at Rynek 9, 32-100 Proszowice, Poland.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://milkymane.shop/pl/i/Kontakt/13",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Proszowice",
+        "region": "Lesser Poland",
+        "country": "Poland",
+        "cc": "PL"
+      }
+    },
+    {
+      "id": "dries-van-noten-brand-origin-typed-1",
+      "house": "dries-van-noten",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Dries Van Noten's official biography identifies the designer as born in Belgium and traces the house's early history to his 1986 debut; this records country origin without asserting a founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.driesvannoten.com/en-nl/pages/biography",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Belgium",
+        "cc": "BE"
+      }
+    },
+    {
+      "id": "dries-van-noten-legal-base-typed-1",
+      "house": "dries-van-noten",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Dries Van Noten's official terms identify VAN NOTEN ANDRIES NV as a Belgian company registered with the Crossroads Bank for Enterprises, with registered office at Godefriduskaai 36, Antwerp.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.driesvannoten.com/pages/terms-condition-of-sale",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Antwerp",
+        "region": "Flanders",
+        "country": "Belgium",
+        "cc": "BE",
+        "entity": "VAN NOTEN ANDRIES NV"
+      }
+    },
+    {
+      "id": "dries-van-noten-commercial-base-typed-1",
+      "house": "dries-van-noten",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The company's official terms list its head office at Godefriduskaai 36, 2000 Antwerp, Belgium.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.driesvannoten.com/pages/terms-condition-of-sale",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Antwerp",
+        "region": "Flanders",
+        "country": "Belgium",
+        "cc": "BE"
+      }
+    },
+    {
+      "id": "dries-van-noten-retail-antwerp-typed-1",
+      "house": "dries-van-noten",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official biography states that the first Dries Van Noten flagship opened in Antwerp in 1989 at Het Modepaleis.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.driesvannoten.com/en-nl/pages/biography",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Antwerp",
+        "region": "Flanders",
+        "country": "Belgium",
+        "cc": "BE",
+        "site": "Het Modepaleis"
+      }
+    },
+    {
+      "id": "kitowa-brand-origin-typed-1",
+      "house": "kitowa",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "KITOWA's official About page says the fragrance brand was born in Japan in 2018, drawing on a lineage of Japanese incense-making dating to 1575.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kitowa.co.jp/en/pages/our-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Japan",
+        "cc": "JP"
+      }
+    },
+    {
+      "id": "kitowa-legal-base-typed-1",
+      "house": "kitowa",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "KITOWA's official legal notice identifies KITOWA Co., Ltd. and lists its address at 4-9-1 Ginza, Chuo-ku, Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kitowa.co.jp/en/pages/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Chuo-ku",
+        "country": "Japan",
+        "cc": "JP",
+        "entity": "KITOWA Co., Ltd."
+      }
+    },
+    {
+      "id": "kitowa-commercial-base-typed-1",
+      "house": "kitowa",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "KITOWA's official privacy policy lists its business address at 4-9-1 Ginza, Chuo-ku, Tokyo.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kitowa.co.jp/en/policies/privacy-policy",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tokyo",
+        "region": "Chuo-ku",
+        "country": "Japan",
+        "cc": "JP"
+      }
+    },
+    {
+      "id": "kitowa-manufacturing-typed-1",
+      "house": "kitowa",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "KITOWA says its fragrances are MADE IN JAPAN.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kitowa.co.jp/pages/our-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Japan",
+        "cc": "JP"
+      },
+      "open": "The brand does not name a specific factory or city for finished-product manufacture."
+    },
+    {
+      "id": "isak-brand-origin-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "ISAK's official story traces its perfumery heritage to Lucknow's royal courts in the 1850s and says the modern ISAK Fragrances brand was established in 2018; this records the heritage origin, not the modern entity's incorporation date.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/ourstory",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lucknow",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The 1850s date refers to the family's historical perfumery lineage; the modern brand dates to 2018."
+    },
+    {
+      "id": "isak-commercial-base-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "ISAK's official About page states that the fragrance house is still based in Lucknow, Uttar Pradesh.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/ourstory",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lucknow",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-manufacturing-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "ISAK says it manufactures and extracts many of its own essences using traditional processes while based in Lucknow; it does not provide a separate distillery address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/ourstory",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lucknow",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The source links in-house essence production to the Lucknow-based house but does not identify each distillation site."
+    },
+    {
+      "id": "isak-retail-lucknow-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists its exclusive flagship in Gomti Nagar, Lucknow.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lucknow",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN",
+        "site": "ISAK Gomti Nagar flagship"
+      }
+    },
+    {
+      "id": "isak-retail-ahmedabad-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists a partner store in Ahmedabad.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ahmedabad",
+        "region": "Gujarat",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-retail-anand-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists The Perfume Warehouse in Anand, Gujarat.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Anand",
+        "region": "Gujarat",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-retail-goa-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists Bunti Boutique in Palolem, Goa Velha.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Goa Velha",
+        "region": "Goa",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-retail-jaipur-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists My Aroma Junction and Agora in Jaipur.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jaipur",
+        "region": "Rajasthan",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-retail-vadodara-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists Story of India in Alkapuri, Vadodara.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Vadodara",
+        "region": "Gujarat",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "isak-retail-bengaluru-typed-1",
+      "house": "isak",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ISAK's official store locator lists Angadi Heritage in Jayanagar, Bengaluru.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.isakfragrances.com/pages/storelocator",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bengaluru",
+        "region": "Karnataka",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "naso-profumi-brand-origin-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Naso describes itself as an artisanal perfumery rooted in North Indian distillation traditions; this records country origin India without assigning a founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/about-us-new",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The brand does not state a founding city or legal entity in its About page."
+    },
+    {
+      "id": "naso-profumi-manufacturing-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Naso says its ingredients are cultivated in-house at its own distilleries in North India.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/about-us-new",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "North India",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "The brand identifies a broad region but does not name individual distillery cities or sites."
+    },
+    {
+      "id": "naso-profumi-retail-lucknow-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Naso's official stockist page lists its Lucknow Store at Mall 29, Hazratganj.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/our-stockists-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lucknow",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN",
+        "site": "Naso Lucknow Store"
+      }
+    },
+    {
+      "id": "naso-profumi-retail-gurugram-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Naso's official stockist page lists the Naso Gurgaon Store at DLF Galleria Market, Gurugram.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/our-stockists-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Gurugram",
+        "region": "Haryana",
+        "country": "India",
+        "cc": "IN",
+        "site": "Naso Gurgaon Store"
+      }
+    },
+    {
+      "id": "naso-profumi-retail-delhi-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Naso's official stockist page lists Evoluzione New Delhi at The Kila, Mehrauli.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/our-stockists-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New Delhi",
+        "region": "Delhi",
+        "country": "India",
+        "cc": "IN",
+        "site": "Evoluzione New Delhi"
+      }
+    },
+    {
+      "id": "naso-profumi-retail-goa-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Naso's official stockist page lists The Flame Store in Assagao, Goa.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/our-stockists-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Assagao",
+        "region": "Goa",
+        "country": "India",
+        "cc": "IN",
+        "site": "The Flame Store"
+      }
+    },
+    {
+      "id": "naso-profumi-retail-bengaluru-typed-1",
+      "house": "naso-profumi",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Naso's official stockist page lists Angadi Galleria on Sankey Road, Bengaluru.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.nasoprofumi.com/pages/our-stockists-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bengaluru",
+        "region": "Karnataka",
+        "country": "India",
+        "cc": "IN",
+        "site": "Angadi Galleria"
+      }
     }
   ]
 }
