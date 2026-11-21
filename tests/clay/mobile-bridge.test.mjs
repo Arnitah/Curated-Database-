@@ -38,6 +38,9 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
     assert.match(scanResults, /not yet analyse images/i);
     assert.match(scanResults, /not been checked against packaging\. Treat any findings as preliminary until verified/i, 'Scan discloses unverified ingredient lists');
     assert.match(scanResults, /Review example suggestions/);
+    assert.match(scanResults, /Product-specific instructions come first/);
+    assert.match(scanResults, /Use sunscreen during use and for one week afterwards/);
+    assert.match(scanResults, /General screen/);
     assert.doesNotMatch(scanResults, /\bApply\b/, 'the progress step no longer promises an apply action');
     const scanRail = await page.locator('.rail').innerText();
     assert.match(scanRail, /Prototype status/);
