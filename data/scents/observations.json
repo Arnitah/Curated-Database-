@@ -4537,8 +4537,8 @@
       "kind": "claim",
       "topic": "brand_origin",
       "text": "Goldfield & Banks' official 2026 profile says the Australian fragrance house was founded in Sydney in 2016 by Dimitri Weber.",
-      "evidence": "brand",
-      "strength": "C",
+      "evidence": "editorial",
+      "strength": "B",
       "src": "https://us.goldfieldandbanks.com/blogs/news/the-nightly-australian-perfume-the-world-wanted",
       "seen": "2026-11-21",
       "location": {
