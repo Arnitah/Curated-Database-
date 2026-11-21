@@ -50,11 +50,16 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 
 ## Dataset snapshot
 
+**Main-branch baseline before the typed pilot (2026-11-21):**
 - 178 houses and 178 map points.
-- 205 observations, of which 19 are claims; 188 records have no topic because they are price observations or other non-topic entries.
-- Claim topics: 8 `hq`, 3 `made_in`, 3 `owner`, 2 `history`, and 1 `founder`.
-- 7 houses have no observation of any kind.
+- 205 observations, including 19 claims. The legacy claim topics were 8 `hq`, 3 `made_in`, 3 `owner`, 2 `history`, and 1 `founder`; two additional claim records had no topic.
+- 7 houses had no observation of any kind.
 - Map precision: 110 `city`, 1 `region`, 67 `country`. Some entries marked `country` have city-named places such as Tokyo, Manila and Bangkok. This needs a separate precision audit; precision is spatial granularity, not evidence confidence or relationship type.
+
+**Current PR branch after the pilot batches:**
+- 266 observations total, including 61 typed geography claims across 22 existing houses and 3 research leads.
+- 156 of the 178 existing house records still have no typed geography claim. Legacy `hq` / `made_in` claims have not been silently reclassified.
+- The pilot's lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
 
 ## UI and map behaviour
 
