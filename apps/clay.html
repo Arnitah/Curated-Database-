@@ -2749,7 +2749,7 @@ document.addEventListener('click', async (e)=>{
   if (a==='iisave'){
     const p=MP.find(x=>x.id===+v); if(!p) return;
     const val=id=>(document.getElementById(id)?.value||'').trim();
-    const identityChanged=val('iiVariant')!==(p.product_variant||'')||val('iiMarket')!==(p.market||'')||val('iiIdentityUrl')!==(p.identity_source_url||'')||val('iiIdentitySource')!==(p.identity_source||'');
+    const identityChanged=val('iiBrand')!==(p.brand||'')||val('iiVariant')!==(p.product_variant||'')||val('iiMarket')!==(p.market||'')||val('iiIdentityUrl')!==(p.identity_source_url||'')||val('iiIdentitySource')!==(p.identity_source||'');
     const directionsChanged=val('iiDirections')!==(p.directions_text||'')||val('iiDirectionsUrl')!==(p.directions_source_url||'')||val('iiDirectionsSource')!==(p.directions_source||'');
     const identityUrl=val('iiIdentityUrl'), directionsUrl=val('iiDirectionsUrl');
     if((identityUrl&&!safeHttpUrl(identityUrl))||(directionsUrl&&!safeHttpUrl(directionsUrl))){toast('Use a valid http or https source URL');return;}
