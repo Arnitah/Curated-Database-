@@ -3054,7 +3054,6 @@
     },
     {
       "id": "scentofafrica-brand-origin-typed-1",
-      "house": "scentofafrica",
       "kind": "claim",
       "topic": "brand_origin",
       "text": "Scent of Africa states that the house was born in Ghana.",
@@ -3065,11 +3064,11 @@
       "location": {
         "country": "Ghana",
         "cc": "GH"
-      }
+      },
+      "lead": "Scent of Africa"
     },
     {
       "id": "scentofafrica-manufacturing-typed-1",
-      "house": "scentofafrica",
       "kind": "claim",
       "topic": "manufacturing",
       "text": "The brand's Values page says an end-to-end production chain has been set up in Accra, Ghana.",
@@ -3081,11 +3080,11 @@
         "city": "Accra",
         "country": "Ghana",
         "cc": "GH"
-      }
+      },
+      "lead": "Scent of Africa"
     },
     {
       "id": "mezel-founder-origin-morocco-typed-1",
-      "house": "mezel",
       "kind": "claim",
       "topic": "founder_origin",
       "text": "MEZEL describes founder Sophia Gyé-Jacquot as Franco-Moroccan; this records Moroccan heritage, not birthplace or place of upbringing.",
@@ -3097,11 +3096,11 @@
         "country": "Morocco",
         "cc": "MA"
       },
-      "open": "The source establishes Franco-Moroccan heritage but does not state birthplace or upbringing."
+      "open": "The source establishes Franco-Moroccan heritage but does not state birthplace or upbringing.",
+      "lead": "Mezel"
     },
     {
       "id": "mezel-founder-origin-france-typed-1",
-      "house": "mezel",
       "kind": "claim",
       "topic": "founder_origin",
       "text": "MEZEL describes founder Sophia Gyé-Jacquot as Franco-Moroccan; this records French heritage, not birthplace or place of upbringing.",
@@ -3113,11 +3112,11 @@
         "country": "France",
         "cc": "FR"
       },
-      "open": "The source establishes Franco-Moroccan heritage but does not state birthplace or upbringing."
+      "open": "The source establishes Franco-Moroccan heritage but does not state birthplace or upbringing.",
+      "lead": "Mezel"
     },
     {
       "id": "mezel-legal-base-typed-1",
-      "house": "mezel",
       "kind": "claim",
       "topic": "legal_base",
       "text": "MEZEL's consumer terms identify SGJ COSMETICS SAS as the website operator, headquartered at 229 rue Saint Honoré, Paris and registered with the Paris RCS.",
@@ -3130,11 +3129,11 @@
         "country": "France",
         "cc": "FR",
         "entity": "SGJ COSMETICS SAS"
-      }
+      },
+      "lead": "Mezel"
     },
     {
       "id": "mezel-commercial-base-typed-1",
-      "house": "mezel",
       "kind": "claim",
       "topic": "commercial_base",
       "text": "MEZEL's consumer terms identify SGJ COSMETICS SAS as headquartered at 229 rue Saint Honoré, Paris.",
@@ -3147,11 +3146,11 @@
         "country": "France",
         "cc": "FR",
         "entity": "SGJ COSMETICS SAS"
-      }
+      },
+      "lead": "Mezel"
     },
     {
       "id": "naisday-commercial-base-typed-1",
-      "house": "naisday",
       "kind": "claim",
       "topic": "commercial_base",
       "text": "The Bekasi City government's SIPTRI product directory lists Naisday at a Curug Jaya D address under its local business catalogue. This is a public business contact address, not proof of a registered office or manufacturing site.",
@@ -3164,11 +3163,11 @@
         "country": "Indonesia",
         "cc": "ID"
       },
-      "open": "An earlier Tokopedia search/listing suggested an East Jakarta seller location. The relationship between the two addresses is unresolved; neither is treated as a verified manufacturing location."
+      "open": "An earlier Tokopedia search/listing suggested an East Jakarta seller location. The relationship between the two addresses is unresolved; neither is treated as a verified manufacturing location.",
+      "lead": "Naisday (Jakarta)"
     },
     {
       "id": "naisday-retail-typed-1",
-      "house": "naisday",
       "kind": "claim",
       "topic": "retail",
       "text": "Naisday maintains an Official Store on Shopee Indonesia; this records an online retail channel, not a physical shop address.",
@@ -3180,7 +3179,8 @@
         "country": "Indonesia",
         "cc": "ID"
       },
-      "open": "Online storefront only; no physical retail location is established by this source."
+      "open": "Online storefront only; no physical retail location is established by this source.",
+      "lead": "Naisday (Jakarta)"
     }
   ]
 }
