@@ -21,7 +21,7 @@ Each find has a `status`: `new` → `checking` → `added` | `excluded`, or `que
 9. Set the find's `status` and `reply` (what was done, or the question for Nitah).
 
 ## 3. Evidence types (observations.evidence)
-`checked` brand's own shop · `retailer` checked at a shop · `brand` the brand says so · `database` fragrance database ·
+`checked` brand's own shop · `retailer` checked at a shop · `brand` the brand says so · `database` fragrance database · `registry` official company or government register ·
 `editorial` press or industry article · `reported` marketplace, reseller or AI summary, not checked · `creator` one person's opinion ·
 `nitah` confirmed by Nitah.
 
@@ -48,6 +48,7 @@ Facts about who a house is go in `data/scents/observations.json` as `kind: "clai
 | `formulation` | where the composition is developed |
 | `manufacturing` | where the fragrance product is manufactured |
 | `filling` | where finished product is filled or bottled |
+| `assembly` | where components or filled products are assembled into the finished offer |
 | `sourcing` | where a named raw material is grown, harvested or sourced |
 | `retail` | official store, boutique, flagship or retail presence |
 | `hq` / `made_in` | legacy-only ambiguous topics; do not create new claims with these |
