@@ -1,0 +1,669 @@
+{
+  "_note": "Audit registry for example content in the hosted Clay preview. Every top-level literal data block in the hosted page must be listed here (tests/clay/hosted-examples.test.mjs fails on an unlisted one), so new example content cannot slip in unreviewed.",
+  "classes": {
+    "ui-config": "Option lists, icons, palettes, rules. No example records.",
+    "generic-editorial": "General advice or education naming no brand, product or person.",
+    "reference-real": "Real-world reference content naming real products, brands, perfumes or places. Not synthetic, not user data. Needs a reviewer decision.",
+    "illustrative-invented": "Invented product-like or user-like records, figures or claims. Each must show a visible label in the hosted page.",
+    "demo-seed": "The synthetic starter shelf.",
+    "unreferenced": "Sample block never used by any rendering code; emptied in the hosted build."
+  },
+  "deny_brands": [
+    "the ordinary",
+    "cerave",
+    "cetaphil",
+    "neutrogena",
+    "la roche",
+    "garnier",
+    "bioderma",
+    "trader joe",
+    "olay",
+    "vanicream",
+    "aveeno",
+    "cosrx",
+    "round lab",
+    "nivea",
+    "l'oreal",
+    "loreal",
+    "eucerin",
+    "paula's choice",
+    "dermasil",
+    "vaseline",
+    "jo malone",
+    "amouage",
+    "kayali",
+    "louis vuitton",
+    "maison crivelli",
+    "dr teal",
+    "dr. teal",
+    "clean & clear",
+    "vagisil",
+    "summer's eve",
+    "dettol",
+    "laneige",
+    "innisfree",
+    "hada labo",
+    "rohto",
+    "tatcha",
+    "la mer",
+    "skinfood",
+    "drunk elephant",
+    "sunday riley",
+    "glossier",
+    "mario badescu",
+    "tony moly",
+    "missha",
+    "sulwhasoo",
+    "shiseido",
+    "kiehl",
+    "clinique",
+    "lancome",
+    "burt's bees",
+    "st. ives",
+    "pond's",
+    "differin",
+    "panoxyl",
+    "hibiclens",
+    "noxzema",
+    "haruharu",
+    "soqu",
+    "spascriptions",
+    "advanced clinicals",
+    "hatomugi",
+    "naturie",
+    "arm & hammer"
+  ],
+  "entries": {
+    "ICONS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SHAPES": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PALETTES": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "TIME_SW": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "S": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "WQ": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PAGES": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "TEX": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "STEP_LOOK": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "TRIP": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "MODES": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "MP_FEEL": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "MP_AREAS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "MP_STEPS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "CS_GET": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "CS_SET": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "HL": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "HW": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "HSTR": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "HTYPE": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "HPOR": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "BTAG": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PG_GOALS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PG_DEF": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PDB_AREA": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "PDB_CATL": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SKINS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SKIN_SHARE": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SAMPLE": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "ORDER": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SW_FIT": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SW_TYPE": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SW_TIERS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SA_NOTES": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "ZPOS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "ZSHAPE": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "Y_ACTS": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "RENDER": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "LY_FAM": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "LY_FN": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "LY_GOOD": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "LY_RISK": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "SCENT_BUILD": {
+      "class": "ui-config",
+      "where": "all sections",
+      "note": "Option lists, icons, colours, rules and defaults. No example records."
+    },
+    "STACKS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "LAYERS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "WHY": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "HTYPE_TIP": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "HPOR_TIP": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "HW_STEPS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "HTIPS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "CATS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "CLAYS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "TRADITIONS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "TRENDS": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "LEARN_T": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "PG": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "TRIP_CLIM": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "TRIP_SCENT_IDEA": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "CM_HYPE": {
+      "class": "generic-editorial",
+      "where": "Pairs & scent, Routine, My Shelf (hair), Learn, Travel, Check",
+      "note": "General advice or education. Names no brand, product or person, makes no claim about the user."
+    },
+    "TRIP_WHERE": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "TRIP_HOME": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "CM": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "CM_WASH": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "SA": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "PDB_SRC": {
+      "class": "reference-real",
+      "where": "Travel, Check a store product, Pairs & scent (Scent Atlas)",
+      "note": "Real-world reference content that names real products, brands, perfumes or places. Not synthetic by design and not user data. Kept because removing it removes the feature; see the audit doc for the reviewer decision."
+    },
+    "MP_SEED": {
+      "class": "demo-seed",
+      "where": "My Shelf, Today, Routine, Travel, Scan",
+      "note": "The 16 synthetic starter records from apps/clay-hosted/demo-seed.json."
+    },
+    "ROUTINE": {
+      "class": "unreferenced",
+      "where": "none (never rendered)",
+      "note": "Never referenced by any rendering code. Emptied in the hosted build so no invented routine or shelf is shipped unused."
+    },
+    "SHELF": {
+      "class": "unreferenced",
+      "where": "none (never rendered)",
+      "note": "Never referenced by any rendering code. Emptied in the hosted build so no invented routine or shelf is shipped unused."
+    },
+    "SHELFVIZ": {
+      "class": "unreferenced",
+      "where": "none (never rendered)",
+      "note": "Never referenced by any rendering code. Emptied in the hosted build so no invented routine or shelf is shipped unused."
+    },
+    "PICKS": {
+      "class": "illustrative-invented",
+      "where": "Discover",
+      "note": "Invented products and quotes (\"people like you\").",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Discover"
+            ]
+          ],
+          "contains": "Panthenol Milk Serum",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "INGS": {
+      "class": "illustrative-invented",
+      "where": "Discover > ingredient page",
+      "note": "Ingredient text is general; the segment counts and percentages built on it are invented.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Discover"
+            ],
+            [
+              "act",
+              "ing",
+              "niacinamide"
+            ]
+          ],
+          "contains": "Niacinamide",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "REVIEWS": {
+      "class": "illustrative-invented",
+      "where": "Discover > ingredient page, Discover",
+      "note": "Invented user reviews.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Discover"
+            ],
+            [
+              "act",
+              "ing",
+              "niacinamide"
+            ]
+          ],
+          "contains": "T-zone shine is down by midday",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "PROD": {
+      "class": "illustrative-invented",
+      "where": "Product page",
+      "note": "An invented product page.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Discover"
+            ],
+            [
+              "act",
+              "go",
+              "product"
+            ]
+          ],
+          "contains": "Ceramide Barrier Cream",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "P": {
+      "class": "illustrative-invented",
+      "where": "Pairs & scent",
+      "note": "Generic product-type names (ingredient plus type) for the sample pairings. No brand.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Pairs & scent"
+            ]
+          ],
+          "contains": "Hyaluronic essence",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "PAIRS": {
+      "class": "illustrative-invented",
+      "where": "Pairs & scent",
+      "note": "Sample seasonal pairings. The hosted build replaces the hard-coded \"you own both / one\" claims with a neutral \"sample pairing\" tag.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Pairs & scent"
+            ]
+          ],
+          "contains": "sample pairing",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "SCENT": {
+      "class": "illustrative-invented",
+      "where": "Pairs & scent, Today",
+      "note": "Sample seasonal scent ideas, generic product types.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Pairs & scent"
+            ]
+          ],
+          "contains": "Sweet and cozy",
+          "label": "Sample data"
+        },
+        {
+          "steps": [
+            [
+              "nav",
+              "Today"
+            ]
+          ],
+          "contains": "Sample idea",
+          "label": "Sample idea"
+        }
+      ]
+    },
+    "METRICS": {
+      "class": "illustrative-invented",
+      "where": "Scan, Discover",
+      "note": "Invented skin readings and trend numbers.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Scan"
+            ]
+          ],
+          "contains": "Illustrative sample observations",
+          "label": "DEMO DATA"
+        }
+      ]
+    },
+    "ZONES": {
+      "class": "illustrative-invented",
+      "where": "Scan (review step)",
+      "note": "Invented zone suggestions.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Scan"
+            ],
+            [
+              "act",
+              "scanStep",
+              "apply"
+            ]
+          ],
+          "contains": "Redness is highest here",
+          "label": "demo"
+        }
+      ]
+    },
+    "CHANGES": {
+      "class": "illustrative-invented",
+      "where": "Scan (review step)",
+      "note": "Invented routine suggestions, not applied.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Scan"
+            ],
+            [
+              "act",
+              "scanStep",
+              "apply"
+            ]
+          ],
+          "contains": "Pause Glycolic 7% Toner for 2 weeks",
+          "label": "not applied"
+        }
+      ]
+    },
+    "SF_Z": {
+      "class": "ui-config",
+      "where": "Scan (face map)",
+      "note": "SVG shapes and label positions for the face map. No example records."
+    }
+  },
+  "functions": {
+    "ySample": {
+      "class": "illustrative-invented",
+      "where": "Your year",
+      "note": "Generates a made-up year of ticks.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Your year"
+            ]
+          ],
+          "contains": "A made-up year",
+          "label": "Sample data"
+        }
+      ]
+    },
+    "segStats": {
+      "class": "illustrative-invented",
+      "where": "Discover",
+      "note": "Computes invented \"people like you\" counts and percentages.",
+      "views": [
+        {
+          "steps": [
+            [
+              "nav",
+              "Discover"
+            ]
+          ],
+          "contains": "people like you",
+          "label": "Sample data"
+        }
+      ]
+    }
+  }
+}

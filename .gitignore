@@ -2,3 +2,6 @@ node_modules
 
 # Clay test output (screenshots from failed checks)
 test-results/
+
+# Generated hosted Clay preview (scripts/build-clay-hosted.mjs); rebuilt on demand, never committed
+hosted/

@@ -5,6 +5,7 @@
   "scripts": {
     "check": "node scripts/build.mjs --check",
     "build": "node scripts/build.mjs",
+    "build:clay-hosted": "node scripts/build-clay-hosted.mjs",
     "verdicts": "node scripts/check-verdicts.mjs",
     "verdicts:update": "node scripts/check-verdicts.mjs --update",
     "test:engine": "node apps/ingredient-intelligence/tests/smoke.test.mjs && node apps/ingredient-intelligence/tests/clay-shaped.test.mjs",
