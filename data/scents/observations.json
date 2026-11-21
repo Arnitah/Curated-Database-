@@ -3645,6 +3645,454 @@
         "entity": "Shanghai Wen Xian Future Perfume Cosmetics Co., Ltd."
       },
       "open": "This is the owner's address in an official trademark record, not independently confirmed as the company's current registered office."
+    },
+    {
+      "id": "uttori-brand-origin-typed-1",
+      "house": "uttori",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The 36Kr business profile describes UTTORI as a domestic Chinese perfume brand founded in 2017; it does not identify a city of founding.",
+      "evidence": "database",
+      "strength": "C",
+      "src": "https://pitchhub.36kr.com/project/1713112315636232",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "China",
+        "cc": "CN"
+      },
+      "open": "This is a third-party company profile, not a brand-owned origin statement; no city of brand founding is established."
+    },
+    {
+      "id": "uttori-legal-base-typed-1",
+      "house": "uttori",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The 36Kr business profile identifies 上海思变营销策划有限公司 as the associated company and lists its registered address in Putuo District, Shanghai.",
+      "evidence": "database",
+      "strength": "C",
+      "src": "https://pitchhub.36kr.com/project/1713112315636232",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Shanghai",
+        "region": "Putuo District",
+        "country": "China",
+        "cc": "CN",
+        "entity": "上海思变营销策划有限公司"
+      },
+      "open": "The source is a third-party business profile; the address has not been cross-checked against China's official enterprise registry."
+    },
+    {
+      "id": "ichun-retail-taiwan-typed-1",
+      "house": "ichun",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "A Taiwan-based aroma retailer lists ICHUN perfume in its online shop; this records a Taiwan retail listing only, not the brand's origin or a physical store.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://www.yanyantang.tw/products/ichun-perfume",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Taiwan",
+        "cc": "TW"
+      },
+      "open": "The listing is by YANYANTANG and does not establish that it is the brand's official store or that the perfumer is based in Taiwan."
+    },
+    {
+      "id": "bombay-perfumery-commercial-base-typed-1",
+      "house": "bombay-perfumery",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Bombay Perfumery describes itself as based in Mumbai and lists its office at 31 Manoj Industrial Estate, G D Ambekar Road, Mumbai.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.bombayperfumery.com/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mumbai",
+        "region": "Maharashtra",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "bombay-perfumery-retail-typed-1",
+      "house": "bombay-perfumery",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The brand's official stockist list includes Bombaim in Kala Ghoda, Mumbai, as a fragrance retailer.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.bombayperfumery.com/pages/stockists",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mumbai",
+        "region": "Maharashtra",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "This is a third-party stockist, not a Bombay Perfumery-owned boutique."
+    },
+    {
+      "id": "gulab-singh-johrimal-brand-origin-typed-1",
+      "house": "gulab-singh-johrimal",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The house says that in 1816 Lala Gulab Singh arrived in Delhi and established the traditional perfumery in Chandni Chowk with his son Johrimal.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://gulabsinghjohrimal.com/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Delhi",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "gulab-singh-johrimal-founder-origin-typed-1",
+      "house": "gulab-singh-johrimal",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "The house identifies founder Lala Gulab Singh as an entrepreneur from Jhajjar, in present-day Haryana, before he moved to Delhi in 1816.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://gulabsinghjohrimal.com/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jhajjar",
+        "region": "Haryana",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "gulab-singh-johrimal-commercial-base-typed-1",
+      "house": "gulab-singh-johrimal",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official contact details list the perfumery at 320 Dariba Kalan, Delhi 110006.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://gulabsinghjohrimal.com/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Delhi",
+        "country": "India",
+        "cc": "IN"
+      }
+    },
+    {
+      "id": "gulab-singh-johrimal-retail-typed-1",
+      "house": "gulab-singh-johrimal",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The house says its original Chandni Chowk perfumery continues to operate at 320 Dariba Kalan, Delhi.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://gulabsinghjohrimal.com/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Delhi",
+        "country": "India",
+        "cc": "IN",
+        "site": "Original Chandni Chowk perfumery"
+      }
+    },
+    {
+      "id": "spa-ceylon-brand-origin-typed-1",
+      "house": "spa-ceylon",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Spa Ceylon's official story says the brand was created in 2009 by brothers Shalin Balasuriya and Shiwantha Dias and describes it as born from the island of Ceylon (Sri Lanka).",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://spaceylon.ae/pages/the-spa-ceylon-story",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Sri Lanka",
+        "cc": "LK"
+      }
+    },
+    {
+      "id": "spa-ceylon-commercial-base-typed-1",
+      "house": "spa-ceylon",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official corporate contact page lists Spa Ceylon's corporate office at Mireka Towers, Colombo 00500, Sri Lanka.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.spaceylon.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Colombo",
+        "country": "Sri Lanka",
+        "cc": "LK"
+      }
+    },
+    {
+      "id": "spa-ceylon-manufacturing-typed-1",
+      "house": "spa-ceylon",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Spa Ceylon states that its products are made in Sri Lanka at its own ultra-modern production facility.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lk.spaceylon.com/pages/country-distribution-franchise-opportunities",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Sri Lanka",
+        "cc": "LK"
+      },
+      "open": "The brand identifies the country and its own production facility but does not name the facility's city on this page."
+    },
+    {
+      "id": "karmakamet-commercial-base-typed-1",
+      "house": "karmakamet",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Karmakamet's official contact page lists its head office in Bangkok under HAAKON GROUPS COMPANY LIMITED and the business contact company HELMET CELT COMPANY LIMITED at the same Bangkok address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://karmakamet.co.th/en/contact/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      },
+      "open": "The contact page identifies office and business-contact entities; it does not establish their registered-office status or the brand's original founding city."
+    },
+    {
+      "id": "hmns-brand-origin-typed-1",
+      "house": "hmns",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "HMNS' official company profile says the perfumery brand was born in June 2019 and presents itself as an Indonesian fragrance company; no founding city is specified.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/hmnsperfume/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Indonesia",
+        "cc": "ID"
+      },
+      "open": "The company profile gives its headquarters as Jakarta Pusat but does not explicitly say the brand was founded in that city."
+    },
+    {
+      "id": "hmns-commercial-base-typed-1",
+      "house": "hmns",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "HMNS' official company profile lists its headquarters and primary location in Jakarta Pusat, Jakarta.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/hmnsperfume/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jakarta Pusat",
+        "region": "Jakarta",
+        "country": "Indonesia",
+        "cc": "ID"
+      }
+    },
+    {
+      "id": "hmns-retail-jakarta-typed-1",
+      "house": "hmns",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "HMNS' official store locator lists multiple stores in Jakarta, including Grand Indonesia, Mall Kelapa Gading 2, Pondok Indah Mall and Kota Kasablanka.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hmnsperfume.com/pages/store-location",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jakarta",
+        "region": "Jakarta",
+        "country": "Indonesia",
+        "cc": "ID"
+      }
+    },
+    {
+      "id": "hmns-retail-bekasi-typed-1",
+      "house": "hmns",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "HMNS' official store locator lists a store at Pakuwon Mall in Bekasi.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://hmnsperfume.com/pages/store-location",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bekasi",
+        "region": "West Java",
+        "country": "Indonesia",
+        "cc": "ID"
+      }
+    },
+    {
+      "id": "wren-atelier-founder-origin-typed-1",
+      "house": "wren-atelier",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Wren Atelier identifies founder and perfumer Renato Lopena Jr. as Filipino; this records his national/heritage association, not birthplace.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://wrenatelier.com.ph/pages/wren-atelier",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Philippines",
+        "cc": "PH"
+      },
+      "open": "The official biography does not state the founder's birthplace or upbringing."
+    },
+    {
+      "id": "wren-atelier-retail-typed-1",
+      "house": "wren-atelier",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Wren Atelier's official contact page lists Philippine retail partners including Art of Scent, The Rockwellist, The Fragrant Fox and Yuchengco Museum; no single physical city is established by the listing.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://wrenatelier.com.ph/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Philippines",
+        "cc": "PH"
+      },
+      "open": "Partner stockists are listed without full addresses; this is country-level retail presence only."
+    },
+    {
+      "id": "gp-fragrances-brand-origin-typed-1",
+      "house": "gp-fragrances",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Tatler Asia describes GP Fragrances as a Filipino fragrance label; the article does not identify a founding city or manufacturing location.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Philippines",
+        "cc": "PH"
+      },
+      "open": "No brand-owned website or primary company location statement was located in this pass."
+    },
+    {
+      "id": "toouch-brand-origin-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Toouch's official company profile identifies it as a Vietnamese fragrance brand founded in 2025; no separate founding city is specified there.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vn.linkedin.com/company/toouch",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Vietnam",
+        "cc": "VN"
+      }
+    },
+    {
+      "id": "toouch-legal-base-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Toouch's official contact page identifies CÔNG TY TNHH TOOUCH and gives its registered head-office address at 218 Lê Văn Sỹ, Tân Sơn Hòa Ward, Ho Chi Minh City, with enterprise registration number 0319507997.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://toouchscent.com/vi-vn/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "cc": "VN",
+        "entity": "CÔNG TY TNHH TOOUCH"
+      },
+      "open": "The brand publishes the enterprise registration number and address on its contact page; the official Vietnamese business registry was not separately queried."
+    },
+    {
+      "id": "toouch-commercial-base-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Toouch's official company profile lists Ho Chi Minh City as its headquarters and primary location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://vn.linkedin.com/company/toouch",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "cc": "VN"
+      }
+    },
+    {
+      "id": "toouch-retail-hcmc-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Toouch's official store locator lists its flagship store at 218 Lê Văn Sỹ in Ho Chi Minh City.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://toouchscent.com/vi-vn/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "cc": "VN",
+        "site": "Toouch Flagship Store"
+      }
+    },
+    {
+      "id": "toouch-retail-hanoi-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Toouch's official store locator lists Nos Scents at Duckzone Complex in Hanoi.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://toouchscent.com/vi-vn/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "cc": "VN",
+        "site": "Nos Scents"
+      }
+    },
+    {
+      "id": "toouch-retail-danang-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Toouch's official store locator lists Alison at Hoàng Diệu Street in Da Nang.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://toouchscent.com/vi-vn/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "cc": "VN",
+        "site": "Alison"
+      }
+    },
+    {
+      "id": "toouch-retail-nhatrang-typed-1",
+      "house": "toouch",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Toouch's official store locator lists D'Net Multistory Concept at VinWonders in Nha Trang.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://toouchscent.com/vi-vn/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Nha Trang",
+        "country": "Vietnam",
+        "cc": "VN",
+        "site": "D'Net Multistory Concept"
+      }
     }
   ]
 }
