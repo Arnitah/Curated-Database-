@@ -1236,6 +1236,22 @@ function mpSection(){
       :`<button type="button" class="linkbtn mp-addnote" data-act="mpnote" data-v="${p.id}">+ Add a note</button>`}
     <div class="mp-meta"><select class="mp-sel" data-mpar="${p.id}" aria-label="Area for ${esc(p.n)}">${MP_AREAS.map(([k,l])=>`<option value="${k}"${k===p.a?' selected':''}>${l}</option>`).join('')}</select><select class="mp-sel" data-mpst="${p.id}" aria-label="Step for ${esc(p.n)}">${steps.map(st=>`<option${st===p.st?' selected':''}>${esc(st)}</option>`).join('')}</select></div>
     <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${!p.inci?'Add ingredients':p.inci_verified===true?'Ingredients checked ✓':'Review ingredient list'}</button>
+    <details class="mp-ii-details"><summary class="small" style="cursor:pointer;padding:8px 0;font-weight:700">Product identity &amp; manufacturer directions</summary>
+     <div style="display:flex;flex-direction:column;gap:9px;padding:8px 0">
+      <p class="small muted">Record the exact variant and market, then copy product directions exactly from the package or a reliable product source. Clay displays these instructions but does not interpret free text.</p>
+      <label class="small">Brand<input id="iiBrand" class="mp-sel" style="width:100%" value="${esc(p.brand||'')}" placeholder="Brand"></label>
+      <label class="small">Exact variant / size<input id="iiVariant" class="mp-sel" style="width:100%" value="${esc(p.product_variant||'')}" placeholder="Exact variant, strength and size"></label>
+      <label class="small">Market / region<input id="iiMarket" class="mp-sel" style="width:100%" value="${esc(p.market||'')}" placeholder="e.g. Canada"></label>
+      <label class="small">Identity source type<select id="iiIdentitySource" class="mp-sel" style="width:100%"><option value="">Not recorded</option><option value="packaging" ${p.identity_source==='packaging'?'selected':''}>Physical packaging</option><option value="manufacturer" ${p.identity_source==='manufacturer'?'selected':''}>Manufacturer</option><option value="retailer" ${p.identity_source==='retailer'?'selected':''}>Retailer</option><option value="user_entered" ${p.identity_source==='user_entered'?'selected':''}>User-entered / other</option></select></label>
+      <label class="small">Identity source URL<input id="iiIdentityUrl" type="url" class="mp-sel" style="width:100%" value="${esc(p.identity_source_url||'')}" placeholder="https://…"></label>
+      <label class="small">Identity checked date<input id="iiIdentityDate" type="date" class="mp-sel" style="width:100%" value="${esc(p.identity_checked_at||'')}"></label>
+      <label class="small">Product directions (copy exactly)<textarea id="iiDirections" class="mp-sel" style="width:100%;min-height:96px;white-space:pre-wrap" rows="4" placeholder="Paste the manufacturer's or package directions without paraphrasing">${esc(p.directions_text||'')}</textarea></label>
+      <label class="small">Directions source type<select id="iiDirectionsSource" class="mp-sel" style="width:100%"><option value="">Not recorded</option><option value="packaging" ${p.directions_source==='packaging'?'selected':''}>Physical packaging</option><option value="manufacturer" ${p.directions_source==='manufacturer'?'selected':''}>Manufacturer</option><option value="retailer" ${p.directions_source==='retailer'?'selected':''}>Retailer</option><option value="user_entered" ${p.directions_source==='user_entered'?'selected':''}>User-entered / other</option></select></label>
+      <label class="small">Directions source URL<input id="iiDirectionsUrl" type="url" class="mp-sel" style="width:100%" value="${esc(p.directions_source_url||'')}" placeholder="https://…"></label>
+      <label class="small">Directions checked date<input id="iiDirectionsDate" type="date" class="mp-sel" style="width:100%" value="${esc(p.directions_checked_at||'')}"></label>
+      <button class="btn primary" type="button" data-act="iisave" data-v="${p.id}">Save product details</button>
+     </div>
+    </details>
     <div class="row" style="gap:6px">${p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:cur">Using it</button>`:''}${p.s!=='past'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:past">Used before</button>`:''}${p.s!=='next'&&p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:next">Try next</button>`:''}<button class="chip" type="button" data-act="mpdel" data-v="${p.id}" style="margin-left:auto;color:var(--stop)">Remove</button></div>
    </div></div>`; };
   const cur=list.filter(p=>p.s==='cur'), have=list.filter(p=>p.s==='have'), past=list.filter(p=>p.s==='past'), nxt=list.filter(p=>p.s==='next');
@@ -1845,6 +1861,10 @@ function iiShelfCard(){
     const labels={use_with_care:'Use with care',complementary:'Complementary roles',separate:'Consider separating',avoid_combination:'Do not combine',insufficient_evidence:'Not enough evidence',insufficient_data:'Need product details',compatible:'Generally compatible'};
     let body=`<p class="small muted">Read-only screening of your active face products. The engine never changes your shelf or routine. Hair and body analysis, morning/evening placement and weekly frequency are not included in this v0.1 screen.</p>
       <p class="small"><b>${withList.length} of ${active.length}</b> active face products have an ingredient list; <b>${verified}</b> checked against packaging.</p>`;
+    const identityCards=active.filter(p=>p.product_variant||p.market||p.identity_source_url||p.identity_checked_at).map(p=>{const src=safeHttpUrl(p.identity_source_url);return `<div class="ii-directions"><b>${esc(p.n)} — product identity</b><p class="small">${esc([p.brand,p.product_variant,p.market].filter(Boolean).join(' · ')||'Identity details incomplete')}</p><p class="small muted">${p.identity_source?esc(p.identity_source.replace('_',' '))+' source':''}${p.identity_checked_at?' · checked '+esc(p.identity_checked_at):''}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Identity source</a>':''}</p></div>`;}).join('');
+    const directionCards=active.filter(p=>typeof p.directions_text==='string'&&p.directions_text.trim()).map(p=>{const src=safeHttpUrl(p.directions_source_url);return `<div class="ii-directions"><b>${esc(p.n)} — product directions</b><p class="small" style="white-space:pre-wrap;margin-top:5px">${esc(p.directions_text)}</p><p class="small muted">${p.directions_source?esc(p.directions_source.replace('_',' '))+' source':''}${p.directions_checked_at?' · checked '+esc(p.directions_checked_at):''}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Directions source</a>':''}${!src?' · Source link not recorded':''}</p></div>`;}).join('');
+    const missingDirections=active.filter(p=>!(typeof p.directions_text==='string'&&p.directions_text.trim())).map(p=>p.n);
+    body+=`<div class="ii-instructions"><b>Product-specific instructions come first</b><p class="small muted">These are displayed as supplied; Clay does not interpret free-text directions. Generic ingredient-family findings below are secondary and must not override the package or manufacturer.</p>${identityCards}${directionCards}${missingDirections.length?`<p class="small muted">Manufacturer directions not on file for: ${missingDirections.map(esc).join(', ')}. No product-specific direction check has been completed for these products.</p>`:''}<p class="small muted">Add or update these records using Edit → Product identity &amp; manufacturer directions on each My Shelf product.</p></div>`;
     if(withList.length<2){
       body+=`<p class="small muted">Add ingredient lists for at least two products using “Check ingredients” on My Shelf. Then Clay can screen evidence-linked ingredient relationships.</p>`;
     } else {
@@ -1857,8 +1877,8 @@ function iiShelfCard(){
         const coverage=r.coverage||[];
         const evidence=(r.evidence||[]).map(x=>`<li>${esc(x.publisher||'Source')}: <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'Evidence source')}</a></li>`).join('');
         const limits=[...(r.limitations||[]),...(r.missing_data||[])];
-        body+=`<div class="ii-pair"><h4>${esc(names)}<span class="ii-tag">${esc(labels[r.classification]||r.classification)}</span></h4>
-          <p>${esc(r.rationale||'A curated rule matched this pair.')}</p>
+        body+=`<div class="ii-pair"><h4>${esc(names)}<span class="ii-tag">General screen · ${esc(labels[r.classification]||r.classification)}</span></h4>
+          <p class="small muted">Generic ingredient-family screening only; this is not a product-specific instruction or a substitute for either product's directions.</p><p>${esc(r.rationale||'A curated rule matched this pair.')}</p>
           ${r.recommendation?`<p>${esc(r.recommendation)}</p>`:''}
           <p class="small muted">Evidence: ${esc(r.confidence||'unknown')}. Ingredient recognition: ${coverage.map(c=>c.recognised+'/'+c.total).join(' · ')||'not available'}.</p>
           <details><summary>Evidence, limitations and missing information</summary>
@@ -2635,6 +2655,8 @@ function pageYear(){
    return {main: main+card('From Safe Batch', importBox('log'), {h:'h3', icon:'today'}), rail};
 }
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const safeHttpUrl=value=>{try{const u=new URL(String(value||''));return u.protocol==='https:'||u.protocol==='http:'?u.href:'';}catch(e){return '';}};
+
 const RENDER = {check:pageCheck, today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, travel:pageTravel, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
 const $ = (s) => document.querySelector(s);
 function currentPalette(){ return S.palette || 'clay'; }
@@ -2723,6 +2745,21 @@ document.addEventListener('click', async (e)=>{
   if (a==='ysel'){ YU.sel=v; const sx=$('#yGrid')?.scrollLeft; render(); if(sx!=null&&$('#yGrid')) $('#yGrid').scrollLeft=sx; return; }
   if (a==='mprate'){ const [id,n]=v.split(':').map(Number); const p=MP.find(x=>x.id===id); if(p){ p.r=p.r===n?0:n; mpSave(); } }
   if (a==='mpbuy'){ const [id,k]=v.split(':'); const p=MP.find(x=>x.id===+id); if(p){ p.b=p.b===k?'':k; mpSave(); } }
+  if (a==='iisave'){
+    const p=MP.find(x=>x.id===+v); if(!p) return;
+    const val=id=>(document.getElementById(id)?.value||'').trim();
+    const identityChanged=val('iiVariant')!==(p.product_variant||'')||val('iiMarket')!==(p.market||'')||val('iiIdentityUrl')!==(p.identity_source_url||'')||val('iiIdentitySource')!==(p.identity_source||'');
+    const directionsChanged=val('iiDirections')!==(p.directions_text||'')||val('iiDirectionsUrl')!==(p.directions_source_url||'')||val('iiDirectionsSource')!==(p.directions_source||'');
+    const identityUrl=val('iiIdentityUrl'), directionsUrl=val('iiDirectionsUrl');
+    if((identityUrl&&!safeHttpUrl(identityUrl))||(directionsUrl&&!safeHttpUrl(directionsUrl))){toast('Use a valid http or https source URL');return;}
+    const set=(key,value)=>{if(value)p[key]=value;else delete p[key];};
+    set('brand',val('iiBrand')); set('product_variant',val('iiVariant')); set('market',val('iiMarket'));
+    set('identity_source',val('iiIdentitySource')); set('identity_source_url',identityUrl);
+    set('identity_checked_at',identityChanged&&val('iiIdentityDate')===(p.identity_checked_at||'')?'':val('iiIdentityDate'));
+    set('directions_text',val('iiDirections')); set('directions_source',val('iiDirectionsSource')); set('directions_source_url',directionsUrl);
+    set('directions_checked_at',directionsChanged&&val('iiDirectionsDate')===(p.directions_checked_at||'')?'':val('iiDirectionsDate'));
+    mpSave(); toast('Product identity and directions saved'); render(); return;
+  }
   if (a==='mpedit'){ S.mpEdit=+v; render(); const i=$('#mpRen'); if(i){ i.focus(); i.select(); } return; }
   if (a==='mpcancel'){ S.mpEdit=null; }
   if (a==='mpsave'){ const n=($('#mpRen').value||'').trim(); const p=MP.find(x=>x.id===+v); if(p&&n){ p.n=n; mpSave(); toast('Renamed'); } S.mpEdit=null; }
