@@ -57,8 +57,8 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - Map precision: 110 `city`, 1 `region`, 67 `country`. Some entries marked `country` have city-named places such as Tokyo, Manila and Bangkok. This needs a separate precision audit; precision is spatial granularity, not evidence confidence or relationship type.
 
 **Current PR branch after the pilot batches:**
-- 266 observations total, including 61 typed geography claims across 22 existing houses and 3 research leads.
-- 156 of the 178 existing house records still have no typed geography claim. Legacy `hq` / `made_in` claims have not been silently reclassified.
+- 293 observations total, including 88 typed geography claims across 32 existing houses and 3 research leads.
+- 146 of the 178 existing house records still have no typed geography claim. Legacy `hq` / `made_in` claims have not been silently reclassified.
 - The pilot's lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
 
 ## UI and map behaviour
