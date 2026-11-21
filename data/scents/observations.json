@@ -2718,7 +2718,7 @@
         "city": "Bangkok",
         "country": "Thailand",
         "cc": "TH",
-        "site": "Bortnikoff Co., Ltd."
+        "entity": "Bortnikoff Co., Ltd."
       }
     },
     {
@@ -2783,7 +2783,7 @@
         "city": "London",
         "country": "United Kingdom",
         "cc": "GB",
-        "site": "Gabar Products Ltd, company 13853285"
+        "entity": "Gabar Products Ltd, company 13853285"
       }
     },
     {
@@ -2800,7 +2800,7 @@
         "city": "London",
         "country": "United Kingdom",
         "cc": "GB",
-        "site": "SANA JARDIN LIMITED, company 09507539"
+        "entity": "SANA JARDIN LIMITED, company 09507539"
       },
       "open": "The official brand site currently says it is no longer accepting orders. This registry entry establishes a legal address only, not current trading activity. A separate SANA JARDIN (UK) LIMITED, company 10840196, is listed in liquidation and must not be conflated with this entity."
     },
@@ -2818,7 +2818,7 @@
         "city": "London",
         "country": "United Kingdom",
         "cc": "GB",
-        "site": "SANA JARDIN (UK) LIMITED, company 10840196"
+        "entity": "SANA JARDIN (UK) LIMITED, company 10840196"
       },
       "open": "This is a separate legal entity from SANA JARDIN LIMITED (company 09507539); do not treat the records as interchangeable."
     },
