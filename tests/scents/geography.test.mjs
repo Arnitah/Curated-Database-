@@ -10,7 +10,7 @@ const base = {
 };
 
 test("geography topic vocabulary is explicit and stable", () => {
-  assert.deepEqual(GEO_TOPICS, ["brand_origin","founder_origin","legal_base","commercial_base","studio","formulation","manufacturing","filling","sourcing","retail"]);
+  assert.deepEqual(GEO_TOPICS, ["brand_origin","founder_origin","legal_base","commercial_base","studio","formulation","manufacturing","filling","assembly","sourcing","retail"]);
   assert.deepEqual(LEGACY_GEO_TOPICS, ["hq","made_in"]);
 });
 test("accepts a sourced city-level geography claim", () => assert.deepEqual(validateGeographyObservation(base), []));
