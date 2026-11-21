@@ -5173,7 +5173,7 @@
       "house": "kinfolk-notes",
       "kind": "claim",
       "topic": "manufacturing",
-      "text": "The brand's own journal republishes a Business of Fashion article stating that all Kinfolk Notes formulas are made in Korea.",
+      "text": "Business of Fashion's report says Kinfolk Notes' product team is based in Seoul near its flagship and manufacturing; the source does not identify the manufacturing facility or specify whether all finished products are made there.",
       "evidence": "editorial",
       "strength": "B",
       "src": "https://kinfolknotes.com/en/blogs/news/how-a-magazine-becomes-a-lifestyle-brand",
@@ -5181,7 +5181,8 @@
       "location": {
         "country": "South Korea",
         "cc": "KR"
-      }
+      },
+      "open": "This is a secondary report; the facility address and product-level manufacturing allocation are not stated."
     },
     {
       "id": "kinfolk-notes-formulation-typed-1",
