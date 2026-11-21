@@ -124,7 +124,7 @@ const obsSet = sets['scents/observations']?.data;
 if (obsSet) {
   const hid = new Set((houses || []).map((h) => h.id)), seen = new Set();
   const rates = sets['scents/rates']?.data?.cad_per || {};
-  const EV = new Set(['checked', 'retailer', 'brand', 'database', 'editorial', 'reported', 'creator', 'nitah']);
+  const EV = new Set(['checked', 'retailer', 'brand', 'database', 'registry', 'editorial', 'reported', 'creator', 'nitah']);
   for (const o of obsSet.records || []) {
     const w = `scents/observations ${o?.id || '?'}`;
     if (!o.id || seen.has(o.id)) errors.push(`${w}: needs a unique id`); seen.add(o.id);
