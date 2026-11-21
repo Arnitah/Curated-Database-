@@ -15,6 +15,7 @@ test("geography topic vocabulary is explicit and stable", () => {
 });
 test("accepts a sourced city-level geography claim", () => assert.deepEqual(validateGeographyObservation(base), []));
 test("accepts country-only facts when city is not established", () => assert.deepEqual(validateGeographyObservation({ ...base, location: { country: "Oman", cc: "OM" } }), []));
+test("accepts a named legal entity alongside its registered location", () => assert.deepEqual(validateGeographyObservation({ ...base, topic: "legal_base", location: { entity: "Example Ltd", city: "London", country: "United Kingdom", cc: "GB" } }), []));
 test("requires a location object for every typed geography topic", () => {
   for (const topic of GEO_TOPICS) assert.ok(validateGeographyObservation({ ...base, topic, location: undefined }).some(x => x.includes("need a location object")), topic);
 });
