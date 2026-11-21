@@ -50,6 +50,7 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
     await page.locator('#nav button[data-v="learn"]').click();
     await page.getByRole('heading', { name: 'Your shelf ingredients' }).waitFor();
     assert.match(await page.locator('#main').innerText(), /starter registry/i);
+    assert.match(await page.locator('#main').innerText(), /does not interpret them/i);
     await assertNoPageOverflow(page, 'Learn');
 
     await page.locator('#nav button[data-v="shelf"]').click();
@@ -60,6 +61,8 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
 
     await page.locator('#nav button[data-v="routine"]').click();
     await page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+    assert.match(await page.locator('#main').innerText(), /Product-specific instructions come first/);
+    assert.match(await page.locator('#main').innerText(), /Use sunscreen during use and for one week afterwards/);
     await assertNoPageOverflow(page, 'Routine');
 
     await page.locator('#nav button[data-v="scan"]').click();
