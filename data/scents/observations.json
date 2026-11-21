@@ -2624,6 +2624,400 @@
       "strength": "C",
       "src": "https://www.tokopedia.com/find/parfum-naisday-ons",
       "seen": "2026-11-11"
+    },
+    {
+      "id": "tadhana-commercial-base-typed-1",
+      "house": "tadhana",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The brand's official press page identifies Toronto as its headquarters and global commercial base.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.tadhana.co/pages/press",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Toronto",
+        "country": "Canada",
+        "cc": "CA"
+      }
+    },
+    {
+      "id": "tadhana-manufacturing-typed-1",
+      "house": "tadhana",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The brand identifies Manila as its manufacturing location; its FAQ also says fragrances are crafted in small batches in the Philippines.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.tadhana.co/pages/press",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Manila",
+        "country": "Philippines",
+        "cc": "PH"
+      }
+    },
+    {
+      "id": "kst-scent-commercial-base-typed-1",
+      "house": "kst-scent",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The brand's contact page identifies KST Scent / d.grayi as based in Los Angeles, California.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kstscent.com/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Los Angeles",
+        "region": "California",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "kst-scent-founder-origin-typed-1",
+      "house": "kst-scent",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Founder Kael Jeong says he grew up in Korea; this is founder upbringing/heritage, not the brand's place of origin.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.kstscent.com/pages/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "bortnikoff-brand-origin-typed-1",
+      "house": "bortnikoff",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The house states that Bortnikoff was founded in Thailand in 2018.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://bortnikoff.com/aboutus/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "bortnikoff-commercial-base-typed-1",
+      "house": "bortnikoff",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official contact page lists Bortnikoff Co., Ltd. at a Bangkok, Thailand company address; this is recorded as a company operating address, not independently asserted as a registered office.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://bortnikoff.com/contact/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH",
+        "site": "Bortnikoff Co., Ltd."
+      }
+    },
+    {
+      "id": "dusita-founder-origin-typed-1",
+      "house": "dusita",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "The house states that founder and perfumer Pissara Umavijani was born and raised in Bangkok.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.parfumsdusita.com/dusita-universe",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "dusita-commercial-base-typed-1",
+      "house": "dusita",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official contact page lists the Parfums Dusita office at 11 rue de la Sourdière, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.parfumsdusita.com/contact-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "gabar-commercial-base-typed-1",
+      "house": "gabar",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Gabar describes London as its current home while describing its roots in Myanmar.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://gabarworld.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
+    },
+    {
+      "id": "gabar-legal-base-typed-1",
+      "house": "gabar",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Companies House lists Gabar Products Ltd (company 13853285) with a registered office in London, England.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/13853285",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "Gabar Products Ltd, company 13853285"
+      }
+    },
+    {
+      "id": "sana-jardin-legal-base-typed-1",
+      "house": "sana-jardin",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Companies House lists SANA JARDIN LIMITED (company 09507539) with a registered office in London.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/09507539",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "SANA JARDIN LIMITED, company 09507539"
+      },
+      "open": "The official brand site currently says it is no longer accepting orders. This registry entry establishes a legal address only, not current trading activity. A separate SANA JARDIN (UK) LIMITED, company 10840196, is listed in liquidation and must not be conflated with this entity."
+    },
+    {
+      "id": "sana-jardin-legal-base-typed-2",
+      "house": "sana-jardin",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Companies House separately lists SANA JARDIN (UK) LIMITED (company 10840196) with a registered office in London; its status is liquidation.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/10840196",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "SANA JARDIN (UK) LIMITED, company 10840196"
+      },
+      "open": "This is a separate legal entity from SANA JARDIN LIMITED (company 09507539); do not treat the records as interchangeable."
+    },
+    {
+      "id": "sana-jardin-sourcing-typed-1",
+      "house": "sana-jardin",
+      "kind": "claim",
+      "topic": "sourcing",
+      "text": "The brand describes working with flower harvesters in a rural flower-growing region in Morocco for its orange-blossom supply and social-impact model; it does not name a city in this source.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://sanajardin.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Morocco",
+        "cc": "MA"
+      },
+      "open": "The source does not identify a city or the exact growing region; do not geocode more precisely."
+    },
+    {
+      "id": "amouage-brand-origin-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Amouage states that the house was founded in the Sultanate of Oman in 1983.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Oman",
+        "cc": "OM"
+      }
+    },
+    {
+      "id": "amouage-manufacturing-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The house identifies its Muscat-based Manufacture and Visitors' Centre as the place where visitors can observe perfume manufacturing stages from maceration through bottling and packaging.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Muscat",
+        "country": "Oman",
+        "cc": "OM"
+      }
+    },
+    {
+      "id": "amouage-formulation-paris-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The house says its perfumes are composed by perfumers in Paris; it does not assign individual products to this city in the cited statement.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The source describes a perfumer network and does not identify which individual perfume is composed in Paris."
+    },
+    {
+      "id": "amouage-formulation-grasse-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The house says its perfumes are composed by perfumers in Grasse; it does not assign individual products to this city in the cited statement.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The source describes a perfumer network and does not identify which individual perfume is composed in Grasse."
+    },
+    {
+      "id": "amouage-formulation-geneva-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The house says its perfumes are composed by perfumers in Geneva; it does not assign individual products to this city in the cited statement.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      },
+      "open": "The source describes a perfumer network and does not identify which individual perfume is composed in Geneva."
+    },
+    {
+      "id": "amouage-formulation-new-york-typed-1",
+      "house": "amouage",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The house says its perfumes are composed by perfumers in New York; it does not assign individual products to this city in the cited statement.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouage.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New York",
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "The source describes a perfumer network and does not identify which individual perfume is composed in New York."
+    },
+    {
+      "id": "maya-njie-studio-typed-1",
+      "house": "maya-njie",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Maya Njie's official contact page identifies its studio at 91A Rivington Street, London.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.mayanjie.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "Maya Njie studio"
+      }
+    },
+    {
+      "id": "beguile-formulation-typed-1",
+      "house": "beguile",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Beguile states that every fragrance composition is developed with expert perfumers in Dubai.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "etre-parfums-formulation-typed-1",
+      "house": "etre-parfums",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Être states that its fragrances are formulated in Grasse, France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://etreparfums.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand's process page separately describes fragrance oils sent to its Indonesian manufacturing factory; the exact boundary between Grasse formulation/manufacture and Indonesian downstream production needs clarification."
+    },
+    {
+      "id": "etre-parfums-manufacturing-typed-1",
+      "house": "etre-parfums",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Être's official homepage states that its fragrances are manufactured in Grasse, France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://etreparfums.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand's process page separately describes PT Premium Parfum Indonesia as its manufacturing factory; clarify whether this refers to downstream manufacturing after the fragrance oils arrive."
+    },
+    {
+      "id": "etre-parfums-assembly-typed-1",
+      "house": "etre-parfums",
+      "kind": "claim",
+      "topic": "assembly",
+      "text": "Être states that its perfumes are assembled in Indonesia.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://etreparfums.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Indonesia",
+        "cc": "ID"
+      }
     }
   ]
 }
