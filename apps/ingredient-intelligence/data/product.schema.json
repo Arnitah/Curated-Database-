@@ -119,7 +119,11 @@
       "type": "boolean"
     },
     "ingredient_list_completeness": {
-      "enum": ["complete", "partial", "unknown"],
+      "enum": [
+        "complete",
+        "partial",
+        "unknown"
+      ],
       "description": "Whether the saved list is known to contain the complete packaging ingredient declaration."
     },
     "directions_text": {
@@ -141,6 +145,74 @@
         "string",
         "null"
       ]
+    },
+    "product_variant": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Exact product variant, strength, size or formula identifier as shown by the package or source."
+    },
+    "market": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Market or region for the identified product, e.g. Canada."
+    },
+    "identity_source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "packaging",
+        "manufacturer",
+        "retailer",
+        "user_entered",
+        null
+      ]
+    },
+    "identity_source_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "identity_checked_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "directions_source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "packaging",
+        "manufacturer",
+        "retailer",
+        "user_entered",
+        null
+      ]
+    },
+    "directions_source_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "directions_checked_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
     }
   }
 }

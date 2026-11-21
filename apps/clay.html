@@ -332,6 +332,7 @@ p{margin:0}
 .cmp-add{min-height:30px;font-size:12px;padding:0 10px;margin-top:2px}
 .cmp-price{width:100%;min-height:38px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:var(--bg);color:var(--ink);font:inherit}
 .ii-pair{border-top:1px solid var(--line);padding:12px 0}.ii-pair:first-of-type{border-top:0}.ii-pair h4{margin:0 0 4px;font-size:15px}.ii-tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--ink);margin-left:6px;vertical-align:1px}.ii-pair p{margin:4px 0;line-height:1.45}.ii-pair details{margin-top:6px}.ii-pair summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:13px}
+.ii-instructions{margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--warn-soft);display:flex;flex-direction:column;gap:8px}.ii-directions{padding:8px 0;border-top:1px solid color-mix(in oklab,var(--ink) 18%,transparent);min-width:0}.ii-directions p{overflow-wrap:anywhere}.mp-ii-details{border-top:1px solid var(--line);padding-top:6px}.mp-ii-details label{display:flex;flex-direction:column;gap:4px}.mp-ii-details input,.mp-ii-details select,.mp-ii-details textarea{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);min-width:0}
 .cmp-inci summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:13px}.cmp-inci p{margin:6px 0 0;line-height:1.45}
 .cmp-sum{margin:6px 0 0;padding-left:18px;font-size:14px;display:flex;flex-direction:column;gap:3px}
 .cp-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:900px){.cp-grid.three{grid-template-columns:1fr}}
@@ -627,6 +628,14 @@ function toEngineProduct(mp) {
   const frequency = Number.isFinite(mp.frequency_per_week) && mp.frequency_per_week >= 0 && mp.frequency_per_week <= 14 ? mp.frequency_per_week : null;
   const knownPh = Number.isFinite(mp.known_ph) && mp.known_ph >= 0 && mp.known_ph <= 14 ? mp.known_ph : null;
   if (!mp.directions_text) notes.push("product directions not on file");
+  if (mp.directions_text && !mp.directions_source) notes.push("product directions source type is not on file");
+  if (mp.directions_text && !mp.directions_source_url) notes.push("product directions have no source URL on file");
+  if (mp.directions_text && !mp.directions_checked_at) notes.push("product directions checked date is not on file");
+  if (!mp.product_variant) notes.push("exact product variant not on file");
+  if (!mp.market) notes.push("product market or region not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_source) notes.push("product identity source type is not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_source_url) notes.push("product identity source URL not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_checked_at) notes.push("product identity checked date is not on file");
   if (format === "unknown") notes.push("product format not on file");
   if (frequency === null) notes.push("use frequency not on file");
   if (knownPh === null) notes.push("product pH not on file; no value inferred");
@@ -646,6 +655,14 @@ function toEngineProduct(mp) {
     ingredient_list_verified: mp.inci_verified === true,
     ingredient_list_completeness: mp.inci_complete === false ? "partial" : (mp.inci_verified === true ? "complete" : "unknown"),
     directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
+    directions_source: ["packaging", "manufacturer", "retailer", "user_entered"].includes(mp.directions_source) ? mp.directions_source : null,
+    directions_source_url: typeof mp.directions_source_url === "string" ? mp.directions_source_url : null,
+    directions_checked_at: typeof mp.directions_checked_at === "string" ? mp.directions_checked_at : null,
+    product_variant: typeof mp.product_variant === "string" ? mp.product_variant : null,
+    market: typeof mp.market === "string" ? mp.market : null,
+    identity_source: ["packaging", "manufacturer", "retailer", "user_entered"].includes(mp.identity_source) ? mp.identity_source : null,
+    identity_source_url: typeof mp.identity_source_url === "string" ? mp.identity_source_url : null,
+    identity_checked_at: typeof mp.identity_checked_at === "string" ? mp.identity_checked_at : null,
     known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
     mapping_notes: notes,
@@ -1236,6 +1253,22 @@ function mpSection(){
       :`<button type="button" class="linkbtn mp-addnote" data-act="mpnote" data-v="${p.id}">+ Add a note</button>`}
     <div class="mp-meta"><select class="mp-sel" data-mpar="${p.id}" aria-label="Area for ${esc(p.n)}">${MP_AREAS.map(([k,l])=>`<option value="${k}"${k===p.a?' selected':''}>${l}</option>`).join('')}</select><select class="mp-sel" data-mpst="${p.id}" aria-label="Step for ${esc(p.n)}">${steps.map(st=>`<option${st===p.st?' selected':''}>${esc(st)}</option>`).join('')}</select></div>
     <button class="chip" type="button" style="align-self:flex-start" data-act="cpopen" data-v="${p.id}">${!p.inci?'Add ingredients':p.inci_verified===true?'Ingredients checked ✓':'Review ingredient list'}</button>
+    <details class="mp-ii-details"><summary class="small" style="cursor:pointer;padding:8px 0;font-weight:700">Product identity &amp; manufacturer directions</summary>
+     <div style="display:flex;flex-direction:column;gap:9px;padding:8px 0">
+      <p class="small muted">Record the exact variant and market, then copy product directions exactly from the package or a reliable product source. Clay displays these instructions but does not interpret free text.</p>
+      <label class="small">Brand<input id="iiBrand" class="mp-sel" style="width:100%" value="${esc(p.brand||'')}" placeholder="Brand"></label>
+      <label class="small">Exact variant / size<input id="iiVariant" class="mp-sel" style="width:100%" value="${esc(p.product_variant||'')}" placeholder="Exact variant, strength and size"></label>
+      <label class="small">Market / region<input id="iiMarket" class="mp-sel" style="width:100%" value="${esc(p.market||'')}" placeholder="e.g. Canada"></label>
+      <label class="small">Identity source type<select id="iiIdentitySource" class="mp-sel" style="width:100%"><option value="">Not recorded</option><option value="packaging" ${p.identity_source==='packaging'?'selected':''}>Physical packaging</option><option value="manufacturer" ${p.identity_source==='manufacturer'?'selected':''}>Manufacturer</option><option value="retailer" ${p.identity_source==='retailer'?'selected':''}>Retailer</option><option value="user_entered" ${p.identity_source==='user_entered'?'selected':''}>User-entered / other</option></select></label>
+      <label class="small">Identity source URL<input id="iiIdentityUrl" type="url" class="mp-sel" style="width:100%" value="${esc(p.identity_source_url||'')}" placeholder="https://…"></label>
+      <label class="small">Identity checked date<input id="iiIdentityDate" type="date" class="mp-sel" style="width:100%" value="${esc(p.identity_checked_at||'')}"></label>
+      <label class="small">Product directions (copy exactly)<textarea id="iiDirections" class="mp-sel" style="width:100%;min-height:96px;white-space:pre-wrap" rows="4" placeholder="Paste the manufacturer's or package directions without paraphrasing">${esc(p.directions_text||'')}</textarea></label>
+      <label class="small">Directions source type<select id="iiDirectionsSource" class="mp-sel" style="width:100%"><option value="">Not recorded</option><option value="packaging" ${p.directions_source==='packaging'?'selected':''}>Physical packaging</option><option value="manufacturer" ${p.directions_source==='manufacturer'?'selected':''}>Manufacturer</option><option value="retailer" ${p.directions_source==='retailer'?'selected':''}>Retailer</option><option value="user_entered" ${p.directions_source==='user_entered'?'selected':''}>User-entered / other</option></select></label>
+      <label class="small">Directions source URL<input id="iiDirectionsUrl" type="url" class="mp-sel" style="width:100%" value="${esc(p.directions_source_url||'')}" placeholder="https://…"></label>
+      <label class="small">Directions checked date<input id="iiDirectionsDate" type="date" class="mp-sel" style="width:100%" value="${esc(p.directions_checked_at||'')}"></label>
+      <button class="btn primary" type="button" data-act="iisave" data-v="${p.id}">Save product details</button>
+     </div>
+    </details>
     <div class="row" style="gap:6px">${p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:cur">Using it</button>`:''}${p.s!=='past'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:past">Used before</button>`:''}${p.s!=='next'&&p.s!=='cur'?`<button class="chip" type="button" data-act="mpset" data-v="${p.id}:next">Try next</button>`:''}<button class="chip" type="button" data-act="mpdel" data-v="${p.id}" style="margin-left:auto;color:var(--stop)">Remove</button></div>
    </div></div>`; };
   const cur=list.filter(p=>p.s==='cur'), have=list.filter(p=>p.s==='have'), past=list.filter(p=>p.s==='past'), nxt=list.filter(p=>p.s==='next');
@@ -1814,16 +1847,21 @@ function iiCard(){
     if(!window.ClayII) return '';
     const D=cmpSlots().map(cmpData).filter(d=>d&&d.list);
     if(D.length<2) return card('Pairing screening', `<p class="small muted">Add ingredient lists for two or more products to see a gentle pairing screen. Nothing is changed in your routine.</p>`, {h:'h3', icon:'check'});
-    const E=window.ClayII, P=D.map(d=>E.toEngineProduct({id:d.k,a:'face',st:'Other',n:d.name,s:'cur',inci:d.list}));
+    const E=window.ClayII, P=D.map(d=>E.toEngineProduct(d.shelf?{...d.shelf,inci:d.list}:{id:d.k,a:'face',st:'Other',n:d.name,s:'cur',inci:d.list}));
     const bothLists=pp=>pp.ingredient_list.length>0, LBL={use_with_care:'Use with care',complementary:'Different jobs',separate:'Often kept apart',avoid_combination:'Check directions first',insufficient_evidence:'No guidance on file',insufficient_data:'Not enough information',compatible:'No concern on file'};
     const conf={high:'Evidence: strong',moderate:'Evidence: moderate',limited:'Evidence: limited',unknown:''};
+    const identityCards=D.map(d=>{const p=d.shelf||{},src=safeHttpUrl(p.identity_source_url);if(!p.brand&&!p.product_variant&&!p.market&&!p.identity_source_url&&!p.identity_checked_at)return '';return `<div class="ii-directions"><b>${esc(d.name)} — product identity</b><p class="small">${esc([p.brand,p.product_variant,p.market].filter(Boolean).join(' · ')||'Identity details incomplete')}</p><p class="small muted">${p.identity_source?esc(p.identity_source.replace('_',' '))+' source':'Source type not recorded'}${p.identity_checked_at?' · checked '+esc(p.identity_checked_at):' · Checked date not recorded'}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Identity source</a>':' · Source link not recorded'}</p></div>`;}).join('');
+    const instructionCards=D.map(d=>{const p=d.shelf||{},src=safeHttpUrl(p.directions_source_url),txt=String(p.directions_text||'').trim();return txt?`<div class="ii-directions"><b>${esc(d.name)} — product directions</b><p class="small" style="white-space:pre-wrap;margin-top:5px">${esc(txt)}</p><p class="small muted">${p.directions_source?esc(p.directions_source.replace('_',' '))+' source':'Source type not recorded'}${p.directions_checked_at?' · checked '+esc(p.directions_checked_at):' · Checked date not recorded'}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Directions source</a>':' · Source link not recorded'}</p></div>`:'';}).join('');
+    const missingInstructionNames=D.filter(d=>!(d.shelf&&String(d.shelf.directions_text||'').trim())).map(d=>d.name);
+    const missingIdentityNames=D.filter(d=>!(d.shelf&&d.shelf.product_variant&&d.shelf.market&&d.shelf.identity_source_url&&d.shelf.identity_checked_at)).map(d=>d.name);
+    const instructionBlock=`<div class="ii-instructions"><b>Product-specific instructions come first</b><p class="small muted">Directions are displayed as supplied, not interpreted. Generic ingredient-family screening is secondary and does not replace product instructions.</p>${identityCards}${missingIdentityNames.length?`<p class="small muted">Exact product variant, market or identity evidence is incomplete for: ${missingIdentityNames.map(esc).join(', ')}.</p>`:''}${instructionCards}${missingInstructionNames.length?`<p class="small muted">Product directions not on file for: ${missingInstructionNames.map(esc).join(', ')}.</p>`:''}</div>`;
     let out='';
     for(let i=0;i<P.length;i++) for(let j=i+1;j<P.length;j++){
       const r=E.engine.evaluateProductPair(P[i],P[j]), noRule=r.classification==='insufficient_data'&&!r.matched_rules.length&&bothLists(P[i])&&bothLists(P[j]);
       const cov=r.coverage||[], na=cov.map((c,x)=>c.unmatched.length?`<li><b>${esc(D[x===0?i:j].name)}</b>: ${esc(c.unmatched.join(', '))}</li>`:'').join('');
       const lim=(r.limitations||[]).filter(x=>!/ingredients recognised; not assessed/.test(x));
-      out+=`<div class="ii-pair"><h4>${esc(D[i].name)} + ${esc(D[j].name)}<span class="ii-tag">${noRule?LBL.insufficient_evidence:(LBL[r.classification]||r.classification)}</span></h4>
-        <p>${noRule?'Clay has no guidance for this pair, and the lists you pasted haven’t been checked against the labels. That doesn’t mean the pair is fine or a problem.':esc(r.rationale)}</p>${r.matched_rules.length?`<p>${esc(r.recommendation)}</p>`:''}
+      out+=`<div class="ii-pair"><h4>${esc(D[i].name)} + ${esc(D[j].name)}<span class="ii-tag">General screen · ${noRule?LBL.insufficient_evidence:(LBL[r.classification]||r.classification)}</span></h4>
+        <p class="small muted">Generic ingredient-family screening only; this is not a product-specific instruction.</p><p>${noRule?'Clay has no guidance for this pair, and the lists you pasted haven’t been checked against the labels. That doesn’t mean the pair is fine or a problem.':esc(r.rationale)}</p>${r.matched_rules.length?`<p>${esc(r.recommendation)}</p>`:''}
         ${conf[r.confidence]?`<p class="small muted">${conf[r.confidence]}</p>`:''}
         <p class="small muted">Ingredients Clay recognises: ${esc(D[i].name)} ${cov[0].recognised} of ${cov[0].total}; ${esc(D[j].name)} ${cov[1].recognised} of ${cov[1].total}.</p>
         <details><summary>Sources, limits and what wasn’t assessed</summary>
@@ -1833,7 +1871,7 @@ function iiCard(){
           ${r.missing_data.length?`<p class="small muted">Not on file: ${esc([...new Set(r.missing_data)].join(', '))}.</p>`:''}
         </details></div>`;
     }
-    return card('Pairing screening', `<p class="small muted">A gentle screen of the lists above. It can’t see strengths or pH, and each product’s own directions come first. It never changes your routine.</p>${out}`, {h:'h3', icon:'check'});
+    return card('Pairing screening', `<p class="small muted">A gentle screen of the lists above. It can’t see strengths or pH. It never changes your routine.</p>${instructionBlock}${out}`, {h:'h3', icon:'check'});
   }catch(e){ return ''; }
 }
 function iiShelfCard(){
@@ -1845,6 +1883,11 @@ function iiShelfCard(){
     const labels={use_with_care:'Use with care',complementary:'Complementary roles',separate:'Consider separating',avoid_combination:'Do not combine',insufficient_evidence:'Not enough evidence',insufficient_data:'Need product details',compatible:'Generally compatible'};
     let body=`<p class="small muted">Read-only screening of your active face products. The engine never changes your shelf or routine. Hair and body analysis, morning/evening placement and weekly frequency are not included in this v0.1 screen.</p>
       <p class="small"><b>${withList.length} of ${active.length}</b> active face products have an ingredient list; <b>${verified}</b> checked against packaging.</p>`;
+    const identityCards=active.filter(p=>p.brand||p.product_variant||p.market||p.identity_source_url||p.identity_checked_at).map(p=>{const src=safeHttpUrl(p.identity_source_url);return `<div class="ii-directions"><b>${esc(p.n)} — product identity</b><p class="small">${esc([p.brand,p.product_variant,p.market].filter(Boolean).join(' · ')||'Identity details incomplete')}</p><p class="small muted">${p.identity_source?esc(p.identity_source.replace('_',' '))+' source':'Source type not recorded'}${p.identity_checked_at?' · checked '+esc(p.identity_checked_at):' · Checked date not recorded'}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Identity source</a>':' · Source link not recorded'}</p></div>`;}).join('');
+    const directionCards=active.filter(p=>typeof p.directions_text==='string'&&p.directions_text.trim()).map(p=>{const src=safeHttpUrl(p.directions_source_url);return `<div class="ii-directions"><b>${esc(p.n)} — product directions</b><p class="small" style="white-space:pre-wrap;margin-top:5px">${esc(p.directions_text)}</p><p class="small muted">${p.directions_source?esc(p.directions_source.replace('_',' '))+' source':'Source type not recorded'}${p.directions_checked_at?' · checked '+esc(p.directions_checked_at):' · Checked date not recorded'}${src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Directions source</a>':' · Source link not recorded'}</p></div>`;}).join('');
+    const missingDirections=active.filter(p=>!(typeof p.directions_text==='string'&&p.directions_text.trim())).map(p=>p.n);
+    const missingIdentity=active.filter(p=>!p.product_variant||!p.market||!p.identity_source_url||!p.identity_checked_at).map(p=>p.n);
+    body+=`<div class="ii-instructions"><b>Product-specific instructions come first</b><p class="small muted">These are displayed as supplied; Clay does not interpret free-text directions. Generic ingredient-family findings below are secondary and must not override the package or manufacturer.</p>${identityCards}${missingIdentity.length?`<p class="small muted">Exact product variant, market or identity evidence is incomplete for: ${missingIdentity.map(esc).join(', ')}.</p>`:''}${directionCards}${missingDirections.length?`<p class="small muted">Manufacturer directions not on file for: ${missingDirections.map(esc).join(', ')}. No product-specific direction check has been completed for these products.</p>`:''}<p class="small muted">Add or update these records using Edit → Product identity &amp; manufacturer directions on each My Shelf product.</p></div>`;
     if(withList.length<2){
       body+=`<p class="small muted">Add ingredient lists for at least two products using “Check ingredients” on My Shelf. Then Clay can screen evidence-linked ingredient relationships.</p>`;
     } else {
@@ -1857,8 +1900,8 @@ function iiShelfCard(){
         const coverage=r.coverage||[];
         const evidence=(r.evidence||[]).map(x=>`<li>${esc(x.publisher||'Source')}: <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'Evidence source')}</a></li>`).join('');
         const limits=[...(r.limitations||[]),...(r.missing_data||[])];
-        body+=`<div class="ii-pair"><h4>${esc(names)}<span class="ii-tag">${esc(labels[r.classification]||r.classification)}</span></h4>
-          <p>${esc(r.rationale||'A curated rule matched this pair.')}</p>
+        body+=`<div class="ii-pair"><h4>${esc(names)}<span class="ii-tag">General screen · ${esc(labels[r.classification]||r.classification)}</span></h4>
+          <p class="small muted">Generic ingredient-family screening only; this is not a product-specific instruction or a substitute for either product's directions.</p><p>${esc(r.rationale||'A curated rule matched this pair.')}</p>
           ${r.recommendation?`<p>${esc(r.recommendation)}</p>`:''}
           <p class="small muted">Evidence: ${esc(r.confidence||'unknown')}. Ingredient recognition: ${coverage.map(c=>c.recognised+'/'+c.total).join(' · ')||'not available'}.</p>
           <details><summary>Evidence, limitations and missing information</summary>
@@ -1884,15 +1927,26 @@ function iiScanBridgeCard(){
     const products = withList.map(p => window.ClayII.toEngineProduct(p));
     const result = window.ClayII.engine.evaluateRoutine(products, {});
     const labels = {use_with_care:'Use with care',complementary:'Complementary roles',separate:'Consider separating',avoid_combination:'Do not combine',insufficient_evidence:'Not enough evidence',insufficient_data:'Need product details',compatible:'Generally compatible'};
+    const identityCards = active.filter(p => p.brand||p.product_variant||p.market||p.identity_source_url||p.identity_checked_at).map(p => {
+      const src=safeHttpUrl(p.identity_source_url);
+      return '<div class="ii-directions"><b>'+esc(p.n)+' — product identity</b><p class="small">'+esc([p.brand,p.product_variant,p.market].filter(Boolean).join(' · ')||'Identity details incomplete')+'</p><p class="small muted">'+(p.identity_source?esc(p.identity_source.replace('_',' '))+' source':'Source type not recorded')+(p.identity_checked_at?' · checked '+esc(p.identity_checked_at):' · Checked date not recorded')+(src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Identity source</a>':' · Source link not recorded')+'</p></div>';
+    }).join('');
+    const directionCards = active.filter(p => typeof p.directions_text === 'string' && p.directions_text.trim()).map(p => {
+      const src=safeHttpUrl(p.directions_source_url);
+      return '<div class="ii-directions"><b>'+esc(p.n)+' — product directions</b><p class="small" style="white-space:pre-wrap;margin-top:5px">'+esc(p.directions_text)+'</p><p class="small muted">'+(p.directions_source?esc(p.directions_source.replace('_',' '))+' source':'Source type not recorded')+(p.directions_checked_at?' · checked '+esc(p.directions_checked_at):' · Checked date not recorded')+(src?' · <a href="'+esc(src)+'" target="_blank" rel="noopener">Directions source</a>':' · Source link not recorded')+'</p></div>';
+    }).join('');
+    const missingDirections=active.filter(p=>!(typeof p.directions_text==='string'&&p.directions_text.trim())).map(p=>p.n);
+    const missingIdentity=active.filter(p=>!p.product_variant||!p.market||!p.identity_source_url||!p.identity_checked_at).map(p=>p.n);
+    const instructionBlock='<div class="ii-instructions"><b>Product-specific instructions come first</b><p class="small muted">Directions are displayed as supplied, not interpreted. Generic ingredient-family screening below is secondary.</p>'+identityCards+(missingIdentity.length?'<p class="small muted">Exact product variant, market or identity evidence is incomplete for: '+missingIdentity.map(esc).join(', ')+'.</p>':'')+directionCards+(missingDirections.length?'<p class="small muted">Manufacturer directions not on file for: '+missingDirections.map(esc).join(', ')+'.</p>':'')+'</div>';
     const findings = (result.pair_findings || []).slice(0,3).map(r => {
       const names = (r.products || []).map(id => (withList.find(p => String(p.id) === String(id)) || {}).n || 'Product').join(' + ');
       const evidence = (r.evidence || []).map(x => '<li>' + esc(x.publisher || 'Source') + ': <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.title || 'Evidence source') + '</a></li>').join('');
       const limits = [...(r.limitations || []), ...(r.missing_data || [])].map(x => '<li>' + esc(x) + '</li>').join('');
-      return '<div class="ii-pair"><h4>' + esc(names) + '<span class="ii-tag">' + esc(labels[r.classification] || r.classification) + '</span></h4><p>' + esc(r.rationale || 'A curated rule matched this pair.') + '</p>' + (r.recommendation ? '<p>' + esc(r.recommendation) + '</p>' : '') + '<details><summary>Evidence and limitations</summary>' + (evidence ? '<ul class="small">' + evidence + '</ul>' : '') + (limits ? '<ul class="small">' + limits + '</ul>' : '') + '</details></div>';
+      return '<div class="ii-pair"><h4>' + esc(names) + '<span class="ii-tag">General screen · ' + esc(labels[r.classification] || r.classification) + '</span></h4><p class="small muted">Generic ingredient-family screening only; not a product-specific instruction.</p><p>' + esc(r.rationale || 'A curated rule matched this pair.') + '</p>' + (r.recommendation ? '<p>' + esc(r.recommendation) + '</p>' : '') + '<details><summary>Evidence and limitations</summary>' + (evidence ? '<ul class="small">' + evidence + '</ul>' : '') + (limits ? '<ul class="small">' + limits + '</ul>' : '') + '</details></div>';
     }).join('');
     const empty = withList.length < 2 ? 'Add ingredient lists for at least two products to see a routine screen.' : 'No current rule matched these products. That is not proof of compatibility.';
     const unverified = Array.isArray(result.unverified_products) ? result.unverified_products.length : 0;
-    const body = '<p class="small muted">These are your active face products from My Shelf. Ingredient screening is separate from photo observations; it does not explain or validate the appearance readings above.</p><p class="small"><b>' + withList.length + ' of ' + active.length + '</b> active face products have ingredient lists; <b>' + verified + '</b> are confirmed against packaging.</p>' + (findings || '<p class="small muted">' + empty + '</p>') + (unverified ? '<p class="small muted">Some ingredient lists have not been checked against packaging. Treat any findings as preliminary until verified.</p>' : '') + '<div class="row" style="gap:6px"><button class="chip" type="button" data-act="go" data-v="shelf">Review My Shelf</button><button class="chip" type="button" data-act="go" data-v="routine">Open Routine</button></div>';
+    const body = '<p class="small muted">These are your active face products from My Shelf. Ingredient screening is separate from photo observations; it does not explain or validate the appearance readings above.</p><p class="small"><b>' + withList.length + ' of ' + active.length + '</b> active face products have ingredient lists; <b>' + verified + '</b> are confirmed against packaging.</p>' + instructionBlock + (findings || '<p class="small muted">' + empty + '</p>') + (unverified ? '<p class="small muted">Some ingredient lists have not been checked against packaging. Treat any findings as preliminary until verified.</p>' : '') + '<div class="row" style="gap:6px"><button class="chip" type="button" data-act="go" data-v="shelf">Review My Shelf</button><button class="chip" type="button" data-act="go" data-v="routine">Open Routine</button></div>';
     return card('Your product context (separate from the scan)', body, {h:'h3',icon:'microscope'});
   } catch (e) { return ''; }
 }
@@ -1915,7 +1969,7 @@ function iiLearnShelfCard(){
     const all = active.reduce((n,p) => n + window.ClayII.parseInci(p.inci).length, 0);
     const matched = active.reduce((n,p) => n + window.ClayII.parseInci(p.inci).filter(x => window.ClayII.engine.normalizeIngredient(x).matched).length, 0);
     const sourceText = source ? 'Ingredient function reference: <a href="' + esc(source.url) + '" target="_blank" rel="noopener">' + esc(source.publisher) + ' — ' + esc(source.title) + '</a>. This reference supports ingredient identity/declared function, not finished-product claims.' : 'No general ingredient-function source is currently linked.';
-    const body = '<p class="small muted">A personal index built from your saved face-product ingredient lists. Exact label text is retained; registry matches are not proof of finished-product efficacy, safety or suitability.</p><p class="small"><b>' + matched + ' of ' + all + '</b> ingredient labels match the current starter registry across <b>' + active.length + '</b> active products.</p>' + products + '<p class="small muted">' + sourceText + '</p><button class="chip" type="button" data-act="go" data-v="shelf">Review ingredient lists on My Shelf</button>';
+    const body = '<p class="small muted">A personal index built from your saved face-product ingredient lists. Exact label text is retained; registry matches are not proof of finished-product efficacy, safety or suitability. Product directions are recorded and displayed on My Shelf and Routine; this ingredient index does not interpret them.</p><p class="small"><b>' + matched + ' of ' + all + '</b> ingredient labels match the current starter registry across <b>' + active.length + '</b> active products.</p>' + products + '<p class="small muted">' + sourceText + '</p><button class="chip" type="button" data-act="go" data-v="shelf">Review ingredient lists on My Shelf</button>';
     return card('Your shelf ingredients', body, {h:'h2',icon:'microscope'});
   } catch (e) { return card('Your shelf ingredients', '<p class="small muted">The ingredient reference is temporarily unavailable. Your saved products are unchanged.</p>', {h:'h2',icon:'microscope'}); }
 }
@@ -2635,6 +2689,8 @@ function pageYear(){
    return {main: main+card('From Safe Batch', importBox('log'), {h:'h3', icon:'today'}), rail};
 }
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const safeHttpUrl=value=>{try{const u=new URL(String(value||''));return u.protocol==='https:'||u.protocol==='http:'?u.href:'';}catch(e){return '';}};
+
 const RENDER = {check:pageCheck, today:pageToday, routine:pageRoutine, shelf:pageShelf, discover:pageDiscover, pairs:pagePairs, learn:pageLearn, travel:pageTravel, scan:pageScan, rank:pageRank, product:pageProduct, year:pageYear};
 const $ = (s) => document.querySelector(s);
 function currentPalette(){ return S.palette || 'clay'; }
@@ -2723,6 +2779,21 @@ document.addEventListener('click', async (e)=>{
   if (a==='ysel'){ YU.sel=v; const sx=$('#yGrid')?.scrollLeft; render(); if(sx!=null&&$('#yGrid')) $('#yGrid').scrollLeft=sx; return; }
   if (a==='mprate'){ const [id,n]=v.split(':').map(Number); const p=MP.find(x=>x.id===id); if(p){ p.r=p.r===n?0:n; mpSave(); } }
   if (a==='mpbuy'){ const [id,k]=v.split(':'); const p=MP.find(x=>x.id===+id); if(p){ p.b=p.b===k?'':k; mpSave(); } }
+  if (a==='iisave'){
+    const p=MP.find(x=>x.id===+v); if(!p) return;
+    const val=id=>(document.getElementById(id)?.value||'').trim();
+    const identityChanged=val('iiBrand')!==(p.brand||'')||val('iiVariant')!==(p.product_variant||'')||val('iiMarket')!==(p.market||'')||val('iiIdentityUrl')!==(p.identity_source_url||'')||val('iiIdentitySource')!==(p.identity_source||'');
+    const directionsChanged=val('iiDirections')!==(p.directions_text||'')||val('iiDirectionsUrl')!==(p.directions_source_url||'')||val('iiDirectionsSource')!==(p.directions_source||'');
+    const identityUrl=val('iiIdentityUrl'), directionsUrl=val('iiDirectionsUrl');
+    if((identityUrl&&!safeHttpUrl(identityUrl))||(directionsUrl&&!safeHttpUrl(directionsUrl))){toast('Use a valid http or https source URL');return;}
+    const set=(key,value)=>{if(value)p[key]=value;else delete p[key];};
+    set('brand',val('iiBrand')); set('product_variant',val('iiVariant')); set('market',val('iiMarket'));
+    set('identity_source',val('iiIdentitySource')); set('identity_source_url',identityUrl);
+    set('identity_checked_at',identityChanged&&val('iiIdentityDate')===(p.identity_checked_at||'')?'':val('iiIdentityDate'));
+    set('directions_text',val('iiDirections')); set('directions_source',val('iiDirectionsSource')); set('directions_source_url',directionsUrl);
+    set('directions_checked_at',directionsChanged&&val('iiDirectionsDate')===(p.directions_checked_at||'')?'':val('iiDirectionsDate'));
+    mpSave(); toast('Product identity and directions saved'); render(); return;
+  }
   if (a==='mpedit'){ S.mpEdit=+v; render(); const i=$('#mpRen'); if(i){ i.focus(); i.select(); } return; }
   if (a==='mpcancel'){ S.mpEdit=null; }
   if (a==='mpsave'){ const n=($('#mpRen').value||'').trim(); const p=MP.find(x=>x.id===+v); if(p&&n){ p.n=n; mpSave(); toast('Renamed'); } S.mpEdit=null; }

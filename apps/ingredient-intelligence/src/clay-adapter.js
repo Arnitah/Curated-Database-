@@ -44,6 +44,14 @@ export function toEngineProduct(mp) {
   const frequency = Number.isFinite(mp.frequency_per_week) && mp.frequency_per_week >= 0 && mp.frequency_per_week <= 14 ? mp.frequency_per_week : null;
   const knownPh = Number.isFinite(mp.known_ph) && mp.known_ph >= 0 && mp.known_ph <= 14 ? mp.known_ph : null;
   if (!mp.directions_text) notes.push("product directions not on file");
+  if (mp.directions_text && !mp.directions_source) notes.push("product directions source type is not on file");
+  if (mp.directions_text && !mp.directions_source_url) notes.push("product directions have no source URL on file");
+  if (mp.directions_text && !mp.directions_checked_at) notes.push("product directions checked date is not on file");
+  if (!mp.product_variant) notes.push("exact product variant not on file");
+  if (!mp.market) notes.push("product market or region not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_source) notes.push("product identity source type is not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_source_url) notes.push("product identity source URL not on file");
+  if ((mp.product_variant || mp.market || mp.brand) && !mp.identity_checked_at) notes.push("product identity checked date is not on file");
   if (format === "unknown") notes.push("product format not on file");
   if (frequency === null) notes.push("use frequency not on file");
   if (knownPh === null) notes.push("product pH not on file; no value inferred");
@@ -63,6 +71,14 @@ export function toEngineProduct(mp) {
     ingredient_list_verified: mp.inci_verified === true,
     ingredient_list_completeness: mp.inci_complete === false ? "partial" : (mp.inci_verified === true ? "complete" : "unknown"),
     directions_text: typeof mp.directions_text === "string" ? mp.directions_text : null,
+    directions_source: ["packaging", "manufacturer", "retailer", "user_entered"].includes(mp.directions_source) ? mp.directions_source : null,
+    directions_source_url: typeof mp.directions_source_url === "string" ? mp.directions_source_url : null,
+    directions_checked_at: typeof mp.directions_checked_at === "string" ? mp.directions_checked_at : null,
+    product_variant: typeof mp.product_variant === "string" ? mp.product_variant : null,
+    market: typeof mp.market === "string" ? mp.market : null,
+    identity_source: ["packaging", "manufacturer", "retailer", "user_entered"].includes(mp.identity_source) ? mp.identity_source : null,
+    identity_source_url: typeof mp.identity_source_url === "string" ? mp.identity_source_url : null,
+    identity_checked_at: typeof mp.identity_checked_at === "string" ? mp.identity_checked_at : null,
     known_ph: knownPh,
     notes: [mp.note].filter(Boolean).join(" ") || null,
     mapping_notes: notes,
