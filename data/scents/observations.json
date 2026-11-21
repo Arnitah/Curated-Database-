@@ -6489,6 +6489,691 @@
         "cc": "FR",
         "site": "34 boulevard Saint-Germain boutique"
       }
+    },
+    {
+      "id": "byredo-brand-origin-typed-1",
+      "house": "byredo",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Byredo's official About page states that the brand was founded in Stockholm in 2006 by Ben Gorham.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.byredo.com/se_en/about",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Stockholm",
+        "region": "Stockholm County",
+        "country": "Sweden",
+        "cc": "SE"
+      }
+    },
+    {
+      "id": "byredo-legal-base-stockholm-typed-1",
+      "house": "byredo",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The Swedish Intellectual Property Office's trademark journal lists Byredo AB as the owner of a 2026 perfume trademark and gives its address as Box 3065, 10361 Stockholm.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.prv.se/sv/varumarke/nar-du-har-ett-registrerat-varumarke/bevaka-ditt-varumarke/svensk-varumarkestidning/Pdf/?f=2026-02-16+-+2026-02-23_vm-tidning_8.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Stockholm",
+        "region": "Stockholm County",
+        "country": "Sweden",
+        "cc": "SE",
+        "entity": "Byredo AB"
+      },
+      "open": "This is the trademark owner's address in an official Swedish filing; it is not a current extract of the company's registered office."
+    },
+    {
+      "id": "byredo-legal-base-barcelona-typed-1",
+      "house": "byredo",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Byredo's official website terms identify Antonio Puig, S.A.U. as the site manager/publisher and list its registered office at Plaça d'Europa 46-48, L'Hospitalet de Llobregat, Barcelona.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.byredo.com/se_en/terms-of-use",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Barcelona",
+        "region": "Catalonia",
+        "country": "Spain",
+        "cc": "ES",
+        "entity": "Antonio Puig, S.A.U."
+      },
+      "open": "This is the current website publisher/parent-company address, distinct from Byredo AB's Swedish trademark-owner address and the brand's Stockholm origin."
+    },
+    {
+      "id": "byredo-retail-stockholm-typed-1",
+      "house": "byredo",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Byredo's official store locator lists its Stockholm store at Mäster Samuelsgatan 3.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://stores.byredo.com/en/byredo-stockholm",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Stockholm",
+        "region": "Stockholm County",
+        "country": "Sweden",
+        "cc": "SE",
+        "site": "Byredo Stockholm"
+      }
+    },
+    {
+      "id": "buly-1803-brand-origin-typed-1",
+      "house": "buly-1803",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "LVMH's official Maison profile gives Officine Universelle Buly's creation date as 1803 and identifies its founding perfumer Jean-Vincent Bully in Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.lvmh.com/our-maisons/perfumes-cosmetics/officine-universelle-buly",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "buly-1803-legal-base-typed-1",
+      "house": "buly-1803",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Officine Universelle Buly's official terms identify Parfumerie Amicale SAS, registered with the Paris Trade and Companies Register, with registered office at 27/29 rue Guénégaud, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://buly1803.com/en-us/pages/conditions-generales-de-vente-buly",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Parfumerie Amicale SAS"
+      }
+    },
+    {
+      "id": "buly-1803-commercial-base-typed-1",
+      "house": "buly-1803",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "LVMH lists Officine Universelle Buly's headquarters at 27-29 rue Guénégaud, 75006 Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.lvmh.com/our-maisons/perfumes-cosmetics/officine-universelle-buly",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "buly-1803-retail-paris-typed-1",
+      "house": "buly-1803",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Buly's official store locator lists several Paris retail locations, including Le Bon Marché Rive Gauche and Galeries Lafayette Haussmann.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://buly1803.com/pages/store-locator-1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "goutal-brand-origin-typed-1",
+      "house": "goutal",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Goutal's official history says the house was born in Paris in 1981 and that Annick Goutal founded her own perfume house that year.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.annickgoutal.com/pages/our-history",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "goutal-legal-base-typed-1",
+      "house": "goutal",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Goutal's official legal notice identifies Interparfums S.A. as the website publisher/current operator and lists its registered office at 10 rue de Solférino, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.annickgoutal.com/en/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Interparfums S.A."
+      },
+      "open": "This is the current website publisher/operator entity, not a separate Goutal-only registered company."
+    },
+    {
+      "id": "goutal-commercial-base-typed-1",
+      "house": "goutal",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Goutal's official contact page lists its business correspondence address at 10 rue Solférino, 75007 Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.annickgoutal.com/policies/contact-information",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "goutal-retail-paris-typed-1",
+      "house": "goutal",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Goutal's official boutique page says its first Bellechasse location opened in 1981 and remains a living symbol of the house's Parisian roots.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.annickgoutal.com/pages/our-boutiques",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "site": "Bellechasse boutique"
+      }
+    },
+    {
+      "id": "essential-parfums-brand-origin-typed-1",
+      "house": "essential-parfums",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Essential Parfums' official history says the house was founded in 2018 by Géraldine Archambault; its official commitments describe the brand as designed and made in France. No founding city is stated.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.essentialparfums.com/en/pages/our-history",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "essential-parfums-legal-base-typed-1",
+      "house": "essential-parfums",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Essential Parfums' legal notice identifies Essential Parfums SAS, registered with the Paris Trade and Companies Register, with registered office at 199 boulevard Saint-Germain, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.essentialparfums.com/en/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Essential Parfums SAS"
+      }
+    },
+    {
+      "id": "essential-parfums-commercial-base-typed-1",
+      "house": "essential-parfums",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Essential Parfums' official contact page lists its business address at 199 boulevard Saint-Germain, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.essentialparfums.com/en/policies/contact-information",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "essential-parfums-manufacturing-typed-1",
+      "house": "essential-parfums",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Essential Parfums states that its fragrances are designed and made in France; it separately says 98% of its components are manufactured in France and Italy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.essentialparfums.com/en/pages/our-commitments",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The fragrance is stated to be made in France; the 98% component figure spans France and Italy and is not a claim that every component is French."
+    },
+    {
+      "id": "matiere-premiere-brand-origin-typed-1",
+      "house": "matiere-premiere",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "MATIERE PREMIERE presents itself as a French haute perfumery house founded by French perfumer Aurélien Guichard; the official site identifies its French production and Grasse flower-field heritage.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matiere-premiere.com/en",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The brand's origin is recorded at country level; no founding city is stated on its official site."
+    },
+    {
+      "id": "matiere-premiere-legal-base-typed-1",
+      "house": "matiere-premiere",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "MATIERE PREMIERE's official terms identify The Fragrance Designers SAS, registered with the Paris Trade and Companies Register, with registered office at 15 rue Monsigny, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matiere-premiere.com/en/pages/cgv",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "The Fragrance Designers SAS"
+      }
+    },
+    {
+      "id": "matiere-premiere-commercial-base-typed-1",
+      "house": "matiere-premiere",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "MATIERE PREMIERE's official company profile lists Paris, France as its company location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/matierepremiereparfums",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "matiere-premiere-sourcing-grasse-typed-1",
+      "house": "matiere-premiere",
+      "kind": "claim",
+      "topic": "sourcing",
+      "text": "MATIERE PREMIERE states that founder Aurélien Guichard grows Rose Centifolia, tuberose and lavandin on his own flower fields in the Grasse region.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matiere-premiere.com/en-uk/pages/demarche",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "region": "Provence-Alpes-Côte d'Azur",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "matiere-premiere-manufacturing-typed-1",
+      "house": "matiere-premiere",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "MATIERE PREMIERE states that all its products are manufactured in France with artisanal expertise.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matiere-premiere.com/en/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "ormaie-brand-origin-typed-1",
+      "house": "ormaie",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "ORMAIE describes itself as a House of French Haute Parfumerie founded by Baptiste Bouygues and Marie-Lise Jonak; no founding city is stated.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormaie.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "ormaie-legal-base-typed-1",
+      "house": "ormaie",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "ORMAIE's official terms identify ORMAIE SAS, registered with the Paris Trade and Companies Register, with registered office at 14 avenue de l'Opéra, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ormaie.paris/en/pages/conditions-generales",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "ORMAIE SAS"
+      }
+    },
+    {
+      "id": "etat-libre-dorange-founder-origin-typed-1",
+      "house": "etat-libre-dorange",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Etat Libre d'Orange's official brand story says founder Etienne de Swardt named the house to honor his birthplace in South Africa and its Orange Free State history.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.etatlibredorange.com/pages/the-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Africa",
+        "cc": "ZA"
+      },
+      "open": "The brand story links the name to the founder's birthplace; it does not identify a city of birth."
+    },
+    {
+      "id": "etat-libre-dorange-legal-base-typed-1",
+      "house": "etat-libre-dorange",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Etat Libre d'Orange's official legal notice identifies Editions des Sens SAS with registered office at 69 rue des Archives, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.etatlibredorange.com/fr/pages/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Editions des Sens SAS"
+      }
+    },
+    {
+      "id": "etat-libre-dorange-commercial-base-typed-1",
+      "house": "etat-libre-dorange",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official legal notice lists Editions des Sens SAS at 69 rue des Archives, Paris, the address used for the brand's Paris Right Bank boutique.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.etatlibredorange.com/fr/pages/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "etat-libre-dorange-manufacturing-typed-1",
+      "house": "etat-libre-dorange",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Etat Libre d'Orange's official FAQ states that its products are made in France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.etatlibredorange.com/pages/q-a",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "etat-libre-dorange-retail-paris-typed-1",
+      "house": "etat-libre-dorange",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "The official boutique page lists two Etat Libre d'Orange stores in Paris: 69 rue des Archives and 80 rue des Saints-Pères.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.etatlibredorange.com/pages/location",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "serge-lutens-founder-origin-typed-1",
+      "house": "serge-lutens",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Shiseido's official biography states that Serge Lutens was born in Lille, France in 1942.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://corp.shiseido.com/en/news/detail.html?n=00000000000015",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Lille",
+        "region": "Hauts-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "serge-lutens-manufacturing-typed-1",
+      "house": "serge-lutens",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Serge Lutens' official FAQ states that its fragrances are made in France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://sergelutens.com/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "serge-lutens-retail-paris-typed-1",
+      "house": "serge-lutens",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Serge Lutens' official boutique page lists its Palais Royal boutique at 142 Galerie de Valois and its Saint-Honoré boutique at 324 rue Saint-Honoré, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://sergelutens.com/pages/cgv-boutiques",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "memo-paris-brand-origin-typed-1",
+      "house": "memo-paris",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Memo Paris' official story says the niche perfume house came into being in Paris in 2007, founded by Clara and John Molloy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.memoparis.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "memo-paris-legal-base-typed-1",
+      "house": "memo-paris",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Memo Paris' official legal notice identifies Memo International SA with head office at Rue du Lac 12, 1207 Geneva, Switzerland.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://de.memoparis.com/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH",
+        "entity": "Memo International SA"
+      }
+    },
+    {
+      "id": "memo-paris-commercial-base-typed-1",
+      "house": "memo-paris",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Memo International SA's official legal notice lists its head office at Rue du Lac 12, Geneva, Switzerland.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://de.memoparis.com/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "region": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH"
+      }
+    },
+    {
+      "id": "memo-paris-retail-paris-typed-1",
+      "house": "memo-paris",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Memo Paris' official store locator lists its flagship boutique at 24 rue Cambon, Paris, alongside several Paris retail partners.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.memoparis.com/pages/find-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "site": "Memo Paris flagship"
+      }
+    },
+    {
+      "id": "maison-crivelli-brand-origin-typed-1",
+      "house": "maison-crivelli",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A specialist perfume reference identifies Maison Crivelli as founded in Paris in 2018 by Thibaud Crivelli; the official brand site confirms the founder's Paris birthplace and current Paris head office.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://osmetheca.be/en/houses/maison-crivelli.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      },
+      "open": "The founding city comes from a specialist secondary reference; the official brand pages confirm the founder was born in Paris but do not state the founding city."
+    },
+    {
+      "id": "maison-crivelli-founder-origin-typed-1",
+      "house": "maison-crivelli",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "Maison Crivelli's official founder biography states that Thibaud Crivelli was born in Paris, France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisoncrivelli.com/en-eu/pages/le-fondateur",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "maison-crivelli-legal-base-typed-1",
+      "house": "maison-crivelli",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Maison Crivelli's official legal notice identifies the company with head office at 280 rue Saint-Honoré, 75001 Paris, registered with the Paris Trade and Companies Register.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisoncrivelli.com/en-eu/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Maison Crivelli SAS"
+      }
+    },
+    {
+      "id": "maison-crivelli-commercial-base-typed-1",
+      "house": "maison-crivelli",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Maison Crivelli's official legal notice lists its head office at 280 rue Saint-Honoré, Paris.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisoncrivelli.com/en-eu/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "maison-crivelli-retail-paris-typed-1",
+      "house": "maison-crivelli",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Maison Crivelli's official boutique page announces its first-ever boutique at 314 rue Saint-Honoré, Paris, opened on 19 September 2026.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisoncrivelli.com/en-gb/pages/boutique",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "cc": "FR",
+        "site": "Maison Crivelli flagship"
+      }
     }
   ]
 }
