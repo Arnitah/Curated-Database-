@@ -2,10 +2,10 @@ name: Validate data and bump version
 
 on:
   pull_request:
-    paths: ['data/**', 'scripts/**']
+    paths: ['data/**', 'scripts/**', 'tests/scents/**', 'apps/scent-atlas.html', 'docs/scent-intake.md', 'docs/scent-geography.md', 'README.md', 'package.json']
   push:
     branches: [main]
-    paths: ['data/**', 'scripts/**']
+    paths: ['data/**', 'scripts/**', 'tests/scents/**', 'apps/scent-atlas.html', 'docs/scent-intake.md', 'docs/scent-geography.md', 'README.md', 'package.json']
   workflow_dispatch:
 
 permissions:
@@ -31,6 +31,9 @@ jobs:
       - name: Validate and rebuild version.json (main)
         if: github.event_name != 'pull_request'
         run: node scripts/build.mjs
+
+      - name: Test Scent Atlas geography schema
+        run: npm run test:scent-geography
 
       - name: Commit version.json if it changed
         if: github.event_name != 'pull_request'
