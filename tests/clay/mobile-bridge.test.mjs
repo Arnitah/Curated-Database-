@@ -10,7 +10,7 @@ before(async () => { server = await startServer(); browser = await launchBrowser
 after(async () => { await browser.close(); await server.close(); });
 
 const shelf = [
-  { id: 901, a: 'face', st: 'Toner', n: 'Synthetic acid toner', s: 'cur', inci: 'Aqua, Glycolic Acid (7%), Glycerin' },
+  { id: 901, a: 'face', st: 'Toner', n: 'Synthetic acid toner', s: 'cur', inci: 'Aqua, Glycolic Acid (7%), Glycerin', directions_text: 'Use sunscreen during use and for one week afterwards.', directions_source: 'manufacturer', directions_source_url: 'https://example.test/acid-directions', directions_checked_at: '2026-11-21', product_variant: '7% toner', market: 'Canada', identity_source_url: 'https://example.test/acid-product' },
   { id: 902, a: 'face', st: 'Serum', n: 'Synthetic retinol serum', s: 'cur', inci: 'Aqua, Retinol 0.3%, Squalane' },
   { id: 903, a: 'face', st: 'Moisturizer', n: 'Synthetic barrier cream', s: 'cur', inci: 'Aqua, Glycerin, Ceramide NP' },
 ];
@@ -38,6 +38,9 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
     assert.match(scanResults, /not yet analyse images/i);
     assert.match(scanResults, /not been checked against packaging\. Treat any findings as preliminary until verified/i, 'Scan discloses unverified ingredient lists');
     assert.match(scanResults, /Review example suggestions/);
+    assert.match(scanResults, /Product-specific instructions come first/);
+    assert.match(scanResults, /Use sunscreen during use and for one week afterwards/);
+    assert.match(scanResults, /General screen/);
     assert.doesNotMatch(scanResults, /\bApply\b/, 'the progress step no longer promises an apply action');
     const scanRail = await page.locator('.rail').innerText();
     assert.match(scanRail, /Prototype status/);
@@ -47,14 +50,19 @@ test('[mobile] Scan, Learn, My Shelf and Routine fit a 390px viewport and share 
     await page.locator('#nav button[data-v="learn"]').click();
     await page.getByRole('heading', { name: 'Your shelf ingredients' }).waitFor();
     assert.match(await page.locator('#main').innerText(), /starter registry/i);
+    assert.match(await page.locator('#main').innerText(), /does not interpret them/i);
     await assertNoPageOverflow(page, 'Learn');
 
     await page.locator('#nav button[data-v="shelf"]').click();
     await page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+    assert.match(await page.locator('#main').innerText(), /Product-specific instructions come first/);
+    assert.match(await page.locator('#main').innerText(), /Use sunscreen during use and for one week afterwards/);
     await assertNoPageOverflow(page, 'My Shelf');
 
     await page.locator('#nav button[data-v="routine"]').click();
     await page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
+    assert.match(await page.locator('#main').innerText(), /Product-specific instructions come first/);
+    assert.match(await page.locator('#main').innerText(), /Use sunscreen during use and for one week afterwards/);
     await assertNoPageOverflow(page, 'Routine');
 
     await page.locator('#nav button[data-v="scan"]').click();
