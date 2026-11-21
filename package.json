@@ -9,7 +9,8 @@
     "verdicts:update": "node scripts/check-verdicts.mjs --update",
     "test:engine": "node apps/ingredient-intelligence/tests/smoke.test.mjs && node apps/ingredient-intelligence/tests/clay-shaped.test.mjs",
     "test:clay": "node --test --test-concurrency=1 tests/clay/*.test.mjs",
-    "test:ci": "npm run test:engine && npm run test:clay"
+    "test:ci": "npm run test:engine && npm run test:clay",
+    "test:scent-geography": "node --test tests/scents/*.test.mjs"
   },
   "devDependencies": {
     "playwright": "1.49.1"

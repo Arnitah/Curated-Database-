@@ -549,14 +549,23 @@ const state = { q: "", cont: new Set(), fam: new Set(), type: new Set(), sort: "
 let D;
 let OBS = [];
 const CLASS_LABEL = { independent: "Independent house", artisan: "Artisan maker", commercial: "Part of a larger company", "contract-made": "Made by a contract manufacturer", diaspora: "Rooted in one place, made in another", retailer: "Retailer", tradition: "A tradition, not a brand" };
-const TOPIC_LABEL = { hq: "Where it's based", made_in: "Where it's made", founder: "Who founded it", owner: "Who owns it", catalogue: "What it sells now", status: "Still trading?", history: "Its story" };
+const TOPIC_LABEL = { brand_origin: "Brand origin", founder_origin: "Founder origin", legal_base: "Legal base", commercial_base: "Operating base", studio: "Studio", formulation: "Formulation", manufacturing: "Manufacturing", filling: "Filling / bottling", assembly: "Assembly", sourcing: "Material sourcing", retail: "Retail location", hq: "Legacy: where it's based", made_in: "Legacy: where it's made", founder: "Who founded it", owner: "Who owns it", catalogue: "What it sells now", status: "Still trading?", history: "Its story" };
 const STR_LABEL = { A: "official or academic", B: "trusted press", C: "brand or lifestyle", D: "unsourced" };
 function claimsFor(key, isLead) { return OBS.filter((o) => o.kind === "claim" && o.topic && (isLead ? o.lead === key : o.house === key)); }
-function promoted(id) { const ok = (t) => claimsFor(id).some((o) => o.topic === t && (o.strength === "A" || o.strength === "B") && o.evidence !== "brand"); return ok("owner") && ok("made_in") && ok("catalogue"); }
+function locationLabel(location) { return [location.entity, location.site, location.city, location.region, location.country].filter(Boolean).join(", "); }
+function houseLocationLine(h) {
+  const origins = claimsFor(h.id).filter((o) => o.topic === "brand_origin" && o.location);
+  if (origins.length) {
+    const places = [...new Set(origins.map((o) => [o.location.city, o.location.region, o.location.country].filter(Boolean).join(", ")))];
+    return "Origin: " + places.join(" / ");
+  }
+  return "Location on file: " + [h.city, h.country].filter(Boolean).join(", ");
+}
+function promoted(id) { const ok = (t) => claimsFor(id).some((o) => o.topic === t && (o.strength === "A" || o.strength === "B") && o.evidence !== "brand"); return ok("owner") && ok("manufacturing") && ok("catalogue"); }
 function evidenceHtml(key, isLead) {
   const cs = claimsFor(key, isLead); if (!cs.length) return "";
   const order = Object.keys(TOPIC_LABEL); cs.sort((a, b) => order.indexOf(a.topic) - order.indexOf(b.topic) || a.strength.localeCompare(b.strength) || (b.published || "").localeCompare(a.published || ""));
-  return `<div class="ev"><div class="eyebrow">Where this comes from</div><ul>${cs.map((o) => `<li><span class="ev-t">${esc(TOPIC_LABEL[o.topic])}</span> ${esc(o.text)} <span class="ev-s s${o.strength}" title="Evidence strength ${o.strength}: ${STR_LABEL[o.strength]}">${o.strength}</span><br><span class="muted"><a href="${esc(o.src)}" target="_blank" rel="noopener">source</a>${o.published ? " · published " + esc(o.published) : ""} · checked ${esc(o.seen)}${o.open ? " · <i>Still open:</i> " + esc(o.open) : ""}</span></li>`).join("")}</ul>${isLead ? "" : `<p class="muted ev-rule">${promoted(key) ? "Verified house: ownership, production site and catalogue each have independent support." : "Not yet a verified house: ownership, where it's made and what it sells now each need an independent or official source."}</p>`}</div>`;
+  return `<div class="ev"><div class="eyebrow">Where this comes from</div><ul>${cs.map((o) => `<li><span class="ev-t">${esc(TOPIC_LABEL[o.topic])}</span> ${esc(o.text)}${o.location ? ` <span class="muted ev-location">· ${esc(locationLabel(o.location))}</span>` : ""} <span class="ev-s s${o.strength}" title="Evidence strength ${o.strength}: ${STR_LABEL[o.strength]}">${o.strength}</span><br><span class="muted"><a href="${esc(o.src)}" target="_blank" rel="noopener">source</a>${o.published ? " · published " + esc(o.published) : ""} · checked ${esc(o.seen)}${o.open ? " · <i>Still open:</i> " + esc(o.open) : ""}</span></li>`).join("")}</ul>${isLead ? "" : `<p class="muted ev-rule">${promoted(key) ? "Verified house: ownership, manufacturing location and catalogue each have independent support." : "Not yet a verified house: ownership, manufacturing location and current catalogue each need an independent or official source."}</p>`}</div>`;
 }
 function classTag(h) { return h.class ? `<span class="tag cls">${esc(CLASS_LABEL[h.class] || h.class)}</span>` : ""; }
 function tradSources(t) {
@@ -643,7 +652,7 @@ function card(h) {
   const prof = profileOf(h), n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
   const liveTxt = live && live.variants?.length ? "Shop today: " + live.variants.slice(0, 3).map((v) => `${esc(v.title === "Default Title" ? "" : v.title + " ")}${v.price}`).join(" · ") + (live.changed ? " (changed since last week)" : "") : "";
   return `<article class="card">
-    <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(h.city || "")}${h.city ? ", " : ""}${esc(h.country)}${h.founded ? " · since " + h.founded : ""}</div></div>
+    <div class="head"><div><h3>${esc(h.name)}</h3><div class="where">${esc(houseLocationLine(h))}${h.founded ? " · since " + h.founded : ""}</div></div>
       <span><button class="logbtn" type="button" data-log="${h.id}" title="Log in my scent passport">Log it</button><button class="fav" type="button" data-fav="${h.id}" aria-pressed="${SHELF.has(h.id)}" title="Want to smell (saved to Passport)" aria-label="Save ${esc(h.name)} to want to smell">${SHELF.has(h.id) ? "♥" : "♡"}</button><span class="dot ${worst}" title="${linkTitle}" aria-label="${linkTitle}"></span></span></div>
     ${state.quiz?.why[h.id] ? `<div class="why-match"><b>Why it matches:</b> ${esc(state.quiz.why[h.id])}</div>` : ""}
     ${state.like && state.like !== h.id ? likeWhy(h) : ""}
