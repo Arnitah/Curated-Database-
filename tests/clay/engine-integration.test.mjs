@@ -213,6 +213,15 @@ test('[integration] product-specific directions and provenance are saved and dis
     assert.equal(await page.locator('a[href="https://example.test/acid-directions"]').count(), 1);
     assert.equal(await page.locator('a[href="https://example.test/acid-product"]').count(), 1);
 
+    await page.locator('#nav button[data-v="scan"]').click();
+    await page.getByRole('heading', { name: 'Example readings' }).waitFor();
+    const scanText = await page.locator('#main').innerText();
+    assert.match(scanText, /Product-specific instructions come first/);
+    assert.match(scanText, /Do not use with strong retinoids in the same routine\./);
+    assert.match(scanText, /General screen/);
+
+    await page.locator('#nav button[data-v="shelf"]').click();
+    await page.getByRole('heading', { name: 'Ingredient intelligence' }).waitFor();
     await page.locator('[data-act="mpopen"][data-v="202"]').click();
     await page.locator('.mp-ii-details summary').click();
     await page.locator('#iiBrand').fill('Second Example Brand');
