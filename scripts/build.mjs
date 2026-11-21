@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation } from './scents-geography.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DATA = path.join(ROOT, 'data');
@@ -116,7 +117,7 @@ if (houses) {
 }
 
 // Scents: dated evidence records (one per sighting)
-const TOPIC = new Set(['made_in', 'hq', 'founder', 'owner', 'catalogue', 'status', 'history']);
+const TOPIC = new Set([...GEO_TOPICS, ...LEGACY_GEO_TOPICS, 'founder', 'owner', 'catalogue', 'status', 'history']);
 const STRENGTH = new Set(['A', 'B', 'C', 'D']);
 const DATEISH = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 const obsSet = sets['scents/observations']?.data;
@@ -139,7 +140,10 @@ if (obsSet) {
     if (o.strength != null && !STRENGTH.has(o.strength)) errors.push(`${w}: strength must be A, B, C or D`);
     if (o.topic && !o.strength) errors.push(`${w}: a topic claim needs a strength (A-D)`);
     if (o.published != null && !DATEISH.test(o.published)) errors.push(`${w}: published must be YYYY, YYYY-MM or YYYY-MM-DD`);
+    for (const issue of validateGeographyObservation(o)) errors.push(`${w}: ${issue}`);
   }
+  const legacyGeoCount = (obsSet.records || []).filter((o) => LEGACY_GEO_TOPICS.includes(o.topic)).length;
+  if (legacyGeoCount) warnings.push(`${legacyGeoCount} legacy hq/made_in claims remain ambiguous; use typed geography topics for new claims and reclassify old claims only after source review`);
 }
 // Scents: house class (optional; set only when evidence supports it)
 const CLASS = new Set(['independent', 'artisan', 'commercial', 'contract-made', 'diaspora', 'retailer', 'tradition']);
