@@ -60,7 +60,7 @@ Facts about who a house is go in `data/scents/observations.json` as `kind: "clai
 
 Each topic claim needs `strength`: **A** official, registry, government or academic; **B** credible journalism or trade press; **C** brand self-description, retailer or lifestyle press; **D** unsourced. Add `published` (YYYY, YYYY-MM or YYYY-MM-DD) when the source shows a date, and `open` for anything still unresolved. `seen` is the access date. When two sources disagree, keep both and say which one stands and why.
 
-For every new geography topic, add `location: { country, cc, city?, region?, site? }` using an uppercase ISO 3166-1 alpha-2 `cc`. One observation is one source, one relationship and one place. Country-only facts are valid; do not guess a city. If a source establishes multiple sites, add one observation per site. Keep existing `hq` and `made_in` records as historical evidence until their source is re-reviewed; do not silently relabel them.
+For every new geography topic, add `location: { country, cc, city?, region?, entity?, site? }` using an uppercase ISO 3166-1 alpha-2 `cc`. One observation is one source, one relationship and one place. Country-only facts are valid; do not guess a city. Use `entity` for a named legal entity and `site` only for a named physical studio, factory or other facility. If a source establishes multiple sites, add one observation per site. Keep existing `hq` and `made_in` records as historical evidence until their source is re-reviewed; do not silently relabel them.
 
 Houses can carry an optional `class`: `independent`, `artisan`, `commercial` (part of a larger company), `contract-made`, `diaspora` (rooted in one place, made in another), `retailer` or `tradition`. Set it only when the evidence supports it.
 
