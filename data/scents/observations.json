@@ -4712,6 +4712,508 @@
         "cc": "TH",
         "site": "REUNROM Song Wat flagship"
       }
+    },
+    {
+      "id": "siam-1928-brand-origin-typed-1",
+      "house": "siam-1928",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "SIAM1928 identifies itself as an independent Thai perfume house established in April 2019; the official About page does not state a founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://siam1928.com/th/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "siam-1928-commercial-base-typed-1",
+      "house": "siam-1928",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "SIAM1928's official About page lists the contemporary perfume house as based in Bangkok, Thailand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://siam1928.com/th/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "siam-1928-manufacturing-typed-1",
+      "house": "siam-1928",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "SIAM1928 says its signature porcelain perfume bottles are formed and finished by hand in Thailand; this records bottle manufacture, not the location where the perfume liquid is compounded.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://siam1928.com/th/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Thailand",
+        "cc": "TH"
+      },
+      "open": "The source does not identify the fragrance-liquid manufacturing or filling facility."
+    },
+    {
+      "id": "panpuri-brand-origin-typed-1",
+      "house": "panpuri",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "PAÑPURI's official story states that the brand's roots are in Bangkok from 2003, when founder Vorravit Siripark returned to the city and the brand was born from Thai wellness traditions.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://panpuri.com/about-us/our-story/our-philosophy/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "panpuri-legal-base-typed-1",
+      "house": "panpuri",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "PAÑPURI's privacy policy identifies PURI Company Limited and lists its company address at 29 Vanissa Building, Pathumwan, Bangkok.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://panpuri.com/privacy-terms/privacy-policy/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH",
+        "entity": "PURI Company Limited"
+      }
+    },
+    {
+      "id": "panpuri-commercial-base-typed-1",
+      "house": "panpuri",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "KOSÉ's corporate announcement identifies PURI Co., Ltd. (brand PAÑPURI) as located at Vanissa Building, Pathumwan, Bangkok.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://koseholdings.co.jp/en/kose/news/2556/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "panpuri-retail-bangkok-typed-1",
+      "house": "panpuri",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "PAÑPURI's official store locator lists multiple Sensorial Boutiques and wellness locations across Bangkok, including Mandarin Oriental, One Bangkok, Siam Center and ICONSIAM.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://panpuri.com/about-us/our-stores/discover-our-stores/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "butterfly-thai-perfume-retail-typed-1",
+      "house": "butterfly-thai-perfume",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Butterfly Thai Perfume's official website lists a store at centralwOrld in Bangkok.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.butterflythaiperfume.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH",
+        "site": "centralwOrld"
+      }
+    },
+    {
+      "id": "mith-bangkok-commercial-base-typed-1",
+      "house": "mith-bangkok",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "MITH's official About page lists MEE MIT MAK Co., Ltd. head office at Phaholyothin Soi 54/1, Sai Mai, Bangkok.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://mithbangkok.com/about-us/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "region": "Sai Mai",
+        "country": "Thailand",
+        "cc": "TH",
+        "entity": "MEE MIT MAK Co., Ltd."
+      }
+    },
+    {
+      "id": "solure-retail-thailand-typed-1",
+      "house": "solure",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Watsons Thailand lists Solure scented body oil for sale through its Thai online retail channel; this does not establish a physical store or brand headquarters.",
+      "evidence": "retailer",
+      "strength": "C",
+      "src": "https://watsons.co.th/en/solure-body-oil-65ml.-anniversary/p/BP_304630",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Thailand",
+        "cc": "TH"
+      },
+      "open": "Retail listing only; no brand-owned company or manufacturing location was located."
+    },
+    {
+      "id": "postes-legal-base-typed-1",
+      "house": "postes",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "POSTES' official company information lists TBL Corporation and business registration number 832-86-02239 at 6F, 16 Seongsui-ro 20-gil, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://postes.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "TBL Corporation"
+      },
+      "open": "This is the business information published by the brand website; no separate government registry extract was checked."
+    },
+    {
+      "id": "postes-commercial-base-typed-1",
+      "house": "postes",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "POSTES' official company page lists its business address in Seongsu, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://postes.kr/shopinfo/company.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "youssoful-legal-base-typed-1",
+      "house": "youssoful",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "YOUSSOFUL's official online store identifies Staywith Co., Ltd. (business registration 106-88-02740) and lists its address at 32 Eonju-ro 168-gil, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://youssoful.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "Staywith Co., Ltd."
+      },
+      "open": "The address and business number are published on the brand's site; a separate government registry extract was not checked."
+    },
+    {
+      "id": "youssoful-commercial-base-typed-1",
+      "house": "youssoful",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "YOUSSOFUL's official store lists its operating address in Sinsa-dong, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://youssoful.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "royal-water-brand-origin-typed-1",
+      "house": "royal-water",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "ROYAL WATER's official FAQ identifies it as a Korean niche fragrance brand launched in 2016.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.rwf.kr/rw-faq.html",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "royal-water-legal-base-typed-1",
+      "house": "royal-water",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "ROYAL WATER's official store identifies (주)로얄워터, business license 448-87-01537, at its address in Gangseo-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.rwf.kr/index.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangseo-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "(주)로얄워터"
+      },
+      "open": "This is the company information published on the brand website; no separate government registry extract was checked."
+    },
+    {
+      "id": "royal-water-commercial-base-typed-1",
+      "house": "royal-water",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "ROYAL WATER's official store lists its company address in Gangseo-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.rwf.kr/index.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangseo-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "royal-water-retail-typed-1",
+      "house": "royal-water",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "ROYAL WATER's official FAQ lists three direct stores in Seoul: Yeonnam, Ikseon and Hongdae.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.rwf.kr/rw-faq.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-legal-base-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "SW19's official website identifies WAGTI Inc., business registration 240-88-00299, at 7 Apgujeong-ro 10-gil, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "WAGTI Inc."
+      },
+      "open": "This is the company information published on the brand website; no separate government registry extract was checked."
+    },
+    {
+      "id": "sw19-commercial-base-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "SW19's official website lists its company address in Apgujeong, Gangnam-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Gangnam-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-retail-seoul-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SW19's official store locator lists its Hannam flagship and several stores across Seoul, including Garosugil, Seongsu, Myeongdong, Hongdae and Bukchon.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-retail-jeju-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SW19's official store locator lists a permanent store in Jeju Aewol.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jeju",
+        "region": "Jeju Province",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-retail-daegu-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SW19's official store locator lists a department-store counter in Daegu.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Daegu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-retail-busan-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SW19's official store locator lists partner retail locations in Busan, including Paradise City and Village de Ananti.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Busan",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "sw19-retail-incheon-typed-1",
+      "house": "sw19",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "SW19's official store locator lists a partner retail location at Paradise City in Incheon.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://en.sw19official.com/stores.html",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Incheon",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "kinfolk-notes-legal-base-typed-1",
+      "house": "kinfolk-notes",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Kinfolk Notes' official contact information identifies Kinfolk Beauty Co., Ltd. (business registration 891-86-02562) at 4F, 33 Yeonmujang-gil, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://kinfolknotes.com/policies/contact-information",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "Kinfolk Beauty Co., Ltd."
+      },
+      "open": "This is the business information published on the brand site; no separate government registry extract was checked."
+    },
+    {
+      "id": "kinfolk-notes-commercial-base-typed-1",
+      "house": "kinfolk-notes",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Kinfolk Notes' official contact page lists its physical business address at 4F, 33 Yeonmujang-gil, Seongdong-gu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://kinfolknotes.com/en/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "kinfolk-notes-manufacturing-typed-1",
+      "house": "kinfolk-notes",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The brand's own journal republishes a Business of Fashion article stating that all Kinfolk Notes formulas are made in Korea.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://kinfolknotes.com/en/blogs/news/how-a-magazine-becomes-a-lifestyle-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "kinfolk-notes-formulation-typed-1",
+      "house": "kinfolk-notes",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The same Business of Fashion report states that all Kinfolk Notes formulas are made in Korea; this is recorded at country level because no formulation city is specified.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://kinfolknotes.com/en/blogs/news/how-a-magazine-becomes-a-lifestyle-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "kinfolk-notes-retail-seoul-typed-1",
+      "house": "kinfolk-notes",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Kinfolk Notes' official store locator lists a flagship store and boutique store in Seongsu, Seoul.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://kinfolknotes.com/en/pages/stores",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "region": "Seongdong-gu",
+        "country": "South Korea",
+        "cc": "KR"
+      }
     }
   ]
 }
