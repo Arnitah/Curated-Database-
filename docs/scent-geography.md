@@ -19,6 +19,7 @@ A typed geography observation has `kind: "claim"`, a relationship-specific `topi
 | `formulation` | Where the composition is developed |
 | `manufacturing` | Where the fragrance product is manufactured |
 | `filling` | Where finished product is filled or bottled |
+| `assembly` | Where components or filled products are assembled into the finished offer |
 | `sourcing` | Where a named raw material is grown, harvested or sourced |
 | `retail` | Official shop, boutique, flagship or retail presence |
 
@@ -28,7 +29,7 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 
 - Never infer origin from a founder's birthplace, cultural heritage, currency, shipping origin, fulfilment address, store location or raw-material sourcing.
 - Never infer legal or commercial headquarters from a retail address, studio, founder residence or manufacturing site.
-- Never infer formulation from manufacturing, filling or assembly, or vice versa.
+- Never infer formulation from manufacturing, filling or assembly, or vice versa. Record assembly separately; it does not by itself establish where the fragrance was formulated or manufactured.
 - A source saying "developed in Dubai" supports formulation, not manufacturing.
 - If a source says "made in" without clarifying the stage, retain a legacy claim or leave the relationship unresolved; do not guess.
 - If sources conflict, retain each dated source claim and explain the conflict in `open`; do not overwrite the evidence history.
@@ -65,7 +66,7 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 
 ## Verification rule
 
-A house is verified only when ownership, **manufacturing location**, and current catalogue each have an independent strength A or B claim. Formulation, filling, studio, sourcing and retail do not substitute for manufacturing. Legacy `made_in` claims do not qualify until source-reviewed and explicitly reclassified.
+A house is verified only when ownership, **manufacturing location**, and current catalogue each have an independent strength A or B claim. Formulation, filling, assembly, studio, sourcing and retail do not substitute for manufacturing. Legacy `made_in` claims do not qualify until source-reviewed and explicitly reclassified.
 
 ## Migration sequence
 
