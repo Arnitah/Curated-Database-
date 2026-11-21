@@ -186,6 +186,7 @@ test('[integration] product-specific directions and provenance are saved and dis
   const shelf = [
     {
       ...R(201, 'Toner', 'Synthetic sourced acid toner', 'Aqua, Glycolic Acid (7%), Glycerin'),
+      inci_verified: true, inci_complete: true,
       brand: 'Example Brand',
       product_variant: '7% Glycolic Toner, 100 ml',
       market: 'Canada',
@@ -197,7 +198,7 @@ test('[integration] product-specific directions and provenance are saved and dis
       directions_source_url: 'https://example.test/acid-directions',
       directions_checked_at: '2026-11-21',
     },
-    R(202, 'Serum', 'Synthetic retinol serum', 'Aqua, Retinol 0.3%, Squalane'),
+    { ...R(202, 'Serum', 'Synthetic retinol serum', 'Aqua, Retinol 0.3%, Squalane'), inci_verified: true, inci_complete: true },
   ];
   const h = await openClay(browser, srv.base, { noClaude: true, local: { 'clay-products': shelf } });
   try {
