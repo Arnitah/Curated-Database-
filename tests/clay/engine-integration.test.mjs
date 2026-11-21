@@ -246,6 +246,20 @@ test('[integration] product-specific directions and provenance are saved and dis
     text = await page.locator('#main').innerText();
     assert.match(text, /Use only as directed\. Do not combine with other retinoids\./);
     assert.match(text, /Second Example Brand/);
+
+    await page.locator('.mp-ii-details summary').click();
+    await page.locator('#iiMarket').fill('Canada — package variant checked again');
+    await page.locator('#iiDirections').fill('Updated instructions: use only as directed.');
+    await page.locator('[data-act="iisave"][data-v="202"]').click();
+    const revised = (await h.mp()).find(p => p.id === 202);
+    assert.equal(revised.identity_checked_at, undefined, 'identity review date is invalidated when identity details change');
+    assert.equal(revised.directions_checked_at, undefined, 'directions review date is invalidated when directions change');
+
+    await page.locator('.mp-ii-details summary').click();
+    await page.locator('#iiDirectionsUrl').fill('javascript:alert(1)');
+    await page.locator('[data-act="iisave"][data-v="202"]').click();
+    const afterUnsafeUrl = (await h.mp()).find(p => p.id === 202);
+    assert.equal(afterUnsafeUrl.directions_source_url, 'https://example.test/retinol-directions', 'unsafe source schemes are not saved');
     assert.deepEqual(h.errors, [], 'no browser runtime errors');
   } finally {
     await h.close();
