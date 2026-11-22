@@ -8681,6 +8681,185 @@
         "country": "France",
         "cc": "FR"
       }
+    },
+    {
+      "id": "michael-malul-commercial-base-typed-1",
+      "house": "michael-malul",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Michael Malul's company profile identifies Columbus, Ohio as its headquarters. This supports a commercial base, not a manufacturing location or necessarily the brand's origin.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.linkedin.com/company/michael-malul",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Columbus",
+        "region": "Ohio",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "kayali-legal-base-typed-1",
+      "house": "kayali",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "KAYALI's official terms identify KAYALI BEAUTY PRODUCTS TRADING DWC FZ LLC as the website operator and give its registered office in Dubai South, UAE, with UAE trade licence 13075.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://kayali.com/en-ae/pages/terms-conditions-of-sale",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Dubai",
+        "region": "Dubai South",
+        "country": "United Arab Emirates",
+        "cc": "AE",
+        "entity": "KAYALI BEAUTY PRODUCTS TRADING DWC FZ LLC"
+      }
+    },
+    {
+      "id": "kayali-manufacturing-typed-1",
+      "house": "kayali",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "KAYALI's official FAQ states that its fragrances are made in France. The cited source does not name a specific city or factory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://us.kayali.com/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "floraiku-legal-base-typed-1",
+      "house": "floraiku",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The official legal notice identifies Floraïku International SARL as website publisher, gives its head office at Rue du Lac 12, Geneva, and cites registration in the Commercial Register of the Canton of Geneva (CHE-336.770.048).",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://fr.floraiku.com/en/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Geneva",
+        "country": "Switzerland",
+        "cc": "CH",
+        "entity": "Floraïku International SARL"
+      }
+    },
+    {
+      "id": "floraiku-manufacturing-typed-1",
+      "house": "floraiku",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Floraïku's official FAQ states that all of its perfumes are made in France. This is a brand-wide country-level manufacturing claim; no factory city is named.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.floraiku.com/pages/faq",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "ds-and-durga-brand-origin-typed-1",
+      "house": "ds-and-durga",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The founders' account traces the house to their DIY Brooklyn beginnings, where they developed the brand from a small Bushwick apartment. This supports Brooklyn as the house's origin.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://dsanddurga.live/pages/who-what-why",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Brooklyn",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "ds-and-durga-manufacturing-typed-1",
+      "house": "ds-and-durga",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The founders state that their scents are made in house in New York and that everything is made there. This is an explicit brand-wide manufacturing claim.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://dsanddurga.live/pages/who-what-why",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "New York",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "arquiste-founder-origin-typed-1",
+      "house": "arquiste",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "ARQUISTE identifies its founder Carlos Huber as Mexican-born; his official biography specifies that he grew up in Mexico City.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://arquiste.com/pages/carlos-huber",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mexico City",
+        "country": "Mexico",
+        "cc": "MX",
+        "entity": "Carlos Huber"
+      }
+    },
+    {
+      "id": "arquiste-manufacturing-typed-1",
+      "house": "arquiste",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "ARQUISTE states that its fragrances are made in the USA under its stated quality and good-manufacturing-practice protocols. No specific factory city is given.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://arquiste.com/pages/the-brand",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "27-87-manufacturing-typed-1",
+      "house": "27-87",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "27 87 states that its perfumes are 100% made in Barcelona, from the fragrance juice through the bottle and packaging, and describes its production as locally handcrafted.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://2787perfumes.com/pages/faqs",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "cc": "ES"
+      }
+    },
+    {
+      "id": "sultan-pasha-commercial-base-typed-1",
+      "house": "sultan-pasha",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Sultan Pasha describes himself as a London-based independent perfumer. The source establishes the perfumer's stated base, not the manufacturing location of every product.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://sultanpashaperfumes.com/pages/about-sultan-pasha",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB"
+      }
     }
   ]
 }
