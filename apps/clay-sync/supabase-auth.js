@@ -1,6 +1,8 @@
 import {
   assertClaySyncIdentityState,
-  assertClaySyncIdentityPort
+  assertClaySyncIdentityPort,
+  assertClaySyncEmailSignInResult,
+  assertClaySyncSignOutResult
 } from './contracts.js';
 
 function authError(message, code = 'CLAY_AUTH_INVALID_ARGUMENT') {
@@ -53,7 +55,9 @@ export function createClaySupabaseAuth(client) {
       options: { shouldCreateUser: false }
     });
     throwIfError(error);
-    return assertClaySyncEmailSignInResult(Object.freeze({ status: 'link_sent', email: normalizedEmail }));
+    return assertClaySyncEmailSignInResult(Object.freeze({
+      status: 'link_sent', email: normalizedEmail
+    }));
   }
 
   async function signOut() {
