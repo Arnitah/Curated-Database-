@@ -67,7 +67,7 @@ Skincare Data Hub → reviewed bridge/indexes → Clay read-only consumers
 Smart Butler → separate datachick project (no Clay connection)
 ```
 
-The application must depend on the existing provider-neutral ports in `apps/clay-sync/contracts.js`, not directly on Neon SDK objects, SQL rows, JWT claims or vendor-specific session shapes.
+The application should depend on the provider-neutral ports proposed in PR #17 (apps/clay-sync/contracts.js), not directly on Neon SDK objects, SQL rows, JWT claims or vendor-specific session shapes. Important repository-state note: PR #17 is still open and unmerged, so this contract is a proposed dependency rather than code present on this document's base branch.
 
 ## 4. Neon project and environment topology
 
@@ -107,7 +107,7 @@ Before selection, validate:
 - RLS identity claims and test coverage on the selected access path.
 - Regional availability, service limits, pricing and support.
 
-The current Clay reference auth controller supports existing-account-only email-link sign-in. Do not silently change that behavior to automatic account creation. Any account creation or account-linking UX must be a deliberate product decision.
+The reference auth controller proposed in PR #17 supports existing-account-only email-link sign-in. PR #17 remains open and unmerged; this is not yet an active Clay sign-in feature. Do not silently change the proposed behavior to automatic account creation. Any account creation or account-linking UX must be a deliberate product decision.
 
 ### Identity invariants
 
@@ -142,7 +142,7 @@ Do not implement both access paths by default. Choose the smallest path that pas
 
 ## 7. Persistence model and contract mapping
 
-The existing provider-neutral contract is the application boundary:
+The provider-neutral contract proposed in PR #17 is the intended application boundary (subject to review and merge):
 
 - Identity: `getState()`, `requestEmailSignIn(email)`, `signOut()`, `onStateChange(listener)`.
 - Records: `readCollection(collection)`, `writeRecord(input)`, `deleteRecord(input)`, `clearCollection(input)`.
@@ -150,7 +150,7 @@ The existing provider-neutral contract is the application boundary:
 - Snapshot shape: collection generation, revision and versioned records.
 - Mutation outcomes: `applied`, `cleared`, `conflict`.
 
-The existing Supabase SQL design is a useful semantic reference, not a drop-in Neon deployment. Preserve its useful concurrency behavior while replacing provider-specific auth helpers and adapter calls.
+The Supabase SQL design and adapter work in the open PRs are reference semantics, not a selected production backend or a drop-in Neon deployment. Preserve their useful concurrency behavior while replacing provider-specific auth helpers and adapter calls.
 
 ### Required record semantics
 
@@ -211,14 +211,63 @@ Before production use, document and test:
 | A. Architecture | This decision and open-question register | Product separation approved; no provisioning |
 | B. Provider spike | Neon Auth / external JWT and Data API / server adapter comparison | Synthetic auth and RLS tests pass; plan, region and SDK fit documented |
 | C. Schema prototype | Neon-compatible DDL, functions and migrations on a disposable test environment | Concurrency, ownership, tombstone and clear-all tests pass |
-| D. Adapter | Neon identity and records adapters implementing existing ports | Contract suite passes; no vendor leakage |
+| D. Adapter | Neon identity and records adapters implementing the PR #17 ports after that contract is reviewed and merged (or otherwise explicitly reconciled) | Contract suite passes; no vendor leakage |
 | E. App integration | Opt-in sign-in and backend mode behind a feature flag | Browser/mobile regression passes; existing sync unchanged by default |
 | F. Migration rehearsal | Preview/import/export/rollback on synthetic and then explicitly authorized test data | Counts, hashes, ownership and recovery verified |
 | G. Release decision | Production readiness report | Separate explicit approval for provisioning, real-data import and cutover |
 
 No stage is automatically authorized by completion of the prior stage.
 
-## 12. Open decisions before provisioning
+## 12. Provider evaluation matrix and test protocol
+
+The choices below are deliberately open. The evaluation should use synthetic accounts and records only, and should compare complete end-to-end behavior rather than selecting a service from feature checklists.
+
+### Identity
+
+| Candidate | Advantages to test | Risks / questions | Pass condition |
+|---|---|---|---|
+| Neon Auth in the dedicated Clay project | Project-local identity lifecycle; branch-aware development model; JWT claims can be evaluated directly with the database | Confirm current feature maturity, supported sign-in methods, email delivery, recovery/deletion/export, SDK fit, region/plan availability and safe branch workflow | Synthetic account lifecycle passes; JWT subject maps unambiguously to database principal; session revocation and account deletion behave as required |
+| External OIDC/Auth provider | Decouples identity lifecycle from the database vendor; may provide mature account recovery and sign-in options | Adds provider configuration, JWT/JWKS validation, issuer/audience management, callback origins and another operational dependency | Only verified issuer/audience/signature claims establish identity; rotation, revocation/expiry and account deletion are tested; no client-supplied user id is trusted |
+
+Do not choose Neon Auth solely because it is co-located with the database. Equally, do not add an external identity provider unless it materially improves lifecycle, compatibility or product requirements.
+
+### Data access
+
+| Candidate | Advantages to test | Risks / questions | Pass condition |
+|---|---|---|---|
+| Neon Data API + JWT + GRANT/RLS | Direct PostgreSQL-backed HTTP access; fewer application-server components; policy enforcement remains in PostgreSQL | Confirm current API availability/limits, supported JWT claim shape, function/RPC behavior, payload constraints, CORS/origins and operational fit | Anonymous and cross-user requests are denied; valid user can perform only allow-listed operations; mutation functions preserve atomic concurrency semantics; runtime role cannot bypass RLS |
+| Trusted server-side adapter + PostgreSQL driver | Central place for validation, orchestration, rate limits and stable app-facing API; may fit transactional operations cleanly | Requires a verified server-side hosting target, secure secret handling, deployment/monitoring and explicit database auth context; a broad server credential could bypass user isolation | Server verifies JWT issuer/audience/signature, derives principal from verified claims, applies user-scoped DB context in each transaction, and cannot be tricked into cross-user access |
+
+Do not expose a database-owner, migration or unrestricted service credential to the browser. A server-side adapter is not automatically safer: it must prove tenant isolation and must not use a broad credential without safely setting and enforcing the verified user context.
+
+### Minimum synthetic evaluation suite
+
+1. Anonymous read/write denied.
+2. User A cannot read, modify, delete or clear User B's records, including by changing request payloads or ids.
+3. Forged uid, altered JWT subject, wrong issuer/audience, expired token and revoked session are rejected.
+4. Runtime role lacks BYPASSRLS, table ownership, policy-alteration and migration privileges.
+5. Same-record concurrent writes produce one applied mutation and an explicit conflict, never silent last-write-wins.
+6. Clear-all racing with an old-generation write cannot resurrect cleared records.
+7. Tombstones remain visible to the synchronization contract and are not compacted prematurely.
+8. All five allow-listed collections work; unknown collection names and malformed/oversized payloads are rejected.
+9. Sign-out, account deletion, export and recovery behavior match the agreed product policy.
+10. A clean synthetic non-production branch can be recreated from migrations and seed fixtures without production identity or personal data.
+
+Record results, tested product versions, dates, limitations and failed cases. A candidate only passes when all required security and contract tests pass; a passing happy-path demo is insufficient.
+
+## 13. Hosting and release-path verification
+
+The repository README describes the current Clay distribution model as a Claude artifact with bundled data and a GitHub raw-data fallback; it also states that bundled app data reaches users when the artifact is republished. The repository does not identify a verified production web-hosting project or a deployment workflow for Clay. A previous connected Vercel inspection did not establish a Clay project; the known datachick mapping belongs to Smart Butler.
+
+Therefore the hosting target and exact development, staging and production origins remain unverified. Do not configure OAuth callbacks, CORS allowlists, cookie domains, webhook endpoints or production secrets until the actual release path is confirmed. This is a prerequisite to choosing an auth flow, not a reason to provision infrastructure now.
+
+## 14. Repository dependency and review status
+
+At the time of this review, PR #16 (architecture baseline), PR #17 (provider-neutral contract and Supabase reference adapter slice), and PR #18 (this Neon isolation architecture) are all open and unmerged. PR #17 contains the proposed contract and synthetic tests, but those files are not present on the base branch used by this document. PR #18 is documentation-only; no CI checks were scheduled for its docs-only change, and no reviewer comments or approvals were present at the time of inspection.
+
+Keep the PRs unmerged until their dependency order and combined content have been reviewed. In particular, reconcile this document with the final merged contract and the baseline handoff; do not treat an open PR as an implemented production capability.
+
+## 15. Open decisions before provisioning
 
 - Confirm the intended Clay hosting/release target and environment-origin list.
 - Confirm data residency and select the Neon region after checking current availability.
@@ -229,7 +278,7 @@ No stage is automatically authorized by completion of the prior stage.
 - Confirm plan limits, budget and production availability requirements.
 - Confirm which local-only state is genuinely user-owned and should be exportable.
 
-## 13. Official technical references
+## 16. Official technical references
 
 - [Neon project and branch model](https://neon.com/docs/get-started/signing-up) — project isolation and branch workflow.
 - [Neon Auth architecture](https://neon.com/blog/neon-auth-branchable-identity-in-your-database) — managed identity stored in the project database and branch behavior.
@@ -237,7 +286,7 @@ No stage is automatically authorized by completion of the prior stage.
 - [Neon Data API access control](https://neon.com/docs/data-api/access-control) — GRANT and RLS requirements; no separate Data API permission layer.
 - [Neon Data API](https://neon.com/blog/a-postgrest-compatible-data-api-now-on-neon) — REST access, JWT and RLS integration.
 
-## 14. Decision record
+## 17. Decision record
 
 **Accepted:** Separate Clay and Smart Butler data domains. Design a dedicated Clay Neon project.
 
@@ -247,4 +296,4 @@ No stage is automatically authorized by completion of the prior stage.
 
 **Reason:** Establish a durable security and ownership boundary first, preserve the existing working Clay sync path, and validate the Neon-specific identity/RLS model before exposing any personal records to a new backend.
 
-Last updated · ChatGPT · 22 November 2026.
+Last reviewed and updated · ChatGPT · 22 November 2026.
