@@ -4,7 +4,7 @@ Status: Supabase reference implementation only; no production provider has been 
 
 ## Original scaffold provider: Supabase (reference implementation)
 
-Supabase is the proposed small external backend because it provides PostgreSQL transactions, database functions callable through RPC, Supabase Auth, and Row Level Security. The browser uses a publishable key plus a Supabase Auth session; never put a service-role/secret key in Clay.
+Supabase was used for the first reference scaffold because it provides PostgreSQL transactions, database functions callable through RPC, Supabase Auth, and Row Level Security. This does not select Supabase as Clay's production backend. If this adapter is ever used, the browser must use a publishable key plus a Supabase Auth session; never put a service-role/secret key in Clay.
 
 Official references:
 - [Database functions](https://supabase.com/docs/guides/database/functions)
@@ -13,7 +13,7 @@ Official references:
 
 ## Identity and privacy boundary
 
-The existing Claude artifact user id is not a credential and must never be trusted as proof of identity by a new backend. Clay must authenticate independently with Supabase Auth (initial candidate: email OTP/magic link). Every row is keyed by `auth.uid()`; RLS limits reads to the signed-in user. Mutation RPCs verify `auth.uid()` server-side. No anonymous access and no service-role key in browser code.
+The existing Claude artifact user id is not a credential and must never be trusted as proof of identity by a new backend. Clay must authenticate independently with the selected provider. In this Supabase reference implementation, that means Supabase Auth (existing-account email OTP/magic link), rows keyed by `auth.uid()`, RLS scoped to the signed-in user, and mutation RPCs verifying `auth.uid()` server-side. A Neon implementation must deliberately replace those provider-specific assumptions with verified Neon Auth/JWT claims and equivalent PostgreSQL ownership enforcement. No anonymous access and no database-owner/service key in browser code.
 
 ## Data model
 
