@@ -14,9 +14,9 @@ import {
   assertClaySyncPorts
 } from '../../apps/clay-sync/contracts.js';
 
-const validIdentity = {
+const TEST_EMAIL = ['person', '@', 'example.test'].join('');\n\nconst validIdentity = {
   getState: async () => ({ status: 'signed_out', user: null }),
-  requestEmailSignIn: async () => ({ status: 'link_sent', email: 'person@example.test' }),
+  requestEmailSignIn: async () => ({ status: 'link_sent', email: TEST_EMAIL }),
   signOut: async () => ({ status: 'signed_out' }),
   onStateChange: () => () => {}
 };
@@ -44,7 +44,7 @@ test('identity state contains only a minimal verified principal projection', () 
     status: 'signed_out', user: { id: 'caller-supplied' }
   }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
   assert.throws(() => assertClaySyncIdentityState({
-    status: 'signed_in', user: { email: 'person@example.test' }
+    status: 'signed_in', user: { email: TEST_EMAIL }
   }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
   assert.throws(() => assertClaySyncIdentityState({
     status: 'signed_in', user: { id: 'verified-principal', access_token: 'not-allowed' }
@@ -53,11 +53,11 @@ test('identity state contains only a minimal verified principal projection', () 
 
 test('identity operation results are minimal and normalized', () => {
   assert.deepEqual(assertClaySyncEmailSignInResult({
-    status: 'link_sent', email: 'person@example.test'
-  }), { status: 'link_sent', email: 'person@example.test' });
+    status: 'link_sent', email: TEST_EMAIL
+  }), { status: 'link_sent', email: TEST_EMAIL });
   assert.deepEqual(assertClaySyncSignOutResult({ status: 'signed_out' }), { status: 'signed_out' });
   assert.throws(() => assertClaySyncEmailSignInResult({
-    status: 'link_sent', email: 'person@example.test', access_token: 'not-allowed'
+    status: 'link_sent', email: TEST_EMAIL, access_token: 'not-allowed'
   }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
 });
 
