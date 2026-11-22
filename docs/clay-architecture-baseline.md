@@ -195,3 +195,37 @@ This is a public-product review only; the user's Neon account/project has not ye
 - The Neon integration is not yet connected in this ChatGPT workspace, so no project, branch, auth configuration, schema, role, credential or billing settings have been inspected. A connection option has been presented to the user; project-specific review remains pending that connection.
 
 Decision: Neon remains the preferred candidate to evaluate, not a selected provider. No Neon provisioning, schema changes, migration or deployment is authorized by this review.
+
+
+## Connected Neon project audit · read-only · 22 Nov 2026
+
+### Project mapping
+
+The connected Neon organization contains one project: `datachick` (`delicate-dream-75946663`), PostgreSQL 18 in AWS `us-east-2`, on the Free plan. The project has a default `production` branch and a Vercel-created `vercel-dev` child branch.
+
+The Vercel workspace exposes one project, `smart-butler`, with a production deployment in READY state and domains `smart-butler-two.vercel.app` and `smart-butler-datachick.vercel.app`. Its Neon integration has generated `DATABASE_URL` and `DATABASE_URL_UNPOOLED` variables for Development and Production. This establishes that the connected Neon project is wired to the Smart Butler Vercel project. It does **not** establish that it is the intended database for Clay.
+
+### Production schema and identity model
+
+The production database contains seven `public` tables: `users`, `sessions`, `login_attempts`, `requests`, `approvals`, `tasks`, and `calendar_events`. The schema is consistent with a server-backed assistant/workflow product. It includes custom identity/session structures (`users.password_hash`, `sessions.token_hash`, and login-attempt email/IP metadata), with task/calendar data and approval/request records.
+
+No Clay-specific shelf, skincare product, routine, ingredient, or beauty-research tables were found. The Vercel-created `vercel-dev` branch currently has no application tables. No row data, emails, hashes, IP addresses, message bodies or other personal records were read; this audit inspected structure and access metadata only.
+
+### Database security and operations observed
+
+- Neon Auth is not enabled on either branch. Realtime is disabled on production.
+- All seven application tables have Row Level Security disabled and there are no RLS policies.
+- No application SQL functions or triggers were found.
+- The only customer-created login role visible is `neondb_owner`; it can bypass RLS. The SQL inspection connection also ran as this role. The `PUBLIC` pseudo-role cannot select, insert, update or delete from `public.users`. No separate least-privilege application role was found.
+- This appears designed around a server-side custom-auth model rather than direct client access. The Vercel application code was not inspected in this Neon audit, so the correctness of per-user authorization in its server queries is unverified. Do not expose the database connection to browser code.
+- The default `production` branch and `vercel-dev` branch are both reported as unprotected. Project history retention is 21,600 seconds (6 hours); the branch logical-size limit is 1 GiB. Public connections are not blocked and the IP allow-list is empty. These settings are recorded for review, not changed.
+- The project is Free-plan, with 0.25–2.0 CU default autoscaling. No pricing or capacity forecast was performed.
+- Vercel environment metadata marks the Production `DATABASE_URL` and `DATABASE_URL_UNPOOLED` entries with `securityIssues: readable-secret`. Their values were not decrypted or retrieved. Verify that these credentials are stored as write-only Secrets under Vercel's current Config/Secret model, and rotate them if they have been readable to people who should not access database credentials. Sources: [Vercel Config and Secret types, 24 Aug 2026](https://vercel.com/changelog/environment-variables-now-use-config-and-secret-types), [Secret environment variable guidance](https://vercel.com/academy/optimize-your-vercel-account/sensitive-env-vars).
+
+### Architecture recommendation
+
+Keep `datachick` attached to Smart Butler unless the product owner explicitly decides to share its database with Clay. Do not wire the Clay repository or browser app to this database based on the available evidence. The existing database has a separate custom-auth model, no RLS policies, and no Clay domain tables. Reusing it would couple product identities and require a deliberately designed cross-product authorization boundary.
+
+Preferred next decision: provision a **separate Clay Neon project** (only after explicit approval) with a clear project identity, isolated authentication, RLS-backed user data, a protected production branch, a synthetic-data development branch, an appropriately sized recovery window, and server-only credentials or a verified JWT/RLS client path. Keep shared product/ingredient reference datasets in the repository/data pipeline rather than copying them into transactional user storage by default.
+
+No project, branch, role, endpoint, environment variable, authentication setting, table, policy, data row, migration or deployment was changed during this read-only audit.
