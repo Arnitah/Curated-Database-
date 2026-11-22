@@ -4,6 +4,8 @@ import {
   CLAY_SYNC_COLLECTIONS,
   assertClaySyncCollection,
   assertClaySyncIdentityState,
+  assertClaySyncEmailSignInResult,
+  assertClaySyncSignOutResult,
   assertClaySyncIdentityPort,
   assertClaySyncSnapshot,
   assertClaySyncMutationResult,
@@ -43,6 +45,19 @@ test('identity state contains only a minimal verified principal projection', () 
   assert.throws(() => assertClaySyncIdentityState({
     status: 'signed_in', user: { email: 'person@example.test' }
   }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+  assert.throws(() => assertClaySyncIdentityState({
+    status: 'signed_in', user: { id: 'verified-principal', access_token: 'not-allowed' }
+  }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+});
+
+test('identity operation results are minimal and normalized', () => {
+  assert.deepEqual(assertClaySyncEmailSignInResult({
+    status: 'link_sent', email: 'person@example.test'
+  }), { status: 'link_sent', email: 'person@example.test' });
+  assert.deepEqual(assertClaySyncSignOutResult({ status: 'signed_out' }), { status: 'signed_out' });
+  assert.throws(() => assertClaySyncEmailSignInResult({
+    status: 'link_sent', email: 'person@example.test', access_token: 'not-allowed'
+  }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
 });
 
 test('identity and record adapters must implement the shared ports', () => {
@@ -80,6 +95,9 @@ test('collection snapshots preserve stable ids, versions, and deletion tombstone
   assert.throws(() => assertClaySyncSnapshot({
     ...snapshot, records: [{ ...snapshot.records[1], payload: { resurrected: true } }]
   }, 'products'), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+  assert.throws(() => assertClaySyncSnapshot({ ...snapshot, user_id: 'provider-column' }, 'products'), {
+    code: 'CLAY_SYNC_PROTOCOL_ERROR'
+  });
 });
 
 test('mutation outcomes are normalized and stale conflicts remain explicit', () => {
@@ -98,4 +116,7 @@ test('mutation outcomes are normalized and stale conflicts remain explicit', () 
   assert.throws(() => assertClaySyncMutationResult({ status: 'applied' }), {
     code: 'CLAY_SYNC_PROTOCOL_ERROR'
   });
+  assert.throws(() => assertClaySyncMutationResult({
+    status: 'conflict', generation: 1, revision: 2, provider_error: 'not allowed'
+  }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
 });
