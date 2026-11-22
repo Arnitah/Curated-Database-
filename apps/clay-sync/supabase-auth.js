@@ -12,7 +12,7 @@ function authError(message, code = 'CLAY_AUTH_INVALID_ARGUMENT') {
 function normalizeEmail(email) {
   if (typeof email !== 'string') authError('Enter a valid sign-in value');
   const normalized = email.trim().toLowerCase();
-  if (normalized.length > 254 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(normalized)) {
+  if (normalized.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized)) {
     authError('Enter a valid sign-in value');
   }
   return normalized;
