@@ -1,6 +1,6 @@
 # Clay external sync backend
 
-Status: Supabase reference implementation only; no production provider has been selected. No cloud project has been created, no credentials have been added, and no user data has been migrated.
+Status: Supabase reference implementation only; no production provider has been selected. No Supabase project or Supabase credentials are configured in this repository, and no user data has been migrated. The user's Neon account/project has not been inspected.
 
 ## Original scaffold provider: Supabase (reference implementation)
 
