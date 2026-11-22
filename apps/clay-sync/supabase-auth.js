@@ -53,13 +53,13 @@ export function createClaySupabaseAuth(client) {
       options: { shouldCreateUser: false }
     });
     throwIfError(error);
-    return Object.freeze({ status: 'link_sent', email: normalizedEmail });
+    return assertClaySyncEmailSignInResult(Object.freeze({ status: 'link_sent', email: normalizedEmail }));
   }
 
   async function signOut() {
     const { error } = await client.auth.signOut();
     throwIfError(error);
-    return Object.freeze({ status: 'signed_out' });
+    return assertClaySyncSignOutResult(Object.freeze({ status: 'signed_out' }));
   }
 
   function onStateChange(listener) {
