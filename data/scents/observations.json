@@ -8142,6 +8142,290 @@
         "entity": "MILLER HARRIS FRAGRANCES LTD"
       },
       "open": "The current Companies House register lists the same company number at 86 Fetter Lane. The website's registered-office address conflicts with the official company-register address; both claims are retained pending resolution."
+    },
+    {
+      "id": "maison-bagian-brand-origin-typed-1",
+      "house": "maison-bagian",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Maison Bagian describes itself as the first Vietnamese perfume brand. This is the brand's own origin description; the source also describes a Vietnamese–French cultural identity.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisonbagian.com/en/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Vietnam",
+        "cc": "VN"
+      }
+    },
+    {
+      "id": "maison-bagian-formulation-typed-1",
+      "house": "maison-bagian",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "The brand says its fragrances are perfected in Grasse with professional perfumers based there. This supports a Grasse formulation/perfumer-development relationship, not a legal base.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisonbagian.com/en/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "maison-bagian-manufacturing-typed-1",
+      "house": "maison-bagian",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Maison Bagian states that its fragrances are produced in Grasse, France, and describes its production as using exclusive formulas. This is a brand claim; independent factory evidence was not located in this pass.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://maisonbagian.com/en/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "abdul-samad-al-qurashi-brand-origin-typed-1",
+      "house": "abdul-samad-al-qurashi",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The company's official LinkedIn profile says the perfumery began in 1852 and identifies its headquarters in Makkah. The official company contact page independently lists its public administration address in Makkah.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/abdul-samad-al-qurashi/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "cc": "SA"
+      }
+    },
+    {
+      "id": "abdul-samad-al-qurashi-commercial-base-typed-1",
+      "house": "abdul-samad-al-qurashi",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official company contact page lists Public Administration in Mecca, Saudi Arabia, and gives the company's commercial registration number. This establishes a stated administrative contact location, not necessarily every operating site.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://sa.abdulsamadalqurashi.com/en/Contact-us/page-916805776",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mecca",
+        "country": "Saudi Arabia",
+        "cc": "SA"
+      }
+    },
+    {
+      "id": "abdul-samad-al-qurashi-manufacturing-typed-1",
+      "house": "abdul-samad-al-qurashi",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The Saudi Food and Drug Authority lists Abdul Samad Al Qurashi Sons Factory for Perfumes and Cosmetics as a licensed cosmetic manufacturer in Jeddah (license ML-2023-CM-0130; expiry 2027-08-31). This supports a Jeddah manufacturing facility for the named company; product-by-product scope is not stated.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.sfda.gov.sa/en/details_data?id=ML-2023-CM-0130&nid=17597&page=1",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Jeddah",
+        "country": "Saudi Arabia",
+        "cc": "SA",
+        "entity": "Abdul Samad Al Qurashi Sons Factory for Perfumes and Cosmetics"
+      }
+    },
+    {
+      "id": "swiss-arabian-brand-origin-typed-1",
+      "house": "swiss-arabian",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Swiss Arabian says it was established in 1974 as the first perfume house in the UAE.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://swissarabian.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "swiss-arabian-manufacturing-typed-1",
+      "house": "swiss-arabian",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The brand's official FAQ states that all Swiss Arabian fragrances are made in the UAE. It does not identify a specific factory or emirate.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://uae.swissarabian.com/pages/faqs",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "lattafa-brand-origin-typed-1",
+      "house": "lattafa",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Lattafa describes itself as established in the United Arab Emirates and as a third-generation family-run fragrance business.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lattafa.com/about-us/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "lattafa-manufacturing-typed-1",
+      "house": "lattafa",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Lattafa states that its process includes in-house manufacturing and describes its products as made in the UAE. No specific factory city is stated on the cited pages.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lattafa.com/perfume-as-art-unraveling-the-creative-process-behind-lattafas-signature-scents/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      }
+    },
+    {
+      "id": "nishane-commercial-base-typed-1",
+      "house": "nishane",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "NISHANE describes itself as an Istanbul-based niche perfume brand. This establishes its stated base, but the cited page does not establish manufacturing or formulation location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://nishane.com/about/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Istanbul",
+        "country": "Türkiye",
+        "cc": "TR"
+      }
+    },
+    {
+      "id": "claus-porto-brand-origin-typed-1",
+      "house": "claus-porto",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The current owner traces the brand's roots to Claus & Schweder, described as Portugal's first soap factory, in Porto; Achilles de Brito joined the company in 1903 and became a partner in 1908. This records the historical Porto origin without implying that every current product is made there.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://achbrito.com/en/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Porto",
+        "country": "Portugal",
+        "cc": "PT"
+      }
+    },
+    {
+      "id": "korres-brand-origin-typed-1",
+      "house": "korres",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "KORRES says Giorgos Korres founded the company in 1996 after developing products through his Athens pharmacy.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.korres.com/pages/our-story",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Athens",
+        "country": "Greece",
+        "cc": "GR"
+      }
+    },
+    {
+      "id": "korres-formulation-typed-1",
+      "house": "korres",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "KORRES describes its product formulation as being carried out in-house by its R&D team in Greece.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.korres.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Greece",
+        "cc": "GR"
+      }
+    },
+    {
+      "id": "korres-manufacturing-typed-1",
+      "house": "korres",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "KORRES says it produces products in its own facilities and describes the brand as born and made in Greece. The cited material does not give the production plant's city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.korres.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Greece",
+        "cc": "GR"
+      }
+    },
+    {
+      "id": "skandinavisk-brand-origin-typed-1",
+      "house": "skandinavisk",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "An independent profile of the Danish B Corp identifies Skandinavisk as founded in 2012 and associated with its Copenhagen flagship; a specialist brand-history profile identifies Copenhagen as the place it began. This is secondary-source evidence, not a direct legal-registration record.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://bcorporation.eu/case_study/skandinavisk-embracing-continuous-improvement-in-the-beauty-industry/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "cc": "DK"
+      },
+      "open": "The cited B Corp profile confirms the Danish company and Copenhagen flagship; the precise founding city is stated by a secondary specialist profile at https://www.selezio.com/brands/skandinavisk."
+    },
+    {
+      "id": "skandinavisk-commercial-base-typed-1",
+      "house": "skandinavisk",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The B Corp profile lists Skandinavisk SR ApS in Denmark and identifies its Copenhagen flagship store. The location is treated as a commercial presence, not proof that all operations are based there.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://bcorporation.eu/case_study/skandinavisk-embracing-continuous-improvement-in-the-beauty-industry/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Denmark",
+        "cc": "DK"
+      }
+    },
+    {
+      "id": "janua-legal-base-typed-1",
+      "house": "janua",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "JANUA identifies WERIN WEALTH INTERTRADE CO., LTD. as its registered company and lists its address in Mae Suai, Chiang Rai, Thailand.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.januathailand.com/en/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Mae Suai",
+        "region": "Chiang Rai",
+        "country": "Thailand",
+        "cc": "TH",
+        "entity": "WERIN WEALTH INTERTRADE CO., LTD."
+      }
     }
   ]
 }
