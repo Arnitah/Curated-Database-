@@ -1,3 +1,8 @@
+import {
+  assertClaySyncIdentityState,
+  assertClaySyncIdentityPort
+} from './contracts.js';
+
 function authError(message, code = 'CLAY_AUTH_INVALID_ARGUMENT') {
   const error = new Error(message);
   error.code = code;
@@ -43,7 +48,7 @@ export function createClaySupabaseAuth(client) {
     });
   }
 
-  async function sendMagicLink(email) {
+  async function requestEmailSignIn(email) {
     const normalizedEmail = normalizeEmail(email);
     const { error } = await client.auth.signInWithOtp({
       email: normalizedEmail,
@@ -76,5 +81,5 @@ export function createClaySupabaseAuth(client) {
     return () => subscription.unsubscribe();
   }
 
-  return Object.freeze({ getState, sendMagicLink, signOut, onStateChange });
+  return assertClaySyncIdentityPort(Object.freeze({ getState, requestEmailSignIn, signOut, onStateChange }));
 }
