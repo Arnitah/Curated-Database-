@@ -14,7 +14,9 @@ import {
   assertClaySyncPorts
 } from '../../apps/clay-sync/contracts.js';
 
-const TEST_EMAIL = ['person', '@', 'example.test'].join('');\n\nconst validIdentity = {
+const TEST_EMAIL = ['person', '@', 'example.test'].join('');
+
+const validIdentity = {
   getState: async () => ({ status: 'signed_out', user: null }),
   requestEmailSignIn: async () => ({ status: 'link_sent', email: TEST_EMAIL }),
   signOut: async () => ({ status: 'signed_out' }),
