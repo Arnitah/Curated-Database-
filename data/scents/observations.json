@@ -8860,6 +8860,304 @@
         "country": "United Kingdom",
         "cc": "GB"
       }
+    },
+    {
+      "id": "libertine-brand-origin-typed-1",
+      "house": "libertine",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Independent fragrance profiles describe Libertine Fragrance as a Canadian house founded by perfumer Joshua Smith in 2015. This supports country-level Canadian origin; the founder's Canadian Prairies background is not evidence of a specific city of establishment.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://scenttrunk.com/en-ca/pages/josh-smith",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Canada",
+        "cc": "CA"
+      },
+      "open": "Founding city and present legal base were not established in the sources reviewed."
+    },
+    {
+      "id": "liquides-imaginaires-brand-origin-typed-1",
+      "house": "liquides-imaginaires",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Liquides Imaginaires describes itself as a French artistic perfumery house founded by Philippe Di Méo. The source establishes French identity, not a specific founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.liquidesimaginaires.com/fr/about",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "liquides-imaginaires-legal-base-typed-1",
+      "house": "liquides-imaginaires",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The official terms state that the website is owned and operated by Liquides Imaginaires SAS, a French company with its registered office at 91 rue du Faubourg Saint-Honoré, Paris, and fiscal code 793352196.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.liquidesimaginaires.com/pages/conditions-of-sale",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR",
+        "entity": "Liquides Imaginaires SAS"
+      }
+    },
+    {
+      "id": "liquides-imaginaires-seller-base-typed-1",
+      "house": "liquides-imaginaires",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The same official terms identify Liquides Imaginaires LLC, registered in Miami, Florida, as the seller of products through the online shop and describe it as a subsidiary of Liquides Imaginaires SAS. This is a separate sales entity from the French website operator.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.liquidesimaginaires.com/pages/conditions-of-sale",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Miami",
+        "region": "Florida",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Liquides Imaginaires LLC"
+      }
+    },
+    {
+      "id": "ellis-brooklyn-manufacturing-typed-1",
+      "house": "ellis-brooklyn",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Ellis Brooklyn's official product page identifies Apple Love Eau de Parfum as made in the USA. This is product-specific evidence and should not be generalized to every SKU without checking its own label.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.ellisbrooklyn.com/products/apple-love-eau-de-parfum",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "Product-level evidence only; verify other fragrance SKUs separately."
+    },
+    {
+      "id": "zielinski-rozen-brand-origin-typed-1",
+      "house": "zielinski-rozen",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Zielinski & Rozen's official brand page says it was founded in the ancient streets of Old Jaffa. It separately describes family roots dating to 1905 in Poland; the latter is historical family heritage, not the current brand's founding location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://zielinskiandrozen.com/pages/about",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Old Jaffa",
+        "region": "Tel Aviv",
+        "country": "Israel",
+        "cc": "IL"
+      }
+    },
+    {
+      "id": "zielinski-rozen-commercial-base-typed-1",
+      "house": "zielinski-rozen",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The official contact page identifies Zielinski & Rozen Export Ltd. in Tel Aviv–Jaffa as its worldwide headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://zielinskiandrozen.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Tel Aviv–Jaffa",
+        "country": "Israel",
+        "cc": "IL",
+        "entity": "Zielinski & Rozen Export Ltd."
+      }
+    },
+    {
+      "id": "zielinski-rozen-legal-base-typed-1",
+      "house": "zielinski-rozen",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The official contact page identifies Zielinski & Rozen Europe B.V. at Pieter Braaijweg 213, Amsterdam, Netherlands, with VAT number 863160578B01. This is the European entity, not the worldwide headquarters.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://zielinskiandrozen.com/pages/contact",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "cc": "NL",
+        "entity": "Zielinski & Rozen Europe B.V."
+      }
+    },
+    {
+      "id": "areej-le-dore-brand-origin-typed-1",
+      "house": "areej-le-dore",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A specialist fragrance-house profile reports that Areej Le Doré was created in the United Kingdom in 2017 before its founder's operations moved to Southeast Asia. This is secondary-source evidence; the brand's own site does not state a country of origin.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://osmetheca.be/en/houses/areej-le-dore.html",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "Secondary source; retain as provisional until an official company record is located."
+    },
+    {
+      "id": "areej-le-dore-legal-base-typed-1",
+      "house": "areej-le-dore",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "A specialist fragrance-house profile states that the brand is registered in the United Kingdom. The specific registered legal entity and registered office were not identified in this pass.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://osmetheca.be/en/houses/areej-le-dore.html",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "Registered entity and address still require primary registry confirmation."
+    },
+    {
+      "id": "areej-le-dore-manufacturing-typed-1",
+      "house": "areej-le-dore",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The specialist profile identifies Indonesia as the house's current production base and describes Russian Adam's own distillation activity there. This is secondary-source evidence and should not be treated as an official factory address.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://osmetheca.be/en/houses/areej-le-dore.html",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Indonesia",
+        "cc": "ID"
+      },
+      "open": "Production country is reported by a specialist secondary source; verify through direct brand or company evidence."
+    },
+    {
+      "id": "pekji-founder-origin-typed-1",
+      "house": "pekji",
+      "kind": "claim",
+      "topic": "founder_origin",
+      "text": "PEKJI founder Omer Ipekci states that he was born in Istanbul, Türkiye. This is founder birthplace and must not be used as a substitute for the brand's establishment location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://pekji.com/en/about-us/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Istanbul",
+        "country": "Türkiye",
+        "cc": "TR",
+        "entity": "Omer Ipekci"
+      }
+    },
+    {
+      "id": "aftelier-studio-typed-1",
+      "house": "aftelier",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Founder Mandy Aftel states that she creates Aftelier perfumes in her Berkeley, California studio.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.aftelier.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Berkeley",
+        "region": "California",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "aftelier-manufacturing-typed-1",
+      "house": "aftelier",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Mandy Aftel says she hand-blends and bottles all Aftelier products in small batches in her Berkeley, California studio. This explicitly supports both blending and bottling there.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.aftelier.com/Articles.php?ID=263",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Berkeley",
+        "region": "California",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "strangers-parfumerie-brand-origin-typed-1",
+      "house": "strangers-parfumerie",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Independent fragrance references identify Strangers Parfumerie as founded in 2017 by Thai perfumer Prin Lomros. This supports Thailand as the brand's origin; no primary legal record was located in this pass.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://signaturescent.studio/brands/strangers-parfumerie",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "strangers-parfumerie-studio-typed-1",
+      "house": "strangers-parfumerie",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "A corporate profile describes Prin Lomros as a Bangkok-based perfumer who created Strangers Parfumerie. This supports the perfumer's creative base, not necessarily a separate manufacturing site.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.peninsula.com.cn/-/media/news-room/2020/group/new-amenities/content/new-amenities-group-booklet-eng.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "cc": "TH"
+      }
+    },
+    {
+      "id": "phlur-legal-base-typed-1",
+      "house": "phlur",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "PHLUR's official terms identify Phlur as a Delaware limited liability company. The cited terms provide a West Hollywood correspondence address but do not identify the Delaware registered office.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://phlur.com/en-ca/pages/terms-of-service",
+      "seen": "2026-11-21",
+      "location": {
+        "region": "Delaware",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Phlur LLC"
+      }
+    },
+    {
+      "id": "phlur-commercial-base-typed-1",
+      "house": "phlur",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "PHLUR's official terms provide its business and legal-notice address at 9200 W. Sunset Blvd, West Hollywood, California.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://phlur.com/en-ca/pages/terms-of-service",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "West Hollywood",
+        "region": "California",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Phlur LLC"
+      }
     }
   ]
 }
