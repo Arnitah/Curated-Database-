@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createClaySupabaseRecordsAdapter } from '../../apps/clay-sync/supabase-records.js';
 
-function makeClient({ user = { id: 'synthetic-user' }, collectionRow = null, rows = [], rpcResult = { status: 'applied' } } = {}) {
+function makeClient({ user = { id: 'synthetic-user' }, collectionRow = null, rows = [], rpcResult = { status: 'applied', generation: 1, version: 1, revision: 1 } } = {}) {
   const calls = { queries: [], rpcs: [], auth: 0 };
   const client = {
     auth: {
@@ -62,7 +62,7 @@ test('a collection without a row starts at generation one with no records', asyn
 });
 
 test('write forwards the caller base generation and record version to the transactional RPC', async () => {
-  const { client, calls } = makeClient({ rpcResult: { status: 'applied', generation: 2, version: 5 } });
+  const { client, calls } = makeClient({ rpcResult: { status: 'applied', generation: 2, version: 5, revision: 9 } });
   const result = await createClaySupabaseRecordsAdapter(client).writeRecord({
     collection: 'products', recordId: 'p-5', expectedGeneration: 2,
     expectedVersion: 4, payload: { name: 'Synthetic moisturiser' }
@@ -88,7 +88,7 @@ test('delete writes a tombstone through the same guarded RPC', async () => {
 });
 
 test('clear-all advances only from the expected generation', async () => {
-  const { client, calls } = makeClient({ rpcResult: { status: 'cleared', generation: 4 } });
+  const { client, calls } = makeClient({ rpcResult: { status: 'cleared', generation: 4, revision: 12 } });
   const result = await createClaySupabaseRecordsAdapter(client).clearCollection({
     collection: 'products', expectedGeneration: 3
   });
