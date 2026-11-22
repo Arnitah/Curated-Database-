@@ -22,9 +22,12 @@ function isSafeIntegerAtLeast(value, minimum) {
   return Number.isSafeInteger(value) && value >= minimum;
 }
 
+function hasOnlyKeys(value, allowed) {
+  return Object.keys(value).every(key => allowed.includes(key));
+}
+
 export const CLAY_SYNC_COLLECTIONS = Object.freeze([...COLLECTIONS]);
 
-/** Validate a domain collection name before any provider request. */
 export function assertClaySyncCollection(collection) {
   if (typeof collection !== 'string' || !COLLECTIONS.has(collection)) {
     contractError('Unsupported Clay sync collection', 'CLAY_SYNC_INVALID_ARGUMENT');
@@ -32,7 +35,6 @@ export function assertClaySyncCollection(collection) {
   return collection;
 }
 
-/** Validate a stable, provider-independent record identifier. */
 export function assertClaySyncRecordId(recordId) {
   if (typeof recordId !== 'string' || recordId.length < 1 || recordId.length > 200) {
     contractError('Record id must contain between 1 and 200 characters', 'CLAY_SYNC_INVALID_ARGUMENT');
@@ -41,12 +43,13 @@ export function assertClaySyncRecordId(recordId) {
 }
 
 /**
- * Identity projection shared by auth providers.
- * Never accept a uid from a caller as proof of identity; adapters must derive
- * the principal from the authenticated provider session on every request.
+ * Identity projection shared by auth providers. A provider must derive the
+ * principal from its verified session; caller-supplied ids are never proof.
  */
 export function assertClaySyncIdentityState(state) {
-  if (!isObject(state) || !hasOnlyKeys(state, ['status', 'user', 'event'])\n      || (state.event !== undefined && typeof state.event !== 'string')\n      || !['signed_in', 'signed_out'].includes(state.status)) {
+  if (!isObject(state) || !hasOnlyKeys(state, ['status', 'user', 'event'])
+      || (state.event !== undefined && typeof state.event !== 'string')
+      || !['signed_in', 'signed_out'].includes(state.status)) {
     contractError('Identity provider returned an invalid state', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
   if (state.status === 'signed_out') {
@@ -55,14 +58,29 @@ export function assertClaySyncIdentityState(state) {
     }
     return state;
   }
-  if (!isObject(state.user) || typeof state.user.id !== 'string' || !state.user.id.trim()
+  if (!isObject(state.user) || !hasOnlyKeys(state.user, ['id', 'email'])
+      || typeof state.user.id !== 'string' || !state.user.id.trim()
       || (state.user.email !== undefined && state.user.email !== null && typeof state.user.email !== 'string')) {
     contractError('Signed-in identity state must include a verified principal id', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
   return state;
 }
 
-/** The identity port deliberately exposes no raw tokens or provider SDK objects. */
+export function assertClaySyncEmailSignInResult(result) {
+  if (!isObject(result) || !hasOnlyKeys(result, ['status', 'email'])
+      || result.status !== 'link_sent' || typeof result.email !== 'string' || !result.email.trim()) {
+    contractError('Identity provider returned an invalid email sign-in result', 'CLAY_SYNC_PROTOCOL_ERROR');
+  }
+  return result;
+}
+
+export function assertClaySyncSignOutResult(result) {
+  if (!isObject(result) || !hasOnlyKeys(result, ['status']) || result.status !== 'signed_out') {
+    contractError('Identity provider returned an invalid sign-out result', 'CLAY_SYNC_PROTOCOL_ERROR');
+  }
+  return result;
+}
+
 export function assertClaySyncIdentityPort(identity) {
   const methods = ['getState', 'requestEmailSignIn', 'signOut', 'onStateChange'];
   if (!isObject(identity) || methods.some(name => typeof identity[name] !== 'function')) {
@@ -71,12 +89,9 @@ export function assertClaySyncIdentityPort(identity) {
   return identity;
 }
 
-/**
- * Validate the normalized snapshot returned by any personal-record adapter.
- * Tombstones remain records with a version; they are not silently discarded.
- */
+/** Tombstones remain versioned records; adapters must not silently discard them. */
 export function assertClaySyncSnapshot(snapshot, expectedCollection) {
-  if (!isObject(snapshot)
+  if (!isObject(snapshot) || !hasOnlyKeys(snapshot, ['collection', 'generation', 'revision', 'records'])
       || snapshot.collection !== expectedCollection
       || !isSafeIntegerAtLeast(snapshot.generation, 1)
       || !isSafeIntegerAtLeast(snapshot.revision, 0)
@@ -86,7 +101,7 @@ export function assertClaySyncSnapshot(snapshot, expectedCollection) {
 
   const seen = new Set();
   for (const record of snapshot.records) {
-    if (!isObject(record)
+    if (!isObject(record) || !hasOnlyKeys(record, ['id', 'generation', 'version', 'payload', 'deletedAt', 'deleted'])
         || typeof record.id !== 'string' || record.id.length < 1 || record.id.length > 200
         || seen.has(record.id)
         || record.generation !== snapshot.generation
@@ -107,7 +122,8 @@ export function assertClaySyncSnapshot(snapshot, expectedCollection) {
  * callers must refresh and explicitly resolve stale edits.
  */
 export function assertClaySyncMutationResult(result) {
-  if (!isObject(result) || !hasOnlyKeys(result, ['status', 'generation', 'version', 'revision', 'reason'])\n      || !['applied', 'cleared', 'conflict'].includes(result.status)) {
+  if (!isObject(result) || !hasOnlyKeys(result, ['status', 'generation', 'version', 'revision', 'reason'])
+      || !['applied', 'cleared', 'conflict'].includes(result.status)) {
     contractError('Record adapter returned an unknown mutation outcome', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
 
@@ -131,7 +147,6 @@ export function assertClaySyncMutationResult(result) {
   return result;
 }
 
-/** The repository API is intentionally small and independent of SQL/SDK names. */
 export function assertClaySyncRecordsPort(records) {
   const methods = ['readCollection', 'writeRecord', 'deleteRecord', 'clearCollection'];
   if (!isObject(records) || methods.some(name => typeof records[name] !== 'function')) {
@@ -140,7 +155,6 @@ export function assertClaySyncRecordsPort(records) {
   return records;
 }
 
-/** Validate the pair that an application composition root will inject. */
 export function assertClaySyncPorts({ identity, records } = {}) {
   return Object.freeze({
     identity: assertClaySyncIdentityPort(identity),
