@@ -133,7 +133,7 @@ test('invalid collections, ids, versions and payloads fail before network access
 });
 
 test('stale-write conflicts are returned unchanged for UI handling, never auto-retried', async () => {
-  const conflict = { status: 'conflict', reason: 'record_changed', version: 7, generation: 1 };
+  const conflict = { status: 'conflict', reason: 'record_changed', version: 7, generation: 1, revision: 8 };
   const { client, calls } = makeClient({ rpcResult: conflict });
   const result = await createClaySupabaseRecordsAdapter(client).writeRecord({
     collection: 'products', recordId: 'p-1', expectedGeneration: 1,
