@@ -12,7 +12,7 @@ function authError(message, code = 'CLAY_AUTH_INVALID_ARGUMENT') {
 function normalizeEmail(email) {
   if (typeof email !== 'string') authError('Enter a valid sign-in value');
   const normalized = email.trim().toLowerCase();
-  if (normalized.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized)) {
+  if (normalized.length > 254 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(normalized)) {
     authError('Enter a valid sign-in value');
   }
   return normalized;
@@ -23,11 +23,9 @@ function throwIfError(error) {
 }
 
 /**
- * Supabase Auth boundary for Clay.
- *
- * This controller intentionally supports existing-account email magic links
- * only. It never creates an account implicitly, accepts an external uid, or
- * exposes tokens. A separately approved sign-up flow can be added later.
+ * Supabase implementation of the provider-neutral Clay identity port.
+ * Existing-account email-link sign-in only; no implicit account creation,
+ * caller-supplied uid, token exposure or provider session leakage.
  */
 export function createClaySupabaseAuth(client) {
   if (!client || !client.auth
@@ -42,10 +40,10 @@ export function createClaySupabaseAuth(client) {
     const { data, error } = await client.auth.getUser();
     throwIfError(error);
     const user = data && data.user ? data.user : null;
-    return Object.freeze({
+    return assertClaySyncIdentityState(Object.freeze({
       status: user ? 'signed_in' : 'signed_out',
       user: user ? Object.freeze({ id: user.id, email: user.email || null }) : null
-    });
+    }));
   }
 
   async function requestEmailSignIn(email) {
@@ -68,11 +66,11 @@ export function createClaySupabaseAuth(client) {
     if (typeof listener !== 'function') authError('A state-change listener is required');
     const result = client.auth.onAuthStateChange((event, session) => {
       const user = session && session.user ? session.user : null;
-      listener(Object.freeze({
+      listener(assertClaySyncIdentityState(Object.freeze({
         event,
         status: user ? 'signed_in' : 'signed_out',
         user: user ? Object.freeze({ id: user.id, email: user.email || null }) : null
-      }));
+      })));
     });
     const subscription = result && result.data && result.data.subscription;
     if (!subscription || typeof subscription.unsubscribe !== 'function') {
@@ -81,5 +79,7 @@ export function createClaySupabaseAuth(client) {
     return () => subscription.unsubscribe();
   }
 
-  return assertClaySyncIdentityPort(Object.freeze({ getState, requestEmailSignIn, signOut, onStateChange }));
+  return assertClaySyncIdentityPort(Object.freeze({
+    getState, requestEmailSignIn, signOut, onStateChange
+  }));
 }
