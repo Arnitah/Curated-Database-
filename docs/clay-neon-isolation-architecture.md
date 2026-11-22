@@ -263,9 +263,11 @@ Therefore the hosting target and exact development, staging and production origi
 
 ## 14. Repository dependency and review status
 
-At the time of this review, PR #16 (architecture baseline), PR #17 (provider-neutral contract and Supabase reference adapter slice), and PR #18 (this Neon isolation architecture) are all open and unmerged. PR #17 contains the proposed contract and synthetic tests, but those files are not present on the base branch used by this document. PR #18 is documentation-only; no CI checks were scheduled for its docs-only change, and no reviewer comments or approvals were present at the time of inspection.
+At the time of this review, PR #16 (architecture baseline), PR #17 (provider-neutral contract and Supabase reference adapter slice), and PR #18 (this Neon isolation architecture) are all open and unmerged. PRs #16 and #17 are based on main commit `c131b749806df193a35fc23b2ff8adde2ce63f24`; PR #18 is based on the later main commit `fe7614034c7c599c9ac0cf04f6c86e4c82cd9652`, which adds a daily Skincare Data Hub refresh. Their changed files are separate: #16 adds the architecture baseline, #17 changes the sync contracts/adapters/tests and backend note, and #18 adds this architecture document. This suggests a low-conflict merge path, but does not replace GitHub's conflict check after each merge.
 
-Keep the PRs unmerged until their dependency order and combined content have been reviewed. In particular, reconcile this document with the final merged contract and the baseline handoff; do not treat an open PR as an implemented production capability.
+PR #17's two CI jobs (`database-tests` and `clay-tests`) passed on code/test head `8682ba35c70c9de58a9d67ae5c4ca7be0a46eb82`; its only later commit `bbc1ec2` is documentation-only. PR #16 received a documentation correction at commit `02cf5855330f6b88b2b4724efc6add89913d2bdf`. PR #18 is documentation-only; no CI checks were scheduled for its docs-only change, and no reviewer comments or approvals were present at the time of inspection.
+
+Recommended merge/reconciliation sequence (not an authorization to merge): review and merge #16 and #17 in either order after approval; then refresh PR #18 against the resulting main, verify its dependency statements against the merged contract and baseline, and run the final repository checks that apply. Keep #18 draft until that reconciliation is complete. Do not treat an open PR as an implemented production capability.
 
 ## 15. Open decisions before provisioning
 
