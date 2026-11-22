@@ -36,15 +36,13 @@ function unwrapRpc(data) {
   if (!result || typeof result !== 'object' || typeof result.status !== 'string') {
     fail('Clay sync RPC returned an invalid response', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
-  return result;
+  return assertClaySyncMutationResult(result);
 }
 
 /**
- * Create a per-record Clay sync adapter around an authenticated Supabase JS client.
- *
- * Identity is always established by Supabase Auth. No caller-supplied uid is
- * accepted, and ownership is enforced by the database's RLS policies/RPCs.
- * This adapter deliberately does not retry conflicts or queue offline writes.
+ * Supabase implementation of the provider-neutral Clay records port.
+ * Identity is derived from the authenticated Supabase session on each request;
+ * no caller-supplied uid is accepted. Ownership is enforced by RLS and RPCs.
  */
 export function createClaySupabaseRecordsAdapter(client) {
   if (!client || !client.auth || typeof client.auth.getUser !== 'function'
@@ -84,7 +82,7 @@ export function createClaySupabaseRecordsAdapter(client) {
       .order('record_id', { ascending: true });
     throwIfError(recordsError);
 
-    return {
+    return assertClaySyncSnapshot({
       collection,
       generation,
       revision,
@@ -96,7 +94,7 @@ export function createClaySupabaseRecordsAdapter(client) {
         deletedAt: row.deleted_at || null,
         deleted: Boolean(row.deleted_at)
       }))
-    };
+    }, collection);
   }
 
   async function applyRecord({
@@ -137,11 +135,10 @@ export function createClaySupabaseRecordsAdapter(client) {
     return unwrapRpc(data);
   }
 
-  return Object.freeze({
+  return assertClaySyncRecordsPort(Object.freeze({
     readCollection,
     writeRecord: input => applyRecord({ ...input, deleted: false }),
     deleteRecord: input => applyRecord({ ...input, payload: null, deleted: true }),
     clearCollection
-  });
+  }));
 }
-
