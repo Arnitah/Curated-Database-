@@ -46,7 +46,7 @@ export function assertClaySyncRecordId(recordId) {
  * the principal from the authenticated provider session on every request.
  */
 export function assertClaySyncIdentityState(state) {
-  if (!isObject(state) || !['signed_in', 'signed_out'].includes(state.status)) {
+  if (!isObject(state) || !hasOnlyKeys(state, ['status', 'user', 'event'])\n      || (state.event !== undefined && typeof state.event !== 'string')\n      || !['signed_in', 'signed_out'].includes(state.status)) {
     contractError('Identity provider returned an invalid state', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
   if (state.status === 'signed_out') {
@@ -107,7 +107,7 @@ export function assertClaySyncSnapshot(snapshot, expectedCollection) {
  * callers must refresh and explicitly resolve stale edits.
  */
 export function assertClaySyncMutationResult(result) {
-  if (!isObject(result) || !['applied', 'cleared', 'conflict'].includes(result.status)) {
+  if (!isObject(result) || !hasOnlyKeys(result, ['status', 'generation', 'version', 'revision', 'reason'])\n      || !['applied', 'cleared', 'conflict'].includes(result.status)) {
     contractError('Record adapter returned an unknown mutation outcome', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
 
