@@ -59,8 +59,8 @@ test('implements the provider-neutral email sign-in request without implicitly c
 test('rejects malformed sign-in input before calling Supabase', async () => {
   const { client, calls } = makeAuth();
   const auth = createClaySupabaseAuth(client);
-  await assert.rejects(auth.sendMagicLink('not-an-email'), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
-  await assert.rejects(auth.sendMagicLink('  '), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
+  await assert.rejects(auth.requestEmailSignIn('not-an-email'), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
+  await assert.rejects(auth.requestEmailSignIn('  '), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
   assert.equal(calls.otp.length, 0);
 });
 
