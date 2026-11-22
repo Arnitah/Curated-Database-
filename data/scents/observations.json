@@ -8426,6 +8426,261 @@
         "cc": "TH",
         "entity": "WERIN WEALTH INTERTRADE CO., LTD."
       }
+    },
+    {
+      "id": "loe-brand-origin-typed-1",
+      "house": "loe",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A specialist fragrance guide identifies LOE (Life On Earth) as a Seoul fragrance brand founded in 2019. This is secondary-source evidence; the brand's own site describes its lifestyle-fragrance identity but does not state a founding city.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://scentedhere.com/brands/loe/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "cc": "KR"
+      }
+    },
+    {
+      "id": "loe-manufacturing-typed-1",
+      "house": "loe",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Shilla Duty Free product records identify Cosmecca Korea Co., Ltd. as manufacturer and South Korea as manufacturing country for specific LOE 50 ml perfumes. This is product-level retailer evidence and should not be generalized to every LOE SKU without checking its label.",
+      "evidence": "retailer",
+      "strength": "B",
+      "src": "https://www.shilladfs.com/estore/kr/en/p/5362043",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "South Korea",
+        "cc": "KR",
+        "entity": "Cosmecca Korea Co., Ltd."
+      },
+      "open": "Product-specific manufacturer evidence; confirm each variant/lot separately before treating as brand-wide."
+    },
+    {
+      "id": "wick-fragrances-studio-typed-1",
+      "house": "wick-fragrances",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Wick Fragrances identifies its artisan studio as being in Cape Town, South Africa.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.wickfragrances.com/pages/who-we-are",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Cape Town",
+        "country": "South Africa",
+        "cc": "ZA"
+      }
+    },
+    {
+      "id": "wick-fragrances-manufacturing-typed-1",
+      "house": "wick-fragrances",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The brand says its products are made, blended and poured by artisans and describes small-batch production; its page locates its artisan studio in Cape Town. This is a brand claim and does not identify a separate factory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.wickfragrances.com/pages/who-we-are",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Cape Town",
+        "country": "South Africa",
+        "cc": "ZA"
+      }
+    },
+    {
+      "id": "lartisan-parfumeur-brand-origin-typed-1",
+      "house": "lartisan-parfumeur",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "L'Artisan Parfumeur states that Jean Laporte founded the house in 1976 and describes its heritage as uniquely French savoir-faire. The cited source does not name a founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.artisanparfumeur.com/eu/en_GB/50-th-anniversary-history",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "frederic-malle-commercial-base-typed-1",
+      "house": "frederic-malle",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The Fragrance Foundation France lists Editions de Parfums Frédéric Malle at 21 rue du Mont Thabor, Paris. This supports a Paris commercial/contact base, not manufacturing or formulation.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.fragrancefoundation.fr/societes-membres/editions-de-parfums-frederic-malle/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "acqua-di-parma-brand-origin-typed-1",
+      "house": "acqua-di-parma",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Acqua di Parma's 2026 official editorial traces its origin to Parma: Baron Carlo Magnani created the first Colonia in 1916, drawing on his roots and life in the city. This supports Parma as the house's origin, not necessarily its current manufacturing location.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.acquadiparma.com/on/demandware.static/-/Library-Sites-acquadiparmaLibrary/default/dw2faf3f30/pdf/2026_LA%20GAZZETTA_ENG_SINGLE%20PAGES.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Parma",
+        "country": "Italy",
+        "cc": "IT"
+      }
+    },
+    {
+      "id": "frau-tonis-brand-origin-typed-1",
+      "house": "frau-tonis",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "FRAU TONIS says it was founded in Berlin in 2009 by Stefanie Hanssen and Christoph Niedermeier.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.frau-tonis-parfum.com/en/faq/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "cc": "DE"
+      }
+    },
+    {
+      "id": "frau-tonis-manufacturing-typed-1",
+      "house": "frau-tonis",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "FRAU TONIS describes its fragrances as handcrafted and made in Berlin; its press kit says the founders established a fragrance manufactory there.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.frau-tonis-parfum.com/fileadmin/user_upload/404/250825_FTP_A4_Presskit_EN.pdf",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "cc": "DE"
+      }
+    },
+    {
+      "id": "ramon-monegal-legal-base-typed-1",
+      "house": "ramon-monegal",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The official legal statement identifies MONEGAL PERFUMES S.L., gives its Barcelona address and cites registration in the Barcelona Mercantile Registry.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://ramonmonegal.com/legal-statement/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "cc": "ES",
+        "entity": "MONEGAL PERFUMES S.L."
+      }
+    },
+    {
+      "id": "ramon-monegal-studio-typed-1",
+      "house": "ramon-monegal",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Ramón Monegal states that he composes in Barcelona, describing the city as his Mediterranean base and place of creative work.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://ramonmonegal.com/author/",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "cc": "ES"
+      }
+    },
+    {
+      "id": "agonist-brand-origin-typed-1",
+      "house": "agonist",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "A specialist fragrance distributor identifies AGONIST as a Swedish perfume house founded in 2008. The source supports country of origin but does not establish a founding city.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.intertradeurope.com/brand/agonist-2/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "Sweden",
+        "cc": "SE"
+      },
+      "open": "The current record's Stockholm city label has not been independently established by the cited source."
+    },
+    {
+      "id": "perfumehead-studio-typed-1",
+      "house": "perfumehead",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Perfumehead describes its work as crafted in Los Angeles and says each scent is composed by a master perfumer. This supports a creative/studio relationship with Los Angeles, not a manufacturing claim.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://perfumehead.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "perfumehead-manufacturing-typed-1",
+      "house": "perfumehead",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Perfumehead explicitly describes its fragrances as made in France, while distinguishing that from the Los Angeles creative process.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://perfumehead.com/pages/about-us",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "histoires-de-parfums-brand-origin-typed-1",
+      "house": "histoires-de-parfums",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "The official legal notice states that Histoires de Parfums is a perfume house founded in Paris in 2000.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://usa.histoiresdeparfums.com/policies/legal-notice",
+      "seen": "2026-11-21",
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "cc": "FR"
+      }
+    },
+    {
+      "id": "histoires-de-parfums-manufacturing-typed-1",
+      "house": "histoires-de-parfums",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The official brand website explicitly labels its fragrances 'Made in France'. The cited page does not name a city or factory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.histoiresdeparfums.com/",
+      "seen": "2026-11-21",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      }
     }
   ]
 }
