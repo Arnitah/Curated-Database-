@@ -142,3 +142,25 @@ test('stale-write conflicts are returned unchanged for UI handling, never auto-r
   assert.deepEqual(result, conflict);
   assert.equal(calls.rpcs.length, 1);
 });
+
+test('rejects malformed provider snapshots and mutation responses', async () => {
+  const malformedRows = [{ record_id: 'bad', generation: 1, version: 1, payload: null, deleted_at: null }];
+  const read = createClaySupabaseRecordsAdapter(makeClient({ rows: malformedRows }).client);
+  await assert.rejects(read.readCollection('products'), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+
+  const write = createClaySupabaseRecordsAdapter(makeClient({
+    rpcResult: { status: 'ok', generation: 1, version: 1, revision: 1 }
+  }).client);
+  await assert.rejects(write.writeRecord({
+    collection: 'products', recordId: 'p-1', expectedGeneration: 1,
+    expectedVersion: 0, payload: { name: 'Synthetic record' }
+  }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+});
+
+test('the adapter exposes only the provider-neutral repository operations', () => {
+  const adapter = createClaySupabaseRecordsAdapter(makeClient().client);
+  assert.deepEqual(Object.keys(adapter).sort(), [
+    'clearCollection', 'deleteRecord', 'readCollection', 'writeRecord'
+  ]);
+  assert.equal(Object.isFrozen(adapter), true);
+});
