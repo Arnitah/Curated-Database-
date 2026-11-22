@@ -1,3 +1,4 @@
+// Synthetic fixture values only; this file contains no real user identities or records.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
