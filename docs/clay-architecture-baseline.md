@@ -15,8 +15,8 @@ The new Neon connection makes Neon a serious candidate for the future PostgreSQL
 
 ### 1.1 Product/application layer
 
-- `apps/clay.html` is the main Clay application (approximately 432 KB at this baseline). It contains the UI, page logic, browser persistence, embedded sync logic and the generated Ingredient Intelligence bundle.
-- `apps/clay-web.html` is a second Clay Web artifact (approximately 291 KB). It also contains the Claude artifact account sync path. Its precise relationship to the main app and release path needs confirmation.
+- `apps/clay.html` is the canonical **repository source under test** (approximately 432 KB at this baseline). The root README describes it as the Clay app file, and `tests/clay/README.md` explicitly says the browser tests load `apps/clay.html`; the boot test expects the page title `Clay Web`.
+- `apps/clay-web.html` is a second artifact (approximately 291 KB) and is not covered by the Clay browser test harness. Its relationship to the current published artifact remains unverified. The source repository alone does not establish which artifact is currently live or the release/publishing path.
 - `apps/safe-batch.html` and `apps/scent-atlas.html` are separate applications in the same repository. They should not be folded into the Clay runtime merely because they share data infrastructure.
 - The app's current local/offline cache uses browser `localStorage`. Product, hair, log, preferences and scent records are represented by separate keys.
 
@@ -24,15 +24,11 @@ The new Neon connection makes Neon a serious candidate for the future PostgreSQL
 
 ### 1.2 Personal-data persistence
 
-The active sync code in `apps/clay.html` and `apps/clay-web.html` calls `window.claude.use('db')` and `window.claude.use('user')`. It obtains the current artifact user id from that runtime and stores five documents under `data/users/<uid>/<key>`:
+The sync code in both files calls `window.claude.use('db')` and `window.claude.use('user')`, obtains the artifact user id from that runtime, and stores five documents under `data/users/<uid>/<key>`: `clay-products`, `clay-hair`, `clay-log`, `clay-prefs`, and `clay-scents`. The browser copy is retained as an offline cache.
 
-- `clay-products`
-- `clay-hair`
-- `clay-log`
-- `clay-prefs`
-- `clay-scents`
+The two artifacts are not equivalent. `apps/clay.html` tracks explicit empty intent and prevents an empty or missing local snapshot from replacing a non-empty remote document. `apps/clay-web.html` still uses a simpler timestamp-based whole-document sync without those safeguards. Both remain timestamp/whole-document based; neither has per-record versions, tombstones or transactional conflict resolution. If both artifacts are used by the same account, their different sync behavior could matter. Do not treat the older artifact as a safe migration or release target until its status is confirmed.
 
-The browser copy is retained as an offline cache. The current sync implementation uses device timestamps and collection-level documents. It includes safeguards against empty snapshots overwriting non-empty remote data, but its timestamp-based conflict model is not a durable multi-device record-level concurrency design.
+The main app's browser storage inventory includes `clay-products`, `clay-hair`, `clay-log`, `clay-scents`, `clay-am-tone`, `clay-web`, `clay-trip`, `clay-trip-tab`, `clay-trip-where`, `clay-mig-hato`, `clay-sync-ts`, and `clay-sync-empty-intent`. Five logical documents sync remotely; `clay-am-tone` is also represented inside the synced `clay-prefs` document. The remaining page/travel state and migration/sync metadata are local-only in the inspected code. Their future migration scope needs a deliberate product decision rather than an automatic copy of all localStorage keys.
 
 **Finding:** the current live identity and persistence dependency is the Claude artifact runtime, not Supabase or Neon. The artifact uid must not be treated as a portable authentication credential or reused as proof of identity in a new backend.
 
@@ -171,6 +167,17 @@ This baseline is ready for review when the following are confirmed:
 
 ## 7. Next engineering slice
 
-After reviewing this baseline, the next implementation should be a **provider-neutral persistence contract and adapter boundary**, not a live Neon migration. Define the minimal operations Clay needs (authenticated principal, read collection, write record, delete record, clear collection, conflict response and export/import). Then test the existing Supabase adapter against that contract and evaluate a Neon implementation behind the same contract.
+After reviewing this baseline, the next implementation is the **provider-neutral identity and persistence contract** in [PR #17](https://github.com/Arnitah/Curated-Database-/pull/17), not a live Neon migration. The contract defines the minimal verified principal, read collection, write record, delete record, clear collection, versioned snapshot, tombstone and conflict response. The existing Supabase adapters now implement and validate it with synthetic tests. The next slice is to close app/release and local-only data scope questions, then evaluate a Neon adapter behind the same contract.
 
 No production configuration, database provisioning, real user data access, data migration, app runtime change or deployment is included in this document-only baseline.
+
+
+## Discovery refinement · 22 Nov 2026
+
+The repository and test harness clarify one part of the app ambiguity: `apps/clay.html` is the canonical source file currently covered by the Clay browser suite. This does **not** prove it is the live/published artifact. `apps/clay-web.html` is not covered by that suite and has an older whole-document timestamp sync path without the empty-state safeguards now present in `clay.html`.
+
+The inspected `clay.html` storage keys and five remote documents are listed in section 1.2. The trip/page-state keys are not part of the five remote documents. Before designing import/export, decide which of these local-only records are meaningful user data versus disposable interface state. Do not blindly migrate all localStorage.
+
+The provider-neutral contract implementation is proposed in [PR #17](https://github.com/Arnitah/Curated-Database-/pull/17), based on main commit `c131b749806df193a35fc23b2ff8adde2ce63f24`. It remains a draft pending CI and review. No app wiring, cloud access, Neon provisioning, real user data or migration has occurred.
+
+Last updated · ChatGPT · 22 Nov 2026: clarified the canonical tested source versus the still-unverified live artifact, documented storage-key scope and the older Clay Web sync gap, and linked the provider-neutral contract PR.
