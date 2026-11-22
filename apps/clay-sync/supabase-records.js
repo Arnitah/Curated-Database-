@@ -1,4 +1,10 @@
-const COLLECTIONS = new Set(['products', 'hair', 'log', 'prefs', 'scents']);
+import {
+  assertClaySyncCollection,
+  assertClaySyncRecordId,
+  assertClaySyncSnapshot,
+  assertClaySyncMutationResult,
+  assertClaySyncRecordsPort
+} from './contracts.js';
 
 function fail(message, code = 'CLAY_SYNC_INVALID_ARGUMENT') {
   const error = new Error(message);
@@ -6,17 +12,8 @@ function fail(message, code = 'CLAY_SYNC_INVALID_ARGUMENT') {
   throw error;
 }
 
-function assertCollection(collection) {
-  if (typeof collection !== 'string' || !COLLECTIONS.has(collection)) {
-    fail('Unsupported Clay sync collection');
-  }
-}
-
-function assertRecordId(recordId) {
-  if (typeof recordId !== 'string' || recordId.length < 1 || recordId.length > 200) {
-    fail('Record id must contain between 1 and 200 characters');
-  }
-}
+const assertCollection = assertClaySyncCollection;
+const assertRecordId = assertClaySyncRecordId;
 
 function assertGeneration(value) {
   if (!Number.isSafeInteger(value) || value < 1) {
