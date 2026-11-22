@@ -257,9 +257,9 @@ Record results, tested product versions, dates, limitations and failed cases. A 
 
 ## 13. Hosting and release-path verification
 
-The repository README describes the current Clay distribution model as a Claude artifact with bundled data and a GitHub raw-data fallback; it also states that bundled app data reaches users when the artifact is republished. The repository does not identify a verified production web-hosting project or a deployment workflow for Clay. A previous connected Vercel inspection did not establish a Clay project; the known datachick mapping belongs to Smart Butler.
+The repository README describes the current Clay distribution model as a Claude artifact with bundled data and a GitHub raw-data fallback; it states that bundled app data reaches users when the artifact is republished. The existing Clay Notion handoff lists [this Claude artifact](https://claude.ai/artifact/54Waeahtn8vBRU8LmHJnXL) as its source URL. Together these are evidence that Claude artifact publishing is the intended distribution path, but the exact live artifact version, canonical app file embedded in it, republish procedure and current availability have not been independently verified. The repository contains no Clay deployment workflow or conventional hosting project. A previous connected Vercel inspection did not establish a Clay project; the known `datachick` mapping belongs to Smart Butler.
 
-Therefore the hosting target and exact development, staging and production origins remain unverified. Do not configure OAuth callbacks, CORS allowlists, cookie domains, webhook endpoints or production secrets until the actual release path is confirmed. This is a prerequisite to choosing an auth flow, not a reason to provision infrastructure now.
+Treat Claude artifact publishing as the leading release-path hypothesis, not yet a verified production deployment contract. Confirm the canonical artifact and the process used to publish `apps/clay.html` plus its bundled data. Do not configure OAuth callbacks, CORS allowlists, cookie domains, webhook endpoints or production secrets until the artifact runtime's supported auth/network model and any separate web-hosting target are confirmed. This is a prerequisite to choosing an auth flow, not a reason to provision infrastructure now.
 
 ## 14. Repository dependency and review status
 
