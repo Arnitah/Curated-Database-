@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation } from "../../scripts/scents-geography.mjs";
+import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, normaliseMapPlace, validateMapAnchors } from "../../scripts/scents-geography.mjs";
 
 const base = {
   id: "sample-manufacturing-1", house: "sample-house", kind: "claim", topic: "manufacturing",
@@ -31,3 +31,48 @@ test("keeps legacy hq and made_in claims readable without reinterpreting them", 
   for (const topic of LEGACY_GEO_TOPICS) { const record = { ...base, topic }; delete record.location; assert.deepEqual(validateGeographyObservation(record), []); }
 });
 test("rejects unrecognized location properties", () => assert.ok(validateGeographyObservation({ ...base, location: { ...base.location, address_line: "1 Main St" } }).some(x => x.includes('unsupported field "address_line"'))));
+
+
+const sampleHouse = { id: "sample-house", country: "Oman", cc: "OM" };
+const sampleStudio = { ...base, id: "sample-studio-1", topic: "studio" };
+
+test("normalises accents and parenthetical map labels without guessing aliases", () => {
+  assert.equal(normaliseMapPlace("Montréal"), normaliseMapPlace("Montreal"));
+  assert.equal(normaliseMapPlace("New York (perfumer)"), normaliseMapPlace("New York"));
+});
+
+test("validates one or multiple city-role anchors for the same house and place", () => {
+  const geo = { "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: [base.id, sampleStudio.id] } };
+  assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [base, sampleStudio]), []);
+});
+
+test("validates country-only map anchors without inferring a city", () => {
+  const countryClaim = { ...base, id: "sample-country-1", topic: "brand_origin", location: { country: "Oman", cc: "OM" } };
+  const geo = { "sample-house": { place: "Oman", precision: "country", anchor_observation_ids: [countryClaim.id] } };
+  assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [countryClaim]), []);
+});
+
+test("validates region-level anchors", () => {
+  const regionClaim = { ...base, id: "sample-region-1", location: { region: "Al Batinah", country: "Oman", cc: "OM" } };
+  const geo = { "sample-house": { place: "Al Batinah", precision: "region", anchor_observation_ids: [regionClaim.id] } };
+  assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [regionClaim]), []);
+});
+
+test("allows unverified pins without an anchor reference", () => {
+  assert.deepEqual(validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city" } }, [sampleHouse], [base]), []);
+});
+
+test("rejects dangling, cross-house and mismatched-place anchor references", () => {
+  const dangling = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: ["missing"] } }, [sampleHouse], [base]);
+  assert.ok(dangling.some(x => x.includes("unknown anchor observation")));
+  const crossHouse = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: [base.id] } }, [sampleHouse], [{ ...base, house: "other-house" }]);
+  assert.ok(crossHouse.some(x => x.includes("belongs to a different house")));
+  const wrongPlace = validateMapAnchors({ "sample-house": { place: "Nizwa", precision: "city", anchor_observation_ids: [base.id] } }, [sampleHouse], [base]);
+  assert.ok(wrongPlace.some(x => x.includes("does not match map place")));
+});
+
+test("rejects a city-level observation as a country-only anchor", () => {
+  const geo = { "sample-house": { place: "Oman", precision: "country", anchor_observation_ids: [base.id] } };
+  const errors = validateMapAnchors(geo, [sampleHouse], [base]);
+  assert.ok(errors.some(x => x.includes("must be country-only")));
+});

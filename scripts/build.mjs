@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation } from './scents-geography.mjs';
+import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DATA = path.join(ROOT, 'data');
@@ -144,6 +144,11 @@ if (obsSet) {
   }
   const legacyGeoCount = (obsSet.records || []).filter((o) => LEGACY_GEO_TOPICS.includes(o.topic)).length;
   if (legacyGeoCount) warnings.push(`${legacyGeoCount} legacy hq/made_in claims remain ambiguous; use typed geography topics for new claims and reclassify old claims only after source review`);
+}
+// Scents: map anchors must reference typed geography observations at the displayed precision
+const mapGeo = sets['scents/geo']?.data;
+if (mapGeo && obsSet && houses) {
+  for (const issue of validateMapAnchors(mapGeo, houses, obsSet.records || [])) errors.push(`scents/geo: ${issue}`);
 }
 // Scents: house class (optional; set only when evidence supports it)
 const CLASS = new Set(['independent', 'artisan', 'commercial', 'contract-made', 'diaspora', 'retailer', 'tradition']);

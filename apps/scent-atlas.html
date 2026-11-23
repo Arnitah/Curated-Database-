@@ -553,6 +553,20 @@ const TOPIC_LABEL = { brand_origin: "Brand origin", founder_origin: "Founder ori
 const STR_LABEL = { A: "official or academic", B: "trusted press", C: "brand or lifestyle", D: "unsourced" };
 function claimsFor(key, isLead) { return OBS.filter((o) => o.kind === "claim" && o.topic && (isLead ? o.lead === key : o.house === key)); }
 function locationLabel(location) { return [location.entity, location.site, location.city, location.region, location.country].filter(Boolean).join(", "); }
+function mapAnchorClaims(h) {
+  const ids = D?.geo?.[h.id]?.anchor_observation_ids || [];
+  return ids.map((id) => OBS.find((o) => o.id === id)).filter((o) => o && o.location && TOPIC_LABEL[o.topic]);
+}
+function mapAnchorSummary(h) {
+  const g = D?.geo?.[h.id];
+  if (!g) return "No map pin";
+  const roles = [...new Set(mapAnchorClaims(h).map((o) => TOPIC_LABEL[o.topic]))];
+  if (roles.length) return roles.join(" · ");
+  const typed = claimsFor(h.id).filter((o) => o.location);
+  if (g.precision === "country" && typed.some((o) => o.location.city || o.location.region)) return "Country precision · city-level facts elsewhere";
+  if (g.precision === "country" && normaliseMapPlace(g.place) !== normaliseMapPlace(h.country)) return "Country precision · place label unverified";
+  return (g.precision || "map") + " precision · role unverified";
+}
 function houseLocationLine(h) {
   const origins = claimsFor(h.id).filter((o) => o.topic === "brand_origin" && o.location);
   if (origins.length) {
@@ -1145,7 +1159,7 @@ function drawBase() {
     p.houses.forEach((h, i) => { const a = (i / n) * Math.PI * 2, ring = n === 1 ? 0 : 1 + Math.floor(i / 12) * 0.6; dots.push({ h, p, x, y, a, ring }); }); }
   D.places = places; D.dots = dots;
   d3.select("#m-pins").selectAll("circle").data(dots, (d) => d.h.id).join("circle").attr("class", "dot").attr("fill", (d) => colorOf(d.h))
-    .on("click", (e, d) => { e.stopPropagation(); peekHide(); goHouse(d.h.id); }).on("mouseenter", (e, d) => peekShow(d)).on("mouseleave", peekHide).append("title").text((d) => `${d.h.name} · ${d.p.place}`);
+    .on("click", (e, d) => { e.stopPropagation(); peekHide(); goHouse(d.h.id); }).on("mouseenter", (e, d) => peekShow(d)).on("mouseleave", peekHide).append("title").text((d) => `${d.h.name} · ${d.p.place} · ${mapAnchorSummary(d.h)}`);
   d3.select("#m-heat").selectAll("circle").data(places).join("circle").attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("fill", "url(#m-heatg)");
   d3.select("#m-labels").selectAll("text").data(places).join("text").attr("class", "placelab").text((d) => d.place);
   const MP = MAT.flatMap((m) => m.origins.map((o) => ({ m, o })));
@@ -1186,15 +1200,15 @@ function crumbs() {
   $("m-crumbs").innerHTML = c.map(([t, f], i) => (i ? '<span class="sep">›</span>' : "") + (f && i < c.length - 1 ? `<button type="button" data-i="${i}">${esc(t)}</button>` : `<b>${esc(t)}</b>`)).join("");
   $("m-crumbs").onclick = (e) => { const b = e.target.closest("[data-i]"); if (b) c[+b.dataset.i][1](); };
 }
-const houseBtn = (h, sub) => `<li><button type="button" data-house="${h.id}"><span><span style="color:${colorOf(h)}">●</span> <b>${esc(h.name)}</b></span><small>${esc(sub ?? (D.geo[h.id].place + " · " + (stylesOf(h).map(styleName).slice(0, 2).join(", ") || h.families.join(", "))))}</small></button></li>`;
+const houseBtn = (h, sub) => `<li><button type="button" data-house="${h.id}"><span><span style="color:${colorOf(h)}">●</span> <b>${esc(h.name)}</b></span><small>${esc(sub ?? (D.geo[h.id].place + " · " + mapAnchorSummary(h) + " · " + (stylesOf(h).map(styleName).slice(0, 2).join(", ") || h.families.join(", "))))}</small></button></li>`;
 
 function goWorld() { state.mat = null;
   Object.assign(state, { level: "world", cc: null, place: null, house: null, note: null, hl: state.style ? state.hl : null });
   flyTo(500, 250, 1); crumbs(); restyle();
   const byCc = d3.rollups(D.houses, (v) => v.length, (h) => h.cc).sort((a, b) => b[1] - a[1]);
-  $("m-panel").innerHTML = `<div class="eyebrow">The whole world</div><h2>Where scent is made</h2>
-    <div class="stats"><div><b>${D.houses.length}</b><span>houses</span></div><div><b>${byCc.length}</b><span>countries</span></div><div><b>${D.places.length}</b><span>cities</span></div></div>
-    <p class="muted">Tap a country on the map or below. Bubbles show how many houses each country has; zoom in and they open into individual houses, coloured by style.</p>
+  $("m-panel").innerHTML = `<div class="eyebrow">The whole world</div><h2>Fragrance houses and their places</h2>
+    <div class="stats"><div><b>${D.houses.length}</b><span>houses</span></div><div><b>${byCc.length}</b><span>countries</span></div><div><b>${D.places.length}</b><span>places</span></div></div>
+    <p class="muted">Tap a country on the map or below. Bubbles show how many houses each country has; zoom in and they open into individual houses, coloured by style.</p><p class="muted">Pins show their sourced relationship (origin, operating base, studio, formulation, manufacturing, retail and more) when typed evidence matches the displayed precision. Unmatched pins remain unverified; country-level pins do not establish a city.</p>
     <p class="muted">Gold diamonds mark traditional scent rituals, like gowé incense in Senegal or kōdō in Kyoto.</p>
     <h3>Countries</h3><ul class="list">${byCc.map(([cc, n]) => `<li><button type="button" data-cc="${cc}"><b>${esc(countryName(cc))}</b><small>${n} house${n > 1 ? "s" : ""}</small></button></li>`).join("")}</ul>`;
 }
@@ -1214,7 +1228,7 @@ function goCountry(cc) {
   $("m-panel").innerHTML = `<div class="eyebrow">Country</div><h2>${esc(countryName(cc))}</h2>
     ${reg ? `<p>${esc(reg.style)}</p><p class="muted">${esc(reg.roots)}</p>
     <div><div class="eyebrow">Local materials · tap to find them worldwide</div><div style="margin-top:6px">${reg.materials.map((m) => `<button class="note" type="button" data-note="${esc(m)}">${esc(m)}</button>`).join("")}</div></div>` : ""}
-    ${places.length > 1 ? `<h3>Cities</h3><ul class="list">${places.map((p) => `<li><button type="button" data-place="${esc(p.place)}"><b>${esc(p.place)}</b><small>${p.houses.length} house${p.houses.length > 1 ? "s" : ""}</small></button></li>`).join("")}</ul>` : ""}
+    ${places.length > 1 ? `<h3>Places</h3><ul class="list">${places.map((p) => `<li><button type="button" data-place="${esc(p.place)}"><b>${esc(p.place)}</b><small>${p.houses.length} house${p.houses.length > 1 ? "s" : ""}</small></button></li>`).join("")}</ul>` : ""}
     <h3>Houses</h3><ul class="list">${hs.map((h) => houseBtn(h)).join("")}</ul>
     ${stores.length ? `<h3>Where to smell them</h3><ul class="list">${stores.map((s) => `<li><button type="button" disabled><b>${esc(s.name)}</b><small>${esc(s.city)} · ${esc(s.what)}</small></button></li>`).join("")}</ul>` : ""}`;
 }
@@ -1222,8 +1236,8 @@ function goPlace(place) {
   const hs = D.houses.filter((h) => D.geo[h.id].place === place);
   Object.assign(state, { level: "place", place, house: null, note: null, hl: null, cc: state.cc || hs[0].cc });
   const g = D.geo[hs[0].id]; const [x, y] = proj([g.lon, g.lat]); flyTo(x, y, Math.max(K, 18)); crumbs(); restyle();
-  $("m-panel").innerHTML = `<div class="eyebrow">City</div><h2>${esc(place)}</h2><p class="muted">${hs.length} house${hs.length > 1 ? "s" : ""} pinned here${hs.some((h) => D.geo[h.id].precision !== "city") ? " (some placed by country only)" : ""}.</p>
-    <ul class="list">${hs.map((h) => houseBtn(h, `${h.country} · ${stylesOf(h).map(styleName).slice(0, 2).join(", ") || h.families.join(", ")}`)).join("")}</ul>`;
+  $("m-panel").innerHTML = `<div class="eyebrow">Map place</div><h2>${esc(place)}</h2><p class="muted">${hs.length} house${hs.length > 1 ? "s" : ""} shown under this map label. Role tags appear only when typed geography claims match the pin precision.</p>
+    <ul class="list">${hs.map((h) => houseBtn(h, `${h.country} · ${mapAnchorSummary(h)} · ${stylesOf(h).map(styleName).slice(0, 2).join(", ") || h.families.join(", ")}`)).join("")}</ul>`;
 }
 function goHouse(id) {
   const h = D.byId[id], g = D.geo[id];
@@ -1232,7 +1246,7 @@ function goHouse(id) {
   const n = h.sig.notes || {}, pyr = [["Top", n.t], ["Heart", n.h], ["Base", n.b]].filter(([, v]) => v && v.length);
   const p = h.price || {}, c1 = cad(p), c2 = cad(p, "amt_max"), pr = profileOf(h);
   const sim = similar(h);
-  $("m-panel").innerHTML = `<div class="eyebrow">${esc(g.place)}, ${esc(h.country)}${h.founded ? " · since " + h.founded : ""}${g.precision !== "city" ? " · placed by country" : ""}</div>
+  $("m-panel").innerHTML = `<div class="eyebrow">${esc(g.place)}, ${esc(h.country)} · ${esc(mapAnchorSummary(h))} · ${esc(g.precision)} precision${h.founded ? " · since " + h.founded : ""}</div>
     <h2>${esc(h.name)}</h2>
     <div class="tags">${stylesOf(h).map((s) => `<span class="tag s" style="background:var(--s-${s})">${styleName(s)}</span>`).join("")}${(h.accents || []).map((a) => `<span class="tag">${esc(a)}</span>`).join("")}${classTag(h)}</div>
     <p>${esc(h.about)}</p>${evidenceHtml(h.id)}
@@ -1320,7 +1334,7 @@ function liveCard(id) { if (!live) return; const h = D.byId[id], g = D.geo[id]; 
   $("m-card").innerHTML = `<small class="muted">${esc(g.place)} · ${esc(h.country)}</small><b>${esc(h.name)}</b><span>${esc(h.sig.name)}${pr ? " · " + esc(pr) : ""}</span><div class="acts"><button class="btn" type="button" id="m-cardmore">See the full card</button><button class="chip" type="button" id="m-cardnext">Somewhere else ✦</button></div>`;
   $("m-card").classList.add("on"); $("m-cardmore").onclick = () => { setLive(false); $("m-panel").scrollIntoView({ behavior: "smooth", block: "start" }); }; $("m-cardnext").onclick = () => $("m-dice").click(); }
 $("m-dice").onclick = () => { const hs = D.houses; const h = hs[Math.floor(Math.random() * hs.length)]; goHouse(h.id); };
-const peekShow = (d) => { const pk = $("m-peek"); const h = d.h; pk.innerHTML = `<b>${esc(h.name)}</b>${esc(d.p.place)} · ${esc(h.sig.name)}`; pk.classList.add("on"); };
+const peekShow = (d) => { const pk = $("m-peek"); const h = d.h; pk.innerHTML = `<b>${esc(h.name)}</b>${esc(d.p.place)} · ${esc(mapAnchorSummary(h))} · ${esc(h.sig.name)}`; pk.classList.add("on"); };
 const peekHide = () => $("m-peek").classList.remove("on");
 $("m-zreset").onclick = () => { state.style = null; state.hl = null; syncLegend(); goWorld(); };
 $("m-notego").onclick = () => goNote($("m-noteq").value);

@@ -424,3 +424,95 @@ Maison Mataha and Otter Haus are removed from the no-typed list, but their limit
 - 11 houses remain without typed geography.
 - `geo.json`, `houses.json`, app code and `dist/scent-atlas.html` were not changed in this follow-on review.
 
+
+
+## Role-aware map anchors implemented — 23 November 2026
+
+The map now carries explicit references to the typed geography observations that justify each pin's displayed relationship. This is an additive contract; it does not infer a primary role from the existence of any city or country field.
+
+### Data contract
+
+- Each `geo.json` point may contain `anchor_observation_ids`, an array of one or more observation IDs.
+- Every referenced observation must be a typed geography `claim` for the same house, with a valid location and matching country code.
+- At `city` precision, each referenced claim's `location.city` must match the map's `place` after conservative normalisation (accents, parenthetical labels and comma suffixes only).
+- At `region` precision, each referenced claim's `location.region` must match the map's `place`.
+- At `country` precision, referenced claims must be country-only (no city or region) and the location country must match the house and map country.
+- Multiple matching observations are retained. The map displays all supported roles; it does not choose one silently.
+- Missing `anchor_observation_ids` means the map pin is unverified at its current precision. The UI labels it accordingly. A country-level pin does not establish a city.
+
+The build validator now checks dangling IDs, wrong-house references, non-geography claims, country-code mismatches and precision/location mismatches. Tests cover city, region and country anchors, multiple roles, normalisation and invalid references.
+
+### First-pass anchor assignment
+
+- 14 country-precision points with matching city evidence were promoted to city precision.
+- 2 country-precision points with matching region evidence were promoted to region precision: Naso Profumi/Delhi and Stories Parfums/County Down.
+- 1 city-precision point was downgraded to region precision: Celia Loves/Surf Coast, Victoria.
+- No latitude or longitude values were changed.
+
+Current map state: **178 points — 122 city, 4 region, 52 country precision.**
+
+| Precision | Points | With typed anchor reference | Unverified |
+|---|---:|---:|---:|
+| City | 122 | 104 | 18 |
+| Region | 4 | 3 | 1 |
+| Country | 52 | 5 | 47 |
+| **Total** | **178** | **112** | **66** |
+
+The five country-only anchor groups are Stardust & Stems (studio, United States), Maison Mataha (formulation and manufacturing, France), Lova (commercial base, UAE), Zhiwuzhi (brand origin, China) and Zhufu (brand origin, China). The city/region anchors retain every matching typed role, including multiple roles at the same place.
+
+The map heading now reads **Fragrance houses and their places**. Tooltips, place lists and house detail headers show the linked role(s) or an explicit unverified status. Country-level pins with city/region claims elsewhere are labelled as such rather than presented as city-level facts.
+
+### Remaining map holds
+
+- The 66 unverified points remain visible but explicitly provisional: 18 city, 1 region and 47 country precision.
+- The 26 country-precision points whose labels look like cities but lack a matching typed city/region claim remain country precision and unverified.
+- Country-level coordinates still require point-by-point verification; some country labels may still use city-centred coordinates.
+- City-level anchors establish a sourced city relationship, not an exact street address or manufacturing site unless the linked claim says so.
+- `dist/scent-atlas.html` remains unchanged; the source app is updated, but the self-contained snapshot still needs a documented regeneration path.
+
+
+
+## Role-aware map anchors implemented — 23 November 2026
+
+The map now carries explicit references to the typed geography observations that justify each pin's displayed relationship. This is an additive contract; it does not infer a primary role from the existence of any city or country field.
+
+### Data contract
+
+- Each `geo.json` point may contain `anchor_observation_ids`, an array of one or more observation IDs.
+- Every referenced observation must be a typed geography `claim` for the same house, with a valid location and matching country code.
+- At `city` precision, each referenced claim's `location.city` must match the map's `place` after conservative normalisation (accents, parenthetical labels and comma suffixes only).
+- At `region` precision, each referenced claim's `location.region` must match the map's `place`.
+- At `country` precision, referenced claims must be country-only (no city or region) and the location country must match the house and map country.
+- Multiple matching observations are retained. The map displays all supported roles; it does not choose one silently.
+- Missing `anchor_observation_ids` means the map pin is unverified at its current precision. The UI labels it accordingly. A country-level pin does not establish a city.
+
+The build validator now checks dangling IDs, wrong-house references, non-geography claims, country-code mismatches and precision/location mismatches. Tests cover city, region and country anchors, multiple roles, normalisation and invalid references.
+
+### First-pass anchor assignment
+
+- 14 country-precision points with matching city evidence were promoted to city precision.
+- 2 country-precision points with matching region evidence were promoted to region precision: Naso Profumi/Delhi and Stories Parfums/County Down.
+- 1 city-precision point was downgraded to region precision: Celia Loves/Surf Coast, Victoria.
+- No latitude or longitude values were changed.
+
+Current map state: **178 points — 122 city, 4 region, 52 country precision.**
+
+| Precision | Points | With typed anchor reference | Unverified |
+|---|---:|---:|---:|
+| City | 122 | 104 | 18 |
+| Region | 4 | 3 | 1 |
+| Country | 52 | 5 | 47 |
+| **Total** | **178** | **112** | **66** |
+
+The five country-only anchor groups are Stardust & Stems (studio, United States), Maison Mataha (formulation and manufacturing, France), Lova (commercial base, UAE), Zhiwuzhi (brand origin, China) and Zhufu (brand origin, China). The city/region anchors retain every matching typed role, including multiple roles at the same place.
+
+The map heading now reads **Fragrance houses and their places**. Tooltips, place lists and house detail headers show the linked role(s) or an explicit unverified status. Country-level pins with city/region claims elsewhere are labelled as such rather than presented as city-level facts.
+
+### Remaining map holds
+
+- The 66 unverified points remain visible but explicitly provisional: 18 city, 1 region and 47 country precision.
+- The 26 country-precision points whose labels look like cities but lack a matching typed city/region claim remain country precision and unverified.
+- Country-level coordinates still require point-by-point verification; some country labels may still use city-centred coordinates.
+- City-level anchors establish a sourced city relationship, not an exact street address or manufacturing site unless the linked claim says so.
+- `dist/scent-atlas.html` remains unchanged; the source app is updated, but the self-contained snapshot still needs a documented regeneration path.
+
