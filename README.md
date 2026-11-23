@@ -20,6 +20,7 @@ schemas/myth.md       the myth and recipe record formats
 version.json    data version + per-dataset count, size, hash and last-changed date
 scripts/build.mjs             validator + version builder (including typed Scent Atlas geography)
 scripts/scents-geography.mjs geography observation schema and validator
+scripts/build-scent-atlas.mjs reproducible self-contained snapshot builder (npm run build:scent-atlas; CI verifies with npm run check:scent-atlas)
 scripts/bridge-hub.mjs        pulls the Skincare Data Hub into index/ and data/safe-batch/ingredient_facts.json
 scripts/check-scents.mjs      weekly scent atlas check: rates, links, live prices
 scripts/check-verdicts.mjs    re-runs every recipe through apps/safe-batch.html and compares to checks/verdicts.json

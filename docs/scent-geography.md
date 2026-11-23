@@ -750,3 +750,17 @@ Updated map counts: 178 points — 149 city, 6 region, 23 country precision; 172
 Coordinate references: [California geographic centre](https://www.geodatos.net/en/coordinates/united-states/california), [Indonesia geographic centre](https://www.coordmap.com/countries/indonesia).
 
 Updated map counts: 178 points — 148 city, 7 region, 23 country precision; 174 anchored and 4 unverified (2 city, 2 country). Typed geography now covers 175 of 178 houses; three houses remain without typed geography: Cozy (Khamreya), Gerimist and Eau So Dramatic.
+
+
+### Reproducible standalone snapshot build — 23 November 2026
+
+The previous `dist/scent-atlas.html` was a manually assembled, data-inlined snapshot with no committed generator. This is replaced by a deterministic source-led build:
+
+- Source: `apps/scent-atlas.html`.
+- Data: every static JSON path referenced by the source app's `load(...)` calls, discovered from the source rather than maintained as a second hand-written list.
+- Output: `dist/scent-atlas.html`, with a generated `BUNDLE` object and a loader that reads bundled data first. Network fallback remains only for an unexpected path not included in the build inventory.
+- Rebuild: `npm run build:scent-atlas`.
+- Reproducibility check: `npm run check:scent-atlas`; CI runs this check and includes the dist file in its path filters.
+- The builder has focused tests for complete static-path bundling, deterministic output and malformed-data rejection.
+
+The snapshot is generated from the current source app and data. It is not hand-edited.
