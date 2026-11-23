@@ -363,7 +363,7 @@ Ten new typed observations were appended for these nine houses. No legacy record
 |---|---|
 | Henry Rose | Official terms give a Los Angeles legal-notice address for Henry Rose LLC, while a separate Henry Rose Inc. filing lists Santa Monica and is now inactive. The relationship between the entities and a current operational base is not established; do not convert a notice address into HQ. [Terms](https://henryrose.com/pages/terms-of-service) · [Florida registry record](https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=forp-f23000005577-1dac45f4-6cb0-4309-841f-08b45bfaa3a9&directionType=ForwardList&inquirytype=EntityName&listNameOrder=HENRYRODRIGUEZPENA+L170000085810&searchNameOrder=HENRYROSE+F230000055770&searchTerm=HENRY+P.+TRAWICK%2C+P.A.) |
 | CYKLAR | Official terms give a West Hollywood address for Center Brands LLC d/b/a Cyklar, but do not establish a registered office or operating site. Preserve as a legal-notice address, not a typed base. [Terms](https://cyklar.com/policies/terms-of-service) |
-| Cozy (Khamreya) | Official contact page does not provide a physical address or city-specific operating location. Port Fouad remains unsupported. |
+| Cozy (Khamreya) | A contact page found for Cozy Egypt belongs to a sleepwear/apparel retailer, not the Khamreya perfume entity, and was excluded. No primary source for the perfume brand's operator or Port Fouad address has been verified. |
 | Chujian | Official brand pages reviewed do not identify a city, studio or legal address. Keep China at country level only. |
 | Kitschy | Privacy policy gives a Jakarta contact address, but does not identify a registered entity or establish a physical office/manufacturing site. Do not turn a privacy contact address into HQ. [Privacy policy](https://kitschy.id/policies/privacy-policy) |
 | Gerimist | No verifiable primary source establishing a city or operating address was found in this pass. |
@@ -383,3 +383,8 @@ Ten new typed observations were appended for these nine houses. No legacy record
 - 13 houses remain without typed geography: Henry Rose, CYKLAR, Cozy (Khamreya), Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums, Otter Haus, Eau So Dramatic, Amouroud, Maison Mataha and Muse Beauty.
 - The map and app were not changed. The nine new house-level claims are source evidence only; they do not authorize moving or promoting map pins.
 
+
+
+#### Source-identity correction — Cozy (Khamreya), 23 November 2026
+
+The earlier batch-1 note relied on a search result for `cozyegypt.com`. Opening that page shows sleepwear/apparel products (including sleep dresses), not a perfume or Khamreya business. It is not the Cozy (Khamreya) entity in this dataset and has been excluded. The perfume entity's operator, official web presence and Port Fouad location remain unverified; no typed geography is added. The 13-house unknown list is unchanged.
