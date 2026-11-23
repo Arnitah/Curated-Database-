@@ -56,10 +56,10 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - 7 houses had no observation of any kind.
 - Map precision: 110 `city`, 1 `region`, 67 `country`. A first-pass review found 39 of the 67 `country`-precision points use city-named place labels and city-centre coordinates. Additional country-named labels also use city-centre coordinates (for example Canada/Ottawa, India/New Delhi, Indonesia/Jakarta, Sweden/Stockholm and UAE/Dubai). This is a release hold for a source-and-coordinate audit; no `geo.json` values have been changed. Precision is spatial granularity, not evidence confidence or relationship type.
 
-**Current PR branch at commit `392db198f5dc3ee54fc47a94de30c7d9f9b244dc` (2026-11-23):**
+**Earlier PR-branch data snapshot at commit `392db198f5dc3ee54fc47a94de30c7d9f9b244dc` (2026-11-23):**
 - 621 observations total: 435 claim records, including 416 typed geography claims.
 - Typed geography claims cover 156 of 178 existing houses and 3 research leads; 22 existing houses have no typed geography claim yet.
-- The 11 legacy `hq` / `made_in` claims remain unchanged and un-reclassified.
+- The 11 legacy `hq` / `made_in` source records remain unchanged and are retained for provenance. All 11 have now been individually reviewed; typed reclassifications were appended where supported (see the legacy-claim review below).
 - The 3 lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
 - Counts were recomputed directly from `observations.json`, `houses.json` and `leads.json` at the stated commit.
 
@@ -71,9 +71,9 @@ These are intentionally not bulk-corrected. They remain separate research and co
 
 The current 22 records are: Scentury Perfume & Co. (`scentury`), Henry Rose (`henry-rose`), Rogue Perfumery (`rogue-perfumery`), CYKLAR (`cyklar`), Meleg Perfumes (`meleg-perfumes`), Cozy (Khamreya) (`cozy-khamreya`), Libroaria (`libroaria`), Régime des Fleurs (`regime-des-fleurs`), Chujian (`chujian`), The Body Tale (`the-body-tale`), Kitschy (`kitschy`), Aroma Concepts (`aroma-concepts`), Celia Loves (`celia-loves`), Gerimist (`gerimist`), Liberation of Flowers (`liberation-of-flowers`), Paragraf Parfums (`paragraf-parfums`), Otter Haus (`otter-haus`), Indē Wild (`inde-wild`), Eau So Dramatic (`eau-so-dramatic`), Amouroud (`amouroud`), Maison Mataha (`maison-mataha`) and Muse Beauty (`muse-beauty`). Their legacy `houses.json` city/country display fields are not evidence of a typed relationship. Maison Mataha also remains held pending identification of its current legal operator.
 
-### Legacy geography claims awaiting individual source review
+### Legacy geography claims reviewed (2026-11-23)
 
-The 11 unchanged legacy claims are grouped as follows: Saint d'Ici (3 `hq` claims), Maya Njie (2 `hq` claims), Beguile (1 `hq` and 1 `made_in` claim), Amouage (1 `made_in` claim), Scent of Africa (1 `made_in` claim), Mezel (1 `hq` claim) and Naisday (1 `hq` claim). Keep each original source and text; reclassify only after deciding which typed relationship the source actually supports.
+The 11 unchanged legacy claims are grouped as follows: Saint d'Ici (3 `hq` claims), Maya Njie (2 `hq` claims), Beguile (1 `hq` and 1 `made_in` claim), Amouage (1 `made_in` claim), Scent of Africa (1 `made_in` claim), Mezel (1 `hq` claim) and Naisday (1 `hq` claim). Original records and source text are retained; the source-by-source decisions and additive typed replacements are documented below.
 
 ### Map precision and anchor audit
 
@@ -289,3 +289,49 @@ Across the 91 matched pins, the linked observations contain overlapping relation
 - These are source/ledger checks only. Coordinates have not yet been individually geocoded against source addresses or official location coordinates. City/region coordinate verification remains a release hold across the full 178-point map.
 
 No `geo.json` values were changed. The next map step remains a role-aware schema/UI contract followed by point-by-point coordinate verification and only then targeted corrections.
+
+
+## Legacy claim review and append-only reclassification — 2026-11-23
+
+All 11 legacy records were reviewed individually. None was overwritten or deleted. Where the source supports a precise relationship, a new typed observation was appended; ambiguous claims remain as historical source records and must not be interpreted as a current single HQ or generic manufacturing fact.
+
+| Legacy record(s) | What the source actually establishes | Typed disposition |
+|---|---|---|
+| Saint d'Ici `saint-dici-hq-1` (2018) and `saint-dici-hq-2` (2022) | Contemporary reporting placed the perfumery in Johannesburg at those dates. The current official story page says the botanical perfumery is located in Cape Town; the 2026 BellaNaija profile independently says it makes botanical perfume in Cape Town. The move date is not established. | Retain both Johannesburg records as historical. Existing typed `commercial_base` Cape Town record captures the current official location. |
+| Saint d'Ici `saint-dici-hq-3` (2026 roundup) | The record's text says one roundup places the house in Cape Town but incorrectly concludes Johannesburg stands. The cited article explicitly identifies Saint d'Ici as making botanical perfume in Cape Town. | Treat the record's interpretation as corrected; keep the original source text unchanged. Current typed `commercial_base` Cape Town remains the usable location. |
+| Maya Njie `maya-njie-hq-1` and `maya-njie-hq-2` | Sources support London-based activity and a Shoreditch studio. The current official contact page gives 91A Rivington Street, London as the studio; Companies House lists the same address as the registered office. The Oliver Spencer interview does not substantiate the old record's specific "fills bottles in house" assertion. | Existing typed `studio` London retained. New typed `legal_base` London appended from Companies House. Do not carry forward the in-house filling claim without a separate source. |
+| Beguile `beguile-hq-1` | The official brand blog says founded by Ihuoma Eze in Lagos in 2021 and operates a local market/fulfilment base in Nigeria, the UK, the US and Canada. It does not identify cities for the four local bases or a single corporate HQ. | Five typed records appended: `brand_origin` Lagos plus country-only `commercial_base` records for Nigeria, UK, US and Canada. Each market base is explicitly not treated as a registered office or HQ. |
+| Beguile `beguile-made-1` | The source says fragrances are developed with expert perfumers in Dubai; no filling or manufacturing location is stated. | Existing typed `formulation` Dubai record is the correct relationship. No manufacturing claim added. |
+| Amouage `amouage-made-1` | WIPO says professional perfumers in Grasse create the fragrances, then the samples go to the Oman factory for larger-scale production, maceration, bottling and packaging. The current official site identifies its Muscat Manufacture. "Blended in Grasse" is an imprecise summary of formulation, not the manufacturing site. | Existing typed `formulation` Grasse and `manufacturing` Muscat records are the correct split. No new data record needed. |
+| Scent of Africa `scentofafrica-made-1` | The cited BellaNaija article distinguishes composition in France from production in Ghana. The brand's official page calls it a fine fragrance house made in Ghana; its Values page places an end-to-end production chain in Accra. | Existing typed `brand_origin` Ghana and `manufacturing` Accra retained. New typed `formulation` France record appended. The old generic `made_in` label must not be read as manufacturing in France. |
+| Mezel `mezel-hq-1` | Pitti's phrase "born between Casablanca and Paris" is brand narrative, not a physical HQ address. Current consumer terms identify SGJ COSMETICS SAS as headquartered and registered at 229 rue Saint Honoré, Paris. | Existing typed `legal_base` and `commercial_base` Paris records are supported by the official terms. Do not convert the Casablanca/Paris narrative into brand origin. |
+| Naisday `naisday-hq-1` | The cited Tokopedia result identifies an East Jakarta marketplace storefront/seller location, not a verified headquarters. A Bekasi City government product directory lists a public business contact address in Bekasi; official Shopee evidence is an online storefront, not a physical shop. The relationship between the East Jakarta and Bekasi addresses remains unresolved. | Existing typed `commercial_base` Bekasi remains a public business-contact candidate, not a registered office or factory. Existing country-only `retail` Indonesia records the online storefront. No physical retail or HQ claim added. |
+
+### New typed observations added in this review
+
+Seven append-only claims were added to `observations.json`:
+
+- Beguile: brand origin Lagos, Nigeria.
+- Beguile: local commercial/fulfilment bases in Nigeria, the United Kingdom, the United States and Canada (country precision only; no cities inferred).
+- Maya Njie: legal base London, United Kingdom.
+- Scent of Africa (research lead): formulation France.
+
+Existing typed claims already cover Saint d'Ici's current Cape Town commercial base; Maya Njie's London studio; Beguile's Dubai formulation; Amouage's Grasse formulation and Muscat manufacturing; Scent of Africa's Ghana origin and Accra production; Mezel's Paris legal/commercial base; and Naisday's Bekasi public business-contact candidate and online retail channel.
+
+### Updated PR-branch dataset snapshot (2026-11-23)
+
+- 628 observations total.
+- 442 claim records, including 423 typed geography claims.
+- Typed geography claims cover 156 of 178 existing houses and 3 research leads.
+- 22 existing houses still have no typed geography claim.
+- All 11 legacy `hq` / `made_in` records remain byte-for-byte preserved as historical source records; review completed and supported typed relationships appended.
+
+Sources:
+- [Saint d'Ici current story](https://www.saintdici.com/saint-dici/?v=eacb463a8002) · [2018 Johannesburg profile](https://www.sundaytimes.timeslive.co.za/sunday-times/lifestyle/fashion-and-beauty/2018-10-06-sa-perfumier-marie-aoun-on-why-it-makes-sense-to-wear-natural-scents/) · [2026 profile](https://www.bellanaija.com/2026/08/discover-african-fragrance/)
+- [Maya Njie studio](https://www.mayanjie.com/pages/contact) · [Companies House](https://find-and-update.company-information.service.gov.uk/company/10213245) · [Oliver Spencer interview](https://oliverspencer.co.uk/blogs/journal/in-conversation-maya-njie)
+- [Beguile official About](https://beguile.com/pages/about-us) · [Beguile official 2026 brand blog](https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026)
+- [Amouage WIPO case study](https://www.wipo.int/en/web/ip-advantage/w/stories/designs-fragrances-and-sustaining-traditions) · [Amouage official story](https://amouage.com/pages/our-story)
+- [Scent of Africa 2026 article](https://www.bellanaija.com/2026/08/discover-african-fragrance/) · [official brand page](https://www.scentofafrica.com/brand) · [official production-chain page](https://www.scentofafrica.com/values)
+- [Mezel Pitti profile](https://fragranze.pittimmagine.com/en/exhibitors/M/mezel) · [official consumer terms](https://mezelparfums.com/en/pages/cgv)
+- [Naisday Tokopedia listing](https://www.tokopedia.com/find/parfum-naisday-ons) · [Bekasi City SIPTRI listing](https://sip3.bekasikota.go.id/katalog/produk/12/141/naisday) · [Naisday Shopee store](https://shopee.co.id/naisday?entryPoint=ShopByPDP)
+

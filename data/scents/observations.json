@@ -9667,6 +9667,126 @@
         "cc": "US",
         "entity": "Nostos"
       }
+    },
+    {
+      "id": "beguile-brand-origin-typed-1",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Beguile states it was founded by Ihuoma Eze in Lagos, Nigeria in 2021.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026",
+      "seen": "2026-11-23",
+      "published": "2026-06-22",
+      "location": {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "cc": "NG"
+      },
+      "house": "beguile"
+    },
+    {
+      "id": "beguile-commercial-base-ng-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Beguile states that it operates a local market/fulfilment base in Nigeria; the source does not identify a city or registered office.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026",
+      "seen": "2026-11-23",
+      "published": "2026-06-22",
+      "location": {
+        "country": "Nigeria",
+        "cc": "NG"
+      },
+      "house": "beguile",
+      "open": "Local market/fulfilment base only; not proof of registered office, legal base, manufacturing site or a single headquarters. City is not stated."
+    },
+    {
+      "id": "beguile-commercial-base-gb-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Beguile states that it operates a local market/fulfilment base in United Kingdom; the source does not identify a city or registered office.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026",
+      "seen": "2026-11-23",
+      "published": "2026-06-22",
+      "location": {
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "house": "beguile",
+      "open": "Local market/fulfilment base only; not proof of registered office, legal base, manufacturing site or a single headquarters. City is not stated."
+    },
+    {
+      "id": "beguile-commercial-base-us-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Beguile states that it operates a local market/fulfilment base in United States; the source does not identify a city or registered office.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026",
+      "seen": "2026-11-23",
+      "published": "2026-06-22",
+      "location": {
+        "country": "United States",
+        "cc": "US"
+      },
+      "house": "beguile",
+      "open": "Local market/fulfilment base only; not proof of registered office, legal base, manufacturing site or a single headquarters. City is not stated."
+    },
+    {
+      "id": "beguile-commercial-base-ca-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Beguile states that it operates a local market/fulfilment base in Canada; the source does not identify a city or registered office.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://beguile.com/blogs/news/what-is-beguile-the-luxury-fragrance-brand-you-need-to-know-in-2026",
+      "seen": "2026-11-23",
+      "published": "2026-06-22",
+      "location": {
+        "country": "Canada",
+        "cc": "CA"
+      },
+      "house": "beguile",
+      "open": "Local market/fulfilment base only; not proof of registered office, legal base, manufacturing site or a single headquarters. City is not stated."
+    },
+    {
+      "id": "maya-njie-legal-base-typed-1",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Companies House lists MAYA NJIE PERFUMES LIMITED at Electra House, 91A Rivington Street, London, United Kingdom, as its registered office.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/10213245",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "MAYA NJIE PERFUMES LIMITED"
+      },
+      "house": "maya-njie",
+      "open": "Registered office only. The official brand contact page separately identifies the same address as its studio; this record does not establish filling or manufacturing."
+    },
+    {
+      "id": "scentofafrica-formulation-fr-typed-1",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "BellaNaija's 2026 profile says Scent of Africa's fragrances are composed in France; this is a formulation relationship, not a manufacturing location.",
+      "evidence": "editorial",
+      "strength": "C",
+      "src": "https://www.bellanaija.com/2026/08/discover-african-fragrance/",
+      "seen": "2026-11-23",
+      "published": "2026-08-27",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "lead": "Scent of Africa",
+      "open": "The article distinguishes composition from production. Scent of Africa's official brand page says the house is made in Ghana, and its Values page places the end-to-end production chain in Accra, Ghana. Do not interpret this as manufacturing in France."
     }
   ]
 }
