@@ -10158,6 +10158,60 @@
         "cc": "GB"
       },
       "open": "Country-level only. The interview does not establish a UK founding city. The separately reported production base in Indonesia remains a different role."
+    },
+    {
+      "id": "kitschy-commercial-base-jakarta-typed-1",
+      "house": "kitschy",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "A specialist fragrance-house profile describes Kitschy as a local Indonesian brand based in Jakarta. Its official store confirms Indonesian retail operations and free shipping across Java and Bali.",
+      "evidence": "editorial",
+      "strength": "C",
+      "src": "https://www.fragrantica.com/designers/Kitschy.html",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Jakarta",
+        "region": "DKI Jakarta",
+        "country": "Indonesia",
+        "cc": "ID"
+      },
+      "open": "City relationship is supported by a specialist fragrance directory; the official store corroborates Indonesia retail operations but does not publish a street address. Do not interpret this as a manufacturing location."
+    },
+    {
+      "id": "liberation-of-flowers-legal-base-durham-typed-1",
+      "house": "liberation-of-flowers",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The 2026 USPTO-derived trademark record identifies Liberation of Flowers LLC as the owner of the registered LIBERATION OF FLOWERS mark and lists the owner address as 3712 St. Marks Road, Durham, North Carolina 27707.",
+      "evidence": "registry",
+      "strength": "C",
+      "src": "https://www.trademarkelite.com/trademark/trademark-detail/99356011/LIBERATION-OF-FLOWERS",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Durham",
+        "region": "North Carolina",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Liberation of Flowers LLC",
+        "site": "3712 St. Marks Road, Durham, NC 27707"
+      },
+      "open": "This is a legal-entity/trademark-owner address from a USPTO-derived public record; it is not represented as a manufacturing site or verified commercial headquarters."
+    },
+    {
+      "id": "chujian-brand-origin-china-typed-1",
+      "house": "chujian",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "An independent perfumery retailer's house profile explicitly describes ChuJian as founded in China. The brand's own about page corroborates its focus on native Chinese botanicals and Chinese cultural landscapes, but does not name a city.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://passion-parfum.com/en/collections/chujian",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "China",
+        "cc": "CN"
+      },
+      "open": "Country-level only. No city, registered entity or operational headquarters is established by the available sources."
     }
   ]
 }

@@ -731,3 +731,12 @@ Two previously unanchored country-level points now have defensible primary roles
 - **Ensar Oud — Glendale, New York, USA, legal base (city-level).** The official imprint identifies Oriscent LLC as the website owner and gives its Glendale address. The map pin represents that primary website operator/legal entity. ENSAR OUD LIMITED (Company No. 13539356) remains a separate UK entity and is not collapsed into the same company. [Official imprint](https://www.ensaroud.com/imprint/) · [UK Companies House record](https://find-and-update.company-information.service.gov.uk/company/13539356) · [Glendale coordinates](https://www.geonames.org/5118670/glendale.html).
 
 Updated map counts: 178 points — 147 city, 6 region, 25 country precision; 169 anchored and 9 unverified. The remaining unverified set is 3 city and 6 country points. The remaining country-level research queue is Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level queue is Henry Rose, Ellis Brooklyn and Cozy (Khamreya).
+
+
+### Three previously untyped houses resolved — 23 November 2026
+
+- **Kitschy — Jakarta, Indonesia, commercial base.** Fragrantica describes the house as based in Jakarta; the official store corroborates Indonesian online retail operations and Java/Bali shipping. No manufacturing claim is made. [Fragrantica](https://www.fragrantica.com/designers/Kitschy.html) · [Official store](https://kitschybeauty.com/).
+- **Liberation of Flowers — Durham, North Carolina, USA, legal base.** A USPTO-derived 2026 trademark-owner record lists Liberation of Flowers LLC at 3712 St. Marks Road, Durham, NC 27707. This is a legal-entity address, not a factory or verified commercial headquarters. [Trademark record](https://www.trademarkelite.com/trademark/trademark-detail/99356011/LIBERATION-OF-FLOWERS).
+- **ChuJian — China, brand origin (country-level).** An independent perfumery retailer explicitly describes the house as founded in China; the official about page corroborates its Chinese botanical and cultural focus. No city is inferred. [Passion Parfum](https://passion-parfum.com/en/collections/chujian) · [Official brand story](https://www.chujianparfums.com/pages/about-us).
+
+Updated map counts: 178 points — 149 city, 6 region, 23 country precision; 172 anchored and 6 unverified. The remaining unverified set is 3 city and 3 country points. Typed geography now covers 173 of 178 houses; five houses still have no typed geography.

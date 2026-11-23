@@ -1557,10 +1557,14 @@
     ]
   },
   "chujian": {
-    "lat": 35,
-    "lon": 105,
+    "lat": 35.8617,
+    "lon": 104.1954,
     "place": "China",
-    "precision": "country"
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "chujian-brand-origin-china-typed-1"
+    ]
   },
   "the-body-tale": {
     "lat": -6.2375,
@@ -1573,10 +1577,14 @@
     ]
   },
   "kitschy": {
-    "lat": -6.2,
-    "lon": 106.82,
-    "place": "Indonesia",
-    "precision": "country"
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "place": "Jakarta",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "kitschy-commercial-base-jakarta-typed-1"
+    ]
   },
   "gerimist": {
     "lat": -6.2,
@@ -1615,10 +1623,14 @@
     ]
   },
   "liberation-of-flowers": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 35.994,
+    "lon": -78.8986,
+    "place": "Durham",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "liberation-of-flowers-legal-base-durham-typed-1"
+    ]
   },
   "commodity": {
     "lat": 40.7128,
