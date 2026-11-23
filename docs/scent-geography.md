@@ -112,3 +112,41 @@ A house is verified only when ownership, **manufacturing location**, and current
 - Weekly scent workflow never changes geography facts.
 - Unit tests cover valid, incomplete, malformed, legacy and non-geography records.
 - All 178 houses are reviewed before bulk reclassification; unknown facts remain empty.
+
+
+### Map anchor source cross-check — batch 1 (2026-11-23)
+
+This first source-level pass checked 20 of the 67 country-precision map points. It confirms that a city-named label is not necessarily a supported city anchor, and that a city may be supported only for one relationship (for example manufacturing or retail). Because the current map has no relationship-role field, a location match alone is not permission to promote a point to city precision.
+
+| House | Existing map anchor | Source cross-check | Audit disposition |
+|---|---|---|---|
+| J-Scent | Tokyo, Japan | LUZ's official page lists its Japan head office and Tokyo Lab in Tokyo, while separately identifying factories in Shizuoka and Karatsu. | Tokyo is supported as office/studio, not as the stated brand-origin city. Anchor role must be explicit. [Source](https://luzfragrance.com/j-scent-global/aboutus) |
+| Pesade | Seoul, South Korea | The official About page says the brand was established in Seoul in 2022. | City supported for brand origin. [Source](https://en.pesade.kr/shopinfo/company.html) |
+| To Summer | Shanghai, China | InvestHK reports the brand was founded in Beijing in 2018 and opened its first store outside Mainland China in Hong Kong. | Shanghai is not supported by the checked source; if the map is an origin map, Beijing is the evidence-backed candidate. Do not change until map-anchor role is settled. [Source](https://www.investhk.gov.hk/en/news/mainland-perfume-brand-establishes-foothold-in-hong-kong/) |
+| Uttori | Hangzhou, China | The ledger source identifies a China-founded brand and a registered company address in Shanghai, not Hangzhou. | Hangzhou unsupported; Shanghai is a legal-base candidate only. [Source](https://pitchhub.36kr.com/project/1713112315636232) |
+| ICHUN | Taipei, Taiwan | The ledger source is a Taiwan retailer listing; it does not identify a Taipei office, studio or founding location. | Taipei unsupported; Taiwan retail presence does not justify a Taipei pin. [Source](https://www.yanyantang.tw/products/ichun-perfume) |
+| TADHANA | Manila, Philippines | The brand's press page explicitly says headquartered in Toronto and manufacturing in Manila. | Manila is supported for manufacturing only; Toronto is supported for commercial base. The pin must not imply one role without a role label. [Source](https://www.tadhana.co/pages/press) |
+| GP Fragrances | Manila, Philippines | The cited editorial profile describes a Filipino fragrance label but does not identify a city. | Manila unsupported by the checked claim. [Source](https://www.tatlerasia.com/style/beauty/filipino-fragrance-brands-to-know-pt) |
+| Toouch | Ho Chi Minh City, Vietnam | The ledger records HCMC legal, commercial and retail relationships. The current rendered official contact page did not expose the registered address during this check. | Provisional city match; re-open the underlying legal/address source before treating the exact address as reverified. [Source](https://toouchscent.com/vi-vn/pages/contact) |
+| Maison Bagian | Hanoi, Vietnam | The official About page describes it as a Vietnamese perfume brand and says products are produced and perfected in Grasse; it does not identify Hanoi. | Hanoi unsupported by this source; do not infer the city from Vietnamese brand identity. [Source](https://maisonbagian.com/en/about/) |
+| Lattafa | Ajman, UAE | The official About page says established in the UAE and describes in-house manufacturing, without naming Ajman. | UAE is supported; Ajman is not established by the checked source. [Source](https://lattafa.com/about-us/) |
+| Scentury | Durban, South Africa | No typed geography observation is present for this house. | Durban remains unsupported; do not backfill from the legacy display fields. |
+| Beguile | Lagos, Nigeria | The ledger records fragrance formulation with perfumers in Dubai; no checked source establishes Lagos as the map location. | Lagos unsupported by current typed evidence; Dubai is formulation only. [Source](https://beguile.com/pages/about-us) |
+| Goldfield & Banks | Sydney, Australia | The brand's current official profile says it was founded in Sydney in 2016. | City supported for brand origin. [Source](https://us.goldfieldandbanks.com/blogs/news/the-nightly-australian-perfume-the-world-wanted) |
+| Hiram Green | Amsterdam, Netherlands | The official biography says the perfumer lives and works just outside Amsterdam and develops/handcrafts fragrances in his studio. | Amsterdam is an approximate nearby reference, not a confirmed city address. Retain as a country-level/approximate-location hold unless the map explicitly labels the approximation. [Source](https://hiramgreen.com/pages/about) |
+| Reunrom | Bangkok, Thailand | The official store locator identifies REUNROM Song Wat as its flagship in Bangkok. | City supported for retail only; do not imply brand origin or headquarters. [Source](https://reunrom.com/pages/store-locator) |
+| Solure | Bangkok, Thailand | The cited Watsons page is an online Thai retail listing, not evidence of a Bangkok store, office or origin. | Bangkok unsupported; Thai retail availability is not a city location. [Source](https://watsons.co.th/en/solure-body-oil-65ml.-anniversary/p/BP_304630) |
+| Skybottle | Seoul, South Korea | The official company-information page gives a Yongsan-gu, Seoul business address. Another page on the same domain gives a different company/address, so the precise address is not harmonized. | Seoul supported at city level for business presence; retain the address conflict and do not select a specific address from the conflicting page. [Source](https://www.skybottle.co.kr/shopinfo/company.html) |
+| WHIPPED | Seoul, South Korea | The official company page identifies the operator and an address in Seongdong-gu, Seoul. | City supported for legal/commercial base. [Source](https://whipped.co.kr/shopinfo/company.html) |
+| KST Scent | New York, United States (map cc currently KR) | The official site describes an LV1 Studio creative project by its creators and discusses Korean/Vietnamese cultural origins; the checked contact page does not establish New York as a base. | New York coordinates and KR country code are not supported by the checked source. Founder heritage is not a substitute for brand location; recheck the separate Los Angeles-base ledger claim before selecting a replacement. [Source](https://www.kstscent.com/pages/contact-us) |
+| Milky Mane | Warsaw, Poland | The official contact page lists the business details at Rynek 9, Proszowice, Poland. | Warsaw is not supported; Proszowice is a legal/commercial address candidate. [Source](https://milkymane.shop/pl/i/Kontakt/13) |
+
+#### Batch 1 conclusions
+
+- **City relationship evidenced, but role-specific:** J-Scent (Tokyo office/studio), TADHANA (Manila manufacturing), Reunrom (Bangkok retail), Skybottle (Seoul business presence), WHIPPED (Seoul legal/commercial base).
+- **City anchor supported for brand origin:** Pesade (Seoul), Goldfield & Banks (Sydney).
+- **Current city anchor contradicted or unsupported:** To Summer, Uttori, ICHUN, GP Fragrances, Maison Bagian, Lattafa, Scentury, Beguile, Solure, KST Scent and Milky Mane.
+- **Approximate rather than exact city:** Hiram Green.
+- **Requires underlying source recheck:** Toouch.
+
+No `geo.json` values were changed in this batch. This is an evidence register, not a map-data correction. The remaining 47 country-precision points and the six country-named labels paired with city-centred coordinates (Canada/Ottawa, India/New Delhi, Indonesia/Jakarta, Japan/Tokyo, Sweden/Stockholm and UAE/Dubai) remain to be checked. The map-anchor role is still an open design/data contract: the one-pin-per-house model must state whether the pin represents brand origin, legal/commercial base, studio, manufacturing, retail, or a clearly labelled approximate location before a point is moved or promoted to city precision.
