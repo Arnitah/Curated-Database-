@@ -3,895 +3,1597 @@
     "lat": 35.68,
     "lon": 139.69,
     "place": "Tokyo",
-    "precision": "city"
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "parfum-satori-brand-origin-typed-1",
+      "parfum-satori-founder-origin-typed-1",
+      "parfum-satori-retail-typed-1",
+      "parfum-satori-studio-typed-1"
+    ]
   },
   "shiro": {
-    "lat": 43.06,
-    "lon": 141.35,
-    "place": "Sapporo",
-    "precision": "region"
+    "lat": 43.48639,
+    "lon": 141.90556,
+    "place": "Sunagawa",
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "shiro-brand-origin-typed-1",
+      "shiro-manufacturing-typed-1"
+    ]
   },
   "j-scent": {
     "lat": 35.68,
     "lon": 139.69,
     "place": "Tokyo",
-    "precision": "country"
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "j-scent-commercial-base-typed-1",
+      "j-scent-studio-typed-1"
+    ]
   },
   "shoyeido": {
     "lat": 35.01,
     "lon": 135.77,
     "place": "Kyoto",
-    "precision": "city"
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "shoyeido-commercial-base-typed-1",
+      "shoyeido-manufacturing-kyoto-typed-1"
+    ]
   },
   "tamburins": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "tamburins-retail-seoul-typed-1"
+    ]
   },
   "nonfiction": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "nonfiction-brand-origin-typed-1",
+      "nonfiction-commercial-base-typed-1",
+      "nonfiction-retail-seoul-typed-1"
+    ]
   },
   "granhand": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "granhand-brand-origin-typed-1"
+    ]
   },
   "borntostandout": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "borntostandout-commercial-base-typed-1",
+      "borntostandout-retail-typed-1"
+    ]
   },
   "pesade": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "country"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "pesade-brand-origin-typed-1",
+      "pesade-commercial-base-typed-1"
+    ]
   },
   "to-summer": {
-    "lat": 31.23,
-    "lon": 121.47,
-    "place": "Shanghai",
-    "precision": "country"
+    "lat": 39.9248428735,
+    "lon": 116.326721268,
+    "place": "Beijing",
+    "precision": "city",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "tosummer-brand-origin-typed-1"
+    ]
   },
   "documents": {
     "lat": 31.23,
     "lon": 121.47,
     "place": "Shanghai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "documents-brand-origin-typed-1",
+      "documents-legal-base-typed-1"
+    ]
   },
   "uttori": {
-    "lat": 30.27,
-    "lon": 120.15,
-    "place": "Hangzhou",
-    "precision": "country"
+    "lat": 35.8617,
+    "lon": 104.1954,
+    "place": "China",
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "uttori-brand-origin-typed-1"
+    ]
   },
   "ichun": {
-    "lat": 25.03,
-    "lon": 121.56,
-    "place": "Taipei",
-    "precision": "country"
+    "lat": 23.6978,
+    "lon": 120.9605,
+    "place": "Taiwan",
+    "precision": "country",
+    "cc": "TW",
+    "anchor_observation_ids": [
+      "ichun-retail-taiwan-typed-1"
+    ]
   },
   "bombay-perfumery": {
     "lat": 19.08,
     "lon": 72.88,
     "place": "Mumbai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "bombay-perfumery-commercial-base-typed-1",
+      "bombay-perfumery-retail-typed-1"
+    ]
   },
   "gulab-singh-johrimal": {
     "lat": 28.65,
     "lon": 77.23,
     "place": "Delhi",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "gulab-singh-johrimal-brand-origin-typed-1",
+      "gulab-singh-johrimal-commercial-base-typed-1",
+      "gulab-singh-johrimal-retail-typed-1"
+    ]
   },
   "spa-ceylon": {
     "lat": 6.93,
     "lon": 79.86,
     "place": "Colombo",
-    "precision": "city"
+    "precision": "city",
+    "cc": "LK",
+    "anchor_observation_ids": [
+      "spa-ceylon-commercial-base-typed-1"
+    ]
   },
   "karmakamet": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "karmakamet-commercial-base-typed-1"
+    ]
   },
   "hmns": {
     "lat": -6.2,
     "lon": 106.85,
     "place": "Jakarta",
-    "precision": "city"
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "hmns-retail-jakarta-typed-1"
+    ]
   },
   "tadhana": {
     "lat": 14.6,
     "lon": 120.98,
     "place": "Manila",
-    "precision": "country"
+    "precision": "city",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "tadhana-manufacturing-typed-1"
+    ]
   },
   "wren-atelier": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "city"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "wren-atelier-retail-typed-1"
+    ]
   },
   "gp-fragrances": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "country"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "gp-fragrances-brand-origin-typed-1"
+    ]
   },
   "toouch": {
     "lat": 10.82,
     "lon": 106.63,
     "place": "Ho Chi Minh City",
-    "precision": "country"
+    "precision": "city",
+    "cc": "VN",
+    "anchor_observation_ids": [
+      "toouch-commercial-base-typed-1",
+      "toouch-legal-base-typed-1",
+      "toouch-retail-hcmc-typed-1"
+    ]
   },
   "maison-bagian": {
-    "lat": 21.03,
-    "lon": 105.85,
-    "place": "Hanoi",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "maison-bagian-formulation-typed-1",
+      "maison-bagian-manufacturing-typed-1"
+    ]
   },
   "amouage": {
     "lat": 23.59,
     "lon": 58.41,
     "place": "Muscat",
-    "precision": "city"
+    "precision": "city",
+    "cc": "OM",
+    "anchor_observation_ids": [
+      "amouage-manufacturing-typed-1"
+    ]
   },
   "abdul-samad-al-qurashi": {
     "lat": 21.42,
     "lon": 39.83,
     "place": "Mecca",
-    "precision": "city"
+    "precision": "city",
+    "cc": "SA",
+    "anchor_observation_ids": [
+      "abdul-samad-al-qurashi-commercial-base-typed-1"
+    ]
   },
   "swiss-arabian": {
-    "lat": 25.2,
-    "lon": 55.27,
+    "lat": 25.252222,
+    "lon": 55.28,
     "place": "Dubai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "swiss-arabian-brand-origin-dubai-typed-2"
+    ]
   },
   "lattafa": {
-    "lat": 25.4,
-    "lon": 55.51,
-    "place": "Ajman",
-    "precision": "country"
+    "lat": 23.4241,
+    "lon": 53.8478,
+    "place": "United Arab Emirates",
+    "precision": "country",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "lattafa-brand-origin-typed-1",
+      "lattafa-manufacturing-typed-1"
+    ]
   },
   "nishane": {
     "lat": 41.01,
     "lon": 28.98,
     "place": "Istanbul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TR",
+    "anchor_observation_ids": [
+      "nishane-commercial-base-typed-1"
+    ]
   },
   "saint-dici": {
-    "lat": -26.2,
-    "lon": 28.05,
-    "place": "Johannesburg",
-    "precision": "city"
+    "lat": -33.92888,
+    "lon": 18.41722,
+    "place": "Cape Town",
+    "precision": "city",
+    "cc": "ZA",
+    "anchor_observation_ids": [
+      "saint-dici-commercial-base-typed-1"
+    ]
   },
   "scentury": {
-    "lat": -29.86,
-    "lon": 31.02,
-    "place": "Durban",
-    "precision": "country"
+    "lat": -26.20227,
+    "lon": 28.04363,
+    "place": "Johannesburg",
+    "precision": "city",
+    "cc": "ZA",
+    "anchor_observation_ids": [
+      "scentury-retail-johannesburg-typed-1"
+    ]
   },
   "beguile": {
     "lat": 6.52,
     "lon": 3.38,
     "place": "Lagos",
-    "precision": "country"
+    "precision": "city",
+    "cc": "NG",
+    "anchor_observation_ids": [
+      "beguile-brand-origin-typed-1"
+    ]
   },
   "xinu": {
     "lat": 19.43,
     "lon": -99.13,
     "place": "Mexico City",
-    "precision": "city"
+    "precision": "city",
+    "cc": "MX",
+    "anchor_observation_ids": [
+      "xinu-commercial-base-typed-1",
+      "xinu-legal-base-typed-1",
+      "xinu-retail-mexicocity-typed-1"
+    ]
   },
   "coqui-coqui": {
     "lat": 20.97,
     "lon": -89.62,
     "place": "Mérida",
-    "precision": "city"
+    "precision": "city",
+    "cc": "MX",
+    "anchor_observation_ids": [
+      "coqui-coqui-retail-merida-typed-1"
+    ]
   },
   "fueguia-1833": {
     "lat": -34.6,
     "lon": -58.38,
     "place": "Buenos Aires",
-    "precision": "city"
+    "precision": "city",
+    "cc": "AR",
+    "anchor_observation_ids": [
+      "fueguia-1833-brand-origin-typed-1"
+    ]
   },
   "natura": {
     "lat": -23.55,
     "lon": -46.63,
     "place": "São Paulo",
-    "precision": "city"
+    "precision": "city",
+    "cc": "BR",
+    "anchor_observation_ids": [
+      "natura-brand-origin-typed-1"
+    ]
   },
   "zoologist": {
     "lat": 43.65,
     "lon": -79.38,
     "place": "Toronto",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "zoologist-commercial-base-typed-1"
+    ]
   },
   "imaginary-authors": {
     "lat": 45.52,
     "lon": -122.68,
     "place": "Portland",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "imaginary-authors-commercial-base-typed-1"
+    ]
   },
   "goldfield-banks": {
     "lat": -33.87,
     "lon": 151.21,
     "place": "Sydney",
-    "precision": "country"
+    "precision": "city",
+    "cc": "AU",
+    "anchor_observation_ids": [
+      "goldfield-banks-brand-origin-typed-1",
+      "goldfield-banks-commercial-base-typed-1",
+      "goldfield-banks-legal-base-typed-1"
+    ]
   },
   "hiram-green": {
-    "lat": 52.37,
-    "lon": 4.9,
-    "place": "Amsterdam",
-    "precision": "country"
+    "lat": 52.1326,
+    "lon": 5.2913,
+    "place": "Netherlands",
+    "precision": "country",
+    "cc": "NL",
+    "anchor_observation_ids": [
+      "hiram-green-studio-typed-1",
+      "hiram-green-formulation-typed-1",
+      "hiram-green-manufacturing-typed-1"
+    ]
   },
   "borom": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "borom-retail-bangkok-typed-1"
+    ]
   },
   "reunrom": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "country"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "reunrom-retail-bangkok-typed-1"
+    ]
   },
   "siam-1928": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "siam-1928-commercial-base-typed-1"
+    ]
   },
   "panpuri": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "panpuri-brand-origin-typed-1",
+      "panpuri-commercial-base-typed-1",
+      "panpuri-legal-base-typed-1",
+      "panpuri-retail-bangkok-typed-1"
+    ]
   },
   "butterfly-thai-perfume": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "butterfly-thai-perfume-retail-typed-1"
+    ]
   },
   "mith-bangkok": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "mith-bangkok-commercial-base-typed-1"
+    ]
   },
   "solure": {
-    "lat": 13.75,
-    "lon": 100.5,
-    "place": "Bangkok",
-    "precision": "country"
+    "lat": 15.87,
+    "lon": 100.9925,
+    "place": "Thailand",
+    "precision": "country",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "solure-retail-thailand-typed-1"
+    ]
   },
   "postes": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "postes-commercial-base-typed-1",
+      "postes-legal-base-typed-1"
+    ]
   },
   "youssoful": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "youssoful-commercial-base-typed-1",
+      "youssoful-legal-base-typed-1"
+    ]
   },
   "royal-water": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "royal-water-commercial-base-typed-1",
+      "royal-water-legal-base-typed-1",
+      "royal-water-retail-typed-1"
+    ]
   },
   "sw19": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "sw19-commercial-base-typed-1",
+      "sw19-legal-base-typed-1",
+      "sw19-retail-seoul-typed-1"
+    ]
   },
   "kinfolk-notes": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "kinfolk-notes-commercial-base-typed-1",
+      "kinfolk-notes-legal-base-typed-1",
+      "kinfolk-notes-retail-seoul-typed-1"
+    ]
   },
   "skybottle": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "country"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "skybottle-commercial-base-typed-1"
+    ]
   },
   "whipped": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "country"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "whipped-commercial-base-typed-1",
+      "whipped-legal-base-typed-1"
+    ]
   },
   "kst-scent": {
-    "lat": 40.71,
-    "lon": -74.01,
-    "place": "New York",
-    "precision": "country"
+    "lat": 34.05223,
+    "lon": -118.24368,
+    "place": "Los Angeles",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "kst-scent-commercial-base-typed-1"
+    ]
   },
   "cosmic-mansion": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "cosmic-mansion-commercial-base-typed-1",
+      "cosmic-mansion-legal-base-typed-1",
+      "cosmic-mansion-retail-seoul-typed-1"
+    ]
   },
   "etlee": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "etlee-commercial-base-typed-1",
+      "etlee-legal-base-typed-1"
+    ]
   },
   "oct-kw": {
-    "lat": 29.38,
-    "lon": 47.98,
-    "place": "Kuwait City",
-    "precision": "city"
+    "lat": 29.31166,
+    "lon": 47.481766,
+    "place": "Kuwait",
+    "precision": "country",
+    "cc": "KW",
+    "anchor_observation_ids": [
+      "oct-kw-retail-kuwait-typed-1"
+    ]
   },
   "milky-mane": {
-    "lat": 52.23,
-    "lon": 21.01,
-    "place": "Warsaw",
-    "precision": "country"
+    "lat": 50.19275,
+    "lon": 20.28909,
+    "place": "Proszowice",
+    "precision": "city",
+    "cc": "PL",
+    "anchor_observation_ids": [
+      "milky-mane-legal-base-typed-1",
+      "milky-mane-commercial-base-typed-1"
+    ]
   },
   "dries-van-noten": {
     "lat": 51.22,
     "lon": 4.4,
     "place": "Antwerp",
-    "precision": "city"
+    "precision": "city",
+    "cc": "BE",
+    "anchor_observation_ids": [
+      "dries-van-noten-commercial-base-typed-1",
+      "dries-van-noten-legal-base-typed-1",
+      "dries-van-noten-retail-antwerp-typed-1"
+    ]
   },
   "kitowa": {
     "lat": 35.68,
     "lon": 139.69,
     "place": "Tokyo",
-    "precision": "city"
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "kitowa-commercial-base-typed-1",
+      "kitowa-legal-base-typed-1"
+    ]
   },
   "isak": {
-    "lat": 28.65,
-    "lon": 77.23,
-    "place": "Delhi",
-    "precision": "country"
+    "lat": 26.83928,
+    "lon": 80.92313,
+    "place": "Lucknow",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "isak-brand-origin-typed-1",
+      "isak-commercial-base-typed-1",
+      "isak-retail-lucknow-typed-1"
+    ]
   },
   "naso-profumi": {
     "lat": 28.65,
     "lon": 77.23,
     "place": "Delhi",
-    "precision": "country"
+    "precision": "region",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "naso-profumi-retail-delhi-typed-1"
+    ]
   },
   "neesh": {
-    "lat": 19.08,
-    "lon": 72.88,
-    "place": "Mumbai",
-    "precision": "country"
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Paris",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "neesh-commercial-base-paris-typed-1"
+    ]
   },
   "the-perfumatory": {
     "lat": 19.08,
     "lon": 72.88,
     "place": "Mumbai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "perfumatory-commercial-base-typed-1"
+    ]
   },
   "saff-and-co": {
     "lat": -6.91,
     "lon": 107.61,
     "place": "Bandung",
-    "precision": "country"
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "saff-co-retail-bandung-typed-1"
+    ]
   },
   "sifr-aromatics": {
     "lat": 1.3,
     "lon": 103.86,
     "place": "Singapore",
-    "precision": "city"
+    "precision": "city",
+    "cc": "SG",
+    "anchor_observation_ids": [
+      "sifr-aromatics-brand-origin-typed-1",
+      "sifr-aromatics-commercial-base-typed-1",
+      "sifr-aromatics-formulation-typed-1",
+      "sifr-aromatics-retail-typed-1",
+      "sifr-aromatics-studio-typed-1"
+    ]
   },
   "afnan": {
-    "lat": 25.2,
-    "lon": 55.27,
-    "place": "Dubai",
-    "precision": "city"
+    "lat": 25.383333,
+    "lon": 55.516667,
+    "place": "Ajman",
+    "precision": "city",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "afnan-commercial-base-typed-1",
+      "afnan-legal-base-typed-1"
+    ]
   },
   "universal-flowering": {
     "lat": 45.5,
     "lon": -73.57,
     "place": "Montreal",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "universal-flowering-legal-base-canada-typed-1"
+    ]
   },
   "monsillage": {
     "lat": 45.5,
     "lon": -73.57,
     "place": "Montreal",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "monsillage-commercial-base-typed-1",
+      "monsillage-retail-montreal-typed-1",
+      "monsillage-studio-typed-1"
+    ]
   },
   "curionoir": {
     "lat": -36.85,
     "lon": 174.76,
     "place": "Auckland",
-    "precision": "city"
+    "precision": "city",
+    "cc": "NZ",
+    "anchor_observation_ids": [
+      "curionoir-commercial-base-typed-1",
+      "curionoir-retail-typed-1"
+    ]
   },
   "the-virtue": {
     "lat": -39.06,
     "lon": 174.08,
     "place": "New Plymouth",
-    "precision": "city"
+    "precision": "city",
+    "cc": "NZ",
+    "anchor_observation_ids": [
+      "the-virtue-commercial-base-typed-1",
+      "the-virtue-manufacturing-typed-1",
+      "the-virtue-retail-typed-1"
+    ]
   },
   "diptyque": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "diptyque-brand-origin-typed-1",
+      "diptyque-commercial-base-typed-1",
+      "diptyque-legal-base-typed-1",
+      "diptyque-retail-paris-typed-1"
+    ]
   },
   "byredo": {
     "lat": 59.33,
     "lon": 18.07,
     "place": "Stockholm",
-    "precision": "city"
+    "precision": "city",
+    "cc": "SE",
+    "anchor_observation_ids": [
+      "byredo-brand-origin-typed-1",
+      "byredo-legal-base-stockholm-typed-1",
+      "byredo-retail-stockholm-typed-1"
+    ]
   },
   "buly-1803": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "buly-1803-brand-origin-typed-1",
+      "buly-1803-commercial-base-typed-1",
+      "buly-1803-legal-base-typed-1",
+      "buly-1803-retail-paris-typed-1"
+    ]
   },
   "goutal": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "goutal-brand-origin-typed-1",
+      "goutal-commercial-base-typed-1",
+      "goutal-legal-base-typed-1",
+      "goutal-retail-paris-typed-1"
+    ]
   },
   "essential-parfums": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "essential-parfums-commercial-base-typed-1",
+      "essential-parfums-legal-base-typed-1"
+    ]
   },
   "matiere-premiere": {
     "lat": 43.66,
     "lon": 6.92,
     "place": "Grasse",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "matiere-premiere-sourcing-grasse-typed-1"
+    ]
   },
   "ormaie": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "ormaie-legal-base-typed-1"
+    ]
   },
   "etat-libre-dorange": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "etat-libre-dorange-commercial-base-typed-1",
+      "etat-libre-dorange-legal-base-typed-1",
+      "etat-libre-dorange-retail-paris-typed-1"
+    ]
   },
   "serge-lutens": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "serge-lutens-retail-paris-typed-1"
+    ]
   },
   "memo-paris": {
     "lat": 48.86,
     "lon": 2.34,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "memo-paris-brand-origin-typed-1",
+      "memo-paris-retail-paris-typed-1"
+    ]
   },
   "maison-crivelli": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "maison-crivelli-brand-origin-typed-1",
+      "maison-crivelli-commercial-base-typed-1",
+      "maison-crivelli-founder-origin-typed-1",
+      "maison-crivelli-legal-base-typed-1",
+      "maison-crivelli-retail-paris-typed-1"
+    ]
   },
   "floral-street": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "floral-street-brand-origin-typed-1"
+    ]
   },
   "ormonde-jayne": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "ormonde-jayne-brand-origin-typed-1",
+      "ormonde-jayne-commercial-base-typed-1",
+      "ormonde-jayne-legal-base-typed-1",
+      "ormonde-jayne-manufacturing-london-typed-1",
+      "ormonde-jayne-retail-london-typed-1",
+      "ormonde-jayne-studio-london-typed-1"
+    ]
   },
   "miller-harris": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "miller-harris-brand-origin-typed-1",
+      "miller-harris-commercial-base-typed-1",
+      "miller-harris-legal-base-brand-typed-1",
+      "miller-harris-legal-base-typed-1",
+      "miller-harris-retail-london-typed-1"
+    ]
   },
   "penhaligons": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "penhaligons-brand-origin-typed-1",
+      "penhaligons-commercial-base-typed-1",
+      "penhaligons-legal-base-typed-1"
+    ]
   },
   "santa-maria-novella": {
     "lat": 43.77,
     "lon": 11.26,
     "place": "Florence",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IT",
+    "anchor_observation_ids": [
+      "santa-maria-novella-brand-origin-typed-1",
+      "santa-maria-novella-commercial-base-typed-1",
+      "santa-maria-novella-manufacturing-typed-1",
+      "santa-maria-novella-retail-florence-typed-1"
+    ]
   },
   "xerjoff": {
     "lat": 45.07,
     "lon": 7.69,
     "place": "Turin",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IT",
+    "anchor_observation_ids": [
+      "xerjoff-brand-origin-typed-1",
+      "xerjoff-retail-turin-typed-1"
+    ]
   },
   "nasomatto": {
     "lat": 52.37,
     "lon": 4.9,
     "place": "Amsterdam",
-    "precision": "city"
+    "precision": "city",
+    "cc": "NL",
+    "anchor_observation_ids": [
+      "nasomatto-commercial-base-typed-1",
+      "nasomatto-legal-base-typed-1"
+    ]
   },
   "vilhelm-parfumerie": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "vilhelm-commercial-base-typed-1",
+      "vilhelm-formulation-typed-1",
+      "vilhelm-legal-base-typed-1",
+      "vilhelm-retail-paris-typed-1",
+      "vilhelm-studio-typed-1"
+    ]
   },
   "mizensir": {
     "lat": 46.2,
     "lon": 6.14,
     "place": "Geneva",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CH",
+    "anchor_observation_ids": [
+      "mizensir-brand-origin-typed-1",
+      "mizensir-commercial-base-typed-1",
+      "mizensir-formulation-typed-1",
+      "mizensir-manufacturing-typed-1",
+      "mizensir-retail-geneva-typed-1",
+      "mizensir-studio-typed-1"
+    ]
   },
   "bdk-parfums": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "bdk-parfums-brand-origin-typed-1",
+      "bdk-parfums-commercial-base-typed-1",
+      "bdk-parfums-founder-origin-typed-1",
+      "bdk-parfums-legal-base-typed-1",
+      "bdk-parfums-retail-paris-typed-1"
+    ]
   },
   "claus-porto": {
     "lat": 41.15,
     "lon": -8.61,
     "place": "Porto",
-    "precision": "city"
+    "precision": "city",
+    "cc": "PT",
+    "anchor_observation_ids": [
+      "claus-porto-brand-origin-typed-1"
+    ]
   },
   "korres": {
     "lat": 37.98,
     "lon": 23.73,
     "place": "Athens",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GR",
+    "anchor_observation_ids": [
+      "korres-brand-origin-typed-1"
+    ]
   },
   "skandinavisk": {
     "lat": 55.68,
     "lon": 12.57,
     "place": "Copenhagen",
-    "precision": "city"
+    "precision": "city",
+    "cc": "DK",
+    "anchor_observation_ids": [
+      "skandinavisk-brand-origin-typed-1"
+    ]
   },
   "janua": {
-    "lat": 13.75,
-    "lon": 100.5,
-    "place": "Bangkok",
-    "precision": "country"
+    "lat": 19.65554,
+    "lon": 99.541,
+    "place": "Mae Suai",
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "janua-legal-base-typed-1"
+    ]
   },
   "loe": {
     "lat": 37.57,
     "lon": 126.98,
     "place": "Seoul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "KR",
+    "anchor_observation_ids": [
+      "loe-brand-origin-typed-1"
+    ]
   },
   "wick-fragrances": {
     "lat": -33.92,
     "lon": 18.42,
     "place": "Cape Town",
-    "precision": "city"
+    "precision": "city",
+    "cc": "ZA",
+    "anchor_observation_ids": [
+      "wick-fragrances-manufacturing-typed-1",
+      "wick-fragrances-studio-typed-1"
+    ]
   },
   "lartisan-parfumeur": {
-    "lat": 48.86,
-    "lon": 2.35,
-    "place": "Paris",
-    "precision": "city"
+    "lat": 46.227638,
+    "lon": 2.213749,
+    "place": "France",
+    "precision": "country",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "lartisan-parfumeur-brand-origin-typed-1"
+    ]
   },
   "frederic-malle": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "frederic-malle-commercial-base-typed-1"
+    ]
   },
   "acqua-di-parma": {
     "lat": 44.8,
     "lon": 10.33,
     "place": "Parma",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IT",
+    "anchor_observation_ids": [
+      "acqua-di-parma-brand-origin-typed-1"
+    ]
   },
   "frau-tonis": {
     "lat": 52.52,
     "lon": 13.4,
     "place": "Berlin",
-    "precision": "city"
+    "precision": "city",
+    "cc": "DE",
+    "anchor_observation_ids": [
+      "frau-tonis-brand-origin-typed-1",
+      "frau-tonis-manufacturing-typed-1"
+    ]
   },
   "ramon-monegal": {
     "lat": 41.39,
     "lon": 2.17,
     "place": "Barcelona",
-    "precision": "city"
+    "precision": "city",
+    "cc": "ES",
+    "anchor_observation_ids": [
+      "ramon-monegal-legal-base-typed-1",
+      "ramon-monegal-studio-typed-1"
+    ]
   },
   "agonist": {
-    "lat": 59.33,
-    "lon": 18.07,
-    "place": "Stockholm",
-    "precision": "city"
+    "lat": 60.128161,
+    "lon": 18.643501,
+    "place": "Sweden",
+    "precision": "country",
+    "cc": "SE",
+    "anchor_observation_ids": [
+      "agonist-brand-origin-typed-1"
+    ]
   },
   "perfumehead": {
     "lat": 34.05,
     "lon": -118.24,
     "place": "Los Angeles",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "perfumehead-studio-typed-1"
+    ]
   },
   "histoires-de-parfums": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "histoires-de-parfums-brand-origin-typed-1"
+    ]
   },
   "michael-malul": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 39.9623,
+    "lon": -83.0007,
+    "place": "Columbus",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "michael-malul-commercial-base-typed-1"
+    ]
   },
   "kayali": {
     "lat": 25.2,
     "lon": 55.27,
     "place": "Dubai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "kayali-legal-base-typed-1"
+    ]
   },
   "sana-jardin": {
-    "lat": 31.63,
-    "lon": -7.99,
-    "place": "Marrakech",
-    "precision": "country"
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "place": "London",
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "sana-jardin-legal-base-typed-1",
+      "sana-jardin-legal-base-typed-2"
+    ]
   },
   "floraiku": {
-    "lat": 48.86,
-    "lon": 2.35,
-    "place": "Paris",
-    "precision": "city"
+    "lat": 46.2018,
+    "lon": 6.1466,
+    "place": "Geneva",
+    "precision": "city",
+    "cc": "CH",
+    "anchor_observation_ids": [
+      "floraiku-legal-base-typed-1"
+    ]
   },
   "ds-and-durga": {
     "lat": 40.71,
     "lon": -74.01,
     "place": "New York",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "ds-and-durga-manufacturing-typed-1"
+    ]
   },
   "arquiste": {
-    "lat": 40.71,
-    "lon": -74.01,
+    "lat": 40.7128,
+    "lon": -74.006,
     "place": "New York",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "arquiste-commercial-base-typed-1"
+    ]
   },
   "henry-rose": {
-    "lat": 34.05,
-    "lon": -118.24,
-    "place": "Los Angeles",
-    "precision": "city"
+    "lat": 36.7783,
+    "lon": -119.4179,
+    "place": "California",
+    "precision": "region",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "henry-rose-commercial-base-california-typed-1"
+    ]
   },
   "maya-njie": {
     "lat": 51.52,
     "lon": -0.08,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "maya-njie-legal-base-typed-1",
+      "maya-njie-studio-typed-1"
+    ]
   },
   "27-87": {
     "lat": 41.39,
     "lon": 2.17,
     "place": "Barcelona",
-    "precision": "city"
+    "precision": "city",
+    "cc": "ES",
+    "anchor_observation_ids": [
+      "27-87-manufacturing-typed-1"
+    ]
   },
   "rogue-perfumery": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 43.4897873,
+    "lon": -112.0359046,
+    "place": "Idaho Falls",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "rogue-commercial-base-idaho-falls-typed-1"
+    ]
   },
   "sultan-pasha": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "country"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "sultan-pasha-commercial-base-typed-1"
+    ]
   },
   "libertine": {
-    "lat": 49.28,
-    "lon": -123.12,
-    "place": "Vancouver",
-    "precision": "city"
+    "lat": 56.130366,
+    "lon": -106.346771,
+    "place": "Canada",
+    "precision": "country",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "libertine-brand-origin-typed-1"
+    ]
   },
   "liquides-imaginaires": {
     "lat": 48.86,
     "lon": 2.35,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "liquides-imaginaires-legal-base-typed-1"
+    ]
   },
   "ellis-brooklyn": {
-    "lat": 40.71,
-    "lon": -74.01,
-    "place": "New York",
-    "precision": "city"
+    "lat": 41.05343,
+    "lon": -73.53873,
+    "place": "Stamford",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "ellis-brooklyn-commercial-base-stamford-typed-1"
+    ]
   },
   "dusita": {
-    "lat": 48.86,
-    "lon": 2.35,
+    "lat": 48.86606,
+    "lon": 2.3323,
     "place": "Paris",
-    "precision": "city"
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "dusita-commercial-base-typed-1"
+    ]
   },
   "zielinski-rozen": {
     "lat": 32.05,
     "lon": 34.75,
     "place": "Tel Aviv",
-    "precision": "city"
+    "precision": "region",
+    "cc": "IL",
+    "anchor_observation_ids": [
+      "zielinski-rozen-brand-origin-typed-1"
+    ]
   },
   "areej-le-dore": {
-    "lat": 55.76,
-    "lon": 37.62,
-    "place": "Moscow",
-    "precision": "country"
+    "lat": 55.378051,
+    "lon": -3.435973,
+    "place": "United Kingdom",
+    "precision": "country",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "areej-le-dore-brand-origin-founder-typed-2"
+    ]
   },
   "bortnikoff": {
-    "lat": 55.76,
-    "lon": 37.62,
-    "place": "Moscow",
-    "precision": "country"
+    "lat": 13.7525,
+    "lon": 100.4935,
+    "place": "Bangkok",
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "bortnikoff-commercial-base-typed-1"
+    ]
   },
   "ensar-oud": {
-    "lat": 11.56,
-    "lon": 104.92,
-    "place": "Phnom Penh",
-    "precision": "country"
+    "lat": 40.70149,
+    "lon": -73.8868,
+    "place": "Glendale",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "ensar-oud-legal-base-typed-1"
+    ]
   },
   "pekji": {
     "lat": 41.01,
     "lon": 28.98,
     "place": "Istanbul",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TR",
+    "anchor_observation_ids": [
+      "pekji-founder-origin-typed-1"
+    ]
   },
   "aftelier": {
     "lat": 37.87,
     "lon": -122.27,
     "place": "Berkeley",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "aftelier-manufacturing-typed-1",
+      "aftelier-studio-typed-1"
+    ]
   },
   "strangers-parfumerie": {
     "lat": 13.75,
     "lon": 100.5,
     "place": "Bangkok",
-    "precision": "city"
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "strangers-parfumerie-studio-typed-1"
+    ]
   },
   "phlur": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 34.09001,
+    "lon": -118.36174,
+    "place": "West Hollywood",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "phlur-commercial-base-typed-1"
+    ]
   },
   "bath-body-works": {
     "lat": 39.96,
     "lon": -82.99,
     "place": "Columbus",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "bath-body-works-commercial-base-typed-1"
+    ]
   },
   "cyklar": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 38.9896,
+    "lon": -75.505,
+    "place": "Delaware",
+    "precision": "region",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "cyklar-legal-base-delaware-typed-1"
+    ]
   },
   "cloon-keen": {
     "lat": 53.272,
     "lon": -9.052,
     "place": "Galway",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IE",
+    "anchor_observation_ids": [
+      "cloon-keen-manufacturing-typed-1"
+    ]
   },
   "burren-perfumery": {
-    "lat": 53.035,
-    "lon": -9.068,
-    "place": "Carron, County Clare",
-    "precision": "city"
+    "lat": 53.043472,
+    "lon": -9.045806,
+    "place": "The Burren, County Clare",
+    "precision": "region",
+    "cc": "IE",
+    "anchor_observation_ids": [
+      "burren-perfumery-manufacturing-site-typed-2"
+    ]
   },
   "stories-parfums": {
     "lat": 54.33,
     "lon": -5.95,
     "place": "County Down",
-    "precision": "country"
+    "precision": "region",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "stories-parfums-legal-base-typed-1"
+    ]
   },
   "inis": {
-    "lat": 53.35,
-    "lon": -7.7,
-    "place": "Ireland",
-    "precision": "country"
+    "lat": 53.1696005,
+    "lon": -6.1393311,
+    "place": "Kilmacanogue",
+    "precision": "city",
+    "cc": "IE",
+    "anchor_observation_ids": [
+      "inis-legal-base-typed-1"
+    ]
   },
   "meleg-perfumes": {
-    "lat": 45.5,
-    "lon": -75.5,
-    "place": "Canada",
-    "precision": "country"
+    "lat": 51.0458333,
+    "lon": -114.0574999,
+    "place": "Calgary",
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "meleg-commercial-base-calgary-typed-1"
+    ]
   },
   "lvnea": {
     "lat": 45.508,
     "lon": -73.587,
     "place": "Montreal",
-    "precision": "city"
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "lvnea-studio-typed-1"
+    ]
   },
   "le-falcone": {
     "lat": 25.2,
     "lon": 55.27,
     "place": "Dubai",
-    "precision": "city"
+    "precision": "city",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "le-falcone-manufacturing-typed-1"
+    ]
   },
   "waters-and-wild": {
     "lat": 51.565,
     "lon": -9.12,
     "place": "Glandore, West Cork",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IE",
+    "anchor_observation_ids": [
+      "waters-and-wild-studio-typed-1"
+    ]
   },
   "cozy-khamreya": {
-    "lat": 31.25,
-    "lon": 32.32,
-    "place": "Port Fouad, Port Said",
-    "precision": "city"
+    "lat": 26.8206,
+    "lon": 30.8025,
+    "place": "Egypt",
+    "precision": "country",
+    "cc": "EG"
   },
   "asateer": {
-    "lat": 29.37,
-    "lon": 47.98,
-    "place": "Kuwait City",
-    "precision": "country"
+    "lat": 29.31166,
+    "lon": 47.481766,
+    "place": "Kuwait",
+    "precision": "country",
+    "cc": "KW",
+    "anchor_observation_ids": [
+      "asateer-legal-base-typed-1"
+    ]
   },
   "libroaria": {
-    "lat": 35.68,
-    "lon": 139.69,
-    "place": "Japan",
-    "precision": "country"
+    "lat": 35.6823,
+    "lon": 139.7532,
+    "place": "Tokyo",
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "libroaria-commercial-base-tokyo-typed-1"
+    ]
   },
   "stardust-stems": {
     "lat": 39.8,
     "lon": -98.6,
     "place": "United States",
-    "precision": "country"
+    "precision": "country",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "stardust-stems-studio-typed-1"
+    ]
   },
   "lepoque": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 32.7763,
+    "lon": -96.7969,
+    "place": "Dallas",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "lepoque-brand-origin-typed-1"
+    ]
   },
   "regime-des-fleurs": {
-    "lat": 34.05,
-    "lon": -118.24,
-    "place": "Los Angeles",
-    "precision": "city"
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "regime-des-fleurs-retail-new-york-typed-1"
+    ]
   },
   "sarah-baker": {
     "lat": 51.51,
     "lon": -0.13,
     "place": "London",
-    "precision": "city"
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "sarah-baker-studio-typed-1"
+    ]
   },
   "chujian": {
-    "lat": 35.0,
-    "lon": 105.0,
+    "lat": 35.8617,
+    "lon": 104.1954,
     "place": "China",
-    "precision": "country"
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "chujian-brand-origin-china-typed-1"
+    ]
   },
   "the-body-tale": {
-    "lat": -6.2,
-    "lon": 106.82,
-    "place": "Indonesia",
-    "precision": "country"
+    "lat": -6.2375,
+    "lon": 106.69556,
+    "place": "Ciputat",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "body-tale-commercial-base-ciputat-typed-1"
+    ]
   },
   "kitschy": {
-    "lat": -6.2,
-    "lon": 106.82,
-    "place": "Indonesia",
-    "precision": "country"
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "place": "Jakarta",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "kitschy-commercial-base-jakarta-typed-1"
+    ]
   },
   "gerimist": {
     "lat": -6.2,
@@ -900,76 +1602,124 @@
     "precision": "country"
   },
   "aroma-concepts": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 28.5421,
+    "lon": -81.379,
+    "place": "Orlando",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "aroma-concepts-commercial-base-orlando-typed-1"
+    ]
   },
   "celia-loves": {
     "lat": -38.33,
     "lon": 144.32,
     "place": "Surf Coast, Victoria",
-    "precision": "city"
+    "precision": "region",
+    "cc": "AU",
+    "anchor_observation_ids": [
+      "celia-loves-manufacturing-surf-coast-typed-1"
+    ]
   },
   "belnu": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 34.05223,
+    "lon": -118.24368,
+    "place": "Los Angeles",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "belnu-commercial-base-typed-1"
+    ]
   },
   "liberation-of-flowers": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 35.994,
+    "lon": -78.8986,
+    "place": "Durham",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "liberation-of-flowers-legal-base-durham-typed-1"
+    ]
   },
   "commodity": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "commodity-retail-typed-1"
+    ]
   },
   "paragraf-parfums": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": -0.7893,
+    "lon": 113.9213,
+    "place": "Indonesia",
+    "precision": "country",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "paragraf-parfums-brand-origin-indonesia-typed-1"
+    ]
   },
   "etre-parfums": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "etre-parfums-formulation-typed-1"
+    ]
   },
   "otter-haus": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "country"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "otter-haus-brand-origin-ph-typed-1"
+    ]
   },
   "inde-wild": {
-    "lat": 19.08,
-    "lon": 72.88,
-    "place": "Mumbai",
-    "precision": "country"
+    "lat": 28.6566562885,
+    "lon": 77.1323165071,
+    "place": "New Delhi",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "inde-wild-legal-base-new-delhi-typed-1"
+    ]
   },
   "fugazzi": {
     "lat": 52.37,
     "lon": 4.9,
     "place": "Amsterdam",
-    "precision": "city"
+    "precision": "city",
+    "cc": "NL",
+    "anchor_observation_ids": [
+      "fugazzi-brand-origin-typed-1"
+    ]
   },
   "dedcool": {
     "lat": 34.05,
     "lon": -118.24,
     "place": "Los Angeles",
-    "precision": "city"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "dedcool-commercial-base-typed-1"
+    ]
   },
   "forward-perfume": {
-    "lat": 21.03,
-    "lon": 105.85,
-    "place": "Hanoi",
-    "precision": "country"
+    "lat": 10.82302,
+    "lon": 106.62965,
+    "place": "Ho Chi Minh City",
+    "precision": "city",
+    "cc": "VN",
+    "anchor_observation_ids": [
+      "forward-perfume-commercial-base-typed-1"
+    ]
   },
   "eau-so-dramatic": {
     "lat": 28.61,
@@ -981,90 +1731,152 @@
     "lat": 26.985,
     "lon": 75.851,
     "place": "Jaipur (Amer Fort)",
-    "precision": "city"
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "rooh-amer-retail-typed-1"
+    ]
   },
   "fraganote": {
-    "lat": 28.61,
-    "lon": 77.21,
-    "place": "India",
-    "precision": "country"
+    "lat": 28.6139,
+    "lon": 77.209,
+    "place": "New Delhi",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "fraganote-commercial-base-typed-1"
+    ]
   },
   "gabar": {
-    "lat": 40.72,
-    "lon": -73.99,
-    "place": "New York",
-    "precision": "city"
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "place": "London",
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "gabar-commercial-base-typed-1",
+      "gabar-legal-base-typed-1"
+    ]
   },
   "amouroud": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "amouroud-commercial-base-new-york-typed-1"
+    ]
   },
   "aurra-london": {
-    "lat": 51.51,
-    "lon": -0.13,
-    "place": "London",
-    "precision": "city"
+    "lat": 27.0536,
+    "lon": 79.9202,
+    "place": "Kannauj",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "aurra-london-manufacturing-typed-1"
+    ]
   },
   "latelier-parfum": {
-    "lat": 46.6,
-    "lon": 2.4,
-    "place": "France",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "latelier-parfum-manufacturing-typed-1"
+    ]
   },
   "maison-mataha": {
     "lat": 46.6,
     "lon": 2.4,
     "place": "France",
-    "precision": "country"
+    "precision": "country",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "maison-mataha-formulation-fr-typed-1",
+      "maison-mataha-manufacturing-fr-typed-1"
+    ]
   },
   "lydeen": {
-    "lat": 59.33,
-    "lon": 18.07,
-    "place": "Sweden",
-    "precision": "country"
+    "lat": 57.6,
+    "lon": 11.79917,
+    "place": "Donsö",
+    "precision": "city",
+    "cc": "SE",
+    "anchor_observation_ids": [
+      "lydeen-legal-base-typed-1"
+    ]
   },
   "muse-beauty": {
-    "lat": 28.61,
-    "lon": 77.21,
-    "place": "India",
-    "precision": "country"
+    "lat": 19.0728,
+    "lon": 72.8845,
+    "place": "Mumbai",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "muse-beauty-commercial-base-mumbai-typed-1"
+    ]
   },
   "lova": {
     "lat": 25.2,
     "lon": 55.27,
     "place": "UAE",
-    "precision": "country"
+    "precision": "country",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "lova-commercial-base-typed-1"
+    ]
   },
   "oaken-lab": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": -8.5069,
+    "lon": 115.2623,
+    "place": "Ubud",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "oaken-lab-retail-typed-1"
+    ]
   },
   "son-venin": {
     "lat": 59.91,
     "lon": 10.75,
     "place": "Oslo",
-    "precision": "country"
+    "precision": "city",
+    "cc": "NO",
+    "anchor_observation_ids": [
+      "son-venin-legal-base-typed-1"
+    ]
   },
   "zhiwuzhi": {
-    "lat": 35.0,
-    "lon": 105.0,
+    "lat": 35,
+    "lon": 105,
     "place": "China",
-    "precision": "country"
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "zhiwuzhi-brand-origin-typed-1"
+    ]
   },
   "zhufu": {
-    "lat": 35.0,
-    "lon": 105.0,
+    "lat": 35,
+    "lon": 105,
     "place": "China",
-    "precision": "country"
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "zhufu-brand-origin-typed-1"
+    ]
   },
   "nostos": {
     "lat": 40.71,
     "lon": -74.01,
     "place": "New York (perfumer)",
-    "precision": "country"
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "nostos-commercial-base-typed-1"
+    ]
   }
 }

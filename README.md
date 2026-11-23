@@ -18,7 +18,9 @@ checks/scent-links.json   weekly pass / blocked / fail for every perfume house l
 checks/scent-prices.json  weekly live prices read from shops that expose product data
 schemas/myth.md       the myth and recipe record formats
 version.json    data version + per-dataset count, size, hash and last-changed date
-scripts/build.mjs             validator + version builder
+scripts/build.mjs             validator + version builder (including typed Scent Atlas geography)
+scripts/scents-geography.mjs geography observation schema and validator
+scripts/build-scent-atlas.mjs reproducible self-contained snapshot builder (npm run build:scent-atlas; CI verifies with npm run check:scent-atlas)
 scripts/bridge-hub.mjs        pulls the Skincare Data Hub into index/ and data/safe-batch/ingredient_facts.json
 scripts/check-scents.mjs      weekly scent atlas check: rates, links, live prices
 scripts/check-verdicts.mjs    re-runs every recipe through apps/safe-batch.html and compares to checks/verdicts.json
@@ -88,7 +90,7 @@ What the apps merge today:
 Deleting an item here doesn't remove it from the apps' built-in copy until the app files are next republished.
 
 ## Scent Atlas (data/scents)
-A curated guide to perfume houses outside the usual Western names, Asia first. Each house in `houses.json` has its country and city, kind (niche, indie, attar, incense, affordable, inspired-by), scent families that match Clay's (`citrus, fruity, floral, green, gourmand, woody, amber, musk, aquatic, spicy`) plus free-form accents (tea, oud, incense...), one signature scent with top/heart/base notes and a plain-English profile, optional extra scents (`also`), and a price with its status:
+A curated guide to perfume houses outside the usual Western names, Asia first. Each house in `houses.json` retains legacy country/city display fields, kind (niche, indie, attar, incense, affordable, inspired-by), scent families that match Clay's (`citrus, fruity, floral, green, gourmand, woody, amber, musk, aquatic, spicy`) plus free-form accents (tea, oud, incense...), one signature scent with top/heart/base notes and a plain-English profile, optional extra scents (`also`), and a price with its status:
 
 | status | meaning |
 |---|---|
@@ -97,7 +99,7 @@ A curated guide to perfume houses outside the usual Western names, Asia first. E
 | reported | taken from an article |
 | unknown | not published or not yet read |
 
-All descriptions are written in our own words. Every Monday the scent check refreshes `rates.json`, tests every link and reads live shop prices into `checks/`. It never edits `houses.json`: a price marked `changed` in `checks/scent-prices.json` is a to-do to review by hand. Houses found but not yet verified live in `leads.json`.
+Geographic claims are recorded as typed, dated observations in `observations.json` (one relationship and one place per source claim); see [the geography schema and migration plan](docs/scent-geography.md). The legacy `houses.json` country/city fields remain compatibility fallbacks and must not be treated as verified origin, legal base or production locations. `geo.json` is still one map anchor per house; its `precision` means spatial granularity only, not evidence confidence or site role. All descriptions are written in our own words. Every Monday the scent check refreshes `rates.json`, tests every link and reads live shop prices into `checks/`. It never edits `houses.json`: a price marked `changed` in `checks/scent-prices.json` is a to-do to review by hand. Houses found but not yet verified live in `leads.json`.
 
 **Linked to Clay** (scent builder): `twins.json` is added to Clay's "Smell-alikes, by notes" list (marked as a creator's pick); `houses.json` drives a "Discover a new scent house" card picked for the season and the families in the person's own scent wardrobe, with CAD estimates from `rates.json`; `traditions.json` shows one "Scent ritual of the day" on the side rail. When publishing Clay, publish these four files next to it.
 
