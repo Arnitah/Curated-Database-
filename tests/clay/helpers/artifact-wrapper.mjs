@@ -1,8 +1,8 @@
 // MODEL of the page-wrapper step the Artifact tool applies when it publishes a page file. The real step runs inside the
 // publishing service and is not in this repository, so this is a reconstruction from observed behaviour, calibrated in
-// tests/clay/artifact-wrapper.test.mjs against two real publish events (see that file). It is not the platform's code.
+// tests/clay/artifact-wrapper.test.mjs against ONE explicitly demonstrated publish event (see that file). It is not the platform's code.
 //
-// Observed contract (artifact-design / artifact-capabilities guidance and the two publish events):
+// Observed contract (artifact-design / artifact-capabilities guidance and that one publish event):
 //  * a published page is served inside the tool's own skeleton: doctype, charset + viewport metas and ONE <style> holding a
 //    small fixed reset, then the page content, then </body></html>;
 //  * if the file already begins with that skeleton, the tool recognises it and REPLACES it rather than nesting it;
