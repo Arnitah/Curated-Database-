@@ -674,3 +674,35 @@ Role and uncertainty notes:
 - Meleg's Calgary point is a contact/business location, not a verified manufacturing site or registered office.
 
 Updated map counts: 178 points — 140 city, 5 region, 33 country precision; 152 anchored and 26 unverified. The remaining unverified set is 3 city and 23 country points.
+
+
+### Country-level audit — batch 3 (12 houses) · 23 November 2026
+
+Twelve further country-level pins are now evidence-anchored. Eight remain country-level because no defensible city relationship is available; four have a typed city relationship and are promoted to city precision.
+
+| House | Corrected anchor | Selected role(s) |
+|---|---|---|
+| Uttori | China | Brand origin |
+| ICHUN | Taiwan | Retail |
+| GP Fragrances | Philippines | Brand origin |
+| Lattafa | United Arab Emirates | Brand origin; manufacturing |
+| Hiram Green | Netherlands | Studio; formulation; manufacturing |
+| Solure | Thailand | Retail (online presence) |
+| Asateer | Kuwait | Legal base |
+| Otter Haus | Philippines | Brand origin |
+| Sana Jardin | London, UK | Legal base |
+| Indē Wild | New Delhi, India | Legal base |
+| Forward Perfume | Ho Chi Minh City, Vietnam | Commercial base |
+| Oaken Lab | Ubud, Indonesia | Retail |
+
+The country-level points use geographic-centre coordinates rather than a capital or unsupported city: [China](https://www.geodatos.net/en/coordinates/china), [Taiwan](https://www.geodatos.net/en/coordinates/taiwan), [Philippines](https://www.geodatos.net/en/coordinates/philippines), [United Arab Emirates](https://www.geodatos.net/en/coordinates/united-arab-emirates), [Netherlands](https://www.geodatos.net/en/coordinates/netherlands), [Thailand](https://www.geodatos.net/en/coordinates/thailand), [Kuwait](https://www.geodatos.net/en/coordinates/kuwait). City coordinates: [New Delhi — UNGEGN](https://ungegn.un.org/dashboard/cities/details?id=100), [Ho Chi Minh City — GeoNames](https://www.geonames.org/1566083), [Ubud — Mapcarta](https://mapcarta.com/Ubud), [London — GeoNames](https://www.geonames.org/2643743/london.html).
+
+Important distinctions:
+- Sana Jardin is no longer accepting orders, but SANA JARDIN LIMITED (09507539) remains active at 71–75 Shelton Street, Covent Garden, London, with a 2026 confirmation statement. The map pin is legal base only, not an assertion of current trading activity. [Companies House](https://find-and-update.company-information.service.gov.uk/company/09507539) · [Brand contact page](https://sanajardin.com/policies/contact-information).
+- Hiram Green's studio, formulation and manufacturing evidence is Netherlands-level; Amsterdam is not asserted as the exact site.
+- Solure's Thailand evidence is online retail presence, not a physical store.
+- Indē Wild's legal base is New Delhi; its founder and US distribution relationships remain separate.
+- Oaken Lab's Ubud point is retail, not manufacturing.
+- Areej Le Doré and Ensar Oud remain unresolved for distinct evidence/entity conflicts; neither has been assigned a guessed anchor.
+
+Updated map counts: 178 points — 144 city, 5 region, 29 country precision; 167 anchored and 11 unverified. The remaining unverified set is 3 city and 8 country points.

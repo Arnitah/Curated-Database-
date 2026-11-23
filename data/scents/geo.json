@@ -121,16 +121,24 @@
     ]
   },
   "uttori": {
-    "lat": 30.27,
-    "lon": 120.15,
-    "place": "Hangzhou",
-    "precision": "country"
+    "lat": 35.8617,
+    "lon": 104.1954,
+    "place": "China",
+    "precision": "country",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "uttori-brand-origin-typed-1"
+    ]
   },
   "ichun": {
-    "lat": 25.03,
-    "lon": 121.56,
-    "place": "Taipei",
-    "precision": "country"
+    "lat": 23.6978,
+    "lon": 120.9605,
+    "place": "Taiwan",
+    "precision": "country",
+    "cc": "TW",
+    "anchor_observation_ids": [
+      "ichun-retail-taiwan-typed-1"
+    ]
   },
   "bombay-perfumery": {
     "lat": 19.08,
@@ -206,10 +214,14 @@
     ]
   },
   "gp-fragrances": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "country"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "gp-fragrances-brand-origin-typed-1"
+    ]
   },
   "toouch": {
     "lat": 10.82,
@@ -265,10 +277,15 @@
     ]
   },
   "lattafa": {
-    "lat": 25.4,
-    "lon": 55.51,
-    "place": "Ajman",
-    "precision": "country"
+    "lat": 23.4241,
+    "lon": 53.8478,
+    "place": "United Arab Emirates",
+    "precision": "country",
+    "cc": "AE",
+    "anchor_observation_ids": [
+      "lattafa-brand-origin-typed-1",
+      "lattafa-manufacturing-typed-1"
+    ]
   },
   "nishane": {
     "lat": 41.01,
@@ -385,10 +402,16 @@
     ]
   },
   "hiram-green": {
-    "lat": 52.37,
-    "lon": 4.9,
-    "place": "Amsterdam",
-    "precision": "country"
+    "lat": 52.1326,
+    "lon": 5.2913,
+    "place": "Netherlands",
+    "precision": "country",
+    "cc": "NL",
+    "anchor_observation_ids": [
+      "hiram-green-studio-typed-1",
+      "hiram-green-formulation-typed-1",
+      "hiram-green-manufacturing-typed-1"
+    ]
   },
   "borom": {
     "lat": 13.75,
@@ -454,10 +477,14 @@
     ]
   },
   "solure": {
-    "lat": 13.75,
-    "lon": 100.5,
-    "place": "Bangkok",
-    "precision": "country"
+    "lat": 15.87,
+    "lon": 100.9925,
+    "place": "Thailand",
+    "precision": "country",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "solure-retail-thailand-typed-1"
+    ]
   },
   "postes": {
     "lat": 37.57,
@@ -1159,10 +1186,15 @@
     ]
   },
   "sana-jardin": {
-    "lat": 31.63,
-    "lon": -7.99,
-    "place": "Marrakech",
-    "precision": "country"
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "place": "London",
+    "precision": "city",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "sana-jardin-legal-base-typed-1",
+      "sana-jardin-legal-base-typed-2"
+    ]
   },
   "floraiku": {
     "lat": 46.2018,
@@ -1453,10 +1485,14 @@
     "precision": "city"
   },
   "asateer": {
-    "lat": 29.37,
-    "lon": 47.98,
-    "place": "Kuwait City",
-    "precision": "country"
+    "lat": 29.31166,
+    "lon": 47.481766,
+    "place": "Kuwait",
+    "precision": "country",
+    "cc": "KW",
+    "anchor_observation_ids": [
+      "asateer-legal-base-typed-1"
+    ]
   },
   "libroaria": {
     "lat": 35.6823,
@@ -1599,16 +1635,24 @@
     ]
   },
   "otter-haus": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "country"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "otter-haus-brand-origin-ph-typed-1"
+    ]
   },
   "inde-wild": {
-    "lat": 19.08,
-    "lon": 72.88,
-    "place": "Mumbai",
-    "precision": "country"
+    "lat": 28.6566562885,
+    "lon": 77.1323165071,
+    "place": "New Delhi",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "inde-wild-legal-base-new-delhi-typed-1"
+    ]
   },
   "fugazzi": {
     "lat": 52.37,
@@ -1631,10 +1675,14 @@
     ]
   },
   "forward-perfume": {
-    "lat": 21.03,
-    "lon": 105.85,
-    "place": "Hanoi",
-    "precision": "country"
+    "lat": 10.82302,
+    "lon": 106.62965,
+    "place": "Ho Chi Minh City",
+    "precision": "city",
+    "cc": "VN",
+    "anchor_observation_ids": [
+      "forward-perfume-commercial-base-typed-1"
+    ]
   },
   "eau-so-dramatic": {
     "lat": 28.61,
@@ -1737,10 +1785,14 @@
     ]
   },
   "oaken-lab": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": -8.5069,
+    "lon": 115.2623,
+    "place": "Ubud",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "oaken-lab-retail-typed-1"
+    ]
   },
   "son-venin": {
     "lat": 59.91,
