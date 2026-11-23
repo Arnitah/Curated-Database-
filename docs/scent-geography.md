@@ -63,6 +63,24 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - The 3 lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
 - Counts were recomputed directly from `observations.json`, `houses.json` and `leads.json` at the stated commit.
 
+## Open review holds (first-pass register, 2026-11-23)
+
+These are intentionally not bulk-corrected. They remain separate research and compatibility gates.
+
+### Houses without typed geography claims
+
+The current 22 records are: Scentury Perfume & Co. (`scentury`), Henry Rose (`henry-rose`), Rogue Perfumery (`rogue-perfumery`), CYKLAR (`cyklar`), Meleg Perfumes (`meleg-perfumes`), Cozy (Khamreya) (`cozy-khamreya`), Libroaria (`libroaria`), Régime des Fleurs (`regime-des-fleurs`), Chujian (`chujian`), The Body Tale (`the-body-tale`), Kitschy (`kitschy`), Aroma Concepts (`aroma-concepts`), Celia Loves (`celia-loves`), Gerimist (`gerimist`), Liberation of Flowers (`liberation-of-flowers`), Paragraf Parfums (`paragraf-parfums`), Otter Haus (`otter-haus`), Indē Wild (`inde-wild`), Eau So Dramatic (`eau-so-dramatic`), Amouroud (`amouroud`), Maison Mataha (`maison-mataha`) and Muse Beauty (`muse-beauty`). Their legacy `houses.json` city/country display fields are not evidence of a typed relationship. Maison Mataha also remains held pending identification of its current legal operator.
+
+### Legacy geography claims awaiting individual source review
+
+The 11 unchanged legacy claims are grouped as follows: Saint d'Ici (3 `hq` claims), Maya Njie (2 `hq` claims), Beguile (1 `hq` and 1 `made_in` claim), Amouage (1 `made_in` claim), Scent of Africa (1 `made_in` claim), Mezel (1 `hq` claim) and Naisday (1 `hq` claim). Keep each original source and text; reclassify only after deciding which typed relationship the source actually supports.
+
+### Map precision and anchor audit
+
+The first pass identified 39 map records whose `precision` is `country` while the place label and coordinates are city-level: `j-scent`, `pesade`, `to-summer`, `uttori`, `ichun`, `tadhana`, `gp-fragrances`, `toouch`, `maison-bagian`, `lattafa`, `scentury`, `beguile`, `goldfield-banks`, `hiram-green`, `reunrom`, `solure`, `skybottle`, `whipped`, `kst-scent`, `milky-mane`, `isak`, `naso-profumi`, `neesh`, `saff-and-co`, `janua`, `sana-jardin`, `sultan-pasha`, `areej-le-dore`, `bortnikoff`, `ensar-oud`, `asateer`, `paragraf-parfums`, `etre-parfums`, `otter-haus`, `inde-wild`, `forward-perfume`, `oaken-lab`, `son-venin` and `nostos`. A further first-pass concern is country-named place labels whose coordinates appear city-centred (Canada/Ottawa, India/New Delhi, Indonesia/Jakarta, Sweden/Stockholm and UAE/Dubai). These are flags for source and coordinate verification, not permission to relabel or move points. No `geo.json` coordinates or precision values were changed.
+
+The complete map audit must check all 178 anchors against their source, intended role and actual coordinate granularity. Do not equate a typed geography observation with the existing single map anchor: the map currently supports only one anchor per house and cannot yet distinguish legal, retail, studio or manufacturing locations.
+
 ## UI and map behaviour
 
 - House cards prefer a sourced `brand_origin` fact when one exists.
