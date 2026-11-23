@@ -1227,10 +1227,14 @@
     ]
   },
   "henry-rose": {
-    "lat": 34.05,
-    "lon": -118.24,
-    "place": "Los Angeles",
-    "precision": "city"
+    "lat": 36.7783,
+    "lon": -119.4179,
+    "place": "California",
+    "precision": "region",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "henry-rose-commercial-base-california-typed-1"
+    ]
   },
   "maya-njie": {
     "lat": 51.52,
@@ -1643,10 +1647,14 @@
     ]
   },
   "paragraf-parfums": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": -0.7893,
+    "lon": 113.9213,
+    "place": "Indonesia",
+    "precision": "country",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "paragraf-parfums-brand-origin-indonesia-typed-1"
+    ]
   },
   "etre-parfums": {
     "lat": 43.65806,

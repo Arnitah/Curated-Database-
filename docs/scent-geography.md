@@ -740,3 +740,13 @@ Updated map counts: 178 points — 147 city, 6 region, 25 country precision; 169
 - **ChuJian — China, brand origin (country-level).** An independent perfumery retailer explicitly describes the house as founded in China; the official about page corroborates its Chinese botanical and cultural focus. No city is inferred. [Passion Parfum](https://passion-parfum.com/en/collections/chujian) · [Official brand story](https://www.chujianparfums.com/pages/about-us).
 
 Updated map counts: 178 points — 149 city, 6 region, 23 country precision; 172 anchored and 6 unverified. The remaining unverified set is 3 city and 3 country points. Typed geography now covers 173 of 178 houses; five houses still have no typed geography.
+
+
+### Two further primary-source resolutions — 23 November 2026
+
+- **Henry Rose — California, USA, commercial base (region-level).** Its official terms identify Henry Rose LLC as the website owner/operator and state that the site is controlled, operated and administered from company offices in California. The Los Angeles address in the terms is used for legal notices; it is not promoted to a city HQ or studio claim. [Official terms](https://henryrose.com/pages/terms-of-service).
+- **Paragraf Parfums — Indonesia, brand origin (country-level).** Its official homepage describes it as an Indonesian perfume house and states that orders ship from Indonesia. No city, headquarters or manufacturing site is inferred. [Official homepage](https://paragrafparfums.com/).
+
+Coordinate references: [California geographic centre](https://www.geodatos.net/en/coordinates/united-states/california), [Indonesia geographic centre](https://www.coordmap.com/countries/indonesia).
+
+Updated map counts: 178 points — 148 city, 7 region, 23 country precision; 174 anchored and 4 unverified (2 city, 2 country). Typed geography now covers 175 of 178 houses; three houses remain without typed geography: Cozy (Khamreya), Gerimist and Eau So Dramatic.

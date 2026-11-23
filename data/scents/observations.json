@@ -10212,6 +10212,39 @@
         "cc": "CN"
       },
       "open": "Country-level only. No city, registered entity or operational headquarters is established by the available sources."
+    },
+    {
+      "id": "henry-rose-commercial-base-california-typed-1",
+      "house": "henry-rose",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Henry Rose's official terms identify Henry Rose LLC as the owner and operator of its website and state that the site is controlled, operated and administered from the company's offices in California, United States.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://henryrose.com/pages/terms-of-service",
+      "seen": "2026-11-23",
+      "location": {
+        "region": "California",
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "The source supports California-level operations only. The Los Angeles address used for legal notices is not treated as proof of a Los Angeles headquarters or studio."
+    },
+    {
+      "id": "paragraf-parfums-brand-origin-indonesia-typed-1",
+      "house": "paragraf-parfums",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Paragraf Parfums' official homepage describes the house as 'An Indonesian perfume house' and states that orders ship from Indonesia with DHL.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://paragrafparfums.com/",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "Indonesia",
+        "cc": "ID"
+      },
+      "open": "Country-level brand-origin statement only; no city, headquarters or manufacturing site is inferred."
     }
   ]
 }
