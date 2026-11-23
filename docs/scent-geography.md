@@ -642,3 +642,35 @@ Role-selection notes:
 - Inis uses the registered office of Fragrances of Ireland Limited; Inis is the company's signature collection, not a separate legal entity.
 
 Updated map counts: 178 points — 128 city, 5 region, 45 country precision; 140 anchored and 38 unverified. The unverified set is now 3 city and 35 country points. No region-level unverified point remains.
+
+
+### Country-level audit — batch 2 (12 houses) · 23 November 2026
+
+Twelve further country-level pins have been promoted to city anchors. The chosen map role is the strongest useful relationship for one pin per house; other relationships remain separately recorded.
+
+| House | Corrected anchor | Selected role |
+|---|---|---|
+| Meleg Perfumes | Calgary, Alberta, Canada | Commercial base |
+| Libroaria | Tokyo, Japan | Commercial base |
+| L'Epoque Parfums | Dallas, Texas, USA | Brand origin |
+| The Body Tale | Ciputat, South Tangerang, Indonesia | Commercial base |
+| Aroma Concepts | Orlando, Florida, USA | Commercial base |
+| BELNU | Los Angeles, California, USA | Commercial base |
+| Commodity | New York, USA | Retail |
+| Être Parfums | Grasse, France | Formulation |
+| Fraganote | New Delhi, India | Commercial base |
+| L'Atelier Parfum | Grasse, France | Manufacturing |
+| Lydeen Parfums | Donsö, Sweden | Legal base |
+| Maison Bagian | Grasse, France | Formulation; manufacturing |
+
+Coordinate references: [Calgary — Canadian Geographical Names Database](https://geonames.nrcan.gc.ca/search-place-names/unique?id=IAKID), [Tokyo — Mapcarta](https://mapcarta.com/Tokyo), [Dallas — Mapcarta](https://mapcarta.com/Dallas), [Ciputat — GeoNames](https://www.geonames.org/1646194/ciputat.html), [Orlando — Mapcarta](https://mapcarta.com/Orlando), [Los Angeles — GeoNames city-centre reference](https://coordlab.app/cities/los-angeles/), [New York City — Mapcarta](https://mapcarta.com/New_York_City), [Grasse — GeoNames](https://www.geonames.org/6454920/grasse.html), [New Delhi — Mapcarta](https://mapcarta.com/New_Delhi), [Donsö — GeoNames](https://www.geonames.org/2717412/donsoe.html).
+
+Role and uncertainty notes:
+- Ensar Oud remains unanchored: the imprint identifies Oriscent LLC in Glendale, New York, while a separate UK company is also registered in London. The operator and the brand's legal entity cannot yet be collapsed into one legal-base pin.
+- Aroma Concepts uses the US LLC's Orlando commercial base; the UK limited company and its Leicester legal base remain separate.
+- Être Parfums is anchored to Grasse for formulation only. The brand's own pages conflict on Grasse manufacturing versus downstream manufacturing/assembly in Indonesia; that conflict is preserved rather than presented as one manufacturing site.
+- Maison Bagian is anchored to Grasse for its stated formulation/production relationship; its Vietnamese brand origin remains a separate country-level claim.
+- BELNU's Los Angeles location is a self-reported company headquarters/contact relationship, not a manufacturing claim.
+- Meleg's Calgary point is a contact/business location, not a verified manufacturing site or registered office.
+
+Updated map counts: 178 points — 140 city, 5 region, 33 country precision; 152 anchored and 26 unverified. The remaining unverified set is 3 city and 23 country points.

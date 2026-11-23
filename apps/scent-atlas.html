@@ -566,7 +566,13 @@ function mapCountryCode(h) { return D?.geo?.[h.id]?.cc || h.cc; }
 function mapAnchorDisplayLocation(h) {
   const g = D?.geo?.[h.id], location = mapAnchorLocation(h);
   if (g?.precision === "country") return g.place || location?.country || h.country;
-  return [g?.place, location?.country || h.country].filter(Boolean).join(", ");
+  const place = g?.place || "";
+  const region = location?.region || "";
+  const country = location?.country || h.country || "";
+  const parts = [place];
+  if (region && region.toLowerCase() !== place.toLowerCase()) parts.push(region);
+  if (country && country.toLowerCase() !== place.toLowerCase() && country.toLowerCase() !== region.toLowerCase()) parts.push(country);
+  return parts.filter(Boolean).join(", ");
 }
 function mapAnchorSummary(h) {
   const g = D?.geo?.[h.id];

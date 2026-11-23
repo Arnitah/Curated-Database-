@@ -224,10 +224,15 @@
     ]
   },
   "maison-bagian": {
-    "lat": 21.03,
-    "lon": 105.85,
-    "place": "Hanoi",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "maison-bagian-formulation-typed-1",
+      "maison-bagian-manufacturing-typed-1"
+    ]
   },
   "amouage": {
     "lat": 23.59,
@@ -1402,10 +1407,14 @@
     ]
   },
   "meleg-perfumes": {
-    "lat": 45.5,
-    "lon": -75.5,
-    "place": "Canada",
-    "precision": "country"
+    "lat": 51.0458333,
+    "lon": -114.0574999,
+    "place": "Calgary",
+    "precision": "city",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "meleg-commercial-base-calgary-typed-1"
+    ]
   },
   "lvnea": {
     "lat": 45.508,
@@ -1450,10 +1459,14 @@
     "precision": "country"
   },
   "libroaria": {
-    "lat": 35.68,
-    "lon": 139.69,
-    "place": "Japan",
-    "precision": "country"
+    "lat": 35.6823,
+    "lon": 139.7532,
+    "place": "Tokyo",
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "libroaria-commercial-base-tokyo-typed-1"
+    ]
   },
   "stardust-stems": {
     "lat": 39.8,
@@ -1466,10 +1479,14 @@
     ]
   },
   "lepoque": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 32.7763,
+    "lon": -96.7969,
+    "place": "Dallas",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "lepoque-brand-origin-typed-1"
+    ]
   },
   "regime-des-fleurs": {
     "lat": 40.7128,
@@ -1498,10 +1515,14 @@
     "precision": "country"
   },
   "the-body-tale": {
-    "lat": -6.2,
-    "lon": 106.82,
-    "place": "Indonesia",
-    "precision": "country"
+    "lat": -6.2375,
+    "lon": 106.69556,
+    "place": "Ciputat",
+    "precision": "city",
+    "cc": "ID",
+    "anchor_observation_ids": [
+      "body-tale-commercial-base-ciputat-typed-1"
+    ]
   },
   "kitschy": {
     "lat": -6.2,
@@ -1516,10 +1537,14 @@
     "precision": "country"
   },
   "aroma-concepts": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 28.5421,
+    "lon": -81.379,
+    "place": "Orlando",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "aroma-concepts-commercial-base-orlando-typed-1"
+    ]
   },
   "celia-loves": {
     "lat": -38.33,
@@ -1532,10 +1557,14 @@
     ]
   },
   "belnu": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 34.05223,
+    "lon": -118.24368,
+    "place": "Los Angeles",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "belnu-commercial-base-typed-1"
+    ]
   },
   "liberation-of-flowers": {
     "lat": 39.8,
@@ -1544,10 +1573,14 @@
     "precision": "country"
   },
   "commodity": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "commodity-retail-typed-1"
+    ]
   },
   "paragraf-parfums": {
     "lat": -6.2,
@@ -1556,10 +1589,14 @@
     "precision": "country"
   },
   "etre-parfums": {
-    "lat": -6.2,
-    "lon": 106.85,
-    "place": "Jakarta",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "etre-parfums-formulation-typed-1"
+    ]
   },
   "otter-haus": {
     "lat": 14.6,
@@ -1616,10 +1653,14 @@
     ]
   },
   "fraganote": {
-    "lat": 28.61,
-    "lon": 77.21,
-    "place": "India",
-    "precision": "country"
+    "lat": 28.6139,
+    "lon": 77.209,
+    "place": "New Delhi",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "fraganote-commercial-base-typed-1"
+    ]
   },
   "gabar": {
     "lat": 51.5072,
@@ -1649,10 +1690,14 @@
     ]
   },
   "latelier-parfum": {
-    "lat": 46.6,
-    "lon": 2.4,
-    "place": "France",
-    "precision": "country"
+    "lat": 43.65806,
+    "lon": 6.92528,
+    "place": "Grasse",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "latelier-parfum-manufacturing-typed-1"
+    ]
   },
   "maison-mataha": {
     "lat": 46.6,
@@ -1666,10 +1711,14 @@
     ]
   },
   "lydeen": {
-    "lat": 59.33,
-    "lon": 18.07,
-    "place": "Sweden",
-    "precision": "country"
+    "lat": 57.6,
+    "lon": 11.79917,
+    "place": "Donsö",
+    "precision": "city",
+    "cc": "SE",
+    "anchor_observation_ids": [
+      "lydeen-legal-base-typed-1"
+    ]
   },
   "muse-beauty": {
     "lat": 28.61,
