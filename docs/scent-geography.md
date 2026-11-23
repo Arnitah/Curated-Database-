@@ -705,4 +705,4 @@ Important distinctions:
 - Oaken Lab's Ubud point is retail, not manufacturing.
 - Areej Le Doré and Ensar Oud remain unresolved for distinct evidence/entity conflicts; neither has been assigned a guessed anchor.
 
-Updated map counts: 178 points — 144 city, 5 region, 29 country precision; 167 anchored and 11 unverified. The remaining unverified set is 3 city and 8 country points.
+Updated map counts: 178 points — 144 city, 5 region, 29 country precision; 164 anchored and 14 unverified. The remaining unverified set is 3 city and 11 country points.
