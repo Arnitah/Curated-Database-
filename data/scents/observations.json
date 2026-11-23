@@ -9969,6 +9969,54 @@
       },
       "house": "celia-loves",
       "open": "Product scope is candles only. This does not establish where the brand's Eau de Parfum or other fragrance products are formulated, filled or manufactured."
+    },
+    {
+      "id": "maison-mataha-formulation-fr-typed-1",
+      "kind": "claim",
+      "topic": "formulation",
+      "text": "Maison Mataha's current official site says its creations are conceived in France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matahaparfums.com/en",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "house": "maison-mataha",
+      "open": "Country-level formulation claim only; no city is stated. The site's legal notice still identifies TK PARFUMS, which was dissolved on 9 January 2024; this product claim does not resolve the current website operator."
+    },
+    {
+      "id": "maison-mataha-manufacturing-fr-typed-1",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Maison Mataha's current official site states that its creations are crafted/manufactured in France.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://matahaparfums.com/en",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "France",
+        "cc": "FR"
+      },
+      "house": "maison-mataha",
+      "open": "Country-level manufacturing claim only; no city or factory is named. The site's legal notice still identifies TK PARFUMS, which was dissolved on 9 January 2024; operator identity remains unresolved."
+    },
+    {
+      "id": "otter-haus-brand-origin-ph-typed-1",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Vogue Singapore categorizes Otter Haus among Filipino fragrance brands; the source supports country-level Philippines affiliation, not a city.",
+      "evidence": "editorial",
+      "strength": "C",
+      "src": "https://vogue.sg/filipino-fragrances/",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "Philippines",
+        "cc": "PH"
+      },
+      "house": "otter-haus",
+      "open": "Country-level brand-origin affiliation only. No Manila office, studio, legal base or manufacturing location is established; the existing Manila map pin remains unverified."
     }
   ]
 }

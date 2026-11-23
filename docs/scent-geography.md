@@ -357,7 +357,7 @@ The original 22-house gap list was reviewed against current brand pages, legal/r
 
 Ten new typed observations were appended for these nine houses. No legacy record was overwritten.
 
-### Thirteen houses still without typed geography
+### Thirteen houses still without typed geography (before the follow-on source check)
 
 | House | Review result / reason retained as unknown |
 |---|---|
@@ -388,3 +388,39 @@ Ten new typed observations were appended for these nine houses. No legacy record
 #### Source-identity correction — Cozy (Khamreya), 23 November 2026
 
 The earlier batch-1 note relied on a search result for `cozyegypt.com`. Opening that page shows sleepwear/apparel products (including sleep dresses), not a perfume or Khamreya business. It is not the Cozy (Khamreya) entity in this dataset and has been excluded. The perfume entity's operator, official web presence and Port Fouad location remain unverified; no typed geography is added. The 13-house unknown list is unchanged.
+
+
+## Follow-on review of the remaining geography gaps — 23 November 2026
+
+A further source check established country-level/product-operation claims for Maison Mataha and Otter Haus. Three new typed observations were appended:
+
+- **Maison Mataha — formulation, France; manufacturing, France.** The current official site says its creations are conceived and crafted in France. This supports country-level formulation and manufacturing only; it does not establish a city or factory. The legal notice still names TK PARFUMS, struck off on 9 January 2024, so the current legal operator remains unresolved. A 2026 US trademark application names Taha Khalid at a Paris address, but that application does not by itself establish the website's current operator. [Official site](https://matahaparfums.com/en) · [Legal notice](https://matahaparfums.com/en/policies/legal-notice) · [2026 trademark application](https://uspto.report/TM/99720915) · [TK PARFUMS status](https://www.pappers.fr/entreprise/tk-parfums-901395194)
+- **Otter Haus — brand origin, Philippines (country only).** Vogue Singapore includes Otter Haus in its coverage of Filipino fragrance brands. This supports country-level affiliation only; it does not support Manila as a city, nor any legal, studio or manufacturing location. [Source](https://vogue.sg/filipino-fragrances/)
+- **Gerimist — no typed geography.** An Indonesian trademark bulletin lists HEBE BEAUTY PTE. LTD., Singapore, as applicant for the GERIMIST mark (application DID2025046052, filed 23 May 2025). This is a trademark-applicant address, not proof that the applicant is the current brand operator or that the brand's commercial base is Singapore. Keep it as a research lead, not a typed location. [DGIP trademark bulletin](https://www.dgip.go.id/berita-resmi/2121/download)
+
+### Current no-typed-geography gap
+
+After these three additions, **11 houses** remain without any typed geography claim:
+
+1. Henry Rose — official terms give a Los Angeles legal-notice address for Henry Rose LLC, while a separate Henry Rose Inc. filing lists Santa Monica and is now inactive; entity/operational relationship unresolved.
+2. CYKLAR — West Hollywood legal-notice address, not a verified registered office or operating site.
+3. Cozy (Khamreya) — the Cozy Egypt sleepwear site is unrelated; no primary source for the Khamreya perfume entity or Port Fouad address is verified.
+4. Chujian — no city, studio or legal address verified.
+5. Kitschy — privacy policy gives a Jakarta contact address but no verified physical office or registered entity.
+6. Gerimist — trademark applicant identified in Singapore, but current operator and operational base are unverified.
+7. Liberation of Flowers — official site gives no operating city or registered address.
+8. Paragraf Parfums — official site says it ships from Indonesia but does not identify a city or house base; shipping origin is not treated as HQ.
+9. Eau So Dramatic — official site/contact does not establish a city or legal address.
+10. Amouroud — New York address belongs to parent Perfumer's Workshop International, not a brand-specific office or studio.
+11. Muse Beauty — official fragrance site identifies a sister-company relationship but no city; similarly named makeup-brush business is unrelated.
+
+Maison Mataha and Otter Haus are removed from the no-typed list, but their limits remain: Maison Mataha's legal operator is unresolved; Otter Haus has only country-level Philippines evidence and no verified Manila location. No map point was changed.
+
+### Updated PR-branch coverage snapshot
+
+- 641 observations total.
+- 455 claim records, including 436 typed geography claims.
+- Typed geography claims now cover 167 of 178 houses and 3 research leads.
+- 11 houses remain without typed geography.
+- `geo.json`, `houses.json`, app code and `dist/scent-atlas.html` were not changed in this follow-on review.
+
