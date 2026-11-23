@@ -100,10 +100,14 @@
     ]
   },
   "to-summer": {
-    "lat": 31.23,
-    "lon": 121.47,
-    "place": "Shanghai",
-    "precision": "country"
+    "lat": 39.9248428735,
+    "lon": 116.326721268,
+    "place": "Beijing",
+    "precision": "city",
+    "cc": "CN",
+    "anchor_observation_ids": [
+      "tosummer-brand-origin-typed-1"
+    ]
   },
   "documents": {
     "lat": 31.23,
@@ -282,10 +286,14 @@
     ]
   },
   "scentury": {
-    "lat": -29.86,
-    "lon": 31.02,
-    "place": "Durban",
-    "precision": "country"
+    "lat": -26.20227,
+    "lon": 28.04363,
+    "place": "Johannesburg",
+    "precision": "city",
+    "cc": "ZA",
+    "anchor_observation_ids": [
+      "scentury-retail-johannesburg-typed-1"
+    ]
   },
   "beguile": {
     "lat": 6.52,
@@ -526,10 +534,14 @@
     ]
   },
   "kst-scent": {
-    "lat": 40.71,
-    "lon": -74.01,
-    "place": "New York",
-    "precision": "country"
+    "lat": 34.05223,
+    "lon": -118.24368,
+    "place": "Los Angeles",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "kst-scent-commercial-base-typed-1"
+    ]
   },
   "cosmic-mansion": {
     "lat": 37.57,
@@ -565,10 +577,15 @@
     ]
   },
   "milky-mane": {
-    "lat": 52.23,
-    "lon": 21.01,
-    "place": "Warsaw",
-    "precision": "country"
+    "lat": 50.19275,
+    "lon": 20.28909,
+    "place": "Proszowice",
+    "precision": "city",
+    "cc": "PL",
+    "anchor_observation_ids": [
+      "milky-mane-legal-base-typed-1",
+      "milky-mane-commercial-base-typed-1"
+    ]
   },
   "dries-van-noten": {
     "lat": 51.22,
@@ -594,10 +611,16 @@
     ]
   },
   "isak": {
-    "lat": 28.65,
-    "lon": 77.23,
-    "place": "Delhi",
-    "precision": "country"
+    "lat": 26.83928,
+    "lon": 80.92313,
+    "place": "Lucknow",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "isak-brand-origin-typed-1",
+      "isak-commercial-base-typed-1",
+      "isak-retail-lucknow-typed-1"
+    ]
   },
   "naso-profumi": {
     "lat": 28.65,
@@ -610,10 +633,14 @@
     ]
   },
   "neesh": {
-    "lat": 19.08,
-    "lon": 72.88,
-    "place": "Mumbai",
-    "precision": "country"
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Paris",
+    "precision": "city",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "neesh-commercial-base-paris-typed-1"
+    ]
   },
   "the-perfumatory": {
     "lat": 19.08,
@@ -994,10 +1021,14 @@
     ]
   },
   "janua": {
-    "lat": 13.75,
-    "lon": 100.5,
-    "place": "Bangkok",
-    "precision": "country"
+    "lat": 19.65554,
+    "lon": 99.541,
+    "place": "Mae Suai",
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "janua-legal-base-typed-1"
+    ]
   },
   "loe": {
     "lat": 37.57,
@@ -1103,10 +1134,14 @@
     ]
   },
   "michael-malul": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 39.9623,
+    "lon": -83.0007,
+    "place": "Columbus",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "michael-malul-commercial-base-typed-1"
+    ]
   },
   "kayali": {
     "lat": 25.2,
@@ -1182,10 +1217,14 @@
     ]
   },
   "rogue-perfumery": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 43.4897873,
+    "lon": -112.0359046,
+    "place": "Idaho Falls",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "rogue-commercial-base-idaho-falls-typed-1"
+    ]
   },
   "sultan-pasha": {
     "lat": 51.51,
@@ -1250,10 +1289,14 @@
     "precision": "country"
   },
   "bortnikoff": {
-    "lat": 55.76,
-    "lon": 37.62,
-    "place": "Moscow",
-    "precision": "country"
+    "lat": 13.7525,
+    "lon": 100.4935,
+    "place": "Bangkok",
+    "precision": "city",
+    "cc": "TH",
+    "anchor_observation_ids": [
+      "bortnikoff-commercial-base-typed-1"
+    ]
   },
   "ensar-oud": {
     "lat": 11.56,
@@ -1293,10 +1336,14 @@
     ]
   },
   "phlur": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 34.09001,
+    "lon": -118.36174,
+    "place": "West Hollywood",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "phlur-commercial-base-typed-1"
+    ]
   },
   "bath-body-works": {
     "lat": 39.96,
@@ -1345,10 +1392,14 @@
     ]
   },
   "inis": {
-    "lat": 53.35,
-    "lon": -7.7,
-    "place": "Ireland",
-    "precision": "country"
+    "lat": 53.1696005,
+    "lon": -6.1393311,
+    "place": "Kilmacanogue",
+    "precision": "city",
+    "cc": "IE",
+    "anchor_observation_ids": [
+      "inis-legal-base-typed-1"
+    ]
   },
   "meleg-perfumes": {
     "lat": 45.5,

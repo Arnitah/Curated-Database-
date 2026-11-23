@@ -609,3 +609,36 @@ The sole unverified region-level point has been resolved. The previous `Sapporo`
 Sources: [SHIRO HR Department Note (28 August 2026)](https://note.shiro-shiro.jp/n/ncf86373a5d68?hl=en), [SHIRO factory profile](https://hello.shiro-shiro.jp/product/labo-vol02/), [GeoNames Sunagawa coordinates](https://www.geonames.org/2127955/sunagawa.html).
 
 Updated counts: 178 points — 116 city, 5 region, 57 country; 128 anchored and 50 unverified. The unverified set is now 3 city and 47 country points; no region-level unverified points remain. The three unresolved city points remain Henry Rose, Ellis Brooklyn and Cozy (Khamreya).
+
+
+### Country-level audit — batch 1 (12 houses) · 23 November 2026
+
+Twelve of the 47 previously unverified country-level pins have been promoted to evidence-backed city anchors. Each pin now represents one selected role; other relationships remain in the evidence register and are not silently merged into the map location.
+
+| House | Corrected anchor | Selected role(s) |
+|---|---|---|
+| To Summer (观夏) | Beijing, China | Brand origin |
+| Scentury Perfume & Co. | Johannesburg, South Africa | Retail |
+| KST Scent | Los Angeles, USA | Commercial base |
+| Milky Mane | Proszowice, Poland | Legal base; commercial base |
+| ISAK Fragrances | Lucknow, India | Brand origin; commercial base; flagship retail |
+| NEESH Perfumes | Paris, France | Commercial base |
+| Janua | Mae Suai, Thailand | Legal base |
+| Michael Malul | Columbus, Ohio, USA | Commercial base |
+| Rogue Perfumery | Idaho Falls, Idaho, USA | Commercial base |
+| Bortnikoff | Bangkok, Thailand | Commercial base |
+| PHLUR | West Hollywood, California, USA | Commercial base |
+| Inis (Fragrances of Ireland) | Kilmacanogue, Ireland | Legal base of parent company |
+
+Coordinate references used: [Beijing — UNGEGN](https://ungegn.un.org/dashboard/cities/details?id=130), [Johannesburg — GeoNames](https://www.geonames.org/993800/johannesburg.html), [Los Angeles — GeoNames city-centre reference](https://coordlab.app/cities/los-angeles/), [Proszowice — GeoNames](https://www.geonames.org/761258/proszowice.html), [Lucknow — GeoNames](https://www.geonames.org/1264733/lucknow.html), [Paris — GeoNames](https://www.geonames.org/2988507/paris.html), [Mae Suai — Mapcarta](https://mapcarta.com/14650050), [Columbus — Mapcarta](https://mapcarta.com/Columbus), [Idaho Falls — US Census Geocoder](https://geocoding.geo.census.gov/geocoder/geographies/address?benchmark=4&city=idaho+falls&state=idaho&street=700linsay+blvd&vintage=4&zip=83402), [Bangkok — Mapcarta](https://mapcarta.com/Bangkok), [West Hollywood — GeoDatos](https://www.geodatos.net/en/coordinates/united-states/west-hollywood-ca), [Kilmacanogue — Visit Wicklow](https://visitwicklow.ie/listing/kilmacanogue/).
+
+Role-selection notes:
+- To Summer's Beijing founding claim is preferred over its separate Hong Kong retail expansion.
+- Scentury's Johannesburg address is a retail point only; it does not establish headquarters or manufacturing.
+- KST Scent's Los Angeles base is separate from its founder's South Korean upbringing.
+- ISAK's Lucknow anchor uses brand origin, commercial base and its official flagship. The manufacturing claim remains separately caveated because the source does not identify a separate distillery address.
+- NEESH uses the brand-stated Paris commercial base; its Ambala legal base and outsourced Kannauj attar production remain separate evidence, not a second pin.
+- PHLUR uses West Hollywood as commercial base; Delaware legal formation remains a separate region-level legal fact.
+- Inis uses the registered office of Fragrances of Ireland Limited; Inis is the company's signature collection, not a separate legal entity.
+
+Updated map counts: 178 points — 128 city, 5 region, 45 country precision; 140 anchored and 38 unverified. The unverified set is now 3 city and 35 country points. No region-level unverified point remains.
