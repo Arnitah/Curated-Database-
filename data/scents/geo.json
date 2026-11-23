@@ -1320,10 +1320,14 @@
     ]
   },
   "areej-le-dore": {
-    "lat": 55.76,
-    "lon": 37.62,
-    "place": "Moscow",
-    "precision": "country"
+    "lat": 55.378051,
+    "lon": -3.435973,
+    "place": "United Kingdom",
+    "precision": "country",
+    "cc": "GB",
+    "anchor_observation_ids": [
+      "areej-le-dore-brand-origin-founder-typed-2"
+    ]
   },
   "bortnikoff": {
     "lat": 13.7525,
@@ -1336,10 +1340,14 @@
     ]
   },
   "ensar-oud": {
-    "lat": 11.56,
-    "lon": 104.92,
-    "place": "Phnom Penh",
-    "precision": "country"
+    "lat": 40.70149,
+    "lon": -73.8868,
+    "place": "Glendale",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "ensar-oud-legal-base-typed-1"
+    ]
   },
   "pekji": {
     "lat": 41.01,

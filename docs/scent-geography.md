@@ -721,3 +721,13 @@ Three more points have now been resolved from primary business/contact evidence:
 The Delaware point uses the state geographic centre documented by the [Delaware Public Archives](https://archives.delaware.gov/delaware-historical-markers/geographic-center-delaware/). AMOUROUD's New York address is listed on its [official about page](https://amouroud.com/pages/about) and corroborated by [Perfumer's Workshop](https://www.perfumersworkshopinternational.com/pages/amouroud). Muse Beauty's Mumbai location is listed on its [official contact page](https://musebeautyindia.com/contact-us/).
 
 The remaining unverified country-level points are now limited to Areej Le Doré (origin conflict), Ensar Oud (separate legal entities), Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level unverified points are Henry Rose, Ellis Brooklyn and Cozy (Khamreya). No location has been inferred for these records.
+
+
+### Resolution of the two remaining evidence conflicts — 23 November 2026
+
+Two previously unanchored country-level points now have defensible primary roles:
+
+- **Areej Le Doré — United Kingdom, brand origin (country-level).** The founder's first-person 2022 interview explicitly says the brand was founded in the United Kingdom. This resolves the earlier UK-versus-Russia/Moscow conflict. The founder's Russian background is not treated as the brand's origin, and no UK city is inferred. Indonesia remains a separate reported production relationship. [Founder interview](https://www.fragrantica.com/news/BWME-2022-Russian-Adam-of-Areej-le-Dore-Interview-17407.html).
+- **Ensar Oud — Glendale, New York, USA, legal base (city-level).** The official imprint identifies Oriscent LLC as the website owner and gives its Glendale address. The map pin represents that primary website operator/legal entity. ENSAR OUD LIMITED (Company No. 13539356) remains a separate UK entity and is not collapsed into the same company. [Official imprint](https://www.ensaroud.com/imprint/) · [UK Companies House record](https://find-and-update.company-information.service.gov.uk/company/13539356) · [Glendale coordinates](https://www.geonames.org/5118670/glendale.html).
+
+Updated map counts: 178 points — 147 city, 6 region, 25 country precision; 169 anchored and 9 unverified. The remaining unverified set is 3 city and 6 country points. The remaining country-level research queue is Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level queue is Henry Rose, Ellis Brooklyn and Cozy (Khamreya).

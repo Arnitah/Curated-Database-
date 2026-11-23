@@ -9009,7 +9009,7 @@
         "country": "United Kingdom",
         "cc": "GB"
       },
-      "open": "Secondary source; retain as provisional until an official company record is located."
+      "open": "The founder's 2022 first-person interview explicitly confirms the United Kingdom as the founding country; see areej-le-dore-brand-origin-founder-typed-2. This resolves the prior UK-versus-Russia/Moscow conflict at country level. No UK founding city is established."
     },
     {
       "id": "areej-le-dore-legal-base-typed-1",
@@ -9177,7 +9177,7 @@
         "cc": "US",
         "entity": "Oriscent LLC"
       },
-      "open": "A separate UK company, ENSAR OUD LIMITED (company 13539356), is registered in London. Keep the two legal entities distinct."
+      "open": "This pin represents Oriscent LLC, the primary website operator identified in the official imprint. ENSAR OUD LIMITED (Company No. 13539356) is a separate UK legal entity and remains separate; this is not a consolidated group-headquarters claim."
     },
     {
       "id": "bath-body-works-commercial-base-typed-1",
@@ -10142,6 +10142,22 @@
         "site": "Arjun Brush Corporation, Kurla West, Mumbai 400070"
       },
       "open": "Corroboration: https://musebeautyindia.com/about-us/ and https://in.linkedin.com/company/musebeautyindia. The pin represents the business/contact base, not a verified Muse manufacturing facility."
+    },
+    {
+      "id": "areej-le-dore-brand-origin-founder-typed-2",
+      "house": "areej-le-dore",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "In a first-person interview, Areej Le Doré founder Russian Adam explicitly states that the brand was founded in the United Kingdom. This resolves the earlier country-of-origin conflict; the founder's Russian background is not the brand's founding location.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://www.fragrantica.com/news/BWME-2022-Russian-Adam-of-Areej-le-Dore-Interview-17407.html",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "United Kingdom",
+        "cc": "GB"
+      },
+      "open": "Country-level only. The interview does not establish a UK founding city. The separately reported production base in Indonesia remains a different role."
     }
   ]
 }
