@@ -565,6 +565,7 @@ function mapAnchorLocation(h) { return mapAnchorClaims(h)[0]?.location || null; 
 function mapCountryCode(h) { return D?.geo?.[h.id]?.cc || h.cc; }
 function mapAnchorDisplayLocation(h) {
   const g = D?.geo?.[h.id], location = mapAnchorLocation(h);
+  if (g?.precision === "country") return g.place || location?.country || h.country;
   return [g?.place, location?.country || h.country].filter(Boolean).join(", ");
 }
 function mapAnchorSummary(h) {

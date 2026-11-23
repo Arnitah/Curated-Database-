@@ -187,10 +187,14 @@
     ]
   },
   "wren-atelier": {
-    "lat": 14.6,
-    "lon": 120.98,
-    "place": "Manila",
-    "precision": "city"
+    "lat": 12.879721,
+    "lon": 121.774017,
+    "place": "Philippines",
+    "precision": "country",
+    "cc": "PH",
+    "anchor_observation_ids": [
+      "wren-atelier-retail-typed-1"
+    ]
   },
   "gp-fragrances": {
     "lat": 14.6,
@@ -546,10 +550,14 @@
     ]
   },
   "oct-kw": {
-    "lat": 29.38,
-    "lon": 47.98,
-    "place": "Kuwait City",
-    "precision": "city"
+    "lat": 29.31166,
+    "lon": 47.481766,
+    "place": "Kuwait",
+    "precision": "country",
+    "cc": "KW",
+    "anchor_observation_ids": [
+      "oct-kw-retail-kuwait-typed-1"
+    ]
   },
   "milky-mane": {
     "lat": 52.23,
@@ -1008,10 +1016,14 @@
     ]
   },
   "lartisan-parfumeur": {
-    "lat": 48.86,
-    "lon": 2.35,
-    "place": "Paris",
-    "precision": "city"
+    "lat": 46.227638,
+    "lon": 2.213749,
+    "place": "France",
+    "precision": "country",
+    "cc": "FR",
+    "anchor_observation_ids": [
+      "lartisan-parfumeur-brand-origin-typed-1"
+    ]
   },
   "frederic-malle": {
     "lat": 48.86,
@@ -1056,10 +1068,14 @@
     ]
   },
   "agonist": {
-    "lat": 59.33,
-    "lon": 18.07,
-    "place": "Stockholm",
-    "precision": "city"
+    "lat": 60.128161,
+    "lon": 18.643501,
+    "place": "Sweden",
+    "precision": "country",
+    "cc": "SE",
+    "anchor_observation_ids": [
+      "agonist-brand-origin-typed-1"
+    ]
   },
   "perfumehead": {
     "lat": 34.05,
@@ -1177,10 +1193,14 @@
     ]
   },
   "libertine": {
-    "lat": 49.28,
-    "lon": -123.12,
-    "place": "Vancouver",
-    "precision": "city"
+    "lat": 56.130366,
+    "lon": -106.346771,
+    "place": "Canada",
+    "precision": "country",
+    "cc": "CA",
+    "anchor_observation_ids": [
+      "libertine-brand-origin-typed-1"
+    ]
   },
   "liquides-imaginaires": {
     "lat": 48.86,

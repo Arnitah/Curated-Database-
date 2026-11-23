@@ -574,3 +574,29 @@ Eight city-level pins remain unanchored: Wren Atelier, OCT, L'Artisan Parfumeur,
 - No house-country metadata was rewritten. The standalone `dist/scent-atlas.html` snapshot remains untouched.
 
 Next: finish the remaining eight city-level dispositions, then audit the 47 country-level points and the single unverified region point.
+
+
+### Country-only fallbacks for five city pins — 23 November 2026
+
+Five additional city-level points had country-level evidence but no defensible city relationship. They have been downgraded to country precision, anchored to the matching typed claim, and moved to an approximate geographic-centre coordinate. The map card now displays a country-only label for country-precision pins rather than duplicating the country name or implying a city.
+
+| House | Country-level anchor | Role | Geographic-centre coordinates |
+|---|---|---|---|
+| Wren Atelier | Philippines | Retail (country-level stockist presence) | 12.879721, 121.774017 |
+| OCT | Kuwait | Retail (online-only presence) | 29.311660, 47.481766 |
+| L'Artisan Parfumeur | France | Brand origin | 46.227638, 2.213749 |
+| Agonist | Sweden | Brand origin | 60.128161, 18.643501 |
+| Libertine | Canada | Brand origin | 56.130366, -106.346771 |
+
+Country-centre references: [Philippines](https://www.geodatos.net/en/coordinates/philippines), [Kuwait](https://www.geodatos.net/en/coordinates/kuwait), [France](https://www.geodatos.net/en/coordinates/france), [Sweden](https://www.geodatos.net/en/coordinates/sweden), [Canada](https://www.geodatos.net/en/coordinates/canada). These are representative country-level geographic centres, not capitals, headquarters or precise legal centroids.
+
+### Updated 18-city audit result
+
+- 15 of the original 18 city-level unverified pins now have evidence-backed map anchors: 10 city/region role corrections and 5 country-only fallbacks.
+- Three city-level points remain unresolved: Henry Rose (no typed geography), Ellis Brooklyn (only product-specific USA manufacturing evidence; no house-wide city relationship), and Cozy (Khamreya) (no typed geography).
+- The single unverified region-level point and all 47 original country-level unverified points remain untouched for their respective audit passes.
+- Updated map: 178 points — 115 city, 6 region, 57 country precision.
+- 127 anchored — 112 city, 5 region, 10 country.
+- 51 unverified — 3 city, 1 region, 47 country.
+
+The country fallback pins are now genuinely country-level: no city name is inferred from the house's legacy country field, and the displayed card does not imply a city.
