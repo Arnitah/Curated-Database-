@@ -6128,7 +6128,8 @@
         "city": "Ajman",
         "country": "United Arab Emirates",
         "cc": "AE"
-      }
+      },
+      "open": "Correction: the current official careers page says founded in the UAE and separately says headquarters in Ajman. It does not support Ajman as the founding city; see afnan-brand-origin-uae-clarification-typed-2. Do not anchor this record as city-level brand origin."
     },
     {
       "id": "afnan-commercial-base-typed-1",
@@ -10017,6 +10018,74 @@
       },
       "house": "otter-haus",
       "open": "Country-level brand-origin affiliation only. No Manila office, studio, legal base or manufacturing location is established; the existing Manila map pin remains unverified."
+    },
+    {
+      "id": "swiss-arabian-brand-origin-dubai-typed-2",
+      "house": "swiss-arabian",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Swiss Arabian's official UAE FAQ says the new company was set up in Dubai in 1974 as the first perfume manufacturing house.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://uae.swissarabian.com/pages/faqs",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      },
+      "open": "The official account supports establishment in Dubai; it does not identify the exact original factory or site."
+    },
+    {
+      "id": "afnan-brand-origin-uae-clarification-typed-2",
+      "house": "afnan",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "Afnan's official careers page states that the house was founded in the United Arab Emirates and separately identifies Ajman as its headquarters. It does not establish Ajman as the founding city.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://careers.afnan.com/",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      },
+      "open": "Correction to the earlier city-specific reading in afnan-brand-origin-typed-1: retain UAE as the supported origin level; use Ajman for the commercial/legal-base relationship."
+    },
+    {
+      "id": "arquiste-commercial-base-typed-1",
+      "house": "arquiste",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "ARQUISTE's company profile identifies New York, NY as its headquarters. The official brand returns page also lists a New York business address at 126 W 11th Street.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/arquiste-parfumeur",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New York",
+        "country": "United States",
+        "cc": "US"
+      },
+      "open": "The headquarters statement is self-reported on the company profile; the official returns address is corroborating business-location evidence, not proof of the founder's origin or manufacturing city: https://arquiste.com/pages/returns-refunds-and-exchanges"
+    },
+    {
+      "id": "burren-perfumery-manufacturing-site-typed-2",
+      "house": "burren-perfumery",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The Perfumery states that its products are handmade on site in the Burren. Its official directions identify the production/visitor site at Fahee North, Carran, County Clare, Eircode V95 KC61, and publish GPS coordinates 53°02′36.5″N, 9°02′44.9″W.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://burrenperfumery.com/",
+      "seen": "2026-11-23",
+      "location": {
+        "region": "The Burren, County Clare",
+        "country": "Ireland",
+        "cc": "IE",
+        "site": "The Burren Perfumery, Fahee North, Carran, V95 KC61"
+      },
+      "open": "Exact site location corroborated by the official directions page: https://burrenperfumery.com/pages/directions. The map label remains regional because the typed geography is region-level."
     }
   ]
 }

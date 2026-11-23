@@ -536,3 +536,41 @@ The role-aware map anchor now carries its own `cc` field. This country code desc
 - Regression tests cover foreign-country city and country anchors, missing anchor country codes, and mismatched observation/anchor country codes.
 
 This correction does not change brand-origin claims, house country metadata, or any latitude/longitude values. It enables the subsequent source-led pin audit to select the correct relationship country without misclassifying the house itself.
+
+
+### City-pin audit corrections — 23 November 2026
+
+Ten of the 18 previously unverified city-level points have now been anchored to typed evidence. This is a point-by-point correction batch; it does not infer locations from house country metadata.
+
+| House | Map anchor | Selected role(s) | Coordinate basis |
+|---|---|---|---|
+| Swiss Arabian | Dubai, UAE | Brand origin | UNGEGN city coordinates |
+| Saint d'Ici / Saint VII | Cape Town, South Africa | Commercial base | UNGEGN city coordinates; current official story supersedes the unsupported Johannesburg pin while retaining the historical conflict note |
+| Afnan | Ajman, UAE | Commercial base; legal base | UNGEGN city coordinates; the earlier city-level origin claim is explicitly corrected to UAE-level only |
+| Floraïku | Geneva, Switzerland | Legal base | GeoNames/Mapcarta city coordinates; official legal notice identifies Rue du Lac 12 |
+| ARQUISTE | New York, USA | Commercial base | City-level centre; company profile self-reports New York headquarters and official returns page corroborates a New York business address |
+| Parfums Dusita | Paris, France | Commercial base | Geocoded Rue de la Sourdière office location |
+| The Burren Perfumery | The Burren, County Clare, Ireland | Manufacturing | Official directions GPS; point precision downgraded from city to region while retaining the actual on-site production coordinate |
+| Régime des Fleurs | New York, USA | Retail | City-level centre; official appointment retail address is 15 Maiden Lane |
+| Gabar | London, UK | Commercial base; legal base | City-level centre; official brand story and Companies House support London |
+| Aurra London | Kannauj, India | Manufacturing | City coordinates; official brand story says fragrances are handcrafted in Kannauj |
+
+The Afnan correction is important: the official careers page says the house was founded in the UAE and lists Ajman as headquarters. The earlier city-level brand-origin interpretation is no longer used as an anchor. The map instead uses the independently supported Ajman commercial and legal bases.
+
+### Remaining city-level audit queue
+
+Eight city-level pins remain unanchored: Wren Atelier, OCT, L'Artisan Parfumeur, Agonist, Henry Rose, Libertine, Ellis Brooklyn and Cozy (Khamreya).
+
+- Wren Atelier, OCT, L'Artisan Parfumeur, Agonist and Libertine have country-level evidence but no defensible city relationship. Their existing city labels remain unverified pending country-level coordinate review.
+- Henry Rose and Cozy (Khamreya) still lack typed geography.
+- Ellis Brooklyn has product-specific USA manufacturing evidence for Apple Love EDP only; this is not generalized to all products or treated as a city claim.
+
+### Updated map counts after the first city batch
+
+- 178 total map points: 120 city, 6 region, 52 country precision.
+- 122 anchored points: 112 city, 5 region, 5 country.
+- 56 still unverified: 8 city, 1 region, 47 country.
+- All 10 newly anchored points carry their own country code; cross-border anchors are validated independently of `houses.cc`.
+- No house-country metadata was rewritten. The standalone `dist/scent-atlas.html` snapshot remains untouched.
+
+Next: finish the remaining eight city-level dispositions, then audit the 47 country-level points and the single unverified region point.
