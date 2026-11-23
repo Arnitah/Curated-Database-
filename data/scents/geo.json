@@ -13,10 +13,15 @@
     ]
   },
   "shiro": {
-    "lat": 43.06,
-    "lon": 141.35,
-    "place": "Sapporo",
-    "precision": "region"
+    "lat": 43.48639,
+    "lon": 141.90556,
+    "place": "Sunagawa",
+    "precision": "city",
+    "cc": "JP",
+    "anchor_observation_ids": [
+      "shiro-brand-origin-typed-1",
+      "shiro-manufacturing-typed-1"
+    ]
   },
   "j-scent": {
     "lat": 35.68,

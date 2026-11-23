@@ -600,3 +600,12 @@ Country-centre references: [Philippines](https://www.geodatos.net/en/coordinates
 - 51 unverified — 3 city, 1 region, 47 country.
 
 The country fallback pins are now genuinely country-level: no city name is inferred from the house's legacy country field, and the displayed card does not imply a city.
+
+
+### Region-level audit closure — SHIRO · 23 November 2026
+
+The sole unverified region-level point has been resolved. The previous `Sapporo` label and coordinates did not match the typed evidence. SHIRO's official 2026 recruitment material identifies Sunagawa, Hokkaido as the brand's birthplace; its official manufacturing page identifies the in-house factory in Sunagawa. The map point is now **Sunagawa, Japan**, city precision, with both brand-origin and manufacturing roles. Coordinates use the GeoNames Sunagawa city reference (43.48639, 141.90556).
+
+Sources: [SHIRO HR Department Note (28 August 2026)](https://note.shiro-shiro.jp/n/ncf86373a5d68?hl=en), [SHIRO factory profile](https://hello.shiro-shiro.jp/product/labo-vol02/), [GeoNames Sunagawa coordinates](https://www.geonames.org/2127955/sunagawa.html).
+
+Updated counts: 178 points — 116 city, 5 region, 57 country; 128 anchored and 50 unverified. The unverified set is now 3 city and 47 country points; no region-level unverified points remain. The three unresolved city points remain Henry Rose, Ellis Brooklyn and Cozy (Khamreya).
