@@ -1,6 +1,6 @@
 # Scent Atlas geography schema and migration plan
 
-**Status:** approved additive schema design; implementation proposed on a review branch  
+**Status:** additive schema implemented on PR #14 review branch; not merged or released  
 **Date:** 2026-11-21
 
 Use `data/scents/observations.json` as the single source of truth for sourced geography facts. Do not create a parallel `geography.json` that duplicates the same sources and claims. Each geography observation is one dated source claim about one relationship and one place. A house can therefore have several locations for one relationship, and the same city can legitimately appear under different relationships.
@@ -41,10 +41,10 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - `houses.json`: 178 records; cards currently read `city`, `country` and `cc`.
 - `geo.json`: 178 map points; one anchor per house with `lat`, `lon`, `place`, `precision`.
 - `apps/scent-atlas.html`: loads `observations.json`, renders evidence claims, and uses legacy house city/country on cards.
-- `scripts/build.mjs`: previously validated claim topics and source metadata, but not typed locations.
+- `scripts/build.mjs`: validates typed geography topics, location shape, country names and ISO alpha-2 codes through `scripts/scents-geography.mjs`.
 - `scripts/check-scents.mjs` and `.github/workflows/scents.yml`: weekly checks update rates, links, live prices and fieldnotes; they do not write house geography.
-- `.github/workflows/data.yml`: validates data and rebuilds dataset versions; add geography unit tests.
-- `docs/scent-intake.md`: existing intake guide said one observation per claim but grouped HQ and made-in relationships too broadly.
+- `.github/workflows/data.yml`: runs the data validator and the Scent Atlas geography unit tests on relevant pull-request paths.
+- `docs/scent-intake.md`: now documents the typed relationship vocabulary, one source/relationship/place per observation, and the verified-house rule.
 - `dist/scent-atlas.html`: self-contained snapshot with embedded data and no observations-ledger integration; no in-repository build script was found that safely regenerates it. Do not hand-edit this generated snapshot.
 - `archive/scent-map.html`: archived map reader; retain compatibility during the additive phase.
 
@@ -54,12 +54,14 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - 178 houses and 178 map points.
 - 205 observations, including 19 claims. The legacy claim topics were 8 `hq`, 3 `made_in`, 3 `owner`, 2 `history`, and 1 `founder`; two additional claim records had no topic.
 - 7 houses had no observation of any kind.
-- Map precision: 110 `city`, 1 `region`, 67 `country`. Some entries marked `country` have city-named places such as Tokyo, Manila and Bangkok. This needs a separate precision audit; precision is spatial granularity, not evidence confidence or relationship type.
+- Map precision: 110 `city`, 1 `region`, 67 `country`. A first-pass review found 39 of the 67 `country`-precision points use city-named place labels and city-centre coordinates. Additional country-named labels also use city-centre coordinates (for example India/New Delhi, Indonesia/Jakarta, Ireland/Dublin, Sweden/Stockholm and UAE/Dubai). This is a release hold for a source-and-coordinate audit; no `geo.json` values have been changed. Precision is spatial granularity, not evidence confidence or relationship type.
 
-**Current PR branch after the pilot batches:**
-- 529 observations total, including 324 typed geography claims across 92 existing houses and 3 research leads.
-- 86 of the 178 existing house records still have no typed geography claim. Legacy `hq` / `made_in` claims have not been silently reclassified.
-- The pilot's lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
+**Current PR branch at commit `392db198f5dc3ee54fc47a94de30c7d9f9b244dc` (2026-11-23):**
+- 621 observations total: 435 claim records, including 416 typed geography claims.
+- Typed geography claims cover 156 of 178 existing houses and 3 research leads; 22 existing houses have no typed geography claim yet.
+- The 11 legacy `hq` / `made_in` claims remain unchanged and un-reclassified.
+- The 3 lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
+- Counts were recomputed directly from `observations.json`, `houses.json` and `leads.json` at the stated commit.
 
 ## UI and map behaviour
 
@@ -75,13 +77,13 @@ A house is verified only when ownership, **manufacturing location**, and current
 
 ## Migration sequence
 
-1. Add and test the additive schema; retain old topics and fields.
-2. Re-open each existing geography claim and split compound statements into one relation/place per observation.
-3. Pilot contrasting cases: TADHANA, KST Scent, Bortnikoff, Dusita, Gabar, Sana Jardin, Amouage, Maya Njie, Beguile and Etre Parfums.
-4. Review all 178 houses by relationship. Add only sourced claims; preserve unknowns.
-5. Migrate the UI after enough typed origin facts exist; keep legacy fields as fallback.
-6. Audit map coordinates and precision separately, then add role-labelled multi-site pins only when evidence and UI support them.
-7. Deprecate legacy city/country reliance only after all consumers, snapshots and exports migrate.
+1. **Complete:** add and test the additive schema; retain old topics and fields.
+2. **In progress:** re-open existing geography claims and split compound statements into one relationship/place per observation; retain unresolved claims rather than guessing.
+3. **Complete for the current pilot:** pilot contrasting houses and expand source-reviewed batches; the latest batch is recorded in the observations ledger.
+4. **In progress:** review all 178 houses by relationship. Current coverage is 156 houses with typed claims; 22 remain without typed geography. Add only sourced claims and preserve unknowns.
+5. **Implemented on the PR branch:** migrate the live source app to typed origin/evidence display while retaining legacy fields as fallbacks. The self-contained `dist/scent-atlas.html` snapshot remains a separate compatibility/republication hold.
+6. **Release hold:** complete the map coordinate and precision audit. The first pass identified 39 city-labelled/city-centred points still marked `country`, plus further country-labelled points whose coordinates appear city-centred. Do not bulk-change precision or coordinates without source review.
+7. **Pending:** deprecate legacy city/country reliance only after all consumers, snapshots and exports migrate; keep the 11 legacy geography claims until individually source-reviewed and reclassified.
 
 ## Acceptance criteria
 
