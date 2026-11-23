@@ -706,3 +706,18 @@ Important distinctions:
 - Areej Le Doré and Ensar Oud remain unresolved for distinct evidence/entity conflicts; neither has been assigned a guessed anchor.
 
 Updated map counts: 178 points — 144 city, 5 region, 29 country precision; 164 anchored and 14 unverified. The remaining unverified set is 3 city and 11 country points.
+
+
+### Final three researched anchors from the 11-point unresolved set · 23 November 2026
+
+Three more points have now been resolved from primary business/contact evidence:
+
+| House | Anchor | Role | Evidence distinction |
+|---|---|---|---|
+| CYKLAR | Delaware, USA | Legal base | Official terms identify The Center Brands LLC d/b/a Cyklar as a Delaware LLC; West Hollywood is its legal-notice address, not the state of formation |
+| AMOUROUD | New York, USA | Commercial base | Official brand page lists its parent company's New York address; parent-company page identifies New York headquarters |
+| Muse Beauty | Mumbai, India | Commercial base | Official contact page lists Kurla West, Mumbai; brand story and company profile corroborate the Mumbai business relationship |
+
+The Delaware point uses the state geographic centre documented by the [Delaware Public Archives](https://archives.delaware.gov/delaware-historical-markers/geographic-center-delaware/). AMOUROUD's New York address is listed on its [official about page](https://amouroud.com/pages/about) and corroborated by [Perfumer's Workshop](https://www.perfumersworkshopinternational.com/pages/amouroud). Muse Beauty's Mumbai location is listed on its [official contact page](https://musebeautyindia.com/contact-us/).
+
+The remaining unverified country-level points are now limited to Areej Le Doré (origin conflict), Ensar Oud (separate legal entities), Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level unverified points are Henry Rose, Ellis Brooklyn and Cozy (Khamreya). No location has been inferred for these records.

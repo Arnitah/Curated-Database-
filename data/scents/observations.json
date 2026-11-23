@@ -10086,6 +10086,62 @@
         "site": "The Burren Perfumery, Fahee North, Carran, V95 KC61"
       },
       "open": "Exact site location corroborated by the official directions page: https://burrenperfumery.com/pages/directions. The map label remains regional because the typed geography is region-level."
+    },
+    {
+      "id": "cyklar-legal-base-delaware-typed-1",
+      "house": "cyklar",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "CYKLAR's official terms identify The Center Brands LLC d/b/a Cyklar as a Delaware limited liability company. This supports Delaware as the legal domicile; the separately listed West Hollywood address is the legal-notice/contact address, not the state of formation.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://cyklar.com/policies/terms-of-service",
+      "seen": "2026-11-23",
+      "location": {
+        "region": "Delaware",
+        "country": "United States",
+        "cc": "US",
+        "entity": "The Center Brands LLC d/b/a Cyklar"
+      },
+      "open": "The mapped point is the state-level legal domicile. The West Hollywood address is retained as the legal-notice address and is not represented as the registered office or manufacturing site."
+    },
+    {
+      "id": "amouroud-commercial-base-new-york-typed-1",
+      "house": "amouroud",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "AMOUROUD's official about page identifies the fragrance line as a collection and lists Perfumers Workshop International at 350 7th Avenue, Suite 1705, New York, NY 10001. The parent company separately identifies New York as its headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://amouroud.com/pages/about",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New York",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US",
+        "site": "Perfumers Workshop International, 350 7th Avenue, Suite 1705, New York, NY 10001"
+      },
+      "open": "Parent-company headquarters corroboration: https://www.perfumersworkshopinternational.com/pages/amouroud. This is a commercial-base relationship, not AMOUROUD's brand-origin claim."
+    },
+    {
+      "id": "muse-beauty-commercial-base-mumbai-typed-1",
+      "house": "muse-beauty",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Muse Beauty's official contact page lists Arjun Brush Corporation at Kurla West, Mumbai, Maharashtra, India. The brand's about page describes its connection to the family brush-manufacturing business, and its company profile lists Mumbai as headquarters.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://musebeautyindia.com/contact-us/",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Mumbai",
+        "region": "Maharashtra",
+        "country": "India",
+        "cc": "IN",
+        "site": "Arjun Brush Corporation, Kurla West, Mumbai 400070"
+      },
+      "open": "Corroboration: https://musebeautyindia.com/about-us/ and https://in.linkedin.com/company/musebeautyindia. The pin represents the business/contact base, not a verified Muse manufacturing facility."
     }
   ]
 }

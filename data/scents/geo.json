@@ -1393,10 +1393,14 @@
     ]
   },
   "cyklar": {
-    "lat": 39.5,
-    "lon": -98.35,
-    "place": "United States",
-    "precision": "country"
+    "lat": 38.9896,
+    "lon": -75.505,
+    "place": "Delaware",
+    "precision": "region",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "cyklar-legal-base-delaware-typed-1"
+    ]
   },
   "cloon-keen": {
     "lat": 53.272,
@@ -1722,10 +1726,14 @@
     ]
   },
   "amouroud": {
-    "lat": 39.8,
-    "lon": -98.6,
-    "place": "United States",
-    "precision": "country"
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "amouroud-commercial-base-new-york-typed-1"
+    ]
   },
   "aurra-london": {
     "lat": 27.0536,
@@ -1769,10 +1777,14 @@
     ]
   },
   "muse-beauty": {
-    "lat": 28.61,
-    "lon": 77.21,
-    "place": "India",
-    "precision": "country"
+    "lat": 19.0728,
+    "lon": 72.8845,
+    "place": "Mumbai",
+    "precision": "city",
+    "cc": "IN",
+    "anchor_observation_ids": [
+      "muse-beauty-commercial-base-mumbai-typed-1"
+    ]
   },
   "lova": {
     "lat": 25.2,
