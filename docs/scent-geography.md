@@ -521,3 +521,18 @@ The map heading now reads **Fragrance houses and their places**. Tooltips, place
 #### Validation correction — 23 November 2026
 
 The first exact-head validation run exposed an escaping defect in the new map-label normaliser: accent and parenthetical stripping were emitted with over-escaped regular expressions. The normaliser now uses Unicode property escapes for diacritics and correctly handles whitespace and parenthetical suffixes. The country alias comparison in the app is also self-contained; it no longer calls an undefined helper. No map data changed in this correction. The corrected precision counts above supersede the initial draft counts in this section.
+
+
+### Anchor-country correction — 23 November 2026
+
+The role-aware map anchor now carries its own `cc` field. This country code describes the location represented by the pin, not the house's legacy country association in `houses.json`.
+
+- Every point with `anchor_observation_ids` must have a valid uppercase ISO alpha-2 `cc`.
+- Every linked observation must belong to the same house and have `location.cc` equal to the map point's `cc`.
+- City and region labels continue to match the observation's city/region. Country-precision anchors remain country-only and match the map point's country label and `cc`.
+- The validator no longer requires the selected relationship location to match `house.cc`; this permits legitimate cross-border roles such as a UK legal/commercial base for a house with another origin country.
+- The source app groups and filters verified pins by the map anchor's country and displays the anchor location's country in pin cards. Unverified pins continue to fall back to the legacy house country and remain visibly unverified.
+- Existing 112 verified anchor references received an explicit anchor-country code derived from their linked observations. The 66 unverified pins were left unchanged.
+- Regression tests cover foreign-country city and country anchors, missing anchor country codes, and mismatched observation/anchor country codes.
+
+This correction does not change brand-origin claims, house country metadata, or any latitude/longitude values. It enables the subsequent source-led pin audit to select the correct relationship country without misclassifying the house itself.

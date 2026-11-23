@@ -49,9 +49,15 @@ export function validateMapAnchors(geo, houses, observations) {
     const house = houseById.get(houseId);
     if (!house) { errors.push(houseId + ": map point has no matching house"); continue; }
     if (!GEO_PRECISIONS.includes(point.precision)) errors.push(houseId + ": precision must be city, region or country");
+    if (point.cc !== undefined && (typeof point.cc !== "string" || !/^[A-Z]{2}$/.test(point.cc))) {
+      errors.push(houseId + ": map anchor cc must be an uppercase ISO 3166-1 alpha-2 code");
+    }
     const ids = point.anchor_observation_ids;
     if (ids === undefined) continue;
     if (!Array.isArray(ids) || ids.length === 0) { errors.push(houseId + ": anchor_observation_ids must be a non-empty array when supplied"); continue; }
+    if (typeof point.cc !== "string" || !/^[A-Z]{2}$/.test(point.cc)) {
+      errors.push(houseId + ": anchored map point needs its own valid cc country code");
+    }
     if (new Set(ids).size !== ids.length) errors.push(houseId + ": anchor_observation_ids must not contain duplicates");
     for (const id of ids) {
       const observation = observationById.get(id);
@@ -61,15 +67,15 @@ export function validateMapAnchors(geo, houses, observations) {
         continue;
       }
       if (observation.house !== houseId) errors.push(houseId + ": anchor " + id + " belongs to a different house");
-      if (observation.location.cc !== house.cc) errors.push(houseId + ": anchor " + id + " has a different country code");
+      if (observation.location.cc !== point.cc) errors.push(houseId + ": anchor " + id + " has a different map-anchor country code");
       if (point.precision === "city" && (!observation.location.city || normaliseMapPlace(observation.location.city) !== normaliseMapPlace(point.place))) {
         errors.push(houseId + ": city anchor " + id + " does not match map place " + point.place);
       }
       if (point.precision === "region" && (!observation.location.region || normaliseMapPlace(observation.location.region) !== normaliseMapPlace(point.place))) {
         errors.push(houseId + ": region anchor " + id + " does not match map place " + point.place);
       }
-      if (point.precision === "country" && (observation.location.city || observation.location.region || normaliseCountry(observation.location.country) !== normaliseCountry(house.country) || normaliseCountry(point.place) !== normaliseCountry(house.country))) {
-        errors.push(houseId + ": country anchor " + id + " must be country-only and match the map country");
+      if (point.precision === "country" && (observation.location.city || observation.location.region || normaliseCountry(observation.location.country) !== normaliseCountry(point.place))) {
+        errors.push(houseId + ": country anchor " + id + " must be country-only and match the map place");
       }
     }
   }

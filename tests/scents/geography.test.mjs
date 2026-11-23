@@ -42,19 +42,19 @@ test("normalises accents and parenthetical map labels without guessing aliases",
 });
 
 test("validates one or multiple city-role anchors for the same house and place", () => {
-  const geo = { "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: [base.id, sampleStudio.id] } };
+  const geo = { "sample-house": { place: "Muscat", precision: "city", cc: "OM", anchor_observation_ids: [base.id, sampleStudio.id] } };
   assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [base, sampleStudio]), []);
 });
 
 test("validates country-only map anchors without inferring a city", () => {
   const countryClaim = { ...base, id: "sample-country-1", topic: "brand_origin", location: { country: "Oman", cc: "OM" } };
-  const geo = { "sample-house": { place: "Oman", precision: "country", anchor_observation_ids: [countryClaim.id] } };
+  const geo = { "sample-house": { place: "Oman", precision: "country", cc: "OM", anchor_observation_ids: [countryClaim.id] } };
   assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [countryClaim]), []);
 });
 
 test("validates region-level anchors", () => {
   const regionClaim = { ...base, id: "sample-region-1", location: { region: "Al Batinah", country: "Oman", cc: "OM" } };
-  const geo = { "sample-house": { place: "Al Batinah", precision: "region", anchor_observation_ids: [regionClaim.id] } };
+  const geo = { "sample-house": { place: "Al Batinah", precision: "region", cc: "OM", anchor_observation_ids: [regionClaim.id] } };
   assert.deepEqual(validateMapAnchors(geo, [sampleHouse], [regionClaim]), []);
 });
 
@@ -63,16 +63,43 @@ test("allows unverified pins without an anchor reference", () => {
 });
 
 test("rejects dangling, cross-house and mismatched-place anchor references", () => {
-  const dangling = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: ["missing"] } }, [sampleHouse], [base]);
+  const dangling = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", cc: "OM", anchor_observation_ids: ["missing"] } }, [sampleHouse], [base]);
   assert.ok(dangling.some(x => x.includes("unknown anchor observation")));
-  const crossHouse = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: [base.id] } }, [sampleHouse], [{ ...base, house: "other-house" }]);
+  const crossHouse = validateMapAnchors({ "sample-house": { place: "Muscat", precision: "city", cc: "OM", anchor_observation_ids: [base.id] } }, [sampleHouse], [{ ...base, house: "other-house" }]);
   assert.ok(crossHouse.some(x => x.includes("belongs to a different house")));
-  const wrongPlace = validateMapAnchors({ "sample-house": { place: "Nizwa", precision: "city", anchor_observation_ids: [base.id] } }, [sampleHouse], [base]);
+  const wrongPlace = validateMapAnchors({ "sample-house": { place: "Nizwa", precision: "city", cc: "OM", anchor_observation_ids: [base.id] } }, [sampleHouse], [base]);
   assert.ok(wrongPlace.some(x => x.includes("does not match map place")));
 });
 
 test("rejects a city-level observation as a country-only anchor", () => {
-  const geo = { "sample-house": { place: "Oman", precision: "country", anchor_observation_ids: [base.id] } };
+  const geo = { "sample-house": { place: "Oman", precision: "country", cc: "OM", anchor_observation_ids: [base.id] } };
   const errors = validateMapAnchors(geo, [sampleHouse], [base]);
   assert.ok(errors.some(x => x.includes("must be country-only")));
+});
+
+
+test("validates a cross-border city anchor against the anchor country, not the house country", () => {
+  const paris = { ...base, id: "sample-paris-base-1", topic: "commercial_base", location: { city: "Paris", country: "France", cc: "FR" } };
+  const foreignHouse = { id: "sample-house", country: "Thailand / France", cc: "TH" };
+  const geo = { "sample-house": { place: "Paris", precision: "city", cc: "FR", anchor_observation_ids: [paris.id] } };
+  assert.deepEqual(validateMapAnchors(geo, [foreignHouse], [paris]), []);
+});
+
+test("validates a cross-border country-only anchor independently of the house country", () => {
+  const france = { ...base, id: "sample-france-origin-1", topic: "brand_origin", location: { country: "France", cc: "FR" } };
+  const foreignHouse = { id: "sample-house", country: "Thailand / France", cc: "TH" };
+  const geo = { "sample-house": { place: "France", precision: "country", cc: "FR", anchor_observation_ids: [france.id] } };
+  assert.deepEqual(validateMapAnchors(geo, [foreignHouse], [france]), []);
+});
+
+test("rejects an anchor observation whose country differs from the map anchor country", () => {
+  const geo = { "sample-house": { place: "Muscat", precision: "city", cc: "FR", anchor_observation_ids: [base.id] } };
+  const errors = validateMapAnchors(geo, [sampleHouse], [base]);
+  assert.ok(errors.some(x => x.includes("different map-anchor country code")));
+});
+
+test("requires an explicit country code for verified map anchors", () => {
+  const geo = { "sample-house": { place: "Muscat", precision: "city", anchor_observation_ids: [base.id] } };
+  const errors = validateMapAnchors(geo, [sampleHouse], [base]);
+  assert.ok(errors.some(x => x.includes("needs its own valid cc country code")));
 });
