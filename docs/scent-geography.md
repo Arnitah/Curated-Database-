@@ -8,9 +8,9 @@
 This block is authoritative for the live PR branch. Older dated snapshots and audit batches below are retained as historical evidence; their counts are superseded by this status.
 
 - PR [#14](https://github.com/Arnitah/Curated-Database-/pull/14) is open and unmerged. Current branch head is tracked directly in [PR #14](https://github.com/Arnitah/Curated-Database-/pull/14).
-- 178 houses and 178 map points: **148 city, 7 region, 23 country precision**.
-- **175 anchors are evidence-linked and validated; 3 remain explicitly unverified**: Cozy (Khamreya) at city precision; Gerimist and Eau So Dramatic / House of ESD at country precision.
-- The original 66-pin audit is substantially complete: **63 resolved, 3 retained as unknown**. The four unresolved points are not defects to fill by inference.
+- 178 houses and 178 map points: **147 city, 7 region, 24 country precision**.
+- **175 anchors are evidence-linked and validated; 3 remain explicitly unverified, all at country precision**: Cozy (Khamreya) / Egypt, Gerimist / Indonesia, and Eau So Dramatic / India.
+- The original 66-pin audit is substantially complete: **63 evidence-backed anchors, 3 retained as unknown**. The three unresolved points are not defects to fill by inference.
 - Typed geography covers **175/178 houses**. The three houses without typed geography are Cozy (Khamreya), Gerimist and Eau So Dramatic.
 - Observation register: **655 records, 469 claims, 450 typed geography claims**. The 11 legacy `hq` / `made_in` records remain preserved for provenance.
 - The map contract is one pin per house. Each verified pin references typed observation IDs and carries its own anchor-country ISO code; cards show the linked relationship role(s), evidence and precision. A pin may carry multiple roles only when they refer to the same mapped location.
@@ -23,7 +23,7 @@ This block is authoritative for the live PR branch. Older dated snapshots and au
 
 | House | Why the pin remains unverified |
 |---|---|
-| Cozy (Khamreya) | No reliable evidence ties this fragrance lead to similarly named Egyptian sleepwear or fragrance-retail sites |
+| Cozy (Khamreya) | No reliable evidence ties the fragrance lead to Port Fouad or a specific Egyptian city; retained as an Egypt country-only fallback |
 | Gerimist | The Indonesian trademark gazette names Singapore-based HEBE BEAUTY PTE. LTD. as applicant; its relationship to the Indonesian fragrance lead is unresolved |
 | Eau So Dramatic / House of ESD | The official storefront uses INR pricing but does not identify a physical or registered business location |
 
@@ -711,3 +711,8 @@ The snapshot is generated from the current source app and data. It is not hand-e
 The current official [Contact page](https://www.ellisbrooklyn.com/pages/contact-us) and [Privacy Policy](https://www.ellisbrooklyn.com/pages/privacy-policy) both list 4 Star Point, Suite 201, Stamford, CT 06902. The map now represents this as the house's **commercial/contact base** at city precision. The company is incorporated in Delaware; the Stamford pin is not a legal-domicile claim. The earlier Brooklyn address is not used as the current anchor, and the Apple Love Eau de Parfum manufacturing evidence remains SKU-specific. Coordinates use the [GeoNames Stamford reference](https://www.geonames.org/4843564/stamford.html).
 
 Updated canonical map counts: 178 points — 148 city, 7 region, 23 country precision; 175 anchored and 3 unverified. The remaining unverified points are Cozy (Khamreya) at city precision, and Gerimist plus Eau So Dramatic at country precision.
+
+
+### Country-only fallback for Cozy (Khamreya)
+
+The unsupported Port Fouad city coordinate has been removed. Searches surfaced unrelated perfume retailers in Port Fouad but no evidence connecting them to Cozy (Khamreya). The point is now an **unverified Egypt country-only fallback** at representative country-centre coordinates. No city, role or source claim is inferred. This leaves no unverified city- or region-precision pins on the map.

@@ -1499,10 +1499,11 @@
     ]
   },
   "cozy-khamreya": {
-    "lat": 31.25,
-    "lon": 32.32,
-    "place": "Port Fouad, Port Said",
-    "precision": "city"
+    "lat": 26.8206,
+    "lon": 30.8025,
+    "place": "Egypt",
+    "precision": "country",
+    "cc": "EG"
   },
   "asateer": {
     "lat": 29.31166,
