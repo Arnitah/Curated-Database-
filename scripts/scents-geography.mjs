@@ -27,17 +27,17 @@ export const GEO_PRECISIONS = Object.freeze(["city", "region", "country"]);
 export function normaliseMapPlace(value) {
   return String(value || "")
     .normalize("NFD")
-    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/\p{Diacritic}/gu, "")
     .toLowerCase()
-    .replace(/\\s*\\([^)]*\\)/g, "")
+    .replace(/\s*\([^)]*\)/g, "")
     .split(",")[0]
     .replace(/[–—]/g, "-")
     .trim()
-    .replace(/\\s+/g, " ");
+    .replace(/\s+/g, " ");
 }
 
 function normaliseCountry(value) {
-  const key = String(value || "").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase().replace(/[.]/g, "").trim();
+  const key = String(value || "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[.]/g, "").trim();
   return ({ uae: "united arab emirates", usa: "united states", us: "united states", uk: "united kingdom", "republic of korea": "south korea" })[key] || key;
 }
 

@@ -553,6 +553,10 @@ const TOPIC_LABEL = { brand_origin: "Brand origin", founder_origin: "Founder ori
 const STR_LABEL = { A: "official or academic", B: "trusted press", C: "brand or lifestyle", D: "unsourced" };
 function claimsFor(key, isLead) { return OBS.filter((o) => o.kind === "claim" && o.topic && (isLead ? o.lead === key : o.house === key)); }
 function locationLabel(location) { return [location.entity, location.site, location.city, location.region, location.country].filter(Boolean).join(", "); }
+function mapCountryKey(value) {
+  const key = String(value || "").toLowerCase().replace(/[.]/g, "").trim();
+  return ({ uae: "united arab emirates", usa: "united states", us: "united states", uk: "united kingdom" })[key] || key;
+}
 function mapAnchorClaims(h) {
   const ids = D?.geo?.[h.id]?.anchor_observation_ids || [];
   return ids.map((id) => OBS.find((o) => o.id === id)).filter((o) => o && o.location && TOPIC_LABEL[o.topic]);
@@ -564,7 +568,7 @@ function mapAnchorSummary(h) {
   if (roles.length) return roles.join(" · ");
   const typed = claimsFor(h.id).filter((o) => o.location);
   if (g.precision === "country" && typed.some((o) => o.location.city || o.location.region)) return "Country precision · city-level facts elsewhere";
-  if (g.precision === "country" && normaliseMapPlace(g.place) !== normaliseMapPlace(h.country)) return "Country precision · place label unverified";
+  if (g.precision === "country" && mapCountryKey(g.place) !== mapCountryKey(h.country)) return "Country precision · place label unverified";
   return (g.precision || "map") + " precision · role unverified";
 }
 function houseLocationLine(h) {

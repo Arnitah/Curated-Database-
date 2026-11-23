@@ -444,17 +444,17 @@ The build validator now checks dangling IDs, wrong-house references, non-geograp
 
 ### First-pass anchor assignment
 
-- 14 country-precision points with matching city evidence were promoted to city precision.
+- 13 country-precision points with matching city evidence were promoted to city precision.
 - 2 country-precision points with matching region evidence were promoted to region precision: Naso Profumi/Delhi and Stories Parfums/County Down.
-- 1 city-precision point was downgraded to region precision: Celia Loves/Surf Coast, Victoria.
+- 2 city-precision points were downgraded to region precision: Celia Loves/Surf Coast, Victoria and Zielinski & Rozen/Tel Aviv.
 - No latitude or longitude values were changed.
 
-Current map state: **178 points — 122 city, 4 region, 52 country precision.**
+Current map state: **178 points — 121 city, 5 region, 52 country precision.**
 
 | Precision | Points | With typed anchor reference | Unverified |
 |---|---:|---:|---:|
-| City | 122 | 104 | 18 |
-| Region | 4 | 3 | 1 |
+| City | 121 | 103 | 18 |
+| Region | 5 | 4 | 1 |
 | Country | 52 | 5 | 47 |
 | **Total** | **178** | **112** | **66** |
 
@@ -516,3 +516,8 @@ The map heading now reads **Fragrance houses and their places**. Tooltips, place
 - City-level anchors establish a sourced city relationship, not an exact street address or manufacturing site unless the linked claim says so.
 - `dist/scent-atlas.html` remains unchanged; the source app is updated, but the self-contained snapshot still needs a documented regeneration path.
 
+
+
+#### Validation correction — 23 November 2026
+
+The first exact-head validation run exposed an escaping defect in the new map-label normaliser: accent and parenthetical stripping were emitted with over-escaped regular expressions. The normaliser now uses Unicode property escapes for diacritics and correctly handles whitespace and parenthetical suffixes. The country alias comparison in the app is also self-contained; it no longer calls an undefined helper. No map data changed in this correction. The corrected precision counts above supersede the initial draft counts in this section.
