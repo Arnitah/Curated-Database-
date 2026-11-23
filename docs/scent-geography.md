@@ -335,3 +335,51 @@ Sources:
 - [Mezel Pitti profile](https://fragranze.pittimmagine.com/en/exhibitors/M/mezel) · [official consumer terms](https://mezelparfums.com/en/pages/cgv)
 - [Naisday Tokopedia listing](https://www.tokopedia.com/find/parfum-naisday-ons) · [Bekasi City SIPTRI listing](https://sip3.bekasikota.go.id/katalog/produk/12/141/naisday) · [Naisday Shopee store](https://shopee.co.id/naisday?entryPoint=ShopByPDP)
 
+
+
+## Review of the 22 houses without typed geography — batch 1 · 23 November 2026
+
+The original 22-house gap list was reviewed against current brand pages, legal/registry records and contact/store pages. Nine houses now have at least one typed geography observation; thirteen remain without a typed geography claim. No location was inferred from a legacy display field, founder identity, retailer, marketplace contact address or parent-company address.
+
+### Typed geography added in this review
+
+| House | New typed relationship | Evidence and limitation |
+|---|---|---|
+| Scentury Perfume & Co. | `retail` — Johannesburg, Gauteng, South Africa | Its official returns page gives a store address at The Marc Shopping Centre, Sandton, Store 21. This is retail only, not HQ or manufacturing. The map point labelled Durban remains unsupported. [Source](https://scenturysa.co.za/refund_returns/) |
+| Rogue Perfumery | `commercial_base` — Idaho Falls, Idaho, United States | Official contact page says the company is located in Idaho Falls. [Source](https://rogueperfumery.com/pages/contact) |
+| Meleg Perfumes | `commercial_base` — Calgary, Alberta, Canada | Official contact page lists Calgary as its contact location; it is not separately verified as a registered office or manufacturing site. [Source](https://www.melegperfumes.com/pages/contact) |
+| Libroaria | `commercial_base` — Tokyo, Japan | Blue Moment LLC identifies its head office in Shibuya, Tokyo. The official legal notice also gives a Tokyo seller address in Meguro; no city outside Tokyo is inferred. [Company profile](https://prtimes.jp/main/html/rd/p/000000001.000135352.html) · [Legal notice](https://libroaria.com/policies/legal-notice) |
+| Régime des Fleurs | `retail` — New York, United States | Official contact page offers in-person shopping by appointment at 15 Maiden Lane, Suite 1003. This is retail/contact only; the Los Angeles map point is unsupported by this source. [Source](https://regimedesfleurs.com/pages/contact) |
+| Aroma Concepts | `legal_base` — Leicester, United Kingdom; `commercial_base` — Orlando, Florida, United States | Companies House lists AROMA CONCEPTS LTD at 17 Brougham Street, Leicester. Florida's registry and the US brand site list AROMA CONCEPTS LLC at 4111 34th Street, Orlando. These are separate legal entities and must remain separate in the records. [UK registry](https://find-and-update.company-information.service.gov.uk/company/12291397) · [US registry](https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=flal-l21000472917-2331dc1b-d7d8-45bf-96bf-13b321bd9158&directionType=PreviousList&inquirytype=EntityName&listNameOrder=AROMACOFFEE+S891880&searchNameOrder=AROMACONCEPTS+L210004729170&searchTerm=AROMA+MAMMA%27S+LLC) |
+| The Body Tale | `commercial_base` — Ciputat, South Tangerang, Indonesia | Official careers page identifies Ciputat as its head office. [Source](https://www.thebodytale.com/careers) |
+| Indē Wild | `legal_base` — New Delhi, India | Current LEI record for INDE WILD PRIVATE LIMITED records a legal/HQ address change effective 19 October 2026, recorded 29 October 2026 and fully corroborated against India's Ministry of Corporate Affairs. Its 2024 privacy policy still lists Mumbai; treat that as an earlier contact address, not the current legal base. [Current LEI](https://lei.bloomberg.com/leis/view/3358006GV1X9B1OG3295) · [2024 privacy policy](https://india.indewild.com/policies/privacy-policy) |
+| Celia Loves | `manufacturing` — Surf Coast, Victoria, Australia | Official About page says its soy-wax scented candles are hand-poured on Victoria's Surf Coast. This claim is explicitly limited to candles; it does not establish Eau de Parfum manufacturing. [Source](https://celialoves.com.au/pages/about-us) |
+
+Ten new typed observations were appended for these nine houses. No legacy record was overwritten.
+
+### Thirteen houses still without typed geography
+
+| House | Review result / reason retained as unknown |
+|---|---|
+| Henry Rose | Official terms give a Los Angeles legal-notice address for Henry Rose LLC, while a separate Henry Rose Inc. filing lists Santa Monica and is now inactive. The relationship between the entities and a current operational base is not established; do not convert a notice address into HQ. [Terms](https://henryrose.com/pages/terms-of-service) · [Florida registry record](https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=forp-f23000005577-1dac45f4-6cb0-4309-841f-08b45bfaa3a9&directionType=ForwardList&inquirytype=EntityName&listNameOrder=HENRYRODRIGUEZPENA+L170000085810&searchNameOrder=HENRYROSE+F230000055770&searchTerm=HENRY+P.+TRAWICK%2C+P.A.) |
+| CYKLAR | Official terms give a West Hollywood address for Center Brands LLC d/b/a Cyklar, but do not establish a registered office or operating site. Preserve as a legal-notice address, not a typed base. [Terms](https://cyklar.com/policies/terms-of-service) |
+| Cozy (Khamreya) | Official contact page does not provide a physical address or city-specific operating location. Port Fouad remains unsupported. |
+| Chujian | Official brand pages reviewed do not identify a city, studio or legal address. Keep China at country level only. |
+| Kitschy | Privacy policy gives a Jakarta contact address, but does not identify a registered entity or establish a physical office/manufacturing site. Do not turn a privacy contact address into HQ. [Privacy policy](https://kitschy.id/policies/privacy-policy) |
+| Gerimist | No verifiable primary source establishing a city or operating address was found in this pass. |
+| Liberation of Flowers | Official site describes the fragrance collection and founder/creative work but gives no operating city or registered address. [Official site](https://www.liberationofflowers.com/) |
+| Paragraf Parfums | Official brand site gives no city or business address. Search results for Parag Fragrances International refer to a different business and were not used. [Official site](https://paragrafparfums.com/) |
+| Otter Haus | Official store site provides product and shipping information but no city or operating address. [Official site](https://otterhausph.com/) |
+| Eau So Dramatic | Official site/contact information reviewed does not establish a city or legal entity address. Keep India at country level only. |
+| Amouroud | Official About page lists a New York address for parent company Perfumer's Workshop International, not a brand-specific Amouroud office or studio. Do not conflate the parent-company address with the house. [About](https://amouroud.com/pages/about-us) |
+| Maison Mataha | Prior hold remains: named legal operator TK PARFUMS (SIREN 901395194) was dissolved/struck off on 9 January 2024; current operator has not been identified. |
+| Muse Beauty | Official fragrance site says Muse Beauty is a sister company of House of Anaiza but gives no city. Search results for Muse Beauty India refer to a separate makeup-brush brand and were not conflated. [Privacy policy](https://www.musebeauty.in/pages/privacy-policy) |
+
+### Updated PR-branch coverage snapshot
+
+- 638 observations total.
+- 452 claim records, including 433 typed geography claims.
+- Typed geography claims now cover 165 of 178 houses and 3 research leads.
+- 13 houses remain without typed geography: Henry Rose, CYKLAR, Cozy (Khamreya), Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums, Otter Haus, Eau So Dramatic, Amouroud, Maison Mataha and Muse Beauty.
+- The map and app were not changed. The nine new house-level claims are source evidence only; they do not authorize moving or promoting map pins.
+

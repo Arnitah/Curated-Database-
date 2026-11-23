@@ -9787,6 +9787,188 @@
       },
       "lead": "Scent of Africa",
       "open": "The article distinguishes composition from production. Scent of Africa's official brand page says the house is made in Ghana, and its Values page places the end-to-end production chain in Accra, Ghana. Do not interpret this as manufacturing in France."
+    },
+    {
+      "id": "scentury-retail-johannesburg-typed-1",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Scentury Perfume & Co lists its store at The Marc Shopping Centre, Sandton, Store 21, Upper Retail, Johannesburg, South Africa.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://scenturysa.co.za/refund_returns/",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Johannesburg",
+        "region": "Gauteng",
+        "country": "South Africa",
+        "cc": "ZA",
+        "site": "The Marc Shopping Centre, Sandton, Store 21"
+      },
+      "house": "scentury",
+      "open": "Retail location only; this does not establish the house's headquarters or manufacturing site. The existing map point is Durban, which this source does not support."
+    },
+    {
+      "id": "rogue-commercial-base-idaho-falls-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Rogue Perfumery states on its official contact page that it is located in Idaho Falls, Idaho, United States.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://rogueperfumery.com/pages/contact",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Idaho Falls",
+        "region": "Idaho",
+        "country": "United States",
+        "cc": "US"
+      },
+      "house": "rogue-perfumery"
+    },
+    {
+      "id": "meleg-commercial-base-calgary-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Meleg Perfumes lists Calgary, Alberta, Canada as its contact location on its official contact page.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.melegperfumes.com/pages/contact",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Calgary",
+        "region": "Alberta",
+        "country": "Canada",
+        "cc": "CA"
+      },
+      "house": "meleg-perfumes",
+      "open": "Contact/business location; not separately verified as a registered office or manufacturing site."
+    },
+    {
+      "id": "libroaria-commercial-base-tokyo-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Blue Moment LLC, the company behind Libroaria, identifies its head office in Shibuya, Tokyo, Japan.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://prtimes.jp/main/html/rd/p/000000001.000135352.html",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "Japan",
+        "cc": "JP",
+        "entity": "Blue Moment LLC"
+      },
+      "house": "libroaria"
+    },
+    {
+      "id": "regime-des-fleurs-retail-new-york-typed-1",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Régime des Fleurs offers in-person shopping by appointment at 15 Maiden Lane, Suite 1003, New York, NY, United States.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://regimedesfleurs.com/pages/contact",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New York",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US",
+        "site": "15 Maiden Lane, Suite 1003"
+      },
+      "house": "regime-des-fleurs",
+      "open": "Appointment-based retail/contact location only; not evidence of brand origin or manufacturing. The existing Los Angeles map point is not supported by this source."
+    },
+    {
+      "id": "aroma-concepts-legal-base-leicester-typed-1",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Companies House lists AROMA CONCEPTS LTD (company 12291397) at its registered office, 17 Brougham Street, Leicester, England.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://find-and-update.company-information.service.gov.uk/company/12291397",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Leicester",
+        "region": "England",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "AROMA CONCEPTS LTD"
+      },
+      "house": "aroma-concepts"
+    },
+    {
+      "id": "aroma-concepts-commercial-base-orlando-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Aroma Concepts LLC lists its United States address at 4111 34th Street, Orlando, Florida, and Florida's corporate registry records the same principal address.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?aggregateId=flal-l21000472917-2331dc1b-d7d8-45bf-96bf-13b321bd9158&directionType=PreviousList&inquirytype=EntityName&listNameOrder=AROMACOFFEE+S891880&searchNameOrder=AROMACONCEPTS+L210004729170&searchTerm=AROMA+MAMMA%27S+LLC",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Orlando",
+        "region": "Florida",
+        "country": "United States",
+        "cc": "US",
+        "entity": "AROMA CONCEPTS LLC"
+      },
+      "house": "aroma-concepts",
+      "open": "The UK limited company and US LLC are separate legal entities with separate addresses. Record both explicitly; do not imply one registered office or a corporate-parent relationship."
+    },
+    {
+      "id": "body-tale-commercial-base-ciputat-typed-1",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "The Body Tale's official careers page identifies its head office in Ciputat, South Tangerang, Indonesia.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.thebodytale.com/careers",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Ciputat",
+        "region": "South Tangerang",
+        "country": "Indonesia",
+        "cc": "ID"
+      },
+      "house": "the-body-tale"
+    },
+    {
+      "id": "inde-wild-legal-base-new-delhi-typed-1",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The current LEI record for INDE WILD PRIVATE LIMITED lists its legal and headquarters address in New Delhi, India; the address change took effect on 19 October 2026 and was recorded on 29 October 2026.",
+      "evidence": "registry",
+      "strength": "B",
+      "src": "https://lei.bloomberg.com/leis/view/3358006GV1X9B1OG3295",
+      "seen": "2026-11-23",
+      "published": "2026-10-29",
+      "location": {
+        "city": "New Delhi",
+        "region": "Delhi",
+        "country": "India",
+        "cc": "IN",
+        "entity": "INDE WILD PRIVATE LIMITED"
+      },
+      "house": "inde-wild",
+      "open": "The brand's official privacy policy last updated 23 July 2024 still lists a Mumbai contact address. The newer LEI record, fully corroborated against the Ministry of Corporate Affairs, records the current legal/HQ address change to New Delhi. Treat Mumbai as an earlier contact address unless a current commercial operation is independently established."
+    },
+    {
+      "id": "celia-loves-manufacturing-surf-coast-typed-1",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Celia Loves states that its soy-wax scented candles are hand-poured on Victoria's Surf Coast, Australia.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://celialoves.com.au/pages/about-us",
+      "seen": "2026-11-23",
+      "location": {
+        "region": "Surf Coast, Victoria",
+        "country": "Australia",
+        "cc": "AU"
+      },
+      "house": "celia-loves",
+      "open": "Product scope is candles only. This does not establish where the brand's Eau de Parfum or other fragrance products are formulated, filled or manufactured."
     }
   ]
 }
