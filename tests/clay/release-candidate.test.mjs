@@ -84,7 +84,7 @@ const LEGACY = [
   { id: 3, a: 'body', st: 'Lotion or cream', n: 'Synthetic legacy lotion', s: 'cur', inci: 'Aqua, Glycerin' },
 ];
 
-test('[invariant] legacy records (original fields only, plus unrelated legacy fields) load, render on every section and are stored back unchanged', async () => {
+test('[invariant] legacy records (original fields only, plus unrelated legacy fields) load and render on every section, and the in-memory records are exactly the seeded ones (storage write-back and reload are covered by persistence-rehydration.test.mjs)', async () => {
   const h = await openClay(browser, srv.base, { noClaude: true, local: { 'clay-products': clone(LEGACY) } });
   try {
     const ids = await h.page.$$eval('#nav button', (bs) => bs.map((b) => b.dataset.v));
@@ -95,7 +95,7 @@ test('[invariant] legacy records (original fields only, plus unrelated legacy fi
     const mp = await h.mp();
     for (const r of LEGACY) {
       const now = mp.find((x) => x.id === r.id);
-      assert.deepEqual(now, r, `record ${r.id} is exactly as it was (no fields added, none dropped)`);
+      assert.deepEqual(now, r, `record ${r.id} in memory is exactly as seeded (no fields added, none dropped)`);
     }
     assert.deepEqual(h.errors, []);
   } finally { await h.close(); }
@@ -144,7 +144,11 @@ test('[invariant] editing the ingredient list clears packaging verification, kee
     });
     assert.equal(await verdict(), 'use_with_care', 'both lists verified: acid + retinoid is a full verdict');
     await act(h, 'cpopen', '31');
-    await h.page.locator('[data-cpl="a"]').fill('Glycolic Acid (7%), Panthenol');
+    // let the Check page finish its own start-up re-render (it re-renders once when the product list has loaded) before typing
+    await h.page.evaluate(async () => { await pdbLoad(); await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))); });
+    await h.page.waitForFunction(() => document.querySelector('[data-cpl="a"]') && document.querySelector('[data-cpl="a"]').value === 'Glycolic Acid (7%)'); // wait until the saved list has loaded
+    // type the new list; if the page's start-up re-render swallowed the keystrokes (seen about once in 100 runs), type again until the page has registered them
+    await waitUntil(async () => { await h.page.locator('[data-cpl="a"]').fill('Glycolic Acid (7%), Panthenol'); return (await h.page.evaluate(() => S.cp.la)) === 'Glycolic Acid (7%), Panthenol'; });
     await h.page.locator('[data-act="cpgo"]').click();
     await h.page.locator('[data-act="cpsave"][data-v="a"]').click();
     const r = (await h.mp()).find((x) => x.id === 31);
