@@ -7,23 +7,22 @@
 
 This block is authoritative for the live PR branch. Older dated snapshots and audit batches below are retained as historical evidence; their counts are superseded by this status.
 
-- PR [#14](https://github.com/Arnitah/Curated-Database-/pull/14) is open and unmerged. Current head before this documentation-only change: `cf19524a22c45b040b00eca4e1a5ba641cfe523c`.
+- PR [#14](https://github.com/Arnitah/Curated-Database-/pull/14) is open and unmerged. Current branch head is tracked directly in [PR #14](https://github.com/Arnitah/Curated-Database-/pull/14).
 - 178 houses and 178 map points: **148 city, 7 region, 23 country precision**.
-- **174 anchors are evidence-linked and validated; 4 remain explicitly unverified**: Ellis Brooklyn and Cozy (Khamreya) at city precision; Gerimist and Eau So Dramatic / House of ESD at country precision.
-- The original 66-pin audit is substantially complete: **62 resolved, 4 retained as unknown**. The four unresolved points are not defects to fill by inference.
+- **175 anchors are evidence-linked and validated; 3 remain explicitly unverified**: Cozy (Khamreya) at city precision; Gerimist and Eau So Dramatic / House of ESD at country precision.
+- The original 66-pin audit is substantially complete: **63 resolved, 3 retained as unknown**. The four unresolved points are not defects to fill by inference.
 - Typed geography covers **175/178 houses**. The three houses without typed geography are Cozy (Khamreya), Gerimist and Eau So Dramatic.
-- Observation register: **654 records, 468 claims, 449 typed geography claims**. The 11 legacy `hq` / `made_in` records remain preserved for provenance.
+- Observation register: **655 records, 469 claims, 450 typed geography claims**. The 11 legacy `hq` / `made_in` records remain preserved for provenance.
 - The map contract is one pin per house. Each verified pin references typed observation IDs and carries its own anchor-country ISO code; cards show the linked relationship role(s), evidence and precision. A pin may carry multiple roles only when they refer to the same mapped location.
 - Country-only pins use representative country coordinates, not inferred capitals or cities. City and region precision require a matching typed city/region observation. Legal-notice addresses are not silently promoted to operating headquarters.
 - The standalone snapshot now has a deterministic generator: `npm run build:scent-atlas`; CI verifies byte-for-byte freshness with `npm run check:scent-atlas`.
-- Exact-head data validation, geography tests and standalone snapshot verification passed on `cf19524a22c45b040b00eca4e1a5ba641cfe523c`. The advisory Clay test workflow was still pending at last check.
+- The deterministic snapshot builder and byte-for-byte freshness check are part of CI. Latest-head data validation, geography schema tests and snapshot freshness must all pass before merge; full Clay and database tests have previously passed on the unchanged app implementation.
 - No merge, release or deployment has occurred.
 
-### Four retained unknowns
+### Three retained unknowns
 
 | House | Why the pin remains unverified |
 |---|---|
-| Ellis Brooklyn | The only typed manufacturing evidence is SKU-specific to Apple Love EDP; the Brooklyn trademark-owner address is not proof of a registered office, HQ or factory |
 | Cozy (Khamreya) | No reliable evidence ties this fragrance lead to similarly named Egyptian sleepwear or fragrance-retail sites |
 | Gerimist | The Indonesian trademark gazette names Singapore-based HEBE BEAUTY PTE. LTD. as applicant; its relationship to the Indonesian fragrance lead is unresolved |
 | Eau So Dramatic / House of ESD | The official storefront uses INR pricing but does not identify a physical or registered business location |
@@ -705,3 +704,10 @@ The previous `dist/scent-atlas.html` was a manually assembled, data-inlined snap
 - The builder has focused tests for complete static-path bundling, deterministic output and malformed-data rejection.
 
 The snapshot is generated from the current source app and data. It is not hand-edited.
+
+
+### Ellis Brooklyn location clarification — Stamford, Connecticut
+
+The current official [Contact page](https://www.ellisbrooklyn.com/pages/contact-us) and [Privacy Policy](https://www.ellisbrooklyn.com/pages/privacy-policy) both list 4 Star Point, Suite 201, Stamford, CT 06902. The map now represents this as the house's **commercial/contact base** at city precision. The company is incorporated in Delaware; the Stamford pin is not a legal-domicile claim. The earlier Brooklyn address is not used as the current anchor, and the Apple Love Eau de Parfum manufacturing evidence remains SKU-specific. Coordinates use the [GeoNames Stamford reference](https://www.geonames.org/4843564/stamford.html).
+
+Updated canonical map counts: 178 points — 148 city, 7 region, 23 country precision; 175 anchored and 3 unverified. The remaining unverified points are Cozy (Khamreya) at city precision, and Gerimist plus Eau So Dramatic at country precision.

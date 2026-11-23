@@ -1298,10 +1298,14 @@
     ]
   },
   "ellis-brooklyn": {
-    "lat": 40.71,
-    "lon": -74.01,
-    "place": "New York",
-    "precision": "city"
+    "lat": 41.05343,
+    "lon": -73.53873,
+    "place": "Stamford",
+    "precision": "city",
+    "cc": "US",
+    "anchor_observation_ids": [
+      "ellis-brooklyn-commercial-base-stamford-typed-1"
+    ]
   },
   "dusita": {
     "lat": 48.86606,

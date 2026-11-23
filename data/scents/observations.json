@@ -10245,6 +10245,26 @@
         "cc": "ID"
       },
       "open": "Country-level brand-origin statement only; no city, headquarters or manufacturing site is inferred."
+    },
+    {
+      "id": "ellis-brooklyn-commercial-base-stamford-typed-1",
+      "house": "ellis-brooklyn",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Ellis Brooklyn's current official Contact page lists 4 Star Point, Suite 201, Stamford, Connecticut 06902 as its mailing address. The official Privacy Policy gives the same address for privacy inquiries. This supports a current business/contact base in Stamford; it does not establish a manufacturing site or brand-origin claim.",
+      "evidence": "brand",
+      "strength": "B",
+      "src": "https://www.ellisbrooklyn.com/pages/contact-us",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Stamford",
+        "region": "Connecticut",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Ellis Brooklyn Inc.",
+        "site": "4 Star Point, Suite 201, Stamford, CT 06902"
+      },
+      "open": "The company is incorporated in Delaware according to trademark filings; this pin is the commercial/contact base, not legal domicile. The Brooklyn name is brand identity, not a current location. The Apple Love manufacturing claim remains SKU-specific."
     }
   ]
 }
