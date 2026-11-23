@@ -150,3 +150,95 @@ This first source-level pass checked 20 of the 67 country-precision map points. 
 - **Requires underlying source recheck:** Toouch.
 
 No `geo.json` values were changed in this batch. This is an evidence register, not a map-data correction. The remaining 47 country-precision points and the six country-named labels paired with city-centred coordinates (Canada/Ottawa, India/New Delhi, Indonesia/Jakarta, Japan/Tokyo, Sweden/Stockholm and UAE/Dubai) remain to be checked. The map-anchor role is still an open design/data contract: the one-pin-per-house model must state whether the pin represents brand origin, legal/commercial base, studio, manufacturing, retail, or a clearly labelled approximate location before a point is moved or promoted to city precision.
+
+
+### Map anchor source cross-check — remaining points (batches 2–4, 2026-11-23)
+
+The remaining 47 country-precision records were reconciled against the typed geography ledger and their linked sources. The rows below distinguish a supported location from a supported **map anchor**: where a city is supported only as a stockist, manufacturing site, legal address or studio, that relationship must be visible before the map uses it as the house pin.
+
+#### Batch 2
+
+| House | Existing map point | Source-led finding | Disposition |
+|---|---|---|---|
+| ISAK | Delhi, India | Official story says the modern house was founded in 2018, remains based in Lucknow, and makes/extracts many essences there. | Delhi is contradicted; Lucknow is a strong origin/commercial/manufacturing candidate if the map is origin-first. [Source](https://www.isakfragrances.com/pages/our-story) |
+| Naso Profumi | Delhi, India | Official stockist page lists Evoluzione in New Delhi, but also stores in Lucknow and Gurugram and stockists elsewhere. Manufacturing is described only as North India. | Delhi is retail-only and not a unique primary location; keep the map anchor unresolved. [Source](https://www.nasoprofumi.com/pages/our-stockists-1) |
+| NEESH | Mumbai, India | Official About page says headquarters in Paris and India; official contact page gives the Indian company address in Ambala; traditional attar oils are distilled by M.L. Ramnarain in Kannauj. | Mumbai unsupported. Keep Paris, Ambala and Kannauj as separate relationship locations. [About](https://neeshperfumes.com/pages/about-us) · [Contact](https://neeshperfumes.com/pages/support) |
+| SAFF & Co. | Bandung, Indonesia | Official offline-store page lists Bandung, but also Jakarta, Bekasi, Surabaya, Bali, Medan and other retail locations. | Bandung is a verified retail point, not a unique house base. [Source](https://saffnco.com/pages/offline-store) |
+| JANUA | Bangkok, Thailand | Official contact page identifies WERIN WEALTH INTERTRADE CO., LTD. and its registered address in Mae Suai, Chiang Rai. | Bangkok unsupported by the current legal-address source. [Source](https://www.januathailand.com/en/contact) |
+| Michael Malul | United States (country centroid) | Company profile identifies Columbus, Ohio as headquarters; this is secondary company-profile evidence. | Country pin is spatially appropriate; Columbus is a commercial-base candidate only if the map adopts that role. [Source](https://www.linkedin.com/company/michael-malul) |
+| Sana Jardin | Marrakech, Morocco | Companies House records London registered offices for the active Sana Jardin Limited and a separate Sana Jardin (UK) Limited in liquidation. The brand describes a rural flower-growing region in Morocco, without naming Marrakech. | Marrakech is unsupported; keep London legal-base and Morocco sourcing-region claims distinct. [Companies House](https://find-and-update.company-information.service.gov.uk/company/09507539) · [Brand page](https://sanajardin.com/pages/about) |
+| Rogue Perfumery | United States (country centroid) | No typed geography observation is present. | Country-only pin; no city promotion. |
+| Sultan Pasha | London, United Kingdom | Official biography describes Sultan Pasha as a London-based independent perfumer. | London supported as perfumer/commercial base, not automatically as a legal or manufacturing address. [Source](https://sultanpashaperfumes.com/pages/about-sultan-pasha) |
+| Areej Le Doré | Moscow, Russia | The specialist profile reports UK registration and Indonesia production, but its page is internally inconsistent: the summary says origin is not established, while the history describes creation in the UK and launch from Thailand. It does not support Moscow. | Moscow unsupported; country/origin claim needs correction review. Do not promote UK or Thailand as settled origin until the source conflict is reconciled. [Source](https://osmetheca.be/en/houses/areej-le-dore.html) |
+| Bortnikoff | Moscow, Russia | Official About page says the house was founded in Thailand; official contact page gives its company address in Bangkok. | Moscow and RU map country code are contradicted; Thailand/Bangkok are the evidence-backed origin and business-address candidates. [About](https://bortnikoff.com/aboutus/) · [Contact](https://bortnikoff.com/contact/) |
+| Ensar Oud | Phnom Penh, Cambodia | Official imprint identifies Oriscent LLC and an address in Glendale, New York. The map's Cambodia point is not evidence of the house's base; material sourcing does not establish a Phnom Penh operation. | Phnom Penh unsupported; the map country code appears to conflate raw-material origin with house location. [Source](https://www.ensaroud.com/imprint/) |
+| PHLUR | United States (country centroid) | Official terms identify a Delaware LLC and a West Hollywood business/legal-notice address. | Country-only pin is appropriate at current precision; West Hollywood is a commercial-address candidate, not the legal jurisdiction. [Source](https://phlur.com/en-ca/pages/terms-of-service) |
+| CYKLAR | United States (country centroid) | No typed geography observation is present. | Country-only pin; no city promotion. |
+| STORIES Parfums | County Down, United Kingdom | Official terms identify the operator at Newtownards, County Down and say refills are carried out by hand at its headquarters in Newtownards. | County Down is a supported region label; the current point should be audited as region precision, with coordinates checked against the region/operating location. [Source](https://storiesparfums.com/pages/terms-conditions) |
+| Inis | Ireland (country point) | Official terms identify Fragrances of Ireland Limited's registered office and main trading address at Kilmacanogue, County Wicklow. | Country-level Ireland point is defensible; do not imply a Dublin or other city location. [Source](https://inis.com/policies/terms-of-service) |
+| Meleg Perfumes | Canada (Ottawa-centred coordinates) | No typed geography observation is present. | Country label is consistent with country-level knowledge, but Ottawa-centred coordinates are not a country centroid and are unsupported. |
+
+#### Batch 3
+
+| House | Existing map point | Source-led finding | Disposition |
+|---|---|---|---|
+| Libroaria | Japan (Tokyo-centred coordinates) | No typed geography observation is present. | Country label is acceptable; Tokyo-centred coordinates are unsupported and should not imply a Tokyo base. |
+| Stardust & Stems | United States (country centroid) | Official page says a single perfumer formulates, blends and bottles in a home studio; the city is not disclosed. | Country-only pin is appropriate; do not infer the studio city. [Source](https://stardustandstems.com/pages/our-materials-process) |
+| L'Epoque Parfums | United States (country centroid) | Official FAQ says the independent fragrance house was founded in Dallas, Texas in 2025. | Dallas is a supported brand-origin candidate; the country-level point is coarse but not geographically false. [Source](https://www.lepoqueparfums.com/pages/faq) |
+| Chujian | China (country centroid) | No typed geography observation is present. | Country-only pin; current country-centred coordinates are appropriate. |
+| The Body Tale | Indonesia (Jakarta-centred coordinates) | No typed geography observation is present. | Jakarta coordinates unsupported; retain country-only knowledge without a city-centred point. |
+| Kitschy | Indonesia (Jakarta-centred coordinates) | No typed geography observation is present. | Jakarta coordinates unsupported; retain country-only knowledge without a city-centred point. |
+| Gerimist | Indonesia (Jakarta-centred coordinates) | No typed geography observation is present. | Jakarta coordinates unsupported; retain country-only knowledge without a city-centred point. |
+| Aroma Concepts | United States (country centroid) | No typed geography observation is present. | Country-only pin; no city promotion. |
+| Belnu | United States (country centroid) | Company profile identifies Los Angeles as headquarters; evidence is a company profile, not manufacturing evidence. | Country pin is appropriate at current precision; Los Angeles is a commercial-base candidate if the map uses that role. [Source](https://www.linkedin.com/company/belnu) |
+| Liberation of Flowers | United States (country centroid) | No typed geography observation is present. | Country-only pin; no city promotion. |
+| Commodity | United States (country centroid) | The observation ledger records the brand's first flagship at 113 Crosby Street in New York. | New York is retail-only; country-level pin does not claim the flagship is the house origin. [Source](https://commodityfragrances.com/pages/nyc-store) |
+| Paragraf Parfums | Jakarta, Indonesia | No typed geography observation is present. | Jakarta unsupported; do not infer it from Indonesian identity or market presence. |
+| Être Parfums | Jakarta, Indonesia | Official About page and homepage claims identify Grasse for formulation/manufacturing and Indonesia for assembly; no Jakarta operation is identified. | Jakarta unsupported. Preserve Grasse manufacturing/formulation and Indonesia assembly as separate claims. [Source](https://etreparfums.com/pages/about-us) |
+| Otter Haus | Manila, Philippines | No typed geography observation is present. | Manila unsupported; country-level Philippines only. |
+| Indē Wild | Mumbai, India | No typed geography observation is present. | Mumbai unsupported; country-level India only. |
+
+#### Batch 4
+
+| House | Existing map point | Source-led finding | Disposition |
+|---|---|---|---|
+| Forward Perfume | Hanoi, Vietnam | Official contact page lists both a store and company office in Ho Chi Minh City. | Hanoi contradicted; HCMC is supported for retail and commercial base. [Source](https://forwardperfume.com/pages/contact) |
+| Eau So Dramatic | India (New-Delhi-centred coordinates) | No typed geography observation is present. | Delhi-centred coordinates unsupported; retain country-only knowledge. |
+| Fraganote | India (New-Delhi-centred coordinates) | Product legal information identifies Fraganote Fragrances Private Limited at an address in Okhla Industrial Estate, New Delhi. | New Delhi is supported for legal/commercial base; the map label and precision should reflect the relationship if selected. [Source](https://fraganote.com/pages/about-us) |
+| Amouroud | United States (country centroid) | No typed geography observation is present. | Country-only pin; no city promotion. |
+| L'Atelier Parfum | France (country centroid) | Official FAQ says its perfumes are manufactured in Grasse at Robertet. | France country point is coarse but not false; Grasse is a manufacturing location, not automatically the brand base. [Source](https://latelierparfum.com/pages/faq) |
+| Maison Mataha | France (country centroid) | No current typed geography observation; the legal-operator identity remains a separate hold. | Keep country-only and preserve the operator hold. |
+| Lydeen Parfums | Sweden (Stockholm-centred coordinates) | The observation ledger identifies LYDEEN PARFUMS AB at Donsö, Sweden, not Stockholm; the currently rendered legal-notice page did not expose the address during this pass. | Stockholm coordinates are unsupported; Donsö remains a ledger-backed legal-base candidate requiring source re-open. |
+| Muse Beauty | India (New-Delhi-centred coordinates) | No typed geography observation is present. | Delhi-centred coordinates unsupported; retain country-only knowledge. |
+| Lova | UAE (Dubai-centred coordinates) | Official About page says the Emirati brand is based in the UAE but does not name a city. | Dubai coordinates unsupported; retain country-level UAE only. [Source](https://lovaperfumes.com/pages/about-us) |
+| Oaken Lab | Jakarta, Indonesia | Official store page lists stores in Ubud, Pererenan and Jakarta; Jakarta is one of several retail locations. | Jakarta is retail-only and not a unique primary base; the pin must not imply brand origin. [Source](https://oakenlab.com/pages/our-store) |
+| Son Venin | Oslo, Norway | The observation ledger cites the Norwegian company register for SON VENIN AS at Dronningens gate 15, Oslo, with an industry code for manufacture of perfume and toilet preparations. | Oslo is supported for legal base; the register's industry code does not prove the physical factory is at the registered address. [Source](https://virksomhet.brreg.no/en/oppslag/enheter/918444726) |
+| Zhiwuzhi | China (country centroid) | Independent profile identifies a Chinese fragrance brand; city of origin is not established in the typed observation. | Country-level pin and coordinates are appropriate. [Source](https://lechercheurdeparfum.com/en/zhiwuzhi/) |
+| Zhufu | China (country centroid) | Independent profile describes the brand as from Shanghai, but the typed observation intentionally records only country-level origin and does not establish a registered office or factory. | Retain country-level pin pending a city-specific relationship source. [Source](https://lechercheurdeparfum.com/en/zhufu/) |
+| Nostos | New York, United States (labelled “perfumer”) | Official information page lists New York, NY as the company's location and identifies its founder and perfumer. | New York supported as the company's location; use a neutral commercial/location role rather than implying the perfumer's personal residence. [Source](https://nostosworld.com/pages/info) |
+
+#### Full audit reconciliation
+
+- All 67 country-precision points have now been reviewed against the typed observation ledger, house records and linked evidence. This is a source-led audit, not an approval to change the map.
+- Of the 67, 39 have city labels and city-centred coordinates; STORIES Parfums has a county/region label; 13 more points use a country label with city-centred coordinates across six label groups: Canada/Ottawa (1), India/New Delhi (3), Indonesia/Jakarta (6), Japan/Tokyo (1), Sweden/Stockholm (1), UAE/Dubai (1). The remaining 14 are country-labelled with country-level coordinates.
+- Strong city/region candidates exist, but many are relationship-specific: brand origin, legal/commercial base, studio, manufacturing, assembly or retail. A single pin cannot silently combine these roles.
+- Clear mismatches or unsupported city anchors include: To Summer, Uttori, ICHUN, GP Fragrances, Maison Bagian, Lattafa, Scentury, Beguile, Solure, KST Scent, Milky Mane, ISAK, NEESH, JANUA, Sana Jardin, Areej Le Doré, Bortnikoff, Ensar Oud, Asateer, Paragraf Parfums, Être Parfums, Otter Haus, Indē Wild, Forward Perfume, Oaken Lab and the unverified city-only points identified above.
+- Source-backed but role-dependent city/region candidates include: J-Scent, Pesade, TADHANA, Toouch (exact address recheck), Goldfield & Banks, Hiram Green (approximate), Reunrom, Skybottle (address conflict), WHIPPED, Naso Profumi (one of multiple stockists), SAFF & Co. (one of multiple retail cities), Sultan Pasha, STORIES Parfums (region), Michael Malul (secondary HQ claim), PHLUR (commercial address), Inis (legal base), L'Epoque (brand origin), Belnu (secondary HQ claim), Commodity (retail), Fraganote (legal/commercial base), L'Atelier Parfum (manufacturing), Lydeen (ledger-backed legal base requiring source re-open), Son Venin (legal base) and Nostos (company location).
+- Country-only points with no typed city evidence remain country-only; do not invent city pins from heritage, raw-material origin, retailers, stockists, founder nationality or a country-level company profile.
+
+#### Recommended map-anchor contract (proposal for implementation)
+
+The current one-pin-per-house map should remain one pin per house, but each pin needs an explicit relationship role. Recommended selection order:
+
+1. `brand_origin` — when the house's origin is explicitly sourced.
+2. `commercial_base` — when a current operating/headquarters location is sourced and brand origin is not.
+3. `studio` — when the perfumer/house studio is the clearest sourced operational location.
+4. `manufacturing` — when actual product manufacture is sourced and no higher-priority house location exists.
+5. `filling` or `assembly` — only when no higher-priority role exists and the specific operation is sourced.
+6. `legal_base` — only as an explicit administrative-location fallback; do not let a registered-office address masquerade as a production site.
+7. `retail` — only a brand-operated flagship, never an ordinary stockist or third-party retailer.
+8. `country_only` — country centroid when no supported city/region relationship is available. Do not use sourcing geography or founder heritage as the house pin.
+
+The map card should display the selected role and evidence link. The `precision` field must describe the actual spatial granularity of the coordinates: city point for a sourced city relationship, region point for a sourced region, and country centroid for country-only. If the map cannot show the role, keep the pin at country precision rather than mixing location types invisibly.
+
+This is a documentation recommendation only. No map coordinates, country codes or precision values have been changed. The next implementation step is to add role-aware map metadata and display it, then make individually sourced corrections. Keep the map release hold until this is complete and the self-contained `dist/scent-atlas.html` snapshot is safely regenerated or explicitly treated as a separate release artifact.
