@@ -3,6 +3,32 @@
 **Status:** additive schema implemented on PR #14 review branch; not merged or released  
 **Date:** 2026-11-21
 
+## Current canonical status — 23 November 2026
+
+This block is authoritative for the live PR branch. Older dated snapshots and audit batches below are retained as historical evidence; their counts are superseded by this status.
+
+- PR [#14](https://github.com/Arnitah/Curated-Database-/pull/14) is open and unmerged. Current head before this documentation-only change: `cf19524a22c45b040b00eca4e1a5ba641cfe523c`.
+- 178 houses and 178 map points: **148 city, 7 region, 23 country precision**.
+- **174 anchors are evidence-linked and validated; 4 remain explicitly unverified**: Ellis Brooklyn and Cozy (Khamreya) at city precision; Gerimist and Eau So Dramatic / House of ESD at country precision.
+- The original 66-pin audit is substantially complete: **62 resolved, 4 retained as unknown**. The four unresolved points are not defects to fill by inference.
+- Typed geography covers **175/178 houses**. The three houses without typed geography are Cozy (Khamreya), Gerimist and Eau So Dramatic.
+- Observation register: **654 records, 468 claims, 449 typed geography claims**. The 11 legacy `hq` / `made_in` records remain preserved for provenance.
+- The map contract is one pin per house. Each verified pin references typed observation IDs and carries its own anchor-country ISO code; cards show the linked relationship role(s), evidence and precision. A pin may carry multiple roles only when they refer to the same mapped location.
+- Country-only pins use representative country coordinates, not inferred capitals or cities. City and region precision require a matching typed city/region observation. Legal-notice addresses are not silently promoted to operating headquarters.
+- The standalone snapshot now has a deterministic generator: `npm run build:scent-atlas`; CI verifies byte-for-byte freshness with `npm run check:scent-atlas`.
+- Exact-head data validation, geography tests and standalone snapshot verification passed on `cf19524a22c45b040b00eca4e1a5ba641cfe523c`. The advisory Clay test workflow was still pending at last check.
+- No merge, release or deployment has occurred.
+
+### Four retained unknowns
+
+| House | Why the pin remains unverified |
+|---|---|
+| Ellis Brooklyn | The only typed manufacturing evidence is SKU-specific to Apple Love EDP; the Brooklyn trademark-owner address is not proof of a registered office, HQ or factory |
+| Cozy (Khamreya) | No reliable evidence ties this fragrance lead to similarly named Egyptian sleepwear or fragrance-retail sites |
+| Gerimist | The Indonesian trademark gazette names Singapore-based HEBE BEAUTY PTE. LTD. as applicant; its relationship to the Indonesian fragrance lead is unresolved |
+| Eau So Dramatic / House of ESD | The official storefront uses INR pricing but does not identify a physical or registered business location |
+
+
 Use `data/scents/observations.json` as the single source of truth for sourced geography facts. Do not create a parallel `geography.json` that duplicates the same sources and claims. Each geography observation is one dated source claim about one relationship and one place. A house can therefore have several locations for one relationship, and the same city can legitimately appear under different relationships.
 
 A typed geography observation has `kind: "claim"`, a relationship-specific `topic`, `location: { country, cc, city?, region?, entity?, site? }`, and the existing `src`, `evidence`, `strength`, `seen`, optional `published`, optional `open`, and `text` fields. `cc` is an uppercase ISO 3166-1 alpha-2 country code. Country-only facts are valid; do not invent a city. One observation contains one location. Use `entity` for a named legal entity and `site` for a named physical studio, factory or other facility. If a source establishes multiple locations for the same relationship, create one observation per location, all citing that source.
@@ -40,12 +66,12 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 
 - `houses.json`: 178 records; cards currently read `city`, `country` and `cc`.
 - `geo.json`: 178 map points; one anchor per house with `lat`, `lon`, `place`, `precision`.
-- `apps/scent-atlas.html`: loads `observations.json`, renders evidence claims, and uses legacy house city/country on cards.
+- `apps/scent-atlas.html`: renders typed evidence claims and role-aware map cards; verified map filtering uses the anchor country, while unverified points remain visibly provisional and retain the legacy country only as a fallback.
 - `scripts/build.mjs`: validates typed geography topics, location shape, country names and ISO alpha-2 codes through `scripts/scents-geography.mjs`.
 - `scripts/check-scents.mjs` and `.github/workflows/scents.yml`: weekly checks update rates, links, live prices and fieldnotes; they do not write house geography.
-- `.github/workflows/data.yml`: runs the data validator and the Scent Atlas geography unit tests on relevant pull-request paths.
+- `.github/workflows/data.yml`: runs the data validator, geography/snapshot-builder tests, and byte-for-byte standalone snapshot verification on relevant pull-request paths.
 - `docs/scent-intake.md`: now documents the typed relationship vocabulary, one source/relationship/place per observation, and the verified-house rule.
-- `dist/scent-atlas.html`: self-contained snapshot with embedded data and no observations-ledger integration; no in-repository build script was found that safely regenerates it. Do not hand-edit this generated snapshot.
+- `dist/scent-atlas.html`: self-contained snapshot generated from `apps/scent-atlas.html` and all statically referenced JSON datasets by `scripts/build-scent-atlas.mjs`; rebuild with `npm run build:scent-atlas` and verify with `npm run check:scent-atlas`. Do not hand-edit.
 - `archive/scent-map.html`: archived map reader; retain compatibility during the additive phase.
 
 ## Dataset snapshot
@@ -63,13 +89,13 @@ Historical `hq` and `made_in` topics remain accepted for backwards compatibility
 - The 3 lead-linked records remain leads; they are not inserted into `houses.json` as established houses.
 - Counts were recomputed directly from `observations.json`, `houses.json` and `leads.json` at the stated commit.
 
-## Open review holds (first-pass register, 2026-11-23)
+## Historical first-pass review register (superseded by the current canonical status above)
 
 These are intentionally not bulk-corrected. They remain separate research and compatibility gates.
 
-### Houses without typed geography claims
+### Houses without typed geography claims — historical 22-house queue
 
-The current 22 records are: Scentury Perfume & Co. (`scentury`), Henry Rose (`henry-rose`), Rogue Perfumery (`rogue-perfumery`), CYKLAR (`cyklar`), Meleg Perfumes (`meleg-perfumes`), Cozy (Khamreya) (`cozy-khamreya`), Libroaria (`libroaria`), Régime des Fleurs (`regime-des-fleurs`), Chujian (`chujian`), The Body Tale (`the-body-tale`), Kitschy (`kitschy`), Aroma Concepts (`aroma-concepts`), Celia Loves (`celia-loves`), Gerimist (`gerimist`), Liberation of Flowers (`liberation-of-flowers`), Paragraf Parfums (`paragraf-parfums`), Otter Haus (`otter-haus`), Indē Wild (`inde-wild`), Eau So Dramatic (`eau-so-dramatic`), Amouroud (`amouroud`), Maison Mataha (`maison-mataha`) and Muse Beauty (`muse-beauty`). Their legacy `houses.json` city/country display fields are not evidence of a typed relationship. Maison Mataha also remains held pending identification of its current legal operator.
+At the first-pass snapshot, the 22 records were: Scentury Perfume & Co. (`scentury`), Henry Rose (`henry-rose`), Rogue Perfumery (`rogue-perfumery`), CYKLAR (`cyklar`), Meleg Perfumes (`meleg-perfumes`), Cozy (Khamreya) (`cozy-khamreya`), Libroaria (`libroaria`), Régime des Fleurs (`regime-des-fleurs`), Chujian (`chujian`), The Body Tale (`the-body-tale`), Kitschy (`kitschy`), Aroma Concepts (`aroma-concepts`), Celia Loves (`celia-loves`), Gerimist (`gerimist`), Liberation of Flowers (`liberation-of-flowers`), Paragraf Parfums (`paragraf-parfums`), Otter Haus (`otter-haus`), Indē Wild (`inde-wild`), Eau So Dramatic (`eau-so-dramatic`), Amouroud (`amouroud`), Maison Mataha (`maison-mataha`) and Muse Beauty (`muse-beauty`). Their legacy `houses.json` city/country display fields are not evidence of a typed relationship. Maison Mataha also remains held pending identification of its current legal operator.
 
 ### Legacy geography claims reviewed (2026-11-23)
 
@@ -83,11 +109,10 @@ The complete map audit must check all 178 anchors against their source, intended
 
 ## UI and map behaviour
 
-- House cards prefer a sourced `brand_origin` fact when one exists.
-- Without typed origin, show legacy city/country only as a recorded location, not verified origin.
+- House cards and map cards display typed relationships with their source evidence; legacy city/country is a compatibility fallback, not proof of origin.
 - The evidence panel displays typed location beside the claim and source.
-- `geo.json` remains one map anchor per house. `precision` means spatial granularity only.
-- Do not create multiple map pins until the map UI can label and filter each point by relationship role.
+- `geo.json` remains one map anchor per house. `precision` means spatial granularity, while `anchor_observation_ids` establish the supported role(s).
+- Multiple roles may appear on one pin only when they describe the same mapped location; different locations are not collapsed into one unsupported multi-role claim.
 
 ## Verification rule
 
@@ -95,13 +120,13 @@ A house is verified only when ownership, **manufacturing location**, and current
 
 ## Migration sequence
 
-1. **Complete:** add and test the additive schema; retain old topics and fields.
-2. **In progress:** re-open existing geography claims and split compound statements into one relationship/place per observation; retain unresolved claims rather than guessing.
-3. **Complete for the current pilot:** pilot contrasting houses and expand source-reviewed batches; the latest batch is recorded in the observations ledger.
-4. **In progress:** review all 178 houses by relationship. Current coverage is 156 houses with typed claims; 22 remain without typed geography. Add only sourced claims and preserve unknowns.
-5. **Implemented on the PR branch:** migrate the live source app to typed origin/evidence display while retaining legacy fields as fallbacks. The self-contained `dist/scent-atlas.html` snapshot remains a separate compatibility/republication hold.
-6. **Release hold:** complete the map coordinate and precision audit. The first pass identified 39 city-labelled/city-centred points still marked `country`, plus further country-labelled points whose coordinates appear city-centred. Do not bulk-change precision or coordinates without source review.
-7. **Pending:** deprecate legacy city/country reliance only after all consumers, snapshots and exports migrate; keep the 11 legacy geography claims until individually source-reviewed and reclassified.
+1. **Complete:** add and test the additive typed-geography schema; preserve legacy topics and fields.
+2. **Complete for the 11-record legacy review:** review every historical `hq` / `made_in` claim; append typed replacements only where the source supports them.
+3. **Complete:** implement the role-aware, one-pin-per-house contract, including anchor-country codes, evidence-linked role cards, country grouping/filtering and explicit unverified states.
+4. **Substantially complete:** audit all 66 original unverified pins individually. Sixty-two are resolved; four remain deliberately unknown (Ellis Brooklyn, Cozy/Khamreya, Gerimist and Eau So Dramatic).
+5. **Complete on the PR branch:** establish a deterministic source-led standalone snapshot build and CI freshness check for `dist/scent-atlas.html`.
+6. **In progress:** consolidate historical documentation and finish exact-head CI review. Keep PR #14 open until the advisory Clay tests and all required release checks pass.
+7. **Release hold:** do not merge, publish or deploy until the four unresolved records have explicit dispositions, the documentation is reconciled, the standalone snapshot check is green, and the final review gates are satisfied.
 
 ## Acceptance criteria
 
@@ -426,117 +451,33 @@ Maison Mataha and Otter Haus are removed from the no-typed list, but their limit
 
 
 
-## Role-aware map anchors implemented — 23 November 2026
+## Role-aware map anchor contract and implementation
 
-The map now carries explicit references to the typed geography observations that justify each pin's displayed relationship. This is an additive contract; it does not infer a primary role from the existence of any city or country field.
+### Contract
 
-### Data contract
+- One map pin represents one house. A verified point references one or more typed geography observation IDs in `anchor_observation_ids`.
+- Every referenced observation must be a typed geography claim for the same house. Its ISO alpha-2 country code must match the anchor's `cc`, not the house's legacy `cc`; legitimate cross-border legal, commercial, studio or retail relationships are supported.
+- At city precision, the linked observation's city must match the map place. At region precision, its region must match. Country precision requires a country-only observation with matching country name and code.
+- The map displays all supported roles only when they refer to the same mapped location. It does not infer a role priority. An anchor with no linked observation remains visibly unverified.
+- The UI groups and filters verified pins by anchor country, displays the role(s), precision and evidence in the map card, and uses legacy house country only as an unverified fallback.
+- Country-only coordinates are representative geographic centres, not capitals or implied commercial bases. City/region precision is used only where the typed source establishes that granularity.
 
-- Each `geo.json` point may contain `anchor_observation_ids`, an array of one or more observation IDs.
-- Every referenced observation must be a typed geography `claim` for the same house, with a valid location and matching country code.
-- At `city` precision, each referenced claim's `location.city` must match the map's `place` after conservative normalisation (accents, parenthetical labels and comma suffixes only).
-- At `region` precision, each referenced claim's `location.region` must match the map's `place`.
-- At `country` precision, referenced claims must be country-only (no city or region) and the location country must match the house and map country.
-- Multiple matching observations are retained. The map displays all supported roles; it does not choose one silently.
-- Missing `anchor_observation_ids` means the map pin is unverified at its current precision. The UI labels it accordingly. A country-level pin does not establish a city.
+### Validator and regression coverage
 
-The build validator now checks dangling IDs, wrong-house references, non-geography claims, country-code mismatches and precision/location mismatches. Tests cover city, region and country anchors, multiple roles, normalisation and invalid references.
+The build validator rejects dangling observation IDs, wrong-house references, non-geography claims, missing or malformed anchor country codes, country mismatches and precision/location mismatches. Tests cover valid city/region/country anchors, multiple roles, normalization, cross-border anchors and invalid references.
 
-### First-pass anchor assignment
+### Current audited state
 
-- 13 country-precision points with matching city evidence were promoted to city precision.
-- 2 country-precision points with matching region evidence were promoted to region precision: Naso Profumi/Delhi and Stories Parfums/County Down.
-- 2 city-precision points were downgraded to region precision: Celia Loves/Surf Coast, Victoria and Zielinski & Rozen/Tel Aviv.
-- No latitude or longitude values were changed.
+- **178 map points:** 148 city, 7 region, 23 country precision.
+- **174 evidence-linked anchors; 4 unverified.**
+- **62 of the original 66 unverified points resolved.** The remaining four are Ellis Brooklyn, Cozy (Khamreya), Gerimist and Eau So Dramatic / House of ESD; their reasons are recorded in the current status block above.
+- Typed geography covers 175 of 178 houses. Three houses have no typed geography: Cozy (Khamreya), Gerimist and Eau So Dramatic.
+- The anchor-country correction is intentional: pin country represents the selected location relationship, not necessarily the house's origin country. The source app no longer groups verified pins by the legacy house country.
+- Individual coordinates and precision values were corrected only when supported by the linked observation. The 66-point audit did not bulk-rewrite house metadata.
 
-Current map state: **178 points — 121 city, 5 region, 52 country precision.**
+### Standalone snapshot
 
-| Precision | Points | With typed anchor reference | Unverified |
-|---|---:|---:|---:|
-| City | 121 | 103 | 18 |
-| Region | 5 | 4 | 1 |
-| Country | 52 | 5 | 47 |
-| **Total** | **178** | **112** | **66** |
-
-The five country-only anchor groups are Stardust & Stems (studio, United States), Maison Mataha (formulation and manufacturing, France), Lova (commercial base, UAE), Zhiwuzhi (brand origin, China) and Zhufu (brand origin, China). The city/region anchors retain every matching typed role, including multiple roles at the same place.
-
-The map heading now reads **Fragrance houses and their places**. Tooltips, place lists and house detail headers show the linked role(s) or an explicit unverified status. Country-level pins with city/region claims elsewhere are labelled as such rather than presented as city-level facts.
-
-### Remaining map holds
-
-- The 66 unverified points remain visible but explicitly provisional: 18 city, 1 region and 47 country precision.
-- The 26 country-precision points whose labels look like cities but lack a matching typed city/region claim remain country precision and unverified.
-- Country-level coordinates still require point-by-point verification; some country labels may still use city-centred coordinates.
-- City-level anchors establish a sourced city relationship, not an exact street address or manufacturing site unless the linked claim says so.
-- `dist/scent-atlas.html` remains unchanged; the source app is updated, but the self-contained snapshot still needs a documented regeneration path.
-
-
-
-## Role-aware map anchors implemented — 23 November 2026
-
-The map now carries explicit references to the typed geography observations that justify each pin's displayed relationship. This is an additive contract; it does not infer a primary role from the existence of any city or country field.
-
-### Data contract
-
-- Each `geo.json` point may contain `anchor_observation_ids`, an array of one or more observation IDs.
-- Every referenced observation must be a typed geography `claim` for the same house, with a valid location and matching country code.
-- At `city` precision, each referenced claim's `location.city` must match the map's `place` after conservative normalisation (accents, parenthetical labels and comma suffixes only).
-- At `region` precision, each referenced claim's `location.region` must match the map's `place`.
-- At `country` precision, referenced claims must be country-only (no city or region) and the location country must match the house and map country.
-- Multiple matching observations are retained. The map displays all supported roles; it does not choose one silently.
-- Missing `anchor_observation_ids` means the map pin is unverified at its current precision. The UI labels it accordingly. A country-level pin does not establish a city.
-
-The build validator now checks dangling IDs, wrong-house references, non-geography claims, country-code mismatches and precision/location mismatches. Tests cover city, region and country anchors, multiple roles, normalisation and invalid references.
-
-### First-pass anchor assignment
-
-- 14 country-precision points with matching city evidence were promoted to city precision.
-- 2 country-precision points with matching region evidence were promoted to region precision: Naso Profumi/Delhi and Stories Parfums/County Down.
-- 1 city-precision point was downgraded to region precision: Celia Loves/Surf Coast, Victoria.
-- No latitude or longitude values were changed.
-
-Current map state: **178 points — 122 city, 4 region, 52 country precision.**
-
-| Precision | Points | With typed anchor reference | Unverified |
-|---|---:|---:|---:|
-| City | 122 | 104 | 18 |
-| Region | 4 | 3 | 1 |
-| Country | 52 | 5 | 47 |
-| **Total** | **178** | **112** | **66** |
-
-The five country-only anchor groups are Stardust & Stems (studio, United States), Maison Mataha (formulation and manufacturing, France), Lova (commercial base, UAE), Zhiwuzhi (brand origin, China) and Zhufu (brand origin, China). The city/region anchors retain every matching typed role, including multiple roles at the same place.
-
-The map heading now reads **Fragrance houses and their places**. Tooltips, place lists and house detail headers show the linked role(s) or an explicit unverified status. Country-level pins with city/region claims elsewhere are labelled as such rather than presented as city-level facts.
-
-### Remaining map holds
-
-- The 66 unverified points remain visible but explicitly provisional: 18 city, 1 region and 47 country precision.
-- The 26 country-precision points whose labels look like cities but lack a matching typed city/region claim remain country precision and unverified.
-- Country-level coordinates still require point-by-point verification; some country labels may still use city-centred coordinates.
-- City-level anchors establish a sourced city relationship, not an exact street address or manufacturing site unless the linked claim says so.
-- `dist/scent-atlas.html` remains unchanged; the source app is updated, but the self-contained snapshot still needs a documented regeneration path.
-
-
-
-#### Validation correction — 23 November 2026
-
-The first exact-head validation run exposed an escaping defect in the new map-label normaliser: accent and parenthetical stripping were emitted with over-escaped regular expressions. The normaliser now uses Unicode property escapes for diacritics and correctly handles whitespace and parenthetical suffixes. The country alias comparison in the app is also self-contained; it no longer calls an undefined helper. No map data changed in this correction. The corrected precision counts above supersede the initial draft counts in this section.
-
-
-### Anchor-country correction — 23 November 2026
-
-The role-aware map anchor now carries its own `cc` field. This country code describes the location represented by the pin, not the house's legacy country association in `houses.json`.
-
-- Every point with `anchor_observation_ids` must have a valid uppercase ISO alpha-2 `cc`.
-- Every linked observation must belong to the same house and have `location.cc` equal to the map point's `cc`.
-- City and region labels continue to match the observation's city/region. Country-precision anchors remain country-only and match the map point's country label and `cc`.
-- The validator no longer requires the selected relationship location to match `house.cc`; this permits legitimate cross-border roles such as a UK legal/commercial base for a house with another origin country.
-- The source app groups and filters verified pins by the map anchor's country and displays the anchor location's country in pin cards. Unverified pins continue to fall back to the legacy house country and remain visibly unverified.
-- Existing 112 verified anchor references received an explicit anchor-country code derived from their linked observations. The 66 unverified pins were left unchanged.
-- Regression tests cover foreign-country city and country anchors, missing anchor country codes, and mismatched observation/anchor country codes.
-
-This correction does not change brand-origin claims, house country metadata, or any latitude/longitude values. It enables the subsequent source-led pin audit to select the correct relationship country without misclassifying the house itself.
-
+`dist/scent-atlas.html` is generated from the source app and its static JSON dependencies. The committed generator discovers the `load(...)` paths from `apps/scent-atlas.html`, embeds those datasets in a deterministic bundle and exposes a byte-for-byte `--check` mode. CI runs the snapshot check. Do not edit the generated file by hand.
 
 ### City-pin audit corrections — 23 November 2026
 
@@ -641,7 +582,7 @@ Role-selection notes:
 - PHLUR uses West Hollywood as commercial base; Delaware legal formation remains a separate region-level legal fact.
 - Inis uses the registered office of Fragrances of Ireland Limited; Inis is the company's signature collection, not a separate legal entity.
 
-Updated map counts: 178 points — 128 city, 5 region, 45 country precision; 140 anchored and 38 unverified. The unverified set is now 3 city and 35 country points. No region-level unverified point remains.
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 128 city, 5 region, 45 country precision; 140 anchored and 38 unverified. The unverified set is now 3 city and 35 country points. No region-level unverified point remains.
 
 
 ### Country-level audit — batch 2 (12 houses) · 23 November 2026
@@ -673,7 +614,7 @@ Role and uncertainty notes:
 - BELNU's Los Angeles location is a self-reported company headquarters/contact relationship, not a manufacturing claim.
 - Meleg's Calgary point is a contact/business location, not a verified manufacturing site or registered office.
 
-Updated map counts: 178 points — 140 city, 5 region, 33 country precision; 152 anchored and 26 unverified. The remaining unverified set is 3 city and 23 country points.
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 140 city, 5 region, 33 country precision; 152 anchored and 26 unverified. The remaining unverified set is 3 city and 23 country points.
 
 
 ### Country-level audit — batch 3 (12 houses) · 23 November 2026
@@ -705,7 +646,7 @@ Important distinctions:
 - Oaken Lab's Ubud point is retail, not manufacturing.
 - Areej Le Doré and Ensar Oud remain unresolved for distinct evidence/entity conflicts; neither has been assigned a guessed anchor.
 
-Updated map counts: 178 points — 144 city, 5 region, 29 country precision; 164 anchored and 14 unverified. The remaining unverified set is 3 city and 11 country points.
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 144 city, 5 region, 29 country precision; 164 anchored and 14 unverified. The remaining unverified set is 3 city and 11 country points.
 
 
 ### Final three researched anchors from the 11-point unresolved set · 23 November 2026
@@ -730,7 +671,7 @@ Two previously unanchored country-level points now have defensible primary roles
 - **Areej Le Doré — United Kingdom, brand origin (country-level).** The founder's first-person 2022 interview explicitly says the brand was founded in the United Kingdom. This resolves the earlier UK-versus-Russia/Moscow conflict. The founder's Russian background is not treated as the brand's origin, and no UK city is inferred. Indonesia remains a separate reported production relationship. [Founder interview](https://www.fragrantica.com/news/BWME-2022-Russian-Adam-of-Areej-le-Dore-Interview-17407.html).
 - **Ensar Oud — Glendale, New York, USA, legal base (city-level).** The official imprint identifies Oriscent LLC as the website owner and gives its Glendale address. The map pin represents that primary website operator/legal entity. ENSAR OUD LIMITED (Company No. 13539356) remains a separate UK entity and is not collapsed into the same company. [Official imprint](https://www.ensaroud.com/imprint/) · [UK Companies House record](https://find-and-update.company-information.service.gov.uk/company/13539356) · [Glendale coordinates](https://www.geonames.org/5118670/glendale.html).
 
-Updated map counts: 178 points — 147 city, 6 region, 25 country precision; 169 anchored and 9 unverified. The remaining unverified set is 3 city and 6 country points. The remaining country-level research queue is Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level queue is Henry Rose, Ellis Brooklyn and Cozy (Khamreya).
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 147 city, 6 region, 25 country precision; 169 anchored and 9 unverified. The remaining unverified set is 3 city and 6 country points. The remaining country-level research queue is Chujian, Kitschy, Gerimist, Liberation of Flowers, Paragraf Parfums and Eau So Dramatic. The remaining city-level queue is Henry Rose, Ellis Brooklyn and Cozy (Khamreya).
 
 
 ### Three previously untyped houses resolved — 23 November 2026
@@ -739,7 +680,7 @@ Updated map counts: 178 points — 147 city, 6 region, 25 country precision; 169
 - **Liberation of Flowers — Durham, North Carolina, USA, legal base.** A USPTO-derived 2026 trademark-owner record lists Liberation of Flowers LLC at 3712 St. Marks Road, Durham, NC 27707. This is a legal-entity address, not a factory or verified commercial headquarters. [Trademark record](https://www.trademarkelite.com/trademark/trademark-detail/99356011/LIBERATION-OF-FLOWERS).
 - **ChuJian — China, brand origin (country-level).** An independent perfumery retailer explicitly describes the house as founded in China; the official about page corroborates its Chinese botanical and cultural focus. No city is inferred. [Passion Parfum](https://passion-parfum.com/en/collections/chujian) · [Official brand story](https://www.chujianparfums.com/pages/about-us).
 
-Updated map counts: 178 points — 149 city, 6 region, 23 country precision; 172 anchored and 6 unverified. The remaining unverified set is 3 city and 3 country points. Typed geography now covers 173 of 178 houses; five houses still have no typed geography.
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 149 city, 6 region, 23 country precision; 172 anchored and 6 unverified. The remaining unverified set is 3 city and 3 country points. Typed geography now covers 173 of 178 houses; five houses still have no typed geography.
 
 
 ### Two further primary-source resolutions — 23 November 2026
@@ -749,7 +690,7 @@ Updated map counts: 178 points — 149 city, 6 region, 23 country precision; 172
 
 Coordinate references: [California geographic centre](https://www.geodatos.net/en/coordinates/united-states/california), [Indonesia geographic centre](https://www.coordmap.com/countries/indonesia).
 
-Updated map counts: 178 points — 148 city, 7 region, 23 country precision; 174 anchored and 4 unverified (2 city, 2 country). Typed geography now covers 175 of 178 houses; three houses remain without typed geography: Cozy (Khamreya), Gerimist and Eau So Dramatic.
+Historical batch snapshot (superseded by the current canonical status above): 178 points — 148 city, 7 region, 23 country precision; 174 anchored and 4 unverified (2 city, 2 country). Typed geography now covers 175 of 178 houses; three houses remain without typed geography: Cozy (Khamreya), Gerimist and Eau So Dramatic.
 
 
 ### Reproducible standalone snapshot build — 23 November 2026
