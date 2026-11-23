@@ -2206,9 +2206,10 @@
   ]
  },
  "ginger": {
-  "listings": 1,
+  "listings": 2,
   "suppliers": [
-   "formulator_sample_shop"
+   "formulator_sample_shop",
+   "windy_point"
   ],
   "use_pct": [
    1,
@@ -2224,6 +2225,10 @@
    {
     "s": "formulator_sample_shop",
     "u": "https://formulatorsampleshop.com/products/fss-ginger-extract-pf-1"
+   },
+   {
+    "s": "windy_point",
+    "u": "https://windypointsoap.com/products/mica-gingerbread"
    }
   ]
  },
