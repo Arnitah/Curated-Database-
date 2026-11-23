@@ -9158,6 +9158,515 @@
         "cc": "US",
         "entity": "Phlur LLC"
       }
+    },
+    {
+      "id": "ensar-oud-legal-base-typed-1",
+      "house": "ensar-oud",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "The official website imprint identifies Oriscent LLC as the website owner and gives its address in Glendale, New York, United States. This claim is limited to the operator identified in the imprint; it does not collapse the separate UK company into the same legal entity.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.ensaroud.com/imprint/",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Glendale",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Oriscent LLC"
+      },
+      "open": "A separate UK company, ENSAR OUD LIMITED (company 13539356), is registered in London. Keep the two legal entities distinct."
+    },
+    {
+      "id": "bath-body-works-commercial-base-typed-1",
+      "house": "bath-body-works",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Bath & Body Works, Inc.'s FY2026 Form 10-K identifies its principal executive offices at Three Limited Parkway, Columbus, Ohio, United States. This supports a principal executive/commercial address, not a manufacturing location.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://www.sec.gov/Archives/edgar/data/701985/000114036126017473/ny20054083x773_ars.pdf",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Columbus",
+        "region": "Ohio",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Bath & Body Works, Inc."
+      }
+    },
+    {
+      "id": "cloon-keen-manufacturing-typed-1",
+      "house": "cloon-keen",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Cloon Keen states that its perfumes are handmade in its Galway Atelier and produced in batches of 50. The source describes perfume production and finishing in Galway.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://cloonkeen.com/pages/know-how-perfumes",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Galway",
+        "country": "Ireland",
+        "cc": "IE",
+        "site": "Galway Atelier"
+      }
+    },
+    {
+      "id": "burren-perfumery-manufacturing-typed-1",
+      "house": "burren-perfumery",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "The Burren Perfumery states that its perfumes and other products are made by hand on site in the Burren, in small batches. The source supports the regional production location, not a separate factory address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://burrenperfumery.com/",
+      "seen": "2026-11-23",
+      "location": {
+        "region": "The Burren, County Clare",
+        "country": "Ireland",
+        "cc": "IE"
+      }
+    },
+    {
+      "id": "stories-parfums-legal-base-typed-1",
+      "house": "stories-parfums",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "STORIES Parfums' terms identify Eliza Grace Ltd, trading as STORIES Parfums, as the website operator and give its address in Newtownards, County Down, United Kingdom.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://storiesparfums.com/pages/terms-conditions",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Newtownards",
+        "region": "County Down",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "entity": "Eliza Grace Ltd t/a STORIES Parfums"
+      },
+      "open": "The same terms confirm hand-refilling returned bottles at the Newtownards headquarters; this is refill/filling activity, not evidence that all original perfume manufacturing occurs there."
+    },
+    {
+      "id": "inis-legal-base-typed-1",
+      "house": "inis",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Fragrances of Ireland Limited identifies its registered office and main trading address as Kilmacanogue, Bray, County Wicklow, Ireland. Inis is described by the company as its signature collection.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://inis.com/policies/terms-of-service",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Kilmacanogue",
+        "region": "County Wicklow",
+        "country": "Ireland",
+        "cc": "IE",
+        "entity": "Fragrances of Ireland Limited"
+      },
+      "open": "The legal entity is Fragrances of Ireland Limited; do not model Inis as a separate legal company."
+    },
+    {
+      "id": "lvnea-studio-typed-1",
+      "house": "lvnea",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "LVNEA describes itself as a Montréal-based natural perfumery with a brick-and-mortar studio and storefront where every scent continues to be crafted in-house in small batches.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.lvnea.com/en-us/pages/about-us",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Montréal",
+        "country": "Canada",
+        "cc": "CA",
+        "site": "LVNEA studio and storefront"
+      }
+    },
+    {
+      "id": "le-falcone-manufacturing-typed-1",
+      "house": "le-falcone",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Le Falconé states that its fragrances are made in Dubai and produced in the United Arab Emirates. The cited page does not identify a specific factory.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lefalcone.com/pages/become-a-distributor",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      },
+      "open": "Brand-reported manufacturing location; no independent factory record or facility address was identified."
+    },
+    {
+      "id": "waters-and-wild-studio-typed-1",
+      "house": "waters-and-wild",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Waters + Wild describes its olfactory studio as based in Glandore, West Cork, Ireland, where it creates its organic perfume range.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.watersandwild.com/story",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Glandore",
+        "region": "West Cork",
+        "country": "Ireland",
+        "cc": "IE",
+        "site": "Waters + Wild olfactory studio"
+      }
+    },
+    {
+      "id": "asateer-legal-base-typed-1",
+      "house": "asateer",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Asateer's terms identify Asateer Perfumes Company W.L.L. as a limited liability company incorporated and registered under Kuwaiti law, with Commercial Registration No. 387052 and License No. 2023/30937.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://asateerperfumes.com/policies/terms-of-service",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "Kuwait",
+        "cc": "KW",
+        "entity": "Asateer Perfumes Company W.L.L."
+      },
+      "open": "The terms establish Kuwaiti incorporation and registration but do not disclose a registered office address or manufacturing facility."
+    },
+    {
+      "id": "stardust-stems-studio-typed-1",
+      "house": "stardust-stems",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Stardust & Stems says its perfumes are formulated, blended and bottled in small batches by its founder-perfumer in a home studio in the United States.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://stardustandstems.com/pages/our-materials-process",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "United States",
+        "cc": "US",
+        "site": "Founder-perfumer's home studio"
+      },
+      "open": "The maker does not disclose a city; do not infer one from shipping or contact details."
+    },
+    {
+      "id": "lepoque-brand-origin-typed-1",
+      "house": "lepoque",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "L'Epoque Parfums identifies itself as an independent fragrance house founded by Rachel Green in Dallas, Texas, and launched in September 2025.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.lepoqueparfums.com/pages/faq",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Dallas",
+        "region": "Texas",
+        "country": "United States",
+        "cc": "US"
+      }
+    },
+    {
+      "id": "sarah-baker-studio-typed-1",
+      "house": "sarah-baker",
+      "kind": "claim",
+      "topic": "studio",
+      "text": "Sarah Baker Perfumes states that it operates from a studio in East London. The same page describes small-batch production and in-house diluting, filling, boxing and bottling.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.sarahbakerperfumes.com/pages/about",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "London",
+        "region": "East London",
+        "country": "United Kingdom",
+        "cc": "GB",
+        "site": "Sarah Baker Perfumes studio"
+      }
+    },
+    {
+      "id": "belnu-commercial-base-typed-1",
+      "house": "belnu",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "BELNU's company profile identifies Los Angeles, California as its headquarters. This is a company-profile statement, not a manufacturing-site claim.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.linkedin.com/company/belnu",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Los Angeles",
+        "region": "California",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Belnu Inc."
+      },
+      "open": "The company's terms also list a Los Angeles legal-correspondence address; neither source establishes perfume manufacturing there."
+    },
+    {
+      "id": "commodity-retail-typed-1",
+      "house": "commodity",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Commodity identifies its first flagship store at 113 Crosby Street in New York City, United States.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://commodityfragrances.com/pages/nyc-store",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New York",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US",
+        "site": "Commodity NYC flagship, 113 Crosby Street"
+      }
+    },
+    {
+      "id": "fugazzi-brand-origin-typed-1",
+      "house": "fugazzi",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "FUGAZZI states that the fragrance house started in Amsterdam in 2018; the source identifies the founder and describes the brand's origin story.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fugazzifragrances.com/pages/fugazzi-facts",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "cc": "NL"
+      }
+    },
+    {
+      "id": "dedcool-commercial-base-typed-1",
+      "house": "dedcool",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "A 2025 Fashionista company profile lists Los Angeles, California as DedCool's headquarters.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://fashionista.com/2025/05/dedcool-fragrance-brand",
+      "seen": "2026-11-23",
+      "published": "2025-05-29",
+      "location": {
+        "city": "Los Angeles",
+        "region": "California",
+        "country": "United States",
+        "cc": "US",
+        "entity": "DedCool"
+      }
+    },
+    {
+      "id": "forward-perfume-commercial-base-typed-1",
+      "house": "forward-perfume",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "FORWARD Perfume lists the office of FORWARD TRADING SERVICE COMPANY LIMITED in Ho Chi Minh City, Vietnam, separately from its retail store address.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://forwardperfume.com/pages/contact",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "cc": "VN",
+        "entity": "FORWARD TRADING SERVICE COMPANY LIMITED"
+      },
+      "open": "The cited address is a company-office location, not a verified manufacturing facility."
+    },
+    {
+      "id": "rooh-amer-retail-typed-1",
+      "house": "rooh-amer",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Rooh Amer identifies its flagship store at Amer Fort in Jaipur, Rajasthan, India.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://www.roohamerindia.com/pages/about-us",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Jaipur",
+        "region": "Rajasthan",
+        "country": "India",
+        "cc": "IN",
+        "site": "Amer Fort flagship store"
+      }
+    },
+    {
+      "id": "fraganote-commercial-base-typed-1",
+      "house": "fraganote",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Fraganote product legal information identifies Fraganote Fragrances Private Limited as the marketer and distributor, with an address in Okhla Industrial Estate Phase 3, New Delhi, India.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://fraganote.com/pages/about-us",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New Delhi",
+        "country": "India",
+        "cc": "IN",
+        "entity": "Fraganote Fragrances Private Limited"
+      },
+      "open": "The same source lists two contract manufacturers in Gurugram and Vadodara. Those should be separate product/manufacturer claims, not merged into the marketer's commercial base."
+    },
+    {
+      "id": "aurra-london-manufacturing-typed-1",
+      "house": "aurra-london",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "Aurra London states that its attar perfumes are handcrafted in Kannauj, India, a traditional centre of perfume production.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://aurralondon.com/pages/brand-story",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Kannauj",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "cc": "IN"
+      },
+      "open": "Brand-reported craft/production location; its UK legal entity and registered office are separate facts and should be recorded separately."
+    },
+    {
+      "id": "latelier-parfum-manufacturing-typed-1",
+      "house": "latelier-parfum",
+      "kind": "claim",
+      "topic": "manufacturing",
+      "text": "L'Atelier Parfum states that its perfumes are manufactured in Grasse, France, at Robertet.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://latelierparfum.com/pages/faq",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Grasse",
+        "country": "France",
+        "cc": "FR",
+        "site": "Robertet"
+      }
+    },
+    {
+      "id": "lydeen-legal-base-typed-1",
+      "house": "lydeen",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "LYDEEN PARFUMS' legal notice identifies LYDEEN PARFUMS AB and gives its address at Donsö Bryggväg 12, Donsö, Sweden.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lydeenparfums.com/policies/legal-notice",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Donsö",
+        "country": "Sweden",
+        "cc": "SE",
+        "entity": "LYDEEN PARFUMS AB"
+      }
+    },
+    {
+      "id": "lova-commercial-base-typed-1",
+      "house": "lova",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Lova describes itself as an Emirati perfume brand based in the United Arab Emirates. The official page does not disclose a city or registered legal entity.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://lovaperfumes.com/pages/about-us",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "United Arab Emirates",
+        "cc": "AE"
+      },
+      "open": "The official page does not disclose a city or registered legal entity; do not infer one from its phone number."
+    },
+    {
+      "id": "oaken-lab-retail-typed-1",
+      "house": "oaken-lab",
+      "kind": "claim",
+      "topic": "retail",
+      "text": "Oaken Lab lists a store in Ubud, Bali, Indonesia, at Jl. Raya Sanggingan, Kedewatan.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://oakenlab.com/pages/our-store",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Ubud",
+        "region": "Bali",
+        "country": "Indonesia",
+        "cc": "ID",
+        "site": "Oaken Lab Ubud store"
+      }
+    },
+    {
+      "id": "son-venin-legal-base-typed-1",
+      "house": "son-venin",
+      "kind": "claim",
+      "topic": "legal_base",
+      "text": "Norway's Brønnøysund Register Centre lists SON VENIN AS at Dronningens gate 15, Oslo, and identifies its registered industry code as manufacture of perfume and toilet preparations.",
+      "evidence": "registry",
+      "strength": "A",
+      "src": "https://virksomhet.brreg.no/en/oppslag/enheter/918444726",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "Oslo",
+        "country": "Norway",
+        "cc": "NO",
+        "entity": "SON VENIN AS"
+      },
+      "open": "The registry entry establishes the company's address and registered industry classification; it does not by itself prove that manufacturing physically occurs at the registered address."
+    },
+    {
+      "id": "zhiwuzhi-brand-origin-typed-1",
+      "house": "zhiwuzhi",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "An independent fragrance profile identifies Zhiwuzhi (挚物志) as a Chinese fragrance brand and reports its founding in 2022. The founding year is not fully settled across sources.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://lechercheurdeparfum.com/en/zhiwuzhi/",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "China",
+        "cc": "CN"
+      },
+      "open": "The profile notes a discrepancy between 2022 (authorized distributor) and 2023 (co-founder recollection); this country-level origin claim does not assert a founding city."
+    },
+    {
+      "id": "zhufu-brand-origin-typed-1",
+      "house": "zhufu",
+      "kind": "claim",
+      "topic": "brand_origin",
+      "text": "An independent fragrance profile presents Zhufu as an Eastern fragrance brand from Shanghai, China, and identifies Shanghai Ruiyu Brand Management Co., Ltd. as its operating company. This supports a country-level brand-origin observation only; it does not establish a registered office or factory address.",
+      "evidence": "editorial",
+      "strength": "B",
+      "src": "https://lechercheurdeparfum.com/en/zhufu/",
+      "seen": "2026-11-23",
+      "location": {
+        "country": "China",
+        "cc": "CN"
+      },
+      "open": "Secondary-source evidence; primary company-register confirmation has not been obtained in this pass."
+    },
+    {
+      "id": "nostos-commercial-base-typed-1",
+      "house": "nostos",
+      "kind": "claim",
+      "topic": "commercial_base",
+      "text": "Nostos' official information page lists New York, NY as the company's location and identifies Jackie Mayol as founder.",
+      "evidence": "brand",
+      "strength": "C",
+      "src": "https://nostosworld.com/pages/info",
+      "seen": "2026-11-23",
+      "location": {
+        "city": "New York",
+        "region": "New York",
+        "country": "United States",
+        "cc": "US",
+        "entity": "Nostos"
+      }
     }
   ]
 }
