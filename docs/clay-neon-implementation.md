@@ -30,7 +30,9 @@ Official references:
 - The records adapter checks that a session exists before issuing a query. PostgreSQL RLS independently enforces ownership.
 - The existing provider-neutral contract exposes only `{ id, email }`; raw session and JWT objects stay inside the provider SDK.
 - The existing Supabase controller's existing-account-only email-link behavior is not assumed to map one-for-one to Managed Neon Auth. Managed Auth supports email OTP and magic links, but the precise sign-in-only/no-implicit-sign-up policy and session subscription API must be verified against the installed Managed SDK before a Neon identity adapter is accepted.
-- Magic links are disabled by default and production email delivery needs custom SMTP for links. Email OTP has managed delivery; production requires dedicated SMTP. Do not send a real email or configure a provider during this stage.
+- Managed Auth is available only in AWS regions and cannot be enabled on projects using IP Allow or Private Networking; region and network posture therefore need an explicit review before provider selection.
+- Magic links are disabled by default. Email OTP and magic links are supported by Managed Auth, but production email delivery requires dedicated SMTP; the shared SMTP is only a getting-started path. Do not send a real email or configure a provider during this stage.
+- The managed SDK is a fixed Better Auth wrapper, not a self-managed Better Auth server. It does not expose arbitrary plugins or custom server handlers. Its public browser API includes `getSession()`, `signIn.*` and `signOut()`, but the exact session subscription and sign-in-only policy must be proven before mapping the existing Supabase auth port.
 
 ## Data and authorization model
 
@@ -63,7 +65,7 @@ Do not branch a production branch for testing unless a separately tested scrub p
 1. Confirm Clay's actual hosting/runtime origin and whether it can load the required Neon SDK and complete Auth callback/session flow.
 2. Verify Managed Auth can enforce the desired account-creation policy; no implicit sign-up is accepted without an explicit product decision.
 3. Confirm the SDK's supported session-state subscription or define a documented refresh-on-navigation strategy without relying on private SDK internals.
-4. Confirm AWS region availability, Canadian data-residency requirements, project plan/limits and custom SMTP.
+4. Confirm AWS region availability and Canadian data-residency requirements, whether IP Allow/Private Networking is required, project plan/limits and custom SMTP.
 5. Validate migration SQL and RLS with synthetic JWT identities, including anonymous denial, forged subject, cross-user read/write/delete/clear denial, direct table-write denial, malformed input, stale write conflict, clear/write race and tombstone behavior.
 6. Confirm account export, deletion, retention, recovery and backup objectives.
 7. Obtain separate explicit approval before creating any Neon project/branch, enabling Auth/Data API, configuring trusted domains or SMTP, or adding credentials.
