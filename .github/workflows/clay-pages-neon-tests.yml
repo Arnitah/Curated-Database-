@@ -5,6 +5,7 @@ on:
     branches: [feat/clay-pages-neon-server-adapter-20261124]
     paths:
       - 'apps/clay-sync/pages-api.js'
+      - 'apps/clay-sync/pages-function.js'
       - 'apps/clay-sync/pages-records.js'
       - 'apps/clay-sync/legacy-document-bridge.js'
       - 'apps/clay-sync/scoped-storage.js'
@@ -14,6 +15,7 @@ on:
       - 'apps/clay-sync/neon-auth.js'
       - 'apps/clay-sync/contracts.js'
       - 'tests/clay/pages-api.test.mjs'
+      - 'apps/clay-web/tests/pages-function.test.mjs'
       - 'tests/clay/pages-records.test.mjs'
       - 'tests/clay/legacy-document-bridge.test.mjs'
       - 'tests/clay/scoped-storage.test.mjs'
@@ -53,7 +55,7 @@ jobs:
         with:
           node-version: 20
       - name: Test Pages API and Neon server adapter
-        run: node --test tests/clay/pages-api.test.mjs tests/clay/pages-records.test.mjs tests/clay/legacy-document-bridge.test.mjs tests/clay/scoped-storage.test.mjs tests/clay/artifact-host-shim.test.mjs tests/clay/standalone-bootstrap.test.mjs tests/clay/neon-server-records.test.mjs tests/clay/neon-auth.test.mjs
+        run: node --test tests/clay/pages-api.test.mjs apps/clay-web/tests/pages-function.test.mjs tests/clay/pages-records.test.mjs tests/clay/legacy-document-bridge.test.mjs tests/clay/scoped-storage.test.mjs tests/clay/artifact-host-shim.test.mjs tests/clay/standalone-bootstrap.test.mjs tests/clay/neon-server-records.test.mjs tests/clay/neon-auth.test.mjs
 
   rls:
     runs-on: ubuntu-latest
