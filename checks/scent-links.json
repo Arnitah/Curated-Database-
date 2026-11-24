@@ -1,8 +1,8 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-24",
  "summary": {
-  "pass": 166,
-  "blocked": 9,
+  "pass": 163,
+  "blocked": 12,
   "fail": 3
  },
  "houses": {
@@ -18,8 +18,8 @@
   },
   "j-scent": {
    "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "sig": "blocked",
+   "price": "blocked"
   },
   "shoyeido": {
    "site": "pass",
@@ -229,7 +229,7 @@
   "mith-bangkok": {
    "site": "pass",
    "sig": "pass",
-   "price": "pass"
+   "price": "blocked"
   },
   "solure": {
    "site": "blocked",
@@ -607,9 +607,9 @@
    "price": "pass"
   },
   "dusita": {
-   "site": "fail UND_ERR_CONNECT_TIMEOUT",
-   "sig": "fail UND_ERR_CONNECT_TIMEOUT",
-   "price": "fail UND_ERR_CONNECT_TIMEOUT"
+   "site": "pass",
+   "sig": "pass",
+   "price": "pass"
   },
   "zielinski-rozen": {
    "site": "pass",
@@ -619,7 +619,7 @@
   "areej-le-dore": {
    "site": "pass",
    "sig": "pass",
-   "price": "pass"
+   "price": "blocked"
   },
   "bortnikoff": {
    "site": "pass",
@@ -642,9 +642,9 @@
    "price": "pass"
   },
   "strangers-parfumerie": {
-   "site": "pass",
-   "sig": "pass",
-   "price": "pass"
+   "site": "fail 404",
+   "sig": "fail 404",
+   "price": "fail 404"
   },
   "phlur": {
    "site": "blocked",

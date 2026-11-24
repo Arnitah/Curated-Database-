@@ -2,6 +2,124 @@
  "_about": "The Atlas's field notebook: what was found, checked, corrected or excluded, newest first. The weekly check adds price changes and broken links automatically.",
  "entries": [
   {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at whipped's shop since last week; needs review.",
+   "ref": "whipped"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at kinfolk-notes's shop since last week; needs review.",
+   "ref": "kinfolk-notes"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at kitowa's shop since last week; needs review.",
+   "ref": "kitowa"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at monsillage's shop since last week; needs review.",
+   "ref": "monsillage"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at miller-harris's shop since last week; needs review.",
+   "ref": "miller-harris"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at henry-rose's shop since last week; needs review.",
+   "ref": "henry-rose"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at sultan-pasha's shop since last week; needs review.",
+   "ref": "sultan-pasha"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at meleg-perfumes's shop since last week; needs review.",
+   "ref": "meleg-perfumes"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at regime-des-fleurs's shop since last week; needs review.",
+   "ref": "regime-des-fleurs"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at sarah-baker's shop since last week; needs review.",
+   "ref": "sarah-baker"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at belnu's shop since last week; needs review.",
+   "ref": "belnu"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at fugazzi's shop since last week; needs review.",
+   "ref": "fugazzi"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at gabar's shop since last week; needs review.",
+   "ref": "gabar"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at aurra-london's shop since last week; needs review.",
+   "ref": "aurra-london"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "price-change",
+   "text": "Live price changed at lydeen's shop since last week; needs review.",
+   "ref": "lydeen"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "broken-link",
+   "text": "A link for fueguia-1833 failed this week (site, perfume page or price source).",
+   "ref": "fueguia-1833"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "broken-link",
+   "text": "A link for strangers-parfumerie failed this week (site, perfume page or price source).",
+   "ref": "strangers-parfumerie"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "broken-link",
+   "text": "A link for bath-body-works failed this week (site, perfume page or price source).",
+   "ref": "bath-body-works"
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "stale",
+   "text": "1 houses have no price seen in the last six months: waters-and-wild."
+  },
+  {
+   "on": "2026-11-24",
+   "kind": "checked",
+   "text": "Weekly check: 163 houses fully reachable, 12 blocked a robot, 3 with a failing link; 111 shop prices read live."
+  },
+  {
    "on": "2026-11-16",
    "kind": "price-change",
    "text": "Live price changed at kitowa's shop since last week; needs review.",
