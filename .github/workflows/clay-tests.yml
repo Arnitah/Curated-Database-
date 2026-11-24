@@ -63,7 +63,9 @@ jobs:
         run: supabase stop
 
   clay-tests:
-    runs-on: ubuntu-latest
+    # Playwright 1.55.1 does not support the ubuntu-latest image currently resolving to Ubuntu 26.04.
+    # Pin this browser job to the supported 24.04 image; keep the independent database job on ubuntu-latest.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
