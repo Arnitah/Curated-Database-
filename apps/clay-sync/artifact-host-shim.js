@@ -30,6 +30,9 @@ export async function createClayArtifactHostShim({
       || typeof auth.onStateChange !== 'function') {
     throw new TypeError('A Managed Neon Auth adapter is required');
   }
+  if (typeof onIdentityChange !== 'function') {
+    throw new TypeError('An account-change reload/teardown callback is required');
+  }
 
   const state = await auth.getState();
   if (state.status !== 'signed_in' || !state.user?.id) throw authRequired();
@@ -49,18 +52,27 @@ export async function createClayArtifactHostShim({
   });
   const user = Object.freeze({ id: async () => userId });
 
-  const unsubscribe = auth.onStateChange(nextState => {
+  let disposed = false;
+  let unsubscribe = () => {};
+  const shutdown = () => {
+    if (disposed) return;
+    disposed = true;
+    db.dispose();
+    unsubscribe();
+  };
+
+  unsubscribe = auth.onStateChange(nextState => {
     const nextUserId = nextState.status === 'signed_in' ? nextState.user?.id || null : null;
-    if (nextUserId !== userId && typeof onIdentityChange === 'function') {
+    if (nextUserId !== userId) {
+      shutdown();
       try {
         onIdentityChange({ previousUserId: userId, nextUserId });
       } catch {
-        // A host navigation callback must not break auth state delivery.
+        // The data bridge is already disposed, so a failed navigation cannot cross account boundaries.
       }
     }
   });
 
-  let disposed = false;
   return Object.freeze({
     storage: scopedStorage,
     userId,
@@ -72,10 +84,7 @@ export async function createClayArtifactHostShim({
       return null;
     },
     dispose() {
-      if (disposed) return;
-      disposed = true;
-      unsubscribe?.();
-      db.dispose();
+      shutdown();
     }
   });
 }
