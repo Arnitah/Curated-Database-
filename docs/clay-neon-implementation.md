@@ -49,7 +49,7 @@ Official references:
 
 `apps/clay-sync/neon-records.js` implements the existing records port using the combined Neon Auth + Data API client. It is intentionally not imported by the Clay app. The caller must construct the SDK client with the target branch Auth URL and Data API URL after provisioning is approved. The adapter does not create projects, enable services, configure URLs, or store credentials.
 
-## Environment design
+## Hosting dependency\n\nCloudflare Pages Free is the approved hosting direction for a separate hosted Clay app; this is not a claim that the project has been provisioned or deployed. The exact Pages project, preview and production origins remain unknown. The Claude artifact remains the prototype/review surface, and its `window.claude.use('db')` / `window.claude.use('user')` calls are not portable identity or database credentials. Keep the Neon adapter isolated until a standalone hosted build and its origin/callback behavior are verified.\n\n## Environment design
 
 | Environment | Source | Data policy | Purpose |
 |---|---|---|---|
@@ -62,7 +62,7 @@ Do not branch a production branch for testing unless a separately tested scrub p
 
 ## Required gates before provisioning
 
-1. Confirm Clay's actual hosting/runtime origin and whether it can load the required Neon SDK and complete Auth callback/session flow.
+1. Confirm the actual Cloudflare Pages project, preview/production URLs and runtime origin. Cloudflare Pages Free was selected for the separate hosted Clay app on 19 Nov 2026, but no project or deployment has been created or verified. The current repository app still contains Claude artifact-specific database/user hooks, so confirm the standalone hosted build can load the Neon SDK and complete the Auth callback/session flow before wiring it.
 2. Verify Managed Auth can enforce the desired account-creation policy; no implicit sign-up is accepted without an explicit product decision.
 3. Confirm the SDK's supported session-state subscription or define a documented refresh-on-navigation strategy without relying on private SDK internals.
 4. Confirm AWS region availability and Canadian data-residency requirements, whether IP Allow/Private Networking is required, project plan/limits and custom SMTP.
