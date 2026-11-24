@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs && vite build && wrangler pages functions build functions --outdir .wrangler/functions --project-directory . --compatibility-date 2026-11-24",
-    "test:build": "node --test tests/*.test.mjs"
+    "test:build": "node --test tests/*.test.mjs",
+    "test:preview": "node scripts/preview-smoke.mjs"
   },
   "dependencies": {
     "@neon/auth": "0.8.2",
