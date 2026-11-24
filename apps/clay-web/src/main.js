@@ -14,6 +14,28 @@ function showMessage(message, isError = false) {
   }
 }
 
+function installSignOutControl(auth) {
+  const host = document.querySelector('.side-foot') || document.querySelector('.topbar') || document.body;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = 'Sign out';
+  button.setAttribute('aria-label', 'Sign out of Clay');
+  button.style.cssText = 'min-height:40px;padding:8px 14px;border:1px solid var(--line,#e2d7c6);border-radius:999px;background:var(--surface,#fbf8f2);color:var(--muted,#6b5b4d);font:600 13px system-ui,sans-serif;cursor:pointer';
+  button.addEventListener('click', async () => {
+    button.disabled = true;
+    button.textContent = 'Signing out…';
+    try {
+      await auth.signOut();
+      window.location.reload();
+    } catch (error) {
+      button.disabled = false;
+      button.textContent = 'Sign out';
+      window.alert(error?.message || 'Sign out could not be completed.');
+    }
+  });
+  host.append(button);
+}
+
 function renderSignIn() {
   root.innerHTML = `
     <section style="width:min(100%,420px);padding:32px;border-radius:24px;background:var(--surface,#fbf8f2);border:1px solid var(--line,#e2d7c6);box-shadow:0 12px 40px #2b211a12">
@@ -44,9 +66,13 @@ async function start() {
       callbackURL: window.location.origin + window.location.pathname,
       loadApp: async () => {
         await import('./clay-app.js');
-        root.remove();
       }
     });
+
+    if (result.status === 'ready') {
+      root.remove();
+      installSignOutControl(result.auth);
+    }
 
     if (result.status === 'signed_out') {
       renderSignIn();
