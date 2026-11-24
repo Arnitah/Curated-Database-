@@ -1,5 +1,7 @@
 # Clay standalone Pages app
 
+Configure Cloudflare Pages with this directory (`apps/clay-web`) as the project root, `npm run build` as the build command, and `dist` as the output directory. The Pages Functions live under this same project root.
+
 This directory is the isolated build root for the Cloudflare Pages version of Clay. The source artifact remains `apps/clay.html` and is not edited by the build.
 
 ## Build
