@@ -64,7 +64,7 @@ jobs:
       - name: Create Neon Data API identity test shim
         run: |
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
-          CREATE ROLE anon NOLOGIN;
+          CREATE ROLE anonymous NOLOGIN;
           CREATE ROLE authenticated NOLOGIN;
           CREATE SCHEMA auth;
           CREATE FUNCTION auth.user_id()
