@@ -347,3 +347,16 @@ The documented vanilla Managed Auth client exposes `getSession()` for identity p
 **Authority boundary unchanged:** no Neon resource, Auth setting, credential, schema deployment, Cloudflare project, application cutover, real-user access or migration has been created or changed. Smart Butler remains untouched.
 
 Last reviewed and updated · ChatGPT · 24 November 2026.
+
+
+## 19. Existing app compatibility and local-cache privacy · 24 November 2026
+
+A fresh inspection of `apps/clay.html` found that its current sync contract is five Firestore-style user documents: `clay-products`, `clay-hair`, `clay-log`, `clay-prefs` and `clay-scents`. The provider-neutral backend exposes versioned records. The first compatibility bridge maps each legacy document to one `state` record in its corresponding collection and preserves the existing `{ data, at, cleared }` payload shape. It uses optimistic concurrency and surfaces conflicts rather than silently retrying. Snapshot updates use visible-tab polling (30 seconds by default), focus and visibility refresh; this is not realtime push.
+
+The app also uses unscoped browser `localStorage` keys for its offline cache and sync metadata (including `clay-web`, product/hair/log/scent/prefs data, timestamps and empty-intent flags). A standalone multi-account build must route every app storage operation through a per-user namespace derived from the verified Managed Auth user id. The namespace must be installed before any legacy app script reads or writes storage.
+
+The host compatibility shim composes the Managed Auth adapter, Pages records client, legacy document bridge and per-user storage. It requires a signed-in user and a mandatory account-change teardown/reload callback; it disposes the old user's data bridge before a sign-out/account-switch can continue. The optional Claude comments capability degrades to null outside the Claude toolbar.
+
+**Release gate:** do not wire or publish the hosted app until the standalone bootstrap proves that identity is resolved, scoped storage is installed, and the host shim is assigned before the legacy HTML scripts execute. Keep the existing Claude artifact unchanged. No local user data is copied, cleared or migrated by this design review.
+
+Last reviewed · ChatGPT · 24 November 2026.
