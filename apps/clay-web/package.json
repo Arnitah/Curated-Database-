@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs && vite build",
-    "test:build": "node --test tests/build.test.mjs"
+    "test:build": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@neon/auth": "latest",
