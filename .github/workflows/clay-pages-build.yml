@@ -6,7 +6,7 @@ on:
       - 'apps/clay.html'
       - 'apps/clay-sync/**'
       - 'apps/clay-web/**'
-      - 'functions/api/clay/**'
+      - 'apps/clay-web/functions/api/clay/**'
       - '.github/workflows/clay-pages-build.yml'
   push:
     branches: [feat/clay-pages-neon-server-adapter-20261124]
@@ -14,7 +14,7 @@ on:
       - 'apps/clay.html'
       - 'apps/clay-sync/**'
       - 'apps/clay-web/**'
-      - 'functions/api/clay/**'
+      - 'apps/clay-web/functions/api/clay/**'
       - '.github/workflows/clay-pages-build.yml'
   workflow_dispatch:
 
