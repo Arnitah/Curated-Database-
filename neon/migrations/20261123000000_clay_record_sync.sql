@@ -63,8 +63,8 @@ create policy clay_sync_records_select_own
 
 -- Data API access is deliberately read-only at table level. All mutations
 -- go through the two narrowly scoped transactional functions below.
-revoke all on table public.clay_sync_collections from public, anon, authenticated;
-revoke all on table public.clay_sync_records from public, anon, authenticated;
+revoke all on table public.clay_sync_collections from public, anonymous, authenticated;
+revoke all on table public.clay_sync_records from public, anonymous, authenticated;
 grant select on table public.clay_sync_collections to authenticated;
 grant select on table public.clay_sync_records to authenticated;
 
@@ -208,7 +208,7 @@ begin
 end;
 $$;
 
-revoke all on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) from public, anon, authenticated;
-revoke all on function public.clay_sync_clear_collection(text,bigint) from public, anon, authenticated;
+revoke all on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) from public, anonymous, authenticated;
+revoke all on function public.clay_sync_clear_collection(text,bigint) from public, anonymous, authenticated;
 grant execute on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) to authenticated;
 grant execute on function public.clay_sync_clear_collection(text,bigint) to authenticated;
