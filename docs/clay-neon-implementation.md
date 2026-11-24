@@ -22,30 +22,32 @@ Official references:
 
 ## Identity design
 
-- Use the managed Neon Auth user id from the verified session as the stable Clay principal.
+- Use the managed Neon Auth user id from the verified session JWT `sub` as the stable Clay principal.
 - Never accept a user id from a record payload, URL, local storage or app caller as proof of identity.
-- The Data API must receive the Auth SDK's current JWT on every request; the SDK owns token refresh and bearer transport.
-- The records adapter checks that a session exists before issuing a query. PostgreSQL RLS independently enforces ownership.
-- The existing provider-neutral contract exposes only `{ id, email }`; raw session and JWT objects stay inside the provider SDK.
-- The existing Supabase controller's existing-account-only email-link behavior is not assumed to map one-for-one to Managed Neon Auth. Managed Auth supports email OTP and magic links, but the precise sign-in-only/no-implicit-sign-up policy and session subscription API must be verified against the installed Managed SDK before a Neon identity adapter is accepted.
-- Managed Auth is available only in AWS regions and cannot be enabled on projects using IP Allow or Private Networking; region and network posture therefore need an explicit review before provider selection.
-- Magic links are disabled by default. Email OTP and magic links are supported by Managed Auth, but production email delivery requires dedicated SMTP; the shared SMTP is only a getting-started path. Do not send a real email or configure a provider during this stage.
-- The managed SDK is a fixed Better Auth wrapper, not a self-managed Better Auth server. It does not expose arbitrary plugins or custom server handlers. Its public browser API includes `getSession()`, `signIn.*` and `signOut()`, but the exact session subscription and sign-in-only policy must be proven before mapping the existing Supabase auth port.
+- The browser obtains a short-lived session JWT from the documented Managed Auth SDK and sends it as a bearer token to the same-origin Cloudflare Pages Function. Do not persist the JWT in local storage.
+- The Pages Function verifies the JWT signature against the branch `NEON_AUTH_JWKS_URL`, checks the issuer against `NEON_AUTH_BASE_URL`, and derives identity only from the verified `sub`.
+- The provider-neutral identity contract exposes only `{ id, email }`; raw session and JWT objects stay inside the identity adapter/API boundary.
+- Managed Auth Magic Link supports an explicit `Allow New User Registration` setting. Set it off to preserve existing-account-only email-link sign-in; validate this setting on a disposable synthetic branch before accepting the provider.
+- Managed Auth is available only in AWS regions and cannot be enabled on projects using IP Allow or Private Networking; region and network posture still require an explicit review.
+- Magic links are disabled by default. Production email delivery requires dedicated SMTP; shared SMTP is only a getting-started path. Do not send a real email or configure a provider during this stage.
+- The managed SDK is a fixed Better Auth wrapper, not a self-managed Better Auth server. Its documented browser API includes `getSession()`, `signIn.magicLink()` and `signOut()`. The vanilla Clay app must use a documented session API; if no public subscription is available, use and test refresh-on-load, post-callback, sign-out and tab-focus behavior rather than private store internals.
 
 ## Data and authorization model
 
 - Five private collections only: `products`, `hair`, `log`, `prefs`, `scents`.
-- Tables use `user_id text`, because Neon Auth JWT `sub` is exposed as text by `auth.user_id()`; do not assume UUID identity.
-- Authenticated Data API role receives SELECT only on the two tables and EXECUTE only on two narrowly scoped mutation functions.
-- Anonymous role receives no grants.
-- RLS filters every read by `auth.user_id() = user_id`; record reads also require the current collection generation.
-- No direct table INSERT/UPDATE/DELETE grants. Mutations execute through security-definer functions with empty search_path, explicit schema-qualified objects, verified `auth.user_id()`, strict input validation and collection-row locking.
-- The mutation functions retain optimistic concurrency, per-record versions, tombstones, clear-all generations and explicit conflict results.
-- Do not expose owner/migration credentials to the browser or use a role with BYPASSRLS for user requests.
+- Tables use `user_id text`; Managed Auth JWT subjects are text identifiers, not assumed UUIDs.
+- The Pages Function uses `@neondatabase/serverless` over HTTP. Each read/write runs in one non-interactive transaction that first sets `request.jwt.claims` to the verified JWT payload using `set_config(..., true)`.
+- RLS reads the current user from `current_setting('request.jwt.claims', true)::jsonb ->> 'sub'`. A missing or empty subject returns no rows and fails closed.
+- The app connection uses a dedicated login role without `BYPASSRLS`, not `neondb_owner`. The runtime role may SELECT rows under RLS and EXECUTE the two scoped mutation functions, but receives no direct table INSERT/UPDATE/DELETE grants.
+- Mutation functions are `SECURITY DEFINER` with an empty `search_path`, schema-qualified objects, strict input validation and collection-row locking. Their dedicated non-login owner must also have `NOBYPASSRLS`; FORCE ROW LEVEL SECURITY ensures table-owner access is not an accidental bypass.
+- The two function paths retain optimistic concurrency, per-record versions, tombstones, clear-all generations and explicit conflict results.
+- No database URL, login password, owner credential or migration credential reaches browser code.
 
 ## Adapter
 
-`apps/clay-sync/neon-records.js` implements the existing records port using the combined Neon Auth + Data API client. It is intentionally not imported by the Clay app. The caller must construct the SDK client with the target branch Auth URL and Data API URL after provisioning is approved. The adapter does not create projects, enable services, configure URLs, or store credentials.
+The existing `apps/clay-sync/neon-records.js` is a Data API-only synthetic prototype and is not the selected runtime adapter. Keep it isolated; do not wire it into the Clay app or merge it as the next backend.
+
+The replacement adapter should preserve the provider-neutral records contract but call a same-origin Pages Function endpoint. The server-side handler verifies the Managed Auth bearer JWT, creates the Neon HTTP query client from a server-only `DATABASE_URL`, sets transaction-local JWT claims, and executes the collection read or mutation. The handler must never accept a caller-supplied owner id. Implement the function wrapper and tests with injected verification/database dependencies before adding real package/runtime configuration.
 
 ## Hosting dependency\n\nCloudflare Pages Free is the approved hosting direction for a separate hosted Clay app; this is not a claim that the project has been provisioned or deployed. The exact Pages project, preview and production origins remain unknown. The Claude artifact remains the prototype/review surface, and its `window.claude.use('db')` / `window.claude.use('user')` calls are not portable identity or database credentials. Keep the Neon adapter isolated until a standalone hosted build and its origin/callback behavior are verified.\n\n## Environment design
 
@@ -61,8 +63,8 @@ Do not branch a production branch for testing unless a separately tested scrub p
 ## Required gates before provisioning
 
 1. Confirm the actual Cloudflare Pages project, preview/production URLs and runtime origin. Cloudflare Pages Free was selected for the separate hosted Clay app on 19 Nov 2026, but no project or deployment has been created or verified. The current repository app still contains Claude artifact-specific database/user hooks, so confirm the standalone hosted build can load the Neon SDK and complete the Auth callback/session flow before wiring it.
-2. Verify Managed Auth can enforce the desired account-creation policy; no implicit sign-up is accepted without an explicit product decision.
-3. Confirm the SDK's supported session-state subscription or define a documented refresh-on-navigation strategy without relying on private SDK internals.
+2. Validate the Managed Auth Magic Link `Allow New User Registration` setting with new-user registration disabled; the documented setting matches the existing-account-only product requirement.
+3. Confirm the vanilla SDK's documented session refresh/state behavior or implement a tested refresh-on-load, post-callback, sign-out and tab-focus strategy without private SDK internals.
 4. Confirm AWS region availability and Canadian data-residency requirements, whether IP Allow/Private Networking is required, project plan/limits and custom SMTP.
 5. Validate migration SQL and RLS with synthetic JWT identities, including anonymous denial, forged subject, cross-user read/write/delete/clear denial, direct table-write denial, malformed input, stale write conflict, clear/write race and tombstone behavior.
 6. Confirm account export, deletion, retention, recovery and backup objectives.
