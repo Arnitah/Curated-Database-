@@ -45,7 +45,7 @@ jobs:
         run: |
           test -s apps/clay-web/dist/index.html
           test -d apps/clay-web/dist/assets
-          ! grep -R -nE 'localStorage\.(getItem|setItem|removeItem|clear)' apps/clay-web/dist/assets
+          ! grep -R -n 'localStorage' apps/clay-web/dist/assets/clay-app-*.js
       - uses: actions/upload-artifact@v4
         with:
           name: clay-pages-preview-build
