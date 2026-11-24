@@ -30,7 +30,7 @@ function inspectSource() {
   const expectedJson = [...shardFiles, 'meta.json', 'names.json'].sort();
   if (JSON.stringify(actualJson) !== JSON.stringify(expectedJson)) throw new Error(`index JSON file set differs from expected 40 shards + meta + names: ${actualJson.join(', ')}`);
   let rows = 0;
-  const files = ['apps/clay.html', ...expectedJson.map((f) => `${INDEX_REL}/${f}`)];
+  const files = ['clay.html', ...expectedJson.map((f) => `${INDEX_REL}/${f}`)];
   for (const name of shardFiles) {
     const data = readJson(path.join(PRODUCT_DIR, name));
     if (!Array.isArray(data)) throw new Error(`${name} must contain a JSON array`);
@@ -57,9 +57,10 @@ function hashFiles(root, relPaths) {
 function build() {
   const info = inspectSource();
   fs.rmSync(OUT, { recursive: true, force: true });
-  fs.mkdirSync(path.join(OUT, 'apps'), { recursive: true });
+  fs.mkdirSync(OUT, { recursive: true });
   fs.mkdirSync(path.join(OUT, INDEX_REL), { recursive: true });
-  fs.copyFileSync(path.join(ROOT, 'apps/clay.html'), path.join(OUT, 'apps/clay.html'));
+  // Serve the page at package root so its relative index/clay/... requests resolve correctly.
+  fs.copyFileSync(path.join(ROOT, 'apps/clay.html'), path.join(OUT, 'clay.html'));
   for (const rel of info.files.filter((p) => p.startsWith(INDEX_REL + '/'))) {
     fs.copyFileSync(path.join(ROOT, rel), path.join(OUT, rel));
   }
@@ -67,7 +68,7 @@ function build() {
   const manifest = {
     format: 'clay-release-package/v1',
     source_commit: process.env.GITHUB_SHA || process.env.SOURCE_COMMIT || null,
-    app: 'apps/clay.html',
+    app: 'clay.html',
     product_index: INDEX_REL,
     product_count: info.products,
     shard_count: info.shards,
