@@ -215,3 +215,101 @@ The following details are transcribed/paraphrased from the user's Nissaba Instag
 - Chaco: guaiacwood is described as native to the Paraguayan Chaco; yerba maté is described as harvested from South America's tea plant; petitgrain is described as distilled from bitter orange leaves and twigs.
 
 These are source leads only; the screenshots do not establish named farms, suppliers, exact lots, full chain of custody, or independent sustainability/social-impact outcomes.
+
+
+## User-supplied research batch — Nissaba sourcing stories and Paris retail lead · 23 November 2026
+
+**Source status:** screenshots supplied by the user from the `nissaba.fragrances` Instagram account and one Reel from `flaconneparis`. The claims below are brand/editorial statements visible in those screenshots, not independently verified agricultural, taxonomic, supplier or chain-of-custody facts. Dates shown in the screenshots are retained as displayed.
+
+### 1. Provence — hyssop
+
+**Screenshot:** Nissaba post dated July 11.
+
+- Nissaba states that hyssop stands at the heart of its modern aromatic composition, is grown on the sunlit hills of Haute Provence, and is paired with Mediterranean botanicals.
+- Caption describes the smell as aromatic/herbaceous with warm, slightly spicy tones.
+- Proposed records: (a) hyssop cultivation in Haute Provence; (b) hyssop use in the fragrance `PROVENCE`; (c) sensory description as a brand/product claim, not a botanical provenance fact.
+- Still unknown: botanical species/subspecies, named farm, harvest location/date, grower, distillation/extraction location, supplier, batch and independent corroboration.
+- This extends the earlier Provence pilot example; do not create duplicate material identities or treat this screenshot as independent corroboration.
+
+### 2. Perfumer interview — creative context, not provenance
+
+**Screenshot:** Nissaba post dated July 18, carousel slides 2/5 and 4/5; caption congratulates Franck on a newly announced Master Perfumer title.
+
+- On travel, the perfumer says landscapes, cultures and encounters inspire the stories told through fragrance.
+- On creative intent, he wants fragrances to touch the soul and capture emotion, beauty and wonder that remain after the scent is gone.
+- Classification: creative philosophy / perfumer interview context. This is useful for the Atlas' house and perfumer editorial layer, but it does not establish any material, place of sourcing, formulation site or manufacturing site.
+- Keep the wording attributed to the interview; do not convert the sentiment into a factual claim about a particular journey or ingredient.
+
+### 3. Chaco / Paraguay — guaiacwood, yerba maté and petitgrain
+
+**Screenshots:** Nissaba post dated July 28; map slide 3/6 and sourcing-stories slide 4/6. Caption calls these the three Paraguay-sourced natural extracts used in the Chaco creation.
+
+| Material | Exact source claim visible | Map/context signal | Modelled interpretation | Unresolved |
+|---|---|---|---|---|
+| Guaiacwood | Described as native to the Paraguayan Chaco; palo santo is said to reveal a smooth woody character with subtle smoky facets and calming warmth. | Label placed in the Chaco Forest area. | Native-range / regional origin claim, separate from commercial harvest and product-use claims. | Botanical identity, legal species name, exact harvest area, wild/cultivated status, permits, producer and chain of custody. |
+| Yerba maté | Described as harvested from South America's iconic tea plant; green, herbaceous and slightly bitter. | Map label appears in the Guairá / Caazapá area of Paraguay; caption calls the extracts Paraguay-sourced. | Brand map implies a Paraguay regional sourcing association; keep map-level location as approximate, not a farm coordinate. | Exact harvest district, species/taxon, producer/community, harvest year, processing and lot traceability. |
+| Petitgrain | Described as distilled from leaves and twigs of bitter orange trees. | Map label appears around the San Pedro area; post caption groups it among Paraguay-sourced extracts. | Separate plant-part / extraction-method claim from the map's apparent regional sourcing claim. | Citrus species, orchard/cultivation area, harvest location, distillation site, supplier and batch. |
+
+**Important correction to avoid overstatement:** the text explicitly calls guaiacwood native to the Paraguayan Chaco. The text does not explicitly say petitgrain is cultivated in San Pedro or that its distillation occurs there. The map and caption together suggest a Paraguay sourcing story, but do not establish exact production coordinates or stage-specific traceability. The word "palo santo" is used in the brand copy alongside "guaiacwood"; do not assume a verified taxonomic equivalence without botanical and regulatory checking.
+
+### 4. South India / Tamil Nadu — sandalwood, davana, vetiver, jasmine, tuberose
+
+**Screenshots:** Nissaba post dated August 29; map slide 3/6 and sourcing-stories slide 4/6.
+
+The map labels **sandalwood, davana, vetiver, grandiflorum, tuberose and sambac** across southern India, including Karnataka/Tamil Nadu and nearby place labels. The accompanying story states:
+
+- **Jasmine sambac:** harvested daily at dawn across Tamil Nadu; described as luminous, creamy and intensely floral, deeply woven into South Indian culture and traditions.
+- **Tuberose:** cultivated in fertile southern plains; described as rich and radiant while avoiding overly powdery or indolic facets.
+- **Davana:** described as native to India, with a fruity-aromatic profile.
+- The map labels sandalwood and davana around the Mysore/Ooty side of the map; vetiver farther east around the Villupuram area; grandiflorum, tuberose and sambac across the southern Tamil Nadu portion. These are approximate map placements, not exact farm locations.
+
+Proposed separate claims:
+- Jasmine sambac — harvest across Tamil Nadu; species/form is named by the brand.
+- Tuberose — cultivation in the southern plains; the exact district is not stated in the text.
+- Davana — native-range claim for India; do not treat native range as proof of Nissaba's supplier or batch origin.
+- Sandalwood, vetiver, jasmine grandiflorum — map-level regional sourcing signals only until additional slide text or independent evidence supports a precise stage/place.
+
+Still unknown: exact districts/farms, botanical identifiers for all map labels, cultivation versus wild harvest where not stated, extraction sites, suppliers, harvest seasons/years, chain of custody and independent corroboration.
+
+### 5. Andalucía, Spain — cistus labdanum
+
+**Screenshot:** Nissaba post dated September 6; map highlights Andalucía and places the Cistus labdanum label in the Huelva / Sierra de Aracena area. Caption states that `Cistus ladanifer` grows wild throughout the Mediterranean region, from Lebanon to Morocco, but is mainly harvested in Andalucía.
+
+- Botanical name explicitly shown: `Cistus ladanifer`.
+- Proposed distinct claims: (a) broad Mediterranean wild distribution / native-range statement; (b) main harvest region in Andalucía; (c) approximate map depiction around Huelva / Sierra de Aracena; (d) use in the relevant Nissaba fragrance only if the full post identifies that product.
+- Do not collapse broad Mediterranean distribution into the commercial harvest origin.
+- Still unknown: named harvest areas/land managers, exact collection locations, harvesting method, harvest year, resin extraction/processing site, producer, permissions and batch traceability.
+
+### 6. Madagascar — Grande Île spice sourcing map
+
+**Screenshot:** Nissaba post dated November 11. Caption says Grande Île gathers the finest spices of the big island in a single fragrance. Map labels the following materials with arrows across Madagascar:
+
+- Ylang-ylang — arrow in the north/northwest, around the Ambilobe / Antsiranana area.
+- Vanilla — northeast, around the Sambava / Antalaha area.
+- Cloves — northeast/east coast, around the Mananara area.
+- Cinnamon — at least one label/arrow around the east-central part of the island; a second cinnamon label appears farther south/east on the map.
+- Blue ginger — east coast around the Brickaville area.
+- Black pepper — southeast/east around the Mananjary / Farafangana side.
+- Pink pepper — southern end of the island, around the Tolagnaro area.
+
+**Model treatment:** these are map-caption associations, not verified farm coordinates. Preserve the two cinnamon labels as shown pending clarification; do not silently merge them into one locality. The post's caption establishes a single fragrance story using spices from Madagascar, but the screenshot alone does not identify the product name, exact species, farm, harvest stage, processing site, supplier or batch.
+
+Open taxonomy questions include which species Nissaba means by "blue ginger" and "pink pepper", and whether the cinnamon labels represent two sourcing areas, a repeated map label or separate material types. Do not assume botanical identity from common names.
+
+### 7. Paris — Jovoy display / flacon discovery lead
+
+**Screenshot:** Reel from verified account `flaconneparis`, showing a display marked **JOVOY PARIS** with several sculptural, stone-like perfume bottles. On-screen text includes "find"; caption begins "I found a perfume in Paris that I still can't stop…".
+
+- Classification: retail/discovery lead and possible distinctive flacon/product presentation.
+- The screenshot does not identify the perfume house, fragrance name, bottle maker, product line, price or exact Jovoy branch/address.
+- Do not create a new house or material record from the display alone. Keep as an unresolved retail lead until the Reel caption/product tag or another source identifies the fragrance.
+- No procurement, supplier enquiry or sample request is implied.
+
+### 8. Editorial and evidence handling
+
+- Preserve all claims as user-supplied screenshot evidence with account attribution and displayed post dates; add direct post URLs only when supplied or independently retrieved.
+- Evidence label should remain `reported` or an equivalent user-supplied-source status until the source URL and post are independently checked. Do not assign A/B strength based solely on a brand's visual map.
+- Use separate claim records for each material × stage × place × product scope.
+- The screenshots add research coverage for Provence, Paraguay, southern India, Andalucía and Madagascar; the July 18 perfumer interview enriches editorial context; the Jovoy Reel is a separate retail lead.
+- No production dataset rows are created by this appendix. The current PR remains a documentation proposal pending review and implementation.
+
