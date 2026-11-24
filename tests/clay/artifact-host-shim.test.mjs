@@ -49,7 +49,7 @@ test('creates the db/user/comments host contract with a user-scoped storage cach
   const shim = await createClayArtifactHostShim({
     auth: harness.auth,
     storage,
-    fetchImpl: async () => { throw new Error('no network call expected'); },
+    fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ collection: 'products', generation: 1, revision: 0, records: [] }) }),
     pollIntervalMs: 0,
     onIdentityChange() {}
   });
