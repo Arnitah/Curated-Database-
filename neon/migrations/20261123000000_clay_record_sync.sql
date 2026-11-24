@@ -38,8 +38,6 @@ create index if not exists clay_sync_records_visible_idx
 
 alter table public.clay_sync_collections enable row level security;
 alter table public.clay_sync_records enable row level security;
-alter table public.clay_sync_collections force row level security;
-alter table public.clay_sync_records force row level security;
 
 drop policy if exists clay_sync_collections_select_own on public.clay_sync_collections;
 create policy clay_sync_collections_select_own
