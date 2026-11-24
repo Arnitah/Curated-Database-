@@ -39,6 +39,9 @@ create index if not exists clay_sync_records_visible_idx
 alter table public.clay_sync_collections enable row level security;
 alter table public.clay_sync_records enable row level security;
 
+grant usage on schema public, auth to authenticated;
+grant execute on function auth.user_id() to authenticated;
+
 drop policy if exists clay_sync_collections_select_own on public.clay_sync_collections;
 create policy clay_sync_collections_select_own
   on public.clay_sync_collections for select to authenticated
@@ -205,7 +208,7 @@ begin
 end;
 $$;
 
-revoke all on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) from public, anon;
-revoke all on function public.clay_sync_clear_collection(text,bigint) from public, anon;
+revoke all on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) from public, anon, authenticated;
+revoke all on function public.clay_sync_clear_collection(text,bigint) from public, anon, authenticated;
 grant execute on function public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) to authenticated;
 grant execute on function public.clay_sync_clear_collection(text,bigint) to authenticated;
