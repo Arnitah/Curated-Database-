@@ -42,6 +42,8 @@ jobs:
           ! grep -R -n 'localStorage' apps/clay-web/dist/assets/clay-app-*.js
       - name: Verify bundled Pages Function
         run: test -s apps/clay-web/.wrangler/functions/index.js
+      - name: Smoke-test local Pages routes
+        run: npm run test:preview --prefix apps/clay-web
       - uses: actions/upload-artifact@v4
         with:
           name: clay-pages-preview-build
