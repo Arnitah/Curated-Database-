@@ -1,0 +1,74 @@
+name: Clay Neon adapter and RLS tests
+
+on:
+  pull_request:
+    paths:
+      - 'apps/clay-sync/neon-records.js'
+      - 'apps/clay-sync/contracts.js'
+      - 'tests/clay/neon-records.test.mjs'
+      - 'neon/**'
+      - '.github/workflows/clay-neon-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clay-neon-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  neon-adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run synthetic Neon adapter tests
+        run: node --test tests/clay/neon-records.test.mjs
+
+  neon-rls:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: clay_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d clay_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/clay_test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+      - name: Create Neon Data API identity test shim
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 <<'SQL'
+          CREATE ROLE anon NOLOGIN;
+          CREATE ROLE authenticated NOLOGIN;
+          CREATE SCHEMA auth;
+          CREATE FUNCTION auth.user_id()
+          RETURNS text
+          LANGUAGE sql
+          STABLE
+          AS $$
+            SELECT nullif(current_setting('request.jwt.claim.sub', true), '')
+          $$;
+          GRANT USAGE ON SCHEMA auth TO authenticated;
+          SQL
+      - name: Apply Neon-specific migration
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f neon/migrations/20261123000000_clay_record_sync.sql
+      - name: Verify ownership, grants, tombstones and concurrency
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f neon/tests/clay_record_sync.test.sql
