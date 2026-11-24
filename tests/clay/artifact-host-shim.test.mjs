@@ -50,7 +50,8 @@ test('creates the db/user/comments host contract with a user-scoped storage cach
     auth: harness.auth,
     storage,
     fetchImpl: async () => { throw new Error('no network call expected'); },
-    pollIntervalMs: 0
+    pollIntervalMs: 0,
+    onIdentityChange() {}
   });
 
   assert.equal(shim.userId, 'test-user-a');
@@ -72,7 +73,8 @@ test('requires a signed-in identity before exposing the hosted data bridge', asy
   const harness = authHarness({ status: 'signed_out', user: null });
   await assert.rejects(createClayArtifactHostShim({
     auth: harness.auth,
-    storage: fakeStorage()
+    storage: fakeStorage(),
+    onIdentityChange() {}
   }), error => error.code === 'CLAY_SYNC_AUTH_REQUIRED');
 });
 
@@ -90,8 +92,9 @@ test('requests a reload boundary when the authenticated account changes', async 
   harness.emit({ status: 'signed_out', user: null });
   harness.emit({ status: 'signed_in', user: { id: 'test-user-b' } });
   assert.deepEqual(changes, [
-    { previousUserId: 'test-user-a', nextUserId: null },
-    { previousUserId: 'test-user-a', nextUserId: 'test-user-b' }
+    { previousUserId: 'test-user-a', nextUserId: null }
   ]);
+  assert.equal(harness.unsubscribed, true);
+  await assert.rejects(shim.use('db'), /disposed/);
   shim.dispose();
 });
