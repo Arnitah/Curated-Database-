@@ -49,6 +49,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: clay-pages-preview-build
-          path: apps/clay-web/dist/
+          path: |
+            apps/clay-web/dist/
+            apps/clay-web/package-lock.json
           if-no-files-found: error
           retention-days: 7
