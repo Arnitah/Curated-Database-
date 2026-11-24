@@ -67,7 +67,7 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
 
   async function transact(queries) {
     return sql.transaction([
-      sql`SELECT set_config('request.jwt.claims', \${claimsJson}, true)`,
+      sql`SELECT set_config('request.jwt.claims', ${claimsJson}, true)`,
       ...queries
     ]);
   }
@@ -77,15 +77,15 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
     const [, stateRows, recordRows] = await transact([
       sql`SELECT generation, revision
           FROM public.clay_sync_collections
-          WHERE collection = \${collection}
+          WHERE collection = ${collection}
           LIMIT 1`,
       sql`SELECT record_id, generation, version, payload, deleted_at
           FROM public.clay_sync_records
-          WHERE collection = \${collection}
+          WHERE collection = ${collection}
             AND generation = COALESCE(
               (SELECT generation
                FROM public.clay_sync_collections
-               WHERE collection = \${collection}
+               WHERE collection = ${collection}
                LIMIT 1),
               1
             )
@@ -121,12 +121,12 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
     const payloadJson = deleted ? null : JSON.stringify(input.payload);
     const [, rows] = await transact([
       sql`SELECT public.clay_sync_apply_record(
-        \${collection},
-        \${recordId},
-        \${input.expectedGeneration},
-        \${input.expectedVersion},
-        \${payloadJson}::jsonb,
-        \${deleted}
+        ${collection},
+        ${recordId},
+        ${input.expectedGeneration},
+        ${input.expectedVersion},
+        ${payloadJson}::jsonb,
+        ${deleted}
       ) AS result`
     ]);
     return unwrapMutation(rows);
@@ -140,8 +140,8 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
     assertGeneration(input.expectedGeneration);
     const [, rows] = await transact([
       sql`SELECT public.clay_sync_clear_collection(
-        \${collection},
-        \${input.expectedGeneration}
+        ${collection},
+        ${input.expectedGeneration}
       ) AS result`
     ]);
     return unwrapMutation(rows);
