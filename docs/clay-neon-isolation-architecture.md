@@ -275,7 +275,7 @@ Recommended merge/reconciliation sequence (not an authorization to merge): revie
 - Confirm the intended Clay hosting/release target and environment-origin list.
 - Confirm data residency and select the Neon region after checking current availability.
 - Complete Neon Auth vs external identity-provider evaluation.
-- Select Data API vs trusted server-side PostgreSQL access.
+- Validate the Cloudflare Pages Functions runtime, Managed Auth JWT verification, transaction-scoped RLS claims and least-privilege database role on a synthetic Neon branch.
 - Confirm email delivery, OAuth and account recovery requirements.
 - Confirm retention, export, deletion and backup objectives.
 - Confirm plan limits, budget and production availability requirements.
@@ -293,10 +293,57 @@ Recommended merge/reconciliation sequence (not an authorization to merge): revie
 
 **Accepted:** Separate Clay and Smart Butler data domains. Design a dedicated Clay Neon project.
 
-**Recommended, not yet selected:** Neon Auth; Neon Data API or a server-side adapter; project branch topology described above.
+**Preferred implementation candidate (not provisioned or production-approved):** Managed Neon Auth with new-user registration disabled for email magic links; Cloudflare Pages Functions as the same-origin API; Neon serverless driver over HTTP; JWT verification against the branch's injected JWKS and issuer; transaction-scoped JWT claims for PostgreSQL RLS using a database role without `BYPASSRLS`. The Neon Data API is not preferred because the inspected Clay app does not currently use PostgREST or a Supabase database client.
 
 **Not authorized:** Neon project/branch/database provisioning, credentials, auth activation, schema deployment, app wiring, deployment, real-user data access, account linking, migration, dual writes or cutover.
 
 **Reason:** Establish a durable security and ownership boundary first, preserve the existing working Clay sync path, and validate the Neon-specific identity/RLS model before exposing any personal records to a new backend.
 
 Last reviewed and updated · ChatGPT · 22 November 2026.
+
+
+## 18. Runtime and identity review · 24 November 2026 · ChatGPT
+
+### Repository evidence
+
+A fresh read of `main` confirms that `apps/clay.html` is still a single-file Claude artifact app. Its persistence bootstrap calls `window.claude.use('db')` and `window.claude.use('user')`; if those host capabilities are absent it falls back to local-only mode. The inspected file has no Supabase client import or browser PostgREST calls. The Supabase auth and records adapters in `apps/clay-sync/` are provider reference implementations for the new contract, not proof that the running Clay app already uses a Supabase database client.
+
+### Corrected data-access decision
+
+The earlier Neon Data API direction is superseded. Current Neon guidance says to use Data API for an existing PostgREST / `supabase-js` database-client migration; new applications should query Postgres from a server-side handler or Function. The fact that a provider-neutral contract and a synthetic PostgREST-style adapter exist does not make Data API an existing runtime dependency.
+
+Preferred candidate for the selected hosting direction:
+
+1. **Frontend:** extract and adapt the current Clay UI into a standalone static web build for Cloudflare Pages. Preserve the current artifact path until a separately approved cutover.
+2. **Same-origin API:** Cloudflare Pages Functions under `/api/clay/*` handle short CRUD/sync requests. Keep database credentials exclusively in encrypted Pages Function secrets; the browser never receives a database URL or database role credential.
+3. **Identity:** Managed Neon Auth is the leading candidate. Its Magic Link settings expose an explicit `Allow New User Registration` control; setting this off gives existing-account-only email-link sign-in, matching the current Supabase reference adapter's `shouldCreateUser: false` intent. This must be validated on a disposable synthetic branch before acceptance.
+4. **API authentication:** the browser obtains a short-lived Managed Auth session JWT and sends it as a bearer token to the same-origin Pages Function. The Function verifies signature with `NEON_AUTH_JWKS_URL` and issuer against `NEON_AUTH_BASE_URL`, then derives the principal only from the verified `sub` claim. Reject missing, malformed, expired, wrong-issuer and wrong-key tokens.
+5. **Database access:** use `@neondatabase/serverless` over HTTP from the Pages Function. In one non-interactive transaction, set `request.jwt.claims` from the verified JWT payload and execute the user-scoped query or mutation. PostgreSQL RLS reads the transaction-local claims. Use a dedicated database role without `BYPASSRLS`; do not use `neondb_owner` as the runtime connection role.
+6. **Data API:** do not enable it for this design unless a future product decision deliberately adopts a PostgREST/Supabase database client.
+
+Cloudflare Pages Functions run on the Workers runtime and support encrypted secrets through the Function environment. This is technically compatible with the proposed server-side boundary, but no Pages project, binding, secret, deployment or origin has been created.
+
+### Session lifecycle constraint
+
+Managed Auth exposes documented `getSession()`, `signIn.magicLink()` and `signOut()` methods. The session JWT is short-lived (15 minutes); request a fresh token when making protected API calls rather than persisting it in local storage. The current Clay sync identity contract includes `onStateChange`; the vanilla single-file app must use only a documented SDK surface. If the SDK does not expose a supported vanilla subscription, implement and test a refresh-on-load, post-callback, sign-out and tab-focus strategy rather than depending on private store internals.
+
+### Evidence and references checked 24 November 2026
+
+- [Neon overview and provider selection](https://neon.com/docs/ai/skills/neon/SKILL.md) — Data API is for existing PostgREST / Supabase DB-client compatibility; new apps use handlers or Functions.
+- [Neon Functions authentication](https://neon.com/docs/compute/functions/authentication) — verify Managed Auth JWTs against injected JWKS and issuer; derive identity from `sub`.
+- [Neon serverless driver](https://neon.com/docs/serverless/serverless-driver) — HTTP queries and non-interactive transactions work in serverless/edge environments.
+- [Neon serverless driver JWT/RLS transactions](https://neon.com/docs/serverless/serverless-driver-configuration#using-transactions-with-jwt-self-verification) — set `request.jwt.claims` within a transaction; runtime role must not have `BYPASSRLS` and should not be `neondb_owner`.
+- [Managed Neon Auth Magic Link](https://neon.com/docs/auth/guides/plugins/magic-link) — Magic Link can disable new-user registration through the `disable_sign_up` setting.
+- [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/) and [bindings/secrets](https://developers.cloudflare.com/pages/functions/bindings/) — Pages Functions provide a server-side Worker runtime and encrypted environment secrets.
+
+### Updated next sequence
+
+1. Keep PR #19 as a draft synthetic Data API prototype; do not merge it. Its adapter and migration are not the selected target architecture.
+2. Implement a Cloudflare Pages-compatible standalone build boundary and same-origin API adapter without touching the live Claude artifact.
+3. Add a server-side JWT verification and Neon HTTP transaction/RLS spike with synthetic tokens and mocked database tests.
+4. Validate the SQL against PostgreSQL 17 using the exact `request.jwt.claims` transaction pattern and a non-`BYPASSRLS` runtime role.
+5. Only after code-level tests pass, request separate approval for a disposable Neon project/branch to verify real Managed Auth JWTs, sign-in-only behavior, and actual RLS. No provisioning is authorized by this design review.
+
+**Authority boundary unchanged:** no Neon resource, Auth setting, credential, schema deployment, Cloudflare project, application cutover, real-user access or migration has been created or changed. Smart Butler remains untouched.
+
+Last reviewed and updated · ChatGPT · 24 November 2026.
