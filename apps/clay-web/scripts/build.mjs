@@ -6,7 +6,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const appRoot = resolve(here, '..');
 const repoRoot = resolve(appRoot, '../..');
 const sourcePath = resolve(repoRoot, 'apps/clay.html');
-const dist = resolve(appRoot, 'dist');
+const generatedHtml = resolve(appRoot, 'index.html');
 const src = resolve(appRoot, 'src');
 const html = await readFile(sourcePath, 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)];
@@ -29,8 +29,7 @@ if (!scopedAppScript.includes('window.__clayScopedStorage')) {
   throw new Error('The app bundle did not receive user-scoped storage rewrites');
 }
 
-await mkdir(dist, { recursive: true });
 await mkdir(src, { recursive: true });
 await writeFile(resolve(src, 'clay-app.js'), scopedAppScript);
-await writeFile(resolve(dist, 'index.html'), output);
+await writeFile(generatedHtml, output);
 console.log('Clay standalone source prepared: engine preserved, app deferred, scoped storage rewritten.');
