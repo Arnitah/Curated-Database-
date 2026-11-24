@@ -46,9 +46,9 @@ test('reports only the verified user id and email', async () => {
   assert.equal(Object.isFrozen(state.user), true);
 });
 
-test('sends a normalized email magic link without implicitly creating accounts', async () => {
+test('implements the provider-neutral email sign-in request without implicitly creating accounts', async () => {
   const { client, calls } = makeAuth();
-  const result = await createClaySupabaseAuth(client).sendMagicLink('  ' + UPPER_TEST_EMAIL + ' ');
+  const result = await createClaySupabaseAuth(client).requestEmailSignIn('  ' + UPPER_TEST_EMAIL + ' ');
   assert.deepEqual(result, { status: 'link_sent', email: TEST_EMAIL });
   assert.deepEqual(calls.otp, [{
     email: TEST_EMAIL,
@@ -59,8 +59,8 @@ test('sends a normalized email magic link without implicitly creating accounts',
 test('rejects malformed sign-in input before calling Supabase', async () => {
   const { client, calls } = makeAuth();
   const auth = createClaySupabaseAuth(client);
-  await assert.rejects(auth.sendMagicLink('not-an-email'), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
-  await assert.rejects(auth.sendMagicLink('  '), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
+  await assert.rejects(auth.requestEmailSignIn('not-an-email'), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
+  await assert.rejects(auth.requestEmailSignIn('  '), { code: 'CLAY_AUTH_INVALID_ARGUMENT' });
   assert.equal(calls.otp.length, 0);
 });
 

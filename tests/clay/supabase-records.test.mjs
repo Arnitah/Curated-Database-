@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createClaySupabaseRecordsAdapter } from '../../apps/clay-sync/supabase-records.js';
 
-function makeClient({ user = { id: 'synthetic-user' }, collectionRow = null, rows = [], rpcResult = { status: 'applied' } } = {}) {
+function makeClient({ user = { id: 'synthetic-user' }, collectionRow = null, rows = [], rpcResult = { status: 'applied', generation: 1, version: 1, revision: 1 } } = {}) {
   const calls = { queries: [], rpcs: [], auth: 0 };
   const client = {
     auth: {
@@ -62,7 +62,7 @@ test('a collection without a row starts at generation one with no records', asyn
 });
 
 test('write forwards the caller base generation and record version to the transactional RPC', async () => {
-  const { client, calls } = makeClient({ rpcResult: { status: 'applied', generation: 2, version: 5 } });
+  const { client, calls } = makeClient({ rpcResult: { status: 'applied', generation: 2, version: 5, revision: 9 } });
   const result = await createClaySupabaseRecordsAdapter(client).writeRecord({
     collection: 'products', recordId: 'p-5', expectedGeneration: 2,
     expectedVersion: 4, payload: { name: 'Synthetic moisturiser' }
@@ -88,7 +88,7 @@ test('delete writes a tombstone through the same guarded RPC', async () => {
 });
 
 test('clear-all advances only from the expected generation', async () => {
-  const { client, calls } = makeClient({ rpcResult: { status: 'cleared', generation: 4 } });
+  const { client, calls } = makeClient({ rpcResult: { status: 'cleared', generation: 4, revision: 12 } });
   const result = await createClaySupabaseRecordsAdapter(client).clearCollection({
     collection: 'products', expectedGeneration: 3
   });
@@ -133,7 +133,7 @@ test('invalid collections, ids, versions and payloads fail before network access
 });
 
 test('stale-write conflicts are returned unchanged for UI handling, never auto-retried', async () => {
-  const conflict = { status: 'conflict', reason: 'record_changed', version: 7, generation: 1 };
+  const conflict = { status: 'conflict', reason: 'record_changed', version: 7, generation: 1, revision: 8 };
   const { client, calls } = makeClient({ rpcResult: conflict });
   const result = await createClaySupabaseRecordsAdapter(client).writeRecord({
     collection: 'products', recordId: 'p-1', expectedGeneration: 1,
@@ -141,4 +141,26 @@ test('stale-write conflicts are returned unchanged for UI handling, never auto-r
   });
   assert.deepEqual(result, conflict);
   assert.equal(calls.rpcs.length, 1);
+});
+
+test('rejects malformed provider snapshots and mutation responses', async () => {
+  const malformedRows = [{ record_id: 'bad', generation: 1, version: 1, payload: null, deleted_at: null }];
+  const read = createClaySupabaseRecordsAdapter(makeClient({ rows: malformedRows }).client);
+  await assert.rejects(read.readCollection('products'), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+
+  const write = createClaySupabaseRecordsAdapter(makeClient({
+    rpcResult: { status: 'ok', generation: 1, version: 1, revision: 1 }
+  }).client);
+  await assert.rejects(write.writeRecord({
+    collection: 'products', recordId: 'p-1', expectedGeneration: 1,
+    expectedVersion: 0, payload: { name: 'Synthetic record' }
+  }), { code: 'CLAY_SYNC_PROTOCOL_ERROR' });
+});
+
+test('the adapter exposes only the provider-neutral repository operations', () => {
+  const adapter = createClaySupabaseRecordsAdapter(makeClient().client);
+  assert.deepEqual(Object.keys(adapter).sort(), [
+    'clearCollection', 'deleteRecord', 'readCollection', 'writeRecord'
+  ]);
+  assert.equal(Object.isFrozen(adapter), true);
 });

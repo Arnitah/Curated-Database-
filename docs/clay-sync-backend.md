@@ -1,10 +1,10 @@
 # Clay external sync backend
 
-Status: approved direction; implementation scaffold only. No cloud project has been created, no credentials have been added, and no user data has been migrated.
+Status: Supabase reference implementation only; no production provider has been selected. No Supabase project or Supabase credentials are configured in this repository, and no user data has been migrated. The user's Neon account/project has not been inspected.
 
-## Recommended provider: Supabase (managed PostgreSQL)
+## Original scaffold provider: Supabase (reference implementation)
 
-Supabase is the proposed small external backend because it provides PostgreSQL transactions, database functions callable through RPC, Supabase Auth, and Row Level Security. The browser uses a publishable key plus a Supabase Auth session; never put a service-role/secret key in Clay.
+Supabase was used for the first reference scaffold because it provides PostgreSQL transactions, database functions callable through RPC, Supabase Auth, and Row Level Security. This does not select Supabase as Clay's production backend. If this adapter is ever used, the browser must use a publishable key plus a Supabase Auth session; never put a service-role/secret key in Clay.
 
 Official references:
 - [Database functions](https://supabase.com/docs/guides/database/functions)
@@ -13,7 +13,7 @@ Official references:
 
 ## Identity and privacy boundary
 
-The existing Claude artifact user id is not a credential and must never be trusted as proof of identity by a new backend. Clay must authenticate independently with Supabase Auth (initial candidate: email OTP/magic link). Every row is keyed by `auth.uid()`; RLS limits reads to the signed-in user. Mutation RPCs verify `auth.uid()` server-side. No anonymous access and no service-role key in browser code.
+The existing Claude artifact user id is not a credential and must never be trusted as proof of identity by a new backend. Clay must authenticate independently with the selected provider. In this Supabase reference implementation, that means Supabase Auth (existing-account email OTP/magic link), rows keyed by `auth.uid()`, RLS scoped to the signed-in user, and mutation RPCs verifying `auth.uid()` server-side. A Neon implementation must deliberately replace those provider-specific assumptions with verified Neon Auth/JWT claims and equivalent PostgreSQL ownership enforcement. No anonymous access and no database-owner/service key in browser code.
 
 ## Data model
 
@@ -79,3 +79,18 @@ The existing Claude artifact user id is not a credential and must never be trust
 ## CI runner isolation · 19 Nov 2026
 
 - The local Supabase database test job assigns run-specific API, database, shadow and Studio ports before starting its Docker stack. This prevents concurrent workflow runs from colliding on the default local ports; it changes CI runtime configuration only, not any hosted or production project.
+
+
+## Provider-neutral application contract · 22 Nov 2026
+
+The provider decision remains open. The initial shared application boundary now lives in `apps/clay-sync/contracts.js`:
+
+- Identity port: `getState()`, `requestEmailSignIn(email)`, `signOut()`, and `onStateChange(listener)`. The normalized state exposes only `signed_in | signed_out` and a minimal verified principal `{ id, email }`; it never exposes raw tokens or SDK session objects.
+- Records port: `readCollection(collection)`, `writeRecord(input)`, `deleteRecord(input)`, and `clearCollection(input)`.
+- The five allow-listed collections remain `products`, `hair`, `log`, `prefs`, and `scents`.
+- Read results normalize to a collection generation/revision and versioned records. Deletions remain explicit tombstones. Mutations return `applied`, `cleared`, or `conflict`; a conflict is never silently retried.
+- Provider adapters must derive the authenticated principal from their verified session and enforce ownership remotely. A caller-supplied uid, legacy artifact uid, client-side filter or browser-held database-owner credential is not an authorization boundary.
+
+The existing Supabase auth and records adapters implement these contracts and validate their normalized outputs. This is still an isolated adapter/test slice: it does not connect to the app, select Supabase, connect Neon, provision a backend, or migrate user data.
+
+Tests: `tests/clay/sync-contract.test.mjs`, `tests/clay/supabase-auth.test.mjs`, and `tests/clay/supabase-records.test.mjs`. They use synthetic identities and records only.

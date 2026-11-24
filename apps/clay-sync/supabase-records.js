@@ -1,4 +1,10 @@
-const COLLECTIONS = new Set(['products', 'hair', 'log', 'prefs', 'scents']);
+import {
+  assertClaySyncCollection,
+  assertClaySyncRecordId,
+  assertClaySyncSnapshot,
+  assertClaySyncMutationResult,
+  assertClaySyncRecordsPort
+} from './contracts.js';
 
 function fail(message, code = 'CLAY_SYNC_INVALID_ARGUMENT') {
   const error = new Error(message);
@@ -6,17 +12,8 @@ function fail(message, code = 'CLAY_SYNC_INVALID_ARGUMENT') {
   throw error;
 }
 
-function assertCollection(collection) {
-  if (typeof collection !== 'string' || !COLLECTIONS.has(collection)) {
-    fail('Unsupported Clay sync collection');
-  }
-}
-
-function assertRecordId(recordId) {
-  if (typeof recordId !== 'string' || recordId.length < 1 || recordId.length > 200) {
-    fail('Record id must contain between 1 and 200 characters');
-  }
-}
+const assertCollection = assertClaySyncCollection;
+const assertRecordId = assertClaySyncRecordId;
 
 function assertGeneration(value) {
   if (!Number.isSafeInteger(value) || value < 1) {
@@ -39,15 +36,13 @@ function unwrapRpc(data) {
   if (!result || typeof result !== 'object' || typeof result.status !== 'string') {
     fail('Clay sync RPC returned an invalid response', 'CLAY_SYNC_PROTOCOL_ERROR');
   }
-  return result;
+  return assertClaySyncMutationResult(result);
 }
 
 /**
- * Create a per-record Clay sync adapter around an authenticated Supabase JS client.
- *
- * Identity is always established by Supabase Auth. No caller-supplied uid is
- * accepted, and ownership is enforced by the database's RLS policies/RPCs.
- * This adapter deliberately does not retry conflicts or queue offline writes.
+ * Supabase implementation of the provider-neutral Clay records port.
+ * Identity is derived from the authenticated Supabase session on each request;
+ * no caller-supplied uid is accepted. Ownership is enforced by RLS and RPCs.
  */
 export function createClaySupabaseRecordsAdapter(client) {
   if (!client || !client.auth || typeof client.auth.getUser !== 'function'
@@ -87,7 +82,7 @@ export function createClaySupabaseRecordsAdapter(client) {
       .order('record_id', { ascending: true });
     throwIfError(recordsError);
 
-    return {
+    return assertClaySyncSnapshot({
       collection,
       generation,
       revision,
@@ -99,7 +94,7 @@ export function createClaySupabaseRecordsAdapter(client) {
         deletedAt: row.deleted_at || null,
         deleted: Boolean(row.deleted_at)
       }))
-    };
+    }, collection);
   }
 
   async function applyRecord({
@@ -140,11 +135,10 @@ export function createClaySupabaseRecordsAdapter(client) {
     return unwrapRpc(data);
   }
 
-  return Object.freeze({
+  return assertClaySyncRecordsPort(Object.freeze({
     readCollection,
     writeRecord: input => applyRecord({ ...input, deleted: false }),
     deleteRecord: input => applyRecord({ ...input, payload: null, deleted: true }),
     clearCollection
-  });
+  }));
 }
-

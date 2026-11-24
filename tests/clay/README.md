@@ -37,6 +37,7 @@ Known limitations recorded today:
 ## Files
 
 - `helpers/` server, fake platform, browser launcher, leak scanner
+- `sync-contract.test.mjs` validates the provider-neutral identity, snapshot, mutation and repository interfaces
 - `fixtures/synthetic-shelf.json` invented records
 - `boot`, `pages`, `sync`, `migrations`, `shelf-actions`, `engine-integration`, `bundle-parity`, `isolation` test files
 
