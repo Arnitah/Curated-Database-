@@ -25,7 +25,7 @@ function createAuthHarness() {
   const calls = [];
   let session = {
     session: { id: 'session-1' },
-    user: { id: 'neon-user-a', email: 'a@example.test' }
+    user: { id: 'neon-user-a', email: 'synthetic-user-a-email' }
   };
   const client = {
     getSession: async () => {
@@ -64,7 +64,7 @@ test('projects only the verified user identity and never exposes session tokens'
   const auth = createClayNeonAuthAdapter(client);
   assert.deepEqual(await auth.getState(), {
     status: 'signed_in',
-    user: { id: 'neon-user-a', email: 'a@example.test' }
+    user: { id: 'neon-user-a', email: 'synthetic-user-a-email' }
   });
   assert.equal(Object.hasOwn(await auth.getState(), 'token'), false);
 });
@@ -87,12 +87,12 @@ test('does not return an anonymous token when the user is signed out', async () 
 test('uses magic-link sign-in only and returns the provider-neutral result', async () => {
   const { client, calls } = createAuthHarness();
   const auth = createClayNeonAuthAdapter(client, { callbackURL: '/auth/callback' });
-  assert.deepEqual(await auth.requestEmailSignIn('  person@example.test  '), {
+  assert.deepEqual(await auth.requestEmailSignIn('  synthetic-person-email  '), {
     status: 'link_sent',
-    email: 'person@example.test'
+    email: 'synthetic-person-email'
   });
   assert.deepEqual(calls[0], ['magicLink', {
-    email: 'person@example.test',
+    email: 'synthetic-person-email',
     callbackURL: '/auth/callback'
   }]);
   assert.equal(typeof client.signUp, 'undefined');
