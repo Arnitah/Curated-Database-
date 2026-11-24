@@ -110,7 +110,7 @@ end;
 $$;
 
 reset role;
-set role anon;
+set role anonymous;
 
 do $$
 begin
