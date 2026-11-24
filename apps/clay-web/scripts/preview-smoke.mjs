@@ -12,25 +12,21 @@ const child = spawn(resolve(appRoot, 'node_modules/.bin/wrangler'), [
   '--port', '8788',
   '--compatibility-date', '2026-11-24',
   '--log-level', 'error'
-], { cwd: appRoot, stdio: ['ignore', 'pipe', 'pipe'] });
-
-let logs = '';
-child.stdout.on('data', chunk => { logs = (logs + chunk.toString()).slice(-4000); });
-child.stderr.on('data', chunk => { logs = (logs + chunk.toString()).slice(-4000); });
+], { cwd: appRoot, stdio: 'ignore', detached: true });
 
 try {
   let ready = false;
-  for (let attempt = 0; attempt < 40; attempt += 1) {
-    if (child.exitCode !== null) throw new Error('Wrangler Pages preview exited early: ' + logs);
+  for (let attempt = 0; attempt < 20; attempt += 1) {
+    if (child.exitCode !== null) throw new Error('Wrangler Pages preview exited early with code ' + child.exitCode);
     try {
-      const response = await fetch(origin + '/', { signal: AbortSignal.timeout(1500) });
+      const response = await fetch(origin + '/', { signal: AbortSignal.timeout(750) });
       if (response.ok) { ready = true; break; }
     } catch {}
     await delay(500);
   }
-  assert.equal(ready, true, 'Wrangler Pages preview did not become ready: ' + logs);
+  assert.equal(ready, true, 'Wrangler Pages preview did not become ready');
 
-  const config = await fetch(origin + '/api/clay/config', { signal: AbortSignal.timeout(5000) });
+  const config = await fetch(origin + '/api/clay/config', { signal: AbortSignal.timeout(3000) });
   assert.equal(config.status, 503, 'Unconfigured Auth should fail closed');
 
   const sync = await fetch(origin + '/api/clay/sync/products', { signal: AbortSignal.timeout(5000) });
@@ -44,10 +40,11 @@ try {
 
   console.log('Pages preview smoke passed: static app, fail-closed config, bearer gate and origin gate.');
 } finally {
-  if (child.exitCode === null) child.kill('SIGTERM');
-  await Promise.race([
-    new Promise(resolveExit => child.once('close', resolveExit)),
-    delay(3000)
-  ]);
-  if (child.exitCode === null) child.kill('SIGKILL');
+  if (child.exitCode === null && child.pid && process.platform !== 'win32') {
+    try { process.kill(-child.pid, 'SIGTERM'); } catch {}
+    await delay(500);
+    try { process.kill(-child.pid, 'SIGKILL'); } catch {}
+  } else if (child.exitCode === null) {
+    child.kill('SIGTERM');
+  }
 }
