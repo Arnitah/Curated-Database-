@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createClayNeonRecordsAdapter } from '../../apps/clay-sync/neon-records.js';
 
 function makeClient({
-  user = { id: 'neon-user-a', email: 'a@example.test' },
+  user = { id: 'synthetic-user-a' },
   collectionRows = [{ generation: 2, revision: 7 }],
   recordRows = [{
     record_id: 'product-1', generation: 2, version: 3,
