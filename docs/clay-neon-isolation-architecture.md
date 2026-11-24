@@ -325,7 +325,7 @@ Cloudflare Pages Functions run on the Workers runtime and support encrypted secr
 
 ### Session lifecycle constraint
 
-Managed Auth exposes documented `getSession()`, `signIn.magicLink()` and `signOut()` methods. The session JWT is short-lived (15 minutes); request a fresh token when making protected API calls rather than persisting it in local storage. The current Clay sync identity contract includes `onStateChange`; the vanilla single-file app must use only a documented SDK surface. If the SDK does not expose a supported vanilla subscription, implement and test a refresh-on-load, post-callback, sign-out and tab-focus strategy rather than depending on private store internals.
+The documented vanilla Managed Auth client exposes `getSession()` for identity projection, `token()` (read `data.token`) for a fresh signed user JWT, `signIn.magicLink()` and `signOut()`. JWTs are EdDSA and short-lived (15 minutes); call `token()` for protected API requests and never persist the JWT in local storage. The identity adapter implements refresh-on-load, post-callback, sign-out and tab-focus behavior without private SDK internals. The current Clay sync identity contract includes `onStateChange`; the vanilla single-file app must use only a documented SDK surface. If the SDK does not expose a supported vanilla subscription, implement and test a refresh-on-load, post-callback, sign-out and tab-focus strategy rather than depending on private store internals.
 
 ### Evidence and references checked 24 November 2026
 
