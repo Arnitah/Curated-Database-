@@ -67,7 +67,7 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
 
   async function transact(queries) {
     return sql.transaction([
-      sql\`SELECT set_config('request.jwt.claims', \${claimsJson}, true)\`,
+      sql`SELECT set_config('request.jwt.claims', \${claimsJson}, true)`,
       ...queries
     ]);
   }
@@ -75,11 +75,11 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
   async function readCollection(collection) {
     assertClaySyncCollection(collection);
     const [, stateRows, recordRows] = await transact([
-      sql\`SELECT generation, revision
+      sql`SELECT generation, revision
           FROM public.clay_sync_collections
           WHERE collection = \${collection}
-          LIMIT 1\`,
-      sql\`SELECT record_id, generation, version, payload, deleted_at
+          LIMIT 1`,
+      sql`SELECT record_id, generation, version, payload, deleted_at
           FROM public.clay_sync_records
           WHERE collection = \${collection}
             AND generation = COALESCE(
@@ -89,7 +89,7 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
                LIMIT 1),
               1
             )
-          ORDER BY record_id ASC\`
+          ORDER BY record_id ASC`
     ]);
 
     const state = Array.isArray(stateRows) ? stateRows[0] : null;
@@ -120,14 +120,14 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
 
     const payloadJson = deleted ? null : JSON.stringify(input.payload);
     const [, rows] = await transact([
-      sql\`SELECT public.clay_sync_apply_record(
+      sql`SELECT public.clay_sync_apply_record(
         \${collection},
         \${recordId},
         \${input.expectedGeneration},
         \${input.expectedVersion},
         \${payloadJson}::jsonb,
         \${deleted}
-      ) AS result\`
+      ) AS result`
     ]);
     return unwrapMutation(rows);
   }
@@ -139,10 +139,10 @@ export function createClayNeonServerRecordsAdapter({ sql, claims } = {}) {
     const collection = assertClaySyncCollection(input.collection);
     assertGeneration(input.expectedGeneration);
     const [, rows] = await transact([
-      sql\`SELECT public.clay_sync_clear_collection(
+      sql`SELECT public.clay_sync_clear_collection(
         \${collection},
         \${input.expectedGeneration}
-      ) AS result\`
+      ) AS result`
     ]);
     return unwrapMutation(rows);
   }
