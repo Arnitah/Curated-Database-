@@ -23,11 +23,11 @@ function createSqlHarness(responses) {
 }
 
 test('reads a user-scoped snapshot inside a JWT-claims transaction', async () => {
-  const { sql, transactions } = createSqlHarness([
+  const { sql, transactions } = createSqlHarness([[
     [],
     [{ generation: '2', revision: '4' }],
     [{ record_id: 'p-1', generation: '2', version: '3', payload: { name: 'Synthetic' }, deleted_at: null }]
-  ]);
+  ]]);
   const adapter = createClayNeonServerRecordsAdapter({ sql, claims });
   const result = await adapter.readCollection('products');
 
@@ -53,7 +53,7 @@ test('reads a user-scoped snapshot inside a JWT-claims transaction', async () =>
 
 test('writes records through the scoped mutation function, without a caller user id', async () => {
   const result = { status: 'applied', generation: 1, version: 1, revision: 1 };
-  const { sql, transactions } = createSqlHarness([[], [{ result }]]);
+  const { sql, transactions } = createSqlHarness([[[], [{ result }]]]);
   const adapter = createClayNeonServerRecordsAdapter({ sql, claims });
   assert.deepEqual(await adapter.writeRecord({
     collection: 'products',
@@ -86,8 +86,8 @@ test('writes tombstones and clears collections with expected concurrency values'
   const tombstone = { status: 'applied', generation: 1, version: 2, revision: 2 };
   const clear = { status: 'cleared', generation: 2, revision: 3 };
   const { sql, transactions } = createSqlHarness([
-    [], [{ result: tombstone }],
-    [], [{ result: clear }]
+    [[], [{ result: tombstone }]],
+    [[], [{ result: clear }]]
   ]);
   const adapter = createClayNeonServerRecordsAdapter({ sql, claims });
   assert.deepEqual(await adapter.deleteRecord({
