@@ -24,13 +24,13 @@ Official references:
 
 - Use the managed Neon Auth user id from the verified session JWT `sub` as the stable Clay principal.
 - Never accept a user id from a record payload, URL, local storage or app caller as proof of identity.
-- The browser obtains a short-lived session JWT from the documented Managed Auth SDK and sends it as a bearer token to the same-origin Cloudflare Pages Function. Do not persist the JWT in local storage.
+- The browser obtains a fresh short-lived user JWT through the documented Managed Auth client `token()` method (`data.token`) and sends it as a bearer token to the same-origin Cloudflare Pages Function. Use `getSession()` for the minimal identity projection; do not persist the JWT in local storage.
 - The Pages Function verifies the JWT signature against the branch `NEON_AUTH_JWKS_URL`, checks the issuer against `NEON_AUTH_BASE_URL`, and derives identity only from the verified `sub`.
 - The provider-neutral identity contract exposes only `{ id, email }`; raw session and JWT objects stay inside the identity adapter/API boundary.
 - Managed Auth Magic Link supports an explicit `Allow New User Registration` setting. Set it off to preserve existing-account-only email-link sign-in; validate this setting on a disposable synthetic branch before accepting the provider.
 - Managed Auth is available only in AWS regions and cannot be enabled on projects using IP Allow or Private Networking; region and network posture still require an explicit review.
 - Magic links are disabled by default. Production email delivery requires dedicated SMTP; shared SMTP is only a getting-started path. Do not send a real email or configure a provider during this stage.
-- The managed SDK is a fixed Better Auth wrapper, not a self-managed Better Auth server. Its documented browser API includes `getSession()`, `signIn.magicLink()` and `signOut()`. The vanilla Clay app must use a documented session API; if no public subscription is available, use and test refresh-on-load, post-callback, sign-out and tab-focus behavior rather than private store internals.
+- The managed SDK is a fixed Better Auth wrapper, not a self-managed Better Auth server. Its documented vanilla client includes `getSession()`, `token()` (then `data.token`), `signIn.magicLink()` and `signOut()`. The new identity adapter uses only those public methods and refreshes state on load, after callback, on sign-out and when the tab regains focus; it does not depend on private store internals.
 
 ## Data and authorization model
 
