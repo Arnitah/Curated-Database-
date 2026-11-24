@@ -12,7 +12,9 @@
     "test:ci": "npm run test:engine && npm run test:clay",
     "test:scent-geography": "node --test tests/scents/*.test.mjs",
     "build:scent-atlas": "node scripts/build-scent-atlas.mjs",
-    "check:scent-atlas": "node scripts/build-scent-atlas.mjs --check"
+    "check:scent-atlas": "node scripts/build-scent-atlas.mjs --check",
+    "package:clay-release": "node scripts/package-clay-release.mjs",
+    "verify:clay-release": "node scripts/package-clay-release.mjs --verify"
   },
   "devDependencies": {
     "playwright": "1.55.1"
