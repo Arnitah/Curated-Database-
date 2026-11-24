@@ -1,0 +1,17 @@
+{
+  "name": "clay-pages-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test:build": "node --test tests/build.test.mjs"
+  },
+  "dependencies": {
+    "@neon/auth": "latest",
+    "@neondatabase/serverless": "1.2.1",
+    "jose": "6.1.3"
+  },
+  "devDependencies": {
+    "vite": "7.2.2"
+  }
+}
