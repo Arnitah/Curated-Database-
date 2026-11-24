@@ -1,6 +1,14 @@
 name: Clay Neon adapter and RLS tests
 
 on:
+  push:
+    branches: [feat/clay-neon-records-adapter-20261123]
+    paths:
+      - 'apps/clay-sync/neon-records.js'
+      - 'apps/clay-sync/contracts.js'
+      - 'tests/clay/neon-records.test.mjs'
+      - 'neon/**'
+      - '.github/workflows/clay-neon-tests.yml'
   pull_request:
     paths:
       - 'apps/clay-sync/neon-records.js'
