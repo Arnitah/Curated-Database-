@@ -1,0 +1,54 @@
+name: Clay standalone Pages build
+
+on:
+  pull_request:
+    paths:
+      - 'apps/clay.html'
+      - 'apps/clay-sync/**'
+      - 'apps/clay-web/**'
+      - 'functions/api/clay/**'
+      - '.github/workflows/clay-pages-build.yml'
+  push:
+    branches: [feat/clay-pages-neon-server-adapter-20261124]
+    paths:
+      - 'apps/clay.html'
+      - 'apps/clay-sync/**'
+      - 'apps/clay-web/**'
+      - 'functions/api/clay/**'
+      - '.github/workflows/clay-pages-build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clay-pages-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  standalone:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/clay-web/package.json
+      - name: Install isolated app dependencies
+        run: npm install --prefix apps/clay-web
+      - name: Build standalone app
+        run: npm run build --prefix apps/clay-web
+      - name: Test build contract
+        run: npm run test:build --prefix apps/clay-web
+      - name: Verify generated app bundle
+        run: |
+          test -s apps/clay-web/dist/index.html
+          test -d apps/clay-web/dist/assets
+          ! grep -R -nE 'window\.localStorage|(^|[^.[:alnum:]_])localStorage' apps/clay-web/dist/assets
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clay-pages-preview-build
+          path: apps/clay-web/dist/
+          if-no-files-found: error
+          retention-days: 7
