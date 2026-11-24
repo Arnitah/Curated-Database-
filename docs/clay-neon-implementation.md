@@ -1,26 +1,24 @@
 # Clay × Neon implementation design
 
-**Status:** implementation candidate; synthetic-only; not provisioned  
+**Status:** synthetic-only Data API prototype; superseded by the 24 Nov 2026 runtime review; not approved for merge or provisioning  
 **Date:** 23 November 2026  
 **Parent contract:** `apps/clay-sync/contracts.js` on `feat/clay-provider-neutral-sync-contract`
 
 ## Decision direction
 
-Proceed with a candidate architecture of **Managed Neon Auth + Neon Data API + PostgreSQL RLS**, subject to the remaining authentication and hosting acceptance checks. This is a candidate implementation, not a production-provider approval.
+**Historical prototype only:** this branch implemented Managed Neon Auth + Neon Data API + PostgreSQL RLS as a synthetic compatibility experiment. After inspecting the actual Clay app and the current Neon architecture guidance on 24 Nov 2026, this is no longer the preferred data-access design. Do not merge this Data API adapter or enable the Data API for Clay on the basis of this prototype.
 
-Why this is the first candidate:
-- Neon Auth issues JWTs whose `sub` identifies the managed-auth user.
-- Neon Data API validates those JWTs and exposes the verified subject through `auth.user_id()`.
-- The Data API is PostgREST-compatible and supports table queries plus RPC.
-- The current Clay records adapter already has a narrow PostgREST-style query/RPC shape.
-- The combined Neon SDK can keep session/JWT handling in the managed client instead of inventing a second token transport.
+The current Clay artifact app uses Claude host database/user capabilities and local fallback; it does not currently use PostgREST or a Supabase database client. The Supabase adapters in this repository are reference implementations of the provider-neutral contract, not a live database-client dependency.
+
+**Preferred replacement candidate:** Managed Neon Auth (Magic Link with new-user registration disabled) + Cloudflare Pages Functions as a same-origin API + `@neondatabase/serverless` HTTP transactions + JWT self-verification and transaction-scoped `request.jwt.claims` for PostgreSQL RLS. Use a runtime DB role without `BYPASSRLS`; never use `neondb_owner` for application requests.
 
 Official references:
-- [Neon Auth and Data API architecture](https://neon.com/blog/neon-auth-branchable-identity-in-your-database)
-- [Neon Data API access control](https://neon.com/docs/data-api/access-control)
-- [Neon Auth authentication flow](https://neon.com/docs/auth/authentication-flow)
-- [Neon Auth email OTP](https://neon.com/docs/auth/guides/plugins/email-otp)
-- [Neon SDK](https://github.com/neondatabase/neon-js)
+- [Neon architecture and provider-selection guidance](https://neon.com/docs/ai/skills/neon/SKILL.md)
+- [Neon Functions JWT authentication](https://neon.com/docs/compute/functions/authentication)
+- [Neon serverless driver HTTP and transactions](https://neon.com/docs/serverless/serverless-driver)
+- [Neon JWT self-verification and RLS transactions](https://neon.com/docs/serverless/serverless-driver-configuration#using-transactions-with-jwt-self-verification)
+- [Managed Neon Auth Magic Link and existing-account-only setting](https://neon.com/docs/auth/guides/plugins/magic-link)
+- [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)
 
 ## Identity design
 
@@ -73,3 +71,22 @@ Do not branch a production branch for testing unless a separately tested scrub p
 ## Explicit exclusions
 
 No Neon project, branch, database, credential, Auth service, Data API, schema, application wiring, deployment, account linking, dual write, real-user data access, import or migration has been performed or authorized by this implementation branch.
+
+
+## Architecture correction · 24 November 2026
+
+This PR's Data API implementation is retained only as a synthetic technical experiment. It is not the selected Clay architecture and must not be merged as the next production adapter. Neon guidance reserves Data API for existing PostgREST/Supabase database-client compatibility; the inspected Clay runtime has no such client.
+
+The preferred replacement is a same-origin Cloudflare Pages Function API. It verifies Managed Neon Auth JWTs against the branch JWKS and issuer, derives the user id from the verified JWT `sub`, and runs Neon serverless-driver HTTP transactions that set `request.jwt.claims` before accessing RLS-protected tables. The database runtime role must not have `BYPASSRLS` and must not be `neondb_owner`. Managed Neon Auth Magic Link has an explicit setting to disable new-user registration, preserving the existing-account-only email-link behavior.
+
+The Data API migration and adapter in this PR use Data API-specific roles/helpers and therefore are not drop-in artifacts for the replacement architecture. Reuse the provider-neutral records contract and concurrency semantics, but implement a new server-side adapter and migration after the Cloudflare Pages app boundary is established.
+
+No Neon project, branch, Auth setting, Data API, credentials, Cloudflare project, schema deployment or real-user data access was created or changed. This PR remains draft and held.
+
+Sources checked 24 Nov 2026:
+- https://neon.com/docs/ai/skills/neon/SKILL.md
+- https://neon.com/docs/compute/functions/authentication
+- https://neon.com/docs/serverless/serverless-driver
+- https://neon.com/docs/serverless/serverless-driver-configuration#using-transactions-with-jwt-self-verification
+- https://neon.com/docs/auth/guides/plugins/magic-link
+- https://developers.cloudflare.com/pages/functions/
