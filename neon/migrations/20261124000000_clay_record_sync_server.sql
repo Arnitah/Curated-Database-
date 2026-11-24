@@ -264,6 +264,9 @@ $$;
 
 RESET ROLE;
 
+-- The function owner only needs CREATE during migration, not at runtime.
+REVOKE CREATE ON SCHEMA public FROM clay_fn_owner;
+
 REVOKE ALL ON FUNCTION public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) FROM PUBLIC, clay_anonymous;
 REVOKE ALL ON FUNCTION public.clay_sync_clear_collection(text,bigint) FROM PUBLIC, clay_anonymous;
 GRANT EXECUTE ON FUNCTION public.clay_sync_apply_record(text,text,bigint,bigint,jsonb,boolean) TO clay_app_runtime;
