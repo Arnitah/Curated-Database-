@@ -70,3 +70,21 @@ Traditions take a `sources` list (`url`, `title`, `strength`, `published`, `acce
 
 
 See [Scent Atlas geography schema and migration plan](scent-geography.md) for the full relationship vocabulary, compatibility rules and migration sequence.
+
+
+## Lead identity and lifecycle (25 November 2026)
+
+Every lead has a stable lowercase `id`, a `status`, display `name`, `country`, ISO alpha-2 `cc`, short `lead` description and optional primary `src`. Existing records migrated to IDs receive status `unreviewed`; this preserves their unknown review state rather than implying they are new or checked.
+
+Allowed statuses:
+- `unreviewed`: legacy or imported record whose current review state is not established.
+- `new`: newly captured and not yet checked.
+- `checking`: research in progress; sources and open questions are being assessed.
+- `question`: identity or evidence needs a decision from Nitah.
+- `qualified`: sufficiently identified for a house-entry proposal, but not yet promoted.
+- `added`: promoted to the houses register; retain the lead's history and ID mapping in the change record.
+- `excluded`: not a fragrance house or fails inclusion criteria; retain why and the evidence.
+
+Optional `aliases` preserve alternate names. Optional `sources` is an array of source records with `url`, `evidence`, `checked` (YYYY-MM-DD) and `supports`. A source record states exactly what it supports; it does not imply the source proves every aspect of the lead. The primary `src` remains for compatibility with existing Atlas lead cards.
+
+Promotion is not automatic. A qualified lead must be checked for identity/duplicates, current catalogue, owner, manufacturing and relationship-specific geography. Only after the verified-house evidence rule is satisfied may it be promoted as a verified house. Otherwise it may be added as a house with an explicit non-verified evidence state only if the Atlas inclusion decision supports it. Never treat a brand's own statement as independent A/B evidence.

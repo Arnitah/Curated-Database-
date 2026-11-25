@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';
+import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';\nimport { validateLeads } from './scents-leads.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DATA = path.join(ROOT, 'data');
@@ -86,7 +86,7 @@ if (myths) {
   if (legacy) warnings.push(`${legacy} legacy myths still need verdicts and sources (upgrade to format v2 over time)`);
 }
 
-// Scents: perfume houses
+// Scents: discovery leads and lead lifecycle\nfor (const issue of validateLeads(sets['scents/leads']?.data)) errors.push('scents/leads: ' + issue);\n\n// Scents: perfume houses
 const houses = sets['scents/houses']?.data;
 if (houses) {
   const fam = new Set(Object.keys(sets['scents/families']?.data || {}).filter((k) => !k.startsWith('_')));
