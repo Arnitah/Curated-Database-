@@ -8,8 +8,10 @@ export function validateLead(lead) {
   if (!lead || typeof lead !== "object" || Array.isArray(lead)) return ["lead must be an object"];
   if (typeof lead.id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(lead.id)) errors.push("id must be a stable lowercase slug");
   for (const key of ["name","lead"]) if (typeof lead[key] !== "string" || !lead[key].trim()) errors.push(key + " is required");
-  if (lead.country != null && (typeof lead.country !== "string" || !lead.country.trim())) errors.push("country must be non-empty text when supplied");
-  if (lead.cc != null && (typeof lead.cc !== "string" || !/^[A-Z]{2}$/.test(lead.cc))) errors.push("cc must be an uppercase ISO 3166-1 alpha-2 code when supplied");
+  if (lead.status !== "unreviewed") {
+    if (typeof lead.country !== "string" || !lead.country.trim()) errors.push("country is required for an actively reviewed lead");
+    if (typeof lead.cc !== "string" || !/^[A-Z]{2}$/.test(lead.cc)) errors.push("cc must be an uppercase ISO 3166-1 alpha-2 code for an actively reviewed lead");
+  }
   if (!LEAD_STATUSES.includes(lead.status)) errors.push("status must be one of " + LEAD_STATUSES.join(", "));
   if (lead.src != null && (typeof lead.src !== "string" || !URL.test(lead.src))) errors.push("src must be an http(s) URL when supplied");
   if (lead.aliases != null && (!Array.isArray(lead.aliases) || lead.aliases.some((a) => typeof a !== "string" || !a.trim()))) errors.push("aliases must be an array of non-empty strings");
