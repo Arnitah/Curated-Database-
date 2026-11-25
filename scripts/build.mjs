@@ -6,6 +6,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';
 import { validateLeads } from './scents-leads.mjs';
+import { summarizeVerification } from './scents-verification.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DATA = path.join(ROOT, 'data');
@@ -125,6 +126,10 @@ const TOPIC = new Set([...GEO_TOPICS, ...LEGACY_GEO_TOPICS, 'founder', 'owner', 
 const STRENGTH = new Set(['A', 'B', 'C', 'D']);
 const DATEISH = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 const obsSet = sets['scents/observations']?.data;
+if (houses && obsSet) {
+  const gate = summarizeVerification(houses, obsSet.records || []);
+  warnings.push(`house verification gate: ${gate.verified}/${gate.total} verified; missing owner ${gate.missing_by_topic.owner}, manufacturing ${gate.missing_by_topic.manufacturing}, catalogue ${gate.missing_by_topic.catalogue}`);
+}
 if (obsSet) {
   const hid = new Set((houses || []).map((h) => h.id)), seen = new Set();
   const rates = sets['scents/rates']?.data?.cad_per || {};
