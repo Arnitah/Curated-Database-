@@ -74,7 +74,7 @@ See [Scent Atlas geography schema and migration plan](scent-geography.md) for th
 
 ## Lead identity and lifecycle (25 November 2026)
 
-Every lead has a stable lowercase `id`, a `status`, display `name`, `country`, ISO alpha-2 `cc`, short `lead` description and optional primary `src`. Existing records migrated to IDs receive status `unreviewed`; this preserves their unknown review state rather than implying they are new or checked.
+Every lead has a stable lowercase `id`, a `status`, display `name`, short `lead` description and optional primary `src`. New or actively reviewed leads must also have a `country` and ISO alpha-2 `cc`; legacy records whose geography is incomplete retain that gap while marked `unreviewed`. Existing records migrated to IDs receive status `unreviewed`; this preserves their unknown review state rather than implying they are new or checked.
 
 Allowed statuses:
 - `unreviewed`: legacy or imported record whose current review state is not established.
