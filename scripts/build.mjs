@@ -4,7 +4,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';\nimport { validateLeads } from './scents-leads.mjs';
+import { GEO_TOPICS, LEGACY_GEO_TOPICS, validateGeographyObservation, validateMapAnchors } from './scents-geography.mjs';
+import { validateLeads } from './scents-leads.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DATA = path.join(ROOT, 'data');
@@ -86,7 +87,10 @@ if (myths) {
   if (legacy) warnings.push(`${legacy} legacy myths still need verdicts and sources (upgrade to format v2 over time)`);
 }
 
-// Scents: discovery leads and lead lifecycle\nfor (const issue of validateLeads(sets['scents/leads']?.data)) errors.push('scents/leads: ' + issue);\n\n// Scents: perfume houses
+// Scents: discovery leads and lead lifecycle
+for (const issue of validateLeads(sets['scents/leads']?.data)) errors.push('scents/leads: ' + issue);
+
+// Scents: perfume houses
 const houses = sets['scents/houses']?.data;
 if (houses) {
   const fam = new Set(Object.keys(sets['scents/families']?.data || {}).filter((k) => !k.startsWith('_')));
@@ -193,7 +197,8 @@ for (const b of sets['scents/bespoke']?.data || []) {
 for (const k of Object.keys(sets)) if (/user|profile|log|saved|personal/i.test(k.split('/')[1]) && !/^safe-batch\/(year_|qy_)/.test(k)) errors.push(`${k}: personal data doesn't belong in this repo`);
 
 warnings.forEach((w) => console.log('warn  ' + w));
-if (errors.length) { errors.slice(0, 50).forEach((e) => console.log('ERROR ' + e)); console.log(`\n${errors.length} error(s)`); process.exit(1); }
+if (errors.length) { errors.slice(0, 50).forEach((e) => console.log('ERROR ' + e)); console.log(`
+${errors.length} error(s)`); process.exit(1); }
 console.log(`OK  ${Object.keys(sets).length} datasets valid`);
 if (check) process.exit(0);
 
@@ -207,5 +212,6 @@ const changed = JSON.stringify(Object.fromEntries(Object.entries(datasets).map((
                 JSON.stringify(Object.fromEntries(Object.entries(prev.datasets || {}).map(([k, v]) => [k, v.hash])));
 if (!changed) { console.log(`version.json unchanged (v${prev.version})`); process.exit(0); }
 const next = { version: prev.version + 1, updated_at: new Date().toISOString(), datasets };
-fs.writeFileSync(vPath, JSON.stringify(next, null, 2) + '\n');
+fs.writeFileSync(vPath, JSON.stringify(next, null, 2) + '
+');
 console.log(`version.json -> v${next.version}`);

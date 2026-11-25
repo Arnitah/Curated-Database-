@@ -1,7 +1,7 @@
 export const LEAD_STATUSES = Object.freeze(["unreviewed","new","checking","qualified","added","excluded","question"]);
 const EVIDENCE = new Set(["checked","retailer","brand","database","registry","editorial","reported","creator","nitah"]);
-const DATE = /^\\d{4}-\\d{2}-\\d{2}$/;
-const URL = /^https?:\\/\\//;
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
+const URL = /^https?:\/\//;
 
 export function validateLead(lead) {
   const errors = [];
