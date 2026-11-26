@@ -1,0 +1,87 @@
+name: Clay Pages Neon server adapter and RLS tests
+
+on:
+  push:
+    branches: [feat/clay-pages-neon-server-adapter-20261124]
+    paths:
+      - 'apps/clay-sync/pages-api.js'
+      - 'apps/clay-sync/pages-function.js'
+      - 'apps/clay-sync/pages-records.js'
+      - 'apps/clay-sync/legacy-document-bridge.js'
+      - 'apps/clay-sync/scoped-storage.js'
+      - 'apps/clay-sync/artifact-host-shim.js'
+      - 'apps/clay-sync/standalone-bootstrap.js'
+      - 'apps/clay-sync/neon-server-records.js'
+      - 'apps/clay-sync/neon-auth.js'
+      - 'apps/clay-sync/contracts.js'
+      - 'tests/clay/pages-api.test.mjs'
+      - 'apps/clay-web/tests/pages-function.test.mjs'
+      - 'tests/clay/pages-records.test.mjs'
+      - 'tests/clay/legacy-document-bridge.test.mjs'
+      - 'tests/clay/scoped-storage.test.mjs'
+      - 'tests/clay/artifact-host-shim.test.mjs'
+      - 'tests/clay/standalone-bootstrap.test.mjs'
+      - 'tests/clay/neon-server-records.test.mjs'
+      - 'tests/clay/neon-auth.test.mjs'
+      - 'neon/migrations/20261124000000_clay_record_sync_server.sql'
+      - 'neon/tests/clay_record_sync_server.test.sql'
+      - '.github/workflows/clay-pages-neon-tests.yml'
+  pull_request:
+    paths:
+      - 'apps/clay-sync/pages-api.js'
+      - 'apps/clay-sync/neon-server-records.js'
+      - 'apps/clay-sync/contracts.js'
+      - 'tests/clay/pages-api.test.mjs'
+      - 'tests/clay/neon-server-records.test.mjs'
+      - 'neon/migrations/20261124000000_clay_record_sync_server.sql'
+      - 'neon/tests/clay_record_sync_server.test.sql'
+      - '.github/workflows/clay-pages-neon-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clay-pages-neon-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Test Pages API and Neon server adapter
+        run: node --test tests/clay/pages-api.test.mjs apps/clay-web/tests/pages-function.test.mjs tests/clay/pages-records.test.mjs tests/clay/legacy-document-bridge.test.mjs tests/clay/scoped-storage.test.mjs tests/clay/artifact-host-shim.test.mjs tests/clay/standalone-bootstrap.test.mjs tests/clay/neon-server-records.test.mjs tests/clay/neon-auth.test.mjs
+
+  rls:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: clay_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d clay_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/clay_test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+      - name: Apply server-side RLS migration
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f neon/migrations/20261124000000_clay_record_sync_server.sql
+      - name: Verify JWT claims, isolation, grants and concurrency
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f neon/tests/clay_record_sync_server.test.sql
