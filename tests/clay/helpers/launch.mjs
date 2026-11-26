@@ -22,7 +22,7 @@ export async function waitUntil(fn, timeout = 8000, step = 50) {
   }
 }
 
-// opts: { base, uid, viewport, local: {storageKey: value}, remote, others, noClaude, noUser, setDelayMs, failSet }
+// opts: { html, base, uid, viewport, local: {storageKey: value}, remote, others, noClaude, noUser, setDelayMs, failSet }
 export async function openClay(browser, serverBase, opts = {}) {
   const o = { uid: 'test-user-a', viewport: { width: 1280, height: 900 }, ...opts };
   const ctx = await browser.newContext({ viewport: o.viewport, serviceWorkers: 'block' });
@@ -33,6 +33,8 @@ export async function openClay(browser, serverBase, opts = {}) {
     blocked.push(new URL(u).host);
     return route.abort();
   });
+  // opts.html: serve this HTML (e.g. the output of the artifact-wrapper model) in place of apps/clay.html; registered after the catch-all so it wins
+  if (o.html) await ctx.route(serverBase + 'apps/clay.html', (route) => route.fulfill({ status: 200, contentType: 'text/html', body: o.html }));
   const page = await ctx.newPage();
   const errors = [];
   const consoleText = [];
