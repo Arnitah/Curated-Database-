@@ -592,11 +592,24 @@ function houseLocationLine(h) {
   }
   return "Location on file: " + [h.city, h.country].filter(Boolean).join(", ");
 }
-function promoted(id) { const ok = (t) => claimsFor(id).some((o) => o.topic === t && (o.strength === "A" || o.strength === "B") && o.evidence !== "brand"); return ok("owner") && ok("manufacturing") && ok("catalogue"); }
+function verificationGate(id) {
+  const independent = new Set(["registry", "editorial", "database"]);
+  const topics = ["owner", "manufacturing", "catalogue"];
+  const claims = claimsFor(id);
+  const requirements = topics.map((topic) => {
+    const relevant = claims.filter((o) => o.topic === topic);
+    const qualifying = relevant.filter((o) => (o.strength === "A" || o.strength === "B") && independent.has(o.evidence) && /^https?:\\/\\//.test(o.src || ""));
+    return { topic, qualifying, rejected: relevant.length - qualifying.length };
+  });
+  return { verified: requirements.every((r) => r.qualifying.length > 0), requirements };
+}
+function promoted(id) { return verificationGate(id).verified; }
 function evidenceHtml(key, isLead) {
-  const cs = claimsFor(key, isLead); if (!cs.length) return "";
+  const cs = claimsFor(key, isLead); if (!cs.length && isLead) return "";
   const order = Object.keys(TOPIC_LABEL); cs.sort((a, b) => order.indexOf(a.topic) - order.indexOf(b.topic) || a.strength.localeCompare(b.strength) || (b.published || "").localeCompare(a.published || ""));
-  return `<div class="ev"><div class="eyebrow">Where this comes from</div><ul>${cs.map((o) => `<li><span class="ev-t">${esc(TOPIC_LABEL[o.topic])}</span> ${esc(o.text)}${o.location ? ` <span class="muted ev-location">· ${esc(locationLabel(o.location))}</span>` : ""} <span class="ev-s s${o.strength}" title="Evidence strength ${o.strength}: ${STR_LABEL[o.strength]}">${o.strength}</span><br><span class="muted"><a href="${esc(o.src)}" target="_blank" rel="noopener">source</a>${o.published ? " · published " + esc(o.published) : ""} · checked ${esc(o.seen)}${o.open ? " · <i>Still open:</i> " + esc(o.open) : ""}</span></li>`).join("")}</ul>${isLead ? "" : `<p class="muted ev-rule">${promoted(key) ? "Verified house: ownership, manufacturing location and catalogue each have independent support." : "Not yet a verified house: ownership, manufacturing location and current catalogue each need an independent or official source."}</p>`}</div>`;
+  const gate = isLead ? null : verificationGate(key);
+  const gateHtml = isLead ? "" : `<div class="ev-rule"><b>${gate.verified ? "Verified house" : "Verification pending"}</b><ul>${gate.requirements.map((r) => `<li>${esc(TOPIC_LABEL[r.topic] || r.topic)}: ${r.qualifying.length ? "independent A/B evidence present" : "missing qualifying independent A/B evidence"}${r.rejected ? ` (${r.rejected} non-qualifying record${r.rejected === 1 ? "" : "s"})` : ""}</li>`).join("")}</ul><span>Only registry, editorial or research-database sources graded A/B count. Brand claims, retailer observations, creator reports and C/D evidence remain visible but do not qualify.</span></div>`;
+  return `<div class="ev"><div class="eyebrow">Where this comes from</div>${cs.length ? `<ul>${cs.map((o) => `<li><span class="ev-t">${esc(TOPIC_LABEL[o.topic])}</span> ${esc(o.text)}${o.location ? ` <span class="muted ev-location">· ${esc(locationLabel(o.location))}</span>` : ""} <span class="ev-s s${o.strength}" title="Evidence strength ${o.strength}: ${STR_LABEL[o.strength]}">${o.strength}</span><br><span class="muted"><a href="${esc(o.src)}" target="_blank" rel="noopener">source</a>${o.published ? " · published " + esc(o.published) : ""} · checked ${esc(o.seen)}${o.open ? " · <i>Still open:</i> " + esc(o.open) : ""}</span></li>`).join("")}</ul>` : ""}${gateHtml}</div>`;
 }
 function classTag(h) { return h.class ? `<span class="tag cls">${esc(CLASS_LABEL[h.class] || h.class)}</span>` : ""; }
 function tradSources(t) {
