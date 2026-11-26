@@ -1,0 +1,40 @@
+name: Clay release package (synthetic)
+
+on:
+  pull_request:
+    paths:
+      - 'apps/clay.html'
+      - 'index/clay/products/**'
+      - 'version.json'
+      - 'scripts/package-clay-release.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/clay-release-package.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies from lockfile
+        run: npm ci
+      - name: Build complete Clay release package
+        run: npm run package:clay-release
+      - name: Independently verify packaged files and hashes
+        run: npm run verify:clay-release
+      - name: Upload complete synthetic release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: clay-release-package
+          path: dist/clay-release/
+          if-no-files-found: error
+          retention-days: 7
